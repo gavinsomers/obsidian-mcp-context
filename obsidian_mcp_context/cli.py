@@ -1,0 +1,81 @@
+from __future__ import annotations
+
+import argparse
+import json
+from pathlib import Path
+
+from obsidian_mcp_context.query import list_notes, list_tasks, search_blocks
+from obsidian_mcp_context.vault import VaultConfig, build_context
+
+
+def _print_json(value: object) -> None:
+    print(json.dumps(value, indent=2, ensure_ascii=False))
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="obsidian-mcp-context",
+        description="Inspect generic context extracted from an Obsidian vault.",
+    )
+    parser.add_argument("--vault", required=True, help="Path to the Obsidian vault.")
+    subparsers = parser.add_subparsers(dest="command", required=True)
+
+    notes = subparsers.add_parser("notes", help="List parsed notes.")
+    notes.add_argument("--limit", type=int, default=100)
+
+    blocks = subparsers.add_parser("blocks", help="Search parsed blocks.")
+    blocks.add_argument("--text")
+    blocks.add_argument("--source-path")
+    blocks.add_argument("--heading")
+    blocks.add_argument("--limit", type=int, default=25)
+
+    tasks = subparsers.add_parser("tasks", help="List parsed tasks.")
+    tasks.add_argument("--checked", action="store_true")
+    tasks.add_argument("--unchecked", action="store_true")
+    tasks.add_argument("--text")
+    tasks.add_argument("--source-path")
+    tasks.add_argument("--limit", type=int, default=50)
+
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = build_parser()
+    args = parser.parse_args(argv)
+    context = build_context(VaultConfig(vault_path=Path(args.vault)))
+
+    if args.command == "notes":
+        _print_json(list_notes(context, limit=args.limit))
+        return 0
+
+    if args.command == "blocks":
+        _print_json(
+            search_blocks(
+                context,
+                text=args.text,
+                source_path=args.source_path,
+                heading=args.heading,
+                limit=args.limit,
+            )
+        )
+        return 0
+
+    if args.command == "tasks":
+        checked = None
+        if args.checked:
+            checked = True
+        if args.unchecked:
+            checked = False
+        _print_json(
+            list_tasks(
+                context,
+                checked=checked,
+                text=args.text,
+                source_path=args.source_path,
+                limit=args.limit,
+            )
+        )
+        return 0
+
+    parser.error(f"Unknown command: {args.command}")
+    return 2
