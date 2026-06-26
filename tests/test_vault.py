@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 
 from obsidian_mcp_context.query import get_note_context, list_tasks, search_blocks
 from obsidian_mcp_context.vault import VaultConfig, build_context, scan_vault
@@ -60,3 +61,32 @@ def test_plain_text_is_opt_in_generic_only(tmp_path: Path):
     assert text_context.tasks == []
     assert text_context.links == []
     assert text_context.tags == []
+
+
+def test_synthetic_vault_represents_connected_renewal_scenario():
+    vault_path = Path("examples/synthetic-vault")
+    manifest = json.loads((vault_path / "manifest.json").read_text(encoding="utf-8"))
+
+    context = build_context(VaultConfig(vault_path=vault_path))
+
+    source_paths = {file.source_path for file in context.files}
+    assert "Companies/Northstar Labs.md" in source_paths
+    assert "Meetings/Atlas Renewal Review.md" in source_paths
+    assert "Risks/Pilot Handoff Ownership.md" in source_paths
+    assert "System/Plain Discovery Notes.txt" not in source_paths
+
+    open_tasks = list_tasks(context, checked=False, limit=100)
+    assert len(open_tasks) >= manifest["expected_queries"][0]["minimum_expected_open_tasks"]
+
+    risk_blocks = search_blocks(context, text="Pilot Handoff Ownership", limit=25)
+    risk_sources = {block["source_path"] for block in risk_blocks}
+    assert {
+        "Daily/2026-06-26.md",
+        "Risks/Pilot Handoff Ownership.md",
+    }.issubset(risk_sources)
+
+    meeting = get_note_context(context, "Meetings/Atlas Renewal Review.md")
+    meeting_links = {link["link_target"] for link in meeting["links"]}
+    assert "Not A Real Stakeholder" not in meeting_links
+    assert "Not A Real Note" not in meeting_links
+    assert {"Morgan Lee", "Priya Shah", "Renewal Prep Scope"}.issubset(meeting_links)
