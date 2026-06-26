@@ -1,0 +1,96 @@
+{
+  "scenario": "customer_success_renewal_workspace",
+  "description": "A small hand-authored synthetic Obsidian vault for testing context extraction across connected companies, people, projects, meetings, risks, decisions, daily notes, and parser edge cases.",
+  "entities": {
+    "companies": [
+      {
+        "name": "Northstar Labs",
+        "status": "active",
+        "segment": "mid-market",
+        "people": ["Morgan Lee", "Priya Shah"],
+        "projects": ["Project Atlas"]
+      }
+    ],
+    "people": [
+      {
+        "name": "Morgan Lee",
+        "company": "Northstar Labs",
+        "role": "customer operations lead",
+        "projects": ["Project Atlas"]
+      },
+      {
+        "name": "Priya Shah",
+        "company": "Northstar Labs",
+        "role": "finance sponsor",
+        "projects": ["Project Atlas"]
+      }
+    ],
+    "projects": [
+      {
+        "name": "Project Atlas",
+        "company": "Northstar Labs",
+        "status": "active",
+        "risks": ["Pilot Handoff Ownership"],
+        "decisions": ["Renewal Prep Scope"],
+        "meetings": ["Atlas Renewal Review"]
+      }
+    ],
+    "risks": [
+      {
+        "name": "Pilot Handoff Ownership",
+        "status": "open",
+        "severity": "medium",
+        "project": "Project Atlas"
+      }
+    ],
+    "decisions": [
+      {
+        "name": "Renewal Prep Scope",
+        "date": "2026-06-25",
+        "project": "Project Atlas"
+      }
+    ],
+    "meetings": [
+      {
+        "name": "Atlas Renewal Review",
+        "date": "2026-06-25",
+        "attendees": ["Morgan Lee", "Priya Shah"],
+        "project": "Project Atlas"
+      }
+    ]
+  },
+  "expected_queries": [
+    {
+      "name": "open_tasks_for_project_atlas",
+      "query": "unchecked tasks mentioning Project Atlas, Morgan Lee, Priya Shah, renewal, or pilot handoff",
+      "minimum_expected_open_tasks": 6
+    },
+    {
+      "name": "risk_context_for_northstar",
+      "query": "blocks tagged risk or mentioning Pilot Handoff Ownership",
+      "expected_notes": [
+        "Projects/Project Atlas.md",
+        "Risks/Pilot Handoff Ownership.md",
+        "Companies/Northstar Labs.md"
+      ]
+    },
+    {
+      "name": "decision_context_for_renewal_scope",
+      "query": "blocks mentioning Renewal Prep Scope",
+      "expected_notes": [
+        "Projects/Project Atlas.md",
+        "Decisions/Renewal Prep Scope.md",
+        "Daily/2026-06-26.md"
+      ]
+    }
+  ],
+  "parser_edge_cases": [
+    "frontmatter",
+    "wikilink aliases",
+    "inline code ignored",
+    "fenced code ignored",
+    "checked and unchecked tasks",
+    "markdown tags",
+    "plain text opt-in parsing"
+  ]
+}
