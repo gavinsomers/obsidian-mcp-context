@@ -18,3 +18,14 @@ def test_mcp_server_exposes_generic_obsidian_tools():
     assert "list_vault_entities" in tools
     assert "get_vault_entity_timeline" in tools
     assert "search_vault_agent_context" in tools
+
+
+def test_mcp_parser_accepts_http_host_and_port():
+    parser = mcp_server.build_parser()
+    args = parser.parse_args(
+        ["--transport", "streamable-http", "--host", "0.0.0.0", "--port", "8000"]
+    )
+
+    assert args.transport == "streamable-http"
+    assert args.host == "0.0.0.0"
+    assert args.port == 8000

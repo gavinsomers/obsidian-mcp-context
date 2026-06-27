@@ -20,6 +20,7 @@ dev = [
 [project.scripts]
 obsidian-mcp-context = "obsidian_mcp_context.cli:main"
 obsidian-mcp-context-mcp = "obsidian_mcp_context.mcp_server:main"
+obsidian-mcp-context-web = "obsidian_mcp_context.web_ui:main"
 
 [tool.setuptools.packages.find]
 where = ["."]

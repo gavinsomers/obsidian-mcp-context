@@ -1,0 +1,56 @@
+services:
+  vault:
+    image: nginx:1.27-alpine
+    volumes:
+      - ./examples/synthetic-vault:/usr/share/nginx/html:ro
+    ports:
+      - "8081:80"
+
+  web:
+    build:
+      context: .
+    command:
+      - obsidian-mcp-context-web
+      - --vault
+      - /vault
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+    volumes:
+      - ./examples/synthetic-vault:/vault:ro
+    ports:
+      - "8080:8080"
+    depends_on:
+      - vault
+
+  mcp:
+    build:
+      context: .
+    command:
+      - obsidian-mcp-context-mcp
+      - --transport
+      - streamable-http
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+    volumes:
+      - ./examples/synthetic-vault:/vault:ro
+    ports:
+      - "8000:8000"
+
+  pipeline:
+    build:
+      context: .
+    profiles:
+      - check
+    command:
+      - sh
+      - -c
+      - >
+        python -m pytest &&
+        python -m compileall obsidian_mcp_context &&
+        obsidian-mcp-context --vault /vault warehouse-summary
+    volumes:
+      - ./examples/synthetic-vault:/vault:ro

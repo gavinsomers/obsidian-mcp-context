@@ -52,9 +52,9 @@ After installation, the local commands are available at:
 
 ## Try The Synthetic Vault
 
-The repo includes a small synthetic Obsidian vault at
-`examples/synthetic-vault`. Use it first to confirm the parser works before
-pointing the tools at your own notes.
+The repo includes a synthetic Obsidian vault at `examples/synthetic-vault`. Use
+it first to confirm the parser works before pointing the tools at your own
+notes.
 
 List notes:
 
@@ -76,6 +76,42 @@ List unchecked tasks:
 
 The output is JSON. It is intentionally verbose enough for an AI client to cite
 where each piece of context came from.
+
+## Docker Compose
+
+Build and run the local stack:
+
+```bash
+docker compose up --build
+```
+
+Services:
+
+- Web UI: `http://localhost:8080`
+- Synthetic vault file browser: `http://localhost:8081`
+- MCP streamable HTTP endpoint: `http://localhost:8000/mcp`
+
+The Compose stack mounts `examples/synthetic-vault` read-only at `/vault` in the
+Python services. The web UI and MCP server both build the deterministic
+warehouse from that mounted vault.
+
+Run the pipeline checks in Docker:
+
+```bash
+docker compose --profile check run --rm pipeline
+```
+
+That runs:
+
+```bash
+python -m pytest
+python -m compileall obsidian_mcp_context
+obsidian-mcp-context --vault /vault warehouse-summary
+```
+
+The `vault` service is an nginx file browser for the synthetic vault contents.
+It is not the Obsidian desktop app; the vault remains plain Markdown files so it
+can be mounted into containers and opened locally in Obsidian if needed.
 
 ## Use Your Own Obsidian Vault
 
