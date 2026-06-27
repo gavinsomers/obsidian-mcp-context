@@ -20,11 +20,15 @@ The project uses semantic-ish versions:
 - Added `obsidian-mcp-context-simulate-vault` to incrementally populate a live vault from generated note `created_at` timestamps.
 - Added an Airflow simulation DAG that advances virtual time once per minute and runs ingest, dbt run, and dbt test against the live vault.
 - Added Docker Compose simulation services for seed generation, live vault browsing, Airflow, live web UI, and live MCP.
+- Added nginx autoindex configuration for Docker vault browser services.
 
 ### Changed
 
 - dbt `stg_obsidian_files` and `dim_notes` now expose lifecycle timestamp columns from the landing database.
 - dbt mart models now materialize as incremental DuckDB merge tables with explicit unique keys.
+- Docker simulation helper containers now run as the Airflow user to avoid shared-volume permission errors.
+- The web UI now defaults to `summary counts`, suggests valid entities for unknown timeline queries, and groups requested entity types such as `people companies projects`.
+- README Docker instructions now document detached mode, local service URLs, simulation reset, and the difference between browser UIs and MCP endpoints.
 
 ## [0.4.0] - 2026-06-27
 

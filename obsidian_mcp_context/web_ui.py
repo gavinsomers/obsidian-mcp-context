@@ -18,6 +18,14 @@ from obsidian_mcp_context.warehouse import (
 
 
 DEFAULT_LIMIT = 25
+ENTITY_QUERY_TYPES = {
+    "people": "person",
+    "person": "person",
+    "companies": "company",
+    "company": "company",
+    "projects": "project",
+    "project": "project",
+}
 
 
 def _load_warehouse(vault_path: Path):
@@ -64,23 +72,57 @@ def _extract_entity(question: str, entities: list[dict[str, object]]) -> str | N
     return None
 
 
+def _requested_entity_types(question: str) -> list[str]:
+    lowered_words = set(question.casefold().replace(",", " ").split())
+    requested = []
+    for word, entity_type in ENTITY_QUERY_TYPES.items():
+        if word in lowered_words and entity_type not in requested:
+            requested.append(entity_type)
+    return requested
+
+
 def answer_question(vault_path: Path, question: str) -> dict[str, object]:
     warehouse = _load_warehouse(vault_path)
     summary = warehouse_summary(warehouse)
     entities = list_entities(warehouse, limit=500)
     entity = _extract_entity(question, entities)
     lowered = question.casefold()
+    wants_timeline = "timeline" in lowered or "interactions" in lowered
+    requested_types = _requested_entity_types(question)
 
     if "summary" in lowered or "counts" in lowered:
         return {"mode": "summary", "summary": summary}
-    if "entities" in lowered or "people" in lowered or "companies" in lowered:
-        return {"mode": "entities", "results": entities[:DEFAULT_LIMIT]}
-    if entity and ("timeline" in lowered or "interactions" in lowered):
+    if entity and wants_timeline:
         return {
             "mode": "timeline",
             "entity": entity,
             "results": entity_timeline(warehouse, entity=entity, limit=DEFAULT_LIMIT),
         }
+    if wants_timeline:
+        return {
+            "mode": "entity_lookup",
+            "entity": None,
+            "message": (
+                "No matching entity was found in this vault. Try one of the known "
+                "people, companies, projects, decisions, risks, or topics below."
+            ),
+            "results": entities[:DEFAULT_LIMIT],
+        }
+    if requested_types:
+        groups = [
+            {
+                "entity_type": entity_type,
+                "results": [
+                    row
+                    for row in entities
+                    if str(row.get("entity_type")) == entity_type
+                ][:DEFAULT_LIMIT],
+            }
+            for entity_type in requested_types
+        ]
+        return {"mode": "entity_groups", "groups": groups}
+    if "entities" in lowered:
+        return {"mode": "entities", "results": entities[:DEFAULT_LIMIT]}
     return {
         "mode": "context",
         "entity": entity,
@@ -93,9 +135,12 @@ def answer_question(vault_path: Path, question: str) -> dict[str, object]:
     }
 
 
-def _render_rows(rows: list[dict[str, object]]) -> str:
+def _render_rows(rows: list[dict[str, object]], message: str | None = None) -> str:
+    rendered_message = ""
+    if message:
+        rendered_message = f'<p class="notice">{escape(message)}</p>'
     if not rows:
-        return '<p class="empty">No rows.</p>'
+        return rendered_message + '<p class="empty">No rows matched this query.</p>'
     rendered = []
     for row in rows:
         title = escape(str(row.get("title") or row.get("name") or row.get("source_path")))
@@ -117,7 +162,7 @@ def _render_rows(rows: list[dict[str, object]]) -> str:
             </article>
             """
         )
-    return "\n".join(rendered)
+    return rendered_message + "\n".join(rendered)
 
 
 def _render_summary(summary: dict[str, object]) -> str:
@@ -139,13 +184,34 @@ def _render_summary(summary: dict[str, object]) -> str:
     """
 
 
+def _render_entity_groups(groups: list[dict[str, object]]) -> str:
+    sections = []
+    for group in groups:
+        entity_type = escape(str(group["entity_type"]).title())
+        rows = group.get("results", [])
+        sections.append(
+            f"""
+            <section class="group">
+              <h2>{entity_type}</h2>
+              {_render_rows(rows)}
+            </section>
+            """
+        )
+    return "\n".join(sections)
+
+
 def _page(vault_path: Path, values: dict[str, list[str]]) -> str:
-    question = _first(values, "q") or "timeline interactions with Marcus Vance"
+    question = _first(values, "q") or "summary counts"
     answer = answer_question(vault_path, question)
     if answer["mode"] == "summary":
         content = _render_summary(answer["summary"])
+    elif answer["mode"] == "entity_groups":
+        content = _render_entity_groups(answer["groups"])
     else:
-        content = _render_rows(answer["results"])
+        content = _render_rows(
+            answer["results"],
+            message=str(answer.get("message") or "") or None,
+        )
     escaped_question = escape(question, quote=True)
     escaped_mode = escape(str(answer["mode"]))
     escaped_entity = escape(str(answer.get("entity") or ""))
@@ -235,6 +301,15 @@ def _page(vault_path: Path, values: dict[str, list[str]]) -> str:
       justify-content: space-between;
       gap: 12px;
     }}
+    .group {{
+      margin: 0 0 22px;
+    }}
+    .group h2 {{
+      margin: 0 0 8px;
+      font-size: 17px;
+      font-weight: 650;
+      letter-spacing: 0;
+    }}
     .source {{
       margin-top: 4px;
       color: var(--muted);
@@ -269,6 +344,15 @@ def _page(vault_path: Path, values: dict[str, list[str]]) -> str:
     }}
     .empty {{
       color: var(--muted);
+    }}
+    .notice {{
+      max-width: 760px;
+      margin: 0 0 14px;
+      padding: 10px 12px;
+      border: 1px solid #bfd5db;
+      border-radius: 6px;
+      background: #eef8fa;
+      color: #224f58;
     }}
     @media (max-width: 640px) {{
       form {{ flex-direction: column; }}
