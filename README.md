@@ -274,6 +274,11 @@ rows:
 - `fact_mentions`, `fact_decisions`, `fact_risks`
 - `mart_open_loops`, `mart_person_context`, `mart_project_context`
 
+When a dbt-built DuckDB warehouse is available at `DUCKDB_PATH` or
+`/warehouse/obsidian.duckdb`, the web UI and MCP warehouse tools query these
+persisted marts directly. If no dbt warehouse is available, they fall back to
+the smaller in-memory warehouse built from the vault files.
+
 Run only ingest:
 
 ```bash
@@ -446,11 +451,52 @@ Search my vault for blocks about Project Atlas and return the source note and li
 - `event_type`: optional event type, such as `block`, `task_open`, or `task_done`.
 - `limit`: maximum context rows to return. Defaults to `25`.
 
+When a dbt-built DuckDB warehouse is available, these additional mart-backed
+tools are exposed:
+
+`get_vault_project_context`
+
+- `vault_path`: path to the Obsidian vault.
+- `project`: exact project name.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum context rows to return. Defaults to `50`.
+
+`get_vault_person_context`
+
+- `vault_path`: path to the Obsidian vault.
+- `person`: exact person name.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum context rows to return. Defaults to `50`.
+
+`list_vault_open_loops`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity`: optional exact entity name filter.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum open loops to return. Defaults to `50`.
+
+`list_vault_decisions`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity`: optional exact entity name filter.
+- `status`: optional decision status filter.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum decisions to return. Defaults to `50`.
+
+`list_vault_risks`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity`: optional exact entity name filter.
+- `status`: optional risk status filter.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum risks to return. Defaults to `50`.
+
 ## Deterministic Warehouse Layer
 
 The parser still preserves the vault as the source of truth. On top of that,
-the package now builds an in-memory SQLite warehouse so AI clients can query a
-modeled representation instead of relying only on semantic recall.
+the package can query either a persisted dbt DuckDB warehouse or a fallback
+in-memory SQLite warehouse so AI clients can query a modeled representation
+instead of relying only on semantic recall.
 
 The current warehouse includes:
 

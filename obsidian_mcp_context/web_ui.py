@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 import argparse
+import os
 from html import escape
 import json
 from pathlib import Path
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
+from obsidian_mcp_context import dbt_warehouse
 from obsidian_mcp_context.vault import VaultConfig, build_context
 from obsidian_mcp_context.warehouse import (
     agent_context,
@@ -65,7 +67,7 @@ def _not_found(handler: BaseHTTPRequestHandler) -> None:
 
 def _extract_entity(question: str, entities: list[dict[str, object]]) -> str | None:
     lowered = question.casefold()
-    for entity in entities:
+    for entity in sorted(entities, key=lambda row: len(str(row["name"])), reverse=True):
         name = str(entity["name"])
         if name.casefold() in lowered:
             return name
@@ -81,7 +83,130 @@ def _requested_entity_types(question: str) -> list[str]:
     return requested
 
 
-def answer_question(vault_path: Path, question: str) -> dict[str, object]:
+def _dbt_answer_question(
+    duckdb_path: Path,
+    question: str,
+) -> dict[str, object] | None:
+    entities = dbt_warehouse.list_entities(duckdb_path, limit=500)
+    entity = _extract_entity(question, entities)
+    entity_row = next(
+        (row for row in entities if entity and str(row["name"]) == entity),
+        None,
+    )
+    lowered = question.casefold()
+    wants_timeline = "timeline" in lowered or "interactions" in lowered
+    wants_open_loops = "open loop" in lowered or "open task" in lowered
+    wants_decisions = "decision" in lowered
+    wants_risks = "risk" in lowered
+    requested_types = _requested_entity_types(question)
+
+    if "summary" in lowered or "counts" in lowered:
+        return {
+            "mode": "summary",
+            "warehouse": "dbt",
+            "summary": dbt_warehouse.summary(duckdb_path),
+        }
+    if requested_types and not entity:
+        groups = [
+            {
+                "entity_type": entity_type,
+                "results": dbt_warehouse.list_entities(
+                    duckdb_path,
+                    entity_type=entity_type,
+                    limit=DEFAULT_LIMIT,
+                ),
+            }
+            for entity_type in requested_types
+        ]
+        return {"mode": "entity_groups", "warehouse": "dbt", "groups": groups}
+    if "entities" in lowered:
+        return {
+            "mode": "entities",
+            "warehouse": "dbt",
+            "results": entities[:DEFAULT_LIMIT],
+        }
+    if entity_row and str(entity_row["entity_type"]) == "project":
+        return {
+            "mode": "project_context",
+            "warehouse": "dbt",
+            "entity": entity,
+            "results": dbt_warehouse.project_context(
+                duckdb_path,
+                project=entity,
+                limit=DEFAULT_LIMIT,
+            ),
+        }
+    if entity_row and str(entity_row["entity_type"]) == "person":
+        return {
+            "mode": "person_context",
+            "warehouse": "dbt",
+            "entity": entity,
+            "results": dbt_warehouse.person_context(
+                duckdb_path,
+                person=entity,
+                limit=DEFAULT_LIMIT,
+            ),
+        }
+    if wants_open_loops:
+        return {
+            "mode": "open_loops",
+            "warehouse": "dbt",
+            "entity": entity,
+            "results": dbt_warehouse.list_open_loops(
+                duckdb_path,
+                entity=entity,
+                limit=DEFAULT_LIMIT,
+            ),
+        }
+    if wants_decisions and not wants_timeline:
+        return {
+            "mode": "decisions",
+            "warehouse": "dbt",
+            "entity": entity,
+            "results": dbt_warehouse.list_decisions(
+                duckdb_path,
+                entity=entity,
+                limit=DEFAULT_LIMIT,
+            ),
+        }
+    if wants_risks and not wants_timeline:
+        return {
+            "mode": "risks",
+            "warehouse": "dbt",
+            "entity": entity,
+            "results": dbt_warehouse.list_risks(
+                duckdb_path,
+                entity=entity,
+                limit=DEFAULT_LIMIT,
+            ),
+        }
+    if wants_timeline:
+        return {
+            "mode": "entity_lookup",
+            "warehouse": "dbt",
+            "entity": None,
+            "message": (
+                "No matching entity was found in this warehouse. Try one of the "
+                "known people, companies, projects, decisions, risks, or topics below."
+            ),
+            "results": entities[:DEFAULT_LIMIT],
+        }
+    return None
+
+
+def answer_question(
+    vault_path: Path,
+    question: str,
+    duckdb_path: Path | None = None,
+) -> dict[str, object]:
+    resolved_duckdb_path = dbt_warehouse.resolve_duckdb_path(
+        duckdb_path or os.environ.get("DUCKDB_PATH")
+    )
+    if resolved_duckdb_path and dbt_warehouse.is_available(resolved_duckdb_path):
+        dbt_answer = _dbt_answer_question(resolved_duckdb_path, question)
+        if dbt_answer is not None:
+            return dbt_answer
+
     warehouse = _load_warehouse(vault_path)
     summary = warehouse_summary(warehouse)
     entities = list_entities(warehouse, limit=500)
@@ -91,16 +216,18 @@ def answer_question(vault_path: Path, question: str) -> dict[str, object]:
     requested_types = _requested_entity_types(question)
 
     if "summary" in lowered or "counts" in lowered:
-        return {"mode": "summary", "summary": summary}
+        return {"mode": "summary", "warehouse": "memory", "summary": summary}
     if entity and wants_timeline:
         return {
             "mode": "timeline",
+            "warehouse": "memory",
             "entity": entity,
             "results": entity_timeline(warehouse, entity=entity, limit=DEFAULT_LIMIT),
         }
     if wants_timeline:
         return {
             "mode": "entity_lookup",
+            "warehouse": "memory",
             "entity": None,
             "message": (
                 "No matching entity was found in this vault. Try one of the known "
@@ -108,7 +235,7 @@ def answer_question(vault_path: Path, question: str) -> dict[str, object]:
             ),
             "results": entities[:DEFAULT_LIMIT],
         }
-    if requested_types:
+    if requested_types and not entity:
         groups = [
             {
                 "entity_type": entity_type,
@@ -120,11 +247,16 @@ def answer_question(vault_path: Path, question: str) -> dict[str, object]:
             }
             for entity_type in requested_types
         ]
-        return {"mode": "entity_groups", "groups": groups}
+        return {"mode": "entity_groups", "warehouse": "memory", "groups": groups}
     if "entities" in lowered:
-        return {"mode": "entities", "results": entities[:DEFAULT_LIMIT]}
+        return {
+            "mode": "entities",
+            "warehouse": "memory",
+            "results": entities[:DEFAULT_LIMIT],
+        }
     return {
         "mode": "context",
+        "warehouse": "memory",
         "entity": entity,
         "results": agent_context(
             warehouse,
@@ -200,9 +332,9 @@ def _render_entity_groups(groups: list[dict[str, object]]) -> str:
     return "\n".join(sections)
 
 
-def _page(vault_path: Path, values: dict[str, list[str]]) -> str:
+def _page(vault_path: Path, duckdb_path: Path | None, values: dict[str, list[str]]) -> str:
     question = _first(values, "q") or "summary counts"
-    answer = answer_question(vault_path, question)
+    answer = answer_question(vault_path, question, duckdb_path=duckdb_path)
     if answer["mode"] == "summary":
         content = _render_summary(answer["summary"])
     elif answer["mode"] == "entity_groups":
@@ -215,6 +347,7 @@ def _page(vault_path: Path, values: dict[str, list[str]]) -> str:
     escaped_question = escape(question, quote=True)
     escaped_mode = escape(str(answer["mode"]))
     escaped_entity = escape(str(answer.get("entity") or ""))
+    escaped_warehouse = escape(str(answer.get("warehouse") or "memory"))
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -372,6 +505,7 @@ def _page(vault_path: Path, values: dict[str, list[str]]) -> str:
   <main>
     <div class="meta">
       <span class="pill">mode: {escaped_mode}</span>
+      <span class="pill">warehouse: {escaped_warehouse}</span>
       <span class="pill">entity: {escaped_entity or "none"}</span>
       <span class="pill">vault: {escape(str(vault_path))}</span>
     </div>
@@ -384,23 +518,43 @@ def _page(vault_path: Path, values: dict[str, list[str]]) -> str:
 
 class ContextHandler(BaseHTTPRequestHandler):
     vault_path: Path
+    duckdb_path: Path | None
 
     def do_GET(self) -> None:
         parsed = urlparse(self.path)
         values = parse_qs(parsed.query)
         warehouse = None
         if parsed.path == "/":
-            _html_response(self, _page(self.vault_path, values))
+            _html_response(self, _page(self.vault_path, self.duckdb_path, values))
             return
         if parsed.path == "/api/ask":
             question = _first(values, "q") or ""
-            _json_response(self, answer_question(self.vault_path, question))
+            _json_response(
+                self,
+                answer_question(self.vault_path, question, duckdb_path=self.duckdb_path),
+            )
             return
         if parsed.path == "/api/summary":
+            if self.duckdb_path and dbt_warehouse.is_available(self.duckdb_path):
+                _json_response(self, dbt_warehouse.summary(self.duckdb_path))
+                return
             warehouse = _load_warehouse(self.vault_path)
             _json_response(self, warehouse_summary(warehouse))
             return
         if parsed.path == "/api/entities":
+            if self.duckdb_path and dbt_warehouse.is_available(self.duckdb_path):
+                _json_response(
+                    self,
+                    {
+                        "result": dbt_warehouse.list_entities(
+                            self.duckdb_path,
+                            entity_type=_first(values, "entity_type"),
+                            text=_first(values, "text"),
+                            limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                        )
+                    },
+                )
+                return
             warehouse = _load_warehouse(self.vault_path)
             _json_response(
                 self,
@@ -447,6 +601,91 @@ class ContextHandler(BaseHTTPRequestHandler):
                 },
             )
             return
+        if parsed.path == "/api/project-context":
+            entity = _first(values, "entity")
+            if not entity:
+                _json_response(self, {"error": "entity is required"})
+                return
+            if not self.duckdb_path or not dbt_warehouse.is_available(self.duckdb_path):
+                _json_response(self, {"error": "dbt warehouse is not available"})
+                return
+            _json_response(
+                self,
+                {
+                    "result": dbt_warehouse.project_context(
+                        self.duckdb_path,
+                        project=entity,
+                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                    )
+                },
+            )
+            return
+        if parsed.path == "/api/person-context":
+            entity = _first(values, "entity")
+            if not entity:
+                _json_response(self, {"error": "entity is required"})
+                return
+            if not self.duckdb_path or not dbt_warehouse.is_available(self.duckdb_path):
+                _json_response(self, {"error": "dbt warehouse is not available"})
+                return
+            _json_response(
+                self,
+                {
+                    "result": dbt_warehouse.person_context(
+                        self.duckdb_path,
+                        person=entity,
+                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                    )
+                },
+            )
+            return
+        if parsed.path == "/api/open-loops":
+            if not self.duckdb_path or not dbt_warehouse.is_available(self.duckdb_path):
+                _json_response(self, {"error": "dbt warehouse is not available"})
+                return
+            _json_response(
+                self,
+                {
+                    "result": dbt_warehouse.list_open_loops(
+                        self.duckdb_path,
+                        entity=_first(values, "entity"),
+                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                    )
+                },
+            )
+            return
+        if parsed.path == "/api/decisions":
+            if not self.duckdb_path or not dbt_warehouse.is_available(self.duckdb_path):
+                _json_response(self, {"error": "dbt warehouse is not available"})
+                return
+            _json_response(
+                self,
+                {
+                    "result": dbt_warehouse.list_decisions(
+                        self.duckdb_path,
+                        entity=_first(values, "entity"),
+                        status=_first(values, "status"),
+                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                    )
+                },
+            )
+            return
+        if parsed.path == "/api/risks":
+            if not self.duckdb_path or not dbt_warehouse.is_available(self.duckdb_path):
+                _json_response(self, {"error": "dbt warehouse is not available"})
+                return
+            _json_response(
+                self,
+                {
+                    "result": dbt_warehouse.list_risks(
+                        self.duckdb_path,
+                        entity=_first(values, "entity"),
+                        status=_first(values, "status"),
+                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                    )
+                },
+            )
+            return
         _not_found(self)
 
     def log_message(self, format: str, *args: object) -> None:
@@ -459,6 +698,11 @@ def build_parser() -> argparse.ArgumentParser:
         description="Run a small web UI over the deterministic Obsidian warehouse.",
     )
     parser.add_argument("--vault", required=True, help="Path to the Obsidian vault.")
+    parser.add_argument(
+        "--duckdb",
+        default=None,
+        help="Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or /warehouse/obsidian.duckdb when present.",
+    )
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8080)
     return parser
@@ -467,10 +711,16 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    duckdb_path = dbt_warehouse.resolve_duckdb_path(
+        args.duckdb or os.environ.get("DUCKDB_PATH")
+    )
     handler = type(
         "ConfiguredContextHandler",
         (ContextHandler,),
-        {"vault_path": Path(args.vault).expanduser().resolve()},
+        {
+            "vault_path": Path(args.vault).expanduser().resolve(),
+            "duckdb_path": duckdb_path,
+        },
     )
     server = ThreadingHTTPServer((args.host, args.port), handler)
     print(f"Serving Obsidian MCP Context UI on http://{args.host}:{args.port}")
