@@ -1,3 +1,3 @@
 """AI-ready context extraction for textual Obsidian vaults."""
 
-__version__ = "0.1.0"
+__version__ = "0.3.0"
