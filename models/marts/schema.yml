@@ -117,6 +117,162 @@ models:
                 to: ref('fact_blocks')
                 field: block_id
 
+  - name: fact_mentions
+    columns:
+      - name: mention_id
+        tests:
+          - not_null
+          - unique
+      - name: note_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_notes')
+                field: note_id
+      - name: block_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fact_blocks')
+                field: block_id
+      - name: target_entity_type
+        tests:
+          - not_null
+      - name: target_name
+        tests:
+          - not_null
+
+  - name: dim_people
+    columns:
+      - name: person_id
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+
+  - name: dim_companies
+    columns:
+      - name: company_id
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+
+  - name: dim_projects
+    columns:
+      - name: project_id
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+
+  - name: fact_decisions
+    columns:
+      - name: decision_id
+        tests:
+          - not_null
+          - unique
+      - name: note_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_notes')
+                field: note_id
+      - name: decision_status
+        tests:
+          - not_null
+      - name: summary
+        tests:
+          - not_null
+
+  - name: fact_risks
+    columns:
+      - name: risk_id
+        tests:
+          - not_null
+          - unique
+      - name: note_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_notes')
+                field: note_id
+      - name: risk_status
+        tests:
+          - not_null
+      - name: summary
+        tests:
+          - not_null
+
+  - name: mart_open_loops
+    columns:
+      - name: open_loop_id
+        tests:
+          - not_null
+          - unique
+      - name: task_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fact_tasks')
+                field: task_id
+      - name: task_text
+        tests:
+          - not_null
+
+  - name: mart_person_context
+    columns:
+      - name: person_context_id
+        tests:
+          - not_null
+          - unique
+      - name: person_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_people')
+                field: person_id
+      - name: timeline_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('mart_timeline')
+                field: timeline_id
+
+  - name: mart_project_context
+    columns:
+      - name: project_context_id
+        tests:
+          - not_null
+          - unique
+      - name: project_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_projects')
+                field: project_id
+      - name: timeline_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('mart_timeline')
+                field: timeline_id
+
   - name: mart_timeline
     columns:
       - name: timeline_id
