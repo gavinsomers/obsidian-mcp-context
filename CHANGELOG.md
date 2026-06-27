@@ -10,6 +10,10 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+No unreleased changes.
+
+## [0.5.1] - 2026-06-28
+
 ### Added
 
 - Added a DuckDB/dbt warehouse query adapter for the web UI and MCP tools.
