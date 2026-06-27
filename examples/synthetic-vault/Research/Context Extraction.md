@@ -1,9 +1,16 @@
+---
+type: research
+project: "[[Project Atlas]]"
+tags: [#research]
+---
 # Context Extraction
 
-The parser should preserve source paths, heading paths, block ranges, and line numbers.
+## Finding
+How block-level provenance supports renewal context inspection.
 
-## Examples
+## Evidence Links
+- Project: [[Project Atlas]]
+- Company: [[Northstar Labs]]
 
-Inline code like `[[Not A Link]]` should not create wikilinks.
-
-Real links such as [[Project Atlas]] should be preserved.
+## Tasks
+- [ ] Distill research into agent context for [[Project Atlas]] #ops

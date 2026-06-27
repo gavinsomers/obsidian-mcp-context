@@ -1,4 +1,1 @@
-Plain discovery note for opt-in text parsing.
-
-Northstar Labs was mentioned without a wikilink.
-The parser should expose these lines but not extract #tags or [[links]] from plain text.
+Plain text line with #tag and [[Link]] should only parse when txt is opted in.

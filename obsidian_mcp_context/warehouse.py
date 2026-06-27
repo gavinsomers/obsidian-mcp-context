@@ -9,6 +9,9 @@ from obsidian_mcp_context.vault import VaultContext
 
 
 DATE_RE = re.compile(r"(?<!\d)(\d{4}-\d{2}-\d{2})(?!\d)")
+FRONTMATTER_DATE_RE = re.compile(
+    r"(?ms)\A\s*---.*?^date:\s*[\"']?(\d{4}-\d{2}-\d{2})[\"']?\s*$.*?^---\s*$"
+)
 NON_WORD_RE = re.compile(r"[^a-z0-9]+")
 NOTE_TYPE_BY_FOLDER = {
     "companies": "company",
@@ -50,10 +53,17 @@ def _note_type(source_path: str) -> str:
     return NOTE_TYPE_BY_FOLDER.get(parts[0].casefold(), "note")
 
 
-def _source_date(source_path: str) -> str | None:
+def _source_date(source_path: str, text: str | None = None) -> str | None:
     match = DATE_RE.search(source_path)
     if match:
         return match.group(1)
+    if text:
+        frontmatter_match = FRONTMATTER_DATE_RE.search(text)
+        if frontmatter_match:
+            return frontmatter_match.group(1)
+        content_match = DATE_RE.search(text)
+        if content_match:
+            return content_match.group(1)
     return None
 
 
@@ -150,6 +160,9 @@ def _create_schema(connection: sqlite3.Connection) -> None:
 
 
 def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContext) -> None:
+    first_block_text_by_source = {
+        block.source_path: block.text for block in reversed(context.blocks)
+    }
     for source_file in context.files:
         source_path = source_file.source_path
         note_id = f"note:{_slug(source_path)}"
@@ -165,7 +178,7 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
                 str(source_file.absolute_path),
                 _note_type(source_path),
                 _note_title(source_path),
-                _source_date(source_path),
+                _source_date(source_path, first_block_text_by_source.get(source_path)),
             ),
         )
 
