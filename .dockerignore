@@ -5,5 +5,8 @@ __pycache__
 *.pyc
 *.pyo
 *.egg-info
+logs
+target
+var
 dist
 build

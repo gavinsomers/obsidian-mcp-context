@@ -15,6 +15,9 @@ The project uses semantic-ish versions:
 - Added Dockerfile and Docker Compose stack for the synthetic vault, web UI, MCP HTTP service, and pipeline checks.
 - Added `obsidian-mcp-context-web`, a small local web UI over the deterministic warehouse.
 - Added MCP server `--host` and `--port` flags for containerized HTTP transports.
+- Added DuckDB ingest command for `base_obsidian_*` landing tables.
+- Added dbt staging, intermediate, mart models, and tests for deterministic Obsidian dimensions, facts, and timeline mart.
+- Added Docker Compose `ingest`, `dbt`, and dbt-backed `pipeline` services.
 
 ## [0.3.0] - 2026-06-27
 

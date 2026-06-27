@@ -3,4 +3,10 @@
 __pycache__/
 .pytest_cache/
 *.py[cod]
+var/
+*.duckdb
+*.duckdb.wal
+target/
+logs/
 
+dbt/.user.yml
