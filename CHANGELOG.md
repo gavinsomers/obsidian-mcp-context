@@ -10,6 +10,8 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+## [0.4.0] - 2026-06-27
+
 ### Added
 
 - Added Dockerfile and Docker Compose stack for the synthetic vault, web UI, MCP HTTP service, and pipeline checks.
