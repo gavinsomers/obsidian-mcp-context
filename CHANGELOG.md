@@ -21,6 +21,7 @@ The project uses semantic-ish versions:
 - Added an Airflow simulation DAG that advances virtual time once per minute and runs ingest, dbt run, and dbt test against the live vault.
 - Added Docker Compose simulation services for seed generation, live vault browsing, Airflow, live web UI, and live MCP.
 - Added nginx autoindex configuration for Docker vault browser services.
+- Added Obsidian-only context marts for people, companies, projects, mentions, decisions, risks, open loops, person context, and project context.
 
 ### Changed
 
