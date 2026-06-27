@@ -3,6 +3,10 @@ type: meeting
 date: 2026-06-01
 project: "[[Project Horizon]]"
 company: "[[Apex FinTech]]"
+source_created_at: 2026-06-01T11:13:00
+source_observed_at: 2026-06-01T14:03:00
+created_at: 2026-06-01T16:39:00
+updated_at: 2026-06-01T17:39:00
 tags: [#meeting]
 ---
 # Horizon Kickoff

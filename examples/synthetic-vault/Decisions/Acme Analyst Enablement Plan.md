@@ -4,6 +4,10 @@ status: active
 date: 2026-05-28
 project: "[[Project Pipeline]]"
 company: "[[Acme Corp]]"
+source_created_at: 2026-05-28T08:57:00
+source_observed_at: 2026-05-28T11:20:00
+created_at: 2026-05-28T14:28:00
+updated_at: 2026-06-01T18:28:00
 tags: [#decision]
 ---
 # Acme Analyst Enablement Plan

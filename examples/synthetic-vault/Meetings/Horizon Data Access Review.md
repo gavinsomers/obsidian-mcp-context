@@ -3,6 +3,10 @@ type: meeting
 date: 2026-06-04
 project: "[[Project Horizon]]"
 company: "[[Apex FinTech]]"
+source_created_at: 2026-06-04T11:28:00
+source_observed_at: 2026-06-04T13:46:00
+created_at: 2026-06-04T13:55:00
+updated_at: 2026-06-04T22:55:00
 tags: [#meeting]
 ---
 # Horizon Data Access Review

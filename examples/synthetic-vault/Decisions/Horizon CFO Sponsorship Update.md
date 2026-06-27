@@ -4,6 +4,10 @@ status: active
 date: 2026-06-18
 project: "[[Project Horizon]]"
 company: "[[Apex FinTech]]"
+source_created_at: 2026-06-18T10:20:00
+source_observed_at: 2026-06-18T10:52:00
+created_at: 2026-06-18T13:44:00
+updated_at: 2026-06-19T13:44:00
 tags: [#decision]
 ---
 # Horizon CFO Sponsorship Update

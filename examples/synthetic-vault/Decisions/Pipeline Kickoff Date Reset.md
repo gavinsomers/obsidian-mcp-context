@@ -4,6 +4,10 @@ status: superseded
 date: 2026-05-12
 project: "[[Project Pipeline]]"
 company: "[[Acme Corp]]"
+source_created_at: 2026-05-12T15:30:00
+source_observed_at: 2026-05-12T16:38:00
+created_at: 2026-05-12T19:58:00
+updated_at: 2026-05-17T02:58:00
 tags: [#decision]
 ---
 # Pipeline Kickoff Date Reset

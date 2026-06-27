@@ -12,6 +12,7 @@ DATE_RE = re.compile(r"(?<!\d)(\d{4}-\d{2}-\d{2})(?!\d)")
 FRONTMATTER_DATE_RE = re.compile(
     r"(?ms)\A\s*---.*?^date:\s*[\"']?(\d{4}-\d{2}-\d{2})[\"']?\s*$.*?^---\s*$"
 )
+FRONTMATTER_FIELD_RE = re.compile(r"(?ms)\A\s*---(?P<body>.*?)^---\s*$")
 NON_WORD_RE = re.compile(r"[^a-z0-9]+")
 NOTE_TYPE_BY_FOLDER = {
     "companies": "company",
@@ -61,10 +62,26 @@ def _source_date(source_path: str, text: str | None = None) -> str | None:
         frontmatter_match = FRONTMATTER_DATE_RE.search(text)
         if frontmatter_match:
             return frontmatter_match.group(1)
-        content_match = DATE_RE.search(text)
+        content_text = FRONTMATTER_FIELD_RE.sub("", text, count=1)
+        content_match = DATE_RE.search(content_text)
         if content_match:
             return content_match.group(1)
     return None
+
+
+def _frontmatter_value(text: str | None, field: str) -> str | None:
+    if not text:
+        return None
+    frontmatter_match = FRONTMATTER_FIELD_RE.search(text)
+    if not frontmatter_match:
+        return None
+    field_match = re.search(
+        rf"(?m)^{re.escape(field)}:\s*[\"']?([^\"'\n]+)[\"']?\s*$",
+        frontmatter_match.group("body"),
+    )
+    if not field_match:
+        return None
+    return field_match.group(1).strip()
 
 
 def _bounded_limit(limit: int, maximum: int = 500) -> int:
@@ -80,7 +97,11 @@ def _create_schema(connection: sqlite3.Connection) -> None:
             absolute_path text not null,
             note_type text not null,
             title text not null,
-            source_date text
+            source_date text,
+            source_created_at text,
+            source_observed_at text,
+            created_at text,
+            updated_at text
         );
 
         create table dim_entities (
@@ -165,12 +186,24 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
     }
     for source_file in context.files:
         source_path = source_file.source_path
+        first_block_text = first_block_text_by_source.get(source_path)
         note_id = f"note:{_slug(source_path)}"
         connection.execute(
             """
             insert into dim_notes
-                (note_id, source_path, absolute_path, note_type, title, source_date)
-            values (?, ?, ?, ?, ?, ?)
+                (
+                    note_id,
+                    source_path,
+                    absolute_path,
+                    note_type,
+                    title,
+                    source_date,
+                    source_created_at,
+                    source_observed_at,
+                    created_at,
+                    updated_at
+                )
+            values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """,
             (
                 note_id,
@@ -178,7 +211,11 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
                 str(source_file.absolute_path),
                 _note_type(source_path),
                 _note_title(source_path),
-                _source_date(source_path, first_block_text_by_source.get(source_path)),
+                _source_date(source_path, first_block_text),
+                _frontmatter_value(first_block_text, "source_created_at"),
+                _frontmatter_value(first_block_text, "source_observed_at"),
+                _frontmatter_value(first_block_text, "created_at"),
+                _frontmatter_value(first_block_text, "updated_at"),
             ),
         )
 

@@ -4,6 +4,10 @@ status: active
 date: 2026-07-02
 project: "[[Project Atlas]]"
 company: "[[Northstar Labs]]"
+source_created_at: 2026-07-02T14:49:00
+source_observed_at: 2026-07-02T16:22:00
+created_at: 2026-07-02T18:38:00
+updated_at: 2026-07-03T23:38:00
 tags: [#decision]
 ---
 # Revised Security Addendum Scope

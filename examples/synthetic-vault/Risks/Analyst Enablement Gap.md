@@ -3,6 +3,10 @@ type: risk
 status: open
 severity: medium
 project: "[[Project Pipeline]]"
+source_created_at: 2026-05-08T20:25:00
+source_observed_at: 2026-05-08T21:25:00
+created_at: 2026-05-09T10:25:00
+updated_at: 2026-05-19T21:25:00
 tags: [#risk]
 ---
 # Analyst Enablement Gap

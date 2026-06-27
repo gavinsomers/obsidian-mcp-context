@@ -3,6 +3,10 @@ type: risk
 status: closed
 severity: high
 project: "[[Project Atlas]]"
+source_created_at: 2026-06-05T16:36:00
+source_observed_at: 2026-06-05T17:36:00
+created_at: 2026-06-06T04:36:00
+updated_at: 2026-06-29T06:36:00
 tags: [#risk]
 ---
 # Pilot Handoff Ownership

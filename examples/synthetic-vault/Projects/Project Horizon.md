@@ -2,6 +2,10 @@
 type: project
 status: active
 company: "[[Apex FinTech]]"
+source_created_at: 2026-05-13T10:29:00
+source_observed_at: 2026-05-13T17:29:00
+created_at: 2026-05-14T18:29:00
+updated_at: 2026-07-14T05:29:00
 tags: [#delivery]
 ---
 # Project Horizon

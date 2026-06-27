@@ -10,6 +10,18 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+### Added
+
+- Added virtual lifecycle timestamps to every synthetic vault note: `source_created_at`, `source_observed_at`, `created_at`, and `updated_at`.
+- Added lifecycle timestamp columns to `base_obsidian_files` and `dim_notes` so source time and vault capture time can be queried deterministically.
+- Added tests that enforce lifecycle timestamp coverage, ordering, and DuckDB ingest preservation.
+- Added `obsidian-mcp-context-generate-vault` and `scripts/generate_synthetic_vault.py` for deterministic small, medium, and large synthetic vault generation.
+- Added generated-vault tests for graph coherence, lifecycle timestamp realism, task density, and DuckDB ingest compatibility.
+
+### Changed
+
+- dbt `stg_obsidian_files` and `dim_notes` now expose lifecycle timestamp columns from the landing database.
+
 ## [0.4.0] - 2026-06-27
 
 ### Added

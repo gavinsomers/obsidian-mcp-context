@@ -1,5 +1,5 @@
 from pathlib import Path
-from datetime import date
+from datetime import date, datetime
 
 import duckdb
 
@@ -19,7 +19,14 @@ def test_ingest_vault_writes_duckdb_staging_tables(tmp_path: Path):
     try:
         row = connection.execute(
             """
-            select note_type, title, source_date
+            select
+                note_type,
+                title,
+                source_date,
+                source_created_at,
+                source_observed_at,
+                created_at,
+                updated_at
             from base_obsidian_files
             where source_path = 'Meetings/Horizon Kickoff.md'
             """
@@ -27,4 +34,12 @@ def test_ingest_vault_writes_duckdb_staging_tables(tmp_path: Path):
     finally:
         connection.close()
 
-    assert row == ("meeting", "Horizon Kickoff", date(2026, 6, 1))
+    assert row == (
+        "meeting",
+        "Horizon Kickoff",
+        date(2026, 6, 1),
+        datetime(2026, 6, 1, 11, 13),
+        datetime(2026, 6, 1, 14, 3),
+        datetime(2026, 6, 1, 16, 39),
+        datetime(2026, 6, 1, 17, 39),
+    )

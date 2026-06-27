@@ -3,6 +3,10 @@ type: meeting
 date: 2026-06-10
 project: "[[Project Horizon]]"
 company: "[[Apex FinTech]]"
+source_created_at: 2026-06-10T15:01:00
+source_observed_at: 2026-06-10T16:52:00
+created_at: 2026-06-10T19:16:00
+updated_at: 2026-06-11T00:16:00
 tags: [#meeting]
 ---
 # Horizon Midpoint Crisis

@@ -26,6 +26,7 @@ obsidian-mcp-context = "obsidian_mcp_context.cli:main"
 obsidian-mcp-context-mcp = "obsidian_mcp_context.mcp_server:main"
 obsidian-mcp-context-web = "obsidian_mcp_context.web_ui:main"
 obsidian-mcp-context-ingest = "obsidian_mcp_context.ingest:main"
+obsidian-mcp-context-generate-vault = "obsidian_mcp_context.synthetic:main"
 
 [tool.setuptools.packages.find]
 where = ["."]

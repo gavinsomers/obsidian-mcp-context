@@ -3,6 +3,10 @@ type: meeting
 date: 2026-07-03
 project: "[[Project Atlas]]"
 company: "[[Northstar Labs]]"
+source_created_at: 2026-07-03T08:21:00
+source_observed_at: 2026-07-03T09:04:00
+created_at: 2026-07-03T09:54:00
+updated_at: 2026-07-03T16:54:00
 tags: [#meeting]
 ---
 # Atlas Compliance Triage

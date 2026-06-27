@@ -3,6 +3,10 @@ type: person
 company: "[[Internal]]"
 role: "Analytics Engineer"
 project: "[[Portfolio Operations]]"
+source_created_at: 2026-05-03T13:58:00
+source_observed_at: 2026-05-04T04:58:00
+created_at: 2026-05-04T19:58:00
+updated_at: 2026-06-19T21:58:00
 tags: [#stakeholder]
 ---
 # Alex Grant

@@ -1,6 +1,6 @@
 {
   "scenario": "consultancy_operator_knowledge_base_v2",
-  "description": "Expanded multi-company synthetic vault tracking state changes, superseded decisions, fluctuating risks, and cross-entity timelines across May-July 2026.",
+  "description": "Expanded multi-company synthetic vault tracking state changes, superseded decisions, fluctuating risks, cross-entity timelines, and virtual note lifecycle timestamps across May-July 2026.",
   "vault_statistics": {
     "target_counts": {
       "People": 16,
@@ -156,5 +156,15 @@
     "markdown tags",
     "plain text opt-in parsing",
     "stale date tracking"
+  ],
+  "lifecycle_timestamp_fields": {
+    "source_created_at": "When the underlying source artifact hypothetically came into existence.",
+    "source_observed_at": "When the source artifact was hypothetically seen by the operator.",
+    "created_at": "When the note was hypothetically added to the Obsidian vault.",
+    "updated_at": "When the vault note was hypothetically last edited."
+  },
+  "features": [
+    "virtual_lifecycle_timestamps",
+    "source_vs_vault_time_separation"
   ]
 }

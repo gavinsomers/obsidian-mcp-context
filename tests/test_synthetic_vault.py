@@ -1,5 +1,7 @@
-from pathlib import Path
+from datetime import datetime
 import json
+from pathlib import Path
+import re
 
 from obsidian_mcp_context.query import get_note_context, list_tasks, search_blocks
 from obsidian_mcp_context.vault import VaultConfig, build_context
@@ -7,6 +9,13 @@ from obsidian_mcp_context.warehouse import build_warehouse, entity_timeline, lis
 
 
 VAULT_PATH = Path("examples/synthetic-vault")
+LIFECYCLE_FIELDS = (
+    "source_created_at",
+    "source_observed_at",
+    "created_at",
+    "updated_at",
+)
+TIMESTAMP_RE = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$")
 
 
 def _manifest() -> dict[str, object]:
@@ -39,6 +48,31 @@ def test_expanded_synthetic_vault_has_expected_task_density():
         len(completed_tasks)
         >= manifest["vault_statistics"]["minimum_expected_completed_tasks"]
     )
+
+
+def test_synthetic_vault_has_lifecycle_timestamps_on_every_note():
+    markdown_files = list(VAULT_PATH.glob("*/*.md"))
+    assert markdown_files
+
+    for path in markdown_files:
+        frontmatter = path.read_text(encoding="utf-8").split("---", 2)[1]
+        metadata = {}
+        for line in frontmatter.splitlines():
+            if ":" not in line:
+                continue
+            key, value = line.split(":", 1)
+            metadata[key.strip()] = value.strip().strip("\"'")
+
+        for field in LIFECYCLE_FIELDS:
+            assert field in metadata, path
+            assert TIMESTAMP_RE.match(metadata[field]), (path, field)
+
+        source_created_at = datetime.fromisoformat(metadata["source_created_at"])
+        source_observed_at = datetime.fromisoformat(metadata["source_observed_at"])
+        created_at = datetime.fromisoformat(metadata["created_at"])
+        updated_at = datetime.fromisoformat(metadata["updated_at"])
+
+        assert source_created_at <= source_observed_at <= created_at <= updated_at
 
 
 def test_superseded_decision_scenario_is_represented_with_links():

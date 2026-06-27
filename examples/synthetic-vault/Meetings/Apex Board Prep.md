@@ -3,6 +3,10 @@ type: meeting
 date: 2026-07-14
 project: "[[Project Horizon]]"
 company: "[[Apex FinTech]]"
+source_created_at: 2026-07-14T14:59:00
+source_observed_at: 2026-07-14T16:27:00
+created_at: 2026-07-14T17:30:00
+updated_at: 2026-07-15T02:30:00
 tags: [#meeting]
 ---
 # Apex Board Prep

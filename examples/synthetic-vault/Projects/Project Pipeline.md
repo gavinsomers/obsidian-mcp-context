@@ -2,6 +2,10 @@
 type: project
 status: delayed
 company: "[[Acme Corp]]"
+source_created_at: 2026-05-22T10:31:00
+source_observed_at: 2026-05-22T13:31:00
+created_at: 2026-05-23T08:31:00
+updated_at: 2026-06-11T09:31:00
 tags: [#delivery]
 ---
 # Project Pipeline

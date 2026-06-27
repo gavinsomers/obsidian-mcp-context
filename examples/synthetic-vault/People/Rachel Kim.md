@@ -3,6 +3,10 @@ type: person
 company: "[[Vanguard Retail]]"
 role: "Chief Revenue Officer"
 project: "[[Project Meridian]]"
+source_created_at: 2026-05-15T10:27:00
+source_observed_at: 2026-05-16T06:27:00
+created_at: 2026-05-17T00:27:00
+updated_at: 2026-07-17T09:27:00
 tags: [#stakeholder]
 ---
 # Rachel Kim

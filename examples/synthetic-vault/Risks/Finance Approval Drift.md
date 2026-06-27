@@ -3,6 +3,10 @@ type: risk
 status: open
 severity: medium
 project: "[[Project Atlas]]"
+source_created_at: 2026-05-28T19:54:00
+source_observed_at: 2026-05-28T21:54:00
+created_at: 2026-05-29T10:54:00
+updated_at: 2026-06-27T12:54:00
 tags: [#risk]
 ---
 # Finance Approval Drift

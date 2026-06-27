@@ -21,6 +21,38 @@ def test_warehouse_builds_dimensional_model_from_synthetic_vault():
     assert summary["tables"]["mart_timeline"] >= summary["tables"]["fact_tasks"]
     assert {"entity_type": "person", "count": 16} in summary["entity_types"]
 
+    note = warehouse.connection.execute(
+        """
+        select
+            source_date,
+            source_created_at,
+            source_observed_at,
+            created_at,
+            updated_at
+        from dim_notes
+        where source_path = 'Meetings/Horizon Kickoff.md'
+        """
+    ).fetchone()
+    assert note == {
+        "source_date": "2026-06-01",
+        "source_created_at": "2026-06-01T11:13:00",
+        "source_observed_at": "2026-06-01T14:03:00",
+        "created_at": "2026-06-01T16:39:00",
+        "updated_at": "2026-06-01T17:39:00",
+    }
+
+    entity_note = warehouse.connection.execute(
+        """
+        select source_date, created_at
+        from dim_notes
+        where source_path = 'People/Morgan Lee.md'
+        """
+    ).fetchone()
+    assert entity_note == {
+        "source_date": None,
+        "created_at": "2026-05-13T11:35:00",
+    }
+
 
 def test_warehouse_lists_typed_entities_from_notes_and_links():
     context = build_context(VaultConfig(vault_path=Path("examples/synthetic-vault")))
