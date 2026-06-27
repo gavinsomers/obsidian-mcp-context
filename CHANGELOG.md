@@ -10,6 +10,12 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+### Added
+
+- Added virtual lifecycle timestamps to every synthetic vault note: `source_created_at`, `source_observed_at`, `created_at`, and `updated_at`.
+- Added lifecycle timestamp columns to `base_obsidian_files` and `dim_notes` so source time and vault capture time can be queried deterministically.
+- Added tests that enforce lifecycle timestamp coverage, ordering, and DuckDB ingest preservation.
+
 ## [0.4.0] - 2026-06-27
 
 ### Added

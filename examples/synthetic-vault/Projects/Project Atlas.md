@@ -2,6 +2,10 @@
 type: project
 status: active
 company: "[[Northstar Labs]]"
+source_created_at: 2026-05-05T15:20:00
+source_observed_at: 2026-05-05T22:20:00
+created_at: 2026-05-07T02:20:00
+updated_at: 2026-07-07T03:20:00
 tags: [#delivery]
 ---
 # Project Atlas

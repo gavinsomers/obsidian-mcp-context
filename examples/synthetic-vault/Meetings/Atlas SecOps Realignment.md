@@ -3,6 +3,10 @@ type: meeting
 date: 2026-07-02
 project: "[[Project Atlas]]"
 company: "[[Northstar Labs]]"
+source_created_at: 2026-07-02T13:09:00
+source_observed_at: 2026-07-02T14:58:00
+created_at: 2026-07-02T15:44:00
+updated_at: 2026-07-03T00:44:00
 tags: [#meeting]
 ---
 # Atlas SecOps Realignment

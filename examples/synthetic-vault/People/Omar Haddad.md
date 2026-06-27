@@ -3,6 +3,10 @@ type: person
 company: "[[Quantum Stream]]"
 role: "Founder"
 project: "[[Project Beacon]]"
+source_created_at: 2026-05-13T09:01:00
+source_observed_at: 2026-05-14T04:01:00
+created_at: 2026-05-14T11:01:00
+updated_at: 2026-06-09T20:01:00
 tags: [#stakeholder]
 ---
 # Omar Haddad

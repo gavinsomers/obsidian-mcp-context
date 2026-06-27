@@ -3,6 +3,10 @@ type: person
 company: "[[Apex FinTech]]"
 role: "Data Platform Lead"
 project: "[[Project Horizon]]"
+source_created_at: 2026-05-17T15:24:00
+source_observed_at: 2026-05-18T00:24:00
+created_at: 2026-05-19T07:24:00
+updated_at: 2026-06-14T07:24:00
 tags: [#stakeholder]
 ---
 # Tom Alvarez

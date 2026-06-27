@@ -4,6 +4,10 @@ status: superseded
 date: 2026-06-25
 project: "[[Project Atlas]]"
 company: "[[Northstar Labs]]"
+source_created_at: 2026-06-25T08:05:00
+source_observed_at: 2026-06-25T08:20:00
+created_at: 2026-06-25T11:51:00
+updated_at: 2026-06-27T18:51:00
 tags: [#decision]
 ---
 # Renewal Prep Scope

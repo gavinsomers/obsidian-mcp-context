@@ -1,6 +1,10 @@
 ---
 type: research
 project: "[[Project Beacon]]"
+source_created_at: 2026-05-13T20:35:00
+source_observed_at: 2026-05-14T02:35:00
+created_at: 2026-05-14T14:35:00
+updated_at: 2026-05-20T16:35:00
 tags: [#research]
 ---
 # Churn Recovery Interview Notes

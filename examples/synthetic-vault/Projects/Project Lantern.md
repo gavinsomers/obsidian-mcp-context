@@ -2,6 +2,10 @@
 type: project
 status: active
 company: "[[Helio Health]]"
+source_created_at: 2026-05-16T14:45:00
+source_observed_at: 2026-05-17T09:45:00
+created_at: 2026-05-17T11:45:00
+updated_at: 2026-05-31T17:45:00
 tags: [#delivery]
 ---
 # Project Lantern

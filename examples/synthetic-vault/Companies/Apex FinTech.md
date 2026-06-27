@@ -2,6 +2,10 @@
 type: company
 status: active
 segment: enterprise
+source_created_at: 2026-05-05T13:37:00
+source_observed_at: 2026-05-06T13:37:00
+created_at: 2026-05-07T08:37:00
+updated_at: 2026-06-02T09:37:00
 tags: [#account]
 ---
 # Apex FinTech

@@ -3,6 +3,10 @@ type: meeting
 date: 2026-05-15
 project: "[[Project Pipeline]]"
 company: "[[Acme Corp]]"
+source_created_at: 2026-05-15T09:29:00
+source_observed_at: 2026-05-15T12:39:00
+created_at: 2026-05-15T13:22:00
+updated_at: 2026-05-15T22:22:00
 tags: [#meeting]
 ---
 # Pipeline Alignment Actual

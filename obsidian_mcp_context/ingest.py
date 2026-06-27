@@ -7,7 +7,13 @@ from pathlib import Path
 import duckdb
 
 from obsidian_mcp_context.vault import VaultConfig, build_context
-from obsidian_mcp_context.warehouse import _note_title, _note_type, _slug, _source_date
+from obsidian_mcp_context.warehouse import (
+    _frontmatter_value,
+    _note_title,
+    _note_type,
+    _slug,
+    _source_date,
+)
 
 
 def _create_tables(connection: duckdb.DuckDBPyConnection) -> None:
@@ -19,7 +25,11 @@ def _create_tables(connection: duckdb.DuckDBPyConnection) -> None:
             absolute_path varchar,
             note_type varchar,
             title varchar,
-            source_date date
+            source_date date,
+            source_created_at timestamp,
+            source_observed_at timestamp,
+            created_at timestamp,
+            updated_at timestamp
         )
         """
     )
@@ -98,22 +108,26 @@ def ingest_vault(vault_path: Path, duckdb_path: Path) -> dict[str, int]:
     connection = duckdb.connect(str(duckdb_path))
     try:
         _create_tables(connection)
-        files = [
-            (
-                f"note:{_slug(source_file.source_path)}",
-                source_file.source_path,
-                str(source_file.absolute_path),
-                _note_type(source_file.source_path),
-                _note_title(source_file.source_path),
-                _source_date(
+        files = []
+        for source_file in context.files:
+            first_block_text = first_block_text_by_source.get(source_file.source_path)
+            files.append(
+                (
+                    f"note:{_slug(source_file.source_path)}",
                     source_file.source_path,
-                    first_block_text_by_source.get(source_file.source_path),
-                ),
+                    str(source_file.absolute_path),
+                    _note_type(source_file.source_path),
+                    _note_title(source_file.source_path),
+                    _source_date(source_file.source_path, first_block_text),
+                    _frontmatter_value(first_block_text, "source_created_at"),
+                    _frontmatter_value(first_block_text, "source_observed_at"),
+                    _frontmatter_value(first_block_text, "created_at"),
+                    _frontmatter_value(first_block_text, "updated_at"),
+                )
             )
-            for source_file in context.files
-        ]
         connection.executemany(
-            "insert into base_obsidian_files values (?, ?, ?, ?, ?, ?)", files
+            "insert into base_obsidian_files values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            files,
         )
         connection.executemany(
             "insert into base_obsidian_blocks values (?, ?, ?, ?, ?, ?, ?, ?, ?)",
