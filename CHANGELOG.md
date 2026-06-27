@@ -29,6 +29,7 @@ The project uses semantic-ish versions:
 - Docker simulation helper containers now run as the Airflow user to avoid shared-volume permission errors.
 - The web UI now defaults to `summary counts`, suggests valid entities for unknown timeline queries, and groups requested entity types such as `people companies projects`.
 - README Docker instructions now document detached mode, local service URLs, simulation reset, and the difference between browser UIs and MCP endpoints.
+- Docker simulation startup now repairs named-volume ownership and prevents nginx from seeding the live vault with its default `index.html`.
 
 ## [0.4.0] - 2026-06-27
 
