@@ -6,6 +6,13 @@ from pathlib import Path
 
 from obsidian_mcp_context.query import list_notes, list_tasks, search_blocks
 from obsidian_mcp_context.vault import VaultConfig, build_context
+from obsidian_mcp_context.warehouse import (
+    agent_context,
+    build_warehouse,
+    entity_timeline,
+    list_entities,
+    warehouse_summary,
+)
 
 
 def _print_json(value: object) -> None:
@@ -35,6 +42,30 @@ def build_parser() -> argparse.ArgumentParser:
     tasks.add_argument("--text")
     tasks.add_argument("--source-path")
     tasks.add_argument("--limit", type=int, default=50)
+
+    warehouse = subparsers.add_parser(
+        "warehouse-summary", help="Summarize deterministic warehouse tables."
+    )
+
+    entities = subparsers.add_parser("entities", help="List modeled entities.")
+    entities.add_argument("--entity-type")
+    entities.add_argument("--text")
+    entities.add_argument("--limit", type=int, default=100)
+
+    timeline = subparsers.add_parser(
+        "timeline", help="Show deterministic timeline rows for an entity."
+    )
+    timeline.add_argument("--entity", required=True)
+    timeline.add_argument("--text")
+    timeline.add_argument("--limit", type=int, default=50)
+
+    agent = subparsers.add_parser(
+        "agent-context", help="Query curated warehouse context rows."
+    )
+    agent.add_argument("--text")
+    agent.add_argument("--entity")
+    agent.add_argument("--event-type")
+    agent.add_argument("--limit", type=int, default=25)
 
     return parser
 
@@ -72,6 +103,48 @@ def main(argv: list[str] | None = None) -> int:
                 checked=checked,
                 text=args.text,
                 source_path=args.source_path,
+                limit=args.limit,
+            )
+        )
+        return 0
+
+    if args.command == "warehouse-summary":
+        warehouse = build_warehouse(context)
+        _print_json(warehouse_summary(warehouse))
+        return 0
+
+    if args.command == "entities":
+        warehouse = build_warehouse(context)
+        _print_json(
+            list_entities(
+                warehouse,
+                entity_type=args.entity_type,
+                text=args.text,
+                limit=args.limit,
+            )
+        )
+        return 0
+
+    if args.command == "timeline":
+        warehouse = build_warehouse(context)
+        _print_json(
+            entity_timeline(
+                warehouse,
+                entity=args.entity,
+                text=args.text,
+                limit=args.limit,
+            )
+        )
+        return 0
+
+    if args.command == "agent-context":
+        warehouse = build_warehouse(context)
+        _print_json(
+            agent_context(
+                warehouse,
+                text=args.text,
+                entity=args.entity,
+                event_type=args.event_type,
                 limit=args.limit,
             )
         )
