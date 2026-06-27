@@ -1,18 +1,20 @@
 ---
 type: risk
-status: open
-severity: medium
+status: closed
+severity: high
+project: "[[Project Atlas]]"
+tags: [#risk]
 ---
 # Pilot Handoff Ownership
 
-The main risk for [[Project Atlas]] is unclear ownership after the pilot handoff at [[Northstar Labs]].
+## Current State
+Status: **closed**. Severity: **high**. Related to [[Project Atlas]] at [[Northstar Labs]]. Support ownership unclear until explicit handover meeting on 2026-07-10.
 
-## Evidence
+## Owner
+- Owner: [[Morgan Lee]]
+- [ ] Confirm mitigation evidence for [[Project Atlas]] #risk #follow-up
 
-[[Morgan Lee]] raised the issue during [[Atlas Renewal Review]].
-
-## Mitigation
-
-- [ ] Name a post-pilot support owner before the renewal checklist is finalized #risk
-
-#risk
+## Timeline
+- 2026-06-26: Medium severity noted in [[Daily/2026-06-26]].
+- 2026-07-01: Escalated to High after [[Elena Rostova]] blocked handoff progression.
+- 2026-07-10: Closed after [[Atlas Handover Closeout]] confirmed [[Noah Patel]] as owner.

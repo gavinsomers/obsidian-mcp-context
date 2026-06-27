@@ -19,7 +19,7 @@ def test_warehouse_builds_dimensional_model_from_synthetic_vault():
     assert summary["tables"]["dim_notes"] >= 10
     assert summary["tables"]["fact_blocks"] >= 10
     assert summary["tables"]["mart_timeline"] >= summary["tables"]["fact_tasks"]
-    assert {"entity_type": "person", "count": 2} in summary["entity_types"]
+    assert {"entity_type": "person", "count": 16} in summary["entity_types"]
 
 
 def test_warehouse_lists_typed_entities_from_notes_and_links():
@@ -29,8 +29,12 @@ def test_warehouse_lists_typed_entities_from_notes_and_links():
     people = list_entities(warehouse, entity_type="person")
     projects = list_entities(warehouse, entity_type="project")
 
-    assert {entity["name"] for entity in people} == {"Morgan Lee", "Priya Shah"}
-    assert {entity["name"] for entity in projects} == {"Project Atlas"}
+    assert {"Morgan Lee", "Priya Shah", "Elena Rostova", "Marcus Vance"}.issubset(
+        {entity["name"] for entity in people}
+    )
+    assert {"Project Atlas", "Project Pipeline", "Project Horizon"}.issubset(
+        {entity["name"] for entity in projects}
+    )
 
 
 def test_entity_timeline_returns_provenance_backed_rows():

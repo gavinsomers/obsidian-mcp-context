@@ -1,21 +1,25 @@
 ---
 type: decision
+status: superseded
 date: 2026-06-25
-project: Project Atlas
+project: "[[Project Atlas]]"
+company: "[[Northstar Labs]]"
+tags: [#decision]
 ---
 # Renewal Prep Scope
 
 ## Decision
+Base renewal scope excludes security hardening; superseded by Revised Security Addendum Scope. #superseded
 
-Limit [[Project Atlas]] renewal prep to weekly account reviews, renewal readiness notes, and the pilot handoff checklist.
+## Context
+This decision applies to [[Project Atlas]] for [[Northstar Labs]].
 
-## Rationale
+## Core Parameters
+- Focus on data transformation throughput validations managed by [[Morgan Lee]].
+- Exclude infrastructure hardening reviews from immediate scope to expedite commercial execution before end of Q2.
 
-The team wants a focused scope that [[Morgan Lee]] can operationalize without waiting on a broader analytics rollout.
+## Supersession
+**Superseded By:** [[Revised Security Addendum Scope]] after [[Atlas SecOps Realignment]] and concerns from [[Elena Rostova]]. #superseded
 
-## Consequences
-
-- [[Priya Shah]] can review a narrower cost summary.
-- [[Northstar Labs]] still needs an owner for post-pilot support.
-
-#decision
+## Action
+- [ ] Review whether [[Renewal Prep Scope]] changes current open loops for [[Project Atlas]] #follow-up

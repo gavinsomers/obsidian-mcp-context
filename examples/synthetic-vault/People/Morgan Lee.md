@@ -1,15 +1,16 @@
+---
+type: person
+company: "[[Northstar Labs]]"
+role: "Customer Operations Lead"
+project: "[[Project Atlas]]"
+tags: [#stakeholder]
+---
 # Morgan Lee
 
-Morgan Lee is a synthetic customer operations lead at [[Northstar Labs]].
+## Role
+Morgan Lee is the Customer Operations Lead for [[Northstar Labs]] and is connected to [[Project Atlas]]. Owns renewal operations, enablement rollout, and handoff acceptance criteria.
 
-## Current Work
-
-Morgan is the day-to-day stakeholder for [[Project Atlas]] and owns the weekly account review ritual.
-
-## Preferences
-
-Morgan prefers concise written updates before review calls.
-
-## Follow-up
-
-- [ ] Send Morgan the revised pilot checklist for [[Atlas Renewal Review]] #follow-up
+## Current Context
+- Primary project: [[Project Atlas]]
+- Company: [[Northstar Labs]]
+- [ ] Confirm next stakeholder update for [[Project Atlas]] with [[Sarah Jenkins]] #follow-up

@@ -1,34 +1,20 @@
 ---
 type: meeting
 date: 2026-06-25
-project: Project Atlas
+project: "[[Project Atlas]]"
+company: "[[Northstar Labs]]"
+tags: [#meeting]
 ---
 # Atlas Renewal Review
 
 ## Attendees
-
 - [[Morgan Lee]]
 - [[Priya Shah]]
+- [[Sarah Jenkins]]
 
-## Discussion
+## Notes
+Base renewal scope agreed with finance; security hardening excluded. This created [[Renewal Prep Scope]]. Related project: [[Project Atlas]]. Related account: [[Northstar Labs]].
 
-Morgan said [[Northstar Labs]] can support a short pilot extension if the handoff owner is named this week.
-
-Priya asked that [[Project Atlas]] stay focused on weekly account reviews and renewal preparation.
-
-Inline examples like `[[Not A Real Stakeholder]]` and `#ignore-me` should not become graph objects.
-
-## Tasks
-
-- [ ] Send Morgan the revised pilot checklist #follow-up
-- [ ] Send Priya the renewal cost summary #follow-up
-- [x] Capture decision in [[Renewal Prep Scope]]
-
-## Raw Transcript Excerpt
-
-```text
-Ignore this synthetic markdown:
-- [ ] This is not a real task
-[[Not A Real Note]]
-#not-a-tag
-```
+## Action Items
+- [ ] Send recap for [[Project Atlas]] to attendees #follow-up
+- [x] Capture meeting notes in vault

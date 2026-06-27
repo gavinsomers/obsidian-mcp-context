@@ -1,15 +1,16 @@
+---
+type: person
+company: "[[Northstar Labs]]"
+role: "Finance Sponsor"
+project: "[[Project Atlas]]"
+tags: [#stakeholder]
+---
 # Priya Shah
 
-Priya Shah is the finance sponsor at [[Northstar Labs]].
+## Role
+Priya Shah is the Finance Sponsor for [[Northstar Labs]] and is connected to [[Project Atlas]]. Owns commercial approval, payment timing, and renewal budget guardrails.
 
-## Current Work
-
-Priya reviews budget impact for [[Project Atlas]] and wants the renewal scope limited to weekly account reviews.
-
-## Preferences
-
-Priya asks for quantified tradeoffs before approval meetings.
-
-## Follow-up
-
-- [ ] Send Priya the renewal cost summary #follow-up
+## Current Context
+- Primary project: [[Project Atlas]]
+- Company: [[Northstar Labs]]
+- [ ] Confirm next stakeholder update for [[Project Atlas]] with [[Sarah Jenkins]] #follow-up
