@@ -683,8 +683,12 @@ def generate_synthetic_vault(
     if output.exists():
         if not force:
             raise FileExistsError(f"{output} already exists; pass force=True to replace it")
-        shutil.rmtree(output)
-    output.mkdir(parents=True)
+        for child in output.iterdir():
+            if child.is_dir():
+                shutil.rmtree(child)
+            else:
+                child.unlink()
+    output.mkdir(parents=True, exist_ok=True)
 
     rng = random.Random(seed)
     companies, people, projects = _build_world(rng, start_date, spec)

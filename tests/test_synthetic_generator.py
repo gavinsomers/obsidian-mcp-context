@@ -73,3 +73,16 @@ def test_generated_vault_ingests_into_duckdb_landing_tables(tmp_path: Path):
     assert counts["base_obsidian_files"] == manifest["counts"]["Total_Files"]
     assert counts["base_obsidian_tasks"] >= 190
     assert counts["base_obsidian_links"] >= 600
+
+
+def test_generate_force_preserves_output_directory(tmp_path: Path):
+    vault_path = tmp_path / "generated-vault"
+    vault_path.mkdir()
+    sentinel = vault_path / "old.txt"
+    sentinel.write_text("old", encoding="utf-8")
+
+    generate_synthetic_vault(vault_path, profile="small", seed=42, force=True)
+
+    assert vault_path.exists()
+    assert not sentinel.exists()
+    assert (vault_path / "manifest.json").exists()

@@ -92,3 +92,138 @@ services:
     volumes:
       - ./examples/synthetic-vault:/vault:ro
       - ./var:/warehouse
+
+  seed-vault:
+    build:
+      context: .
+    profiles:
+      - simulation
+    command:
+      - obsidian-mcp-context-generate-vault
+      - --profile
+      - ${SIM_PROFILE:-medium}
+      - --seed
+      - ${SIM_SEED:-42}
+      - --output
+      - /seed-vault
+      - --force
+    volumes:
+      - seed-vault:/seed-vault
+
+  vault-simulator:
+    build:
+      context: .
+    profiles:
+      - simulation
+    command:
+      - obsidian-mcp-context-simulate-vault
+      - advance
+      - --seed-vault
+      - /seed-vault
+      - --live-vault
+      - /live-vault
+      - --state
+      - /warehouse/simulation-state.json
+      - --days
+      - ${SIM_VIRTUAL_DAYS_PER_RUN:-12}
+    volumes:
+      - seed-vault:/seed-vault:ro
+      - live-vault:/live-vault
+      - simulation-warehouse:/warehouse
+    depends_on:
+      seed-vault:
+        condition: service_completed_successfully
+
+  airflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    profiles:
+      - simulation
+    command:
+      - bash
+      - -c
+      - >
+        set -e;
+        airflow db migrate;
+        airflow users create
+        --username admin
+        --password admin
+        --firstname Gavin
+        --lastname Somers
+        --role Admin
+        --email admin@example.com || true;
+        airflow scheduler &
+        exec airflow webserver
+    environment:
+      AIRFLOW_HOME: /opt/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__CORE__DAGS_FOLDER: /app/airflow/dags
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "False"
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////warehouse/airflow.db
+      DUCKDB_PATH: /warehouse/obsidian.duckdb
+      SIM_SEED_VAULT: /seed-vault
+      SIM_LIVE_VAULT: /live-vault
+      SIM_STATE_PATH: /warehouse/simulation-state.json
+      SIM_PROFILE: ${SIM_PROFILE:-medium}
+      SIM_SEED: ${SIM_SEED:-42}
+      SIM_VIRTUAL_DAYS_PER_RUN: ${SIM_VIRTUAL_DAYS_PER_RUN:-12}
+    volumes:
+      - seed-vault:/seed-vault
+      - live-vault:/live-vault
+      - simulation-warehouse:/warehouse
+    ports:
+      - "8082:8080"
+
+  live-vault:
+    image: nginx:1.27-alpine
+    profiles:
+      - simulation
+    volumes:
+      - live-vault:/usr/share/nginx/html:ro
+    ports:
+      - "8083:80"
+
+  live-web:
+    build:
+      context: .
+    profiles:
+      - simulation
+    command:
+      - obsidian-mcp-context-web
+      - --vault
+      - /live-vault
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+    volumes:
+      - live-vault:/live-vault:ro
+      - simulation-warehouse:/warehouse
+    ports:
+      - "8084:8080"
+
+  live-mcp:
+    build:
+      context: .
+    profiles:
+      - simulation
+    command:
+      - obsidian-mcp-context-mcp
+      - --transport
+      - streamable-http
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+    volumes:
+      - live-vault:/live-vault:ro
+      - simulation-warehouse:/warehouse
+    ports:
+      - "8001:8000"
+
+volumes:
+  seed-vault:
+  live-vault:
+  simulation-warehouse:

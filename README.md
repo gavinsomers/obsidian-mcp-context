@@ -128,6 +128,67 @@ Use the generated vault with the same pipeline commands:
   --duckdb var/generated.duckdb
 ```
 
+## Simulate A Living Vault With Airflow
+
+The simulation profile models a generated vault being populated over time. The
+full seed vault is generated once, then a live vault receives only notes whose
+virtual `created_at` date has arrived.
+
+By default, Airflow runs the DAG once per minute. Each run advances the virtual
+clock by 12 days, which is equivalent to 1 virtual day every 5 seconds:
+
+```text
+60 seconds per Airflow run / 5 seconds per virtual day = 12 virtual days
+```
+
+Start the simulation stack:
+
+```bash
+docker compose --profile simulation up --build
+```
+
+Services:
+
+| Service | URL |
+| --- | --- |
+| Airflow | `http://localhost:8082` |
+| Live vault file browser | `http://localhost:8083` |
+| Live vault web UI | `http://localhost:8084` |
+| Live vault MCP HTTP endpoint | `http://localhost:8001/mcp` |
+
+Airflow credentials are `admin` / `admin` for the local simulation container.
+
+The Airflow DAG is `simulated_daily_obsidian_pipeline` and runs:
+
+```text
+ensure seed vault
+  -> advance virtual days into /live-vault
+  -> ingest /live-vault into DuckDB
+  -> dbt run
+  -> dbt test
+```
+
+Useful simulation environment variables:
+
+```bash
+SIM_PROFILE=small                  # small, medium, large
+SIM_SEED=42                        # deterministic generated world
+SIM_VIRTUAL_DAYS_PER_RUN=12        # 12 days/minute = 5 seconds/day
+```
+
+Run one manual advance without Airflow:
+
+```bash
+docker compose --profile simulation run --rm seed-vault
+docker compose --profile simulation run --rm vault-simulator
+```
+
+Reset Docker simulation state:
+
+```bash
+docker compose --profile simulation down -v
+```
+
 ## Docker Compose
 
 Build and run the local stack:
