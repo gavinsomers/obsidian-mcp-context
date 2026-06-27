@@ -1,3 +1,5 @@
+{{ config(unique_key='block_id') }}
+
 select
   blocks.block_id,
   notes.note_id,

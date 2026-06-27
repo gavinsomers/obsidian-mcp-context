@@ -1,3 +1,5 @@
+{{ config(unique_key='entity_id') }}
+
 select
   entity_id,
   entity_type,

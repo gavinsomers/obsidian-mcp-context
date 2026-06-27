@@ -1,3 +1,5 @@
+{{ config(unique_key='timeline_id') }}
+
 with block_rows as (
   select
     'block:' || blocks.block_id as timeline_id,
