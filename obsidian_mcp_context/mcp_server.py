@@ -258,11 +258,26 @@ def build_parser() -> argparse.ArgumentParser:
         default="stdio",
         help="MCP transport. Defaults to stdio for local clients.",
     )
+    parser.add_argument(
+        "--host",
+        default=None,
+        help="Host for HTTP transports. Defaults to the MCP library default.",
+    )
+    parser.add_argument(
+        "--port",
+        type=int,
+        default=None,
+        help="Port for HTTP transports. Defaults to the MCP library default.",
+    )
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+    if args.host is not None:
+        mcp.settings.host = args.host
+    if args.port is not None:
+        mcp.settings.port = args.port
     mcp.run(transport=args.transport)
     return 0
