@@ -17,6 +17,9 @@ The project uses semantic-ish versions:
 - Added tests that enforce lifecycle timestamp coverage, ordering, and DuckDB ingest preservation.
 - Added `obsidian-mcp-context-generate-vault` and `scripts/generate_synthetic_vault.py` for deterministic small, medium, and large synthetic vault generation.
 - Added generated-vault tests for graph coherence, lifecycle timestamp realism, task density, and DuckDB ingest compatibility.
+- Added `obsidian-mcp-context-simulate-vault` to incrementally populate a live vault from generated note `created_at` timestamps.
+- Added an Airflow simulation DAG that advances virtual time once per minute and runs ingest, dbt run, and dbt test against the live vault.
+- Added Docker Compose simulation services for seed generation, live vault browsing, Airflow, live web UI, and live MCP.
 
 ### Changed
 
