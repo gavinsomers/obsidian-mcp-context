@@ -93,3 +93,39 @@ def test_agent_context_can_filter_open_tasks_by_entity():
 
     assert rows
     assert all(row["event_type"] == "task_open" for row in rows)
+
+
+def test_entity_filters_match_exact_related_entity_names(tmp_path: Path):
+    vault = tmp_path / "vault"
+    (vault / "Projects").mkdir(parents=True)
+    (vault / "Daily").mkdir()
+    (vault / "Projects" / "Project Atlas 1.md").write_text(
+        "# Project Atlas 1\n", encoding="utf-8"
+    )
+    (vault / "Projects" / "Project Atlas 16.md").write_text(
+        "# Project Atlas 16\n", encoding="utf-8"
+    )
+    (vault / "Daily" / "2025-01-01.md").write_text(
+        "\n".join(
+            [
+                "# 2025-01-01",
+                "## Atlas 1",
+                "Checked [[Project Atlas 1]] today.",
+                "",
+                "## Atlas 16",
+                "Checked [[Project Atlas 16]] today.",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    context = build_context(VaultConfig(vault_path=vault))
+    warehouse = build_warehouse(context)
+
+    timeline_rows = entity_timeline(warehouse, entity="Project Atlas 1", limit=100)
+    context_rows = agent_context(warehouse, entity="Project Atlas 1", limit=100)
+
+    assert timeline_rows
+    assert context_rows
+    assert all("Project Atlas 16" not in row["summary"] for row in timeline_rows)
+    assert all("Project Atlas 16" not in row["summary"] for row in context_rows)

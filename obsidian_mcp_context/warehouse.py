@@ -555,6 +555,16 @@ def list_entities(
     ).fetchall()
 
 
+def _related_entity_member_sql(alias: str = "m") -> str:
+    return f"""
+    (
+        ',' || lower(replace({alias}.related_entities, ', ', ',')) || ','
+    ) like (
+        '%,' || lower(?) || ',%'
+    )
+    """
+
+
 def entity_timeline(
     warehouse: Warehouse,
     entity: str,
@@ -562,9 +572,9 @@ def entity_timeline(
     limit: int = 50,
 ) -> list[dict[str, object]]:
     filters = [
-        """
+        f"""
         (
-            lower(m.related_entities) like lower(?)
+            {_related_entity_member_sql("m")}
             or lower(n.title) = lower(?)
             or exists (
                 select 1
@@ -576,7 +586,7 @@ def entity_timeline(
         )
         """
     ]
-    params: list[object] = [f"%{entity}%", entity, entity]
+    params: list[object] = [entity, entity, entity]
     if text:
         filters.append("lower(m.summary) like lower(?)")
         params.append(f"%{text}%")
@@ -609,9 +619,9 @@ def agent_context(
         params.append(f"%{text}%")
     if entity:
         filters.append(
-            """
+            f"""
             (
-                lower(m.related_entities) like lower(?)
+                {_related_entity_member_sql("m")}
                 or exists (
                     select 1
                     from fact_links l
@@ -622,7 +632,7 @@ def agent_context(
             )
             """
         )
-        params.extend([f"%{entity}%", entity])
+        params.extend([entity, entity])
     if event_type:
         filters.append("m.event_type = ?")
         params.append(event_type)
