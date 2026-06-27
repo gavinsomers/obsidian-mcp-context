@@ -250,7 +250,9 @@ examples/synthetic-vault
   -> dbt run
   -> stg_obsidian_* staging views
   -> int_obsidian_* intermediate models
-  -> dim_notes, dim_entities, fact_blocks, fact_tasks, fact_links, fact_tags, mart_timeline marts
+  -> dim_notes, dim_entities, dim_people, dim_companies, dim_projects
+  -> fact_blocks, fact_tasks, fact_links, fact_tags, fact_mentions, fact_decisions, fact_risks
+  -> mart_timeline, mart_open_loops, mart_person_context, mart_project_context
   -> dbt test
 ```
 
@@ -261,6 +263,16 @@ dbt materializations:
 | `stg_obsidian_*` | views |
 | `int_obsidian_*` | views |
 | `dim_*`, `fact_*`, `mart_*` | incremental tables using DuckDB `merge` |
+
+The public demo intentionally stays Obsidian-only. It does not add source
+routing or specialist parsers until additional source families such as WhatsApp,
+calendar OCR, Gmail, or CRM exports are introduced. Instead, dbt derives richer
+Obsidian marts from deterministic note types, links, tasks, tags, and timeline
+rows:
+
+- `dim_people`, `dim_companies`, `dim_projects`
+- `fact_mentions`, `fact_decisions`, `fact_risks`
+- `mart_open_loops`, `mart_person_context`, `mart_project_context`
 
 Run only ingest:
 
