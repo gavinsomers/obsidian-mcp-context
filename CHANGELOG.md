@@ -18,6 +18,7 @@ The project uses semantic-ish versions:
 ### Changed
 
 - The web UI and warehouse-oriented MCP tools now prefer the persisted dbt DuckDB marts when available, falling back to the in-memory vault warehouse otherwise.
+- Docker and Airflow now publish a stable read-only DuckDB snapshot after successful dbt tests so web and MCP readers do not query the live writer database during pipeline runs.
 
 ## [0.5.0] - 2026-06-27
 

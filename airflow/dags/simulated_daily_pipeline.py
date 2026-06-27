@@ -11,6 +11,9 @@ SEED_VAULT = os.environ.get("SIM_SEED_VAULT", "/seed-vault")
 LIVE_VAULT = os.environ.get("SIM_LIVE_VAULT", "/live-vault")
 STATE_PATH = os.environ.get("SIM_STATE_PATH", "/warehouse/simulation-state.json")
 DUCKDB_PATH = os.environ.get("DUCKDB_PATH", "/warehouse/obsidian.duckdb")
+READ_DUCKDB_PATH = os.environ.get(
+    "READ_DUCKDB_PATH", "/warehouse/obsidian-read.duckdb"
+)
 PROFILE = os.environ.get("SIM_PROFILE", "medium")
 SEED = os.environ.get("SIM_SEED", "42")
 VIRTUAL_DAYS_PER_RUN = os.environ.get("SIM_VIRTUAL_DAYS_PER_RUN", "12")
@@ -67,4 +70,23 @@ with DAG(
         cwd="/app",
     )
 
-    ensure_seed_vault >> advance_virtual_days >> ingest_live_vault >> dbt_run >> dbt_test
+    publish_read_snapshot = BashOperator(
+        task_id="publish_read_snapshot",
+        bash_command=(
+            "set -e; "
+            f"tmp_path={READ_DUCKDB_PATH}.tmp; "
+            f"rm -f $tmp_path; "
+            f"cp {DUCKDB_PATH} $tmp_path; "
+            "chmod g+rw $tmp_path; "
+            f"mv $tmp_path {READ_DUCKDB_PATH}"
+        ),
+    )
+
+    (
+        ensure_seed_vault
+        >> advance_virtual_days
+        >> ingest_live_vault
+        >> dbt_run
+        >> dbt_test
+        >> publish_read_snapshot
+    )
