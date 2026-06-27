@@ -18,6 +18,11 @@ def test_mcp_server_exposes_generic_obsidian_tools():
     assert "list_vault_entities" in tools
     assert "get_vault_entity_timeline" in tools
     assert "search_vault_agent_context" in tools
+    assert "get_vault_project_context" in tools
+    assert "get_vault_person_context" in tools
+    assert "list_vault_open_loops" in tools
+    assert "list_vault_decisions" in tools
+    assert "list_vault_risks" in tools
 
 
 def test_mcp_parser_accepts_http_host_and_port():

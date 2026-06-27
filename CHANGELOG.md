@@ -10,6 +10,15 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+### Added
+
+- Added a DuckDB/dbt warehouse query adapter for the web UI and MCP tools.
+- Added MCP tools for dbt mart-backed project context, person context, open loops, decisions, and risks.
+
+### Changed
+
+- The web UI and warehouse-oriented MCP tools now prefer the persisted dbt DuckDB marts when available, falling back to the in-memory vault warehouse otherwise.
+
 ## [0.5.0] - 2026-06-27
 
 ### Added
