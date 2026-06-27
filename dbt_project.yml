@@ -1,0 +1,18 @@
+name: obsidian_mcp_context
+version: "0.3.0"
+config-version: 2
+
+profile: obsidian_mcp_context
+
+model-paths: ["models"]
+test-paths: ["dbt_tests"]
+
+models:
+  obsidian_mcp_context:
+    +materialized: table
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

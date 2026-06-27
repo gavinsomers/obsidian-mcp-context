@@ -1,0 +1,7 @@
+obsidian_mcp_context:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: "{{ env_var('DUCKDB_PATH', 'var/obsidian.duckdb') }}"
+      threads: 1

@@ -19,6 +19,7 @@ services:
       - "8080"
     volumes:
       - ./examples/synthetic-vault:/vault:ro
+      - ./var:/warehouse
     ports:
       - "8080:8080"
     depends_on:
@@ -37,20 +38,57 @@ services:
       - "8000"
     volumes:
       - ./examples/synthetic-vault:/vault:ro
+      - ./var:/warehouse
     ports:
       - "8000:8000"
+
+  ingest:
+    build:
+      context: .
+    profiles:
+      - pipeline
+    command:
+      - obsidian-mcp-context-ingest
+      - --vault
+      - /vault
+      - --duckdb
+      - /warehouse/obsidian.duckdb
+    volumes:
+      - ./examples/synthetic-vault:/vault:ro
+      - ./var:/warehouse
+
+  dbt:
+    build:
+      context: .
+    profiles:
+      - pipeline
+    environment:
+      DUCKDB_PATH: /warehouse/obsidian.duckdb
+    command:
+      - sh
+      - -c
+      - dbt run --profiles-dir dbt && dbt test --profiles-dir dbt
+    volumes:
+      - ./var:/warehouse
 
   pipeline:
     build:
       context: .
     profiles:
       - check
+      - pipeline
+    environment:
+      DUCKDB_PATH: /warehouse/obsidian.duckdb
     command:
       - sh
       - -c
       - >
+        obsidian-mcp-context-ingest --vault /vault --duckdb /warehouse/obsidian.duckdb &&
+        dbt run --profiles-dir dbt &&
+        dbt test --profiles-dir dbt &&
         python -m pytest &&
         python -m compileall obsidian_mcp_context &&
         obsidian-mcp-context --vault /vault warehouse-summary
     volumes:
       - ./examples/synthetic-vault:/vault:ro
+      - ./var:/warehouse

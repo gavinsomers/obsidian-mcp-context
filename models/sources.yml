@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: obsidian
+    schema: main
+    tables:
+      - name: base_obsidian_files
+      - name: base_obsidian_blocks
+      - name: base_obsidian_tasks
+      - name: base_obsidian_links
+      - name: base_obsidian_tags
+      - name: base_obsidian_lines

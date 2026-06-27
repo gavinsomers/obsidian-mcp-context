@@ -9,8 +9,11 @@ COPY pyproject.toml README.md CHANGELOG.md RELEASING.md ./
 COPY obsidian_mcp_context ./obsidian_mcp_context
 COPY tests ./tests
 COPY examples ./examples
+COPY dbt ./dbt
+COPY models ./models
+COPY dbt_project.yml ./
 
 RUN python -m pip install --no-cache-dir --upgrade pip \
-    && python -m pip install --no-cache-dir -e ".[dev]"
+    && python -m pip install --no-cache-dir -e ".[dev,pipeline]"
 
 CMD ["obsidian-mcp-context-web", "--vault", "/vault", "--host", "0.0.0.0", "--port", "8080"]

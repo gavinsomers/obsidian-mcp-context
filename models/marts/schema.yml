@@ -1,0 +1,93 @@
+version: 2
+
+models:
+  - name: dim_notes
+    columns:
+      - name: note_id
+        tests:
+          - not_null
+          - unique
+      - name: source_path
+        tests:
+          - not_null
+          - unique
+      - name: note_type
+        tests:
+          - not_null
+
+  - name: dim_entities
+    columns:
+      - name: entity_id
+        tests:
+          - not_null
+          - unique
+      - name: entity_type
+        tests:
+          - not_null
+      - name: name
+        tests:
+          - not_null
+
+  - name: fact_blocks
+    columns:
+      - name: block_id
+        tests:
+          - not_null
+          - unique
+      - name: note_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_notes')
+                field: note_id
+
+  - name: fact_tasks
+    columns:
+      - name: task_id
+        tests:
+          - not_null
+          - unique
+      - name: note_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_notes')
+                field: note_id
+      - name: block_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fact_blocks')
+                field: block_id
+
+  - name: mart_timeline
+    columns:
+      - name: timeline_id
+        tests:
+          - not_null
+          - unique
+      - name: event_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['block', 'task_open', 'task_done']
+      - name: note_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_notes')
+                field: note_id
+      - name: source_path
+        tests:
+          - not_null
+      - name: start_line
+        tests:
+          - not_null
+      - name: summary
+        tests:
+          - not_null

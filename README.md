@@ -91,27 +91,64 @@ Services:
 - Synthetic vault file browser: `http://localhost:8081`
 - MCP streamable HTTP endpoint: `http://localhost:8000/mcp`
 
-The Compose stack mounts `examples/synthetic-vault` read-only at `/vault` in the
-Python services. The web UI and MCP server both build the deterministic
-warehouse from that mounted vault.
-
-Run the pipeline checks in Docker:
-
-```bash
-docker compose --profile check run --rm pipeline
-```
-
-That runs:
-
-```bash
-python -m pytest
-python -m compileall obsidian_mcp_context
-obsidian-mcp-context --vault /vault warehouse-summary
-```
+The Compose stack mounts `examples/synthetic-vault` read-only at `/vault` and
+uses `var/obsidian.duckdb` for the dbt-backed DuckDB warehouse.
 
 The `vault` service is an nginx file browser for the synthetic vault contents.
 It is not the Obsidian desktop app; the vault remains plain Markdown files so it
 can be mounted into containers and opened locally in Obsidian if needed.
+
+## DuckDB And dbt Pipeline
+
+The Docker pipeline can materialize parsed vault context into DuckDB staging
+tables and then run dbt models for deterministic dimensions, facts, and marts.
+
+The flow is:
+
+```text
+examples/synthetic-vault
+  -> obsidian-mcp-context-ingest
+  -> DuckDB base_obsidian_* landing tables
+  -> dbt run
+  -> stg_obsidian_* staging views
+  -> int_obsidian_* intermediate models
+  -> dim_notes, dim_entities, fact_blocks, fact_tasks, fact_links, fact_tags, mart_timeline marts
+  -> dbt test
+```
+
+Run only ingest:
+
+```bash
+docker compose --profile pipeline run --rm ingest
+```
+
+Run dbt against the ingested DuckDB file:
+
+```bash
+docker compose --profile pipeline run --rm dbt
+```
+
+Run the full pipeline and checks:
+
+```bash
+docker compose --profile pipeline run --rm pipeline
+```
+
+That runs ingest, `dbt run`, `dbt test`, pytest, compile checks, and a warehouse
+summary smoke test.
+
+The DuckDB file is written to `var/obsidian.duckdb`, which is ignored by git.
+
+Local equivalents:
+
+```bash
+.venv/bin/obsidian-mcp-context-ingest \
+  --vault examples/synthetic-vault \
+  --duckdb var/obsidian.duckdb
+
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt run --profiles-dir dbt
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt test --profiles-dir dbt
+```
 
 ## Use Your Own Obsidian Vault
 
