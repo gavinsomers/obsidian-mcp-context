@@ -10,6 +10,8 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-06-27
+
 ### Added
 
 - Added virtual lifecycle timestamps to every synthetic vault note: `source_created_at`, `source_observed_at`, `created_at`, and `updated_at`.
