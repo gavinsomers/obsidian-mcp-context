@@ -10,6 +10,8 @@ services:
   web:
     build:
       context: .
+    environment:
+      DUCKDB_PATH: /warehouse/obsidian-read.duckdb
     command:
       - obsidian-mcp-context-web
       - --vault
@@ -29,6 +31,8 @@ services:
   mcp:
     build:
       context: .
+    environment:
+      DUCKDB_PATH: /warehouse/obsidian-read.duckdb
     command:
       - obsidian-mcp-context-mcp
       - --transport
@@ -65,10 +69,15 @@ services:
       - pipeline
     environment:
       DUCKDB_PATH: /warehouse/obsidian.duckdb
+      READ_DUCKDB_PATH: /warehouse/obsidian-read.duckdb
     command:
       - sh
       - -c
-      - dbt run --profiles-dir dbt && dbt test --profiles-dir dbt
+      - >
+        dbt run --profiles-dir dbt &&
+        dbt test --profiles-dir dbt &&
+        cp /warehouse/obsidian.duckdb /warehouse/obsidian-read.duckdb.tmp &&
+        mv /warehouse/obsidian-read.duckdb.tmp /warehouse/obsidian-read.duckdb
     volumes:
       - ./var:/warehouse
 
@@ -80,6 +89,7 @@ services:
       - pipeline
     environment:
       DUCKDB_PATH: /warehouse/obsidian.duckdb
+      READ_DUCKDB_PATH: /warehouse/obsidian-read.duckdb
     command:
       - sh
       - -c
@@ -87,6 +97,8 @@ services:
         obsidian-mcp-context-ingest --vault /vault --duckdb /warehouse/obsidian.duckdb &&
         dbt run --profiles-dir dbt &&
         dbt test --profiles-dir dbt &&
+        cp /warehouse/obsidian.duckdb /warehouse/obsidian-read.duckdb.tmp &&
+        mv /warehouse/obsidian-read.duckdb.tmp /warehouse/obsidian-read.duckdb &&
         python -m pytest &&
         python -m compileall obsidian_mcp_context &&
         obsidian-mcp-context --vault /vault warehouse-summary
@@ -168,6 +180,7 @@ services:
       AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "False"
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: sqlite:////warehouse/airflow.db
       DUCKDB_PATH: /warehouse/obsidian.duckdb
+      READ_DUCKDB_PATH: /warehouse/obsidian-read.duckdb
       SIM_SEED_VAULT: /seed-vault
       SIM_LIVE_VAULT: /live-vault
       SIM_STATE_PATH: /warehouse/simulation-state.json
@@ -201,6 +214,8 @@ services:
       context: .
     profiles:
       - simulation
+    environment:
+      DUCKDB_PATH: /warehouse/obsidian-read.duckdb
     command:
       - obsidian-mcp-context-web
       - --vault
@@ -220,6 +235,8 @@ services:
       context: .
     profiles:
       - simulation
+    environment:
+      DUCKDB_PATH: /warehouse/obsidian-read.duckdb
     command:
       - obsidian-mcp-context-mcp
       - --transport

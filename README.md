@@ -221,8 +221,10 @@ Services:
 Use the web UI and file browser in a normal browser. Use the MCP endpoint only
 from an MCP-aware client.
 
-The Compose stack mounts `examples/synthetic-vault` read-only at `/vault` and
-uses `var/obsidian.duckdb` for the dbt-backed DuckDB warehouse.
+The Compose stack mounts `examples/synthetic-vault` read-only at `/vault`.
+Pipeline services write the working dbt warehouse to `var/obsidian.duckdb`.
+After successful dbt tests, they publish `var/obsidian-read.duckdb` as the
+stable read snapshot used by the web UI and MCP containers.
 
 The `vault` service is an nginx file browser for the synthetic vault contents.
 It is not the Obsidian desktop app; the vault remains plain Markdown files so it
@@ -279,6 +281,12 @@ When a dbt-built DuckDB warehouse is available at `DUCKDB_PATH` or
 persisted marts directly. If no dbt warehouse is available, they fall back to
 the smaller in-memory warehouse built from the vault files.
 
+In Docker, Airflow and one-off pipeline commands write the primary warehouse at
+`/warehouse/obsidian.duckdb`, then atomically publish a successful tested copy
+to `/warehouse/obsidian-read.duckdb`. The web UI and MCP containers read that
+snapshot by default, which keeps local queries stable while the next pipeline
+run is rebuilding the primary DuckDB file.
+
 Run only ingest:
 
 ```bash
@@ -300,7 +308,8 @@ docker compose --profile pipeline run --rm pipeline
 That runs ingest, `dbt run`, `dbt test`, pytest, compile checks, and a warehouse
 summary smoke test.
 
-The DuckDB file is written to `var/obsidian.duckdb`, which is ignored by git.
+The primary DuckDB file is written to `var/obsidian.duckdb`. The tested read
+snapshot is written to `var/obsidian-read.duckdb`. Both are ignored by git.
 
 Local equivalents:
 

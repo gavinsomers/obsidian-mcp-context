@@ -9,6 +9,8 @@ COPY pyproject.toml README.md CHANGELOG.md RELEASING.md ./
 COPY obsidian_mcp_context ./obsidian_mcp_context
 COPY tests ./tests
 COPY examples ./examples
+COPY airflow ./airflow
+COPY docker-compose.yml ./
 COPY dbt ./dbt
 COPY models ./models
 COPY dbt_project.yml ./
