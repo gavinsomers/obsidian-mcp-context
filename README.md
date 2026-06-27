@@ -147,6 +147,12 @@ Start the simulation stack:
 docker compose --profile simulation up --build
 ```
 
+Run it in the background:
+
+```bash
+docker compose --profile simulation up --build -d
+```
+
 Services:
 
 | Service | URL |
@@ -157,6 +163,9 @@ Services:
 | Live vault MCP HTTP endpoint | `http://localhost:8001/mcp` |
 
 Airflow credentials are `admin` / `admin` for the local simulation container.
+The MCP endpoint is a machine endpoint for MCP clients, not a browser page. A
+normal browser request to `/mcp` may show a protocol/streaming error even when
+the service is healthy.
 
 The Airflow DAG is `simulated_daily_obsidian_pipeline` and runs:
 
@@ -197,11 +206,20 @@ Build and run the local stack:
 docker compose up --build
 ```
 
+Run it in the background:
+
+```bash
+docker compose up --build -d
+```
+
 Services:
 
 - Web UI: `http://localhost:8080`
 - Synthetic vault file browser: `http://localhost:8081`
 - MCP streamable HTTP endpoint: `http://localhost:8000/mcp`
+
+Use the web UI and file browser in a normal browser. Use the MCP endpoint only
+from an MCP-aware client.
 
 The Compose stack mounts `examples/synthetic-vault` read-only at `/vault` and
 uses `var/obsidian.duckdb` for the dbt-backed DuckDB warehouse.
@@ -209,6 +227,14 @@ uses `var/obsidian.duckdb` for the dbt-backed DuckDB warehouse.
 The `vault` service is an nginx file browser for the synthetic vault contents.
 It is not the Obsidian desktop app; the vault remains plain Markdown files so it
 can be mounted into containers and opened locally in Obsidian if needed.
+
+Useful local Docker commands:
+
+```bash
+docker compose ps
+docker compose logs -f
+docker compose down
+```
 
 ## DuckDB And dbt Pipeline
 
