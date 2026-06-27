@@ -24,6 +24,7 @@ The project uses semantic-ish versions:
 ### Changed
 
 - dbt `stg_obsidian_files` and `dim_notes` now expose lifecycle timestamp columns from the landing database.
+- dbt mart models now materialize as incremental DuckDB merge tables with explicit unique keys.
 
 ## [0.4.0] - 2026-06-27
 

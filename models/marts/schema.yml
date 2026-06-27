@@ -75,6 +75,48 @@ models:
                 to: ref('fact_blocks')
                 field: block_id
 
+  - name: fact_links
+    columns:
+      - name: link_id
+        tests:
+          - not_null
+          - unique
+      - name: note_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_notes')
+                field: note_id
+      - name: block_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fact_blocks')
+                field: block_id
+
+  - name: fact_tags
+    columns:
+      - name: tag_id
+        tests:
+          - not_null
+          - unique
+      - name: note_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_notes')
+                field: note_id
+      - name: block_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fact_blocks')
+                field: block_id
+
   - name: mart_timeline
     columns:
       - name: timeline_id

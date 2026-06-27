@@ -1,3 +1,5 @@
+{{ config(unique_key='task_id') }}
+
 select
   tasks.task_id,
   notes.note_id,

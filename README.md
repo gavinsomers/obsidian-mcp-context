@@ -228,6 +228,14 @@ examples/synthetic-vault
   -> dbt test
 ```
 
+dbt materializations:
+
+| Layer | Materialization |
+| --- | --- |
+| `stg_obsidian_*` | views |
+| `int_obsidian_*` | views |
+| `dim_*`, `fact_*`, `mart_*` | incremental tables using DuckDB `merge` |
+
 Run only ingest:
 
 ```bash
