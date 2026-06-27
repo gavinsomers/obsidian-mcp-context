@@ -15,6 +15,13 @@ from obsidian_mcp_context.query import (
     search_blocks,
 )
 from obsidian_mcp_context.vault import VaultConfig, build_context
+from obsidian_mcp_context.warehouse import (
+    agent_context,
+    build_warehouse,
+    entity_timeline,
+    list_entities,
+    warehouse_summary,
+)
 
 
 MAX_LIMIT = 200
@@ -142,6 +149,102 @@ def get_vault_note_context(
     """Fetch all parsed context for one vault-relative note path."""
     context = _load_context(vault_path)
     return get_note_context(context, source_path=source_path)
+
+
+@mcp.tool()
+def get_vault_warehouse_summary(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+) -> dict[str, object]:
+    """Summarize deterministic warehouse dimensions, facts, and marts."""
+    context = _load_context(vault_path)
+    warehouse = build_warehouse(context)
+    return warehouse_summary(warehouse)
+
+
+@mcp.tool()
+def list_vault_entities(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    entity_type: Annotated[
+        str | None,
+        Field(description="Optional entity type filter, such as person or project."),
+    ] = None,
+    text: Annotated[
+        str | None,
+        Field(description="Optional case-insensitive name filter."),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 100,
+) -> list[dict[str, object]]:
+    """List modeled entities derived from notes, wikilinks, and tags."""
+    context = _load_context(vault_path)
+    warehouse = build_warehouse(context)
+    return list_entities(
+        warehouse,
+        entity_type=entity_type,
+        text=text,
+        limit=_bounded_limit(limit),
+    )
+
+
+@mcp.tool()
+def get_vault_entity_timeline(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    entity: Annotated[
+        str,
+        Field(description="Entity name to resolve deterministically in timeline rows."),
+    ],
+    text: Annotated[
+        str | None,
+        Field(description="Optional case-insensitive text filter over timeline summaries."),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 50,
+) -> list[dict[str, object]]:
+    """Return timeline rows connected to a modeled entity."""
+    context = _load_context(vault_path)
+    warehouse = build_warehouse(context)
+    return entity_timeline(
+        warehouse,
+        entity=entity,
+        text=text,
+        limit=_bounded_limit(limit),
+    )
+
+
+@mcp.tool()
+def search_vault_agent_context(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    text: Annotated[
+        str | None,
+        Field(description="Optional case-insensitive text filter over curated context."),
+    ] = None,
+    entity: Annotated[
+        str | None,
+        Field(description="Optional entity name filter."),
+    ] = None,
+    event_type: Annotated[
+        str | None,
+        Field(description="Optional mart event type, such as block or task_open."),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 25,
+) -> list[dict[str, object]]:
+    """Search curated deterministic context rows for agent use."""
+    context = _load_context(vault_path)
+    warehouse = build_warehouse(context)
+    return agent_context(
+        warehouse,
+        text=text,
+        entity=entity,
+        event_type=event_type,
+        limit=_bounded_limit(limit),
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:

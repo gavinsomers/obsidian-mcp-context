@@ -113,6 +113,10 @@ Available tools:
 - `search_vault_blocks`
 - `list_vault_tasks`
 - `get_vault_note_context`
+- `get_vault_warehouse_summary`
+- `list_vault_entities`
+- `get_vault_entity_timeline`
+- `search_vault_agent_context`
 
 Each MCP tool accepts a `vault_path` argument. That means you do not hard-code a
 single vault into the server. Your client asks the tool to operate on a specific
@@ -185,6 +189,57 @@ Search my vault for blocks about Project Atlas and return the source note and li
 - `vault_path`: path to the Obsidian vault.
 - `source_path`: vault-relative note path, such as `Projects/Atlas.md`.
 
+`get_vault_warehouse_summary`
+
+- `vault_path`: path to the Obsidian vault.
+
+`list_vault_entities`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity_type`: optional filter, such as `person`, `company`, or `project`.
+- `text`: optional case-insensitive name filter.
+- `limit`: maximum entities to return. Defaults to `100`.
+
+`get_vault_entity_timeline`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity`: entity name, such as `Morgan Lee`.
+- `text`: optional case-insensitive filter over timeline summaries.
+- `limit`: maximum timeline rows to return. Defaults to `50`.
+
+`search_vault_agent_context`
+
+- `vault_path`: path to the Obsidian vault.
+- `text`: optional case-insensitive filter over curated context summaries.
+- `entity`: optional entity name filter.
+- `event_type`: optional event type, such as `block`, `task_open`, or `task_done`.
+- `limit`: maximum context rows to return. Defaults to `25`.
+
+## Deterministic Warehouse Layer
+
+The parser still preserves the vault as the source of truth. On top of that,
+the package now builds an in-memory SQLite warehouse so AI clients can query a
+modeled representation instead of relying only on semantic recall.
+
+The current warehouse includes:
+
+- `dim_notes`: note type, title, path, absolute path, and source date.
+- `dim_entities`: typed entities derived from note folders, wikilinks, and tags.
+- `fact_blocks`: parsed Markdown blocks with line-level provenance.
+- `fact_tasks`: Markdown tasks with completion state and provenance.
+- `fact_links`: wikilinks resolved to modeled entities where possible.
+- `fact_tags`: tags as deterministic facts.
+- `mart_timeline`: curated block and task rows with dates, entities, and source lines.
+
+Use the CLI to inspect the modeled layer:
+
+```bash
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault warehouse-summary
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault entities --entity-type person
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault timeline --entity "Morgan Lee"
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault agent-context --entity "Renewal Prep Scope" --event-type task_open
+```
+
 ## Current AI Boundary
 
 This repo is deliberately model-agnostic right now.
@@ -194,6 +249,7 @@ It does:
 - Parse local Markdown notes.
 - Preserve provenance.
 - Return structured context through CLI and MCP tools.
+- Build deterministic dimensions, facts, and timeline/context marts in memory.
 - Let an MCP client decide how to use that context.
 
 It does not:
@@ -204,6 +260,8 @@ It does not:
 - Generate embeddings.
 - Store vectors.
 - Chat with your notes by itself.
+- Persist the warehouse to disk.
+- Ingest Gmail, WhatsApp, calendar, CRM, or GitHub data directly.
 
 If you want OpenAI, Anthropic, or local LLM support, configure that in your MCP
 client. The client supplies the model; this package supplies the Obsidian vault
