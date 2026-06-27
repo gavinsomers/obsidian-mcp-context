@@ -14,6 +14,18 @@ models:
       - name: note_type
         tests:
           - not_null
+      - name: source_created_at
+        tests:
+          - not_null
+      - name: source_observed_at
+        tests:
+          - not_null
+      - name: created_at
+        tests:
+          - not_null
+      - name: updated_at
+        tests:
+          - not_null
 
   - name: dim_entities
     columns:
