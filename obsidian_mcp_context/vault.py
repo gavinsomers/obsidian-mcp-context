@@ -14,6 +14,7 @@ from obsidian_mcp_context.parser import (
     parse_markdown_file,
     parse_plain_text_file,
 )
+from obsidian_mcp_context.security import validate_vault_path
 
 
 DEFAULT_INCLUDE_GLOBS = ("**/*.md",)
@@ -97,7 +98,7 @@ def is_excluded(source_path: str, exclude_globs: tuple[str, ...]) -> bool:
 
 
 def scan_vault(config: VaultConfig) -> list[SourceFile]:
-    vault_path = config.vault_path.expanduser().resolve()
+    vault_path = validate_vault_path(config.vault_path)
     source_extensions = set(normalize_extensions(config.source_extensions))
     files: list[SourceFile] = []
 
@@ -140,7 +141,7 @@ def build_context(config: VaultConfig) -> VaultContext:
         lines.extend(parsed.lines)
 
     return VaultContext(
-        vault_path=config.vault_path.expanduser().resolve(),
+        vault_path=validate_vault_path(config.vault_path),
         files=files,
         blocks=blocks,
         tasks=tasks,

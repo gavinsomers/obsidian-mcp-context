@@ -14,6 +14,9 @@ The project uses semantic-ish versions:
 
 - Added a pipeline status API and web UI status panel showing warehouse snapshot
   availability, simulation state, and key dbt table row counts.
+- Added allowed-root vault path validation for hardened HTTP deployments.
+- Added freshness-aware context caching so MCP/web fallback reads update after
+  vault file changes.
 
 ## [0.5.1] - 2026-06-28
 

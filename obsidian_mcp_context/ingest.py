@@ -6,14 +6,14 @@ from pathlib import Path
 
 import duckdb
 
-from obsidian_mcp_context.vault import VaultConfig, build_context
-from obsidian_mcp_context.warehouse import (
-    _frontmatter_value,
-    _note_title,
-    _note_type,
-    _slug,
-    _source_date,
+from obsidian_mcp_context.domain import (
+    frontmatter_value,
+    note_title,
+    note_type,
+    slug,
+    source_date,
 )
+from obsidian_mcp_context.vault import VaultConfig, build_context
 
 
 def _create_tables(connection: duckdb.DuckDBPyConnection) -> None:
@@ -113,16 +113,16 @@ def ingest_vault(vault_path: Path, duckdb_path: Path) -> dict[str, int]:
             first_block_text = first_block_text_by_source.get(source_file.source_path)
             files.append(
                 (
-                    f"note:{_slug(source_file.source_path)}",
+                    f"note:{slug(source_file.source_path)}",
                     source_file.source_path,
                     str(source_file.absolute_path),
-                    _note_type(source_file.source_path),
-                    _note_title(source_file.source_path),
-                    _source_date(source_file.source_path, first_block_text),
-                    _frontmatter_value(first_block_text, "source_created_at"),
-                    _frontmatter_value(first_block_text, "source_observed_at"),
-                    _frontmatter_value(first_block_text, "created_at"),
-                    _frontmatter_value(first_block_text, "updated_at"),
+                    note_type(source_file.source_path),
+                    note_title(source_file.source_path),
+                    source_date(source_file.source_path, first_block_text),
+                    frontmatter_value(first_block_text, "source_created_at"),
+                    frontmatter_value(first_block_text, "source_observed_at"),
+                    frontmatter_value(first_block_text, "created_at"),
+                    frontmatter_value(first_block_text, "updated_at"),
                 )
             )
         connection.executemany(

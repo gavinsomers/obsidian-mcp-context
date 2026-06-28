@@ -9,8 +9,9 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
 from obsidian_mcp_context import dbt_warehouse
+from obsidian_mcp_context.security import validate_vault_path
+from obsidian_mcp_context.services import default_context_service
 from obsidian_mcp_context.status import warehouse_status
-from obsidian_mcp_context.vault import VaultConfig, build_context
 from obsidian_mcp_context.warehouse import (
     agent_context,
     build_warehouse,
@@ -32,7 +33,7 @@ ENTITY_QUERY_TYPES = {
 
 
 def _load_warehouse(vault_path: Path):
-    context = build_context(VaultConfig(vault_path=vault_path))
+    context = default_context_service.context(vault_path)
     return build_warehouse(context)
 
 
@@ -843,7 +844,7 @@ def main(argv: list[str] | None = None) -> int:
         "ConfiguredContextHandler",
         (ContextHandler,),
         {
-            "vault_path": Path(args.vault).expanduser().resolve(),
+            "vault_path": validate_vault_path(args.vault),
             "duckdb_path": duckdb_path,
         },
     )

@@ -12,6 +12,7 @@ services:
       context: .
     environment:
       DUCKDB_PATH: /warehouse/obsidian-read.duckdb
+      OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
     command:
       - obsidian-mcp-context-web
       - --vault
@@ -33,6 +34,7 @@ services:
       context: .
     environment:
       DUCKDB_PATH: /warehouse/obsidian-read.duckdb
+      OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
     command:
       - obsidian-mcp-context-mcp
       - --transport
@@ -216,6 +218,7 @@ services:
       - simulation
     environment:
       DUCKDB_PATH: /warehouse/obsidian-read.duckdb
+      OBSIDIAN_MCP_ALLOWED_ROOTS: /live-vault
     command:
       - obsidian-mcp-context-web
       - --vault
@@ -237,6 +240,7 @@ services:
       - simulation
     environment:
       DUCKDB_PATH: /warehouse/obsidian-read.duckdb
+      OBSIDIAN_MCP_ALLOWED_ROOTS: /live-vault
     command:
       - obsidian-mcp-context-mcp
       - --transport
