@@ -4,6 +4,7 @@ from collections import Counter
 from dataclasses import asdict, dataclass
 from datetime import datetime
 from enum import Enum
+from fnmatch import fnmatchcase
 import json
 from pathlib import Path
 from pathlib import PurePosixPath
@@ -200,6 +201,22 @@ def _link_target_shape(value: str) -> str:
 def _shape_counts(values: list[str]) -> dict[str, int]:
     counts = Counter(_link_target_shape(value) for value in values)
     return dict(sorted(counts.items()))
+
+
+def _matches_target_glob(target: str, patterns: tuple[str, ...]) -> bool:
+    if not patterns:
+        return False
+    stripped = target.strip()
+    candidates = {
+        stripped,
+        stripped.split("#", 1)[0].split("^", 1)[0].strip(),
+        _link_resolution_key(stripped),
+    }
+    return any(
+        fnmatchcase(candidate.casefold(), pattern.casefold())
+        for candidate in candidates
+        for pattern in patterns
+    )
 
 
 def _path_like_resolution_target(value: str) -> str:
@@ -612,14 +629,41 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         for link in context.links
         if _link_resolution_key(link.link_target) not in resolvable_link_targets
     ]
+    ignored_unresolved_links = [
+        link
+        for link in unresolved_links
+        if _matches_target_glob(
+            link.link_target,
+            app_config.doctor_unresolved_wikilink_ignore_target_globs,
+        )
+    ]
+    warning_unresolved_links = [
+        link
+        for link in unresolved_links
+        if not _matches_target_glob(
+            link.link_target,
+            app_config.doctor_unresolved_wikilink_ignore_target_globs,
+        )
+    ]
     unresolved = [link.link_target for link in unresolved_links]
+    ignored_unresolved = [link.link_target for link in ignored_unresolved_links]
+    warning_unresolved = [link.link_target for link in warning_unresolved_links]
     unresolved_counts = Counter(unresolved)
+    warning_unresolved_counts = Counter(warning_unresolved)
     unresolved_sources: dict[str, set[str]] = {}
     for link in unresolved_links:
         unresolved_sources.setdefault(link.link_target, set()).add(link.source_path)
     unresolved_shapes = _shape_counts(unresolved)
+    ignored_unresolved_shapes = _shape_counts(ignored_unresolved)
+    warning_unresolved_shapes = _shape_counts(warning_unresolved)
     unresolved_path_like_reasons = _classify_path_like_unresolved_targets(
         unresolved, inventory
+    )
+    ignored_unresolved_path_like_reasons = _classify_path_like_unresolved_targets(
+        ignored_unresolved, inventory
+    )
+    warning_unresolved_path_like_reasons = _classify_path_like_unresolved_targets(
+        warning_unresolved, inventory
     )
     path_like_reason_inventory = _path_like_reason_inventory(inventory)
     unresolved_export_targets: list[dict[str, object]] = []
@@ -634,6 +678,10 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
                 else ""
             ),
             "count": count,
+            "ignored": _matches_target_glob(
+                target,
+                app_config.doctor_unresolved_wikilink_ignore_target_globs,
+            ),
             "source_count": len(unresolved_sources.get(target, set())),
         }
         if options.include_samples:
@@ -681,19 +729,23 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
                 "written": False,
                 "error": message,
             }
-    if unresolved:
-        message = f"{len(unresolved)} wikilinks do not resolve to scanned note titles."
+    if warning_unresolved:
+        message = (
+            f"{len(warning_unresolved)} wikilinks do not resolve to scanned note titles."
+        )
         unresolved_details = _sample_details(
-            len(unresolved),
+            len(warning_unresolved),
             [
                 {"target": target, "count": count}
-                for target, count in unresolved_counts.most_common(10)
+                for target, count in warning_unresolved_counts.most_common(10)
             ],
             include_samples=options.include_samples,
             sample_key="top_targets",
         )
-        unresolved_details["target_shapes"] = unresolved_shapes
-        unresolved_details["path_like_reasons"] = unresolved_path_like_reasons
+        unresolved_details["target_shapes"] = warning_unresolved_shapes
+        unresolved_details["path_like_reasons"] = warning_unresolved_path_like_reasons
+        unresolved_details["ignored_count"] = len(ignored_unresolved)
+        unresolved_details["ignored_target_shapes"] = ignored_unresolved_shapes
         _record_policy_diagnostic(
             mode=app_config.doctor_unresolved_wikilinks,
             warnings=warnings,
@@ -796,6 +848,9 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
                 "notes_without_blocks": app_config.doctor_notes_without_blocks,
                 "large_notes": app_config.doctor_large_notes,
                 "unresolved_wikilinks": app_config.doctor_unresolved_wikilinks,
+                "unresolved_wikilink_ignore_target_globs": list(
+                    app_config.doctor_unresolved_wikilink_ignore_target_globs
+                ),
             },
         },
         "parser": {
@@ -828,8 +883,18 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "wikilinks": len(context.links),
             "resolved_wikilinks": len(context.links) - len(unresolved),
             "unresolved_wikilinks": len(unresolved),
+            "ignored_unresolved_wikilinks": len(ignored_unresolved),
+            "warning_unresolved_wikilinks": len(warning_unresolved),
             "unresolved_target_shapes": unresolved_shapes,
+            "ignored_unresolved_target_shapes": ignored_unresolved_shapes,
+            "warning_unresolved_target_shapes": warning_unresolved_shapes,
             "unresolved_path_like_reasons": unresolved_path_like_reasons,
+            "ignored_unresolved_path_like_reasons": (
+                ignored_unresolved_path_like_reasons
+            ),
+            "warning_unresolved_path_like_reasons": (
+                warning_unresolved_path_like_reasons
+            ),
             "unresolved_export": unresolved_export,
             "top_unresolved_targets": [
                 {"target": target, "count": count}

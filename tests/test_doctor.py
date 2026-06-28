@@ -70,6 +70,8 @@ updated_at: 2026-06-28T09:20:00
     )
     assert unresolved["details"] == {
         "count": 1,
+        "ignored_count": 0,
+        "ignored_target_shapes": {},
         "samples_redacted": True,
         "path_like_reasons": {},
         "target_shapes": {"plain_text": 1},
@@ -173,6 +175,7 @@ def test_doctor_exports_unresolved_links_when_explicitly_requested(tmp_path: Pat
             "target_shape": "path_like",
             "reason": "basename_exists_elsewhere",
             "count": 2,
+            "ignored": False,
             "source_count": 1,
         },
         {
@@ -180,6 +183,7 @@ def test_doctor_exports_unresolved_links_when_explicitly_requested(tmp_path: Pat
             "target_shape": "plain_text",
             "reason": "",
             "count": 1,
+            "ignored": False,
             "source_count": 1,
         },
     ]
@@ -210,6 +214,7 @@ def test_doctor_export_includes_source_paths_only_with_samples(tmp_path: Path):
             "target_shape": "plain_text",
             "reason": "",
             "count": 2,
+            "ignored": False,
             "source_count": 2,
             "source_paths": ["One.md", "Two.md"],
         }
@@ -300,7 +305,97 @@ def test_doctor_reports_unresolved_link_target_shapes_without_samples(tmp_path: 
     assert unresolved["details"]["path_like_reasons"] == {
         "no_candidate_found": 2,
     }
+    assert unresolved["details"]["ignored_count"] == 0
+    assert unresolved["details"]["ignored_target_shapes"] == {}
     assert "top_targets" not in unresolved["details"]
+
+
+def test_doctor_ignores_configured_unresolved_target_globs(tmp_path: Path):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+    (vault / "Links.md").write_text(
+        "\n".join(
+            [
+                "[[Archive/Intentional Missing]]",
+                "[[Template:Client]]",
+                "[[Needs Review]]",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[doctor.unresolved_wikilinks]
+mode = "warn"
+ignore_target_globs = ["Archive/*", "Template:*"]
+""".strip(),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(DoctorOptions(vault_path=vault, config_path=config_path))
+
+    assert report["status"] == "warning"
+    assert report["config"]["doctor"]["unresolved_wikilinks"] == "warn"
+    assert report["config"]["doctor"]["unresolved_wikilink_ignore_target_globs"] == [
+        "Archive/*",
+        "Template:*",
+    ]
+    assert report["graph"]["unresolved_wikilinks"] == 3
+    assert report["graph"]["ignored_unresolved_wikilinks"] == 2
+    assert report["graph"]["warning_unresolved_wikilinks"] == 1
+    assert report["graph"]["ignored_unresolved_target_shapes"] == {
+        "path_like": 1,
+        "plain_text": 1,
+    }
+    assert report["graph"]["warning_unresolved_target_shapes"] == {"plain_text": 1}
+    assert report["graph"]["top_unresolved_targets"] == []
+    unresolved = next(
+        item
+        for item in report["diagnostics"]
+        if item["code"] == DoctorCode.UNRESOLVED_WIKILINK.value
+    )
+    assert unresolved["details"] == {
+        "count": 1,
+        "ignored_count": 2,
+        "ignored_target_shapes": {"path_like": 1, "plain_text": 1},
+        "path_like_reasons": {},
+        "samples_redacted": True,
+        "target_shapes": {"plain_text": 1},
+    }
+
+
+def test_doctor_ignores_all_matching_unresolved_targets_without_warning(
+    tmp_path: Path,
+):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+    (vault / "Links.md").write_text(
+        "[[Archive/Intentional Missing]]\n[[Template:Client]]\n",
+        encoding="utf-8",
+    )
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[doctor]
+lifecycle_metadata = "ignore"
+
+[doctor.unresolved_wikilinks]
+mode = "warn"
+ignore_target_globs = ["Archive/*", "Template:*"]
+""".strip(),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(DoctorOptions(vault_path=vault, config_path=config_path))
+
+    assert report["status"] == "ok"
+    assert report["graph"]["unresolved_wikilinks"] == 2
+    assert report["graph"]["ignored_unresolved_wikilinks"] == 2
+    assert report["graph"]["warning_unresolved_wikilinks"] == 0
+    assert DoctorCode.UNRESOLVED_WIKILINK.value not in {
+        item["code"] for item in report["diagnostics"]
+    }
 
 
 def test_doctor_classifies_unresolved_path_like_reasons_without_samples(

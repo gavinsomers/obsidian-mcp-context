@@ -31,6 +31,7 @@ class AppConfig:
     doctor_notes_without_blocks: str = "warn"
     doctor_large_notes: str = "warn"
     doctor_unresolved_wikilinks: str = "warn"
+    doctor_unresolved_wikilink_ignore_target_globs: tuple[str, ...] = ()
     config_path: Path | None = None
     loaded: bool = False
 
@@ -63,6 +64,27 @@ def _choice(value: object, field_name: str, allowed: tuple[str, ...], default: s
         allowed_values = ", ".join(allowed)
         raise ValueError(f"{field_name} must be one of: {allowed_values}")
     return normalized
+
+
+def _unresolved_wikilink_config(value: object) -> tuple[str, tuple[str, ...]]:
+    if value is None or isinstance(value, str):
+        return (
+            _choice(value, "doctor.unresolved_wikilinks", DOCTOR_DIAGNOSTIC_MODES, "warn"),
+            (),
+        )
+    if not isinstance(value, dict):
+        raise ValueError("doctor.unresolved_wikilinks must be a string or TOML table")
+    mode = _choice(
+        value.get("mode"),
+        "doctor.unresolved_wikilinks.mode",
+        DOCTOR_DIAGNOSTIC_MODES,
+        "warn",
+    )
+    ignore_target_globs = _string_tuple(
+        value.get("ignore_target_globs"),
+        "doctor.unresolved_wikilinks.ignore_target_globs",
+    )
+    return mode, ignore_target_globs
 
 
 def load_app_config(config_path: str | Path | None = None) -> AppConfig:
@@ -135,11 +157,11 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
         DOCTOR_DIAGNOSTIC_MODES,
         "warn",
     )
-    doctor_unresolved_wikilinks = _choice(
+    (
+        doctor_unresolved_wikilinks,
+        doctor_unresolved_wikilink_ignore_target_globs,
+    ) = _unresolved_wikilink_config(
         doctor.get("unresolved_wikilinks"),
-        "doctor.unresolved_wikilinks",
-        DOCTOR_DIAGNOSTIC_MODES,
-        "warn",
     )
 
     return AppConfig(
@@ -155,6 +177,9 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
         doctor_notes_without_blocks=doctor_notes_without_blocks,
         doctor_large_notes=doctor_large_notes,
         doctor_unresolved_wikilinks=doctor_unresolved_wikilinks,
+        doctor_unresolved_wikilink_ignore_target_globs=(
+            doctor_unresolved_wikilink_ignore_target_globs
+        ),
         config_path=path,
         loaded=True,
     )
