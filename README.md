@@ -17,6 +17,9 @@ model; this server provides the vault tools.
 
 ## How The Pipeline Works
 
+For a higher-level view of the runtime services, DuckDB/dbt pipeline, and
+simulation mode, see [docs/architecture.md](docs/architecture.md).
+
 The intended workflow is:
 
 1. You have an Obsidian vault on disk.
