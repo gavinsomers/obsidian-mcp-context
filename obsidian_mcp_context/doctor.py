@@ -1,8 +1,9 @@
 from __future__ import annotations
 
 from collections import Counter
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from datetime import datetime
+from enum import Enum
 import json
 from pathlib import Path
 
@@ -35,6 +36,56 @@ class DoctorOptions:
     vault_path: Path
     duckdb_path: Path | None = None
     strict: bool = False
+
+
+class DoctorCode(str, Enum):
+    VAULT_UNREADABLE = "vault_unreadable"
+    NO_MARKDOWN_FILES = "no_markdown_files"
+    UNRESOLVED_WIKILINK = "unresolved_wikilink"
+    MISSING_LIFECYCLE_METADATA = "missing_lifecycle_metadata"
+    MALFORMED_LIFECYCLE_METADATA = "malformed_lifecycle_metadata"
+    IGNORED_FILE = "ignored_file"
+    UNSUPPORTED_FILE = "unsupported_file"
+    EMPTY_NOTE = "empty_note"
+    NOTE_WITHOUT_BLOCKS = "note_without_blocks"
+    LARGE_NOTE = "large_note"
+    WAREHOUSE_BUILD_FAILED = "warehouse_build_failed"
+    WAREHOUSE_MISSING = "warehouse_missing"
+    WAREHOUSE_INCOMPLETE = "warehouse_incomplete"
+
+
+@dataclass(frozen=True)
+class DiagnosticMessage:
+    code: DoctorCode
+    severity: str
+    message: str
+    file_path: str = ""
+    details: dict[str, object] | None = None
+
+    def to_dict(self) -> dict[str, object]:
+        row = asdict(self)
+        row["code"] = self.code.value
+        row["details"] = self.details or {}
+        return row
+
+
+def _diagnostic(
+    diagnostics: list[DiagnosticMessage],
+    code: DoctorCode,
+    severity: str,
+    message: str,
+    file_path: str = "",
+    details: dict[str, object] | None = None,
+) -> None:
+    diagnostics.append(
+        DiagnosticMessage(
+            code=code,
+            severity=severity,
+            message=message,
+            file_path=file_path,
+            details=details,
+        )
+    )
 
 
 def _iso_datetime(value: str) -> bool:
@@ -79,14 +130,24 @@ def _scan_inventory(vault_path: Path) -> dict[str, object]:
 def run_doctor(options: DoctorOptions) -> dict[str, object]:
     warnings: list[str] = []
     errors: list[str] = []
+    diagnostics: list[DiagnosticMessage] = []
 
     try:
         vault_path = validate_vault_path(options.vault_path)
     except (VaultPathError, FileNotFoundError, OSError) as exc:
+        message = str(exc)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.VAULT_UNREADABLE,
+            "error",
+            message,
+            file_path=str(options.vault_path),
+        )
         return {
             "status": "error",
-            "errors": [str(exc)],
+            "errors": [message],
             "warnings": [],
+            "diagnostics": [item.to_dict() for item in diagnostics],
             "vault": {
                 "path": str(options.vault_path),
                 "exists": options.vault_path.exists(),
@@ -95,10 +156,19 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         }
 
     if not vault_path.exists() or not vault_path.is_dir():
+        message = f"Vault path is not a readable directory: {vault_path}"
+        _diagnostic(
+            diagnostics,
+            DoctorCode.VAULT_UNREADABLE,
+            "error",
+            message,
+            file_path=str(vault_path),
+        )
         return {
             "status": "error",
-            "errors": [f"Vault path is not a readable directory: {vault_path}"],
+            "errors": [message],
             "warnings": [],
+            "diagnostics": [item.to_dict() for item in diagnostics],
             "vault": {
                 "path": str(vault_path),
                 "exists": vault_path.exists(),
@@ -112,9 +182,38 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
     unsupported_files = list(inventory["unsupported_files"])
 
     if not markdown_files:
-        errors.append("No Markdown files were found with the default vault scan settings.")
+        message = "No Markdown files were found with the default vault scan settings."
+        errors.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.NO_MARKDOWN_FILES,
+            "error",
+            message,
+            details={"include_globs": list(DEFAULT_INCLUDE_GLOBS)},
+        )
+    if inventory["ignored_files"]:
+        message = f"{len(inventory['ignored_files'])} files were ignored by the vault scan."
+        warnings.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.IGNORED_FILE,
+            "warning",
+            message,
+            details={
+                "count": len(inventory["ignored_files"]),
+                "sample": list(inventory["ignored_files"])[:25],
+            },
+        )
     if unsupported_files:
-        warnings.append(f"{len(unsupported_files)} non-Markdown files will be ignored.")
+        message = f"{len(unsupported_files)} non-Markdown files will be ignored."
+        warnings.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.UNSUPPORTED_FILE,
+            "warning",
+            message,
+            details={"count": len(unsupported_files), "sample": unsupported_files[:25]},
+        )
 
     blocks_by_source = Counter(block.source_path for block in context.blocks)
     first_block_text_by_source = {
@@ -154,18 +253,58 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
                 )
 
     if empty_notes:
-        warnings.append(f"{len(empty_notes)} Markdown notes are empty.")
+        message = f"{len(empty_notes)} Markdown notes are empty."
+        warnings.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.EMPTY_NOTE,
+            "warning",
+            message,
+            details={"count": len(empty_notes), "sample": empty_notes[:25]},
+        )
     if notes_without_blocks:
-        warnings.append(f"{len(notes_without_blocks)} Markdown notes produced no blocks.")
+        message = f"{len(notes_without_blocks)} Markdown notes produced no blocks."
+        warnings.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.NOTE_WITHOUT_BLOCKS,
+            "warning",
+            message,
+            details={"count": len(notes_without_blocks), "sample": notes_without_blocks[:25]},
+        )
     if large_notes:
-        warnings.append(f"{len(large_notes)} Markdown notes are larger than 250 KB.")
+        message = f"{len(large_notes)} Markdown notes are larger than 250 KB."
+        warnings.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.LARGE_NOTE,
+            "warning",
+            message,
+            details={"count": len(large_notes), "sample": large_notes[:25]},
+        )
     if missing_lifecycle:
-        warnings.append(
+        message = (
             f"{len(missing_lifecycle)} notes are missing one or more lifecycle timestamp fields."
         )
+        warnings.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.MISSING_LIFECYCLE_METADATA,
+            "warning",
+            message,
+            details={"count": len(missing_lifecycle), "sample": missing_lifecycle[:25]},
+        )
     if malformed_lifecycle:
-        warnings.append(
+        message = (
             f"{len(malformed_lifecycle)} lifecycle timestamp values are not ISO datetimes."
+        )
+        warnings.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.MALFORMED_LIFECYCLE_METADATA,
+            "warning",
+            message,
+            details={"count": len(malformed_lifecycle), "sample": malformed_lifecycle[:25]},
         )
 
     note_titles = {note_title(source_path).casefold() for source_path in markdown_files}
@@ -176,7 +315,21 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
     ]
     unresolved_counts = Counter(unresolved)
     if unresolved:
-        warnings.append(f"{len(unresolved)} wikilinks do not resolve to scanned note titles.")
+        message = f"{len(unresolved)} wikilinks do not resolve to scanned note titles."
+        warnings.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.UNRESOLVED_WIKILINK,
+            "warning",
+            message,
+            details={
+                "count": len(unresolved),
+                "top_targets": [
+                    {"target": target, "count": count}
+                    for target, count in unresolved_counts.most_common(10)
+                ],
+            },
+        )
 
     warehouse_status: dict[str, object]
     try:
@@ -190,7 +343,14 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "duckdb": {"checked": False},
         }
     except Exception as exc:  # pragma: no cover - defensive diagnostic surface
-        errors.append(f"In-memory warehouse build failed: {exc}")
+        message = f"In-memory warehouse build failed: {exc}"
+        errors.append(message)
+        _diagnostic(
+            diagnostics,
+            DoctorCode.WAREHOUSE_BUILD_FAILED,
+            "error",
+            message,
+        )
         warehouse_status = {
             "in_memory": {"ok": False, "error": str(exc)},
             "duckdb": {"checked": False},
@@ -206,7 +366,20 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "required_marts_available": duckdb_ok,
         }
         if not duckdb_ok:
-            errors.append(f"DuckDB warehouse is missing or incomplete: {duckdb_path}")
+            if duckdb_path.exists():
+                code = DoctorCode.WAREHOUSE_INCOMPLETE
+                message = f"DuckDB warehouse is incomplete: {duckdb_path}"
+            else:
+                code = DoctorCode.WAREHOUSE_MISSING
+                message = f"DuckDB warehouse is missing: {duckdb_path}"
+            errors.append(message)
+            _diagnostic(
+                diagnostics,
+                code,
+                "error",
+                message,
+                file_path=str(duckdb_path),
+            )
 
     status = "ok"
     if errors:
@@ -218,6 +391,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         "status": status,
         "errors": errors,
         "warnings": warnings,
+        "diagnostics": [item.to_dict() for item in diagnostics],
         "vault": {
             "path": str(vault_path),
             "exists": True,

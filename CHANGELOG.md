@@ -10,6 +10,12 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+### Added
+
+- Added a staged privacy check script for blocking local sensitive terms and
+  generated warehouse artifacts before commit.
+- Added stable `doctor` diagnostic codes in JSON output.
+
 ## [0.7.0] - 2026-06-28
 
 ### Added
