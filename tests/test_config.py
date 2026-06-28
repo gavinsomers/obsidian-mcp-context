@@ -1,7 +1,7 @@
 from pathlib import Path
 
 from obsidian_mcp_context.config import load_app_config, vault_config_from_app_config
-from obsidian_mcp_context.doctor import DoctorOptions, run_doctor
+from obsidian_mcp_context.doctor import DoctorCode, DoctorOptions, run_doctor
 from obsidian_mcp_context.vault import build_context
 from obsidian_mcp_context.warehouse import build_warehouse, list_entities
 
@@ -83,3 +83,69 @@ Clients = "company"
     assert report["config"]["folder_note_type_count"] == 1
     assert report["privacy"]["samples_redacted"] is True
     assert all("sample" not in item["details"] for item in report["diagnostics"])
+
+
+def test_doctor_can_ignore_lifecycle_metadata_warnings_from_config(tmp_path: Path):
+    vault = tmp_path / "vault"
+    config_path = tmp_path / "config.toml"
+    vault.mkdir()
+    (vault / "Note.md").write_text("# Note\n", encoding="utf-8")
+    config_path.write_text(
+        """
+[doctor]
+lifecycle_metadata = "ignore"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(DoctorOptions(vault_path=vault, config_path=config_path))
+
+    assert report["status"] == "ok"
+    assert report["config"]["doctor"]["lifecycle_metadata"] == "ignore"
+    assert report["content"]["missing_lifecycle_field_count"] == 1
+    assert all(
+        item["code"] != DoctorCode.MISSING_LIFECYCLE_METADATA.value
+        for item in report["diagnostics"]
+    )
+
+
+def test_doctor_can_error_on_lifecycle_metadata_from_config(tmp_path: Path):
+    vault = tmp_path / "vault"
+    config_path = tmp_path / "config.toml"
+    vault.mkdir()
+    (vault / "Note.md").write_text("# Note\n", encoding="utf-8")
+    config_path.write_text(
+        """
+[doctor]
+lifecycle_metadata = "error"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(DoctorOptions(vault_path=vault, config_path=config_path))
+
+    assert report["status"] == "error"
+    assert report["config"]["doctor"]["lifecycle_metadata"] == "error"
+    assert any(
+        item["code"] == DoctorCode.MISSING_LIFECYCLE_METADATA.value
+        and item["severity"] == "error"
+        for item in report["diagnostics"]
+    )
+
+
+def test_config_rejects_invalid_doctor_lifecycle_metadata_mode(tmp_path: Path):
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[doctor]
+lifecycle_metadata = "required"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    try:
+        load_app_config(config_path)
+    except ValueError as exc:
+        assert "doctor.lifecycle_metadata" in str(exc)
+    else:
+        raise AssertionError("Expected invalid lifecycle metadata mode to fail")
