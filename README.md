@@ -8,6 +8,19 @@ compiler function: a vault is fully parsed, warehouses are rebuilt from the
 current files, and optional advisory AI enrichment writes reviewable suggestions
 without changing canonical data.
 
+## Why This Exists
+
+Obsidian is excellent for writing human notes, but AI tools and operational
+dashboards need more structure than raw Markdown usually provides. This repo
+turns a local vault into a reproducible context layer: notes, blocks, tasks,
+wikilinks, tags, entities, relationships, decisions, risks, open loops, and
+timeline events all become queryable records with source provenance.
+
+The goal is to make a vault useful to AI clients without handing over control of
+the vault itself. The vault stays the source of truth; this project compiles it
+into context that can be inspected, tested, rebuilt, and safely exposed through
+CLI, MCP, web, or DuckDB/dbt.
+
 ## Features
 
 - Obsidian Markdown files (`.md`) by default.
@@ -22,6 +35,47 @@ without changing canonical data.
 - Optional privacy-gated AI enrichment for unresolved-link suggestions.
 - SQL reconciliation tests over the static fixture vault.
 - A `doctor` command for parser, graph, metadata, and warehouse readiness checks.
+
+## Quickstart
+
+Clone and install the repo:
+
+```bash
+git clone https://github.com/gavinsomers/obsidian-mcp-context.git
+cd obsidian-mcp-context
+python3 -m venv .venv
+.venv/bin/python -m pip install -e ".[dev,pipeline]"
+```
+
+Check the included synthetic vault:
+
+```bash
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault doctor
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault notes --limit 5
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault tasks --unchecked --limit 5
+```
+
+Check your own vault:
+
+```bash
+.venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" doctor
+.venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" blocks --text "renewal"
+```
+
+Optionally build the persisted DuckDB/dbt warehouse:
+
+```bash
+.venv/bin/obsidian-mcp-context-ingest \
+  --vault "/absolute/path/to/your/vault" \
+  --duckdb var/obsidian.duckdb
+
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt run --profiles-dir dbt
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt test --profiles-dir dbt
+```
+
+Optionally connect an MCP client to `obsidian-mcp-context-mcp` so an AI client
+can call the vault tools. See `docs/configuration.md` for local vault settings,
+privacy controls, and optional AI enrichment.
 
 ## How The Pipeline Works
 
@@ -60,7 +114,7 @@ Clone the repo and install it into a virtual environment:
 git clone https://github.com/gavinsomers/obsidian-mcp-context.git
 cd obsidian-mcp-context
 python3 -m venv .venv
-.venv/bin/python -m pip install -e ".[dev]"
+.venv/bin/python -m pip install -e ".[dev,pipeline]"
 ```
 
 After installation, the local commands are available at:
