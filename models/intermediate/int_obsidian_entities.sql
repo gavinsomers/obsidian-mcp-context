@@ -5,19 +5,29 @@ with canonical_note_entities as (
     source_path,
     note_id as canonical_note_id
   from {{ ref('stg_obsidian_files') }}
-  where note_type not in ('daily', 'meeting', 'note', 'research')
+  where note_type not in (
+    select note_type
+    from {{ source('obsidian', 'base_obsidian_config_non_entity_note_types') }}
+  )
 ),
 
 link_entities as (
   select distinct
-    coalesce(notes.note_type, 'unknown') as entity_type,
+    case
+      when notes.note_id is null then 'unknown'
+      else notes.note_type
+    end as entity_type,
     links.link_target as name,
     notes.source_path,
     notes.note_id as canonical_note_id
   from {{ ref('stg_obsidian_links') }} links
   left join {{ ref('stg_obsidian_files') }} notes
     on lower(notes.title) = lower(links.link_target)
-   and notes.note_type not in ('daily', 'meeting', 'note', 'research')
+  where notes.note_id is null
+     or notes.note_type not in (
+       select note_type
+       from {{ source('obsidian', 'base_obsidian_config_non_entity_note_types') }}
+     )
 ),
 
 tag_entities as (

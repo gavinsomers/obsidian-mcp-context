@@ -24,6 +24,7 @@ For a higher-level view of the runtime services, DuckDB/dbt pipeline, and
 simulation mode, see [docs/architecture.md](docs/architecture.md).
 For the generic entity model, see [docs/entity-contract.md](docs/entity-contract.md).
 For the bring-your-own-vault workflow, see [docs/onboarding.md](docs/onboarding.md).
+For local scan and entity overrides, see [docs/configuration.md](docs/configuration.md).
 
 The intended workflow is:
 

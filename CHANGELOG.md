@@ -15,6 +15,8 @@ The project uses semantic-ish versions:
 - Added a staged privacy check script for blocking local sensitive terms and
   generated warehouse artifacts before commit.
 - Added stable `doctor` diagnostic codes in JSON output.
+- Added local TOML configuration support for scan excludes, source extensions,
+  folder-to-entity mappings, and non-entity note types.
 
 ### Fixed
 

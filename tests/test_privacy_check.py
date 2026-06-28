@@ -2,6 +2,14 @@ from pathlib import Path
 import shutil
 import subprocess
 
+import pytest
+
+
+pytestmark = pytest.mark.skipif(
+    shutil.which("git") is None,
+    reason="git executable is required for privacy check integration tests",
+)
+
 
 def _git(repo: Path, *args: str) -> subprocess.CompletedProcess[str]:
     return subprocess.run(

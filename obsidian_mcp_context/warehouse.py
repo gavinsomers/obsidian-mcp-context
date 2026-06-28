@@ -5,10 +5,9 @@ from hashlib import sha1
 import sqlite3
 
 from obsidian_mcp_context.domain import (
+    NON_ENTITY_NOTE_TYPES,
     frontmatter_value,
-    is_entity_note_type,
     note_title,
-    note_type,
     slug,
     source_date,
 )
@@ -152,7 +151,7 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
                 note_id,
                 source_path,
                 str(source_file.absolute_path),
-                note_type(source_path),
+                source_file.note_type,
                 note_title(source_path),
                 source_date(source_path, first_block_text),
                 frontmatter_value(first_block_text, "source_created_at"),
@@ -229,14 +228,21 @@ def _insert_entity(
     return entity_id
 
 
-def _insert_entities(connection: sqlite3.Connection) -> None:
+def _is_entity_note_type(value: str, non_entity_note_types: tuple[str, ...]) -> bool:
+    return value not in set(non_entity_note_types)
+
+
+def _insert_entities(
+    connection: sqlite3.Connection,
+    non_entity_note_types: tuple[str, ...],
+) -> None:
     notes = connection.execute(
         "select note_id, source_path, note_type, title from dim_notes"
     ).fetchall()
     note_by_title = {row["title"].casefold(): row for row in notes}
 
     for row in notes:
-        if is_entity_note_type(row["note_type"]):
+        if _is_entity_note_type(row["note_type"], non_entity_note_types):
             _insert_entity(
                 connection,
                 row["note_type"],
@@ -251,7 +257,9 @@ def _insert_entities(connection: sqlite3.Connection) -> None:
     for row in link_targets:
         target = row["link_target"]
         note = note_by_title.get(target.casefold())
-        if note and is_entity_note_type(note["note_type"]):
+        if note and not _is_entity_note_type(note["note_type"], non_entity_note_types):
+            continue
+        if note:
             entity_type = note["note_type"]
             source_path = note["source_path"]
             note_id = note["note_id"]
@@ -305,7 +313,10 @@ def _insert_facts(connection: sqlite3.Connection, context: VaultContext) -> None
         "insert into pending_tags (tag) values (?)",
         [(tag.tag,) for tag in context.tags],
     )
-    _insert_entities(connection)
+    _insert_entities(
+        connection,
+        context.non_entity_note_types or tuple(sorted(NON_ENTITY_NOTE_TYPES)),
+    )
 
     for block in context.blocks:
         note_id = _note_id_for_source(connection, block.source_path)

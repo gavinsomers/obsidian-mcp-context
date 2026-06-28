@@ -32,11 +32,19 @@ def note_title(source_path: str) -> str:
     return Path(source_path).stem
 
 
-def note_type(source_path: str) -> str:
+def note_type(
+    source_path: str,
+    folder_note_types: dict[str, str] | None = None,
+) -> str:
     parts = PurePosixPath(source_path).parts
     if not parts:
         return "note"
     folder = parts[0].casefold()
+    configured = {
+        key.casefold(): value for key, value in (folder_note_types or {}).items()
+    }
+    if folder in configured:
+        return configured[folder]
     if folder in NOTE_TYPE_BY_FOLDER:
         return NOTE_TYPE_BY_FOLDER[folder]
     if len(parts) == 1:

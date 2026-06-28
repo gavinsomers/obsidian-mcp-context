@@ -8,12 +8,10 @@ import json
 from pathlib import Path
 
 from obsidian_mcp_context import dbt_warehouse
+from obsidian_mcp_context.config import load_app_config, vault_config_from_app_config
 from obsidian_mcp_context.domain import frontmatter_value, note_title
 from obsidian_mcp_context.security import VaultPathError, validate_vault_path
 from obsidian_mcp_context.vault import (
-    DEFAULT_EXCLUDE_GLOBS,
-    DEFAULT_INCLUDE_GLOBS,
-    DEFAULT_SOURCE_EXTENSIONS,
     VaultConfig,
     build_context,
     is_excluded,
@@ -36,6 +34,7 @@ class DoctorOptions:
     vault_path: Path
     duckdb_path: Path | None = None
     strict: bool = False
+    config_path: Path | None = None
 
 
 class DoctorCode(str, Enum):
@@ -96,8 +95,8 @@ def _iso_datetime(value: str) -> bool:
     return True
 
 
-def _scan_inventory(vault_path: Path) -> dict[str, object]:
-    source_extensions = set(normalize_extensions(DEFAULT_SOURCE_EXTENSIONS))
+def _scan_inventory(vault_path: Path, config: VaultConfig) -> dict[str, object]:
+    source_extensions = set(normalize_extensions(config.source_extensions))
     markdown_files: list[str] = []
     ignored_files: list[str] = []
     unsupported_files: list[str] = []
@@ -107,14 +106,14 @@ def _scan_inventory(vault_path: Path) -> dict[str, object]:
         if not path.is_file():
             continue
         source_path = path.relative_to(vault_path).as_posix()
-        if is_excluded(source_path, DEFAULT_EXCLUDE_GLOBS):
+        if is_excluded(source_path, config.exclude_globs):
             excluded_files.append(source_path)
             continue
         if path.suffix.lower() not in source_extensions:
             unsupported_files.append(source_path)
             ignored_files.append(source_path)
             continue
-        if not is_included(source_path, DEFAULT_INCLUDE_GLOBS):
+        if not is_included(source_path, config.include_globs):
             ignored_files.append(source_path)
             continue
         markdown_files.append(source_path)
@@ -176,8 +175,10 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             },
         }
 
-    inventory = _scan_inventory(vault_path)
-    context = build_context(VaultConfig(vault_path=vault_path))
+    app_config = load_app_config(options.config_path)
+    vault_config = vault_config_from_app_config(vault_path, app_config)
+    inventory = _scan_inventory(vault_path, vault_config)
+    context = build_context(vault_config)
     markdown_files = list(inventory["markdown_files"])
     unsupported_files = list(inventory["unsupported_files"])
 
@@ -189,7 +190,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             DoctorCode.NO_MARKDOWN_FILES,
             "error",
             message,
-            details={"include_globs": list(DEFAULT_INCLUDE_GLOBS)},
+            details={"include_globs": list(vault_config.include_globs)},
         )
     if inventory["ignored_files"]:
         message = f"{len(inventory['ignored_files'])} files were ignored by the vault scan."
@@ -399,6 +400,15 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "markdown_file_count": len(markdown_files),
             "ignored_file_count": len(inventory["ignored_files"]),
             "excluded_file_count": len(inventory["excluded_files"]),
+        },
+        "config": {
+            "path": str(app_config.config_path) if app_config.config_path else None,
+            "loaded": app_config.loaded,
+            "include_globs": list(vault_config.include_globs),
+            "exclude_globs": list(vault_config.exclude_globs),
+            "source_extensions": list(vault_config.source_extensions),
+            "folder_note_type_count": len(vault_config.folder_note_types or {}),
+            "non_entity_note_types": list(vault_config.non_entity_note_types or ()),
         },
         "parser": {
             "files": len(context.files),

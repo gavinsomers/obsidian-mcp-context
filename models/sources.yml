@@ -10,3 +10,4 @@ sources:
       - name: base_obsidian_links
       - name: base_obsidian_tags
       - name: base_obsidian_lines
+      - name: base_obsidian_config_non_entity_note_types

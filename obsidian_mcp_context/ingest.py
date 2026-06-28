@@ -10,11 +10,16 @@ import duckdb
 from obsidian_mcp_context.domain import (
     frontmatter_value,
     note_title,
-    note_type,
     slug,
     source_date,
 )
-from obsidian_mcp_context.vault import VaultConfig, build_context
+from obsidian_mcp_context.config import (
+    DEFAULT_CONFIG_PATH,
+    AppConfig,
+    load_app_config,
+    vault_config_from_app_config,
+)
+from obsidian_mcp_context.vault import build_context
 
 
 def _executemany_if_rows(
@@ -130,10 +135,22 @@ def _create_tables(connection: duckdb.DuckDBPyConnection) -> None:
         )
         """
     )
+    connection.execute(
+        """
+        create or replace table base_obsidian_config_non_entity_note_types (
+            note_type varchar
+        )
+        """
+    )
 
 
-def ingest_vault(vault_path: Path, duckdb_path: Path) -> dict[str, int]:
-    context = build_context(VaultConfig(vault_path=vault_path))
+def ingest_vault(
+    vault_path: Path,
+    duckdb_path: Path,
+    config_path: Path | None = None,
+) -> dict[str, int]:
+    app_config = load_app_config(config_path) if config_path else AppConfig()
+    context = build_context(vault_config_from_app_config(vault_path, app_config))
     duckdb_path.parent.mkdir(parents=True, exist_ok=True)
     first_block_text_by_source = {
         block.source_path: block.text for block in reversed(context.blocks)
@@ -153,7 +170,7 @@ def ingest_vault(vault_path: Path, duckdb_path: Path) -> dict[str, int]:
                     note_ids_by_source[source_file.source_path],
                     source_file.source_path,
                     str(source_file.absolute_path),
-                    note_type(source_file.source_path),
+                    source_file.note_type,
                     note_title(source_file.source_path),
                     source_date(source_file.source_path, first_block_text),
                     frontmatter_value(first_block_text, "source_created_at"),
@@ -192,6 +209,11 @@ def ingest_vault(vault_path: Path, duckdb_path: Path) -> dict[str, int]:
             "insert into base_obsidian_lines values (?, ?, ?, ?, ?, ?)",
             [tuple(asdict(line).values()) for line in context.lines],
         )
+        _executemany_if_rows(
+            connection,
+            "insert into base_obsidian_config_non_entity_note_types values (?)",
+            [(note_type,) for note_type in app_config.non_entity_note_types],
+        )
         counts = {
             table: connection.execute(f"select count(*) from {table}").fetchone()[0]
             for table in (
@@ -201,6 +223,7 @@ def ingest_vault(vault_path: Path, duckdb_path: Path) -> dict[str, int]:
                 "base_obsidian_links",
                 "base_obsidian_tags",
                 "base_obsidian_lines",
+                "base_obsidian_config_non_entity_note_types",
             )
         }
     finally:
@@ -219,13 +242,21 @@ def build_parser() -> argparse.ArgumentParser:
         required=True,
         help="Path to the DuckDB database file to create or replace landing tables in.",
     )
+    parser.add_argument(
+        "--config",
+        help="Optional .obsidian-mcp-context.toml path for local scan and entity settings.",
+    )
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
-    counts = ingest_vault(Path(args.vault), Path(args.duckdb))
+    counts = ingest_vault(
+        Path(args.vault),
+        Path(args.duckdb),
+        config_path=Path(args.config) if args.config else DEFAULT_CONFIG_PATH,
+    )
     for table, count in counts.items():
         print(f"{table}: {count}")
     return 0
