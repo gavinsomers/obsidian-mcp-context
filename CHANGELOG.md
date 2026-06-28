@@ -18,6 +18,8 @@ The project uses semantic-ish versions:
   unresolved wikilink remediation.
 - Added configurable unresolved wikilink ignore globs that preserve aggregate
   counts while suppressing expected dangling-link warnings.
+- Added aggregate unresolved wikilink remediation hints to `doctor` JSON and
+  human output.
 
 ## [0.9.0] - 2026-06-28
 

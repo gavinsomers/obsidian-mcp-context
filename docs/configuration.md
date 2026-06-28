@@ -19,6 +19,11 @@ diagnostic samples by default. Aggregate counts remain in the report. For
 controlled synthetic-vault debugging, pass `doctor --include-samples` to include
 the detailed samples.
 
+Unresolved wikilink reports include aggregate remediation hints such as scan
+exclude changes, source extension changes, link path normalization, and missing
+note creation. These hints are generated from counts and reason buckets, not raw
+target names.
+
 For private local remediation, `doctor` can also write unresolved wikilink
 targets to an explicit JSON export:
 
