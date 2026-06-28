@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+import os
 from pathlib import Path
 import tomllib
 
@@ -15,10 +16,48 @@ from obsidian_mcp_context.vault import (
 
 DEFAULT_CONFIG_PATH = Path(".obsidian-mcp-context.toml")
 DOCTOR_DIAGNOSTIC_MODES = ("warn", "ignore", "error")
+SOURCE_TYPES = ("sample", "obsidian", "google_drive")
+AI_PROVIDERS = ("none", "ollama", "openai", "anthropic", "vllm")
+HOSTED_AI_PROVIDERS = {"openai", "anthropic"}
+
+
+@dataclass(frozen=True)
+class SourceConfig:
+    type: str = "sample"
+    sample_name: str = "synthetic-vault"
+    vault_path: str = ""
+
+
+@dataclass(frozen=True)
+class PipelineConfig:
+    output_dir: str = "var"
+    warehouse_path: str = "var/warehouse.duckdb"
+    run_mode: str = "local"
+
+
+@dataclass(frozen=True)
+class PrivacyConfig:
+    allow_raw_text_to_ai: bool = False
+    allow_hosted_ai: bool = False
+    max_context_chars: int = 1500
+    redact_file_paths: bool = True
+
+
+@dataclass(frozen=True)
+class AIConfig:
+    enabled: bool = False
+    provider: str = "none"
+    model: str = ""
+    base_url: str = ""
+    api_key_env: str = ""
 
 
 @dataclass(frozen=True)
 class AppConfig:
+    source: SourceConfig = field(default_factory=SourceConfig)
+    pipeline: PipelineConfig = field(default_factory=PipelineConfig)
+    privacy: PrivacyConfig = field(default_factory=PrivacyConfig)
+    ai: AIConfig = field(default_factory=AIConfig)
     include_globs: tuple[str, ...] = DEFAULT_INCLUDE_GLOBS
     exclude_globs: tuple[str, ...] = DEFAULT_EXCLUDE_GLOBS
     source_extensions: tuple[str, ...] = DEFAULT_SOURCE_EXTENSIONS
@@ -66,6 +105,216 @@ def _choice(value: object, field_name: str, allowed: tuple[str, ...], default: s
     return normalized
 
 
+def _string(value: object, field_name: str, default: str = "") -> str:
+    if value is None:
+        return default
+    if not isinstance(value, str):
+        raise ValueError(f"{field_name} must be a string")
+    return value.strip()
+
+
+def _bool(value: object, field_name: str, default: bool = False) -> bool:
+    if value is None:
+        return default
+    if not isinstance(value, bool):
+        raise ValueError(f"{field_name} must be a boolean")
+    return value
+
+
+def _positive_int(value: object, field_name: str, default: int) -> int:
+    if value is None:
+        return default
+    if not isinstance(value, int):
+        raise ValueError(f"{field_name} must be an integer")
+    if value <= 0:
+        raise ValueError(f"{field_name} must be greater than zero")
+    return value
+
+
+def _table(data: dict[str, object], table_name: str) -> dict[str, object]:
+    value = data.get(table_name, {})
+    if not isinstance(value, dict):
+        raise ValueError(f"{table_name} must be a TOML table")
+    return value
+
+
+def _env_bool(value: str, env_name: str) -> bool:
+    normalized = value.strip().lower()
+    if normalized in {"1", "true", "yes", "on"}:
+        return True
+    if normalized in {"0", "false", "no", "off"}:
+        return False
+    raise ValueError(f"{env_name} must be a boolean value")
+
+
+def _apply_env_overrides(config: AppConfig) -> AppConfig:
+    source = config.source
+    ai = config.ai
+
+    if "OBSIDIAN_MCP_SOURCE_TYPE" in os.environ:
+        source = SourceConfig(
+            type=_choice(
+                os.environ["OBSIDIAN_MCP_SOURCE_TYPE"],
+                "OBSIDIAN_MCP_SOURCE_TYPE",
+                SOURCE_TYPES,
+                source.type,
+            ),
+            sample_name=source.sample_name,
+            vault_path=source.vault_path,
+        )
+
+    if "OBSIDIAN_MCP_AI_ENABLED" in os.environ:
+        ai = AIConfig(
+            enabled=_env_bool(
+                os.environ["OBSIDIAN_MCP_AI_ENABLED"],
+                "OBSIDIAN_MCP_AI_ENABLED",
+            ),
+            provider=ai.provider,
+            model=ai.model,
+            base_url=ai.base_url,
+            api_key_env=ai.api_key_env,
+        )
+    if "OBSIDIAN_MCP_AI_PROVIDER" in os.environ:
+        ai = AIConfig(
+            enabled=ai.enabled,
+            provider=_choice(
+                os.environ["OBSIDIAN_MCP_AI_PROVIDER"],
+                "OBSIDIAN_MCP_AI_PROVIDER",
+                AI_PROVIDERS,
+                ai.provider,
+            ),
+            model=ai.model,
+            base_url=ai.base_url,
+            api_key_env=ai.api_key_env,
+        )
+    if "OBSIDIAN_MCP_AI_MODEL" in os.environ:
+        ai = AIConfig(
+            enabled=ai.enabled,
+            provider=ai.provider,
+            model=os.environ["OBSIDIAN_MCP_AI_MODEL"].strip(),
+            base_url=ai.base_url,
+            api_key_env=ai.api_key_env,
+        )
+    if "OBSIDIAN_MCP_AI_BASE_URL" in os.environ:
+        ai = AIConfig(
+            enabled=ai.enabled,
+            provider=ai.provider,
+            model=ai.model,
+            base_url=os.environ["OBSIDIAN_MCP_AI_BASE_URL"].strip(),
+            api_key_env=ai.api_key_env,
+        )
+    if "OBSIDIAN_MCP_AI_API_KEY_ENV" in os.environ:
+        ai = AIConfig(
+            enabled=ai.enabled,
+            provider=ai.provider,
+            model=ai.model,
+            base_url=ai.base_url,
+            api_key_env=os.environ["OBSIDIAN_MCP_AI_API_KEY_ENV"].strip(),
+        )
+
+    return _validate_app_config(
+        AppConfig(
+            source=source,
+            pipeline=config.pipeline,
+            privacy=config.privacy,
+            ai=ai,
+            include_globs=config.include_globs,
+            exclude_globs=config.exclude_globs,
+            source_extensions=config.source_extensions,
+            folder_note_types=config.folder_note_types,
+            non_entity_note_types=config.non_entity_note_types,
+            doctor_lifecycle_metadata=config.doctor_lifecycle_metadata,
+            doctor_ignored_files=config.doctor_ignored_files,
+            doctor_unsupported_files=config.doctor_unsupported_files,
+            doctor_empty_notes=config.doctor_empty_notes,
+            doctor_notes_without_blocks=config.doctor_notes_without_blocks,
+            doctor_large_notes=config.doctor_large_notes,
+            doctor_unresolved_wikilinks=config.doctor_unresolved_wikilinks,
+            doctor_unresolved_wikilink_ignore_target_globs=(
+                config.doctor_unresolved_wikilink_ignore_target_globs
+            ),
+            config_path=config.config_path,
+            loaded=config.loaded,
+        )
+    )
+
+
+def _validate_app_config(config: AppConfig) -> AppConfig:
+    if config.source.type == "sample" and not config.source.sample_name:
+        raise ValueError("source.sample_name is required when source.type is sample")
+    if config.source.type == "obsidian" and not config.source.vault_path:
+        raise ValueError("source.vault_path is required when source.type is obsidian")
+
+    if config.ai.enabled and config.ai.provider == "none":
+        raise ValueError("ai.provider must not be none when ai.enabled is true")
+    if config.ai.enabled and config.ai.provider in HOSTED_AI_PROVIDERS:
+        if not config.privacy.allow_hosted_ai:
+            raise ValueError(
+                "privacy.allow_hosted_ai must be true to enable hosted AI providers"
+            )
+        if not config.ai.api_key_env:
+            raise ValueError("ai.api_key_env is required for hosted AI providers")
+    if config.ai.api_key_env and "=" in config.ai.api_key_env:
+        raise ValueError("ai.api_key_env must be an environment variable name, not a key")
+    return config
+
+
+def _load_pipeline_config(data: dict[str, object]) -> tuple[
+    SourceConfig,
+    PipelineConfig,
+    PrivacyConfig,
+    AIConfig,
+]:
+    source_table = _table(data, "source")
+    pipeline_table = _table(data, "pipeline")
+    privacy_table = _table(data, "privacy")
+    ai_table = _table(data, "ai")
+
+    source = SourceConfig(
+        type=_choice(source_table.get("type"), "source.type", SOURCE_TYPES, "sample"),
+        sample_name=_string(
+            source_table.get("sample_name"), "source.sample_name", "synthetic-vault"
+        ),
+        vault_path=_string(source_table.get("vault_path"), "source.vault_path"),
+    )
+    pipeline = PipelineConfig(
+        output_dir=_string(pipeline_table.get("output_dir"), "pipeline.output_dir", "var"),
+        warehouse_path=_string(
+            pipeline_table.get("warehouse_path"),
+            "pipeline.warehouse_path",
+            "var/warehouse.duckdb",
+        ),
+        run_mode=_string(pipeline_table.get("run_mode"), "pipeline.run_mode", "local"),
+    )
+    privacy = PrivacyConfig(
+        allow_raw_text_to_ai=_bool(
+            privacy_table.get("allow_raw_text_to_ai"),
+            "privacy.allow_raw_text_to_ai",
+        ),
+        allow_hosted_ai=_bool(
+            privacy_table.get("allow_hosted_ai"), "privacy.allow_hosted_ai"
+        ),
+        max_context_chars=_positive_int(
+            privacy_table.get("max_context_chars"),
+            "privacy.max_context_chars",
+            1500,
+        ),
+        redact_file_paths=_bool(
+            privacy_table.get("redact_file_paths"),
+            "privacy.redact_file_paths",
+            True,
+        ),
+    )
+    ai = AIConfig(
+        enabled=_bool(ai_table.get("enabled"), "ai.enabled"),
+        provider=_choice(ai_table.get("provider"), "ai.provider", AI_PROVIDERS, "none"),
+        model=_string(ai_table.get("model"), "ai.model"),
+        base_url=_string(ai_table.get("base_url"), "ai.base_url"),
+        api_key_env=_string(ai_table.get("api_key_env"), "ai.api_key_env"),
+    )
+    return source, pipeline, privacy, ai
+
+
 def _unresolved_wikilink_config(value: object) -> tuple[str, tuple[str, ...]]:
     if value is None or isinstance(value, str):
         return (
@@ -90,21 +339,16 @@ def _unresolved_wikilink_config(value: object) -> tuple[str, tuple[str, ...]]:
 def load_app_config(config_path: str | Path | None = None) -> AppConfig:
     path = Path(config_path).expanduser() if config_path else DEFAULT_CONFIG_PATH
     if not path.exists():
-        return AppConfig(config_path=path, loaded=False)
+        return _apply_env_overrides(AppConfig(config_path=path, loaded=False))
 
     data = tomllib.loads(path.read_text(encoding="utf-8"))
     if not isinstance(data, dict):
         raise ValueError(f"Config file must contain TOML tables: {path}")
 
-    scan = data.get("scan", {})
-    if not isinstance(scan, dict):
-        raise ValueError("scan must be a TOML table")
-    entities = data.get("entities", {})
-    if not isinstance(entities, dict):
-        raise ValueError("entities must be a TOML table")
-    doctor = data.get("doctor", {})
-    if not isinstance(doctor, dict):
-        raise ValueError("doctor must be a TOML table")
+    source, pipeline, privacy, ai = _load_pipeline_config(data)
+    scan = _table(data, "scan")
+    entities = _table(data, "entities")
+    doctor = _table(data, "doctor")
 
     include_globs = _string_tuple(scan.get("include_globs"), "scan.include_globs")
     exclude_globs = _string_tuple(scan.get("exclude_globs"), "scan.exclude_globs")
@@ -164,7 +408,11 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
         doctor.get("unresolved_wikilinks"),
     )
 
-    return AppConfig(
+    return _apply_env_overrides(AppConfig(
+        source=source,
+        pipeline=pipeline,
+        privacy=privacy,
+        ai=ai,
         include_globs=include_globs or DEFAULT_INCLUDE_GLOBS,
         exclude_globs=(exclude_globs or DEFAULT_EXCLUDE_GLOBS) + extra_exclude_globs,
         source_extensions=source_extensions or DEFAULT_SOURCE_EXTENSIONS,
@@ -182,7 +430,7 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
         ),
         config_path=path,
         loaded=True,
-    )
+    ))
 
 
 def vault_config_from_app_config(vault_path: str | Path, config: AppConfig) -> VaultConfig:

@@ -263,3 +263,144 @@ ignore_target_globs = "Archive/*"
         assert "doctor.unresolved_wikilinks.ignore_target_globs" in str(exc)
     else:
         raise AssertionError("Expected invalid unresolved target globs to fail")
+
+
+def test_pipeline_config_defaults_to_sample_profile(tmp_path: Path):
+    config_path = tmp_path / "config.toml"
+    config_path.write_text("", encoding="utf-8")
+
+    config = load_app_config(config_path)
+
+    assert config.source.type == "sample"
+    assert config.source.sample_name == "synthetic-vault"
+    assert config.pipeline.output_dir == "var"
+    assert config.pipeline.warehouse_path == "var/warehouse.duckdb"
+    assert config.privacy.allow_raw_text_to_ai is False
+    assert config.privacy.allow_hosted_ai is False
+    assert config.ai.enabled is False
+    assert config.ai.provider == "none"
+
+
+def test_pipeline_config_accepts_local_obsidian_source(tmp_path: Path):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        f"""
+[source]
+type = "obsidian"
+vault_path = "{vault}"
+
+[pipeline]
+output_dir = "var/local"
+warehouse_path = "var/local.duckdb"
+run_mode = "local"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    config = load_app_config(config_path)
+
+    assert config.source.type == "obsidian"
+    assert config.source.vault_path == str(vault)
+    assert config.pipeline.output_dir == "var/local"
+    assert config.pipeline.warehouse_path == "var/local.duckdb"
+
+
+def test_pipeline_config_accepts_local_ai_without_hosted_privacy(tmp_path: Path):
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[ai]
+enabled = true
+provider = "ollama"
+model = "qwen2.5:7b"
+base_url = "http://localhost:11434"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    config = load_app_config(config_path)
+
+    assert config.ai.enabled is True
+    assert config.ai.provider == "ollama"
+    assert config.ai.model == "qwen2.5:7b"
+    assert config.privacy.allow_hosted_ai is False
+
+
+def test_pipeline_config_blocks_hosted_ai_unless_privacy_allows_it(tmp_path: Path):
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[ai]
+enabled = true
+provider = "openai"
+model = "gpt-4.1-mini"
+api_key_env = "OPENAI_API_KEY"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    try:
+        load_app_config(config_path)
+    except ValueError as exc:
+        assert "privacy.allow_hosted_ai" in str(exc)
+    else:
+        raise AssertionError("Expected hosted AI to require explicit privacy opt-in")
+
+
+def test_pipeline_config_accepts_hosted_ai_when_privacy_allows_it(tmp_path: Path):
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[privacy]
+allow_hosted_ai = true
+
+[ai]
+enabled = true
+provider = "anthropic"
+model = "claude-sonnet-4"
+api_key_env = "ANTHROPIC_API_KEY"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    config = load_app_config(config_path)
+
+    assert config.privacy.allow_hosted_ai is True
+    assert config.ai.enabled is True
+    assert config.ai.provider == "anthropic"
+    assert config.ai.api_key_env == "ANTHROPIC_API_KEY"
+
+
+def test_pipeline_config_environment_overrides_ai_settings(
+    tmp_path: Path, monkeypatch
+):
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[ai]
+enabled = false
+provider = "none"
+""".strip(),
+        encoding="utf-8",
+    )
+    monkeypatch.setenv("OBSIDIAN_MCP_AI_ENABLED", "true")
+    monkeypatch.setenv("OBSIDIAN_MCP_AI_PROVIDER", "ollama")
+    monkeypatch.setenv("OBSIDIAN_MCP_AI_MODEL", "qwen3:8b")
+    monkeypatch.setenv("OBSIDIAN_MCP_AI_BASE_URL", "http://localhost:11434")
+    monkeypatch.setenv("OBSIDIAN_MCP_AI_API_KEY_ENV", "IGNORED_FOR_LOCAL")
+
+    config = load_app_config(config_path)
+
+    assert config.ai.enabled is True
+    assert config.ai.provider == "ollama"
+    assert config.ai.model == "qwen3:8b"
+    assert config.ai.base_url == "http://localhost:11434"
+    assert config.ai.api_key_env == "IGNORED_FOR_LOCAL"
+
+
+def test_example_pipeline_configs_are_valid():
+    for config_path in Path("examples/config").glob("*.toml"):
+        config = load_app_config(config_path)
+        assert config.loaded is True

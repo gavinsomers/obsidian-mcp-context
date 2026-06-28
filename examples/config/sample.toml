@@ -1,0 +1,22 @@
+[source]
+type = "sample"
+sample_name = "synthetic-vault"
+vault_path = ""
+
+[pipeline]
+output_dir = "var"
+warehouse_path = "var/warehouse.duckdb"
+run_mode = "local"
+
+[privacy]
+allow_raw_text_to_ai = false
+allow_hosted_ai = false
+max_context_chars = 1500
+redact_file_paths = true
+
+[ai]
+enabled = false
+provider = "none"
+model = ""
+base_url = ""
+api_key_env = ""

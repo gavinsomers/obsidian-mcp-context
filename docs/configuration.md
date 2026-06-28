@@ -5,6 +5,11 @@ and entity behavior. The default path is `.obsidian-mcp-context.toml` in the
 current working directory. For personal vault testing, keep that file ignored
 locally through `.git/info/exclude`.
 
+The same file can also define pipeline source, warehouse, privacy, and AI
+profile settings. These settings are read-only config; runtime status and
+telemetry should be written under ignored paths such as `var/`, not back into the
+TOML file.
+
 You can also pass an explicit path:
 
 ```bash
@@ -44,6 +49,29 @@ export unless `doctor --include-samples` is also passed.
 ## Example
 
 ```toml
+[source]
+type = "sample"
+sample_name = "synthetic-vault"
+vault_path = ""
+
+[pipeline]
+output_dir = "var"
+warehouse_path = "var/warehouse.duckdb"
+run_mode = "local"
+
+[privacy]
+allow_raw_text_to_ai = false
+allow_hosted_ai = false
+max_context_chars = 1500
+redact_file_paths = true
+
+[ai]
+enabled = false
+provider = "none"
+model = ""
+base_url = ""
+api_key_env = ""
+
 [scan]
 extra_exclude_globs = [
   "Imports/**",
@@ -87,6 +115,46 @@ ignore_target_globs = [
   "Untitled*",
 ]
 ```
+
+Additional example profiles live in `examples/config/`.
+
+## Pipeline Profile Settings
+
+- `source.type`: source connector mode. Allowed values are `sample`,
+  `obsidian`, and reserved future value `google_drive`.
+- `source.sample_name`: sample vault name when `source.type = "sample"`.
+- `source.vault_path`: local vault path when `source.type = "obsidian"`.
+- `pipeline.output_dir`: ignored runtime output directory. Default: `var`.
+- `pipeline.warehouse_path`: DuckDB artifact path. Default:
+  `var/warehouse.duckdb`.
+- `pipeline.run_mode`: runner mode label. Default: `local`.
+- `privacy.allow_raw_text_to_ai`: whether bounded note text may be sent to AI.
+  Default: `false`.
+- `privacy.allow_hosted_ai`: whether hosted providers may be used. Default:
+  `false`.
+- `privacy.max_context_chars`: hard context budget for future AI calls. Default:
+  `1500`.
+- `privacy.redact_file_paths`: whether reports should redact local paths by
+  default. Default: `true`.
+- `ai.enabled`: enables advisory AI enrichment. Default: `false`.
+- `ai.provider`: `none`, `ollama`, `openai`, `anthropic`, or reserved future
+  value `vllm`.
+- `ai.model`: provider model name.
+- `ai.base_url`: local/provider-compatible base URL when needed.
+- `ai.api_key_env`: environment variable name containing the API key. Store only
+  the env-var name here, never the key value.
+
+Hosted providers such as `openai` and `anthropic` are rejected unless
+`privacy.allow_hosted_ai = true`, and they require `ai.api_key_env`.
+
+Environment variables override TOML for CI and local experiments:
+
+- `OBSIDIAN_MCP_SOURCE_TYPE`
+- `OBSIDIAN_MCP_AI_ENABLED`
+- `OBSIDIAN_MCP_AI_PROVIDER`
+- `OBSIDIAN_MCP_AI_MODEL`
+- `OBSIDIAN_MCP_AI_BASE_URL`
+- `OBSIDIAN_MCP_AI_API_KEY_ENV`
 
 ## Scan Settings
 
