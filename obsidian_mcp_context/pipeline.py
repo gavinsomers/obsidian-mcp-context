@@ -1,0 +1,254 @@
+from __future__ import annotations
+
+from copy import deepcopy
+from datetime import datetime, timezone
+import json
+from pathlib import Path
+from typing import Any
+
+from obsidian_mcp_context.config import AppConfig, DEFAULT_CONFIG_PATH, load_app_config
+from obsidian_mcp_context.config import vault_config_from_app_config
+from obsidian_mcp_context.doctor import DoctorOptions, run_doctor
+from obsidian_mcp_context.vault import build_context
+from obsidian_mcp_context.warehouse import build_warehouse, warehouse_summary
+
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROFILE_DIR = PROJECT_ROOT / "examples" / "config"
+SAMPLE_DIR = PROJECT_ROOT / "examples"
+PIPELINE_RUN_FILENAME = "pipeline-run.json"
+REDACTED = "[redacted]"
+
+
+class PipelineConfigError(ValueError):
+    """Raised when a pipeline profile cannot resolve to a runnable source."""
+
+
+def profile_config_path(profile: str) -> Path:
+    path = PROFILE_DIR / f"{profile}.toml"
+    if not path.exists():
+        raise PipelineConfigError(f"Unknown pipeline profile: {profile}")
+    return path
+
+
+def load_pipeline_config(
+    *,
+    config_path: str | Path | None = None,
+    profile: str | None = None,
+) -> AppConfig:
+    if config_path and profile:
+        raise PipelineConfigError("Pass either --config or --profile, not both")
+    if profile:
+        return load_app_config(profile_config_path(profile))
+    return load_app_config(Path(config_path) if config_path else DEFAULT_CONFIG_PATH)
+
+
+def resolve_source_path(config: AppConfig) -> Path:
+    if config.source.type == "sample":
+        path = SAMPLE_DIR / config.source.sample_name
+    elif config.source.type == "obsidian":
+        path = Path(config.source.vault_path).expanduser()
+    elif config.source.type == "google_drive":
+        raise PipelineConfigError("source.type google_drive is not implemented yet")
+    else:
+        raise PipelineConfigError(f"Unsupported source type: {config.source.type}")
+
+    if not path.exists():
+        raise PipelineConfigError(f"Source path does not exist: {path}")
+    if not path.is_dir():
+        raise PipelineConfigError(f"Source path is not a directory: {path}")
+    return path
+
+
+def _display_path(path: Path, *, include_private_paths: bool) -> str:
+    return str(path) if include_private_paths else REDACTED
+
+
+def _source_summary(
+    config: AppConfig,
+    source_path: Path,
+    *,
+    include_private_paths: bool,
+) -> dict[str, object]:
+    summary: dict[str, object] = {
+        "type": config.source.type,
+        "exists": source_path.exists(),
+        "path": _display_path(source_path, include_private_paths=include_private_paths),
+        "path_redacted": not include_private_paths,
+    }
+    if config.source.type == "sample":
+        summary["sample_name"] = config.source.sample_name
+    return summary
+
+
+def _doctor_summary(report: dict[str, object]) -> dict[str, object]:
+    parser = report.get("parser", {})
+    graph = report.get("graph", {})
+    content = report.get("content", {})
+    warehouse = report.get("warehouse", {})
+    return {
+        "status": report.get("status"),
+        "error_count": len(report.get("errors", [])),
+        "warning_count": len(report.get("warnings", [])),
+        "parser": parser if isinstance(parser, dict) else {},
+        "graph": {
+            "wikilinks": graph.get("wikilinks", 0) if isinstance(graph, dict) else 0,
+            "resolved_wikilinks": (
+                graph.get("resolved_wikilinks", 0) if isinstance(graph, dict) else 0
+            ),
+            "unresolved_wikilinks": (
+                graph.get("unresolved_wikilinks", 0) if isinstance(graph, dict) else 0
+            ),
+            "ignored_unresolved_wikilinks": (
+                graph.get("ignored_unresolved_wikilinks", 0)
+                if isinstance(graph, dict)
+                else 0
+            ),
+        },
+        "content": {
+            "empty_note_count": (
+                content.get("empty_note_count", 0) if isinstance(content, dict) else 0
+            ),
+            "unsupported_file_count": (
+                content.get("unsupported_file_count", 0)
+                if isinstance(content, dict)
+                else 0
+            ),
+            "large_note_count": (
+                content.get("large_note_count", 0) if isinstance(content, dict) else 0
+            ),
+        },
+        "warehouse": warehouse if isinstance(warehouse, dict) else {},
+    }
+
+
+def _sanitize_private_paths(value: Any) -> Any:
+    if isinstance(value, dict):
+        sanitized = {}
+        for key, item in value.items():
+            if key in {"path", "file_path", "absolute_path"}:
+                sanitized[key] = REDACTED if item else item
+            else:
+                sanitized[key] = _sanitize_private_paths(item)
+        return sanitized
+    if isinstance(value, list):
+        return [_sanitize_private_paths(item) for item in value]
+    return value
+
+
+def sanitize_report(
+    report: dict[str, object],
+    *,
+    include_private_paths: bool,
+) -> dict[str, object]:
+    if include_private_paths:
+        return deepcopy(report)
+    return _sanitize_private_paths(report)
+
+
+def ai_posture(config: AppConfig) -> dict[str, object]:
+    return {
+        "enabled": config.ai.enabled,
+        "provider": config.ai.provider,
+        "model": config.ai.model,
+        "hosted": config.ai.provider in {"openai", "anthropic"},
+        "raw_text_allowed": config.privacy.allow_raw_text_to_ai,
+        "hosted_ai_allowed": config.privacy.allow_hosted_ai,
+        "max_context_chars": config.privacy.max_context_chars,
+        "redact_file_paths": config.privacy.redact_file_paths,
+        "calls": 0,
+        "skipped_due_to_budget": 0,
+        "skipped_due_to_privacy": 0,
+        "suggestions_written": 0,
+    }
+
+
+def empty_suggestion_counts() -> dict[str, int]:
+    return {
+        "deterministic_suggested_links": 0,
+        "ai_suggested_links": 0,
+        "ai_related_notes": 0,
+        "ai_entity_alias_suggestions": 0,
+    }
+
+
+def run_pipeline(
+    *,
+    config_path: str | Path | None = None,
+    profile: str | None = None,
+    include_private_paths: bool = False,
+) -> dict[str, object]:
+    config = load_pipeline_config(config_path=config_path, profile=profile)
+    source_path = resolve_source_path(config)
+    output_dir = Path(config.pipeline.output_dir).expanduser()
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    include_private = include_private_paths or not config.privacy.redact_file_paths
+    context = build_context(vault_config_from_app_config(source_path, config))
+    warehouse = build_warehouse(context)
+    try:
+        warehouse_report = warehouse_summary(warehouse)
+    finally:
+        warehouse.close()
+
+    doctor_report = run_doctor(
+        DoctorOptions(
+            vault_path=source_path,
+            config_path=config.config_path,
+            include_samples=include_private,
+        )
+    )
+
+    run_report: dict[str, object] = {
+        "status": doctor_report["status"],
+        "created_at": datetime.now(timezone.utc).isoformat(),
+        "config": {
+            "loaded": config.loaded,
+            "profile": profile,
+            "path": _display_path(
+                config.config_path or DEFAULT_CONFIG_PATH,
+                include_private_paths=include_private,
+            ),
+            "path_redacted": not include_private,
+        },
+        "source": _source_summary(
+            config,
+            source_path,
+            include_private_paths=include_private,
+        ),
+        "doctor": _doctor_summary(
+            sanitize_report(doctor_report, include_private_paths=include_private)
+        ),
+        "warehouse": warehouse_report,
+        "ai": ai_posture(config),
+        "suggestion_counts": empty_suggestion_counts(),
+    }
+
+    output_path = output_dir / PIPELINE_RUN_FILENAME
+    output_path.write_text(
+        json.dumps(run_report, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    run_report["output_path"] = str(output_path)
+    return run_report
+
+
+def run_pipeline_doctor(
+    *,
+    config_path: str | Path | None = None,
+    profile: str | None = None,
+    strict: bool = False,
+    include_private_paths: bool = False,
+) -> dict[str, object]:
+    config = load_pipeline_config(config_path=config_path, profile=profile)
+    source_path = resolve_source_path(config)
+    include_private = include_private_paths or not config.privacy.redact_file_paths
+    report = run_doctor(
+        DoctorOptions(
+            vault_path=source_path,
+            strict=strict,
+            config_path=config.config_path,
+            include_samples=include_private,
+        )
+    )
+    return sanitize_report(report, include_private_paths=include_private)

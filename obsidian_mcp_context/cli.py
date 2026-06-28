@@ -12,6 +12,11 @@ from obsidian_mcp_context.doctor import (
     format_json,
     run_doctor,
 )
+from obsidian_mcp_context.pipeline import (
+    PipelineConfigError,
+    run_pipeline,
+    run_pipeline_doctor,
+)
 from obsidian_mcp_context.query import list_notes, list_tasks, search_blocks
 from obsidian_mcp_context.vault import build_context
 from obsidian_mcp_context.warehouse import (
@@ -32,12 +37,53 @@ def build_parser() -> argparse.ArgumentParser:
         prog="obsidian-mcp-context",
         description="Inspect generic context extracted from an Obsidian vault.",
     )
-    parser.add_argument("--vault", required=True, help="Path to the Obsidian vault.")
+    parser.add_argument("--vault", help="Path to the Obsidian vault.")
     parser.add_argument(
         "--config",
         help="Optional .obsidian-mcp-context.toml path for local scan and entity settings.",
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
+
+    pipeline = subparsers.add_parser("pipeline", help="Run configured pipeline jobs.")
+    pipeline_subparsers = pipeline.add_subparsers(
+        dest="pipeline_command", required=True
+    )
+
+    pipeline_run = pipeline_subparsers.add_parser(
+        "run", help="Run the configured deterministic pipeline."
+    )
+    pipeline_run.add_argument(
+        "--config",
+        help="Optional .obsidian-mcp-context.toml path with pipeline settings.",
+    )
+    pipeline_run.add_argument(
+        "--profile",
+        help="Named example profile from examples/config, such as sample.",
+    )
+    pipeline_run.add_argument(
+        "--include-private-paths",
+        action="store_true",
+        help="Include local source/config paths and doctor samples in output.",
+    )
+
+    pipeline_doctor = pipeline_subparsers.add_parser(
+        "doctor", help="Run doctor against the configured pipeline source."
+    )
+    pipeline_doctor.add_argument(
+        "--config",
+        help="Optional .obsidian-mcp-context.toml path with pipeline settings.",
+    )
+    pipeline_doctor.add_argument(
+        "--profile",
+        help="Named example profile from examples/config, such as sample.",
+    )
+    pipeline_doctor.add_argument("--json", action="store_true")
+    pipeline_doctor.add_argument("--strict", action="store_true")
+    pipeline_doctor.add_argument(
+        "--include-private-paths",
+        action="store_true",
+        help="Include local source/config paths and doctor samples in output.",
+    )
 
     notes = subparsers.add_parser("notes", help="List parsed notes.")
     notes.add_argument("--limit", type=int, default=100)
@@ -105,7 +151,33 @@ def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
 
+    if args.command == "pipeline":
+        try:
+            if args.pipeline_command == "run":
+                report = run_pipeline(
+                    config_path=args.config,
+                    profile=args.profile,
+                    include_private_paths=args.include_private_paths,
+                )
+                output_path = report.pop("output_path")
+                _print_json(report)
+                print(f"Pipeline run report written to {output_path}")
+                return 0 if report["status"] != "error" else 2
+            if args.pipeline_command == "doctor":
+                report = run_pipeline_doctor(
+                    config_path=args.config,
+                    profile=args.profile,
+                    strict=args.strict,
+                    include_private_paths=args.include_private_paths,
+                )
+                print(format_json(report) if args.json else format_human(report))
+                return exit_code(report, strict=args.strict)
+        except PipelineConfigError as exc:
+            parser.error(str(exc))
+
     if args.command == "doctor":
+        if not args.vault:
+            parser.error("--vault is required for doctor")
         report = run_doctor(
             DoctorOptions(
                 vault_path=Path(args.vault),
@@ -120,6 +192,9 @@ def main(argv: list[str] | None = None) -> int:
         )
         print(format_json(report) if args.json else format_human(report))
         return exit_code(report, strict=args.strict)
+
+    if not args.vault:
+        parser.error(f"--vault is required for {args.command}")
 
     app_config = load_app_config(Path(args.config) if args.config else None)
     context = build_context(vault_config_from_app_config(Path(args.vault), app_config))
