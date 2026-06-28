@@ -29,10 +29,10 @@ state_events as (
     states.entity_type || '_' || states.state_value as event_type,
     states.state_date as event_date,
     states.note_id,
-    null as block_id,
-    null as task_id,
+    cast(null as text) as block_id,
+    cast(null as text) as task_id,
     states.source_path,
-    null as start_line,
+    cast(null as integer) as start_line,
     states.title,
     states.summary,
     states.related_entities

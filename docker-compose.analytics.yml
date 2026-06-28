@@ -1,0 +1,137 @@
+name: obsidian-mcp-context-analytics
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-obsidian_context}
+      POSTGRES_USER: ${POSTGRES_USER:-obsidian}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-obsidian}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  vault-obsidian:
+    build:
+      context: .
+      dockerfile: docker/obsidian/Dockerfile
+      args:
+        OBSIDIAN_VERSION: ${OBSIDIAN_VERSION:-1.12.7}
+    environment:
+      PUID: ${PUID:-1000}
+      PGID: ${PGID:-1000}
+      TZ: ${TZ:-Etc/UTC}
+    ports:
+      - "${OBSIDIAN_WEB_PORT:-3000}:3000"
+    volumes:
+      - obsidian-config:/config
+      - ${VAULT_PATH:-./examples/synthetic-vault}:/vault:rw
+
+  ingest:
+    build:
+      context: .
+      dockerfile: docker/python/Dockerfile
+      target: runtime-postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
+      POSTGRES_RAW_SCHEMA: ${POSTGRES_RAW_SCHEMA:-raw}
+    volumes:
+      - ${VAULT_PATH:-./examples/synthetic-vault}:/vault:ro
+    command:
+      - obsidian-mcp-context-ingest-postgres
+      - --vault
+      - /vault
+
+  dbt:
+    build:
+      context: .
+      dockerfile: docker/dbt/Dockerfile
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      DBT_TARGET: postgres
+      DBT_SOURCE_SCHEMA: ${POSTGRES_RAW_SCHEMA:-raw}
+      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-marts}
+      DBT_THREADS: ${DBT_THREADS:-1}
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: ${POSTGRES_DB:-obsidian_context}
+      POSTGRES_USER: ${POSTGRES_USER:-obsidian}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-obsidian}
+    volumes:
+      - .:/workspace
+    working_dir: /workspace
+    command: ["dbt", "run", "--profiles-dir", "dbt", "--project-dir", "."]
+
+  dbt-test:
+    extends:
+      service: dbt
+    command: ["dbt", "test", "--profiles-dir", "dbt", "--project-dir", "."]
+
+  mcp:
+    build:
+      context: .
+      dockerfile: docker/python/Dockerfile
+      target: runtime-postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
+      WAREHOUSE_BACKEND: postgres
+      OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
+    volumes:
+      - ${VAULT_PATH:-./examples/synthetic-vault}:/vault:ro
+    ports:
+      - "${MCP_PORT:-8000}:8000"
+    command:
+      - obsidian-mcp-context-mcp
+      - --transport
+      - streamable-http
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+
+  enrichment:
+    build:
+      context: .
+      dockerfile: docker/python/Dockerfile
+      target: runtime-postgres
+    profiles: ["ai"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
+    command:
+      - python
+      - -c
+      - >-
+        print("AI enrichment container is reserved for the Postgres mart/review
+        adapter; start ollama now and wire the explicit enrichment job once that
+        adapter lands.")
+
+  ollama:
+    image: ollama/ollama:latest
+    profiles: ["ai"]
+    ports:
+      - "${OLLAMA_PORT:-11434}:11434"
+    volumes:
+      - ollama-data:/root/.ollama
+
+volumes:
+  postgres-data:
+  obsidian-config:
+  ollama-data:

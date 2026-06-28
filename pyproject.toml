@@ -20,12 +20,17 @@ dev = [
 pipeline = [
   "dbt-duckdb>=1.9.0",
 ]
+postgres = [
+  "dbt-postgres>=1.9.0",
+  "psycopg[binary]>=3.2.0",
+]
 
 [project.scripts]
 obsidian-mcp-context = "obsidian_mcp_context.cli:main"
 obsidian-mcp-context-mcp = "obsidian_mcp_context.mcp_server:main"
 obsidian-mcp-context-web = "obsidian_mcp_context.web_ui:main"
 obsidian-mcp-context-ingest = "obsidian_mcp_context.ingest:main"
+obsidian-mcp-context-ingest-postgres = "obsidian_mcp_context.ingest_postgres:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
