@@ -10,6 +10,8 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+## [0.6.0] - 2026-06-28
+
 ### Added
 
 - Added a pipeline status API and web UI status panel showing warehouse snapshot
