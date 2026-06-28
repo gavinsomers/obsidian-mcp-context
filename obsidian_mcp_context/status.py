@@ -8,6 +8,7 @@ from pathlib import Path
 import duckdb
 
 from obsidian_mcp_context import dbt_warehouse
+from obsidian_mcp_context.security import validate_vault_path
 
 
 DEFAULT_WRITER_DUCKDB_PATH = Path("/warehouse/obsidian.duckdb")
@@ -115,7 +116,7 @@ def warehouse_status(
     simulation_state_path: str | Path | None = None,
 ) -> dict[str, object]:
     """Return file and warehouse status for the local web/MCP pipeline."""
-    vault = Path(vault_path).expanduser()
+    vault = validate_vault_path(vault_path)
     writer_path = _resolve_existing_or_default(
         writer_duckdb_path or os.environ.get("WRITER_DUCKDB_PATH"),
         DEFAULT_WRITER_DUCKDB_PATH,

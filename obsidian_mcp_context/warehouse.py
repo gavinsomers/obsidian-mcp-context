@@ -1,29 +1,16 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from pathlib import Path, PurePosixPath
-import re
 import sqlite3
 
-from obsidian_mcp_context.vault import VaultContext
-
-
-DATE_RE = re.compile(r"(?<!\d)(\d{4}-\d{2}-\d{2})(?!\d)")
-FRONTMATTER_DATE_RE = re.compile(
-    r"(?ms)\A\s*---.*?^date:\s*[\"']?(\d{4}-\d{2}-\d{2})[\"']?\s*$.*?^---\s*$"
+from obsidian_mcp_context.domain import (
+    frontmatter_value,
+    note_title,
+    note_type,
+    slug,
+    source_date,
 )
-FRONTMATTER_FIELD_RE = re.compile(r"(?ms)\A\s*---(?P<body>.*?)^---\s*$")
-NON_WORD_RE = re.compile(r"[^a-z0-9]+")
-NOTE_TYPE_BY_FOLDER = {
-    "companies": "company",
-    "daily": "daily",
-    "decisions": "decision",
-    "meetings": "meeting",
-    "people": "person",
-    "projects": "project",
-    "research": "research",
-    "risks": "risk",
-}
+from obsidian_mcp_context.vault import VaultContext
 
 
 @dataclass(frozen=True)
@@ -36,52 +23,6 @@ class Warehouse:
 
 def _dict_factory(cursor: sqlite3.Cursor, row: sqlite3.Row) -> dict[str, object]:
     return {column[0]: row[index] for index, column in enumerate(cursor.description)}
-
-
-def _slug(value: str) -> str:
-    normalized = NON_WORD_RE.sub("-", value.casefold()).strip("-")
-    return normalized or "unknown"
-
-
-def _note_title(source_path: str) -> str:
-    return Path(source_path).stem
-
-
-def _note_type(source_path: str) -> str:
-    parts = PurePosixPath(source_path).parts
-    if not parts:
-        return "note"
-    return NOTE_TYPE_BY_FOLDER.get(parts[0].casefold(), "note")
-
-
-def _source_date(source_path: str, text: str | None = None) -> str | None:
-    match = DATE_RE.search(source_path)
-    if match:
-        return match.group(1)
-    if text:
-        frontmatter_match = FRONTMATTER_DATE_RE.search(text)
-        if frontmatter_match:
-            return frontmatter_match.group(1)
-        content_text = FRONTMATTER_FIELD_RE.sub("", text, count=1)
-        content_match = DATE_RE.search(content_text)
-        if content_match:
-            return content_match.group(1)
-    return None
-
-
-def _frontmatter_value(text: str | None, field: str) -> str | None:
-    if not text:
-        return None
-    frontmatter_match = FRONTMATTER_FIELD_RE.search(text)
-    if not frontmatter_match:
-        return None
-    field_match = re.search(
-        rf"(?m)^{re.escape(field)}:\s*[\"']?([^\"'\n]+)[\"']?\s*$",
-        frontmatter_match.group("body"),
-    )
-    if not field_match:
-        return None
-    return field_match.group(1).strip()
 
 
 def _bounded_limit(limit: int, maximum: int = 500) -> int:
@@ -187,7 +128,7 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
     for source_file in context.files:
         source_path = source_file.source_path
         first_block_text = first_block_text_by_source.get(source_path)
-        note_id = f"note:{_slug(source_path)}"
+        note_id = f"note:{slug(source_path)}"
         connection.execute(
             """
             insert into dim_notes
@@ -209,19 +150,19 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
                 note_id,
                 source_path,
                 str(source_file.absolute_path),
-                _note_type(source_path),
-                _note_title(source_path),
-                _source_date(source_path, first_block_text),
-                _frontmatter_value(first_block_text, "source_created_at"),
-                _frontmatter_value(first_block_text, "source_observed_at"),
-                _frontmatter_value(first_block_text, "created_at"),
-                _frontmatter_value(first_block_text, "updated_at"),
+                note_type(source_path),
+                note_title(source_path),
+                source_date(source_path, first_block_text),
+                frontmatter_value(first_block_text, "source_created_at"),
+                frontmatter_value(first_block_text, "source_observed_at"),
+                frontmatter_value(first_block_text, "created_at"),
+                frontmatter_value(first_block_text, "updated_at"),
             ),
         )
 
 
 def _entity_id(entity_type: str, name: str) -> str:
-    return f"{entity_type}:{_slug(name)}"
+    return f"{entity_type}:{slug(name)}"
 
 
 def _insert_entity(

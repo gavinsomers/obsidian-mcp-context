@@ -363,6 +363,19 @@ Start the MCP server manually with:
 .venv/bin/obsidian-mcp-context-mcp
 ```
 
+For HTTP transports, restrict readable vault paths with
+`OBSIDIAN_MCP_ALLOWED_ROOTS`. It accepts a comma-separated list of absolute
+directories. When set, every requested `vault_path` must resolve under one of
+those roots:
+
+```bash
+OBSIDIAN_MCP_ALLOWED_ROOTS=/home/gavman/notes \
+  .venv/bin/obsidian-mcp-context-mcp --transport streamable-http --host 127.0.0.1 --port 8000
+```
+
+The Docker web and MCP services set this automatically to their mounted vault
+paths.
+
 Available tools:
 
 - `list_vault_notes`

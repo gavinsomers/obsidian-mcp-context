@@ -1,29 +1,15 @@
 from __future__ import annotations
 
 import argparse
-import os
-from functools import lru_cache
 from pathlib import Path
 from typing import Annotated
 
 from mcp.server.fastmcp import FastMCP
 from pydantic import Field
 
-from obsidian_mcp_context import dbt_warehouse
-from obsidian_mcp_context.query import (
-    get_note_context,
-    list_notes,
-    list_tasks,
-    search_blocks,
-)
-from obsidian_mcp_context.vault import VaultConfig, build_context
-from obsidian_mcp_context.warehouse import (
-    agent_context,
-    build_warehouse,
-    entity_timeline,
-    list_entities,
-    warehouse_summary,
-)
+from obsidian_mcp_context.security import validate_vault_path
+from obsidian_mcp_context.services import default_context_service
+from obsidian_mcp_context.vault import VaultConfig
 
 
 MAX_LIMIT = 200
@@ -33,33 +19,22 @@ def _bounded_limit(limit: int) -> int:
     return max(1, min(limit, MAX_LIMIT))
 
 
-def _split_csv(value: str | None, default: tuple[str, ...]) -> tuple[str, ...]:
-    if not value:
-        return default
-    return tuple(item.strip() for item in value.split(",") if item.strip())
-
-
 def _resolve_dbt_path(duckdb_path: str | None = None) -> Path | None:
-    path = dbt_warehouse.resolve_duckdb_path(duckdb_path or os.environ.get("DUCKDB_PATH"))
-    if path and dbt_warehouse.is_available(path):
-        return path
-    return None
+    return default_context_service.dbt_path(duckdb_path)
 
 
-@lru_cache(maxsize=8)
 def _load_context(
     vault_path: str,
     include_globs: str | None = None,
     exclude_globs: str | None = None,
     source_extensions: str | None = None,
 ):
-    config = VaultConfig(
-        vault_path=Path(vault_path),
-        include_globs=_split_csv(include_globs, VaultConfig.include_globs),
-        exclude_globs=_split_csv(exclude_globs, VaultConfig.exclude_globs),
-        source_extensions=_split_csv(source_extensions, VaultConfig.source_extensions),
+    return default_context_service.context(
+        vault_path,
+        include_globs=include_globs,
+        exclude_globs=exclude_globs,
+        source_extensions=source_extensions,
     )
-    return build_context(config)
 
 
 mcp = FastMCP(
@@ -81,8 +56,7 @@ def list_vault_notes(
     ] = 100,
 ) -> list[dict[str, object]]:
     """List text notes found in the configured vault."""
-    context = _load_context(vault_path)
-    return list_notes(context, limit=_bounded_limit(limit))
+    return default_context_service.list_notes(vault_path, limit=_bounded_limit(limit))
 
 
 @mcp.tool()
@@ -106,9 +80,8 @@ def search_vault_blocks(
     ] = 25,
 ) -> list[dict[str, object]]:
     """Search parsed note blocks with file and line provenance."""
-    context = _load_context(vault_path)
-    return search_blocks(
-        context,
+    return default_context_service.search_blocks(
+        vault_path,
         text=text,
         source_path=source_path,
         heading=heading,
@@ -137,9 +110,8 @@ def list_vault_tasks(
     ] = 50,
 ) -> list[dict[str, object]]:
     """List parsed Markdown tasks with provenance."""
-    context = _load_context(vault_path)
-    return list_tasks(
-        context,
+    return default_context_service.list_tasks(
+        vault_path,
         checked=checked,
         text=text,
         source_path=source_path,
@@ -156,8 +128,7 @@ def get_vault_note_context(
     ],
 ) -> dict[str, object]:
     """Fetch all parsed context for one vault-relative note path."""
-    context = _load_context(vault_path)
-    return get_note_context(context, source_path=source_path)
+    return default_context_service.note_context(vault_path, source_path=source_path)
 
 
 @mcp.tool()
@@ -174,12 +145,7 @@ def get_vault_warehouse_summary(
     ] = None,
 ) -> dict[str, object]:
     """Summarize deterministic warehouse dimensions, facts, and marts."""
-    dbt_path = _resolve_dbt_path(duckdb_path)
-    if dbt_path:
-        return dbt_warehouse.summary(dbt_path)
-    context = _load_context(vault_path)
-    warehouse = build_warehouse(context)
-    return warehouse_summary(warehouse)
+    return default_context_service.warehouse_summary(vault_path, duckdb_path=duckdb_path)
 
 
 @mcp.tool()
@@ -208,21 +174,12 @@ def list_vault_entities(
     ] = None,
 ) -> list[dict[str, object]]:
     """List modeled entities derived from notes, wikilinks, and tags."""
-    dbt_path = _resolve_dbt_path(duckdb_path)
-    if dbt_path:
-        return dbt_warehouse.list_entities(
-            dbt_path,
-            entity_type=entity_type,
-            text=text,
-            limit=_bounded_limit(limit),
-        )
-    context = _load_context(vault_path)
-    warehouse = build_warehouse(context)
-    return list_entities(
-        warehouse,
+    return default_context_service.list_entities(
+        vault_path,
         entity_type=entity_type,
         text=text,
         limit=_bounded_limit(limit),
+        duckdb_path=duckdb_path,
     )
 
 
@@ -252,32 +209,12 @@ def get_vault_entity_timeline(
     ] = None,
 ) -> list[dict[str, object]]:
     """Return timeline rows connected to a modeled entity."""
-    dbt_path = _resolve_dbt_path(duckdb_path)
-    if dbt_path:
-        entities = dbt_warehouse.list_entities(dbt_path, text=entity, limit=MAX_LIMIT)
-        entity_row = next(
-            (row for row in entities if str(row["name"]).casefold() == entity.casefold()),
-            None,
-        )
-        if entity_row and entity_row["entity_type"] == "project":
-            return dbt_warehouse.project_context(
-                dbt_path,
-                project=str(entity_row["name"]),
-                limit=_bounded_limit(limit),
-            )
-        if entity_row and entity_row["entity_type"] == "person":
-            return dbt_warehouse.person_context(
-                dbt_path,
-                person=str(entity_row["name"]),
-                limit=_bounded_limit(limit),
-            )
-    context = _load_context(vault_path)
-    warehouse = build_warehouse(context)
-    return entity_timeline(
-        warehouse,
+    return default_context_service.entity_timeline(
+        vault_path,
         entity=entity,
         text=text,
         limit=_bounded_limit(limit),
+        duckdb_path=duckdb_path,
     )
 
 
@@ -311,39 +248,13 @@ def search_vault_agent_context(
     ] = None,
 ) -> list[dict[str, object]]:
     """Search curated deterministic context rows for agent use."""
-    dbt_path = _resolve_dbt_path(duckdb_path)
-    if dbt_path and entity:
-        entities = dbt_warehouse.list_entities(dbt_path, text=entity, limit=MAX_LIMIT)
-        entity_row = next(
-            (row for row in entities if str(row["name"]).casefold() == entity.casefold()),
-            None,
-        )
-        if entity_row and entity_row["entity_type"] == "project":
-            return dbt_warehouse.project_context(
-                dbt_path,
-                project=str(entity_row["name"]),
-                limit=_bounded_limit(limit),
-            )
-        if entity_row and entity_row["entity_type"] == "person":
-            return dbt_warehouse.person_context(
-                dbt_path,
-                person=str(entity_row["name"]),
-                limit=_bounded_limit(limit),
-            )
-    if dbt_path and event_type == "open_loop":
-        return dbt_warehouse.list_open_loops(
-            dbt_path,
-            entity=entity,
-            limit=_bounded_limit(limit),
-        )
-    context = _load_context(vault_path)
-    warehouse = build_warehouse(context)
-    return agent_context(
-        warehouse,
+    return default_context_service.agent_context(
+        vault_path,
         text=text,
         entity=entity,
         event_type=event_type,
         limit=_bounded_limit(limit),
+        duckdb_path=duckdb_path,
     )
 
 
@@ -366,11 +277,9 @@ def get_vault_project_context(
     ] = None,
 ) -> list[dict[str, object]]:
     """Return dbt mart-backed project context, including decisions, risks, and open loops."""
-    dbt_path = _resolve_dbt_path(duckdb_path)
-    if not dbt_path:
-        return []
-    return dbt_warehouse.project_context(
-        dbt_path,
+    validate_vault_path(vault_path)
+    return default_context_service.project_context(
+        duckdb_path,
         project=project,
         limit=_bounded_limit(limit),
     )
@@ -395,11 +304,9 @@ def get_vault_person_context(
     ] = None,
 ) -> list[dict[str, object]]:
     """Return dbt mart-backed person context, including decisions, risks, and open loops."""
-    dbt_path = _resolve_dbt_path(duckdb_path)
-    if not dbt_path:
-        return []
-    return dbt_warehouse.person_context(
-        dbt_path,
+    validate_vault_path(vault_path)
+    return default_context_service.person_context(
+        duckdb_path,
         person=person,
         limit=_bounded_limit(limit),
     )
@@ -427,11 +334,9 @@ def list_vault_open_loops(
     ] = None,
 ) -> list[dict[str, object]]:
     """List dbt mart-backed open loops from unchecked tasks."""
-    dbt_path = _resolve_dbt_path(duckdb_path)
-    if not dbt_path:
-        return []
-    return dbt_warehouse.list_open_loops(
-        dbt_path,
+    validate_vault_path(vault_path)
+    return default_context_service.open_loops(
+        duckdb_path,
         entity=entity,
         limit=_bounded_limit(limit),
     )
@@ -463,11 +368,9 @@ def list_vault_decisions(
     ] = None,
 ) -> list[dict[str, object]]:
     """List dbt mart-backed decisions with optional entity and status filters."""
-    dbt_path = _resolve_dbt_path(duckdb_path)
-    if not dbt_path:
-        return []
-    return dbt_warehouse.list_decisions(
-        dbt_path,
+    validate_vault_path(vault_path)
+    return default_context_service.decisions(
+        duckdb_path,
         entity=entity,
         status=status,
         limit=_bounded_limit(limit),
@@ -500,11 +403,9 @@ def list_vault_risks(
     ] = None,
 ) -> list[dict[str, object]]:
     """List dbt mart-backed risks with optional entity and status filters."""
-    dbt_path = _resolve_dbt_path(duckdb_path)
-    if not dbt_path:
-        return []
-    return dbt_warehouse.list_risks(
-        dbt_path,
+    validate_vault_path(vault_path)
+    return default_context_service.risks(
+        duckdb_path,
         entity=entity,
         status=status,
         limit=_bounded_limit(limit),
