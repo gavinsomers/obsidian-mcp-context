@@ -195,6 +195,62 @@ def suggestion_counts(warehouse_report: dict[str, object]) -> dict[str, int]:
     }
 
 
+def privacy_posture(
+    config: AppConfig,
+    *,
+    include_private_paths: bool,
+    output_path: Path,
+    enrichment_stats: AIEnrichmentStats,
+) -> dict[str, object]:
+    output_under_configured_dir = False
+    try:
+        output_path.resolve().relative_to(Path(config.pipeline.output_dir).resolve())
+        output_under_configured_dir = True
+    except ValueError:
+        output_under_configured_dir = False
+    return {
+        "raw_text_to_ai_allowed": config.privacy.allow_raw_text_to_ai,
+        "hosted_ai_allowed": config.privacy.allow_hosted_ai,
+        "redact_file_paths": config.privacy.redact_file_paths,
+        "private_paths_in_report": include_private_paths,
+        "samples_included": include_private_paths,
+        "runtime_state_path": _display_path(
+            output_path,
+            include_private_paths=include_private_paths,
+        ),
+        "runtime_state_path_redacted": not include_private_paths,
+        "runtime_state_under_configured_output_dir": output_under_configured_dir,
+        "ai_calls": enrichment_stats.calls,
+        "ai_suggestions_written": enrichment_stats.suggestions_written,
+        "ai_skipped_due_to_privacy": enrichment_stats.skipped_due_to_privacy,
+        "ai_skipped_due_to_budget": enrichment_stats.skipped_due_to_budget,
+        "ai_skipped_due_to_provider_error": (
+            enrichment_stats.skipped_due_to_provider_error
+        ),
+        "ai_skipped_due_to_invalid_candidate": (
+            enrichment_stats.skipped_due_to_invalid_candidate
+        ),
+        "ai_skipped_no_candidate": enrichment_stats.skipped_no_candidate,
+    }
+
+
+def review_summary(warehouse_report: dict[str, object]) -> dict[str, object]:
+    tables = warehouse_report.get("tables", {})
+    if not isinstance(tables, dict):
+        tables = {}
+    return {
+        "deterministic_suggested_links": {
+            "pending_count": int(tables.get("deterministic_suggested_links", 0)),
+            "contains_source_paths": False,
+        },
+        "ai_suggested_links": {
+            "pending_count": int(tables.get("ai_suggested_links", 0)),
+            "reviewed_status": "pending",
+            "contains_source_paths": False,
+        },
+    }
+
+
 def run_pipeline(
     *,
     config_path: str | Path | None = None,
@@ -209,6 +265,8 @@ def run_pipeline(
     include_private = include_private_paths or not config.privacy.redact_file_paths
     context = build_context(vault_config_from_app_config(source_path, config))
     warehouse = build_warehouse(context)
+    output_path = output_dir / PIPELINE_RUN_FILENAME
+
     try:
         enrichment_stats = run_unresolved_link_ai_enrichment(
             warehouse,
@@ -247,11 +305,17 @@ def run_pipeline(
             sanitize_report(doctor_report, include_private_paths=include_private)
         ),
         "warehouse": warehouse_report,
+        "privacy": privacy_posture(
+            config,
+            include_private_paths=include_private,
+            output_path=output_path,
+            enrichment_stats=enrichment_stats,
+        ),
         "ai": ai_posture(config, enrichment_stats),
+        "review": review_summary(warehouse_report),
         "suggestion_counts": suggestion_counts(warehouse_report),
     }
 
-    output_path = output_dir / PIPELINE_RUN_FILENAME
     output_path.write_text(
         json.dumps(run_report, indent=2, sort_keys=True, ensure_ascii=False) + "\n",
         encoding="utf-8",

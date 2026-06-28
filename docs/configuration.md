@@ -198,9 +198,9 @@ Or run one of the checked-in example profiles:
 
 The runner writes runtime state to `var/pipeline-run.json` by default, or to the
 configured `pipeline.output_dir`. The report includes status, source summary,
-doctor summary, warehouse summary, AI posture, and suggestion counts. Suggestion
-counts include deterministic link suggestions when unresolved wikilinks have
-bounded candidate matches.
+doctor summary, warehouse summary, privacy posture, AI posture, review summary,
+and suggestion counts. Suggestion counts include deterministic link suggestions
+when unresolved wikilinks have bounded candidate matches.
 
 When AI is enabled, the runner validates that the configured provider can be
 constructed and reports `ai.configured` plus any configuration error. It does
@@ -222,6 +222,17 @@ To run doctor against the configured source without passing `--vault`:
 ```bash
 .venv/bin/obsidian-mcp-context pipeline doctor --config .obsidian-mcp-context.toml
 ```
+
+The `privacy` report section includes aggregate posture and safety counters:
+
+- whether raw text and hosted AI are allowed
+- whether private paths and samples are included in the report
+- whether the runtime state file is under the configured output directory
+- AI call count, suggestions written, and skip counts for privacy, budget,
+  provider errors, invalid candidates, and no-candidate decisions
+
+The `review` report section exposes aggregate pending counts for deterministic
+and AI suggestions without source paths by default.
 
 ## Deterministic Suggestions
 
