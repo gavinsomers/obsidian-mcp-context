@@ -555,3 +555,47 @@ updated_at: 2026-06-28T09:20:00
     assert any(row["event_type"] == "open_loop" for row in context)
     assert any(row["target_entity_name"] == "Revenue Dashboard" for row in relationships)
     assert open_loops[0]["summary"].startswith("Review [[Acme Renewal]]")
+
+
+def test_dbt_pipeline_materializes_slug_colliding_entity_names(tmp_path: Path):
+    vault_path = tmp_path / "vault"
+    duckdb_path = tmp_path / "obsidian.duckdb"
+    (vault_path / "Clients").mkdir(parents=True)
+    (vault_path / "Clients" / "Acme Renewal.md").write_text(
+        "# Acme Renewal\n\nLinks to [[Acme-Renewal]].\n",
+        encoding="utf-8",
+    )
+    (vault_path / "Clients" / "Acme-Renewal.md").write_text(
+        "# Acme-Renewal\n\nLinks to [[Acme Renewal]].\n",
+        encoding="utf-8",
+    )
+
+    ingest_vault(vault_path, duckdb_path)
+    env = os.environ | {"DUCKDB_PATH": str(duckdb_path)}
+    subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "dbt.cli.main",
+            "run",
+            "--profiles-dir",
+            "dbt",
+            "--project-dir",
+            ".",
+            "--quiet",
+        ],
+        cwd=Path(__file__).resolve().parents[1],
+        env=env,
+        check=True,
+    )
+
+    entities = dbt_warehouse.list_entities(
+        duckdb_path,
+        entity_type="client",
+        limit=10,
+    )
+    entity_ids = {entity["entity_id"] for entity in entities}
+
+    assert {entity["name"] for entity in entities} == {"Acme Renewal", "Acme-Renewal"}
+    assert len(entity_ids) == 2
+    assert all(entity_id.startswith("client:acme-renewal:") for entity_id in entity_ids)

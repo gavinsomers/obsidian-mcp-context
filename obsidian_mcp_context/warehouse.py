@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from hashlib import sha1
 import sqlite3
 
 from obsidian_mcp_context.domain import (
@@ -129,7 +130,7 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
     for source_file in context.files:
         source_path = source_file.source_path
         first_block_text = first_block_text_by_source.get(source_path)
-        note_id = f"note:{slug(source_path)}"
+        note_id = _resolve_note_id(connection, source_path)
         connection.execute(
             """
             insert into dim_notes
@@ -162,8 +163,48 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
         )
 
 
+def _note_id(source_path: str) -> str:
+    return f"note:{slug(source_path)}"
+
+
+def _note_id_with_hash(source_path: str) -> str:
+    suffix = sha1(source_path.encode("utf-8")).hexdigest()[:8]
+    return f"{_note_id(source_path)}:{suffix}"
+
+
+def _resolve_note_id(connection: sqlite3.Connection, source_path: str) -> str:
+    note_id = _note_id(source_path)
+    row = connection.execute(
+        "select source_path from dim_notes where note_id = ?",
+        (note_id,),
+    ).fetchone()
+    if row is None or row["source_path"] == source_path:
+        return note_id
+    return _note_id_with_hash(source_path)
+
+
 def _entity_id(entity_type: str, name: str) -> str:
     return f"{entity_type}:{slug(name)}"
+
+
+def _entity_id_with_hash(entity_type: str, name: str) -> str:
+    suffix = sha1(f"{entity_type}:{name}".encode("utf-8")).hexdigest()[:8]
+    return f"{_entity_id(entity_type, name)}:{suffix}"
+
+
+def _resolve_entity_id(connection: sqlite3.Connection, entity_type: str, name: str) -> str:
+    entity_id = _entity_id(entity_type, name)
+    row = connection.execute(
+        """
+        select entity_type, name
+        from dim_entities
+        where entity_id = ?
+        """,
+        (entity_id,),
+    ).fetchone()
+    if row is None or (row["entity_type"] == entity_type and row["name"] == name):
+        return entity_id
+    return _entity_id_with_hash(entity_type, name)
 
 
 def _insert_entity(
@@ -173,7 +214,7 @@ def _insert_entity(
     source_path: str | None = None,
     canonical_note_id: str | None = None,
 ) -> str:
-    entity_id = _entity_id(entity_type, name)
+    entity_id = _resolve_entity_id(connection, entity_type, name)
     connection.execute(
         """
         insert into dim_entities
@@ -231,6 +272,15 @@ def _insert_entities(connection: sqlite3.Connection) -> None:
         _insert_entity(connection, "topic", row["tag"])
 
 
+def _executemany_if_rows(
+    connection: sqlite3.Connection,
+    query: str,
+    rows: list[tuple[object, ...]],
+) -> None:
+    if rows:
+        connection.executemany(query, rows)
+
+
 def _note_id_for_source(connection: sqlite3.Connection, source_path: str) -> str:
     row = connection.execute(
         "select note_id from dim_notes where source_path = ?", (source_path,)
@@ -245,11 +295,13 @@ def _insert_facts(connection: sqlite3.Connection, context: VaultContext) -> None
         "create temporary table pending_links (link_target text not null)"
     )
     connection.execute("create temporary table pending_tags (tag text not null)")
-    connection.executemany(
+    _executemany_if_rows(
+        connection,
         "insert into pending_links (link_target) values (?)",
         [(link.link_target,) for link in context.links],
     )
-    connection.executemany(
+    _executemany_if_rows(
+        connection,
         "insert into pending_tags (tag) values (?)",
         [(tag.tag,) for tag in context.tags],
     )

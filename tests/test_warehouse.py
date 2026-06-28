@@ -129,3 +129,25 @@ def test_entity_filters_match_exact_related_entity_names(tmp_path: Path):
     assert context_rows
     assert all("Project Atlas 16" not in row["summary"] for row in timeline_rows)
     assert all("Project Atlas 16" not in row["summary"] for row in context_rows)
+
+
+def test_warehouse_entity_ids_are_collision_resistant(tmp_path: Path):
+    vault = tmp_path / "vault"
+    (vault / "Projects").mkdir(parents=True)
+    (vault / "Projects" / "Alpha Beta.md").write_text(
+        "# Alpha Beta\n", encoding="utf-8"
+    )
+    (vault / "Projects" / "Alpha-Beta.md").write_text(
+        "# Alpha-Beta\n", encoding="utf-8"
+    )
+
+    context = build_context(VaultConfig(vault_path=vault))
+    warehouse = build_warehouse(context)
+
+    entities = list_entities(warehouse, entity_type="project", limit=10)
+    entity_ids = {entity["entity_id"] for entity in entities}
+
+    assert {entity["name"] for entity in entities} == {"Alpha Beta", "Alpha-Beta"}
+    assert len(entity_ids) == 2
+    assert "project:alpha-beta" in entity_ids
+    assert any(entity_id.startswith("project:alpha-beta:") for entity_id in entity_ids)

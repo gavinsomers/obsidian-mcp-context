@@ -16,6 +16,11 @@ The project uses semantic-ish versions:
   generated warehouse artifacts before commit.
 - Added stable `doctor` diagnostic codes in JSON output.
 
+### Fixed
+
+- Made in-memory and DuckDB-backed note/entity IDs collision-resistant when
+  different real-vault paths or names normalize to the same slug.
+
 ## [0.7.0] - 2026-06-28
 
 ### Added

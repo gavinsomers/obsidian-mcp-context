@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import asdict
+from hashlib import sha1
 from pathlib import Path
 
 import duckdb
@@ -23,6 +24,30 @@ def _executemany_if_rows(
 ) -> None:
     if rows:
         connection.executemany(query, rows)
+
+
+def _base_note_id(source_path: str) -> str:
+    return f"note:{slug(source_path)}"
+
+
+def _hashed_note_id(source_path: str) -> str:
+    suffix = sha1(source_path.encode("utf-8")).hexdigest()[:8]
+    return f"{_base_note_id(source_path)}:{suffix}"
+
+
+def _note_ids_by_source(source_paths: list[str]) -> dict[str, str]:
+    base_counts: dict[str, int] = {}
+    for source_path in source_paths:
+        base_id = _base_note_id(source_path)
+        base_counts[base_id] = base_counts.get(base_id, 0) + 1
+    return {
+        source_path: (
+            _hashed_note_id(source_path)
+            if base_counts[_base_note_id(source_path)] > 1
+            else _base_note_id(source_path)
+        )
+        for source_path in source_paths
+    }
 
 
 def _create_tables(connection: duckdb.DuckDBPyConnection) -> None:
@@ -113,6 +138,9 @@ def ingest_vault(vault_path: Path, duckdb_path: Path) -> dict[str, int]:
     first_block_text_by_source = {
         block.source_path: block.text for block in reversed(context.blocks)
     }
+    note_ids_by_source = _note_ids_by_source(
+        [source_file.source_path for source_file in context.files]
+    )
 
     connection = duckdb.connect(str(duckdb_path))
     try:
@@ -122,7 +150,7 @@ def ingest_vault(vault_path: Path, duckdb_path: Path) -> dict[str, int]:
             first_block_text = first_block_text_by_source.get(source_file.source_path)
             files.append(
                 (
-                    f"note:{slug(source_file.source_path)}",
+                    note_ids_by_source[source_file.source_path],
                     source_file.source_path,
                     str(source_file.absolute_path),
                     note_type(source_file.source_path),
