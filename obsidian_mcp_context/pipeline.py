@@ -10,6 +10,8 @@ from obsidian_mcp_context.ai import AIProviderError, build_ai_provider
 from obsidian_mcp_context.config import AppConfig, DEFAULT_CONFIG_PATH, load_app_config
 from obsidian_mcp_context.config import vault_config_from_app_config
 from obsidian_mcp_context.doctor import DoctorOptions, run_doctor
+from obsidian_mcp_context.enrichment import AIEnrichmentStats
+from obsidian_mcp_context.enrichment import run_unresolved_link_ai_enrichment
 from obsidian_mcp_context.vault import build_context
 from obsidian_mcp_context.warehouse import build_warehouse, warehouse_summary
 
@@ -147,7 +149,10 @@ def sanitize_report(
     return _sanitize_private_paths(report)
 
 
-def ai_posture(config: AppConfig) -> dict[str, object]:
+def ai_posture(
+    config: AppConfig,
+    enrichment_stats: AIEnrichmentStats | None = None,
+) -> dict[str, object]:
     configured = False
     configuration_error = ""
     if not config.ai.enabled:
@@ -158,6 +163,7 @@ def ai_posture(config: AppConfig) -> dict[str, object]:
             configured = True
         except AIProviderError as exc:
             configuration_error = str(exc)
+    stats = enrichment_stats or AIEnrichmentStats()
     return {
         "enabled": config.ai.enabled,
         "provider": config.ai.provider,
@@ -169,10 +175,7 @@ def ai_posture(config: AppConfig) -> dict[str, object]:
         "hosted_ai_allowed": config.privacy.allow_hosted_ai,
         "max_context_chars": config.privacy.max_context_chars,
         "redact_file_paths": config.privacy.redact_file_paths,
-        "calls": 0,
-        "skipped_due_to_budget": 0,
-        "skipped_due_to_privacy": 0,
-        "suggestions_written": 0,
+        **stats.to_dict(),
     }
 
 
@@ -181,9 +184,12 @@ def suggestion_counts(warehouse_report: dict[str, object]) -> dict[str, int]:
     deterministic_count = 0
     if isinstance(tables, dict):
         deterministic_count = int(tables.get("deterministic_suggested_links", 0))
+        ai_count = int(tables.get("ai_suggested_links", 0))
+    else:
+        ai_count = 0
     return {
         "deterministic_suggested_links": deterministic_count,
-        "ai_suggested_links": 0,
+        "ai_suggested_links": ai_count,
         "ai_related_notes": 0,
         "ai_entity_alias_suggestions": 0,
     }
@@ -204,6 +210,10 @@ def run_pipeline(
     context = build_context(vault_config_from_app_config(source_path, config))
     warehouse = build_warehouse(context)
     try:
+        enrichment_stats = run_unresolved_link_ai_enrichment(
+            warehouse,
+            config=config,
+        )
         warehouse_report = warehouse_summary(warehouse)
     finally:
         warehouse.close()
@@ -237,7 +247,7 @@ def run_pipeline(
             sanitize_report(doctor_report, include_private_paths=include_private)
         ),
         "warehouse": warehouse_report,
-        "ai": ai_posture(config),
+        "ai": ai_posture(config, enrichment_stats),
         "suggestion_counts": suggestion_counts(warehouse_report),
     }
 

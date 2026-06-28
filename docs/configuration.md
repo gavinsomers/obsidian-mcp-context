@@ -147,13 +147,18 @@ Additional example profiles live in `examples/config/`.
 Hosted providers such as `openai` and `anthropic` are rejected unless
 `privacy.allow_hosted_ai = true`, and they require `ai.api_key_env`.
 
-Phase 4 includes the AI provider abstraction and configuration validation. It
-does not run enrichment jobs from `pipeline run`; AI call counts remain zero
-until the Phase 5 enrichment jobs are added.
+AI enrichment is advisory. It never changes canonical note/link data directly;
+suggestions are written to review tables with `reviewed_status = "pending"`.
 
 For a local Qwen model through Ollama:
 
 ```toml
+[privacy]
+allow_raw_text_to_ai = true
+allow_hosted_ai = false
+max_context_chars = 1500
+redact_file_paths = true
+
 [ai]
 enabled = true
 provider = "ollama"
@@ -199,7 +204,9 @@ bounded candidate matches.
 
 When AI is enabled, the runner validates that the configured provider can be
 constructed and reports `ai.configured` plus any configuration error. It does
-not send vault text to AI or run enrichment jobs in Phase 4.
+not send vault-derived prompt content unless `privacy.allow_raw_text_to_ai =
+true`. If raw text is not allowed, enrichment is skipped and counted under
+`ai.skipped_due_to_privacy`.
 
 By default, local source/config paths and doctor samples are redacted from
 pipeline output. Use `--include-private-paths` only for local debugging:
@@ -233,6 +240,28 @@ Each suggestion stores the source link, source note, candidate target note,
 suggestion type, deterministic score, rank, JSON signals, and creation
 timestamp. Pipeline reports surface the row count under
 `suggestion_counts.deterministic_suggested_links`.
+
+## AI Suggestions
+
+The first AI enrichment job writes to `ai_suggested_links`. It asks the
+configured provider to choose the best target for unresolved wikilinks from the
+already-generated deterministic candidates.
+
+Guardrails:
+
+- AI is disabled by default.
+- Raw vault-derived prompt content is skipped unless
+  `privacy.allow_raw_text_to_ai = true`.
+- The provider can only select a `candidate_target_note_id` that was supplied in
+  the deterministic candidate set.
+- Empty or invalid selections are skipped and counted.
+- Context overflow is counted and skipped; prompts are not truncated.
+- Suggestions default to `reviewed_status = "pending"`.
+
+Each row stores source link, source note, suggested target note, confidence,
+rationale, provider, model, prompt version, prompt hash, review status, and
+creation timestamp. Pipeline reports surface row counts under
+`suggestion_counts.ai_suggested_links` and call/skip counts under `ai`.
 
 ## Scan Settings
 

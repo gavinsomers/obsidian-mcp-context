@@ -131,6 +131,23 @@ def _create_schema(connection: sqlite3.Connection) -> None:
             unique(source_link_id, candidate_target_note_id)
         );
 
+        create table ai_suggested_links (
+            ai_suggestion_id text primary key,
+            source_link_id text not null references fact_links(link_id),
+            source_note_id text not null references dim_notes(note_id),
+            suggested_target_note_id text not null references dim_notes(note_id),
+            suggestion_type text not null,
+            confidence_score real not null,
+            rationale text not null,
+            provider text not null,
+            model text not null,
+            prompt_version text not null,
+            input_hash text not null,
+            reviewed_status text not null,
+            created_at text not null,
+            unique(source_link_id, suggested_target_note_id, provider, model, prompt_version)
+        );
+
         create index idx_dim_entities_name on dim_entities(name);
         create index idx_dim_entities_type on dim_entities(entity_type);
         create index idx_fact_links_target on fact_links(target_entity_id);
@@ -139,6 +156,8 @@ def _create_schema(connection: sqlite3.Connection) -> None:
         create index idx_mart_timeline_entities on mart_timeline(related_entities);
         create index idx_deterministic_suggested_links_source
             on deterministic_suggested_links(source_note_id, rank);
+        create index idx_ai_suggested_links_review
+            on ai_suggested_links(reviewed_status, created_at);
         """
     )
 
@@ -757,6 +776,7 @@ def warehouse_summary(warehouse: Warehouse) -> dict[str, object]:
         "fact_links",
         "fact_tags",
         "deterministic_suggested_links",
+        "ai_suggested_links",
         "mart_timeline",
     )
     counts = {
@@ -808,6 +828,103 @@ def list_deterministic_suggested_links(
         }
         for row in rows
     ]
+
+
+def insert_ai_suggested_link(
+    warehouse: Warehouse,
+    *,
+    source_link_id: str,
+    source_note_id: str,
+    suggested_target_note_id: str,
+    suggestion_type: str,
+    confidence_score: float,
+    rationale: str,
+    provider: str,
+    model: str,
+    prompt_version: str,
+    input_hash: str,
+    created_at: str,
+    reviewed_status: str = "pending",
+) -> None:
+    suggestion_id = (
+        f"ai-suggest:{source_link_id}:"
+        f"{sha1(f'{suggested_target_note_id}:{provider}:{model}:{prompt_version}'.encode('utf-8')).hexdigest()[:12]}"
+    )
+    warehouse.connection.execute(
+        """
+        insert into ai_suggested_links
+            (
+                ai_suggestion_id,
+                source_link_id,
+                source_note_id,
+                suggested_target_note_id,
+                suggestion_type,
+                confidence_score,
+                rationale,
+                provider,
+                model,
+                prompt_version,
+                input_hash,
+                reviewed_status,
+                created_at
+            )
+        values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        on conflict(source_link_id, suggested_target_note_id, provider, model, prompt_version)
+        do update set
+            confidence_score = excluded.confidence_score,
+            rationale = excluded.rationale,
+            input_hash = excluded.input_hash,
+            reviewed_status = excluded.reviewed_status,
+            created_at = excluded.created_at
+        """,
+        (
+            suggestion_id,
+            source_link_id,
+            source_note_id,
+            suggested_target_note_id,
+            suggestion_type,
+            confidence_score,
+            rationale,
+            provider,
+            model,
+            prompt_version,
+            input_hash,
+            reviewed_status,
+            created_at,
+        ),
+    )
+
+
+def list_ai_suggested_links(
+    warehouse: Warehouse,
+    limit: int = 100,
+) -> list[dict[str, object]]:
+    return warehouse.connection.execute(
+        """
+        select
+            s.ai_suggestion_id,
+            s.source_link_id,
+            source.source_path as source_path,
+            target.note_id as suggested_target_note_id,
+            target.source_path as suggested_source_path,
+            target.title as suggested_title,
+            s.suggestion_type,
+            s.confidence_score,
+            s.rationale,
+            s.provider,
+            s.model,
+            s.prompt_version,
+            s.input_hash,
+            s.reviewed_status,
+            s.created_at
+        from ai_suggested_links s
+        join dim_notes source on source.note_id = s.source_note_id
+        join dim_notes target on target.note_id = s.suggested_target_note_id
+        order by s.created_at, s.source_link_id
+        limit ?
+        """,
+        (_bounded_limit(limit),),
+    ).fetchall()
 
 
 def list_entities(
