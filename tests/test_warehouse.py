@@ -5,6 +5,7 @@ from obsidian_mcp_context.warehouse import (
     agent_context,
     build_warehouse,
     entity_timeline,
+    list_deterministic_suggested_links,
     list_entities,
     warehouse_summary,
 )
@@ -151,3 +152,84 @@ def test_warehouse_entity_ids_are_collision_resistant(tmp_path: Path):
     assert len(entity_ids) == 2
     assert "project:alpha-beta" in entity_ids
     assert any(entity_id.startswith("project:alpha-beta:") for entity_id in entity_ids)
+
+
+def test_warehouse_generates_deterministic_suggestions_for_unresolved_links(
+    tmp_path: Path,
+):
+    vault = tmp_path / "vault"
+    (vault / "People").mkdir(parents=True)
+    (vault / "Projects").mkdir()
+    (vault / "Daily").mkdir()
+    (vault / "People" / "Morgan Lee.md").write_text(
+        """---
+aliases: ["Morgan"]
+---
+# Morgan Lee
+""",
+        encoding="utf-8",
+    )
+    (vault / "Projects" / "Project Atlas.md").write_text(
+        "# Project Atlas\n\n#priority\n", encoding="utf-8"
+    )
+    (vault / "Projects" / "Project Beacon.md").write_text(
+        "# Project Beacon\n", encoding="utf-8"
+    )
+    (vault / "Daily" / "2026-06-28.md").write_text(
+        "\n".join(
+            [
+                "# Daily",
+                "",
+                "Discussed [[Morgan]], [[Projects/Project Atlas]], and [[Project Atals]].",
+                "#priority",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    context = build_context(VaultConfig(vault_path=vault))
+    warehouse = build_warehouse(context)
+
+    summary = warehouse_summary(warehouse)
+    suggestions = list_deterministic_suggested_links(warehouse, limit=20)
+
+    assert summary["tables"]["deterministic_suggested_links"] >= 3
+    assert {
+        (row["link_target"], row["candidate_title"], row["suggestion_type"])
+        for row in suggestions
+    } >= {
+        ("Morgan", "Morgan Lee", "exact_alias"),
+        ("Projects/Project Atlas", "Project Atlas", "exact_basename"),
+        ("Project Atals", "Project Atlas", "string_similarity"),
+    }
+    atlas = next(
+        row
+        for row in suggestions
+        if row["link_target"] == "Project Atals"
+        and row["candidate_title"] == "Project Atlas"
+    )
+    assert atlas["deterministic_score"] >= 0.5
+    assert atlas["signals"]["match"] == "string_similarity"
+
+
+def test_warehouse_bounds_deterministic_suggestions_per_unresolved_link(
+    tmp_path: Path,
+):
+    vault = tmp_path / "vault"
+    (vault / "Projects").mkdir(parents=True)
+    (vault / "Daily").mkdir()
+    for index in range(20):
+        (vault / "Projects" / f"Project Atlas {index}.md").write_text(
+            "# Project Atlas\n", encoding="utf-8"
+        )
+    (vault / "Daily" / "2026-06-28.md").write_text(
+        "# Daily\n\n[[Project Atals]]\n", encoding="utf-8"
+    )
+
+    context = build_context(VaultConfig(vault_path=vault))
+    warehouse = build_warehouse(context)
+
+    suggestions = list_deterministic_suggested_links(warehouse, limit=50)
+
+    assert len(suggestions) <= 10
+    assert [row["rank"] for row in suggestions] == list(range(1, len(suggestions) + 1))

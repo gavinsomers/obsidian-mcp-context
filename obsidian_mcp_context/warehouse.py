@@ -1,7 +1,12 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import datetime, timezone
+from difflib import SequenceMatcher
 from hashlib import sha1
+import json
+from pathlib import Path
+import re
 import sqlite3
 
 from obsidian_mcp_context.domain import (
@@ -112,12 +117,28 @@ def _create_schema(connection: sqlite3.Connection) -> None:
             related_entities text not null
         );
 
+        create table deterministic_suggested_links (
+            suggestion_id text primary key,
+            source_link_id text not null references fact_links(link_id),
+            source_note_id text not null references dim_notes(note_id),
+            candidate_target_note_id text not null references dim_notes(note_id),
+            link_target text not null,
+            suggestion_type text not null,
+            deterministic_score real not null,
+            rank integer not null,
+            signals_json text not null,
+            created_at text not null,
+            unique(source_link_id, candidate_target_note_id)
+        );
+
         create index idx_dim_entities_name on dim_entities(name);
         create index idx_dim_entities_type on dim_entities(entity_type);
         create index idx_fact_links_target on fact_links(target_entity_id);
         create index idx_fact_tasks_checked on fact_tasks(checked);
         create index idx_mart_timeline_date on mart_timeline(event_date, source_path);
         create index idx_mart_timeline_entities on mart_timeline(related_entities);
+        create index idx_deterministic_suggested_links_source
+            on deterministic_suggested_links(source_note_id, rank);
         """
     )
 
@@ -494,6 +515,226 @@ def _insert_timeline_mart(connection: sqlite3.Connection) -> None:
         )
 
 
+ALIAS_LINE_RE = re.compile(r"(?m)^aliases:\s*(?P<value>.+?)\s*$")
+ALIAS_LIST_ITEM_RE = re.compile(r"(?m)^\s*-\s*[\"']?(?P<value>.+?)[\"']?\s*$")
+
+
+def _normalized_match_text(value: str) -> str:
+    return slug(Path(value).stem if value.endswith(".md") else value)
+
+
+def _source_folder(source_path: str) -> str:
+    parts = source_path.split("/", 1)
+    return parts[0] if len(parts) > 1 else ""
+
+
+def _extract_aliases(text: str) -> tuple[str, ...]:
+    frontmatter = re.search(r"(?ms)\A\s*---(?P<body>.*?)^---\s*$", text)
+    if not frontmatter:
+        return ()
+    body = frontmatter.group("body")
+    line_match = ALIAS_LINE_RE.search(body)
+    aliases: list[str] = []
+    if line_match:
+        value = line_match.group("value").strip()
+        if value.startswith("[") and value.endswith("]"):
+            aliases.extend(
+                item.strip().strip("\"'")
+                for item in value.strip("[]").split(",")
+                if item.strip().strip("\"'")
+            )
+        elif value:
+            aliases.append(value.strip("\"'"))
+    if "aliases:" in body:
+        after_aliases = body.split("aliases:", 1)[1]
+        alias_block = ""
+        if "\n" in after_aliases:
+            block_lines = []
+            for line in after_aliases.split("\n", 1)[1].splitlines():
+                if re.match(r"^[A-Za-z_][A-Za-z0-9_-]*\s*:", line):
+                    break
+                block_lines.append(line)
+            alias_block = "\n".join(block_lines)
+        for match in ALIAS_LIST_ITEM_RE.finditer(alias_block):
+            aliases.append(match.group("value").strip())
+    return tuple(dict.fromkeys(alias for alias in aliases if alias))
+
+
+def _note_aliases(source_path: str, absolute_path: str) -> tuple[str, ...]:
+    try:
+        return _extract_aliases(Path(absolute_path).read_text(encoding="utf-8"))
+    except OSError:
+        return ()
+
+
+def _tags_by_note(connection: sqlite3.Connection) -> dict[str, set[str]]:
+    rows = connection.execute("select note_id, tag from fact_tags").fetchall()
+    tags: dict[str, set[str]] = {}
+    for row in rows:
+        tags.setdefault(str(row["note_id"]), set()).add(str(row["tag"]).casefold())
+    return tags
+
+
+def _candidate_notes(connection: sqlite3.Connection) -> list[dict[str, object]]:
+    rows = connection.execute(
+        """
+        select note_id, source_path, absolute_path, title, note_type
+        from dim_notes
+        order by title, source_path
+        """
+    ).fetchall()
+    candidates = []
+    for row in rows:
+        aliases = _note_aliases(str(row["source_path"]), str(row["absolute_path"]))
+        candidates.append(
+            {
+                **row,
+                "title_norm": _normalized_match_text(str(row["title"])),
+                "path_norm": _normalized_match_text(str(row["source_path"])),
+                "alias_norms": [_normalized_match_text(alias) for alias in aliases],
+                "aliases": aliases,
+            }
+        )
+    return candidates
+
+
+def _candidate_signal(
+    *,
+    link_target: str,
+    source_path: str,
+    candidate: dict[str, object],
+    source_tags: set[str],
+    candidate_tags: set[str],
+) -> tuple[str, float, dict[str, object]] | None:
+    target_norm = _normalized_match_text(link_target)
+    target_stem_norm = _normalized_match_text(Path(link_target).name)
+    title_norm = str(candidate["title_norm"])
+    path_norm = str(candidate["path_norm"])
+    alias_norms = set(candidate["alias_norms"])
+    signals: dict[str, object] = {
+        "link_target": link_target,
+        "candidate_title": candidate["title"],
+    }
+
+    if target_norm == path_norm:
+        signals["match"] = "exact_path"
+        return "exact_path", 1.0, signals
+    if target_norm == title_norm or target_stem_norm == title_norm:
+        signals["match"] = "exact_basename"
+        return "exact_basename", 0.95, signals
+    if target_norm in alias_norms or target_stem_norm in alias_norms:
+        signals["match"] = "exact_alias"
+        signals["aliases"] = list(candidate["aliases"])
+        return "exact_alias", 0.9, signals
+
+    similarity = SequenceMatcher(None, target_stem_norm, title_norm).ratio()
+    if similarity >= 0.72:
+        score = min(0.8, 0.5 + ((similarity - 0.72) / 0.28) * 0.3)
+        signals["match"] = "string_similarity"
+        signals["similarity"] = round(similarity, 3)
+        return "string_similarity", round(score, 3), signals
+
+    shared_tags = sorted(source_tags & candidate_tags)
+    if shared_tags:
+        score = min(0.4, 0.1 + (0.05 * len(shared_tags)))
+        if _source_folder(source_path) == _source_folder(str(candidate["source_path"])):
+            score += 0.05
+        signals["match"] = "shared_metadata"
+        signals["shared_tags"] = shared_tags[:10]
+        return "shared_metadata", round(score, 3), signals
+
+    return None
+
+
+def _insert_deterministic_suggested_links(
+    connection: sqlite3.Connection,
+    *,
+    top_n: int = 10,
+) -> None:
+    candidates = _candidate_notes(connection)
+    tags_by_note = _tags_by_note(connection)
+    unresolved_links = connection.execute(
+        """
+        select
+            l.link_id,
+            l.note_id as source_note_id,
+            l.link_target,
+            n.source_path,
+            e.canonical_note_id
+        from fact_links l
+        join dim_notes n on n.note_id = l.note_id
+        left join dim_entities e on e.entity_id = l.target_entity_id
+        where e.canonical_note_id is null
+        order by l.link_id
+        """
+    ).fetchall()
+    created_at = datetime.now(timezone.utc).isoformat()
+
+    for link in unresolved_links:
+        source_note_id = str(link["source_note_id"])
+        source_tags = tags_by_note.get(source_note_id, set())
+        best_by_note: dict[str, tuple[str, float, dict[str, object]]] = {}
+        for candidate in candidates:
+            candidate_note_id = str(candidate["note_id"])
+            if candidate_note_id == source_note_id:
+                continue
+            signal = _candidate_signal(
+                link_target=str(link["link_target"]),
+                source_path=str(link["source_path"]),
+                candidate=candidate,
+                source_tags=source_tags,
+                candidate_tags=tags_by_note.get(candidate_note_id, set()),
+            )
+            if signal is None:
+                continue
+            existing = best_by_note.get(candidate_note_id)
+            if existing is None or signal[1] > existing[1]:
+                best_by_note[candidate_note_id] = signal
+
+        ranked = sorted(
+            best_by_note.items(),
+            key=lambda item: (-item[1][1], str(item[0])),
+        )[:top_n]
+        for rank, (candidate_note_id, (suggestion_type, score, signals)) in enumerate(
+            ranked,
+            start=1,
+        ):
+            suggestion_id = (
+                f"suggest:{link['link_id']}:{rank}:"
+                f"{sha1(candidate_note_id.encode('utf-8')).hexdigest()[:8]}"
+            )
+            connection.execute(
+                """
+                insert into deterministic_suggested_links
+                    (
+                        suggestion_id,
+                        source_link_id,
+                        source_note_id,
+                        candidate_target_note_id,
+                        link_target,
+                        suggestion_type,
+                        deterministic_score,
+                        rank,
+                        signals_json,
+                        created_at
+                    )
+                values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                """,
+                (
+                    suggestion_id,
+                    link["link_id"],
+                    source_note_id,
+                    candidate_note_id,
+                    link["link_target"],
+                    suggestion_type,
+                    score,
+                    rank,
+                    json.dumps(signals, sort_keys=True),
+                    created_at,
+                ),
+            )
+
+
 def build_warehouse(context: VaultContext) -> Warehouse:
     connection = sqlite3.connect(":memory:")
     connection.row_factory = _dict_factory
@@ -501,6 +742,7 @@ def build_warehouse(context: VaultContext) -> Warehouse:
     _create_schema(connection)
     _insert_note_dimensions(connection, context)
     _insert_facts(connection, context)
+    _insert_deterministic_suggested_links(connection)
     _insert_timeline_mart(connection)
     return Warehouse(connection=connection)
 
@@ -514,6 +756,7 @@ def warehouse_summary(warehouse: Warehouse) -> dict[str, object]:
         "fact_tasks",
         "fact_links",
         "fact_tags",
+        "deterministic_suggested_links",
         "mart_timeline",
     )
     counts = {
@@ -531,6 +774,40 @@ def warehouse_summary(warehouse: Warehouse) -> dict[str, object]:
         """
     ).fetchall()
     return {"tables": counts, "entity_types": entity_types}
+
+
+def list_deterministic_suggested_links(
+    warehouse: Warehouse,
+    limit: int = 100,
+) -> list[dict[str, object]]:
+    rows = warehouse.connection.execute(
+        """
+        select
+            s.source_link_id,
+            source.source_path as source_path,
+            s.link_target,
+            target.note_id as candidate_target_note_id,
+            target.source_path as candidate_source_path,
+            target.title as candidate_title,
+            s.suggestion_type,
+            s.deterministic_score,
+            s.rank,
+            s.signals_json
+        from deterministic_suggested_links s
+        join dim_notes source on source.note_id = s.source_note_id
+        join dim_notes target on target.note_id = s.candidate_target_note_id
+        order by s.source_link_id, s.rank
+        limit ?
+        """,
+        (_bounded_limit(limit),),
+    ).fetchall()
+    return [
+        {
+            **row,
+            "signals": json.loads(str(row["signals_json"])),
+        }
+        for row in rows
+    ]
 
 
 def list_entities(

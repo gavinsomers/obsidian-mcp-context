@@ -163,9 +163,13 @@ def ai_posture(config: AppConfig) -> dict[str, object]:
     }
 
 
-def empty_suggestion_counts() -> dict[str, int]:
+def suggestion_counts(warehouse_report: dict[str, object]) -> dict[str, int]:
+    tables = warehouse_report.get("tables", {})
+    deterministic_count = 0
+    if isinstance(tables, dict):
+        deterministic_count = int(tables.get("deterministic_suggested_links", 0))
     return {
-        "deterministic_suggested_links": 0,
+        "deterministic_suggested_links": deterministic_count,
         "ai_suggested_links": 0,
         "ai_related_notes": 0,
         "ai_entity_alias_suggestions": 0,
@@ -221,7 +225,7 @@ def run_pipeline(
         ),
         "warehouse": warehouse_report,
         "ai": ai_posture(config),
-        "suggestion_counts": empty_suggestion_counts(),
+        "suggestion_counts": suggestion_counts(warehouse_report),
     }
 
     output_path = output_dir / PIPELINE_RUN_FILENAME
