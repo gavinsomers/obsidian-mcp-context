@@ -90,6 +90,13 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Include note paths, file paths, and unresolved link targets in doctor output.",
     )
+    doctor.add_argument(
+        "--export-unresolved",
+        help=(
+            "Write local-private unresolved wikilink targets to an explicit JSON path. "
+            "Use an ignored path such as var/unresolved-links.json."
+        ),
+    )
 
     return parser
 
@@ -106,6 +113,9 @@ def main(argv: list[str] | None = None) -> int:
                 strict=args.strict,
                 config_path=Path(args.config) if args.config else None,
                 include_samples=args.include_samples,
+                export_unresolved_path=(
+                    Path(args.export_unresolved) if args.export_unresolved else None
+                ),
             )
         )
         print(format_json(report) if args.json else format_human(report))

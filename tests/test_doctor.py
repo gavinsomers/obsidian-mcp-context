@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import duckdb
@@ -108,6 +109,111 @@ def test_doctor_can_include_samples_when_explicitly_requested(tmp_path: Path):
         {"target": "Missing Note", "count": 1}
     ]
     assert unresolved["details"]["target_shapes"] == {"plain_text": 1}
+
+
+def test_doctor_does_not_export_unresolved_links_by_default(tmp_path: Path):
+    vault = tmp_path / "vault"
+    export_path = tmp_path / "unresolved-links.json"
+    vault.mkdir()
+    (vault / "Note.md").write_text("# Note\n\n[[Missing Note]]\n", encoding="utf-8")
+
+    report = run_doctor(
+        DoctorOptions(vault_path=vault, config_path=tmp_path / "missing-config.toml")
+    )
+
+    assert report["graph"]["unresolved_export"] == {
+        "requested": False,
+        "written": False,
+    }
+    assert not export_path.exists()
+
+
+def test_doctor_exports_unresolved_links_when_explicitly_requested(tmp_path: Path):
+    vault = tmp_path / "vault"
+    export_path = tmp_path / "unresolved-links.json"
+    vault.mkdir()
+    (vault / "People").mkdir()
+    (vault / "People" / "Morgan Lee.md").write_text("# Morgan\n", encoding="utf-8")
+    (vault / "Links.md").write_text(
+        "\n".join(
+            [
+                "[[Missing Note]]",
+                "[[Archive/Morgan Lee]]",
+                "[[Archive/Morgan Lee]]",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(
+        DoctorOptions(
+            vault_path=vault,
+            config_path=tmp_path / "missing-config.toml",
+            export_unresolved_path=export_path,
+        )
+    )
+
+    assert report["graph"]["top_unresolved_targets"] == []
+    assert report["graph"]["unresolved_export"] == {
+        "requested": True,
+        "written": True,
+        "target_count": 2,
+        "path": str(export_path),
+    }
+    payload = json.loads(export_path.read_text(encoding="utf-8"))
+    assert payload["privacy"] == {
+        "contains_private_targets": True,
+        "contains_source_paths": False,
+        "intended_for_local_use_only": True,
+    }
+    assert payload["unresolved_target_count"] == 2
+    assert payload["unresolved_targets"] == [
+        {
+            "target": "Archive/Morgan Lee",
+            "target_shape": "path_like",
+            "reason": "basename_exists_elsewhere",
+            "count": 2,
+            "source_count": 1,
+        },
+        {
+            "target": "Missing Note",
+            "target_shape": "plain_text",
+            "reason": "",
+            "count": 1,
+            "source_count": 1,
+        },
+    ]
+
+
+def test_doctor_export_includes_source_paths_only_with_samples(tmp_path: Path):
+    vault = tmp_path / "vault"
+    export_path = tmp_path / "unresolved-links.json"
+    vault.mkdir()
+    (vault / "One.md").write_text("[[Missing Note]]\n", encoding="utf-8")
+    (vault / "Two.md").write_text("[[Missing Note]]\n", encoding="utf-8")
+
+    report = run_doctor(
+        DoctorOptions(
+            vault_path=vault,
+            config_path=tmp_path / "missing-config.toml",
+            include_samples=True,
+            export_unresolved_path=export_path,
+        )
+    )
+
+    payload = json.loads(export_path.read_text(encoding="utf-8"))
+    assert report["graph"]["unresolved_export"]["target_count"] == 1
+    assert payload["privacy"]["contains_source_paths"] is True
+    assert payload["unresolved_targets"] == [
+        {
+            "target": "Missing Note",
+            "target_shape": "plain_text",
+            "reason": "",
+            "count": 2,
+            "source_count": 2,
+            "source_paths": ["One.md", "Two.md"],
+        }
+    ]
 
 
 def test_doctor_resolves_obsidian_link_target_variants(tmp_path: Path):
@@ -308,3 +414,29 @@ def test_doctor_cli_outputs_json(tmp_path: Path, capsys):
     assert result == 0
     assert '"status": "warning"' in captured.out
     assert '"diagnostics": [' in captured.out
+
+
+def test_doctor_cli_exports_unresolved_links(tmp_path: Path, capsys):
+    vault = tmp_path / "vault"
+    export_path = tmp_path / "unresolved-links.json"
+    vault.mkdir()
+    (vault / "Note.md").write_text("# Note\n\n[[Missing Note]]\n", encoding="utf-8")
+
+    result = main(
+        [
+            "--vault",
+            str(vault),
+            "--config",
+            str(tmp_path / "missing-config.toml"),
+            "doctor",
+            "--json",
+            "--export-unresolved",
+            str(export_path),
+        ]
+    )
+    captured = capsys.readouterr()
+
+    assert result == 0
+    assert '"top_unresolved_targets": []' in captured.out
+    payload = json.loads(export_path.read_text(encoding="utf-8"))
+    assert payload["unresolved_targets"][0]["target"] == "Missing Note"
