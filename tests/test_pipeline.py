@@ -45,6 +45,11 @@ lifecycle_metadata = "ignore"
     }
     assert payload["ai"]["enabled"] is False
     assert payload["ai"]["calls"] == 0
+    assert payload["privacy"]["runtime_state_path"] == "[redacted]"
+    assert payload["privacy"]["runtime_state_path_redacted"] is True
+    assert payload["privacy"]["runtime_state_under_configured_output_dir"] is True
+    assert payload["privacy"]["private_paths_in_report"] is False
+    assert payload["review"]["ai_suggested_links"]["contains_source_paths"] is False
     assert payload["suggestion_counts"] == {
         "deterministic_suggested_links": 0,
         "ai_suggested_links": 0,
@@ -83,6 +88,9 @@ lifecycle_metadata = "ignore"
     payload = json.loads(payload_text)
     assert payload["source"]["path"] == "[redacted]"
     assert payload["doctor"]["warehouse"]["in_memory"]["ok"] is True
+    assert payload["privacy"]["private_paths_in_report"] is False
+    assert payload["privacy"]["samples_included"] is False
+    assert payload["privacy"]["runtime_state_path"] == "[redacted]"
 
 
 def test_pipeline_run_can_include_private_paths_when_explicitly_requested(tmp_path: Path):
@@ -111,6 +119,10 @@ lifecycle_metadata = "ignore"
     payload_text = (output_dir / "pipeline-run.json").read_text(encoding="utf-8")
     assert str(vault) in payload_text
     assert str(config_path) in payload_text
+    payload = json.loads(payload_text)
+    assert payload["privacy"]["private_paths_in_report"] is True
+    assert payload["privacy"]["samples_included"] is True
+    assert payload["privacy"]["runtime_state_path"] == str(output_dir / "pipeline-run.json")
 
 
 def test_pipeline_profile_sample_resolves_example_vault():
@@ -304,4 +316,57 @@ lifecycle_metadata = "ignore"
     assert payload["ai"]["configured"] is True
     assert payload["ai"]["calls"] == 0
     assert payload["ai"]["skipped_due_to_privacy"] == 1
+    assert payload["privacy"]["raw_text_to_ai_allowed"] is False
+    assert payload["privacy"]["ai_skipped_due_to_privacy"] == 1
+    assert payload["privacy"]["ai_calls"] == 0
+    assert payload["review"]["deterministic_suggested_links"]["pending_count"] >= 1
+    assert payload["review"]["ai_suggested_links"] == {
+        "pending_count": 0,
+        "reviewed_status": "pending",
+        "contains_source_paths": False,
+    }
+    assert payload["suggestion_counts"]["ai_suggested_links"] == 0
+
+
+def test_pipeline_run_privacy_report_counts_ai_budget_skips(tmp_path: Path):
+    vault = tmp_path / "vault"
+    output_dir = tmp_path / "var"
+    (vault / "Projects").mkdir(parents=True)
+    (vault / "Daily").mkdir()
+    (vault / "Projects" / "Project Atlas.md").write_text(
+        "# Project Atlas\n", encoding="utf-8"
+    )
+    (vault / "Daily" / "2026-06-28.md").write_text(
+        "# Daily\n\n[[Project Atals]]\n", encoding="utf-8"
+    )
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        f"""
+[source]
+type = "obsidian"
+vault_path = "{vault}"
+
+[pipeline]
+output_dir = "{output_dir}"
+
+[privacy]
+allow_raw_text_to_ai = true
+max_context_chars = 10
+
+[ai]
+enabled = true
+provider = "mock"
+
+[doctor]
+lifecycle_metadata = "ignore"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    run_pipeline(config_path=config_path)
+
+    payload = json.loads((output_dir / "pipeline-run.json").read_text(encoding="utf-8"))
+    assert payload["ai"]["skipped_due_to_budget"] == 1
+    assert payload["privacy"]["ai_skipped_due_to_budget"] == 1
+    assert payload["privacy"]["ai_suggestions_written"] == 0
     assert payload["suggestion_counts"]["ai_suggested_links"] == 0
