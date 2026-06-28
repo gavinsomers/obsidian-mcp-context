@@ -209,6 +209,26 @@ unresolved_wikilinks = "error"
     )
 
 
+def test_config_accepts_unresolved_wikilink_table(tmp_path: Path):
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[doctor.unresolved_wikilinks]
+mode = "error"
+ignore_target_globs = ["Archive/*", "Template:*"]
+""".strip(),
+        encoding="utf-8",
+    )
+
+    config = load_app_config(config_path)
+
+    assert config.doctor_unresolved_wikilinks == "error"
+    assert config.doctor_unresolved_wikilink_ignore_target_globs == (
+        "Archive/*",
+        "Template:*",
+    )
+
+
 def test_config_rejects_invalid_doctor_warning_mode(tmp_path: Path):
     config_path = tmp_path / "config.toml"
     config_path.write_text(
@@ -225,3 +245,21 @@ unsupported_files = "skip"
         assert "doctor.unsupported_files" in str(exc)
     else:
         raise AssertionError("Expected invalid doctor warning mode to fail")
+
+
+def test_config_rejects_invalid_unresolved_wikilink_ignore_globs(tmp_path: Path):
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[doctor.unresolved_wikilinks]
+ignore_target_globs = "Archive/*"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    try:
+        load_app_config(config_path)
+    except ValueError as exc:
+        assert "doctor.unresolved_wikilinks.ignore_target_globs" in str(exc)
+    else:
+        raise AssertionError("Expected invalid unresolved target globs to fail")

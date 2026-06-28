@@ -16,6 +16,8 @@ The project uses semantic-ish versions:
   reported as aggregate counts without exposing raw targets.
 - Added an opt-in local-private `doctor --export-unresolved` JSON export for
   unresolved wikilink remediation.
+- Added configurable unresolved wikilink ignore globs that preserve aggregate
+  counts while suppressing expected dangling-link warnings.
 
 ## [0.9.0] - 2026-06-28
 

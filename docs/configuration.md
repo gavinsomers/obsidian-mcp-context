@@ -70,6 +70,19 @@ large_notes = "warn"
 unresolved_wikilinks = "warn"
 ```
 
+The unresolved wikilink policy also supports a table form when intentional
+dangling links should remain counted but stop triggering warnings:
+
+```toml
+[doctor.unresolved_wikilinks]
+mode = "warn"
+ignore_target_globs = [
+  "Archive/*",
+  "Template:*",
+  "Untitled*",
+]
+```
+
 ## Scan Settings
 
 - `scan.include_globs`: replaces the default include globs. Default: `["**/*.md"]`.
@@ -97,3 +110,8 @@ singular names when they represent entities, such as `client`, `asset`, or
   `doctor.unresolved_wikilinks`: control the matching warning categories with
   the same `warn`, `ignore`, and `error` modes. Counts remain in the report even
   when a category is ignored.
+- `doctor.unresolved_wikilinks.ignore_target_globs`: optional local-only
+  patterns for unresolved targets that are expected to remain dangling. Matching
+  targets are counted under ignored unresolved aggregate fields and do not
+  trigger the unresolved wikilink warning. Keep personal patterns in local config
+  only.
