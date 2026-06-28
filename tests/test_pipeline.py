@@ -5,7 +5,6 @@ from pathlib import Path
 
 from obsidian_mcp_context.cli import main
 from obsidian_mcp_context.pipeline import (
-    PipelineConfigError,
     load_pipeline_config,
     resolve_source_path,
     run_pipeline,
@@ -134,23 +133,22 @@ def test_pipeline_profile_sample_resolves_example_vault():
     assert source_path.exists()
 
 
-def test_pipeline_rejects_google_drive_source_for_now(tmp_path: Path):
+def test_pipeline_rejects_unsupported_source_type(tmp_path: Path):
     config_path = tmp_path / "config.toml"
     config_path.write_text(
         """
 [source]
-type = "google_drive"
+type = "unsupported"
 """.strip(),
         encoding="utf-8",
     )
-    config = load_pipeline_config(config_path=config_path)
 
     try:
-        resolve_source_path(config)
-    except PipelineConfigError as exc:
-        assert "google_drive is not implemented" in str(exc)
+        load_pipeline_config(config_path=config_path)
+    except ValueError as exc:
+        assert "source.type" in str(exc)
     else:
-        raise AssertionError("Expected google_drive source to fail cleanly")
+        raise AssertionError("Expected unsupported source type to fail cleanly")
 
 
 def test_pipeline_cli_run_accepts_config_without_global_vault(tmp_path: Path):

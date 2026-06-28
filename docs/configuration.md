@@ -120,8 +120,8 @@ Additional example profiles live in `examples/config/`.
 
 ## Pipeline Profile Settings
 
-- `source.type`: source connector mode. Allowed values are `sample`,
-  `obsidian`, and reserved future value `google_drive`.
+- `source.type`: source connector mode. Allowed values are `sample` and
+  `obsidian`.
 - `source.sample_name`: sample vault name when `source.type = "sample"`.
 - `source.vault_path`: local vault path when `source.type = "obsidian"`.
 - `pipeline.output_dir`: ignored runtime output directory. Default: `var`.

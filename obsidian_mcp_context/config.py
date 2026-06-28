@@ -16,7 +16,7 @@ from obsidian_mcp_context.vault import (
 
 DEFAULT_CONFIG_PATH = Path(".obsidian-mcp-context.toml")
 DOCTOR_DIAGNOSTIC_MODES = ("warn", "ignore", "error")
-SOURCE_TYPES = ("sample", "obsidian", "google_drive")
+SOURCE_TYPES = ("sample", "obsidian")
 AI_PROVIDERS = ("none", "mock", "ollama", "openai", "anthropic", "vllm")
 HOSTED_AI_PROVIDERS = {"openai", "anthropic"}
 
