@@ -1,5 +1,3 @@
-{{ config(unique_key='person_context_id') }}
-
 select
   mentions.mention_id || ':' || timeline.timeline_id as person_context_id,
   mentions.target_entity_id as person_id,

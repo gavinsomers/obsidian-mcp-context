@@ -49,6 +49,9 @@ become generic entity types. See `docs/entity-contract.md` for the full contract
 
 ## 4. Build The DuckDB/dbt Warehouse
 
+This is a full rebuild flow. The ingest command replaces the `base_obsidian_*`
+landing tables from the current vault, and dbt rebuilds marts as tables.
+
 ```bash
 .venv/bin/obsidian-mcp-context-ingest \
   --vault /absolute/path/to/vault \

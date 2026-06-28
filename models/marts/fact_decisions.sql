@@ -1,5 +1,3 @@
-{{ config(unique_key='decision_id') }}
-
 with decision_notes as (
   select *
   from {{ ref('dim_notes') }}

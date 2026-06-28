@@ -1,5 +1,3 @@
-{{ config(unique_key='link_id') }}
-
 select
   'link:' || links.block_id || ':' || links.line_number || ':' || row_number() over (
     order by links.source_path, links.block_id, links.line_number, links.link_target

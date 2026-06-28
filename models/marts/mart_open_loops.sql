@@ -1,5 +1,3 @@
-{{ config(unique_key='open_loop_id') }}
-
 with task_mentions as (
   select
     tasks.task_id,

@@ -1,5 +1,3 @@
-{{ config(unique_key='company_id') }}
-
 with companies as (
   select
     entity_id as company_id,

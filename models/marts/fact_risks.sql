@@ -1,5 +1,3 @@
-{{ config(unique_key='risk_id') }}
-
 with risk_notes as (
   select *
   from {{ ref('dim_notes') }}

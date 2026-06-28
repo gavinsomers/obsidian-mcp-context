@@ -1,5 +1,3 @@
-{{ config(unique_key='entity_context_id') }}
-
 select
   'context:' || events.event_id as entity_context_id,
   events.entity_id,

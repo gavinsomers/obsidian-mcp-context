@@ -1,5 +1,3 @@
-{{ config(unique_key='project_context_id') }}
-
 select
   mentions.mention_id || ':' || timeline.timeline_id as project_context_id,
   mentions.target_entity_id as project_id,

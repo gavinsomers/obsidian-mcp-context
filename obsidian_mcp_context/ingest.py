@@ -149,6 +149,7 @@ def ingest_vault(
     duckdb_path: Path,
     config_path: Path | None = None,
 ) -> dict[str, int]:
+    """Replace DuckDB landing tables with a full parse of the current vault."""
     app_config = load_app_config(config_path) if config_path else AppConfig()
     context = build_context(vault_config_from_app_config(vault_path, app_config))
     duckdb_path.parent.mkdir(parents=True, exist_ok=True)
@@ -234,13 +235,15 @@ def ingest_vault(
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="obsidian-mcp-context-ingest",
-        description="Ingest parsed Obsidian vault context into DuckDB landing tables.",
+        description=(
+            "Rebuild DuckDB landing tables from a full parse of an Obsidian vault."
+        ),
     )
     parser.add_argument("--vault", required=True, help="Path to the Obsidian vault.")
     parser.add_argument(
         "--duckdb",
         required=True,
-        help="Path to the DuckDB database file to create or replace landing tables in.",
+        help="Path to the DuckDB database file whose landing tables will be replaced.",
     )
     parser.add_argument(
         "--config",

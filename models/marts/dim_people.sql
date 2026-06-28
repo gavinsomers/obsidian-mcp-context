@@ -1,5 +1,3 @@
-{{ config(unique_key='person_id') }}
-
 with people as (
   select
     entity_id as person_id,

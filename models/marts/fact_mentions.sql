@@ -1,5 +1,3 @@
-{{ config(unique_key='mention_id') }}
-
 select
   links.link_id as mention_id,
   links.note_id,

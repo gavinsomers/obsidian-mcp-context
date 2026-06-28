@@ -5,7 +5,7 @@ context. The vault remains the source of truth. The core shape is a deterministi
 compiler function:
 
 ```text
-vault -> parse -> warehouse -> suggestions -> optional advisory AI -> reports
+vault -> full parse -> rebuild warehouse -> suggestions -> optional advisory AI -> reports
 ```
 
 The public repository is intentionally Obsidian-first. It supports the checked-in
@@ -60,7 +60,7 @@ flowchart TD
   source["Static sample vault<br/>or local Obsidian vault"]
   runner["CLI pipeline runner<br/>obsidian-mcp-context pipeline run"]
   parse["Parse files, metadata, links, tags, tasks"]
-  warehouse["Build warehouse from scratch"]
+  warehouse["Rebuild warehouse from scratch"]
   deterministic["Deterministic suggestion cascade"]
   ai["Optional advisory AI enrichment"]
   report["pipeline-run.json<br/>privacy and review summaries"]
@@ -73,8 +73,10 @@ flowchart TD
   ai --> report
 ```
 
-The pipeline is a local sequential command, not a background orchestrator. Runtime
-state is written under the configured output directory, usually `var/`.
+The pipeline is a local sequential command, not a background orchestrator. The
+DuckDB/dbt path follows the same compiler model: ingest replaces landing tables
+and dbt rebuilds marts as tables. Runtime state is written under the configured
+output directory, usually `var/`.
 
 ## Main Components
 

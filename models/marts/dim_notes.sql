@@ -1,5 +1,3 @@
-{{ config(unique_key='note_id') }}
-
 select
   note_id,
   source_path,

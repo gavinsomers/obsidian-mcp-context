@@ -1,5 +1,3 @@
-{{ config(unique_key='tag_id') }}
-
 select
   'tag:' || tags.block_id || ':' || tags.line_number || ':' || row_number() over (
     order by tags.source_path, tags.block_id, tags.line_number, tags.tag
