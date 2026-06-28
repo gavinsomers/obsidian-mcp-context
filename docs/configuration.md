@@ -173,8 +173,8 @@ Or run one of the checked-in example profiles:
 The runner writes runtime state to `var/pipeline-run.json` by default, or to the
 configured `pipeline.output_dir`. The report includes status, source summary,
 doctor summary, warehouse summary, AI posture, and suggestion counts. Suggestion
-counts are currently zero until the deterministic candidate cascade and AI
-enrichment jobs are added.
+counts include deterministic link suggestions when unresolved wikilinks have
+bounded candidate matches.
 
 By default, local source/config paths and doctor samples are redacted from
 pipeline output. Use `--include-private-paths` only for local debugging:
@@ -190,6 +190,24 @@ To run doctor against the configured source without passing `--vault`:
 ```bash
 .venv/bin/obsidian-mcp-context pipeline doctor --config .obsidian-mcp-context.toml
 ```
+
+## Deterministic Suggestions
+
+The warehouse includes a review table named `deterministic_suggested_links`.
+Rows are generated without AI for unresolved wikilinks and are advisory until a
+human or deterministic rule accepts them.
+
+The current cascade ranks candidates with:
+
+- exact path/title or basename matches
+- exact frontmatter alias matches
+- bounded string similarity against note titles
+- low-confidence shared metadata signals such as overlapping tags
+
+Each suggestion stores the source link, source note, candidate target note,
+suggestion type, deterministic score, rank, JSON signals, and creation
+timestamp. Pipeline reports surface the row count under
+`suggestion_counts.deterministic_suggested_links`.
 
 ## Scan Settings
 

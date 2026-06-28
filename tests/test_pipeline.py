@@ -163,3 +163,40 @@ lifecycle_metadata = "ignore"
 
     assert result == 0
     assert (output_dir / "pipeline-run.json").exists()
+
+
+def test_pipeline_run_reports_deterministic_suggestion_counts(tmp_path: Path):
+    vault = tmp_path / "vault"
+    output_dir = tmp_path / "var"
+    (vault / "Projects").mkdir(parents=True)
+    (vault / "Daily").mkdir()
+    (vault / "Projects" / "Project Atlas.md").write_text(
+        "# Project Atlas\n", encoding="utf-8"
+    )
+    (vault / "Daily" / "2026-06-28.md").write_text(
+        "# Daily\n\n[[Project Atals]]\n", encoding="utf-8"
+    )
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        f"""
+[source]
+type = "obsidian"
+vault_path = "{vault}"
+
+[pipeline]
+output_dir = "{output_dir}"
+
+[doctor]
+lifecycle_metadata = "ignore"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    run_pipeline(config_path=config_path)
+
+    payload = json.loads((output_dir / "pipeline-run.json").read_text(encoding="utf-8"))
+    assert payload["suggestion_counts"]["deterministic_suggested_links"] >= 1
+    assert (
+        payload["warehouse"]["tables"]["deterministic_suggested_links"]
+        == payload["suggestion_counts"]["deterministic_suggested_links"]
+    )
