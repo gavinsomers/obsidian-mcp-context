@@ -1,5 +1,3 @@
-{{ config(unique_key='entity_open_loop_id') }}
-
 with open_loop_mentions as (
   select distinct
     open_loops.open_loop_id,

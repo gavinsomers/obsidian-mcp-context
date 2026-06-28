@@ -15,6 +15,4 @@ models:
     intermediate:
       +materialized: view
     marts:
-      +materialized: incremental
-      +incremental_strategy: merge
-      +on_schema_change: sync_all_columns
+      +materialized: table

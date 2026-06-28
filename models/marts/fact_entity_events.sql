@@ -1,5 +1,3 @@
-{{ config(unique_key='event_id') }}
-
 with mention_events as (
   select
     'event:mention:' || mentions.mention_id || ':' || timeline.timeline_id as event_id,

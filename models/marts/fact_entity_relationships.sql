@@ -1,5 +1,3 @@
-{{ config(unique_key='relationship_id') }}
-
 with note_entity_mentions as (
   select
     'relationship:note:' || source_entities.entity_id || ':' || mentions.mention_id as relationship_id,

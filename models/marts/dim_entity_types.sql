@@ -1,5 +1,3 @@
-{{ config(unique_key='entity_type') }}
-
 with observed_types as (
   select distinct entity_type
   from {{ ref('dim_entities') }}

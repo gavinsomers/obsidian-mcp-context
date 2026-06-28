@@ -112,14 +112,16 @@ Use the fixture with the same pipeline commands:
 
 ## DuckDB And dbt Pipeline
 
-The local pipeline can materialize parsed vault context into DuckDB staging
-tables and then run dbt models for deterministic dimensions, facts, and marts.
+The local pipeline can rebuild parsed vault context into DuckDB landing tables
+and then run dbt models for deterministic dimensions, facts, and marts. Each run
+is intended to be a full compile of the current vault state, not an incremental
+sync.
 
 The flow is:
 
 ```text
 examples/synthetic-vault
-  -> obsidian-mcp-context-ingest
+  -> obsidian-mcp-context-ingest full landing-table rebuild
   -> DuckDB base_obsidian_* landing tables
   -> dbt run
   -> stg_obsidian_* staging views
@@ -139,7 +141,7 @@ dbt materializations:
 | --- | --- |
 | `stg_obsidian_*` | views |
 | `int_obsidian_*` | views |
-| `dim_*`, `fact_*`, `mart_*` | incremental tables using DuckDB `merge` |
+| `dim_*`, `fact_*`, `mart_*` | rebuilt tables |
 
 The public demo intentionally stays Obsidian-only. It does not add source
 routing or specialist parsers until additional source families such as WhatsApp,
@@ -159,7 +161,8 @@ MCP warehouse tools query these persisted marts directly. If no dbt warehouse is
 available, they fall back to the smaller in-memory warehouse built from the vault
 files.
 
-Run ingest:
+Run ingest. This replaces the `base_obsidian_*` landing tables in the target
+DuckDB file:
 
 ```bash
 .venv/bin/obsidian-mcp-context-ingest \

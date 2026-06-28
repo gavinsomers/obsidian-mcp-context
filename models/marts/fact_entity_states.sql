@@ -1,5 +1,3 @@
-{{ config(unique_key='state_id') }}
-
 with decision_states as (
   select
     'state:' || entities.entity_id || ':decision_status' as state_id,

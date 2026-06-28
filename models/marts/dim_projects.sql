@@ -1,5 +1,3 @@
-{{ config(unique_key='project_id') }}
-
 with projects as (
   select
     entity_id as project_id,
