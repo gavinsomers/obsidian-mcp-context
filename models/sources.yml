@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: obsidian
-    schema: main
+    schema: "{{ env_var('DBT_SOURCE_SCHEMA', 'main') }}"
     tables:
       - name: base_obsidian_files
       - name: base_obsidian_blocks

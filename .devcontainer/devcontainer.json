@@ -1,0 +1,34 @@
+{
+  "name": "obsidian-mcp-context analytics",
+  "dockerComposeFile": [
+    "../docker-compose.analytics.yml"
+  ],
+  "service": "dbt",
+  "workspaceFolder": "/workspace",
+  "runServices": [
+    "postgres",
+    "vault-obsidian"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "innoverio.vscode-dbt-power-user",
+        "mtxr.sqltools",
+        "mtxr.sqltools-driver-pg"
+      ]
+    }
+  },
+  "postCreateCommand": "python -m pip install -e \".[dev,postgres]\"",
+  "remoteEnv": {
+    "DBT_TARGET": "postgres",
+    "DBT_SOURCE_SCHEMA": "raw",
+    "DBT_TARGET_SCHEMA": "marts",
+    "DBT_THREADS": "1",
+    "POSTGRES_HOST": "postgres",
+    "POSTGRES_PORT": "5432",
+    "POSTGRES_DB": "obsidian_context",
+    "POSTGRES_USER": "obsidian",
+    "POSTGRES_PASSWORD": "obsidian"
+  }
+}

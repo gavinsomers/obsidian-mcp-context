@@ -98,6 +98,8 @@ For a higher-level view of the runtime services and DuckDB/dbt pipeline, see
 For the generic entity model, see [docs/entity-contract.md](docs/entity-contract.md).
 For the bring-your-own-vault workflow, see [docs/onboarding.md](docs/onboarding.md).
 For local scan and entity overrides, see [docs/configuration.md](docs/configuration.md).
+For the Postgres/dbt/Obsidian/VS Code container stack, see
+[docs/container-stack.md](docs/container-stack.md).
 
 The warehouse-first workflow is:
 
