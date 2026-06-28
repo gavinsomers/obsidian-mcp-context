@@ -10,6 +10,11 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+### Added
+
+- Added privacy-safe `doctor` reason buckets for unresolved path-like wikilinks,
+  reported as aggregate counts without exposing raw targets.
+
 ## [0.9.0] - 2026-06-28
 
 ### Changed

@@ -70,6 +70,7 @@ updated_at: 2026-06-28T09:20:00
     assert unresolved["details"] == {
         "count": 1,
         "samples_redacted": True,
+        "path_like_reasons": {},
         "target_shapes": {"plain_text": 1},
     }
     assert exit_code(report) == 0
@@ -190,6 +191,71 @@ def test_doctor_reports_unresolved_link_target_shapes_without_samples(tmp_path: 
     assert unresolved["details"]["target_shapes"] == report["graph"][
         "unresolved_target_shapes"
     ]
+    assert unresolved["details"]["path_like_reasons"] == {
+        "no_candidate_found": 2,
+    }
+    assert "top_targets" not in unresolved["details"]
+
+
+def test_doctor_classifies_unresolved_path_like_reasons_without_samples(
+    tmp_path: Path,
+):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+    (vault / "People").mkdir()
+    (vault / "Archive").mkdir()
+    (vault / "Assets").mkdir()
+    (vault / "Drafts").mkdir()
+    (vault / "People" / "Morgan Lee.md").write_text("# Morgan\n", encoding="utf-8")
+    (vault / "Archive" / "Hidden.md").write_text("# Hidden\n", encoding="utf-8")
+    (vault / "Assets" / "Manual.pdf").write_bytes(b"PDF")
+    (vault / "Drafts" / "Idea.md").write_text("# Idea\n", encoding="utf-8")
+    (vault / "Links.md").write_text(
+        "\n".join(
+            [
+                "[[Archive/Hidden]]",
+                "[[Assets/Manual.pdf]]",
+                "[[Drafts/Idea]]",
+                "[[Archive/Morgan Lee]]",
+                "[[Missing/Path]]",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[scan]
+include_globs = ["Links.md", "People/*.md", "Archive/*.md", "Assets/*.md"]
+extra_exclude_globs = ["Archive/Hidden.md"]
+
+[doctor]
+lifecycle_metadata = "ignore"
+unsupported_files = "ignore"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(DoctorOptions(vault_path=vault, config_path=config_path))
+
+    assert report["graph"]["unresolved_target_shapes"] == {"path_like": 5}
+    assert report["graph"]["unresolved_path_like_reasons"] == {
+        "basename_exists_elsewhere": 1,
+        "excluded_path": 1,
+        "missing_extension_candidate": 1,
+        "no_candidate_found": 1,
+        "unsupported_extension": 1,
+    }
+    assert report["graph"]["top_unresolved_targets"] == []
+    unresolved = next(
+        item
+        for item in report["diagnostics"]
+        if item["code"] == DoctorCode.UNRESOLVED_WIKILINK.value
+    )
+    assert unresolved["details"]["path_like_reasons"] == report["graph"][
+        "unresolved_path_like_reasons"
+    ]
+    assert unresolved["details"]["samples_redacted"] is True
     assert "top_targets" not in unresolved["details"]
 
 
