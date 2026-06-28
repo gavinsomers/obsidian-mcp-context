@@ -221,6 +221,17 @@ Services:
 Use the web UI and file browser in a normal browser. Use the MCP endpoint only
 from an MCP-aware client.
 
+The web UI includes a pipeline status panel. It reports whether the app is
+reading from the stable DuckDB snapshot, whether writer/read warehouses are
+present, the current simulation virtual date when available, and row counts for
+key dbt tables.
+
+Fetch the same status as JSON:
+
+```bash
+curl http://localhost:8080/api/status
+```
+
 The Compose stack mounts `examples/synthetic-vault` read-only at `/vault`.
 Pipeline services write the working dbt warehouse to `var/obsidian.duckdb`.
 After successful dbt tests, they publish `var/obsidian-read.duckdb` as the
