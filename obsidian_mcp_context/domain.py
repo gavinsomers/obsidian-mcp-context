@@ -20,6 +20,7 @@ NOTE_TYPE_BY_FOLDER = {
     "research": "research",
     "risks": "risk",
 }
+NON_ENTITY_NOTE_TYPES = {"daily", "meeting", "note", "research"}
 
 
 def slug(value: str) -> str:
@@ -35,7 +36,25 @@ def note_type(source_path: str) -> str:
     parts = PurePosixPath(source_path).parts
     if not parts:
         return "note"
-    return NOTE_TYPE_BY_FOLDER.get(parts[0].casefold(), "note")
+    folder = parts[0].casefold()
+    if folder in NOTE_TYPE_BY_FOLDER:
+        return NOTE_TYPE_BY_FOLDER[folder]
+    if len(parts) == 1:
+        return "note"
+    return singular_entity_type(folder)
+
+
+def singular_entity_type(folder: str) -> str:
+    normalized = slug(folder).replace("-", "_")
+    if normalized.endswith("ies") and len(normalized) > 3:
+        return f"{normalized[:-3]}y"
+    if normalized.endswith("s") and len(normalized) > 1:
+        return normalized[:-1]
+    return normalized or "note"
+
+
+def is_entity_note_type(value: str) -> bool:
+    return value not in NON_ENTITY_NOTE_TYPES
 
 
 def source_date(source_path: str, text: str | None = None) -> str | None:

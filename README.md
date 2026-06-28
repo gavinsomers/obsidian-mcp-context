@@ -11,14 +11,19 @@ model; this server provides the vault tools.
 - Obsidian Markdown files (`.md`) by default.
 - Optional plain `.txt` parsing as generic text blocks only.
 - Synthetic demo vault under `examples/synthetic-vault`.
+- Minimal and custom-entity example vaults under `examples/minimal-vault` and
+  `examples/custom-entity-vault`.
 - Deterministic parsing of headings, heading paths, blocks, tasks, wikilinks, tags, and semantic lines.
 - File, block, heading, and line-level provenance.
 - CLI and MCP tools for listing notes, searching blocks, listing tasks, and fetching note context.
+- A `doctor` command for parser, graph, metadata, and warehouse readiness checks.
 
 ## How The Pipeline Works
 
 For a higher-level view of the runtime services, DuckDB/dbt pipeline, and
 simulation mode, see [docs/architecture.md](docs/architecture.md).
+For the generic entity model, see [docs/entity-contract.md](docs/entity-contract.md).
+For the bring-your-own-vault workflow, see [docs/onboarding.md](docs/onboarding.md).
 
 The intended workflow is:
 
@@ -393,10 +398,23 @@ or:
 Then run the same CLI commands with your vault path:
 
 ```bash
+.venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" doctor
 .venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" notes
 .venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" blocks --text "renewal"
 .venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" tasks --unchecked
 ```
+
+For scripted validation, use:
+
+```bash
+.venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" doctor --json
+.venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" doctor --strict
+```
+
+Custom top-level folders are promoted to generic entity types. For example,
+`Clients/Acme Renewal.md` becomes a `client` entity, while `Assets/Revenue
+Dashboard.md` becomes an `asset` entity. See
+[docs/entity-contract.md](docs/entity-contract.md) for details.
 
 ## MCP Server
 
