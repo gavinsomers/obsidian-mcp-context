@@ -10,6 +10,38 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+## [v1.0.0-rc.3] - 2026-06-28
+
+### Added
+
+- Added a SQL reconciliation harness that rebuilds the static synthetic vault
+  into DuckDB/dbt and runs zero-row assertion files under `tests/reconciliation`.
+- Added deterministic expected-answer reconciliation checks for Project Atlas
+  risk/decision context, Project Pipeline risk ownership, project open-loop
+  rollups, and Horizon sponsorship context.
+
+### Changed
+
+- Reframed the public architecture around a local compiler-function model:
+  Obsidian vault input, full parse, explicit warehouse rebuild, deterministic
+  suggestions, optional advisory AI enrichment, and reproducible reports.
+- Changed dbt marts from incremental merge models to rebuilt table
+  materializations and removed incremental-only mart configs.
+- Clarified README guidance for lightweight MCP usage, persisted DuckDB/dbt
+  usage, static fixture ownership, and privacy-gated AI enrichment.
+
+### Removed
+
+- Removed Airflow, Docker simulation orchestration, and the stale Airflow
+  Dockerfile from the public repo.
+- Removed public synthetic generator and simulator code after moving generator
+  ownership to the private `gavinsomers/obsidian-mcp-context-generator` repo.
+
+### Verified
+
+- `.venv/bin/python -m pytest -q`
+- `.venv/bin/python -m compileall obsidian_mcp_context`
+
 ## [v1.0.0-rc.2] - 2026-06-28
 
 ### Added
