@@ -10,6 +10,8 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-06-28
+
 ### Added
 
 - Added a staged privacy check script for blocking local sensitive terms and
