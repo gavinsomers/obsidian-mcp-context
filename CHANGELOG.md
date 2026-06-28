@@ -10,6 +10,8 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-06-28
+
 ### Changed
 
 - Redacted `doctor` diagnostic samples by default and added
