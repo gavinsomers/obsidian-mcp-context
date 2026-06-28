@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 from typing import Any
 
+from obsidian_mcp_context.ai import AIProviderError, build_ai_provider
 from obsidian_mcp_context.config import AppConfig, DEFAULT_CONFIG_PATH, load_app_config
 from obsidian_mcp_context.config import vault_config_from_app_config
 from obsidian_mcp_context.doctor import DoctorOptions, run_doctor
@@ -147,10 +148,22 @@ def sanitize_report(
 
 
 def ai_posture(config: AppConfig) -> dict[str, object]:
+    configured = False
+    configuration_error = ""
+    if not config.ai.enabled:
+        configured = True
+    else:
+        try:
+            build_ai_provider(config)
+            configured = True
+        except AIProviderError as exc:
+            configuration_error = str(exc)
     return {
         "enabled": config.ai.enabled,
         "provider": config.ai.provider,
         "model": config.ai.model,
+        "configured": configured,
+        "configuration_error": configuration_error,
         "hosted": config.ai.provider in {"openai", "anthropic"},
         "raw_text_allowed": config.privacy.allow_raw_text_to_ai,
         "hosted_ai_allowed": config.privacy.allow_hosted_ai,
