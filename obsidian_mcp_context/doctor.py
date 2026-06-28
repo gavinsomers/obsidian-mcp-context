@@ -6,6 +6,7 @@ from datetime import datetime
 from enum import Enum
 import json
 from pathlib import Path
+from pathlib import PurePosixPath
 import re
 
 from obsidian_mcp_context import dbt_warehouse
@@ -197,6 +198,72 @@ def _link_target_shape(value: str) -> str:
 def _shape_counts(values: list[str]) -> dict[str, int]:
     counts = Counter(_link_target_shape(value) for value in values)
     return dict(sorted(counts.items()))
+
+
+def _path_like_resolution_target(value: str) -> str:
+    target = value.split("#", 1)[0].split("^", 1)[0].strip().strip("/")
+    if target.endswith(".md"):
+        target = target[:-3]
+    return target
+
+
+def _path_with_markdown_extension(value: str) -> str:
+    return value if value.casefold().endswith(".md") else f"{value}.md"
+
+
+def _path_stem_key(value: str) -> str:
+    path = PurePosixPath(value)
+    return str(path.with_suffix("")).casefold() if path.suffix else value.casefold()
+
+
+def _basename_stem_key(value: str) -> str:
+    path = PurePosixPath(value)
+    name = path.name
+    suffix = PurePosixPath(name).suffix
+    return name[: -len(suffix)].casefold() if suffix else name.casefold()
+
+
+def _classify_path_like_unresolved_targets(
+    unresolved: list[str], inventory: dict[str, object]
+) -> dict[str, int]:
+    markdown_files = [str(item) for item in inventory["markdown_files"]]
+    ignored_files = [str(item) for item in inventory["ignored_files"]]
+    excluded_files = [str(item) for item in inventory["excluded_files"]]
+    unsupported_files = [str(item) for item in inventory["unsupported_files"]]
+
+    scanned_paths = {item.casefold() for item in markdown_files}
+    ignored_paths = {item.casefold() for item in ignored_files}
+    excluded_paths = {item.casefold() for item in excluded_files}
+    unsupported_paths = {item.casefold() for item in unsupported_files}
+    unsupported_stems = {_path_stem_key(item) for item in unsupported_files}
+    scanned_basenames = {_basename_stem_key(item) for item in markdown_files}
+
+    reasons: Counter[str] = Counter()
+    for target in unresolved:
+        if _link_target_shape(target) != "path_like":
+            continue
+        path_target = _path_like_resolution_target(target)
+        if not path_target:
+            reasons["no_candidate_found"] += 1
+            continue
+        explicit_path = target.split("#", 1)[0].split("^", 1)[0].strip().strip("/")
+        markdown_path = _path_with_markdown_extension(path_target)
+        exact_key = explicit_path.casefold()
+        markdown_key = markdown_path.casefold()
+        target_stem = _path_stem_key(explicit_path)
+
+        if exact_key in excluded_paths or markdown_key in excluded_paths:
+            reasons["excluded_path"] += 1
+        elif exact_key in unsupported_paths or target_stem in unsupported_stems:
+            reasons["unsupported_extension"] += 1
+        elif markdown_key in ignored_paths and markdown_key not in scanned_paths:
+            reasons["missing_extension_candidate"] += 1
+        elif _basename_stem_key(markdown_path) in scanned_basenames:
+            reasons["basename_exists_elsewhere"] += 1
+        else:
+            reasons["no_candidate_found"] += 1
+
+    return dict(sorted(reasons.items()))
 
 
 def _scan_inventory(vault_path: Path, config: VaultConfig) -> dict[str, object]:
@@ -480,6 +547,9 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
     ]
     unresolved_counts = Counter(unresolved)
     unresolved_shapes = _shape_counts(unresolved)
+    unresolved_path_like_reasons = _classify_path_like_unresolved_targets(
+        unresolved, inventory
+    )
     if unresolved:
         message = f"{len(unresolved)} wikilinks do not resolve to scanned note titles."
         unresolved_details = _sample_details(
@@ -492,6 +562,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             sample_key="top_targets",
         )
         unresolved_details["target_shapes"] = unresolved_shapes
+        unresolved_details["path_like_reasons"] = unresolved_path_like_reasons
         _record_policy_diagnostic(
             mode=app_config.doctor_unresolved_wikilinks,
             warnings=warnings,
@@ -627,6 +698,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "resolved_wikilinks": len(context.links) - len(unresolved),
             "unresolved_wikilinks": len(unresolved),
             "unresolved_target_shapes": unresolved_shapes,
+            "unresolved_path_like_reasons": unresolved_path_like_reasons,
             "top_unresolved_targets": [
                 {"target": target, "count": count}
                 for target, count in unresolved_counts.most_common(10)
