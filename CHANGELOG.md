@@ -17,6 +17,8 @@ The project uses semantic-ish versions:
 - Added allowed-root vault path validation for hardened HTTP deployments.
 - Added freshness-aware context caching so MCP/web fallback reads update after
   vault file changes.
+- Added formal web API endpoints for projects, people, companies, risks,
+  decisions, and open loops over dbt marts.
 
 ## [0.5.1] - 2026-06-28
 

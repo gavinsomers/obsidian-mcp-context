@@ -257,6 +257,15 @@ class ContextService:
             return []
         return dbt_warehouse.project_context(dbt_path, project=project, limit=limit)
 
+    def projects(
+        self,
+        duckdb_path: str | Path | None,
+        limit: int = 100,
+    ) -> list[dict[str, object]]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return []
+        return dbt_warehouse.list_projects(dbt_path, limit=limit)
+
     def person_context(
         self,
         duckdb_path: str | Path | None,
@@ -266,6 +275,24 @@ class ContextService:
         if not (dbt_path := self.dbt_path(duckdb_path)):
             return []
         return dbt_warehouse.person_context(dbt_path, person=person, limit=limit)
+
+    def people(
+        self,
+        duckdb_path: str | Path | None,
+        limit: int = 100,
+    ) -> list[dict[str, object]]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return []
+        return dbt_warehouse.list_people(dbt_path, limit=limit)
+
+    def companies(
+        self,
+        duckdb_path: str | Path | None,
+        limit: int = 100,
+    ) -> list[dict[str, object]]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return []
+        return dbt_warehouse.list_companies(dbt_path, limit=limit)
 
     def open_loops(
         self,
