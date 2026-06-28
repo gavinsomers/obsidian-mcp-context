@@ -51,8 +51,47 @@ updated_at: 2026-06-28T09:20:00
         DoctorCode.UNSUPPORTED_FILE.value,
         DoctorCode.UNRESOLVED_WIKILINK.value,
     }
+    assert report["privacy"] == {
+        "samples_included": False,
+        "samples_redacted": True,
+    }
+    assert report["content"]["unsupported_file_count"] == 1
+    assert report["content"]["unsupported_files"] == []
+    assert report["graph"]["top_unresolved_targets"] == []
+    unresolved = next(
+        item
+        for item in report["diagnostics"]
+        if item["code"] == DoctorCode.UNRESOLVED_WIKILINK.value
+    )
+    assert unresolved["details"] == {"count": 1, "samples_redacted": True}
     assert exit_code(report) == 0
     assert exit_code(report, strict=True) == 1
+
+
+def test_doctor_can_include_samples_when_explicitly_requested(tmp_path: Path):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+    (vault / "Note.md").write_text("# Note\n\n[[Missing Note]]\n", encoding="utf-8")
+    (vault / "image.png").write_bytes(b"ignored")
+
+    report = run_doctor(DoctorOptions(vault_path=vault, include_samples=True))
+
+    assert report["privacy"] == {
+        "samples_included": True,
+        "samples_redacted": False,
+    }
+    assert report["content"]["unsupported_files"] == ["image.png"]
+    assert report["graph"]["top_unresolved_targets"] == [
+        {"target": "Missing Note", "count": 1}
+    ]
+    unresolved = next(
+        item
+        for item in report["diagnostics"]
+        if item["code"] == DoctorCode.UNRESOLVED_WIKILINK.value
+    )
+    assert unresolved["details"]["top_targets"] == [
+        {"target": "Missing Note", "count": 1}
+    ]
 
 
 def test_doctor_validates_optional_duckdb_warehouse(tmp_path: Path):

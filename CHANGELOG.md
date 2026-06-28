@@ -10,6 +10,11 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+### Changed
+
+- Redacted `doctor` diagnostic samples by default and added
+  `doctor --include-samples` for explicit debugging output.
+
 ## [0.8.0] - 2026-06-28
 
 ### Added

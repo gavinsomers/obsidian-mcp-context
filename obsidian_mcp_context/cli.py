@@ -85,6 +85,11 @@ def build_parser() -> argparse.ArgumentParser:
     doctor.add_argument("--json", action="store_true", help="Print a machine-readable report.")
     doctor.add_argument("--strict", action="store_true", help="Return non-zero on warnings.")
     doctor.add_argument("--duckdb", help="Optional DuckDB warehouse path to validate.")
+    doctor.add_argument(
+        "--include-samples",
+        action="store_true",
+        help="Include note paths, file paths, and unresolved link targets in doctor output.",
+    )
 
     return parser
 
@@ -100,6 +105,7 @@ def main(argv: list[str] | None = None) -> int:
                 duckdb_path=Path(args.duckdb) if args.duckdb else None,
                 strict=args.strict,
                 config_path=Path(args.config) if args.config else None,
+                include_samples=args.include_samples,
             )
         )
         print(format_json(report) if args.json else format_human(report))
