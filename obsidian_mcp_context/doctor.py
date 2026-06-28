@@ -35,6 +35,7 @@ class DoctorOptions:
     duckdb_path: Path | None = None
     strict: bool = False
     config_path: Path | None = None
+    include_samples: bool = False
 
 
 class DoctorCode(str, Enum):
@@ -85,6 +86,21 @@ def _diagnostic(
             details=details,
         )
     )
+
+
+def _sample_details(
+    count: int,
+    sample: object,
+    *,
+    include_samples: bool,
+    sample_key: str = "sample",
+) -> dict[str, object]:
+    details: dict[str, object] = {"count": count}
+    if include_samples:
+        details[sample_key] = sample
+    else:
+        details["samples_redacted"] = True
+    return details
 
 
 def _iso_datetime(value: str) -> bool:
@@ -200,10 +216,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             DoctorCode.IGNORED_FILE,
             "warning",
             message,
-            details={
-                "count": len(inventory["ignored_files"]),
-                "sample": list(inventory["ignored_files"])[:25],
-            },
+            details=_sample_details(
+                len(inventory["ignored_files"]),
+                list(inventory["ignored_files"])[:25],
+                include_samples=options.include_samples,
+            ),
         )
     if unsupported_files:
         message = f"{len(unsupported_files)} non-Markdown files will be ignored."
@@ -213,7 +230,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             DoctorCode.UNSUPPORTED_FILE,
             "warning",
             message,
-            details={"count": len(unsupported_files), "sample": unsupported_files[:25]},
+            details=_sample_details(
+                len(unsupported_files),
+                unsupported_files[:25],
+                include_samples=options.include_samples,
+            ),
         )
 
     blocks_by_source = Counter(block.source_path for block in context.blocks)
@@ -261,7 +282,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             DoctorCode.EMPTY_NOTE,
             "warning",
             message,
-            details={"count": len(empty_notes), "sample": empty_notes[:25]},
+            details=_sample_details(
+                len(empty_notes),
+                empty_notes[:25],
+                include_samples=options.include_samples,
+            ),
         )
     if notes_without_blocks:
         message = f"{len(notes_without_blocks)} Markdown notes produced no blocks."
@@ -271,7 +296,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             DoctorCode.NOTE_WITHOUT_BLOCKS,
             "warning",
             message,
-            details={"count": len(notes_without_blocks), "sample": notes_without_blocks[:25]},
+            details=_sample_details(
+                len(notes_without_blocks),
+                notes_without_blocks[:25],
+                include_samples=options.include_samples,
+            ),
         )
     if large_notes:
         message = f"{len(large_notes)} Markdown notes are larger than 250 KB."
@@ -281,7 +310,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             DoctorCode.LARGE_NOTE,
             "warning",
             message,
-            details={"count": len(large_notes), "sample": large_notes[:25]},
+            details=_sample_details(
+                len(large_notes),
+                large_notes[:25],
+                include_samples=options.include_samples,
+            ),
         )
     if missing_lifecycle:
         message = (
@@ -293,7 +326,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             DoctorCode.MISSING_LIFECYCLE_METADATA,
             "warning",
             message,
-            details={"count": len(missing_lifecycle), "sample": missing_lifecycle[:25]},
+            details=_sample_details(
+                len(missing_lifecycle),
+                missing_lifecycle[:25],
+                include_samples=options.include_samples,
+            ),
         )
     if malformed_lifecycle:
         message = (
@@ -305,7 +342,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             DoctorCode.MALFORMED_LIFECYCLE_METADATA,
             "warning",
             message,
-            details={"count": len(malformed_lifecycle), "sample": malformed_lifecycle[:25]},
+            details=_sample_details(
+                len(malformed_lifecycle),
+                malformed_lifecycle[:25],
+                include_samples=options.include_samples,
+            ),
         )
 
     note_titles = {note_title(source_path).casefold() for source_path in markdown_files}
@@ -323,13 +364,15 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             DoctorCode.UNRESOLVED_WIKILINK,
             "warning",
             message,
-            details={
-                "count": len(unresolved),
-                "top_targets": [
+            details=_sample_details(
+                len(unresolved),
+                [
                     {"target": target, "count": count}
                     for target, count in unresolved_counts.most_common(10)
                 ],
-            },
+                include_samples=options.include_samples,
+                sample_key="top_targets",
+            ),
         )
 
     warehouse_status: dict[str, object]
@@ -393,6 +436,10 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         "errors": errors,
         "warnings": warnings,
         "diagnostics": [item.to_dict() for item in diagnostics],
+        "privacy": {
+            "samples_included": options.include_samples,
+            "samples_redacted": not options.include_samples,
+        },
         "vault": {
             "path": str(vault_path),
             "exists": True,
@@ -419,12 +466,22 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "semantic_lines": len(context.lines),
         },
         "content": {
-            "empty_notes": empty_notes[:25],
-            "notes_without_blocks": notes_without_blocks[:25],
-            "large_notes": large_notes[:25],
-            "missing_lifecycle_fields": missing_lifecycle[:25],
-            "malformed_lifecycle_fields": malformed_lifecycle[:25],
-            "unsupported_files": unsupported_files[:25],
+            "empty_note_count": len(empty_notes),
+            "notes_without_blocks_count": len(notes_without_blocks),
+            "large_note_count": len(large_notes),
+            "missing_lifecycle_field_count": len(missing_lifecycle),
+            "malformed_lifecycle_field_count": len(malformed_lifecycle),
+            "unsupported_file_count": len(unsupported_files),
+            "empty_notes": empty_notes[:25] if options.include_samples else [],
+            "notes_without_blocks": notes_without_blocks[:25] if options.include_samples else [],
+            "large_notes": large_notes[:25] if options.include_samples else [],
+            "missing_lifecycle_fields": (
+                missing_lifecycle[:25] if options.include_samples else []
+            ),
+            "malformed_lifecycle_fields": (
+                malformed_lifecycle[:25] if options.include_samples else []
+            ),
+            "unsupported_files": unsupported_files[:25] if options.include_samples else [],
         },
         "graph": {
             "wikilinks": len(context.links),
@@ -433,7 +490,9 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "top_unresolved_targets": [
                 {"target": target, "count": count}
                 for target, count in unresolved_counts.most_common(10)
-            ],
+            ]
+            if options.include_samples
+            else [],
         },
         "warehouse": warehouse_status,
     }

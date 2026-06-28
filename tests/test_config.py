@@ -81,3 +81,5 @@ Clients = "company"
     assert report["config"]["path"] == str(config_path)
     assert "Private/**" in report["config"]["exclude_globs"]
     assert report["config"]["folder_note_type_count"] == 1
+    assert report["privacy"]["samples_redacted"] is True
+    assert all("sample" not in item["details"] for item in report["diagnostics"])

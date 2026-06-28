@@ -14,6 +14,11 @@ You can also pass an explicit path:
   doctor
 ```
 
+`doctor` redacts note paths, file paths, and unresolved wikilink targets from
+diagnostic samples by default. Aggregate counts remain in the report. For
+controlled synthetic-vault debugging, pass `doctor --include-samples` to include
+the detailed samples.
+
 ## Example
 
 ```toml
