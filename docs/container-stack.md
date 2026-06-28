@@ -24,6 +24,33 @@ editor-visible model code.
 DuckDB remains supported for local development. The container stack is the
 Postgres path.
 
+## One-Command Check
+
+Run the full synthetic-vault path:
+
+```bash
+scripts/analytics_stack_check.sh
+```
+
+The check builds the required images, starts Postgres, runs ingest, runs dbt,
+runs dbt tests, and executes a Postgres-backed MCP smoke check against the marts.
+It uses `.env.analytics` when present, otherwise `.env.analytics.example`.
+
+To run the same check against your own vault:
+
+```bash
+cp .env.analytics.example .env.analytics
+# edit VAULT_PATH=/absolute/path/to/your/vault
+scripts/analytics_stack_check.sh
+```
+
+By default the script stops the temporary Compose services when it finishes. To
+leave Postgres running for inspection:
+
+```bash
+ANALYTICS_STACK_KEEP_RUNNING=1 scripts/analytics_stack_check.sh
+```
+
 ## Vault Selection
 
 The stack uses `VAULT_PATH`.

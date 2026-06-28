@@ -100,6 +100,8 @@ For the bring-your-own-vault workflow, see [docs/onboarding.md](docs/onboarding.
 For local scan and entity overrides, see [docs/configuration.md](docs/configuration.md).
 For the Postgres/dbt/Obsidian/VS Code container stack, see
 [docs/container-stack.md](docs/container-stack.md).
+To validate the full Postgres container path against the synthetic vault, run
+`scripts/analytics_stack_check.sh`.
 
 The warehouse-first workflow is:
 
