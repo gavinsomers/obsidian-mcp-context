@@ -10,6 +10,8 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+## [v1.0.0-rc.1] - 2026-06-28
+
 ### Added
 
 - Added privacy-safe `doctor` reason buckets for unresolved path-like wikilinks,
@@ -20,6 +22,11 @@ The project uses semantic-ish versions:
   counts while suppressing expected dangling-link warnings.
 - Added aggregate unresolved wikilink remediation hints to `doctor` JSON and
   human output.
+
+### Validated
+
+- Ran aggregate-only real-vault doctor validation with redacted-by-default
+  output, zero errors, and an in-memory warehouse build passing.
 
 ## [0.9.0] - 2026-06-28
 
