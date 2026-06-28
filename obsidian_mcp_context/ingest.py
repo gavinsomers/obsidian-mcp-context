@@ -16,6 +16,15 @@ from obsidian_mcp_context.domain import (
 from obsidian_mcp_context.vault import VaultConfig, build_context
 
 
+def _executemany_if_rows(
+    connection: duckdb.DuckDBPyConnection,
+    query: str,
+    rows: list[tuple[object, ...]],
+) -> None:
+    if rows:
+        connection.executemany(query, rows)
+
+
 def _create_tables(connection: duckdb.DuckDBPyConnection) -> None:
     connection.execute(
         """
@@ -125,27 +134,33 @@ def ingest_vault(vault_path: Path, duckdb_path: Path) -> dict[str, int]:
                     frontmatter_value(first_block_text, "updated_at"),
                 )
             )
-        connection.executemany(
+        _executemany_if_rows(
+            connection,
             "insert into base_obsidian_files values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             files,
         )
-        connection.executemany(
+        _executemany_if_rows(
+            connection,
             "insert into base_obsidian_blocks values (?, ?, ?, ?, ?, ?, ?, ?, ?)",
             [tuple(asdict(block).values()) for block in context.blocks],
         )
-        connection.executemany(
+        _executemany_if_rows(
+            connection,
             "insert into base_obsidian_tasks values (?, ?, ?, ?, ?, ?, ?, ?, ?)",
             [tuple(asdict(task).values()) for task in context.tasks],
         )
-        connection.executemany(
+        _executemany_if_rows(
+            connection,
             "insert into base_obsidian_links values (?, ?, ?, ?, ?)",
             [tuple(asdict(link).values()) for link in context.links],
         )
-        connection.executemany(
+        _executemany_if_rows(
+            connection,
             "insert into base_obsidian_tags values (?, ?, ?, ?)",
             [tuple(asdict(tag).values()) for tag in context.tags],
         )
-        connection.executemany(
+        _executemany_if_rows(
+            connection,
             "insert into base_obsidian_lines values (?, ?, ?, ?, ?, ?)",
             [tuple(asdict(line).values()) for line in context.lines],
         )

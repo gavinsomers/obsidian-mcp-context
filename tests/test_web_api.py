@@ -321,6 +321,104 @@ def test_generic_entity_api_endpoints(tmp_path: Path):
     assert open_loops["result"][0]["summary"] == "Follow up on Project Atlas."
 
 
+def test_generic_entity_api_supports_custom_entity_types(tmp_path: Path):
+    vault_path = tmp_path / "vault"
+    vault_path.mkdir()
+    duckdb_path = tmp_path / "warehouse.duckdb"
+    _write_api_warehouse(duckdb_path)
+    connection = duckdb.connect(str(duckdb_path))
+    try:
+        connection.execute(
+            """
+            insert into dim_entities values
+              ('client:acme-renewal', 'client', 'Acme Renewal', 'Clients/Acme Renewal.md', 'note:acme'),
+              ('asset:revenue-dashboard', 'asset', 'Revenue Dashboard', 'Assets/Revenue Dashboard.md', 'note:dashboard');
+            insert into dim_entity_types values
+              ('client', 'client', 'Entity type observed in the vault.', 'observed', false, false, false),
+              ('asset', 'asset', 'Entity type observed in the vault.', 'observed', false, false, false);
+            insert into fact_entity_relationships values (
+              'relationship:custom:1',
+              'client:acme-renewal',
+              'client',
+              'Acme Renewal',
+              'asset:revenue-dashboard',
+              'asset',
+              'Revenue Dashboard',
+              'mentions',
+              'Clients/Acme Renewal.md',
+              9,
+              1.0,
+              'Acme Renewal depends on Revenue Dashboard.'
+            );
+            insert into fact_entity_events values (
+              'event:custom:1',
+              'client:acme-renewal',
+              'client',
+              'Acme Renewal',
+              'block',
+              date '2026-06-28',
+              'Clients/Acme Renewal.md',
+              9,
+              'Acme Renewal',
+              'Acme Renewal depends on Revenue Dashboard.',
+              'Acme Renewal, Revenue Dashboard'
+            );
+            insert into mart_entity_context values (
+              'context:event:custom:1',
+              'client:acme-renewal',
+              'client',
+              'Acme Renewal',
+              'event:custom:1',
+              date '2026-06-28',
+              'block',
+              'Clients/Acme Renewal.md',
+              9,
+              'Acme Renewal',
+              'Acme Renewal depends on Revenue Dashboard.',
+              'Acme Renewal, Revenue Dashboard',
+              0
+            );
+            insert into mart_entity_open_loops values (
+              'entity_open_loop:custom:1',
+              'client:acme-renewal',
+              'client',
+              'Acme Renewal',
+              'open_loop:custom:1',
+              'task:custom:1',
+              date '2026-06-29',
+              'Daily/2026-06-29.md',
+              4,
+              'Daily',
+              '2026-06-29',
+              'Review Acme Renewal rollout.',
+              'Acme Renewal',
+              null,
+              null
+            );
+            """
+        )
+    finally:
+        connection.close()
+    handler = type(
+        "TestContextHandler",
+        (ContextHandler,),
+        {"vault_path": vault_path, "duckdb_path": duckdb_path},
+    )
+
+    client = _get_json(handler, "/api/entities/client/Acme%20Renewal")
+    context = _get_json(handler, "/api/entities/client/Acme%20Renewal/context")
+    relationships = _get_json(
+        handler,
+        "/api/entities/client/Acme%20Renewal/relationships",
+    )
+    open_loops = _get_json(handler, "/api/entities/client/Acme%20Renewal/open-loops")
+
+    assert client["result"]["entity_type"] == "client"
+    assert context["result"][0]["entity_name"] == "Acme Renewal"
+    assert relationships["result"][0]["target_entity_type"] == "asset"
+    assert open_loops["result"][0]["summary"] == "Review Acme Renewal rollout."
+
+
 def test_formal_api_reports_missing_dbt_warehouse(tmp_path: Path):
     vault_path = tmp_path / "vault"
     vault_path.mkdir()

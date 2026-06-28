@@ -10,6 +10,22 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+### Added
+
+- Added a `doctor` CLI command for bring-your-own-vault parser, graph,
+  metadata, and warehouse readiness checks.
+- Added entity-contract and onboarding documentation for generic entity usage.
+- Added minimal and custom-entity example vaults.
+- Added contract tests proving custom folder-derived entity types flow through
+  the dbt generic entity marts.
+
+### Changed
+
+- Custom top-level folders now become singular generic entity types, such as
+  `Clients/` to `client` and `Assets/` to `asset`.
+- DuckDB ingest now handles valid vaults with empty parsed tables such as no
+  tags or no tasks.
+
 ## [0.6.0] - 2026-06-28
 
 ### Added

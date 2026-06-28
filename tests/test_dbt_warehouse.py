@@ -1,8 +1,12 @@
 from pathlib import Path
+import os
+import subprocess
+import sys
 
 import duckdb
 
 from obsidian_mcp_context import dbt_warehouse
+from obsidian_mcp_context.ingest import ingest_vault
 from obsidian_mcp_context.web_ui import answer_question
 
 
@@ -435,3 +439,119 @@ def test_dbt_warehouse_generic_entity_queries(tmp_path: Path):
     assert relationships[0]["target_entity_name"] == "Morgan Lee"
     assert states[0]["state_value"] == "open"
     assert open_loops[0]["summary"] == "Follow up on [[Project Atlas]]."
+
+
+def test_dbt_pipeline_materializes_custom_entity_types(tmp_path: Path):
+    vault_path = tmp_path / "vault"
+    duckdb_path = tmp_path / "obsidian.duckdb"
+    (vault_path / "Clients").mkdir(parents=True)
+    (vault_path / "Assets").mkdir()
+    (vault_path / "Initiatives").mkdir()
+    (vault_path / "Daily").mkdir()
+    (vault_path / "Clients" / "Acme Renewal.md").write_text(
+        """---
+source_created_at: 2026-06-01T09:00:00
+source_observed_at: 2026-06-01T09:05:00
+created_at: 2026-06-01T09:10:00
+updated_at: 2026-06-01T09:20:00
+---
+# Acme Renewal
+
+Client depends on [[Revenue Dashboard]] and [[Data Trust]].
+""",
+        encoding="utf-8",
+    )
+    (vault_path / "Assets" / "Revenue Dashboard.md").write_text(
+        """---
+source_created_at: 2026-06-02T09:00:00
+source_observed_at: 2026-06-02T09:05:00
+created_at: 2026-06-02T09:10:00
+updated_at: 2026-06-02T09:20:00
+---
+# Revenue Dashboard
+
+Dashboard supports [[Acme Renewal]].
+""",
+        encoding="utf-8",
+    )
+    (vault_path / "Initiatives" / "Data Trust.md").write_text(
+        """---
+source_created_at: 2026-06-03T09:00:00
+source_observed_at: 2026-06-03T09:05:00
+created_at: 2026-06-03T09:10:00
+updated_at: 2026-06-03T09:20:00
+---
+# Data Trust
+
+Initiative includes [[Acme Renewal]].
+""",
+        encoding="utf-8",
+    )
+    (vault_path / "Daily" / "2026-06-28.md").write_text(
+        """---
+source_created_at: 2026-06-28T09:00:00
+source_observed_at: 2026-06-28T09:05:00
+created_at: 2026-06-28T09:10:00
+updated_at: 2026-06-28T09:20:00
+---
+# Daily
+
+- [ ] Review [[Acme Renewal]] rollout with [[Revenue Dashboard]] owner.
+""",
+        encoding="utf-8",
+    )
+
+    ingest_vault(vault_path, duckdb_path)
+    env = os.environ | {"DUCKDB_PATH": str(duckdb_path)}
+    subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "dbt.cli.main",
+            "run",
+            "--profiles-dir",
+            "dbt",
+            "--project-dir",
+            ".",
+            "--quiet",
+        ],
+        cwd=Path(__file__).resolve().parents[1],
+        env=env,
+        check=True,
+    )
+
+    entities = dbt_warehouse.list_entities(duckdb_path, limit=100)
+    entity_types = dbt_warehouse.list_entity_types(duckdb_path, limit=100)
+    context = dbt_warehouse.entity_context(
+        duckdb_path,
+        entity_type="client",
+        entity="Acme Renewal",
+        limit=50,
+    )
+    relationships = dbt_warehouse.list_entity_relationships(
+        duckdb_path,
+        entity_type="client",
+        entity="Acme Renewal",
+        limit=50,
+    )
+    open_loops = dbt_warehouse.list_entity_open_loops(
+        duckdb_path,
+        entity_type="client",
+        entity="Acme Renewal",
+        limit=50,
+    )
+
+    assert {(row["entity_type"], row["name"]) for row in entities} >= {
+        ("client", "Acme Renewal"),
+        ("asset", "Revenue Dashboard"),
+        ("initiative", "Data Trust"),
+    }
+    assert {row["entity_type"] for row in entity_types} >= {
+        "client",
+        "asset",
+        "initiative",
+    }
+    assert context
+    assert any(row["event_type"] == "open_loop" for row in context)
+    assert any(row["target_entity_name"] == "Revenue Dashboard" for row in relationships)
+    assert open_loops[0]["summary"].startswith("Review [[Acme Renewal]]")

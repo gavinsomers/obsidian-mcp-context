@@ -4,6 +4,13 @@ import argparse
 import json
 from pathlib import Path
 
+from obsidian_mcp_context.doctor import (
+    DoctorOptions,
+    exit_code,
+    format_human,
+    format_json,
+    run_doctor,
+)
 from obsidian_mcp_context.query import list_notes, list_tasks, search_blocks
 from obsidian_mcp_context.vault import VaultConfig, build_context
 from obsidian_mcp_context.warehouse import (
@@ -67,12 +74,31 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--event-type")
     agent.add_argument("--limit", type=int, default=25)
 
+    doctor = subparsers.add_parser(
+        "doctor", help="Validate a vault for parser, graph, and warehouse readiness."
+    )
+    doctor.add_argument("--json", action="store_true", help="Print a machine-readable report.")
+    doctor.add_argument("--strict", action="store_true", help="Return non-zero on warnings.")
+    doctor.add_argument("--duckdb", help="Optional DuckDB warehouse path to validate.")
+
     return parser
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+
+    if args.command == "doctor":
+        report = run_doctor(
+            DoctorOptions(
+                vault_path=Path(args.vault),
+                duckdb_path=Path(args.duckdb) if args.duckdb else None,
+                strict=args.strict,
+            )
+        )
+        print(format_json(report) if args.json else format_human(report))
+        return exit_code(report, strict=args.strict)
+
     context = build_context(VaultConfig(vault_path=Path(args.vault)))
 
     if args.command == "notes":

@@ -5,6 +5,7 @@ import sqlite3
 
 from obsidian_mcp_context.domain import (
     frontmatter_value,
+    is_entity_note_type,
     note_title,
     note_type,
     slug,
@@ -194,7 +195,7 @@ def _insert_entities(connection: sqlite3.Connection) -> None:
     note_by_title = {row["title"].casefold(): row for row in notes}
 
     for row in notes:
-        if row["note_type"] in {"company", "person", "project", "decision", "risk"}:
+        if is_entity_note_type(row["note_type"]):
             _insert_entity(
                 connection,
                 row["note_type"],
@@ -209,7 +210,7 @@ def _insert_entities(connection: sqlite3.Connection) -> None:
     for row in link_targets:
         target = row["link_target"]
         note = note_by_title.get(target.casefold())
-        if note and note["note_type"] in {"company", "person", "project", "decision", "risk"}:
+        if note and is_entity_note_type(note["note_type"]):
             entity_type = note["note_type"]
             source_path = note["source_path"]
             note_id = note["note_id"]

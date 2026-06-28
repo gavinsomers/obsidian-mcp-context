@@ -3,6 +3,7 @@ import json
 
 from obsidian_mcp_context.query import get_note_context, list_tasks, search_blocks
 from obsidian_mcp_context.vault import VaultConfig, build_context, scan_vault
+from obsidian_mcp_context.warehouse import build_warehouse, list_entities
 
 
 def test_scan_vault_respects_excludes(tmp_path: Path):
@@ -61,6 +62,34 @@ def test_plain_text_is_opt_in_generic_only(tmp_path: Path):
     assert text_context.tasks == []
     assert text_context.links == []
     assert text_context.tags == []
+
+
+def test_custom_top_level_folders_become_entity_types(tmp_path: Path):
+    (tmp_path / "Clients").mkdir()
+    (tmp_path / "Assets").mkdir()
+    (tmp_path / "Initiatives").mkdir()
+    (tmp_path / "Clients" / "Acme Renewal.md").write_text(
+        "# Acme Renewal\n\nOwns [[Revenue Dashboard]].\n", encoding="utf-8"
+    )
+    (tmp_path / "Assets" / "Revenue Dashboard.md").write_text(
+        "# Revenue Dashboard\n\nSupports [[Data Trust]].\n", encoding="utf-8"
+    )
+    (tmp_path / "Initiatives" / "Data Trust.md").write_text(
+        "# Data Trust\n\n- [ ] Review [[Acme Renewal]].\n", encoding="utf-8"
+    )
+
+    context = build_context(VaultConfig(vault_path=tmp_path))
+    warehouse = build_warehouse(context)
+    try:
+        entities = list_entities(warehouse, limit=100)
+    finally:
+        warehouse.close()
+
+    assert {(row["entity_type"], row["name"]) for row in entities} >= {
+        ("client", "Acme Renewal"),
+        ("asset", "Revenue Dashboard"),
+        ("initiative", "Data Trust"),
+    }
 
 
 def test_synthetic_vault_represents_connected_renewal_scenario():
