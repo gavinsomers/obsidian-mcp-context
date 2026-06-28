@@ -6,6 +6,7 @@ from datetime import datetime
 from enum import Enum
 import json
 from pathlib import Path
+import re
 
 from obsidian_mcp_context import dbt_warehouse
 from obsidian_mcp_context.config import load_app_config, vault_config_from_app_config
@@ -27,6 +28,8 @@ LIFECYCLE_FIELDS = (
     "created_at",
     "updated_at",
 )
+FRONTMATTER_BODY_RE = re.compile(r"(?ms)\A\s*---(?P<body>.*?)^---\s*$")
+FRONTMATTER_LIST_ITEM_RE = re.compile(r"^\s*-\s*[\"']?(.+?)[\"']?\s*$")
 
 
 @dataclass(frozen=True)
@@ -109,6 +112,69 @@ def _iso_datetime(value: str) -> bool:
     except ValueError:
         return False
     return True
+
+
+def _clean_frontmatter_scalar(value: str) -> str:
+    return value.strip().strip("\"'")
+
+
+def _frontmatter_list_values(text: str | None, field: str) -> list[str]:
+    if not text:
+        return []
+    frontmatter_match = FRONTMATTER_BODY_RE.search(text)
+    if not frontmatter_match:
+        return []
+
+    lines = frontmatter_match.group("body").splitlines()
+    values: list[str] = []
+    collecting_block = False
+    for line in lines:
+        if not line.strip():
+            continue
+        field_match = re.match(rf"^{re.escape(field)}:\s*(.*)$", line)
+        if field_match:
+            raw_value = field_match.group(1).strip()
+            collecting_block = raw_value == ""
+            if raw_value.startswith("[") and raw_value.endswith("]"):
+                inner = raw_value[1:-1]
+                values.extend(
+                    _clean_frontmatter_scalar(item)
+                    for item in inner.split(",")
+                    if _clean_frontmatter_scalar(item)
+                )
+            elif raw_value:
+                values.append(_clean_frontmatter_scalar(raw_value))
+            continue
+        if collecting_block:
+            item_match = FRONTMATTER_LIST_ITEM_RE.match(line)
+            if item_match:
+                value = _clean_frontmatter_scalar(item_match.group(1))
+                if value:
+                    values.append(value)
+                continue
+            if not line.startswith((" ", "\t", "-")):
+                collecting_block = False
+    return values
+
+
+def _link_resolution_key(value: str) -> str:
+    target = value.split("#", 1)[0].split("^", 1)[0].strip()
+    if target.endswith(".md"):
+        target = target[:-3]
+    return target.casefold()
+
+
+def _note_resolution_keys(source_path: str, first_block_text: str | None) -> set[str]:
+    path_without_extension = source_path[:-3] if source_path.endswith(".md") else source_path
+    keys = {
+        note_title(source_path).casefold(),
+        source_path.casefold(),
+        path_without_extension.casefold(),
+    }
+    for alias_field in ("alias", "aliases"):
+        for alias in _frontmatter_list_values(first_block_text, alias_field):
+            keys.add(_link_resolution_key(alias))
+    return {key for key in keys if key}
 
 
 def _scan_inventory(vault_path: Path, config: VaultConfig) -> dict[str, object]:
@@ -375,11 +441,18 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             include_samples=options.include_samples,
         )
 
-    note_titles = {note_title(source_path).casefold() for source_path in markdown_files}
+    resolvable_link_targets: set[str] = set()
+    for source_file in context.files:
+        resolvable_link_targets.update(
+            _note_resolution_keys(
+                source_file.source_path,
+                first_block_text_by_source.get(source_file.source_path),
+            )
+        )
     unresolved = [
         link.link_target
         for link in context.links
-        if link.link_target.casefold() not in note_titles
+        if _link_resolution_key(link.link_target) not in resolvable_link_targets
     ]
     unresolved_counts = Counter(unresolved)
     if unresolved:

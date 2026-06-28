@@ -104,6 +104,47 @@ def test_doctor_can_include_samples_when_explicitly_requested(tmp_path: Path):
     ]
 
 
+def test_doctor_resolves_obsidian_link_target_variants(tmp_path: Path):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+    (vault / "People").mkdir()
+    (vault / "People" / "Morgan Lee.md").write_text(
+        """---
+aliases:
+  - ML
+alias: Morgan
+---
+# Morgan Lee
+
+## Profile
+""",
+        encoding="utf-8",
+    )
+    (vault / "Links.md").write_text(
+        "\n".join(
+            [
+                "[[Morgan Lee]]",
+                "[[People/Morgan Lee]]",
+                "[[People/Morgan Lee.md]]",
+                "[[Morgan Lee#Profile]]",
+                "[[Morgan Lee^block-id]]",
+                "[[ML]]",
+                "[[Morgan]]",
+                "[[Missing]]",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(
+        DoctorOptions(vault_path=vault, config_path=tmp_path / "missing-config.toml")
+    )
+
+    assert report["graph"]["wikilinks"] == 8
+    assert report["graph"]["resolved_wikilinks"] == 7
+    assert report["graph"]["unresolved_wikilinks"] == 1
+
+
 def test_doctor_validates_optional_duckdb_warehouse(tmp_path: Path):
     vault = tmp_path / "vault"
     vault.mkdir()

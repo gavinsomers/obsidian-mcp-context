@@ -20,6 +20,8 @@ The project uses semantic-ish versions:
   non-Markdown files are reported once.
 - Added configurable doctor policies for ignored files, unsupported files, empty
   notes, blockless notes, large notes, and unresolved wikilinks.
+- Improved doctor wikilink resolution for Obsidian path, `.md`, heading, block,
+  and frontmatter alias target variants.
 
 ## [0.8.0] - 2026-06-28
 
