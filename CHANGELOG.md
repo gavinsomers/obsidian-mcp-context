@@ -16,6 +16,8 @@ The project uses semantic-ish versions:
   `doctor --include-samples` for explicit debugging output.
 - Added configurable `doctor.lifecycle_metadata` handling with `warn`, `ignore`,
   and `error` modes.
+- Split unsupported files out of the generic ignored-file doctor warning so
+  non-Markdown files are reported once.
 
 ## [0.8.0] - 2026-06-28
 

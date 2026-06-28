@@ -127,7 +127,6 @@ def _scan_inventory(vault_path: Path, config: VaultConfig) -> dict[str, object]:
             continue
         if path.suffix.lower() not in source_extensions:
             unsupported_files.append(source_path)
-            ignored_files.append(source_path)
             continue
         if not is_included(source_path, config.include_globs):
             ignored_files.append(source_path)

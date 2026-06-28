@@ -47,9 +47,11 @@ updated_at: 2026-06-28T09:20:00
     assert report["graph"]["unresolved_wikilinks"] == 1
     assert report["warehouse"]["in_memory"]["ok"] is True
     assert {item["code"] for item in report["diagnostics"]} >= {
-        DoctorCode.IGNORED_FILE.value,
         DoctorCode.UNSUPPORTED_FILE.value,
         DoctorCode.UNRESOLVED_WIKILINK.value,
+    }
+    assert DoctorCode.IGNORED_FILE.value not in {
+        item["code"] for item in report["diagnostics"]
     }
     assert report["privacy"] == {
         "samples_included": False,
