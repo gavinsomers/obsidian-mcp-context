@@ -245,7 +245,7 @@ class HostedProviderStub:
     ) -> AICompletionResult:
         validate_context_budget(prompt, max_context_chars)
         raise AIProviderError(
-            f"{self.provider} completion is not implemented in Phase 4"
+            f"{self.provider} completion is not implemented yet"
         )
 
 
