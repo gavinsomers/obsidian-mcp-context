@@ -17,8 +17,7 @@ editor-visible model code.
 - `ingest`: parses the mounted vault and rebuilds `raw.base_obsidian_*`.
 - `dbt`: builds staging, intermediate, and mart models into Postgres.
 - `dbt-test`: runs dbt tests.
-- `mcp`: MCP server container scaffold. Postgres mart reads still need the
-  reader adapter described below.
+- `mcp`: MCP server container backed by the Postgres dbt marts.
 - `ollama` and `enrichment`: optional AI profile scaffold for local enrichment
   work.
 
@@ -82,11 +81,15 @@ Postgres and Obsidian running as services.
 
 ## MCP And AI Enrichment
 
-The intended MCP container contract is `POSTGRES_DSN` plus mart-backed reads from
-Postgres. The current public MCP implementation still has its mature DuckDB
-reader; Postgres MCP reads are the next adapter step after this stack lands. Do
-not treat the `mcp` service as Postgres warehouse-backed until that adapter is
-implemented.
+The MCP container uses `WAREHOUSE_BACKEND=postgres`, `POSTGRES_DSN`, and
+`DBT_TARGET_SCHEMA` to read from the dbt marts in Postgres. Build the warehouse
+before starting MCP:
+
+```bash
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm ingest
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm dbt
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml up -d mcp
+```
 
 AI enrichment should run as an explicit job, not inside ingest or dbt. For local
 models, start the AI profile:
