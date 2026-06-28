@@ -361,12 +361,10 @@ def _render_entity_groups(groups: list[dict[str, object]]) -> str:
 
 def _render_status_panel(status: dict[str, object]) -> str:
     warehouse = status["warehouse"]
-    simulation = status["simulation"]
     active_reader = warehouse["active_reader"]
     writer = warehouse["writer"]
     read_snapshot = warehouse["read_snapshot"]
     row_counts = warehouse["row_counts"]
-    simulation_state = simulation.get("state") or {}
     key_tables = (
         "base_obsidian_files",
         "dim_notes",
@@ -386,9 +384,6 @@ def _render_status_panel(status: dict[str, object]) -> str:
         """
         for table in key_tables
     )
-    virtual_date = simulation_state.get("virtual_date") or "n/a"
-    run_number = simulation_state.get("run_number")
-    run_label = f"run {run_number}" if run_number is not None else "run n/a"
     read_label = "yes" if warehouse["reading_from_stable_snapshot"] else "no"
     writer_label = "present" if writer["exists"] else "missing"
     read_snapshot_label = "present" if read_snapshot["exists"] else "missing"
@@ -398,7 +393,7 @@ def _render_status_panel(status: dict[str, object]) -> str:
       <div class="status-head">
         <div>
           <h2>Pipeline Status</h2>
-          <p>Virtual date {escape(str(virtual_date))} · {escape(run_label)}</p>
+          <p>Local DuckDB warehouse status</p>
         </div>
         <div class="status-badges">
           <span class="pill">reader: {escape(active_label)}</span>
@@ -411,7 +406,7 @@ def _render_status_panel(status: dict[str, object]) -> str:
           <strong>{escape(writer_label)}</strong>
         </div>
         <div class="stat">
-          <span>read snapshot</span>
+          <span>read warehouse</span>
           <strong>{escape(read_snapshot_label)}</strong>
         </div>
         {count_cells}

@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
-import json
 import os
 from pathlib import Path
 
@@ -13,7 +12,6 @@ from obsidian_mcp_context.security import validate_vault_path
 
 DEFAULT_WRITER_DUCKDB_PATH = Path("/warehouse/obsidian.duckdb")
 DEFAULT_READ_DUCKDB_PATH = Path("/warehouse/obsidian-read.duckdb")
-DEFAULT_SIMULATION_STATE_PATH = Path("/warehouse/simulation-state.json")
 
 STATUS_TABLES = (
     "base_obsidian_files",
@@ -85,35 +83,11 @@ def _row_counts(path: Path, tables: tuple[str, ...] = STATUS_TABLES) -> dict[str
     return counts
 
 
-def _read_simulation_state(path: Path) -> dict[str, object]:
-    result = _path_status(path)
-    if not path.exists():
-        result["state"] = None
-        return result
-    try:
-        state = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        result["state"] = None
-        result["error"] = str(exc)
-        return result
-    result["state"] = {
-        "virtual_date": state.get("virtual_date"),
-        "start_date": state.get("start_date"),
-        "end_date": state.get("end_date"),
-        "run_number": state.get("run_number"),
-        "last_released_count": state.get("last_released_count"),
-        "total_released_count": state.get("total_released_count"),
-        "complete": state.get("complete"),
-    }
-    return result
-
-
 def warehouse_status(
     vault_path: str | Path,
     active_duckdb_path: str | Path | None = None,
     writer_duckdb_path: str | Path | None = None,
     read_duckdb_path: str | Path | None = None,
-    simulation_state_path: str | Path | None = None,
 ) -> dict[str, object]:
     """Return file and warehouse status for the local web/MCP pipeline."""
     vault = validate_vault_path(vault_path)
@@ -128,10 +102,6 @@ def warehouse_status(
     active_path = _resolve_existing_or_default(
         active_duckdb_path or os.environ.get("DUCKDB_PATH"),
         read_path if read_path.exists() else writer_path,
-    )
-    state_path = _resolve_existing_or_default(
-        simulation_state_path or os.environ.get("SIM_STATE_PATH"),
-        DEFAULT_SIMULATION_STATE_PATH,
     )
     table_names = _table_names(active_path)
     read_modified_at = _iso_mtime(read_path)
@@ -177,11 +147,5 @@ def warehouse_status(
             "missing_status_tables": [
                 table for table in STATUS_TABLES if table not in table_names
             ],
-        },
-        "simulation": _read_simulation_state(state_path),
-        "airflow": {
-            "dag_id": "simulated_daily_obsidian_pipeline",
-            "latest_run_status": None,
-            "message": "Airflow metadata is not read by this lightweight status endpoint.",
         },
     }
