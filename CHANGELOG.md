@@ -10,6 +10,32 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+## [v1.0.0-rc.2] - 2026-06-28
+
+### Added
+
+- Added pipeline config profiles for sample and local Obsidian sources, privacy
+  posture, and optional AI provider settings.
+- Added `obsidian-mcp-context pipeline run` and `pipeline doctor` with
+  redacted-by-default runtime reports under configured `var/` output paths.
+- Added deterministic unresolved-link candidate suggestions with exact,
+  alias-based, string-similarity, and shared-metadata signals.
+- Added AI provider abstraction for disabled, mock, Ollama/local model, and
+  hosted-provider configuration paths with strict context-budget enforcement.
+- Added advisory AI unresolved-link enrichment over deterministic candidates,
+  writing pending `ai_suggested_links` review rows only.
+- Added explicit pipeline privacy, AI safety, and review summaries with aggregate
+  call/write/skip counters.
+
+### Changed
+
+- Limited public pipeline source modes to sample vaults and local Obsidian
+  vaults; no additional connector roadmap is advertised in this repository.
+
+### Verified
+
+- `.venv/bin/pytest -q`
+
 ## [v1.0.0-rc.1] - 2026-06-28
 
 ### Added
