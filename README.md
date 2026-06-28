@@ -506,4 +506,5 @@ context.
 
 SQL reconciliation checks live under `tests/reconciliation`. Each file is a
 zero-row assertion run against a freshly rebuilt DuckDB/dbt warehouse from the
-static `examples/synthetic-vault` fixture.
+static `examples/synthetic-vault` fixture. The suite includes structural checks
+and deterministic expected-answer checks for known fixture questions.
