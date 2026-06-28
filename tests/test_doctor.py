@@ -4,7 +4,13 @@ from pathlib import Path
 import duckdb
 
 from obsidian_mcp_context.cli import main
-from obsidian_mcp_context.doctor import DoctorCode, DoctorOptions, exit_code, run_doctor
+from obsidian_mcp_context.doctor import (
+    DoctorCode,
+    DoctorOptions,
+    exit_code,
+    format_human,
+    run_doctor,
+)
 
 
 def test_doctor_reports_parser_graph_and_warehouse_readiness(tmp_path: Path):
@@ -72,6 +78,14 @@ updated_at: 2026-06-28T09:20:00
         "count": 1,
         "ignored_count": 0,
         "ignored_target_shapes": {},
+        "remediation_hints": [
+            {
+                "code": "create_note",
+                "count": 1,
+                "message": "Create missing notes or remove unresolved non-path wikilinks.",
+                "source": "target_shape:non_path_like",
+            }
+        ],
         "samples_redacted": True,
         "path_like_reasons": {},
         "target_shapes": {"plain_text": 1},
@@ -307,6 +321,20 @@ def test_doctor_reports_unresolved_link_target_shapes_without_samples(tmp_path: 
     }
     assert unresolved["details"]["ignored_count"] == 0
     assert unresolved["details"]["ignored_target_shapes"] == {}
+    assert unresolved["details"]["remediation_hints"] == [
+        {
+            "code": "create_note",
+            "count": 2,
+            "message": "Create missing notes or remove links with no matching candidate.",
+            "source": "path_like_reason:no_candidate_found",
+        },
+        {
+            "code": "create_note",
+            "count": 5,
+            "message": "Create missing notes or remove unresolved non-path wikilinks.",
+            "source": "target_shape:non_path_like",
+        },
+    ]
     assert "top_targets" not in unresolved["details"]
 
 
@@ -360,6 +388,23 @@ ignore_target_globs = ["Archive/*", "Template:*"]
         "ignored_count": 2,
         "ignored_target_shapes": {"path_like": 1, "plain_text": 1},
         "path_like_reasons": {},
+        "remediation_hints": [
+            {
+                "code": "create_note",
+                "count": 1,
+                "message": "Create missing notes or remove unresolved non-path wikilinks.",
+                "source": "target_shape:non_path_like",
+            },
+            {
+                "code": "review_ignored_patterns",
+                "count": 2,
+                "message": (
+                    "Review unresolved ignore patterns periodically to confirm they "
+                    "still describe intentional dangling links."
+                ),
+                "source": "ignored_unresolved_wikilinks",
+            },
+        ],
         "samples_redacted": True,
         "target_shapes": {"plain_text": 1},
     }
@@ -393,6 +438,17 @@ ignore_target_globs = ["Archive/*", "Template:*"]
     assert report["graph"]["unresolved_wikilinks"] == 2
     assert report["graph"]["ignored_unresolved_wikilinks"] == 2
     assert report["graph"]["warning_unresolved_wikilinks"] == 0
+    assert report["graph"]["unresolved_remediation_hints"] == [
+        {
+            "code": "review_ignored_patterns",
+            "count": 2,
+            "message": (
+                "Review unresolved ignore patterns periodically to confirm they "
+                "still describe intentional dangling links."
+            ),
+            "source": "ignored_unresolved_wikilinks",
+        }
+    ]
     assert DoctorCode.UNRESOLVED_WIKILINK.value not in {
         item["code"] for item in report["diagnostics"]
     }
@@ -447,6 +503,38 @@ unsupported_files = "ignore"
         "no_candidate_found": 1,
         "unsupported_extension": 1,
     }
+    assert report["graph"]["unresolved_remediation_hints"] == [
+        {
+            "code": "normalize_link_path",
+            "count": 1,
+            "message": "Update links whose basename exists elsewhere but not at the linked path.",
+            "source": "path_like_reason:basename_exists_elsewhere",
+        },
+        {
+            "code": "adjust_scan_excludes",
+            "count": 1,
+            "message": "Review scan excludes for linked notes that exist under excluded paths.",
+            "source": "path_like_reason:excluded_path",
+        },
+        {
+            "code": "adjust_scan_includes",
+            "count": 1,
+            "message": "Review scan include globs for Markdown candidates outside the scanned set.",
+            "source": "path_like_reason:missing_extension_candidate",
+        },
+        {
+            "code": "create_note",
+            "count": 1,
+            "message": "Create missing notes or remove links with no matching candidate.",
+            "source": "path_like_reason:no_candidate_found",
+        },
+        {
+            "code": "include_extension",
+            "count": 1,
+            "message": "Review source extensions for linked files that exist with unsupported extensions.",
+            "source": "path_like_reason:unsupported_extension",
+        },
+    ]
     assert report["graph"]["top_unresolved_targets"] == []
     unresolved = next(
         item
@@ -458,6 +546,21 @@ unsupported_files = "ignore"
     ]
     assert unresolved["details"]["samples_redacted"] is True
     assert "top_targets" not in unresolved["details"]
+
+
+def test_doctor_human_output_includes_aggregate_remediation_hints(tmp_path: Path):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+    (vault / "Links.md").write_text("[[Missing/Path]]\n", encoding="utf-8")
+
+    report = run_doctor(
+        DoctorOptions(vault_path=vault, config_path=tmp_path / "missing-config.toml")
+    )
+    output = format_human(report)
+
+    assert "Unresolved wikilink remediation hints:" in output
+    assert "create_note: 1" in output
+    assert "Missing/Path" not in output
 
 
 def test_doctor_validates_optional_duckdb_warehouse(tmp_path: Path):

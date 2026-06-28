@@ -34,6 +34,28 @@ FRONTMATTER_BODY_RE = re.compile(r"(?ms)\A\s*---(?P<body>.*?)^---\s*$")
 FRONTMATTER_LIST_ITEM_RE = re.compile(r"^\s*-\s*[\"']?(.+?)[\"']?\s*$")
 DATE_LIKE_TARGET_RE = re.compile(r"(?<!\d)\d{4}-\d{2}-\d{2}(?!\d)")
 URL_LIKE_TARGET_RE = re.compile(r"^[a-z][a-z0-9+.-]*://", re.IGNORECASE)
+UNRESOLVED_REASON_HINTS = {
+    "excluded_path": (
+        "adjust_scan_excludes",
+        "Review scan excludes for linked notes that exist under excluded paths.",
+    ),
+    "unsupported_extension": (
+        "include_extension",
+        "Review source extensions for linked files that exist with unsupported extensions.",
+    ),
+    "missing_extension_candidate": (
+        "adjust_scan_includes",
+        "Review scan include globs for Markdown candidates outside the scanned set.",
+    ),
+    "basename_exists_elsewhere": (
+        "normalize_link_path",
+        "Update links whose basename exists elsewhere but not at the linked path.",
+    ),
+    "no_candidate_found": (
+        "create_note",
+        "Create missing notes or remove links with no matching candidate.",
+    ),
+}
 
 
 @dataclass(frozen=True)
@@ -302,6 +324,54 @@ def _classify_path_like_unresolved_targets(
         reasons[_path_like_unresolved_reason(target, reason_inventory)] += 1
 
     return dict(sorted(reasons.items()))
+
+
+def _unresolved_remediation_hints(
+    *,
+    path_like_reasons: dict[str, int],
+    target_shapes: dict[str, int],
+    ignored_count: int,
+) -> list[dict[str, object]]:
+    hints: list[dict[str, object]] = []
+    for reason, count in path_like_reasons.items():
+        if count <= 0 or reason not in UNRESOLVED_REASON_HINTS:
+            continue
+        code, message = UNRESOLVED_REASON_HINTS[reason]
+        hints.append(
+            {
+                "code": code,
+                "count": count,
+                "source": f"path_like_reason:{reason}",
+                "message": message,
+            }
+        )
+    non_path_like_count = sum(
+        count for shape, count in target_shapes.items() if shape != "path_like"
+    )
+    if non_path_like_count > 0:
+        hints.append(
+            {
+                "code": "create_note",
+                "count": non_path_like_count,
+                "source": "target_shape:non_path_like",
+                "message": (
+                    "Create missing notes or remove unresolved non-path wikilinks."
+                ),
+            }
+        )
+    if ignored_count > 0:
+        hints.append(
+            {
+                "code": "review_ignored_patterns",
+                "count": ignored_count,
+                "source": "ignored_unresolved_wikilinks",
+                "message": (
+                    "Review unresolved ignore patterns periodically to confirm they "
+                    "still describe intentional dangling links."
+                ),
+            }
+        )
+    return hints
 
 
 def _safe_export_path(path: Path) -> Path:
@@ -665,6 +735,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
     warning_unresolved_path_like_reasons = _classify_path_like_unresolved_targets(
         warning_unresolved, inventory
     )
+    unresolved_remediation_hints = _unresolved_remediation_hints(
+        path_like_reasons=warning_unresolved_path_like_reasons,
+        target_shapes=warning_unresolved_shapes,
+        ignored_count=len(ignored_unresolved),
+    )
     path_like_reason_inventory = _path_like_reason_inventory(inventory)
     unresolved_export_targets: list[dict[str, object]] = []
     for target, count in unresolved_counts.most_common():
@@ -746,6 +821,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         unresolved_details["path_like_reasons"] = warning_unresolved_path_like_reasons
         unresolved_details["ignored_count"] = len(ignored_unresolved)
         unresolved_details["ignored_target_shapes"] = ignored_unresolved_shapes
+        unresolved_details["remediation_hints"] = unresolved_remediation_hints
         _record_policy_diagnostic(
             mode=app_config.doctor_unresolved_wikilinks,
             warnings=warnings,
@@ -895,6 +971,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "warning_unresolved_path_like_reasons": (
                 warning_unresolved_path_like_reasons
             ),
+            "unresolved_remediation_hints": unresolved_remediation_hints,
             "unresolved_export": unresolved_export,
             "top_unresolved_targets": [
                 {"target": target, "count": count}
@@ -971,6 +1048,11 @@ def format_human(report: dict[str, object]) -> str:
         lines.append("Top unresolved wikilinks:")
         for row in graph["top_unresolved_targets"]:
             lines.append(f"- {row['target']}: {row['count']}")
+    if isinstance(graph, dict) and graph.get("unresolved_remediation_hints"):
+        lines.append("")
+        lines.append("Unresolved wikilink remediation hints:")
+        for row in graph["unresolved_remediation_hints"]:
+            lines.append(f"- {row['code']}: {row['count']} ({row['message']})")
 
     return "\n".join(lines)
 
