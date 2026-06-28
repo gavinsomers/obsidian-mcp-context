@@ -2,9 +2,11 @@
 
 Turn textual Obsidian vault notes into AI-ready context exposed through MCP.
 
-This project does not run an AI model itself. It parses an Obsidian vault and
-exposes structured context to an MCP-aware AI client. The AI client provides the
-model; this server provides the vault tools.
+This project parses an Obsidian vault into structured, source-linked context for
+CLI, MCP, web, and DuckDB/dbt workflows. The core model is a deterministic
+compiler function: a vault is fully parsed, warehouses are rebuilt from the
+current files, and optional advisory AI enrichment writes reviewable suggestions
+without changing canonical data.
 
 ## Features
 
@@ -16,6 +18,9 @@ model; this server provides the vault tools.
 - Deterministic parsing of headings, heading paths, blocks, tasks, wikilinks, tags, and semantic lines.
 - File, block, heading, and line-level provenance.
 - CLI and MCP tools for listing notes, searching blocks, listing tasks, and fetching note context.
+- Optional DuckDB/dbt marts for persisted entity, relationship, state, event, timeline, and open-loop queries.
+- Optional privacy-gated AI enrichment for unresolved-link suggestions.
+- SQL reconciliation tests over the static fixture vault.
 - A `doctor` command for parser, graph, metadata, and warehouse readiness checks.
 
 ## How The Pipeline Works
@@ -26,7 +31,7 @@ For the generic entity model, see [docs/entity-contract.md](docs/entity-contract
 For the bring-your-own-vault workflow, see [docs/onboarding.md](docs/onboarding.md).
 For local scan and entity overrides, see [docs/configuration.md](docs/configuration.md).
 
-The intended workflow is:
+The lightweight MCP workflow is:
 
 1. You have an Obsidian vault on disk.
 2. You install this package locally.
@@ -37,9 +42,15 @@ The intended workflow is:
 7. The server returns structured JSON with source paths, headings, line numbers, blocks, links, tags, and tasks.
 8. The AI client uses that returned context to answer questions or help you work with the vault.
 
-The model can be OpenAI, Anthropic, a local model, or anything else supported by
-your MCP client. This repo does not currently ask for an API key, configure a
-model, create embeddings, or talk to a local LLM directly.
+The persisted warehouse workflow is:
+
+1. Run `obsidian-mcp-context-ingest` against a vault.
+2. Run dbt against the target DuckDB file.
+3. Query the rebuilt marts from CLI, MCP, web, or tests.
+
+Optional AI enrichment is advisory and disabled by default. It can use mock,
+Ollama/local, OpenAI, or Anthropic providers when explicitly configured, subject
+to privacy settings in `docs/configuration.md`.
 
 ## Install For Local Development
 
@@ -88,10 +99,11 @@ where each piece of context came from.
 
 ## Static Fixture Vaults
 
-The checked-in `examples/synthetic-vault` is a compact, human-readable fixture
-with coherent companies, people, projects, meetings, decisions, risks, research
-notes, and daily notes. It is intentionally static so parser, warehouse, and
-reconciliation behavior stays reproducible in this public repo.
+The checked-in `examples/synthetic-vault` is a compact, human-readable static
+fixture with coherent companies, people, projects, meetings, decisions, risks,
+research notes, and daily notes. It is intentionally static so parser,
+warehouse, and reconciliation behavior stays reproducible in this public repo.
+Synthetic data generation lives outside this public repository.
 
 Fixture notes include virtual lifecycle timestamps:
 
@@ -471,32 +483,32 @@ Use the CLI to inspect the modeled layer:
 .venv/bin/obsidian-mcp-context --vault examples/synthetic-vault agent-context --entity "Renewal Prep Scope" --event-type task_open
 ```
 
-## Current AI Boundary
+## AI And Data Boundary
 
-This repo is deliberately model-agnostic right now.
+Canonical parsing and warehouse builds are deterministic. AI is optional,
+advisory, and review-oriented.
 
 It does:
 
 - Parse local Markdown notes.
 - Preserve provenance.
 - Return structured context through CLI and MCP tools.
-- Build deterministic dimensions, facts, and timeline/context marts in memory.
-- Let an MCP client decide how to use that context.
+- Build deterministic dimensions, facts, and timeline/context marts in memory or DuckDB/dbt.
+- Persist DuckDB/dbt marts when explicitly built with ingest and dbt.
+- Run optional unresolved-link enrichment through configured AI providers.
+- Keep AI suggestions in review tables with `reviewed_status = "pending"`.
 
 It does not:
 
-- Ask for an OpenAI API key.
-- Ask for an Anthropic API key.
-- Connect to Ollama or another local model.
 - Generate embeddings.
 - Store vectors.
 - Chat with your notes by itself.
-- Persist the warehouse to disk.
 - Ingest Gmail, WhatsApp, calendar, CRM, or GitHub data directly.
+- Send raw vault text to AI unless `privacy.allow_raw_text_to_ai = true`.
+- Use hosted AI providers unless `privacy.allow_hosted_ai = true`.
 
-If you want OpenAI, Anthropic, or local LLM support, configure that in your MCP
-client. The client supplies the model; this package supplies the Obsidian vault
-context.
+For local Qwen through Ollama, OpenAI, Anthropic, and other provider settings,
+see `docs/configuration.md`.
 
 ## Development
 
