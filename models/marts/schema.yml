@@ -40,6 +40,19 @@ models:
         tests:
           - not_null
 
+  - name: dim_entity_types
+    columns:
+      - name: entity_type
+        tests:
+          - not_null
+          - unique
+      - name: display_name
+        tests:
+          - not_null
+      - name: source_strategy
+        tests:
+          - not_null
+
   - name: fact_blocks
     columns:
       - name: block_id
@@ -144,6 +157,76 @@ models:
         tests:
           - not_null
 
+  - name: fact_entity_relationships
+    columns:
+      - name: relationship_id
+        tests:
+          - not_null
+          - unique
+      - name: source_entity_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_entities')
+                field: entity_id
+      - name: target_entity_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_entities')
+                field: entity_id
+      - name: relationship_type
+        tests:
+          - not_null
+
+  - name: fact_entity_states
+    columns:
+      - name: state_id
+        tests:
+          - not_null
+          - unique
+      - name: entity_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_entities')
+                field: entity_id
+      - name: entity_type
+        tests:
+          - not_null
+      - name: state_type
+        tests:
+          - not_null
+      - name: state_value
+        tests:
+          - not_null
+
+  - name: fact_entity_events
+    columns:
+      - name: event_id
+        tests:
+          - not_null
+          - unique
+      - name: entity_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_entities')
+                field: entity_id
+      - name: entity_type
+        tests:
+          - not_null
+      - name: event_type
+        tests:
+          - not_null
+      - name: source_path
+        tests:
+          - not_null
+
   - name: dim_people
     columns:
       - name: person_id
@@ -230,6 +313,51 @@ models:
       - name: task_text
         tests:
           - not_null
+
+  - name: mart_entity_open_loops
+    columns:
+      - name: entity_open_loop_id
+        tests:
+          - not_null
+          - unique
+      - name: entity_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_entities')
+                field: entity_id
+      - name: open_loop_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('mart_open_loops')
+                field: open_loop_id
+      - name: task_text
+        tests:
+          - not_null
+
+  - name: mart_entity_context
+    columns:
+      - name: entity_context_id
+        tests:
+          - not_null
+          - unique
+      - name: entity_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_entities')
+                field: entity_id
+      - name: event_id
+        tests:
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('fact_entity_events')
+                field: event_id
 
   - name: mart_person_context
     columns:

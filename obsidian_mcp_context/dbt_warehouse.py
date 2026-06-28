@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from contextlib import contextmanager
 from datetime import date, datetime
+from decimal import Decimal
 from pathlib import Path
 from typing import Iterator
 
@@ -13,17 +14,23 @@ MAX_LIMIT = 500
 REQUIRED_MARTS = {
     "dim_notes",
     "dim_entities",
+    "dim_entity_types",
     "fact_blocks",
     "fact_tasks",
     "fact_links",
     "fact_tags",
     "fact_mentions",
+    "fact_entity_relationships",
+    "fact_entity_states",
+    "fact_entity_events",
     "dim_people",
     "dim_companies",
     "dim_projects",
     "fact_decisions",
     "fact_risks",
     "mart_open_loops",
+    "mart_entity_open_loops",
+    "mart_entity_context",
     "mart_person_context",
     "mart_project_context",
 }
@@ -75,6 +82,8 @@ def _normalize(value: object) -> object:
         return value.isoformat()
     if isinstance(value, date):
         return value.isoformat()
+    if isinstance(value, Decimal):
+        return float(value)
     return value
 
 
@@ -109,15 +118,21 @@ def summary(duckdb_path: str | Path) -> dict[str, object]:
     tables = [
         "dim_notes",
         "dim_entities",
+        "dim_entity_types",
         "fact_blocks",
         "fact_tasks",
         "fact_links",
         "fact_tags",
         "fact_mentions",
+        "fact_entity_relationships",
+        "fact_entity_states",
+        "fact_entity_events",
         "fact_decisions",
         "fact_risks",
         "mart_timeline",
         "mart_open_loops",
+        "mart_entity_open_loops",
+        "mart_entity_context",
         "mart_person_context",
         "mart_project_context",
     ]
@@ -170,6 +185,52 @@ def list_entities(
             )
         )
     return _normalize_rows(rows)
+
+
+def list_entity_types(
+    duckdb_path: str | Path,
+    limit: int = 100,
+) -> list[dict[str, object]]:
+    with connect(duckdb_path) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                """
+                select
+                  entity_type,
+                  display_name,
+                  description,
+                  source_strategy,
+                  is_stateful,
+                  is_actor,
+                  is_container
+                from dim_entity_types
+                order by entity_type
+                limit ?
+                """,
+                (_bounded_limit(limit),),
+            )
+        )
+    return _normalize_rows(rows)
+
+
+def get_entity(
+    duckdb_path: str | Path,
+    entity_type: str,
+    name: str,
+) -> dict[str, object]:
+    with connect(duckdb_path) as connection:
+        row = _fetchone_dict(
+            connection.execute(
+                """
+                select entity_id, entity_type, name, source_path, canonical_note_id
+                from dim_entities
+                where entity_type = ?
+                  and lower(name) = lower(?)
+                """,
+                (entity_type, name),
+            )
+        )
+    return {key: _normalize(value) for key, value in row.items()}
 
 
 def list_projects(
@@ -233,6 +294,233 @@ def list_companies(
                 limit ?
                 """,
                 (_bounded_limit(limit),),
+            )
+        )
+    return _normalize_rows(rows)
+
+
+def entity_context(
+    duckdb_path: str | Path,
+    entity_type: str,
+    entity: str,
+    limit: int = 50,
+) -> list[dict[str, object]]:
+    with connect(duckdb_path) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                """
+                select
+                  entity_context_id as row_id,
+                  entity_id,
+                  entity_type,
+                  entity_name,
+                  event_id,
+                  event_date,
+                  event_type,
+                  source_path,
+                  start_line,
+                  title,
+                  summary,
+                  related_entities,
+                  rank_score
+                from mart_entity_context
+                where entity_type = ?
+                  and lower(entity_name) = lower(?)
+                order by coalesce(event_date, date '9999-12-31'), source_path, start_line, row_id
+                limit ?
+                """,
+                (entity_type, entity, _bounded_limit(limit)),
+            )
+        )
+    return _normalize_rows(rows)
+
+
+def list_entity_events(
+    duckdb_path: str | Path,
+    entity_type: str | None = None,
+    entity: str | None = None,
+    event_type: str | None = None,
+    limit: int = 50,
+) -> list[dict[str, object]]:
+    filters: list[str] = []
+    params: list[object] = []
+    if entity_type:
+        filters.append("entity_type = ?")
+        params.append(entity_type)
+    if entity:
+        filters.append("lower(entity_name) = lower(?)")
+        params.append(entity)
+    if event_type:
+        filters.append("event_type = ?")
+        params.append(event_type)
+    where = f"where {' and '.join(filters)}" if filters else ""
+    with connect(duckdb_path) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                f"""
+                select
+                  event_id as row_id,
+                  entity_id,
+                  entity_type,
+                  entity_name,
+                  event_type,
+                  event_date,
+                  source_path,
+                  start_line,
+                  title,
+                  summary,
+                  related_entities
+                from fact_entity_events
+                {where}
+                order by coalesce(event_date, date '9999-12-31'), source_path, start_line, row_id
+                limit ?
+                """,
+                (*params, _bounded_limit(limit)),
+            )
+        )
+    return _normalize_rows(rows)
+
+
+def list_entity_relationships(
+    duckdb_path: str | Path,
+    entity_type: str | None = None,
+    entity: str | None = None,
+    relationship_type: str | None = None,
+    limit: int = 50,
+) -> list[dict[str, object]]:
+    filters: list[str] = []
+    params: list[object] = []
+    if entity_type:
+        filters.append("(source_entity_type = ? or target_entity_type = ?)")
+        params.extend([entity_type, entity_type])
+    if entity:
+        filters.append("(lower(source_entity_name) = lower(?) or lower(target_entity_name) = lower(?))")
+        params.extend([entity, entity])
+    if relationship_type:
+        filters.append("relationship_type = ?")
+        params.append(relationship_type)
+    where = f"where {' and '.join(filters)}" if filters else ""
+    with connect(duckdb_path) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                f"""
+                select
+                  relationship_id as row_id,
+                  source_entity_id,
+                  source_entity_type,
+                  source_entity_name,
+                  target_entity_id,
+                  target_entity_type,
+                  target_entity_name,
+                  relationship_type,
+                  source_path,
+                  line_number,
+                  confidence,
+                  evidence_text
+                from fact_entity_relationships
+                {where}
+                order by source_entity_name, relationship_type, target_entity_name, source_path, line_number
+                limit ?
+                """,
+                (*params, _bounded_limit(limit)),
+            )
+        )
+    return _normalize_rows(rows)
+
+
+def list_entity_states(
+    duckdb_path: str | Path,
+    entity_type: str | None = None,
+    entity: str | None = None,
+    state_type: str | None = None,
+    status: str | None = None,
+    limit: int = 50,
+) -> list[dict[str, object]]:
+    filters: list[str] = []
+    params: list[object] = []
+    if entity_type:
+        filters.append("entity_type = ?")
+        params.append(entity_type)
+    if entity:
+        filters.append("lower(entity_name) = lower(?)")
+        params.append(entity)
+    if state_type:
+        filters.append("state_type = ?")
+        params.append(state_type)
+    if status:
+        filters.append("state_value = ?")
+        params.append(status)
+    where = f"where {' and '.join(filters)}" if filters else ""
+    with connect(duckdb_path) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                f"""
+                select
+                  state_id as row_id,
+                  entity_id,
+                  entity_type,
+                  entity_name,
+                  state_type,
+                  state_value,
+                  state_date,
+                  severity,
+                  owner_entity_id,
+                  owner_entity_name,
+                  source_path,
+                  title,
+                  summary,
+                  related_entities
+                from fact_entity_states
+                {where}
+                order by coalesce(state_date, date '9999-12-31'), entity_type, entity_name
+                limit ?
+                """,
+                (*params, _bounded_limit(limit)),
+            )
+        )
+    return _normalize_rows(rows)
+
+
+def list_entity_open_loops(
+    duckdb_path: str | Path,
+    entity_type: str | None = None,
+    entity: str | None = None,
+    limit: int = 50,
+) -> list[dict[str, object]]:
+    filters: list[str] = []
+    params: list[object] = []
+    if entity_type:
+        filters.append("entity_type = ?")
+        params.append(entity_type)
+    if entity:
+        filters.append("lower(entity_name) = lower(?)")
+        params.append(entity)
+    where = f"where {' and '.join(filters)}" if filters else ""
+    with connect(duckdb_path) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                f"""
+                select
+                  entity_open_loop_id as row_id,
+                  entity_id,
+                  entity_type,
+                  entity_name,
+                  open_loop_id,
+                  task_id,
+                  source_date as event_date,
+                  source_path,
+                  line_number as start_line,
+                  coalesce(heading_path, source_title) as title,
+                  task_text as summary,
+                  related_entities,
+                  owner_entity_id,
+                  owner_entity_name
+                from mart_entity_open_loops
+                {where}
+                order by coalesce(source_date, date '9999-12-31'), source_path, line_number, row_id
+                limit ?
+                """,
+                (*params, _bounded_limit(limit)),
             )
         )
     return _normalize_rows(rows)

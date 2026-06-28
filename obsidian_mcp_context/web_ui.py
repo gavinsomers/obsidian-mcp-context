@@ -693,6 +693,20 @@ class ContextHandler(BaseHTTPRequestHandler):
                 warehouse_status(self.vault_path, active_duckdb_path=self.duckdb_path),
             )
             return
+        if parts == ["api", "entity-types"]:
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.entity_types(
+                        self.duckdb_path,
+                        limit=_limit(values, default=100),
+                    )
+                ),
+            )
+            return
         if parts == ["api", "projects"]:
             if not _dbt_available(self.duckdb_path):
                 _json_response(self, _dbt_error())
@@ -841,6 +855,124 @@ class ContextHandler(BaseHTTPRequestHandler):
                     )
                 ),
             )
+            return
+        if parsed.path == "/api/events":
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.entity_events(
+                        self.duckdb_path,
+                        entity_type=_first(values, "entity_type"),
+                        entity=_first(values, "entity"),
+                        event_type=_first(values, "event_type"),
+                        limit=_limit(values, default=50),
+                    )
+                ),
+            )
+            return
+        if parsed.path == "/api/states":
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.entity_states(
+                        self.duckdb_path,
+                        entity_type=_first(values, "entity_type"),
+                        entity=_first(values, "entity"),
+                        state_type=_first(values, "state_type"),
+                        status=_first(values, "status"),
+                        limit=_limit(values, default=50),
+                    )
+                ),
+            )
+            return
+        if len(parts) == 3 and parts[:2] == ["api", "entities"]:
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.list_entities(
+                        self.vault_path,
+                        entity_type=parts[2],
+                        text=_first(values, "text"),
+                        limit=_limit(values, default=100),
+                        duckdb_path=self.duckdb_path,
+                    )
+                ),
+            )
+            return
+        if len(parts) == 4 and parts[:2] == ["api", "entities"]:
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.entity(
+                        self.duckdb_path,
+                        entity_type=parts[2],
+                        name=parts[3],
+                    )
+                ),
+            )
+            return
+        if len(parts) == 5 and parts[:2] == ["api", "entities"]:
+            entity_type = parts[2]
+            entity = parts[3]
+            section = parts[4]
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            if section == "context":
+                result = default_context_service.entity_context_generic(
+                    self.duckdb_path,
+                    entity_type=entity_type,
+                    entity=entity,
+                    limit=_limit(values, default=50),
+                )
+            elif section == "events":
+                result = default_context_service.entity_events(
+                    self.duckdb_path,
+                    entity_type=entity_type,
+                    entity=entity,
+                    event_type=_first(values, "event_type"),
+                    limit=_limit(values, default=50),
+                )
+            elif section == "relationships":
+                result = default_context_service.entity_relationships(
+                    self.duckdb_path,
+                    entity_type=entity_type,
+                    entity=entity,
+                    relationship_type=_first(values, "relationship_type"),
+                    limit=_limit(values, default=50),
+                )
+            elif section == "states":
+                result = default_context_service.entity_states(
+                    self.duckdb_path,
+                    entity_type=entity_type,
+                    entity=entity,
+                    state_type=_first(values, "state_type"),
+                    status=_first(values, "status"),
+                    limit=_limit(values, default=50),
+                )
+            elif section == "open-loops":
+                result = default_context_service.entity_open_loops(
+                    self.duckdb_path,
+                    entity_type=entity_type,
+                    entity=entity,
+                    limit=_limit(values, default=50),
+                )
+            else:
+                _not_found(self)
+                return
+            _json_response(self, _result_response(result))
             return
         if parsed.path == "/api/entities":
             if self.duckdb_path and dbt_warehouse.is_available(self.duckdb_path):

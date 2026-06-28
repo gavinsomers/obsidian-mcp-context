@@ -184,6 +184,31 @@ def list_vault_entities(
 
 
 @mcp.tool()
+def list_vault_entity_types(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 100,
+    duckdb_path: Annotated[
+        str | None,
+        Field(
+            description=(
+                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
+                "/warehouse/obsidian.duckdb when present."
+            )
+        ),
+    ] = None,
+) -> list[dict[str, object]]:
+    """List entity types observed in the dbt entity registry."""
+    validate_vault_path(vault_path)
+    return default_context_service.entity_types(
+        duckdb_path,
+        limit=_bounded_limit(limit),
+    )
+
+
+@mcp.tool()
 def get_vault_entity_timeline(
     vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
     entity: Annotated[
@@ -215,6 +240,201 @@ def get_vault_entity_timeline(
         text=text,
         limit=_bounded_limit(limit),
         duckdb_path=duckdb_path,
+    )
+
+
+@mcp.tool()
+def get_vault_entity_context(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    entity_type: Annotated[
+        str,
+        Field(description="Entity type, such as project, person, company, risk, or decision."),
+    ],
+    entity: Annotated[
+        str,
+        Field(description="Exact entity name, such as Project Atlas."),
+    ],
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 50,
+    duckdb_path: Annotated[
+        str | None,
+        Field(
+            description=(
+                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
+                "/warehouse/obsidian.duckdb when present."
+            )
+        ),
+    ] = None,
+) -> list[dict[str, object]]:
+    """Return generic dbt mart-backed context for any typed entity."""
+    validate_vault_path(vault_path)
+    return default_context_service.entity_context_generic(
+        duckdb_path,
+        entity_type=entity_type,
+        entity=entity,
+        limit=_bounded_limit(limit),
+    )
+
+
+@mcp.tool()
+def list_vault_entity_events(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    entity_type: Annotated[
+        str | None,
+        Field(description="Optional entity type filter."),
+    ] = None,
+    entity: Annotated[
+        str | None,
+        Field(description="Optional exact entity name filter."),
+    ] = None,
+    event_type: Annotated[
+        str | None,
+        Field(description="Optional event type filter, such as open_loop or task_open."),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 50,
+    duckdb_path: Annotated[
+        str | None,
+        Field(
+            description=(
+                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
+                "/warehouse/obsidian.duckdb when present."
+            )
+        ),
+    ] = None,
+) -> list[dict[str, object]]:
+    """List generic entity events from the dbt warehouse."""
+    validate_vault_path(vault_path)
+    return default_context_service.entity_events(
+        duckdb_path,
+        entity_type=entity_type,
+        entity=entity,
+        event_type=event_type,
+        limit=_bounded_limit(limit),
+    )
+
+
+@mcp.tool()
+def list_vault_entity_relationships(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    entity_type: Annotated[
+        str | None,
+        Field(description="Optional entity type filter."),
+    ] = None,
+    entity: Annotated[
+        str | None,
+        Field(description="Optional exact entity name filter."),
+    ] = None,
+    relationship_type: Annotated[
+        str | None,
+        Field(description="Optional relationship type filter."),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 50,
+    duckdb_path: Annotated[
+        str | None,
+        Field(
+            description=(
+                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
+                "/warehouse/obsidian.duckdb when present."
+            )
+        ),
+    ] = None,
+) -> list[dict[str, object]]:
+    """List generic relationships between modeled entities."""
+    validate_vault_path(vault_path)
+    return default_context_service.entity_relationships(
+        duckdb_path,
+        entity_type=entity_type,
+        entity=entity,
+        relationship_type=relationship_type,
+        limit=_bounded_limit(limit),
+    )
+
+
+@mcp.tool()
+def list_vault_entity_states(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    entity_type: Annotated[
+        str | None,
+        Field(description="Optional entity type filter, such as risk or decision."),
+    ] = None,
+    entity: Annotated[
+        str | None,
+        Field(description="Optional exact entity name filter."),
+    ] = None,
+    state_type: Annotated[
+        str | None,
+        Field(description="Optional state type filter, such as risk_status."),
+    ] = None,
+    status: Annotated[
+        str | None,
+        Field(description="Optional state value filter, such as open or active."),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 50,
+    duckdb_path: Annotated[
+        str | None,
+        Field(
+            description=(
+                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
+                "/warehouse/obsidian.duckdb when present."
+            )
+        ),
+    ] = None,
+) -> list[dict[str, object]]:
+    """List generic state rows for stateful entities."""
+    validate_vault_path(vault_path)
+    return default_context_service.entity_states(
+        duckdb_path,
+        entity_type=entity_type,
+        entity=entity,
+        state_type=state_type,
+        status=status,
+        limit=_bounded_limit(limit),
+    )
+
+
+@mcp.tool()
+def list_vault_entity_open_loops(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    entity_type: Annotated[
+        str | None,
+        Field(description="Optional entity type filter."),
+    ] = None,
+    entity: Annotated[
+        str | None,
+        Field(description="Optional exact entity name filter."),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 50,
+    duckdb_path: Annotated[
+        str | None,
+        Field(
+            description=(
+                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
+                "/warehouse/obsidian.duckdb when present."
+            )
+        ),
+    ] = None,
+) -> list[dict[str, object]]:
+    """List open loops attached to any modeled entity type."""
+    validate_vault_path(vault_path)
+    return default_context_service.entity_open_loops(
+        duckdb_path,
+        entity_type=entity_type,
+        entity=entity,
+        limit=_bounded_limit(limit),
     )
 
 

@@ -183,6 +183,113 @@ class ContextService:
         warehouse = build_warehouse(self.context(vault_path))
         return list_entities(warehouse, entity_type=entity_type, text=text, limit=limit)
 
+    def entity_types(
+        self,
+        duckdb_path: str | Path | None,
+        limit: int = 100,
+    ) -> list[dict[str, object]]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return []
+        return dbt_warehouse.list_entity_types(dbt_path, limit=limit)
+
+    def entity(
+        self,
+        duckdb_path: str | Path | None,
+        entity_type: str,
+        name: str,
+    ) -> dict[str, object]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return {}
+        return dbt_warehouse.get_entity(dbt_path, entity_type=entity_type, name=name)
+
+    def entity_context_generic(
+        self,
+        duckdb_path: str | Path | None,
+        entity_type: str,
+        entity: str,
+        limit: int = 50,
+    ) -> list[dict[str, object]]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return []
+        return dbt_warehouse.entity_context(
+            dbt_path,
+            entity_type=entity_type,
+            entity=entity,
+            limit=limit,
+        )
+
+    def entity_events(
+        self,
+        duckdb_path: str | Path | None,
+        entity_type: str | None = None,
+        entity: str | None = None,
+        event_type: str | None = None,
+        limit: int = 50,
+    ) -> list[dict[str, object]]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return []
+        return dbt_warehouse.list_entity_events(
+            dbt_path,
+            entity_type=entity_type,
+            entity=entity,
+            event_type=event_type,
+            limit=limit,
+        )
+
+    def entity_relationships(
+        self,
+        duckdb_path: str | Path | None,
+        entity_type: str | None = None,
+        entity: str | None = None,
+        relationship_type: str | None = None,
+        limit: int = 50,
+    ) -> list[dict[str, object]]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return []
+        return dbt_warehouse.list_entity_relationships(
+            dbt_path,
+            entity_type=entity_type,
+            entity=entity,
+            relationship_type=relationship_type,
+            limit=limit,
+        )
+
+    def entity_states(
+        self,
+        duckdb_path: str | Path | None,
+        entity_type: str | None = None,
+        entity: str | None = None,
+        state_type: str | None = None,
+        status: str | None = None,
+        limit: int = 50,
+    ) -> list[dict[str, object]]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return []
+        return dbt_warehouse.list_entity_states(
+            dbt_path,
+            entity_type=entity_type,
+            entity=entity,
+            state_type=state_type,
+            status=status,
+            limit=limit,
+        )
+
+    def entity_open_loops(
+        self,
+        duckdb_path: str | Path | None,
+        entity_type: str | None = None,
+        entity: str | None = None,
+        limit: int = 50,
+    ) -> list[dict[str, object]]:
+        if not (dbt_path := self.dbt_path(duckdb_path)):
+            return []
+        return dbt_warehouse.list_entity_open_loops(
+            dbt_path,
+            entity_type=entity_type,
+            entity=entity,
+            limit=limit,
+        )
+
     def entity_timeline(
         self,
         vault_path: str | Path,

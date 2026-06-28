@@ -19,11 +19,63 @@ def _write_minimal_dbt_warehouse(path: Path) -> None:
               source_path text,
               canonical_note_id text
             );
+            create table dim_entity_types (
+              entity_type text,
+              display_name text,
+              description text,
+              source_strategy text,
+              is_stateful boolean,
+              is_actor boolean,
+              is_container boolean
+            );
             create table fact_blocks (block_id text);
             create table fact_tasks (task_id text);
             create table fact_links (link_id text);
             create table fact_tags (tag_id text);
             create table fact_mentions (mention_id text);
+            create table fact_entity_relationships (
+              relationship_id text,
+              source_entity_id text,
+              source_entity_type text,
+              source_entity_name text,
+              target_entity_id text,
+              target_entity_type text,
+              target_entity_name text,
+              relationship_type text,
+              source_path text,
+              line_number integer,
+              confidence double,
+              evidence_text text
+            );
+            create table fact_entity_states (
+              state_id text,
+              entity_id text,
+              entity_type text,
+              entity_name text,
+              state_type text,
+              state_value text,
+              state_date date,
+              severity text,
+              owner_entity_id text,
+              owner_entity_name text,
+              source_path text,
+              title text,
+              summary text,
+              related_entities text
+            );
+            create table fact_entity_events (
+              event_id text,
+              entity_id text,
+              entity_type text,
+              entity_name text,
+              event_type text,
+              event_date date,
+              source_path text,
+              start_line integer,
+              title text,
+              summary text,
+              related_entities text
+            );
             create table dim_people (person_id text, name text);
             create table dim_companies (company_id text, name text);
             create table dim_projects (project_id text, name text);
@@ -99,6 +151,38 @@ def _write_minimal_dbt_warehouse(path: Path) -> None:
               projects text,
               risks text
             );
+            create table mart_entity_open_loops (
+              entity_open_loop_id text,
+              entity_id text,
+              entity_type text,
+              entity_name text,
+              open_loop_id text,
+              task_id text,
+              source_date date,
+              source_path text,
+              line_number integer,
+              heading_path text,
+              source_title text,
+              task_text text,
+              related_entities text,
+              owner_entity_id text,
+              owner_entity_name text
+            );
+            create table mart_entity_context (
+              entity_context_id text,
+              entity_id text,
+              entity_type text,
+              entity_name text,
+              event_id text,
+              event_date date,
+              event_type text,
+              source_path text,
+              start_line integer,
+              title text,
+              summary text,
+              related_entities text,
+              rank_score integer
+            );
             """
         )
         connection.execute(
@@ -107,6 +191,9 @@ def _write_minimal_dbt_warehouse(path: Path) -> None:
               ('project:atlas', 'project', 'Project Atlas', 'Projects/Atlas.md', 'note:atlas'),
               ('project:atlas-16', 'project', 'Project Atlas 16', 'Projects/Atlas 16.md', 'note:atlas-16'),
               ('person:morgan', 'person', 'Morgan Lee', 'People/Morgan Lee.md', 'note:morgan');
+            insert into dim_entity_types values
+              ('project', 'Project', 'A project.', 'note_or_link', true, false, true),
+              ('person', 'Person', 'A person.', 'note_or_link', true, true, false);
             insert into dim_projects values
               ('project:atlas', 'Project Atlas'),
               ('project:atlas-16', 'Project Atlas 16');
@@ -163,6 +250,52 @@ def _write_minimal_dbt_warehouse(path: Path) -> None:
                 'Northstar Labs',
                 ''
               );
+            insert into fact_entity_relationships values
+              (
+                'relationship:1',
+                'project:atlas',
+                'project',
+                'Project Atlas',
+                'person:morgan',
+                'person',
+                'Morgan Lee',
+                'co_mentioned_with',
+                'Daily/2026-05-18.md',
+                10,
+                0.7,
+                'Reviewed [[Project Atlas]] with [[Morgan Lee]].'
+              );
+            insert into fact_entity_states values
+              (
+                'state:risk:1',
+                'project:atlas',
+                'project',
+                'Project Atlas',
+                'risk_status',
+                'open',
+                date '2026-05-20',
+                'medium',
+                'person:morgan',
+                'Morgan Lee',
+                'Risks/Atlas Risk.md',
+                'Atlas Risk',
+                'Blocked data access for Project Atlas.',
+                'Project Atlas, Morgan Lee'
+              );
+            insert into fact_entity_events values
+              (
+                'event:1',
+                'project:atlas',
+                'project',
+                'Project Atlas',
+                'block',
+                date '2026-05-18',
+                'Daily/2026-05-18.md',
+                10,
+                'Daily > Notes',
+                'Reviewed [[Project Atlas]] with [[Morgan Lee]].',
+                'Project Atlas, Morgan Lee'
+              );
             insert into mart_open_loops values
               (
                 'task:1',
@@ -177,6 +310,40 @@ def _write_minimal_dbt_warehouse(path: Path) -> None:
                 'Northstar Labs',
                 'Project Atlas',
                 ''
+              );
+            insert into mart_entity_open_loops values
+              (
+                'entity_open_loop:task:1:project:atlas',
+                'project:atlas',
+                'project',
+                'Project Atlas',
+                'task:1',
+                'task:1',
+                date '2026-05-21',
+                'Daily/2026-05-21.md',
+                7,
+                'Daily > Tasks',
+                '2026-05-21',
+                'Follow up on [[Project Atlas]].',
+                'Project Atlas, Morgan Lee',
+                'person:morgan',
+                'Morgan Lee'
+              );
+            insert into mart_entity_context values
+              (
+                'context:event:1',
+                'project:atlas',
+                'project',
+                'Project Atlas',
+                'event:1',
+                date '2026-05-18',
+                'block',
+                'Daily/2026-05-18.md',
+                10,
+                'Daily > Notes',
+                'Reviewed [[Project Atlas]] with [[Morgan Lee]].',
+                'Project Atlas, Morgan Lee',
+                0
               );
             """
         )
@@ -234,3 +401,37 @@ def test_web_ui_prefers_longest_dbt_entity_match(tmp_path: Path):
     assert answer["mode"] == "project_context"
     assert answer["entity"] == "Project Atlas 16"
     assert answer["results"][0]["summary"] == "Reviewed [[Project Atlas 16]]."
+
+
+def test_dbt_warehouse_generic_entity_queries(tmp_path: Path):
+    duckdb_path = tmp_path / "warehouse.duckdb"
+    _write_minimal_dbt_warehouse(duckdb_path)
+
+    entity_types = dbt_warehouse.list_entity_types(duckdb_path)
+    context = dbt_warehouse.entity_context(
+        duckdb_path,
+        entity_type="project",
+        entity="Project Atlas",
+    )
+    relationships = dbt_warehouse.list_entity_relationships(
+        duckdb_path,
+        entity_type="project",
+        entity="Project Atlas",
+    )
+    states = dbt_warehouse.list_entity_states(
+        duckdb_path,
+        entity_type="project",
+        entity="Project Atlas",
+        status="open",
+    )
+    open_loops = dbt_warehouse.list_entity_open_loops(
+        duckdb_path,
+        entity_type="project",
+        entity="Project Atlas",
+    )
+
+    assert {row["entity_type"] for row in entity_types} >= {"project", "person"}
+    assert context[0]["entity_name"] == "Project Atlas"
+    assert relationships[0]["target_entity_name"] == "Morgan Lee"
+    assert states[0]["state_value"] == "open"
+    assert open_loops[0]["summary"] == "Follow up on [[Project Atlas]]."

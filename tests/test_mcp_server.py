@@ -16,7 +16,13 @@ def test_mcp_server_exposes_generic_obsidian_tools():
     assert "get_vault_note_context" in tools
     assert "get_vault_warehouse_summary" in tools
     assert "list_vault_entities" in tools
+    assert "list_vault_entity_types" in tools
     assert "get_vault_entity_timeline" in tools
+    assert "get_vault_entity_context" in tools
+    assert "list_vault_entity_events" in tools
+    assert "list_vault_entity_relationships" in tools
+    assert "list_vault_entity_states" in tools
+    assert "list_vault_entity_open_loops" in tools
     assert "search_vault_agent_context" in tools
     assert "get_vault_project_context" in tools
     assert "get_vault_person_context" in tools
