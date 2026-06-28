@@ -89,6 +89,7 @@ services:
     environment:
       POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
       WAREHOUSE_BACKEND: postgres
+      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-marts}
       OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
     volumes:
       - ${VAULT_PATH:-./examples/synthetic-vault}:/vault:ro

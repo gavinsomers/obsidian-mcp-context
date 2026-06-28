@@ -4,6 +4,7 @@ from pathlib import Path
 
 import pytest
 
+from obsidian_mcp_context import postgres_warehouse
 from obsidian_mcp_context.security import VaultPathError
 from obsidian_mcp_context.services import ContextService
 from obsidian_mcp_context.vault import VaultConfig, build_context
@@ -38,3 +39,27 @@ def test_context_service_refreshes_cache_when_note_changes(tmp_path: Path):
 
     assert second
     assert service.search_blocks(vault, text="First version") == []
+
+
+def test_context_service_selects_postgres_reader_when_configured(
+    monkeypatch: pytest.MonkeyPatch,
+):
+    service = ContextService()
+    monkeypatch.setenv("WAREHOUSE_BACKEND", "postgres")
+    monkeypatch.setenv("POSTGRES_DSN", "postgresql://example")
+    monkeypatch.setattr(postgres_warehouse, "is_available", lambda dsn: True)
+
+    reader = service.dbt_reader()
+
+    assert reader == (postgres_warehouse, "postgresql://example")
+
+
+def test_context_service_does_not_select_unavailable_postgres_reader(
+    monkeypatch: pytest.MonkeyPatch,
+):
+    service = ContextService()
+    monkeypatch.setenv("WAREHOUSE_BACKEND", "postgres")
+    monkeypatch.setenv("POSTGRES_DSN", "postgresql://example")
+    monkeypatch.setattr(postgres_warehouse, "is_available", lambda dsn: False)
+
+    assert service.dbt_reader() is None
