@@ -37,7 +37,9 @@ updated_at: 2026-06-28T09:20:00
     )
     (vault / "image.png").write_bytes(b"ignored")
 
-    report = run_doctor(DoctorOptions(vault_path=vault))
+    report = run_doctor(
+        DoctorOptions(vault_path=vault, config_path=tmp_path / "missing-config.toml")
+    )
 
     assert report["status"] == "warning"
     assert report["vault"]["markdown_file_count"] == 2
@@ -76,7 +78,13 @@ def test_doctor_can_include_samples_when_explicitly_requested(tmp_path: Path):
     (vault / "Note.md").write_text("# Note\n\n[[Missing Note]]\n", encoding="utf-8")
     (vault / "image.png").write_bytes(b"ignored")
 
-    report = run_doctor(DoctorOptions(vault_path=vault, include_samples=True))
+    report = run_doctor(
+        DoctorOptions(
+            vault_path=vault,
+            config_path=tmp_path / "missing-config.toml",
+            include_samples=True,
+        )
+    )
 
     assert report["privacy"] == {
         "samples_included": True,
@@ -107,7 +115,13 @@ def test_doctor_validates_optional_duckdb_warehouse(tmp_path: Path):
     finally:
         connection.close()
 
-    report = run_doctor(DoctorOptions(vault_path=vault, duckdb_path=duckdb_path))
+    report = run_doctor(
+        DoctorOptions(
+            vault_path=vault,
+            duckdb_path=duckdb_path,
+            config_path=tmp_path / "missing-config.toml",
+        )
+    )
 
     assert report["status"] == "error"
     assert report["warehouse"]["duckdb"]["exists"] is True

@@ -14,7 +14,7 @@ from obsidian_mcp_context.vault import (
 
 
 DEFAULT_CONFIG_PATH = Path(".obsidian-mcp-context.toml")
-DOCTOR_LIFECYCLE_METADATA_MODES = ("warn", "ignore", "error")
+DOCTOR_DIAGNOSTIC_MODES = ("warn", "ignore", "error")
 
 
 @dataclass(frozen=True)
@@ -25,6 +25,12 @@ class AppConfig:
     folder_note_types: dict[str, str] = field(default_factory=dict)
     non_entity_note_types: tuple[str, ...] = tuple(sorted(NON_ENTITY_NOTE_TYPES))
     doctor_lifecycle_metadata: str = "warn"
+    doctor_ignored_files: str = "warn"
+    doctor_unsupported_files: str = "warn"
+    doctor_empty_notes: str = "warn"
+    doctor_notes_without_blocks: str = "warn"
+    doctor_large_notes: str = "warn"
+    doctor_unresolved_wikilinks: str = "warn"
     config_path: Path | None = None
     loaded: bool = False
 
@@ -96,7 +102,43 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
     doctor_lifecycle_metadata = _choice(
         doctor.get("lifecycle_metadata"),
         "doctor.lifecycle_metadata",
-        DOCTOR_LIFECYCLE_METADATA_MODES,
+        DOCTOR_DIAGNOSTIC_MODES,
+        "warn",
+    )
+    doctor_ignored_files = _choice(
+        doctor.get("ignored_files"),
+        "doctor.ignored_files",
+        DOCTOR_DIAGNOSTIC_MODES,
+        "warn",
+    )
+    doctor_unsupported_files = _choice(
+        doctor.get("unsupported_files"),
+        "doctor.unsupported_files",
+        DOCTOR_DIAGNOSTIC_MODES,
+        "warn",
+    )
+    doctor_empty_notes = _choice(
+        doctor.get("empty_notes"),
+        "doctor.empty_notes",
+        DOCTOR_DIAGNOSTIC_MODES,
+        "warn",
+    )
+    doctor_notes_without_blocks = _choice(
+        doctor.get("notes_without_blocks"),
+        "doctor.notes_without_blocks",
+        DOCTOR_DIAGNOSTIC_MODES,
+        "warn",
+    )
+    doctor_large_notes = _choice(
+        doctor.get("large_notes"),
+        "doctor.large_notes",
+        DOCTOR_DIAGNOSTIC_MODES,
+        "warn",
+    )
+    doctor_unresolved_wikilinks = _choice(
+        doctor.get("unresolved_wikilinks"),
+        "doctor.unresolved_wikilinks",
+        DOCTOR_DIAGNOSTIC_MODES,
         "warn",
     )
 
@@ -107,6 +149,12 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
         folder_note_types=folder_note_types,
         non_entity_note_types=non_entity_note_types or tuple(sorted(NON_ENTITY_NOTE_TYPES)),
         doctor_lifecycle_metadata=doctor_lifecycle_metadata,
+        doctor_ignored_files=doctor_ignored_files,
+        doctor_unsupported_files=doctor_unsupported_files,
+        doctor_empty_notes=doctor_empty_notes,
+        doctor_notes_without_blocks=doctor_notes_without_blocks,
+        doctor_large_notes=doctor_large_notes,
+        doctor_unresolved_wikilinks=doctor_unresolved_wikilinks,
         config_path=path,
         loaded=True,
     )
