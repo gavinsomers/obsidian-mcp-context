@@ -86,41 +86,14 @@ List unchecked tasks:
 The output is JSON. It is intentionally verbose enough for an AI client to cite
 where each piece of context came from.
 
-## Generate Larger Synthetic Vaults
+## Static Fixture Vaults
 
-The checked-in `examples/synthetic-vault` remains a compact human-readable
-fixture. For scale testing, generate deterministic vaults on demand instead of
-committing thousands of Markdown files:
+The checked-in `examples/synthetic-vault` is a compact, human-readable fixture
+with coherent companies, people, projects, meetings, decisions, risks, research
+notes, and daily notes. It is intentionally static so parser, warehouse, and
+reconciliation behavior stays reproducible in this public repo.
 
-```bash
-.venv/bin/obsidian-mcp-context-generate-vault \
-  --profile medium \
-  --seed 42 \
-  --output var/generated-vault \
-  --force
-```
-
-Development equivalent:
-
-```bash
-.venv/bin/python scripts/generate_synthetic_vault.py \
-  --profile small \
-  --seed 42 \
-  --output var/generated-vault \
-  --force
-```
-
-Profiles:
-
-| Profile | Approximate files | Intended use |
-| --- | ---: | --- |
-| `small` | 232 | CI-style generated fixture checks |
-| `medium` | 1,200 | Local integration and pipeline testing |
-| `large` | 5,680 | Stress and performance testing |
-
-Generated vaults include coherent companies, people, projects, meetings,
-decisions, risks, research notes, and daily notes. Every generated note includes
-virtual lifecycle timestamps:
+Fixture notes include virtual lifecycle timestamps:
 
 ```yaml
 source_created_at: 2025-02-03T09:30:00
@@ -129,12 +102,12 @@ created_at: 2025-02-03T14:45:00
 updated_at: 2025-02-07T11:20:00
 ```
 
-Use the generated vault with the same pipeline commands:
+Use the fixture with the same pipeline commands:
 
 ```bash
 .venv/bin/obsidian-mcp-context-ingest \
-  --vault var/generated-vault \
-  --duckdb var/generated.duckdb
+  --vault examples/synthetic-vault \
+  --duckdb var/obsidian.duckdb
 ```
 
 ## DuckDB And dbt Pipeline
