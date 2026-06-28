@@ -51,8 +51,6 @@ def resolve_source_path(config: AppConfig) -> Path:
         path = SAMPLE_DIR / config.source.sample_name
     elif config.source.type == "obsidian":
         path = Path(config.source.vault_path).expanduser()
-    elif config.source.type == "google_drive":
-        raise PipelineConfigError("source.type google_drive is not implemented yet")
     else:
         raise PipelineConfigError(f"Unsupported source type: {config.source.type}")
 
