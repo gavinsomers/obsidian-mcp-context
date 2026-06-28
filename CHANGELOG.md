@@ -10,6 +10,8 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+## [0.7.0] - 2026-06-28
+
 ### Added
 
 - Added a `doctor` CLI command for bring-your-own-vault parser, graph,
