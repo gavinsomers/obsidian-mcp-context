@@ -1,7 +1,8 @@
 # Bring Your Own Vault
 
-Start with the smallest diagnostic loop, then move into the warehouse and MCP
-surfaces when the vault looks healthy.
+Start with the smallest diagnostic loop, then build the DuckDB/dbt warehouse.
+For real usage, CLI/MCP/web modeled queries should read the curated marts, not
+raw parsed Markdown.
 
 ## 1. Run Doctor
 
@@ -17,7 +18,7 @@ For CI or scripted checks:
 ```
 
 Doctor reports parser counts, ignored files, unresolved wikilinks, lifecycle
-metadata coverage, in-memory warehouse readiness, and optional DuckDB warehouse
+metadata coverage, direct parser diagnostics, and optional DuckDB warehouse
 readiness.
 
 For personal vault testing, keep the vault outside this repository and add any
@@ -28,7 +29,7 @@ before committing changes.
 Use `.obsidian-mcp-context.toml` for local scan excludes and folder-to-entity
 overrides. Keep that file ignored locally as well. See `docs/configuration.md`.
 
-## 2. Inspect Parsed Context
+## 2. Inspect Parsed Context For Diagnostics
 
 ```bash
 .venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault notes --limit 20
@@ -36,18 +37,10 @@ overrides. Keep that file ignored locally as well. See `docs/configuration.md`.
 .venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault tasks --unchecked
 ```
 
-## 3. Inspect Entities
+These commands parse Markdown directly. Use them to troubleshoot source files,
+not as the normal serving path.
 
-```bash
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault warehouse-summary
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault entities --limit 50
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault agent-context --entity "Acme Renewal"
-```
-
-Custom top-level folders such as `Clients/`, `Assets/`, and `Initiatives/`
-become generic entity types. See `docs/entity-contract.md` for the full contract.
-
-## 4. Build The DuckDB/dbt Warehouse
+## 3. Build The DuckDB/dbt Warehouse
 
 This is a full rebuild flow. The ingest command replaces the `base_obsidian_*`
 landing tables from the current vault, and dbt rebuilds marts as tables.
@@ -71,6 +64,20 @@ Then validate the persisted warehouse:
 ```bash
 .venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault doctor --duckdb var/obsidian.duckdb
 ```
+
+## 4. Query The Marts
+
+```bash
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context \
+  --vault /absolute/path/to/vault warehouse-summary
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context \
+  --vault /absolute/path/to/vault entities --limit 50
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context \
+  --vault /absolute/path/to/vault agent-context --entity "Acme Renewal"
+```
+
+Custom top-level folders such as `Clients/`, `Assets/`, and `Initiatives/`
+become generic entity types. See `docs/entity-contract.md` for the full contract.
 
 ## Example Vaults
 

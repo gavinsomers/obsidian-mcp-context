@@ -30,8 +30,8 @@ CLI, MCP, web, or DuckDB/dbt.
   `examples/custom-entity-vault`.
 - Deterministic parsing of headings, heading paths, blocks, tasks, wikilinks, tags, and semantic lines.
 - File, block, heading, and line-level provenance.
-- CLI and MCP tools for listing notes, searching blocks, listing tasks, and fetching note context.
-- Optional DuckDB/dbt marts for persisted entity, relationship, state, event, timeline, and open-loop queries.
+- Diagnostic CLI and MCP tools for inspecting directly parsed notes, blocks, tasks, and note context.
+- DuckDB/dbt marts for persisted entity, relationship, state, event, timeline, and open-loop queries.
 - Optional privacy-gated AI enrichment for unresolved-link suggestions.
 - SQL reconciliation tests over the static fixture vault.
 - A `doctor` command for parser, graph, metadata, and warehouse readiness checks.
@@ -47,24 +47,38 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -e ".[dev,pipeline]"
 ```
 
-Check the included synthetic vault:
+Run a source diagnostic against the included synthetic vault:
 
 ```bash
 .venv/bin/obsidian-mcp-context --vault examples/synthetic-vault doctor
-.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault notes --limit 5
-.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault tasks --unchecked --limit 5
 ```
 
-Check your own vault:
+Build the default DuckDB/dbt warehouse. This is the normal serving path for
+modeled CLI, MCP, web, and reconciliation usage:
+
+```bash
+.venv/bin/obsidian-mcp-context-ingest \
+  --vault examples/synthetic-vault \
+  --duckdb var/obsidian.duckdb
+
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt run --profiles-dir dbt
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt test --profiles-dir dbt
+```
+
+Query the marts:
+
+```bash
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context \
+  --vault examples/synthetic-vault warehouse-summary
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context \
+  --vault examples/synthetic-vault entities --entity-type project --limit 5
+```
+
+For your own vault, run `doctor`, then run the same ingest and dbt build with
+your vault path:
 
 ```bash
 .venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" doctor
-.venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" blocks --text "renewal"
-```
-
-Optionally build the persisted DuckDB/dbt warehouse:
-
-```bash
 .venv/bin/obsidian-mcp-context-ingest \
   --vault "/absolute/path/to/your/vault" \
   --duckdb var/obsidian.duckdb
@@ -73,9 +87,9 @@ DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt run --profiles-dir dbt
 DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt test --profiles-dir dbt
 ```
 
-Optionally connect an MCP client to `obsidian-mcp-context-mcp` so an AI client
-can call the vault tools. See `docs/configuration.md` for local vault settings,
-privacy controls, and optional AI enrichment.
+Then connect an MCP client to `obsidian-mcp-context-mcp` with `DUCKDB_PATH`
+pointing at the built warehouse. See `docs/configuration.md` for local vault
+settings, privacy controls, and optional AI enrichment.
 
 ## How The Pipeline Works
 
@@ -85,22 +99,15 @@ For the generic entity model, see [docs/entity-contract.md](docs/entity-contract
 For the bring-your-own-vault workflow, see [docs/onboarding.md](docs/onboarding.md).
 For local scan and entity overrides, see [docs/configuration.md](docs/configuration.md).
 
-The lightweight MCP workflow is:
+The warehouse-first workflow is:
 
 1. You have an Obsidian vault on disk.
 2. You install this package locally.
-3. You run the MCP server from this repo.
-4. Your MCP client connects to that server.
-5. The AI client calls tools such as `search_vault_blocks` and `list_vault_tasks`.
-6. Each tool call includes a `vault_path`, so the server knows which vault to parse.
-7. The server returns structured JSON with source paths, headings, line numbers, blocks, links, tags, and tasks.
-8. The AI client uses that returned context to answer questions or help you work with the vault.
-
-The persisted warehouse workflow is:
-
-1. Run `obsidian-mcp-context-ingest` against a vault.
-2. Run dbt against the target DuckDB file.
-3. Query the rebuilt marts from CLI, MCP, web, or tests.
+3. You run `doctor` to validate the source vault.
+4. You run `obsidian-mcp-context-ingest` into DuckDB landing tables.
+5. You run dbt to build staging, intermediate models, and curated marts.
+6. CLI, MCP, web, and tests query the marts, not raw Markdown.
+7. Direct parser commands remain available for diagnostics and troubleshooting.
 
 Optional AI enrichment is advisory and disabled by default. It can use mock,
 Ollama/local, OpenAI, or Anthropic providers when explicitly configured, subject
@@ -127,29 +134,38 @@ After installation, the local commands are available at:
 ## Try The Synthetic Vault
 
 The repo includes a synthetic Obsidian vault at `examples/synthetic-vault`. Use
-it first to confirm the parser works before pointing the tools at your own
-notes.
+it first to confirm the parser and warehouse build work before pointing the
+tools at your own notes.
 
-List notes:
-
-```bash
-.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault notes
-```
-
-Search parsed blocks:
+Run source diagnostics:
 
 ```bash
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault doctor
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault notes --limit 5
 .venv/bin/obsidian-mcp-context --vault examples/synthetic-vault blocks --text renewal
+.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault tasks --unchecked --limit 5
 ```
 
-List unchecked tasks:
+The `notes`, `blocks`, and `tasks` commands inspect directly parsed source
+content. They are useful diagnostics, but the normal serving path is to build
+DuckDB/dbt and query marts.
+
+Build and query the persisted warehouse:
 
 ```bash
-.venv/bin/obsidian-mcp-context --vault examples/synthetic-vault tasks --unchecked
+.venv/bin/obsidian-mcp-context-ingest \
+  --vault examples/synthetic-vault \
+  --duckdb var/obsidian.duckdb
+
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt run --profiles-dir dbt
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt test --profiles-dir dbt
+
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context \
+  --vault examples/synthetic-vault entities --entity-type project --limit 5
 ```
 
-The output is JSON. It is intentionally verbose enough for an AI client to cite
-where each piece of context came from.
+The output is JSON. Mart-backed output is intended for AI clients, dashboards,
+APIs, and reconciliation tests.
 
 ## Static Fixture Vaults
 
@@ -222,10 +238,11 @@ rows:
   `fact_decisions`, `fact_risks`, `mart_open_loops`, `mart_person_context`,
   and `mart_project_context`.
 
-When a dbt-built DuckDB warehouse is available at `DUCKDB_PATH`, the web UI and
-MCP warehouse tools query these persisted marts directly. If no dbt warehouse is
-available, they fall back to the smaller in-memory warehouse built from the vault
-files.
+When a dbt-built DuckDB warehouse is available at `DUCKDB_PATH`, the web UI,
+MCP warehouse tools, and modeled CLI commands query these persisted marts
+directly. If no dbt warehouse is available, legacy fallback paths may inspect
+the directly parsed vault for diagnostics and emit a warning. Do not treat that
+fallback as the normal serving path.
 
 Run ingest. This replaces the `base_obsidian_*` landing tables in the target
 DuckDB file:
@@ -265,13 +282,16 @@ or:
 /home/gavman/notes/main-vault
 ```
 
-Then run the same CLI commands with your vault path:
+Then validate the source and build the warehouse:
 
 ```bash
 .venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" doctor
-.venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" notes
-.venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" blocks --text "renewal"
-.venv/bin/obsidian-mcp-context --vault "/absolute/path/to/your/vault" tasks --unchecked
+.venv/bin/obsidian-mcp-context-ingest \
+  --vault "/absolute/path/to/your/vault" \
+  --duckdb var/obsidian.duckdb
+
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt run --profiles-dir dbt
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt test --profiles-dir dbt
 ```
 
 For scripted validation, use:
@@ -291,7 +311,7 @@ Dashboard.md` becomes an `asset` entity. See
 Start the MCP server manually with:
 
 ```bash
-.venv/bin/obsidian-mcp-context-mcp
+DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context-mcp
 ```
 
 For HTTP transports, restrict readable vault paths with
@@ -301,6 +321,7 @@ those roots:
 
 ```bash
 OBSIDIAN_MCP_ALLOWED_ROOTS=/home/gavman/notes \
+  DUCKDB_PATH=var/obsidian.duckdb \
   .venv/bin/obsidian-mcp-context-mcp --transport streamable-http --host 127.0.0.1 --port 8000
 ```
 
@@ -309,18 +330,18 @@ local vault paths.
 
 Available tools:
 
-- `list_vault_notes`
-- `search_vault_blocks`
-- `list_vault_tasks`
-- `get_vault_note_context`
+- `list_vault_notes` (diagnostic direct-parse tool)
+- `search_vault_blocks` (diagnostic direct-parse tool)
+- `list_vault_tasks` (diagnostic direct-parse tool)
+- `get_vault_note_context` (diagnostic direct-parse tool)
 - `get_vault_warehouse_summary`
 - `list_vault_entities`
 - `get_vault_entity_timeline`
 - `search_vault_agent_context`
 
-Each MCP tool accepts a `vault_path` argument. That means you do not hard-code a
-single vault into the server. Your client asks the tool to operate on a specific
-vault path.
+Each MCP tool accepts a `vault_path` argument. Modeled tools also use
+`DUCKDB_PATH` or an explicit `duckdb_path` argument to read from the built marts.
+The direct-parse tools are for diagnostics and troubleshooting.
 
 ## Configure An MCP Client
 
@@ -346,19 +367,20 @@ configuration would be:
 }
 ```
 
-Once the client is connected, ask it to use the tools with your vault path. For
-example:
+Set `DUCKDB_PATH` in the MCP server environment to the DuckDB file you built.
+Once the client is connected, ask it to use mart-backed tools with your vault
+path. For example:
 
 ```text
 Use the Obsidian MCP context tools with vault_path "/home/gavman/notes/main-vault".
-List my unchecked tasks related to renewal.
+Show the open loops for Project Atlas from the built warehouse.
 ```
 
 or:
 
 ```text
 Use vault_path "/home/gavman/notes/main-vault".
-Search my vault for blocks about Project Atlas and return the source note and line numbers.
+Summarize the Project Atlas context from the dbt marts.
 ```
 
 ## Tool Inputs
@@ -367,6 +389,7 @@ Search my vault for blocks about Project Atlas and return the source note and li
 
 - `vault_path`: path to the Obsidian vault.
 - `limit`: maximum notes to return. Defaults to `100`.
+- Diagnostic direct-parse tool. Use marts for normal serving.
 
 `search_vault_blocks`
 
@@ -375,6 +398,7 @@ Search my vault for blocks about Project Atlas and return the source note and li
 - `source_path`: optional filter for vault-relative source paths.
 - `heading`: optional filter for heading paths.
 - `limit`: maximum blocks to return. Defaults to `25`.
+- Diagnostic direct-parse tool. Use marts for normal serving.
 
 `list_vault_tasks`
 
@@ -383,15 +407,18 @@ Search my vault for blocks about Project Atlas and return the source note and li
 - `text`: optional case-insensitive search text.
 - `source_path`: optional filter for vault-relative source paths.
 - `limit`: maximum tasks to return. Defaults to `50`.
+- Diagnostic direct-parse tool. Use marts for normal serving.
 
 `get_vault_note_context`
 
 - `vault_path`: path to the Obsidian vault.
 - `source_path`: vault-relative note path, such as `Projects/Atlas.md`.
+- Diagnostic direct-parse tool. Use marts for normal serving.
 
 `get_vault_warehouse_summary`
 
 - `vault_path`: path to the Obsidian vault.
+- `duckdb_path`: optional DuckDB warehouse path. Defaults to `DUCKDB_PATH`.
 
 `list_vault_entities`
 
@@ -399,6 +426,7 @@ Search my vault for blocks about Project Atlas and return the source note and li
 - `entity_type`: optional filter, such as `person`, `company`, or `project`.
 - `text`: optional case-insensitive name filter.
 - `limit`: maximum entities to return. Defaults to `100`.
+- `duckdb_path`: optional DuckDB warehouse path. Defaults to `DUCKDB_PATH`.
 
 `list_vault_entity_types`
 
@@ -412,6 +440,7 @@ Search my vault for blocks about Project Atlas and return the source note and li
 - `entity`: entity name, such as `Morgan Lee`.
 - `text`: optional case-insensitive filter over timeline summaries.
 - `limit`: maximum timeline rows to return. Defaults to `50`.
+- `duckdb_path`: optional DuckDB warehouse path. Defaults to `DUCKDB_PATH`.
 
 `get_vault_entity_context`
 
@@ -464,6 +493,7 @@ Search my vault for blocks about Project Atlas and return the source note and li
 - `entity`: optional entity name filter.
 - `event_type`: optional event type, such as `block`, `task_open`, or `task_done`.
 - `limit`: maximum context rows to return. Defaults to `25`.
+- `duckdb_path`: optional DuckDB warehouse path. Defaults to `DUCKDB_PATH`.
 
 When a dbt-built DuckDB warehouse is available, these additional mart-backed
 tools are exposed:
@@ -507,10 +537,11 @@ tools are exposed:
 
 ## Deterministic Warehouse Layer
 
-The parser still preserves the vault as the source of truth. On top of that,
-the package can query either a persisted dbt DuckDB warehouse or a fallback
-in-memory SQLite warehouse so AI clients can query a modeled representation
-instead of relying only on semantic recall.
+The parser preserves the vault as the source of truth, but the serving layer is
+the persisted DuckDB/dbt warehouse. Ingest writes DuckDB landing tables, dbt
+builds staging/intermediate models and curated marts, and CLI/MCP/web surfaces
+should read those marts for normal use. Direct in-memory parsing remains only as
+a diagnostic fallback and emits warnings when modeled commands use it.
 
 The current warehouse includes:
 

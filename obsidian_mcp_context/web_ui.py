@@ -10,7 +10,7 @@ from urllib.parse import parse_qs, unquote, urlparse
 
 from obsidian_mcp_context import dbt_warehouse
 from obsidian_mcp_context.security import validate_vault_path
-from obsidian_mcp_context.services import default_context_service
+from obsidian_mcp_context.services import FALLBACK_WARNING, default_context_service
 from obsidian_mcp_context.status import warehouse_status
 from obsidian_mcp_context.warehouse import (
     agent_context,
@@ -31,6 +31,14 @@ ENTITY_QUERY_TYPES = {
     "projects": "project",
     "project": "project",
 }
+
+
+def _memory_answer(payload: dict[str, object]) -> dict[str, object]:
+    return {
+        **payload,
+        "warehouse": "memory",
+        "warning": FALLBACK_WARNING,
+    }
 
 
 def _load_warehouse(vault_path: Path):
@@ -243,25 +251,23 @@ def answer_question(
     requested_types = _requested_entity_types(question)
 
     if "summary" in lowered or "counts" in lowered:
-        return {"mode": "summary", "warehouse": "memory", "summary": summary}
+        return _memory_answer({"mode": "summary", "summary": summary})
     if entity and wants_timeline:
-        return {
+        return _memory_answer({
             "mode": "timeline",
-            "warehouse": "memory",
             "entity": entity,
             "results": entity_timeline(warehouse, entity=entity, limit=DEFAULT_LIMIT),
-        }
+        })
     if wants_timeline:
-        return {
+        return _memory_answer({
             "mode": "entity_lookup",
-            "warehouse": "memory",
             "entity": None,
             "message": (
                 "No matching entity was found in this vault. Try one of the known "
                 "people, companies, projects, decisions, risks, or topics below."
             ),
             "results": entities[:DEFAULT_LIMIT],
-        }
+        })
     if requested_types and not entity:
         groups = [
             {
@@ -274,16 +280,14 @@ def answer_question(
             }
             for entity_type in requested_types
         ]
-        return {"mode": "entity_groups", "warehouse": "memory", "groups": groups}
+        return _memory_answer({"mode": "entity_groups", "groups": groups})
     if "entities" in lowered:
-        return {
+        return _memory_answer({
             "mode": "entities",
-            "warehouse": "memory",
             "results": entities[:DEFAULT_LIMIT],
-        }
-    return {
+        })
+    return _memory_answer({
         "mode": "context",
-        "warehouse": "memory",
         "entity": entity,
         "results": agent_context(
             warehouse,
@@ -291,7 +295,7 @@ def answer_question(
             entity=entity,
             limit=DEFAULT_LIMIT,
         ),
-    }
+    })
 
 
 def _render_rows(rows: list[dict[str, object]], message: str | None = None) -> str:
@@ -680,7 +684,10 @@ class ContextHandler(BaseHTTPRequestHandler):
                 _json_response(self, dbt_warehouse.summary(self.duckdb_path))
                 return
             warehouse = _load_warehouse(self.vault_path)
-            _json_response(self, warehouse_summary(warehouse))
+            summary = warehouse_summary(warehouse)
+            summary["warehouse"] = "memory"
+            summary["warning"] = FALLBACK_WARNING
+            _json_response(self, summary)
             return
         if parsed.path == "/api/status":
             _json_response(

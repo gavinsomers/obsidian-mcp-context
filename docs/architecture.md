@@ -22,9 +22,9 @@ flowchart LR
 
   vault["Obsidian vault<br/>Markdown and text files"]
   parser["Parser and vault scanner"]
-  memory["In-memory SQLite warehouse<br/>fallback/query path"]
-  duckdb["DuckDB/dbt warehouse<br/>optional persisted marts"]
-  service["ContextService<br/>cache, root validation, fallback routing"]
+  diagnostics["Direct parser diagnostics<br/>doctor, notes, blocks, tasks"]
+  duckdb["DuckDB/dbt warehouse<br/>serving marts"]
+  service["ContextService<br/>cache, root validation, mart routing"]
 
   web["Web UI and JSON API"]
   mcp["MCP server"]
@@ -38,20 +38,20 @@ flowchart LR
 
   cli --> parser
   parser --> vault
-  parser --> memory
+  parser --> diagnostics
   parser --> duckdb
 
   web --> service
   mcp --> service
   service --> parser
-  service --> memory
+  service --> diagnostics
   service --> duckdb
 ```
 
 The web UI and MCP server share `ContextService`. That service checks for a
-valid dbt-built DuckDB warehouse when one is configured. If no persisted
-warehouse is available, it falls back to parsing the vault and building the
-smaller in-memory warehouse.
+valid dbt-built DuckDB warehouse when one is configured. Modeled query serving
+should use the persisted marts. Direct parser fallback exists only for
+diagnostics and emits warnings when modeled commands use it.
 
 ## Pipeline View
 
@@ -84,12 +84,12 @@ output directory, usually `var/`.
 | --- | --- |
 | `obsidian_mcp_context.parser` and `vault` | Parse Markdown into headings, blocks, tasks, links, tags, semantic lines, and provenance. |
 | `obsidian_mcp_context.pipeline` | Resolve source profiles and run the local sequential pipeline. |
-| `obsidian_mcp_context.warehouse` | Build the in-memory warehouse, deterministic suggestions, and review tables. |
+| `obsidian_mcp_context.warehouse` | Build diagnostic in-memory tables, deterministic suggestions, and review tables. |
 | `obsidian_mcp_context.enrichment` | Run optional advisory AI enrichment over deterministic candidates. |
 | `obsidian_mcp_context.ingest` | Load parsed vault rows into DuckDB landing tables for dbt. |
 | `models/staging`, `models/intermediate`, `models/marts` | Transform landing tables into queryable dbt views and marts. |
 | `obsidian_mcp_context.dbt_warehouse` | Read dbt marts from DuckDB for generic entities, relationships, states, events, open loops, and typed compatibility rows. |
-| `obsidian_mcp_context.services` | Shared service layer for web and MCP, including dbt detection and in-memory fallback. |
+| `obsidian_mcp_context.services` | Shared service layer for web and MCP, including dbt detection, mart routing, and warned diagnostic fallback. |
 | `obsidian_mcp_context.web_ui` | Browser UI, question endpoint, status endpoint, generic entity API, and typed compatibility API. |
 | `obsidian_mcp_context.mcp_server` | MCP tools for notes, blocks, tasks, note context, warehouse summary, generic entity context/events/states/relationships/open loops, and typed compatibility tools. |
 | `obsidian_mcp_context.status` | Runtime status for configured warehouse files, required marts, and row counts. |
@@ -111,8 +111,8 @@ output directory, usually `var/`.
 
 | Surface | Examples |
 | --- | --- |
-| CLI | `obsidian-mcp-context --vault ... notes`, `blocks`, `tasks`, `warehouse-summary`, `agent-context`, `pipeline run` |
-| MCP | `list_vault_notes`, `search_vault_blocks`, `get_vault_entity_context`, `list_vault_entity_states`, `get_vault_project_context` |
+| CLI | `obsidian-mcp-context-ingest`, `dbt run`, `warehouse-summary --duckdb`, `agent-context --duckdb`, diagnostic `notes`/`blocks`/`tasks` |
+| MCP | Mart-backed `get_vault_entity_context`, `list_vault_entity_states`, `get_vault_project_context`; diagnostic `list_vault_notes`, `search_vault_blocks`, `list_vault_tasks` |
 | Web UI | Browser query interface and pipeline status panel |
 | JSON API | `/api/entity-types`, `/api/entities/{type}/{name}/context`, `/api/states?entity_type=risk`, `/api/projects/{project}/context` |
 
