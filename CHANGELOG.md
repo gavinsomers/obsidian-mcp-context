@@ -18,6 +18,8 @@ The project uses semantic-ish versions:
   and `error` modes.
 - Split unsupported files out of the generic ignored-file doctor warning so
   non-Markdown files are reported once.
+- Added configurable doctor policies for ignored files, unsupported files, empty
+  notes, blockless notes, large notes, and unresolved wikilinks.
 
 ## [0.8.0] - 2026-06-28
 

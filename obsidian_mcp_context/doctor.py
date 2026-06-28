@@ -141,7 +141,7 @@ def _scan_inventory(vault_path: Path, config: VaultConfig) -> dict[str, object]:
     }
 
 
-def _record_lifecycle_diagnostic(
+def _record_policy_diagnostic(
     *,
     mode: str,
     warnings: list[str],
@@ -152,6 +152,7 @@ def _record_lifecycle_diagnostic(
     count: int,
     sample: object,
     include_samples: bool,
+    sample_key: str = "sample",
 ) -> None:
     if mode == "ignore":
         return
@@ -169,6 +170,7 @@ def _record_lifecycle_diagnostic(
             count,
             sample,
             include_samples=include_samples,
+            sample_key=sample_key,
         ),
     )
 
@@ -241,31 +243,29 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         )
     if inventory["ignored_files"]:
         message = f"{len(inventory['ignored_files'])} files were ignored by the vault scan."
-        warnings.append(message)
-        _diagnostic(
-            diagnostics,
-            DoctorCode.IGNORED_FILE,
-            "warning",
-            message,
-            details=_sample_details(
-                len(inventory["ignored_files"]),
-                list(inventory["ignored_files"])[:25],
-                include_samples=options.include_samples,
-            ),
+        _record_policy_diagnostic(
+            mode=app_config.doctor_ignored_files,
+            warnings=warnings,
+            errors=errors,
+            diagnostics=diagnostics,
+            code=DoctorCode.IGNORED_FILE,
+            message=message,
+            count=len(inventory["ignored_files"]),
+            sample=list(inventory["ignored_files"])[:25],
+            include_samples=options.include_samples,
         )
     if unsupported_files:
         message = f"{len(unsupported_files)} non-Markdown files will be ignored."
-        warnings.append(message)
-        _diagnostic(
-            diagnostics,
-            DoctorCode.UNSUPPORTED_FILE,
-            "warning",
-            message,
-            details=_sample_details(
-                len(unsupported_files),
-                unsupported_files[:25],
-                include_samples=options.include_samples,
-            ),
+        _record_policy_diagnostic(
+            mode=app_config.doctor_unsupported_files,
+            warnings=warnings,
+            errors=errors,
+            diagnostics=diagnostics,
+            code=DoctorCode.UNSUPPORTED_FILE,
+            message=message,
+            count=len(unsupported_files),
+            sample=unsupported_files[:25],
+            include_samples=options.include_samples,
         )
 
     blocks_by_source = Counter(block.source_path for block in context.blocks)
@@ -307,51 +307,48 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
 
     if empty_notes:
         message = f"{len(empty_notes)} Markdown notes are empty."
-        warnings.append(message)
-        _diagnostic(
-            diagnostics,
-            DoctorCode.EMPTY_NOTE,
-            "warning",
-            message,
-            details=_sample_details(
-                len(empty_notes),
-                empty_notes[:25],
-                include_samples=options.include_samples,
-            ),
+        _record_policy_diagnostic(
+            mode=app_config.doctor_empty_notes,
+            warnings=warnings,
+            errors=errors,
+            diagnostics=diagnostics,
+            code=DoctorCode.EMPTY_NOTE,
+            message=message,
+            count=len(empty_notes),
+            sample=empty_notes[:25],
+            include_samples=options.include_samples,
         )
     if notes_without_blocks:
         message = f"{len(notes_without_blocks)} Markdown notes produced no blocks."
-        warnings.append(message)
-        _diagnostic(
-            diagnostics,
-            DoctorCode.NOTE_WITHOUT_BLOCKS,
-            "warning",
-            message,
-            details=_sample_details(
-                len(notes_without_blocks),
-                notes_without_blocks[:25],
-                include_samples=options.include_samples,
-            ),
+        _record_policy_diagnostic(
+            mode=app_config.doctor_notes_without_blocks,
+            warnings=warnings,
+            errors=errors,
+            diagnostics=diagnostics,
+            code=DoctorCode.NOTE_WITHOUT_BLOCKS,
+            message=message,
+            count=len(notes_without_blocks),
+            sample=notes_without_blocks[:25],
+            include_samples=options.include_samples,
         )
     if large_notes:
         message = f"{len(large_notes)} Markdown notes are larger than 250 KB."
-        warnings.append(message)
-        _diagnostic(
-            diagnostics,
-            DoctorCode.LARGE_NOTE,
-            "warning",
-            message,
-            details=_sample_details(
-                len(large_notes),
-                large_notes[:25],
-                include_samples=options.include_samples,
-            ),
+        _record_policy_diagnostic(
+            mode=app_config.doctor_large_notes,
+            warnings=warnings,
+            errors=errors,
+            diagnostics=diagnostics,
+            code=DoctorCode.LARGE_NOTE,
+            message=message,
+            count=len(large_notes),
+            sample=large_notes[:25],
+            include_samples=options.include_samples,
         )
     if missing_lifecycle:
         message = (
             f"{len(missing_lifecycle)} notes are missing one or more lifecycle timestamp fields."
         )
-        _record_lifecycle_diagnostic(
+        _record_policy_diagnostic(
             mode=app_config.doctor_lifecycle_metadata,
             warnings=warnings,
             errors=errors,
@@ -366,7 +363,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         message = (
             f"{len(malformed_lifecycle)} lifecycle timestamp values are not ISO datetimes."
         )
-        _record_lifecycle_diagnostic(
+        _record_policy_diagnostic(
             mode=app_config.doctor_lifecycle_metadata,
             warnings=warnings,
             errors=errors,
@@ -387,21 +384,20 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
     unresolved_counts = Counter(unresolved)
     if unresolved:
         message = f"{len(unresolved)} wikilinks do not resolve to scanned note titles."
-        warnings.append(message)
-        _diagnostic(
-            diagnostics,
-            DoctorCode.UNRESOLVED_WIKILINK,
-            "warning",
-            message,
-            details=_sample_details(
-                len(unresolved),
-                [
-                    {"target": target, "count": count}
-                    for target, count in unresolved_counts.most_common(10)
-                ],
-                include_samples=options.include_samples,
-                sample_key="top_targets",
-            ),
+        _record_policy_diagnostic(
+            mode=app_config.doctor_unresolved_wikilinks,
+            warnings=warnings,
+            errors=errors,
+            diagnostics=diagnostics,
+            code=DoctorCode.UNRESOLVED_WIKILINK,
+            message=message,
+            count=len(unresolved),
+            sample=[
+                {"target": target, "count": count}
+                for target, count in unresolved_counts.most_common(10)
+            ],
+            include_samples=options.include_samples,
+            sample_key="top_targets",
         )
 
     warehouse_status: dict[str, object]
@@ -487,6 +483,12 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "non_entity_note_types": list(vault_config.non_entity_note_types or ()),
             "doctor": {
                 "lifecycle_metadata": app_config.doctor_lifecycle_metadata,
+                "ignored_files": app_config.doctor_ignored_files,
+                "unsupported_files": app_config.doctor_unsupported_files,
+                "empty_notes": app_config.doctor_empty_notes,
+                "notes_without_blocks": app_config.doctor_notes_without_blocks,
+                "large_notes": app_config.doctor_large_notes,
+                "unresolved_wikilinks": app_config.doctor_unresolved_wikilinks,
             },
         },
         "parser": {

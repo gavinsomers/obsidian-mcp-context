@@ -149,3 +149,79 @@ lifecycle_metadata = "required"
         assert "doctor.lifecycle_metadata" in str(exc)
     else:
         raise AssertionError("Expected invalid lifecycle metadata mode to fail")
+
+
+def test_doctor_can_ignore_selected_warning_categories_from_config(tmp_path: Path):
+    vault = tmp_path / "vault"
+    config_path = tmp_path / "config.toml"
+    vault.mkdir()
+    (vault / "Note.md").write_text("# Note\n\n[[Missing]]\n", encoding="utf-8")
+    (vault / "Empty.md").write_text("", encoding="utf-8")
+    (vault / "image.png").write_bytes(b"ignored")
+    config_path.write_text(
+        """
+[doctor]
+lifecycle_metadata = "ignore"
+unsupported_files = "ignore"
+empty_notes = "ignore"
+unresolved_wikilinks = "ignore"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(DoctorOptions(vault_path=vault, config_path=config_path))
+
+    assert report["status"] == "ok"
+    assert report["config"]["doctor"]["unsupported_files"] == "ignore"
+    assert report["config"]["doctor"]["empty_notes"] == "ignore"
+    assert report["config"]["doctor"]["unresolved_wikilinks"] == "ignore"
+    assert report["content"]["unsupported_file_count"] == 1
+    assert report["content"]["empty_note_count"] == 1
+    assert report["graph"]["unresolved_wikilinks"] == 1
+    assert {
+        DoctorCode.UNSUPPORTED_FILE.value,
+        DoctorCode.EMPTY_NOTE.value,
+        DoctorCode.UNRESOLVED_WIKILINK.value,
+    }.isdisjoint({item["code"] for item in report["diagnostics"]})
+
+
+def test_doctor_can_error_on_unresolved_wikilinks_from_config(tmp_path: Path):
+    vault = tmp_path / "vault"
+    config_path = tmp_path / "config.toml"
+    vault.mkdir()
+    (vault / "Note.md").write_text("# Note\n\n[[Missing]]\n", encoding="utf-8")
+    config_path.write_text(
+        """
+[doctor]
+lifecycle_metadata = "ignore"
+unresolved_wikilinks = "error"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(DoctorOptions(vault_path=vault, config_path=config_path))
+
+    assert report["status"] == "error"
+    assert any(
+        item["code"] == DoctorCode.UNRESOLVED_WIKILINK.value
+        and item["severity"] == "error"
+        for item in report["diagnostics"]
+    )
+
+
+def test_config_rejects_invalid_doctor_warning_mode(tmp_path: Path):
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[doctor]
+unsupported_files = "skip"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    try:
+        load_app_config(config_path)
+    except ValueError as exc:
+        assert "doctor.unsupported_files" in str(exc)
+    else:
+        raise AssertionError("Expected invalid doctor warning mode to fail")

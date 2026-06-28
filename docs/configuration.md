@@ -47,6 +47,10 @@ Calendars = "calendar"
 
 [doctor]
 lifecycle_metadata = "warn"
+unsupported_files = "warn"
+empty_notes = "warn"
+large_notes = "warn"
+unresolved_wikilinks = "warn"
 ```
 
 ## Scan Settings
@@ -71,3 +75,8 @@ singular names when they represent entities, such as `client`, `asset`, or
 - `doctor.lifecycle_metadata`: controls lifecycle timestamp diagnostics. Allowed
   values are `warn`, `ignore`, and `error`. Use `ignore` for existing personal
   vaults that do not carry the synthetic lifecycle fields.
+- `doctor.ignored_files`, `doctor.unsupported_files`, `doctor.empty_notes`,
+  `doctor.notes_without_blocks`, `doctor.large_notes`, and
+  `doctor.unresolved_wikilinks`: control the matching warning categories with
+  the same `warn`, `ignore`, and `error` modes. Counts remain in the report even
+  when a category is ignored.
