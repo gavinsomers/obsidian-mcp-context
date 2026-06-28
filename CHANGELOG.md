@@ -10,7 +10,10 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
-No unreleased changes.
+### Added
+
+- Added a pipeline status API and web UI status panel showing warehouse snapshot
+  availability, simulation state, and key dbt table row counts.
 
 ## [0.5.1] - 2026-06-28
 

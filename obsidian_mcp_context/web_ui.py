@@ -9,6 +9,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
 from obsidian_mcp_context import dbt_warehouse
+from obsidian_mcp_context.status import warehouse_status
 from obsidian_mcp_context.vault import VaultConfig, build_context
 from obsidian_mcp_context.warehouse import (
     agent_context,
@@ -332,9 +333,71 @@ def _render_entity_groups(groups: list[dict[str, object]]) -> str:
     return "\n".join(sections)
 
 
+def _render_status_panel(status: dict[str, object]) -> str:
+    warehouse = status["warehouse"]
+    simulation = status["simulation"]
+    active_reader = warehouse["active_reader"]
+    writer = warehouse["writer"]
+    read_snapshot = warehouse["read_snapshot"]
+    row_counts = warehouse["row_counts"]
+    simulation_state = simulation.get("state") or {}
+    key_tables = (
+        "base_obsidian_files",
+        "dim_notes",
+        "dim_entities",
+        "fact_tasks",
+        "fact_mentions",
+        "mart_open_loops",
+        "mart_project_context",
+        "mart_person_context",
+    )
+    count_cells = "\n".join(
+        f"""
+        <div class="stat">
+          <span>{escape(table)}</span>
+          <strong>{escape(str(row_counts.get(table) if row_counts.get(table) is not None else "n/a"))}</strong>
+        </div>
+        """
+        for table in key_tables
+    )
+    virtual_date = simulation_state.get("virtual_date") or "n/a"
+    run_number = simulation_state.get("run_number")
+    run_label = f"run {run_number}" if run_number is not None else "run n/a"
+    read_label = "yes" if warehouse["reading_from_stable_snapshot"] else "no"
+    writer_label = "present" if writer["exists"] else "missing"
+    read_snapshot_label = "present" if read_snapshot["exists"] else "missing"
+    active_label = "available" if active_reader["available"] else "unavailable"
+    return f"""
+    <section class="status-panel" aria-label="Pipeline status">
+      <div class="status-head">
+        <div>
+          <h2>Pipeline Status</h2>
+          <p>Virtual date {escape(str(virtual_date))} · {escape(run_label)}</p>
+        </div>
+        <div class="status-badges">
+          <span class="pill">reader: {escape(active_label)}</span>
+          <span class="pill">stable snapshot: {escape(read_label)}</span>
+        </div>
+      </div>
+      <div class="status-grid">
+        <div class="stat">
+          <span>writer warehouse</span>
+          <strong>{escape(writer_label)}</strong>
+        </div>
+        <div class="stat">
+          <span>read snapshot</span>
+          <strong>{escape(read_snapshot_label)}</strong>
+        </div>
+        {count_cells}
+      </div>
+    </section>
+    """
+
+
 def _page(vault_path: Path, duckdb_path: Path | None, values: dict[str, list[str]]) -> str:
     question = _first(values, "q") or "summary counts"
     answer = answer_question(vault_path, question, duckdb_path=duckdb_path)
+    status = warehouse_status(vault_path, active_duckdb_path=duckdb_path)
     if answer["mode"] == "summary":
         content = _render_summary(answer["summary"])
     elif answer["mode"] == "entity_groups":
@@ -348,6 +411,7 @@ def _page(vault_path: Path, duckdb_path: Path | None, values: dict[str, list[str
     escaped_mode = escape(str(answer["mode"]))
     escaped_entity = escape(str(answer.get("entity") or ""))
     escaped_warehouse = escape(str(answer.get("warehouse") or "memory"))
+    status_panel = _render_status_panel(status)
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -421,6 +485,60 @@ def _page(vault_path: Path, duckdb_path: Path | None, values: dict[str, list[str
       border-radius: 999px;
       padding: 3px 9px;
       background: #fff;
+    }}
+    .status-panel {{
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 14px;
+      margin-bottom: 16px;
+    }}
+    .status-head {{
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }}
+    .status-head h2 {{
+      margin: 0;
+      font-size: 17px;
+      font-weight: 650;
+      letter-spacing: 0;
+    }}
+    .status-head p {{
+      margin: 3px 0 0;
+      color: var(--muted);
+    }}
+    .status-badges {{
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }}
+    .status-grid {{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 8px;
+    }}
+    .stat {{
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px 10px;
+      background: #fbfcfd;
+      min-width: 0;
+    }}
+    .stat span {{
+      display: block;
+      color: var(--muted);
+      font-size: 12px;
+      overflow-wrap: anywhere;
+    }}
+    .stat strong {{
+      display: block;
+      margin-top: 2px;
+      font-size: 15px;
+      overflow-wrap: anywhere;
     }}
     .row {{
       border: 1px solid var(--line);
@@ -509,6 +627,7 @@ def _page(vault_path: Path, duckdb_path: Path | None, values: dict[str, list[str
       <span class="pill">entity: {escaped_entity or "none"}</span>
       <span class="pill">vault: {escape(str(vault_path))}</span>
     </div>
+    {status_panel}
     {content}
   </main>
 </body>
@@ -540,6 +659,12 @@ class ContextHandler(BaseHTTPRequestHandler):
                 return
             warehouse = _load_warehouse(self.vault_path)
             _json_response(self, warehouse_summary(warehouse))
+            return
+        if parsed.path == "/api/status":
+            _json_response(
+                self,
+                warehouse_status(self.vault_path, active_duckdb_path=self.duckdb_path),
+            )
             return
         if parsed.path == "/api/entities":
             if self.duckdb_path and dbt_warehouse.is_available(self.duckdb_path):
