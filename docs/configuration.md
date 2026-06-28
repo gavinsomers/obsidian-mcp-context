@@ -44,6 +44,9 @@ Clients = "company"
 Initiatives = "project"
 Assets = "asset"
 Calendars = "calendar"
+
+[doctor]
+lifecycle_metadata = "warn"
 ```
 
 ## Scan Settings
@@ -62,3 +65,9 @@ Calendars = "calendar"
 Folder mappings are case-insensitive on lookup. Values should be lowercase
 singular names when they represent entities, such as `client`, `asset`, or
 `initiative`.
+
+## Doctor Settings
+
+- `doctor.lifecycle_metadata`: controls lifecycle timestamp diagnostics. Allowed
+  values are `warn`, `ignore`, and `error`. Use `ignore` for existing personal
+  vaults that do not carry the synthetic lifecycle fields.

@@ -142,6 +142,38 @@ def _scan_inventory(vault_path: Path, config: VaultConfig) -> dict[str, object]:
     }
 
 
+def _record_lifecycle_diagnostic(
+    *,
+    mode: str,
+    warnings: list[str],
+    errors: list[str],
+    diagnostics: list[DiagnosticMessage],
+    code: DoctorCode,
+    message: str,
+    count: int,
+    sample: object,
+    include_samples: bool,
+) -> None:
+    if mode == "ignore":
+        return
+    severity = "error" if mode == "error" else "warning"
+    if severity == "error":
+        errors.append(message)
+    else:
+        warnings.append(message)
+    _diagnostic(
+        diagnostics,
+        code,
+        severity,
+        message,
+        details=_sample_details(
+            count,
+            sample,
+            include_samples=include_samples,
+        ),
+    )
+
+
 def run_doctor(options: DoctorOptions) -> dict[str, object]:
     warnings: list[str] = []
     errors: list[str] = []
@@ -320,33 +352,31 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         message = (
             f"{len(missing_lifecycle)} notes are missing one or more lifecycle timestamp fields."
         )
-        warnings.append(message)
-        _diagnostic(
-            diagnostics,
-            DoctorCode.MISSING_LIFECYCLE_METADATA,
-            "warning",
-            message,
-            details=_sample_details(
-                len(missing_lifecycle),
-                missing_lifecycle[:25],
-                include_samples=options.include_samples,
-            ),
+        _record_lifecycle_diagnostic(
+            mode=app_config.doctor_lifecycle_metadata,
+            warnings=warnings,
+            errors=errors,
+            diagnostics=diagnostics,
+            code=DoctorCode.MISSING_LIFECYCLE_METADATA,
+            message=message,
+            count=len(missing_lifecycle),
+            sample=missing_lifecycle[:25],
+            include_samples=options.include_samples,
         )
     if malformed_lifecycle:
         message = (
             f"{len(malformed_lifecycle)} lifecycle timestamp values are not ISO datetimes."
         )
-        warnings.append(message)
-        _diagnostic(
-            diagnostics,
-            DoctorCode.MALFORMED_LIFECYCLE_METADATA,
-            "warning",
-            message,
-            details=_sample_details(
-                len(malformed_lifecycle),
-                malformed_lifecycle[:25],
-                include_samples=options.include_samples,
-            ),
+        _record_lifecycle_diagnostic(
+            mode=app_config.doctor_lifecycle_metadata,
+            warnings=warnings,
+            errors=errors,
+            diagnostics=diagnostics,
+            code=DoctorCode.MALFORMED_LIFECYCLE_METADATA,
+            message=message,
+            count=len(malformed_lifecycle),
+            sample=malformed_lifecycle[:25],
+            include_samples=options.include_samples,
         )
 
     note_titles = {note_title(source_path).casefold() for source_path in markdown_files}
@@ -456,6 +486,9 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "source_extensions": list(vault_config.source_extensions),
             "folder_note_type_count": len(vault_config.folder_note_types or {}),
             "non_entity_note_types": list(vault_config.non_entity_note_types or ()),
+            "doctor": {
+                "lifecycle_metadata": app_config.doctor_lifecycle_metadata,
+            },
         },
         "parser": {
             "files": len(context.files),

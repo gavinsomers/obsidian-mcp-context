@@ -122,7 +122,16 @@ def test_doctor_cli_outputs_json(tmp_path: Path, capsys):
     vault.mkdir()
     (vault / "Note.md").write_text("# Note\n", encoding="utf-8")
 
-    result = main(["--vault", str(vault), "doctor", "--json"])
+    result = main(
+        [
+            "--vault",
+            str(vault),
+            "--config",
+            str(tmp_path / "missing-config.toml"),
+            "doctor",
+            "--json",
+        ]
+    )
     captured = capsys.readouterr()
 
     assert result == 0

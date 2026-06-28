@@ -14,6 +14,8 @@ The project uses semantic-ish versions:
 
 - Redacted `doctor` diagnostic samples by default and added
   `doctor --include-samples` for explicit debugging output.
+- Added configurable `doctor.lifecycle_metadata` handling with `warn`, `ignore`,
+  and `error` modes.
 
 ## [0.8.0] - 2026-06-28
 

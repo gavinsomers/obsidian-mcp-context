@@ -14,6 +14,7 @@ from obsidian_mcp_context.vault import (
 
 
 DEFAULT_CONFIG_PATH = Path(".obsidian-mcp-context.toml")
+DOCTOR_LIFECYCLE_METADATA_MODES = ("warn", "ignore", "error")
 
 
 @dataclass(frozen=True)
@@ -23,6 +24,7 @@ class AppConfig:
     source_extensions: tuple[str, ...] = DEFAULT_SOURCE_EXTENSIONS
     folder_note_types: dict[str, str] = field(default_factory=dict)
     non_entity_note_types: tuple[str, ...] = tuple(sorted(NON_ENTITY_NOTE_TYPES))
+    doctor_lifecycle_metadata: str = "warn"
     config_path: Path | None = None
     loaded: bool = False
 
@@ -45,6 +47,18 @@ def _string_mapping(value: object, field_name: str) -> dict[str, str]:
     return {key: item for key, item in value.items() if key and item}
 
 
+def _choice(value: object, field_name: str, allowed: tuple[str, ...], default: str) -> str:
+    if value is None:
+        return default
+    if not isinstance(value, str):
+        raise ValueError(f"{field_name} must be a string")
+    normalized = value.strip().lower()
+    if normalized not in allowed:
+        allowed_values = ", ".join(allowed)
+        raise ValueError(f"{field_name} must be one of: {allowed_values}")
+    return normalized
+
+
 def load_app_config(config_path: str | Path | None = None) -> AppConfig:
     path = Path(config_path).expanduser() if config_path else DEFAULT_CONFIG_PATH
     if not path.exists():
@@ -60,6 +74,9 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
     entities = data.get("entities", {})
     if not isinstance(entities, dict):
         raise ValueError("entities must be a TOML table")
+    doctor = data.get("doctor", {})
+    if not isinstance(doctor, dict):
+        raise ValueError("doctor must be a TOML table")
 
     include_globs = _string_tuple(scan.get("include_globs"), "scan.include_globs")
     exclude_globs = _string_tuple(scan.get("exclude_globs"), "scan.exclude_globs")
@@ -76,6 +93,12 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
     non_entity_note_types = _string_tuple(
         entities.get("non_entity_note_types"), "entities.non_entity_note_types"
     )
+    doctor_lifecycle_metadata = _choice(
+        doctor.get("lifecycle_metadata"),
+        "doctor.lifecycle_metadata",
+        DOCTOR_LIFECYCLE_METADATA_MODES,
+        "warn",
+    )
 
     return AppConfig(
         include_globs=include_globs or DEFAULT_INCLUDE_GLOBS,
@@ -83,6 +106,7 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
         source_extensions=source_extensions or DEFAULT_SOURCE_EXTENSIONS,
         folder_note_types=folder_note_types,
         non_entity_note_types=non_entity_note_types or tuple(sorted(NON_ENTITY_NOTE_TYPES)),
+        doctor_lifecycle_metadata=doctor_lifecycle_metadata,
         config_path=path,
         loaded=True,
     )
