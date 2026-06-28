@@ -232,6 +232,29 @@ Fetch the same status as JSON:
 curl http://localhost:8080/api/status
 ```
 
+The web service also exposes structured JSON endpoints over the dbt marts:
+
+```text
+/api/summary
+/api/status
+/api/entities?entity_type=project
+/api/projects
+/api/projects/{project_name}/context
+/api/projects/{project_name}/risks?status=open
+/api/projects/{project_name}/decisions?status=active
+/api/projects/{project_name}/open-loops
+/api/people
+/api/people/{person_name}/context
+/api/people/{person_name}/open-loops
+/api/companies
+/api/open-loops
+/api/risks?status=open
+/api/decisions?status=active
+```
+
+Project and person names in path segments should be URL encoded, for example
+`/api/projects/Project%20Atlas/context`.
+
 The Compose stack mounts `examples/synthetic-vault` read-only at `/vault`.
 Pipeline services write the working dbt warehouse to `var/obsidian.duckdb`.
 After successful dbt tests, they publish `var/obsidian-read.duckdb` as the

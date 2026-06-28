@@ -6,7 +6,7 @@ from html import escape
 import json
 from pathlib import Path
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
-from urllib.parse import parse_qs, urlparse
+from urllib.parse import parse_qs, unquote, urlparse
 
 from obsidian_mcp_context import dbt_warehouse
 from obsidian_mcp_context.security import validate_vault_path
@@ -22,6 +22,7 @@ from obsidian_mcp_context.warehouse import (
 
 
 DEFAULT_LIMIT = 25
+MAX_API_LIMIT = 500
 ENTITY_QUERY_TYPES = {
     "people": "person",
     "person": "person",
@@ -40,6 +41,30 @@ def _load_warehouse(vault_path: Path):
 def _first(values: dict[str, list[str]], key: str) -> str | None:
     value = values.get(key, [""])[0].strip()
     return value or None
+
+
+def _limit(values: dict[str, list[str]], default: int = DEFAULT_LIMIT) -> int:
+    try:
+        raw_limit = int(_first(values, "limit") or default)
+    except ValueError:
+        raw_limit = default
+    return max(1, min(raw_limit, MAX_API_LIMIT))
+
+
+def _result_response(result: object) -> dict[str, object]:
+    return {"result": result}
+
+
+def _dbt_error() -> dict[str, object]:
+    return {"error": "dbt warehouse is not available"}
+
+
+def _path_parts(path: str) -> list[str]:
+    return [unquote(part) for part in path.strip("/").split("/") if part]
+
+
+def _dbt_available(path: Path | None) -> bool:
+    return path is not None and dbt_warehouse.is_available(path)
 
 
 def _json_response(handler: BaseHTTPRequestHandler, value: object) -> None:
@@ -643,6 +668,7 @@ class ContextHandler(BaseHTTPRequestHandler):
     def do_GET(self) -> None:
         parsed = urlparse(self.path)
         values = parse_qs(parsed.query)
+        parts = _path_parts(parsed.path)
         warehouse = None
         if parsed.path == "/":
             _html_response(self, _page(self.vault_path, self.duckdb_path, values))
@@ -667,6 +693,155 @@ class ContextHandler(BaseHTTPRequestHandler):
                 warehouse_status(self.vault_path, active_duckdb_path=self.duckdb_path),
             )
             return
+        if parts == ["api", "projects"]:
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.projects(
+                        self.duckdb_path,
+                        limit=_limit(values, default=100),
+                    )
+                ),
+            )
+            return
+        if len(parts) == 4 and parts[:2] == ["api", "projects"]:
+            project = parts[2]
+            section = parts[3]
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            if section == "context":
+                result = default_context_service.project_context(
+                    self.duckdb_path,
+                    project=project,
+                    limit=_limit(values, default=50),
+                )
+            elif section == "risks":
+                result = default_context_service.risks(
+                    self.duckdb_path,
+                    entity=project,
+                    status=_first(values, "status"),
+                    limit=_limit(values, default=50),
+                )
+            elif section == "decisions":
+                result = default_context_service.decisions(
+                    self.duckdb_path,
+                    entity=project,
+                    status=_first(values, "status"),
+                    limit=_limit(values, default=50),
+                )
+            elif section == "open-loops":
+                result = default_context_service.open_loops(
+                    self.duckdb_path,
+                    entity=project,
+                    limit=_limit(values, default=50),
+                )
+            else:
+                _not_found(self)
+                return
+            _json_response(self, _result_response(result))
+            return
+        if parts == ["api", "people"]:
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.people(
+                        self.duckdb_path,
+                        limit=_limit(values, default=100),
+                    )
+                ),
+            )
+            return
+        if len(parts) == 4 and parts[:2] == ["api", "people"]:
+            person = parts[2]
+            section = parts[3]
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            if section == "context":
+                result = default_context_service.person_context(
+                    self.duckdb_path,
+                    person=person,
+                    limit=_limit(values, default=50),
+                )
+            elif section == "open-loops":
+                result = default_context_service.open_loops(
+                    self.duckdb_path,
+                    entity=person,
+                    limit=_limit(values, default=50),
+                )
+            else:
+                _not_found(self)
+                return
+            _json_response(self, _result_response(result))
+            return
+        if parts == ["api", "companies"]:
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.companies(
+                        self.duckdb_path,
+                        limit=_limit(values, default=100),
+                    )
+                ),
+            )
+            return
+        if parsed.path == "/api/open-loops":
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.open_loops(
+                        self.duckdb_path,
+                        entity=_first(values, "entity"),
+                        limit=_limit(values, default=50),
+                    )
+                ),
+            )
+            return
+        if parsed.path == "/api/decisions":
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.decisions(
+                        self.duckdb_path,
+                        entity=_first(values, "entity"),
+                        status=_first(values, "status"),
+                        limit=_limit(values, default=50),
+                    )
+                ),
+            )
+            return
+        if parsed.path == "/api/risks":
+            if not _dbt_available(self.duckdb_path):
+                _json_response(self, _dbt_error())
+                return
+            _json_response(
+                self,
+                _result_response(
+                    default_context_service.risks(
+                        self.duckdb_path,
+                        entity=_first(values, "entity"),
+                        status=_first(values, "status"),
+                        limit=_limit(values, default=50),
+                    )
+                ),
+            )
+            return
         if parsed.path == "/api/entities":
             if self.duckdb_path and dbt_warehouse.is_available(self.duckdb_path):
                 _json_response(
@@ -676,7 +851,7 @@ class ContextHandler(BaseHTTPRequestHandler):
                             self.duckdb_path,
                             entity_type=_first(values, "entity_type"),
                             text=_first(values, "text"),
-                            limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                            limit=_limit(values),
                         )
                     },
                 )
@@ -689,7 +864,7 @@ class ContextHandler(BaseHTTPRequestHandler):
                         warehouse,
                         entity_type=_first(values, "entity_type"),
                         text=_first(values, "text"),
-                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                        limit=_limit(values),
                     )
                 },
             )
@@ -707,7 +882,7 @@ class ContextHandler(BaseHTTPRequestHandler):
                         warehouse,
                         entity=entity,
                         text=_first(values, "text"),
-                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                        limit=_limit(values),
                     )
                 },
             )
@@ -722,7 +897,7 @@ class ContextHandler(BaseHTTPRequestHandler):
                         text=_first(values, "text"),
                         entity=_first(values, "entity"),
                         event_type=_first(values, "event_type"),
-                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                        limit=_limit(values),
                     )
                 },
             )
@@ -738,10 +913,10 @@ class ContextHandler(BaseHTTPRequestHandler):
             _json_response(
                 self,
                 {
-                    "result": dbt_warehouse.project_context(
+                    "result": default_context_service.project_context(
                         self.duckdb_path,
                         project=entity,
-                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                        limit=_limit(values),
                     )
                 },
             )
@@ -757,57 +932,10 @@ class ContextHandler(BaseHTTPRequestHandler):
             _json_response(
                 self,
                 {
-                    "result": dbt_warehouse.person_context(
+                    "result": default_context_service.person_context(
                         self.duckdb_path,
                         person=entity,
-                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
-                    )
-                },
-            )
-            return
-        if parsed.path == "/api/open-loops":
-            if not self.duckdb_path or not dbt_warehouse.is_available(self.duckdb_path):
-                _json_response(self, {"error": "dbt warehouse is not available"})
-                return
-            _json_response(
-                self,
-                {
-                    "result": dbt_warehouse.list_open_loops(
-                        self.duckdb_path,
-                        entity=_first(values, "entity"),
-                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
-                    )
-                },
-            )
-            return
-        if parsed.path == "/api/decisions":
-            if not self.duckdb_path or not dbt_warehouse.is_available(self.duckdb_path):
-                _json_response(self, {"error": "dbt warehouse is not available"})
-                return
-            _json_response(
-                self,
-                {
-                    "result": dbt_warehouse.list_decisions(
-                        self.duckdb_path,
-                        entity=_first(values, "entity"),
-                        status=_first(values, "status"),
-                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
-                    )
-                },
-            )
-            return
-        if parsed.path == "/api/risks":
-            if not self.duckdb_path or not dbt_warehouse.is_available(self.duckdb_path):
-                _json_response(self, {"error": "dbt warehouse is not available"})
-                return
-            _json_response(
-                self,
-                {
-                    "result": dbt_warehouse.list_risks(
-                        self.duckdb_path,
-                        entity=_first(values, "entity"),
-                        status=_first(values, "status"),
-                        limit=int(_first(values, "limit") or DEFAULT_LIMIT),
+                        limit=_limit(values),
                     )
                 },
             )

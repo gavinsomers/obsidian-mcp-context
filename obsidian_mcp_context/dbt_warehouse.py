@@ -172,6 +172,72 @@ def list_entities(
     return _normalize_rows(rows)
 
 
+def list_projects(
+    duckdb_path: str | Path,
+    limit: int = 100,
+) -> list[dict[str, object]]:
+    with connect(duckdb_path) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                """
+                select
+                  project_id as entity_id,
+                  'project' as entity_type,
+                  name
+                from dim_projects
+                order by name
+                limit ?
+                """,
+                (_bounded_limit(limit),),
+            )
+        )
+    return _normalize_rows(rows)
+
+
+def list_people(
+    duckdb_path: str | Path,
+    limit: int = 100,
+) -> list[dict[str, object]]:
+    with connect(duckdb_path) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                """
+                select
+                  person_id as entity_id,
+                  'person' as entity_type,
+                  name
+                from dim_people
+                order by name
+                limit ?
+                """,
+                (_bounded_limit(limit),),
+            )
+        )
+    return _normalize_rows(rows)
+
+
+def list_companies(
+    duckdb_path: str | Path,
+    limit: int = 100,
+) -> list[dict[str, object]]:
+    with connect(duckdb_path) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                """
+                select
+                  company_id as entity_id,
+                  'company' as entity_type,
+                  name
+                from dim_companies
+                order by name
+                limit ?
+                """,
+                (_bounded_limit(limit),),
+            )
+        )
+    return _normalize_rows(rows)
+
+
 def project_context(
     duckdb_path: str | Path,
     project: str,
@@ -442,6 +508,7 @@ def _list_state_facts(
                 select
                   {id_column} as row_id,
                   {date_column} as event_date,
+                  {status_column} as {event_prefix}_status,
                   '{event_prefix}_' || {status_column} as event_type,
                   source_path,
                   null as start_line,
