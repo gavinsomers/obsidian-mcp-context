@@ -45,6 +45,8 @@ class ContextCache:
             include_globs=config.include_globs,
             exclude_globs=config.exclude_globs,
             source_extensions=config.source_extensions,
+            folder_note_types=config.folder_note_types,
+            non_entity_note_types=config.non_entity_note_types,
         )
         files = scan_vault(resolved_config)
         signature = tuple(
@@ -60,6 +62,8 @@ class ContextCache:
             resolved_config.include_globs,
             resolved_config.exclude_globs,
             resolved_config.source_extensions,
+            tuple(sorted((resolved_config.folder_note_types or {}).items())),
+            resolved_config.non_entity_note_types,
         )
         entry = self._entries.get(key)
         if entry and entry.signature == signature:

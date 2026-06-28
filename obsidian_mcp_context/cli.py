@@ -4,6 +4,7 @@ import argparse
 import json
 from pathlib import Path
 
+from obsidian_mcp_context.config import load_app_config, vault_config_from_app_config
 from obsidian_mcp_context.doctor import (
     DoctorOptions,
     exit_code,
@@ -12,7 +13,7 @@ from obsidian_mcp_context.doctor import (
     run_doctor,
 )
 from obsidian_mcp_context.query import list_notes, list_tasks, search_blocks
-from obsidian_mcp_context.vault import VaultConfig, build_context
+from obsidian_mcp_context.vault import build_context
 from obsidian_mcp_context.warehouse import (
     agent_context,
     build_warehouse,
@@ -32,6 +33,10 @@ def build_parser() -> argparse.ArgumentParser:
         description="Inspect generic context extracted from an Obsidian vault.",
     )
     parser.add_argument("--vault", required=True, help="Path to the Obsidian vault.")
+    parser.add_argument(
+        "--config",
+        help="Optional .obsidian-mcp-context.toml path for local scan and entity settings.",
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     notes = subparsers.add_parser("notes", help="List parsed notes.")
@@ -94,12 +99,14 @@ def main(argv: list[str] | None = None) -> int:
                 vault_path=Path(args.vault),
                 duckdb_path=Path(args.duckdb) if args.duckdb else None,
                 strict=args.strict,
+                config_path=Path(args.config) if args.config else None,
             )
         )
         print(format_json(report) if args.json else format_human(report))
         return exit_code(report, strict=args.strict)
 
-    context = build_context(VaultConfig(vault_path=Path(args.vault)))
+    app_config = load_app_config(Path(args.config) if args.config else None)
+    context = build_context(vault_config_from_app_config(Path(args.vault), app_config))
 
     if args.command == "notes":
         _print_json(list_notes(context, limit=args.limit))

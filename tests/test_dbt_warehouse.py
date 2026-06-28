@@ -599,3 +599,55 @@ def test_dbt_pipeline_materializes_slug_colliding_entity_names(tmp_path: Path):
     assert {entity["name"] for entity in entities} == {"Acme Renewal", "Acme-Renewal"}
     assert len(entity_ids) == 2
     assert all(entity_id.startswith("client:acme-renewal:") for entity_id in entity_ids)
+
+
+def test_dbt_pipeline_uses_local_config_entity_rules(tmp_path: Path):
+    vault_path = tmp_path / "vault"
+    duckdb_path = tmp_path / "obsidian.duckdb"
+    config_path = tmp_path / "config.toml"
+    (vault_path / "Clients").mkdir(parents=True)
+    (vault_path / "Calendars").mkdir()
+    (vault_path / "Clients" / "Acme.md").write_text(
+        "# Acme\n\nReferences [[2026 Calendar]].\n",
+        encoding="utf-8",
+    )
+    (vault_path / "Calendars" / "2026 Calendar.md").write_text(
+        "# 2026 Calendar\n\nOCR calendar context.\n",
+        encoding="utf-8",
+    )
+    config_path.write_text(
+        """
+[entities]
+non_entity_note_types = ["daily", "meeting", "note", "research", "calendar"]
+
+[entities.folders]
+Clients = "company"
+Calendars = "calendar"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    ingest_vault(vault_path, duckdb_path, config_path=config_path)
+    env = os.environ | {"DUCKDB_PATH": str(duckdb_path)}
+    subprocess.run(
+        [
+            sys.executable,
+            "-m",
+            "dbt.cli.main",
+            "run",
+            "--profiles-dir",
+            "dbt",
+            "--project-dir",
+            ".",
+            "--quiet",
+        ],
+        cwd=Path(__file__).resolve().parents[1],
+        env=env,
+        check=True,
+    )
+
+    entities = dbt_warehouse.list_entities(duckdb_path, limit=20)
+
+    assert {(entity["entity_type"], entity["name"]) for entity in entities} == {
+        ("company", "Acme")
+    }

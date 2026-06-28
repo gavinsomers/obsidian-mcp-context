@@ -4,6 +4,7 @@ from dataclasses import asdict, dataclass
 from fnmatch import fnmatch
 from pathlib import Path, PurePosixPath
 
+from obsidian_mcp_context.domain import note_type
 from obsidian_mcp_context.parser import (
     ParsedBlock,
     ParsedFile,
@@ -32,17 +33,21 @@ class VaultConfig:
     include_globs: tuple[str, ...] = DEFAULT_INCLUDE_GLOBS
     exclude_globs: tuple[str, ...] = DEFAULT_EXCLUDE_GLOBS
     source_extensions: tuple[str, ...] = DEFAULT_SOURCE_EXTENSIONS
+    folder_note_types: dict[str, str] | None = None
+    non_entity_note_types: tuple[str, ...] | None = None
 
 
 @dataclass(frozen=True)
 class SourceFile:
     source_path: str
     absolute_path: Path
+    note_type: str
 
 
 @dataclass(frozen=True)
 class VaultContext:
     vault_path: Path
+    non_entity_note_types: tuple[str, ...] | None
     files: list[SourceFile]
     blocks: list[ParsedBlock]
     tasks: list[ParsedTask]
@@ -53,6 +58,7 @@ class VaultContext:
     def to_dict(self) -> dict[str, object]:
         return {
             "vault_path": str(self.vault_path),
+            "non_entity_note_types": list(self.non_entity_note_types or ()),
             "files": [asdict(item) | {"absolute_path": str(item.absolute_path)} for item in self.files],
             "blocks": [asdict(item) for item in self.blocks],
             "tasks": [asdict(item) for item in self.tasks],
@@ -110,7 +116,13 @@ def scan_vault(config: VaultConfig) -> list[SourceFile]:
             continue
         if is_excluded(source_path, config.exclude_globs):
             continue
-        files.append(SourceFile(source_path=source_path, absolute_path=path))
+        files.append(
+            SourceFile(
+                source_path=source_path,
+                absolute_path=path,
+                note_type=note_type(source_path, config.folder_note_types),
+            )
+        )
 
     return files
 
@@ -142,6 +154,7 @@ def build_context(config: VaultConfig) -> VaultContext:
 
     return VaultContext(
         vault_path=validate_vault_path(config.vault_path),
+        non_entity_note_types=config.non_entity_note_types,
         files=files,
         blocks=blocks,
         tasks=tasks,

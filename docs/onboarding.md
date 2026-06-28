@@ -25,6 +25,9 @@ local sensitive strings to `.privacy-banned-terms.local`. That file should be
 ignored locally through `.git/info/exclude`. Run `scripts/privacy_check.sh`
 before committing changes.
 
+Use `.obsidian-mcp-context.toml` for local scan excludes and folder-to-entity
+overrides. Keep that file ignored locally as well. See `docs/configuration.md`.
+
 ## 2. Inspect Parsed Context
 
 ```bash
