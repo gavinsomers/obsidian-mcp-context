@@ -20,8 +20,8 @@ model; this server provides the vault tools.
 
 ## How The Pipeline Works
 
-For a higher-level view of the runtime services, DuckDB/dbt pipeline, and
-simulation mode, see [docs/architecture.md](docs/architecture.md).
+For a higher-level view of the runtime services and DuckDB/dbt pipeline, see
+[docs/architecture.md](docs/architecture.md).
 For the generic entity model, see [docs/entity-contract.md](docs/entity-contract.md).
 For the bring-your-own-vault workflow, see [docs/onboarding.md](docs/onboarding.md).
 For local scan and entity overrides, see [docs/configuration.md](docs/configuration.md).
@@ -137,164 +137,9 @@ Use the generated vault with the same pipeline commands:
   --duckdb var/generated.duckdb
 ```
 
-## Simulate A Living Vault With Airflow
-
-The simulation profile models a generated vault being populated over time. The
-full seed vault is generated once, then a live vault receives only notes whose
-virtual `created_at` date has arrived.
-
-By default, Airflow runs the DAG once per minute. Each run advances the virtual
-clock by 12 days, which is equivalent to 1 virtual day every 5 seconds:
-
-```text
-60 seconds per Airflow run / 5 seconds per virtual day = 12 virtual days
-```
-
-Start the simulation stack:
-
-```bash
-docker compose --profile simulation up --build
-```
-
-Run it in the background:
-
-```bash
-docker compose --profile simulation up --build -d
-```
-
-Services:
-
-| Service | URL |
-| --- | --- |
-| Airflow | `http://localhost:8082` |
-| Live vault file browser | `http://localhost:8083` |
-| Live vault web UI | `http://localhost:8084` |
-| Live vault MCP HTTP endpoint | `http://localhost:8001/mcp` |
-
-Airflow credentials are `admin` / `admin` for the local simulation container.
-The MCP endpoint is a machine endpoint for MCP clients, not a browser page. A
-normal browser request to `/mcp` may show a protocol/streaming error even when
-the service is healthy.
-
-The Airflow DAG is `simulated_daily_obsidian_pipeline` and runs:
-
-```text
-ensure seed vault
-  -> advance virtual days into /live-vault
-  -> ingest /live-vault into DuckDB
-  -> dbt run
-  -> dbt test
-```
-
-Useful simulation environment variables:
-
-```bash
-SIM_PROFILE=small                  # small, medium, large
-SIM_SEED=42                        # deterministic generated world
-SIM_VIRTUAL_DAYS_PER_RUN=12        # 12 days/minute = 5 seconds/day
-```
-
-Run one manual advance without Airflow:
-
-```bash
-docker compose --profile simulation run --rm seed-vault
-docker compose --profile simulation run --rm vault-simulator
-```
-
-Reset Docker simulation state:
-
-```bash
-docker compose --profile simulation down -v
-```
-
-## Docker Compose
-
-Build and run the local stack:
-
-```bash
-docker compose up --build
-```
-
-Run it in the background:
-
-```bash
-docker compose up --build -d
-```
-
-Services:
-
-- Web UI: `http://localhost:8080`
-- Synthetic vault file browser: `http://localhost:8081`
-- MCP streamable HTTP endpoint: `http://localhost:8000/mcp`
-
-Use the web UI and file browser in a normal browser. Use the MCP endpoint only
-from an MCP-aware client.
-
-The web UI includes a pipeline status panel. It reports whether the app is
-reading from the stable DuckDB snapshot, whether writer/read warehouses are
-present, the current simulation virtual date when available, and row counts for
-key dbt tables.
-
-Fetch the same status as JSON:
-
-```bash
-curl http://localhost:8080/api/status
-```
-
-The web service also exposes structured JSON endpoints over the dbt marts:
-
-```text
-/api/summary
-/api/status
-/api/entity-types
-/api/entities?entity_type=project
-/api/entities/{entity_type}
-/api/entities/{entity_type}/{entity_name}
-/api/entities/{entity_type}/{entity_name}/context
-/api/entities/{entity_type}/{entity_name}/events
-/api/entities/{entity_type}/{entity_name}/relationships
-/api/entities/{entity_type}/{entity_name}/states?status=open
-/api/entities/{entity_type}/{entity_name}/open-loops
-/api/events?entity_type=project&entity=Project%20Atlas
-/api/states?entity_type=risk&status=open
-/api/projects
-/api/projects/{project_name}/context
-/api/projects/{project_name}/risks?status=open
-/api/projects/{project_name}/decisions?status=active
-/api/projects/{project_name}/open-loops
-/api/people
-/api/people/{person_name}/context
-/api/people/{person_name}/open-loops
-/api/companies
-/api/open-loops
-/api/risks?status=open
-/api/decisions?status=active
-```
-
-Entity names in path segments should be URL encoded, for example
-`/api/entities/project/Project%20Atlas/context`. Typed project and person
-routes remain convenience aliases over the generic entity model.
-
-The Compose stack mounts `examples/synthetic-vault` read-only at `/vault`.
-Pipeline services write the working dbt warehouse to `var/obsidian.duckdb`.
-After successful dbt tests, they publish `var/obsidian-read.duckdb` as the
-stable read snapshot used by the web UI and MCP containers.
-
-The `vault` service is an nginx file browser for the synthetic vault contents.
-It is not the Obsidian desktop app; the vault remains plain Markdown files so it
-can be mounted into containers and opened locally in Obsidian if needed.
-
-Useful local Docker commands:
-
-```bash
-docker compose ps
-docker compose logs -f
-docker compose down
-```
-
 ## DuckDB And dbt Pipeline
 
-The Docker pipeline can materialize parsed vault context into DuckDB staging
+The local pipeline can materialize parsed vault context into DuckDB staging
 tables and then run dbt models for deterministic dimensions, facts, and marts.
 
 The flow is:
@@ -336,51 +181,33 @@ rows:
   `fact_decisions`, `fact_risks`, `mart_open_loops`, `mart_person_context`,
   and `mart_project_context`.
 
-When a dbt-built DuckDB warehouse is available at `DUCKDB_PATH` or
-`/warehouse/obsidian.duckdb`, the web UI and MCP warehouse tools query these
-persisted marts directly. If no dbt warehouse is available, they fall back to
-the smaller in-memory warehouse built from the vault files.
+When a dbt-built DuckDB warehouse is available at `DUCKDB_PATH`, the web UI and
+MCP warehouse tools query these persisted marts directly. If no dbt warehouse is
+available, they fall back to the smaller in-memory warehouse built from the vault
+files.
 
-In Docker, Airflow and one-off pipeline commands write the primary warehouse at
-`/warehouse/obsidian.duckdb`, then atomically publish a successful tested copy
-to `/warehouse/obsidian-read.duckdb`. The web UI and MCP containers read that
-snapshot by default, which keeps local queries stable while the next pipeline
-run is rebuilding the primary DuckDB file.
-
-Run only ingest:
-
-```bash
-docker compose --profile pipeline run --rm ingest
-```
-
-Run dbt against the ingested DuckDB file:
-
-```bash
-docker compose --profile pipeline run --rm dbt
-```
-
-Run the full pipeline and checks:
-
-```bash
-docker compose --profile pipeline run --rm pipeline
-```
-
-That runs ingest, `dbt run`, `dbt test`, pytest, compile checks, and a warehouse
-summary smoke test.
-
-The primary DuckDB file is written to `var/obsidian.duckdb`. The tested read
-snapshot is written to `var/obsidian-read.duckdb`. Both are ignored by git.
-
-Local equivalents:
+Run ingest:
 
 ```bash
 .venv/bin/obsidian-mcp-context-ingest \
   --vault examples/synthetic-vault \
   --duckdb var/obsidian.duckdb
+```
 
+Run dbt:
+
+```bash
 DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt run --profiles-dir dbt
 DUCKDB_PATH=var/obsidian.duckdb .venv/bin/dbt test --profiles-dir dbt
 ```
+
+Run the Python pipeline report:
+
+```bash
+.venv/bin/obsidian-mcp-context pipeline run --profile sample
+```
+
+Runtime artifacts under `var/` are ignored by git.
 
 ## Use Your Own Obsidian Vault
 
@@ -435,8 +262,8 @@ OBSIDIAN_MCP_ALLOWED_ROOTS=/home/gavman/notes \
   .venv/bin/obsidian-mcp-context-mcp --transport streamable-http --host 127.0.0.1 --port 8000
 ```
 
-The Docker web and MCP services set this automatically to their mounted vault
-paths.
+Set this environment variable when running the MCP server in HTTP mode against
+local vault paths.
 
 Available tools:
 
