@@ -19,6 +19,23 @@ diagnostic samples by default. Aggregate counts remain in the report. For
 controlled synthetic-vault debugging, pass `doctor --include-samples` to include
 the detailed samples.
 
+For private local remediation, `doctor` can also write unresolved wikilink
+targets to an explicit JSON export:
+
+```bash
+mkdir -p var
+.venv/bin/obsidian-mcp-context \
+  --vault /absolute/path/to/vault \
+  --config .obsidian-mcp-context.toml \
+  doctor \
+  --export-unresolved var/unresolved-links.json
+```
+
+The export file may contain private target names from the vault. Keep it local,
+write it under an ignored path such as `var/`, and do not commit or paste it into
+PRs, issues, docs, or release notes. Source note paths are omitted from the
+export unless `doctor --include-samples` is also passed.
+
 ## Example
 
 ```toml

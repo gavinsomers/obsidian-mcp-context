@@ -14,6 +14,8 @@ The project uses semantic-ish versions:
 
 - Added privacy-safe `doctor` reason buckets for unresolved path-like wikilinks,
   reported as aggregate counts without exposing raw targets.
+- Added an opt-in local-private `doctor --export-unresolved` JSON export for
+  unresolved wikilink remediation.
 
 ## [0.9.0] - 2026-06-28
 

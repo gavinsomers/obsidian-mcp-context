@@ -42,6 +42,7 @@ class DoctorOptions:
     strict: bool = False
     config_path: Path | None = None
     include_samples: bool = False
+    export_unresolved_path: Path | None = None
 
 
 class DoctorCode(str, Enum):
@@ -58,6 +59,7 @@ class DoctorCode(str, Enum):
     WAREHOUSE_BUILD_FAILED = "warehouse_build_failed"
     WAREHOUSE_MISSING = "warehouse_missing"
     WAREHOUSE_INCOMPLETE = "warehouse_incomplete"
+    UNRESOLVED_EXPORT_FAILED = "unresolved_export_failed"
 
 
 @dataclass(frozen=True)
@@ -223,47 +225,112 @@ def _basename_stem_key(value: str) -> str:
     return name[: -len(suffix)].casefold() if suffix else name.casefold()
 
 
-def _classify_path_like_unresolved_targets(
-    unresolved: list[str], inventory: dict[str, object]
-) -> dict[str, int]:
+def _path_like_reason_inventory(inventory: dict[str, object]) -> dict[str, set[str]]:
     markdown_files = [str(item) for item in inventory["markdown_files"]]
     ignored_files = [str(item) for item in inventory["ignored_files"]]
     excluded_files = [str(item) for item in inventory["excluded_files"]]
     unsupported_files = [str(item) for item in inventory["unsupported_files"]]
 
-    scanned_paths = {item.casefold() for item in markdown_files}
-    ignored_paths = {item.casefold() for item in ignored_files}
-    excluded_paths = {item.casefold() for item in excluded_files}
-    unsupported_paths = {item.casefold() for item in unsupported_files}
-    unsupported_stems = {_path_stem_key(item) for item in unsupported_files}
-    scanned_basenames = {_basename_stem_key(item) for item in markdown_files}
+    return {
+        "scanned_paths": {item.casefold() for item in markdown_files},
+        "ignored_paths": {item.casefold() for item in ignored_files},
+        "excluded_paths": {item.casefold() for item in excluded_files},
+        "unsupported_paths": {item.casefold() for item in unsupported_files},
+        "unsupported_stems": {_path_stem_key(item) for item in unsupported_files},
+        "scanned_basenames": {_basename_stem_key(item) for item in markdown_files},
+    }
+
+
+def _path_like_unresolved_reason(
+    target: str, reason_inventory: dict[str, set[str]]
+) -> str:
+    path_target = _path_like_resolution_target(target)
+    if not path_target:
+        return "no_candidate_found"
+    explicit_path = target.split("#", 1)[0].split("^", 1)[0].strip().strip("/")
+    markdown_path = _path_with_markdown_extension(path_target)
+    exact_key = explicit_path.casefold()
+    markdown_key = markdown_path.casefold()
+    target_stem = _path_stem_key(explicit_path)
+
+    if (
+        exact_key in reason_inventory["excluded_paths"]
+        or markdown_key in reason_inventory["excluded_paths"]
+    ):
+        return "excluded_path"
+    if (
+        exact_key in reason_inventory["unsupported_paths"]
+        or target_stem in reason_inventory["unsupported_stems"]
+    ):
+        return "unsupported_extension"
+    if (
+        markdown_key in reason_inventory["ignored_paths"]
+        and markdown_key not in reason_inventory["scanned_paths"]
+    ):
+        return "missing_extension_candidate"
+    if _basename_stem_key(markdown_path) in reason_inventory["scanned_basenames"]:
+        return "basename_exists_elsewhere"
+    return "no_candidate_found"
+
+
+def _classify_path_like_unresolved_targets(
+    unresolved: list[str], inventory: dict[str, object]
+) -> dict[str, int]:
+    reason_inventory = _path_like_reason_inventory(inventory)
 
     reasons: Counter[str] = Counter()
     for target in unresolved:
         if _link_target_shape(target) != "path_like":
             continue
-        path_target = _path_like_resolution_target(target)
-        if not path_target:
-            reasons["no_candidate_found"] += 1
-            continue
-        explicit_path = target.split("#", 1)[0].split("^", 1)[0].strip().strip("/")
-        markdown_path = _path_with_markdown_extension(path_target)
-        exact_key = explicit_path.casefold()
-        markdown_key = markdown_path.casefold()
-        target_stem = _path_stem_key(explicit_path)
-
-        if exact_key in excluded_paths or markdown_key in excluded_paths:
-            reasons["excluded_path"] += 1
-        elif exact_key in unsupported_paths or target_stem in unsupported_stems:
-            reasons["unsupported_extension"] += 1
-        elif markdown_key in ignored_paths and markdown_key not in scanned_paths:
-            reasons["missing_extension_candidate"] += 1
-        elif _basename_stem_key(markdown_path) in scanned_basenames:
-            reasons["basename_exists_elsewhere"] += 1
-        else:
-            reasons["no_candidate_found"] += 1
+        reasons[_path_like_unresolved_reason(target, reason_inventory)] += 1
 
     return dict(sorted(reasons.items()))
+
+
+def _safe_export_path(path: Path) -> Path:
+    export_path = path.expanduser()
+    if not export_path.is_absolute():
+        export_path = Path.cwd() / export_path
+    resolved = export_path.resolve()
+    cwd = Path.cwd().resolve()
+    try:
+        relative = resolved.relative_to(cwd)
+    except ValueError:
+        return resolved
+    if relative.parts and relative.parts[0] == "var":
+        return resolved
+    raise ValueError(
+        "Unresolved-link exports may contain private target names; write them "
+        "outside the repository or under the ignored var/ directory."
+    )
+
+
+def _write_unresolved_export(
+    *,
+    path: Path,
+    unresolved_targets: list[dict[str, object]],
+    include_samples: bool,
+) -> dict[str, object]:
+    export_path = _safe_export_path(path)
+    export_path.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        "privacy": {
+            "contains_private_targets": True,
+            "contains_source_paths": include_samples,
+            "intended_for_local_use_only": True,
+        },
+        "unresolved_target_count": len(unresolved_targets),
+        "unresolved_targets": unresolved_targets,
+    }
+    export_path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    return {
+        "written": True,
+        "target_count": len(unresolved_targets),
+        "path": str(export_path),
+    }
 
 
 def _scan_inventory(vault_path: Path, config: VaultConfig) -> dict[str, object]:
@@ -540,16 +607,80 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
                 first_block_text_by_source.get(source_file.source_path),
             )
         )
-    unresolved = [
-        link.link_target
+    unresolved_links = [
+        link
         for link in context.links
         if _link_resolution_key(link.link_target) not in resolvable_link_targets
     ]
+    unresolved = [link.link_target for link in unresolved_links]
     unresolved_counts = Counter(unresolved)
+    unresolved_sources: dict[str, set[str]] = {}
+    for link in unresolved_links:
+        unresolved_sources.setdefault(link.link_target, set()).add(link.source_path)
     unresolved_shapes = _shape_counts(unresolved)
     unresolved_path_like_reasons = _classify_path_like_unresolved_targets(
         unresolved, inventory
     )
+    path_like_reason_inventory = _path_like_reason_inventory(inventory)
+    unresolved_export_targets: list[dict[str, object]] = []
+    for target, count in unresolved_counts.most_common():
+        target_shape = _link_target_shape(target)
+        row: dict[str, object] = {
+            "target": target,
+            "target_shape": target_shape,
+            "reason": (
+                _path_like_unresolved_reason(target, path_like_reason_inventory)
+                if target_shape == "path_like"
+                else ""
+            ),
+            "count": count,
+            "source_count": len(unresolved_sources.get(target, set())),
+        }
+        if options.include_samples:
+            row["source_paths"] = sorted(unresolved_sources.get(target, set()))
+        unresolved_export_targets.append(row)
+    unresolved_export: dict[str, object] = {
+        "requested": options.export_unresolved_path is not None,
+        "written": False,
+    }
+    if options.export_unresolved_path is not None:
+        try:
+            unresolved_export = {
+                "requested": True,
+                **_write_unresolved_export(
+                    path=options.export_unresolved_path,
+                    unresolved_targets=unresolved_export_targets,
+                    include_samples=options.include_samples,
+                ),
+            }
+        except OSError as exc:
+            message = f"Failed to write unresolved wikilink export: {exc}"
+            errors.append(message)
+            _diagnostic(
+                diagnostics,
+                DoctorCode.UNRESOLVED_EXPORT_FAILED,
+                "error",
+                message,
+            )
+            unresolved_export = {
+                "requested": True,
+                "written": False,
+                "error": str(exc),
+            }
+        except ValueError as exc:
+            message = str(exc)
+            errors.append(message)
+            _diagnostic(
+                diagnostics,
+                DoctorCode.UNRESOLVED_EXPORT_FAILED,
+                "error",
+                message,
+            )
+            unresolved_export = {
+                "requested": True,
+                "written": False,
+                "error": message,
+            }
     if unresolved:
         message = f"{len(unresolved)} wikilinks do not resolve to scanned note titles."
         unresolved_details = _sample_details(
@@ -699,6 +830,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "unresolved_wikilinks": len(unresolved),
             "unresolved_target_shapes": unresolved_shapes,
             "unresolved_path_like_reasons": unresolved_path_like_reasons,
+            "unresolved_export": unresolved_export,
             "top_unresolved_targets": [
                 {"target": target, "count": count}
                 for target, count in unresolved_counts.most_common(10)
