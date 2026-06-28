@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+import logging
 import os
 from pathlib import Path
 
@@ -19,6 +20,14 @@ from obsidian_mcp_context.warehouse import (
     entity_timeline,
     list_entities,
     warehouse_summary,
+)
+
+
+LOGGER = logging.getLogger(__name__)
+FALLBACK_WARNING = (
+    "No valid DuckDB/dbt warehouse found; falling back to direct parser "
+    "diagnostics. Build the warehouse with obsidian-mcp-context-ingest and dbt "
+    "for normal modeled query serving."
 )
 
 
@@ -166,8 +175,12 @@ class ContextService:
     ) -> dict[str, object]:
         if dbt_path := self.dbt_path(duckdb_path):
             return dbt_warehouse.summary(dbt_path)
+        LOGGER.warning("%s", FALLBACK_WARNING)
         warehouse = build_warehouse(self.context(vault_path))
-        return warehouse_summary(warehouse)
+        summary = warehouse_summary(warehouse)
+        summary["warning"] = FALLBACK_WARNING
+        summary["warehouse"] = "in_memory_diagnostic"
+        return summary
 
     def list_entities(
         self,
@@ -184,6 +197,7 @@ class ContextService:
                 text=text,
                 limit=limit,
             )
+        LOGGER.warning("%s", FALLBACK_WARNING)
         warehouse = build_warehouse(self.context(vault_path))
         return list_entities(warehouse, entity_type=entity_type, text=text, limit=limit)
 
@@ -316,6 +330,7 @@ class ContextService:
                     person=str(entity_row["name"]),
                     limit=limit,
                 )
+        LOGGER.warning("%s", FALLBACK_WARNING)
         warehouse = build_warehouse(self.context(vault_path))
         return entity_timeline(warehouse, entity=entity, text=text, limit=limit)
 
@@ -349,6 +364,7 @@ class ContextService:
                     entity=entity,
                     limit=limit,
                 )
+        LOGGER.warning("%s", FALLBACK_WARNING)
         warehouse = build_warehouse(self.context(vault_path))
         return agent_context(
             warehouse,
