@@ -19,6 +19,9 @@ The project uses semantic-ish versions:
   vault file changes.
 - Added formal web API endpoints for projects, people, companies, risks,
   decisions, and open loops over dbt marts.
+- Added generic entity dbt marts, API routes, and MCP tools for entity types,
+  relationships, states, events, context, and open loops while preserving typed
+  project/person/risk/decision compatibility surfaces.
 
 ## [0.5.1] - 2026-06-28
 

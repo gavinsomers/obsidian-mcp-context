@@ -240,7 +240,17 @@ The web service also exposes structured JSON endpoints over the dbt marts:
 ```text
 /api/summary
 /api/status
+/api/entity-types
 /api/entities?entity_type=project
+/api/entities/{entity_type}
+/api/entities/{entity_type}/{entity_name}
+/api/entities/{entity_type}/{entity_name}/context
+/api/entities/{entity_type}/{entity_name}/events
+/api/entities/{entity_type}/{entity_name}/relationships
+/api/entities/{entity_type}/{entity_name}/states?status=open
+/api/entities/{entity_type}/{entity_name}/open-loops
+/api/events?entity_type=project&entity=Project%20Atlas
+/api/states?entity_type=risk&status=open
 /api/projects
 /api/projects/{project_name}/context
 /api/projects/{project_name}/risks?status=open
@@ -255,8 +265,9 @@ The web service also exposes structured JSON endpoints over the dbt marts:
 /api/decisions?status=active
 ```
 
-Project and person names in path segments should be URL encoded, for example
-`/api/projects/Project%20Atlas/context`.
+Entity names in path segments should be URL encoded, for example
+`/api/entities/project/Project%20Atlas/context`. Typed project and person
+routes remain convenience aliases over the generic entity model.
 
 The Compose stack mounts `examples/synthetic-vault` read-only at `/vault`.
 Pipeline services write the working dbt warehouse to `var/obsidian.duckdb`.
@@ -289,9 +300,12 @@ examples/synthetic-vault
   -> dbt run
   -> stg_obsidian_* staging views
   -> int_obsidian_* intermediate models
-  -> dim_notes, dim_entities, dim_people, dim_companies, dim_projects
-  -> fact_blocks, fact_tasks, fact_links, fact_tags, fact_mentions, fact_decisions, fact_risks
-  -> mart_timeline, mart_open_loops, mart_person_context, mart_project_context
+  -> dim_notes, dim_entities, dim_entity_types, dim_people, dim_companies, dim_projects
+  -> fact_blocks, fact_tasks, fact_links, fact_tags, fact_mentions
+  -> fact_entity_relationships, fact_entity_states, fact_entity_events
+  -> fact_decisions, fact_risks
+  -> mart_timeline, mart_entity_context, mart_entity_open_loops
+  -> mart_open_loops, mart_person_context, mart_project_context
   -> dbt test
 ```
 
@@ -309,9 +323,12 @@ calendar OCR, Gmail, or CRM exports are introduced. Instead, dbt derives richer
 Obsidian marts from deterministic note types, links, tasks, tags, and timeline
 rows:
 
-- `dim_people`, `dim_companies`, `dim_projects`
-- `fact_mentions`, `fact_decisions`, `fact_risks`
-- `mart_open_loops`, `mart_person_context`, `mart_project_context`
+- Canonical generic tables: `dim_entity_types`, `dim_entities`,
+  `fact_entity_relationships`, `fact_entity_states`, `fact_entity_events`,
+  `mart_entity_context`, and `mart_entity_open_loops`.
+- Compatibility typed marts: `dim_people`, `dim_companies`, `dim_projects`,
+  `fact_decisions`, `fact_risks`, `mart_open_loops`, `mart_person_context`,
+  and `mart_project_context`.
 
 When a dbt-built DuckDB warehouse is available at `DUCKDB_PATH` or
 `/warehouse/obsidian.duckdb`, the web UI and MCP warehouse tools query these
@@ -495,12 +512,62 @@ Search my vault for blocks about Project Atlas and return the source note and li
 - `text`: optional case-insensitive name filter.
 - `limit`: maximum entities to return. Defaults to `100`.
 
+`list_vault_entity_types`
+
+- `vault_path`: path to the Obsidian vault.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum entity type rows to return. Defaults to `100`.
+
 `get_vault_entity_timeline`
 
 - `vault_path`: path to the Obsidian vault.
 - `entity`: entity name, such as `Morgan Lee`.
 - `text`: optional case-insensitive filter over timeline summaries.
 - `limit`: maximum timeline rows to return. Defaults to `50`.
+
+`get_vault_entity_context`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity_type`: exact entity type, such as `project`, `person`, `risk`, or `decision`.
+- `entity`: exact entity name.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum context rows to return. Defaults to `50`.
+
+`list_vault_entity_events`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity_type`: optional entity type filter.
+- `entity`: optional exact entity name filter.
+- `event_type`: optional event type filter.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum event rows to return. Defaults to `50`.
+
+`list_vault_entity_relationships`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity_type`: optional entity type filter.
+- `entity`: optional exact entity name filter.
+- `relationship_type`: optional relationship type filter.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum relationship rows to return. Defaults to `50`.
+
+`list_vault_entity_states`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity_type`: optional entity type filter.
+- `entity`: optional exact entity name filter.
+- `state_type`: optional state type filter.
+- `status`: optional state value filter.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum state rows to return. Defaults to `50`.
+
+`list_vault_entity_open_loops`
+
+- `vault_path`: path to the Obsidian vault.
+- `entity_type`: optional entity type filter.
+- `entity`: optional exact entity name filter.
+- `duckdb_path`: optional DuckDB warehouse path.
+- `limit`: maximum open loops to return. Defaults to `50`.
 
 `search_vault_agent_context`
 
@@ -561,10 +628,16 @@ The current warehouse includes:
 
 - `dim_notes`: note type, title, path, absolute path, and source date.
 - `dim_entities`: typed entities derived from note folders, wikilinks, and tags.
+- `dim_entity_types`: observed entity-type registry and type metadata.
 - `fact_blocks`: parsed Markdown blocks with line-level provenance.
 - `fact_tasks`: Markdown tasks with completion state and provenance.
 - `fact_links`: wikilinks resolved to modeled entities where possible.
 - `fact_tags`: tags as deterministic facts.
+- `fact_entity_relationships`: generic source-target relationships between modeled entities.
+- `fact_entity_states`: generic state rows for stateful entities such as risks and decisions.
+- `fact_entity_events`: generic event rows attached to any modeled entity.
+- `mart_entity_context`: canonical context mart for any typed entity.
+- `mart_entity_open_loops`: open loops attached to any typed entity.
 - `mart_timeline`: curated block and task rows with dates, entities, and source lines.
 
 Use the CLI to inspect the modeled layer:
