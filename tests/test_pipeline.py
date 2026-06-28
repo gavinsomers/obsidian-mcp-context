@@ -200,3 +200,65 @@ lifecycle_metadata = "ignore"
         payload["warehouse"]["tables"]["deterministic_suggested_links"]
         == payload["suggestion_counts"]["deterministic_suggested_links"]
     )
+
+
+def test_pipeline_run_reports_ai_provider_configuration_status(tmp_path: Path):
+    output_dir = tmp_path / "var"
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        f"""
+[source]
+type = "sample"
+sample_name = "minimal-vault"
+
+[pipeline]
+output_dir = "{output_dir}"
+
+[ai]
+enabled = true
+provider = "ollama"
+model = "qwen2.5:7b"
+
+[doctor]
+lifecycle_metadata = "ignore"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    run_pipeline(config_path=config_path)
+
+    payload = json.loads((output_dir / "pipeline-run.json").read_text(encoding="utf-8"))
+    assert payload["ai"]["enabled"] is True
+    assert payload["ai"]["provider"] == "ollama"
+    assert payload["ai"]["model"] == "qwen2.5:7b"
+    assert payload["ai"]["configured"] is True
+    assert payload["ai"]["calls"] == 0
+
+
+def test_pipeline_run_reports_ai_provider_configuration_error(tmp_path: Path):
+    output_dir = tmp_path / "var"
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        f"""
+[source]
+type = "sample"
+sample_name = "minimal-vault"
+
+[pipeline]
+output_dir = "{output_dir}"
+
+[ai]
+enabled = true
+provider = "ollama"
+
+[doctor]
+lifecycle_metadata = "ignore"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    run_pipeline(config_path=config_path)
+
+    payload = json.loads((output_dir / "pipeline-run.json").read_text(encoding="utf-8"))
+    assert payload["ai"]["configured"] is False
+    assert "requires ai.model" in payload["ai"]["configuration_error"]

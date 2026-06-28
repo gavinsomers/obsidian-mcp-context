@@ -137,8 +137,8 @@ Additional example profiles live in `examples/config/`.
 - `privacy.redact_file_paths`: whether reports should redact local paths by
   default. Default: `true`.
 - `ai.enabled`: enables advisory AI enrichment. Default: `false`.
-- `ai.provider`: `none`, `ollama`, `openai`, `anthropic`, or reserved future
-  value `vllm`.
+- `ai.provider`: `none`, `mock`, `ollama`, `openai`, `anthropic`, or reserved
+  future value `vllm`.
 - `ai.model`: provider model name.
 - `ai.base_url`: local/provider-compatible base URL when needed.
 - `ai.api_key_env`: environment variable name containing the API key. Store only
@@ -146,6 +146,27 @@ Additional example profiles live in `examples/config/`.
 
 Hosted providers such as `openai` and `anthropic` are rejected unless
 `privacy.allow_hosted_ai = true`, and they require `ai.api_key_env`.
+
+Phase 4 includes the AI provider abstraction and configuration validation. It
+does not run enrichment jobs from `pipeline run`; AI call counts remain zero
+until the Phase 5 enrichment jobs are added.
+
+For a local Qwen model through Ollama:
+
+```toml
+[ai]
+enabled = true
+provider = "ollama"
+model = "qwen2.5:7b"
+base_url = "http://localhost:11434"
+api_key_env = ""
+```
+
+Provider calls enforce `privacy.max_context_chars` as a hard character budget.
+Prompts that exceed the budget fail with a context overflow error; the system
+does not silently truncate prompt text. Successful provider calls must return a
+JSON object and include metadata for provider, model, prompt version, prompt
+hash, and creation timestamp.
 
 Environment variables override TOML for CI and local experiments:
 
@@ -175,6 +196,10 @@ configured `pipeline.output_dir`. The report includes status, source summary,
 doctor summary, warehouse summary, AI posture, and suggestion counts. Suggestion
 counts include deterministic link suggestions when unresolved wikilinks have
 bounded candidate matches.
+
+When AI is enabled, the runner validates that the configured provider can be
+constructed and reports `ai.configured` plus any configuration error. It does
+not send vault text to AI or run enrichment jobs in Phase 4.
 
 By default, local source/config paths and doctor samples are redacted from
 pipeline output. Use `--include-private-paths` only for local debugging:
