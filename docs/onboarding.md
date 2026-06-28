@@ -20,6 +20,11 @@ Doctor reports parser counts, ignored files, unresolved wikilinks, lifecycle
 metadata coverage, in-memory warehouse readiness, and optional DuckDB warehouse
 readiness.
 
+For personal vault testing, keep the vault outside this repository and add any
+local sensitive strings to `.privacy-banned-terms.local`. That file should be
+ignored locally through `.git/info/exclude`. Run `scripts/privacy_check.sh`
+before committing changes.
+
 ## 2. Inspect Parsed Context
 
 ```bash

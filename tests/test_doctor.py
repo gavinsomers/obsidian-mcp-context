@@ -3,7 +3,7 @@ from pathlib import Path
 import duckdb
 
 from obsidian_mcp_context.cli import main
-from obsidian_mcp_context.doctor import DoctorOptions, exit_code, run_doctor
+from obsidian_mcp_context.doctor import DoctorCode, DoctorOptions, exit_code, run_doctor
 
 
 def test_doctor_reports_parser_graph_and_warehouse_readiness(tmp_path: Path):
@@ -46,6 +46,11 @@ updated_at: 2026-06-28T09:20:00
     assert report["graph"]["resolved_wikilinks"] == 1
     assert report["graph"]["unresolved_wikilinks"] == 1
     assert report["warehouse"]["in_memory"]["ok"] is True
+    assert {item["code"] for item in report["diagnostics"]} >= {
+        DoctorCode.IGNORED_FILE.value,
+        DoctorCode.UNSUPPORTED_FILE.value,
+        DoctorCode.UNRESOLVED_WIKILINK.value,
+    }
     assert exit_code(report) == 0
     assert exit_code(report, strict=True) == 1
 
@@ -66,6 +71,10 @@ def test_doctor_validates_optional_duckdb_warehouse(tmp_path: Path):
     assert report["status"] == "error"
     assert report["warehouse"]["duckdb"]["exists"] is True
     assert report["warehouse"]["duckdb"]["required_marts_available"] is False
+    assert any(
+        item["code"] == DoctorCode.WAREHOUSE_INCOMPLETE.value
+        for item in report["diagnostics"]
+    )
     assert exit_code(report) == 2
 
 
@@ -79,3 +88,4 @@ def test_doctor_cli_outputs_json(tmp_path: Path, capsys):
 
     assert result == 0
     assert '"status": "warning"' in captured.out
+    assert '"diagnostics": [' in captured.out
