@@ -30,6 +30,8 @@ LIFECYCLE_FIELDS = (
 )
 FRONTMATTER_BODY_RE = re.compile(r"(?ms)\A\s*---(?P<body>.*?)^---\s*$")
 FRONTMATTER_LIST_ITEM_RE = re.compile(r"^\s*-\s*[\"']?(.+?)[\"']?\s*$")
+DATE_LIKE_TARGET_RE = re.compile(r"(?<!\d)\d{4}-\d{2}-\d{2}(?!\d)")
+URL_LIKE_TARGET_RE = re.compile(r"^[a-z][a-z0-9+.-]*://", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -177,6 +179,26 @@ def _note_resolution_keys(source_path: str, first_block_text: str | None) -> set
     return {key for key in keys if key}
 
 
+def _link_target_shape(value: str) -> str:
+    target = value.strip()
+    if URL_LIKE_TARGET_RE.match(target):
+        return "url_like"
+    if "#" in target:
+        return "heading_reference"
+    if "^" in target:
+        return "block_reference"
+    if "/" in target or target.endswith(".md"):
+        return "path_like"
+    if DATE_LIKE_TARGET_RE.search(target):
+        return "date_like"
+    return "plain_text"
+
+
+def _shape_counts(values: list[str]) -> dict[str, int]:
+    counts = Counter(_link_target_shape(value) for value in values)
+    return dict(sorted(counts.items()))
+
+
 def _scan_inventory(vault_path: Path, config: VaultConfig) -> dict[str, object]:
     source_extensions = set(normalize_extensions(config.source_extensions))
     markdown_files: list[str] = []
@@ -219,6 +241,7 @@ def _record_policy_diagnostic(
     sample: object,
     include_samples: bool,
     sample_key: str = "sample",
+    details: dict[str, object] | None = None,
 ) -> None:
     if mode == "ignore":
         return
@@ -232,7 +255,8 @@ def _record_policy_diagnostic(
         code,
         severity,
         message,
-        details=_sample_details(
+        details=details
+        or _sample_details(
             count,
             sample,
             include_samples=include_samples,
@@ -455,8 +479,19 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         if _link_resolution_key(link.link_target) not in resolvable_link_targets
     ]
     unresolved_counts = Counter(unresolved)
+    unresolved_shapes = _shape_counts(unresolved)
     if unresolved:
         message = f"{len(unresolved)} wikilinks do not resolve to scanned note titles."
+        unresolved_details = _sample_details(
+            len(unresolved),
+            [
+                {"target": target, "count": count}
+                for target, count in unresolved_counts.most_common(10)
+            ],
+            include_samples=options.include_samples,
+            sample_key="top_targets",
+        )
+        unresolved_details["target_shapes"] = unresolved_shapes
         _record_policy_diagnostic(
             mode=app_config.doctor_unresolved_wikilinks,
             warnings=warnings,
@@ -465,12 +500,9 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             code=DoctorCode.UNRESOLVED_WIKILINK,
             message=message,
             count=len(unresolved),
-            sample=[
-                {"target": target, "count": count}
-                for target, count in unresolved_counts.most_common(10)
-            ],
+            sample=[],
             include_samples=options.include_samples,
-            sample_key="top_targets",
+            details=unresolved_details,
         )
 
     warehouse_status: dict[str, object]
@@ -594,6 +626,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "wikilinks": len(context.links),
             "resolved_wikilinks": len(context.links) - len(unresolved),
             "unresolved_wikilinks": len(unresolved),
+            "unresolved_target_shapes": unresolved_shapes,
             "top_unresolved_targets": [
                 {"target": target, "count": count}
                 for target, count in unresolved_counts.most_common(10)

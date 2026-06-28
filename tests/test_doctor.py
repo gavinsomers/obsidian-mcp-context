@@ -67,7 +67,11 @@ updated_at: 2026-06-28T09:20:00
         for item in report["diagnostics"]
         if item["code"] == DoctorCode.UNRESOLVED_WIKILINK.value
     )
-    assert unresolved["details"] == {"count": 1, "samples_redacted": True}
+    assert unresolved["details"] == {
+        "count": 1,
+        "samples_redacted": True,
+        "target_shapes": {"plain_text": 1},
+    }
     assert exit_code(report) == 0
     assert exit_code(report, strict=True) == 1
 
@@ -102,6 +106,7 @@ def test_doctor_can_include_samples_when_explicitly_requested(tmp_path: Path):
     assert unresolved["details"]["top_targets"] == [
         {"target": "Missing Note", "count": 1}
     ]
+    assert unresolved["details"]["target_shapes"] == {"plain_text": 1}
 
 
 def test_doctor_resolves_obsidian_link_target_variants(tmp_path: Path):
@@ -143,6 +148,49 @@ alias: Morgan
     assert report["graph"]["wikilinks"] == 8
     assert report["graph"]["resolved_wikilinks"] == 7
     assert report["graph"]["unresolved_wikilinks"] == 1
+    assert report["graph"]["unresolved_target_shapes"] == {"plain_text": 1}
+
+
+def test_doctor_reports_unresolved_link_target_shapes_without_samples(tmp_path: Path):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+    (vault / "Links.md").write_text(
+        "\n".join(
+            [
+                "[[Missing Plain]]",
+                "[[Missing/Path]]",
+                "[[Missing.md]]",
+                "[[Missing#Heading]]",
+                "[[Missing^block-id]]",
+                "[[2026-06-28]]",
+                "[[https://example.test/page]]",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(
+        DoctorOptions(vault_path=vault, config_path=tmp_path / "missing-config.toml")
+    )
+
+    assert report["graph"]["unresolved_target_shapes"] == {
+        "block_reference": 1,
+        "date_like": 1,
+        "heading_reference": 1,
+        "path_like": 2,
+        "plain_text": 1,
+        "url_like": 1,
+    }
+    assert report["graph"]["top_unresolved_targets"] == []
+    unresolved = next(
+        item
+        for item in report["diagnostics"]
+        if item["code"] == DoctorCode.UNRESOLVED_WIKILINK.value
+    )
+    assert unresolved["details"]["target_shapes"] == report["graph"][
+        "unresolved_target_shapes"
+    ]
+    assert "top_targets" not in unresolved["details"]
 
 
 def test_doctor_validates_optional_duckdb_warehouse(tmp_path: Path):

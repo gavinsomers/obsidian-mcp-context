@@ -22,6 +22,7 @@ The project uses semantic-ish versions:
   notes, blockless notes, large notes, and unresolved wikilinks.
 - Improved doctor wikilink resolution for Obsidian path, `.md`, heading, block,
   and frontmatter alias target variants.
+- Added privacy-safe unresolved wikilink target shape counts to doctor reports.
 
 ## [0.8.0] - 2026-06-28
 
