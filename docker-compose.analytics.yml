@@ -78,6 +78,24 @@ services:
       service: dbt
     command: ["dbt", "test", "--profiles-dir", "dbt", "--project-dir", "."]
 
+  dbt-docs-generate:
+    extends:
+      service: dbt
+    command: ["dbt", "docs", "generate", "--profiles-dir", "dbt", "--project-dir", "."]
+
+  dbt-docs:
+    extends:
+      service: dbt
+    ports:
+      - "${DBT_DOCS_PORT:-8081}:8080"
+    command:
+      - sh
+      - -lc
+      - >-
+        dbt docs generate --profiles-dir dbt --project-dir .
+        && dbt docs serve --profiles-dir dbt --project-dir .
+        --host 0.0.0.0 --port 8080 --no-browser
+
   mcp:
     build:
       context: .

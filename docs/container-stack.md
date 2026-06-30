@@ -16,6 +16,9 @@ service, dbt container, and editor-visible model code.
 - `ingest`: parses the mounted vault and rebuilds `raw.base_obsidian_*`.
 - `dbt`: builds staging, intermediate, and mart models into Postgres.
 - `dbt-test`: runs dbt tests.
+- `dbt-docs-generate`: refreshes dbt docs artifacts, including lineage and
+  catalog metadata.
+- `dbt-docs`: generates and serves dbt docs in a local browser.
 - `mcp`: MCP server container backed by the Postgres dbt marts.
 - `ollama` and `enrichment`: optional AI profile scaffold for local enrichment
   work.
@@ -118,6 +121,12 @@ docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --r
 docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm dbt-test
 ```
 
+Refresh dbt docs artifacts after a successful dbt run:
+
+```bash
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm dbt-docs-generate
+```
+
 Open Obsidian through the webtop service:
 
 ```text
@@ -125,6 +134,31 @@ http://localhost:3000
 ```
 
 Inside Obsidian, open `/vault`.
+
+## dbt Lineage Docs
+
+The `dbt-docs` service exposes native dbt documentation, including the lineage
+graph and model pages. Model pages include column metadata from dbt's catalog
+when the warehouse has been built.
+
+Build the warehouse first, then start the docs server:
+
+```bash
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm ingest
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm dbt
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml up dbt-docs
+```
+
+Open:
+
+```text
+http://localhost:8081
+```
+
+The host port is configurable with `DBT_DOCS_PORT`. The service runs
+`dbt docs generate` before serving, so the visible lineage and column catalog
+reflect the latest successful Postgres dbt state at startup. Restart the service
+after later dbt runs to refresh the browser view.
 
 ## VS Code Workflow
 

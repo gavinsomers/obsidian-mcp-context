@@ -30,7 +30,7 @@ project workflow.
 - Postgres/dbt marts for entities, relationships, states, events, timelines,
   decisions, risks, and open loops.
 - MCP tools for mart-backed context retrieval and direct parser diagnostics.
-- Containerized Postgres, dbt, Obsidian/webtop, and MCP services.
+- Containerized Postgres, dbt, dbt docs, Obsidian/webtop, and MCP services.
 - Privacy posture that keeps personal vaults out of the project workflow.
 
 ## Quickstart
@@ -77,6 +77,18 @@ The container MCP endpoint is:
 
 ```text
 http://localhost:8000
+```
+
+Serve dbt lineage and model documentation after building the warehouse:
+
+```bash
+docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up dbt-docs
+```
+
+Then open:
+
+```text
+http://localhost:8081
 ```
 
 For MCP client configuration, see
