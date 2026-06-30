@@ -1,0 +1,25 @@
+---
+type: meeting
+date: 2023-11-14
+project: "[[Project Beacon 17]]"
+company: "[[Apex FinTech]]"
+source_created_at: 2023-11-14T11:02:00
+source_observed_at: 2023-11-14T11:27:00
+created_at: 2023-11-14T14:35:00
+updated_at: 2023-11-15T07:35:00
+tags: [#meeting]
+---
+# Project Beacon 17 Contract Renewal Sync 117
+
+## Attendees
+- [[Farah Foster]]
+- [[Yara Chen]]
+- [[Ben Evans]]
+
+## Notes
+Contract Renewal reviewed for [[Project Beacon 17]] at [[Apex FinTech]].
+[[Uma Bennett]] flagged follow-up work for the next operating review.
+
+## Action Items
+- [ ] Send recap for [[Project Beacon 17]] to [[Uma Bennett]] #follow-up
+- [x] Capture meeting notes in vault #ops

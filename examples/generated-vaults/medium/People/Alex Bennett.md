@@ -1,0 +1,18 @@
+---
+type: person
+company: "[[Pioneer FinTech]]"
+role: "SecOps Lead"
+source_created_at: 2023-04-29T15:06:00
+source_observed_at: 2023-04-29T17:30:00
+created_at: 2023-04-29T17:35:00
+updated_at: 2023-06-20T11:16:00
+tags: [#person]
+---
+# Alex Bennett
+
+## Role
+Alex Bennett is the SecOps Lead at [[Pioneer FinTech]].
+
+## Current Context
+- First seen through [[Pioneer FinTech]] account context
+- [ ] Confirm next update with [[Alex Bennett]] #follow-up

@@ -56,7 +56,6 @@ vault_path = ""
 
 [pipeline]
 output_dir = "var"
-warehouse_path = "var/warehouse.duckdb"
 run_mode = "local"
 
 [privacy]
@@ -125,8 +124,6 @@ Additional example profiles live in `examples/config/`.
 - `source.sample_name`: sample vault name when `source.type = "sample"`.
 - `source.vault_path`: local vault path when `source.type = "obsidian"`.
 - `pipeline.output_dir`: ignored runtime output directory. Default: `var`.
-- `pipeline.warehouse_path`: DuckDB artifact path. Default:
-  `var/warehouse.duckdb`.
 - `pipeline.run_mode`: runner mode label. Default: `local`.
 - `privacy.allow_raw_text_to_ai`: whether bounded note text may be sent to AI.
   Default: `false`.

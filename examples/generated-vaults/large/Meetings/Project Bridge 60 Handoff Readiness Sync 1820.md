@@ -1,0 +1,25 @@
+---
+type: meeting
+date: 2024-05-22
+project: "[[Project Bridge 60]]"
+company: "[[Keystone Manufacturing]]"
+source_created_at: 2024-05-22T08:33:00
+source_observed_at: 2024-05-22T10:36:00
+created_at: 2024-05-22T13:45:00
+updated_at: 2024-05-23T04:45:00
+tags: [#meeting]
+---
+# Project Bridge 60 Handoff Readiness Sync 1820
+
+## Attendees
+- [[Clara Quinn]]
+- [[Tara Usman]]
+- [[Grace Chen]]
+
+## Notes
+Handoff Readiness reviewed for [[Project Bridge 60]] at [[Keystone Manufacturing]].
+[[Tara Usman]] flagged follow-up work for the next operating review.
+
+## Action Items
+- [ ] Send recap for [[Project Bridge 60]] to [[Tara Usman]] #follow-up
+- [x] Capture meeting notes in vault #ops

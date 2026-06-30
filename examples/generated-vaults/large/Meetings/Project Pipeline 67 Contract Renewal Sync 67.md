@@ -1,0 +1,25 @@
+---
+type: meeting
+date: 2024-04-07
+project: "[[Project Pipeline 67]]"
+company: "[[Vanguard Health]]"
+source_created_at: 2024-04-07T09:05:00
+source_observed_at: 2024-04-07T11:35:00
+created_at: 2024-04-07T12:59:00
+updated_at: 2024-04-07T17:59:00
+tags: [#meeting]
+---
+# Project Pipeline 67 Contract Renewal Sync 67
+
+## Attendees
+- [[Uma Lee]]
+- [[Jonah Quinn]]
+- [[Alex Vance]]
+
+## Notes
+Contract Renewal reviewed for [[Project Pipeline 67]] at [[Vanguard Health]].
+[[David Haddad]] flagged follow-up work for the next operating review.
+
+## Action Items
+- [ ] Send recap for [[Project Pipeline 67]] to [[David Haddad]] #follow-up
+- [x] Capture meeting notes in vault #ops

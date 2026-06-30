@@ -8,9 +8,9 @@ version = "1.0.0rc3"
 description = "Turn textual Obsidian vaults into AI-ready context exposed through MCP."
 requires-python = ">=3.11"
 dependencies = [
-  "duckdb>=1.1.0",
   "mcp>=1.28.0",
   "pydantic>=2.0.0",
+  "psycopg[binary]>=3.2.0",
 ]
 
 [project.optional-dependencies]
@@ -18,18 +18,12 @@ dev = [
   "pytest>=8.0.0",
 ]
 pipeline = [
-  "dbt-duckdb>=1.9.0",
-]
-postgres = [
   "dbt-postgres>=1.9.0",
-  "psycopg[binary]>=3.2.0",
 ]
 
 [project.scripts]
 obsidian-mcp-context = "obsidian_mcp_context.cli:main"
 obsidian-mcp-context-mcp = "obsidian_mcp_context.mcp_server:main"
-obsidian-mcp-context-web = "obsidian_mcp_context.web_ui:main"
-obsidian-mcp-context-ingest = "obsidian_mcp_context.ingest:main"
 obsidian-mcp-context-ingest-postgres = "obsidian_mcp_context.ingest_postgres:main"
 
 [tool.setuptools.packages.find]

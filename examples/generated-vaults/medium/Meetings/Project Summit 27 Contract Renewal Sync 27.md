@@ -1,0 +1,25 @@
+---
+type: meeting
+date: 2024-02-24
+project: "[[Project Summit 27]]"
+company: "[[Pioneer FinTech]]"
+source_created_at: 2024-02-24T11:13:00
+source_observed_at: 2024-02-24T11:40:00
+created_at: 2024-02-25T18:13:00
+updated_at: 2024-02-26T14:13:00
+tags: [#meeting]
+---
+# Project Summit 27 Contract Renewal Sync 27
+
+## Attendees
+- [[Alex Bennett]]
+- [[David Chen]]
+- [[Lina Evans]]
+
+## Notes
+Contract Renewal reviewed for [[Project Summit 27]] at [[Pioneer FinTech]].
+[[David Chen]] flagged follow-up work for the next operating review.
+
+## Action Items
+- [ ] Send recap for [[Project Summit 27]] to [[David Chen]] #follow-up
+- [x] Capture meeting notes in vault #ops

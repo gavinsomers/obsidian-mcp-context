@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-from pathlib import Path
 from typing import Annotated
 
 from mcp.server.fastmcp import FastMCP
@@ -17,10 +16,6 @@ MAX_LIMIT = 200
 
 def _bounded_limit(limit: int) -> int:
     return max(1, min(limit, MAX_LIMIT))
-
-
-def _resolve_dbt_path(duckdb_path: str | None = None) -> Path | None:
-    return default_context_service.dbt_path(duckdb_path)
 
 
 def _load_context(
@@ -134,18 +129,9 @@ def get_vault_note_context(
 @mcp.tool()
 def get_vault_warehouse_summary(
     vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> dict[str, object]:
     """Summarize deterministic warehouse dimensions, facts, and marts."""
-    return default_context_service.warehouse_summary(vault_path, duckdb_path=duckdb_path)
+    return default_context_service.warehouse_summary(vault_path, warehouse_path=None)
 
 
 @mcp.tool()
@@ -163,15 +149,6 @@ def list_vault_entities(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 100,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """List modeled entities derived from notes, wikilinks, and tags."""
     return default_context_service.list_entities(
@@ -179,7 +156,7 @@ def list_vault_entities(
         entity_type=entity_type,
         text=text,
         limit=_bounded_limit(limit),
-        duckdb_path=duckdb_path,
+        warehouse_path=None,
     )
 
 
@@ -190,20 +167,11 @@ def list_vault_entity_types(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 100,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """List entity types observed in the dbt entity registry."""
     validate_vault_path(vault_path)
     return default_context_service.entity_types(
-        duckdb_path,
+        None,
         limit=_bounded_limit(limit),
     )
 
@@ -223,15 +191,6 @@ def get_vault_entity_timeline(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """Return timeline rows connected to a modeled entity."""
     return default_context_service.entity_timeline(
@@ -239,7 +198,7 @@ def get_vault_entity_timeline(
         entity=entity,
         text=text,
         limit=_bounded_limit(limit),
-        duckdb_path=duckdb_path,
+        warehouse_path=None,
     )
 
 
@@ -258,20 +217,11 @@ def get_vault_entity_context(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """Return generic dbt mart-backed context for any typed entity."""
     validate_vault_path(vault_path)
     return default_context_service.entity_context_generic(
-        duckdb_path,
+        None,
         entity_type=entity_type,
         entity=entity,
         limit=_bounded_limit(limit),
@@ -297,20 +247,11 @@ def list_vault_entity_events(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """List generic entity events from the dbt warehouse."""
     validate_vault_path(vault_path)
     return default_context_service.entity_events(
-        duckdb_path,
+        None,
         entity_type=entity_type,
         entity=entity,
         event_type=event_type,
@@ -337,20 +278,11 @@ def list_vault_entity_relationships(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """List generic relationships between modeled entities."""
     validate_vault_path(vault_path)
     return default_context_service.entity_relationships(
-        duckdb_path,
+        None,
         entity_type=entity_type,
         entity=entity,
         relationship_type=relationship_type,
@@ -381,20 +313,11 @@ def list_vault_entity_states(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """List generic state rows for stateful entities."""
     validate_vault_path(vault_path)
     return default_context_service.entity_states(
-        duckdb_path,
+        None,
         entity_type=entity_type,
         entity=entity,
         state_type=state_type,
@@ -418,20 +341,11 @@ def list_vault_entity_open_loops(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """List open loops attached to any modeled entity type."""
     validate_vault_path(vault_path)
     return default_context_service.entity_open_loops(
-        duckdb_path,
+        None,
         entity_type=entity_type,
         entity=entity,
         limit=_bounded_limit(limit),
@@ -457,15 +371,6 @@ def search_vault_agent_context(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 25,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """Search curated deterministic context rows for agent use."""
     return default_context_service.agent_context(
@@ -474,7 +379,7 @@ def search_vault_agent_context(
         entity=entity,
         event_type=event_type,
         limit=_bounded_limit(limit),
-        duckdb_path=duckdb_path,
+        warehouse_path=None,
     )
 
 
@@ -486,20 +391,11 @@ def get_vault_project_context(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """Return dbt mart-backed project context, including decisions, risks, and open loops."""
     validate_vault_path(vault_path)
     return default_context_service.project_context(
-        duckdb_path,
+        None,
         project=project,
         limit=_bounded_limit(limit),
     )
@@ -513,20 +409,11 @@ def get_vault_person_context(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """Return dbt mart-backed person context, including decisions, risks, and open loops."""
     validate_vault_path(vault_path)
     return default_context_service.person_context(
-        duckdb_path,
+        None,
         person=person,
         limit=_bounded_limit(limit),
     )
@@ -543,20 +430,11 @@ def list_vault_open_loops(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """List dbt mart-backed open loops from unchecked tasks."""
     validate_vault_path(vault_path)
     return default_context_service.open_loops(
-        duckdb_path,
+        None,
         entity=entity,
         limit=_bounded_limit(limit),
     )
@@ -577,20 +455,11 @@ def list_vault_decisions(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """List dbt mart-backed decisions with optional entity and status filters."""
     validate_vault_path(vault_path)
     return default_context_service.decisions(
-        duckdb_path,
+        None,
         entity=entity,
         status=status,
         limit=_bounded_limit(limit),
@@ -612,20 +481,11 @@ def list_vault_risks(
         int,
         Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
     ] = 50,
-    duckdb_path: Annotated[
-        str | None,
-        Field(
-            description=(
-                "Optional DuckDB warehouse path. Defaults to DUCKDB_PATH or "
-                "/warehouse/obsidian.duckdb when present."
-            )
-        ),
-    ] = None,
 ) -> list[dict[str, object]]:
     """List dbt mart-backed risks with optional entity and status filters."""
     validate_vault_path(vault_path)
     return default_context_service.risks(
-        duckdb_path,
+        None,
         entity=entity,
         status=status,
         limit=_bounded_limit(limit),

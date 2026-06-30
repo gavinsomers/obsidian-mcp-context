@@ -1,86 +1,57 @@
-# Bring Your Own Vault
+# Generated Vault Onboarding
 
-Start with the smallest diagnostic loop, then build the DuckDB/dbt warehouse.
-For real usage, CLI/MCP/web modeled queries should read the curated marts, not
-raw parsed Markdown.
+This project workflow uses generated/synthetic vaults only. Do not use a
+personal Obsidian vault for validation or MCP serving.
 
-## 1. Run Doctor
+## 1. Choose A Fixture
 
-```bash
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault doctor
-```
+- `examples/generated-vaults/small`: fast smoke checks.
+- `examples/generated-vaults/medium`: development checks.
+- `examples/generated-vaults/large`: canonical scale and MCP validation.
 
-For CI or scripted checks:
+## 2. Run The Postgres Stack
 
-```bash
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault doctor --json
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault doctor --strict
-```
-
-Doctor reports parser counts, ignored files, unresolved wikilinks, lifecycle
-metadata coverage, direct parser diagnostics, and optional DuckDB warehouse
-readiness.
-
-For personal vault testing, keep the vault outside this repository and add any
-local sensitive strings to `.privacy-banned-terms.local`. That file should be
-ignored locally through `.git/info/exclude`. Run `scripts/privacy_check.sh`
-before committing changes.
-
-Use `.obsidian-mcp-context.toml` for local scan excludes and folder-to-entity
-overrides. Keep that file ignored locally as well. See `docs/configuration.md`.
-
-## 2. Inspect Parsed Context For Diagnostics
+Run the generated-large end-to-end check:
 
 ```bash
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault notes --limit 20
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault blocks --text renewal
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault tasks --unchecked
+scripts/analytics_stack_check.sh large
 ```
 
-These commands parse Markdown directly. Use them to troubleshoot source files,
-not as the normal serving path.
+The check mounts the generated fixture into the container stack, ingests parsed
+rows into Postgres, runs dbt, runs dbt tests, and performs a Postgres-backed MCP
+smoke check.
 
-## 3. Build The DuckDB/dbt Warehouse
-
-This is a full rebuild flow. The ingest command replaces the `base_obsidian_*`
-landing tables from the current vault, and dbt rebuilds marts as tables.
+For faster checks:
 
 ```bash
-.venv/bin/obsidian-mcp-context-ingest \
-  --vault /absolute/path/to/vault \
-  --duckdb var/obsidian.duckdb
-
-DUCKDB_PATH=var/obsidian.duckdb .venv/bin/python -m dbt.cli.main run \
-  --profiles-dir dbt \
-  --project-dir .
-
-DUCKDB_PATH=var/obsidian.duckdb .venv/bin/python -m dbt.cli.main test \
-  --profiles-dir dbt \
-  --project-dir .
+scripts/analytics_stack_check.sh small
+scripts/analytics_stack_check.sh medium
 ```
 
-Then validate the persisted warehouse:
+## 3. Keep MCP Running
 
 ```bash
-.venv/bin/obsidian-mcp-context --vault /absolute/path/to/vault doctor --duckdb var/obsidian.duckdb
+ANALYTICS_STACK_KEEP_RUNNING=1 scripts/analytics_stack_check.sh large
+docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up -d mcp
 ```
 
-## 4. Query The Marts
+The MCP container exposes:
+
+```text
+http://localhost:8000
+```
+
+For client configuration, see `docs/mcp-client-setup.md`.
+
+## 4. Inspect Diagnostics
+
+Parser diagnostics can still inspect generated source files directly:
 
 ```bash
-DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context \
-  --vault /absolute/path/to/vault warehouse-summary
-DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context \
-  --vault /absolute/path/to/vault entities --limit 50
-DUCKDB_PATH=var/obsidian.duckdb .venv/bin/obsidian-mcp-context \
-  --vault /absolute/path/to/vault agent-context --entity "Acme Renewal"
+.venv/bin/obsidian-mcp-context --vault examples/generated-vaults/large notes --limit 20
+.venv/bin/obsidian-mcp-context --vault examples/generated-vaults/large blocks --text Atlas
+.venv/bin/obsidian-mcp-context --vault examples/generated-vaults/large tasks --unchecked
 ```
 
-Custom top-level folders such as `Clients/`, `Assets/`, and `Initiatives/`
-become generic entity types. See `docs/entity-contract.md` for the full contract.
-
-## Example Vaults
-
-- `examples/minimal-vault`: smallest useful Markdown fixture.
-- `examples/custom-entity-vault`: demonstrates custom entity types.
-- `examples/synthetic-vault`: larger operator-style demo vault.
+Use these for troubleshooting only. Mart-backed MCP tools should read from the
+Postgres dbt marts.

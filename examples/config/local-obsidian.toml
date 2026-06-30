@@ -5,7 +5,6 @@ vault_path = "/absolute/path/to/obsidian/vault"
 
 [pipeline]
 output_dir = "var"
-warehouse_path = "var/warehouse.duckdb"
 run_mode = "local"
 
 [privacy]
