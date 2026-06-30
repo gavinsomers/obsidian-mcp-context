@@ -1,0 +1,18 @@
+---
+type: person
+company: "[[Vanguard FinTech]]"
+role: "Legal Counsel"
+source_created_at: 2023-06-07T15:08:00
+source_observed_at: 2023-06-07T17:02:00
+created_at: 2023-06-11T18:08:00
+updated_at: 2023-07-11T00:08:00
+tags: [#person]
+---
+# Kai Foster
+
+## Role
+Kai Foster is the Legal Counsel at [[Vanguard FinTech]].
+
+## Current Context
+- First seen through [[Vanguard FinTech]] account context
+- [ ] Confirm next update with [[Kai Foster]] #follow-up

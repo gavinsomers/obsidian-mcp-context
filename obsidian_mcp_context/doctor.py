@@ -10,7 +10,6 @@ from pathlib import Path
 from pathlib import PurePosixPath
 import re
 
-from obsidian_mcp_context import dbt_warehouse
 from obsidian_mcp_context.config import load_app_config, vault_config_from_app_config
 from obsidian_mcp_context.domain import frontmatter_value, note_title
 from obsidian_mcp_context.security import VaultPathError, validate_vault_path
@@ -61,7 +60,6 @@ UNRESOLVED_REASON_HINTS = {
 @dataclass(frozen=True)
 class DoctorOptions:
     vault_path: Path
-    duckdb_path: Path | None = None
     strict: bool = False
     config_path: Path | None = None
     include_samples: bool = False
@@ -844,7 +842,6 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             warehouse.close()
         warehouse_status = {
             "in_memory": {"ok": True, "summary": in_memory_summary},
-            "duckdb": {"checked": False},
         }
     except Exception as exc:  # pragma: no cover - defensive diagnostic surface
         message = f"In-memory warehouse build failed: {exc}"
@@ -857,33 +854,7 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         )
         warehouse_status = {
             "in_memory": {"ok": False, "error": str(exc)},
-            "duckdb": {"checked": False},
         }
-
-    if options.duckdb_path is not None:
-        duckdb_path = options.duckdb_path.expanduser()
-        duckdb_ok = dbt_warehouse.is_available(duckdb_path)
-        warehouse_status["duckdb"] = {
-            "checked": True,
-            "path": str(duckdb_path),
-            "exists": duckdb_path.exists(),
-            "required_marts_available": duckdb_ok,
-        }
-        if not duckdb_ok:
-            if duckdb_path.exists():
-                code = DoctorCode.WAREHOUSE_INCOMPLETE
-                message = f"DuckDB warehouse is incomplete: {duckdb_path}"
-            else:
-                code = DoctorCode.WAREHOUSE_MISSING
-                message = f"DuckDB warehouse is missing: {duckdb_path}"
-            errors.append(message)
-            _diagnostic(
-                diagnostics,
-                code,
-                "error",
-                message,
-                file_path=str(duckdb_path),
-            )
 
     status = "ok"
     if errors:
@@ -1023,12 +994,6 @@ def format_human(report: dict[str, object]) -> str:
         in_memory = warehouse.get("in_memory", {})
         if isinstance(in_memory, dict):
             lines.append(f"In-memory warehouse: {'ok' if in_memory.get('ok') else 'failed'}")
-        duckdb = warehouse.get("duckdb", {})
-        if isinstance(duckdb, dict) and duckdb.get("checked"):
-            lines.append(
-                "DuckDB warehouse: "
-                f"{'ok' if duckdb.get('required_marts_available') else 'missing/incomplete'}"
-            )
 
     warnings = report.get("warnings", [])
     if warnings:

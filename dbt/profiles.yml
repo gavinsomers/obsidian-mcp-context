@@ -1,10 +1,6 @@
 obsidian_mcp_context:
-  target: "{{ env_var('DBT_TARGET', 'duckdb') }}"
+  target: "{{ env_var('DBT_TARGET', 'postgres') }}"
   outputs:
-    duckdb:
-      type: duckdb
-      path: "{{ env_var('DUCKDB_PATH', 'var/obsidian.duckdb') }}"
-      threads: 1
     postgres:
       type: postgres
       host: "{{ env_var('POSTGRES_HOST', 'postgres') }}"

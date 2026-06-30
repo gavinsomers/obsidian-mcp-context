@@ -6,9 +6,8 @@ This mode mirrors a warehouse-first analytics workflow:
 Obsidian vault -> Postgres raw schema -> dbt marts -> MCP/web/API consumers
 ```
 
-It is separate from the local DuckDB quick path. Use it when you want a more
-familiar analytics-engineering setup with a database service, dbt container, and
-editor-visible model code.
+Use it when you want the supported analytics-engineering setup with a database
+service, dbt container, and editor-visible model code.
 
 ## Services
 
@@ -21,8 +20,7 @@ editor-visible model code.
 - `ollama` and `enrichment`: optional AI profile scaffold for local enrichment
   work.
 
-DuckDB remains supported for local development. The container stack is the
-Postgres path.
+Postgres is the canonical warehouse for this project.
 
 ## One-Command Check
 
@@ -35,6 +33,17 @@ scripts/analytics_stack_check.sh
 The check builds the required images, starts Postgres, runs ingest, runs dbt,
 runs dbt tests, and executes a Postgres-backed MCP smoke check against the marts.
 It uses `.env.analytics` when present, otherwise `.env.analytics.example`.
+
+The repo also includes generated small, medium, and large fixture vaults under
+`examples/generated-vaults`. Run the same end-to-end check against one of them:
+
+```bash
+scripts/analytics_stack_check.sh small
+scripts/analytics_stack_check.sh medium
+scripts/analytics_stack_check.sh large
+```
+
+This sets `VAULT_PATH` to the selected checked-in generated vault for that run.
 
 To run the same check against your own vault:
 
@@ -69,6 +78,13 @@ VAULT_PATH=/absolute/path/to/your/vault
 ```
 
 The same mount path, `/vault`, is used inside every container.
+
+For checked-in generated fixtures, either pass a size to
+`scripts/analytics_stack_check.sh` or set `VAULT_PATH` directly:
+
+```dotenv
+VAULT_PATH=./examples/generated-vaults/medium
+```
 
 ## Run The Build
 
@@ -117,6 +133,9 @@ docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --r
 docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm dbt
 docker compose --env-file .env.analytics -f docker-compose.analytics.yml up -d mcp
 ```
+
+For generated-vault-only MCP client setup, including the generated-large HTTP
+and stdio examples, see `docs/mcp-client-setup.md`.
 
 AI enrichment should run as an explicit job, not inside ingest or dbt. For local
 models, start the AI profile:

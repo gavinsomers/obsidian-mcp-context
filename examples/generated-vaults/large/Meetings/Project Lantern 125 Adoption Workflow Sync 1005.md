@@ -1,0 +1,25 @@
+---
+type: meeting
+date: 2025-01-18
+project: "[[Project Lantern 125]]"
+company: "[[Helio Labs]]"
+source_created_at: 2025-01-18T14:42:00
+source_observed_at: 2025-01-18T17:26:00
+created_at: 2025-01-18T17:54:00
+updated_at: 2025-01-18T21:54:00
+tags: [#meeting]
+---
+# Project Lantern 125 Adoption Workflow Sync 1005
+
+## Attendees
+- [[Priya Shah]]
+- [[Alex Ortega]]
+- [[Jonah Jenkins]]
+
+## Notes
+Adoption Workflow reviewed for [[Project Lantern 125]] at [[Helio Labs]].
+[[Priya Shah]] flagged follow-up work for the next operating review.
+
+## Action Items
+- [ ] Send recap for [[Project Lantern 125]] to [[Priya Shah]] #follow-up
+- [x] Capture meeting notes in vault #ops

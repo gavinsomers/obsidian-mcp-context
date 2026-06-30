@@ -2,11 +2,9 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 from pathlib import Path
 import sys
 
-from obsidian_mcp_context import dbt_warehouse
 from obsidian_mcp_context.config import load_app_config, vault_config_from_app_config
 from obsidian_mcp_context.doctor import (
     DoctorOptions,
@@ -35,16 +33,12 @@ def _print_json(value: object) -> None:
     print(json.dumps(value, indent=2, ensure_ascii=False))
 
 
-def _duckdb_help() -> str:
-    return "DuckDB/dbt warehouse path. Defaults to DUCKDB_PATH when set."
-
-
 def _fallback_warning(command: str) -> None:
     print(
         (
-            f"Warning: no valid DuckDB/dbt warehouse was found for {command}; "
+            f"Warning: no valid Postgres/dbt warehouse was found for {command}; "
             "falling back to direct parser diagnostics. Build the warehouse with "
-            "obsidian-mcp-context-ingest and dbt for normal use."
+            "obsidian-mcp-context-ingest-postgres and dbt for normal use."
         ),
         file=sys.stderr,
     )
@@ -119,16 +113,14 @@ def build_parser() -> argparse.ArgumentParser:
     tasks.add_argument("--source-path")
     tasks.add_argument("--limit", type=int, default=50)
 
-    warehouse = subparsers.add_parser(
-        "warehouse-summary", help="Summarize DuckDB/dbt marts."
+    subparsers.add_parser(
+        "warehouse-summary", help="Summarize diagnostic parser warehouse rows."
     )
-    warehouse.add_argument("--duckdb", help=_duckdb_help())
 
     entities = subparsers.add_parser("entities", help="List modeled entities from marts.")
     entities.add_argument("--entity-type")
     entities.add_argument("--text")
     entities.add_argument("--limit", type=int, default=100)
-    entities.add_argument("--duckdb", help=_duckdb_help())
 
     timeline = subparsers.add_parser(
         "timeline", help="Show mart-backed timeline/context rows for an entity."
@@ -136,7 +128,6 @@ def build_parser() -> argparse.ArgumentParser:
     timeline.add_argument("--entity", required=True)
     timeline.add_argument("--text")
     timeline.add_argument("--limit", type=int, default=50)
-    timeline.add_argument("--duckdb", help=_duckdb_help())
 
     agent = subparsers.add_parser(
         "agent-context", help="Query curated mart context rows."
@@ -145,14 +136,12 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--entity")
     agent.add_argument("--event-type")
     agent.add_argument("--limit", type=int, default=25)
-    agent.add_argument("--duckdb", help=_duckdb_help())
 
     doctor = subparsers.add_parser(
         "doctor", help="Validate a vault for parser, graph, and warehouse readiness."
     )
     doctor.add_argument("--json", action="store_true", help="Print a machine-readable report.")
     doctor.add_argument("--strict", action="store_true", help="Return non-zero on warnings.")
-    doctor.add_argument("--duckdb", help="Optional DuckDB warehouse path to validate.")
     doctor.add_argument(
         "--include-samples",
         action="store_true",
@@ -203,7 +192,6 @@ def main(argv: list[str] | None = None) -> int:
         report = run_doctor(
             DoctorOptions(
                 vault_path=Path(args.vault),
-                duckdb_path=Path(args.duckdb) if args.duckdb else None,
                 strict=args.strict,
                 config_path=Path(args.config) if args.config else None,
                 include_samples=args.include_samples,
@@ -256,104 +244,6 @@ def main(argv: list[str] | None = None) -> int:
             )
         )
         return 0
-
-    dbt_path = dbt_warehouse.resolve_duckdb_path(
-        getattr(args, "duckdb", None) or os.environ.get("DUCKDB_PATH")
-    )
-    if dbt_path and dbt_warehouse.is_available(dbt_path):
-        if args.command == "warehouse-summary":
-            _print_json(dbt_warehouse.summary(dbt_path))
-            return 0
-        if args.command == "entities":
-            _print_json(
-                dbt_warehouse.list_entities(
-                    dbt_path,
-                    entity_type=args.entity_type,
-                    text=args.text,
-                    limit=args.limit,
-                )
-            )
-            return 0
-        if args.command == "timeline":
-            entity_row = next(
-                (
-                    row
-                    for row in dbt_warehouse.list_entities(
-                        dbt_path, text=args.entity, limit=500
-                    )
-                    if str(row["name"]).casefold() == args.entity.casefold()
-                ),
-                None,
-            )
-            if entity_row and entity_row["entity_type"] == "project":
-                _print_json(
-                    dbt_warehouse.project_context(
-                        dbt_path, project=str(entity_row["name"]), limit=args.limit
-                    )
-                )
-                return 0
-            if entity_row and entity_row["entity_type"] == "person":
-                _print_json(
-                    dbt_warehouse.person_context(
-                        dbt_path, person=str(entity_row["name"]), limit=args.limit
-                    )
-                )
-                return 0
-            _print_json(
-                dbt_warehouse.entity_context(
-                    dbt_path, entity_type=str(entity_row["entity_type"]), entity=str(entity_row["name"]), limit=args.limit
-                )
-                if entity_row
-                else []
-            )
-            return 0
-        if args.command == "agent-context":
-            if args.event_type == "open_loop":
-                _print_json(
-                    dbt_warehouse.list_open_loops(
-                        dbt_path, entity=args.entity, limit=args.limit
-                    )
-                )
-                return 0
-            if args.entity:
-                entity_row = next(
-                    (
-                        row
-                        for row in dbt_warehouse.list_entities(
-                            dbt_path, text=args.entity, limit=500
-                        )
-                        if str(row["name"]).casefold() == args.entity.casefold()
-                    ),
-                    None,
-                )
-                if entity_row and entity_row["entity_type"] == "project":
-                    _print_json(
-                        dbt_warehouse.project_context(
-                            dbt_path,
-                            project=str(entity_row["name"]),
-                            limit=args.limit,
-                        )
-                    )
-                    return 0
-                if entity_row and entity_row["entity_type"] == "person":
-                    _print_json(
-                        dbt_warehouse.person_context(
-                            dbt_path,
-                            person=str(entity_row["name"]),
-                            limit=args.limit,
-                        )
-                    )
-                    return 0
-                if entity_row:
-                    _print_json(
-                        dbt_warehouse.entity_context(
-                            dbt_path,
-                            entity_type=str(entity_row["entity_type"]),
-                            entity=str(entity_row["name"]),
-                            limit=args.limit,
-                        )
-                    )
-                    return 0
 
     app_config = load_app_config(Path(args.config) if args.config else None)
     context = build_context(vault_config_from_app_config(Path(args.vault), app_config))

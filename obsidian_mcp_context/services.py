@@ -5,7 +5,7 @@ import logging
 import os
 from pathlib import Path
 
-from obsidian_mcp_context import dbt_warehouse, postgres_warehouse
+from obsidian_mcp_context import postgres_warehouse
 from obsidian_mcp_context.query import (
     get_note_context,
     list_notes,
@@ -26,7 +26,7 @@ from obsidian_mcp_context.warehouse import (
 LOGGER = logging.getLogger(__name__)
 FALLBACK_WARNING = (
     "No valid dbt warehouse found; falling back to direct parser "
-    "diagnostics. Build the warehouse with obsidian-mcp-context-ingest and dbt "
+    "diagnostics. Build the warehouse with obsidian-mcp-context-ingest-postgres and dbt "
     "for normal modeled query serving."
 )
 
@@ -122,25 +122,13 @@ class ContextService:
             )
         )
 
-    def dbt_path(self, duckdb_path: str | Path | None = None) -> Path | None:
-        path = dbt_warehouse.resolve_duckdb_path(
-            duckdb_path or os.environ.get("DUCKDB_PATH")
-        )
-        if path and dbt_warehouse.is_available(path):
-            return path
-        return None
-
     def dbt_reader(
         self,
-        duckdb_path: str | Path | None = None,
+        warehouse_path: str | Path | None = None,
     ) -> tuple[object, str | Path] | None:
-        if os.environ.get("WAREHOUSE_BACKEND", "duckdb").casefold() == "postgres":
-            postgres_dsn = postgres_warehouse.resolve_postgres_dsn()
-            if postgres_dsn and postgres_warehouse.is_available(postgres_dsn):
-                return postgres_warehouse, postgres_dsn
-            return None
-        if dbt_path := self.dbt_path(duckdb_path):
-            return dbt_warehouse, dbt_path
+        postgres_dsn = postgres_warehouse.resolve_postgres_dsn()
+        if postgres_dsn and postgres_warehouse.is_available(postgres_dsn):
+            return postgres_warehouse, postgres_dsn
         return None
 
     def list_notes(self, vault_path: str | Path, limit: int) -> list[dict[str, object]]:
@@ -184,9 +172,9 @@ class ContextService:
     def warehouse_summary(
         self,
         vault_path: str | Path,
-        duckdb_path: str | Path | None = None,
+        warehouse_path: str | Path | None = None,
     ) -> dict[str, object]:
-        if reader := self.dbt_reader(duckdb_path):
+        if reader := self.dbt_reader(warehouse_path):
             warehouse, handle = reader
             return warehouse.summary(handle)
         LOGGER.warning("%s", FALLBACK_WARNING)
@@ -202,9 +190,9 @@ class ContextService:
         entity_type: str | None = None,
         text: str | None = None,
         limit: int = 100,
-        duckdb_path: str | Path | None = None,
+        warehouse_path: str | Path | None = None,
     ) -> list[dict[str, object]]:
-        if reader := self.dbt_reader(duckdb_path):
+        if reader := self.dbt_reader(warehouse_path):
             warehouse, handle = reader
             return warehouse.list_entities(
                 handle,
@@ -218,33 +206,33 @@ class ContextService:
 
     def entity_types(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         limit: int = 100,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_entity_types(handle, limit=limit)
 
     def entity(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         entity_type: str,
         name: str,
     ) -> dict[str, object]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return {}
         warehouse, handle = reader
         return warehouse.get_entity(handle, entity_type=entity_type, name=name)
 
     def entity_context_generic(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         entity_type: str,
         entity: str,
         limit: int = 50,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.entity_context(
@@ -256,13 +244,13 @@ class ContextService:
 
     def entity_events(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         entity_type: str | None = None,
         entity: str | None = None,
         event_type: str | None = None,
         limit: int = 50,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_entity_events(
@@ -275,13 +263,13 @@ class ContextService:
 
     def entity_relationships(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         entity_type: str | None = None,
         entity: str | None = None,
         relationship_type: str | None = None,
         limit: int = 50,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_entity_relationships(
@@ -294,14 +282,14 @@ class ContextService:
 
     def entity_states(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         entity_type: str | None = None,
         entity: str | None = None,
         state_type: str | None = None,
         status: str | None = None,
         limit: int = 50,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_entity_states(
@@ -315,12 +303,12 @@ class ContextService:
 
     def entity_open_loops(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         entity_type: str | None = None,
         entity: str | None = None,
         limit: int = 50,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_entity_open_loops(
@@ -336,9 +324,9 @@ class ContextService:
         entity: str,
         text: str | None = None,
         limit: int = 50,
-        duckdb_path: str | Path | None = None,
+        warehouse_path: str | Path | None = None,
     ) -> list[dict[str, object]]:
-        if reader := self.dbt_reader(duckdb_path):
+        if reader := self.dbt_reader(warehouse_path):
             warehouse, handle = reader
             entity_row = self._dbt_entity_row(warehouse, handle, entity)
             if entity_row and entity_row["entity_type"] == "project":
@@ -364,9 +352,9 @@ class ContextService:
         entity: str | None = None,
         event_type: str | None = None,
         limit: int = 25,
-        duckdb_path: str | Path | None = None,
+        warehouse_path: str | Path | None = None,
     ) -> list[dict[str, object]]:
-        if reader := self.dbt_reader(duckdb_path):
+        if reader := self.dbt_reader(warehouse_path):
             warehouse, handle = reader
             if entity:
                 entity_row = self._dbt_entity_row(warehouse, handle, entity)
@@ -400,75 +388,75 @@ class ContextService:
 
     def project_context(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         project: str,
         limit: int,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.project_context(handle, project=project, limit=limit)
 
     def projects(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         limit: int = 100,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_projects(handle, limit=limit)
 
     def person_context(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         person: str,
         limit: int,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.person_context(handle, person=person, limit=limit)
 
     def people(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         limit: int = 100,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_people(handle, limit=limit)
 
     def companies(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         limit: int = 100,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_companies(handle, limit=limit)
 
     def open_loops(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         entity: str | None = None,
         limit: int = 50,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_open_loops(handle, entity=entity, limit=limit)
 
     def decisions(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         entity: str | None = None,
         status: str | None = None,
         limit: int = 50,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_decisions(
@@ -480,12 +468,12 @@ class ContextService:
 
     def risks(
         self,
-        duckdb_path: str | Path | None,
+        warehouse_path: str | Path | None,
         entity: str | None = None,
         status: str | None = None,
         limit: int = 50,
     ) -> list[dict[str, object]]:
-        if not (reader := self.dbt_reader(duckdb_path)):
+        if not (reader := self.dbt_reader(warehouse_path)):
             return []
         warehouse, handle = reader
         return warehouse.list_risks(

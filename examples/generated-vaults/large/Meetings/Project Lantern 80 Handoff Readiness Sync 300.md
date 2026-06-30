@@ -1,0 +1,25 @@
+---
+type: meeting
+date: 2024-06-25
+project: "[[Project Lantern 80]]"
+company: "[[Helio Media]]"
+source_created_at: 2024-06-25T14:01:00
+source_observed_at: 2024-06-25T14:40:00
+created_at: 2024-06-25T16:56:00
+updated_at: 2024-06-26T06:56:00
+tags: [#meeting]
+---
+# Project Lantern 80 Handoff Readiness Sync 300
+
+## Attendees
+- [[Amara Diaz]]
+- [[Rachel Haddad]]
+- [[Grace Morgan]]
+
+## Notes
+Handoff Readiness reviewed for [[Project Lantern 80]] at [[Helio Media]].
+[[Marcus Vance]] flagged follow-up work for the next operating review.
+
+## Action Items
+- [ ] Send recap for [[Project Lantern 80]] to [[Marcus Vance]] #follow-up
+- [x] Capture meeting notes in vault #ops
