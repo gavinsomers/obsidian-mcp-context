@@ -66,6 +66,17 @@ scripts/run_generated_obsidian.sh large
 
 Then open `http://localhost:3000` and choose `/vault` inside Obsidian.
 
+Replay generated-large into an initially empty isolated vault so notes appear
+over virtual time:
+
+```bash
+scripts/run_generated_replay.sh large --reset --speed 86400 --batch-size 25
+```
+
+This mounts `var/replay-vault` into browser Obsidian and copies notes from
+`examples/generated-vaults/large` in `created_at` order. Use `--dry-run` to
+inspect the replay manifest without copying files.
+
 Keep the generated-large stack running for an MCP client:
 
 ```bash
