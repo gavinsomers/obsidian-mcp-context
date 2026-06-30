@@ -77,6 +77,16 @@ This mounts `var/replay-vault` into browser Obsidian and copies notes from
 `examples/generated-vaults/large` in `created_at` order. Use `--dry-run` to
 inspect the replay manifest without copying files.
 
+In a second terminal, refresh Postgres raw tables and dbt marts on a schedule as
+the replay vault changes:
+
+```bash
+scripts/run_replay_scheduler.sh --interval-seconds 60
+```
+
+Use `--once` for a single ingest/dbt cycle. Scheduler state is written to
+`var/replay-vault/.obsidian-mcp-scheduler-state.json`.
+
 Keep the generated-large stack running for an MCP client:
 
 ```bash
