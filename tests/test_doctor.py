@@ -1,8 +1,6 @@
 import json
 from pathlib import Path
 
-import duckdb
-
 from obsidian_mcp_context.cli import main
 from obsidian_mcp_context.doctor import (
     DoctorCode,
@@ -561,35 +559,6 @@ def test_doctor_human_output_includes_aggregate_remediation_hints(tmp_path: Path
     assert "Unresolved wikilink remediation hints:" in output
     assert "create_note: 1" in output
     assert "Missing/Path" not in output
-
-
-def test_doctor_validates_optional_duckdb_warehouse(tmp_path: Path):
-    vault = tmp_path / "vault"
-    vault.mkdir()
-    (vault / "Note.md").write_text("# Note\n", encoding="utf-8")
-    duckdb_path = tmp_path / "partial.duckdb"
-    connection = duckdb.connect(str(duckdb_path))
-    try:
-        connection.execute("create table dim_notes (note_id text)")
-    finally:
-        connection.close()
-
-    report = run_doctor(
-        DoctorOptions(
-            vault_path=vault,
-            duckdb_path=duckdb_path,
-            config_path=tmp_path / "missing-config.toml",
-        )
-    )
-
-    assert report["status"] == "error"
-    assert report["warehouse"]["duckdb"]["exists"] is True
-    assert report["warehouse"]["duckdb"]["required_marts_available"] is False
-    assert any(
-        item["code"] == DoctorCode.WAREHOUSE_INCOMPLETE.value
-        for item in report["diagnostics"]
-    )
-    assert exit_code(report) == 2
 
 
 def test_doctor_cli_outputs_json(tmp_path: Path, capsys):

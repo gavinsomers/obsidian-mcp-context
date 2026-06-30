@@ -15,4 +15,4 @@ COPY dbt ./dbt
 COPY models ./models
 COPY dbt_project.yml ./
 
-RUN python -m pip install --no-cache-dir -e ".[postgres]"
+RUN python -m pip install --no-cache-dir -e .

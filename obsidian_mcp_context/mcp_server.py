@@ -131,7 +131,7 @@ def get_vault_warehouse_summary(
     vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
 ) -> dict[str, object]:
     """Summarize deterministic warehouse dimensions, facts, and marts."""
-    return default_context_service.warehouse_summary(vault_path, warehouse_path=None)
+    return default_context_service.warehouse_summary(vault_path, postgres_dsn=None)
 
 
 @mcp.tool()
@@ -156,7 +156,7 @@ def list_vault_entities(
         entity_type=entity_type,
         text=text,
         limit=_bounded_limit(limit),
-        warehouse_path=None,
+        postgres_dsn=None,
     )
 
 
@@ -198,7 +198,7 @@ def get_vault_entity_timeline(
         entity=entity,
         text=text,
         limit=_bounded_limit(limit),
-        warehouse_path=None,
+        postgres_dsn=None,
     )
 
 
@@ -379,7 +379,7 @@ def search_vault_agent_context(
         entity=entity,
         event_type=event_type,
         limit=_bounded_limit(limit),
-        warehouse_path=None,
+        postgres_dsn=None,
     )
 
 

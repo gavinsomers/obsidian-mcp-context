@@ -21,7 +21,6 @@ sample_name = "minimal-vault"
 
 [pipeline]
 output_dir = "{output_dir}"
-warehouse_path = "{output_dir / "warehouse.duckdb"}"
 
 [doctor]
 lifecycle_metadata = "ignore"

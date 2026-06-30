@@ -13,7 +13,6 @@ from obsidian_mcp_context.config import (
     vault_config_from_app_config,
 )
 from obsidian_mcp_context.domain import frontmatter_value, note_title, source_date
-from obsidian_mcp_context.ingest import _note_ids_by_source
 from obsidian_mcp_context.vault import build_context
 
 
@@ -38,6 +37,13 @@ def _validate_schema(schema: str) -> str:
 def _executemany_if_rows(cursor, query: str, rows: list[tuple[object, ...]]) -> None:
     if rows:
         cursor.executemany(query, rows)
+
+
+def _note_ids_by_source(source_paths: list[str]) -> dict[str, str]:
+    return {
+        source_path: f"note_{index:06d}"
+        for index, source_path in enumerate(sorted(source_paths), start=1)
+    }
 
 
 def _create_schema_and_tables(cursor, schema: str) -> None:
