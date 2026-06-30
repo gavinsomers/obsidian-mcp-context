@@ -147,9 +147,14 @@ services:
       REPLAY_STATE_DIR: /replay-vault
       VAULT_PATH: /vault
       OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
+      REPLAY_QA_SUMMARY_MODEL: ${REPLAY_QA_SUMMARY_MODEL:-gemma4:26b-a4b-it-q4_K_M}
+      REPLAY_QA_OLLAMA_BASE_URL: ${REPLAY_QA_OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      REPLAY_QA_SUMMARY_MAX_CONTEXT_CHARS: ${REPLAY_QA_SUMMARY_MAX_CONTEXT_CHARS:-12000}
     volumes:
       - ${REPLAY_TARGET_VAULT:-./var/replay-vault}:/replay-vault:ro
       - ${REPLAY_TARGET_VAULT:-./var/replay-vault}:/vault:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     ports:
       - "${REPLAY_QA_PORT:-8084}:8084"
     command:

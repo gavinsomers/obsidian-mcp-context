@@ -5,6 +5,7 @@ from pathlib import Path
 import threading
 from urllib.request import Request, urlopen
 
+from obsidian_mcp_context.ai import AICompletionResult, AIProviderError
 from obsidian_mcp_context.replay_dashboard import REPLAY_STATE_FILE, SCHEDULER_STATE_FILE
 from obsidian_mcp_context.replay_qa import answer_question, _handler
 
@@ -123,6 +124,45 @@ class FakeFallbackService:
         ]
 
 
+class FakeSummaryProvider:
+    provider = "ollama"
+    model = "gemma4:26b-a4b-it-q4_K_M"
+
+    def __init__(
+        self,
+        *,
+        answer: str = "Gemma summary from evidence [1] [2].",
+        fail: bool = False,
+    ) -> None:
+        self.answer = answer
+        self.fail = fail
+        self.prompts: list[str] = []
+
+    def complete_json(
+        self,
+        prompt: str,
+        schema: dict[str, object],
+        *,
+        max_context_chars: int,
+        prompt_version: str,
+    ) -> AICompletionResult:
+        self.prompts.append(prompt)
+        if self.fail:
+            raise AIProviderError("ollama unavailable")
+        if len(prompt) > max_context_chars:
+            from obsidian_mcp_context.ai import ContextOverflowError
+
+            raise ContextOverflowError("too much context")
+        return AICompletionResult(
+            data={"answer": self.answer, "citations": [1, 2]},
+            provider=self.provider,
+            model=self.model,
+            prompt_version=prompt_version,
+            input_hash="hash",
+            created_at="2026-06-30T21:30:00+00:00",
+        )
+
+
 def test_answer_question_uses_exact_mart_entity_and_sources(tmp_path, monkeypatch):
     _write_json(tmp_path / REPLAY_STATE_FILE, {"virtual_time": "2023-04-21T09:00:00"})
     _write_json(tmp_path / SCHEDULER_STATE_FILE, {"status": "success"})
@@ -155,6 +195,128 @@ def test_answer_question_uses_exact_mart_entity_and_sources(tmp_path, monkeypatc
         "Daily/2023-04-21.md",
     }
     assert "Project Atlas 10" not in answer["answer"]
+    assert answer["summary"]["status"] == "not_requested"
+
+
+def test_answer_question_can_summarize_retrieved_rows_with_local_provider(
+    tmp_path,
+    monkeypatch,
+):
+    monkeypatch.setattr(
+        "obsidian_mcp_context.replay_qa.dashboard_status",
+        lambda **_: {
+            "replay": {"virtual_time": "2023-04-21T09:00:00"},
+            "readiness": {"ready": True},
+        },
+    )
+    summarizer = FakeSummaryProvider()
+
+    answer = answer_question(
+        "What are the risks and open loops for Project Atlas 1?",
+        vault_path=tmp_path,
+        state_dir=tmp_path,
+        postgres_dsn="postgres://example",
+        service=FakeMartService(),
+        summarize=True,
+        summarizer=summarizer,
+    )
+
+    assert answer["status"] == "ok"
+    assert answer["mode"] == "mart-backed+local-gemma"
+    assert answer["answer"] == "Gemma summary from evidence [1] [2]."
+    assert "Enablement owner is not confirmed." in summarizer.prompts[0]
+    assert "Risks/Project Atlas 1 Adoption Workflow Risk 1.md" in summarizer.prompts[0]
+    assert answer["deterministic_answer"].startswith("Mart-backed context")
+    assert answer["summary"] == {
+        "enabled": True,
+        "status": "ok",
+        "provider": "ollama",
+        "model": "gemma4:26b-a4b-it-q4_K_M",
+        "prompt_version": "replay-qa-summary-v1",
+        "input_hash": "hash",
+        "created_at": "2026-06-30T21:30:00+00:00",
+        "citations": [1, 2],
+    }
+
+
+def test_answer_question_keeps_deterministic_answer_when_summary_provider_fails(
+    tmp_path,
+    monkeypatch,
+):
+    monkeypatch.setattr(
+        "obsidian_mcp_context.replay_qa.dashboard_status",
+        lambda **_: {
+            "replay": {"virtual_time": "2023-04-21T09:00:00"},
+            "readiness": {"ready": True},
+        },
+    )
+
+    answer = answer_question(
+        "What are the risks and open loops for Project Atlas 1?",
+        vault_path=tmp_path,
+        state_dir=tmp_path,
+        postgres_dsn="postgres://example",
+        service=FakeMartService(),
+        summarize=True,
+        summarizer=FakeSummaryProvider(fail=True),
+    )
+
+    assert answer["mode"] == "mart-backed"
+    assert answer["summary"]["status"] == "provider_error"
+    assert answer["summary"]["error"] == "ollama unavailable"
+    assert answer["answer"] == answer["deterministic_answer"]
+
+
+def test_answer_question_reports_summary_context_overflow(tmp_path, monkeypatch):
+    monkeypatch.setattr(
+        "obsidian_mcp_context.replay_qa.dashboard_status",
+        lambda **_: {
+            "replay": {"virtual_time": "2023-04-21T09:00:00"},
+            "readiness": {"ready": True},
+        },
+    )
+
+    answer = answer_question(
+        "What are the risks and open loops for Project Atlas 1?",
+        vault_path=tmp_path,
+        state_dir=tmp_path,
+        postgres_dsn="postgres://example",
+        service=FakeMartService(),
+        summarize=True,
+        summarizer=FakeSummaryProvider(),
+        summary_max_context_chars=10,
+    )
+
+    assert answer["mode"] == "mart-backed"
+    assert answer["summary"]["status"] == "context_overflow"
+    assert answer["answer"] == answer["deterministic_answer"]
+
+
+def test_answer_question_skips_summary_when_no_evidence_is_retrieved(
+    tmp_path,
+    monkeypatch,
+):
+    monkeypatch.setattr(
+        "obsidian_mcp_context.replay_qa.dashboard_status",
+        lambda **_: {
+            "replay": {"virtual_time": "2023-04-21T09:00:00"},
+            "readiness": {"ready": True},
+        },
+    )
+
+    answer = answer_question(
+        "Unknown portfolio question",
+        vault_path=tmp_path,
+        state_dir=tmp_path,
+        postgres_dsn="postgres://example",
+        service=FakeMartService(),
+        summarize=True,
+        summarizer=FakeSummaryProvider(),
+    )
+
+    assert answer["status"] == "no_match"
+    assert answer["summary"]["enabled"] is True
+    assert answer["summary"]["status"] == "no_evidence"
 
 
 def test_answer_question_reports_parser_diagnostic_fallback(tmp_path, monkeypatch):
@@ -173,6 +335,7 @@ def test_answer_question_reports_parser_diagnostic_fallback(tmp_path, monkeypatc
     assert answer["status"] == "fallback"
     assert answer["mode"] == "parser-diagnostic-fallback"
     assert answer["sources"][0]["source_path"] == "Projects/Project Atlas 1.md"
+    assert answer["summary"]["status"] == "not_available"
 
 
 def test_replay_qa_http_smoke_with_ephemeral_server(tmp_path, monkeypatch):
@@ -190,6 +353,7 @@ def test_replay_qa_http_smoke_with_ephemeral_server(tmp_path, monkeypatch):
         raw_schema="raw",
         mart_schema="marts",
         service=FakeMartService(),
+        summarizer=FakeSummaryProvider(),
     )
 
     from http.server import ThreadingHTTPServer
@@ -202,7 +366,9 @@ def test_replay_qa_http_smoke_with_ephemeral_server(tmp_path, monkeypatch):
         html = urlopen(f"http://{host}:{port}/", timeout=2).read().decode()
         request = Request(
             f"http://{host}:{port}/api/ask",
-            data=json.dumps({"question": "risks for Project Atlas 1"}).encode(),
+            data=json.dumps(
+                {"question": "risks for Project Atlas 1", "summarize": True}
+            ).encode(),
             headers={"Content-Type": "application/json"},
             method="POST",
         )
@@ -212,5 +378,6 @@ def test_replay_qa_http_smoke_with_ephemeral_server(tmp_path, monkeypatch):
         thread.join(timeout=2)
 
     assert "Replay Q&A" in html
-    assert payload["mode"] == "mart-backed"
+    assert payload["mode"] == "mart-backed+local-gemma"
     assert payload["entity"]["name"] == "Project Atlas 1"
+    assert payload["summary"]["status"] == "ok"

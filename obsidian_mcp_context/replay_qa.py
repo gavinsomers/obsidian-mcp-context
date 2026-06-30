@@ -10,12 +10,33 @@ from pathlib import Path
 import re
 from urllib.parse import urlparse
 
+from obsidian_mcp_context.ai import (
+    AIProvider,
+    AIProviderError,
+    ContextOverflowError,
+    OllamaProvider,
+)
 from obsidian_mcp_context.replay_dashboard import dashboard_status
 from obsidian_mcp_context.services import ContextService, default_context_service
 
 
 MAX_QUESTION_LENGTH = 500
 MAX_LIMIT = 50
+SUMMARY_PROMPT_VERSION = "replay-qa-summary-v1"
+DEFAULT_SUMMARY_MODEL = "gemma4:26b-a4b-it-q4_K_M"
+DEFAULT_SUMMARY_CONTEXT_CHARS = 12000
+SUMMARY_ROW_LIMIT = 12
+SUMMARY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "answer": {"type": "string"},
+        "citations": {
+            "type": "array",
+            "items": {"type": "integer"},
+        },
+    },
+    "required": ["answer", "citations"],
+}
 
 QUESTION_WORD_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]*")
 DECISION_WORDS = {"decision", "decisions", "decided"}
@@ -34,6 +55,11 @@ def answer_question(
     mart_schema: str = "marts",
     service: ContextService = default_context_service,
     limit: int = 12,
+    summarize: bool = False,
+    summarizer: AIProvider | None = None,
+    summary_model: str = DEFAULT_SUMMARY_MODEL,
+    summary_base_url: str | None = None,
+    summary_max_context_chars: int = DEFAULT_SUMMARY_CONTEXT_CHARS,
 ) -> dict[str, object]:
     cleaned = question.strip()
     if not cleaned:
@@ -77,18 +103,26 @@ def answer_question(
             "mode": "mart-backed",
             "question": cleaned,
             "answer": f"No mart-backed context matched {target!r}.",
+            "deterministic_answer": f"No mart-backed context matched {target!r}.",
             "entity": entity,
             "rows": [],
             "sources": [],
+            "summary": {
+                "enabled": bool(summarize),
+                "status": "no_evidence" if summarize else "not_requested",
+                "reason": "No retrieved evidence was available to summarize.",
+            },
             "freshness": freshness,
             "generated_at": _now(),
         }
 
-    return {
+    deterministic_answer = _compose_answer(cleaned, rows, entity=entity)
+    payload = {
         "status": "ok",
         "mode": "mart-backed",
         "question": cleaned,
-        "answer": _compose_answer(cleaned, rows, entity=entity),
+        "answer": deterministic_answer,
+        "deterministic_answer": deterministic_answer,
         "entity": entity,
         "question_types": sorted(question_types),
         "rows": rows,
@@ -96,6 +130,20 @@ def answer_question(
         "freshness": freshness,
         "generated_at": _now(),
     }
+    if summarize:
+        _apply_summary(
+            payload,
+            question=cleaned,
+            rows=rows,
+            sources=payload["sources"],
+            summarizer=summarizer,
+            model=summary_model,
+            base_url=summary_base_url,
+            max_context_chars=summary_max_context_chars,
+        )
+    else:
+        payload["summary"] = {"enabled": False, "status": "not_requested"}
+    return payload
 
 
 def serve_qa(
@@ -107,6 +155,9 @@ def serve_qa(
     postgres_dsn: str | None,
     raw_schema: str,
     mart_schema: str,
+    summary_model: str,
+    summary_base_url: str | None,
+    summary_max_context_chars: int,
 ) -> None:
     handler = _handler(
         vault_path=vault_path,
@@ -115,6 +166,9 @@ def serve_qa(
         raw_schema=raw_schema,
         mart_schema=mart_schema,
         service=default_context_service,
+        summary_model=summary_model,
+        summary_base_url=summary_base_url,
+        summary_max_context_chars=summary_max_context_chars,
     )
     server = ThreadingHTTPServer((host, port), handler)
     print(f"Replay Q&A listening on http://{host}:{port}")
@@ -141,6 +195,28 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--postgres-dsn", default=os.environ.get("POSTGRES_DSN"))
     parser.add_argument("--raw-schema", default=os.environ.get("POSTGRES_RAW_SCHEMA", "raw"))
     parser.add_argument("--mart-schema", default=os.environ.get("DBT_TARGET_SCHEMA", "marts"))
+    parser.add_argument(
+        "--summary-model",
+        default=os.environ.get("REPLAY_QA_SUMMARY_MODEL", DEFAULT_SUMMARY_MODEL),
+        help="Local Ollama model for optional answer composition.",
+    )
+    parser.add_argument(
+        "--summary-base-url",
+        default=os.environ.get("REPLAY_QA_OLLAMA_BASE_URL")
+        or os.environ.get("OLLAMA_BASE_URL"),
+        help="Ollama base URL for optional answer composition.",
+    )
+    parser.add_argument(
+        "--summary-max-context-chars",
+        type=int,
+        default=int(
+            os.environ.get(
+                "REPLAY_QA_SUMMARY_MAX_CONTEXT_CHARS",
+                str(DEFAULT_SUMMARY_CONTEXT_CHARS),
+            )
+        ),
+        help="Maximum prompt size for local answer composition.",
+    )
     return parser
 
 
@@ -154,6 +230,9 @@ def main(argv: list[str] | None = None) -> int:
         postgres_dsn=args.postgres_dsn,
         raw_schema=args.raw_schema,
         mart_schema=args.mart_schema,
+        summary_model=args.summary_model,
+        summary_base_url=args.summary_base_url,
+        summary_max_context_chars=args.summary_max_context_chars,
     )
     return 0
 
@@ -166,6 +245,10 @@ def _handler(
     raw_schema: str,
     mart_schema: str,
     service: ContextService = default_context_service,
+    summarizer: AIProvider | None = None,
+    summary_model: str = DEFAULT_SUMMARY_MODEL,
+    summary_base_url: str | None = None,
+    summary_max_context_chars: int = DEFAULT_SUMMARY_CONTEXT_CHARS,
 ) -> type[BaseHTTPRequestHandler]:
     class ReplayQaHandler(BaseHTTPRequestHandler):
         def do_HEAD(self) -> None:  # noqa: N802
@@ -211,6 +294,7 @@ def _handler(
                 length = int(self.headers.get("Content-Length", "0"))
                 payload = json.loads(self.rfile.read(length).decode("utf-8") or "{}")
                 question = str(payload.get("question", ""))
+                summarize = bool(payload.get("summarize", False))
                 answer = answer_question(
                     question,
                     vault_path=vault_path,
@@ -219,6 +303,11 @@ def _handler(
                     raw_schema=raw_schema,
                     mart_schema=mart_schema,
                     service=service,
+                    summarize=summarize,
+                    summarizer=summarizer,
+                    summary_model=summary_model,
+                    summary_base_url=summary_base_url,
+                    summary_max_context_chars=summary_max_context_chars,
                 )
             except json.JSONDecodeError:
                 self._send_json(HTTPStatus.BAD_REQUEST, {"error": "invalid_json"})
@@ -361,9 +450,19 @@ def _fallback_answer(
             if rows
             else "No valid dbt warehouse is available and parser diagnostics found no matches."
         ),
+        "deterministic_answer": (
+            "No valid dbt warehouse is available. Showing parser diagnostic matches."
+            if rows
+            else "No valid dbt warehouse is available and parser diagnostics found no matches."
+        ),
         "entity": None,
         "rows": rows,
         "sources": _sources(rows),
+        "summary": {
+            "enabled": False,
+            "status": "not_available",
+            "reason": "Summarization only runs after mart-backed retrieval returns evidence.",
+        },
         "freshness": freshness,
         "generated_at": _now(),
     }
@@ -405,6 +504,102 @@ def _compose_answer(
     return (
         f"Mart-backed context for {target} matched the question {question!r}. "
         + " ".join(facts)
+    )
+
+
+def _apply_summary(
+    payload: dict[str, object],
+    *,
+    question: str,
+    rows: list[dict[str, object]],
+    sources: object,
+    summarizer: AIProvider | None,
+    model: str,
+    base_url: str | None,
+    max_context_chars: int,
+) -> None:
+    try:
+        provider = summarizer or OllamaProvider(
+            model=model,
+            base_url=base_url or "http://localhost:11434",
+        )
+        prompt = _summary_prompt(question, rows, sources)
+        result = provider.complete_json(
+            prompt,
+            SUMMARY_SCHEMA,
+            max_context_chars=max_context_chars,
+            prompt_version=SUMMARY_PROMPT_VERSION,
+        )
+        answer = str(result.data.get("answer", "")).strip()
+        if not answer:
+            raise AIProviderError("summary response did not include a non-empty answer")
+    except ContextOverflowError as exc:
+        payload["summary"] = {
+            "enabled": True,
+            "status": "context_overflow",
+            "provider": getattr(summarizer, "provider", "ollama"),
+            "model": getattr(summarizer, "model", model),
+            "error": str(exc),
+        }
+        return
+    except AIProviderError as exc:
+        payload["summary"] = {
+            "enabled": True,
+            "status": "provider_error",
+            "provider": getattr(summarizer, "provider", "ollama"),
+            "model": getattr(summarizer, "model", model),
+            "error": str(exc),
+        }
+        return
+
+    payload["answer"] = answer
+    payload["mode"] = "mart-backed+local-gemma"
+    payload["summary"] = {
+        "enabled": True,
+        "status": "ok",
+        "provider": result.provider,
+        "model": result.model,
+        "prompt_version": result.prompt_version,
+        "input_hash": result.input_hash,
+        "created_at": result.created_at,
+        "citations": result.data.get("citations", []),
+    }
+
+
+def _summary_prompt(
+    question: str,
+    rows: list[dict[str, object]],
+    sources: object,
+) -> str:
+    evidence = []
+    for index, row in enumerate(rows[:SUMMARY_ROW_LIMIT], start=1):
+        evidence.append(
+            {
+                "citation": index,
+                "event_date": row.get("event_date") or row.get("source_date"),
+                "event_type": row.get("event_type"),
+                "title": row.get("title"),
+                "summary": row.get("summary") or row.get("text") or row.get("task_text"),
+                "source_path": row.get("source_path"),
+                "start_line": row.get("start_line") or row.get("line_number"),
+            }
+        )
+    return "\n".join(
+        [
+            "You summarize deterministic dbt/MCP retrieval results for a local demo.",
+            "Use only the evidence rows provided. Do not invent facts or sources.",
+            "If evidence is thin, say so briefly.",
+            "Cite evidence using bracketed numbers like [1].",
+            "Return JSON matching the requested schema.",
+            "",
+            f"Question: {question}",
+            "",
+            "Evidence rows:",
+            json.dumps(evidence, indent=2, sort_keys=True),
+            "",
+            "Available source records:",
+            json.dumps(sources, indent=2, sort_keys=True),
+        ]
     )
 
 
@@ -517,6 +712,27 @@ _HTML = r"""<!doctype html>
       gap: 10px;
       align-items: start;
     }
+    .ask-controls {
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+    .toggle {
+      min-height: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+    .toggle input {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+      accent-color: var(--accent);
+    }
     textarea {
       width: 100%;
       min-height: 78px;
@@ -596,7 +812,10 @@ _HTML = r"""<!doctype html>
     <section class="panel">
       <form id="askForm">
         <textarea id="question" maxlength="500">What are the risks and open loops for Project Atlas 1?</textarea>
-        <button id="askButton" type="submit">Ask</button>
+        <div class="ask-controls">
+          <button id="askButton" type="submit">Ask</button>
+          <label class="toggle"><input id="summarize" type="checkbox"> Local Gemma</label>
+        </div>
       </form>
     </section>
 
@@ -604,7 +823,7 @@ _HTML = r"""<!doctype html>
       <div class="metric"><div class="label">Mode</div><div id="mode" class="value">-</div></div>
       <div class="metric"><div class="label">Entity</div><div id="entity" class="value">-</div></div>
       <div class="metric"><div class="label">Virtual Time</div><div id="virtualTime" class="value">-</div></div>
-      <div class="metric"><div class="label">Rows</div><div id="rowCount" class="value">-</div></div>
+      <div class="metric"><div class="label">Summary</div><div id="summaryStatus" class="value">-</div><div id="summaryModel" class="subtle">-</div></div>
     </section>
 
     <section class="panel">
@@ -637,10 +856,12 @@ _HTML = r"""<!doctype html>
       const freshness = data.freshness || {};
       const replay = freshness.replay || {};
       const entity = data.entity || {};
+      const summary = data.summary || {};
       document.getElementById("mode").textContent = fmt(data.mode);
       document.getElementById("entity").textContent = fmt(entity.name);
       document.getElementById("virtualTime").textContent = fmt(replay.virtual_time);
-      document.getElementById("rowCount").textContent = fmt((data.rows || []).length);
+      document.getElementById("summaryStatus").textContent = summary.enabled ? fmt(summary.status) : "off";
+      document.getElementById("summaryModel").textContent = summary.model ? fmt(summary.model) : `${fmt((data.rows || []).length)} rows`;
       document.getElementById("answer").textContent = fmt(data.answer);
       document.getElementById("sources").innerHTML = (data.sources || []).map(source =>
         `<tr><td><code>${escapeHtml(source.source_path)}</code></td><td>${escapeHtml(source.start_line)}</td><td>${escapeHtml(source.event_type)}</td><td>${escapeHtml(source.title)}</td></tr>`
@@ -662,7 +883,10 @@ _HTML = r"""<!doctype html>
         const response = await fetch("/api/ask", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ question: document.getElementById("question").value })
+          body: JSON.stringify({
+            question: document.getElementById("question").value,
+            summarize: document.getElementById("summarize").checked
+          })
         });
         renderAnswer(await response.json());
       } catch (error) {
