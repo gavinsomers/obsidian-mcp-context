@@ -57,6 +57,15 @@ scripts/analytics_stack_check.sh small
 scripts/analytics_stack_check.sh medium
 ```
 
+Open the generated-large vault in an isolated browser-accessible Obsidian
+container:
+
+```bash
+scripts/run_generated_obsidian.sh large
+```
+
+Then open `http://localhost:3000` and choose `/vault` inside Obsidian.
+
 Keep the generated-large stack running for an MCP client:
 
 ```bash
