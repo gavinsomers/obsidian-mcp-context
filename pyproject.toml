@@ -28,6 +28,7 @@ obsidian-mcp-context-ingest-postgres = "obsidian_mcp_context.ingest_postgres:mai
 obsidian-mcp-context-replay-vault = "obsidian_mcp_context.replay_loader:main"
 obsidian-mcp-context-replay-scheduler = "obsidian_mcp_context.replay_scheduler:main"
 obsidian-mcp-context-replay-dashboard = "obsidian_mcp_context.replay_dashboard:main"
+obsidian-mcp-context-replay-qa = "obsidian_mcp_context.replay_qa:main"
 
 [tool.setuptools.packages.find]
 where = ["."]

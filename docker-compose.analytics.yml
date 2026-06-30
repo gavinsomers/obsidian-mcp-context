@@ -132,6 +132,37 @@ services:
       - --state-dir
       - /replay-vault
 
+  replay-qa:
+    build:
+      context: .
+      dockerfile: docker/python/Dockerfile
+      target: runtime-postgres
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
+      POSTGRES_RAW_SCHEMA: ${POSTGRES_RAW_SCHEMA:-raw}
+      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-marts}
+      REPLAY_STATE_DIR: /replay-vault
+      VAULT_PATH: /vault
+      OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
+    volumes:
+      - ${REPLAY_TARGET_VAULT:-./var/replay-vault}:/replay-vault:ro
+      - ${REPLAY_TARGET_VAULT:-./var/replay-vault}:/vault:ro
+    ports:
+      - "${REPLAY_QA_PORT:-8084}:8084"
+    command:
+      - obsidian-mcp-context-replay-qa
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8084"
+      - --vault
+      - /vault
+      - --state-dir
+      - /replay-vault
+
   mcp:
     build:
       context: .
