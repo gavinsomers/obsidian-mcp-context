@@ -10,6 +10,28 @@ The project uses semantic-ish versions:
 
 ## [Unreleased]
 
+### Added
+
+- Added a Postgres/dbt/Obsidian container analytics stack with a full Obsidian
+  webtop service, Postgres landing-table ingest, dbt Postgres profile support,
+  VS Code devcontainer configuration, and container-stack documentation.
+- Added a Postgres-backed MCP mart reader so modeled MCP queries can read from
+  Postgres dbt marts when `WAREHOUSE_BACKEND=postgres` and `POSTGRES_DSN` are
+  configured.
+- Added `scripts/analytics_stack_check.sh` to validate the full Postgres
+  container path from ingest through dbt tests and MCP smoke checks.
+- Added GitHub Actions workflows for pull request CI, pushes to `main`, manual
+  Python test runs, and an opt-in Docker Compose analytics stack check.
+
+### Changed
+
+- Made dbt source schema and target profile selection configurable so the same
+  marts can build against local DuckDB or Postgres.
+- Made the Postgres dbt profile run serially by default to avoid local DDL
+  deadlocks during containerized rebuilds.
+- Rewrote adapter-specific dbt SQL in link resolution and entity event marts so
+  those models build on both DuckDB and Postgres.
+
 ## [v1.0.0-rc.3] - 2026-06-28
 
 ### Added
