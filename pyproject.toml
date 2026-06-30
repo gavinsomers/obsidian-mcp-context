@@ -25,6 +25,7 @@ pipeline = [
 obsidian-mcp-context = "obsidian_mcp_context.cli:main"
 obsidian-mcp-context-mcp = "obsidian_mcp_context.mcp_server:main"
 obsidian-mcp-context-ingest-postgres = "obsidian_mcp_context.ingest_postgres:main"
+obsidian-mcp-context-replay-vault = "obsidian_mcp_context.replay_loader:main"
 
 [tool.setuptools.packages.find]
 where = ["."]

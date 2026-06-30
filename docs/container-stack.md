@@ -73,6 +73,44 @@ vault", and open `/vault`. The notes are mounted from the selected generated
 fixture folder; they are not imported from, synced with, or written to Gavin's
 personal Obsidian vault.
 
+## Generated Vault Replay
+
+To start with an empty isolated vault and replay generated notes into it over
+virtual time, run:
+
+```bash
+scripts/run_generated_replay.sh large --reset --speed 86400 --batch-size 25
+```
+
+The script accepts `small`, `medium`, or `large`; `large` is the default. It
+starts `vault-obsidian` with `var/replay-vault` mounted at `/vault`, then runs
+`obsidian-mcp-context-replay-vault` against the selected source fixture. The
+default replay order uses note frontmatter `created_at`, falling back to
+`source_created_at`, `source_observed_at`, `updated_at`, frontmatter/filename
+date, and finally file mtime if needed.
+
+Useful replay flags:
+
+- `--reset`: clears the isolated target vault before replaying.
+- `--dry-run`: prints the sorted manifest summary without copying files.
+- `--start` and `--end`: limit the virtual timestamp range.
+- `--speed`: virtual seconds advanced per real second; `0` copies the selected
+  range immediately.
+- `--batch-size`: maximum notes copied per replay tick.
+- `--limit`: use the first N sorted notes for smoke checks.
+
+Replay state is written to:
+
+```text
+var/replay-vault/.obsidian-mcp-replay-state.json
+```
+
+The state file records loaded files, loaded/remaining counts, the current
+virtual time, and the latest loaded timestamp. Rerunning without `--reset`
+resumes by skipping already loaded files. The source fixture remains read-only
+from the replay perspective, and the target is under ignored `var/` storage so
+the workflow does not read or write Gavin's personal Obsidian vault.
+
 To run the same check against your own vault:
 
 ```bash
