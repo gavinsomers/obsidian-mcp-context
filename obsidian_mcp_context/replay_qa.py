@@ -1,0 +1,685 @@
+from __future__ import annotations
+
+import argparse
+from datetime import datetime, timezone
+from http import HTTPStatus
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+import json
+import os
+from pathlib import Path
+import re
+from urllib.parse import urlparse
+
+from obsidian_mcp_context.replay_dashboard import dashboard_status
+from obsidian_mcp_context.services import ContextService, default_context_service
+
+
+MAX_QUESTION_LENGTH = 500
+MAX_LIMIT = 50
+
+QUESTION_WORD_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]*")
+DECISION_WORDS = {"decision", "decisions", "decided"}
+RISK_WORDS = {"risk", "risks", "blocker", "blockers"}
+OPEN_LOOP_WORDS = {"open", "loop", "loops", "todo", "task", "tasks", "followup", "follow-up"}
+TIMELINE_WORDS = {"timeline", "history", "when", "sequence"}
+
+
+def answer_question(
+    question: str,
+    *,
+    vault_path: str | Path,
+    state_dir: Path,
+    postgres_dsn: str | None = None,
+    raw_schema: str = "raw",
+    mart_schema: str = "marts",
+    service: ContextService = default_context_service,
+    limit: int = 12,
+) -> dict[str, object]:
+    cleaned = question.strip()
+    if not cleaned:
+        return _error_answer("empty_question", "Ask a question about the replayed vault.")
+    if len(cleaned) > MAX_QUESTION_LENGTH:
+        return _error_answer(
+            "question_too_long",
+            f"Question is too long. Keep it under {MAX_QUESTION_LENGTH} characters.",
+        )
+
+    freshness = dashboard_status(
+        state_dir=state_dir,
+        postgres_dsn=postgres_dsn,
+        raw_schema=raw_schema,
+        mart_schema=mart_schema,
+    )
+    if not service.dbt_reader(postgres_dsn):
+        return _fallback_answer(
+            cleaned,
+            vault_path=vault_path,
+            freshness=freshness,
+            service=service,
+            limit=limit,
+        )
+
+    entity = _resolve_entity(cleaned, vault_path=vault_path, service=service, postgres_dsn=postgres_dsn)
+    question_types = _question_types(cleaned)
+    rows = _mart_rows(
+        cleaned,
+        entity=entity,
+        question_types=question_types,
+        vault_path=vault_path,
+        postgres_dsn=postgres_dsn,
+        service=service,
+        limit=limit,
+    )
+    if not rows:
+        target = entity["name"] if entity else cleaned
+        return {
+            "status": "no_match",
+            "mode": "mart-backed",
+            "question": cleaned,
+            "answer": f"No mart-backed context matched {target!r}.",
+            "entity": entity,
+            "rows": [],
+            "sources": [],
+            "freshness": freshness,
+            "generated_at": _now(),
+        }
+
+    return {
+        "status": "ok",
+        "mode": "mart-backed",
+        "question": cleaned,
+        "answer": _compose_answer(cleaned, rows, entity=entity),
+        "entity": entity,
+        "question_types": sorted(question_types),
+        "rows": rows,
+        "sources": _sources(rows),
+        "freshness": freshness,
+        "generated_at": _now(),
+    }
+
+
+def serve_qa(
+    *,
+    host: str,
+    port: int,
+    vault_path: str | Path,
+    state_dir: Path,
+    postgres_dsn: str | None,
+    raw_schema: str,
+    mart_schema: str,
+) -> None:
+    handler = _handler(
+        vault_path=vault_path,
+        state_dir=state_dir,
+        postgres_dsn=postgres_dsn,
+        raw_schema=raw_schema,
+        mart_schema=mart_schema,
+        service=default_context_service,
+    )
+    server = ThreadingHTTPServer((host, port), handler)
+    print(f"Replay Q&A listening on http://{host}:{port}")
+    server.serve_forever()
+
+
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(
+        prog="obsidian-mcp-context-replay-qa",
+        description="Serve a local browser Q&A page for mart-backed replay context.",
+    )
+    parser.add_argument("--host", default="127.0.0.1")
+    parser.add_argument("--port", type=int, default=8084)
+    parser.add_argument(
+        "--vault",
+        default=os.environ.get("VAULT_PATH", "var/replay-vault"),
+        help="Replay target vault mounted for parser diagnostic fallback.",
+    )
+    parser.add_argument(
+        "--state-dir",
+        default=os.environ.get("REPLAY_STATE_DIR", "var/replay-vault"),
+        help="Replay target vault containing replay and scheduler state files.",
+    )
+    parser.add_argument("--postgres-dsn", default=os.environ.get("POSTGRES_DSN"))
+    parser.add_argument("--raw-schema", default=os.environ.get("POSTGRES_RAW_SCHEMA", "raw"))
+    parser.add_argument("--mart-schema", default=os.environ.get("DBT_TARGET_SCHEMA", "marts"))
+    return parser
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = build_parser().parse_args(argv)
+    serve_qa(
+        host=args.host,
+        port=args.port,
+        vault_path=args.vault,
+        state_dir=Path(args.state_dir),
+        postgres_dsn=args.postgres_dsn,
+        raw_schema=args.raw_schema,
+        mart_schema=args.mart_schema,
+    )
+    return 0
+
+
+def _handler(
+    *,
+    vault_path: str | Path,
+    state_dir: Path,
+    postgres_dsn: str | None,
+    raw_schema: str,
+    mart_schema: str,
+    service: ContextService = default_context_service,
+) -> type[BaseHTTPRequestHandler]:
+    class ReplayQaHandler(BaseHTTPRequestHandler):
+        def do_HEAD(self) -> None:  # noqa: N802
+            path = urlparse(self.path).path
+            if path in {"/", "/api/status"}:
+                self.send_response(HTTPStatus.OK)
+                self.send_header(
+                    "Content-Type",
+                    "text/html; charset=utf-8"
+                    if path == "/"
+                    else "application/json; charset=utf-8",
+                )
+                self.send_header("Cache-Control", "no-store")
+                self.end_headers()
+                return
+            self.send_response(HTTPStatus.NOT_FOUND)
+            self.end_headers()
+
+        def do_GET(self) -> None:  # noqa: N802
+            path = urlparse(self.path).path
+            if path == "/":
+                self._send_text(HTTPStatus.OK, _HTML, content_type="text/html; charset=utf-8")
+                return
+            if path == "/api/status":
+                self._send_json(
+                    HTTPStatus.OK,
+                    dashboard_status(
+                        state_dir=state_dir,
+                        postgres_dsn=postgres_dsn,
+                        raw_schema=raw_schema,
+                        mart_schema=mart_schema,
+                    ),
+                )
+                return
+            self._send_json(HTTPStatus.NOT_FOUND, {"error": "not_found"})
+
+        def do_POST(self) -> None:  # noqa: N802
+            path = urlparse(self.path).path
+            if path != "/api/ask":
+                self._send_json(HTTPStatus.NOT_FOUND, {"error": "not_found"})
+                return
+            try:
+                length = int(self.headers.get("Content-Length", "0"))
+                payload = json.loads(self.rfile.read(length).decode("utf-8") or "{}")
+                question = str(payload.get("question", ""))
+                answer = answer_question(
+                    question,
+                    vault_path=vault_path,
+                    state_dir=state_dir,
+                    postgres_dsn=postgres_dsn,
+                    raw_schema=raw_schema,
+                    mart_schema=mart_schema,
+                    service=service,
+                )
+            except json.JSONDecodeError:
+                self._send_json(HTTPStatus.BAD_REQUEST, {"error": "invalid_json"})
+                return
+            except Exception as exc:  # pragma: no cover - HTTP boundary safety.
+                self._send_json(HTTPStatus.INTERNAL_SERVER_ERROR, {"error": str(exc)})
+                return
+            self._send_json(HTTPStatus.OK, answer)
+
+        def log_message(self, format: str, *args: object) -> None:
+            return
+
+        def _send_json(self, status: HTTPStatus, payload: dict[str, object]) -> None:
+            body = json.dumps(payload, indent=2, sort_keys=True).encode("utf-8")
+            self.send_response(status)
+            self.send_header("Content-Type", "application/json; charset=utf-8")
+            self.send_header("Cache-Control", "no-store")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+
+        def _send_text(
+            self,
+            status: HTTPStatus,
+            body: str,
+            *,
+            content_type: str,
+        ) -> None:
+            encoded = body.encode("utf-8")
+            self.send_response(status)
+            self.send_header("Content-Type", content_type)
+            self.send_header("Cache-Control", "no-store")
+            self.send_header("Content-Length", str(len(encoded)))
+            self.end_headers()
+            self.wfile.write(encoded)
+
+    return ReplayQaHandler
+
+
+def _resolve_entity(
+    question: str,
+    *,
+    vault_path: str | Path,
+    service: ContextService,
+    postgres_dsn: str | None,
+) -> dict[str, object] | None:
+    entities = service.list_entities(
+        vault_path,
+        text=None,
+        limit=500,
+        postgres_dsn=postgres_dsn,
+    )
+    folded_question = question.casefold()
+    matches = [
+        entity
+        for entity in entities
+        if str(entity.get("name", "")).casefold() in folded_question
+    ]
+    if not matches:
+        return None
+    return max(matches, key=lambda row: len(str(row.get("name", ""))))
+
+
+def _question_types(question: str) -> set[str]:
+    words = {match.group(0).casefold() for match in QUESTION_WORD_RE.finditer(question)}
+    types: set[str] = set()
+    if words & DECISION_WORDS:
+        types.add("decisions")
+    if words & RISK_WORDS:
+        types.add("risks")
+    if words & OPEN_LOOP_WORDS:
+        types.add("open_loops")
+    if words & TIMELINE_WORDS:
+        types.add("timeline")
+    return types or {"context"}
+
+
+def _mart_rows(
+    question: str,
+    *,
+    entity: dict[str, object] | None,
+    question_types: set[str],
+    vault_path: str | Path,
+    postgres_dsn: str | None,
+    service: ContextService,
+    limit: int,
+) -> list[dict[str, object]]:
+    bounded_limit = max(1, min(limit, MAX_LIMIT))
+    if entity:
+        entity_name = str(entity["name"])
+        entity_type = str(entity["entity_type"])
+        rows: list[dict[str, object]] = []
+        if "decisions" in question_types:
+            rows.extend(service.decisions(postgres_dsn, entity=entity_name, limit=bounded_limit))
+        if "risks" in question_types:
+            rows.extend(service.risks(postgres_dsn, entity=entity_name, limit=bounded_limit))
+        if "open_loops" in question_types:
+            rows.extend(service.open_loops(postgres_dsn, entity=entity_name, limit=bounded_limit))
+        if "timeline" in question_types or "context" in question_types or not rows:
+            if entity_type == "project":
+                rows.extend(service.project_context(postgres_dsn, project=entity_name, limit=bounded_limit))
+            elif entity_type == "person":
+                rows.extend(service.person_context(postgres_dsn, person=entity_name, limit=bounded_limit))
+            else:
+                rows.extend(
+                    service.entity_context_generic(
+                        postgres_dsn,
+                        entity_type=entity_type,
+                        entity=entity_name,
+                        limit=bounded_limit,
+                    )
+                )
+        return _dedupe_rows(rows)[:bounded_limit]
+
+    words = " ".join(match.group(0) for match in QUESTION_WORD_RE.finditer(question))
+    rows = service.agent_context(
+        vault_path,
+        text=words or None,
+        limit=bounded_limit,
+        postgres_dsn=postgres_dsn,
+    )
+    return _dedupe_rows(rows)[:bounded_limit]
+
+
+def _fallback_answer(
+    question: str,
+    *,
+    vault_path: str | Path,
+    freshness: dict[str, object],
+    service: ContextService,
+    limit: int,
+) -> dict[str, object]:
+    rows = service.search_blocks(vault_path, text=question, limit=min(limit, 10))
+    return {
+        "status": "fallback" if rows else "warehouse_unavailable",
+        "mode": "parser-diagnostic-fallback" if rows else "unavailable",
+        "question": question,
+        "answer": (
+            "No valid dbt warehouse is available. Showing parser diagnostic matches."
+            if rows
+            else "No valid dbt warehouse is available and parser diagnostics found no matches."
+        ),
+        "entity": None,
+        "rows": rows,
+        "sources": _sources(rows),
+        "freshness": freshness,
+        "generated_at": _now(),
+    }
+
+
+def _dedupe_rows(rows: list[dict[str, object]]) -> list[dict[str, object]]:
+    seen: set[tuple[object, object, object, object]] = set()
+    deduped: list[dict[str, object]] = []
+    for row in rows:
+        key = (
+            row.get("row_id"),
+            row.get("source_path"),
+            row.get("start_line"),
+            row.get("summary"),
+        )
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(row)
+    return deduped
+
+
+def _compose_answer(
+    question: str,
+    rows: list[dict[str, object]],
+    *,
+    entity: dict[str, object] | None,
+) -> str:
+    target = str(entity["name"]) if entity else "the current vault"
+    facts = []
+    for row in rows[:6]:
+        event_type = str(row.get("event_type") or "context").replace("_", " ")
+        title = str(row.get("title") or row.get("source_path") or "Untitled")
+        summary = str(row.get("summary") or "").strip()
+        if summary:
+            facts.append(f"{event_type}: {title} - {summary}")
+        else:
+            facts.append(f"{event_type}: {title}")
+    return (
+        f"Mart-backed context for {target} matched the question {question!r}. "
+        + " ".join(facts)
+    )
+
+
+def _sources(rows: list[dict[str, object]]) -> list[dict[str, object]]:
+    seen: set[tuple[str, object]] = set()
+    sources: list[dict[str, object]] = []
+    for row in rows:
+        source_path = row.get("source_path")
+        if not source_path:
+            continue
+        key = (str(source_path), row.get("start_line"))
+        if key in seen:
+            continue
+        seen.add(key)
+        sources.append(
+            {
+                "source_path": source_path,
+                "start_line": row.get("start_line"),
+                "title": row.get("title"),
+                "event_type": row.get("event_type"),
+            }
+        )
+    return sources
+
+
+def _error_answer(code: str, message: str) -> dict[str, object]:
+    return {
+        "status": "error",
+        "mode": "unavailable",
+        "error": code,
+        "answer": message,
+        "rows": [],
+        "sources": [],
+        "generated_at": _now(),
+    }
+
+
+def _now() -> str:
+    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+_HTML = r"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Replay Q&A</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --panel-2: #eef1f4;
+      --text: #18202c;
+      --muted: #637083;
+      --line: #d7dee8;
+      --accent: #0b6bcb;
+      --ok: #087443;
+      --warn: #8a5a00;
+      --bad: #b42318;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 14px/1.45 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    h1 { margin: 0; font-size: 22px; letter-spacing: 0; }
+    h2 { margin: 0 0 10px; font-size: 15px; letter-spacing: 0; }
+    main {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 20px;
+      display: grid;
+      gap: 16px;
+    }
+    .status {
+      display: inline-flex;
+      min-height: 28px;
+      align-items: center;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-weight: 700;
+      color: var(--muted);
+      background: var(--panel-2);
+    }
+    .status.ok { color: var(--ok); background: #e8f5ee; }
+    .status.warn { color: var(--warn); background: #fff3d6; }
+    .status.bad { color: var(--bad); background: #fdeceb; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: start;
+    }
+    textarea {
+      width: 100%;
+      min-height: 78px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 10px 12px;
+      color: var(--text);
+      font: inherit;
+      background: #fff;
+    }
+    button {
+      min-height: 40px;
+      border: 1px solid #0959a8;
+      border-radius: 6px;
+      padding: 0 14px;
+      background: var(--accent);
+      color: #fff;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:disabled { opacity: 0.55; cursor: wait; }
+    .meta {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .metric {
+      background: var(--panel-2);
+      border-radius: 6px;
+      padding: 10px;
+      min-height: 74px;
+    }
+    .label { color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; }
+    .value { margin-top: 4px; font-size: 18px; font-weight: 750; overflow-wrap: anywhere; }
+    .subtle { color: var(--muted); font-size: 13px; overflow-wrap: anywhere; }
+    .answer {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-size: 15px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      padding: 8px 6px;
+      vertical-align: top;
+    }
+    th { color: var(--muted); font-size: 12px; }
+    code {
+      background: var(--panel-2);
+      border-radius: 4px;
+      padding: 1px 4px;
+      overflow-wrap: anywhere;
+    }
+    @media (max-width: 840px) {
+      header, main { padding: 16px; }
+      form, .meta { grid-template-columns: 1fr; }
+      button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Replay Q&A</h1>
+      <div class="subtle">Ask against current generated-vault mart context</div>
+    </div>
+    <div id="ready" class="status">Loading</div>
+  </header>
+  <main>
+    <section class="panel">
+      <form id="askForm">
+        <textarea id="question" maxlength="500">What are the risks and open loops for Project Atlas 1?</textarea>
+        <button id="askButton" type="submit">Ask</button>
+      </form>
+    </section>
+
+    <section class="meta">
+      <div class="metric"><div class="label">Mode</div><div id="mode" class="value">-</div></div>
+      <div class="metric"><div class="label">Entity</div><div id="entity" class="value">-</div></div>
+      <div class="metric"><div class="label">Virtual Time</div><div id="virtualTime" class="value">-</div></div>
+      <div class="metric"><div class="label">Rows</div><div id="rowCount" class="value">-</div></div>
+    </section>
+
+    <section class="panel">
+      <h2>Answer</h2>
+      <div id="answer" class="answer">Waiting for a question.</div>
+    </section>
+
+    <section class="panel">
+      <h2>Sources</h2>
+      <table><thead><tr><th>Source</th><th>Line</th><th>Type</th><th>Title</th></tr></thead><tbody id="sources"></tbody></table>
+    </section>
+
+    <section class="panel">
+      <h2>Matched Rows</h2>
+      <table><thead><tr><th>Date</th><th>Type</th><th>Summary</th><th>Source</th></tr></thead><tbody id="rows"></tbody></table>
+    </section>
+  </main>
+  <script>
+    const fmt = value => value === null || value === undefined || value === "" ? "-" : String(value);
+    const escapeHtml = value => fmt(value).replace(/[&<>"']/g, char => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    })[char]);
+    function setReady(status) {
+      const el = document.getElementById("ready");
+      const ready = status && status.readiness && status.readiness.ready;
+      el.className = ready ? "status ok" : "status warn";
+      el.textContent = ready ? "Ready" : "Not ready";
+    }
+    function renderAnswer(data) {
+      const freshness = data.freshness || {};
+      const replay = freshness.replay || {};
+      const entity = data.entity || {};
+      document.getElementById("mode").textContent = fmt(data.mode);
+      document.getElementById("entity").textContent = fmt(entity.name);
+      document.getElementById("virtualTime").textContent = fmt(replay.virtual_time);
+      document.getElementById("rowCount").textContent = fmt((data.rows || []).length);
+      document.getElementById("answer").textContent = fmt(data.answer);
+      document.getElementById("sources").innerHTML = (data.sources || []).map(source =>
+        `<tr><td><code>${escapeHtml(source.source_path)}</code></td><td>${escapeHtml(source.start_line)}</td><td>${escapeHtml(source.event_type)}</td><td>${escapeHtml(source.title)}</td></tr>`
+      ).join("") || "<tr><td colspan='4'>No sources returned</td></tr>";
+      document.getElementById("rows").innerHTML = (data.rows || []).map(row =>
+        `<tr><td>${escapeHtml(row.event_date || row.source_date)}</td><td>${escapeHtml(row.event_type)}</td><td>${escapeHtml(row.summary || row.text || row.task_text)}</td><td><code>${escapeHtml(row.source_path)}</code></td></tr>`
+      ).join("") || "<tr><td colspan='4'>No rows returned</td></tr>";
+      setReady(freshness);
+    }
+    async function refreshStatus() {
+      const response = await fetch("/api/status", { cache: "no-store" });
+      setReady(await response.json());
+    }
+    document.getElementById("askForm").addEventListener("submit", async event => {
+      event.preventDefault();
+      const button = document.getElementById("askButton");
+      button.disabled = true;
+      try {
+        const response = await fetch("/api/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question: document.getElementById("question").value })
+        });
+        renderAnswer(await response.json());
+      } catch (error) {
+        document.getElementById("ready").className = "status bad";
+        document.getElementById("ready").textContent = "Error";
+        document.getElementById("answer").textContent = error.message;
+      } finally {
+        button.disabled = false;
+      }
+    });
+    refreshStatus().catch(() => {});
+    setInterval(refreshStatus, 5000);
+  </script>
+</body>
+</html>
+"""
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
