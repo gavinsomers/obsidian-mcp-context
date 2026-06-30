@@ -87,6 +87,15 @@ scripts/run_replay_scheduler.sh --interval-seconds 60
 Use `--once` for a single ingest/dbt cycle. Scheduler state is written to
 `var/replay-vault/.obsidian-mcp-scheduler-state.json`.
 
+Open the replay observability dashboard:
+
+```bash
+docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up -d replay-dashboard
+```
+
+Then open `http://localhost:8083` to see replay progress, ingest/dbt status,
+and current Postgres raw/mart counts.
+
 Keep the generated-large stack running for an MCP client:
 
 ```bash

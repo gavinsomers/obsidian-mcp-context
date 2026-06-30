@@ -20,6 +20,8 @@ service, dbt container, and editor-visible model code.
   catalog metadata.
 - `dbt-docs`: generates and serves dbt docs in a local browser.
 - `postgres-browser`: local Adminer UI for inspecting raw tables and dbt marts.
+- `replay-dashboard`: local browser dashboard for replay, scheduler, and
+  Postgres mart freshness.
 - `mcp`: MCP server container backed by the Postgres dbt marts.
 - `ollama` and `enrichment`: optional AI profile scaffold for local enrichment
   work.
@@ -149,6 +151,34 @@ remaining replay note counts, and captured stdout/stderr tails for ingest and
 dbt. The scheduler is single-process, so it never starts a new ingest/dbt cycle
 until the previous one has completed. Failed runs are recorded and leave the
 last successful marts in Postgres for MCP to continue reading.
+
+## Replay Observability Dashboard
+
+The `replay-dashboard` service exposes a local browser dashboard for the
+generated replay environment:
+
+```bash
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml up -d replay-dashboard
+```
+
+Open:
+
+```text
+http://localhost:8083
+```
+
+The host port is configurable with `REPLAY_DASHBOARD_PORT`. The dashboard reads:
+
+- `var/replay-vault/.obsidian-mcp-replay-state.json`
+- `var/replay-vault/.obsidian-mcp-scheduler-state.json`
+- Postgres raw table counts from `POSTGRES_RAW_SCHEMA`
+- Postgres mart counts from `DBT_TARGET_SCHEMA`
+
+It shows replay virtual time, loaded and remaining note counts, latest scheduler
+status, latest successful ingest/dbt run, raw table counts, mart table counts,
+and whether the current mart state is ready for MCP-backed browser features.
+The page refreshes itself every five seconds. It does not expose note content or
+personal vault paths.
 
 To run the same check against your own vault:
 
