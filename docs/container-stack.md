@@ -111,6 +111,45 @@ resumes by skipping already loaded files. The source fixture remains read-only
 from the replay perspective, and the target is under ignored `var/` storage so
 the workflow does not read or write Gavin's personal Obsidian vault.
 
+## Virtual-Time Ingest And dbt Scheduler
+
+Once replay is running, start the scheduler in another terminal to refresh
+Postgres and dbt as the target vault changes:
+
+```bash
+scripts/run_replay_scheduler.sh --interval-seconds 60
+```
+
+The scheduler keeps `VAULT_PATH=./var/replay-vault`, starts Postgres if needed,
+then repeatedly runs:
+
+```bash
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm ingest
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm dbt
+```
+
+Use `--once` for a single refresh cycle:
+
+```bash
+scripts/run_replay_scheduler.sh --once
+```
+
+The default cadence is one run per real minute. You can also set
+`REPLAY_SCHEDULER_INTERVAL_SECONDS` before running the script.
+
+Scheduler state is written to:
+
+```text
+var/replay-vault/.obsidian-mcp-scheduler-state.json
+```
+
+That file records the latest scheduler status, run count, last successful run,
+the replay virtual-time watermark seen at the start of each run, loaded and
+remaining replay note counts, and captured stdout/stderr tails for ingest and
+dbt. The scheduler is single-process, so it never starts a new ingest/dbt cycle
+until the previous one has completed. Failed runs are recorded and leave the
+last successful marts in Postgres for MCP to continue reading.
+
 To run the same check against your own vault:
 
 ```bash
