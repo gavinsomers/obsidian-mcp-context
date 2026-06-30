@@ -45,6 +45,30 @@ scripts/analytics_stack_check.sh large
 
 This sets `VAULT_PATH` to the selected checked-in generated vault for that run.
 
+## Browser Obsidian For Generated Vaults
+
+To inspect a generated vault in Obsidian without using a personal vault, start
+the browser-accessible Obsidian container:
+
+```bash
+scripts/run_generated_obsidian.sh large
+```
+
+The script accepts `small`, `medium`, `large`, or `synthetic`; `large` is the
+default. It sets `VAULT_PATH` to the selected checked-in fixture and starts only
+the isolated `vault-obsidian` service.
+
+Open the webtop session:
+
+```text
+http://localhost:3000
+```
+
+Inside the browser desktop, launch Obsidian if needed, choose "Open folder as
+vault", and open `/vault`. The notes are mounted from the selected generated
+fixture folder; they are not imported from, synced with, or written to Gavin's
+personal Obsidian vault.
+
 To run the same check against your own vault:
 
 ```bash
