@@ -31,7 +31,6 @@ class SourceConfig:
 @dataclass(frozen=True)
 class PipelineConfig:
     output_dir: str = "var"
-    warehouse_path: str = "var/warehouse.duckdb"
     run_mode: str = "local"
 
 
@@ -279,11 +278,6 @@ def _load_pipeline_config(data: dict[str, object]) -> tuple[
     )
     pipeline = PipelineConfig(
         output_dir=_string(pipeline_table.get("output_dir"), "pipeline.output_dir", "var"),
-        warehouse_path=_string(
-            pipeline_table.get("warehouse_path"),
-            "pipeline.warehouse_path",
-            "var/warehouse.duckdb",
-        ),
         run_mode=_string(pipeline_table.get("run_mode"), "pipeline.run_mode", "local"),
     )
     privacy = PrivacyConfig(

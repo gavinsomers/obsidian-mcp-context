@@ -274,7 +274,6 @@ def test_pipeline_config_defaults_to_sample_profile(tmp_path: Path):
     assert config.source.type == "sample"
     assert config.source.sample_name == "synthetic-vault"
     assert config.pipeline.output_dir == "var"
-    assert config.pipeline.warehouse_path == "var/warehouse.duckdb"
     assert config.privacy.allow_raw_text_to_ai is False
     assert config.privacy.allow_hosted_ai is False
     assert config.ai.enabled is False
@@ -293,7 +292,6 @@ vault_path = "{vault}"
 
 [pipeline]
 output_dir = "var/local"
-warehouse_path = "var/local.duckdb"
 run_mode = "local"
 """.strip(),
         encoding="utf-8",
@@ -304,7 +302,7 @@ run_mode = "local"
     assert config.source.type == "obsidian"
     assert config.source.vault_path == str(vault)
     assert config.pipeline.output_dir == "var/local"
-    assert config.pipeline.warehouse_path == "var/local.duckdb"
+    assert config.pipeline.run_mode == "local"
 
 
 def test_pipeline_config_accepts_local_ai_without_hosted_privacy(tmp_path: Path):
