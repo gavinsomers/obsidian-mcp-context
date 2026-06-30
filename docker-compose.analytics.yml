@@ -116,13 +116,15 @@ services:
     environment:
       POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
       OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://ollama:11434}
+      OBSIDIAN_MCP_AI_MODEL: ${OBSIDIAN_MCP_AI_MODEL:-gemma4:26b-a4b-it-q4_K_M}
     command:
       - python
       - -c
       - >-
-        print("AI enrichment container is reserved for the Postgres mart/review
-        adapter; start ollama now and wire the explicit enrichment job once that
-        adapter lands.")
+        import os; print("AI enrichment container is reserved for the Postgres
+        mart/review adapter. Local Ollama model target:
+        " + os.environ["OBSIDIAN_MCP_AI_MODEL"] + ". Start ollama now and wire
+        the explicit enrichment job once that adapter lands.")
 
   ollama:
     image: ollama/ollama:latest

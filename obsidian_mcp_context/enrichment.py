@@ -17,7 +17,13 @@ from obsidian_mcp_context.warehouse import Warehouse, insert_ai_suggested_link
 UNRESOLVED_LINK_PROMPT_VERSION = "unresolved-link-match-v1"
 UNRESOLVED_LINK_SCHEMA = {
     "type": "object",
+    "properties": {
+        "selected_target_note_id": {"type": "string"},
+        "confidence_score": {"type": "number", "minimum": 0, "maximum": 1},
+        "rationale": {"type": "string", "maxLength": 80},
+    },
     "required": ["selected_target_note_id", "confidence_score", "rationale"],
+    "additionalProperties": False,
 }
 
 
@@ -97,9 +103,12 @@ def _prompt_for_candidates(source_link_id: str, rows: list[dict[str, object]]) -
         "task": "Choose the best existing note for this unresolved wikilink.",
         "rules": [
             "Return only a JSON object.",
-            "selected_target_note_id must be one of the provided candidate_target_note_id values, or an empty string if no candidate fits.",
+            "Use exactly these keys: selected_target_note_id, confidence_score, rationale.",
+            "selected_target_note_id must exactly equal one provided candidate_target_note_id value, or an empty string if no candidate fits.",
             "Do not invent target IDs.",
-            "Keep rationale concise.",
+            "confidence_score must be between 0 and 1.",
+            "Keep rationale under 8 words.",
+            "For weak or ambiguous matches, use rationale: Weak candidate match.",
         ],
         "source_link_id": source_link_id,
         "source_note_title": first["source_title"],
@@ -108,7 +117,7 @@ def _prompt_for_candidates(source_link_id: str, rows: list[dict[str, object]]) -
         "response_schema": {
             "selected_target_note_id": "string",
             "confidence_score": "number from 0 to 1",
-            "rationale": "string",
+            "rationale": "string, max 8 words",
         },
     }
     return json.dumps(payload, indent=2, sort_keys=True)

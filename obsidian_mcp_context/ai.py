@@ -184,7 +184,11 @@ class OllamaProvider:
                 "model": self.model,
                 "prompt": prompt,
                 "stream": False,
-                "format": "json",
+                "format": schema,
+                "options": {
+                    "temperature": 0,
+                    "num_predict": 256,
+                },
             }
         ).encode("utf-8")
         http_request = request.Request(

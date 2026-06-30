@@ -402,3 +402,15 @@ def test_example_pipeline_configs_are_valid():
     for config_path in Path("examples/config").glob("*.toml"):
         config = load_app_config(config_path)
         assert config.loaded is True
+
+
+def test_local_gemma_enrichment_profile_uses_local_ollama_only():
+    config = load_app_config("examples/config/local-gemma-enrichment.toml")
+
+    assert config.ai.enabled is True
+    assert config.ai.provider == "ollama"
+    assert config.ai.model == "gemma4:26b-a4b-it-q4_K_M"
+    assert config.ai.base_url == "http://localhost:11434"
+    assert config.privacy.allow_raw_text_to_ai is True
+    assert config.privacy.allow_hosted_ai is False
+    assert config.privacy.max_context_chars == 6000
