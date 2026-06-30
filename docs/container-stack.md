@@ -19,6 +19,7 @@ service, dbt container, and editor-visible model code.
 - `dbt-docs-generate`: refreshes dbt docs artifacts, including lineage and
   catalog metadata.
 - `dbt-docs`: generates and serves dbt docs in a local browser.
+- `postgres-browser`: local Adminer UI for inspecting raw tables and dbt marts.
 - `mcp`: MCP server container backed by the Postgres dbt marts.
 - `ollama` and `enrichment`: optional AI profile scaffold for local enrichment
   work.
@@ -159,6 +160,39 @@ The host port is configurable with `DBT_DOCS_PORT`. The service runs
 `dbt docs generate` before serving, so the visible lineage and column catalog
 reflect the latest successful Postgres dbt state at startup. Restart the service
 after later dbt runs to refresh the browser view.
+
+## Postgres Mart Browser
+
+Use `postgres-browser` when you want to inspect actual warehouse rows and
+schemas in the browser. It complements dbt docs: dbt docs shows lineage and
+model metadata, while Adminer shows the live Postgres tables.
+
+Start it after Postgres has data:
+
+```bash
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml up -d postgres-browser
+```
+
+Open:
+
+```text
+http://localhost:8082
+```
+
+Log in with:
+
+```text
+System: PostgreSQL
+Server: postgres
+Username: obsidian
+Password: obsidian
+Database: obsidian_context
+```
+
+The host port is configurable with `POSTGRES_BROWSER_PORT`. For demos, inspect
+the `marts` schema for dbt outputs and the `raw` schema for landing tables. This
+is a local inspection tool, so avoid editing table data unless you are
+deliberately testing a database change.
 
 ## VS Code Workflow
 
