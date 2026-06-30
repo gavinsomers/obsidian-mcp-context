@@ -180,6 +180,38 @@ and whether the current mart state is ready for MCP-backed browser features.
 The page refreshes itself every five seconds. It does not expose note content or
 personal vault paths.
 
+## Replay Q&A
+
+Start the browser Q&A page:
+
+```bash
+docker compose --env-file .env.analytics -f docker-compose.analytics.yml up -d replay-qa
+```
+
+Open:
+
+```text
+http://localhost:8084
+```
+
+The page retrieves deterministic context from the current Postgres marts and
+keeps the matched rows and source references visible. The `Local Gemma` toggle
+adds an optional local Ollama answer-composition step using
+`gemma4:26b-a4b-it-q4_K_M` by default. The model receives only the retrieved
+rows, source references, and the question; it does not query the vault or
+warehouse directly, and it does not write vault notes, warehouse facts, or AI
+review tables.
+
+If Ollama is unavailable, returns invalid JSON, or the retrieved evidence exceeds
+`REPLAY_QA_SUMMARY_MAX_CONTEXT_CHARS`, the page keeps the deterministic answer
+and rows visible. Configure the local model path with:
+
+```dotenv
+REPLAY_QA_SUMMARY_MODEL=gemma4:26b-a4b-it-q4_K_M
+REPLAY_QA_OLLAMA_BASE_URL=http://host.docker.internal:11434
+REPLAY_QA_SUMMARY_MAX_CONTEXT_CHARS=12000
+```
+
 To run the same check against your own vault:
 
 ```bash
