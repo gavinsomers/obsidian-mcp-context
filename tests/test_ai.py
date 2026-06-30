@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import json
+
 from obsidian_mcp_context.ai import (
     AIProviderError,
     ContextOverflowError,
@@ -158,6 +160,62 @@ def test_ollama_provider_requires_model():
         assert "requires ai.model" in str(exc)
     else:
         raise AssertionError("Expected missing model to fail")
+
+
+def test_ollama_provider_sends_schema_format_and_deterministic_options(monkeypatch):
+    captured: dict[str, object] = {}
+
+    class Response:
+        def __enter__(self):
+            return self
+
+        def __exit__(self, exc_type, exc, traceback):
+            return False
+
+        def read(self):
+            return json.dumps(
+                {
+                    "response": json.dumps(
+                        {
+                            "selected_target_note_id": "note:atlas",
+                            "confidence_score": 0.8,
+                            "rationale": "Exact title match.",
+                        }
+                    )
+                }
+            ).encode("utf-8")
+
+    def fake_urlopen(http_request, timeout):
+        captured["timeout"] = timeout
+        captured["body"] = json.loads(http_request.data.decode("utf-8"))
+        return Response()
+
+    monkeypatch.setattr("obsidian_mcp_context.ai.request.urlopen", fake_urlopen)
+    schema = {
+        "type": "object",
+        "required": ["selected_target_note_id", "confidence_score", "rationale"],
+    }
+    provider = OllamaProvider(model="gemma4:26b-a4b-it-q4_K_M")
+
+    result = provider.complete_json(
+        "pick a candidate",
+        schema,
+        max_context_chars=100,
+        prompt_version="unit-test-v1",
+    )
+
+    assert result.data["selected_target_note_id"] == "note:atlas"
+    assert captured["timeout"] == 60
+    assert captured["body"] == {
+        "model": "gemma4:26b-a4b-it-q4_K_M",
+        "prompt": "pick a candidate",
+        "stream": False,
+        "format": schema,
+        "options": {
+            "temperature": 0,
+            "num_predict": 256,
+        },
+    }
 
 
 def test_hosted_provider_requires_api_key_env_value(monkeypatch):

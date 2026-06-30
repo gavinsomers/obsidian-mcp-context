@@ -147,22 +147,35 @@ Hosted providers such as `openai` and `anthropic` are rejected unless
 AI enrichment is advisory. It never changes canonical note/link data directly;
 suggestions are written to review tables with `reviewed_status = "pending"`.
 
-For a local Qwen model through Ollama:
+For Gavin's local Gemma model through Ollama:
 
 ```toml
 [privacy]
 allow_raw_text_to_ai = true
 allow_hosted_ai = false
-max_context_chars = 1500
+max_context_chars = 6000
 redact_file_paths = true
 
 [ai]
 enabled = true
 provider = "ollama"
-model = "qwen2.5:7b"
+model = "gemma4:26b-a4b-it-q4_K_M"
 base_url = "http://localhost:11434"
 api_key_env = ""
 ```
+
+The checked-in `local-gemma-enrichment` profile contains the same local-only AI
+settings for explicit enrichment experiments:
+
+```bash
+.venv/bin/obsidian-mcp-context pipeline run --profile local-gemma-enrichment
+```
+
+This profile is not part of the containerized ingest/dbt/MCP path. The active
+demo workflow remains deterministic unless an enrichment job is invoked
+separately. The `6000` character budget is enough for the current synthetic
+candidate payloads, which are roughly 2700 to 5500 characters per unresolved
+link in the small local test fixture.
 
 Provider calls enforce `privacy.max_context_chars` as a hard character budget.
 Prompts that exceed the budget fail with a context overflow error; the system
@@ -203,7 +216,9 @@ When AI is enabled, the runner validates that the configured provider can be
 constructed and reports `ai.configured` plus any configuration error. It does
 not send vault-derived prompt content unless `privacy.allow_raw_text_to_ai =
 true`. If raw text is not allowed, enrichment is skipped and counted under
-`ai.skipped_due_to_privacy`.
+`ai.skipped_due_to_privacy`. AI enrichment is intended to run as an explicit
+advisory job after deterministic parsing/modeling, not as a required part of
+the main ingest/dbt/MCP refresh path.
 
 By default, local source/config paths and doctor samples are redacted from
 pipeline output. Use `--include-private-paths` only for local debugging:

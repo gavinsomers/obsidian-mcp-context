@@ -168,6 +168,11 @@ models, start the AI profile:
 docker compose --env-file .env.analytics -f docker-compose.analytics.yml --profile ai up -d ollama
 ```
 
+The local demo model target is `gemma4:26b-a4b-it-q4_K_M` through Ollama. Keep
+hosted AI disabled for this path; use the checked-in
+`examples/config/local-gemma-enrichment.toml` profile for local-only enrichment
+experiments outside the critical ingest/dbt/MCP workflow.
+
 The `enrichment` service currently prints a placeholder message. Run a real
 enrichment job from that service once the Postgres mart/review adapter is
 available.
