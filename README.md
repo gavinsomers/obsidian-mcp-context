@@ -91,6 +91,16 @@ Then open:
 http://localhost:8081
 ```
 
+Inspect live Postgres raw tables and dbt marts in the browser:
+
+```bash
+docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up -d postgres-browser
+```
+
+Then open `http://localhost:8082` and log in to Adminer with server
+`postgres`, database `obsidian_context`, username `obsidian`, and password
+`obsidian`.
+
 For MCP client configuration, see
 [docs/mcp-client-setup.md](docs/mcp-client-setup.md).
 

@@ -96,6 +96,16 @@ services:
         && dbt docs serve --profiles-dir dbt --project-dir .
         --host 0.0.0.0 --port 8080 --no-browser
 
+  postgres-browser:
+    image: adminer:latest
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+    ports:
+      - "${POSTGRES_BROWSER_PORT:-8082}:8080"
+
   mcp:
     build:
       context: .
