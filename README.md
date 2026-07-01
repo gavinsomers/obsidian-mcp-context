@@ -57,6 +57,21 @@ scripts/analytics_stack_check.sh small
 scripts/analytics_stack_check.sh medium
 ```
 
+Start the complete generated-large browser demo:
+
+```bash
+scripts/run_synthetic_demo.sh large
+```
+
+This uses only checked-in generated fixtures, resets the ignored
+`var/replay-vault` target by default, starts Obsidian/webtop, Postgres, MCP,
+Adminer, replay dashboard, Q&A, dbt docs, an initial replay slice, and the
+background replay plus ingest/dbt scheduler loops. Stop it with:
+
+```bash
+scripts/run_synthetic_demo.sh stop
+```
+
 Open the generated-large vault in an isolated browser-accessible Obsidian
 container:
 
