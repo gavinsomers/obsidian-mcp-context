@@ -354,21 +354,68 @@ def _resolve_entity(
     service: ContextService,
     postgres_dsn: str | None,
 ) -> dict[str, object] | None:
-    entities = service.list_entities(
-        vault_path,
-        text=None,
-        limit=500,
-        postgres_dsn=postgres_dsn,
+    entities = _matching_entities(
+        question,
+        service.list_entities(
+            vault_path,
+            text=None,
+            limit=500,
+            postgres_dsn=postgres_dsn,
+        ),
     )
+    if not entities:
+        for term in _candidate_entity_terms(question):
+            entities = _matching_entities(
+                question,
+                service.list_entities(
+                    vault_path,
+                    text=term,
+                    limit=50,
+                    postgres_dsn=postgres_dsn,
+                ),
+            )
+            if entities:
+                break
+    if not entities:
+        return None
+    return max(entities, key=_entity_match_score)
+
+
+def _matching_entities(
+    question: str,
+    entities: list[dict[str, object]],
+) -> list[dict[str, object]]:
     folded_question = question.casefold()
-    matches = [
+    return [
         entity
         for entity in entities
         if str(entity.get("name", "")).casefold() in folded_question
     ]
-    if not matches:
-        return None
-    return max(matches, key=lambda row: len(str(row.get("name", ""))))
+
+
+def _candidate_entity_terms(question: str) -> list[str]:
+    words = [match.group(0) for match in QUESTION_WORD_RE.finditer(question)]
+    terms: list[str] = []
+    seen: set[str] = set()
+    for width in range(min(5, len(words)), 1, -1):
+        for index in range(0, len(words) - width + 1):
+            term = " ".join(words[index : index + width])
+            folded = term.casefold()
+            if folded in seen:
+                continue
+            seen.add(folded)
+            terms.append(term)
+    return terms
+
+
+def _entity_match_score(entity: dict[str, object]) -> tuple[int, int]:
+    entity_type = str(entity.get("entity_type") or "")
+    type_score = {
+        "project": 4,
+        "person": 3,
+        "company": 2,
+    }.get(entity_type, 1)
+    return (type_score, len(str(entity.get("name", ""))))
 
 
 def _question_types(question: str) -> set[str]:
