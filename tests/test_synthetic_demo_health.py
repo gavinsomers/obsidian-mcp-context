@@ -36,23 +36,58 @@ class DemoHandler(BaseHTTPRequestHandler):
         length = int(self.headers.get("Content-Length", "0"))
         payload = json.loads(self.rfile.read(length).decode("utf-8"))
         question = payload["question"]
-        if "Beacon" in question:
+        folded = question.casefold()
+        if "Beacon" in question and "latest context" in folded:
             entity = "Project Beacon 2"
-            source = "Risks/Project Beacon 2 Metric Reconciliation Risk 2.md"
-        elif "decisions" in question or "decisions" in question.casefold():
+            answer = "Mart-backed context for Project Beacon 2. Daily Log and Tasks."
+            sources = [
+                {"source_path": "Daily/2023-04-21.md"},
+                {"source_path": "Daily/2023-05-30.md"},
+                {"source_path": "Daily/2023-06-06.md"},
+                {"source_path": "Daily/2023-06-16.md"},
+            ]
+        elif "Beacon" in question:
+            entity = "Project Beacon 2"
+            answer = "Mart-backed context for Project Beacon 2. risk open."
+            sources = [
+                {"source_path": "Risks/Project Beacon 2 Metric Reconciliation Risk 2.md"},
+                {"source_path": "Daily/2023-04-21.md"},
+                {"source_path": "Meetings/Project Beacon 2 Finance Approval Sync 14.md"},
+                {"source_path": "Daily/2023-05-30.md"},
+            ]
+        elif "decisions" in folded:
             entity = "Project Atlas 1"
-            source = "Decisions/Project Atlas 1 Security Review Decision 1.md"
+            answer = "Mart-backed context for Project Atlas 1. decision."
+            sources = [
+                {"source_path": "Decisions/Project Atlas 1 Security Review Decision 1.md"},
+                {"source_path": "Decisions/Project Atlas 1 Adoption Workflow Decision 13.md"},
+            ]
+        elif "full" in folded or "brief alex" in folded:
+            entity = "Project Atlas 1"
+            answer = "Mart-backed context for Project Atlas 1. Daily Log and Tasks for Alex Alvarez."
+            sources = [
+                {"source_path": "Daily/2023-04-19.md"},
+                {"source_path": "Daily/2023-05-11.md"},
+                {"source_path": "Daily/2023-05-15.md"},
+                {"source_path": "Daily/2023-05-18.md"},
+            ]
         else:
             entity = "Project Atlas 1"
-            source = "Risks/Project Atlas 1 Adoption Workflow Risk 1.md"
+            answer = "Mart-backed context for Project Atlas 1. risk open and open loop."
+            sources = [
+                {"source_path": "Risks/Project Atlas 1 Adoption Workflow Risk 1.md"},
+                {"source_path": "Daily/2023-04-19.md"},
+                {"source_path": "Meetings/Project Atlas 1 Warehouse Mapping Sync 1.md"},
+                {"source_path": "Daily/2023-05-11.md"},
+            ]
         self._send_json(
             HTTPStatus.OK,
             {
                 "status": "ok",
                 "mode": "mart-backed",
                 "entity": {"name": entity},
-                "answer": f"Mart-backed context for {entity}.",
-                "sources": [{"source_path": source}],
+                "answer": answer,
+                "sources": sources,
             },
         )
 
@@ -103,7 +138,7 @@ def test_run_checks_passes_with_state_services_and_canned_questions(tmp_path):
     _write_json(tmp_path / SCHEDULER_STATE_FILE, {"status": "success"})
     examples = tmp_path / "examples.json"
     examples.write_text(
-        Path("examples/replay-qa-examples.json").read_text(encoding="utf-8"),
+        Path("examples/eval-packs/generated-demo.json").read_text(encoding="utf-8"),
         encoding="utf-8",
     )
     server, thread, port = _server()
@@ -133,7 +168,10 @@ def test_run_checks_passes_with_state_services_and_canned_questions(tmp_path):
         "replay-qa",
         "qa-example:atlas-risks-open-loops",
         "qa-example:atlas-decisions",
+        "qa-example:atlas-full-context",
+        "qa-example:atlas-stakeholder-brief",
         "qa-example:beacon-risks",
+        "qa-example:beacon-latest-context",
     }
 
 
@@ -213,7 +251,7 @@ def test_run_checks_fails_when_state_is_missing(tmp_path):
     checks = run_checks(
         env={},
         state_dir=tmp_path,
-        examples_path=Path("examples/replay-qa-examples.json"),
+        examples_path=Path("examples/eval-packs/generated-demo.json"),
         host="127.0.0.1",
         timeout=0.01,
         include_http=False,
