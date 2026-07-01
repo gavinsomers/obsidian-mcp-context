@@ -72,6 +72,16 @@ background replay plus ingest/dbt scheduler loops. Stop it with:
 scripts/run_synthetic_demo.sh stop
 ```
 
+Check the running demo and replay Q&A examples:
+
+```bash
+scripts/check_synthetic_demo.sh
+```
+
+The health check validates replay/scheduler state, browser service endpoints,
+dashboard readiness, and the canned questions in
+`examples/replay-qa-examples.json`.
+
 Open the generated-large vault in an isolated browser-accessible Obsidian
 container:
 
