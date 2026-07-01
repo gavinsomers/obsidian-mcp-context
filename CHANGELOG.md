@@ -22,6 +22,9 @@ The project uses semantic-ish versions:
   container path from ingest through dbt tests and MCP smoke checks.
 - Added GitHub Actions workflows for pull request CI, pushes to `main`, manual
   Python test runs, and an opt-in Docker Compose analytics stack check.
+- Added a v1.0 release readiness checklist covering installability, tests,
+  generated fixture validation, privacy posture, MCP compatibility, demo
+  readiness, public claims, known limitations, and follow-up boundaries.
 
 ### Changed
 

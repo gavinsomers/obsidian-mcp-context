@@ -244,6 +244,7 @@ inspection and troubleshooting.
 - [Entity contract](docs/entity-contract.md)
 - [Stale context signals](docs/stale-context-signals.md)
 - [Configuration](docs/configuration.md)
+- [v1.0 release readiness](docs/v1-release-readiness.md)
 
 ## Verification
 

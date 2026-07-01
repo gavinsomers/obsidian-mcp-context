@@ -18,6 +18,9 @@ Keep these files in sync for each release:
 
 ## Release Checklist
 
+For `v1.0.0`, complete the readiness checklist in
+[`docs/v1-release-readiness.md`](docs/v1-release-readiness.md) before tagging.
+
 1. Update the version in `pyproject.toml`.
 2. Update `__version__` in `obsidian_mcp_context/__init__.py`.
 3. Add a new top entry to `CHANGELOG.md`.
