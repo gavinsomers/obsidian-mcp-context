@@ -24,3 +24,6 @@ People = "person"
 Projects = "project"
 Research = "research"
 Risks = "risk"
+
+[replay_qa]
+entity_type_preferences = ["project", "person", "company"]

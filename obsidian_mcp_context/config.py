@@ -22,6 +22,7 @@ DOCTOR_DIAGNOSTIC_MODES = ("warn", "ignore", "error")
 SOURCE_TYPES = ("sample", "obsidian")
 AI_PROVIDERS = ("none", "mock", "ollama", "openai", "anthropic", "vllm")
 HOSTED_AI_PROVIDERS = {"openai", "anthropic"}
+DEFAULT_REPLAY_QA_ENTITY_TYPE_PREFERENCES = ("project", "person", "company")
 
 
 @dataclass(frozen=True)
@@ -73,6 +74,9 @@ class AppConfig:
     doctor_large_notes: str = "warn"
     doctor_unresolved_wikilinks: str = "warn"
     doctor_unresolved_wikilink_ignore_target_globs: tuple[str, ...] = ()
+    replay_qa_entity_type_preferences: tuple[str, ...] = (
+        DEFAULT_REPLAY_QA_ENTITY_TYPE_PREFERENCES
+    )
     config_path: Path | None = None
     profile_path: Path | None = None
     loaded: bool = False
@@ -236,6 +240,7 @@ def _apply_env_overrides(config: AppConfig) -> AppConfig:
             doctor_unresolved_wikilink_ignore_target_globs=(
                 config.doctor_unresolved_wikilink_ignore_target_globs
             ),
+            replay_qa_entity_type_preferences=config.replay_qa_entity_type_preferences,
             config_path=config.config_path,
             profile_path=config.profile_path,
             loaded=config.loaded,
@@ -391,6 +396,7 @@ def load_app_config(
     scan = _table(data, "scan")
     entities = _table(data, "entities")
     doctor = _table(data, "doctor")
+    replay_qa = _table(data, "replay_qa")
 
     include_globs = _string_tuple(scan.get("include_globs"), "scan.include_globs")
     exclude_globs = _string_tuple(scan.get("exclude_globs"), "scan.exclude_globs")
@@ -406,6 +412,14 @@ def load_app_config(
     )
     non_entity_note_types = _string_tuple(
         entities.get("non_entity_note_types"), "entities.non_entity_note_types"
+    )
+    replay_qa_entity_type_preferences = tuple(
+        entity_type.strip().lower()
+        for entity_type in _string_tuple(
+            replay_qa.get("entity_type_preferences"),
+            "replay_qa.entity_type_preferences",
+        )
+        if entity_type.strip()
     )
     doctor_lifecycle_metadata = _choice(
         doctor.get("lifecycle_metadata"),
@@ -469,6 +483,10 @@ def load_app_config(
         doctor_unresolved_wikilinks=doctor_unresolved_wikilinks,
         doctor_unresolved_wikilink_ignore_target_globs=(
             doctor_unresolved_wikilink_ignore_target_globs
+        ),
+        replay_qa_entity_type_preferences=(
+            replay_qa_entity_type_preferences
+            or DEFAULT_REPLAY_QA_ENTITY_TYPE_PREFERENCES
         ),
         config_path=path,
         profile_path=profile,

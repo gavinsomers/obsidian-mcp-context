@@ -83,7 +83,10 @@ Logs = "log"
         encoding="utf-8",
     )
 
-    app_config = load_app_config(config_path=tmp_path / "missing.toml", profile_path=profile_path)
+    app_config = load_app_config(
+        config_path=tmp_path / "missing.toml",
+        profile_path=profile_path,
+    )
     context = build_context(vault_config_from_app_config(vault, app_config))
     warehouse = build_warehouse(context)
     try:
@@ -104,6 +107,25 @@ Logs = "log"
     assert {(entity["entity_type"], entity["name"]) for entity in entities} == {
         ("account", "Acme")
     }
+
+
+def test_vault_profile_applies_replay_qa_entity_preferences(tmp_path: Path):
+    profile_path = tmp_path / "profile.toml"
+    profile_path.write_text(
+        """
+[replay_qa]
+entity_type_preferences = ["account", "client", "case"]
+""".strip(),
+        encoding="utf-8",
+    )
+
+    app_config = load_app_config(config_path=tmp_path / "missing.toml", profile_path=profile_path)
+
+    assert app_config.replay_qa_entity_type_preferences == (
+        "account",
+        "client",
+        "case",
+    )
 
 
 def test_local_config_overrides_vault_profile(tmp_path: Path):

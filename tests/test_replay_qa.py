@@ -6,6 +6,7 @@ import threading
 from urllib.request import Request, urlopen
 
 from obsidian_mcp_context.ai import AICompletionResult, AIProviderError
+from obsidian_mcp_context.config import AppConfig
 from obsidian_mcp_context.replay_dashboard import REPLAY_STATE_FILE, SCHEDULER_STATE_FILE
 from obsidian_mcp_context.replay_qa import answer_question, _handler
 
@@ -163,6 +164,62 @@ class FakePagedMartService(FakeMartService):
         raise AssertionError("broad fallback context should not be used")
 
 
+class FakeAccountMartService(FakeMartService):
+    app_config = AppConfig(
+        replay_qa_entity_type_preferences=("account", "client", "case")
+    )
+
+    def list_entities(
+        self,
+        vault_path: str | Path,
+        entity_type: str | None = None,
+        text: str | None = None,
+        limit: int = 100,
+        postgres_dsn: str | Path | None = None,
+    ) -> list[dict[str, object]]:
+        return [
+            {
+                "entity_id": "company:acme",
+                "entity_type": "company",
+                "name": "Acme",
+                "source_path": "Companies/Acme.md",
+            },
+            {
+                "entity_id": "account:acme",
+                "entity_type": "account",
+                "name": "Acme",
+                "source_path": "Accounts/Acme.md",
+            },
+        ]
+
+    def entity_context_generic(
+        self,
+        postgres_dsn: str | Path | None,
+        entity_type: str,
+        entity: str,
+        limit: int,
+    ) -> list[dict[str, object]]:
+        assert entity_type == "account"
+        assert entity == "Acme"
+        return [
+            {
+                "row_id": "account:acme:context",
+                "event_date": "2026-01-10",
+                "event_type": "entity_context",
+                "source_path": "Accounts/Acme.md",
+                "start_line": 7,
+                "title": "Acme account state",
+                "summary": "Acme account onboarding is ready for review.",
+            }
+        ]
+
+    def project_context(self, *args: object, **kwargs: object) -> list[dict[str, object]]:
+        raise AssertionError("account Q&A should use generic entity context")
+
+    def person_context(self, *args: object, **kwargs: object) -> list[dict[str, object]]:
+        raise AssertionError("account Q&A should use generic entity context")
+
+
 class FakeSummaryProvider:
     provider = "ollama"
     model = "gemma4:26b-a4b-it-q4_K_M"
@@ -261,6 +318,33 @@ def test_answer_question_finds_project_when_initial_entity_page_misses_it(
     assert answer["mode"] == "mart-backed"
     assert answer["entity"]["entity_type"] == "project"
     assert answer["entity"]["name"] == "Project Atlas 1"
+
+
+def test_answer_question_uses_profile_entity_type_preferences_for_accounts(
+    tmp_path,
+    monkeypatch,
+):
+    monkeypatch.setattr(
+        "obsidian_mcp_context.replay_qa.dashboard_status",
+        lambda **_: {
+            "replay": {"virtual_time": "2026-01-10T09:00:00"},
+            "readiness": {"ready": True},
+        },
+    )
+
+    answer = answer_question(
+        "What is the latest context for Acme?",
+        vault_path=tmp_path,
+        state_dir=tmp_path,
+        postgres_dsn="postgres://example",
+        service=FakeAccountMartService(),
+    )
+
+    assert answer["status"] == "ok"
+    assert answer["mode"] == "mart-backed"
+    assert answer["entity"]["entity_type"] == "account"
+    assert answer["entity"]["name"] == "Acme"
+    assert answer["rows"][0]["source_path"] == "Accounts/Acme.md"
 
 
 def test_answer_question_can_summarize_retrieved_rows_with_local_provider(
