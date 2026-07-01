@@ -145,10 +145,15 @@ def ingest_vault_postgres(
     *,
     schema: str = "raw",
     config_path: Path | None = None,
+    profile_path: Path | None = None,
 ) -> dict[str, int]:
     import psycopg
 
-    app_config = load_app_config(config_path) if config_path else AppConfig()
+    app_config = (
+        load_app_config(config_path, profile_path=profile_path)
+        if config_path or profile_path or os.environ.get("OBSIDIAN_MCP_VAULT_PROFILE")
+        else AppConfig()
+    )
     context = build_context(vault_config_from_app_config(vault_path, app_config))
     first_block_text_by_source = {
         block.source_path: block.text for block in reversed(context.blocks)
@@ -236,6 +241,13 @@ def build_parser() -> argparse.ArgumentParser:
         "--config",
         help="Optional .obsidian-mcp-context.toml path for local scan and entity settings.",
     )
+    parser.add_argument(
+        "--vault-profile",
+        help=(
+            "Optional vault profile TOML path or checked-in profile name from "
+            "examples/vault-profiles. Loaded before --config."
+        ),
+    )
     return parser
 
 
@@ -249,6 +261,7 @@ def main(argv: list[str] | None = None) -> int:
         args.connection,
         schema=args.schema,
         config_path=Path(args.config) if args.config else DEFAULT_CONFIG_PATH,
+        profile_path=Path(args.vault_profile) if args.vault_profile else None,
     )
     for table, count in counts.items():
         print(f"{table}: {count}")

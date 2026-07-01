@@ -1,0 +1,26 @@
+[scan]
+include_globs = ["**/*.md"]
+exclude_globs = [
+  ".git/**",
+  ".obsidian/**",
+  "System/Marts/**",
+]
+source_extensions = [".md"]
+
+[entities]
+non_entity_note_types = [
+  "daily",
+  "meeting",
+  "note",
+  "research",
+]
+
+[entities.folders]
+Companies = "company"
+Daily = "daily"
+Decisions = "decision"
+Meetings = "meeting"
+People = "person"
+Projects = "project"
+Research = "research"
+Risks = "risk"

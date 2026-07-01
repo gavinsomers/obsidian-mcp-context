@@ -62,6 +62,7 @@ class DoctorOptions:
     vault_path: Path
     strict: bool = False
     config_path: Path | None = None
+    profile_path: Path | None = None
     include_samples: bool = False
     export_unresolved_path: Path | None = None
 
@@ -533,7 +534,10 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             },
         }
 
-    app_config = load_app_config(options.config_path)
+    app_config = load_app_config(
+        options.config_path,
+        profile_path=options.profile_path,
+    )
     vault_config = vault_config_from_app_config(vault_path, app_config)
     inventory = _scan_inventory(vault_path, vault_config)
     context = build_context(vault_config)
@@ -881,6 +885,9 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         },
         "config": {
             "path": str(app_config.config_path) if app_config.config_path else None,
+            "profile_path": (
+                str(app_config.profile_path) if app_config.profile_path else None
+            ),
             "loaded": app_config.loaded,
             "include_globs": list(vault_config.include_globs),
             "exclude_globs": list(vault_config.exclude_globs),

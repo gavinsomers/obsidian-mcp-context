@@ -328,6 +328,19 @@ VAULT_PATH=/absolute/path/to/your/vault
 
 The same mount path, `/vault`, is used inside every container.
 
+If the vault uses different folder conventions, provide a vault profile. For a
+host-local profile, mount or reference a path visible to the container and set:
+
+```dotenv
+OBSIDIAN_MCP_VAULT_PROFILE=/absolute/path/to/vault-profile.toml
+```
+
+The profile is loaded before any local `.obsidian-mcp-context.toml` config and
+can define scan globs, source extensions, folder-to-entity-type mappings, and
+non-entity note types. Checked-in reusable examples live under
+`examples/vault-profiles/`; keep private profiles outside the repo unless they
+are intentionally generic.
+
 For checked-in generated fixtures, either pass a size to
 `scripts/analytics_stack_check.sh` or set `VAULT_PATH` directly:
 

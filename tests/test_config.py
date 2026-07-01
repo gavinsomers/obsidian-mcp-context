@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from obsidian_mcp_context.config import load_app_config, vault_config_from_app_config
+from obsidian_mcp_context.config import load_app_config, resolve_profile_path, vault_config_from_app_config
 from obsidian_mcp_context.doctor import DoctorCode, DoctorOptions, run_doctor
 from obsidian_mcp_context.vault import build_context
 from obsidian_mcp_context.warehouse import build_warehouse, list_entities
@@ -57,6 +57,107 @@ Calendars = "calendar"
     assert {(entity["entity_type"], entity["name"]) for entity in entities} == {
         ("company", "Acme")
     }
+
+
+def test_vault_profile_applies_scan_and_entity_settings(tmp_path: Path):
+    vault = tmp_path / "vault"
+    profile_path = tmp_path / "profile.toml"
+    (vault / "Accounts").mkdir(parents=True)
+    (vault / "Logs").mkdir()
+    (vault / "Raw").mkdir()
+    (vault / "Accounts" / "Acme.md").write_text("# Acme\n", encoding="utf-8")
+    (vault / "Logs" / "Call.md").write_text("# Call\n", encoding="utf-8")
+    (vault / "Raw" / "Ignored.md").write_text("# Ignored\n", encoding="utf-8")
+    profile_path.write_text(
+        """
+[scan]
+extra_exclude_globs = ["Raw/**"]
+
+[entities]
+non_entity_note_types = ["log", "note"]
+
+[entities.folders]
+Accounts = "account"
+Logs = "log"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    app_config = load_app_config(config_path=tmp_path / "missing.toml", profile_path=profile_path)
+    context = build_context(vault_config_from_app_config(vault, app_config))
+    warehouse = build_warehouse(context)
+    try:
+        entities = list_entities(warehouse, limit=20)
+    finally:
+        warehouse.close()
+
+    assert app_config.loaded is True
+    assert app_config.profile_path == profile_path
+    assert {file.source_path for file in context.files} == {
+        "Accounts/Acme.md",
+        "Logs/Call.md",
+    }
+    assert {(file.source_path, file.note_type) for file in context.files} == {
+        ("Accounts/Acme.md", "account"),
+        ("Logs/Call.md", "log"),
+    }
+    assert {(entity["entity_type"], entity["name"]) for entity in entities} == {
+        ("account", "Acme")
+    }
+
+
+def test_local_config_overrides_vault_profile(tmp_path: Path):
+    profile_path = tmp_path / "profile.toml"
+    config_path = tmp_path / "config.toml"
+    profile_path.write_text(
+        """
+[scan]
+extra_exclude_globs = ["Raw/**"]
+
+[entities.folders]
+Accounts = "account"
+""".strip(),
+        encoding="utf-8",
+    )
+    config_path.write_text(
+        """
+[scan]
+extra_exclude_globs = ["Private/**"]
+
+[entities.folders]
+Accounts = "client"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    app_config = load_app_config(config_path, profile_path=profile_path)
+
+    assert "Raw/**" not in app_config.exclude_globs
+    assert "Private/**" in app_config.exclude_globs
+    assert app_config.folder_note_types["Accounts"] == "client"
+
+
+def test_vault_profile_can_be_loaded_from_environment(tmp_path: Path, monkeypatch):
+    profile_path = tmp_path / "profile.toml"
+    profile_path.write_text(
+        """
+[entities.folders]
+Cases = "case"
+""".strip(),
+        encoding="utf-8",
+    )
+    monkeypatch.setenv("OBSIDIAN_MCP_VAULT_PROFILE", str(profile_path))
+
+    app_config = load_app_config(config_path=tmp_path / "missing.toml")
+
+    assert app_config.profile_path == profile_path
+    assert app_config.folder_note_types == {"Cases": "case"}
+
+
+def test_named_vault_profile_resolves_to_examples_directory():
+    assert resolve_profile_path("generated-demo") == (
+        Path("examples/vault-profiles/generated-demo.toml").resolve()
+    )
 
 
 def test_doctor_reports_loaded_config_without_content_samples(tmp_path: Path):

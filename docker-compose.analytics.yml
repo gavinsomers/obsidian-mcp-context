@@ -44,6 +44,7 @@ services:
     environment:
       POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
       POSTGRES_RAW_SCHEMA: ${POSTGRES_RAW_SCHEMA:-raw}
+      OBSIDIAN_MCP_VAULT_PROFILE: ${OBSIDIAN_MCP_VAULT_PROFILE:-}
     volumes:
       - ${VAULT_PATH:-./examples/synthetic-vault}:/vault:ro
     command:
@@ -147,6 +148,7 @@ services:
       REPLAY_STATE_DIR: /replay-vault
       VAULT_PATH: /vault
       OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
+      OBSIDIAN_MCP_VAULT_PROFILE: ${OBSIDIAN_MCP_VAULT_PROFILE:-}
       REPLAY_QA_SUMMARY_MODEL: ${REPLAY_QA_SUMMARY_MODEL:-gemma4:26b-a4b-it-q4_K_M}
       REPLAY_QA_OLLAMA_BASE_URL: ${REPLAY_QA_OLLAMA_BASE_URL:-http://host.docker.internal:11434}
       REPLAY_QA_SUMMARY_MAX_CONTEXT_CHARS: ${REPLAY_QA_SUMMARY_MAX_CONTEXT_CHARS:-12000}
@@ -181,6 +183,7 @@ services:
       WAREHOUSE_BACKEND: postgres
       DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-marts}
       OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
+      OBSIDIAN_MCP_VAULT_PROFILE: ${OBSIDIAN_MCP_VAULT_PROFILE:-}
     volumes:
       - ${VAULT_PATH:-./examples/synthetic-vault}:/vault:ro
     ports:

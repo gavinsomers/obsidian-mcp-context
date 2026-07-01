@@ -54,6 +54,13 @@ def build_parser() -> argparse.ArgumentParser:
         "--config",
         help="Optional .obsidian-mcp-context.toml path for local scan and entity settings.",
     )
+    parser.add_argument(
+        "--vault-profile",
+        help=(
+            "Optional vault profile TOML path or checked-in profile name from "
+            "examples/vault-profiles. Loaded before --config."
+        ),
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     pipeline = subparsers.add_parser("pipeline", help="Run configured pipeline jobs.")
@@ -194,6 +201,7 @@ def main(argv: list[str] | None = None) -> int:
                 vault_path=Path(args.vault),
                 strict=args.strict,
                 config_path=Path(args.config) if args.config else None,
+                profile_path=Path(args.vault_profile) if args.vault_profile else None,
                 include_samples=args.include_samples,
                 export_unresolved_path=(
                     Path(args.export_unresolved) if args.export_unresolved else None
@@ -207,13 +215,19 @@ def main(argv: list[str] | None = None) -> int:
         parser.error(f"--vault is required for {args.command}")
 
     if args.command == "notes":
-        app_config = load_app_config(Path(args.config) if args.config else None)
+        app_config = load_app_config(
+            Path(args.config) if args.config else None,
+            profile_path=Path(args.vault_profile) if args.vault_profile else None,
+        )
         context = build_context(vault_config_from_app_config(Path(args.vault), app_config))
         _print_json(list_notes(context, limit=args.limit))
         return 0
 
     if args.command == "blocks":
-        app_config = load_app_config(Path(args.config) if args.config else None)
+        app_config = load_app_config(
+            Path(args.config) if args.config else None,
+            profile_path=Path(args.vault_profile) if args.vault_profile else None,
+        )
         context = build_context(vault_config_from_app_config(Path(args.vault), app_config))
         _print_json(
             search_blocks(
@@ -227,7 +241,10 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.command == "tasks":
-        app_config = load_app_config(Path(args.config) if args.config else None)
+        app_config = load_app_config(
+            Path(args.config) if args.config else None,
+            profile_path=Path(args.vault_profile) if args.vault_profile else None,
+        )
         context = build_context(vault_config_from_app_config(Path(args.vault), app_config))
         checked = None
         if args.checked:
@@ -245,7 +262,10 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 0
 
-    app_config = load_app_config(Path(args.config) if args.config else None)
+    app_config = load_app_config(
+        Path(args.config) if args.config else None,
+        profile_path=Path(args.vault_profile) if args.vault_profile else None,
+    )
     context = build_context(vault_config_from_app_config(Path(args.vault), app_config))
 
     if args.command == "warehouse-summary":

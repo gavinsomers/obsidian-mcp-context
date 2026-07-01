@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 
 from obsidian_mcp_context import postgres_warehouse
+from obsidian_mcp_context.config import AppConfig, vault_config_from_app_config
 from obsidian_mcp_context.query import (
     get_note_context,
     list_notes,
@@ -89,8 +90,13 @@ class ContextCache:
 
 
 class ContextService:
-    def __init__(self, cache: ContextCache | None = None) -> None:
+    def __init__(
+        self,
+        cache: ContextCache | None = None,
+        app_config: AppConfig | None = None,
+    ) -> None:
         self.cache = cache or ContextCache()
+        self.app_config = app_config or AppConfig()
 
     def vault_config(
         self,
@@ -99,11 +105,14 @@ class ContextService:
         exclude_globs: str | None = None,
         source_extensions: str | None = None,
     ) -> VaultConfig:
+        config = vault_config_from_app_config(vault_path, self.app_config)
         return VaultConfig(
             vault_path=validate_vault_path(vault_path),
-            include_globs=split_csv(include_globs, VaultConfig.include_globs),
-            exclude_globs=split_csv(exclude_globs, VaultConfig.exclude_globs),
-            source_extensions=split_csv(source_extensions, VaultConfig.source_extensions),
+            include_globs=split_csv(include_globs, config.include_globs),
+            exclude_globs=split_csv(exclude_globs, config.exclude_globs),
+            source_extensions=split_csv(source_extensions, config.source_extensions),
+            folder_note_types=config.folder_note_types,
+            non_entity_note_types=config.non_entity_note_types,
         )
 
     def context(
@@ -496,3 +505,8 @@ class ContextService:
 
 
 default_context_service = ContextService()
+
+
+def configure_default_context_service(app_config: AppConfig) -> None:
+    global default_context_service
+    default_context_service = ContextService(app_config=app_config)

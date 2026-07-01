@@ -23,3 +23,14 @@ def test_postgres_ingest_parser_uses_env_connection(monkeypatch: pytest.MonkeyPa
 
     assert args.connection == "postgresql://user:pass@postgres/db"
     assert args.schema == "raw"
+
+
+def test_postgres_ingest_parser_accepts_vault_profile(monkeypatch: pytest.MonkeyPatch):
+    monkeypatch.setenv("POSTGRES_DSN", "postgresql://user:pass@postgres/db")
+
+    parser = build_parser()
+    args = parser.parse_args(
+        ["--vault", "/vault", "--vault-profile", "generated-demo"]
+    )
+
+    assert args.vault_profile == "generated-demo"

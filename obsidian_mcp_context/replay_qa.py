@@ -16,6 +16,7 @@ from obsidian_mcp_context.ai import (
     ContextOverflowError,
     OllamaProvider,
 )
+from obsidian_mcp_context.config import load_app_config
 from obsidian_mcp_context.replay_dashboard import dashboard_status
 from obsidian_mcp_context.services import ContextService, default_context_service
 
@@ -158,6 +159,7 @@ def serve_qa(
     summary_model: str,
     summary_base_url: str | None,
     summary_max_context_chars: int,
+    service: ContextService = default_context_service,
 ) -> None:
     handler = _handler(
         vault_path=vault_path,
@@ -165,7 +167,7 @@ def serve_qa(
         postgres_dsn=postgres_dsn,
         raw_schema=raw_schema,
         mart_schema=mart_schema,
-        service=default_context_service,
+        service=service,
         summary_model=summary_model,
         summary_base_url=summary_base_url,
         summary_max_context_chars=summary_max_context_chars,
@@ -196,6 +198,17 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--raw-schema", default=os.environ.get("POSTGRES_RAW_SCHEMA", "raw"))
     parser.add_argument("--mart-schema", default=os.environ.get("DBT_TARGET_SCHEMA", "marts"))
     parser.add_argument(
+        "--config",
+        help="Optional .obsidian-mcp-context.toml path for parser diagnostic settings.",
+    )
+    parser.add_argument(
+        "--vault-profile",
+        help=(
+            "Optional vault profile TOML path or checked-in profile name from "
+            "examples/vault-profiles. Loaded before --config."
+        ),
+    )
+    parser.add_argument(
         "--summary-model",
         default=os.environ.get("REPLAY_QA_SUMMARY_MODEL", DEFAULT_SUMMARY_MODEL),
         help="Local Ollama model for optional answer composition.",
@@ -222,6 +235,14 @@ def build_parser() -> argparse.ArgumentParser:
 
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
+    service = default_context_service
+    if args.config or args.vault_profile or os.environ.get("OBSIDIAN_MCP_VAULT_PROFILE"):
+        service = ContextService(
+            app_config=load_app_config(
+                args.config,
+                profile_path=args.vault_profile,
+            )
+        )
     serve_qa(
         host=args.host,
         port=args.port,
@@ -230,6 +251,7 @@ def main(argv: list[str] | None = None) -> int:
         postgres_dsn=args.postgres_dsn,
         raw_schema=args.raw_schema,
         mart_schema=args.mart_schema,
+        service=service,
         summary_model=args.summary_model,
         summary_base_url=args.summary_base_url,
         summary_max_context_chars=args.summary_max_context_chars,
