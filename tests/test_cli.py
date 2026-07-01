@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
+
 from obsidian_mcp_context.cli import main
 
 
@@ -48,3 +50,33 @@ lifecycle_metadata = "ignore"
     captured = capsys.readouterr()
     assert result == 0
     assert str(profile_path) in captured.out
+
+
+def test_cli_lists_context_presets_without_vault(capsys):
+    result = main(["context-presets"])
+
+    captured = capsys.readouterr()
+    assert result == 0
+    assert '"name": "entity_brief"' in captured.out
+    assert '"name": "stale_entities"' in captured.out
+
+
+def test_cli_context_preset_validates_required_entity_type(tmp_path: Path, capsys):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+
+    with pytest.raises(SystemExit) as exc:
+        main(
+            [
+                "--vault",
+                str(vault),
+                "context-preset",
+                "entity_brief",
+                "--entity",
+                "Acme",
+            ]
+        )
+
+    captured = capsys.readouterr()
+    assert exc.value.code == 2
+    assert "entity_brief requires --entity-type" in captured.err

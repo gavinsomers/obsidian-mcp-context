@@ -63,3 +63,94 @@ def test_context_service_does_not_select_unavailable_postgres_reader(
     monkeypatch.setattr(postgres_warehouse, "is_available", lambda dsn: False)
 
     assert service.dbt_reader() is None
+
+
+class FakePresetWarehouse:
+    def __init__(self) -> None:
+        self.calls: list[tuple[str, dict[str, object]]] = []
+
+    def entity_context(
+        self,
+        handle: str,
+        entity_type: str,
+        entity: str,
+        limit: int,
+    ) -> list[dict[str, object]]:
+        self.calls.append(
+            (
+                "entity_context",
+                {"entity_type": entity_type, "entity": entity, "limit": limit},
+            )
+        )
+        return [{"entity_type": entity_type, "entity_name": entity}]
+
+    def list_entity_open_loops(
+        self,
+        handle: str,
+        entity_type: str | None,
+        entity: str | None,
+        limit: int,
+    ) -> list[dict[str, object]]:
+        self.calls.append(
+            (
+                "list_entity_open_loops",
+                {"entity_type": entity_type, "entity": entity, "limit": limit},
+            )
+        )
+        return [{"entity_type": entity_type, "entity_name": entity}]
+
+
+def test_context_service_lists_agent_ready_presets():
+    service = ContextService()
+
+    presets = {preset["name"]: preset for preset in service.context_presets()}
+
+    assert "entity_brief" in presets
+    assert presets["entity_brief"]["requires_entity"] is True
+    assert presets["entity_brief"]["requires_entity_type"] is True
+    assert "stale_entities" in presets
+
+
+def test_context_service_context_preset_dispatches_to_mart_reader(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+):
+    service = ContextService()
+    fake_warehouse = FakePresetWarehouse()
+    monkeypatch.setattr(
+        service,
+        "dbt_reader",
+        lambda postgres_dsn=None: (fake_warehouse, "postgresql://example"),
+    )
+
+    result = service.context_preset(
+        tmp_path,
+        "entity_brief",
+        entity_type="account",
+        entity="Acme",
+        limit=3,
+    )
+
+    assert result["mode"] == "mart-backed"
+    assert result["row_count"] == 1
+    assert result["warning"] is None
+    assert fake_warehouse.calls == [
+        (
+            "entity_context",
+            {"entity_type": "account", "entity": "Acme", "limit": 3},
+        )
+    ]
+
+
+def test_context_service_context_preset_reports_mart_requirement(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+):
+    service = ContextService()
+    monkeypatch.setattr(service, "dbt_reader", lambda postgres_dsn=None: None)
+
+    result = service.context_preset(tmp_path, "decision_log", limit=3)
+
+    assert result["mode"] == "parser-diagnostic"
+    assert result["rows"] == []
+    assert result["warning"] == "Preset requires a valid Postgres/dbt mart warehouse."

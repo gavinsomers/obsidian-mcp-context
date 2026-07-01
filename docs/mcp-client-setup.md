@@ -78,6 +78,8 @@ Use `/vault` only for container-internal checks.
 
 These tools prove that the MCP client is reading dbt marts:
 
+- `list_vault_context_presets`
+- `get_vault_context_preset`
 - `get_vault_warehouse_summary`
 - `list_vault_entity_types`
 - `get_vault_entity_context`
@@ -94,11 +96,16 @@ These tools prove that the MCP client is reading dbt marts:
 Recommended proof sequence:
 
 1. Call `get_vault_warehouse_summary` and confirm non-zero mart counts.
-2. Call `list_vault_entity_types` and confirm entity types such as `project`,
+2. Call `list_vault_context_presets` and confirm presets such as
+   `project_brief`, `entity_brief`, `decision_log`, and `risk_register`.
+3. Call `get_vault_context_preset` with `preset="project_brief"` and
+   `entity="Project Atlas 1"`, then confirm `mode="mart-backed"` and
+   source-linked rows.
+4. Call `list_vault_entity_types` and confirm entity types such as `project`,
    `person`, `company`, `decision`, and `risk`.
-3. Call `get_vault_entity_context` for `entity_type="project"` and
+5. Call `get_vault_entity_context` for `entity_type="project"` and
    `entity="Project Atlas 1"`.
-4. Call one relationship, state, or open-loop tool for the same entity.
+6. Call one relationship, state, or open-loop tool for the same entity.
 
 Parser diagnostic tools are still useful for troubleshooting source Markdown,
 but they are not proof of warehouse-backed serving:
@@ -115,6 +122,9 @@ If no valid Postgres mart warehouse is available:
 - `get_vault_warehouse_summary` returns `warehouse="in_memory_diagnostic"` and
   warning text beginning `No valid dbt warehouse found; falling back to direct
   parser diagnostics`.
+- `get_vault_context_preset` returns `mode="parser-diagnostic"` when it cannot
+  use marts. Only `recent_context` can return parser diagnostic rows; strict
+  mart presets return empty rows with a mart requirement warning.
 - Strict mart-only tools such as `list_vault_entity_types`,
   `get_vault_entity_context`, project/person context, decisions, risks, and
   entity open loops return empty results rather than parser data.

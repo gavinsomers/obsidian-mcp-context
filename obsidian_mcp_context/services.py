@@ -30,6 +30,52 @@ FALLBACK_WARNING = (
     "diagnostics. Build the warehouse with obsidian-mcp-context-ingest-postgres and dbt "
     "for normal modeled query serving."
 )
+CONTEXT_PRESETS: dict[str, dict[str, object]] = {
+    "recent_context": {
+        "description": "Curated recent context rows for a text or entity prompt.",
+        "requires_entity": False,
+        "requires_entity_type": False,
+        "supports_parser_diagnostic_fallback": True,
+    },
+    "open_loops": {
+        "description": "Open task loops, optionally filtered to one entity.",
+        "requires_entity": False,
+        "requires_entity_type": False,
+        "supports_parser_diagnostic_fallback": False,
+    },
+    "entity_brief": {
+        "description": "Generic context for one typed modeled entity.",
+        "requires_entity": True,
+        "requires_entity_type": True,
+        "supports_parser_diagnostic_fallback": False,
+    },
+    "project_brief": {
+        "description": "Project context, including decisions, risks, and open loops.",
+        "requires_entity": True,
+        "requires_entity_type": False,
+        "supports_parser_diagnostic_fallback": False,
+    },
+    "decision_log": {
+        "description": "Decision rows, optionally filtered to one entity.",
+        "requires_entity": False,
+        "requires_entity_type": False,
+        "supports_parser_diagnostic_fallback": False,
+    },
+    "risk_register": {
+        "description": "Risk rows, optionally filtered to one entity.",
+        "requires_entity": False,
+        "requires_entity_type": False,
+        "supports_parser_diagnostic_fallback": False,
+    },
+    "stale_entities": {
+        "description": (
+            "Oldest entity-attached open loops, used as the current stale-work proxy."
+        ),
+        "requires_entity": False,
+        "requires_entity_type": False,
+        "supports_parser_diagnostic_fallback": False,
+    },
+}
 
 
 def split_csv(value: str | None, default: tuple[str, ...]) -> tuple[str, ...]:
@@ -490,6 +536,154 @@ class ContextService:
             status=status,
             limit=limit,
         )
+
+    def context_presets(self) -> list[dict[str, object]]:
+        return [
+            {"name": name, **definition}
+            for name, definition in CONTEXT_PRESETS.items()
+        ]
+
+    def context_preset(
+        self,
+        vault_path: str | Path,
+        preset: str,
+        entity: str | None = None,
+        entity_type: str | None = None,
+        text: str | None = None,
+        status: str | None = None,
+        limit: int = 25,
+        postgres_dsn: str | Path | None = None,
+    ) -> dict[str, object]:
+        if preset not in CONTEXT_PRESETS:
+            supported = ", ".join(CONTEXT_PRESETS)
+            raise ValueError(f"Unknown context preset: {preset}. Supported presets: {supported}")
+
+        definition = CONTEXT_PRESETS[preset]
+        if definition["requires_entity"] and not entity:
+            raise ValueError(f"{preset} requires --entity")
+        if definition["requires_entity_type"] and not entity_type:
+            raise ValueError(f"{preset} requires --entity-type")
+
+        reader = self.dbt_reader(postgres_dsn)
+        mode = "mart-backed" if reader else "parser-diagnostic"
+        rows: list[dict[str, object]]
+
+        if reader:
+            warehouse, handle = reader
+            rows = self._context_preset_mart_rows(
+                warehouse,
+                handle,
+                preset=preset,
+                entity=entity,
+                entity_type=entity_type,
+                text=text,
+                status=status,
+                limit=limit,
+            )
+            warning = None
+        elif preset == "recent_context":
+            LOGGER.warning("%s", FALLBACK_WARNING)
+            warehouse = build_warehouse(self.context(vault_path))
+            rows = agent_context(
+                warehouse,
+                text=text,
+                entity=entity,
+                event_type=None,
+                limit=limit,
+            )
+            warning = FALLBACK_WARNING
+        else:
+            rows = []
+            warning = "Preset requires a valid Postgres/dbt mart warehouse."
+
+        return {
+            "preset": preset,
+            "description": definition["description"],
+            "mode": mode,
+            "filters": {
+                "entity": entity,
+                "entity_type": entity_type,
+                "text": text,
+                "status": status,
+            },
+            "limit": limit,
+            "row_count": len(rows),
+            "rows": rows,
+            "warning": warning,
+        }
+
+    def _context_preset_mart_rows(
+        self,
+        warehouse: object,
+        handle: str | Path,
+        preset: str,
+        entity: str | None,
+        entity_type: str | None,
+        text: str | None,
+        status: str | None,
+        limit: int,
+    ) -> list[dict[str, object]]:
+        if preset == "recent_context":
+            if entity:
+                entity_row = self._dbt_entity_row(warehouse, handle, entity)
+                if entity_row and entity_row["entity_type"] == "project":
+                    return warehouse.project_context(
+                        handle,
+                        project=str(entity_row["name"]),
+                        limit=limit,
+                    )
+                if entity_row and entity_row["entity_type"] == "person":
+                    return warehouse.person_context(
+                        handle,
+                        person=str(entity_row["name"]),
+                        limit=limit,
+                    )
+                if entity_row:
+                    return warehouse.entity_context(
+                        handle,
+                        entity_type=str(entity_row["entity_type"]),
+                        entity=str(entity_row["name"]),
+                        limit=limit,
+                    )
+            return warehouse.list_entity_events(
+                handle,
+                entity=entity,
+                event_type=None,
+                limit=limit,
+            )
+        if preset == "open_loops":
+            return warehouse.list_open_loops(handle, entity=entity, limit=limit)
+        if preset == "entity_brief":
+            return warehouse.entity_context(
+                handle,
+                entity_type=str(entity_type),
+                entity=str(entity),
+                limit=limit,
+            )
+        if preset == "project_brief":
+            return warehouse.project_context(handle, project=str(entity), limit=limit)
+        if preset == "decision_log":
+            return warehouse.list_decisions(
+                handle,
+                entity=entity,
+                status=status,
+                limit=limit,
+            )
+        if preset == "risk_register":
+            return warehouse.list_risks(
+                handle,
+                entity=entity,
+                status=status,
+                limit=limit,
+            )
+        if preset == "stale_entities":
+            return warehouse.list_entity_open_loops(
+                handle,
+                entity_type=entity_type,
+                entity=entity,
+                limit=limit,
+            )
+        return []
 
     def _dbt_entity_row(
         self,
