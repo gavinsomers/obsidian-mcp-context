@@ -345,6 +345,39 @@ suggestion type, deterministic score, rank, JSON signals, and creation
 timestamp. Pipeline reports surface the row count under
 `suggestion_counts.deterministic_suggested_links`.
 
+The CLI exposes a local review queue for these deterministic suggestions. Review
+state is stored in a JSON file, defaulting to
+`var/link-suggestion-review-state.json`, so accepting or rejecting a suggestion
+does not mutate the vault or the generated warehouse directly.
+
+List pending suggestions:
+
+```bash
+.venv/bin/obsidian-mcp-context \
+  --vault examples/synthetic-vault \
+  link-suggestions list
+```
+
+Mark one suggestion accepted, rejected, or ignored:
+
+```bash
+.venv/bin/obsidian-mcp-context \
+  --vault examples/synthetic-vault \
+  link-suggestions review <suggestion_id-from-list> --status accepted
+```
+
+Export accepted suggestions as a report-only JSON payload:
+
+```bash
+.venv/bin/obsidian-mcp-context \
+  --vault examples/synthetic-vault \
+  link-suggestions export --output var/link-suggestion-report.json
+```
+
+The export contains proposed retargets such as `[[Old Target]]` to
+`[[Candidate Target]]`; it is intentionally a report, not a patch that edits
+Markdown files.
+
 ## AI Suggestions
 
 The first AI enrichment job writes to `ai_suggested_links`. It asks the

@@ -803,8 +803,10 @@ def list_deterministic_suggested_links(
     rows = warehouse.connection.execute(
         """
         select
+            s.suggestion_id,
             s.source_link_id,
             source.source_path as source_path,
+            links.line_number,
             s.link_target,
             target.note_id as candidate_target_note_id,
             target.source_path as candidate_source_path,
@@ -816,6 +818,7 @@ def list_deterministic_suggested_links(
         from deterministic_suggested_links s
         join dim_notes source on source.note_id = s.source_note_id
         join dim_notes target on target.note_id = s.candidate_target_note_id
+        join fact_links links on links.link_id = s.source_link_id
         order by s.source_link_id, s.rank
         limit ?
         """,
