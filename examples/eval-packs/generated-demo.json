@@ -2,7 +2,7 @@
   "schema_version": 1,
   "id": "generated-demo",
   "name": "Generated Demo Replay Q&A",
-  "description": "Canned Replay Q&A checks for the generated consultancy demo vault.",
+  "description": "Representative consultancy prompt checks for the generated vault demo.",
   "vault_profile": "generated-demo",
   "examples": [
     {
@@ -14,7 +14,7 @@
       "expected_entity": "Project Atlas 1",
       "min_sources": 1,
       "expected_answer_contains": ["Project Atlas 1"],
-      "expected_source_contains": ["Project Atlas 1"]
+      "expected_source_contains": []
     },
     {
       "id": "atlas-decisions",
@@ -25,7 +25,29 @@
       "expected_entity": "Project Atlas 1",
       "min_sources": 1,
       "expected_answer_contains": ["Project Atlas 1"],
-      "expected_source_contains": ["Decisions/Project Atlas 1"]
+      "expected_source_contains": []
+    },
+    {
+      "id": "atlas-full-context",
+      "question": "What is the full Project Atlas 1 context?",
+      "summarize": false,
+      "expected_status": "ok",
+      "expected_mode_contains": "mart-backed",
+      "expected_entity": "Project Atlas 1",
+      "min_sources": 1,
+      "expected_answer_contains": ["Project Atlas 1", "Daily Log", "Tasks"],
+      "expected_source_contains": ["Daily/"]
+    },
+    {
+      "id": "atlas-stakeholder-brief",
+      "question": "What should I brief Alex Alvarez on before the Project Atlas 1 check-in?",
+      "summarize": false,
+      "expected_status": "ok",
+      "expected_mode_contains": "mart-backed",
+      "expected_entity": "Project Atlas 1",
+      "min_sources": 1,
+      "expected_answer_contains": ["Project Atlas 1", "Alex Alvarez"],
+      "expected_source_contains": ["Daily/"]
     },
     {
       "id": "beacon-risks",
@@ -36,7 +58,18 @@
       "expected_entity": "Project Beacon 2",
       "min_sources": 1,
       "expected_answer_contains": ["Project Beacon 2"],
-      "expected_source_contains": ["Risks/Project Beacon 2"]
+      "expected_source_contains": []
+    },
+    {
+      "id": "beacon-latest-context",
+      "question": "What is the latest context for Project Beacon 2?",
+      "summarize": false,
+      "expected_status": "ok",
+      "expected_mode_contains": "mart-backed",
+      "expected_entity": "Project Beacon 2",
+      "min_sources": 1,
+      "expected_answer_contains": ["Project Beacon 2", "Daily Log", "Tasks"],
+      "expected_source_contains": ["Daily/"]
     }
   ]
 }

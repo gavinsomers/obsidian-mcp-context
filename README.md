@@ -70,6 +70,9 @@ dashboard readiness, and the generated-demo eval pack in
 `--examples /path/to/private-eval-pack.json` or select one from a vault profile
 with `--vault-profile`.
 
+For the current representative prompt set and demo caveats, see
+[docs/retrieval-validation.md](docs/retrieval-validation.md).
+
 Prove the same data is available through an agent-ready preset:
 
 ```bash
