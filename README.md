@@ -239,6 +239,7 @@ inspection and troubleshooting.
 - [MCP client setup](docs/mcp-client-setup.md)
 - [Architecture](docs/architecture.md)
 - [Entity contract](docs/entity-contract.md)
+- [Stale context signals](docs/stale-context-signals.md)
 - [Configuration](docs/configuration.md)
 
 ## Verification

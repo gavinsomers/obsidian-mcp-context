@@ -59,6 +59,14 @@ Typed marts such as `mart_project_context`, `fact_risks`, and `fact_decisions`
 remain compatibility surfaces. New consumers should prefer the generic entity
 APIs and MCP tools.
 
+## Freshness And Missing Context
+
+Stale or missing-context detection uses the shared signal catalogue in
+[Stale Context Signals](stale-context-signals.md). Generic marts should expose
+source-linked evidence that can support those signals, especially unknown or
+orphaned references, stale open loops, stale decisions, missing next actions,
+and old assumptions that need review.
+
 ## Compatibility
 
 The generic entity contract is additive. Existing project, person, risk, and
