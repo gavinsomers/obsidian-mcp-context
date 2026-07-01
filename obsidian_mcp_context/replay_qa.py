@@ -16,7 +16,10 @@ from obsidian_mcp_context.ai import (
     ContextOverflowError,
     OllamaProvider,
 )
-from obsidian_mcp_context.config import load_app_config
+from obsidian_mcp_context.config import (
+    DEFAULT_REPLAY_QA_ENTITY_TYPE_PREFERENCES,
+    load_app_config,
+)
 from obsidian_mcp_context.replay_dashboard import dashboard_status
 from obsidian_mcp_context.services import ContextService, default_context_service
 
@@ -376,6 +379,7 @@ def _resolve_entity(
     service: ContextService,
     postgres_dsn: str | None,
 ) -> dict[str, object] | None:
+    entity_type_preferences = _entity_type_preferences(service)
     entities = _matching_entities(
         question,
         service.list_entities(
@@ -400,7 +404,10 @@ def _resolve_entity(
                 break
     if not entities:
         return None
-    return max(entities, key=_entity_match_score)
+    return max(
+        entities,
+        key=lambda entity: _entity_match_score(entity, entity_type_preferences),
+    )
 
 
 def _matching_entities(
@@ -430,13 +437,27 @@ def _candidate_entity_terms(question: str) -> list[str]:
     return terms
 
 
-def _entity_match_score(entity: dict[str, object]) -> tuple[int, int]:
+def _entity_type_preferences(service: ContextService) -> tuple[str, ...]:
+    app_config = getattr(service, "app_config", None)
+    preferences = getattr(app_config, "replay_qa_entity_type_preferences", None)
+    if not preferences:
+        return DEFAULT_REPLAY_QA_ENTITY_TYPE_PREFERENCES
+    return tuple(
+        str(entity_type).strip().lower()
+        for entity_type in preferences
+        if entity_type
+    )
+
+
+def _entity_match_score(
+    entity: dict[str, object],
+    entity_type_preferences: tuple[str, ...],
+) -> tuple[int, int]:
     entity_type = str(entity.get("entity_type") or "")
-    type_score = {
-        "project": 4,
-        "person": 3,
-        "company": 2,
-    }.get(entity_type, 1)
+    preference_count = len(entity_type_preferences)
+    type_score = 0
+    if entity_type in entity_type_preferences:
+        type_score = preference_count - entity_type_preferences.index(entity_type)
     return (type_score, len(str(entity.get("name", ""))))
 
 

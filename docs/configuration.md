@@ -142,6 +142,9 @@ Initiatives = "project"
 Assets = "asset"
 Calendars = "calendar"
 
+[replay_qa]
+entity_type_preferences = ["project", "company", "asset"]
+
 [doctor]
 lifecycle_metadata = "warn"
 unsupported_files = "warn"
@@ -188,6 +191,11 @@ Additional example profiles live in `examples/config/`.
 - `ai.base_url`: local/provider-compatible base URL when needed.
 - `ai.api_key_env`: environment variable name containing the API key. Store only
   the env-var name here, never the key value.
+- `replay_qa.entity_type_preferences`: entity-type tie-break order for Replay
+  Q&A when multiple entities with the same name match a question. Default:
+  `["project", "person", "company"]`. For account/client/case-oriented vaults,
+  set this to the primary entity types for that vault, such as
+  `["account", "client", "case"]`.
 
 Hosted providers such as `openai` and `anthropic` are rejected unless
 `privacy.allow_hosted_ai = true`, and they require `ai.api_key_env`.
