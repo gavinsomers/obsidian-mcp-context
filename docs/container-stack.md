@@ -261,10 +261,22 @@ The host port is configurable with `REPLAY_DASHBOARD_PORT`. The dashboard reads:
 - Postgres mart counts from `DBT_TARGET_SCHEMA`
 
 It shows replay virtual time, loaded and remaining note counts, latest scheduler
-status, latest successful ingest/dbt run, raw table counts, mart table counts,
-and whether the current mart state is ready for MCP-backed browser features.
-The page refreshes itself every five seconds. It does not expose note content or
-personal vault paths.
+status, latest successful ingest/dbt run, and whether the current mart state is
+ready for MCP-backed browser features. It also summarizes memory-warehouse
+observability:
+
+- source vault shape: notes, blocks, tasks, links, tags, lines, and note types
+- compiled knowledge shape: entities, entity types, relationships, states,
+  events, context rows, timelines, open loops, decisions, risks, and unknown
+  entities
+- pipeline health: replay state, scheduler state, last scheduler success,
+  Postgres availability, MCP mart readiness, and loaded/remaining counts
+- suggestion review metrics when review tables are available
+- stale-context signal rows from the shared stale-context signal catalogue
+
+Raw and mart table counts remain visible for debugging. The page refreshes
+itself every five seconds. It does not expose note content or personal vault
+paths.
 
 ## Replay Q&A
 

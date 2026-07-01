@@ -10,6 +10,8 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import re
 from urllib.parse import urlparse
 
+from obsidian_mcp_context.stale_context import stale_context_signals
+
 
 REPLAY_STATE_FILE = ".obsidian-mcp-replay-state.json"
 SCHEDULER_STATE_FILE = ".obsidian-mcp-scheduler-state.json"
@@ -37,6 +39,10 @@ MART_TABLES = (
     "fact_risks",
     "mart_timeline",
 )
+REVIEW_TABLES = (
+    "deterministic_suggested_links",
+    "ai_suggested_links",
+)
 
 
 def dashboard_status(
@@ -48,18 +54,27 @@ def dashboard_status(
 ) -> dict[str, object]:
     replay_state = _read_json(state_dir / REPLAY_STATE_FILE)
     scheduler_state = _read_json(state_dir / SCHEDULER_STATE_FILE)
+    replay = _replay_summary(replay_state)
+    scheduler = _scheduler_summary(scheduler_state)
     postgres = _postgres_status(
         postgres_dsn=postgres_dsn,
         raw_schema=raw_schema,
         mart_schema=mart_schema,
     )
+    readiness = _readiness(replay_state, scheduler_state, postgres)
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "state_dir": str(state_dir),
-        "replay": _replay_summary(replay_state),
-        "scheduler": _scheduler_summary(scheduler_state),
+        "replay": replay,
+        "scheduler": scheduler,
         "postgres": postgres,
-        "readiness": _readiness(replay_state, scheduler_state, postgres),
+        "readiness": readiness,
+        "observability": _observability_summary(
+            replay=replay,
+            scheduler=scheduler,
+            postgres=postgres,
+            readiness=readiness,
+        ),
     }
 
 
@@ -246,6 +261,31 @@ def _postgres_status(
         with psycopg.connect(postgres_dsn) as connection:
             raw = _table_counts(connection, raw_schema, RAW_TABLES)
             marts = _table_counts(connection, mart_schema, MART_TABLES)
+            review = _table_counts(connection, mart_schema, REVIEW_TABLES)
+            note_types = _group_counts(
+                connection,
+                schema=mart_schema,
+                table="dim_notes",
+                group_column="note_type",
+            )
+            entity_types = _group_counts(
+                connection,
+                schema=mart_schema,
+                table="dim_entities",
+                group_column="entity_type",
+            )
+            decision_statuses = _group_counts(
+                connection,
+                schema=mart_schema,
+                table="fact_decisions",
+                group_column="decision_status",
+            )
+            risk_statuses = _group_counts(
+                connection,
+                schema=mart_schema,
+                table="fact_risks",
+                group_column="risk_status",
+            )
     except Exception as exc:  # pragma: no cover - exact psycopg errors vary.
         return {"available": False, "error": str(exc)}
     return {
@@ -254,6 +294,11 @@ def _postgres_status(
         "mart_schema": mart_schema,
         "raw_counts": raw,
         "mart_counts": marts,
+        "review_counts": review,
+        "note_type_counts": note_types,
+        "entity_type_counts": entity_types,
+        "decision_status_counts": decision_statuses,
+        "risk_status_counts": risk_statuses,
         "mcp_ready": bool(marts.get("mart_entity_context", 0) or marts.get("dim_entities", 0)),
     }
 
@@ -264,14 +309,168 @@ def _table_counts(connection: object, schema: str, tables: tuple[str, ...]) -> d
     counts: dict[str, int] = {}
     with connection.cursor() as cursor:
         for table in tables:
-            cursor.execute("select to_regclass(%s)", (f"{schema}.{table}",))
-            exists = cursor.fetchone()[0]
-            if not exists:
+            if not _table_exists(cursor, schema=schema, table=table):
                 counts[table] = 0
                 continue
             cursor.execute(f'select count(*) from "{schema}"."{table}"')
             counts[table] = int(cursor.fetchone()[0])
     return counts
+
+
+def _group_counts(
+    connection: object,
+    *,
+    schema: str,
+    table: str,
+    group_column: str,
+) -> dict[str, int]:
+    if not SCHEMA_RE.fullmatch(schema):
+        raise ValueError(f"Invalid Postgres schema name: {schema}")
+    if not SCHEMA_RE.fullmatch(table):
+        raise ValueError(f"Invalid Postgres table name: {table}")
+    if not SCHEMA_RE.fullmatch(group_column):
+        raise ValueError(f"Invalid Postgres column name: {group_column}")
+    counts: dict[str, int] = {}
+    with connection.cursor() as cursor:
+        if not _table_exists(cursor, schema=schema, table=table):
+            return counts
+        cursor.execute(
+            f"""
+            select coalesce(cast("{group_column}" as text), 'unknown') as group_value,
+                   count(*) as row_count
+            from "{schema}"."{table}"
+            group by 1
+            order by 1
+            """
+        )
+        for value, count in cursor.fetchall():
+            counts[str(value)] = int(count)
+    return counts
+
+
+def _table_exists(cursor: object, *, schema: str, table: str) -> bool:
+    cursor.execute("select to_regclass(%s)", (f"{schema}.{table}",))
+    return cursor.fetchone()[0] is not None
+
+
+def _observability_summary(
+    *,
+    replay: dict[str, object],
+    scheduler: dict[str, object],
+    postgres: dict[str, object],
+    readiness: dict[str, object],
+) -> dict[str, object]:
+    raw_counts = _dict_value(postgres.get("raw_counts"))
+    mart_counts = _dict_value(postgres.get("mart_counts"))
+    review_counts = _dict_value(postgres.get("review_counts"))
+    entity_type_counts = _dict_value(postgres.get("entity_type_counts"))
+    decision_status_counts = _dict_value(postgres.get("decision_status_counts"))
+    risk_status_counts = _dict_value(postgres.get("risk_status_counts"))
+
+    source_counts = {
+        "notes": raw_counts.get("base_obsidian_files", 0),
+        "blocks": raw_counts.get("base_obsidian_blocks", 0),
+        "tasks": raw_counts.get("base_obsidian_tasks", 0),
+        "links": raw_counts.get("base_obsidian_links", 0),
+        "tags": raw_counts.get("base_obsidian_tags", 0),
+        "lines": raw_counts.get("base_obsidian_lines", 0),
+        "note_type_counts": _dict_value(postgres.get("note_type_counts")),
+    }
+    compiled_counts = {
+        "entities": mart_counts.get("dim_entities", 0),
+        "entity_type_counts": entity_type_counts,
+        "relationships": mart_counts.get("fact_entity_relationships", 0),
+        "states": mart_counts.get("fact_entity_states", 0),
+        "events": mart_counts.get("fact_entity_events", 0),
+        "timeline_rows": mart_counts.get("mart_timeline", 0),
+        "context_rows": mart_counts.get("mart_entity_context", 0),
+        "open_loops": mart_counts.get("mart_entity_open_loops", 0),
+        "decisions": mart_counts.get("fact_decisions", 0),
+        "decision_status_counts": decision_status_counts,
+        "risks": mart_counts.get("fact_risks", 0),
+        "risk_status_counts": risk_status_counts,
+        "unknown_entities": entity_type_counts.get("unknown", 0),
+    }
+    suggestion_metrics = {
+        "available": any(review_counts.values()),
+        "deterministic_suggested_links": review_counts.get(
+            "deterministic_suggested_links", 0
+        ),
+        "ai_suggested_links": review_counts.get("ai_suggested_links", 0),
+        "note": (
+            "Suggestion review tables are not populated in the Postgres/dbt replay "
+            "stack yet."
+            if not any(review_counts.values())
+            else "Suggestion review counts are available."
+        ),
+    }
+    pipeline_health = {
+        "ready": readiness.get("ready") is True,
+        "replay_available": replay.get("available") is True,
+        "scheduler_available": scheduler.get("available") is True,
+        "last_scheduler_run_success": scheduler.get("status") == "success",
+        "postgres_available": postgres.get("available") is True,
+        "mcp_ready": postgres.get("mcp_ready") is True,
+        "loaded_count": replay.get("loaded_count"),
+        "remaining_count": replay.get("remaining_count"),
+        "last_success_at": scheduler.get("last_success_at"),
+    }
+    return {
+        "source_counts": source_counts,
+        "compiled_counts": compiled_counts,
+        "pipeline_health": pipeline_health,
+        "suggestion_metrics": suggestion_metrics,
+        "stale_context_signals": _stale_signal_summary(
+            compiled_counts=compiled_counts,
+            pipeline_health=pipeline_health,
+        ),
+    }
+
+
+def _stale_signal_summary(
+    *,
+    compiled_counts: dict[str, object],
+    pipeline_health: dict[str, object],
+) -> list[dict[str, object]]:
+    signals_by_id = {str(signal["id"]): signal for signal in stale_context_signals()}
+    counts = {
+        "orphaned_references": _int_value(compiled_counts.get("unknown_entities")) or 0,
+        "stale_open_loops": _int_value(compiled_counts.get("open_loops")) or 0,
+        "stale_decisions": _dict_value(
+            compiled_counts.get("decision_status_counts")
+        ).get("superseded", 0),
+        "stale_marts": 0 if pipeline_health.get("ready") else 1,
+    }
+    rows: list[dict[str, object]] = []
+    for signal_id in (
+        "orphaned_references",
+        "stale_open_loops",
+        "stale_decisions",
+        "missing_next_actions",
+        "unresolved_wikilinks",
+        "renamed_or_moved_notes",
+        "stale_marts",
+    ):
+        signal = signals_by_id[signal_id]
+        count = counts.get(signal_id)
+        rows.append(
+            {
+                "id": signal_id,
+                "name": signal["name"],
+                "status": signal["status"],
+                "severity": signal["default_severity"],
+                "count": count,
+                "available": count is not None,
+                "current_sources": signal["current_sources"],
+            }
+        )
+    return rows
+
+
+def _dict_value(value: object) -> dict[str, int]:
+    if not isinstance(value, dict):
+        return {}
+    return {str(key): _int_value(count) or 0 for key, count in value.items()}
 
 
 def _readiness(
@@ -466,6 +665,47 @@ _HTML = r"""<!doctype html>
 
     <section class="two-col">
       <div class="panel">
+        <h2>Source Vault Shape</h2>
+        <table><tbody id="sourceSummary"></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Compiled Knowledge Shape</h2>
+        <table><tbody id="compiledSummary"></tbody></table>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="panel">
+        <h2>Pipeline Health</h2>
+        <table><tbody id="pipelineSummary"></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Suggestion Review Metrics</h2>
+        <table><tbody id="suggestionSummary"></tbody></table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Stale Context Signals</h2>
+      <table>
+        <thead><tr><th>Signal</th><th>Status</th><th>Count</th><th>Evidence</th></tr></thead>
+        <tbody id="staleSignals"></tbody>
+      </table>
+    </section>
+
+    <section class="two-col">
+      <div class="panel">
+        <h2>Note Types</h2>
+        <table><thead><tr><th>Type</th><th>Rows</th></tr></thead><tbody id="noteTypes"></tbody></table>
+      </div>
+      <div class="panel">
+        <h2>Entity Types</h2>
+        <table><thead><tr><th>Type</th><th>Rows</th></tr></thead><tbody id="entityTypes"></tbody></table>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="panel">
         <h2>Raw Tables</h2>
         <table><thead><tr><th>Table</th><th>Rows</th></tr></thead><tbody id="rawCounts"></tbody></table>
       </div>
@@ -490,15 +730,26 @@ _HTML = r"""<!doctype html>
   <script>
     const fmt = value => value === null || value === undefined || value === "" ? "-" : String(value);
     const num = value => value === null || value === undefined ? "-" : Number(value).toLocaleString();
+    const bool = value => value ? "Yes" : "No";
     function statusClass(ok, warn) {
       if (ok) return "status ok";
       if (warn) return "status warn";
       return "status bad";
     }
+    function row(label, value) {
+      return `<tr><th>${label}</th><td>${fmt(value)}</td></tr>`;
+    }
     function rowsFromCounts(counts) {
       return Object.entries(counts || {}).map(([name, count]) =>
         `<tr><td><code>${name}</code></td><td>${num(count)}</td></tr>`
       ).join("") || "<tr><td colspan='2'>No counts available</td></tr>";
+    }
+    function rowsFromSignals(signals) {
+      return (signals || []).map(signal => {
+        const count = signal.available ? num(signal.count) : "Not modeled";
+        const evidence = (signal.current_sources || []).slice(0, 2).join(", ");
+        return `<tr><td><code>${signal.id}</code><div class="subtle">${fmt(signal.name)}</div></td><td>${fmt(signal.status)}</td><td>${count}</td><td>${fmt(evidence)}</td></tr>`;
+      }).join("") || "<tr><td colspan='4'>No signal data available</td></tr>";
     }
     async function refresh() {
       const response = await fetch("/api/status", { cache: "no-store" });
@@ -507,6 +758,11 @@ _HTML = r"""<!doctype html>
       const scheduler = data.scheduler || {};
       const postgres = data.postgres || {};
       const readiness = data.readiness || {};
+      const observability = data.observability || {};
+      const source = observability.source_counts || {};
+      const compiled = observability.compiled_counts || {};
+      const pipeline = observability.pipeline_health || {};
+      const suggestions = observability.suggestion_metrics || {};
       const lastRun = scheduler.last_run || {};
       const progress = replay.progress_percent ?? 0;
 
@@ -521,6 +777,45 @@ _HTML = r"""<!doctype html>
       document.getElementById("lastSuccess").textContent = `Last success: ${fmt(scheduler.last_success_at)}`;
       document.getElementById("mcpReady").textContent = postgres.mcp_ready ? "Ready" : "Waiting";
       document.getElementById("generatedAt").textContent = `Updated: ${fmt(data.generated_at)}`;
+      document.getElementById("sourceSummary").innerHTML = [
+        row("Notes", num(source.notes)),
+        row("Blocks", num(source.blocks)),
+        row("Tasks", num(source.tasks)),
+        row("Links", num(source.links)),
+        row("Tags", num(source.tags)),
+        row("Lines", num(source.lines))
+      ].join("");
+      document.getElementById("compiledSummary").innerHTML = [
+        row("Entities", num(compiled.entities)),
+        row("Relationships", num(compiled.relationships)),
+        row("States", num(compiled.states)),
+        row("Events", num(compiled.events)),
+        row("Timeline rows", num(compiled.timeline_rows)),
+        row("Context rows", num(compiled.context_rows)),
+        row("Open loops", num(compiled.open_loops)),
+        row("Decisions", num(compiled.decisions)),
+        row("Risks", num(compiled.risks)),
+        row("Unknown entities", num(compiled.unknown_entities))
+      ].join("");
+      document.getElementById("pipelineSummary").innerHTML = [
+        row("Ready", bool(pipeline.ready)),
+        row("Replay state", bool(pipeline.replay_available)),
+        row("Scheduler state", bool(pipeline.scheduler_available)),
+        row("Last scheduler success", bool(pipeline.last_scheduler_run_success)),
+        row("Postgres", bool(pipeline.postgres_available)),
+        row("MCP marts", bool(pipeline.mcp_ready)),
+        row("Loaded / remaining", `${num(pipeline.loaded_count)} / ${num(pipeline.remaining_count)}`),
+        row("Last success", pipeline.last_success_at)
+      ].join("");
+      document.getElementById("suggestionSummary").innerHTML = [
+        row("Available", bool(suggestions.available)),
+        row("Deterministic pending", num(suggestions.deterministic_suggested_links)),
+        row("AI pending", num(suggestions.ai_suggested_links)),
+        row("Note", suggestions.note)
+      ].join("");
+      document.getElementById("staleSignals").innerHTML = rowsFromSignals(observability.stale_context_signals);
+      document.getElementById("noteTypes").innerHTML = rowsFromCounts(source.note_type_counts);
+      document.getElementById("entityTypes").innerHTML = rowsFromCounts(compiled.entity_type_counts);
       document.getElementById("rawCounts").innerHTML = rowsFromCounts(postgres.raw_counts);
       document.getElementById("martCounts").innerHTML = rowsFromCounts(postgres.mart_counts);
       document.getElementById("runDetails").innerHTML = [
