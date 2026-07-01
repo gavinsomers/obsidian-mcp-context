@@ -20,11 +20,19 @@ from obsidian_mcp_context.pipeline import (
 )
 from obsidian_mcp_context.query import list_notes, list_tasks, search_blocks
 from obsidian_mcp_context.services import ContextService
+from obsidian_mcp_context.link_review import (
+    DEFAULT_REVIEW_STATE_PATH,
+    apply_review_state,
+    export_link_suggestion_report,
+    load_review_state,
+    save_review_decision,
+)
 from obsidian_mcp_context.vault import build_context
 from obsidian_mcp_context.warehouse import (
     agent_context,
     build_warehouse,
     entity_timeline,
+    list_deterministic_suggested_links,
     list_entities,
     warehouse_summary,
 )
@@ -158,6 +166,62 @@ def build_parser() -> argparse.ArgumentParser:
     preset.add_argument("--text")
     preset.add_argument("--status")
     preset.add_argument("--limit", type=int, default=25)
+
+    suggestions = subparsers.add_parser(
+        "link-suggestions",
+        help="Review deterministic unresolved-link suggestions without editing the vault.",
+    )
+    suggestion_subparsers = suggestions.add_subparsers(
+        dest="suggestion_command",
+        required=True,
+    )
+    suggestion_list = suggestion_subparsers.add_parser(
+        "list", help="List deterministic link suggestions with local review status."
+    )
+    suggestion_list.add_argument(
+        "--review-state",
+        default=str(DEFAULT_REVIEW_STATE_PATH),
+        help="Local JSON file storing accepted/rejected/ignored review state.",
+    )
+    suggestion_list.add_argument(
+        "--status",
+        choices=("pending", "accepted", "rejected", "ignored", "all"),
+        default="pending",
+    )
+    suggestion_list.add_argument("--limit", type=int, default=100)
+
+    suggestion_review = suggestion_subparsers.add_parser(
+        "review", help="Mark one suggestion accepted, rejected, or ignored."
+    )
+    suggestion_review.add_argument("suggestion_id")
+    suggestion_review.add_argument(
+        "--status",
+        choices=("accepted", "rejected", "ignored"),
+        required=True,
+    )
+    suggestion_review.add_argument("--note")
+    suggestion_review.add_argument("--limit", type=int, default=500)
+    suggestion_review.add_argument(
+        "--review-state",
+        default=str(DEFAULT_REVIEW_STATE_PATH),
+        help="Local JSON file storing accepted/rejected/ignored review state.",
+    )
+
+    suggestion_export = suggestion_subparsers.add_parser(
+        "export", help="Export reviewed suggestions as a report-only JSON payload."
+    )
+    suggestion_export.add_argument(
+        "--review-state",
+        default=str(DEFAULT_REVIEW_STATE_PATH),
+        help="Local JSON file storing accepted/rejected/ignored review state.",
+    )
+    suggestion_export.add_argument(
+        "--status",
+        choices=("accepted", "rejected", "ignored"),
+        default="accepted",
+    )
+    suggestion_export.add_argument("--limit", type=int, default=100)
+    suggestion_export.add_argument("--output")
 
     doctor = subparsers.add_parser(
         "doctor", help="Validate a vault for parser, graph, and warehouse readiness."
@@ -351,6 +415,53 @@ def main(argv: list[str] | None = None) -> int:
             )
         )
         return 0
+
+    if args.command == "link-suggestions":
+        warehouse = build_warehouse(context)
+        suggestions = list_deterministic_suggested_links(
+            warehouse,
+            limit=args.limit if hasattr(args, "limit") else 100,
+        )
+        review_state_path = Path(args.review_state)
+        if args.suggestion_command == "review":
+            suggestion_ids = {str(suggestion["suggestion_id"]) for suggestion in suggestions}
+            if args.suggestion_id not in suggestion_ids:
+                parser.error(f"Unknown deterministic suggestion id: {args.suggestion_id}")
+            decision = save_review_decision(
+                review_state_path,
+                suggestion_id=args.suggestion_id,
+                status=args.status,
+                note=args.note,
+            )
+            _print_json(
+                {
+                    "suggestion_id": decision.suggestion_id,
+                    "reviewed_status": decision.status,
+                    "reviewed_at": decision.reviewed_at,
+                    "review_state": str(review_state_path),
+                }
+            )
+            return 0
+
+        reviewed = apply_review_state(
+            suggestions,
+            load_review_state(review_state_path),
+            status=args.status if hasattr(args, "status") else "pending",
+        )
+        if args.suggestion_command == "list":
+            _print_json(reviewed)
+            return 0
+        if args.suggestion_command == "export":
+            report = export_link_suggestion_report(reviewed, status=args.status)
+            if args.output:
+                output_path = Path(args.output)
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                output_path.write_text(
+                    json.dumps(report, indent=2, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+            _print_json(report)
+            return 0
 
     parser.error(f"Unknown command: {args.command}")
     return 2
