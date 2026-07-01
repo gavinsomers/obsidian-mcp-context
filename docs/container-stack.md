@@ -105,6 +105,30 @@ logs/synthetic-demo/
 var/synthetic-demo/
 ```
 
+Run the demo health check after startup:
+
+```bash
+scripts/check_synthetic_demo.sh
+```
+
+It checks local replay and scheduler state, verifies the browser-facing service
+ports, reads replay dashboard readiness, and posts the canned questions in
+`examples/replay-qa-examples.json` to Replay Q&A. Use this when preparing a
+demo:
+
+```bash
+scripts/run_synthetic_demo.sh large
+scripts/check_synthetic_demo.sh
+```
+
+Useful health-check options:
+
+```bash
+scripts/check_synthetic_demo.sh --skip-dbt-docs
+scripts/check_synthetic_demo.sh --skip-qa
+scripts/check_synthetic_demo.sh --json
+```
+
 The reset guard refuses to delete targets outside `./var` unless
 `DEMO_ALLOW_CUSTOM_RESET=1` is explicitly set. Keep this workflow pointed at
 generated fixtures; it does not need Gavin's personal Obsidian vault.

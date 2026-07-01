@@ -1,0 +1,37 @@
+{
+  "examples": [
+    {
+      "id": "atlas-risks-open-loops",
+      "question": "What are the risks and open loops for Project Atlas 1?",
+      "summarize": false,
+      "expected_status": "ok",
+      "expected_mode_contains": "mart-backed",
+      "expected_entity": "Project Atlas 1",
+      "min_sources": 1,
+      "expected_answer_contains": ["Project Atlas 1"],
+      "expected_source_contains": ["Project Atlas 1"]
+    },
+    {
+      "id": "atlas-decisions",
+      "question": "What decisions have been made for Project Atlas 1?",
+      "summarize": false,
+      "expected_status": "ok",
+      "expected_mode_contains": "mart-backed",
+      "expected_entity": "Project Atlas 1",
+      "min_sources": 1,
+      "expected_answer_contains": ["Project Atlas 1"],
+      "expected_source_contains": ["Decisions/Project Atlas 1"]
+    },
+    {
+      "id": "beacon-risks",
+      "question": "What risks are open for Project Beacon 2?",
+      "summarize": false,
+      "expected_status": "ok",
+      "expected_mode_contains": "mart-backed",
+      "expected_entity": "Project Beacon 2",
+      "min_sources": 1,
+      "expected_answer_contains": ["Project Beacon 2"],
+      "expected_source_contains": ["Risks/Project Beacon 2"]
+    }
+  ]
+}
