@@ -27,6 +27,7 @@ Risks = "risk"
 
 [replay_qa]
 entity_type_preferences = ["project", "person", "company"]
+eval_pack = "generated-demo"
 
 [replay_qa.intent_words]
 decisions = ["decision", "decisions", "decided"]

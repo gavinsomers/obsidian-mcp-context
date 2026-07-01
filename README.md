@@ -79,8 +79,10 @@ scripts/check_synthetic_demo.sh
 ```
 
 The health check validates replay/scheduler state, browser service endpoints,
-dashboard readiness, and the canned questions in
-`examples/replay-qa-examples.json`.
+dashboard readiness, and the generated-demo eval pack in
+`examples/eval-packs/generated-demo.json`. Override the pack with
+`--examples /path/to/private-eval-pack.json` or select one from a vault profile
+with `--vault-profile`.
 
 Open the generated-large vault in an isolated browser-accessible Obsidian
 container:

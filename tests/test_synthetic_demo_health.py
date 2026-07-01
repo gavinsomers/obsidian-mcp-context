@@ -137,6 +137,78 @@ def test_run_checks_passes_with_state_services_and_canned_questions(tmp_path):
     }
 
 
+def test_main_uses_profile_selected_eval_pack(tmp_path, capsys):
+    _write_json(tmp_path / REPLAY_STATE_FILE, {"loaded_count": 3})
+    _write_json(tmp_path / SCHEDULER_STATE_FILE, {"status": "success"})
+    eval_pack = tmp_path / "account-eval.json"
+    eval_pack.write_text(
+        json.dumps(
+            {
+                "schema_version": 1,
+                "id": "account-eval",
+                "examples": [
+                    {
+                        "id": "atlas-risk",
+                        "question": "What are the risks for Project Atlas 1?",
+                        "expected_status": "ok",
+                        "expected_entity": "Project Atlas 1",
+                        "min_sources": 1,
+                        "expected_source_contains": ["Risks/Project Atlas 1"],
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+    profile_path = tmp_path / "profile.toml"
+    profile_path.write_text(
+        f"""
+[replay_qa]
+eval_pack = "{eval_pack}"
+""".strip(),
+        encoding="utf-8",
+    )
+    env_file = tmp_path / ".env"
+    server, thread, port = _server()
+    try:
+        env_file.write_text(
+            "\n".join(
+                [
+                    f"OBSIDIAN_WEB_PORT={port}",
+                    f"MCP_PORT={port}",
+                    f"DBT_DOCS_PORT={port}",
+                    f"POSTGRES_BROWSER_PORT={port}",
+                    f"REPLAY_DASHBOARD_PORT={port}",
+                    f"REPLAY_QA_PORT={port}",
+                ]
+            ),
+            encoding="utf-8",
+        )
+        result = main(
+            [
+                "--env-file",
+                str(env_file),
+                "--state-dir",
+                str(tmp_path),
+                "--vault-profile",
+                str(profile_path),
+                "--skip-http",
+                "--json",
+            ]
+        )
+    finally:
+        server.shutdown()
+        thread.join(timeout=2)
+
+    captured = capsys.readouterr()
+    assert result == 0
+    payload = json.loads(captured.out)
+    assert any(
+        check["name"] == "qa-example:atlas-risk" and check["ok"] is True
+        for check in payload["checks"]
+    )
+
+
 def test_run_checks_fails_when_state_is_missing(tmp_path):
     checks = run_checks(
         env={},
