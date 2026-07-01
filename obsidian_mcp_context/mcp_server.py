@@ -360,6 +360,61 @@ def list_vault_entity_open_loops(
 
 
 @mcp.tool()
+def list_vault_context_presets(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+) -> list[dict[str, object]]:
+    """List named agent-ready context presets and their required filters."""
+    validate_vault_path(vault_path)
+    return _service().context_presets()
+
+
+@mcp.tool()
+def get_vault_context_preset(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    preset: Annotated[
+        str,
+        Field(
+            description=(
+                "Preset name, such as recent_context, open_loops, entity_brief, "
+                "project_brief, decision_log, risk_register, or stale_entities."
+            )
+        ),
+    ],
+    entity: Annotated[
+        str | None,
+        Field(description="Optional entity name filter. Required by some presets."),
+    ] = None,
+    entity_type: Annotated[
+        str | None,
+        Field(description="Optional entity type filter. Required by entity_brief."),
+    ] = None,
+    text: Annotated[
+        str | None,
+        Field(description="Optional text or event hint for presets that support it."),
+    ] = None,
+    status: Annotated[
+        str | None,
+        Field(description="Optional status filter for decision and risk presets."),
+    ] = None,
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 25,
+) -> dict[str, object]:
+    """Return a named agent-ready context bundle with mode and row metadata."""
+    return _service().context_preset(
+        vault_path,
+        preset=preset,
+        entity=entity,
+        entity_type=entity_type,
+        text=text,
+        status=status,
+        limit=_bounded_limit(limit),
+        postgres_dsn=None,
+    )
+
+
+@mcp.tool()
 def search_vault_agent_context(
     vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
     text: Annotated[

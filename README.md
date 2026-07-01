@@ -35,6 +35,9 @@ project workflow.
 
 ## Quickstart
 
+The primary demo path uses only checked-in generated fixtures and the
+Postgres/dbt mart workflow.
+
 Install the project:
 
 ```bash
@@ -44,35 +47,18 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -e ".[dev,pipeline]"
 ```
 
-Run the generated-large Postgres stack end to end:
+Run the generated-large Postgres stack end to end and keep it available for
+MCP and CLI proof commands:
 
 ```bash
-scripts/analytics_stack_check.sh large
+ANALYTICS_STACK_KEEP_RUNNING=1 scripts/analytics_stack_check.sh large
 ```
 
-Run the same check against smaller fixtures:
+This builds the required images, starts Postgres, ingests the generated vault,
+runs dbt, runs dbt tests, and executes a Postgres-backed MCP smoke check against
+the marts.
 
-```bash
-scripts/analytics_stack_check.sh small
-scripts/analytics_stack_check.sh medium
-```
-
-Start the complete generated-large browser demo:
-
-```bash
-scripts/run_synthetic_demo.sh large
-```
-
-This uses only checked-in generated fixtures, resets the ignored
-`var/replay-vault` target by default, starts Obsidian/webtop, Postgres, MCP,
-Adminer, replay dashboard, Q&A, dbt docs, an initial replay slice, and the
-background replay plus ingest/dbt scheduler loops. Stop it with:
-
-```bash
-scripts/run_synthetic_demo.sh stop
-```
-
-Check the running demo and replay Q&A examples:
+Check the running demo and canned Q&A examples:
 
 ```bash
 scripts/check_synthetic_demo.sh
@@ -83,6 +69,48 @@ dashboard readiness, and the generated-demo eval pack in
 `examples/eval-packs/generated-demo.json`. Override the pack with
 `--examples /path/to/private-eval-pack.json` or select one from a vault profile
 with `--vault-profile`.
+
+Prove the same data is available through an agent-ready preset:
+
+```bash
+POSTGRES_DSN=postgresql://obsidian:obsidian@localhost:5432/obsidian_context \
+DBT_TARGET_SCHEMA=marts \
+.venv/bin/obsidian-mcp-context \
+  --vault examples/generated-vaults/large \
+  context-preset project_brief \
+  --entity "Project Atlas 1" \
+  --limit 5
+```
+
+The output includes `mode: "mart-backed"`, the preset name, filters, row count,
+and source-linked rows from the dbt marts.
+
+List the preset catalogue:
+
+```bash
+.venv/bin/obsidian-mcp-context context-presets
+```
+
+Run the same stack against smaller fixtures when you want faster smoke checks:
+
+```bash
+scripts/analytics_stack_check.sh small
+scripts/analytics_stack_check.sh medium
+```
+
+Start the complete generated-large browser demo when you want Obsidian/webtop,
+Postgres, MCP, Adminer, replay dashboard, Q&A, dbt docs, replay, and scheduler
+services together:
+
+```bash
+scripts/run_synthetic_demo.sh large
+```
+
+Stop it with:
+
+```bash
+scripts/run_synthetic_demo.sh stop
+```
 
 Open the generated-large vault in an isolated browser-accessible Obsidian
 container:
@@ -184,6 +212,8 @@ Parser diagnostic tools read parsed Markdown directly:
 
 Mart-backed tools read dbt-built Postgres marts:
 
+- `list_vault_context_presets`
+- `get_vault_context_preset`
 - `get_vault_warehouse_summary`
 - `list_vault_entity_types`
 - `get_vault_entity_context`
@@ -197,8 +227,11 @@ Mart-backed tools read dbt-built Postgres marts:
 - `list_vault_decisions`
 - `list_vault_risks`
 
-Use mart-backed tools as the normal serving path. Parser tools are diagnostics
-for source inspection and troubleshooting.
+Use `get_vault_context_preset` as the normal agent-facing entry point when a
+named bundle such as `project_brief`, `entity_brief`, `decision_log`, or
+`risk_register` fits the task. Use lower-level mart tools when a client needs a
+specific table-shaped result. Parser tools are diagnostics for source
+inspection and troubleshooting.
 
 ## Useful Docs
 

@@ -19,6 +19,7 @@ from obsidian_mcp_context.pipeline import (
     run_pipeline_doctor,
 )
 from obsidian_mcp_context.query import list_notes, list_tasks, search_blocks
+from obsidian_mcp_context.services import ContextService
 from obsidian_mcp_context.vault import build_context
 from obsidian_mcp_context.warehouse import (
     agent_context,
@@ -144,6 +145,20 @@ def build_parser() -> argparse.ArgumentParser:
     agent.add_argument("--event-type")
     agent.add_argument("--limit", type=int, default=25)
 
+    subparsers.add_parser(
+        "context-presets", help="List named agent-ready context presets."
+    )
+
+    preset = subparsers.add_parser(
+        "context-preset", help="Run one named agent-ready context preset."
+    )
+    preset.add_argument("preset")
+    preset.add_argument("--entity")
+    preset.add_argument("--entity-type")
+    preset.add_argument("--text")
+    preset.add_argument("--status")
+    preset.add_argument("--limit", type=int, default=25)
+
     doctor = subparsers.add_parser(
         "doctor", help="Validate a vault for parser, graph, and warehouse readiness."
     )
@@ -211,6 +226,16 @@ def main(argv: list[str] | None = None) -> int:
         print(format_json(report) if args.json else format_human(report))
         return exit_code(report, strict=args.strict)
 
+    app_config = load_app_config(
+        Path(args.config) if args.config else None,
+        profile_path=Path(args.vault_profile) if args.vault_profile else None,
+    )
+    service = ContextService(app_config=app_config)
+
+    if args.command == "context-presets":
+        _print_json(service.context_presets())
+        return 0
+
     if not args.vault:
         parser.error(f"--vault is required for {args.command}")
 
@@ -262,10 +287,23 @@ def main(argv: list[str] | None = None) -> int:
         )
         return 0
 
-    app_config = load_app_config(
-        Path(args.config) if args.config else None,
-        profile_path=Path(args.vault_profile) if args.vault_profile else None,
-    )
+    if args.command == "context-preset":
+        try:
+            _print_json(
+                service.context_preset(
+                    Path(args.vault),
+                    preset=args.preset,
+                    entity=args.entity,
+                    entity_type=args.entity_type,
+                    text=args.text,
+                    status=args.status,
+                    limit=args.limit,
+                )
+            )
+        except ValueError as exc:
+            parser.error(str(exc))
+        return 0
+
     context = build_context(vault_config_from_app_config(Path(args.vault), app_config))
 
     if args.command == "warehouse-summary":
