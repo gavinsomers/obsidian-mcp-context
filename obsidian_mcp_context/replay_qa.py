@@ -17,7 +17,11 @@ from obsidian_mcp_context.ai import (
     OllamaProvider,
 )
 from obsidian_mcp_context.config import (
+    DEFAULT_REPLAY_QA_DECISION_WORDS,
     DEFAULT_REPLAY_QA_ENTITY_TYPE_PREFERENCES,
+    DEFAULT_REPLAY_QA_OPEN_LOOP_WORDS,
+    DEFAULT_REPLAY_QA_RISK_WORDS,
+    DEFAULT_REPLAY_QA_TIMELINE_WORDS,
     load_app_config,
 )
 from obsidian_mcp_context.replay_dashboard import dashboard_status
@@ -43,10 +47,6 @@ SUMMARY_SCHEMA = {
 }
 
 QUESTION_WORD_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9_-]*")
-DECISION_WORDS = {"decision", "decisions", "decided"}
-RISK_WORDS = {"risk", "risks", "blocker", "blockers"}
-OPEN_LOOP_WORDS = {"open", "loop", "loops", "todo", "task", "tasks", "followup", "follow-up"}
-TIMELINE_WORDS = {"timeline", "history", "when", "sequence"}
 
 
 def answer_question(
@@ -90,7 +90,7 @@ def answer_question(
         )
 
     entity = _resolve_entity(cleaned, vault_path=vault_path, service=service, postgres_dsn=postgres_dsn)
-    question_types = _question_types(cleaned)
+    question_types = _question_types(cleaned, service=service)
     rows = _mart_rows(
         cleaned,
         entity=entity,
@@ -449,6 +449,17 @@ def _entity_type_preferences(service: ContextService) -> tuple[str, ...]:
     )
 
 
+def _intent_words(
+    service: ContextService,
+    config_attr: str,
+    default_words: tuple[str, ...],
+) -> set[str]:
+    app_config = getattr(service, "app_config", None)
+    configured_words = getattr(app_config, config_attr, None)
+    words = configured_words or default_words
+    return {str(word).strip().casefold() for word in words if str(word).strip()}
+
+
 def _entity_match_score(
     entity: dict[str, object],
     entity_type_preferences: tuple[str, ...],
@@ -461,16 +472,32 @@ def _entity_match_score(
     return (type_score, len(str(entity.get("name", ""))))
 
 
-def _question_types(question: str) -> set[str]:
+def _question_types(question: str, *, service: ContextService) -> set[str]:
     words = {match.group(0).casefold() for match in QUESTION_WORD_RE.finditer(question)}
     types: set[str] = set()
-    if words & DECISION_WORDS:
+    if words & _intent_words(
+        service,
+        "replay_qa_decision_words",
+        DEFAULT_REPLAY_QA_DECISION_WORDS,
+    ):
         types.add("decisions")
-    if words & RISK_WORDS:
+    if words & _intent_words(
+        service,
+        "replay_qa_risk_words",
+        DEFAULT_REPLAY_QA_RISK_WORDS,
+    ):
         types.add("risks")
-    if words & OPEN_LOOP_WORDS:
+    if words & _intent_words(
+        service,
+        "replay_qa_open_loop_words",
+        DEFAULT_REPLAY_QA_OPEN_LOOP_WORDS,
+    ):
         types.add("open_loops")
-    if words & TIMELINE_WORDS:
+    if words & _intent_words(
+        service,
+        "replay_qa_timeline_words",
+        DEFAULT_REPLAY_QA_TIMELINE_WORDS,
+    ):
         types.add("timeline")
     return types or {"context"}
 

@@ -27,3 +27,9 @@ Risks = "risk"
 
 [replay_qa]
 entity_type_preferences = ["project", "person", "company"]
+
+[replay_qa.intent_words]
+decisions = ["decision", "decisions", "decided"]
+risks = ["risk", "risks", "blocker", "blockers"]
+open_loops = ["open", "loop", "loops", "todo", "task", "tasks", "followup", "follow-up"]
+timeline = ["timeline", "history", "when", "sequence"]

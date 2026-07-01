@@ -220,6 +220,13 @@ class FakeAccountMartService(FakeMartService):
         raise AssertionError("account Q&A should use generic entity context")
 
 
+class FakeCustomIntentMartService(FakeMartService):
+    app_config = AppConfig(
+        replay_qa_risk_words=("issue", "issues"),
+        replay_qa_open_loop_words=("action", "actions"),
+    )
+
+
 class FakeSummaryProvider:
     provider = "ollama"
     model = "gemma4:26b-a4b-it-q4_K_M"
@@ -345,6 +352,34 @@ def test_answer_question_uses_profile_entity_type_preferences_for_accounts(
     assert answer["entity"]["entity_type"] == "account"
     assert answer["entity"]["name"] == "Acme"
     assert answer["rows"][0]["source_path"] == "Accounts/Acme.md"
+
+
+def test_answer_question_uses_profile_intent_words_for_risks_and_actions(
+    tmp_path,
+    monkeypatch,
+):
+    monkeypatch.setattr(
+        "obsidian_mcp_context.replay_qa.dashboard_status",
+        lambda **_: {
+            "replay": {"virtual_time": "2023-04-21T09:00:00"},
+            "readiness": {"ready": True},
+        },
+    )
+
+    answer = answer_question(
+        "What issues and actions exist for Project Atlas 1?",
+        vault_path=tmp_path,
+        state_dir=tmp_path,
+        postgres_dsn="postgres://example",
+        service=FakeCustomIntentMartService(),
+    )
+
+    assert answer["status"] == "ok"
+    assert answer["question_types"] == ["open_loops", "risks"]
+    assert {row["event_type"] for row in answer["rows"]} == {
+        "risk_open",
+        "open_loop",
+    }
 
 
 def test_answer_question_can_summarize_retrieved_rows_with_local_provider(

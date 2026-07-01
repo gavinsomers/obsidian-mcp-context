@@ -145,6 +145,12 @@ Calendars = "calendar"
 [replay_qa]
 entity_type_preferences = ["project", "company", "asset"]
 
+[replay_qa.intent_words]
+decisions = ["decision", "decisions", "choice", "approval"]
+risks = ["risk", "risks", "issue", "issues", "blocker"]
+open_loops = ["open", "loop", "task", "todo", "action", "actions"]
+timeline = ["timeline", "history", "activity"]
+
 [doctor]
 lifecycle_metadata = "warn"
 unsupported_files = "warn"
@@ -196,6 +202,16 @@ Additional example profiles live in `examples/config/`.
   `["project", "person", "company"]`. For account/client/case-oriented vaults,
   set this to the primary entity types for that vault, such as
   `["account", "client", "case"]`.
+- `replay_qa.intent_words.decisions`: deterministic words that route a Replay
+  Q&A question to decision rows. Default: `decision`, `decisions`, `decided`.
+- `replay_qa.intent_words.risks`: deterministic words that route a Replay Q&A
+  question to risk rows. Default: `risk`, `risks`, `blocker`, `blockers`.
+- `replay_qa.intent_words.open_loops`: deterministic words that route a Replay
+  Q&A question to open-loop/task rows. Default includes `open`, `loop`, `todo`,
+  `task`, `followup`, and `follow-up`.
+- `replay_qa.intent_words.timeline`: deterministic words that route a Replay
+  Q&A question to timeline/context rows. Default: `timeline`, `history`,
+  `when`, `sequence`.
 
 Hosted providers such as `openai` and `anthropic` are rejected unless
 `privacy.allow_hosted_ai = true`, and they require `ai.api_key_env`.
