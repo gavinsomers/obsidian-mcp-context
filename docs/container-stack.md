@@ -310,14 +310,6 @@ REPLAY_QA_OLLAMA_BASE_URL=http://host.docker.internal:11434
 REPLAY_QA_SUMMARY_MAX_CONTEXT_CHARS=12000
 ```
 
-To run the same check against your own vault:
-
-```bash
-cp .env.analytics.example .env.analytics
-# edit VAULT_PATH=/absolute/path/to/your/vault
-scripts/analytics_stack_check.sh
-```
-
 By default the script stops the temporary Compose services when it finishes. To
 leave Postgres running for inspection:
 
@@ -336,13 +328,11 @@ cp .env.analytics.example .env.analytics
 docker compose --env-file .env.analytics -f docker-compose.analytics.yml up -d postgres vault-obsidian
 ```
 
-For your own Obsidian vault, edit `.env.analytics`:
-
-```dotenv
-VAULT_PATH=/absolute/path/to/your/vault
-```
-
-The same mount path, `/vault`, is used inside every container.
+The demo and marketing workflow should stay on generated fixtures. For local
+experiments outside that workflow, `.env.analytics` can set `VAULT_PATH` to a
+private vault path, but those paths, outputs, screenshots, and diagnostics must
+stay uncommitted and out of demo material. The same mount path, `/vault`, is
+used inside every container.
 
 If the vault uses different folder conventions, provide a vault profile. For a
 host-local profile, mount or reference a path visible to the container and set:
