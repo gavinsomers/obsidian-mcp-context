@@ -62,8 +62,9 @@ Browser Obsidian is running against the isolated replay target.
 Open:
   http://localhost:$web_port
 
-Inside the browser desktop, open /vault. Notes will appear there as the replay
-loader copies generated fixture files into $target_vault.
+Obsidian auto-launches in the browser desktop and opens /vault. Notes will
+appear there as the replay loader copies generated fixture files into
+$target_vault.
 EOF
 
 "$python_bin" -m obsidian_mcp_context.replay_loader \

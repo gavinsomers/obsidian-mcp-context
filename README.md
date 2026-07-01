@@ -122,7 +122,8 @@ container:
 scripts/run_generated_obsidian.sh large
 ```
 
-Then open `http://localhost:3000` and choose `/vault` inside Obsidian.
+Then open `http://localhost:3000`. Obsidian auto-launches in the webtop and
+opens the mounted `/vault` folder.
 
 Replay generated-large into an initially empty isolated vault so notes appear
 over virtual time:

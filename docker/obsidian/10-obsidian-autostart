@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+autostart_dir="/config/.config/autostart"
+mkdir -p "$autostart_dir"
+
+cat > "$autostart_dir/obsidian-open-vault.desktop" <<'EOF'
+[Desktop Entry]
+Type=Application
+Name=Open Obsidian demo vault
+Comment=Open the mounted generated or replay vault in Obsidian
+Exec=/usr/local/bin/obsidian-open-vault
+Terminal=false
+X-GNOME-Autostart-enabled=true
+EOF

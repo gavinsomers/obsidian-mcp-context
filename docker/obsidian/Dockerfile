@@ -11,4 +11,9 @@ RUN apt-get update \
     && rm -f /tmp/obsidian.deb \
     && rm -rf /var/lib/apt/lists/*
 
+COPY docker/obsidian/obsidian-open-vault /usr/local/bin/obsidian-open-vault
+COPY docker/obsidian/10-obsidian-autostart /custom-cont-init.d/10-obsidian-autostart
+
+RUN chmod +x /usr/local/bin/obsidian-open-vault /custom-cont-init.d/10-obsidian-autostart
+
 VOLUME ["/vault"]

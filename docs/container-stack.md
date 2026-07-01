@@ -156,10 +156,9 @@ Open the webtop session:
 http://localhost:3000
 ```
 
-Inside the browser desktop, launch Obsidian if needed, choose "Open folder as
-vault", and open `/vault`. The notes are mounted from the selected generated
-fixture folder; they are not imported from, synced with, or written to Gavin's
-personal Obsidian vault.
+Obsidian auto-launches in the browser desktop and opens `/vault`. The notes are
+mounted from the selected generated fixture folder; they are not imported from,
+synced with, or written to Gavin's personal Obsidian vault.
 
 ## Generated Vault Replay
 
@@ -374,7 +373,7 @@ Open Obsidian through the webtop service:
 http://localhost:3000
 ```
 
-Inside Obsidian, open `/vault`.
+Obsidian auto-launches and opens the mounted `/vault` folder.
 
 ## dbt Lineage Docs
 
