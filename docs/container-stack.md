@@ -51,6 +51,64 @@ scripts/analytics_stack_check.sh large
 
 This sets `VAULT_PATH` to the selected checked-in generated vault for that run.
 
+## Full Synthetic Demo
+
+Start the complete generated-large replay demo with one command:
+
+```bash
+scripts/run_synthetic_demo.sh large
+```
+
+The script accepts `small`, `medium`, or `large`; `large` is the default. It
+uses checked-in generated fixtures only, resets the ignored
+`var/replay-vault` target by default, starts the browser-accessible services,
+loads the first replay notes, runs one ingest/dbt cycle, then starts background
+virtual-time replay and ingest/dbt scheduler loops.
+
+Started services:
+
+- `vault-obsidian`
+- `postgres`
+- `mcp`
+- `postgres-browser`
+- `replay-dashboard`
+- `replay-qa`
+- `dbt-docs` unless `--no-dbt-docs` is passed
+
+Useful options:
+
+```bash
+scripts/run_synthetic_demo.sh large --no-reset
+scripts/run_synthetic_demo.sh large --no-continuous
+scripts/run_synthetic_demo.sh large --speed 86400 --batch-size 25 --scheduler-interval 60
+scripts/run_synthetic_demo.sh status
+scripts/run_synthetic_demo.sh stop
+```
+
+Open:
+
+```text
+Obsidian webtop:  http://localhost:3000
+MCP HTTP:         http://localhost:8000
+dbt docs:         http://localhost:8081
+Postgres browser: http://localhost:8082
+Replay dashboard: http://localhost:8083
+Replay Q&A:       http://localhost:8084
+```
+
+State and logs:
+
+```text
+var/replay-vault/.obsidian-mcp-replay-state.json
+var/replay-vault/.obsidian-mcp-scheduler-state.json
+logs/synthetic-demo/
+var/synthetic-demo/
+```
+
+The reset guard refuses to delete targets outside `./var` unless
+`DEMO_ALLOW_CUSTOM_RESET=1` is explicitly set. Keep this workflow pointed at
+generated fixtures; it does not need Gavin's personal Obsidian vault.
+
 ## Browser Obsidian For Generated Vaults
 
 To inspect a generated vault in Obsidian without using a personal vault, start
