@@ -6,7 +6,7 @@ For this repository, keep the Trello board synchronized with implementation work
 Use the Trello MCP tools for Trello updates; do not use browser automation for
 board/card changes.
 
-Board: `Obsidian MCP Context Project`
+Board: `Reporting Trust Project`
 
 Before starting implementation:
 
