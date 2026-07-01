@@ -45,10 +45,7 @@ Browser Obsidian is starting.
 Open:
   http://localhost:$web_port
 
-Inside the browser desktop:
-  1. Launch Obsidian if it is not already open.
-  2. Choose "Open folder as vault".
-  3. Open /vault.
+Obsidian auto-launches in the browser desktop and opens /vault.
 
 This mounts the generated fixture vault only. It does not read or write Gavin's
 personal Obsidian vault.

@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+set -eu
+
+if [ "${OBSIDIAN_AUTO_OPEN:-true}" != "true" ]; then
+  exit 0
+fi
+
+vault_path="${OBSIDIAN_AUTO_OPEN_VAULT:-/vault}"
+delay="${OBSIDIAN_AUTO_OPEN_DELAY:-3}"
+
+sleep "$delay"
+
+if [ ! -d "$vault_path" ]; then
+  echo "Obsidian auto-open skipped: vault path does not exist: $vault_path" >&2
+  exit 0
+fi
+
+exec obsidian --no-sandbox "$vault_path"
