@@ -10,6 +10,8 @@ delay="${OBSIDIAN_AUTO_OPEN_DELAY:-3}"
 vault_id="${OBSIDIAN_AUTO_OPEN_VAULT_ID:-generated-demo-vault}"
 config_dir="${XDG_CONFIG_HOME:-/config/.config}/obsidian"
 config_file="$config_dir/obsidian.json"
+maximize="${OBSIDIAN_AUTO_MAXIMIZE:-true}"
+window_scale="${OBSIDIAN_AUTO_WINDOW_SCALE:-80}"
 
 sleep "$delay"
 
@@ -19,6 +21,7 @@ if [ ! -d "$vault_path" ]; then
 fi
 
 mkdir -p "$config_dir"
+window_state_file="$config_dir/$vault_id.json"
 
 timestamp="$(date +%s)000"
 escaped_vault_path="$(printf '%s' "$vault_path" | sed 's/\\/\\\\/g; s/"/\\"/g')"
@@ -35,5 +38,42 @@ cat > "$config_file" <<EOF
   }
 }
 EOF
+
+if [ "$maximize" = "true" ] && command -v xdotool >/dev/null 2>&1; then
+  set -- $(xdotool getdisplaygeometry 2>/dev/null || printf '1024 768')
+  display_width="$1"
+  display_height="$2"
+  panel_y="${OBSIDIAN_AUTO_WINDOW_Y:-27}"
+  workarea_height=$((display_height - panel_y))
+  if [ "$workarea_height" -lt 600 ]; then
+    panel_y=0
+    workarea_height="$display_height"
+  fi
+  case "$window_scale" in
+    ''|*[!0-9]*)
+      window_scale=80
+      ;;
+  esac
+  if [ "$window_scale" -lt 50 ] || [ "$window_scale" -gt 100 ]; then
+    window_scale=80
+  fi
+
+  window_width=$((display_width * window_scale / 100))
+  window_height=$((workarea_height * window_scale / 100))
+  window_x=$(((display_width - window_width) / 2))
+  window_y=$((panel_y + (workarea_height - window_height) / 2))
+
+  cat > "$window_state_file" <<EOF
+{
+  "x": $window_x,
+  "y": $window_y,
+  "width": $window_width,
+  "height": $window_height,
+  "isMaximized": false,
+  "devTools": false,
+  "zoom": 0
+}
+EOF
+fi
 
 exec obsidian --no-sandbox "$vault_path"

@@ -220,6 +220,110 @@ start_detached() {
   echo "$!" >"$pid_file"
 }
 
+seed_obsidian_graph_workspace() {
+  local target="$1"
+  mkdir -p "$target/.obsidian"
+  cat >"$target/.obsidian/workspace.json" <<'EOF'
+{
+  "main": {
+    "id": "demo-main",
+    "type": "split",
+    "children": [
+      {
+        "id": "demo-tabs",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "demo-graph",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "demo-left",
+    "type": "split",
+    "children": [
+      {
+        "id": "demo-left-tabs",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "demo-files",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "demo-right",
+    "type": "split",
+    "children": [],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Open graph view": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "demo-graph",
+  "lastOpenFiles": []
+}
+EOF
+  cat >"$target/.obsidian/app.json" <<'EOF'
+{}
+EOF
+}
+
+wait_for_obsidian_webtop() {
+  local timeout="${OBSIDIAN_WEBTOP_READY_TIMEOUT:-45}"
+  local elapsed=0
+  local output
+  echo "Waiting for Obsidian webtop to open Graph view before seeding notes."
+  while [[ "$elapsed" -lt "$timeout" ]]; do
+    output="$("${compose[@]}" exec -T vault-obsidian sh -lc '
+      window_id="$(DISPLAY=:1 xdotool search --onlyvisible --class obsidian 2>/dev/null | head -n 1 || true)"
+      if [ -z "$window_id" ]; then
+        exit 1
+      fi
+      title="$(DISPLAY=:1 xdotool getwindowname "$window_id" 2>/dev/null || true)"
+      geometry="$(DISPLAY=:1 xdotool getwindowgeometry "$window_id" 2>/dev/null || true)"
+      printf "%s\n%s\n" "$title" "$geometry"
+    ' 2>/dev/null || true)"
+    if [[ "$output" == *"Graph view - vault - Obsidian"* && "$output" == *"Geometry:"* ]]; then
+      printf '%s\n' "$output" >"$log_dir/obsidian-webtop-ready.log"
+      return 0
+    fi
+    sleep 2
+    elapsed=$((elapsed + 2))
+  done
+  echo "Timed out waiting for Obsidian webtop readiness; continuing with pipeline startup." >&2
+  return 0
+}
+
 safe_reset_target() {
   local target="$1"
   case "$target" in
@@ -266,12 +370,16 @@ else
   recreate_vault_services=0
 fi
 
+seed_obsidian_graph_workspace "$target_vault"
+
 "${compose[@]}" up -d postgres
 if [[ "$recreate_vault_services" == "1" ]]; then
-  "${compose[@]}" up -d --force-recreate vault-obsidian mcp postgres-browser replay-dashboard replay-qa
+  "${compose[@]}" up -d --force-recreate vault-obsidian
 else
-  "${compose[@]}" up -d vault-obsidian mcp postgres-browser replay-dashboard replay-qa
+  "${compose[@]}" up -d vault-obsidian
 fi
+wait_for_obsidian_webtop
+"${compose[@]}" up -d mcp postgres-browser replay-dashboard replay-qa
 
 echo "Seeding replay target with $initial_limit note(s) before first ingest/dbt cycle."
 "$python_bin" -m obsidian_mcp_context.replay_loader \
