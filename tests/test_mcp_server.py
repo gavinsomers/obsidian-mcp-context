@@ -34,9 +34,19 @@ def test_mcp_server_exposes_generic_obsidian_tools():
 def test_mcp_parser_accepts_http_host_and_port():
     parser = mcp_server.build_parser()
     args = parser.parse_args(
-        ["--transport", "streamable-http", "--host", "0.0.0.0", "--port", "8000"]
+        [
+            "--transport",
+            "streamable-http",
+            "--host",
+            "0.0.0.0",
+            "--port",
+            "8000",
+            "--vault-profile",
+            "generated-demo",
+        ]
     )
 
     assert args.transport == "streamable-http"
     assert args.host == "0.0.0.0"
     assert args.port == 8000
+    assert args.vault_profile == "generated-demo"

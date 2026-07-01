@@ -1,21 +1,28 @@
 from __future__ import annotations
 
 import argparse
+import os
 from typing import Annotated
 
 from mcp.server.fastmcp import FastMCP
 from pydantic import Field
 
+from obsidian_mcp_context.config import load_app_config
 from obsidian_mcp_context.security import validate_vault_path
-from obsidian_mcp_context.services import default_context_service
+from obsidian_mcp_context import services
 from obsidian_mcp_context.vault import VaultConfig
 
 
 MAX_LIMIT = 200
+default_context_service = services.default_context_service
 
 
 def _bounded_limit(limit: int) -> int:
     return max(1, min(limit, MAX_LIMIT))
+
+
+def _service() -> services.ContextService:
+    return default_context_service
 
 
 def _load_context(
@@ -24,7 +31,7 @@ def _load_context(
     exclude_globs: str | None = None,
     source_extensions: str | None = None,
 ):
-    return default_context_service.context(
+    return _service().context(
         vault_path,
         include_globs=include_globs,
         exclude_globs=exclude_globs,
@@ -51,7 +58,7 @@ def list_vault_notes(
     ] = 100,
 ) -> list[dict[str, object]]:
     """List text notes found in the configured vault."""
-    return default_context_service.list_notes(vault_path, limit=_bounded_limit(limit))
+    return _service().list_notes(vault_path, limit=_bounded_limit(limit))
 
 
 @mcp.tool()
@@ -75,7 +82,7 @@ def search_vault_blocks(
     ] = 25,
 ) -> list[dict[str, object]]:
     """Search parsed note blocks with file and line provenance."""
-    return default_context_service.search_blocks(
+    return _service().search_blocks(
         vault_path,
         text=text,
         source_path=source_path,
@@ -105,7 +112,7 @@ def list_vault_tasks(
     ] = 50,
 ) -> list[dict[str, object]]:
     """List parsed Markdown tasks with provenance."""
-    return default_context_service.list_tasks(
+    return _service().list_tasks(
         vault_path,
         checked=checked,
         text=text,
@@ -123,7 +130,7 @@ def get_vault_note_context(
     ],
 ) -> dict[str, object]:
     """Fetch all parsed context for one vault-relative note path."""
-    return default_context_service.note_context(vault_path, source_path=source_path)
+    return _service().note_context(vault_path, source_path=source_path)
 
 
 @mcp.tool()
@@ -131,7 +138,7 @@ def get_vault_warehouse_summary(
     vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
 ) -> dict[str, object]:
     """Summarize deterministic warehouse dimensions, facts, and marts."""
-    return default_context_service.warehouse_summary(vault_path, postgres_dsn=None)
+    return _service().warehouse_summary(vault_path, postgres_dsn=None)
 
 
 @mcp.tool()
@@ -151,7 +158,7 @@ def list_vault_entities(
     ] = 100,
 ) -> list[dict[str, object]]:
     """List modeled entities derived from notes, wikilinks, and tags."""
-    return default_context_service.list_entities(
+    return _service().list_entities(
         vault_path,
         entity_type=entity_type,
         text=text,
@@ -170,7 +177,7 @@ def list_vault_entity_types(
 ) -> list[dict[str, object]]:
     """List entity types observed in the dbt entity registry."""
     validate_vault_path(vault_path)
-    return default_context_service.entity_types(
+    return _service().entity_types(
         None,
         limit=_bounded_limit(limit),
     )
@@ -193,7 +200,7 @@ def get_vault_entity_timeline(
     ] = 50,
 ) -> list[dict[str, object]]:
     """Return timeline rows connected to a modeled entity."""
-    return default_context_service.entity_timeline(
+    return _service().entity_timeline(
         vault_path,
         entity=entity,
         text=text,
@@ -220,7 +227,7 @@ def get_vault_entity_context(
 ) -> list[dict[str, object]]:
     """Return generic dbt mart-backed context for any typed entity."""
     validate_vault_path(vault_path)
-    return default_context_service.entity_context_generic(
+    return _service().entity_context_generic(
         None,
         entity_type=entity_type,
         entity=entity,
@@ -250,7 +257,7 @@ def list_vault_entity_events(
 ) -> list[dict[str, object]]:
     """List generic entity events from the dbt warehouse."""
     validate_vault_path(vault_path)
-    return default_context_service.entity_events(
+    return _service().entity_events(
         None,
         entity_type=entity_type,
         entity=entity,
@@ -281,7 +288,7 @@ def list_vault_entity_relationships(
 ) -> list[dict[str, object]]:
     """List generic relationships between modeled entities."""
     validate_vault_path(vault_path)
-    return default_context_service.entity_relationships(
+    return _service().entity_relationships(
         None,
         entity_type=entity_type,
         entity=entity,
@@ -316,7 +323,7 @@ def list_vault_entity_states(
 ) -> list[dict[str, object]]:
     """List generic state rows for stateful entities."""
     validate_vault_path(vault_path)
-    return default_context_service.entity_states(
+    return _service().entity_states(
         None,
         entity_type=entity_type,
         entity=entity,
@@ -344,7 +351,7 @@ def list_vault_entity_open_loops(
 ) -> list[dict[str, object]]:
     """List open loops attached to any modeled entity type."""
     validate_vault_path(vault_path)
-    return default_context_service.entity_open_loops(
+    return _service().entity_open_loops(
         None,
         entity_type=entity_type,
         entity=entity,
@@ -373,7 +380,7 @@ def search_vault_agent_context(
     ] = 25,
 ) -> list[dict[str, object]]:
     """Search curated deterministic context rows for agent use."""
-    return default_context_service.agent_context(
+    return _service().agent_context(
         vault_path,
         text=text,
         entity=entity,
@@ -394,7 +401,7 @@ def get_vault_project_context(
 ) -> list[dict[str, object]]:
     """Return dbt mart-backed project context, including decisions, risks, and open loops."""
     validate_vault_path(vault_path)
-    return default_context_service.project_context(
+    return _service().project_context(
         None,
         project=project,
         limit=_bounded_limit(limit),
@@ -412,7 +419,7 @@ def get_vault_person_context(
 ) -> list[dict[str, object]]:
     """Return dbt mart-backed person context, including decisions, risks, and open loops."""
     validate_vault_path(vault_path)
-    return default_context_service.person_context(
+    return _service().person_context(
         None,
         person=person,
         limit=_bounded_limit(limit),
@@ -433,7 +440,7 @@ def list_vault_open_loops(
 ) -> list[dict[str, object]]:
     """List dbt mart-backed open loops from unchecked tasks."""
     validate_vault_path(vault_path)
-    return default_context_service.open_loops(
+    return _service().open_loops(
         None,
         entity=entity,
         limit=_bounded_limit(limit),
@@ -458,7 +465,7 @@ def list_vault_decisions(
 ) -> list[dict[str, object]]:
     """List dbt mart-backed decisions with optional entity and status filters."""
     validate_vault_path(vault_path)
-    return default_context_service.decisions(
+    return _service().decisions(
         None,
         entity=entity,
         status=status,
@@ -484,7 +491,7 @@ def list_vault_risks(
 ) -> list[dict[str, object]]:
     """List dbt mart-backed risks with optional entity and status filters."""
     validate_vault_path(vault_path)
-    return default_context_service.risks(
+    return _service().risks(
         None,
         entity=entity,
         status=status,
@@ -514,6 +521,17 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Port for HTTP transports. Defaults to the MCP library default.",
     )
+    parser.add_argument(
+        "--config",
+        help="Optional .obsidian-mcp-context.toml path for parser diagnostic settings.",
+    )
+    parser.add_argument(
+        "--vault-profile",
+        help=(
+            "Optional vault profile TOML path or checked-in profile name from "
+            "examples/vault-profiles. Loaded before --config."
+        ),
+    )
     return parser
 
 
@@ -524,5 +542,13 @@ def main(argv: list[str] | None = None) -> int:
         mcp.settings.host = args.host
     if args.port is not None:
         mcp.settings.port = args.port
+    if args.config or args.vault_profile or os.environ.get("OBSIDIAN_MCP_VAULT_PROFILE"):
+        global default_context_service
+        default_context_service = services.ContextService(
+            app_config=load_app_config(
+                args.config,
+                profile_path=args.vault_profile,
+            )
+        )
     mcp.run(transport=args.transport)
     return 0

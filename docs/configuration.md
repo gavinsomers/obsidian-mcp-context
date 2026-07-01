@@ -1,9 +1,17 @@
 # Local Configuration
 
-`obsidian-mcp-context` can read a local TOML config file for vault-specific scan
-and entity behavior. The default path is `.obsidian-mcp-context.toml` in the
-current working directory. For personal vault testing, keep that file ignored
-locally through `.git/info/exclude`.
+`obsidian-mcp-context` can read TOML config for vault-specific scan and entity
+behavior. There are two layers:
+
+- a reusable vault profile, passed with `--vault-profile` or
+  `OBSIDIAN_MCP_VAULT_PROFILE`
+- a local app config, passed with `--config` or loaded from
+  `.obsidian-mcp-context.toml` in the current working directory
+
+The vault profile loads first. The local app config loads second and can
+override profile values for private paths, privacy settings, or local
+experiments. For personal vault testing, keep local config/profile files ignored
+locally through `.git/info/exclude` unless they are intentionally generic.
 
 The same file can also define pipeline source, warehouse, privacy, and AI
 profile settings. These settings are read-only config; runtime status and
@@ -15,6 +23,7 @@ You can also pass an explicit path:
 ```bash
 .venv/bin/obsidian-mcp-context \
   --vault /absolute/path/to/vault \
+  --vault-profile /absolute/path/to/vault-profile.toml \
   --config /absolute/path/to/config.toml \
   doctor
 ```
@@ -46,7 +55,46 @@ write it under an ignored path such as `var/`, and do not commit or paste it int
 PRs, issues, docs, or release notes. Source note paths are omitted from the
 export unless `doctor --include-samples` is also passed.
 
-## Example
+## Vault Profiles
+
+Profiles are ordinary TOML files intended to describe reusable vault
+conventions: scanned file types, ignored folders, folder-to-entity-type mapping,
+and non-entity note types. Checked-in examples live under
+`examples/vault-profiles/`; private profiles can live anywhere outside the repo.
+
+Use a checked-in profile by name:
+
+```bash
+.venv/bin/obsidian-mcp-context \
+  --vault examples/generated-vaults/large \
+  --vault-profile generated-demo \
+  entities
+```
+
+Use a private profile by path:
+
+```bash
+.venv/bin/obsidian-mcp-context \
+  --vault /absolute/path/to/vault \
+  --vault-profile /absolute/path/to/private-profile.toml \
+  doctor
+```
+
+The Postgres ingest path accepts the same profile layer:
+
+```bash
+obsidian-mcp-context-ingest-postgres \
+  --vault /absolute/path/to/vault \
+  --vault-profile /absolute/path/to/private-profile.toml
+```
+
+For container or MCP server startup, use the environment variable:
+
+```dotenv
+OBSIDIAN_MCP_VAULT_PROFILE=/absolute/path/to/private-profile.toml
+```
+
+## Example Config
 
 ```toml
 [source]
@@ -185,6 +233,7 @@ hash, and creation timestamp.
 
 Environment variables override TOML for CI and local experiments:
 
+- `OBSIDIAN_MCP_VAULT_PROFILE`
 - `OBSIDIAN_MCP_SOURCE_TYPE`
 - `OBSIDIAN_MCP_AI_ENABLED`
 - `OBSIDIAN_MCP_AI_PROVIDER`

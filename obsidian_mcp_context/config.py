@@ -15,6 +15,9 @@ from obsidian_mcp_context.vault import (
 
 
 DEFAULT_CONFIG_PATH = Path(".obsidian-mcp-context.toml")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DEFAULT_PROFILE_DIR = PROJECT_ROOT / "examples" / "vault-profiles"
+VAULT_PROFILE_ENV = "OBSIDIAN_MCP_VAULT_PROFILE"
 DOCTOR_DIAGNOSTIC_MODES = ("warn", "ignore", "error")
 SOURCE_TYPES = ("sample", "obsidian")
 AI_PROVIDERS = ("none", "mock", "ollama", "openai", "anthropic", "vllm")
@@ -71,6 +74,7 @@ class AppConfig:
     doctor_unresolved_wikilinks: str = "warn"
     doctor_unresolved_wikilink_ignore_target_globs: tuple[str, ...] = ()
     config_path: Path | None = None
+    profile_path: Path | None = None
     loaded: bool = False
 
 
@@ -233,6 +237,7 @@ def _apply_env_overrides(config: AppConfig) -> AppConfig:
                 config.doctor_unresolved_wikilink_ignore_target_globs
             ),
             config_path=config.config_path,
+            profile_path=config.profile_path,
             loaded=config.loaded,
         )
     )
@@ -330,14 +335,57 @@ def _unresolved_wikilink_config(value: object) -> tuple[str, tuple[str, ...]]:
     return mode, ignore_target_globs
 
 
-def load_app_config(config_path: str | Path | None = None) -> AppConfig:
-    path = Path(config_path).expanduser() if config_path else DEFAULT_CONFIG_PATH
-    if not path.exists():
-        return _apply_env_overrides(AppConfig(config_path=path, loaded=False))
+def _deep_merge(base: dict[str, object], override: dict[str, object]) -> dict[str, object]:
+    merged = dict(base)
+    for key, value in override.items():
+        existing = merged.get(key)
+        if isinstance(existing, dict) and isinstance(value, dict):
+            merged[key] = _deep_merge(existing, value)
+        else:
+            merged[key] = value
+    return merged
 
+
+def resolve_profile_path(profile_path: str | Path | None = None) -> Path | None:
+    value = profile_path or os.environ.get(VAULT_PROFILE_ENV)
+    if not value:
+        return None
+    path = Path(value).expanduser()
+    if path.exists() or path.suffix or path.is_absolute() or len(path.parts) > 1:
+        return path
+    return DEFAULT_PROFILE_DIR / f"{path}.toml"
+
+
+def _load_toml_file(path: Path, *, label: str) -> dict[str, object]:
+    if not path.exists():
+        raise ValueError(f"{label} does not exist: {path}")
     data = tomllib.loads(path.read_text(encoding="utf-8"))
     if not isinstance(data, dict):
-        raise ValueError(f"Config file must contain TOML tables: {path}")
+        raise ValueError(f"{label} must contain TOML tables: {path}")
+    return data
+
+
+def load_app_config(
+    config_path: str | Path | None = None,
+    *,
+    profile_path: str | Path | None = None,
+) -> AppConfig:
+    path = Path(config_path).expanduser() if config_path else DEFAULT_CONFIG_PATH
+    profile = resolve_profile_path(profile_path)
+    data: dict[str, object] = {}
+    loaded = False
+
+    if profile:
+        data = _load_toml_file(profile, label="Vault profile")
+        loaded = True
+
+    if path.exists():
+        data = _deep_merge(data, _load_toml_file(path, label="Config file"))
+        loaded = True
+    elif not loaded:
+        return _apply_env_overrides(
+            AppConfig(config_path=path, profile_path=profile, loaded=False)
+        )
 
     source, pipeline, privacy, ai = _load_pipeline_config(data)
     scan = _table(data, "scan")
@@ -423,7 +471,8 @@ def load_app_config(config_path: str | Path | None = None) -> AppConfig:
             doctor_unresolved_wikilink_ignore_target_globs
         ),
         config_path=path,
-        loaded=True,
+        profile_path=profile,
+        loaded=loaded,
     ))
 
 
