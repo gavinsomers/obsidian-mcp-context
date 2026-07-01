@@ -128,6 +128,30 @@ entity_type_preferences = ["account", "client", "case"]
     )
 
 
+def test_vault_profile_applies_replay_qa_intent_words(tmp_path: Path):
+    profile_path = tmp_path / "profile.toml"
+    profile_path.write_text(
+        """
+[replay_qa.intent_words]
+decisions = ["choice", "approval"]
+risks = ["issue", "issues"]
+open_loops = ["action", "actions"]
+timeline = ["activity", "history"]
+""".strip(),
+        encoding="utf-8",
+    )
+
+    app_config = load_app_config(
+        config_path=tmp_path / "missing.toml",
+        profile_path=profile_path,
+    )
+
+    assert app_config.replay_qa_decision_words == ("choice", "approval")
+    assert app_config.replay_qa_risk_words == ("issue", "issues")
+    assert app_config.replay_qa_open_loop_words == ("action", "actions")
+    assert app_config.replay_qa_timeline_words == ("activity", "history")
+
+
 def test_local_config_overrides_vault_profile(tmp_path: Path):
     profile_path = tmp_path / "profile.toml"
     config_path = tmp_path / "config.toml"

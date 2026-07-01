@@ -23,6 +23,19 @@ SOURCE_TYPES = ("sample", "obsidian")
 AI_PROVIDERS = ("none", "mock", "ollama", "openai", "anthropic", "vllm")
 HOSTED_AI_PROVIDERS = {"openai", "anthropic"}
 DEFAULT_REPLAY_QA_ENTITY_TYPE_PREFERENCES = ("project", "person", "company")
+DEFAULT_REPLAY_QA_DECISION_WORDS = ("decision", "decisions", "decided")
+DEFAULT_REPLAY_QA_RISK_WORDS = ("risk", "risks", "blocker", "blockers")
+DEFAULT_REPLAY_QA_OPEN_LOOP_WORDS = (
+    "open",
+    "loop",
+    "loops",
+    "todo",
+    "task",
+    "tasks",
+    "followup",
+    "follow-up",
+)
+DEFAULT_REPLAY_QA_TIMELINE_WORDS = ("timeline", "history", "when", "sequence")
 
 
 @dataclass(frozen=True)
@@ -77,6 +90,10 @@ class AppConfig:
     replay_qa_entity_type_preferences: tuple[str, ...] = (
         DEFAULT_REPLAY_QA_ENTITY_TYPE_PREFERENCES
     )
+    replay_qa_decision_words: tuple[str, ...] = DEFAULT_REPLAY_QA_DECISION_WORDS
+    replay_qa_risk_words: tuple[str, ...] = DEFAULT_REPLAY_QA_RISK_WORDS
+    replay_qa_open_loop_words: tuple[str, ...] = DEFAULT_REPLAY_QA_OPEN_LOOP_WORDS
+    replay_qa_timeline_words: tuple[str, ...] = DEFAULT_REPLAY_QA_TIMELINE_WORDS
     config_path: Path | None = None
     profile_path: Path | None = None
     loaded: bool = False
@@ -88,6 +105,14 @@ def _string_tuple(value: object, field_name: str) -> tuple[str, ...]:
     if not isinstance(value, list) or not all(isinstance(item, str) for item in value):
         raise ValueError(f"{field_name} must be a list of strings")
     return tuple(item for item in value if item)
+
+
+def _normalized_word_tuple(value: object, field_name: str) -> tuple[str, ...]:
+    return tuple(
+        word.strip().casefold()
+        for word in _string_tuple(value, field_name)
+        if word.strip()
+    )
 
 
 def _string_mapping(value: object, field_name: str) -> dict[str, str]:
@@ -241,6 +266,10 @@ def _apply_env_overrides(config: AppConfig) -> AppConfig:
                 config.doctor_unresolved_wikilink_ignore_target_globs
             ),
             replay_qa_entity_type_preferences=config.replay_qa_entity_type_preferences,
+            replay_qa_decision_words=config.replay_qa_decision_words,
+            replay_qa_risk_words=config.replay_qa_risk_words,
+            replay_qa_open_loop_words=config.replay_qa_open_loop_words,
+            replay_qa_timeline_words=config.replay_qa_timeline_words,
             config_path=config.config_path,
             profile_path=config.profile_path,
             loaded=config.loaded,
@@ -397,6 +426,9 @@ def load_app_config(
     entities = _table(data, "entities")
     doctor = _table(data, "doctor")
     replay_qa = _table(data, "replay_qa")
+    replay_qa_intent_words = replay_qa.get("intent_words", {})
+    if not isinstance(replay_qa_intent_words, dict):
+        raise ValueError("replay_qa.intent_words must be a TOML table")
 
     include_globs = _string_tuple(scan.get("include_globs"), "scan.include_globs")
     exclude_globs = _string_tuple(scan.get("exclude_globs"), "scan.exclude_globs")
@@ -420,6 +452,22 @@ def load_app_config(
             "replay_qa.entity_type_preferences",
         )
         if entity_type.strip()
+    )
+    replay_qa_decision_words = _normalized_word_tuple(
+        replay_qa_intent_words.get("decisions"),
+        "replay_qa.intent_words.decisions",
+    )
+    replay_qa_risk_words = _normalized_word_tuple(
+        replay_qa_intent_words.get("risks"),
+        "replay_qa.intent_words.risks",
+    )
+    replay_qa_open_loop_words = _normalized_word_tuple(
+        replay_qa_intent_words.get("open_loops"),
+        "replay_qa.intent_words.open_loops",
+    )
+    replay_qa_timeline_words = _normalized_word_tuple(
+        replay_qa_intent_words.get("timeline"),
+        "replay_qa.intent_words.timeline",
     )
     doctor_lifecycle_metadata = _choice(
         doctor.get("lifecycle_metadata"),
@@ -487,6 +535,16 @@ def load_app_config(
         replay_qa_entity_type_preferences=(
             replay_qa_entity_type_preferences
             or DEFAULT_REPLAY_QA_ENTITY_TYPE_PREFERENCES
+        ),
+        replay_qa_decision_words=(
+            replay_qa_decision_words or DEFAULT_REPLAY_QA_DECISION_WORDS
+        ),
+        replay_qa_risk_words=(replay_qa_risk_words or DEFAULT_REPLAY_QA_RISK_WORDS),
+        replay_qa_open_loop_words=(
+            replay_qa_open_loop_words or DEFAULT_REPLAY_QA_OPEN_LOOP_WORDS
+        ),
+        replay_qa_timeline_words=(
+            replay_qa_timeline_words or DEFAULT_REPLAY_QA_TIMELINE_WORDS
         ),
         config_path=path,
         profile_path=profile,
