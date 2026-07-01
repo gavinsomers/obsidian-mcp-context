@@ -124,6 +124,45 @@ class FakeFallbackService:
         ]
 
 
+class FakePagedMartService(FakeMartService):
+    def list_entities(
+        self,
+        vault_path: str | Path,
+        entity_type: str | None = None,
+        text: str | None = None,
+        limit: int = 100,
+        postgres_dsn: str | Path | None = None,
+    ) -> list[dict[str, object]]:
+        if text is None:
+            return [
+                {
+                    "entity_id": "company:apex",
+                    "entity_type": "company",
+                    "name": "Apex Analytics",
+                    "source_path": "Companies/Apex Analytics.md",
+                }
+            ]
+        if text == "Project Atlas 1":
+            return [
+                {
+                    "entity_id": "decision:atlas-1",
+                    "entity_type": "decision",
+                    "name": "Project Atlas 1 Security Review Decision 1",
+                    "source_path": "Decisions/Project Atlas 1 Security Review Decision 1.md",
+                },
+                {
+                    "entity_id": "project:atlas-1",
+                    "entity_type": "project",
+                    "name": "Project Atlas 1",
+                    "source_path": "Projects/Project Atlas 1.md",
+                },
+            ]
+        return []
+
+    def agent_context(self, *args: object, **kwargs: object) -> list[dict[str, object]]:
+        raise AssertionError("broad fallback context should not be used")
+
+
 class FakeSummaryProvider:
     provider = "ollama"
     model = "gemma4:26b-a4b-it-q4_K_M"
@@ -196,6 +235,32 @@ def test_answer_question_uses_exact_mart_entity_and_sources(tmp_path, monkeypatc
     }
     assert "Project Atlas 10" not in answer["answer"]
     assert answer["summary"]["status"] == "not_requested"
+
+
+def test_answer_question_finds_project_when_initial_entity_page_misses_it(
+    tmp_path,
+    monkeypatch,
+):
+    monkeypatch.setattr(
+        "obsidian_mcp_context.replay_qa.dashboard_status",
+        lambda **_: {
+            "replay": {"virtual_time": "2023-04-21T09:00:00"},
+            "readiness": {"ready": True},
+        },
+    )
+
+    answer = answer_question(
+        "What are the risks and open loops for Project Atlas 1?",
+        vault_path=tmp_path,
+        state_dir=tmp_path,
+        postgres_dsn="postgres://example",
+        service=FakePagedMartService(),
+    )
+
+    assert answer["status"] == "ok"
+    assert answer["mode"] == "mart-backed"
+    assert answer["entity"]["entity_type"] == "project"
+    assert answer["entity"]["name"] == "Project Atlas 1"
 
 
 def test_answer_question_can_summarize_retrieved_rows_with_local_provider(
