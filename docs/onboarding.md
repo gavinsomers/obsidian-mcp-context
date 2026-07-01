@@ -3,6 +3,9 @@
 This project workflow uses generated/synthetic vaults only. Do not use a
 personal Obsidian vault for validation or MCP serving.
 
+For the pre-demo privacy checklist, see
+[`docs/demo-privacy-readiness.md`](demo-privacy-readiness.md).
+
 ## 1. Choose A Fixture
 
 - `examples/generated-vaults/small`: fast smoke checks.

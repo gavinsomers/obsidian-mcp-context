@@ -253,3 +253,15 @@ scripts/analytics_stack_check.sh large
 It builds the required images, starts Postgres, ingests the generated vault,
 runs dbt, runs dbt tests, and executes a Postgres-backed MCP smoke check against
 the marts.
+
+Before recording a demo or preparing marketing screenshots, run the generated
+demo health check and full privacy scan:
+
+```bash
+scripts/check_synthetic_demo.sh
+scripts/privacy_check.sh --all
+```
+
+The privacy scan checks tracked files for blocked runtime artifacts and local
+sensitive terms from `.privacy-banned-terms.local` when that local-only file is
+present.

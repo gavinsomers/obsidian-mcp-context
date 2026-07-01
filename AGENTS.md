@@ -14,6 +14,13 @@ Before starting implementation:
 - If a matching card exists, move it to `In Progress`.
 - If no matching card exists, create one in `In Progress`.
 - Add or comment the branch name, scope, and acceptance target.
+- When creating or materially reshaping a Trello card, make sure the card
+  description includes these sections:
+  - `Driver`: why this work matters now, including strategic/product/reputation
+    context where relevant.
+  - `Scope`: what is included in this card.
+  - `Out of scope`: explicit boundaries and tempting adjacent work not included.
+  - `Acceptance target`: the observable finish condition.
 
 When opening a pull request:
 

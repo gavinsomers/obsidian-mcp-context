@@ -1,4 +1,7 @@
 .venv/
+.env.analytics
+.obsidian-mcp-context.toml
+.privacy-banned-terms.local
 *.egg-info/
 __pycache__/
 .pytest_cache/
