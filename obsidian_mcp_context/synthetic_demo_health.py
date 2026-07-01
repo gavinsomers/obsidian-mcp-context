@@ -10,12 +10,17 @@ from typing import Any
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
+from obsidian_mcp_context.config import (
+    AppConfig,
+    VAULT_PROFILE_ENV,
+    load_app_config,
+    resolve_eval_pack_path,
+)
 from obsidian_mcp_context.replay_dashboard import REPLAY_STATE_FILE, SCHEDULER_STATE_FILE
 
 
 DEFAULT_ENV_FILE = ".env.analytics"
 FALLBACK_ENV_FILE = ".env.analytics.example"
-DEFAULT_EXAMPLES_FILE = "examples/replay-qa-examples.json"
 DEFAULT_STATE_DIR = "var/replay-vault"
 
 SERVICE_DEFAULTS = {
@@ -52,8 +57,22 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--examples",
-        default=DEFAULT_EXAMPLES_FILE,
-        help="JSON file containing canned replay Q&A examples.",
+        default=None,
+        help=(
+            "JSON eval/example pack path. Overrides replay_qa.eval_pack from "
+            "the selected vault profile."
+        ),
+    )
+    parser.add_argument(
+        "--config",
+        help="Optional .obsidian-mcp-context.toml path for health-check settings.",
+    )
+    parser.add_argument(
+        "--vault-profile",
+        help=(
+            "Optional vault profile TOML path or checked-in profile name from "
+            "examples/vault-profiles."
+        ),
     )
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--timeout", type=float, default=2.0)
@@ -67,10 +86,23 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     env = _read_env_file(Path(args.env_file))
+    app_config = (
+        load_app_config(
+            Path(args.config) if args.config else None,
+            profile_path=Path(args.vault_profile) if args.vault_profile else None,
+        )
+        if args.config or args.vault_profile or os.environ.get(VAULT_PROFILE_ENV)
+        else AppConfig()
+    )
+    examples_path = (
+        Path(args.examples)
+        if args.examples
+        else resolve_eval_pack_path(app_config.replay_qa_eval_pack)
+    )
     checks = run_checks(
         env=env,
         state_dir=Path(args.state_dir),
-        examples_path=Path(args.examples),
+        examples_path=examples_path,
         host=args.host,
         timeout=args.timeout,
         include_dbt_docs=not args.skip_dbt_docs,

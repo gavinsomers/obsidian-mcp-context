@@ -61,6 +61,8 @@ Profiles are ordinary TOML files intended to describe reusable vault
 conventions: scanned file types, ignored folders, folder-to-entity-type mapping,
 and non-entity note types. Checked-in examples live under
 `examples/vault-profiles/`; private profiles can live anywhere outside the repo.
+For the portability rules behind those settings, see
+[`docs/portability-contract.md`](portability-contract.md).
 
 Use a checked-in profile by name:
 
@@ -144,6 +146,7 @@ Calendars = "calendar"
 
 [replay_qa]
 entity_type_preferences = ["project", "company", "asset"]
+eval_pack = "generated-demo"
 
 [replay_qa.intent_words]
 decisions = ["decision", "decisions", "choice", "approval"]
@@ -172,7 +175,8 @@ ignore_target_globs = [
 ]
 ```
 
-Additional example profiles live in `examples/config/`.
+Additional checked-in vault profiles live in `examples/vault-profiles/`.
+Checked-in eval packs live in `examples/eval-packs/`.
 
 ## Pipeline Profile Settings
 
@@ -202,6 +206,10 @@ Additional example profiles live in `examples/config/`.
   `["project", "person", "company"]`. For account/client/case-oriented vaults,
   set this to the primary entity types for that vault, such as
   `["account", "client", "case"]`.
+- `replay_qa.eval_pack`: Replay Q&A eval/example pack selected by health-check
+  workflows when `--examples` is not passed. A bare name such as
+  `generated-demo` resolves to `examples/eval-packs/generated-demo.json`; a path
+  can point to a private local JSON pack outside the repo.
 - `replay_qa.intent_words.decisions`: deterministic words that route a Replay
   Q&A question to decision rows. Default: `decision`, `decisions`, `decided`.
 - `replay_qa.intent_words.risks`: deterministic words that route a Replay Q&A

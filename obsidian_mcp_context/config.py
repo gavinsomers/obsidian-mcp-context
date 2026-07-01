@@ -17,6 +17,7 @@ from obsidian_mcp_context.vault import (
 DEFAULT_CONFIG_PATH = Path(".obsidian-mcp-context.toml")
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_PROFILE_DIR = PROJECT_ROOT / "examples" / "vault-profiles"
+DEFAULT_EVAL_PACK_DIR = PROJECT_ROOT / "examples" / "eval-packs"
 VAULT_PROFILE_ENV = "OBSIDIAN_MCP_VAULT_PROFILE"
 DOCTOR_DIAGNOSTIC_MODES = ("warn", "ignore", "error")
 SOURCE_TYPES = ("sample", "obsidian")
@@ -36,6 +37,7 @@ DEFAULT_REPLAY_QA_OPEN_LOOP_WORDS = (
     "follow-up",
 )
 DEFAULT_REPLAY_QA_TIMELINE_WORDS = ("timeline", "history", "when", "sequence")
+DEFAULT_REPLAY_QA_EVAL_PACK = "generated-demo"
 
 
 @dataclass(frozen=True)
@@ -94,6 +96,7 @@ class AppConfig:
     replay_qa_risk_words: tuple[str, ...] = DEFAULT_REPLAY_QA_RISK_WORDS
     replay_qa_open_loop_words: tuple[str, ...] = DEFAULT_REPLAY_QA_OPEN_LOOP_WORDS
     replay_qa_timeline_words: tuple[str, ...] = DEFAULT_REPLAY_QA_TIMELINE_WORDS
+    replay_qa_eval_pack: str = DEFAULT_REPLAY_QA_EVAL_PACK
     config_path: Path | None = None
     profile_path: Path | None = None
     loaded: bool = False
@@ -270,6 +273,7 @@ def _apply_env_overrides(config: AppConfig) -> AppConfig:
             replay_qa_risk_words=config.replay_qa_risk_words,
             replay_qa_open_loop_words=config.replay_qa_open_loop_words,
             replay_qa_timeline_words=config.replay_qa_timeline_words,
+            replay_qa_eval_pack=config.replay_qa_eval_pack,
             config_path=config.config_path,
             profile_path=config.profile_path,
             loaded=config.loaded,
@@ -390,6 +394,14 @@ def resolve_profile_path(profile_path: str | Path | None = None) -> Path | None:
     return DEFAULT_PROFILE_DIR / f"{path}.toml"
 
 
+def resolve_eval_pack_path(eval_pack: str | Path | None = None) -> Path:
+    value = str(eval_pack or DEFAULT_REPLAY_QA_EVAL_PACK)
+    path = Path(value).expanduser()
+    if path.exists() or path.suffix or path.is_absolute() or len(path.parts) > 1:
+        return path
+    return DEFAULT_EVAL_PACK_DIR / f"{path}.json"
+
+
 def _load_toml_file(path: Path, *, label: str) -> dict[str, object]:
     if not path.exists():
         raise ValueError(f"{label} does not exist: {path}")
@@ -469,6 +481,11 @@ def load_app_config(
         replay_qa_intent_words.get("timeline"),
         "replay_qa.intent_words.timeline",
     )
+    replay_qa_eval_pack = _string(
+        replay_qa.get("eval_pack"),
+        "replay_qa.eval_pack",
+        DEFAULT_REPLAY_QA_EVAL_PACK,
+    )
     doctor_lifecycle_metadata = _choice(
         doctor.get("lifecycle_metadata"),
         "doctor.lifecycle_metadata",
@@ -546,6 +563,7 @@ def load_app_config(
         replay_qa_timeline_words=(
             replay_qa_timeline_words or DEFAULT_REPLAY_QA_TIMELINE_WORDS
         ),
+        replay_qa_eval_pack=replay_qa_eval_pack or DEFAULT_REPLAY_QA_EVAL_PACK,
         config_path=path,
         profile_path=profile,
         loaded=loaded,

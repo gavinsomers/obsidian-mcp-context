@@ -1,6 +1,11 @@
 from pathlib import Path
 
-from obsidian_mcp_context.config import load_app_config, resolve_profile_path, vault_config_from_app_config
+from obsidian_mcp_context.config import (
+    load_app_config,
+    resolve_eval_pack_path,
+    resolve_profile_path,
+    vault_config_from_app_config,
+)
 from obsidian_mcp_context.doctor import DoctorCode, DoctorOptions, run_doctor
 from obsidian_mcp_context.vault import build_context
 from obsidian_mcp_context.warehouse import build_warehouse, list_entities
@@ -150,6 +155,30 @@ timeline = ["activity", "history"]
     assert app_config.replay_qa_risk_words == ("issue", "issues")
     assert app_config.replay_qa_open_loop_words == ("action", "actions")
     assert app_config.replay_qa_timeline_words == ("activity", "history")
+
+
+def test_vault_profile_applies_replay_qa_eval_pack(tmp_path: Path):
+    profile_path = tmp_path / "profile.toml"
+    profile_path.write_text(
+        """
+[replay_qa]
+eval_pack = "account-demo"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    app_config = load_app_config(
+        config_path=tmp_path / "missing.toml",
+        profile_path=profile_path,
+    )
+
+    assert app_config.replay_qa_eval_pack == "account-demo"
+
+
+def test_named_eval_pack_resolves_to_examples_directory():
+    assert resolve_eval_pack_path("generated-demo") == (
+        Path("examples/eval-packs/generated-demo.json").resolve()
+    )
 
 
 def test_local_config_overrides_vault_profile(tmp_path: Path):

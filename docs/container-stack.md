@@ -112,9 +112,11 @@ scripts/check_synthetic_demo.sh
 ```
 
 It checks local replay and scheduler state, verifies the browser-facing service
-ports, reads replay dashboard readiness, and posts the canned questions in
-`examples/replay-qa-examples.json` to Replay Q&A. Use this when preparing a
-demo:
+ports, reads replay dashboard readiness, and posts the selected eval pack to
+Replay Q&A. By default, the generated demo uses
+`examples/eval-packs/generated-demo.json`; `--examples` can point at a private
+local pack outside the repo, and `--vault-profile` can select a profile-defined
+`replay_qa.eval_pack`. Use this when preparing a demo:
 
 ```bash
 scripts/run_synthetic_demo.sh large
@@ -126,6 +128,8 @@ Useful health-check options:
 ```bash
 scripts/check_synthetic_demo.sh --skip-dbt-docs
 scripts/check_synthetic_demo.sh --skip-qa
+scripts/check_synthetic_demo.sh --examples /path/to/private-eval-pack.json
+scripts/check_synthetic_demo.sh --vault-profile generated-demo
 scripts/check_synthetic_demo.sh --json
 ```
 
