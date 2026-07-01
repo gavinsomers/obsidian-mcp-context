@@ -7,6 +7,9 @@ fi
 
 vault_path="${OBSIDIAN_AUTO_OPEN_VAULT:-/vault}"
 delay="${OBSIDIAN_AUTO_OPEN_DELAY:-3}"
+vault_id="${OBSIDIAN_AUTO_OPEN_VAULT_ID:-generated-demo-vault}"
+config_dir="${XDG_CONFIG_HOME:-/config/.config}/obsidian"
+config_file="$config_dir/obsidian.json"
 
 sleep "$delay"
 
@@ -14,5 +17,23 @@ if [ ! -d "$vault_path" ]; then
   echo "Obsidian auto-open skipped: vault path does not exist: $vault_path" >&2
   exit 0
 fi
+
+mkdir -p "$config_dir"
+
+timestamp="$(date +%s)000"
+escaped_vault_path="$(printf '%s' "$vault_path" | sed 's/\\/\\\\/g; s/"/\\"/g')"
+escaped_vault_id="$(printf '%s' "$vault_id" | sed 's/\\/\\\\/g; s/"/\\"/g')"
+
+cat > "$config_file" <<EOF
+{
+  "vaults": {
+    "$escaped_vault_id": {
+      "path": "$escaped_vault_path",
+      "ts": $timestamp,
+      "open": true
+    }
+  }
+}
+EOF
 
 exec obsidian --no-sandbox "$vault_path"
