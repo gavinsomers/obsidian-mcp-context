@@ -66,6 +66,21 @@ batch_size="${REPLAY_DEMO_BATCH_SIZE:-25}"
 scheduler_interval="${REPLAY_SCHEDULER_INTERVAL_SECONDS:-60}"
 initial_limit="${REPLAY_DEMO_INITIAL_LIMIT:-3}"
 
+status_for_pid_file() {
+  local name="$1"
+  local pid_file="$2"
+  local pid
+  if [[ -f "$pid_file" ]]; then
+    pid="$(cat "$pid_file")"
+    if [[ -n "$pid" ]] && kill -0 "$pid" >/dev/null 2>&1; then
+      echo "$name: running pid $pid"
+      return
+    fi
+    rm -f "$pid_file"
+  fi
+  echo "$name: stopped"
+}
+
 if [[ "$command" == "stop" ]]; then
   compose=(docker compose --env-file "$env_file" -f "$compose_file")
   mkdir -p "$state_dir"
@@ -86,14 +101,8 @@ fi
 if [[ "$command" == "status" ]]; then
   compose=(docker compose --env-file "$env_file" -f "$compose_file")
   "${compose[@]}" ps postgres vault-obsidian mcp postgres-browser replay-dashboard replay-qa dbt-docs || true
-  for name in replay scheduler; do
-    pid_file="$state_dir/$name.pid"
-    if [[ -f "$pid_file" ]] && kill -0 "$(cat "$pid_file")" >/dev/null 2>&1; then
-      echo "$name: running pid $(cat "$pid_file")"
-    else
-      echo "$name: stopped"
-    fi
-  done
+  status_for_pid_file replay "$replay_pid_file"
+  status_for_pid_file scheduler "$scheduler_pid_file"
   exit 0
 fi
 
@@ -199,6 +208,18 @@ stop_background_processes() {
   done
 }
 
+start_detached() {
+  local pid_file="$1"
+  local log_file="$2"
+  shift 2
+  if command -v setsid >/dev/null 2>&1; then
+    nohup setsid "$@" >"$log_file" 2>&1 &
+  else
+    nohup "$@" >"$log_file" 2>&1 &
+  fi
+  echo "$!" >"$pid_file"
+}
+
 safe_reset_target() {
   local target="$1"
   case "$target" in
@@ -282,21 +303,19 @@ fi
 
 if [[ "$continuous" == "1" ]]; then
   echo "Starting background replay and scheduler loops."
-  nohup "$python_bin" -m obsidian_mcp_context.replay_loader \
+  start_detached "$replay_pid_file" "$log_dir/replay.log" \
+    "$python_bin" -m obsidian_mcp_context.replay_loader \
     --source "$source_vault" \
     --target "$target_vault" \
     --speed "$speed" \
-    --batch-size "$batch_size" \
-    >"$log_dir/replay.log" 2>&1 &
-  echo "$!" >"$replay_pid_file"
+    --batch-size "$batch_size"
 
-  nohup "$python_bin" -m obsidian_mcp_context.replay_scheduler \
+  start_detached "$scheduler_pid_file" "$log_dir/scheduler.log" \
+    "$python_bin" -m obsidian_mcp_context.replay_scheduler \
     --vault "$target_vault" \
     --ingest-command "$ingest_command" \
     --dbt-command "$dbt_command" \
-    --interval-seconds "$scheduler_interval" \
-    >"$log_dir/scheduler.log" 2>&1 &
-  echo "$!" >"$scheduler_pid_file"
+    --interval-seconds "$scheduler_interval"
 fi
 
 if [[ "$start_dbt_docs" == "1" ]]; then
