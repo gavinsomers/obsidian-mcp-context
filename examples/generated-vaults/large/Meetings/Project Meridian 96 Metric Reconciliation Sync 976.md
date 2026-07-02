@@ -3,18 +3,18 @@ type: meeting
 date: 2024-08-29
 project: "[[Project Meridian 96]]"
 company: "[[Meridian Logistics]]"
-source_created_at: 2024-08-29T09:33:00
-source_observed_at: 2024-08-29T11:16:00
-created_at: 2024-09-03T13:33:00
-updated_at: 2024-09-04T03:33:00
+source_created_at: 2024-08-29T13:33:00
+source_observed_at: 2024-08-29T16:00:00
+created_at: 2024-09-03T18:33:00
+updated_at: 2024-09-04T12:33:00
 tags: [#meeting]
 ---
 # Project Meridian 96 Metric Reconciliation Sync 976
 
 ## Attendees
-- [[Xavier Morgan]]
+- [[Marcus Walker]]
 - [[Grace Ivanov]]
-- [[Clara Walker]]
+- [[Jonah Quinn]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Meridian 96]] at [[Meridian Logistics]].

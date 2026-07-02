@@ -3,11 +3,11 @@ type: decision
 date: 2023-10-22
 status: active
 project: "[[Project Keystone 10]]"
-company: "[[Apex Labs]]"
-source_created_at: 2023-10-22T12:46:00
-source_observed_at: 2023-10-22T14:19:00
-created_at: 2023-10-22T17:46:00
-updated_at: 2023-10-23T13:46:00
+company: "[[Cobalt Labs]]"
+source_created_at: 2023-10-22T13:04:00
+source_observed_at: 2023-10-22T14:55:00
+created_at: 2023-10-22T15:00:00
+updated_at: 2023-10-23T05:00:00
 tags: [#decision]
 ---
 # Project Keystone 10 Stakeholder Alignment Decision 10
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Keystone 10]].
 
 ## Context
-This decision applies to [[Apex Labs]] and [[Project Keystone 10]].
+This decision applies to [[Cobalt Labs]] and [[Project Keystone 10]].
 It follows [[Project Keystone 10 Lineage Audit Sync 58]].
-It incorporates [[Project Keystone 10 Lineage Audit Research 22]].
+It incorporates [[Project Keystone 10 Metric Reconciliation Research 10]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

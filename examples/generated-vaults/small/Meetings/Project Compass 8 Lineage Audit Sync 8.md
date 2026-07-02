@@ -2,24 +2,24 @@
 type: meeting
 date: 2023-09-01
 project: "[[Project Compass 8]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2023-09-01T15:26:00
-source_observed_at: 2023-09-01T18:17:00
-created_at: 2023-09-01T18:52:00
-updated_at: 2023-09-02T10:52:00
+company: "[[Northstar Labs]]"
+source_created_at: 2023-09-01T14:21:00
+source_observed_at: 2023-09-01T16:49:00
+created_at: 2023-09-01T16:54:00
+updated_at: 2023-09-01T23:54:00
 tags: [#meeting]
 ---
 # Project Compass 8 Lineage Audit Sync 8
 
 ## Attendees
-- [[Elena Bennett]]
-- [[Grace Alvarez]]
-- [[Xavier Alvarez]]
+- [[Alex Alvarez]]
+- [[Clara Bennett]]
+- [[Yara Alvarez]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 8]] at [[Quantum Labs]].
-[[Elena Bennett]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 8]] at [[Northstar Labs]].
+[[Grace Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 8]] to [[Elena Bennett]] #follow-up
+- [ ] Send recap for [[Project Compass 8]] to [[Grace Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Labs]]"
-role: "Operations Lead"
-source_created_at: 2023-07-12T14:22:00
-source_observed_at: 2023-07-12T16:44:00
-created_at: 2023-07-14T12:22:00
-updated_at: 2023-08-30T15:22:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-07-12T12:15:00
+source_observed_at: 2023-07-12T13:33:00
+created_at: 2023-07-14T05:15:00
+updated_at: 2023-09-09T13:00:00
 tags: [#person]
 ---
 # Nadia Jenkins
 
 ## Role
-Nadia Jenkins is the Operations Lead at [[Atlas Labs]].
+Nadia Jenkins is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Harbor 9]]
+## Active Project Allocations
+- Managing/Supporting [[Project Harbor 24]] ([[Atlas FinTech]])
 - [ ] Confirm next update with [[Nadia Jenkins]] #follow-up

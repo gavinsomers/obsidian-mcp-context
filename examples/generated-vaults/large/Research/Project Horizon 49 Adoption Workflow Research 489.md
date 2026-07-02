@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Horizon 49]]"
 company: "[[BrightWave Manufacturing]]"
-source_created_at: 2025-09-09T10:30:00
-source_observed_at: 2025-09-09T10:43:00
-created_at: 2025-09-10T08:30:00
-updated_at: 2025-09-14T15:30:00
+source_created_at: 2024-05-04T16:48:00
+source_observed_at: 2024-05-04T18:17:00
+created_at: 2024-05-06T02:48:00
+updated_at: 2024-05-19T13:48:00
 tags: [#research]
 ---
 # Project Horizon 49 Adoption Workflow Research 489
@@ -14,8 +14,8 @@ tags: [#research]
 Research on adoption workflow for [[Project Horizon 49]] and [[BrightWave Manufacturing]].
 
 ## Evidence
-- Interview notes from [[Sam Patel]]
-- Related operating review: [[Project Horizon 49 Pipeline Hygiene Sync 1369]]
+- Interview notes from [[Wendy Bennett]]
+- Related operating review: [[Project Horizon 49 Pipeline Hygiene Sync 489]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Horizon 49]] #research

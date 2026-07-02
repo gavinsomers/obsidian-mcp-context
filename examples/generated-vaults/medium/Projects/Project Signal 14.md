@@ -14,12 +14,12 @@ tags: [#project]
 Project Signal 14 supports [[Crescent Labs]] through research program.
 
 ## Stakeholders
-- [[Marcus Alvarez]]
-- [[Victor Chen]]
-- [[Clara Foster]]
-- [[Rachel Bennett]]
+- [[Grace Evans]]
+- [[Jonah Diaz]]
+- [[Ben Diaz]]
+- [[Alex Foster]]
 
 ## Operating Notes
-- Owner: [[Zoe Diaz]]
+- Owner: [[Marcus Alvarez]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 14]] #ops

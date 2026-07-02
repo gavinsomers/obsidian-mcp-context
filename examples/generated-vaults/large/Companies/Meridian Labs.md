@@ -1,25 +1,21 @@
 ---
 type: company
-status: active
+status: churn-risk
 segment: enterprise
-source_created_at: 2023-04-29T11:32:00
-source_observed_at: 2023-04-29T13:38:00
-created_at: 2023-05-01T04:32:00
-updated_at: 2023-07-21T10:38:00
+source_created_at: 2023-05-01T14:48:00
+source_observed_at: 2023-05-01T15:33:00
+created_at: 2023-05-03T12:48:00
+updated_at: 2023-05-27T20:48:00
 tags: [#company]
 ---
 # Meridian Labs
 
 ## Account Context
-Meridian Labs is a enterprise account currently marked `active`.
+Meridian Labs is a enterprise account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Elena Alvarez]] - Legal Counsel
-- [[Victor Evans]] - Legal Counsel
-- [[Kai Jenkins]] - Legal Counsel
+## Assigned Account Team
 
 ## Projects
-- [[Project Meridian 6]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Meridian Labs]] #account

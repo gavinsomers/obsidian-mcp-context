@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 6]]"
 company: "[[Meridian Labs]]"
-source_created_at: 2024-07-22T11:59:00
-source_observed_at: 2024-07-22T12:27:00
-created_at: 2024-07-25T18:59:00
-updated_at: 2024-09-07T18:59:00
+source_created_at: 2024-07-22T09:00:00
+source_observed_at: 2024-07-22T09:11:00
+created_at: 2024-07-22T16:00:00
+updated_at: 2024-09-05T01:00:00
 tags: [#research]
 ---
 # Project Meridian 6 Stakeholder Alignment Research 106

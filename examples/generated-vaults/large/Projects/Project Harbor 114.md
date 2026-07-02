@@ -1,11 +1,11 @@
 ---
 type: project
-status: blocked
+status: planning
 company: "[[Atlas Analytics]]"
-source_created_at: 2024-11-14T15:48:00
-source_observed_at: 2024-11-14T17:53:00
-created_at: 2024-11-15T09:48:00
-updated_at: 2025-01-11T11:48:00
+source_created_at: 2024-11-14T15:14:00
+source_observed_at: 2024-11-14T15:39:00
+created_at: 2024-11-15T20:14:00
+updated_at: 2025-02-11T01:14:00
 tags: [#project]
 ---
 # Project Harbor 114
@@ -14,12 +14,12 @@ tags: [#project]
 Project Harbor 114 supports [[Atlas Analytics]] through research program.
 
 ## Stakeholders
-- [[Victor Walker]]
-- [[Elena Shah]]
-- [[Omar Novak]]
-- [[Iris Evans]]
+- [[Elena Patel]]
+- [[Wendy Tan]]
+- [[Tara Rostova]]
+- [[Rachel Vance]]
 
 ## Operating Notes
-- Owner: [[Elena Shah]]
-- Status: `blocked`
+- Owner: [[Iris Evans]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Harbor 114]] #ops

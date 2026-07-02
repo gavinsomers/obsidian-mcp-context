@@ -3,11 +3,11 @@ type: decision
 date: 2025-08-01
 status: active
 project: "[[Project Compass 128]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2025-08-01T09:03:00
-source_observed_at: 2025-08-01T10:41:00
-created_at: 2025-08-01T14:14:00
-updated_at: 2025-08-01T17:14:00
+company: "[[Atlas Labs]]"
+source_created_at: 2025-08-01T12:11:00
+source_observed_at: 2025-08-01T14:11:00
+created_at: 2025-08-01T14:16:00
+updated_at: 2025-08-02T04:16:00
 tags: [#decision]
 ---
 # Project Compass 128 Handoff Readiness Decision 568
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 128]].
 
 ## Context
-This decision applies to [[Quantum Labs]] and [[Project Compass 128]].
+This decision applies to [[Atlas Labs]] and [[Project Compass 128]].
 It follows [[Project Compass 128 Lineage Audit Sync 568]].
 It incorporates [[Project Compass 128 Finance Approval Research 128]].
 

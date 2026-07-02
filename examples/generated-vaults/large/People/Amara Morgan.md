@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent Health]]"
-role: "Finance Sponsor"
-source_created_at: 2023-08-03T16:23:00
-source_observed_at: 2023-08-03T18:29:00
-created_at: 2023-08-12T22:23:00
-updated_at: 2023-09-22T14:03:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-08-03T16:26:00
+source_observed_at: 2023-08-03T17:03:00
+created_at: 2023-08-05T06:26:00
+updated_at: 2023-10-03T16:26:00
 tags: [#person]
 ---
 # Amara Morgan
 
 ## Role
-Amara Morgan is the Finance Sponsor at [[Crescent Health]].
+Amara Morgan is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Crescent Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Amara Morgan]] #follow-up

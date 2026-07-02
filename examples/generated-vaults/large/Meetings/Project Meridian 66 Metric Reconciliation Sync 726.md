@@ -1,20 +1,20 @@
 ---
 type: meeting
-date: 2026-02-11
+date: 2024-10-30
 project: "[[Project Meridian 66]]"
 company: "[[Meridian Health]]"
-source_created_at: 2026-02-11T11:21:00
-source_observed_at: 2026-02-11T14:19:00
-created_at: 2026-02-11T14:24:00
-updated_at: 2026-02-12T05:24:00
+source_created_at: 2024-10-30T14:32:00
+source_observed_at: 2024-10-30T17:25:00
+created_at: 2024-10-30T18:20:00
+updated_at: 2024-10-31T03:20:00
 tags: [#meeting]
 ---
 # Project Meridian 66 Metric Reconciliation Sync 726
 
 ## Attendees
-- [[Tara Lee]]
-- [[Zoe Usman]]
-- [[Marcus Chen]]
+- [[Amara Morgan]]
+- [[Nadia Rostova]]
+- [[Xavier Morgan]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Meridian 66]] at [[Meridian Health]].

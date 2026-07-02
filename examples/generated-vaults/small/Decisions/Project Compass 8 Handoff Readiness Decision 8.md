@@ -3,11 +3,11 @@ type: decision
 date: 2023-09-22
 status: active
 project: "[[Project Compass 8]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2023-09-22T10:47:00
-source_observed_at: 2023-09-22T13:39:00
-created_at: 2023-09-22T13:44:00
-updated_at: 2023-09-23T06:44:00
+company: "[[Northstar Labs]]"
+source_created_at: 2023-09-22T13:07:00
+source_observed_at: 2023-09-22T13:18:00
+created_at: 2023-09-22T16:57:00
+updated_at: 2023-09-22T22:57:00
 tags: [#decision]
 ---
 # Project Compass 8 Handoff Readiness Decision 8
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 8]].
 
 ## Context
-This decision applies to [[Quantum Labs]] and [[Project Compass 8]].
+This decision applies to [[Northstar Labs]] and [[Project Compass 8]].
 It follows [[Project Compass 8 Finance Approval Sync 44]].
 It incorporates [[Project Compass 8 Finance Approval Research 8]].
 

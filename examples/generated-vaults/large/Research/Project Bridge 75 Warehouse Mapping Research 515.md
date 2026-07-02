@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Bridge 75]]"
 company: "[[Keystone Health]]"
-source_created_at: 2025-10-23T12:58:00
+source_created_at: 2025-10-23T14:17:00
 source_observed_at: 2025-10-23T14:35:00
-created_at: 2025-10-24T19:58:00
-updated_at: 2025-11-10T02:58:00
+created_at: 2025-10-23T17:17:00
+updated_at: 2025-12-06T01:17:00
 tags: [#research]
 ---
 # Project Bridge 75 Warehouse Mapping Research 515
@@ -14,7 +14,7 @@ tags: [#research]
 Research on warehouse mapping for [[Project Bridge 75]] and [[Keystone Health]].
 
 ## Evidence
-- Interview notes from [[Hannah Vance]]
+- Interview notes from [[Wendy Chen]]
 - Related operating review: [[Project Bridge 75 Adoption Workflow Sync 1395]]
 
 ## Follow Up

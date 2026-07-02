@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Pioneer Logistics]]"
-source_created_at: 2024-09-17T12:41:00
-source_observed_at: 2024-09-17T15:38:00
-created_at: 2024-09-18T09:41:00
-updated_at: 2024-12-03T15:41:00
+source_created_at: 2024-09-17T15:48:00
+source_observed_at: 2024-09-17T17:53:00
+created_at: 2024-09-18T09:48:00
+updated_at: 2024-11-14T11:48:00
 tags: [#project]
 ---
 # Project Summit 102
@@ -14,13 +14,12 @@ tags: [#project]
 Project Summit 102 supports [[Pioneer Logistics]] through sales pipeline.
 
 ## Stakeholders
-- [[Marcus Ivanov]]
-- [[Tara Rostova]]
-- [[Xavier Diaz]]
-- [[Iris Walker]]
+- [[David Evans]]
+- [[Nadia Morgan]]
+- [[Marcus Jenkins]]
+- [[Iris Shah]]
 
 ## Operating Notes
-- Owner: [[Marcus Ivanov]]
-- Status: `closed`
-- Closed at: `2025-03-27`
+- Owner: [[Xavier Diaz]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Summit 102]] #ops

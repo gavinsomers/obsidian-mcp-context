@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Meridian 171]]"
-company: "[[Meridian Manufacturing]]"
-source_created_at: 2026-04-08T10:18:00
-source_observed_at: 2026-04-08T12:47:00
-created_at: 2026-04-09T10:18:00
-updated_at: 2026-05-16T17:18:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2026-04-08T10:43:00
+source_observed_at: 2026-04-08T13:32:00
+created_at: 2026-04-10T05:43:00
+updated_at: 2026-05-04T12:43:00
 tags: [#research]
 ---
 # Project Meridian 171 Contract Renewal Research 611
 
 ## Research Summary
-Research on contract renewal for [[Project Meridian 171]] and [[Meridian Manufacturing]].
+Research on contract renewal for [[Project Meridian 171]] and [[Vanguard Manufacturing]].
 
 ## Evidence
-- Interview notes from [[Yara Bennett]]
+- Interview notes from [[Nadia Grant]]
 - Related operating review: [[Project Meridian 171 Warehouse Mapping Sync 1491]]
 
 ## Follow Up

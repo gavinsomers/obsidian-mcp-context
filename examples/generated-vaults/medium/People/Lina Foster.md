@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Quantum FinTech]]"
-role: "Product Director"
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
 source_created_at: 2023-06-07T15:23:00
 source_observed_at: 2023-06-07T17:45:00
 created_at: 2023-06-07T22:23:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Lina Foster
 
 ## Role
-Lina Foster is the Product Director at [[Quantum FinTech]].
+Lina Foster is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Foster]] #follow-up

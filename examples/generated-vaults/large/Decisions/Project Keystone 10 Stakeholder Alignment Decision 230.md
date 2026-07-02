@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-04-10
+date: 2023-11-27
 status: active
 project: "[[Project Keystone 10]]"
 company: "[[Harbor Labs]]"
-source_created_at: 2024-04-10T11:53:00
-source_observed_at: 2024-04-10T14:30:00
-created_at: 2024-04-10T15:47:00
-updated_at: 2024-04-10T18:47:00
+source_created_at: 2023-11-27T11:50:00
+source_observed_at: 2023-11-27T13:36:00
+created_at: 2023-11-27T16:30:00
+updated_at: 2023-11-27T20:30:00
 tags: [#decision]
 ---
 # Project Keystone 10 Stakeholder Alignment Decision 230
@@ -17,7 +17,7 @@ Proceed with stakeholder alignment for [[Project Keystone 10]].
 
 ## Context
 This decision applies to [[Harbor Labs]] and [[Project Keystone 10]].
-It follows [[Project Keystone 10 Handoff Readiness Sync 230]].
+It follows [[Project Keystone 10 Handoff Readiness Sync 1330]].
 It incorporates [[Project Keystone 10 Metric Reconciliation Research 10]].
 
 ## Supersession

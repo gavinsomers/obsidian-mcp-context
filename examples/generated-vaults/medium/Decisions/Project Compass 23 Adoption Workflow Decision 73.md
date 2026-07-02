@@ -4,10 +4,10 @@ date: 2024-03-14
 status: active
 project: "[[Project Compass 23]]"
 company: "[[Quantum FinTech]]"
-source_created_at: 2024-03-14T13:58:00
-source_observed_at: 2024-03-14T14:49:00
-created_at: 2024-03-17T16:58:00
-updated_at: 2024-03-17T23:58:00
+source_created_at: 2024-03-14T12:42:00
+source_observed_at: 2024-03-14T12:54:00
+created_at: 2024-03-14T13:55:00
+updated_at: 2024-03-15T09:55:00
 tags: [#decision]
 ---
 # Project Compass 23 Adoption Workflow Decision 73

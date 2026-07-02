@@ -1,24 +1,19 @@
 ---
 type: company
 status: pipeline
-segment: enterprise
-source_created_at: 2023-06-02T12:44:00
-source_observed_at: 2023-06-02T13:26:00
-created_at: 2023-06-03T21:44:00
-updated_at: 2023-06-30T21:44:00
+segment: smb
+source_created_at: 2023-06-04T12:30:00
+source_observed_at: 2023-06-04T14:42:00
+created_at: 2023-06-05T01:30:00
+updated_at: 2023-06-25T05:30:00
 tags: [#company]
 ---
 # Quantum FinTech
 
 ## Account Context
-Quantum FinTech is a enterprise account currently marked `pipeline`.
+Quantum FinTech is a smb account currently marked `pipeline`.
 
-## Stakeholders
-- [[Wendy Alvarez]] - Product Director
-- [[Alex Chen]] - VP Data Engineering
-- [[David Diaz]] - SecOps Lead
-- [[Hannah Evans]] - Operations Lead
-- [[Lina Foster]] - Product Director
+## Assigned Account Team
 
 ## Projects
 

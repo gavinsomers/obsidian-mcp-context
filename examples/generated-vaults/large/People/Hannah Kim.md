@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent FinTech]]"
-role: "VP Data Engineering"
-source_created_at: 2023-07-19T13:16:00
-source_observed_at: 2023-07-19T14:58:00
-created_at: 2023-07-21T02:16:00
-updated_at: 2023-09-05T07:16:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-07-19T12:28:00
+source_observed_at: 2023-07-19T15:18:00
+created_at: 2023-07-20T23:28:00
+updated_at: 2023-08-24T23:28:00
 tags: [#person]
 ---
 # Hannah Kim
 
 ## Role
-Hannah Kim is the VP Data Engineering at [[Crescent FinTech]].
+Hannah Kim is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Crescent FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Hannah Kim]] #follow-up

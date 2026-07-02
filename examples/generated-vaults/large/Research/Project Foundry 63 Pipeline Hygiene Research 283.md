@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Foundry 63]]"
 company: "[[Cobalt Health]]"
-source_created_at: 2024-09-16T16:48:00
-source_observed_at: 2024-09-16T17:39:00
-created_at: 2024-09-17T05:48:00
-updated_at: 2024-10-23T05:48:00
+source_created_at: 2024-06-20T09:26:00
+source_observed_at: 2024-06-20T11:34:00
+created_at: 2024-06-20T11:39:00
+updated_at: 2024-07-08T13:39:00
 tags: [#research]
 ---
 # Project Foundry 63 Pipeline Hygiene Research 283
@@ -14,8 +14,8 @@ tags: [#research]
 Research on pipeline hygiene for [[Project Foundry 63]] and [[Cobalt Health]].
 
 ## Evidence
-- Interview notes from [[Priya Lee]]
-- Related operating review: [[Project Foundry 63 Security Review Sync 283]]
+- Interview notes from [[Jonah Chen]]
+- Related operating review: [[Project Foundry 63 Security Review Sync 1383]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Foundry 63]] #research

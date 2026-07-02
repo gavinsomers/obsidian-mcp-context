@@ -1,25 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Pioneer FinTech]]"
-source_created_at: 2025-04-25T15:09:00
-source_observed_at: 2025-04-25T15:21:00
-created_at: 2025-04-27T02:09:00
-updated_at: 2025-05-19T03:09:00
+status: closed
+company: "[[Noble FinTech]]"
+source_created_at: 2025-04-25T08:53:00
+source_observed_at: 2025-04-25T10:38:00
+created_at: 2025-04-26T18:53:00
+updated_at: 2025-06-24T19:53:00
 tags: [#project]
 ---
 # Project Summit 147
 
 ## Overview
-Project Summit 147 supports [[Pioneer FinTech]] through sales pipeline.
+Project Summit 147 supports [[Noble FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Lina Tan]]
-- [[Priya Foster]]
-- [[Farah Kim]]
-- [[Wendy Ortega]]
+- [[Lina Bennett]]
+- [[Iris Alvarez]]
+- [[Tara Lee]]
+- [[Iris Walker]]
 
 ## Operating Notes
 - Owner: [[Priya Foster]]
-- Status: `blocked`
+- Status: `closed`
+- Closed at: `2025-07-06`
 - [ ] Reconcile latest state for [[Project Summit 147]] #ops

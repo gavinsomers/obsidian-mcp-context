@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Analytics]]"
-role: "Finance Sponsor"
-source_created_at: 2023-11-04T08:50:00
-source_observed_at: 2023-11-04T11:48:00
-created_at: 2023-11-04T13:50:00
-updated_at: 2024-01-17T14:50:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-11-04T11:54:00
+source_observed_at: 2023-11-04T12:21:00
+created_at: 2023-11-05T19:54:00
+updated_at: 2024-01-05T21:54:00
 tags: [#person]
 ---
 # Victor Walker
 
 ## Role
-Victor Walker is the Finance Sponsor at [[Atlas Analytics]].
+Victor Walker is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Victor Walker]] #follow-up

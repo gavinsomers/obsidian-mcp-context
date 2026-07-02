@@ -1,21 +1,24 @@
 ---
 type: company
 status: active
-segment: mid-market
-source_created_at: 2023-04-21T13:16:00
-source_observed_at: 2023-04-21T15:31:00
-created_at: 2023-04-23T08:16:00
-updated_at: 2023-07-08T15:16:00
+segment: smb
+source_created_at: 2023-04-23T09:57:00
+source_observed_at: 2023-04-23T12:22:00
+created_at: 2023-04-24T01:57:00
+updated_at: 2023-06-04T12:57:00
 tags: [#company]
 ---
 # Apex Labs
 
 ## Account Context
-Apex Labs is a mid-market account currently marked `active`.
+Apex Labs is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Amara Alvarez]] - Finance Sponsor
-- [[Rachel Evans]] - Finance Sponsor
+## Assigned Account Team
+- [[Amara Alvarez]] - Senior Data Consultant
+- [[Tara Alvarez]] - Solution Architect
+- [[Iris Alvarez]] - Senior Data Consultant
+- [[Wendy Alvarez]] - Client Partner
+- [[Kai Chen]] - Technical Director
 
 ## Projects
 - [[Project Beacon 2]]

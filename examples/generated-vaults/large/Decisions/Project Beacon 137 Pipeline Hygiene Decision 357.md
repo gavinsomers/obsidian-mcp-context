@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-07
 status: active
 project: "[[Project Beacon 137]]"
-company: "[[Apex FinTech]]"
-source_created_at: 2025-04-07T14:16:00
-source_observed_at: 2025-04-07T16:33:00
-created_at: 2025-04-07T16:38:00
-updated_at: 2025-04-08T01:38:00
+company: "[[Cobalt FinTech]]"
+source_created_at: 2025-04-07T15:09:00
+source_observed_at: 2025-04-07T17:22:00
+created_at: 2025-04-07T17:27:00
+updated_at: 2025-04-07T20:27:00
 tags: [#decision]
 ---
 # Project Beacon 137 Pipeline Hygiene Decision 357
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Beacon 137]].
 
 ## Context
-This decision applies to [[Apex FinTech]] and [[Project Beacon 137]].
-It follows [[Project Beacon 137 Contract Renewal Sync 1897]].
+This decision applies to [[Cobalt FinTech]] and [[Project Beacon 137]].
+It follows [[Project Beacon 137 Contract Renewal Sync 1677]].
 It incorporates [[Project Beacon 137 Security Review Research 357]].
 
 ## Supersession

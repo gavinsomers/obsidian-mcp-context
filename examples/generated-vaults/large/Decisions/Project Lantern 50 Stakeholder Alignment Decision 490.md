@@ -4,10 +4,10 @@ date: 2025-04-14
 status: active
 project: "[[Project Lantern 50]]"
 company: "[[Helio Manufacturing]]"
-source_created_at: 2025-04-14T12:28:00
-source_observed_at: 2025-04-14T14:51:00
-created_at: 2025-04-21T19:28:00
-updated_at: 2025-04-22T09:28:00
+source_created_at: 2025-04-14T08:44:00
+source_observed_at: 2025-04-14T10:31:00
+created_at: 2025-04-14T12:32:00
+updated_at: 2025-04-15T09:32:00
 tags: [#decision]
 ---
 # Project Lantern 50 Stakeholder Alignment Decision 490

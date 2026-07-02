@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[BrightWave FinTech]]"
-role: "SecOps Lead"
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
 source_created_at: 2023-06-06T12:32:00
 source_observed_at: 2023-06-06T14:23:00
 created_at: 2023-06-08T00:32:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Hannah Foster
 
 ## Role
-Hannah Foster is the SecOps Lead at [[BrightWave FinTech]].
+Hannah Foster is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Hannah Foster]] #follow-up

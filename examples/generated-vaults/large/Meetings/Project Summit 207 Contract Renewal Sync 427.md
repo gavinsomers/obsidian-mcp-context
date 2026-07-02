@@ -2,22 +2,22 @@
 type: meeting
 date: 2026-02-23
 project: "[[Project Summit 207]]"
-company: "[[Pioneer Media]]"
-source_created_at: 2026-02-23T08:04:00
-source_observed_at: 2026-02-23T09:44:00
-created_at: 2026-02-23T11:43:00
-updated_at: 2026-02-24T08:43:00
+company: "[[Noble Media]]"
+source_created_at: 2026-02-23T13:34:00
+source_observed_at: 2026-02-23T14:34:00
+created_at: 2026-02-23T18:18:00
+updated_at: 2026-02-24T07:18:00
 tags: [#meeting]
 ---
 # Project Summit 207 Contract Renewal Sync 427
 
 ## Attendees
-- [[Uma Vance]]
-- [[Hannah Diaz]]
-- [[David Rostova]]
+- [[Grace Novak]]
+- [[Farah Tan]]
+- [[Rachel Vance]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Summit 207]] at [[Pioneer Media]].
+Contract Renewal reviewed for [[Project Summit 207]] at [[Noble Media]].
 [[Yara Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items

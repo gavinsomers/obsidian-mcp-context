@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-04-14
+date: 2025-02-20
 project: "[[Project Beacon 32]]"
 company: "[[Apex Retail]]"
-source_created_at: 2024-04-14T11:05:00
-source_observed_at: 2024-04-14T11:51:00
-created_at: 2024-04-14T15:17:00
-updated_at: 2024-04-15T08:17:00
+source_created_at: 2025-02-20T12:53:00
+source_observed_at: 2025-02-20T15:47:00
+created_at: 2025-02-20T15:52:00
+updated_at: 2025-02-20T20:52:00
 tags: [#meeting]
 ---
 # Project Beacon 32 Stakeholder Alignment Sync 472
 
 ## Attendees
-- [[Elena Bennett]]
-- [[Kai Kim]]
-- [[Amara Patel]]
+- [[Elena Jenkins]]
+- [[Elena Lee]]
+- [[Rachel Rostova]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Beacon 32]] at [[Apex Retail]].
-[[Victor Foster]] flagged follow-up work for the next operating review.
+[[Elena Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Beacon 32]] to [[Victor Foster]] #follow-up
+- [ ] Send recap for [[Project Beacon 32]] to [[Elena Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

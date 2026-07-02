@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Keystone FinTech]]"
-role: "Customer Success Manager"
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
 source_created_at: 2023-05-30T10:52:00
 source_observed_at: 2023-05-30T11:53:00
 created_at: 2023-05-30T20:52:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Omar Evans
 
 ## Role
-Omar Evans is the Customer Success Manager at [[Keystone FinTech]].
+Omar Evans is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Omar Evans]] #follow-up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Manufacturing]]"
-role: "Product Director"
-source_created_at: 2023-07-28T08:34:00
-source_observed_at: 2023-07-28T08:49:00
-created_at: 2023-07-28T16:34:00
-updated_at: 2023-09-16T20:34:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-07-28T09:15:00
+source_observed_at: 2023-07-28T10:05:00
+created_at: 2023-07-30T06:15:00
+updated_at: 2023-09-25T16:15:00
 tags: [#person]
 ---
 # Hannah Lee
 
 ## Role
-Hannah Lee is the Product Director at [[Harbor Manufacturing]].
+Hannah Lee is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Hannah Lee]] #follow-up

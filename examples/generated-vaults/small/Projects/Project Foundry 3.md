@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: blocked
 company: "[[Cobalt Labs]]"
-source_created_at: 2023-06-08T14:08:00
-source_observed_at: 2023-06-08T14:28:00
-created_at: 2023-06-08T18:08:00
-updated_at: 2023-08-06T21:08:00
+source_created_at: 2023-06-08T16:07:00
+source_observed_at: 2023-06-08T17:55:00
+created_at: 2023-06-09T06:07:00
+updated_at: 2023-07-25T06:07:00
 tags: [#project]
 ---
 # Project Foundry 3
@@ -14,12 +14,12 @@ tags: [#project]
 Project Foundry 3 supports [[Cobalt Labs]] through customer success.
 
 ## Stakeholders
-- [[Ben Alvarez]]
-- [[Jonah Alvarez]]
-- [[Sam Alvarez]]
-- [[Alex Bennett]]
+- [[Uma Alvarez]]
+- [[Marcus Alvarez]]
+- [[Elena Bennett]]
+- [[Zoe Alvarez]]
 
 ## Operating Notes
-- Owner: [[Sam Alvarez]]
-- Status: `active`
+- Owner: [[Ben Alvarez]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Foundry 3]] #ops

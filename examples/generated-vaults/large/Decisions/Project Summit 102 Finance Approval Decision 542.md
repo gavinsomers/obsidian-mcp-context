@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-03-22
+date: 2025-06-26
 status: active
 project: "[[Project Summit 102]]"
 company: "[[Pioneer Logistics]]"
-source_created_at: 2025-03-22T13:21:00
-source_observed_at: 2025-03-22T14:09:00
-created_at: 2025-03-22T14:42:00
-updated_at: 2025-03-22T16:42:00
+source_created_at: 2025-06-26T09:41:00
+source_observed_at: 2025-06-26T11:03:00
+created_at: 2025-06-26T14:49:00
+updated_at: 2025-06-27T10:49:00
 tags: [#decision]
 ---
 # Project Summit 102 Finance Approval Decision 542
@@ -18,7 +18,7 @@ Proceed with finance approval for [[Project Summit 102]].
 ## Context
 This decision applies to [[Pioneer Logistics]] and [[Project Summit 102]].
 It follows [[Project Summit 102 Stakeholder Alignment Sync 542]].
-It incorporates [[Project Summit 102 Lineage Audit Research 542]].
+It incorporates [[Project Summit 102 Lineage Audit Research 322]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

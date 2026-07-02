@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 51]]"
 company: "[[Meridian Manufacturing]]"
-source_created_at: 2024-02-03T11:53:00
-source_observed_at: 2024-02-03T12:12:00
-created_at: 2024-02-09T18:53:00
-updated_at: 2024-03-25T04:53:00
+source_created_at: 2024-02-03T15:48:00
+source_observed_at: 2024-02-03T16:58:00
+created_at: 2024-02-07T17:48:00
+updated_at: 2024-02-27T02:48:00
 tags: [#research]
 ---
 # Project Meridian 51 Contract Renewal Research 51

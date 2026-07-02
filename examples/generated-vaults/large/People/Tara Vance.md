@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit Media]]"
-role: "Legal Counsel"
-source_created_at: 2023-10-26T11:31:00
-source_observed_at: 2023-10-26T13:02:00
-created_at: 2023-10-27T21:31:00
-updated_at: 2023-11-18T07:31:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-10-26T09:38:00
+source_observed_at: 2023-10-26T11:20:00
+created_at: 2023-10-27T23:38:00
+updated_at: 2024-01-05T03:38:00
 tags: [#person]
 ---
 # Tara Vance
 
 ## Role
-Tara Vance is the Legal Counsel at [[Summit Media]].
+Tara Vance is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Summit Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Tara Vance]] #follow-up

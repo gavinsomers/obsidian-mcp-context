@@ -1,24 +1,25 @@
 ---
 type: meeting
-date: 2023-08-22
+date: 2024-03-13
 project: "[[Project Meridian 6]]"
 company: "[[Meridian Labs]]"
-source_created_at: 2023-08-22T11:52:00
-source_observed_at: 2023-08-22T12:59:00
-created_at: 2023-08-25T12:52:00
-updated_at: 2023-08-26T11:52:00
+source_created_at: 2024-03-13T12:30:00
+source_observed_at: 2024-03-13T13:45:00
+created_at: 2024-03-13T16:26:00
+updated_at: 2024-03-14T13:26:00
 tags: [#meeting]
 ---
 # Project Meridian 6 Metric Reconciliation Sync 226
 
 ## Attendees
-- [[Elena Alvarez]]
-- [[Victor Evans]]
+- [[Lina Diaz]]
+- [[Nadia Alvarez]]
+- [[Amara Diaz]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Meridian 6]] at [[Meridian Labs]].
-[[Victor Evans]] flagged follow-up work for the next operating review.
+[[Elena Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 6]] to [[Victor Evans]] #follow-up
+- [ ] Send recap for [[Project Meridian 6]] to [[Elena Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

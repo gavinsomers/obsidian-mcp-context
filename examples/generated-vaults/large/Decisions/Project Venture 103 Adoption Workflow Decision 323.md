@@ -4,10 +4,10 @@ date: 2024-10-21
 status: active
 project: "[[Project Venture 103]]"
 company: "[[Noble Logistics]]"
-source_created_at: 2024-10-21T11:29:00
-source_observed_at: 2024-10-21T13:30:00
-created_at: 2024-10-21T13:35:00
-updated_at: 2024-10-22T06:35:00
+source_created_at: 2024-10-21T09:35:00
+source_observed_at: 2024-10-21T11:08:00
+created_at: 2024-10-26T11:35:00
+updated_at: 2024-10-26T18:35:00
 tags: [#decision]
 ---
 # Project Venture 103 Adoption Workflow Decision 323

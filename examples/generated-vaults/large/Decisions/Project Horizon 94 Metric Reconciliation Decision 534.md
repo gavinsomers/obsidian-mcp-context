@@ -4,10 +4,10 @@ date: 2025-06-16
 status: active
 project: "[[Project Horizon 94]]"
 company: "[[BrightWave Logistics]]"
-source_created_at: 2025-06-16T09:14:00
-source_observed_at: 2025-06-16T09:34:00
-created_at: 2025-06-16T09:39:00
-updated_at: 2025-06-17T05:39:00
+source_created_at: 2025-06-16T14:32:00
+source_observed_at: 2025-06-16T14:52:00
+created_at: 2025-06-16T17:34:00
+updated_at: 2025-06-17T07:34:00
 tags: [#decision]
 ---
 # Project Horizon 94 Metric Reconciliation Decision 534

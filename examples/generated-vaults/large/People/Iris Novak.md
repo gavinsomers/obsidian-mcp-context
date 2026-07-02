@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Analytics]]"
-role: "Implementation Manager"
-source_created_at: 2023-08-14T08:49:00
-source_observed_at: 2023-08-14T10:17:00
-created_at: 2023-08-15T08:49:00
-updated_at: 2023-11-29T12:17:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-08-14T14:47:00
+source_observed_at: 2023-08-14T15:37:00
+created_at: 2023-08-20T19:47:00
+updated_at: 2023-10-11T22:47:00
 tags: [#person]
 ---
 # Iris Novak
 
 ## Role
-Iris Novak is the Implementation Manager at [[Cobalt Analytics]].
+Iris Novak is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Cobalt Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Iris Novak]] #follow-up

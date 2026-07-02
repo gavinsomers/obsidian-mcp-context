@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Noble Logistics]]"
-source_created_at: 2024-09-20T12:57:00
-source_observed_at: 2024-09-20T15:41:00
-created_at: 2024-09-22T08:57:00
-updated_at: 2024-10-18T13:57:00
+source_created_at: 2024-09-20T11:11:00
+source_observed_at: 2024-09-20T11:41:00
+created_at: 2024-09-22T03:11:00
+updated_at: 2024-11-08T13:11:00
 tags: [#project]
 ---
 # Project Venture 103
@@ -14,13 +14,12 @@ tags: [#project]
 Project Venture 103 supports [[Noble Logistics]] through customer success.
 
 ## Stakeholders
-- [[David Novak]]
-- [[Uma Rostova]]
-- [[Jonah Walker]]
-- [[Yara Diaz]]
+- [[Marcus Kim]]
+- [[Sam Rostova]]
+- [[Tara Jenkins]]
+- [[Nadia Foster]]
 
 ## Operating Notes
-- Owner: [[David Novak]]
-- Status: `closed`
-- Closed at: `2024-11-26`
+- Owner: [[Yara Diaz]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Venture 103]] #ops

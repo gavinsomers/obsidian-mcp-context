@@ -3,23 +3,23 @@ type: meeting
 date: 2024-06-28
 project: "[[Project Compass 83]]"
 company: "[[Quantum Media]]"
-source_created_at: 2024-06-28T14:18:00
-source_observed_at: 2024-06-28T17:02:00
-created_at: 2024-06-28T17:07:00
-updated_at: 2024-06-28T21:07:00
+source_created_at: 2024-06-28T10:20:00
+source_observed_at: 2024-06-28T10:47:00
+created_at: 2024-06-28T13:20:00
+updated_at: 2024-06-29T04:20:00
 tags: [#meeting]
 ---
 # Project Compass 83 Security Review Sync 303
 
 ## Attendees
-- [[David Diaz]]
-- [[Uma Haddad]]
-- [[Jonah Morgan]]
+- [[Elena Ortega]]
+- [[Alex Bennett]]
+- [[Nadia Walker]]
 
 ## Notes
 Security Review reviewed for [[Project Compass 83]] at [[Quantum Media]].
-[[Jonah Morgan]] flagged follow-up work for the next operating review.
+[[David Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 83]] to [[Jonah Morgan]] #follow-up
+- [ ] Send recap for [[Project Compass 83]] to [[David Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

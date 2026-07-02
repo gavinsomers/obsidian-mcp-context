@@ -14,12 +14,12 @@ tags: [#project]
 Project Keystone 10 supports [[Harbor Labs]] through operations admin.
 
 ## Stakeholders
-- [[Marcus Bennett]]
-- [[Zoe Evans]]
-- [[Victor Diaz]]
-- [[Rachel Chen]]
+- [[Elena Chen]]
+- [[Farah Alvarez]]
+- [[Xavier Bennett]]
+- [[Yara Diaz]]
 
 ## Operating Notes
-- Owner: [[Zoe Evans]]
+- Owner: [[Iris Alvarez]]
 - Status: `planning`
 - [ ] Reconcile latest state for [[Project Keystone 10]] #ops

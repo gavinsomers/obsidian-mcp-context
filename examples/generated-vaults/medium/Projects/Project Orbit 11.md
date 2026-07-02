@@ -14,10 +14,10 @@ tags: [#project]
 Project Orbit 11 supports [[Summit Labs]] through consulting delivery.
 
 ## Stakeholders
-- [[Nadia Bennett]]
+- [[Tara Chen]]
+- [[Rachel Alvarez]]
+- [[Kai Diaz]]
 - [[Alex Foster]]
-- [[Jonah Alvarez]]
-- [[Sam Chen]]
 
 ## Operating Notes
 - Owner: [[Jonah Alvarez]]

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian Manufacturing]]"
-role: "SecOps Lead"
-source_created_at: 2023-10-14T08:26:00
-source_observed_at: 2023-10-14T08:47:00
-created_at: 2023-10-22T08:26:00
-updated_at: 2023-12-29T16:26:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-10-14T14:17:00
+source_observed_at: 2023-10-14T14:40:00
+created_at: 2023-10-20T21:17:00
+updated_at: 2024-01-05T05:17:00
 tags: [#person]
 ---
 # Jonah Usman
 
 ## Role
-Jonah Usman is the SecOps Lead at [[Meridian Manufacturing]].
+Jonah Usman is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Jonah Usman]] #follow-up

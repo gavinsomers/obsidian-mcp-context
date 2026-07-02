@@ -4,10 +4,10 @@ date: 2024-12-15
 status: active
 project: "[[Project Harbor 114]]"
 company: "[[Atlas Analytics]]"
-source_created_at: 2024-12-15T08:31:00
-source_observed_at: 2024-12-15T11:08:00
-created_at: 2024-12-15T12:14:00
-updated_at: 2024-12-15T16:14:00
+source_created_at: 2024-12-15T09:12:00
+source_observed_at: 2024-12-15T11:04:00
+created_at: 2024-12-15T12:33:00
+updated_at: 2024-12-15T14:33:00
 tags: [#decision]
 ---
 # Project Harbor 114 Metric Reconciliation Decision 114
@@ -17,7 +17,7 @@ Proceed with metric reconciliation for [[Project Harbor 114]].
 
 ## Context
 This decision applies to [[Atlas Analytics]] and [[Project Harbor 114]].
-It follows [[Project Harbor 114 Finance Approval Sync 1874]].
+It follows [[Project Harbor 114 Finance Approval Sync 334]].
 It incorporates [[Project Harbor 114 Handoff Readiness Research 334]].
 
 ## Supersession

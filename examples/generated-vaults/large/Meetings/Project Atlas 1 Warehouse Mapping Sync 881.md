@@ -3,16 +3,18 @@ type: meeting
 date: 2023-10-02
 project: "[[Project Atlas 1]]"
 company: "[[Northstar Labs]]"
-source_created_at: 2023-10-02T09:54:00
-source_observed_at: 2023-10-02T10:24:00
-created_at: 2023-10-02T13:51:00
-updated_at: 2023-10-03T04:51:00
+source_created_at: 2023-10-02T14:36:00
+source_observed_at: 2023-10-02T16:10:00
+created_at: 2023-10-02T16:50:00
+updated_at: 2023-10-02T22:50:00
 tags: [#meeting]
 ---
 # Project Atlas 1 Warehouse Mapping Sync 881
 
 ## Attendees
-- [[Alex Alvarez]]
+- [[Lina Alvarez]]
+- [[Priya Alvarez]]
+- [[Farah Alvarez]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Atlas 1]] at [[Northstar Labs]].

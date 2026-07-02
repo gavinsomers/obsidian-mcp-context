@@ -14,8 +14,10 @@ tags: [#project]
 Project Atlas 1 supports [[Northstar Labs]] through consulting delivery.
 
 ## Stakeholders
-- [[Alex Alvarez]]
-- [[David Bennett]]
+- [[David Alvarez]]
+- [[David Chen]]
+- [[Sam Bennett]]
+- [[Elena Chen]]
 
 ## Operating Notes
 - Owner: [[Alex Alvarez]]

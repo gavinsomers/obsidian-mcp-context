@@ -14,10 +14,10 @@ tags: [#project]
 Project Meridian 6 supports [[Meridian Labs]] through consulting delivery.
 
 ## Stakeholders
-- [[Marcus Chen]]
-- [[Rachel Diaz]]
-- [[Victor Evans]]
-- [[Elena Alvarez]]
+- [[Omar Bennett]]
+- [[Tara Bennett]]
+- [[Amara Evans]]
+- [[Farah Alvarez]]
 
 ## Operating Notes
 - Owner: [[Elena Alvarez]]

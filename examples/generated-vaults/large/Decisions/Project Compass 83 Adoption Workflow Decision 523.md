@@ -4,10 +4,10 @@ date: 2025-05-29
 status: active
 project: "[[Project Compass 83]]"
 company: "[[Quantum Media]]"
-source_created_at: 2025-05-29T13:56:00
-source_observed_at: 2025-05-29T16:26:00
-created_at: 2025-05-29T18:44:00
-updated_at: 2025-05-29T21:44:00
+source_created_at: 2025-05-29T10:24:00
+source_observed_at: 2025-05-29T11:21:00
+created_at: 2025-05-29T13:25:00
+updated_at: 2025-05-30T00:25:00
 tags: [#decision]
 ---
 # Project Compass 83 Adoption Workflow Decision 523

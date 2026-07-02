@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit Analytics]]"
-role: "Implementation Manager"
-source_created_at: 2023-11-05T11:37:00
-source_observed_at: 2023-11-05T12:38:00
-created_at: 2023-11-06T11:37:00
-updated_at: 2023-12-15T13:11:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-11-05T09:07:00
+source_observed_at: 2023-11-05T09:53:00
+created_at: 2023-11-07T07:07:00
+updated_at: 2024-02-09T13:00:00
 tags: [#person]
 ---
 # Xavier Walker
 
 ## Role
-Xavier Walker is the Implementation Manager at [[Summit Analytics]].
+Xavier Walker is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Summit Analytics]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Keystone 55]] ([[Harbor Manufacturing]])
 - [ ] Confirm next update with [[Xavier Walker]] #follow-up

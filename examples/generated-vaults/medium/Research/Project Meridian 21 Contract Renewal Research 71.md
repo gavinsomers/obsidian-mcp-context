@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 21]]"
 company: "[[Meridian FinTech]]"
-source_created_at: 2024-02-28T10:16:00
-source_observed_at: 2024-02-28T11:26:00
-created_at: 2024-02-29T21:16:00
-updated_at: 2024-03-06T02:16:00
+source_created_at: 2024-02-28T14:29:00
+source_observed_at: 2024-02-28T15:40:00
+created_at: 2024-03-01T05:29:00
+updated_at: 2024-03-16T13:29:00
 tags: [#research]
 ---
 # Project Meridian 21 Contract Renewal Research 71

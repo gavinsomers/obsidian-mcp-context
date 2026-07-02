@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Meridian 171]]"
-source_created_at: 2025-09-08T09:32:00
-source_observed_at: 2025-09-08T10:16:00
-created_at: 2025-09-08T12:32:00
-updated_at: 2025-10-22T19:32:00
+source_created_at: 2025-09-08T10:22:00
+source_observed_at: 2025-09-08T12:58:00
+created_at: 2025-09-15T13:22:00
+updated_at: 2025-10-24T22:22:00
 tags: [#risk]
 ---
 # Project Meridian 171 Adoption Workflow Risk 171
 
 ## Risk
-Adoption Workflow may affect [[Project Meridian 171]] for [[Meridian Manufacturing]].
+Adoption Workflow may affect [[Project Meridian 171]] for [[Vanguard Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Meridian 171 Warehouse Mapping Sync 611]]
+- Raised after [[Project Meridian 171 Warehouse Mapping Sync 1711]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Yara Bennett]]
+- Status: `open`
+- Owner: [[Nadia Grant]]
 - [ ] Reassess [[Project Meridian 171 Adoption Workflow Risk 171]] during the next review #risk

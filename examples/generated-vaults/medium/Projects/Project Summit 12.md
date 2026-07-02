@@ -14,12 +14,12 @@ tags: [#project]
 Project Summit 12 supports [[Pioneer Labs]] through sales pipeline.
 
 ## Stakeholders
-- [[Tara Chen]]
-- [[Amara Foster]]
-- [[Kai Alvarez]]
-- [[Omar Bennett]]
+- [[Grace Foster]]
+- [[Farah Diaz]]
+- [[Grace Alvarez]]
+- [[Clara Bennett]]
 
 ## Operating Notes
-- Owner: [[Omar Bennett]]
+- Owner: [[Kai Alvarez]]
 - Status: `planning`
 - [ ] Reconcile latest state for [[Project Summit 12]] #ops

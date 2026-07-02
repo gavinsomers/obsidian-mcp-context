@@ -1,11 +1,11 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Compass 83]]"
-source_created_at: 2024-07-02T11:27:00
-source_observed_at: 2024-07-02T13:01:00
-created_at: 2024-07-02T20:27:00
-updated_at: 2024-08-09T23:27:00
+source_created_at: 2024-07-02T09:19:00
+source_observed_at: 2024-07-02T09:45:00
+created_at: 2024-07-03T17:19:00
+updated_at: 2024-07-10T03:19:00
 tags: [#risk]
 ---
 # Project Compass 83 Contract Renewal Risk 83
@@ -14,9 +14,9 @@ tags: [#risk]
 Contract Renewal may affect [[Project Compass 83]] for [[Quantum Media]].
 
 ## Evidence
-- Raised after [[Project Compass 83 Security Review Sync 303]]
+- Raised after [[Project Compass 83 Security Review Sync 83]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Jonah Morgan]]
+- Status: `open`
+- Owner: [[David Diaz]]
 - [ ] Reassess [[Project Compass 83 Contract Renewal Risk 83]] during the next review #risk

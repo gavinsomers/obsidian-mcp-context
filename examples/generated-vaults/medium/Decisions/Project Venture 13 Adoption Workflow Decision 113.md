@@ -4,10 +4,10 @@ date: 2024-08-27
 status: active
 project: "[[Project Venture 13]]"
 company: "[[Noble Labs]]"
-source_created_at: 2024-08-27T15:30:00
-source_observed_at: 2024-08-27T18:03:00
-created_at: 2024-08-27T19:59:00
-updated_at: 2024-08-27T21:59:00
+source_created_at: 2024-08-27T14:20:00
+source_observed_at: 2024-08-27T16:56:00
+created_at: 2024-09-04T15:20:00
+updated_at: 2024-09-05T14:20:00
 tags: [#decision]
 ---
 # Project Venture 13 Adoption Workflow Decision 113

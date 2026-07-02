@@ -1,24 +1,19 @@
 ---
 type: company
-status: pipeline
+status: active
 segment: mid-market
-source_created_at: 2023-05-23T13:44:00
-source_observed_at: 2023-05-23T15:50:00
-created_at: 2023-05-24T07:44:00
-updated_at: 2023-07-06T08:44:00
+source_created_at: 2023-05-25T11:20:00
+source_observed_at: 2023-05-25T12:00:00
+created_at: 2023-05-27T09:20:00
+updated_at: 2023-07-03T12:20:00
 tags: [#company]
 ---
 # Cobalt FinTech
 
 ## Account Context
-Cobalt FinTech is a mid-market account currently marked `pipeline`.
+Cobalt FinTech is a mid-market account currently marked `active`.
 
-## Stakeholders
-- [[Rachel Alvarez]] - Finance Sponsor
-- [[Victor Bennett]] - Customer Success Manager
-- [[Zoe Chen]] - Legal Counsel
-- [[Clara Evans]] - Implementation Manager
-- [[Grace Foster]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

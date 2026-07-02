@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Lantern 5]]"
 company: "[[Helio Labs]]"
-source_created_at: 2023-09-11T13:38:00
-source_observed_at: 2023-09-11T14:25:00
-created_at: 2023-09-16T18:38:00
-updated_at: 2023-10-14T03:38:00
+source_created_at: 2023-09-11T13:42:00
+source_observed_at: 2023-09-11T14:23:00
+created_at: 2023-09-13T09:42:00
+updated_at: 2023-10-13T20:42:00
 tags: [#research]
 ---
 # Project Lantern 5 Security Review Research 17

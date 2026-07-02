@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Lantern 65]]"
 company: "[[Helio Health]]"
-source_created_at: 2024-09-18T16:07:00
-source_observed_at: 2024-09-18T17:31:00
-created_at: 2024-09-20T10:07:00
-updated_at: 2024-10-05T17:07:00
+source_created_at: 2024-09-18T10:50:00
+source_observed_at: 2024-09-18T13:16:00
+created_at: 2024-09-20T04:50:00
+updated_at: 2024-10-18T11:50:00
 tags: [#research]
 ---
 # Project Lantern 65 Warehouse Mapping Research 285
@@ -14,7 +14,7 @@ tags: [#research]
 Research on warehouse mapping for [[Project Lantern 65]] and [[Helio Health]].
 
 ## Evidence
-- Interview notes from [[Yara Usman]]
+- Interview notes from [[Lina Chen]]
 - Related operating review: [[Project Lantern 65 Adoption Workflow Sync 285]]
 
 ## Follow Up

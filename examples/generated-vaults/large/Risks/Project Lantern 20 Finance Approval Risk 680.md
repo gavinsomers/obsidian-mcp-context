@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Lantern 20]]"
-source_created_at: 2026-04-17T13:56:00
-source_observed_at: 2026-04-17T15:23:00
-created_at: 2026-04-26T15:56:00
-updated_at: 2026-06-07T00:56:00
+source_created_at: 2026-04-17T08:42:00
+source_observed_at: 2026-04-17T09:05:00
+created_at: 2026-04-19T05:42:00
+updated_at: 2026-05-06T10:42:00
 tags: [#risk]
 ---
 # Project Lantern 20 Finance Approval Risk 680
@@ -17,6 +17,6 @@ Finance Approval may affect [[Project Lantern 20]] for [[Helio FinTech]].
 - Raised after [[Project Lantern 20 Handoff Readiness Sync 680]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Iris Foster]]
+- Status: `open`
+- Owner: [[Tara Alvarez]]
 - [ ] Reassess [[Project Lantern 20 Finance Approval Risk 680]] during the next review #risk

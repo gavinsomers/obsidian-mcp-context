@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Pioneer FinTech]]"
-role: "SecOps Lead"
-source_created_at: 2023-08-27T14:46:00
-source_observed_at: 2023-08-27T17:06:00
-created_at: 2023-08-28T02:46:00
-updated_at: 2023-10-29T10:46:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-08-27T12:30:00
+source_observed_at: 2023-08-27T13:14:00
+created_at: 2023-08-28T07:30:00
+updated_at: 2023-10-23T15:30:00
 tags: [#person]
 ---
 # Wendy Ortega
 
 ## Role
-Wendy Ortega is the SecOps Lead at [[Pioneer FinTech]].
+Wendy Ortega is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Summit 27]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Ortega]] #follow-up

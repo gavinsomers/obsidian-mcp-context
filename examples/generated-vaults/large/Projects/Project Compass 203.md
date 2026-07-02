@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Quantum Media]]"
-source_created_at: 2026-01-26T12:48:00
-source_observed_at: 2026-01-26T14:53:00
-created_at: 2026-01-28T08:48:00
-updated_at: 2026-03-24T13:48:00
+company: "[[Atlas Media]]"
+source_created_at: 2026-01-26T11:56:00
+source_observed_at: 2026-01-26T14:19:00
+created_at: 2026-01-27T06:56:00
+updated_at: 2026-03-06T16:56:00
 tags: [#project]
 ---
 # Project Compass 203
 
 ## Overview
-Project Compass 203 supports [[Quantum Media]] through customer success.
+Project Compass 203 supports [[Atlas Media]] through customer success.
 
 ## Stakeholders
-- [[Uma Haddad]]
-- [[Alex Rostova]]
-- [[Jonah Morgan]]
-- [[Priya Vance]]
+- [[Grace Quinn]]
+- [[Uma Bennett]]
+- [[David Walker]]
+- [[Sam Ivanov]]
 
 ## Operating Notes
-- Owner: [[Jonah Morgan]]
+- Owner: [[Uma Haddad]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Compass 203]] #ops

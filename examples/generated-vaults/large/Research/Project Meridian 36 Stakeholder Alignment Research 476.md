@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 36]]"
 company: "[[Meridian Retail]]"
-source_created_at: 2025-08-15T14:06:00
-source_observed_at: 2025-08-15T16:59:00
-created_at: 2025-08-16T12:06:00
-updated_at: 2025-08-20T22:06:00
+source_created_at: 2024-01-03T14:08:00
+source_observed_at: 2024-01-03T14:51:00
+created_at: 2024-01-04T07:08:00
+updated_at: 2024-01-10T14:08:00
 tags: [#research]
 ---
 # Project Meridian 36 Stakeholder Alignment Research 476

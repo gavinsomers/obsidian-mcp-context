@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Helio Retail]]"
-role: "SecOps Lead"
-source_created_at: 2023-05-02T15:41:00
-source_observed_at: 2023-05-02T17:12:00
-created_at: 2023-05-04T04:41:00
-updated_at: 2023-07-06T17:48:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-05-02T08:27:00
+source_observed_at: 2023-05-02T11:24:00
+created_at: 2023-05-03T13:27:00
+updated_at: 2023-06-06T13:27:00
 tags: [#person]
 ---
 # Hannah Bennett
 
 ## Role
-Hannah Bennett is the SecOps Lead at [[Helio Retail]].
+Hannah Bennett is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Helio Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Hannah Bennett]] #follow-up

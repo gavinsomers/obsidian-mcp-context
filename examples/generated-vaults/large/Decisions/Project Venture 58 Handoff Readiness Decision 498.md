@@ -4,10 +4,10 @@ date: 2025-04-24
 status: active
 project: "[[Project Venture 58]]"
 company: "[[Noble Manufacturing]]"
-source_created_at: 2025-04-24T10:19:00
-source_observed_at: 2025-04-24T12:08:00
-created_at: 2025-04-24T16:08:00
-updated_at: 2025-04-24T19:08:00
+source_created_at: 2025-04-24T15:32:00
+source_observed_at: 2025-04-24T16:13:00
+created_at: 2025-05-03T17:32:00
+updated_at: 2025-05-04T06:32:00
 tags: [#decision]
 ---
 # Project Venture 58 Handoff Readiness Decision 498

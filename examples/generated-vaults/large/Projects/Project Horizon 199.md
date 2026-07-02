@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[BrightWave Media]]"
-source_created_at: 2026-01-06T12:53:00
-source_observed_at: 2026-01-06T14:40:00
-created_at: 2026-01-08T06:53:00
-updated_at: 2026-02-18T15:53:00
+status: blocked
+company: "[[Helio Media]]"
+source_created_at: 2026-01-06T11:14:00
+source_observed_at: 2026-01-06T13:30:00
+created_at: 2026-01-06T15:14:00
+updated_at: 2026-02-24T22:14:00
 tags: [#project]
 ---
 # Project Horizon 199
 
 ## Overview
-Project Horizon 199 supports [[BrightWave Media]] through research program.
+Project Horizon 199 supports [[Helio Media]] through research program.
 
 ## Stakeholders
-- [[Wendy Quinn]]
-- [[Priya Haddad]]
-- [[Farah Morgan]]
-- [[Alex Diaz]]
+- [[Kai Jenkins]]
+- [[Tara Vance]]
+- [[Rachel Morgan]]
+- [[Clara Lee]]
 
 ## Operating Notes
-- Owner: [[Wendy Quinn]]
-- Status: `active`
+- Owner: [[Priya Haddad]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Horizon 199]] #ops

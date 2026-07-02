@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Bridge 135]]"
-company: "[[Keystone Labs]]"
-source_created_at: 2025-03-22T11:42:00
-source_observed_at: 2025-03-22T14:41:00
-created_at: 2025-03-24T07:42:00
-updated_at: 2025-05-02T18:42:00
+company: "[[Northstar FinTech]]"
+source_created_at: 2025-03-22T14:59:00
+source_observed_at: 2025-03-22T15:21:00
+created_at: 2025-03-23T06:59:00
+updated_at: 2025-04-08T14:59:00
 tags: [#research]
 ---
 # Project Bridge 135 Warehouse Mapping Research 355
 
 ## Research Summary
-Research on warehouse mapping for [[Project Bridge 135]] and [[Keystone Labs]].
+Research on warehouse mapping for [[Project Bridge 135]] and [[Northstar FinTech]].
 
 ## Evidence
-- Interview notes from [[Alex Tan]]
-- Related operating review: [[Project Bridge 135 Adoption Workflow Sync 1675]]
+- Interview notes from [[David Foster]]
+- Related operating review: [[Project Bridge 135 Adoption Workflow Sync 1235]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Bridge 135]] #research

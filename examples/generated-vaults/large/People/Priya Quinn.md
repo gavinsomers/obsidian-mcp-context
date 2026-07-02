@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Health]]"
-role: "Operations Lead"
-source_created_at: 2023-09-12T08:04:00
-source_observed_at: 2023-09-12T10:15:00
-created_at: 2023-09-20T15:04:00
-updated_at: 2023-10-25T19:04:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-09-12T12:58:00
+source_observed_at: 2023-09-12T14:59:00
+created_at: 2023-09-13T12:58:00
+updated_at: 2023-10-08T21:58:00
 tags: [#person]
 ---
 # Priya Quinn
 
 ## Role
-Priya Quinn is the Operations Lead at [[Noble Health]].
+Priya Quinn is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Quinn]] #follow-up

@@ -4,10 +4,10 @@ date: 2024-05-09
 status: active
 project: "[[Project Atlas 31]]"
 company: "[[Northstar Retail]]"
-source_created_at: 2024-05-09T14:40:00
-source_observed_at: 2024-05-09T15:17:00
-created_at: 2024-05-09T18:17:00
-updated_at: 2024-05-10T12:17:00
+source_created_at: 2024-05-09T14:07:00
+source_observed_at: 2024-05-09T14:28:00
+created_at: 2024-05-09T15:56:00
+updated_at: 2024-05-10T06:56:00
 tags: [#decision]
 ---
 # Project Atlas 31 Security Review Decision 251

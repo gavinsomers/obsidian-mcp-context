@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-09-06
 project: "[[Project Pipeline 172]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2025-09-06T11:48:00
-source_observed_at: 2025-09-06T13:41:00
-created_at: 2025-09-06T13:46:00
-updated_at: 2025-09-07T07:46:00
+company: "[[Quantum Manufacturing]]"
+source_created_at: 2025-09-06T14:20:00
+source_observed_at: 2025-09-06T15:00:00
+created_at: 2025-09-06T15:32:00
+updated_at: 2025-09-07T03:32:00
 tags: [#meeting]
 ---
 # Project Pipeline 172 Stakeholder Alignment Sync 832
 
 ## Attendees
-- [[Omar Grant]]
-- [[Elena Lee]]
-- [[Victor Patel]]
+- [[Omar Shah]]
+- [[Ben Quinn]]
+- [[Grace Lee]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Pipeline 172]] at [[Vanguard Manufacturing]].
+Stakeholder Alignment reviewed for [[Project Pipeline 172]] at [[Quantum Manufacturing]].
 [[Omar Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items

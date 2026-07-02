@@ -4,10 +4,10 @@ date: 2025-06-24
 status: superseded
 project: "[[Project Keystone 100]]"
 company: "[[Harbor Logistics]]"
-source_created_at: 2025-06-24T11:12:00
-source_observed_at: 2025-06-24T13:04:00
-created_at: 2025-07-01T16:12:00
-updated_at: 2025-07-02T03:12:00
+source_created_at: 2025-06-24T15:35:00
+source_observed_at: 2025-06-24T16:28:00
+created_at: 2025-06-24T18:33:00
+updated_at: 2025-06-25T00:33:00
 tags: [#decision]
 ---
 # Project Keystone 100 Stakeholder Alignment Decision 540

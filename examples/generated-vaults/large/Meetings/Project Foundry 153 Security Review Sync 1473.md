@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2025-12-28
+date: 2026-01-07
 project: "[[Project Foundry 153]]"
-company: "[[Cobalt Retail]]"
-source_created_at: 2025-12-28T14:14:00
-source_observed_at: 2025-12-28T15:46:00
-created_at: 2025-12-28T17:33:00
-updated_at: 2025-12-29T12:33:00
+company: "[[BrightWave Retail]]"
+source_created_at: 2026-01-07T12:44:00
+source_observed_at: 2026-01-07T13:10:00
+created_at: 2026-01-10T16:44:00
+updated_at: 2026-01-11T10:44:00
 tags: [#meeting]
 ---
 # Project Foundry 153 Security Review Sync 1473
 
 ## Attendees
-- [[Farah Bennett]]
-- [[Wendy Foster]]
-- [[Sam Tan]]
+- [[Uma Patel]]
+- [[Jonah Diaz]]
+- [[Grace Haddad]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 153]] at [[Cobalt Retail]].
-[[Lina Kim]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 153]] at [[BrightWave Retail]].
+[[Wendy Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 153]] to [[Lina Kim]] #follow-up
+- [ ] Send recap for [[Project Foundry 153]] to [[Wendy Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Meridian 96]]"
-source_created_at: 2025-09-02T09:16:00
-source_observed_at: 2025-09-02T09:51:00
-created_at: 2025-09-03T17:16:00
-updated_at: 2025-09-07T00:16:00
+source_created_at: 2025-09-02T11:24:00
+source_observed_at: 2025-09-02T12:57:00
+created_at: 2025-09-02T16:24:00
+updated_at: 2025-09-18T03:24:00
 tags: [#risk]
 ---
 # Project Meridian 96 Handoff Readiness Risk 536

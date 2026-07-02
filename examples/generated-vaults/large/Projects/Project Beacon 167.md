@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Apex Manufacturing]]"
-source_created_at: 2025-08-01T16:25:00
-source_observed_at: 2025-08-01T19:05:00
-created_at: 2025-08-02T19:25:00
-updated_at: 2025-09-19T04:25:00
+status: blocked
+company: "[[Cobalt Manufacturing]]"
+source_created_at: 2025-08-01T15:09:00
+source_observed_at: 2025-08-01T16:42:00
+created_at: 2025-08-08T21:09:00
+updated_at: 2025-09-21T03:09:00
 tags: [#project]
 ---
 # Project Beacon 167
 
 ## Overview
-Project Beacon 167 supports [[Apex Manufacturing]] through sales pipeline.
+Project Beacon 167 supports [[Cobalt Manufacturing]] through sales pipeline.
 
 ## Stakeholders
-- [[Farah Usman]]
-- [[Priya Patel]]
-- [[Uma Bennett]]
-- [[Jonah Grant]]
+- [[David Chen]]
+- [[Wendy Rostova]]
+- [[Elena Foster]]
+- [[Elena Usman]]
 
 ## Operating Notes
 - Owner: [[Jonah Grant]]
-- Status: `planning`
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Beacon 167]] #ops

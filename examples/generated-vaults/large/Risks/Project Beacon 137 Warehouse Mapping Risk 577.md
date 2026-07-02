@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Beacon 137]]"
-source_created_at: 2025-11-06T09:20:00
-source_observed_at: 2025-11-06T11:09:00
-created_at: 2025-11-06T14:20:00
-updated_at: 2025-12-17T17:20:00
+source_created_at: 2025-11-06T16:13:00
+source_observed_at: 2025-11-06T16:47:00
+created_at: 2025-11-07T13:13:00
+updated_at: 2025-12-14T22:13:00
 tags: [#risk]
 ---
 # Project Beacon 137 Warehouse Mapping Risk 577
 
 ## Risk
-Warehouse Mapping may affect [[Project Beacon 137]] for [[Apex FinTech]].
+Warehouse Mapping may affect [[Project Beacon 137]] for [[Cobalt FinTech]].
 
 ## Evidence
 - Raised after [[Project Beacon 137 Contract Renewal Sync 577]]

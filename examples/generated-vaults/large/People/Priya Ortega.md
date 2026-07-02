@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian FinTech]]"
-role: "VP Data Engineering"
-source_created_at: 2023-08-25T12:28:00
-source_observed_at: 2023-08-25T14:19:00
-created_at: 2023-08-26T08:28:00
-updated_at: 2023-11-07T10:28:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-08-25T08:15:00
+source_observed_at: 2023-08-25T10:45:00
+created_at: 2023-08-27T02:15:00
+updated_at: 2023-11-20T05:15:00
 tags: [#person]
 ---
 # Priya Ortega
 
 ## Role
-Priya Ortega is the VP Data Engineering at [[Meridian FinTech]].
+Priya Ortega is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Meridian 21]]
+## Active Project Allocations
+- Managing/Supporting [[Project Meridian 36]] ([[Meridian Retail]])
 - [ ] Confirm next update with [[Priya Ortega]] #follow-up

@@ -3,17 +3,17 @@ type: meeting
 date: 2024-12-16
 project: "[[Project Meridian 96]]"
 company: "[[Meridian Logistics]]"
-source_created_at: 2024-12-16T15:41:00
-source_observed_at: 2024-12-16T17:08:00
-created_at: 2024-12-16T17:13:00
-updated_at: 2024-12-16T22:13:00
+source_created_at: 2024-12-16T08:58:00
+source_observed_at: 2024-12-16T10:13:00
+created_at: 2024-12-16T13:29:00
+updated_at: 2024-12-16T17:29:00
 tags: [#meeting]
 ---
 # Project Meridian 96 Metric Reconciliation Sync 1196
 
 ## Attendees
-- [[Marcus Rostova]]
-- [[Xavier Morgan]]
+- [[Elena Bennett]]
+- [[Marcus Walker]]
 - [[Grace Ivanov]]
 
 ## Notes

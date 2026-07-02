@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2026-01-05
+date: 2025-12-07
 project: "[[Project Atlas 151]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2026-01-05T14:15:00
-source_observed_at: 2026-01-05T15:55:00
-created_at: 2026-01-05T16:17:00
-updated_at: 2026-01-06T08:17:00
+company: "[[Apex Retail]]"
+source_created_at: 2025-12-07T12:49:00
+source_observed_at: 2025-12-07T13:29:00
+created_at: 2025-12-07T14:05:00
+updated_at: 2025-12-07T21:05:00
 tags: [#meeting]
 ---
 # Project Atlas 151 Warehouse Mapping Sync 1471
 
 ## Attendees
-- [[Jonah Kim]]
-- [[Priya Tan]]
-- [[Uma Foster]]
+- [[Grace Novak]]
+- [[Priya Lee]]
+- [[Hannah Haddad]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 151]] at [[Northstar Retail]].
-[[David Bennett]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 151]] at [[Apex Retail]].
+[[Uma Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Atlas 151]] to [[David Bennett]] #follow-up
+- [ ] Send recap for [[Project Atlas 151]] to [[Uma Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -1,23 +1,24 @@
 ---
 type: company
-status: active
+status: pipeline
 segment: enterprise
-source_created_at: 2023-04-19T15:25:00
-source_observed_at: 2023-04-19T18:19:00
-created_at: 2023-04-20T09:25:00
-updated_at: 2023-05-21T12:25:00
+source_created_at: 2023-04-21T11:56:00
+source_observed_at: 2023-04-21T14:31:00
+created_at: 2023-04-21T18:56:00
+updated_at: 2023-07-06T19:56:00
 tags: [#company]
 ---
 # Northstar Labs
 
 ## Account Context
-Northstar Labs is a enterprise account currently marked `active`.
+Northstar Labs is a enterprise account currently marked `pipeline`.
 
-## Stakeholders
-- [[Alex Alvarez]] - Operations Lead
-- [[Hannah Alvarez]] - Operations Lead
-- [[Priya Alvarez]] - Operations Lead
-- [[Yara Alvarez]] - Operations Lead
+## Assigned Account Team
+- [[Alex Alvarez]] - Principal Analytics Engineer
+- [[Uma Alvarez]] - Data Platform Engineer
+- [[Clara Alvarez]] - Solution Architect
+- [[Nadia Alvarez]] - Client Partner
+- [[Ben Alvarez]] - Delivery Lead
 
 ## Projects
 - [[Project Atlas 1]]

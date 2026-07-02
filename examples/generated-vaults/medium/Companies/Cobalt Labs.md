@@ -1,25 +1,27 @@
 ---
 type: company
-status: active
+status: churn-risk
 segment: enterprise
-source_created_at: 2023-04-23T12:49:00
-source_observed_at: 2023-04-23T14:33:00
-created_at: 2023-04-25T04:49:00
-updated_at: 2023-05-31T16:09:00
+source_created_at: 2023-04-25T12:06:00
+source_observed_at: 2023-04-25T14:44:00
+created_at: 2023-04-30T18:06:00
+updated_at: 2023-07-04T05:06:00
 tags: [#company]
 ---
 # Cobalt Labs
 
 ## Account Context
-Cobalt Labs is a enterprise account currently marked `active`.
+Cobalt Labs is a enterprise account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Ben Alvarez]] - SecOps Lead
-- [[Farah Bennett]] - Operations Lead
-- [[Jonah Chen]] - Product Director
-- [[Nadia Diaz]] - VP Data Engineering
+## Assigned Account Team
+- [[Ben Alvarez]] - Delivery Lead
+- [[Clara Chen]] - Technical Director
+- [[Priya Alvarez]] - Principal Analytics Engineer
+- [[Elena Alvarez]] - Analytics Engineer
+- [[Marcus Bennett]] - Technical Director
 
 ## Projects
+- [[Project Foundry 3]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Cobalt Labs]] #account

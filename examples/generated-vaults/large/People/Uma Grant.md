@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Pioneer Manufacturing]]"
-role: "Operations Lead"
-source_created_at: 2023-06-18T11:34:00
-source_observed_at: 2023-06-18T13:35:00
-created_at: 2023-06-18T17:34:00
-updated_at: 2023-08-19T16:15:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-06-18T10:14:00
+source_observed_at: 2023-06-18T13:01:00
+created_at: 2023-06-19T00:14:00
+updated_at: 2023-07-17T02:14:00
 tags: [#person]
 ---
 # Uma Grant
 
 ## Role
-Uma Grant is the Operations Lead at [[Pioneer Manufacturing]].
+Uma Grant is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Pioneer Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Uma Grant]] #follow-up

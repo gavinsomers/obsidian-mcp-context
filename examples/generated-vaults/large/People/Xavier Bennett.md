@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Helio Manufacturing]]"
-role: "Finance Sponsor"
-source_created_at: 2023-05-07T14:36:00
-source_observed_at: 2023-05-07T17:06:00
-created_at: 2023-05-08T01:36:00
-updated_at: 2023-08-05T16:57:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-05-07T12:20:00
+source_observed_at: 2023-05-07T12:47:00
+created_at: 2023-05-16T18:20:00
+updated_at: 2023-08-08T23:20:00
 tags: [#person]
 ---
 # Xavier Bennett
 
 ## Role
-Xavier Bennett is the Finance Sponsor at [[Helio Manufacturing]].
+Xavier Bennett is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Helio Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Xavier Bennett]] #follow-up

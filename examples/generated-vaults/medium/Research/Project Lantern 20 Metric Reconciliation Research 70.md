@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Lantern 20]]"
 company: "[[Helio FinTech]]"
-source_created_at: 2024-02-14T10:58:00
-source_observed_at: 2024-02-14T13:39:00
-created_at: 2024-02-16T06:58:00
-updated_at: 2024-03-18T11:58:00
+source_created_at: 2024-02-23T12:21:00
+source_observed_at: 2024-02-23T13:40:00
+created_at: 2024-02-23T20:21:00
+updated_at: 2024-03-14T06:21:00
 tags: [#research]
 ---
 # Project Lantern 20 Metric Reconciliation Research 70
@@ -14,7 +14,7 @@ tags: [#research]
 Research on metric reconciliation for [[Project Lantern 20]] and [[Helio FinTech]].
 
 ## Evidence
-- Interview notes from [[Iris Foster]]
+- Interview notes from [[Tara Alvarez]]
 - Related operating review: [[Project Lantern 20 Handoff Readiness Sync 170]]
 
 ## Follow Up

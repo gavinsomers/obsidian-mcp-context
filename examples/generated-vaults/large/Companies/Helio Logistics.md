@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
+status: pipeline
 segment: mid-market
-source_created_at: 2023-10-24T09:15:00
-source_observed_at: 2023-10-24T11:46:00
-created_at: 2023-10-26T01:15:00
-updated_at: 2023-12-15T12:15:00
+source_created_at: 2023-10-26T10:44:00
+source_observed_at: 2023-10-26T10:56:00
+created_at: 2023-10-27T10:44:00
+updated_at: 2024-01-15T18:44:00
 tags: [#company]
 ---
 # Helio Logistics
 
 ## Account Context
-Helio Logistics is a mid-market account currently marked `active`.
+Helio Logistics is a mid-market account currently marked `pipeline`.
 
-## Stakeholders
-- [[Priya Diaz]] - Product Director
-- [[Farah Ivanov]] - Product Director
-- [[Wendy Morgan]] - Product Director
-- [[Lina Rostova]] - Product Director
-- [[Ben Walker]] - Product Director
+## Assigned Account Team
 
 ## Projects
 

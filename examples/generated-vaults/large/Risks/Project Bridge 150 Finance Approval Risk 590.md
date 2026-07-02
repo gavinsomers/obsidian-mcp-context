@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Bridge 150]]"
-source_created_at: 2025-11-26T08:39:00
-source_observed_at: 2025-11-26T11:16:00
-created_at: 2025-11-27T05:39:00
-updated_at: 2025-12-31T10:39:00
+source_created_at: 2025-11-26T14:41:00
+source_observed_at: 2025-11-26T16:28:00
+created_at: 2025-11-26T21:41:00
+updated_at: 2025-11-30T21:41:00
 tags: [#risk]
 ---
 # Project Bridge 150 Finance Approval Risk 590
 
 ## Risk
-Finance Approval may affect [[Project Bridge 150]] for [[Keystone FinTech]].
+Finance Approval may affect [[Project Bridge 150]] for [[Northstar Retail]].
 
 ## Evidence
 - Raised after [[Project Bridge 150 Handoff Readiness Sync 590]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Omar Tan]]
+- Status: `open`
+- Owner: [[Tara Foster]]
 - [ ] Reassess [[Project Bridge 150 Finance Approval Risk 590]] during the next review #risk

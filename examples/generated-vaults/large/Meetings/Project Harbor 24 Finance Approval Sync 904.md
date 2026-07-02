@@ -3,23 +3,23 @@ type: meeting
 date: 2023-11-02
 project: "[[Project Harbor 24]]"
 company: "[[Atlas FinTech]]"
-source_created_at: 2023-11-02T10:49:00
-source_observed_at: 2023-11-02T12:08:00
-created_at: 2023-11-02T12:13:00
-updated_at: 2023-11-03T05:13:00
+source_created_at: 2023-11-02T16:48:00
+source_observed_at: 2023-11-02T18:54:00
+created_at: 2023-11-08T16:48:00
+updated_at: 2023-11-09T06:48:00
 tags: [#meeting]
 ---
 # Project Harbor 24 Finance Approval Sync 904
 
 ## Attendees
-- [[Xavier Alvarez]]
-- [[Marcus Foster]]
-- [[Tara Ortega]]
+- [[Sam Grant]]
+- [[Ben Patel]]
+- [[Nadia Jenkins]]
 
 ## Notes
 Finance Approval reviewed for [[Project Harbor 24]] at [[Atlas FinTech]].
-[[Tara Ortega]] flagged follow-up work for the next operating review.
+[[Xavier Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Harbor 24]] to [[Tara Ortega]] #follow-up
+- [ ] Send recap for [[Project Harbor 24]] to [[Xavier Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

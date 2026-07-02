@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Retail]]"
-role: "Product Director"
-source_created_at: 2023-05-01T11:51:00
-source_observed_at: 2023-05-01T12:34:00
-created_at: 2023-05-02T00:51:00
-updated_at: 2023-06-28T10:09:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-05-01T15:56:00
+source_observed_at: 2023-05-01T17:42:00
+created_at: 2023-05-02T17:56:00
+updated_at: 2023-05-29T00:56:00
 tags: [#person]
 ---
 # David Bennett
 
 ## Role
-David Bennett is the Product Director at [[Northstar Retail]].
+David Bennett is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[David Bennett]] #follow-up

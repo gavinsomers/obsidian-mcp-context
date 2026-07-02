@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-07
 status: active
 project: "[[Project Foundry 168]]"
-company: "[[Cobalt Manufacturing]]"
-source_created_at: 2025-09-07T08:23:00
-source_observed_at: 2025-09-07T09:31:00
-created_at: 2025-09-07T10:14:00
-updated_at: 2025-09-08T04:14:00
+company: "[[BrightWave Manufacturing]]"
+source_created_at: 2025-09-07T13:15:00
+source_observed_at: 2025-09-07T13:48:00
+created_at: 2025-09-07T16:14:00
+updated_at: 2025-09-08T06:14:00
 tags: [#decision]
 ---
 # Project Foundry 168 Handoff Readiness Decision 388
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 168]].
 
 ## Context
-This decision applies to [[Cobalt Manufacturing]] and [[Project Foundry 168]].
+This decision applies to [[BrightWave Manufacturing]] and [[Project Foundry 168]].
 It follows [[Project Foundry 168 Lineage Audit Sync 608]].
 It incorporates [[Project Foundry 168 Finance Approval Research 168]].
 

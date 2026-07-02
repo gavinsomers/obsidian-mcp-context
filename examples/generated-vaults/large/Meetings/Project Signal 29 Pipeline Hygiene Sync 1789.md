@@ -3,18 +3,18 @@ type: meeting
 date: 2024-04-09
 project: "[[Project Signal 29]]"
 company: "[[Crescent FinTech]]"
-source_created_at: 2024-04-09T10:43:00
-source_observed_at: 2024-04-09T12:34:00
-created_at: 2024-04-09T12:39:00
-updated_at: 2024-04-09T14:39:00
+source_created_at: 2024-04-09T16:59:00
+source_observed_at: 2024-04-09T17:49:00
+created_at: 2024-04-09T21:56:00
+updated_at: 2024-04-10T02:56:00
 tags: [#meeting]
 ---
 # Project Signal 29 Pipeline Hygiene Sync 1789
 
 ## Attendees
-- [[Yara Ortega]]
-- [[Hannah Kim]]
-- [[Ben Bennett]]
+- [[Grace Morgan]]
+- [[David Patel]]
+- [[Priya Novak]]
 
 ## Notes
 Pipeline Hygiene reviewed for [[Project Signal 29]] at [[Crescent FinTech]].

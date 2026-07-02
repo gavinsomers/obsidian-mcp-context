@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Cobalt FinTech]]"
-source_created_at: 2025-03-12T10:54:00
-source_observed_at: 2025-03-12T13:15:00
-created_at: 2025-03-12T18:54:00
-updated_at: 2025-04-02T01:54:00
+status: active
+company: "[[BrightWave FinTech]]"
+source_created_at: 2025-03-12T08:40:00
+source_observed_at: 2025-03-12T11:39:00
+created_at: 2025-03-13T04:40:00
+updated_at: 2025-05-19T10:40:00
 tags: [#project]
 ---
 # Project Foundry 138
 
 ## Overview
-Project Foundry 138 supports [[Cobalt FinTech]] through customer success.
+Project Foundry 138 supports [[BrightWave FinTech]] through customer success.
 
 ## Stakeholders
-- [[Clara Tan]]
-- [[Xavier Jenkins]]
-- [[Rachel Alvarez]]
-- [[Grace Foster]]
+- [[Jonah Rostova]]
+- [[Ben Kim]]
+- [[Wendy Shah]]
+- [[Kai Ivanov]]
 
 ## Operating Notes
-- Owner: [[Xavier Jenkins]]
-- Status: `closed`
-- Closed at: `2025-11-01`
+- Owner: [[Grace Foster]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Foundry 138]] #ops

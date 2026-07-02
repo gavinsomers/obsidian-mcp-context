@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Summit 162]]"
-company: "[[Pioneer Retail]]"
-source_created_at: 2026-03-24T10:10:00
-source_observed_at: 2026-03-24T12:40:00
-created_at: 2026-03-25T16:10:00
-updated_at: 2026-03-29T20:10:00
+company: "[[Noble Retail]]"
+source_created_at: 2026-02-07T09:19:00
+source_observed_at: 2026-02-07T10:15:00
+created_at: 2026-02-08T09:19:00
+updated_at: 2026-02-27T13:19:00
 tags: [#research]
 ---
 # Project Summit 162 Lineage Audit Research 602
 
 ## Research Summary
-Research on lineage audit for [[Project Summit 162]] and [[Pioneer Retail]].
+Research on lineage audit for [[Project Summit 162]] and [[Noble Retail]].
 
 ## Evidence
 - Interview notes from [[Elena Grant]]

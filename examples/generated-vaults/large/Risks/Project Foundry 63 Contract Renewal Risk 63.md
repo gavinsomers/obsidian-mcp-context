@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Foundry 63]]"
-source_created_at: 2024-03-26T10:23:00
-source_observed_at: 2024-03-26T11:07:00
-created_at: 2024-03-31T15:23:00
-updated_at: 2024-04-14T02:23:00
+source_created_at: 2024-03-26T14:20:00
+source_observed_at: 2024-03-26T15:39:00
+created_at: 2024-03-28T13:20:00
+updated_at: 2024-05-04T23:20:00
 tags: [#risk]
 ---
 # Project Foundry 63 Contract Renewal Risk 63
@@ -14,9 +14,9 @@ tags: [#risk]
 Contract Renewal may affect [[Project Foundry 63]] for [[Cobalt Health]].
 
 ## Evidence
-- Raised after [[Project Foundry 63 Security Review Sync 1603]]
+- Raised after [[Project Foundry 63 Security Review Sync 63]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Priya Lee]]
+- Owner: [[Jonah Chen]]
 - [ ] Reassess [[Project Foundry 63 Contract Renewal Risk 63]] during the next review #risk

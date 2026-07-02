@@ -2,10 +2,10 @@
 type: risk
 status: mitigating
 project: "[[Project Atlas 1]]"
-source_created_at: 2023-08-04T15:54:00
-source_observed_at: 2023-08-04T17:21:00
-created_at: 2023-08-05T17:54:00
-updated_at: 2023-09-07T18:54:00
+source_created_at: 2023-08-04T14:11:00
+source_observed_at: 2023-08-04T15:12:00
+created_at: 2023-08-06T02:11:00
+updated_at: 2023-09-01T10:11:00
 tags: [#risk]
 ---
 # Project Atlas 1 Contract Renewal Risk 13

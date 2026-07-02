@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Retail]]"
-role: "Legal Counsel"
-source_created_at: 2023-05-03T13:58:00
-source_observed_at: 2023-05-03T16:44:00
-created_at: 2023-05-05T03:58:00
-updated_at: 2023-07-12T17:48:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-05-03T14:36:00
+source_observed_at: 2023-05-03T17:06:00
+created_at: 2023-05-04T01:36:00
+updated_at: 2023-05-24T06:36:00
 tags: [#person]
 ---
 # Kai Bennett
 
 ## Role
-Kai Bennett is the Legal Counsel at [[Quantum Retail]].
+Kai Bennett is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Bennett]] #follow-up

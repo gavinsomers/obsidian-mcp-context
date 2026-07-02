@@ -4,10 +4,10 @@ date: 2024-07-09
 status: active
 project: "[[Project Atlas 1]]"
 company: "[[Northstar Labs]]"
-source_created_at: 2024-07-09T12:48:00
-source_observed_at: 2024-07-09T15:42:00
-created_at: 2024-07-09T16:00:00
-updated_at: 2024-07-10T08:00:00
+source_created_at: 2024-07-09T10:31:00
+source_observed_at: 2024-07-09T12:31:00
+created_at: 2024-07-09T14:00:00
+updated_at: 2024-07-10T06:00:00
 tags: [#decision]
 ---
 # Project Atlas 1 Security Review Decision 101

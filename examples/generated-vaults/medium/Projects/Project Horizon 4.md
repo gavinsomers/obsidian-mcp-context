@@ -14,12 +14,12 @@ tags: [#project]
 Project Horizon 4 supports [[BrightWave Labs]] through research program.
 
 ## Stakeholders
-- [[Grace Bennett]]
-- [[Clara Alvarez]]
-- [[Tara Evans]]
+- [[Jonah Alvarez]]
+- [[Marcus Diaz]]
+- [[Amara Chen]]
 - [[Kai Chen]]
 
 ## Operating Notes
-- Owner: [[Omar Diaz]]
+- Owner: [[Clara Alvarez]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Horizon 4]] #ops

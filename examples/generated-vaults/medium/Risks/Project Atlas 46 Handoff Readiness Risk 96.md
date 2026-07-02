@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Atlas 46]]"
-source_created_at: 2024-09-24T16:59:00
-source_observed_at: 2024-09-24T17:14:00
-created_at: 2024-10-03T20:59:00
-updated_at: 2024-10-28T03:59:00
+source_created_at: 2024-09-24T13:04:00
+source_observed_at: 2024-09-24T15:36:00
+created_at: 2024-09-24T22:04:00
+updated_at: 2024-10-09T03:04:00
 tags: [#risk]
 ---
 # Project Atlas 46 Handoff Readiness Risk 96
 
 ## Risk
-Handoff Readiness may affect [[Project Atlas 46]] for [[Northstar FinTech]].
+Handoff Readiness may affect [[Project Atlas 46]] for [[Apex FinTech]].
 
 ## Evidence
-- Raised after [[Project Atlas 46 Metric Reconciliation Sync 246]]
+- Raised after [[Project Atlas 46 Metric Reconciliation Sync 296]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Omar Alvarez]]
+- Status: `open`
+- Owner: [[Tara Bennett]]
 - [ ] Reassess [[Project Atlas 46 Handoff Readiness Risk 96]] during the next review #risk

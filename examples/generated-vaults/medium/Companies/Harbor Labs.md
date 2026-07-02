@@ -1,23 +1,19 @@
 ---
 type: company
-status: active
+status: churn-risk
 segment: smb
-source_created_at: 2023-05-07T15:27:00
-source_observed_at: 2023-05-07T18:08:00
-created_at: 2023-05-08T08:27:00
-updated_at: 2023-06-03T17:10:00
+source_created_at: 2023-05-09T15:15:00
+source_observed_at: 2023-05-09T17:23:00
+created_at: 2023-05-11T11:15:00
+updated_at: 2023-07-12T16:15:00
 tags: [#company]
 ---
 # Harbor Labs
 
 ## Account Context
-Harbor Labs is a smb account currently marked `active`.
+Harbor Labs is a smb account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Iris Alvarez]] - Finance Sponsor
-- [[Marcus Bennett]] - Customer Success Manager
-- [[Rachel Chen]] - Legal Counsel
-- [[Victor Diaz]] - Implementation Manager
+## Assigned Account Team
 
 ## Projects
 

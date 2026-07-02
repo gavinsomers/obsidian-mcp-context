@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Logistics]]"
-role: "Product Director"
-source_created_at: 2023-09-22T12:18:00
-source_observed_at: 2023-09-22T13:10:00
-created_at: 2023-09-27T16:18:00
-updated_at: 2023-11-19T12:43:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-09-22T16:40:00
+source_observed_at: 2023-09-22T18:20:00
+created_at: 2023-09-23T21:40:00
+updated_at: 2023-11-11T02:40:00
 tags: [#person]
 ---
 # Uma Rostova
 
 ## Role
-Uma Rostova is the Product Director at [[Noble Logistics]].
+Uma Rostova is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Uma Rostova]] #follow-up

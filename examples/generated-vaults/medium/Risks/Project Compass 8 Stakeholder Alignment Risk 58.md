@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Compass 8]]"
-source_created_at: 2023-12-28T11:20:00
-source_observed_at: 2023-12-28T11:46:00
-created_at: 2023-12-29T23:20:00
-updated_at: 2024-01-26T02:20:00
+source_created_at: 2023-12-28T10:35:00
+source_observed_at: 2023-12-28T13:07:00
+created_at: 2023-12-28T18:35:00
+updated_at: 2024-02-10T03:35:00
 tags: [#risk]
 ---
 # Project Compass 8 Stakeholder Alignment Risk 58
@@ -17,6 +17,6 @@ Stakeholder Alignment may affect [[Project Compass 8]] for [[Quantum Labs]].
 - Raised after [[Project Compass 8 Lineage Audit Sync 108]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Omar Chen]]
+- Status: `open`
+- Owner: [[Grace Alvarez]]
 - [ ] Reassess [[Project Compass 8 Stakeholder Alignment Risk 58]] during the next review #risk

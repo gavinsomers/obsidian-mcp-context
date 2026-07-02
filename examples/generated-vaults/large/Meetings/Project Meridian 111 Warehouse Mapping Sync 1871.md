@@ -3,18 +3,18 @@ type: meeting
 date: 2024-11-10
 project: "[[Project Meridian 111]]"
 company: "[[Meridian Analytics]]"
-source_created_at: 2024-11-10T16:55:00
-source_observed_at: 2024-11-10T18:47:00
-created_at: 2024-11-10T20:51:00
-updated_at: 2024-11-10T21:51:00
+source_created_at: 2024-11-10T10:01:00
+source_observed_at: 2024-11-10T12:46:00
+created_at: 2024-11-10T12:51:00
+updated_at: 2024-11-11T11:51:00
 tags: [#meeting]
 ---
 # Project Meridian 111 Warehouse Mapping Sync 1871
 
 ## Attendees
-- [[Ben Shah]]
-- [[Farah Evans]]
-- [[Lina Novak]]
+- [[Grace Foster]]
+- [[Jonah Ortega]]
+- [[Jonah Kim]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Meridian 111]] at [[Meridian Analytics]].

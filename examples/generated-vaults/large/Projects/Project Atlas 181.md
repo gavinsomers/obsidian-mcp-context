@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Northstar Health]]"
-source_created_at: 2025-10-09T09:55:00
-source_observed_at: 2025-10-09T10:47:00
-created_at: 2025-10-10T23:55:00
-updated_at: 2025-12-03T07:55:00
+company: "[[Apex Health]]"
+source_created_at: 2025-10-09T14:04:00
+source_observed_at: 2025-10-09T16:17:00
+created_at: 2025-10-13T14:04:00
+updated_at: 2025-11-30T22:04:00
 tags: [#project]
 ---
 # Project Atlas 181
 
 ## Overview
-Project Atlas 181 supports [[Northstar Health]] through consulting delivery.
+Project Atlas 181 supports [[Apex Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Nadia Lee]]
-- [[Hannah Chen]]
-- [[Uma Usman]]
-- [[David Quinn]]
+- [[Hannah Bennett]]
+- [[Omar Rostova]]
+- [[Xavier Bennett]]
+- [[Priya Jenkins]]
 
 ## Operating Notes
-- Owner: [[Hannah Chen]]
+- Owner: [[Yara Grant]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Atlas 181]] #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex FinTech]]"
-role: "Operations Lead"
-source_created_at: 2023-08-24T08:38:00
-source_observed_at: 2023-08-24T10:25:00
-created_at: 2023-08-25T11:38:00
-updated_at: 2023-11-20T20:38:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-08-24T10:11:00
+source_observed_at: 2023-08-24T10:34:00
+created_at: 2023-08-25T07:11:00
+updated_at: 2023-11-04T11:11:00
 tags: [#person]
 ---
 # Lina Ortega
 
 ## Role
-Lina Ortega is the Operations Lead at [[Apex FinTech]].
+Lina Ortega is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Beacon 17]]
+## Active Project Allocations
+- Managing/Supporting [[Project Foundry 33]] ([[Cobalt Retail]])
 - [ ] Confirm next update with [[Lina Ortega]] #follow-up

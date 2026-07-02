@@ -1,7 +1,7 @@
 ---
 type: project
-status: blocked
-company: "[[Cobalt FinTech]]"
+status: planning
+company: "[[BrightWave FinTech]]"
 source_created_at: 2024-09-27T14:52:00
 source_observed_at: 2024-09-27T16:30:00
 created_at: 2024-09-28T01:52:00
@@ -11,15 +11,15 @@ tags: [#project]
 # Project Foundry 48
 
 ## Overview
-Project Foundry 48 supports [[Cobalt FinTech]] through customer success.
+Project Foundry 48 supports [[BrightWave FinTech]] through customer success.
 
 ## Stakeholders
-- [[Zoe Chen]]
-- [[Grace Foster]]
-- [[Victor Bennett]]
-- [[Clara Evans]]
+- [[Lina Evans]]
+- [[Elena Diaz]]
+- [[Hannah Diaz]]
+- [[Tara Diaz]]
 
 ## Operating Notes
-- Owner: [[Zoe Chen]]
-- Status: `blocked`
+- Owner: [[Victor Bennett]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Foundry 48]] #ops

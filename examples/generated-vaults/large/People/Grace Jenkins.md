@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex Labs]]"
-role: "Finance Sponsor"
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
 source_created_at: 2023-07-10T09:58:00
-source_observed_at: 2023-07-10T10:31:00
-created_at: 2023-07-11T22:58:00
-updated_at: 2023-10-08T03:58:00
+source_observed_at: 2023-07-10T10:28:00
+created_at: 2023-07-12T05:58:00
+updated_at: 2023-09-27T14:58:00
 tags: [#person]
 ---
 # Grace Jenkins
 
 ## Role
-Grace Jenkins is the Finance Sponsor at [[Apex Labs]].
+Grace Jenkins is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Beacon 2]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Grace Jenkins]] #follow-up

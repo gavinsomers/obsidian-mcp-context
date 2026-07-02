@@ -1,6 +1,6 @@
 ---
 type: project
-status: active
+status: planning
 company: "[[Meridian FinTech]]"
 source_created_at: 2023-12-12T15:29:00
 source_observed_at: 2023-12-12T16:31:00
@@ -14,12 +14,12 @@ tags: [#project]
 Project Meridian 21 supports [[Meridian FinTech]] through consulting delivery.
 
 ## Stakeholders
-- [[Yara Bennett]]
-- [[Farah Evans]]
-- [[Ben Diaz]]
+- [[Zoe Chen]]
+- [[Zoe Diaz]]
 - [[Jonah Foster]]
+- [[Alex Alvarez]]
 
 ## Operating Notes
 - Owner: [[Uma Alvarez]]
-- Status: `active`
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Meridian 21]] #ops

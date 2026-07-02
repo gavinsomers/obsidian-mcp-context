@@ -3,11 +3,11 @@ type: decision
 date: 2025-11-15
 status: active
 project: "[[Project Beacon 182]]"
-company: "[[Apex Health]]"
-source_created_at: 2025-11-15T13:20:00
-source_observed_at: 2025-11-15T13:34:00
-created_at: 2025-11-15T15:49:00
-updated_at: 2025-11-15T23:49:00
+company: "[[Cobalt Health]]"
+source_created_at: 2025-11-15T16:05:00
+source_observed_at: 2025-11-15T18:31:00
+created_at: 2025-11-15T18:36:00
+updated_at: 2025-11-16T14:36:00
 tags: [#decision]
 ---
 # Project Beacon 182 Finance Approval Decision 622
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 182]].
 
 ## Context
-This decision applies to [[Apex Health]] and [[Project Beacon 182]].
-It follows [[Project Beacon 182 Stakeholder Alignment Sync 622]].
-It incorporates [[Project Beacon 182 Lineage Audit Research 402]].
+This decision applies to [[Cobalt Health]] and [[Project Beacon 182]].
+It follows [[Project Beacon 182 Stakeholder Alignment Sync 1282]].
+It incorporates [[Project Beacon 182 Lineage Audit Research 182]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

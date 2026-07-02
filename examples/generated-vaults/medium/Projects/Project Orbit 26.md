@@ -1,6 +1,6 @@
 ---
 type: project
-status: active
+status: blocked
 company: "[[Summit FinTech]]"
 source_created_at: 2024-02-05T16:29:00
 source_observed_at: 2024-02-05T18:46:00
@@ -14,12 +14,12 @@ tags: [#project]
 Project Orbit 26 supports [[Summit FinTech]] through consulting delivery.
 
 ## Stakeholders
-- [[Clara Chen]]
-- [[Grace Diaz]]
-- [[Zoe Alvarez]]
-- [[Kai Evans]]
+- [[Kai Bennett]]
+- [[Farah Alvarez]]
+- [[Kai Alvarez]]
+- [[Jonah Chen]]
 
 ## Operating Notes
 - Owner: [[Zoe Alvarez]]
-- Status: `active`
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Orbit 26]] #ops

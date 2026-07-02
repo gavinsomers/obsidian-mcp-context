@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit Health]]"
-role: "Product Director"
-source_created_at: 2023-09-11T15:30:00
-source_observed_at: 2023-09-11T16:39:00
-created_at: 2023-09-12T02:30:00
-updated_at: 2023-10-29T07:30:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-09-11T08:48:00
+source_observed_at: 2023-09-11T09:35:00
+created_at: 2023-09-12T14:48:00
+updated_at: 2023-12-03T18:48:00
 tags: [#person]
 ---
 # Nadia Quinn
 
 ## Role
-Nadia Quinn is the Product Director at [[Summit Health]].
+Nadia Quinn is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Summit Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Nadia Quinn]] #follow-up

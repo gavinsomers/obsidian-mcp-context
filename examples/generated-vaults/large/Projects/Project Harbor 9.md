@@ -2,10 +2,10 @@
 type: project
 status: blocked
 company: "[[Atlas Labs]]"
-source_created_at: 2023-06-19T10:04:00
-source_observed_at: 2023-06-19T11:47:00
-created_at: 2023-06-20T09:04:00
-updated_at: 2023-07-29T18:04:00
+source_created_at: 2023-06-19T10:19:00
+source_observed_at: 2023-06-19T12:08:00
+created_at: 2023-06-19T19:19:00
+updated_at: 2023-09-14T05:19:00
 tags: [#project]
 ---
 # Project Harbor 9
@@ -14,8 +14,10 @@ tags: [#project]
 Project Harbor 9 supports [[Atlas Labs]] through research program.
 
 ## Stakeholders
-- [[Hannah Alvarez]]
-- [[Yara Evans]]
+- [[Nadia Evans]]
+- [[Sam Foster]]
+- [[Kai Foster]]
+- [[Jonah Alvarez]]
 
 ## Operating Notes
 - Owner: [[Hannah Alvarez]]

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas FinTech]]"
-role: "Customer Success Manager"
-source_created_at: 2023-08-26T16:08:00
-source_observed_at: 2023-08-26T17:58:00
-created_at: 2023-08-27T22:08:00
-updated_at: 2023-09-14T00:08:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-08-26T12:39:00
+source_observed_at: 2023-08-26T15:38:00
+created_at: 2023-08-28T04:39:00
+updated_at: 2023-12-02T13:00:00
 tags: [#person]
 ---
 # Tara Ortega
 
 ## Role
-Tara Ortega is the Customer Success Manager at [[Atlas FinTech]].
+Tara Ortega is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Harbor 24]]
+## Active Project Allocations
+- Managing/Supporting [[Project Orbit 41]] ([[Summit Retail]])
 - [ ] Confirm next update with [[Tara Ortega]] #follow-up

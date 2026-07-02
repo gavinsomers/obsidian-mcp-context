@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Labs]]"
-role: "Customer Success Manager"
-source_created_at: 2023-04-23T10:06:00
-source_observed_at: 2023-04-23T10:58:00
-created_at: 2023-04-24T08:06:00
-updated_at: 2023-06-29T09:06:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-04-23T11:41:00
+source_observed_at: 2023-04-23T13:06:00
+created_at: 2023-04-25T00:41:00
+updated_at: 2023-07-09T00:41:00
 tags: [#person]
 ---
 # Grace Alvarez
 
 ## Role
-Grace Alvarez is the Customer Success Manager at [[Quantum Labs]].
+Grace Alvarez is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Compass 8]]
+## Active Project Allocations
+- Managing/Supporting [[Project Compass 8]] ([[Quantum Labs]])
 - [ ] Confirm next update with [[Grace Alvarez]] #follow-up

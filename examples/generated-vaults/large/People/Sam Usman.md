@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent Manufacturing]]"
-role: "SecOps Lead"
-source_created_at: 2023-10-17T13:56:00
-source_observed_at: 2023-10-17T14:19:00
-created_at: 2023-10-23T20:56:00
-updated_at: 2023-11-12T01:56:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-10-17T13:26:00
+source_observed_at: 2023-10-17T16:04:00
+created_at: 2023-10-19T08:26:00
+updated_at: 2023-12-13T15:26:00
 tags: [#person]
 ---
 # Sam Usman
 
 ## Role
-Sam Usman is the SecOps Lead at [[Crescent Manufacturing]].
+Sam Usman is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Crescent Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Sam Usman]] #follow-up

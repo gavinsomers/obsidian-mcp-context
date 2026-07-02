@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Labs]]"
-role: "Product Director"
-source_created_at: 2023-06-04T15:28:00
-source_observed_at: 2023-06-04T18:04:00
-created_at: 2023-06-06T00:28:00
-updated_at: 2023-08-16T05:28:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-06-04T10:06:00
+source_observed_at: 2023-06-04T11:55:00
+created_at: 2023-06-06T02:06:00
+updated_at: 2023-07-31T10:06:00
 tags: [#person]
 ---
 # David Foster
 
 ## Role
-David Foster is the Product Director at [[Keystone Labs]].
+David Foster is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Bridge 15]]
+## Active Project Allocations
+- Managing/Supporting [[Project Signal 14]] ([[Crescent Labs]])
 - [ ] Confirm next update with [[David Foster]] #follow-up

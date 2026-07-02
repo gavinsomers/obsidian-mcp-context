@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Harbor 39]]"
-source_created_at: 2023-12-01T09:34:00
-source_observed_at: 2023-12-01T10:54:00
-created_at: 2023-12-02T02:34:00
-updated_at: 2024-01-12T13:34:00
+source_created_at: 2023-12-01T13:46:00
+source_observed_at: 2023-12-01T14:08:00
+created_at: 2023-12-03T01:46:00
+updated_at: 2023-12-20T01:46:00
 tags: [#risk]
 ---
 # Project Harbor 39 Security Review Risk 39
@@ -14,9 +14,9 @@ tags: [#risk]
 Security Review may affect [[Project Harbor 39]] for [[Atlas Retail]].
 
 ## Evidence
-- Raised after [[Project Harbor 39 Pipeline Hygiene Sync 919]]
+- Raised after [[Project Harbor 39 Pipeline Hygiene Sync 39]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Hannah Patel]]
+- Status: `open`
+- Owner: [[Lina Bennett]]
 - [ ] Reassess [[Project Harbor 39 Security Review Risk 39]] during the next review #risk

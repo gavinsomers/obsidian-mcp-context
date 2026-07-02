@@ -4,10 +4,10 @@ date: 2025-02-28
 status: active
 project: "[[Project Horizon 19]]"
 company: "[[BrightWave FinTech]]"
-source_created_at: 2025-02-28T10:28:00
-source_observed_at: 2025-02-28T12:30:00
-created_at: 2025-02-28T13:11:00
-updated_at: 2025-03-01T04:11:00
+source_created_at: 2025-02-28T14:38:00
+source_observed_at: 2025-02-28T17:08:00
+created_at: 2025-02-28T20:21:00
+updated_at: 2025-02-28T23:21:00
 tags: [#decision]
 ---
 # Project Horizon 19 Warehouse Mapping Decision 459

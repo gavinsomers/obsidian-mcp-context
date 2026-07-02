@@ -1,6 +1,6 @@
 ---
 type: project
-status: planning
+status: active
 company: "[[Quantum Labs]]"
 source_created_at: 2023-07-25T08:23:00
 source_observed_at: 2023-07-25T10:54:00
@@ -14,12 +14,12 @@ tags: [#project]
 Project Compass 8 supports [[Quantum Labs]] through customer success.
 
 ## Stakeholders
-- [[Omar Chen]]
+- [[Amara Bennett]]
 - [[Tara Diaz]]
-- [[Xavier Evans]]
-- [[Grace Alvarez]]
+- [[Iris Alvarez]]
+- [[Priya Evans]]
 
 ## Operating Notes
-- Owner: [[Omar Chen]]
-- Status: `planning`
+- Owner: [[Grace Alvarez]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Compass 8]] #ops

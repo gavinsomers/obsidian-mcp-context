@@ -1,22 +1,19 @@
 ---
 type: company
-status: pipeline
+status: active
 segment: mid-market
-source_created_at: 2023-06-28T14:17:00
-source_observed_at: 2023-06-28T16:07:00
-created_at: 2023-06-30T04:17:00
-updated_at: 2023-08-08T13:17:00
+source_created_at: 2023-06-30T15:46:00
+source_observed_at: 2023-06-30T17:51:00
+created_at: 2023-07-01T12:46:00
+updated_at: 2023-07-20T23:46:00
 tags: [#company]
 ---
 # Meridian Retail
 
 ## Account Context
-Meridian Retail is a mid-market account currently marked `pipeline`.
+Meridian Retail is a mid-market account currently marked `active`.
 
-## Stakeholders
-- [[Iris Bennett]] - Implementation Manager
-- [[Zoe Foster]] - Implementation Manager
-- [[Omar Kim]] - Implementation Manager
+## Assigned Account Team
 
 ## Projects
 

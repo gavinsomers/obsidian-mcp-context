@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-04-04
+date: 2024-10-17
 project: "[[Project Harbor 54]]"
 company: "[[Atlas Manufacturing]]"
-source_created_at: 2024-04-04T10:48:00
-source_observed_at: 2024-04-04T13:00:00
-created_at: 2024-04-10T12:48:00
-updated_at: 2024-04-10T20:48:00
+source_created_at: 2024-10-17T08:51:00
+source_observed_at: 2024-10-17T10:46:00
+created_at: 2024-10-17T10:51:00
+updated_at: 2024-10-18T01:51:00
 tags: [#meeting]
 ---
 # Project Harbor 54 Finance Approval Sync 1154
 
 ## Attendees
-- [[Amara Chen]]
-- [[Xavier Patel]]
-- [[Marcus Usman]]
+- [[Lina Jenkins]]
+- [[Rachel Chen]]
+- [[Amara Ortega]]
 
 ## Notes
 Finance Approval reviewed for [[Project Harbor 54]] at [[Atlas Manufacturing]].
-[[Xavier Patel]] flagged follow-up work for the next operating review.
+[[Amara Chen]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Harbor 54]] to [[Xavier Patel]] #follow-up
+- [ ] Send recap for [[Project Harbor 54]] to [[Amara Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

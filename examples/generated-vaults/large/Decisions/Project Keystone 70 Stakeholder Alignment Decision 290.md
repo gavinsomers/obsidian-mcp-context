@@ -4,10 +4,10 @@ date: 2024-07-03
 status: active
 project: "[[Project Keystone 70]]"
 company: "[[Harbor Health]]"
-source_created_at: 2024-07-03T15:56:00
-source_observed_at: 2024-07-03T18:09:00
-created_at: 2024-07-03T20:44:00
-updated_at: 2024-07-04T01:44:00
+source_created_at: 2024-07-03T15:12:00
+source_observed_at: 2024-07-03T17:34:00
+created_at: 2024-07-03T17:39:00
+updated_at: 2024-07-03T18:39:00
 tags: [#decision]
 ---
 # Project Keystone 70 Stakeholder Alignment Decision 290

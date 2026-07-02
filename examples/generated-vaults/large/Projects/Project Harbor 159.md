@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Atlas Retail]]"
-source_created_at: 2025-06-24T08:53:00
-source_observed_at: 2025-06-24T10:38:00
-created_at: 2025-06-25T18:53:00
-updated_at: 2025-08-23T19:53:00
+status: active
+company: "[[Harbor Retail]]"
+source_created_at: 2025-06-24T15:02:00
+source_observed_at: 2025-06-24T15:52:00
+created_at: 2025-06-25T16:02:00
+updated_at: 2025-07-25T01:02:00
 tags: [#project]
 ---
 # Project Harbor 159
 
 ## Overview
-Project Harbor 159 supports [[Atlas Retail]] through research program.
+Project Harbor 159 supports [[Harbor Retail]] through research program.
 
 ## Stakeholders
-- [[Ben Grant]]
-- [[Lina Bennett]]
-- [[Hannah Patel]]
-- [[Yara Tan]]
+- [[Priya Evans]]
+- [[Priya Lee]]
+- [[Lina Ortega]]
+- [[Sam Ivanov]]
 
 ## Operating Notes
-- Owner: [[Hannah Patel]]
-- Status: `planning`
+- Owner: [[Ben Grant]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Harbor 159]] #ops

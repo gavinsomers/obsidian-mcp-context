@@ -4,10 +4,10 @@ date: 2025-05-23
 status: active
 project: "[[Project Horizon 79]]"
 company: "[[BrightWave Media]]"
-source_created_at: 2025-05-23T16:27:00
-source_observed_at: 2025-05-23T18:30:00
-created_at: 2025-05-23T18:35:00
-updated_at: 2025-05-24T06:35:00
+source_created_at: 2025-05-23T11:23:00
+source_observed_at: 2025-05-23T13:27:00
+created_at: 2025-05-23T14:17:00
+updated_at: 2025-05-23T21:17:00
 tags: [#decision]
 ---
 # Project Horizon 79 Warehouse Mapping Decision 519

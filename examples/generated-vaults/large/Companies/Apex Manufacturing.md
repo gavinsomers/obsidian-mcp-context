@@ -1,23 +1,19 @@
 ---
 type: company
-status: pipeline
-segment: smb
-source_created_at: 2023-07-20T14:58:00
-source_observed_at: 2023-07-20T15:29:00
-created_at: 2023-07-23T19:58:00
-updated_at: 2023-09-15T00:58:00
+status: churn-risk
+segment: enterprise
+source_created_at: 2023-07-22T10:32:00
+source_observed_at: 2023-07-22T12:21:00
+created_at: 2023-07-22T20:32:00
+updated_at: 2023-10-18T02:32:00
 tags: [#company]
 ---
 # Apex Manufacturing
 
 ## Account Context
-Apex Manufacturing is a smb account currently marked `pipeline`.
+Apex Manufacturing is a enterprise account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Uma Bennett]] - Product Director
-- [[Jonah Grant]] - Product Director
-- [[Alex Lee]] - Product Director
-- [[Priya Patel]] - Product Director
+## Assigned Account Team
 
 ## Projects
 

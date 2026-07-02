@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Lantern 80]]"
-source_created_at: 2024-06-18T08:45:00
-source_observed_at: 2024-06-18T10:31:00
-created_at: 2024-06-19T09:45:00
-updated_at: 2024-07-05T10:45:00
+source_created_at: 2024-06-18T09:20:00
+source_observed_at: 2024-06-18T10:54:00
+created_at: 2024-06-18T13:20:00
+updated_at: 2024-07-11T20:20:00
 tags: [#risk]
 ---
 # Project Lantern 80 Finance Approval Risk 80
@@ -14,9 +14,9 @@ tags: [#risk]
 Finance Approval may affect [[Project Lantern 80]] for [[Helio Media]].
 
 ## Evidence
-- Raised after [[Project Lantern 80 Handoff Readiness Sync 1620]]
+- Raised after [[Project Lantern 80 Handoff Readiness Sync 80]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Marcus Vance]]
+- Status: `open`
+- Owner: [[Amara Diaz]]
 - [ ] Reassess [[Project Lantern 80 Finance Approval Risk 80]] during the next review #risk

@@ -1,6 +1,6 @@
 ---
 type: project
-status: planning
+status: closed
 company: "[[Vanguard FinTech]]"
 source_created_at: 2023-12-22T13:46:00
 source_observed_at: 2023-12-22T15:24:00
@@ -14,12 +14,13 @@ tags: [#project]
 Project Pipeline 22 supports [[Vanguard FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Kai Foster]]
-- [[Clara Diaz]]
-- [[Zoe Bennett]]
-- [[Victor Alvarez]]
+- [[Victor Chen]]
+- [[Amara Chen]]
+- [[Farah Evans]]
+- [[Sam Foster]]
 
 ## Operating Notes
-- Owner: [[Zoe Bennett]]
-- Status: `planning`
+- Owner: [[Victor Alvarez]]
+- Status: `closed`
+- Closed at: `2024-07-21`
 - [ ] Reconcile latest state for [[Project Pipeline 22]] #ops

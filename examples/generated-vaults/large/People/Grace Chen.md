@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Manufacturing]]"
-role: "Implementation Manager"
-source_created_at: 2023-05-10T15:11:00
-source_observed_at: 2023-05-10T16:03:00
-created_at: 2023-05-11T05:11:00
-updated_at: 2023-08-25T09:43:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-05-10T15:13:00
+source_observed_at: 2023-05-10T17:07:00
+created_at: 2023-05-12T02:13:00
+updated_at: 2023-07-12T02:13:00
 tags: [#person]
 ---
 # Grace Chen
 
 ## Role
-Grace Chen is the Implementation Manager at [[Keystone Manufacturing]].
+Grace Chen is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Grace Chen]] #follow-up

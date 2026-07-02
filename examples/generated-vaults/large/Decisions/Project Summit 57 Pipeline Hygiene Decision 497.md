@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-04-22
+date: 2025-04-23
 status: active
 project: "[[Project Summit 57]]"
 company: "[[Pioneer Manufacturing]]"
-source_created_at: 2024-04-22T09:43:00
-source_observed_at: 2024-04-22T12:13:00
-created_at: 2024-04-22T12:27:00
-updated_at: 2024-04-22T21:27:00
+source_created_at: 2025-04-23T14:44:00
+source_observed_at: 2025-04-23T15:37:00
+created_at: 2025-04-28T21:44:00
+updated_at: 2025-04-29T06:44:00
 tags: [#decision]
 ---
 # Project Summit 57 Pipeline Hygiene Decision 497
@@ -17,8 +17,8 @@ Proceed with pipeline hygiene for [[Project Summit 57]].
 
 ## Context
 This decision applies to [[Pioneer Manufacturing]] and [[Project Summit 57]].
-It follows [[Project Summit 57 Contract Renewal Sync 57]].
-It incorporates [[Project Summit 57 Security Review Research 57]].
+It follows [[Project Summit 57 Contract Renewal Sync 497]].
+It incorporates [[Project Summit 57 Security Review Research 277]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

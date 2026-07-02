@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Meridian 96]]"
-source_created_at: 2024-09-06T15:21:00
-source_observed_at: 2024-09-06T16:53:00
-created_at: 2024-09-07T14:21:00
-updated_at: 2024-09-28T01:21:00
+source_created_at: 2024-09-06T14:01:00
+source_observed_at: 2024-09-06T16:10:00
+created_at: 2024-09-07T11:01:00
+updated_at: 2024-09-28T17:01:00
 tags: [#risk]
 ---
 # Project Meridian 96 Handoff Readiness Risk 96
@@ -17,6 +17,6 @@ Handoff Readiness may affect [[Project Meridian 96]] for [[Meridian Logistics]].
 - Raised after [[Project Meridian 96 Metric Reconciliation Sync 976]]
 
 ## Current State
-- Status: `open`
+- Status: `closed`
 - Owner: [[Rachel Diaz]]
 - [ ] Reassess [[Project Meridian 96 Handoff Readiness Risk 96]] during the next review #risk

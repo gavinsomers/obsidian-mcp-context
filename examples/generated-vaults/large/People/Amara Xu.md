@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Analytics]]"
-role: "Customer Success Manager"
-source_created_at: 2023-11-06T08:46:00
-source_observed_at: 2023-11-06T09:21:00
-created_at: 2023-11-07T18:46:00
-updated_at: 2024-01-20T23:46:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-11-06T14:31:00
+source_observed_at: 2023-11-06T16:51:00
+created_at: 2023-11-07T21:31:00
+updated_at: 2023-12-04T22:31:00
 tags: [#person]
 ---
 # Amara Xu
 
 ## Role
-Amara Xu is the Customer Success Manager at [[Keystone Analytics]].
+Amara Xu is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Amara Xu]] #follow-up

@@ -3,23 +3,23 @@ type: meeting
 date: 2025-04-29
 project: "[[Project Lantern 80]]"
 company: "[[Helio Media]]"
-source_created_at: 2025-04-29T10:15:00
-source_observed_at: 2025-04-29T11:17:00
-created_at: 2025-04-29T12:30:00
-updated_at: 2025-04-29T17:30:00
+source_created_at: 2025-04-29T14:35:00
+source_observed_at: 2025-04-29T16:29:00
+created_at: 2025-04-29T16:36:00
+updated_at: 2025-04-30T06:36:00
 tags: [#meeting]
 ---
 # Project Lantern 80 Handoff Readiness Sync 520
 
 ## Attendees
-- [[Marcus Vance]]
-- [[Grace Morgan]]
-- [[Amara Diaz]]
+- [[Iris Vance]]
+- [[Rachel Vance]]
+- [[Kai Lee]]
 
 ## Notes
 Handoff Readiness reviewed for [[Project Lantern 80]] at [[Helio Media]].
-[[Marcus Vance]] flagged follow-up work for the next operating review.
+[[Amara Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 80]] to [[Marcus Vance]] #follow-up
+- [ ] Send recap for [[Project Lantern 80]] to [[Amara Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

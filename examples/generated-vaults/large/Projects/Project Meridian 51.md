@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: closed
 company: "[[Meridian Manufacturing]]"
-source_created_at: 2024-01-10T16:42:00
-source_observed_at: 2024-01-10T19:20:00
-created_at: 2024-01-12T03:42:00
-updated_at: 2024-02-27T10:42:00
+source_created_at: 2024-01-10T14:59:00
+source_observed_at: 2024-01-10T16:34:00
+created_at: 2024-01-10T22:59:00
+updated_at: 2024-02-14T09:59:00
 tags: [#project]
 ---
 # Project Meridian 51
@@ -14,12 +14,13 @@ tags: [#project]
 Project Meridian 51 supports [[Meridian Manufacturing]] through consulting delivery.
 
 ## Stakeholders
-- [[Jonah Usman]]
-- [[David Lee]]
-- [[Uma Patel]]
-- [[Nadia Grant]]
+- [[Priya Usman]]
+- [[Elena Ortega]]
+- [[Rachel Chen]]
+- [[Sam Usman]]
 
 ## Operating Notes
 - Owner: [[Yara Bennett]]
-- Status: `active`
+- Status: `closed`
+- Closed at: `2024-07-02`
 - [ ] Reconcile latest state for [[Project Meridian 51]] #ops

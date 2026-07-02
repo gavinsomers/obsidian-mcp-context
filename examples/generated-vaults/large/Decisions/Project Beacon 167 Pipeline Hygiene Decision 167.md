@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-01
 status: active
 project: "[[Project Beacon 167]]"
-company: "[[Apex Manufacturing]]"
-source_created_at: 2025-09-01T16:33:00
-source_observed_at: 2025-09-01T18:15:00
-created_at: 2025-09-01T18:57:00
-updated_at: 2025-09-01T23:57:00
+company: "[[Cobalt Manufacturing]]"
+source_created_at: 2025-09-01T12:38:00
+source_observed_at: 2025-09-01T14:27:00
+created_at: 2025-09-01T16:39:00
+updated_at: 2025-09-01T22:39:00
 tags: [#decision]
 ---
 # Project Beacon 167 Pipeline Hygiene Decision 167
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Beacon 167]].
 
 ## Context
-This decision applies to [[Apex Manufacturing]] and [[Project Beacon 167]].
+This decision applies to [[Cobalt Manufacturing]] and [[Project Beacon 167]].
 It follows [[Project Beacon 167 Contract Renewal Sync 607]].
 It incorporates [[Project Beacon 167 Security Review Research 387]].
 

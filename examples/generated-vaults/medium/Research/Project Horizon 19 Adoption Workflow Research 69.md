@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Horizon 19]]"
 company: "[[BrightWave FinTech]]"
-source_created_at: 2024-02-20T10:39:00
-source_observed_at: 2024-02-20T12:00:00
-created_at: 2024-02-21T04:39:00
-updated_at: 2024-02-24T15:39:00
+source_created_at: 2024-02-20T16:40:00
+source_observed_at: 2024-02-20T18:20:00
+created_at: 2024-02-21T21:40:00
+updated_at: 2024-04-04T07:40:00
 tags: [#research]
 ---
 # Project Horizon 19 Adoption Workflow Research 69
@@ -14,7 +14,7 @@ tags: [#research]
 Research on adoption workflow for [[Project Horizon 19]] and [[BrightWave FinTech]].
 
 ## Evidence
-- Interview notes from [[David Evans]]
+- Interview notes from [[Sam Alvarez]]
 - Related operating review: [[Project Horizon 19 Pipeline Hygiene Sync 169]]
 
 ## Follow Up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Logistics]]"
-role: "Legal Counsel"
-source_created_at: 2023-07-01T11:37:00
-source_observed_at: 2023-07-01T12:28:00
-created_at: 2023-07-02T15:37:00
-updated_at: 2023-11-01T17:31:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-07-01T09:27:00
+source_observed_at: 2023-07-01T10:11:00
+created_at: 2023-07-02T01:27:00
+updated_at: 2023-07-26T05:27:00
 tags: [#person]
 ---
 # Elena Ivanov
 
 ## Role
-Elena Ivanov is the Legal Counsel at [[BrightWave Logistics]].
+Elena Ivanov is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Elena Ivanov]] #follow-up

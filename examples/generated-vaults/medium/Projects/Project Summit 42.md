@@ -1,7 +1,7 @@
 ---
 type: project
-status: planning
-company: "[[Pioneer Labs]]"
+status: active
+company: "[[Noble Labs]]"
 source_created_at: 2024-07-25T15:55:00
 source_observed_at: 2024-07-25T16:20:00
 created_at: 2024-07-27T02:55:00
@@ -11,15 +11,15 @@ tags: [#project]
 # Project Summit 42
 
 ## Overview
-Project Summit 42 supports [[Pioneer Labs]] through sales pipeline.
+Project Summit 42 supports [[Noble Labs]] through sales pipeline.
 
 ## Stakeholders
-- [[Amara Foster]]
-- [[Omar Bennett]]
-- [[Xavier Diaz]]
-- [[Kai Alvarez]]
+- [[Grace Foster]]
+- [[Iris Foster]]
+- [[David Chen]]
+- [[Uma Evans]]
 
 ## Operating Notes
 - Owner: [[Omar Bennett]]
-- Status: `planning`
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Summit 42]] #ops

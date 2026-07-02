@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Bridge 165]]"
-company: "[[Keystone Retail]]"
-source_created_at: 2026-03-30T15:57:00
-source_observed_at: 2026-03-30T18:04:00
-created_at: 2026-03-31T11:57:00
-updated_at: 2026-04-09T12:57:00
+company: "[[Northstar Manufacturing]]"
+source_created_at: 2026-03-30T10:32:00
+source_observed_at: 2026-03-30T10:43:00
+created_at: 2026-03-30T19:32:00
+updated_at: 2026-04-29T06:32:00
 tags: [#research]
 ---
 # Project Bridge 165 Warehouse Mapping Research 605
 
 ## Research Summary
-Research on warehouse mapping for [[Project Bridge 165]] and [[Keystone Retail]].
+Research on warehouse mapping for [[Project Bridge 165]] and [[Northstar Manufacturing]].
 
 ## Evidence
-- Interview notes from [[David Usman]]
+- Interview notes from [[Hannah Grant]]
 - Related operating review: [[Project Bridge 165 Adoption Workflow Sync 1485]]
 
 ## Follow Up

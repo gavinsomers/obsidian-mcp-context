@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
-segment: smb
-source_created_at: 2023-05-21T13:30:00
-source_observed_at: 2023-05-21T16:01:00
-created_at: 2023-05-22T18:30:00
-updated_at: 2023-08-14T23:30:00
+status: pipeline
+segment: mid-market
+source_created_at: 2023-05-23T13:44:00
+source_observed_at: 2023-05-23T15:50:00
+created_at: 2023-05-24T07:44:00
+updated_at: 2023-07-06T08:44:00
 tags: [#company]
 ---
 # Apex FinTech
 
 ## Account Context
-Apex FinTech is a smb account currently marked `active`.
+Apex FinTech is a mid-market account currently marked `pipeline`.
 
-## Stakeholders
-- [[Priya Alvarez]] - Operations Lead
-- [[Uma Bennett]] - Product Director
-- [[Yara Chen]] - VP Data Engineering
-- [[Ben Evans]] - SecOps Lead
-- [[Farah Foster]] - Operations Lead
+## Assigned Account Team
 
 ## Projects
 

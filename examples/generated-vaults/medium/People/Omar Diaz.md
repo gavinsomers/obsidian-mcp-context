@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[BrightWave Labs]]"
-role: "Legal Counsel"
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
 source_created_at: 2023-05-22T13:05:00
 source_observed_at: 2023-05-22T15:06:00
 created_at: 2023-05-23T06:05:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Omar Diaz
 
 ## Role
-Omar Diaz is the Legal Counsel at [[BrightWave Labs]].
+Omar Diaz is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Horizon 4]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Omar Diaz]] #follow-up

@@ -4,10 +4,10 @@ date: 2024-01-03
 status: superseded
 project: "[[Project Meridian 6]]"
 company: "[[Meridian Labs]]"
-source_created_at: 2024-01-03T09:59:00
-source_observed_at: 2024-01-03T12:40:00
-created_at: 2024-01-03T12:45:00
-updated_at: 2024-01-03T13:45:00
+source_created_at: 2024-01-03T12:10:00
+source_observed_at: 2024-01-03T14:48:00
+created_at: 2024-01-09T19:10:00
+updated_at: 2024-01-10T18:10:00
 tags: [#decision]
 ---
 # Project Meridian 6 Lineage Audit Decision 56

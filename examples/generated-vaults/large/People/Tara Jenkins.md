@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent Labs]]"
-role: "Legal Counsel"
-source_created_at: 2023-07-14T09:58:00
-source_observed_at: 2023-07-14T10:28:00
-created_at: 2023-07-16T05:58:00
-updated_at: 2023-10-01T14:58:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-07-14T10:26:00
+source_observed_at: 2023-07-14T12:43:00
+created_at: 2023-07-16T04:26:00
+updated_at: 2023-10-04T12:26:00
 tags: [#person]
 ---
 # Tara Jenkins
 
 ## Role
-Tara Jenkins is the Legal Counsel at [[Crescent Labs]].
+Tara Jenkins is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Signal 14]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Tara Jenkins]] #follow-up

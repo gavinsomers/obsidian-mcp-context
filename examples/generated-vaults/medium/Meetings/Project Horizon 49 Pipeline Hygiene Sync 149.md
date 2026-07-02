@@ -2,24 +2,24 @@
 type: meeting
 date: 2024-10-19
 project: "[[Project Horizon 49]]"
-company: "[[BrightWave FinTech]]"
-source_created_at: 2024-10-19T08:05:00
-source_observed_at: 2024-10-19T09:26:00
-created_at: 2024-10-19T11:49:00
-updated_at: 2024-10-19T18:49:00
+company: "[[Helio FinTech]]"
+source_created_at: 2024-10-19T11:10:00
+source_observed_at: 2024-10-19T11:45:00
+created_at: 2024-10-19T13:23:00
+updated_at: 2024-10-19T22:23:00
 tags: [#meeting]
 ---
 # Project Horizon 49 Pipeline Hygiene Sync 149
 
 ## Attendees
-- [[Sam Alvarez]]
-- [[Wendy Bennett]]
-- [[Alex Diaz]]
+- [[Clara Evans]]
+- [[Priya Evans]]
+- [[Lina Chen]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Horizon 49]] at [[BrightWave FinTech]].
-[[David Evans]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Horizon 49]] at [[Helio FinTech]].
+[[Wendy Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Horizon 49]] to [[David Evans]] #follow-up
+- [ ] Send recap for [[Project Horizon 49]] to [[Wendy Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-10-25
 project: "[[Project Beacon 182]]"
-company: "[[Apex Health]]"
-source_created_at: 2025-10-25T09:55:00
-source_observed_at: 2025-10-25T10:18:00
-created_at: 2025-10-25T14:33:00
-updated_at: 2025-10-26T00:33:00
+company: "[[Cobalt Health]]"
+source_created_at: 2025-10-25T13:03:00
+source_observed_at: 2025-10-25T15:53:00
+created_at: 2025-10-25T16:15:00
+updated_at: 2025-10-26T00:15:00
 tags: [#meeting]
 ---
 # Project Beacon 182 Stakeholder Alignment Sync 182
 
 ## Attendees
-- [[Zoe Grant]]
-- [[Victor Usman]]
-- [[Iris Chen]]
+- [[Elena Jenkins]]
+- [[Victor Patel]]
+- [[Grace Rostova]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 182]] at [[Apex Health]].
+Stakeholder Alignment reviewed for [[Project Beacon 182]] at [[Cobalt Health]].
 [[Zoe Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items

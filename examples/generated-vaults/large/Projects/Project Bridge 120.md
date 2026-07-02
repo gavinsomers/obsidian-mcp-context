@@ -1,25 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Keystone Analytics]]"
-source_created_at: 2024-12-13T11:30:00
-source_observed_at: 2024-12-13T14:26:00
-created_at: 2024-12-14T04:30:00
-updated_at: 2025-02-21T14:30:00
+status: closed
+company: "[[Northstar Labs]]"
+source_created_at: 2024-12-13T10:39:00
+source_observed_at: 2024-12-13T11:42:00
+created_at: 2024-12-13T17:39:00
+updated_at: 2025-02-26T19:39:00
 tags: [#project]
 ---
 # Project Bridge 120
 
 ## Overview
-Project Bridge 120 supports [[Keystone Analytics]] through operations admin.
+Project Bridge 120 supports [[Northstar Labs]] through operations admin.
 
 ## Stakeholders
-- [[Amara Xu]]
-- [[Omar Evans]]
-- [[Elena Jenkins]]
-- [[Kai Shah]]
+- [[Jonah Grant]]
+- [[Lina Patel]]
+- [[Uma Lee]]
+- [[Farah Novak]]
 
 ## Operating Notes
-- Owner: [[Amara Xu]]
-- Status: `blocked`
+- Owner: [[Omar Evans]]
+- Status: `closed`
+- Closed at: `2025-06-06`
 - [ ] Reconcile latest state for [[Project Bridge 120]] #ops

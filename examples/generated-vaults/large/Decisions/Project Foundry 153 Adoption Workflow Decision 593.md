@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-05
 status: active
 project: "[[Project Foundry 153]]"
-company: "[[Cobalt Retail]]"
-source_created_at: 2025-09-05T15:47:00
-source_observed_at: 2025-09-05T17:05:00
-created_at: 2025-09-05T20:25:00
-updated_at: 2025-09-06T10:25:00
+company: "[[BrightWave Retail]]"
+source_created_at: 2025-09-05T15:55:00
+source_observed_at: 2025-09-05T16:15:00
+created_at: 2025-09-05T17:46:00
+updated_at: 2025-09-06T15:46:00
 tags: [#decision]
 ---
 # Project Foundry 153 Adoption Workflow Decision 593
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Foundry 153]].
 
 ## Context
-This decision applies to [[Cobalt Retail]] and [[Project Foundry 153]].
+This decision applies to [[BrightWave Retail]] and [[Project Foundry 153]].
 It follows [[Project Foundry 153 Security Review Sync 593]].
 It incorporates [[Project Foundry 153 Pipeline Hygiene Research 373]].
 

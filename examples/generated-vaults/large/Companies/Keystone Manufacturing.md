@@ -1,24 +1,19 @@
 ---
 type: company
-status: churn-risk
-segment: mid-market
-source_created_at: 2023-08-15T10:32:00
-source_observed_at: 2023-08-15T12:21:00
-created_at: 2023-08-15T20:32:00
-updated_at: 2023-11-11T02:32:00
+status: active
+segment: enterprise
+source_created_at: 2023-08-17T16:10:00
+source_observed_at: 2023-08-17T17:42:00
+created_at: 2023-08-18T12:10:00
+updated_at: 2023-10-08T21:10:00
 tags: [#company]
 ---
 # Keystone Manufacturing
 
 ## Account Context
-Keystone Manufacturing is a mid-market account currently marked `churn-risk`.
+Keystone Manufacturing is a enterprise account currently marked `active`.
 
-## Stakeholders
-- [[Grace Chen]] - Implementation Manager
-- [[Xavier Grant]] - Implementation Manager
-- [[Marcus Lee]] - Implementation Manager
-- [[Clara Quinn]] - Implementation Manager
-- [[Tara Usman]] - Implementation Manager
+## Assigned Account Team
 
 ## Projects
 

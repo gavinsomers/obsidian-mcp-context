@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Labs]]"
-role: "Operations Lead"
-source_created_at: 2023-04-23T16:22:00
-source_observed_at: 2023-04-23T17:25:00
-created_at: 2023-04-24T23:22:00
-updated_at: 2023-06-11T00:22:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-04-23T09:17:00
+source_observed_at: 2023-04-23T11:05:00
+created_at: 2023-04-23T23:17:00
+updated_at: 2023-07-14T02:17:00
 tags: [#person]
 ---
 # Hannah Alvarez
 
 ## Role
-Hannah Alvarez is the Operations Lead at [[Atlas Labs]].
+Hannah Alvarez is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Labs]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Harbor 9]] ([[Atlas Labs]])
 - [ ] Confirm next update with [[Hannah Alvarez]] #follow-up

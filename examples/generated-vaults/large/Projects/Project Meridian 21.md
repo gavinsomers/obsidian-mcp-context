@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: closed
 company: "[[Meridian FinTech]]"
-source_created_at: 2023-08-16T10:19:00
-source_observed_at: 2023-08-16T12:08:00
-created_at: 2023-08-16T19:19:00
-updated_at: 2023-11-11T05:19:00
+source_created_at: 2023-08-16T15:32:00
+source_observed_at: 2023-08-16T17:08:00
+created_at: 2023-08-17T12:32:00
+updated_at: 2023-10-16T18:32:00
 tags: [#project]
 ---
 # Project Meridian 21
@@ -14,11 +14,13 @@ tags: [#project]
 Project Meridian 21 supports [[Meridian FinTech]] through consulting delivery.
 
 ## Stakeholders
-- [[Uma Alvarez]]
-- [[Jonah Foster]]
-- [[Alex Kim]]
+- [[Rachel Morgan]]
+- [[Lina Grant]]
+- [[Marcus Chen]]
+- [[Elena Novak]]
 
 ## Operating Notes
-- Owner: [[Alex Kim]]
-- Status: `planning`
+- Owner: [[Uma Alvarez]]
+- Status: `closed`
+- Closed at: `2023-10-23`
 - [ ] Reconcile latest state for [[Project Meridian 21]] #ops

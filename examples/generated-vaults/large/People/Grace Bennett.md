@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Retail]]"
-role: "Finance Sponsor"
-source_created_at: 2023-05-02T09:21:00
-source_observed_at: 2023-05-02T10:48:00
-created_at: 2023-05-02T21:21:00
-updated_at: 2023-07-11T07:21:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-05-02T09:35:00
+source_observed_at: 2023-05-02T10:08:00
+created_at: 2023-05-04T02:35:00
+updated_at: 2023-07-18T13:35:00
 tags: [#person]
 ---
 # Grace Bennett
 
 ## Role
-Grace Bennett is the Finance Sponsor at [[BrightWave Retail]].
+Grace Bennett is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Grace Bennett]] #follow-up

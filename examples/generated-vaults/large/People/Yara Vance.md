@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Logistics]]"
-role: "SecOps Lead"
-source_created_at: 2023-10-28T09:09:00
-source_observed_at: 2023-10-28T10:12:00
-created_at: 2023-10-29T20:09:00
-updated_at: 2023-12-24T21:09:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-10-28T10:48:00
+source_observed_at: 2023-10-28T11:22:00
+created_at: 2023-10-28T22:48:00
+updated_at: 2024-01-20T03:48:00
 tags: [#person]
 ---
 # Yara Vance
 
 ## Role
-Yara Vance is the SecOps Lead at [[Northstar Logistics]].
+Yara Vance is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Vance]] #follow-up

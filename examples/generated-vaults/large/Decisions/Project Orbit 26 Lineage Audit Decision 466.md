@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-03-11
+date: 2023-10-19
 status: active
 project: "[[Project Orbit 26]]"
 company: "[[Summit FinTech]]"
-source_created_at: 2025-03-11T12:59:00
-source_observed_at: 2025-03-11T13:36:00
-created_at: 2025-03-11T14:16:00
-updated_at: 2025-03-11T21:16:00
+source_created_at: 2023-10-19T08:30:00
+source_observed_at: 2023-10-19T10:57:00
+created_at: 2023-10-19T11:24:00
+updated_at: 2023-10-20T01:24:00
 tags: [#decision]
 ---
 # Project Orbit 26 Lineage Audit Decision 466
@@ -17,8 +17,8 @@ Proceed with lineage audit for [[Project Orbit 26]].
 
 ## Context
 This decision applies to [[Summit FinTech]] and [[Project Orbit 26]].
-It follows [[Project Orbit 26 Metric Reconciliation Sync 466]].
-It incorporates [[Project Orbit 26 Stakeholder Alignment Research 246]].
+It follows [[Project Orbit 26 Metric Reconciliation Sync 1566]].
+It incorporates [[Project Orbit 26 Stakeholder Alignment Research 26]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

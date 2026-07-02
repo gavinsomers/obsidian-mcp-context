@@ -3,16 +3,18 @@ type: meeting
 date: 2024-08-09
 project: "[[Project Lantern 5]]"
 company: "[[Helio Labs]]"
-source_created_at: 2024-08-09T15:34:00
-source_observed_at: 2024-08-09T16:04:00
-created_at: 2024-08-09T17:28:00
-updated_at: 2024-08-09T23:28:00
+source_created_at: 2024-08-09T14:35:00
+source_observed_at: 2024-08-09T15:31:00
+created_at: 2024-08-09T17:10:00
+updated_at: 2024-08-10T03:10:00
 tags: [#meeting]
 ---
 # Project Lantern 5 Adoption Workflow Sync 1105
 
 ## Attendees
-- [[David Alvarez]]
+- [[Ben Diaz]]
+- [[Lina Bennett]]
+- [[David Chen]]
 
 ## Notes
 Adoption Workflow reviewed for [[Project Lantern 5]] at [[Helio Labs]].

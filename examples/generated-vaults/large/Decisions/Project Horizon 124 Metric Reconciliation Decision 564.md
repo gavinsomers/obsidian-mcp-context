@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-07-28
+date: 2025-06-05
 status: active
 project: "[[Project Horizon 124]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2025-07-28T10:35:00
-source_observed_at: 2025-07-28T11:42:00
-created_at: 2025-07-28T16:06:00
-updated_at: 2025-07-29T11:06:00
+company: "[[Helio Labs]]"
+source_created_at: 2025-06-05T15:31:00
+source_observed_at: 2025-06-05T16:15:00
+created_at: 2025-06-13T20:31:00
+updated_at: 2025-06-14T02:31:00
 tags: [#decision]
 ---
 # Project Horizon 124 Metric Reconciliation Decision 564
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Horizon 124]].
 
 ## Context
-This decision applies to [[BrightWave Labs]] and [[Project Horizon 124]].
+This decision applies to [[Helio Labs]] and [[Project Horizon 124]].
 It follows [[Project Horizon 124 Finance Approval Sync 564]].
-It incorporates [[Project Horizon 124 Handoff Readiness Research 344]].
+It incorporates [[Project Horizon 124 Handoff Readiness Research 564]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

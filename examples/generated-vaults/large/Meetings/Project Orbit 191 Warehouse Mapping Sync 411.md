@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-12-07
 project: "[[Project Orbit 191]]"
-company: "[[Summit Health]]"
-source_created_at: 2025-12-07T11:22:00
-source_observed_at: 2025-12-07T11:59:00
-created_at: 2025-12-15T12:22:00
-updated_at: 2025-12-16T05:22:00
+company: "[[Pioneer Health]]"
+source_created_at: 2025-12-07T11:46:00
+source_observed_at: 2025-12-07T12:15:00
+created_at: 2025-12-07T16:15:00
+updated_at: 2025-12-08T03:15:00
 tags: [#meeting]
 ---
 # Project Orbit 191 Warehouse Mapping Sync 411
 
 ## Attendees
-- [[Sam Chen]]
-- [[Nadia Quinn]]
-- [[Yara Lee]]
+- [[Grace Chen]]
+- [[Farah Shah]]
+- [[Rachel Foster]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 191]] at [[Summit Health]].
-[[Sam Chen]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 191]] at [[Pioneer Health]].
+[[Hannah Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 191]] to [[Sam Chen]] #follow-up
+- [ ] Send recap for [[Project Orbit 191]] to [[Hannah Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

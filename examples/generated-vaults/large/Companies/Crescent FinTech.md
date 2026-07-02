@@ -1,22 +1,19 @@
 ---
 type: company
-status: churn-risk
-segment: mid-market
-source_created_at: 2023-06-14T16:10:00
-source_observed_at: 2023-06-14T17:57:00
-created_at: 2023-06-15T11:10:00
-updated_at: 2023-08-06T15:10:00
+status: active
+segment: smb
+source_created_at: 2023-06-16T11:42:00
+source_observed_at: 2023-06-16T13:22:00
+created_at: 2023-06-18T04:42:00
+updated_at: 2023-07-07T13:42:00
 tags: [#company]
 ---
 # Crescent FinTech
 
 ## Account Context
-Crescent FinTech is a mid-market account currently marked `churn-risk`.
+Crescent FinTech is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Ben Bennett]] - VP Data Engineering
-- [[Sam Foster]] - VP Data Engineering
-- [[Hannah Kim]] - VP Data Engineering
+## Assigned Account Team
 
 ## Projects
 

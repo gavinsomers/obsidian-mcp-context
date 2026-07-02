@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Meridian 6]]"
-source_created_at: 2023-12-20T09:33:00
-source_observed_at: 2023-12-20T10:22:00
-created_at: 2023-12-21T03:33:00
-updated_at: 2024-01-27T08:33:00
+source_created_at: 2023-12-20T12:33:00
+source_observed_at: 2023-12-20T12:53:00
+created_at: 2023-12-21T09:33:00
+updated_at: 2023-12-28T12:33:00
 tags: [#risk]
 ---
 # Project Meridian 6 Handoff Readiness Risk 56

@@ -2,22 +2,22 @@
 type: meeting
 date: 2026-03-17
 project: "[[Project Pipeline 202]]"
-company: "[[Vanguard Media]]"
-source_created_at: 2026-03-17T15:01:00
-source_observed_at: 2026-03-17T15:53:00
-created_at: 2026-03-23T21:01:00
-updated_at: 2026-03-24T14:01:00
+company: "[[Quantum Media]]"
+source_created_at: 2026-03-17T16:20:00
+source_observed_at: 2026-03-17T17:52:00
+created_at: 2026-03-17T17:57:00
+updated_at: 2026-03-17T23:57:00
 tags: [#meeting]
 ---
 # Project Pipeline 202 Stakeholder Alignment Sync 1522
 
 ## Attendees
-- [[Tara Haddad]]
-- [[Zoe Quinn]]
-- [[Iris Morgan]]
+- [[Alex Ivanov]]
+- [[Lina Shah]]
+- [[Omar Morgan]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Pipeline 202]] at [[Vanguard Media]].
+Stakeholder Alignment reviewed for [[Project Pipeline 202]] at [[Quantum Media]].
 [[Tara Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items

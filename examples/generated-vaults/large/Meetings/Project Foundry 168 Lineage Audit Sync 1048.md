@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-08-17
 project: "[[Project Foundry 168]]"
-company: "[[Cobalt Manufacturing]]"
-source_created_at: 2025-08-17T13:48:00
-source_observed_at: 2025-08-17T15:12:00
-created_at: 2025-08-17T15:17:00
-updated_at: 2025-08-17T21:17:00
+company: "[[BrightWave Manufacturing]]"
+source_created_at: 2025-08-17T15:28:00
+source_observed_at: 2025-08-17T17:31:00
+created_at: 2025-08-17T18:58:00
+updated_at: 2025-08-18T00:58:00
 tags: [#meeting]
 ---
 # Project Foundry 168 Lineage Audit Sync 1048
 
 ## Attendees
-- [[Rachel Patel]]
-- [[Kai Grant]]
-- [[Victor Bennett]]
+- [[Zoe Rostova]]
+- [[Grace Chen]]
+- [[Elena Walker]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 168]] at [[Cobalt Manufacturing]].
-[[Amara Lee]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 168]] at [[BrightWave Manufacturing]].
+[[Kai Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 168]] to [[Amara Lee]] #follow-up
+- [ ] Send recap for [[Project Foundry 168]] to [[Kai Grant]] #follow-up
 - [x] Capture meeting notes in vault #ops

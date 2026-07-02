@@ -14,12 +14,12 @@ tags: [#project]
 Project Keystone 25 supports [[Harbor FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Ben Chen]]
-- [[Yara Alvarez]]
-- [[Nadia Foster]]
-- [[Farah Diaz]]
+- [[Xavier Alvarez]]
+- [[Hannah Chen]]
+- [[Amara Diaz]]
+- [[Elena Chen]]
 
 ## Operating Notes
-- Owner: [[Nadia Foster]]
+- Owner: [[Yara Alvarez]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Keystone 25]] #ops

@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Horizon 184]]"
-source_created_at: 2026-01-20T11:33:00
-source_observed_at: 2026-01-20T14:28:00
-created_at: 2026-01-21T04:33:00
-updated_at: 2026-02-19T12:33:00
+source_created_at: 2026-01-20T16:45:00
+source_observed_at: 2026-01-20T18:52:00
+created_at: 2026-01-20T23:45:00
+updated_at: 2026-01-28T10:45:00
 tags: [#risk]
 ---
 # Project Horizon 184 Lineage Audit Risk 624
 
 ## Risk
-Lineage Audit may affect [[Project Horizon 184]] for [[BrightWave Health]].
+Lineage Audit may affect [[Project Horizon 184]] for [[Helio Health]].
 
 ## Evidence
-- Raised after [[Project Horizon 184 Finance Approval Sync 1724]]
+- Raised after [[Project Horizon 184 Finance Approval Sync 1064]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Grace Quinn]]
+- Status: `mitigating`
+- Owner: [[Amara Haddad]]
 - [ ] Reassess [[Project Horizon 184 Lineage Audit Risk 624]] during the next review #risk

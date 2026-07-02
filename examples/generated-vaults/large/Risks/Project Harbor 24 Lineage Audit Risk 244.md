@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Harbor 24]]"
-source_created_at: 2024-05-27T10:39:00
-source_observed_at: 2024-05-27T12:49:00
-created_at: 2024-05-28T10:39:00
-updated_at: 2024-06-25T11:39:00
+source_created_at: 2024-05-27T15:38:00
+source_observed_at: 2024-05-27T17:52:00
+created_at: 2024-05-28T15:38:00
+updated_at: 2024-06-04T01:38:00
 tags: [#risk]
 ---
 # Project Harbor 24 Lineage Audit Risk 244
@@ -17,6 +17,6 @@ Lineage Audit may affect [[Project Harbor 24]] for [[Atlas FinTech]].
 - Raised after [[Project Harbor 24 Finance Approval Sync 244]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Tara Ortega]]
+- Status: `open`
+- Owner: [[Xavier Alvarez]]
 - [ ] Reassess [[Project Harbor 24 Lineage Audit Risk 244]] during the next review #risk

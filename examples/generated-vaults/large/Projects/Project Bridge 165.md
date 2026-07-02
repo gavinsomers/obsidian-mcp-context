@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Keystone Retail]]"
-source_created_at: 2025-07-23T10:45:00
-source_observed_at: 2025-07-23T12:43:00
-created_at: 2025-07-23T17:45:00
-updated_at: 2025-08-17T17:45:00
+status: active
+company: "[[Northstar Manufacturing]]"
+source_created_at: 2025-07-23T12:36:00
+source_observed_at: 2025-07-23T14:41:00
+created_at: 2025-07-24T14:36:00
+updated_at: 2025-10-07T01:36:00
 tags: [#project]
 ---
 # Project Bridge 165
 
 ## Overview
-Project Bridge 165 supports [[Keystone Retail]] through operations admin.
+Project Bridge 165 supports [[Northstar Manufacturing]] through operations admin.
 
 ## Stakeholders
-- [[Hannah Grant]]
-- [[Yara Kim]]
-- [[Sam Bennett]]
-- [[Nadia Patel]]
+- [[Lina Grant]]
+- [[Xavier Morgan]]
+- [[Lina Usman]]
+- [[Jonah Rostova]]
 
 ## Operating Notes
-- Owner: [[David Usman]]
-- Status: `planning`
+- Owner: [[Hannah Grant]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Bridge 165]] #ops

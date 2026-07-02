@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Retail]]"
-role: "Operations Lead"
-source_created_at: 2023-05-01T13:04:00
-source_observed_at: 2023-05-01T14:49:00
-created_at: 2023-05-03T09:04:00
-updated_at: 2023-07-06T18:04:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-05-01T12:06:00
+source_observed_at: 2023-05-01T12:34:00
+created_at: 2023-05-02T14:06:00
+updated_at: 2023-06-06T01:06:00
 tags: [#person]
 ---
 # Farah Bennett
 
 ## Role
-Farah Bennett is the Operations Lead at [[Cobalt Retail]].
+Farah Bennett is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Cobalt Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Farah Bennett]] #follow-up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard FinTech]]"
-role: "Legal Counsel"
-source_created_at: 2023-04-28T16:50:00
-source_observed_at: 2023-04-28T17:04:00
-created_at: 2023-04-30T15:50:00
-updated_at: 2023-06-28T22:50:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-04-28T09:21:00
+source_observed_at: 2023-04-28T10:48:00
+created_at: 2023-04-28T21:21:00
+updated_at: 2023-07-07T07:21:00
 tags: [#person]
 ---
 # Victor Alvarez
 
 ## Role
-Victor Alvarez is the Legal Counsel at [[Vanguard FinTech]].
+Victor Alvarez is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Vanguard FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Victor Alvarez]] #follow-up

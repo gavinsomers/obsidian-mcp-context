@@ -4,10 +4,10 @@ date: 2023-06-30
 status: active
 project: "[[Project Lantern 5]]"
 company: "[[Helio Labs]]"
-source_created_at: 2023-06-30T13:01:00
-source_observed_at: 2023-06-30T14:38:00
-created_at: 2023-06-30T18:43:00
-updated_at: 2023-07-01T02:43:00
+source_created_at: 2023-06-30T10:15:00
+source_observed_at: 2023-06-30T12:32:00
+created_at: 2023-06-30T16:07:00
+updated_at: 2023-07-01T08:07:00
 tags: [#decision]
 ---
 # Project Lantern 5 Contract Renewal Decision 5
@@ -17,7 +17,7 @@ Proceed with contract renewal for [[Project Lantern 5]].
 
 ## Context
 This decision applies to [[Helio Labs]] and [[Project Lantern 5]].
-It follows [[Project Lantern 5 Adoption Workflow Sync 5]].
+It follows [[Project Lantern 5 Adoption Workflow Sync 1545]].
 It incorporates [[Project Lantern 5 Warehouse Mapping Research 5]].
 
 ## Supersession

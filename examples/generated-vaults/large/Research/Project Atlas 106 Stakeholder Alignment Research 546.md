@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Atlas 106]]"
 company: "[[Northstar Analytics]]"
-source_created_at: 2025-12-16T13:31:00
-source_observed_at: 2025-12-16T14:03:00
-created_at: 2025-12-17T20:31:00
-updated_at: 2026-01-09T05:31:00
+source_created_at: 2025-12-16T08:49:00
+source_observed_at: 2025-12-16T09:41:00
+created_at: 2025-12-18T06:49:00
+updated_at: 2026-01-03T14:49:00
 tags: [#research]
 ---
 # Project Atlas 106 Stakeholder Alignment Research 546

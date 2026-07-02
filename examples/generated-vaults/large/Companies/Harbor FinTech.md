@@ -1,22 +1,19 @@
 ---
 type: company
-status: active
-segment: smb
-source_created_at: 2023-06-06T14:20:00
-source_observed_at: 2023-06-06T16:02:00
-created_at: 2023-06-07T18:20:00
-updated_at: 2023-08-16T23:20:00
+status: churn-risk
+segment: enterprise
+source_created_at: 2023-06-08T09:52:00
+source_observed_at: 2023-06-08T11:46:00
+created_at: 2023-06-08T19:52:00
+updated_at: 2023-07-30T22:52:00
 tags: [#company]
 ---
 # Harbor FinTech
 
 ## Account Context
-Harbor FinTech is a smb account currently marked `active`.
+Harbor FinTech is a enterprise account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Yara Alvarez]] - Operations Lead
-- [[Nadia Foster]] - Operations Lead
-- [[David Kim]] - Operations Lead
+## Assigned Account Team
 
 ## Projects
 

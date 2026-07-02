@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Horizon 4]]"
 company: "[[BrightWave Labs]]"
-source_created_at: 2023-07-06T13:16:00
-source_observed_at: 2023-07-06T15:40:00
-created_at: 2023-07-08T06:16:00
-updated_at: 2023-08-02T08:16:00
+source_created_at: 2023-07-06T13:29:00
+source_observed_at: 2023-07-06T15:24:00
+created_at: 2023-07-06T18:29:00
+updated_at: 2023-08-11T22:29:00
 tags: [#research]
 ---
 # Project Horizon 4 Handoff Readiness Research 4
@@ -14,7 +14,7 @@ tags: [#research]
 Research on handoff readiness for [[Project Horizon 4]] and [[BrightWave Labs]].
 
 ## Evidence
-- Interview notes from [[Omar Diaz]]
+- Interview notes from [[Clara Alvarez]]
 - Related operating review: [[Project Horizon 4 Finance Approval Sync 4]]
 
 ## Follow Up

@@ -2,21 +2,21 @@
 type: risk
 status: open
 project: "[[Project Meridian 201]]"
-source_created_at: 2026-02-02T16:25:00
-source_observed_at: 2026-02-02T17:48:00
-created_at: 2026-02-03T09:25:00
-updated_at: 2026-02-18T09:25:00
+source_created_at: 2026-02-02T09:18:00
+source_observed_at: 2026-02-02T12:15:00
+created_at: 2026-02-02T18:18:00
+updated_at: 2026-02-19T18:18:00
 tags: [#risk]
 ---
 # Project Meridian 201 Adoption Workflow Risk 201
 
 ## Risk
-Adoption Workflow may affect [[Project Meridian 201]] for [[Meridian Media]].
+Adoption Workflow may affect [[Project Meridian 201]] for [[Vanguard Media]].
 
 ## Evidence
-- Raised after [[Project Meridian 201 Warehouse Mapping Sync 861]]
+- Raised after [[Project Meridian 201 Warehouse Mapping Sync 641]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Ben Diaz]]
+- Owner: [[Sam Haddad]]
 - [ ] Reassess [[Project Meridian 201 Adoption Workflow Risk 201]] during the next review #risk

@@ -3,23 +3,23 @@ type: meeting
 date: 2024-08-18
 project: "[[Project Horizon 94]]"
 company: "[[BrightWave Logistics]]"
-source_created_at: 2024-08-18T15:25:00
-source_observed_at: 2024-08-18T17:21:00
-created_at: 2024-08-18T18:46:00
-updated_at: 2024-08-19T07:46:00
+source_created_at: 2024-08-18T15:32:00
+source_observed_at: 2024-08-18T17:27:00
+created_at: 2024-08-18T17:32:00
+updated_at: 2024-08-19T14:32:00
 tags: [#meeting]
 ---
 # Project Horizon 94 Finance Approval Sync 94
 
 ## Attendees
-- [[Kai Rostova]]
-- [[Amara Walker]]
-- [[Victor Morgan]]
+- [[Grace Novak]]
+- [[Amara Grant]]
+- [[Tara Grant]]
 
 ## Notes
 Finance Approval reviewed for [[Project Horizon 94]] at [[BrightWave Logistics]].
-[[Kai Rostova]] flagged follow-up work for the next operating review.
+[[Omar Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Horizon 94]] to [[Kai Rostova]] #follow-up
+- [ ] Send recap for [[Project Horizon 94]] to [[Omar Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

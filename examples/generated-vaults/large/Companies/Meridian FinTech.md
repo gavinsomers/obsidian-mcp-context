@@ -1,25 +1,21 @@
 ---
 type: company
-status: active
-segment: enterprise
-source_created_at: 2023-05-29T14:49:00
-source_observed_at: 2023-05-29T16:22:00
-created_at: 2023-06-03T21:49:00
-updated_at: 2023-08-26T13:00:00
+status: pipeline
+segment: mid-market
+source_created_at: 2023-05-31T13:38:00
+source_observed_at: 2023-05-31T14:39:00
+created_at: 2023-06-01T02:38:00
+updated_at: 2023-08-04T07:38:00
 tags: [#company]
 ---
 # Meridian FinTech
 
 ## Account Context
-Meridian FinTech is a enterprise account currently marked `active`.
+Meridian FinTech is a mid-market account currently marked `pipeline`.
 
-## Stakeholders
-- [[Uma Alvarez]] - VP Data Engineering
-- [[Jonah Foster]] - VP Data Engineering
-- [[Alex Kim]] - VP Data Engineering
+## Assigned Account Team
 
 ## Projects
-- [[Project Meridian 21]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Meridian FinTech]] #account

@@ -4,10 +4,10 @@ date: 2024-06-18
 status: active
 project: "[[Project Signal 59]]"
 company: "[[Crescent Manufacturing]]"
-source_created_at: 2024-06-18T08:33:00
-source_observed_at: 2024-06-18T10:05:00
-created_at: 2024-06-18T13:10:00
-updated_at: 2024-06-19T09:10:00
+source_created_at: 2024-06-18T08:46:00
+source_observed_at: 2024-06-18T10:34:00
+created_at: 2024-06-18T11:07:00
+updated_at: 2024-06-18T12:07:00
 tags: [#decision]
 ---
 # Project Signal 59 Warehouse Mapping Decision 279

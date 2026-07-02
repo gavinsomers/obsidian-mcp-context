@@ -1,7 +1,7 @@
 ---
 type: project
-status: closed
-company: "[[Keystone FinTech]]"
+status: active
+company: "[[Northstar Labs]]"
 source_created_at: 2024-03-18T13:02:00
 source_observed_at: 2024-03-18T14:54:00
 created_at: 2024-03-27T16:02:00
@@ -11,16 +11,15 @@ tags: [#project]
 # Project Bridge 30
 
 ## Overview
-Project Bridge 30 supports [[Keystone FinTech]] through operations admin.
+Project Bridge 30 supports [[Northstar Labs]] through operations admin.
 
 ## Stakeholders
-- [[Clara Bennett]]
-- [[Omar Evans]]
-- [[Tara Foster]]
-- [[Kai Diaz]]
+- [[Ben Foster]]
+- [[Nadia Evans]]
+- [[Lina Alvarez]]
+- [[Lina Foster]]
 
 ## Operating Notes
-- Owner: [[Tara Foster]]
-- Status: `closed`
-- Closed at: `2024-08-28`
+- Owner: [[Clara Bennett]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Bridge 30]] #ops

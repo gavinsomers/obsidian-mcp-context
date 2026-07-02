@@ -3,18 +3,18 @@ type: meeting
 date: 2024-02-22
 project: "[[Project Orbit 26]]"
 company: "[[Summit FinTech]]"
-source_created_at: 2024-02-22T12:36:00
-source_observed_at: 2024-02-22T13:01:00
-created_at: 2024-02-22T18:27:00
-updated_at: 2024-02-22T22:27:00
+source_created_at: 2024-02-22T12:20:00
+source_observed_at: 2024-02-22T12:47:00
+created_at: 2024-03-02T18:20:00
+updated_at: 2024-03-03T12:20:00
 tags: [#meeting]
 ---
 # Project Orbit 26 Metric Reconciliation Sync 176
 
 ## Attendees
-- [[Clara Chen]]
-- [[Zoe Alvarez]]
-- [[Grace Diaz]]
+- [[Kai Alvarez]]
+- [[Farah Alvarez]]
+- [[Jonah Chen]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Orbit 26]] at [[Summit FinTech]].

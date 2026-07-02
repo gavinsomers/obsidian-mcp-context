@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Compass 38]]"
-source_created_at: 2025-06-02T16:12:00
-source_observed_at: 2025-06-02T17:37:00
-created_at: 2025-06-03T08:12:00
-updated_at: 2025-06-28T18:12:00
+source_created_at: 2025-06-02T10:30:00
+source_observed_at: 2025-06-02T11:51:00
+created_at: 2025-06-03T01:30:00
+updated_at: 2025-07-14T11:30:00
 tags: [#risk]
 ---
 # Project Compass 38 Stakeholder Alignment Risk 478
@@ -17,6 +17,6 @@ Stakeholder Alignment may affect [[Project Compass 38]] for [[Quantum Retail]].
 - Raised after [[Project Compass 38 Lineage Audit Sync 478]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Rachel Kim]]
+- Status: `open`
+- Owner: [[Kai Bennett]]
 - [ ] Reassess [[Project Compass 38 Stakeholder Alignment Risk 478]] during the next review #risk

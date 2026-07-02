@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Manufacturing]]"
-role: "Implementation Manager"
-source_created_at: 2023-06-19T15:40:00
-source_observed_at: 2023-06-19T17:33:00
-created_at: 2023-06-19T18:40:00
-updated_at: 2023-08-25T09:43:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-06-19T13:08:00
+source_observed_at: 2023-06-19T16:05:00
+created_at: 2023-06-20T09:08:00
+updated_at: 2023-07-12T12:08:00
 tags: [#person]
 ---
 # Xavier Grant
 
 ## Role
-Xavier Grant is the Implementation Manager at [[Keystone Manufacturing]].
+Xavier Grant is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Xavier Grant]] #follow-up

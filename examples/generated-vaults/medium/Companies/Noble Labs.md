@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
-segment: mid-market
-source_created_at: 2023-05-13T13:17:00
-source_observed_at: 2023-05-13T15:59:00
-created_at: 2023-05-14T08:17:00
-updated_at: 2023-08-07T08:17:00
+status: pipeline
+segment: enterprise
+source_created_at: 2023-05-15T16:12:00
+source_observed_at: 2023-05-15T16:43:00
+created_at: 2023-05-16T20:12:00
+updated_at: 2023-08-01T04:12:00
 tags: [#company]
 ---
 # Noble Labs
 
 ## Account Context
-Noble Labs is a mid-market account currently marked `active`.
+Noble Labs is a enterprise account currently marked `pipeline`.
 
-## Stakeholders
-- [[Lina Alvarez]] - VP Data Engineering
-- [[Priya Bennett]] - SecOps Lead
-- [[Uma Chen]] - Operations Lead
-- [[Yara Diaz]] - Product Director
-- [[Ben Foster]] - VP Data Engineering
+## Assigned Account Team
 
 ## Projects
 

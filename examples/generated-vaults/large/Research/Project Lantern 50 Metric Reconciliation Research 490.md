@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Lantern 50]]"
 company: "[[Helio Manufacturing]]"
-source_created_at: 2025-09-10T14:06:00
-source_observed_at: 2025-09-10T14:55:00
-created_at: 2025-09-11T01:06:00
-updated_at: 2025-10-18T11:06:00
+source_created_at: 2025-09-10T16:18:00
+source_observed_at: 2025-09-10T18:22:00
+created_at: 2025-09-11T15:18:00
+updated_at: 2025-09-23T15:18:00
 tags: [#research]
 ---
 # Project Lantern 50 Metric Reconciliation Research 490
@@ -14,7 +14,7 @@ tags: [#research]
 Research on metric reconciliation for [[Project Lantern 50]] and [[Helio Manufacturing]].
 
 ## Evidence
-- Interview notes from [[Iris Usman]]
+- Interview notes from [[Xavier Bennett]]
 - Related operating review: [[Project Lantern 50 Handoff Readiness Sync 1370]]
 
 ## Follow Up

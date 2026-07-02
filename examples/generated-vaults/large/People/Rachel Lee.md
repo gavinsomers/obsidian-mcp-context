@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Health]]"
-role: "Customer Success Manager"
-source_created_at: 2023-07-31T12:12:00
-source_observed_at: 2023-07-31T13:54:00
-created_at: 2023-08-02T08:12:00
-updated_at: 2023-09-12T09:12:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-07-31T11:33:00
+source_observed_at: 2023-07-31T13:50:00
+created_at: 2023-07-31T22:33:00
+updated_at: 2023-09-20T03:33:00
 tags: [#person]
 ---
 # Rachel Lee
 
 ## Role
-Rachel Lee is the Customer Success Manager at [[BrightWave Health]].
+Rachel Lee is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Rachel Lee]] #follow-up

@@ -1,26 +1,21 @@
 ---
 type: company
 status: pipeline
-segment: mid-market
-source_created_at: 2023-05-31T13:35:00
-source_observed_at: 2023-05-31T15:21:00
-created_at: 2023-06-02T10:35:00
-updated_at: 2023-09-05T09:36:00
+segment: enterprise
+source_created_at: 2023-06-02T12:47:00
+source_observed_at: 2023-06-02T15:39:00
+created_at: 2023-06-04T02:47:00
+updated_at: 2023-07-19T07:47:00
 tags: [#company]
 ---
 # Vanguard FinTech
 
 ## Account Context
-Vanguard FinTech is a mid-market account currently marked `pipeline`.
+Vanguard FinTech is a enterprise account currently marked `pipeline`.
 
-## Stakeholders
-- [[Victor Alvarez]] - Legal Counsel
-- [[Kai Foster]] - Legal Counsel
-- [[Amara Kim]] - Legal Counsel
-- [[Rachel Ortega]] - Legal Counsel
+## Assigned Account Team
 
 ## Projects
-- [[Project Pipeline 22]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Vanguard FinTech]] #account

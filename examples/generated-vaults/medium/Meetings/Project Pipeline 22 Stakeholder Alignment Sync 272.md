@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-08-01
+date: 2024-07-10
 project: "[[Project Pipeline 22]]"
 company: "[[Vanguard FinTech]]"
-source_created_at: 2024-08-01T08:36:00
-source_observed_at: 2024-08-01T11:18:00
-created_at: 2024-08-01T13:26:00
-updated_at: 2024-08-01T16:26:00
+source_created_at: 2024-07-10T10:36:00
+source_observed_at: 2024-07-10T13:11:00
+created_at: 2024-07-10T13:27:00
+updated_at: 2024-07-11T03:27:00
 tags: [#meeting]
 ---
 # Project Pipeline 22 Stakeholder Alignment Sync 272
 
 ## Attendees
-- [[Zoe Bennett]]
-- [[Kai Foster]]
-- [[Clara Diaz]]
+- [[Amara Chen]]
+- [[Victor Chen]]
+- [[Sam Foster]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Pipeline 22]] at [[Vanguard FinTech]].
-[[Zoe Bennett]] flagged follow-up work for the next operating review.
+[[Victor Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Pipeline 22]] to [[Zoe Bennett]] #follow-up
+- [ ] Send recap for [[Project Pipeline 22]] to [[Victor Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

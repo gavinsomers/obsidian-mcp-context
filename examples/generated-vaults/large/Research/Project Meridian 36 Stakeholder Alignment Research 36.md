@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 36]]"
 company: "[[Meridian Retail]]"
-source_created_at: 2023-11-20T09:33:00
-source_observed_at: 2023-11-20T10:38:00
-created_at: 2023-11-21T10:33:00
-updated_at: 2023-12-07T10:33:00
+source_created_at: 2023-11-20T13:34:00
+source_observed_at: 2023-11-20T14:43:00
+created_at: 2023-11-21T10:34:00
+updated_at: 2023-12-06T20:34:00
 tags: [#research]
 ---
 # Project Meridian 36 Stakeholder Alignment Research 36
@@ -15,7 +15,7 @@ Research on stakeholder alignment for [[Project Meridian 36]] and [[Meridian Ret
 
 ## Evidence
 - Interview notes from [[Iris Bennett]]
-- Related operating review: [[Project Meridian 36 Metric Reconciliation Sync 36]]
+- Related operating review: [[Project Meridian 36 Metric Reconciliation Sync 916]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Meridian 36]] #research

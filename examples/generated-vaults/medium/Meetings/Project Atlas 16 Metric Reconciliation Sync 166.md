@@ -3,18 +3,18 @@ type: meeting
 date: 2024-02-06
 project: "[[Project Atlas 16]]"
 company: "[[Northstar FinTech]]"
-source_created_at: 2024-02-06T16:24:00
-source_observed_at: 2024-02-06T16:59:00
-created_at: 2024-02-06T21:29:00
-updated_at: 2024-02-07T18:29:00
+source_created_at: 2024-02-06T11:12:00
+source_observed_at: 2024-02-06T13:06:00
+created_at: 2024-02-06T15:58:00
+updated_at: 2024-02-07T00:58:00
 tags: [#meeting]
 ---
 # Project Atlas 16 Metric Reconciliation Sync 166
 
 ## Attendees
-- [[Omar Alvarez]]
-- [[Elena Foster]]
-- [[Amara Evans]]
+- [[Clara Foster]]
+- [[Alex Alvarez]]
+- [[Grace Evans]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Atlas 16]] at [[Northstar FinTech]].

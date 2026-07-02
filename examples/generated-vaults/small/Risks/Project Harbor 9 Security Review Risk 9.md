@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Harbor 9]]"
-source_created_at: 2023-09-24T10:11:00
-source_observed_at: 2023-09-24T10:41:00
-created_at: 2023-09-25T12:11:00
-updated_at: 2023-11-06T22:11:00
+source_created_at: 2023-09-24T12:00:00
+source_observed_at: 2023-09-24T14:34:00
+created_at: 2023-09-24T17:00:00
+updated_at: 2023-11-05T04:00:00
 tags: [#risk]
 ---
 # Project Harbor 9 Security Review Risk 9
 
 ## Risk
-Security Review may affect [[Project Harbor 9]] for [[Northstar Labs]].
+Security Review may affect [[Project Harbor 9]] for [[Apex Labs]].
 
 ## Evidence
-- Raised after [[Project Harbor 9 Warehouse Mapping Sync 21]]
+- Raised after [[Project Harbor 9 Security Review Sync 33]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Alex Alvarez]]
+- Status: `closed`
+- Owner: [[Hannah Alvarez]]
 - [ ] Reassess [[Project Harbor 9 Security Review Risk 9]] during the next review #risk

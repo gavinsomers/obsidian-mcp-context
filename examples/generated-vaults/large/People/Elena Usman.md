@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Manufacturing]]"
-role: "Legal Counsel"
-source_created_at: 2023-10-13T12:08:00
-source_observed_at: 2023-10-13T12:46:00
-created_at: 2023-10-14T19:08:00
-updated_at: 2023-12-25T13:00:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-10-13T11:50:00
+source_observed_at: 2023-10-13T12:20:00
+created_at: 2023-10-14T10:50:00
+updated_at: 2023-11-04T18:50:00
 tags: [#person]
 ---
 # Elena Usman
 
 ## Role
-Elena Usman is the Legal Counsel at [[Northstar Manufacturing]].
+Elena Usman is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Atlas 46]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Elena Usman]] #follow-up

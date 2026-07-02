@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Atlas Labs]]"
-source_created_at: 2025-01-28T10:18:00
-source_observed_at: 2025-01-28T11:17:00
-created_at: 2025-01-29T16:18:00
-updated_at: 2025-03-14T00:18:00
+status: planning
+company: "[[Harbor Labs]]"
+source_created_at: 2025-01-28T10:46:00
+source_observed_at: 2025-01-28T12:10:00
+created_at: 2025-01-29T20:46:00
+updated_at: 2025-04-17T07:46:00
 tags: [#project]
 ---
 # Project Harbor 129
 
 ## Overview
-Project Harbor 129 supports [[Atlas Labs]] through research program.
+Project Harbor 129 supports [[Harbor Labs]] through research program.
 
 ## Stakeholders
-- [[David Ortega]]
-- [[Yara Evans]]
-- [[Uma Shah]]
-- [[Nadia Jenkins]]
+- [[Kai Foster]]
+- [[Kai Usman]]
+- [[David Ivanov]]
+- [[Ben Walker]]
 
 ## Operating Notes
-- Owner: [[David Ortega]]
-- Status: `blocked`
+- Owner: [[Yara Evans]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Harbor 129]] #ops

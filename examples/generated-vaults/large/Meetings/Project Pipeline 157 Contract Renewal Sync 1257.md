@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-06-23
 project: "[[Project Pipeline 157]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2025-06-23T16:36:00
-source_observed_at: 2025-06-23T19:05:00
-created_at: 2025-06-23T21:25:00
-updated_at: 2025-06-24T15:25:00
+company: "[[Quantum Retail]]"
+source_created_at: 2025-06-23T16:12:00
+source_observed_at: 2025-06-23T17:37:00
+created_at: 2025-06-23T19:35:00
+updated_at: 2025-06-24T13:35:00
 tags: [#meeting]
 ---
 # Project Pipeline 157 Contract Renewal Sync 1257
 
 ## Attendees
-- [[Alex Grant]]
-- [[Priya Kim]]
-- [[Farah Patel]]
+- [[Rachel Evans]]
+- [[David Ortega]]
+- [[Grace Jenkins]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 157]] at [[Vanguard Retail]].
+Contract Renewal reviewed for [[Project Pipeline 157]] at [[Quantum Retail]].
 [[Alex Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items

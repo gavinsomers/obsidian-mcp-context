@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Media]]"
-role: "Product Director"
-source_created_at: 2023-09-14T09:47:00
-source_observed_at: 2023-09-14T12:23:00
-created_at: 2023-09-14T18:47:00
-updated_at: 2023-12-13T03:47:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-09-14T14:53:00
+source_observed_at: 2023-09-14T16:35:00
+created_at: 2023-09-15T01:53:00
+updated_at: 2023-11-04T11:53:00
 tags: [#person]
 ---
 # Wendy Quinn
 
 ## Role
-Wendy Quinn is the Product Director at [[BrightWave Media]].
+Wendy Quinn is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Quinn]] #follow-up

@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Orbit 56]]"
 company: "[[Summit Manufacturing]]"
-source_created_at: 2024-09-03T14:01:00
-source_observed_at: 2024-09-03T16:20:00
-created_at: 2024-09-04T15:01:00
-updated_at: 2024-09-09T16:01:00
+source_created_at: 2024-09-03T12:42:00
+source_observed_at: 2024-09-03T13:59:00
+created_at: 2024-09-04T21:42:00
+updated_at: 2024-10-07T07:42:00
 tags: [#research]
 ---
 # Project Orbit 56 Stakeholder Alignment Research 276

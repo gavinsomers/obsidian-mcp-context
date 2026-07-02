@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Foundry 138]]"
-company: "[[Cobalt FinTech]]"
-source_created_at: 2025-10-22T12:15:00
-source_observed_at: 2025-10-22T13:28:00
-created_at: 2025-10-30T14:15:00
-updated_at: 2025-12-14T01:15:00
+company: "[[BrightWave FinTech]]"
+source_created_at: 2026-02-10T15:23:00
+source_observed_at: 2026-02-10T17:45:00
+created_at: 2026-02-11T19:23:00
+updated_at: 2026-03-04T03:23:00
 tags: [#research]
 ---
 # Project Foundry 138 Finance Approval Research 578
 
 ## Research Summary
-Research on finance approval for [[Project Foundry 138]] and [[Cobalt FinTech]].
+Research on finance approval for [[Project Foundry 138]] and [[BrightWave FinTech]].
 
 ## Evidence
-- Interview notes from [[Xavier Jenkins]]
+- Interview notes from [[Grace Foster]]
 - Related operating review: [[Project Foundry 138 Lineage Audit Sync 1458]]
 
 ## Follow Up

@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: blocked
 company: "[[Summit Health]]"
-source_created_at: 2024-04-17T08:01:00
-source_observed_at: 2024-04-17T10:33:00
-created_at: 2024-04-19T02:01:00
-updated_at: 2024-06-01T03:01:00
+source_created_at: 2024-04-17T13:08:00
+source_observed_at: 2024-04-17T15:41:00
+created_at: 2024-04-20T17:08:00
+updated_at: 2024-05-26T01:08:00
 tags: [#project]
 ---
 # Project Orbit 71
@@ -14,12 +14,12 @@ tags: [#project]
 Project Orbit 71 supports [[Summit Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Sam Chen]]
-- [[David Vance]]
-- [[Hannah Haddad]]
-- [[Yara Lee]]
+- [[Priya Chen]]
+- [[Grace Jenkins]]
+- [[Kai Ortega]]
+- [[Farah Ortega]]
 
 ## Operating Notes
 - Owner: [[Sam Chen]]
-- Status: `active`
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Orbit 71]] #ops

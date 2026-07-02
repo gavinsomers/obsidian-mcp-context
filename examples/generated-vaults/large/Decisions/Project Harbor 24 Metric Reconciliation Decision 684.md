@@ -4,10 +4,10 @@ date: 2026-01-13
 status: active
 project: "[[Project Harbor 24]]"
 company: "[[Atlas FinTech]]"
-source_created_at: 2026-01-13T10:49:00
-source_observed_at: 2026-01-13T12:56:00
-created_at: 2026-01-13T14:37:00
-updated_at: 2026-01-14T07:37:00
+source_created_at: 2026-01-13T13:11:00
+source_observed_at: 2026-01-13T14:32:00
+created_at: 2026-01-13T17:23:00
+updated_at: 2026-01-14T09:23:00
 tags: [#decision]
 ---
 # Project Harbor 24 Metric Reconciliation Decision 684

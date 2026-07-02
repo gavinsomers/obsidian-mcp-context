@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Labs]]"
-role: "Operations Lead"
-source_created_at: 2023-04-26T15:30:00
-source_observed_at: 2023-04-26T16:34:00
-created_at: 2023-04-26T20:30:00
-updated_at: 2023-06-01T02:30:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-04-26T16:13:00
+source_observed_at: 2023-04-26T18:32:00
+created_at: 2023-04-27T16:13:00
+updated_at: 2023-05-19T19:13:00
 tags: [#person]
 ---
 # Priya Alvarez
 
 ## Role
-Priya Alvarez is the Operations Lead at [[Northstar Labs]].
+Priya Alvarez is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Atlas 1]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Alvarez]] #follow-up

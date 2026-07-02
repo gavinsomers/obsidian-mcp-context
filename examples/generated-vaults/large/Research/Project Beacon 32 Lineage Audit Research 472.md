@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Beacon 32]]"
 company: "[[Apex Retail]]"
-source_created_at: 2024-04-18T08:29:00
-source_observed_at: 2024-04-18T11:14:00
-created_at: 2024-04-19T22:29:00
-updated_at: 2024-05-20T03:29:00
+source_created_at: 2025-08-08T15:21:00
+source_observed_at: 2025-08-08T18:20:00
+created_at: 2025-08-10T13:21:00
+updated_at: 2025-09-19T16:21:00
 tags: [#research]
 ---
 # Project Beacon 32 Lineage Audit Research 472
@@ -14,8 +14,8 @@ tags: [#research]
 Research on lineage audit for [[Project Beacon 32]] and [[Apex Retail]].
 
 ## Evidence
-- Interview notes from [[Victor Foster]]
-- Related operating review: [[Project Beacon 32 Stakeholder Alignment Sync 252]]
+- Interview notes from [[Elena Bennett]]
+- Related operating review: [[Project Beacon 32 Stakeholder Alignment Sync 1352]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Beacon 32]] #research

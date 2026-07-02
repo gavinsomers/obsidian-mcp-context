@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Logistics]]"
-role: "Implementation Manager"
-source_created_at: 2023-05-24T13:40:00
-source_observed_at: 2023-05-24T14:35:00
-created_at: 2023-05-24T18:40:00
-updated_at: 2023-11-13T17:02:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-05-24T09:35:00
+source_observed_at: 2023-05-24T10:49:00
+created_at: 2023-05-24T20:35:00
+updated_at: 2023-07-04T07:35:00
 tags: [#person]
 ---
 # Victor Diaz
 
 ## Role
-Victor Diaz is the Implementation Manager at [[Harbor Logistics]].
+Victor Diaz is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Victor Diaz]] #follow-up

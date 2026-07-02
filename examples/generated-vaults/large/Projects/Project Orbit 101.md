@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: closed
 company: "[[Summit Logistics]]"
-source_created_at: 2024-09-11T11:49:00
-source_observed_at: 2024-09-11T13:41:00
-created_at: 2024-09-15T13:49:00
-updated_at: 2024-11-17T19:49:00
+source_created_at: 2024-09-11T08:05:00
+source_observed_at: 2024-09-11T10:01:00
+created_at: 2024-09-12T05:05:00
+updated_at: 2024-11-05T14:05:00
 tags: [#project]
 ---
 # Project Orbit 101
@@ -14,12 +14,13 @@ tags: [#project]
 Project Orbit 101 supports [[Summit Logistics]] through consulting delivery.
 
 ## Stakeholders
-- [[Ben Novak]]
-- [[Lina Ivanov]]
-- [[Wendy Diaz]]
-- [[Hannah Walker]]
+- [[Omar Novak]]
+- [[Sam Patel]]
+- [[Clara Foster]]
+- [[Omar Ortega]]
 
 ## Operating Notes
 - Owner: [[Wendy Diaz]]
-- Status: `active`
+- Status: `closed`
+- Closed at: `2025-03-18`
 - [ ] Reconcile latest state for [[Project Orbit 101]] #ops

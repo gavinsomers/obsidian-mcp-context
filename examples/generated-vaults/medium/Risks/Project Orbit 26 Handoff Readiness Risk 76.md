@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Orbit 26]]"
-source_created_at: 2024-03-13T15:11:00
-source_observed_at: 2024-03-13T17:25:00
-created_at: 2024-03-15T13:11:00
-updated_at: 2024-04-23T14:11:00
+source_created_at: 2024-03-13T16:39:00
+source_observed_at: 2024-03-13T19:03:00
+created_at: 2024-03-13T22:39:00
+updated_at: 2024-04-03T04:39:00
 tags: [#risk]
 ---
 # Project Orbit 26 Handoff Readiness Risk 76
@@ -17,6 +17,6 @@ Handoff Readiness may affect [[Project Orbit 26]] for [[Summit FinTech]].
 - Raised after [[Project Orbit 26 Metric Reconciliation Sync 176]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `open`
 - Owner: [[Zoe Alvarez]]
 - [ ] Reassess [[Project Orbit 26 Handoff Readiness Risk 76]] during the next review #risk

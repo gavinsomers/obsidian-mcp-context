@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Keystone 115]]"
-source_created_at: 2024-12-08T09:21:00
-source_observed_at: 2024-12-08T12:08:00
-created_at: 2024-12-09T08:21:00
-updated_at: 2024-12-26T12:21:00
+source_created_at: 2024-12-08T14:57:00
+source_observed_at: 2024-12-08T17:43:00
+created_at: 2024-12-09T14:57:00
+updated_at: 2025-01-18T16:57:00
 tags: [#risk]
 ---
 # Project Keystone 115 Pipeline Hygiene Risk 115
@@ -14,9 +14,9 @@ tags: [#risk]
 Pipeline Hygiene may affect [[Project Keystone 115]] for [[Harbor Analytics]].
 
 ## Evidence
-- Raised after [[Project Keystone 115 Adoption Workflow Sync 335]]
+- Raised after [[Project Keystone 115 Adoption Workflow Sync 115]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Wendy Walker]]
+- Status: `mitigating`
+- Owner: [[Jonah Evans]]
 - [ ] Reassess [[Project Keystone 115 Pipeline Hygiene Risk 115]] during the next review #risk

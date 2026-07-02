@@ -1,11 +1,11 @@
 ---
 type: project
-status: blocked
+status: active
 company: "[[Pioneer FinTech]]"
-source_created_at: 2023-09-14T13:26:00
-source_observed_at: 2023-09-14T15:05:00
-created_at: 2023-09-18T16:26:00
-updated_at: 2023-11-02T02:26:00
+source_created_at: 2023-09-14T12:39:00
+source_observed_at: 2023-09-14T15:00:00
+created_at: 2023-09-16T01:39:00
+updated_at: 2023-10-23T01:39:00
 tags: [#project]
 ---
 # Project Summit 27
@@ -14,12 +14,12 @@ tags: [#project]
 Project Summit 27 supports [[Pioneer FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Alex Bennett]]
-- [[Priya Foster]]
-- [[Farah Kim]]
-- [[Wendy Ortega]]
+- [[Alex Novak]]
+- [[Priya Grant]]
+- [[Ben Patel]]
+- [[David Morgan]]
 
 ## Operating Notes
-- Owner: [[Farah Kim]]
-- Status: `blocked`
+- Owner: [[Alex Bennett]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Summit 27]] #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex Media]]"
-role: "VP Data Engineering"
-source_created_at: 2023-06-25T12:31:00
-source_observed_at: 2023-06-25T15:02:00
-created_at: 2023-06-27T16:31:00
-updated_at: 2023-09-28T10:38:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-06-25T09:33:00
+source_observed_at: 2023-06-25T10:47:00
+created_at: 2023-06-26T01:33:00
+updated_at: 2023-09-14T07:33:00
 tags: [#person]
 ---
 # Nadia Haddad
 
 ## Role
-Nadia Haddad is the VP Data Engineering at [[Apex Media]].
+Nadia Haddad is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Apex Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Nadia Haddad]] #follow-up

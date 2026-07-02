@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Analytics]]"
-role: "Finance Sponsor"
-source_created_at: 2023-09-23T10:39:00
-source_observed_at: 2023-09-23T12:00:00
-created_at: 2023-09-24T04:39:00
-updated_at: 2023-11-25T11:56:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-09-23T10:20:00
+source_observed_at: 2023-09-23T12:50:00
+created_at: 2023-09-24T11:20:00
+updated_at: 2023-10-09T17:20:00
 tags: [#person]
 ---
 # Xavier Rostova
 
 ## Role
-Xavier Rostova is the Finance Sponsor at [[Northstar Analytics]].
+Xavier Rostova is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Xavier Rostova]] #follow-up

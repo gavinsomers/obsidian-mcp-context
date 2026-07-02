@@ -3,11 +3,11 @@ type: decision
 date: 2025-12-05
 status: active
 project: "[[Project Meridian 186]]"
-company: "[[Meridian Health]]"
-source_created_at: 2025-12-05T10:47:00
-source_observed_at: 2025-12-05T11:20:00
-created_at: 2025-12-08T17:47:00
-updated_at: 2025-12-09T00:47:00
+company: "[[Vanguard Health]]"
+source_created_at: 2025-12-05T10:20:00
+source_observed_at: 2025-12-05T11:49:00
+created_at: 2025-12-05T12:05:00
+updated_at: 2025-12-05T17:05:00
 tags: [#decision]
 ---
 # Project Meridian 186 Lineage Audit Decision 186
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Meridian 186]].
 
 ## Context
-This decision applies to [[Meridian Health]] and [[Project Meridian 186]].
-It follows [[Project Meridian 186 Metric Reconciliation Sync 1286]].
+This decision applies to [[Vanguard Health]] and [[Project Meridian 186]].
+It follows [[Project Meridian 186 Metric Reconciliation Sync 626]].
 It incorporates [[Project Meridian 186 Stakeholder Alignment Research 406]].
 
 ## Supersession

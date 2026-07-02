@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2026-01-22
+date: 2025-10-05
 project: "[[Project Signal 164]]"
-company: "[[Crescent Retail]]"
-source_created_at: 2026-01-22T13:21:00
-source_observed_at: 2026-01-22T15:31:00
-created_at: 2026-01-22T15:36:00
-updated_at: 2026-01-22T20:36:00
+company: "[[Keystone Retail]]"
+source_created_at: 2025-10-05T14:35:00
+source_observed_at: 2025-10-05T16:03:00
+created_at: 2025-10-05T16:08:00
+updated_at: 2025-10-05T17:08:00
 tags: [#meeting]
 ---
 # Project Signal 164 Finance Approval Sync 1484
 
 ## Attendees
-- [[Marcus Patel]]
-- [[Clara Usman]]
-- [[Rachel Bennett]]
+- [[Nadia Vance]]
+- [[Nadia Walker]]
+- [[Zoe Haddad]]
 
 ## Notes
-Finance Approval reviewed for [[Project Signal 164]] at [[Crescent Retail]].
-[[Marcus Patel]] flagged follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Signal 164]] at [[Keystone Retail]].
+[[Grace Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 164]] to [[Marcus Patel]] #follow-up
+- [ ] Send recap for [[Project Signal 164]] to [[Grace Grant]] #follow-up
 - [x] Capture meeting notes in vault #ops

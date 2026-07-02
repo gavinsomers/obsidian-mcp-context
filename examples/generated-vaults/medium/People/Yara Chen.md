@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Apex FinTech]]"
-role: "VP Data Engineering"
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
 source_created_at: 2023-05-16T08:18:00
 source_observed_at: 2023-05-16T11:01:00
 created_at: 2023-05-16T16:18:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Yara Chen
 
 ## Role
-Yara Chen is the VP Data Engineering at [[Apex FinTech]].
+Yara Chen is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Apex FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Chen]] #follow-up

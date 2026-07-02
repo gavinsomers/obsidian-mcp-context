@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-10-30
 project: "[[Project Foundry 183]]"
-company: "[[Cobalt Health]]"
-source_created_at: 2025-10-30T09:15:00
-source_observed_at: 2025-10-30T11:43:00
-created_at: 2025-10-30T14:17:00
-updated_at: 2025-10-31T03:17:00
+company: "[[BrightWave Health]]"
+source_created_at: 2025-10-30T09:14:00
+source_observed_at: 2025-10-30T10:40:00
+created_at: 2025-10-30T10:45:00
+updated_at: 2025-10-31T05:45:00
 tags: [#meeting]
 ---
 # Project Foundry 183 Security Review Sync 403
 
 ## Attendees
-- [[Priya Lee]]
-- [[Jonah Chen]]
-- [[Farah Quinn]]
+- [[Jonah Lee]]
+- [[Marcus Foster]]
+- [[Victor Tan]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 183]] at [[Cobalt Health]].
-[[Priya Lee]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 183]] at [[BrightWave Health]].
+[[Alex Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 183]] to [[Priya Lee]] #follow-up
+- [ ] Send recap for [[Project Foundry 183]] to [[Alex Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

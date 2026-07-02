@@ -3,18 +3,18 @@ type: meeting
 date: 2023-07-17
 project: "[[Project Lantern 5]]"
 company: "[[Helio Labs]]"
-source_created_at: 2023-07-17T14:50:00
-source_observed_at: 2023-07-17T17:28:00
-created_at: 2023-07-17T17:44:00
-updated_at: 2023-07-18T08:44:00
+source_created_at: 2023-07-17T15:16:00
+source_observed_at: 2023-07-17T16:29:00
+created_at: 2023-07-17T17:47:00
+updated_at: 2023-07-18T10:47:00
 tags: [#meeting]
 ---
 # Project Lantern 5 Adoption Workflow Sync 5
 
 ## Attendees
-- [[Ben Bennett]]
-- [[Lina Alvarez]]
-- [[David Alvarez]]
+- [[Xavier Alvarez]]
+- [[Zoe Alvarez]]
+- [[Priya Alvarez]]
 
 ## Notes
 Adoption Workflow reviewed for [[Project Lantern 5]] at [[Helio Labs]].

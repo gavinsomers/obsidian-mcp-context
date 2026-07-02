@@ -1,25 +1,26 @@
 ---
 type: project
-status: planning
-company: "[[Northstar Retail]]"
-source_created_at: 2025-05-15T16:55:00
-source_observed_at: 2025-05-15T18:22:00
-created_at: 2025-05-16T14:55:00
-updated_at: 2025-07-13T14:55:00
+status: closed
+company: "[[Apex Retail]]"
+source_created_at: 2025-05-15T10:45:00
+source_observed_at: 2025-05-15T12:31:00
+created_at: 2025-05-16T03:45:00
+updated_at: 2025-06-12T08:45:00
 tags: [#project]
 ---
 # Project Atlas 151
 
 ## Overview
-Project Atlas 151 supports [[Northstar Retail]] through consulting delivery.
+Project Atlas 151 supports [[Apex Retail]] through consulting delivery.
 
 ## Stakeholders
-- [[Priya Tan]]
-- [[Jonah Kim]]
-- [[David Bennett]]
-- [[Uma Foster]]
+- [[Hannah Haddad]]
+- [[Nadia Alvarez]]
+- [[Grace Novak]]
+- [[Priya Lee]]
 
 ## Operating Notes
-- Owner: [[David Bennett]]
-- Status: `planning`
+- Owner: [[Uma Foster]]
+- Status: `closed`
+- Closed at: `2025-12-18`
 - [ ] Reconcile latest state for [[Project Atlas 151]] #ops

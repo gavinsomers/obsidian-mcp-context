@@ -3,11 +3,11 @@ type: decision
 date: 2025-10-02
 status: active
 project: "[[Project Compass 173]]"
-company: "[[Quantum Manufacturing]]"
-source_created_at: 2025-10-02T13:49:00
-source_observed_at: 2025-10-02T14:19:00
-created_at: 2025-10-02T14:24:00
-updated_at: 2025-10-02T19:24:00
+company: "[[Atlas Manufacturing]]"
+source_created_at: 2025-10-02T09:56:00
+source_observed_at: 2025-10-02T10:43:00
+created_at: 2025-10-02T15:02:00
+updated_at: 2025-10-03T00:02:00
 tags: [#decision]
 ---
 # Project Compass 173 Adoption Workflow Decision 173
@@ -16,9 +16,8 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Compass 173]].
 
 ## Context
-This decision applies to [[Quantum Manufacturing]] and [[Project Compass 173]].
-It follows [[Project Compass 173 Security Review Sync 1273]].
-It incorporates [[Project Compass 173 Pipeline Hygiene Research 173]].
+This decision applies to [[Atlas Manufacturing]] and [[Project Compass 173]].
+It follows [[Project Compass 173 Security Review Sync 1053]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

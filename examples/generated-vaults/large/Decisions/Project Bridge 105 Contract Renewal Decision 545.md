@@ -4,10 +4,10 @@ date: 2025-07-01
 status: active
 project: "[[Project Bridge 105]]"
 company: "[[Keystone Logistics]]"
-source_created_at: 2025-07-01T15:02:00
-source_observed_at: 2025-07-01T17:01:00
-created_at: 2025-07-01T17:55:00
-updated_at: 2025-07-02T08:55:00
+source_created_at: 2025-07-01T11:37:00
+source_observed_at: 2025-07-01T12:17:00
+created_at: 2025-07-01T13:13:00
+updated_at: 2025-07-02T03:13:00
 tags: [#decision]
 ---
 # Project Bridge 105 Contract Renewal Decision 545

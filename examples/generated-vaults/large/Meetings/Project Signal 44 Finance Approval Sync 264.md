@@ -3,23 +3,23 @@ type: meeting
 date: 2024-05-06
 project: "[[Project Signal 44]]"
 company: "[[Crescent Retail]]"
-source_created_at: 2024-05-06T09:57:00
-source_observed_at: 2024-05-06T11:56:00
-created_at: 2024-05-06T12:39:00
-updated_at: 2024-05-06T18:39:00
+source_created_at: 2024-05-06T12:00:00
+source_observed_at: 2024-05-06T12:55:00
+created_at: 2024-05-06T17:33:00
+updated_at: 2024-05-07T13:33:00
 tags: [#meeting]
 ---
 # Project Signal 44 Finance Approval Sync 264
 
 ## Attendees
-- [[Xavier Kim]]
-- [[Clara Usman]]
-- [[Grace Grant]]
+- [[Elena Alvarez]]
+- [[Ben Kim]]
+- [[Clara Diaz]]
 
 ## Notes
 Finance Approval reviewed for [[Project Signal 44]] at [[Crescent Retail]].
-[[Marcus Patel]] flagged follow-up work for the next operating review.
+[[Rachel Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 44]] to [[Marcus Patel]] #follow-up
+- [ ] Send recap for [[Project Signal 44]] to [[Rachel Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

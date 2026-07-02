@@ -3,23 +3,23 @@ type: meeting
 date: 2023-08-20
 project: "[[Project Lantern 20]]"
 company: "[[Helio FinTech]]"
-source_created_at: 2023-08-20T12:38:00
-source_observed_at: 2023-08-20T14:15:00
-created_at: 2023-08-20T14:20:00
-updated_at: 2023-08-21T07:20:00
+source_created_at: 2023-08-20T15:17:00
+source_observed_at: 2023-08-20T17:55:00
+created_at: 2023-08-20T20:25:00
+updated_at: 2023-08-21T17:25:00
 tags: [#meeting]
 ---
 # Project Lantern 20 Handoff Readiness Sync 20
 
 ## Attendees
-- [[Tara Alvarez]]
-- [[Iris Foster]]
-- [[Zoe Jenkins]]
+- [[Sam Lee]]
+- [[Alex Lee]]
+- [[Ben Grant]]
 
 ## Notes
 Handoff Readiness reviewed for [[Project Lantern 20]] at [[Helio FinTech]].
-[[Iris Foster]] flagged follow-up work for the next operating review.
+[[Tara Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 20]] to [[Iris Foster]] #follow-up
+- [ ] Send recap for [[Project Lantern 20]] to [[Tara Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

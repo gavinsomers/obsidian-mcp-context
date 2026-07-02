@@ -3,11 +3,11 @@ type: decision
 date: 2025-08-22
 status: active
 project: "[[Project Compass 143]]"
-company: "[[Quantum FinTech]]"
-source_created_at: 2025-08-22T14:42:00
-source_observed_at: 2025-08-22T15:35:00
-created_at: 2025-08-22T17:48:00
-updated_at: 2025-08-23T15:48:00
+company: "[[Atlas FinTech]]"
+source_created_at: 2025-08-22T09:15:00
+source_observed_at: 2025-08-22T11:44:00
+created_at: 2025-08-22T12:11:00
+updated_at: 2025-08-23T07:11:00
 tags: [#decision]
 ---
 # Project Compass 143 Adoption Workflow Decision 583
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Compass 143]].
 
 ## Context
-This decision applies to [[Quantum FinTech]] and [[Project Compass 143]].
+This decision applies to [[Atlas FinTech]] and [[Project Compass 143]].
 It follows [[Project Compass 143 Security Review Sync 583]].
 It incorporates [[Project Compass 143 Pipeline Hygiene Research 363]].
 

@@ -2,22 +2,22 @@
 type: meeting
 date: 2026-03-21
 project: "[[Project Beacon 212]]"
-company: "[[Apex Logistics]]"
-source_created_at: 2026-03-21T13:06:00
-source_observed_at: 2026-03-21T14:44:00
-created_at: 2026-03-21T14:49:00
-updated_at: 2026-03-22T00:49:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2026-03-21T09:47:00
+source_observed_at: 2026-03-21T12:27:00
+created_at: 2026-03-21T12:32:00
+updated_at: 2026-03-22T08:32:00
 tags: [#meeting]
 ---
 # Project Beacon 212 Stakeholder Alignment Sync 432
 
 ## Attendees
-- [[Iris Rostova]]
-- [[Zoe Vance]]
-- [[Marcus Diaz]]
+- [[Xavier Tan]]
+- [[Omar Ivanov]]
+- [[Yara Rostova]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 212]] at [[Apex Logistics]].
+Stakeholder Alignment reviewed for [[Project Beacon 212]] at [[Cobalt Logistics]].
 [[Clara Ivanov]] flagged follow-up work for the next operating review.
 
 ## Action Items

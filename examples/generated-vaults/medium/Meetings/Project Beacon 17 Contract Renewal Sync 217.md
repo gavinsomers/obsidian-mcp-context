@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-05-01
+date: 2024-02-27
 project: "[[Project Beacon 17]]"
 company: "[[Apex FinTech]]"
-source_created_at: 2024-05-01T08:24:00
-source_observed_at: 2024-05-01T11:17:00
-created_at: 2024-05-01T13:07:00
-updated_at: 2024-05-02T09:07:00
+source_created_at: 2024-02-27T14:18:00
+source_observed_at: 2024-02-27T15:09:00
+created_at: 2024-03-06T17:18:00
+updated_at: 2024-03-07T16:18:00
 tags: [#meeting]
 ---
 # Project Beacon 17 Contract Renewal Sync 217
 
 ## Attendees
-- [[Priya Alvarez]]
-- [[Farah Foster]]
-- [[Yara Chen]]
+- [[Farah Diaz]]
+- [[Farah Evans]]
+- [[Omar Diaz]]
 
 ## Notes
 Contract Renewal reviewed for [[Project Beacon 17]] at [[Apex FinTech]].
-[[Uma Bennett]] flagged follow-up work for the next operating review.
+[[Priya Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Beacon 17]] to [[Uma Bennett]] #follow-up
+- [ ] Send recap for [[Project Beacon 17]] to [[Priya Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

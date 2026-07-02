@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: planning
 company: "[[Northstar Health]]"
-source_created_at: 2024-02-28T10:58:00
-source_observed_at: 2024-02-28T13:00:00
-created_at: 2024-03-01T05:58:00
-updated_at: 2024-05-06T05:58:00
+source_created_at: 2024-02-28T14:38:00
+source_observed_at: 2024-02-28T15:54:00
+created_at: 2024-02-29T15:38:00
+updated_at: 2024-04-05T00:38:00
 tags: [#project]
 ---
 # Project Atlas 61
@@ -14,12 +14,12 @@ tags: [#project]
 Project Atlas 61 supports [[Northstar Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Hannah Chen]]
-- [[Nadia Lee]]
-- [[Uma Usman]]
-- [[Yara Grant]]
+- [[Wendy Bennett]]
+- [[Amara Novak]]
+- [[Tara Kim]]
+- [[Xavier Evans]]
 
 ## Operating Notes
 - Owner: [[Hannah Chen]]
-- Status: `active`
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Atlas 61]] #ops

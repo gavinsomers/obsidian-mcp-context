@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Lantern 35]]"
 company: "[[Helio Retail]]"
-source_created_at: 2023-11-17T10:55:00
-source_observed_at: 2023-11-17T11:45:00
-created_at: 2023-11-17T22:55:00
-updated_at: 2023-12-24T22:55:00
+source_created_at: 2023-11-17T16:00:00
+source_observed_at: 2023-11-17T16:46:00
+created_at: 2023-11-19T08:00:00
+updated_at: 2023-12-06T11:00:00
 tags: [#research]
 ---
 # Project Lantern 35 Warehouse Mapping Research 35
@@ -14,7 +14,7 @@ tags: [#research]
 Research on warehouse mapping for [[Project Lantern 35]] and [[Helio Retail]].
 
 ## Evidence
-- Interview notes from [[Uma Tan]]
+- Interview notes from [[Hannah Bennett]]
 - Related operating review: [[Project Lantern 35 Adoption Workflow Sync 915]]
 
 ## Follow Up

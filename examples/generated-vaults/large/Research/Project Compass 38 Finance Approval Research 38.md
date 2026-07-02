@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Compass 38]]"
 company: "[[Quantum Retail]]"
-source_created_at: 2023-12-01T12:43:00
-source_observed_at: 2023-12-01T14:41:00
-created_at: 2023-12-02T16:43:00
-updated_at: 2024-01-14T23:43:00
+source_created_at: 2023-12-01T15:19:00
+source_observed_at: 2023-12-01T16:55:00
+created_at: 2023-12-02T17:19:00
+updated_at: 2024-01-10T20:19:00
 tags: [#research]
 ---
 # Project Compass 38 Finance Approval Research 38
@@ -14,7 +14,7 @@ tags: [#research]
 Research on finance approval for [[Project Compass 38]] and [[Quantum Retail]].
 
 ## Evidence
-- Interview notes from [[Rachel Kim]]
+- Interview notes from [[Kai Bennett]]
 - Related operating review: [[Project Compass 38 Lineage Audit Sync 918]]
 
 ## Follow Up

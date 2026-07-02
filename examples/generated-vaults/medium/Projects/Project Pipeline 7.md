@@ -14,12 +14,12 @@ tags: [#project]
 Project Pipeline 7 supports [[Vanguard Labs]] through sales pipeline.
 
 ## Stakeholders
-- [[Jonah Bennett]]
-- [[Wendy Evans]]
-- [[Sam Diaz]]
-- [[Farah Alvarez]]
+- [[Grace Diaz]]
+- [[Amara Evans]]
+- [[Kai Chen]]
+- [[Priya Chen]]
 
 ## Operating Notes
-- Owner: [[Jonah Bennett]]
+- Owner: [[Farah Alvarez]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Pipeline 7]] #ops

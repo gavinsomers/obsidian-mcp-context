@@ -3,16 +3,18 @@ type: meeting
 date: 2023-10-03
 project: "[[Project Beacon 2]]"
 company: "[[Apex Labs]]"
-source_created_at: 2023-10-03T10:47:00
-source_observed_at: 2023-10-03T12:35:00
-created_at: 2023-10-03T14:11:00
-updated_at: 2023-10-03T15:11:00
+source_created_at: 2023-10-03T13:59:00
+source_observed_at: 2023-10-03T14:23:00
+created_at: 2023-10-03T17:50:00
+updated_at: 2023-10-03T22:50:00
 tags: [#meeting]
 ---
 # Project Beacon 2 Stakeholder Alignment Sync 882
 
 ## Attendees
-- [[Amara Alvarez]]
+- [[Kai Chen]]
+- [[Iris Alvarez]]
+- [[Tara Alvarez]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Beacon 2]] at [[Apex Labs]].

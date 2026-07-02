@@ -1,25 +1,25 @@
 ---
 type: project
 status: blocked
-company: "[[Harbor Manufacturing]]"
-source_created_at: 2025-09-10T12:56:00
-source_observed_at: 2025-09-10T14:18:00
-created_at: 2025-09-11T21:56:00
-updated_at: 2025-09-25T22:56:00
+company: "[[Summit Manufacturing]]"
+source_created_at: 2025-09-10T16:20:00
+source_observed_at: 2025-09-10T18:07:00
+created_at: 2025-09-11T01:20:00
+updated_at: 2025-10-07T09:20:00
 tags: [#project]
 ---
 # Project Keystone 175
 
 ## Overview
-Project Keystone 175 supports [[Harbor Manufacturing]] through operations admin.
+Project Keystone 175 supports [[Summit Manufacturing]] through operations admin.
 
 ## Stakeholders
-- [[Hannah Lee]]
-- [[Sam Grant]]
-- [[Ben Chen]]
-- [[Nadia Usman]]
+- [[Sam Novak]]
+- [[Rachel Evans]]
+- [[Alex Haddad]]
+- [[David Vance]]
 
 ## Operating Notes
-- Owner: [[Nadia Usman]]
+- Owner: [[Sam Grant]]
 - Status: `blocked`
 - [ ] Reconcile latest state for [[Project Keystone 175]] #ops

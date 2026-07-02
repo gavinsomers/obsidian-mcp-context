@@ -4,10 +4,10 @@ date: 2025-03-17
 status: active
 project: "[[Project Bridge 30]]"
 company: "[[Keystone FinTech]]"
-source_created_at: 2025-03-17T08:24:00
-source_observed_at: 2025-03-17T09:51:00
-created_at: 2025-03-17T09:56:00
-updated_at: 2025-03-17T14:56:00
+source_created_at: 2025-03-17T08:47:00
+source_observed_at: 2025-03-17T09:27:00
+created_at: 2025-03-21T14:47:00
+updated_at: 2025-03-21T15:47:00
 tags: [#decision]
 ---
 # Project Bridge 30 Stakeholder Alignment Decision 470

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Health]]"
-role: "VP Data Engineering"
-source_created_at: 2023-09-08T15:56:00
-source_observed_at: 2023-09-08T16:17:00
-created_at: 2023-09-13T15:56:00
-updated_at: 2023-12-09T19:56:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-09-08T08:04:00
+source_observed_at: 2023-09-08T10:15:00
+created_at: 2023-09-16T15:04:00
+updated_at: 2023-10-21T19:04:00
 tags: [#person]
 ---
 # David Quinn
 
 ## Role
-David Quinn is the VP Data Engineering at [[Northstar Health]].
+David Quinn is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[David Quinn]] #follow-up

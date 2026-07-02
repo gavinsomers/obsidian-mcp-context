@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Labs]]"
-role: "SecOps Lead"
-source_created_at: 2023-04-29T13:18:00
-source_observed_at: 2023-04-29T14:08:00
-created_at: 2023-05-01T01:18:00
-updated_at: 2023-06-22T10:18:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-04-29T11:42:00
+source_observed_at: 2023-04-29T12:18:00
+created_at: 2023-05-01T00:42:00
+updated_at: 2023-07-06T09:42:00
 tags: [#person]
 ---
 # Alex Bennett
 
 ## Role
-Alex Bennett is the SecOps Lead at [[Cobalt Labs]].
+Alex Bennett is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Foundry 3]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Alex Bennett]] #follow-up

@@ -3,16 +3,18 @@ type: meeting
 date: 2026-04-14
 project: "[[Project Beacon 2]]"
 company: "[[Apex Labs]]"
-source_created_at: 2026-04-14T15:55:00
-source_observed_at: 2026-04-14T18:42:00
-created_at: 2026-04-14T19:33:00
-updated_at: 2026-04-15T14:33:00
+source_created_at: 2026-04-14T16:08:00
+source_observed_at: 2026-04-14T18:30:00
+created_at: 2026-04-14T21:21:00
+updated_at: 2026-04-14T23:21:00
 tags: [#meeting]
 ---
 # Project Beacon 2 Stakeholder Alignment Sync 1542
 
 ## Attendees
-- [[Amara Alvarez]]
+- [[Iris Alvarez]]
+- [[Tara Alvarez]]
+- [[Wendy Alvarez]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Beacon 2]] at [[Apex Labs]].

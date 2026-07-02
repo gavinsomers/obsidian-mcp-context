@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: enterprise
-source_created_at: 2023-06-08T08:09:00
-source_observed_at: 2023-06-08T08:57:00
-created_at: 2023-06-09T05:09:00
-updated_at: 2023-07-03T08:09:00
+source_created_at: 2023-06-10T09:35:00
+source_observed_at: 2023-06-10T11:31:00
+created_at: 2023-06-12T02:35:00
+updated_at: 2023-07-24T10:35:00
 tags: [#company]
 ---
 # Summit FinTech
@@ -13,12 +13,7 @@ tags: [#company]
 ## Account Context
 Summit FinTech is a enterprise account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Zoe Alvarez]] - Finance Sponsor
-- [[Clara Chen]] - Customer Success Manager
-- [[Grace Diaz]] - Legal Counsel
-- [[Kai Evans]] - Implementation Manager
-- [[Omar Foster]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

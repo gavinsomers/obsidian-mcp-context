@@ -4,10 +4,10 @@ date: 2024-02-02
 status: superseded
 project: "[[Project Compass 23]]"
 company: "[[Quantum FinTech]]"
-source_created_at: 2024-02-02T14:17:00
-source_observed_at: 2024-02-02T14:40:00
-created_at: 2024-02-08T21:17:00
-updated_at: 2024-02-09T13:17:00
+source_created_at: 2024-02-02T16:53:00
+source_observed_at: 2024-02-02T19:23:00
+created_at: 2024-02-02T19:38:00
+updated_at: 2024-02-03T14:38:00
 tags: [#decision]
 ---
 # Project Compass 23 Adoption Workflow Decision 23

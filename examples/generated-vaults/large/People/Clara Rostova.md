@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit Media]]"
-role: "Legal Counsel"
-source_created_at: 2023-09-16T08:39:00
-source_observed_at: 2023-09-16T10:59:00
-created_at: 2023-09-16T18:39:00
-updated_at: 2023-11-06T18:39:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-09-16T15:44:00
+source_observed_at: 2023-09-16T16:14:00
+created_at: 2023-09-18T02:44:00
+updated_at: 2023-11-06T09:44:00
 tags: [#person]
 ---
 # Clara Rostova
 
 ## Role
-Clara Rostova is the Legal Counsel at [[Summit Media]].
+Clara Rostova is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Summit Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Clara Rostova]] #follow-up

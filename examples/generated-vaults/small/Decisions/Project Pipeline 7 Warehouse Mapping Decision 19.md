@@ -4,10 +4,10 @@ date: 2023-10-03
 status: active
 project: "[[Project Pipeline 7]]"
 company: "[[Vanguard Labs]]"
-source_created_at: 2023-10-03T13:04:00
-source_observed_at: 2023-10-03T14:55:00
-created_at: 2023-10-03T15:00:00
-updated_at: 2023-10-04T05:00:00
+source_created_at: 2023-10-03T09:11:00
+source_observed_at: 2023-10-03T12:01:00
+created_at: 2023-10-03T14:09:00
+updated_at: 2023-10-04T09:09:00
 tags: [#decision]
 ---
 # Project Pipeline 7 Warehouse Mapping Decision 19

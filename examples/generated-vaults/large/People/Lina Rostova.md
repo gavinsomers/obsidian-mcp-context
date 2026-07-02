@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Helio Logistics]]"
-role: "Product Director"
-source_created_at: 2023-09-19T14:22:00
-source_observed_at: 2023-09-19T15:29:00
-created_at: 2023-09-21T06:22:00
-updated_at: 2023-11-03T10:40:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-09-19T09:38:00
+source_observed_at: 2023-09-19T10:32:00
+created_at: 2023-09-19T20:38:00
+updated_at: 2023-11-30T01:38:00
 tags: [#person]
 ---
 # Lina Rostova
 
 ## Role
-Lina Rostova is the Product Director at [[Helio Logistics]].
+Lina Rostova is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Helio Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Rostova]] #follow-up

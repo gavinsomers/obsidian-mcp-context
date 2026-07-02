@@ -3,18 +3,18 @@ type: meeting
 date: 2024-03-27
 project: "[[Project Atlas 16]]"
 company: "[[Northstar FinTech]]"
-source_created_at: 2024-03-27T09:33:00
-source_observed_at: 2024-03-27T11:19:00
-created_at: 2024-03-27T11:24:00
-updated_at: 2024-03-27T18:24:00
+source_created_at: 2024-03-27T09:09:00
+source_observed_at: 2024-03-27T09:36:00
+created_at: 2024-03-27T10:00:00
+updated_at: 2024-03-27T20:00:00
 tags: [#meeting]
 ---
 # Project Atlas 16 Metric Reconciliation Sync 236
 
 ## Attendees
-- [[Omar Alvarez]]
-- [[Elena Foster]]
-- [[Victor Jenkins]]
+- [[Grace Bennett]]
+- [[Alex Bennett]]
+- [[Rachel Grant]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Atlas 16]] at [[Northstar FinTech]].

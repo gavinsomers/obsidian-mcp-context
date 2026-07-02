@@ -3,11 +3,11 @@ type: decision
 date: 2024-06-22
 status: active
 project: "[[Project Meridian 36]]"
-company: "[[Meridian Labs]]"
-source_created_at: 2024-06-22T10:54:00
-source_observed_at: 2024-06-22T13:12:00
-created_at: 2024-06-22T16:17:00
-updated_at: 2024-06-23T00:17:00
+company: "[[Vanguard Labs]]"
+source_created_at: 2024-06-22T09:57:00
+source_observed_at: 2024-06-22T12:08:00
+created_at: 2024-06-22T13:15:00
+updated_at: 2024-06-22T19:15:00
 tags: [#decision]
 ---
 # Project Meridian 36 Lineage Audit Decision 86
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Meridian 36]].
 
 ## Context
-This decision applies to [[Meridian Labs]] and [[Project Meridian 36]].
+This decision applies to [[Vanguard Labs]] and [[Project Meridian 36]].
 It follows [[Project Meridian 36 Metric Reconciliation Sync 236]].
-It incorporates [[Project Meridian 36 Stakeholder Alignment Research 36]].
+It incorporates [[Project Meridian 36 Stakeholder Alignment Research 86]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

@@ -1,22 +1,19 @@
 ---
 type: company
 status: active
-segment: mid-market
-source_created_at: 2023-07-12T14:48:00
-source_observed_at: 2023-07-12T16:22:00
-created_at: 2023-07-13T19:48:00
-updated_at: 2023-08-09T19:48:00
+segment: enterprise
+source_created_at: 2023-07-14T09:16:00
+source_observed_at: 2023-07-14T11:31:00
+created_at: 2023-07-16T03:16:00
+updated_at: 2023-09-08T12:16:00
 tags: [#company]
 ---
 # Noble Retail
 
 ## Account Context
-Noble Retail is a mid-market account currently marked `active`.
+Noble Retail is a enterprise account currently marked `active`.
 
-## Stakeholders
-- [[Priya Bennett]] - SecOps Lead
-- [[Farah Grant]] - SecOps Lead
-- [[Wendy Kim]] - SecOps Lead
+## Assigned Account Team
 
 ## Projects
 

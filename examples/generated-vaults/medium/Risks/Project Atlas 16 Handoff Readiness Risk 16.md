@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Atlas 16]]"
-source_created_at: 2023-11-05T15:19:00
-source_observed_at: 2023-11-05T16:33:00
-created_at: 2023-11-07T05:19:00
-updated_at: 2023-11-13T11:19:00
+source_created_at: 2023-11-05T14:10:00
+source_observed_at: 2023-11-05T15:07:00
+created_at: 2023-11-06T00:10:00
+updated_at: 2023-11-24T10:10:00
 tags: [#risk]
 ---
 # Project Atlas 16 Handoff Readiness Risk 16
@@ -14,9 +14,9 @@ tags: [#risk]
 Handoff Readiness may affect [[Project Atlas 16]] for [[Northstar FinTech]].
 
 ## Evidence
-- Raised after [[Project Atlas 16 Metric Reconciliation Sync 66]]
+- Raised after [[Project Atlas 16 Metric Reconciliation Sync 16]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `closed`
 - Owner: [[Omar Alvarez]]
 - [ ] Reassess [[Project Atlas 16 Handoff Readiness Risk 16]] during the next review #risk

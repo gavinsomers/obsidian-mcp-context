@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-09-02
+date: 2023-10-18
 project: "[[Project Meridian 21]]"
 company: "[[Meridian FinTech]]"
-source_created_at: 2024-09-02T08:31:00
-source_observed_at: 2024-09-02T11:11:00
-created_at: 2024-09-02T14:06:00
-updated_at: 2024-09-03T04:06:00
+source_created_at: 2023-10-18T16:19:00
+source_observed_at: 2023-10-18T17:37:00
+created_at: 2023-10-18T20:39:00
+updated_at: 2023-10-19T17:39:00
 tags: [#meeting]
 ---
 # Project Meridian 21 Warehouse Mapping Sync 1121
 
 ## Attendees
-- [[Uma Alvarez]]
-- [[Jonah Foster]]
-- [[Alex Kim]]
+- [[Elena Novak]]
+- [[Marcus Chen]]
+- [[Lina Grant]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Meridian 21]] at [[Meridian FinTech]].
-[[Alex Kim]] flagged follow-up work for the next operating review.
+[[Uma Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 21]] to [[Alex Kim]] #follow-up
+- [ ] Send recap for [[Project Meridian 21]] to [[Uma Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

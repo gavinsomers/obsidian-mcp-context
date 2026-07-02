@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Logistics]]"
-role: "SecOps Lead"
-source_created_at: 2023-10-30T15:44:00
-source_observed_at: 2023-10-30T16:24:00
-created_at: 2023-11-01T05:44:00
-updated_at: 2023-11-17T09:44:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-10-30T09:14:00
+source_observed_at: 2023-10-30T09:56:00
+created_at: 2023-10-30T20:14:00
+updated_at: 2023-12-13T00:14:00
 tags: [#person]
 ---
 # Farah Walker
 
 ## Role
-Farah Walker is the SecOps Lead at [[Atlas Logistics]].
+Farah Walker is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Farah Walker]] #follow-up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Analytics]]"
-role: "Finance Sponsor"
-source_created_at: 2023-11-02T12:23:00
-source_observed_at: 2023-11-02T14:37:00
-created_at: 2023-11-03T00:23:00
-updated_at: 2023-11-30T03:23:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-11-02T16:49:00
+source_observed_at: 2023-11-02T19:35:00
+created_at: 2023-11-04T06:49:00
+updated_at: 2023-11-26T07:49:00
 tags: [#person]
 ---
 # Marcus Walker
 
 ## Role
-Marcus Walker is the Finance Sponsor at [[Northstar Analytics]].
+Marcus Walker is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Marcus Walker]] #follow-up

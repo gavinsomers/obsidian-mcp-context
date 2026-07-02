@@ -4,10 +4,10 @@ date: 2024-07-26
 status: active
 project: "[[Project Keystone 85]]"
 company: "[[Harbor Media]]"
-source_created_at: 2024-07-26T10:34:00
-source_observed_at: 2024-07-26T13:03:00
-created_at: 2024-07-26T13:17:00
-updated_at: 2024-07-27T00:17:00
+source_created_at: 2024-07-26T12:28:00
+source_observed_at: 2024-07-26T14:53:00
+created_at: 2024-07-26T17:00:00
+updated_at: 2024-07-27T00:00:00
 tags: [#decision]
 ---
 # Project Keystone 85 Contract Renewal Decision 305
@@ -17,7 +17,7 @@ Proceed with contract renewal for [[Project Keystone 85]].
 
 ## Context
 This decision applies to [[Harbor Media]] and [[Project Keystone 85]].
-It follows [[Project Keystone 85 Adoption Workflow Sync 1845]].
+It follows [[Project Keystone 85 Adoption Workflow Sync 305]].
 It incorporates [[Project Keystone 85 Warehouse Mapping Research 85]].
 
 ## Supersession

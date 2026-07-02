@@ -4,10 +4,10 @@ date: 2023-07-13
 status: active
 project: "[[Project Horizon 4]]"
 company: "[[BrightWave Labs]]"
-source_created_at: 2023-07-13T16:54:00
-source_observed_at: 2023-07-13T18:02:00
-created_at: 2023-07-22T23:54:00
-updated_at: 2023-07-23T06:54:00
+source_created_at: 2023-07-13T13:40:00
+source_observed_at: 2023-07-13T15:48:00
+created_at: 2023-07-13T15:53:00
+updated_at: 2023-07-14T12:53:00
 tags: [#decision]
 ---
 # Project Horizon 4 Metric Reconciliation Decision 4

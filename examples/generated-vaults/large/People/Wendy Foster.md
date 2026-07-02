@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Retail]]"
-role: "Operations Lead"
-source_created_at: 2023-06-10T13:45:00
-source_observed_at: 2023-06-10T14:24:00
-created_at: 2023-06-12T02:45:00
-updated_at: 2023-08-26T11:45:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-06-10T12:08:00
+source_observed_at: 2023-06-10T12:59:00
+created_at: 2023-06-11T06:08:00
+updated_at: 2023-06-25T11:08:00
 tags: [#person]
 ---
 # Wendy Foster
 
 ## Role
-Wendy Foster is the Operations Lead at [[Cobalt Retail]].
+Wendy Foster is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Cobalt Retail]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Compass 8]] ([[Quantum Labs]])
 - [ ] Confirm next update with [[Wendy Foster]] #follow-up

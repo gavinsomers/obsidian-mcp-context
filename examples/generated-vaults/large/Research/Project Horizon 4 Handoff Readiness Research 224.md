@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Horizon 4]]"
 company: "[[BrightWave Labs]]"
-source_created_at: 2024-06-04T14:08:00
-source_observed_at: 2024-06-04T15:46:00
-created_at: 2024-06-06T01:08:00
-updated_at: 2024-07-13T04:08:00
+source_created_at: 2024-06-04T13:58:00
+source_observed_at: 2024-06-04T14:29:00
+created_at: 2024-06-05T05:58:00
+updated_at: 2024-06-18T10:58:00
 tags: [#research]
 ---
 # Project Horizon 4 Handoff Readiness Research 224

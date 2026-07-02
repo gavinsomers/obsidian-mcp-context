@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Harbor 114]]"
-source_created_at: 2025-10-01T10:30:00
-source_observed_at: 2025-10-01T10:54:00
-created_at: 2025-10-03T02:30:00
-updated_at: 2025-10-20T06:30:00
+source_created_at: 2025-10-01T09:04:00
+source_observed_at: 2025-10-01T09:29:00
+created_at: 2025-10-02T06:04:00
+updated_at: 2025-11-11T16:04:00
 tags: [#risk]
 ---
 # Project Harbor 114 Lineage Audit Risk 554
@@ -18,5 +18,5 @@ Lineage Audit may affect [[Project Harbor 114]] for [[Atlas Analytics]].
 
 ## Current State
 - Status: `open`
-- Owner: [[Elena Shah]]
+- Owner: [[Iris Evans]]
 - [ ] Reassess [[Project Harbor 114 Lineage Audit Risk 554]] during the next review #risk

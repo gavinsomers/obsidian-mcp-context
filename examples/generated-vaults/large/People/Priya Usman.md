@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Pioneer Manufacturing]]"
-role: "Operations Lead"
-source_created_at: 2023-10-16T13:33:00
-source_observed_at: 2023-10-16T13:51:00
-created_at: 2023-10-17T08:33:00
-updated_at: 2024-01-08T17:33:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-10-16T15:22:00
+source_observed_at: 2023-10-16T17:19:00
+created_at: 2023-10-18T10:22:00
+updated_at: 2023-11-03T14:22:00
 tags: [#person]
 ---
 # Priya Usman
 
 ## Role
-Priya Usman is the Operations Lead at [[Pioneer Manufacturing]].
+Priya Usman is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Pioneer Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Usman]] #follow-up

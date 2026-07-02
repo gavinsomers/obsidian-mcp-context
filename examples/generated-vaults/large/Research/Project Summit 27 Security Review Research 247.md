@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Summit 27]]"
 company: "[[Pioneer FinTech]]"
-source_created_at: 2024-07-15T08:27:00
-source_observed_at: 2024-07-15T09:53:00
-created_at: 2024-07-16T12:27:00
-updated_at: 2024-07-23T22:27:00
+source_created_at: 2024-07-15T14:28:00
+source_observed_at: 2024-07-15T15:49:00
+created_at: 2024-07-16T06:28:00
+updated_at: 2024-08-21T10:28:00
 tags: [#research]
 ---
 # Project Summit 27 Security Review Research 247
@@ -14,7 +14,7 @@ tags: [#research]
 Research on security review for [[Project Summit 27]] and [[Pioneer FinTech]].
 
 ## Evidence
-- Interview notes from [[Farah Kim]]
+- Interview notes from [[Alex Bennett]]
 - Related operating review: [[Project Summit 27 Contract Renewal Sync 247]]
 
 ## Follow Up

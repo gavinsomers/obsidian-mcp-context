@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: blocked
 company: "[[Keystone Labs]]"
-source_created_at: 2023-07-18T13:09:00
-source_observed_at: 2023-07-18T14:36:00
-created_at: 2023-07-18T21:09:00
-updated_at: 2023-08-11T07:09:00
+source_created_at: 2023-07-18T13:26:00
+source_observed_at: 2023-07-18T15:05:00
+created_at: 2023-07-22T16:26:00
+updated_at: 2023-09-05T02:26:00
 tags: [#project]
 ---
 # Project Bridge 15
@@ -14,11 +14,12 @@ tags: [#project]
 Project Bridge 15 supports [[Keystone Labs]] through operations admin.
 
 ## Stakeholders
-- [[Nadia Alvarez]]
-- [[David Foster]]
-- [[Uma Jenkins]]
+- [[David Haddad]]
+- [[Hannah Haddad]]
+- [[Nadia Foster]]
+- [[Priya Haddad]]
 
 ## Operating Notes
-- Owner: [[Uma Jenkins]]
-- Status: `planning`
+- Owner: [[Nadia Alvarez]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Bridge 15]] #ops

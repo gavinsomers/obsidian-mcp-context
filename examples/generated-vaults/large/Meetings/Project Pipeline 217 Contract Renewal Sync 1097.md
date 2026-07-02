@@ -2,22 +2,22 @@
 type: meeting
 date: 2026-04-13
 project: "[[Project Pipeline 217]]"
-company: "[[Vanguard Logistics]]"
-source_created_at: 2026-04-13T14:40:00
-source_observed_at: 2026-04-13T15:26:00
-created_at: 2026-04-19T17:40:00
-updated_at: 2026-04-20T14:40:00
+company: "[[Quantum Logistics]]"
+source_created_at: 2026-04-13T10:15:00
+source_observed_at: 2026-04-13T12:36:00
+created_at: 2026-04-13T13:23:00
+updated_at: 2026-04-14T02:23:00
 tags: [#meeting]
 ---
 # Project Pipeline 217 Contract Renewal Sync 1097
 
 ## Attendees
-- [[Hannah Ivanov]]
-- [[Nadia Rostova]]
-- [[David Walker]]
+- [[Wendy Foster]]
+- [[Priya Usman]]
+- [[Nadia Haddad]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 217]] at [[Vanguard Logistics]].
+Contract Renewal reviewed for [[Project Pipeline 217]] at [[Quantum Logistics]].
 [[Hannah Ivanov]] flagged follow-up work for the next operating review.
 
 ## Action Items

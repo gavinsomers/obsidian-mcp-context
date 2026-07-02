@@ -4,10 +4,10 @@ date: 2026-03-09
 status: active
 project: "[[Project Beacon 62]]"
 company: "[[Apex Health]]"
-source_created_at: 2026-03-09T12:12:00
-source_observed_at: 2026-03-09T15:06:00
-created_at: 2026-03-09T16:35:00
-updated_at: 2026-03-10T01:35:00
+source_created_at: 2026-03-09T13:57:00
+source_observed_at: 2026-03-09T15:38:00
+created_at: 2026-03-09T15:43:00
+updated_at: 2026-03-09T16:43:00
 tags: [#decision]
 ---
 # Project Beacon 62 Finance Approval Decision 722

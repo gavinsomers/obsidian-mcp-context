@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-02-21
 project: "[[Project Summit 132]]"
-company: "[[Pioneer Labs]]"
-source_created_at: 2025-02-21T11:45:00
-source_observed_at: 2025-02-21T14:30:00
-created_at: 2025-02-21T14:35:00
-updated_at: 2025-02-22T09:35:00
+company: "[[Noble Labs]]"
+source_created_at: 2025-02-21T08:01:00
+source_observed_at: 2025-02-21T09:26:00
+created_at: 2025-02-21T09:46:00
+updated_at: 2025-02-22T07:46:00
 tags: [#meeting]
 ---
 # Project Summit 132 Stakeholder Alignment Sync 792
 
 ## Attendees
-- [[Xavier Shah]]
-- [[Amara Foster]]
-- [[Grace Ortega]]
+- [[Jonah Kim]]
+- [[Sam Jenkins]]
+- [[Amara Tan]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 132]] at [[Pioneer Labs]].
+Stakeholder Alignment reviewed for [[Project Summit 132]] at [[Noble Labs]].
 [[Amara Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items

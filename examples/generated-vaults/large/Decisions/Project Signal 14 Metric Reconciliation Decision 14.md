@@ -4,10 +4,10 @@ date: 2023-08-12
 status: active
 project: "[[Project Signal 14]]"
 company: "[[Crescent Labs]]"
-source_created_at: 2023-08-12T08:50:00
-source_observed_at: 2023-08-12T09:34:00
-created_at: 2023-08-12T12:17:00
-updated_at: 2023-08-13T08:17:00
+source_created_at: 2023-08-12T10:06:00
+source_observed_at: 2023-08-12T10:16:00
+created_at: 2023-08-12T11:52:00
+updated_at: 2023-08-13T09:52:00
 tags: [#decision]
 ---
 # Project Signal 14 Metric Reconciliation Decision 14

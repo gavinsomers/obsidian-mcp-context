@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-12-27
+date: 2025-05-03
 status: active
 project: "[[Project Pipeline 112]]"
 company: "[[Vanguard Analytics]]"
-source_created_at: 2024-12-27T10:55:00
-source_observed_at: 2024-12-27T11:32:00
-created_at: 2024-12-27T13:01:00
-updated_at: 2024-12-27T15:01:00
+source_created_at: 2025-05-03T09:58:00
+source_observed_at: 2025-05-03T11:54:00
+created_at: 2025-05-03T12:27:00
+updated_at: 2025-05-04T11:27:00
 tags: [#decision]
 ---
 # Project Pipeline 112 Finance Approval Decision 552

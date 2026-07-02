@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Beacon 47]]"
 company: "[[Apex Manufacturing]]"
-source_created_at: 2024-03-04T12:59:00
-source_observed_at: 2024-03-04T14:41:00
-created_at: 2024-03-05T20:59:00
-updated_at: 2024-04-02T21:59:00
+source_created_at: 2025-09-04T13:08:00
+source_observed_at: 2025-09-04T13:37:00
+created_at: 2025-09-06T09:08:00
+updated_at: 2025-10-12T20:08:00
 tags: [#research]
 ---
 # Project Beacon 47 Security Review Research 487
@@ -14,8 +14,8 @@ tags: [#research]
 Research on security review for [[Project Beacon 47]] and [[Apex Manufacturing]].
 
 ## Evidence
-- Interview notes from [[Jonah Grant]]
-- Related operating review: [[Project Beacon 47 Contract Renewal Sync 707]]
+- Interview notes from [[Uma Bennett]]
+- Related operating review: [[Project Beacon 47 Contract Renewal Sync 1367]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Beacon 47]] #research

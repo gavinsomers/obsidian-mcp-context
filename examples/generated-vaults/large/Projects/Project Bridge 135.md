@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Keystone Labs]]"
-source_created_at: 2025-02-26T13:43:00
-source_observed_at: 2025-02-26T14:33:00
-created_at: 2025-02-27T23:43:00
-updated_at: 2025-03-18T00:43:00
+status: closed
+company: "[[Northstar FinTech]]"
+source_created_at: 2025-02-26T15:09:00
+source_observed_at: 2025-02-26T15:21:00
+created_at: 2025-02-28T02:09:00
+updated_at: 2025-03-22T03:09:00
 tags: [#project]
 ---
 # Project Bridge 135
 
 ## Overview
-Project Bridge 135 supports [[Keystone Labs]] through operations admin.
+Project Bridge 135 supports [[Northstar FinTech]] through operations admin.
 
 ## Stakeholders
-- [[David Foster]]
-- [[Jonah Ortega]]
-- [[Uma Jenkins]]
-- [[Nadia Alvarez]]
+- [[Amara Walker]]
+- [[Uma Kim]]
+- [[Hannah Lee]]
+- [[Uma Evans]]
 
 ## Operating Notes
-- Owner: [[Alex Tan]]
-- Status: `active`
+- Owner: [[David Foster]]
+- Status: `closed`
+- Closed at: `2025-10-02`
 - [ ] Reconcile latest state for [[Project Bridge 135]] #ops

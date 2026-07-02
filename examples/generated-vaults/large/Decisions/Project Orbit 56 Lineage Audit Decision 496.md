@@ -4,10 +4,10 @@ date: 2025-04-22
 status: superseded
 project: "[[Project Orbit 56]]"
 company: "[[Summit Manufacturing]]"
-source_created_at: 2025-04-22T14:15:00
-source_observed_at: 2025-04-22T16:18:00
-created_at: 2025-04-22T19:58:00
-updated_at: 2025-04-23T06:58:00
+source_created_at: 2025-04-22T13:14:00
+source_observed_at: 2025-04-22T14:24:00
+created_at: 2025-04-22T16:13:00
+updated_at: 2025-04-22T22:13:00
 tags: [#decision]
 ---
 # Project Orbit 56 Lineage Audit Decision 496

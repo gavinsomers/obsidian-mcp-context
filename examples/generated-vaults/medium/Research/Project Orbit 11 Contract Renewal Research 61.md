@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Orbit 11]]"
 company: "[[Summit Labs]]"
-source_created_at: 2024-01-17T15:44:00
-source_observed_at: 2024-01-17T16:14:00
-created_at: 2024-01-19T02:44:00
-updated_at: 2024-02-08T09:44:00
+source_created_at: 2024-01-17T09:38:00
+source_observed_at: 2024-01-17T10:32:00
+created_at: 2024-01-17T20:38:00
+updated_at: 2024-02-18T01:38:00
 tags: [#research]
 ---
 # Project Orbit 11 Contract Renewal Research 61

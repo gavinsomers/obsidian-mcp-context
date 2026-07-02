@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Retail]]"
-role: "VP Data Engineering"
-source_created_at: 2023-05-05T12:06:00
-source_observed_at: 2023-05-05T12:34:00
-created_at: 2023-05-06T14:06:00
-updated_at: 2023-07-26T17:49:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-05-05T16:03:00
+source_observed_at: 2023-05-05T17:52:00
+created_at: 2023-05-06T20:03:00
+updated_at: 2023-07-28T06:03:00
 tags: [#person]
 ---
 # Sam Bennett
 
 ## Role
-Sam Bennett is the VP Data Engineering at [[Keystone Retail]].
+Sam Bennett is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Retail]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Venture 13]] ([[Noble Labs]])
 - [ ] Confirm next update with [[Sam Bennett]] #follow-up

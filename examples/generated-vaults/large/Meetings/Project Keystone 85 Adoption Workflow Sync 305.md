@@ -3,23 +3,23 @@ type: meeting
 date: 2024-07-05
 project: "[[Project Keystone 85]]"
 company: "[[Harbor Media]]"
-source_created_at: 2024-07-05T15:02:00
-source_observed_at: 2024-07-05T16:22:00
-created_at: 2024-07-05T16:27:00
-updated_at: 2024-07-06T07:27:00
+source_created_at: 2024-07-05T13:30:00
+source_observed_at: 2024-07-05T16:09:00
+created_at: 2024-07-09T20:30:00
+updated_at: 2024-07-10T00:30:00
 tags: [#meeting]
 ---
 # Project Keystone 85 Adoption Workflow Sync 305
 
 ## Attendees
-- [[Sam Vance]]
-- [[Wendy Haddad]]
-- [[Lina Morgan]]
+- [[David Morgan]]
+- [[Sam Usman]]
+- [[Rachel Patel]]
 
 ## Notes
 Adoption Workflow reviewed for [[Project Keystone 85]] at [[Harbor Media]].
-[[Sam Vance]] flagged follow-up work for the next operating review.
+[[Farah Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 85]] to [[Sam Vance]] #follow-up
+- [ ] Send recap for [[Project Keystone 85]] to [[Farah Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex Labs]]"
-role: "Finance Sponsor"
-source_created_at: 2023-05-31T10:21:00
-source_observed_at: 2023-05-31T12:02:00
-created_at: 2023-06-02T03:21:00
-updated_at: 2023-07-20T14:21:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-05-31T16:14:00
+source_observed_at: 2023-05-31T18:44:00
+created_at: 2023-06-01T19:14:00
+updated_at: 2023-07-15T20:14:00
 tags: [#person]
 ---
 # Rachel Evans
 
 ## Role
-Rachel Evans is the Finance Sponsor at [[Apex Labs]].
+Rachel Evans is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Beacon 2]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Rachel Evans]] #follow-up

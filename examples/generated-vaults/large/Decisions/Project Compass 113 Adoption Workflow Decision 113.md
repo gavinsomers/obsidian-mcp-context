@@ -4,10 +4,10 @@ date: 2024-12-12
 status: active
 project: "[[Project Compass 113]]"
 company: "[[Quantum Analytics]]"
-source_created_at: 2024-12-12T15:02:00
-source_observed_at: 2024-12-12T17:25:00
-created_at: 2024-12-12T17:34:00
-updated_at: 2024-12-12T20:34:00
+source_created_at: 2024-12-12T14:47:00
+source_observed_at: 2024-12-12T17:44:00
+created_at: 2024-12-12T20:03:00
+updated_at: 2024-12-13T06:03:00
 tags: [#decision]
 ---
 # Project Compass 113 Adoption Workflow Decision 113
@@ -17,7 +17,7 @@ Proceed with adoption workflow for [[Project Compass 113]].
 
 ## Context
 This decision applies to [[Quantum Analytics]] and [[Project Compass 113]].
-It follows [[Project Compass 113 Security Review Sync 993]].
+It follows [[Project Compass 113 Security Review Sync 1653]].
 It incorporates [[Project Compass 113 Pipeline Hygiene Research 113]].
 
 ## Supersession

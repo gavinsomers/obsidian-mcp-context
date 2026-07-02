@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-06-28
 project: "[[Project Compass 158]]"
-company: "[[Quantum Retail]]"
-source_created_at: 2025-06-28T16:09:00
-source_observed_at: 2025-06-28T16:43:00
-created_at: 2025-06-28T20:05:00
-updated_at: 2025-06-29T05:05:00
+company: "[[Atlas Retail]]"
+source_created_at: 2025-06-28T15:50:00
+source_observed_at: 2025-06-28T16:03:00
+created_at: 2025-06-28T20:36:00
+updated_at: 2025-06-29T10:36:00
 tags: [#meeting]
 ---
 # Project Compass 158 Lineage Audit Sync 1258
 
 ## Attendees
-- [[Rachel Kim]]
-- [[Xavier Tan]]
-- [[Kai Bennett]]
+- [[Ben Morgan]]
+- [[Grace Grant]]
+- [[Zoe Patel]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 158]] at [[Quantum Retail]].
-[[Rachel Kim]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 158]] at [[Atlas Retail]].
+[[Amara Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 158]] to [[Rachel Kim]] #follow-up
+- [ ] Send recap for [[Project Compass 158]] to [[Amara Grant]] #follow-up
 - [x] Capture meeting notes in vault #ops

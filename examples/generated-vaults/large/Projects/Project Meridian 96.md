@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: blocked
 company: "[[Meridian Logistics]]"
-source_created_at: 2024-08-19T09:53:00
-source_observed_at: 2024-08-19T11:25:00
-created_at: 2024-08-19T16:53:00
-updated_at: 2024-10-31T03:53:00
+source_created_at: 2024-08-19T12:29:00
+source_observed_at: 2024-08-19T14:30:00
+created_at: 2024-08-27T16:29:00
+updated_at: 2024-09-29T18:29:00
 tags: [#project]
 ---
 # Project Meridian 96
@@ -14,12 +14,12 @@ tags: [#project]
 Project Meridian 96 supports [[Meridian Logistics]] through consulting delivery.
 
 ## Stakeholders
-- [[Xavier Morgan]]
-- [[Clara Walker]]
-- [[Marcus Rostova]]
 - [[Grace Ivanov]]
+- [[Marcus Walker]]
+- [[Jonah Quinn]]
+- [[Elena Bennett]]
 
 ## Operating Notes
 - Owner: [[Rachel Diaz]]
-- Status: `active`
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Meridian 96]] #ops

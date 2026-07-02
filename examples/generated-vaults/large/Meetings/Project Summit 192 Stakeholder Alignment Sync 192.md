@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-12-13
 project: "[[Project Summit 192]]"
-company: "[[Pioneer Health]]"
-source_created_at: 2025-12-13T09:58:00
-source_observed_at: 2025-12-13T11:59:00
-created_at: 2025-12-20T09:58:00
-updated_at: 2025-12-20T15:58:00
+company: "[[Noble Health]]"
+source_created_at: 2025-12-13T10:15:00
+source_observed_at: 2025-12-13T10:39:00
+created_at: 2025-12-13T12:41:00
+updated_at: 2025-12-14T09:41:00
 tags: [#meeting]
 ---
 # Project Summit 192 Stakeholder Alignment Sync 192
 
 ## Attendees
-- [[Zoe Lee]]
-- [[Tara Chen]]
-- [[Iris Haddad]]
+- [[Jonah Quinn]]
+- [[Grace Foster]]
+- [[Wendy Usman]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 192]] at [[Pioneer Health]].
+Stakeholder Alignment reviewed for [[Project Summit 192]] at [[Noble Health]].
 [[Iris Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items

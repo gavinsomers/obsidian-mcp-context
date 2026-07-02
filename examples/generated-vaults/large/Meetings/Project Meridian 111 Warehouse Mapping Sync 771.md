@@ -1,20 +1,20 @@
 ---
 type: meeting
-date: 2025-05-07
+date: 2026-04-15
 project: "[[Project Meridian 111]]"
 company: "[[Meridian Analytics]]"
-source_created_at: 2025-05-07T16:47:00
-source_observed_at: 2025-05-07T17:45:00
-created_at: 2025-05-07T18:24:00
-updated_at: 2025-05-07T20:24:00
+source_created_at: 2026-04-15T08:54:00
+source_observed_at: 2026-04-15T09:11:00
+created_at: 2026-04-15T09:16:00
+updated_at: 2026-04-15T18:16:00
 tags: [#meeting]
 ---
 # Project Meridian 111 Warehouse Mapping Sync 771
 
 ## Attendees
-- [[Sam Walker]]
-- [[Farah Evans]]
-- [[Ben Shah]]
+- [[Zoe Quinn]]
+- [[Grace Foster]]
+- [[Jonah Kim]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Meridian 111]] at [[Meridian Analytics]].

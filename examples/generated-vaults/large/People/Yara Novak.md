@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Labs]]"
-role: "SecOps Lead"
-source_created_at: 2023-08-19T14:33:00
-source_observed_at: 2023-08-19T17:19:00
-created_at: 2023-08-21T11:33:00
-updated_at: 2023-10-03T17:33:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-08-19T14:14:00
+source_observed_at: 2023-08-19T15:15:00
+created_at: 2023-08-19T20:14:00
+updated_at: 2023-09-25T03:14:00
 tags: [#person]
 ---
 # Yara Novak
 
 ## Role
-Yara Novak is the SecOps Lead at [[Cobalt Labs]].
+Yara Novak is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Foundry 3]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Novak]] #follow-up

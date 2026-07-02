@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Labs]]"
-role: "SecOps Lead"
-source_created_at: 2023-09-28T15:59:00
-source_observed_at: 2023-09-28T17:19:00
-created_at: 2023-09-30T13:59:00
-updated_at: 2023-11-24T17:59:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-09-28T16:02:00
+source_observed_at: 2023-09-28T17:50:00
+created_at: 2023-09-29T13:02:00
+updated_at: 2023-12-01T14:02:00
 tags: [#person]
 ---
 # Nadia Shah
 
 ## Role
-Nadia Shah is the SecOps Lead at [[Cobalt Labs]].
+Nadia Shah is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Foundry 3]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Nadia Shah]] #follow-up

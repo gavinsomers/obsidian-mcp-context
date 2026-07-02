@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Lantern 170]]"
-company: "[[Helio Manufacturing]]"
-source_created_at: 2026-04-07T11:13:00
-source_observed_at: 2026-04-07T12:10:00
-created_at: 2026-04-09T04:13:00
-updated_at: 2026-04-16T15:13:00
+company: "[[Meridian Manufacturing]]"
+source_created_at: 2026-04-07T08:03:00
+source_observed_at: 2026-04-07T08:36:00
+created_at: 2026-04-08T15:03:00
+updated_at: 2026-05-16T16:03:00
 tags: [#research]
 ---
 # Project Lantern 170 Metric Reconciliation Research 610
 
 ## Research Summary
-Research on metric reconciliation for [[Project Lantern 170]] and [[Helio Manufacturing]].
+Research on metric reconciliation for [[Project Lantern 170]] and [[Meridian Manufacturing]].
 
 ## Evidence
-- Interview notes from [[Iris Usman]]
+- Interview notes from [[Marcus Grant]]
 - Related operating review: [[Project Lantern 170 Handoff Readiness Sync 1490]]
 
 ## Follow Up

@@ -3,18 +3,18 @@ type: meeting
 date: 2026-02-25
 project: "[[Project Atlas 76]]"
 company: "[[Northstar Media]]"
-source_created_at: 2026-02-25T13:20:00
-source_observed_at: 2026-02-25T15:12:00
-created_at: 2026-02-25T18:01:00
-updated_at: 2026-02-26T01:01:00
+source_created_at: 2026-02-25T10:19:00
+source_observed_at: 2026-02-25T12:49:00
+created_at: 2026-02-25T12:54:00
+updated_at: 2026-02-26T04:54:00
 tags: [#meeting]
 ---
 # Project Atlas 76 Metric Reconciliation Sync 736
 
 ## Attendees
-- [[Xavier Chen]]
-- [[Marcus Haddad]]
-- [[Clara Morgan]]
+- [[Priya Evans]]
+- [[Farah Patel]]
+- [[Clara Walker]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Atlas 76]] at [[Northstar Media]].

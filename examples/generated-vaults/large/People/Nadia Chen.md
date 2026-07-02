@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Health]]"
-role: "SecOps Lead"
-source_created_at: 2023-05-13T15:02:00
-source_observed_at: 2023-05-13T15:56:00
-created_at: 2023-05-14T02:02:00
-updated_at: 2023-09-08T10:59:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-05-13T08:24:00
+source_observed_at: 2023-05-13T08:46:00
+created_at: 2023-05-14T22:24:00
+updated_at: 2023-06-25T01:24:00
 tags: [#person]
 ---
 # Nadia Chen
 
 ## Role
-Nadia Chen is the SecOps Lead at [[Vanguard Health]].
+Nadia Chen is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Vanguard Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Nadia Chen]] #follow-up

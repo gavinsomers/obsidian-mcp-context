@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Health]]"
-role: "Operations Lead"
-source_created_at: 2023-10-22T12:10:00
-source_observed_at: 2023-10-22T13:26:00
-created_at: 2023-10-23T13:10:00
-updated_at: 2023-12-12T13:10:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-10-22T12:12:00
+source_observed_at: 2023-10-22T12:27:00
+created_at: 2023-10-30T13:12:00
+updated_at: 2024-01-17T19:12:00
 tags: [#person]
 ---
 # Farah Vance
 
 ## Role
-Farah Vance is the Operations Lead at [[Noble Health]].
+Farah Vance is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Farah Vance]] #follow-up

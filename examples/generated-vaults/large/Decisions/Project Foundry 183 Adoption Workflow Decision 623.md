@@ -3,11 +3,11 @@ type: decision
 date: 2025-11-20
 status: active
 project: "[[Project Foundry 183]]"
-company: "[[Cobalt Health]]"
-source_created_at: 2025-11-20T12:17:00
-source_observed_at: 2025-11-20T12:54:00
-created_at: 2025-11-22T12:17:00
-updated_at: 2025-11-22T22:17:00
+company: "[[BrightWave Health]]"
+source_created_at: 2025-11-20T15:41:00
+source_observed_at: 2025-11-20T18:33:00
+created_at: 2025-11-20T18:38:00
+updated_at: 2025-11-21T03:38:00
 tags: [#decision]
 ---
 # Project Foundry 183 Adoption Workflow Decision 623
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Foundry 183]].
 
 ## Context
-This decision applies to [[Cobalt Health]] and [[Project Foundry 183]].
+This decision applies to [[BrightWave Health]] and [[Project Foundry 183]].
 It follows [[Project Foundry 183 Security Review Sync 1063]].
 It incorporates [[Project Foundry 183 Pipeline Hygiene Research 403]].
 

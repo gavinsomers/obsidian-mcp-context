@@ -4,10 +4,10 @@ date: 2024-06-28
 status: superseded
 project: "[[Project Pipeline 67]]"
 company: "[[Vanguard Health]]"
-source_created_at: 2024-06-28T12:56:00
-source_observed_at: 2024-06-28T14:03:00
-created_at: 2024-06-28T15:27:00
-updated_at: 2024-06-29T14:27:00
+source_created_at: 2024-06-28T09:03:00
+source_observed_at: 2024-06-28T09:35:00
+created_at: 2024-07-06T15:03:00
+updated_at: 2024-07-06T17:03:00
 tags: [#decision]
 ---
 # Project Pipeline 67 Pipeline Hygiene Decision 287

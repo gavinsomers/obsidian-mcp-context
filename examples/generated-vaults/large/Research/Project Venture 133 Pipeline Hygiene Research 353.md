@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Venture 133]]"
-company: "[[Noble Labs]]"
-source_created_at: 2025-03-13T10:59:00
-source_observed_at: 2025-03-13T11:32:00
-created_at: 2025-03-14T06:59:00
-updated_at: 2025-03-22T11:59:00
+company: "[[Crescent Labs]]"
+source_created_at: 2025-03-13T14:57:00
+source_observed_at: 2025-03-13T15:34:00
+created_at: 2025-03-14T07:57:00
+updated_at: 2025-04-22T16:57:00
 tags: [#research]
 ---
 # Project Venture 133 Pipeline Hygiene Research 353
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Venture 133]] and [[Noble Labs]].
+Research on pipeline hygiene for [[Project Venture 133]] and [[Crescent Labs]].
 
 ## Evidence
-- Interview notes from [[Sam Jenkins]]
-- Related operating review: [[Project Venture 133 Security Review Sync 133]]
+- Interview notes from [[Ben Foster]]
+- Related operating review: [[Project Venture 133 Security Review Sync 1673]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Venture 133]] #research

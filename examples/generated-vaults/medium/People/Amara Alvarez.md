@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Apex Labs]]"
-role: "Finance Sponsor"
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
 source_created_at: 2023-04-21T12:44:00
 source_observed_at: 2023-04-21T14:50:00
 created_at: 2023-04-25T16:44:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Amara Alvarez
 
 ## Role
-Amara Alvarez is the Finance Sponsor at [[Apex Labs]].
+Amara Alvarez is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Beacon 2]]
+## Active Project Allocations
+- Managing/Supporting [[Project Beacon 2]] ([[Apex Labs]])
 - [ ] Confirm next update with [[Amara Alvarez]] #follow-up

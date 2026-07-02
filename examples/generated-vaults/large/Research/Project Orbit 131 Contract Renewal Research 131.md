@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Orbit 131]]"
-company: "[[Summit Labs]]"
-source_created_at: 2025-03-02T10:06:00
-source_observed_at: 2025-03-02T12:23:00
-created_at: 2025-03-03T06:06:00
-updated_at: 2025-04-09T14:06:00
+company: "[[Pioneer Labs]]"
+source_created_at: 2025-03-02T14:36:00
+source_observed_at: 2025-03-02T14:49:00
+created_at: 2025-03-04T08:36:00
+updated_at: 2025-03-11T16:36:00
 tags: [#research]
 ---
 # Project Orbit 131 Contract Renewal Research 131
 
 ## Research Summary
-Research on contract renewal for [[Project Orbit 131]] and [[Summit Labs]].
+Research on contract renewal for [[Project Orbit 131]] and [[Pioneer Labs]].
 
 ## Evidence
-- Interview notes from [[Jonah Alvarez]]
-- Related operating review: [[Project Orbit 131 Warehouse Mapping Sync 131]]
+- Interview notes from [[Alex Foster]]
+- Related operating review: [[Project Orbit 131 Warehouse Mapping Sync 1231]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Orbit 131]] #research

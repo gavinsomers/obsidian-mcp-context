@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-27
 status: active
 project: "[[Project Meridian 141]]"
-company: "[[Meridian FinTech]]"
-source_created_at: 2025-04-27T09:21:00
-source_observed_at: 2025-04-27T11:34:00
-created_at: 2025-04-27T15:09:00
-updated_at: 2025-04-27T16:09:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2025-04-27T11:50:00
+source_observed_at: 2025-04-27T13:14:00
+created_at: 2025-04-27T17:18:00
+updated_at: 2025-04-28T04:18:00
 tags: [#decision]
 ---
 # Project Meridian 141 Security Review Decision 361
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with security review for [[Project Meridian 141]].
 
 ## Context
-This decision applies to [[Meridian FinTech]] and [[Project Meridian 141]].
-It follows [[Project Meridian 141 Warehouse Mapping Sync 361]].
+This decision applies to [[Vanguard FinTech]] and [[Project Meridian 141]].
+It follows [[Project Meridian 141 Warehouse Mapping Sync 801]].
 It incorporates [[Project Meridian 141 Contract Renewal Research 361]].
 
 ## Supersession

@@ -4,10 +4,10 @@ date: 2024-07-18
 status: active
 project: "[[Project Meridian 81]]"
 company: "[[Meridian Media]]"
-source_created_at: 2024-07-18T08:21:00
-source_observed_at: 2024-07-18T08:42:00
-created_at: 2024-07-18T10:39:00
-updated_at: 2024-07-18T21:39:00
+source_created_at: 2024-07-18T14:59:00
+source_observed_at: 2024-07-18T17:17:00
+created_at: 2024-07-18T18:00:00
+updated_at: 2024-07-19T17:00:00
 tags: [#decision]
 ---
 # Project Meridian 81 Security Review Decision 301

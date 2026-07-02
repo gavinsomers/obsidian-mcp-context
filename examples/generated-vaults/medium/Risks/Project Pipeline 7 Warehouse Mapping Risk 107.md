@@ -2,10 +2,10 @@
 type: risk
 status: mitigating
 project: "[[Project Pipeline 7]]"
-source_created_at: 2024-07-18T11:38:00
-source_observed_at: 2024-07-18T12:47:00
-created_at: 2024-07-18T14:38:00
-updated_at: 2024-08-12T15:38:00
+source_created_at: 2024-07-18T15:25:00
+source_observed_at: 2024-07-18T16:52:00
+created_at: 2024-07-19T11:25:00
+updated_at: 2024-08-20T13:25:00
 tags: [#risk]
 ---
 # Project Pipeline 7 Warehouse Mapping Risk 107
@@ -18,5 +18,5 @@ Warehouse Mapping may affect [[Project Pipeline 7]] for [[Vanguard Labs]].
 
 ## Current State
 - Status: `mitigating`
-- Owner: [[Jonah Bennett]]
+- Owner: [[Farah Alvarez]]
 - [ ] Reassess [[Project Pipeline 7 Warehouse Mapping Risk 107]] during the next review #risk

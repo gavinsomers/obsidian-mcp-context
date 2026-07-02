@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 21]]"
 company: "[[Meridian FinTech]]"
-source_created_at: 2023-09-09T16:59:00
-source_observed_at: 2023-09-09T19:19:00
-created_at: 2023-09-10T18:59:00
-updated_at: 2023-10-06T00:59:00
+source_created_at: 2023-09-09T15:26:00
+source_observed_at: 2023-09-09T18:23:00
+created_at: 2023-09-09T21:26:00
+updated_at: 2023-10-23T03:26:00
 tags: [#research]
 ---
 # Project Meridian 21 Contract Renewal Research 21
@@ -14,8 +14,8 @@ tags: [#research]
 Research on contract renewal for [[Project Meridian 21]] and [[Meridian FinTech]].
 
 ## Evidence
-- Interview notes from [[Alex Kim]]
-- Related operating review: [[Project Meridian 21 Warehouse Mapping Sync 21]]
+- Interview notes from [[Uma Alvarez]]
+- Related operating review: [[Project Meridian 21 Warehouse Mapping Sync 1561]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Meridian 21]] #research

@@ -4,10 +4,10 @@ date: 2024-08-22
 status: active
 project: "[[Project Summit 12]]"
 company: "[[Pioneer Labs]]"
-source_created_at: 2024-08-22T09:36:00
-source_observed_at: 2024-08-22T11:51:00
-created_at: 2024-08-22T14:22:00
-updated_at: 2024-08-23T09:22:00
+source_created_at: 2024-08-22T15:37:00
+source_observed_at: 2024-08-22T15:52:00
+created_at: 2024-08-22T19:00:00
+updated_at: 2024-08-23T14:00:00
 tags: [#decision]
 ---
 # Project Summit 12 Finance Approval Decision 112

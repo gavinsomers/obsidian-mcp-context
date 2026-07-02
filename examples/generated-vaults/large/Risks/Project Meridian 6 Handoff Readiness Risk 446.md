@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Meridian 6]]"
-source_created_at: 2023-08-17T10:08:00
-source_observed_at: 2023-08-17T13:00:00
-created_at: 2023-08-17T16:08:00
-updated_at: 2023-09-12T01:08:00
+source_created_at: 2025-04-11T15:46:00
+source_observed_at: 2025-04-11T16:25:00
+created_at: 2025-04-13T12:46:00
+updated_at: 2025-05-18T20:46:00
 tags: [#risk]
 ---
 # Project Meridian 6 Handoff Readiness Risk 446
@@ -14,9 +14,9 @@ tags: [#risk]
 Handoff Readiness may affect [[Project Meridian 6]] for [[Meridian Labs]].
 
 ## Evidence
-- Raised after [[Project Meridian 6 Metric Reconciliation Sync 1106]]
+- Raised after [[Project Meridian 6 Metric Reconciliation Sync 446]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Victor Evans]]
+- Status: `closed`
+- Owner: [[Elena Alvarez]]
 - [ ] Reassess [[Project Meridian 6 Handoff Readiness Risk 446]] during the next review #risk

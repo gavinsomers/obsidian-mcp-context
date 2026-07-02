@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Atlas 46]]"
-source_created_at: 2024-06-14T14:44:00
-source_observed_at: 2024-06-14T16:32:00
-created_at: 2024-06-16T04:44:00
-updated_at: 2024-07-18T05:44:00
+source_created_at: 2024-07-01T09:49:00
+source_observed_at: 2024-07-01T11:09:00
+created_at: 2024-07-01T12:49:00
+updated_at: 2024-07-28T17:49:00
 tags: [#risk]
 ---
 # Project Atlas 46 Handoff Readiness Risk 266
@@ -14,7 +14,7 @@ tags: [#risk]
 Handoff Readiness may affect [[Project Atlas 46]] for [[Northstar Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Atlas 46 Metric Reconciliation Sync 706]]
+- Raised after [[Project Atlas 46 Metric Reconciliation Sync 266]]
 
 ## Current State
 - Status: `open`

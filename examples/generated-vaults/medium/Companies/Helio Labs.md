@@ -1,24 +1,19 @@
 ---
 type: company
 status: active
-segment: smb
-source_created_at: 2023-04-27T11:04:00
-source_observed_at: 2023-04-27T13:45:00
-created_at: 2023-04-29T05:04:00
-updated_at: 2023-06-13T06:04:00
+segment: enterprise
+source_created_at: 2023-04-29T12:54:00
+source_observed_at: 2023-04-29T15:37:00
+created_at: 2023-05-01T02:54:00
+updated_at: 2023-05-20T07:54:00
 tags: [#company]
 ---
 # Helio Labs
 
 ## Account Context
-Helio Labs is a smb account currently marked `active`.
+Helio Labs is a enterprise account currently marked `active`.
 
-## Stakeholders
-- [[David Alvarez]] - VP Data Engineering
-- [[Hannah Bennett]] - SecOps Lead
-- [[Lina Chen]] - Operations Lead
-- [[Priya Diaz]] - Product Director
-- [[Uma Evans]] - VP Data Engineering
+## Assigned Account Team
 
 ## Projects
 

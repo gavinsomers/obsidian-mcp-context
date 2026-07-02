@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[BrightWave Labs]]"
-role: "Implementation Manager"
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
 source_created_at: 2023-06-01T08:25:00
 source_observed_at: 2023-06-01T10:43:00
 created_at: 2023-06-02T10:25:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Tara Evans
 
 ## Role
-Tara Evans is the Implementation Manager at [[BrightWave Labs]].
+Tara Evans is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Horizon 4]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Tara Evans]] #follow-up

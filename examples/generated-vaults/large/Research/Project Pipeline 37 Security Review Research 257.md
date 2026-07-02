@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Pipeline 37]]"
 company: "[[Vanguard Retail]]"
-source_created_at: 2024-07-31T11:03:00
-source_observed_at: 2024-07-31T11:59:00
-created_at: 2024-08-01T16:03:00
-updated_at: 2024-08-23T17:03:00
+source_created_at: 2024-07-31T09:16:00
+source_observed_at: 2024-07-31T09:46:00
+created_at: 2024-08-01T02:16:00
+updated_at: 2024-08-21T11:16:00
 tags: [#research]
 ---
 # Project Pipeline 37 Security Review Research 257
@@ -14,7 +14,7 @@ tags: [#research]
 Research on security review for [[Project Pipeline 37]] and [[Vanguard Retail]].
 
 ## Evidence
-- Interview notes from [[Alex Grant]]
+- Interview notes from [[Jonah Bennett]]
 - Related operating review: [[Project Pipeline 37 Contract Renewal Sync 257]]
 
 ## Follow Up

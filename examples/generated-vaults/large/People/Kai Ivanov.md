@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Logistics]]"
-role: "Implementation Manager"
-source_created_at: 2023-07-03T09:14:00
-source_observed_at: 2023-07-03T11:00:00
-created_at: 2023-07-03T17:14:00
-updated_at: 2023-11-13T17:02:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-07-03T15:16:00
+source_observed_at: 2023-07-03T16:44:00
+created_at: 2023-07-05T14:16:00
+updated_at: 2023-09-08T01:16:00
 tags: [#person]
 ---
 # Kai Ivanov
 
 ## Role
-Kai Ivanov is the Implementation Manager at [[Harbor Logistics]].
+Kai Ivanov is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Ivanov]] #follow-up

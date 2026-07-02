@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Labs]]"
-role: "Implementation Manager"
-source_created_at: 2023-04-22T16:49:00
-source_observed_at: 2023-04-22T17:31:00
-created_at: 2023-04-24T00:49:00
-updated_at: 2023-07-17T02:49:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-04-22T14:46:00
+source_observed_at: 2023-04-22T16:22:00
+created_at: 2023-04-22T22:46:00
+updated_at: 2023-06-07T01:46:00
 tags: [#person]
 ---
 # Clara Alvarez
 
 ## Role
-Clara Alvarez is the Implementation Manager at [[BrightWave Labs]].
+Clara Alvarez is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Horizon 4]]
+## Active Project Allocations
+- Managing/Supporting [[Project Atlas 1]] ([[Northstar Labs]])
 - [ ] Confirm next update with [[Clara Alvarez]] #follow-up

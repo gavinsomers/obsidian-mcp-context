@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Lantern 5]]"
 company: "[[Helio Labs]]"
-source_created_at: 2025-06-24T16:43:00
-source_observed_at: 2025-06-24T18:44:00
-created_at: 2025-06-25T23:43:00
-updated_at: 2025-07-27T10:43:00
+source_created_at: 2025-06-24T14:50:00
+source_observed_at: 2025-06-24T16:41:00
+created_at: 2025-06-26T11:50:00
+updated_at: 2025-08-06T18:50:00
 tags: [#research]
 ---
 # Project Lantern 5 Warehouse Mapping Research 445

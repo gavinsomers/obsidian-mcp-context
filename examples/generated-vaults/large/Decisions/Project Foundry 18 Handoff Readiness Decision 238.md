@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-04-22
+date: 2024-03-01
 status: active
 project: "[[Project Foundry 18]]"
 company: "[[Cobalt FinTech]]"
-source_created_at: 2024-04-22T08:52:00
-source_observed_at: 2024-04-22T09:56:00
-created_at: 2024-04-22T14:48:00
-updated_at: 2024-04-22T17:48:00
+source_created_at: 2024-03-01T15:16:00
+source_observed_at: 2024-03-01T17:58:00
+created_at: 2024-03-07T18:16:00
+updated_at: 2024-03-08T12:16:00
 tags: [#decision]
 ---
 # Project Foundry 18 Handoff Readiness Decision 238
@@ -17,8 +17,8 @@ Proceed with handoff readiness for [[Project Foundry 18]].
 
 ## Context
 This decision applies to [[Cobalt FinTech]] and [[Project Foundry 18]].
-It follows [[Project Foundry 18 Lineage Audit Sync 238]].
-It incorporates [[Project Foundry 18 Finance Approval Research 18]].
+It follows [[Project Foundry 18 Lineage Audit Sync 1338]].
+It incorporates [[Project Foundry 18 Finance Approval Research 458]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

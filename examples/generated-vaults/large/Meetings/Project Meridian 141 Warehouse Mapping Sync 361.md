@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-04-06
 project: "[[Project Meridian 141]]"
-company: "[[Meridian FinTech]]"
-source_created_at: 2025-04-06T14:09:00
-source_observed_at: 2025-04-06T17:01:00
-created_at: 2025-04-09T17:09:00
-updated_at: 2025-04-09T23:09:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2025-04-06T09:57:00
+source_observed_at: 2025-04-06T12:44:00
+created_at: 2025-04-06T13:15:00
+updated_at: 2025-04-07T01:15:00
 tags: [#meeting]
 ---
 # Project Meridian 141 Warehouse Mapping Sync 361
 
 ## Attendees
-- [[Alex Kim]]
-- [[Uma Alvarez]]
-- [[Farah Tan]]
+- [[Amara Chen]]
+- [[Grace Quinn]]
+- [[Yara Diaz]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 141]] at [[Meridian FinTech]].
-[[Uma Alvarez]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 141]] at [[Vanguard FinTech]].
+[[Jonah Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 141]] to [[Uma Alvarez]] #follow-up
+- [ ] Send recap for [[Project Meridian 141]] to [[Jonah Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

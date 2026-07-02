@@ -4,10 +4,10 @@ date: 2025-04-07
 status: superseded
 project: "[[Project Bridge 45]]"
 company: "[[Keystone Retail]]"
-source_created_at: 2025-04-07T09:05:00
-source_observed_at: 2025-04-07T09:42:00
-created_at: 2025-04-07T10:59:00
-updated_at: 2025-04-07T16:59:00
+source_created_at: 2025-04-07T09:31:00
+source_observed_at: 2025-04-07T11:48:00
+created_at: 2025-04-07T13:31:00
+updated_at: 2025-04-07T23:31:00
 tags: [#decision]
 ---
 # Project Bridge 45 Contract Renewal Decision 485

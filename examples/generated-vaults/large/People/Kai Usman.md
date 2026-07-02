@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Manufacturing]]"
-role: "Implementation Manager"
-source_created_at: 2023-10-15T14:30:00
-source_observed_at: 2023-10-15T15:05:00
-created_at: 2023-10-16T07:30:00
-updated_at: 2023-11-09T15:30:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-10-15T16:53:00
+source_observed_at: 2023-10-15T17:34:00
+created_at: 2023-10-17T04:53:00
+updated_at: 2024-01-07T08:53:00
 tags: [#person]
 ---
 # Kai Usman
 
 ## Role
-Kai Usman is the Implementation Manager at [[Vanguard Manufacturing]].
+Kai Usman is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Vanguard Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Usman]] #follow-up

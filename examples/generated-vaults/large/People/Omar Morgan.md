@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Media]]"
-role: "Customer Success Manager"
-source_created_at: 2023-08-08T14:32:00
-source_observed_at: 2023-08-08T16:08:00
-created_at: 2023-08-10T02:32:00
-updated_at: 2023-10-20T16:53:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-08-08T10:20:00
+source_observed_at: 2023-08-08T12:38:00
+created_at: 2023-08-08T21:20:00
+updated_at: 2023-08-29T07:20:00
 tags: [#person]
 ---
 # Omar Morgan
 
 ## Role
-Omar Morgan is the Customer Success Manager at [[Noble Media]].
+Omar Morgan is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Omar Morgan]] #follow-up

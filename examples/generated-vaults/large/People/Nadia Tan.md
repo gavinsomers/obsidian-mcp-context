@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent FinTech]]"
-role: "VP Data Engineering"
-source_created_at: 2023-10-07T09:50:00
-source_observed_at: 2023-10-07T12:41:00
-created_at: 2023-10-07T21:50:00
-updated_at: 2023-10-24T04:50:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-10-07T14:12:00
+source_observed_at: 2023-10-07T15:45:00
+created_at: 2023-10-07T23:12:00
+updated_at: 2023-12-02T02:12:00
 tags: [#person]
 ---
 # Nadia Tan
 
 ## Role
-Nadia Tan is the VP Data Engineering at [[Crescent FinTech]].
+Nadia Tan is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Signal 29]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Nadia Tan]] #follow-up

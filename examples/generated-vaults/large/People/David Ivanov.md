@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Logistics]]"
-role: "VP Data Engineering"
-source_created_at: 2023-06-30T11:26:00
-source_observed_at: 2023-06-30T13:00:00
-created_at: 2023-07-01T19:26:00
-updated_at: 2023-10-30T14:13:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-06-30T11:51:00
+source_observed_at: 2023-06-30T14:04:00
+created_at: 2023-07-01T13:51:00
+updated_at: 2023-08-28T22:51:00
 tags: [#person]
 ---
 # David Ivanov
 
 ## Role
-David Ivanov is the VP Data Engineering at [[Cobalt Logistics]].
+David Ivanov is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Cobalt Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[David Ivanov]] #follow-up

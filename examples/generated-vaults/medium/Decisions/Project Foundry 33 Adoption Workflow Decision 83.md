@@ -3,11 +3,11 @@ type: decision
 date: 2024-05-20
 status: active
 project: "[[Project Foundry 33]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2024-05-20T12:42:00
-source_observed_at: 2024-05-20T12:54:00
-created_at: 2024-05-20T13:55:00
-updated_at: 2024-05-21T09:55:00
+company: "[[BrightWave Labs]]"
+source_created_at: 2024-05-20T12:35:00
+source_observed_at: 2024-05-20T12:55:00
+created_at: 2024-05-28T13:35:00
+updated_at: 2024-05-29T02:35:00
 tags: [#decision]
 ---
 # Project Foundry 33 Adoption Workflow Decision 83
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Foundry 33]].
 
 ## Context
-This decision applies to [[Cobalt Labs]] and [[Project Foundry 33]].
-It follows [[Project Foundry 33 Security Review Sync 33]].
-It incorporates [[Project Foundry 33 Pipeline Hygiene Research 83]].
+This decision applies to [[BrightWave Labs]] and [[Project Foundry 33]].
+It follows [[Project Foundry 33 Security Review Sync 83]].
+It incorporates [[Project Foundry 33 Pipeline Hygiene Research 33]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

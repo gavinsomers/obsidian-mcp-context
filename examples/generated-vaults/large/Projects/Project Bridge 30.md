@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: planning
 company: "[[Keystone FinTech]]"
-source_created_at: 2023-09-28T14:36:00
-source_observed_at: 2023-09-28T16:57:00
-created_at: 2023-09-29T09:36:00
-updated_at: 2023-10-15T20:36:00
+source_created_at: 2023-09-28T08:33:00
+source_observed_at: 2023-09-28T09:34:00
+created_at: 2023-09-28T19:33:00
+updated_at: 2023-11-11T21:33:00
 tags: [#project]
 ---
 # Project Bridge 30
@@ -14,12 +14,12 @@ tags: [#project]
 Project Bridge 30 supports [[Keystone FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Clara Bennett]]
-- [[Tara Foster]]
-- [[Iris Kim]]
-- [[Zoe Ortega]]
+- [[Elena Ortega]]
+- [[Priya Ivanov]]
+- [[Wendy Alvarez]]
+- [[Ben Ivanov]]
 
 ## Operating Notes
-- Owner: [[Tara Foster]]
-- Status: `active`
+- Owner: [[Clara Bennett]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Bridge 30]] #ops

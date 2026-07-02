@@ -2,24 +2,24 @@
 type: meeting
 date: 2026-01-01
 project: "[[Project Signal 149]]"
-company: "[[Crescent FinTech]]"
-source_created_at: 2026-01-01T15:25:00
-source_observed_at: 2026-01-01T16:51:00
-created_at: 2026-01-01T20:38:00
-updated_at: 2026-01-02T11:38:00
+company: "[[Keystone FinTech]]"
+source_created_at: 2026-01-01T10:53:00
+source_observed_at: 2026-01-01T11:03:00
+created_at: 2026-01-08T12:53:00
+updated_at: 2026-01-09T07:53:00
 tags: [#meeting]
 ---
 # Project Signal 149 Pipeline Hygiene Sync 1469
 
 ## Attendees
-- [[Yara Ortega]]
-- [[Nadia Tan]]
-- [[Hannah Kim]]
+- [[Tara Kim]]
+- [[Wendy Tan]]
+- [[Kai Shah]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 149]] at [[Crescent FinTech]].
-[[Yara Ortega]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 149]] at [[Keystone FinTech]].
+[[Sam Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 149]] to [[Yara Ortega]] #follow-up
+- [ ] Send recap for [[Project Signal 149]] to [[Sam Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

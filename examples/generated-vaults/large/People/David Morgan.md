@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex Media]]"
-role: "VP Data Engineering"
-source_created_at: 2023-08-04T14:41:00
-source_observed_at: 2023-08-04T16:13:00
-created_at: 2023-08-13T15:41:00
-updated_at: 2023-09-28T10:38:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-08-04T13:35:00
+source_observed_at: 2023-08-04T15:08:00
+created_at: 2023-08-05T17:35:00
+updated_at: 2023-10-14T04:35:00
 tags: [#person]
 ---
 # David Morgan
 
 ## Role
-David Morgan is the VP Data Engineering at [[Apex Media]].
+David Morgan is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Apex Media]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Summit 27]] ([[Pioneer FinTech]])
 - [ ] Confirm next update with [[David Morgan]] #follow-up

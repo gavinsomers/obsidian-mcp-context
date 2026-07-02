@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
+status: churn-risk
 segment: mid-market
-source_created_at: 2023-09-26T13:53:00
-source_observed_at: 2023-09-26T15:15:00
-created_at: 2023-09-28T03:53:00
-updated_at: 2023-11-03T09:00:00
+source_created_at: 2023-09-28T14:22:00
+source_observed_at: 2023-09-28T16:21:00
+created_at: 2023-09-29T00:22:00
+updated_at: 2023-11-13T04:22:00
 tags: [#company]
 ---
 # Meridian Media
 
 ## Account Context
-Meridian Media is a mid-market account currently marked `active`.
+Meridian Media is a mid-market account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Ben Diaz]] - Operations Lead
-- [[Sam Haddad]] - Operations Lead
-- [[Hannah Morgan]] - Operations Lead
-- [[Yara Quinn]] - Operations Lead
-- [[Nadia Vance]] - Operations Lead
+## Assigned Account Team
 
 ## Projects
 

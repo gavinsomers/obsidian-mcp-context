@@ -3,11 +3,11 @@ type: decision
 date: 2026-01-23
 status: active
 project: "[[Project Atlas 196]]"
-company: "[[Northstar Media]]"
-source_created_at: 2026-01-23T16:49:00
-source_observed_at: 2026-01-23T17:01:00
-created_at: 2026-01-23T17:32:00
-updated_at: 2026-01-23T19:32:00
+company: "[[Apex Media]]"
+source_created_at: 2026-01-23T09:00:00
+source_observed_at: 2026-01-23T10:52:00
+created_at: 2026-02-01T10:00:00
+updated_at: 2026-02-02T02:00:00
 tags: [#decision]
 ---
 # Project Atlas 196 Lineage Audit Decision 416
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 196]].
 
 ## Context
-This decision applies to [[Northstar Media]] and [[Project Atlas 196]].
-It follows [[Project Atlas 196 Metric Reconciliation Sync 1296]].
-It incorporates [[Project Atlas 196 Stakeholder Alignment Research 416]].
+This decision applies to [[Apex Media]] and [[Project Atlas 196]].
+It follows [[Project Atlas 196 Metric Reconciliation Sync 856]].
+It incorporates [[Project Atlas 196 Stakeholder Alignment Research 196]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

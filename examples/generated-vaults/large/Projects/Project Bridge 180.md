@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Keystone Manufacturing]]"
-source_created_at: 2025-10-06T13:34:00
-source_observed_at: 2025-10-06T13:55:00
-created_at: 2025-10-07T19:34:00
-updated_at: 2025-11-26T05:34:00
+status: active
+company: "[[Northstar Health]]"
+source_created_at: 2025-10-06T16:24:00
+source_observed_at: 2025-10-06T17:03:00
+created_at: 2025-10-07T14:24:00
+updated_at: 2025-12-19T22:24:00
 tags: [#project]
 ---
 # Project Bridge 180
 
 ## Overview
-Project Bridge 180 supports [[Keystone Manufacturing]] through operations admin.
+Project Bridge 180 supports [[Northstar Health]] through operations admin.
 
 ## Stakeholders
-- [[Tara Usman]]
-- [[Grace Chen]]
-- [[Marcus Lee]]
-- [[Xavier Grant]]
+- [[Priya Alvarez]]
+- [[Lina Jenkins]]
+- [[Clara Ivanov]]
+- [[Priya Chen]]
 
 ## Operating Notes
-- Owner: [[Tara Usman]]
-- Status: `closed`
-- Closed at: `2026-05-19`
+- Owner: [[Xavier Grant]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Bridge 180]] #ops

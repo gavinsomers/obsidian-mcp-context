@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Horizon 139]]"
-source_created_at: 2025-07-08T12:23:00
-source_observed_at: 2025-07-08T15:01:00
-created_at: 2025-07-08T22:23:00
-updated_at: 2025-08-21T02:23:00
+source_created_at: 2025-11-10T14:12:00
+source_observed_at: 2025-11-10T15:28:00
+created_at: 2025-11-12T06:12:00
+updated_at: 2025-11-26T10:12:00
 tags: [#risk]
 ---
 # Project Horizon 139 Security Review Risk 579
 
 ## Risk
-Security Review may affect [[Project Horizon 139]] for [[BrightWave FinTech]].
+Security Review may affect [[Project Horizon 139]] for [[Helio FinTech]].
 
 ## Evidence
-- Raised after [[Project Horizon 139 Pipeline Hygiene Sync 799]]
+- Raised after [[Project Horizon 139 Pipeline Hygiene Sync 579]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Nadia Ortega]]
+- Status: `mitigating`
+- Owner: [[Hannah Foster]]
 - [ ] Reassess [[Project Horizon 139 Security Review Risk 579]] during the next review #risk

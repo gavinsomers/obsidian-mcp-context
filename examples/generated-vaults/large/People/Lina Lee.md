@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent Manufacturing]]"
-role: "SecOps Lead"
-source_created_at: 2023-07-29T14:04:00
-source_observed_at: 2023-07-29T16:33:00
-created_at: 2023-07-30T04:04:00
-updated_at: 2023-09-14T10:04:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-07-29T15:45:00
+source_observed_at: 2023-07-29T17:47:00
+created_at: 2023-07-31T03:45:00
+updated_at: 2023-10-15T06:45:00
 tags: [#person]
 ---
 # Lina Lee
 
 ## Role
-Lina Lee is the SecOps Lead at [[Crescent Manufacturing]].
+Lina Lee is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Crescent Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Lee]] #follow-up

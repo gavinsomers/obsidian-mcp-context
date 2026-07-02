@@ -2,21 +2,21 @@
 type: risk
 status: mitigating
 project: "[[Project Signal 179]]"
-source_created_at: 2026-01-12T14:26:00
-source_observed_at: 2026-01-12T17:03:00
-created_at: 2026-01-13T06:26:00
-updated_at: 2026-02-16T11:26:00
+source_created_at: 2026-01-12T14:34:00
+source_observed_at: 2026-01-12T16:00:00
+created_at: 2026-01-13T19:34:00
+updated_at: 2026-02-17T01:34:00
 tags: [#risk]
 ---
 # Project Signal 179 Security Review Risk 619
 
 ## Risk
-Security Review may affect [[Project Signal 179]] for [[Crescent Manufacturing]].
+Security Review may affect [[Project Signal 179]] for [[Keystone Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Signal 179 Pipeline Hygiene Sync 839]]
+- Raised after [[Project Signal 179 Pipeline Hygiene Sync 619]]
 
 ## Current State
 - Status: `mitigating`
-- Owner: [[Ben Quinn]]
+- Owner: [[Wendy Grant]]
 - [ ] Reassess [[Project Signal 179 Security Review Risk 619]] during the next review #risk

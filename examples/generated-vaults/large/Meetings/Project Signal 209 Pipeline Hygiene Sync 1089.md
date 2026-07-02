@@ -2,24 +2,24 @@
 type: meeting
 date: 2026-03-06
 project: "[[Project Signal 209]]"
-company: "[[Crescent Media]]"
-source_created_at: 2026-03-06T13:26:00
-source_observed_at: 2026-03-06T16:17:00
-created_at: 2026-03-10T13:26:00
-updated_at: 2026-03-11T07:26:00
+company: "[[Keystone Media]]"
+source_created_at: 2026-03-06T12:14:00
+source_observed_at: 2026-03-06T12:25:00
+created_at: 2026-03-06T17:45:00
+updated_at: 2026-03-07T13:45:00
 tags: [#meeting]
 ---
 # Project Signal 209 Pipeline Hygiene Sync 1089
 
 ## Attendees
-- [[Jonah Diaz]]
-- [[Priya Morgan]]
-- [[Alex Ivanov]]
+- [[Marcus Vance]]
+- [[Farah Haddad]]
+- [[Iris Vance]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 209]] at [[Crescent Media]].
-[[Farah Rostova]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 209]] at [[Keystone Media]].
+[[Alex Ivanov]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 209]] to [[Farah Rostova]] #follow-up
+- [ ] Send recap for [[Project Signal 209]] to [[Alex Ivanov]] #follow-up
 - [x] Capture meeting notes in vault #ops

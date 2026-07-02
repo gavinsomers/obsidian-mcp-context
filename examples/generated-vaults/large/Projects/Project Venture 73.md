@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Noble Health]]"
-source_created_at: 2024-04-26T14:38:00
-source_observed_at: 2024-04-26T15:54:00
-created_at: 2024-04-27T15:38:00
-updated_at: 2024-06-02T00:38:00
+source_created_at: 2024-04-26T16:27:00
+source_observed_at: 2024-04-26T17:13:00
+created_at: 2024-04-27T14:27:00
+updated_at: 2024-05-16T16:27:00
 tags: [#project]
 ---
 # Project Venture 73
@@ -14,13 +14,12 @@ tags: [#project]
 Project Venture 73 supports [[Noble Health]] through customer success.
 
 ## Stakeholders
-- [[Uma Chen]]
-- [[Alex Morgan]]
-- [[Farah Vance]]
-- [[Priya Quinn]]
+- [[Priya Ortega]]
+- [[Lina Rostova]]
+- [[Alex Diaz]]
+- [[Omar Walker]]
 
 ## Operating Notes
-- Owner: [[Alex Morgan]]
-- Status: `closed`
-- Closed at: `2024-12-15`
+- Owner: [[Uma Chen]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Venture 73]] #ops

@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-09-03
 project: "[[Project Meridian 171]]"
-company: "[[Meridian Manufacturing]]"
-source_created_at: 2025-09-03T12:00:00
-source_observed_at: 2025-09-03T14:49:00
-created_at: 2025-09-03T14:54:00
-updated_at: 2025-09-03T15:54:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-09-03T10:40:00
+source_observed_at: 2025-09-03T13:32:00
+created_at: 2025-09-03T13:37:00
+updated_at: 2025-09-04T12:37:00
 tags: [#meeting]
 ---
 # Project Meridian 171 Warehouse Mapping Sync 611
 
 ## Attendees
-- [[David Lee]]
-- [[Nadia Grant]]
-- [[Yara Bennett]]
+- [[Marcus Chen]]
+- [[Hannah Vance]]
+- [[Iris Chen]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 171]] at [[Meridian Manufacturing]].
-[[Yara Bennett]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 171]] at [[Vanguard Manufacturing]].
+[[Nadia Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 171]] to [[Yara Bennett]] #follow-up
+- [ ] Send recap for [[Project Meridian 171]] to [[Nadia Grant]] #follow-up
 - [x] Capture meeting notes in vault #ops

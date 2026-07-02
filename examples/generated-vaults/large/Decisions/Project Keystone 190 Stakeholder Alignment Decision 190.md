@@ -3,11 +3,11 @@ type: decision
 date: 2025-12-25
 status: active
 project: "[[Project Keystone 190]]"
-company: "[[Harbor Health]]"
-source_created_at: 2025-12-25T09:27:00
-source_observed_at: 2025-12-25T11:17:00
-created_at: 2025-12-27T10:27:00
-updated_at: 2025-12-27T12:27:00
+company: "[[Summit Health]]"
+source_created_at: 2025-12-25T15:10:00
+source_observed_at: 2025-12-25T15:21:00
+created_at: 2025-12-25T19:05:00
+updated_at: 2025-12-26T08:05:00
 tags: [#decision]
 ---
 # Project Keystone 190 Stakeholder Alignment Decision 190
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Keystone 190]].
 
 ## Context
-This decision applies to [[Harbor Health]] and [[Project Keystone 190]].
-It follows [[Project Keystone 190 Handoff Readiness Sync 1070]].
+This decision applies to [[Summit Health]] and [[Project Keystone 190]].
+It follows [[Project Keystone 190 Handoff Readiness Sync 190]].
 It incorporates [[Project Keystone 190 Metric Reconciliation Research 410]].
 
 ## Supersession

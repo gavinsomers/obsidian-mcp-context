@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: active
 company: "[[Noble Manufacturing]]"
-source_created_at: 2024-02-14T16:24:00
-source_observed_at: 2024-02-14T17:53:00
-created_at: 2024-02-16T14:24:00
-updated_at: 2024-04-17T00:24:00
+source_created_at: 2024-02-14T09:26:00
+source_observed_at: 2024-02-14T11:10:00
+created_at: 2024-02-15T11:26:00
+updated_at: 2024-05-12T14:26:00
 tags: [#project]
 ---
 # Project Venture 58
@@ -14,12 +14,12 @@ tags: [#project]
 Project Venture 58 supports [[Noble Manufacturing]] through customer success.
 
 ## Stakeholders
-- [[Amara Quinn]]
-- [[Elena Chen]]
-- [[Rachel Usman]]
-- [[Victor Grant]]
+- [[Nadia Lee]]
+- [[Yara Haddad]]
+- [[Sam Bennett]]
+- [[Wendy Haddad]]
 
 ## Operating Notes
-- Owner: [[Kai Lee]]
-- Status: `planning`
+- Owner: [[Elena Chen]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Venture 58]] #ops

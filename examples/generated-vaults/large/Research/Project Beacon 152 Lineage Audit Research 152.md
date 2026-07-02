@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Beacon 152]]"
-company: "[[Apex Retail]]"
-source_created_at: 2025-06-13T15:59:00
-source_observed_at: 2025-06-13T18:15:00
-created_at: 2025-06-21T15:59:00
-updated_at: 2025-07-06T15:59:00
+company: "[[Cobalt Retail]]"
+source_created_at: 2025-06-13T11:14:00
+source_observed_at: 2025-06-13T12:52:00
+created_at: 2025-06-15T17:14:00
+updated_at: 2025-06-21T19:14:00
 tags: [#research]
 ---
 # Project Beacon 152 Lineage Audit Research 152
 
 ## Research Summary
-Research on lineage audit for [[Project Beacon 152]] and [[Apex Retail]].
+Research on lineage audit for [[Project Beacon 152]] and [[Cobalt Retail]].
 
 ## Evidence
 - Interview notes from [[Victor Foster]]

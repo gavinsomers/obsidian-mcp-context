@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-09-23
+date: 2023-08-05
 project: "[[Project Beacon 2]]"
 company: "[[Apex Labs]]"
-source_created_at: 2024-09-23T14:33:00
-source_observed_at: 2024-09-23T16:30:00
-created_at: 2024-09-23T16:35:00
-updated_at: 2024-09-24T15:35:00
+source_created_at: 2023-08-05T12:36:00
+source_observed_at: 2023-08-05T14:14:00
+created_at: 2023-08-05T16:09:00
+updated_at: 2023-08-05T21:09:00
 tags: [#meeting]
 ---
 # Project Beacon 2 Stakeholder Alignment Sync 302
 
 ## Attendees
-- [[Amara Alvarez]]
-- [[Elena Bennett]]
-- [[Iris Chen]]
+- [[Rachel Chen]]
+- [[Victor Bennett]]
+- [[Wendy Chen]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Beacon 2]] at [[Apex Labs]].
-[[Elena Bennett]] flagged follow-up work for the next operating review.
+[[Amara Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Beacon 2]] to [[Elena Bennett]] #follow-up
+- [ ] Send recap for [[Project Beacon 2]] to [[Amara Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-04-11
 project: "[[Project Pipeline 142]]"
-company: "[[Vanguard FinTech]]"
-source_created_at: 2025-04-11T13:07:00
-source_observed_at: 2025-04-11T13:27:00
-created_at: 2025-04-11T15:02:00
-updated_at: 2025-04-12T12:02:00
+company: "[[Quantum FinTech]]"
+source_created_at: 2025-04-11T09:04:00
+source_observed_at: 2025-04-11T10:15:00
+created_at: 2025-04-11T10:38:00
+updated_at: 2025-04-12T05:38:00
 tags: [#meeting]
 ---
 # Project Pipeline 142 Stakeholder Alignment Sync 142
 
 ## Attendees
-- [[Kai Foster]]
-- [[Amara Kim]]
-- [[Victor Alvarez]]
+- [[Omar Shah]]
+- [[Elena Alvarez]]
+- [[Yara Diaz]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Pipeline 142]] at [[Vanguard FinTech]].
+Stakeholder Alignment reviewed for [[Project Pipeline 142]] at [[Quantum FinTech]].
 [[Kai Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items

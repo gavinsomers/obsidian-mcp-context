@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 6]]"
 company: "[[Meridian Labs]]"
-source_created_at: 2023-08-13T14:45:00
-source_observed_at: 2023-08-13T16:53:00
-created_at: 2023-08-14T08:45:00
-updated_at: 2023-09-05T11:45:00
+source_created_at: 2024-06-07T08:32:00
+source_observed_at: 2024-06-07T10:14:00
+created_at: 2024-06-08T22:32:00
+updated_at: 2024-06-28T22:32:00
 tags: [#research]
 ---
 # Project Meridian 6 Stakeholder Alignment Research 226
@@ -14,8 +14,8 @@ tags: [#research]
 Research on stakeholder alignment for [[Project Meridian 6]] and [[Meridian Labs]].
 
 ## Evidence
-- Interview notes from [[Victor Evans]]
-- Related operating review: [[Project Meridian 6 Metric Reconciliation Sync 1546]]
+- Interview notes from [[Elena Alvarez]]
+- Related operating review: [[Project Meridian 6 Metric Reconciliation Sync 226]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Meridian 6]] #research

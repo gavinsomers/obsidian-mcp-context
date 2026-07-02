@@ -1,23 +1,19 @@
 ---
 type: company
-status: active
-segment: enterprise
-source_created_at: 2023-08-09T14:39:00
-source_observed_at: 2023-08-09T16:29:00
-created_at: 2023-08-10T14:39:00
-updated_at: 2023-10-08T21:39:00
+status: churn-risk
+segment: mid-market
+source_created_at: 2023-08-11T12:22:00
+source_observed_at: 2023-08-11T12:54:00
+created_at: 2023-08-11T21:22:00
+updated_at: 2023-09-25T00:22:00
 tags: [#company]
 ---
 # Pioneer Manufacturing
 
 ## Account Context
-Pioneer Manufacturing is a enterprise account currently marked `active`.
+Pioneer Manufacturing is a mid-market account currently marked `churn-risk`.
 
-## Stakeholders
-- [[David Chen]] - Operations Lead
-- [[Uma Grant]] - Operations Lead
-- [[Jonah Lee]] - Operations Lead
-- [[Alex Quinn]] - Operations Lead
+## Assigned Account Team
 
 ## Projects
 

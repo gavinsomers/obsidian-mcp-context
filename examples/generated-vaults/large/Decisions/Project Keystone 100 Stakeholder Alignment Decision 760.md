@@ -4,10 +4,10 @@ date: 2026-04-30
 status: superseded
 project: "[[Project Keystone 100]]"
 company: "[[Harbor Logistics]]"
-source_created_at: 2026-04-30T12:36:00
-source_observed_at: 2026-04-30T15:06:00
-created_at: 2026-04-30T15:11:00
-updated_at: 2026-04-30T19:11:00
+source_created_at: 2026-04-30T08:17:00
+source_observed_at: 2026-04-30T10:19:00
+created_at: 2026-05-01T15:17:00
+updated_at: 2026-05-02T12:17:00
 tags: [#decision]
 ---
 # Project Keystone 100 Stakeholder Alignment Decision 760

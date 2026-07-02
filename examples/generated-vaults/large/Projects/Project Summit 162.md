@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Pioneer Retail]]"
-source_created_at: 2025-07-08T16:54:00
-source_observed_at: 2025-07-08T19:36:00
-created_at: 2025-07-09T13:54:00
-updated_at: 2025-08-28T23:54:00
+status: closed
+company: "[[Noble Retail]]"
+source_created_at: 2025-07-08T15:01:00
+source_observed_at: 2025-07-08T15:47:00
+created_at: 2025-07-10T06:01:00
+updated_at: 2025-09-15T06:01:00
 tags: [#project]
 ---
 # Project Summit 162
 
 ## Overview
-Project Summit 162 supports [[Pioneer Retail]] through sales pipeline.
+Project Summit 162 supports [[Noble Retail]] through sales pipeline.
 
 ## Stakeholders
-- [[Elena Grant]]
-- [[Victor Kim]]
-- [[Amara Usman]]
-- [[Kai Patel]]
+- [[Tara Jenkins]]
+- [[Elena Diaz]]
+- [[Sam Usman]]
+- [[Omar Rostova]]
 
 ## Operating Notes
 - Owner: [[Elena Grant]]
-- Status: `active`
+- Status: `closed`
+- Closed at: `2026-02-18`
 - [ ] Reconcile latest state for [[Project Summit 162]] #ops

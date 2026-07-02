@@ -3,18 +3,18 @@ type: meeting
 date: 2023-09-04
 project: "[[Project Orbit 11]]"
 company: "[[Summit Labs]]"
-source_created_at: 2023-09-04T09:22:00
-source_observed_at: 2023-09-04T11:53:00
-created_at: 2023-09-10T15:22:00
-updated_at: 2023-09-10T16:22:00
+source_created_at: 2023-09-04T14:49:00
+source_observed_at: 2023-09-04T15:20:00
+created_at: 2023-09-04T19:45:00
+updated_at: 2023-09-05T03:45:00
 tags: [#meeting]
 ---
 # Project Orbit 11 Warehouse Mapping Sync 61
 
 ## Attendees
-- [[Jonah Alvarez]]
+- [[Rachel Alvarez]]
+- [[Kai Diaz]]
 - [[Alex Foster]]
-- [[Sam Chen]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Orbit 11]] at [[Summit Labs]].

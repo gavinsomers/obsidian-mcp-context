@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-01-22
+date: 2025-12-29
 status: active
 project: "[[Project Venture 13]]"
 company: "[[Noble Labs]]"
-source_created_at: 2024-01-22T16:31:00
-source_observed_at: 2024-01-22T19:24:00
-created_at: 2024-01-22T20:19:00
-updated_at: 2024-01-23T19:19:00
+source_created_at: 2025-12-29T10:20:00
+source_observed_at: 2025-12-29T12:18:00
+created_at: 2026-01-05T11:20:00
+updated_at: 2026-01-06T09:20:00
 tags: [#decision]
 ---
 # Project Venture 13 Adoption Workflow Decision 673
@@ -17,8 +17,8 @@ Proceed with adoption workflow for [[Project Venture 13]].
 
 ## Context
 This decision applies to [[Noble Labs]] and [[Project Venture 13]].
-It follows [[Project Venture 13 Security Review Sync 1773]].
-It incorporates [[Project Venture 13 Pipeline Hygiene Research 13]].
+It follows [[Project Venture 13 Security Review Sync 673]].
+It incorporates [[Project Venture 13 Pipeline Hygiene Research 453]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

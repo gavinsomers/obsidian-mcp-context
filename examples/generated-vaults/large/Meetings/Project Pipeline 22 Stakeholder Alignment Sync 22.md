@@ -3,18 +3,18 @@ type: meeting
 date: 2023-08-31
 project: "[[Project Pipeline 22]]"
 company: "[[Vanguard FinTech]]"
-source_created_at: 2023-08-31T14:22:00
-source_observed_at: 2023-08-31T15:22:00
-created_at: 2023-08-31T19:59:00
-updated_at: 2023-09-01T02:59:00
+source_created_at: 2023-08-31T13:16:00
+source_observed_at: 2023-08-31T15:46:00
+created_at: 2023-09-02T17:16:00
+updated_at: 2023-09-03T08:16:00
 tags: [#meeting]
 ---
 # Project Pipeline 22 Stakeholder Alignment Sync 22
 
 ## Attendees
-- [[Victor Alvarez]]
-- [[Kai Foster]]
-- [[Amara Kim]]
+- [[Hannah Ivanov]]
+- [[Sam Morgan]]
+- [[Alex Kim]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Pipeline 22]] at [[Vanguard FinTech]].

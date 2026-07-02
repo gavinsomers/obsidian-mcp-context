@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Manufacturing]]"
-role: "Finance Sponsor"
-source_created_at: 2023-10-17T11:50:00
-source_observed_at: 2023-10-17T12:20:00
-created_at: 2023-10-18T10:50:00
-updated_at: 2023-11-08T18:50:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-10-17T11:04:00
+source_observed_at: 2023-10-17T11:19:00
+created_at: 2023-10-18T03:04:00
+updated_at: 2024-01-06T13:04:00
 tags: [#person]
 ---
 # Rachel Usman
 
 ## Role
-Rachel Usman is the Finance Sponsor at [[Noble Manufacturing]].
+Rachel Usman is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Rachel Usman]] #follow-up

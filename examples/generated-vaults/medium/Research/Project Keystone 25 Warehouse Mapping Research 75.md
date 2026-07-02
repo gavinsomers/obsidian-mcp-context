@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Keystone 25]]"
 company: "[[Harbor FinTech]]"
-source_created_at: 2024-03-15T15:25:00
-source_observed_at: 2024-03-15T17:36:00
-created_at: 2024-03-17T03:25:00
-updated_at: 2024-04-03T09:25:00
+source_created_at: 2024-03-15T09:03:00
+source_observed_at: 2024-03-15T11:45:00
+created_at: 2024-03-16T00:03:00
+updated_at: 2024-04-26T10:03:00
 tags: [#research]
 ---
 # Project Keystone 25 Warehouse Mapping Research 75
@@ -14,7 +14,7 @@ tags: [#research]
 Research on warehouse mapping for [[Project Keystone 25]] and [[Harbor FinTech]].
 
 ## Evidence
-- Interview notes from [[Nadia Foster]]
+- Interview notes from [[Yara Alvarez]]
 - Related operating review: [[Project Keystone 25 Adoption Workflow Sync 175]]
 
 ## Follow Up

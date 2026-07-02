@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-02-01
 project: "[[Project Compass 128]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2025-02-01T16:32:00
-source_observed_at: 2025-02-01T19:30:00
-created_at: 2025-02-01T19:35:00
-updated_at: 2025-02-02T14:35:00
+company: "[[Atlas Labs]]"
+source_created_at: 2025-02-01T14:56:00
+source_observed_at: 2025-02-01T15:37:00
+created_at: 2025-02-01T16:45:00
+updated_at: 2025-02-02T03:45:00
 tags: [#meeting]
 ---
 # Project Compass 128 Lineage Audit Sync 1888
 
 ## Attendees
-- [[Marcus Jenkins]]
-- [[Tara Shah]]
-- [[Grace Alvarez]]
+- [[Nadia Shah]]
+- [[David Quinn]]
+- [[Tara Tan]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 128]] at [[Quantum Labs]].
-[[Marcus Jenkins]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 128]] at [[Atlas Labs]].
+[[Xavier Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 128]] to [[Marcus Jenkins]] #follow-up
+- [ ] Send recap for [[Project Compass 128]] to [[Xavier Evans]] #follow-up
 - [x] Capture meeting notes in vault #ops

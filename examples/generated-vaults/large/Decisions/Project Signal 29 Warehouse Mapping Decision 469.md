@@ -4,10 +4,10 @@ date: 2025-03-14
 status: active
 project: "[[Project Signal 29]]"
 company: "[[Crescent FinTech]]"
-source_created_at: 2025-03-14T10:49:00
-source_observed_at: 2025-03-14T12:54:00
-created_at: 2025-03-14T13:13:00
-updated_at: 2025-03-15T09:13:00
+source_created_at: 2025-03-14T14:50:00
+source_observed_at: 2025-03-14T15:16:00
+created_at: 2025-03-14T18:43:00
+updated_at: 2025-03-15T11:43:00
 tags: [#decision]
 ---
 # Project Signal 29 Warehouse Mapping Decision 469

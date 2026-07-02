@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Logistics]]"
-role: "Product Director"
-source_created_at: 2023-11-01T10:48:00
-source_observed_at: 2023-11-01T11:22:00
-created_at: 2023-11-01T22:48:00
-updated_at: 2024-01-24T03:48:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-11-01T12:02:00
+source_observed_at: 2023-11-01T12:28:00
+created_at: 2023-11-01T14:02:00
+updated_at: 2023-11-27T15:02:00
 tags: [#person]
 ---
 # Jonah Walker
 
 ## Role
-Jonah Walker is the Product Director at [[Noble Logistics]].
+Jonah Walker is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Jonah Walker]] #follow-up

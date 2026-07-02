@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2023-11-10
+date: 2023-09-30
 status: active
 project: "[[Project Signal 14]]"
 company: "[[Crescent Labs]]"
-source_created_at: 2023-11-10T15:19:00
-source_observed_at: 2023-11-10T15:42:00
-created_at: 2023-11-10T19:44:00
-updated_at: 2023-11-11T11:44:00
+source_created_at: 2023-09-30T12:17:00
+source_observed_at: 2023-09-30T13:03:00
+created_at: 2023-09-30T13:10:00
+updated_at: 2023-10-01T07:10:00
 tags: [#decision]
 ---
 # Project Signal 14 Metric Reconciliation Decision 674
@@ -17,8 +17,8 @@ Proceed with metric reconciliation for [[Project Signal 14]].
 
 ## Context
 This decision applies to [[Crescent Labs]] and [[Project Signal 14]].
-It follows [[Project Signal 14 Finance Approval Sync 234]].
-It incorporates [[Project Signal 14 Handoff Readiness Research 14]].
+It follows [[Project Signal 14 Finance Approval Sync 454]].
+It incorporates [[Project Signal 14 Handoff Readiness Research 454]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

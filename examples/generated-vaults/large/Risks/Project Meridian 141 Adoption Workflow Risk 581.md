@@ -2,21 +2,21 @@
 type: risk
 status: open
 project: "[[Project Meridian 141]]"
-source_created_at: 2025-09-02T13:41:00
-source_observed_at: 2025-09-02T14:14:00
-created_at: 2025-09-03T23:41:00
-updated_at: 2025-09-11T00:41:00
+source_created_at: 2025-11-12T10:04:00
+source_observed_at: 2025-11-12T12:25:00
+created_at: 2025-11-13T18:04:00
+updated_at: 2025-11-28T22:04:00
 tags: [#risk]
 ---
 # Project Meridian 141 Adoption Workflow Risk 581
 
 ## Risk
-Adoption Workflow may affect [[Project Meridian 141]] for [[Meridian FinTech]].
+Adoption Workflow may affect [[Project Meridian 141]] for [[Vanguard FinTech]].
 
 ## Evidence
-- Raised after [[Project Meridian 141 Warehouse Mapping Sync 1461]]
+- Raised after [[Project Meridian 141 Warehouse Mapping Sync 581]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Uma Alvarez]]
+- Owner: [[Jonah Foster]]
 - [ ] Reassess [[Project Meridian 141 Adoption Workflow Risk 581]] during the next review #risk

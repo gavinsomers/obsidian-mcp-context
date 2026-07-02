@@ -1,24 +1,19 @@
 ---
 type: company
-status: pipeline
+status: active
 segment: smb
-source_created_at: 2023-06-04T12:30:00
-source_observed_at: 2023-06-04T14:42:00
-created_at: 2023-06-05T01:30:00
-updated_at: 2023-06-25T05:30:00
+source_created_at: 2023-06-06T15:07:00
+source_observed_at: 2023-06-06T15:33:00
+created_at: 2023-06-06T21:07:00
+updated_at: 2023-09-02T07:07:00
 tags: [#company]
 ---
 # Atlas FinTech
 
 ## Account Context
-Atlas FinTech is a smb account currently marked `pipeline`.
+Atlas FinTech is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Xavier Alvarez]] - Customer Success Manager
-- [[Amara Chen]] - Legal Counsel
-- [[Elena Diaz]] - Implementation Manager
-- [[Iris Evans]] - Finance Sponsor
-- [[Marcus Foster]] - Customer Success Manager
+## Assigned Account Team
 
 ## Projects
 

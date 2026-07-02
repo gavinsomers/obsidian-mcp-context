@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Media]]"
-role: "Product Director"
-source_created_at: 2023-10-24T12:07:00
-source_observed_at: 2023-10-24T12:23:00
-created_at: 2023-10-25T21:07:00
-updated_at: 2023-11-27T04:07:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-10-24T09:09:00
+source_observed_at: 2023-10-24T10:12:00
+created_at: 2023-10-25T20:09:00
+updated_at: 2023-12-20T21:09:00
 tags: [#person]
 ---
 # Lina Vance
 
 ## Role
-Lina Vance is the Product Director at [[BrightWave Media]].
+Lina Vance is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Vance]] #follow-up

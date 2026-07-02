@@ -3,23 +3,23 @@ type: meeting
 date: 2025-06-19
 project: "[[Project Summit 117]]"
 company: "[[Pioneer Analytics]]"
-source_created_at: 2025-06-19T14:26:00
-source_observed_at: 2025-06-19T15:24:00
-created_at: 2025-06-19T19:52:00
-updated_at: 2025-06-20T03:52:00
+source_created_at: 2025-06-19T11:49:00
+source_observed_at: 2025-06-19T12:26:00
+created_at: 2025-06-19T13:48:00
+updated_at: 2025-06-19T23:48:00
 tags: [#meeting]
 ---
 # Project Summit 117 Contract Renewal Sync 557
 
 ## Attendees
-- [[Ben Jenkins]]
-- [[Hannah Shah]]
-- [[Lina Evans]]
+- [[Sam Tan]]
+- [[Victor Patel]]
+- [[Omar Bennett]]
 
 ## Notes
 Contract Renewal reviewed for [[Project Summit 117]] at [[Pioneer Analytics]].
-[[Ben Jenkins]] flagged follow-up work for the next operating review.
+[[Lina Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Summit 117]] to [[Ben Jenkins]] #follow-up
+- [ ] Send recap for [[Project Summit 117]] to [[Lina Evans]] #follow-up
 - [x] Capture meeting notes in vault #ops

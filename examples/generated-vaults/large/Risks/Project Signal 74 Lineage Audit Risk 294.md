@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Signal 74]]"
-source_created_at: 2024-08-14T08:01:00
-source_observed_at: 2024-08-14T09:45:00
-created_at: 2024-08-20T14:01:00
-updated_at: 2024-09-20T19:01:00
+source_created_at: 2024-08-14T08:18:00
+source_observed_at: 2024-08-14T08:43:00
+created_at: 2024-08-14T14:18:00
+updated_at: 2024-09-08T20:18:00
 tags: [#risk]
 ---
 # Project Signal 74 Lineage Audit Risk 294
@@ -18,5 +18,5 @@ Lineage Audit may affect [[Project Signal 74]] for [[Crescent Health]].
 
 ## Current State
 - Status: `open`
-- Owner: [[Rachel Quinn]]
+- Owner: [[Victor Chen]]
 - [ ] Reassess [[Project Signal 74 Lineage Audit Risk 294]] during the next review #risk

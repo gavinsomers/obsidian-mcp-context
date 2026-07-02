@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Health]]"
-role: "Legal Counsel"
-source_created_at: 2023-10-21T11:04:00
-source_observed_at: 2023-10-21T11:19:00
-created_at: 2023-10-22T03:04:00
-updated_at: 2024-01-10T13:04:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-10-21T15:21:00
+source_observed_at: 2023-10-21T15:59:00
+created_at: 2023-10-21T19:21:00
+updated_at: 2023-11-22T05:21:00
 tags: [#person]
 ---
 # Clara Vance
 
 ## Role
-Clara Vance is the Legal Counsel at [[Harbor Health]].
+Clara Vance is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Clara Vance]] #follow-up

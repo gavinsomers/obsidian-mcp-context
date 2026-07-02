@@ -1,20 +1,19 @@
 ---
 type: company
-status: active
+status: churn-risk
 segment: smb
-source_created_at: 2023-05-07T16:16:00
-source_observed_at: 2023-05-07T17:56:00
-created_at: 2023-05-08T19:16:00
-updated_at: 2023-06-02T00:16:00
+source_created_at: 2023-05-09T14:05:00
+source_observed_at: 2023-05-09T16:53:00
+created_at: 2023-05-10T07:05:00
+updated_at: 2023-06-02T08:05:00
 tags: [#company]
 ---
 # Harbor Labs
 
 ## Account Context
-Harbor Labs is a smb account currently marked `active`.
+Harbor Labs is a smb account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Iris Alvarez]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

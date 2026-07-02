@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Atlas Retail]]"
-role: "Product Director"
-source_created_at: 2023-05-03T10:21:00
-source_observed_at: 2023-05-03T10:50:00
-created_at: 2023-05-04T08:21:00
-updated_at: 2023-07-14T13:53:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-05-03T08:27:00
+source_observed_at: 2023-05-03T08:59:00
+created_at: 2023-05-05T04:27:00
+updated_at: 2023-07-19T07:27:00
 tags: [#person]
 ---
 # Lina Bennett
 
 ## Role
-Lina Bennett is the Product Director at [[Atlas Retail]].
+Lina Bennett is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Retail]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Lantern 5]] ([[Helio Labs]])
+- Managing/Supporting [[Project Orbit 11]] ([[Summit Labs]])
 - [ ] Confirm next update with [[Lina Bennett]] #follow-up

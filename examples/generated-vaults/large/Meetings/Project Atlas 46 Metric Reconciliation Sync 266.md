@@ -3,18 +3,18 @@ type: meeting
 date: 2024-05-08
 project: "[[Project Atlas 46]]"
 company: "[[Northstar Manufacturing]]"
-source_created_at: 2024-05-08T08:35:00
-source_observed_at: 2024-05-08T11:17:00
-created_at: 2024-05-08T14:26:00
-updated_at: 2024-05-09T09:26:00
+source_created_at: 2024-05-08T08:34:00
+source_observed_at: 2024-05-08T08:49:00
+created_at: 2024-05-08T10:02:00
+updated_at: 2024-05-08T17:02:00
 tags: [#meeting]
 ---
 # Project Atlas 46 Metric Reconciliation Sync 266
 
 ## Attendees
-- [[Tara Bennett]]
-- [[Omar Patel]]
-- [[Elena Usman]]
+- [[Wendy Lee]]
+- [[Iris Lee]]
+- [[Uma Evans]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Atlas 46]] at [[Northstar Manufacturing]].

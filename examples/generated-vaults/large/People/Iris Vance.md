@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Media]]"
-role: "Implementation Manager"
-source_created_at: 2023-10-23T11:07:00
-source_observed_at: 2023-10-23T11:27:00
-created_at: 2023-10-25T01:07:00
-updated_at: 2023-11-24T08:07:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-10-23T13:00:00
+source_observed_at: 2023-10-23T14:22:00
+created_at: 2023-10-24T10:00:00
+updated_at: 2024-01-03T18:00:00
 tags: [#person]
 ---
 # Iris Vance
 
 ## Role
-Iris Vance is the Implementation Manager at [[Northstar Media]].
+Iris Vance is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Iris Vance]] #follow-up

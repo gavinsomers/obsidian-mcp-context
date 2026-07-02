@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-10-27
+date: 2024-12-13
 project: "[[Project Lantern 95]]"
 company: "[[Helio Logistics]]"
-source_created_at: 2024-10-27T12:36:00
-source_observed_at: 2024-10-27T13:35:00
-created_at: 2024-10-27T15:38:00
-updated_at: 2024-10-27T22:38:00
+source_created_at: 2024-12-13T09:14:00
+source_observed_at: 2024-12-13T10:18:00
+created_at: 2024-12-13T12:52:00
+updated_at: 2024-12-13T13:52:00
 tags: [#meeting]
 ---
 # Project Lantern 95 Adoption Workflow Sync 1195
 
 ## Attendees
-- [[Farah Ivanov]]
-- [[Wendy Morgan]]
-- [[Ben Walker]]
+- [[Uma Bennett]]
+- [[Clara Bennett]]
+- [[Sam Walker]]
 
 ## Notes
 Adoption Workflow reviewed for [[Project Lantern 95]] at [[Helio Logistics]].
-[[Ben Walker]] flagged follow-up work for the next operating review.
+[[Priya Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 95]] to [[Ben Walker]] #follow-up
+- [ ] Send recap for [[Project Lantern 95]] to [[Priya Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

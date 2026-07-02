@@ -2,10 +2,10 @@
 type: project
 status: active
 company: "[[Helio Health]]"
-source_created_at: 2024-03-19T13:29:00
-source_observed_at: 2024-03-19T13:46:00
-created_at: 2024-03-21T08:29:00
-updated_at: 2024-04-27T18:29:00
+source_created_at: 2024-03-19T11:26:00
+source_observed_at: 2024-03-19T12:22:00
+created_at: 2024-03-19T22:26:00
+updated_at: 2024-04-06T02:26:00
 tags: [#project]
 ---
 # Project Lantern 65
@@ -14,12 +14,12 @@ tags: [#project]
 Project Lantern 65 supports [[Helio Health]] through operations admin.
 
 ## Stakeholders
-- [[Yara Usman]]
-- [[Hannah Quinn]]
-- [[Lina Chen]]
-- [[Ben Haddad]]
+- [[Lina Vance]]
+- [[Nadia Lee]]
+- [[Priya Morgan]]
+- [[Amara Evans]]
 
 ## Operating Notes
-- Owner: [[Yara Usman]]
+- Owner: [[Lina Chen]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Lantern 65]] #ops

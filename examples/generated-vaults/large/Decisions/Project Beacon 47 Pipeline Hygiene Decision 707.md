@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-03-07
+date: 2026-02-16
 status: active
 project: "[[Project Beacon 47]]"
 company: "[[Apex Manufacturing]]"
-source_created_at: 2024-03-07T16:52:00
-source_observed_at: 2024-03-07T19:41:00
-created_at: 2024-03-07T21:53:00
-updated_at: 2024-03-08T05:53:00
+source_created_at: 2026-02-16T08:10:00
+source_observed_at: 2026-02-16T09:14:00
+created_at: 2026-02-16T10:06:00
+updated_at: 2026-02-16T23:06:00
 tags: [#decision]
 ---
 # Project Beacon 47 Pipeline Hygiene Decision 707

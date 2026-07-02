@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-06-23
 project: "[[Project Pipeline 157]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2025-06-23T11:20:00
-source_observed_at: 2025-06-23T12:31:00
-created_at: 2025-06-23T15:00:00
-updated_at: 2025-06-23T16:00:00
+company: "[[Quantum Retail]]"
+source_created_at: 2025-06-23T14:28:00
+source_observed_at: 2025-06-23T14:52:00
+created_at: 2025-06-23T18:54:00
+updated_at: 2025-06-24T14:54:00
 tags: [#meeting]
 ---
 # Project Pipeline 157 Contract Renewal Sync 1697
 
 ## Attendees
-- [[Wendy Tan]]
-- [[Priya Kim]]
-- [[Farah Patel]]
+- [[Rachel Evans]]
+- [[Grace Jenkins]]
+- [[Kai Chen]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 157]] at [[Vanguard Retail]].
+Contract Renewal reviewed for [[Project Pipeline 157]] at [[Quantum Retail]].
 [[Alex Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items

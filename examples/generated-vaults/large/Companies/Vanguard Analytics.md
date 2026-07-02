@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
+status: churn-risk
 segment: smb
-source_created_at: 2023-11-27T10:23:00
-source_observed_at: 2023-11-27T11:13:00
-created_at: 2023-11-27T18:23:00
-updated_at: 2024-02-23T04:23:00
+source_created_at: 2023-11-29T08:27:00
+source_observed_at: 2023-11-29T11:26:00
+created_at: 2023-11-30T01:27:00
+updated_at: 2024-01-20T05:27:00
 tags: [#company]
 ---
 # Vanguard Analytics
 
 ## Account Context
-Vanguard Analytics is a smb account currently marked `active`.
+Vanguard Analytics is a smb account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Grace Evans]] - Customer Success Manager
-- [[Xavier Ivanov]] - Customer Success Manager
-- [[Marcus Novak]] - Customer Success Manager
-- [[Clara Shah]] - Customer Success Manager
-- [[Tara Walker]] - Customer Success Manager
+## Assigned Account Team
 
 ## Projects
 

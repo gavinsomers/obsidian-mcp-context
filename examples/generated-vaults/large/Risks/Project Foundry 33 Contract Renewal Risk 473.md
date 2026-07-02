@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Foundry 33]]"
-source_created_at: 2025-05-26T08:44:00
-source_observed_at: 2025-05-26T10:17:00
-created_at: 2025-05-28T06:44:00
-updated_at: 2025-06-05T16:44:00
+source_created_at: 2025-05-26T15:22:00
+source_observed_at: 2025-05-26T16:20:00
+created_at: 2025-05-28T13:22:00
+updated_at: 2025-06-10T14:22:00
 tags: [#risk]
 ---
 # Project Foundry 33 Contract Renewal Risk 473
@@ -17,6 +17,6 @@ Contract Renewal may affect [[Project Foundry 33]] for [[Cobalt Retail]].
 - Raised after [[Project Foundry 33 Security Review Sync 473]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Lina Kim]]
+- Status: `closed`
+- Owner: [[Farah Bennett]]
 - [ ] Reassess [[Project Foundry 33 Contract Renewal Risk 473]] during the next review #risk

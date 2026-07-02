@@ -3,18 +3,18 @@ type: meeting
 date: 2024-09-30
 project: "[[Project Orbit 41]]"
 company: "[[Summit Retail]]"
-source_created_at: 2024-09-30T10:43:00
-source_observed_at: 2024-09-30T13:09:00
-created_at: 2024-09-30T13:14:00
-updated_at: 2024-10-01T02:14:00
+source_created_at: 2024-09-30T13:08:00
+source_observed_at: 2024-09-30T13:56:00
+created_at: 2024-09-30T16:30:00
+updated_at: 2024-09-30T21:30:00
 tags: [#meeting]
 ---
 # Project Orbit 41 Warehouse Mapping Sync 1141
 
 ## Attendees
-- [[Uma Kim]]
-- [[David Grant]]
-- [[Alex Usman]]
+- [[Elena Diaz]]
+- [[Victor Ivanov]]
+- [[Ben Bennett]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Orbit 41]] at [[Summit Retail]].

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian Logistics]]"
-role: "Customer Success Manager"
-source_created_at: 2023-05-22T08:55:00
-source_observed_at: 2023-05-22T11:47:00
-created_at: 2023-05-24T01:55:00
-updated_at: 2023-11-05T09:00:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-05-22T10:58:00
+source_observed_at: 2023-05-22T12:51:00
+created_at: 2023-05-26T12:58:00
+updated_at: 2023-07-06T23:58:00
 tags: [#person]
 ---
 # Rachel Diaz
 
 ## Role
-Rachel Diaz is the Customer Success Manager at [[Meridian Logistics]].
+Rachel Diaz is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Rachel Diaz]] #follow-up

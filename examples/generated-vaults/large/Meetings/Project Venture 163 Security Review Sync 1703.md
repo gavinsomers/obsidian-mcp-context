@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-07-24
 project: "[[Project Venture 163]]"
-company: "[[Noble Retail]]"
-source_created_at: 2025-07-24T10:59:00
-source_observed_at: 2025-07-24T12:05:00
-created_at: 2025-07-24T15:01:00
-updated_at: 2025-07-24T16:01:00
+company: "[[Crescent Retail]]"
+source_created_at: 2025-07-24T12:53:00
+source_observed_at: 2025-07-24T15:24:00
+created_at: 2025-07-24T17:46:00
+updated_at: 2025-07-25T01:46:00
 tags: [#meeting]
 ---
 # Project Venture 163 Security Review Sync 1703
 
 ## Attendees
-- [[Priya Bennett]]
-- [[Farah Grant]]
-- [[Ben Usman]]
+- [[Farah Ortega]]
+- [[Amara Diaz]]
+- [[Jonah Evans]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 163]] at [[Noble Retail]].
-[[Wendy Kim]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 163]] at [[Crescent Retail]].
+[[Farah Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 163]] to [[Wendy Kim]] #follow-up
+- [ ] Send recap for [[Project Venture 163]] to [[Farah Grant]] #follow-up
 - [x] Capture meeting notes in vault #ops

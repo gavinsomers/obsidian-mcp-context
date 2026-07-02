@@ -1,22 +1,24 @@
 ---
 type: company
-status: pipeline
+status: active
 segment: mid-market
-source_created_at: 2023-05-23T12:10:00
-source_observed_at: 2023-05-23T14:44:00
-created_at: 2023-05-24T14:10:00
-updated_at: 2023-08-15T19:10:00
+source_created_at: 2023-05-25T15:50:00
+source_observed_at: 2023-05-25T16:19:00
+created_at: 2023-05-26T08:50:00
+updated_at: 2023-08-11T17:50:00
 tags: [#company]
 ---
 # Cobalt FinTech
 
 ## Account Context
-Cobalt FinTech is a mid-market account currently marked `pipeline`.
+Cobalt FinTech is a mid-market account currently marked `active`.
 
-## Stakeholders
-- [[Rachel Alvarez]] - Finance Sponsor
-- [[Grace Foster]] - Finance Sponsor
-- [[Xavier Jenkins]] - Finance Sponsor
+## Assigned Account Team
+- [[Rachel Alvarez]] - Senior Data Consultant
+- [[Wendy Lee]] - Data Platform Engineer
+- [[Yara Chen]] - Data Platform Engineer
+- [[Nadia Grant]] - Delivery Lead
+- [[Omar Bennett]] - Senior Data Consultant
 
 ## Projects
 - [[Project Foundry 18]]

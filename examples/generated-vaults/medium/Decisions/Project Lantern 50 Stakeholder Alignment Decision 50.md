@@ -3,11 +3,11 @@ type: decision
 date: 2024-11-21
 status: active
 project: "[[Project Lantern 50]]"
-company: "[[Helio FinTech]]"
-source_created_at: 2024-11-21T15:20:00
-source_observed_at: 2024-11-21T18:04:00
-created_at: 2024-11-21T18:09:00
-updated_at: 2024-11-22T16:09:00
+company: "[[Meridian FinTech]]"
+source_created_at: 2024-11-21T16:47:00
+source_observed_at: 2024-11-21T18:55:00
+created_at: 2024-11-21T19:00:00
+updated_at: 2024-11-22T00:00:00
 tags: [#decision]
 ---
 # Project Lantern 50 Stakeholder Alignment Decision 50
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Lantern 50]].
 
 ## Context
-This decision applies to [[Helio FinTech]] and [[Project Lantern 50]].
-It follows [[Project Lantern 50 Handoff Readiness Sync 50]].
+This decision applies to [[Meridian FinTech]] and [[Project Lantern 50]].
+It follows [[Project Lantern 50 Handoff Readiness Sync 250]].
 It incorporates [[Project Lantern 50 Metric Reconciliation Research 100]].
 
 ## Supersession

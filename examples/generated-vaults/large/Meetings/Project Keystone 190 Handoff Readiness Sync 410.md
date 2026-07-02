@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-12-04
 project: "[[Project Keystone 190]]"
-company: "[[Harbor Health]]"
-source_created_at: 2025-12-04T08:45:00
-source_observed_at: 2025-12-04T10:01:00
-created_at: 2025-12-04T10:06:00
-updated_at: 2025-12-05T08:06:00
+company: "[[Summit Health]]"
+source_created_at: 2025-12-04T15:16:00
+source_observed_at: 2025-12-04T15:48:00
+created_at: 2025-12-04T17:48:00
+updated_at: 2025-12-05T15:48:00
 tags: [#meeting]
 ---
 # Project Keystone 190 Handoff Readiness Sync 410
 
 ## Attendees
-- [[Grace Haddad]]
-- [[Clara Vance]]
-- [[Xavier Lee]]
+- [[David Vance]]
+- [[Priya Shah]]
+- [[Wendy Ivanov]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 190]] at [[Harbor Health]].
-[[Clara Vance]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 190]] at [[Summit Health]].
+[[Grace Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 190]] to [[Clara Vance]] #follow-up
+- [ ] Send recap for [[Project Keystone 190]] to [[Grace Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

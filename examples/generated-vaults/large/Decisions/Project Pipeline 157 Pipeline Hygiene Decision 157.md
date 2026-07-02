@@ -3,11 +3,11 @@ type: decision
 date: 2025-07-14
 status: active
 project: "[[Project Pipeline 157]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2025-07-14T09:40:00
-source_observed_at: 2025-07-14T12:30:00
-created_at: 2025-07-14T14:13:00
-updated_at: 2025-07-14T21:13:00
+company: "[[Quantum Retail]]"
+source_created_at: 2025-07-14T14:08:00
+source_observed_at: 2025-07-14T16:53:00
+created_at: 2025-07-14T17:36:00
+updated_at: 2025-07-14T20:36:00
 tags: [#decision]
 ---
 # Project Pipeline 157 Pipeline Hygiene Decision 157
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Pipeline 157]].
 
 ## Context
-This decision applies to [[Vanguard Retail]] and [[Project Pipeline 157]].
-It follows [[Project Pipeline 157 Contract Renewal Sync 1257]].
-It incorporates [[Project Pipeline 157 Security Review Research 157]].
+This decision applies to [[Quantum Retail]] and [[Project Pipeline 157]].
+It follows [[Project Pipeline 157 Contract Renewal Sync 157]].
+It incorporates [[Project Pipeline 157 Security Review Research 377]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

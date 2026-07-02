@@ -3,23 +3,23 @@ type: meeting
 date: 2024-04-23
 project: "[[Project Summit 12]]"
 company: "[[Pioneer Labs]]"
-source_created_at: 2024-04-23T13:00:00
-source_observed_at: 2024-04-23T14:32:00
-created_at: 2024-04-23T17:41:00
-updated_at: 2024-04-24T00:41:00
+source_created_at: 2024-04-23T08:24:00
+source_observed_at: 2024-04-23T11:17:00
+created_at: 2024-04-23T13:07:00
+updated_at: 2024-04-24T09:07:00
 tags: [#meeting]
 ---
 # Project Summit 12 Stakeholder Alignment Sync 212
 
 ## Attendees
-- [[Tara Chen]]
-- [[Kai Alvarez]]
-- [[Omar Bennett]]
+- [[Grace Foster]]
+- [[Grace Alvarez]]
+- [[Clara Bennett]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Summit 12]] at [[Pioneer Labs]].
-[[Omar Bennett]] flagged follow-up work for the next operating review.
+[[Kai Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Summit 12]] to [[Omar Bennett]] #follow-up
+- [ ] Send recap for [[Project Summit 12]] to [[Kai Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

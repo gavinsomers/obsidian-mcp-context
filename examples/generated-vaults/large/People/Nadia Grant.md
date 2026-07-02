@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian Manufacturing]]"
-role: "SecOps Lead"
-source_created_at: 2023-06-16T16:52:00
-source_observed_at: 2023-06-16T19:48:00
-created_at: 2023-06-22T23:52:00
-updated_at: 2023-08-07T10:15:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-06-16T12:38:00
+source_observed_at: 2023-06-16T13:10:00
+created_at: 2023-06-17T18:38:00
+updated_at: 2023-08-19T00:38:00
 tags: [#person]
 ---
 # Nadia Grant
 
 ## Role
-Nadia Grant is the SecOps Lead at [[Meridian Manufacturing]].
+Nadia Grant is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian Manufacturing]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Foundry 18]] ([[Cobalt FinTech]])
 - [ ] Confirm next update with [[Nadia Grant]] #follow-up

@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Atlas 46]]"
-source_created_at: 2024-06-12T10:58:00
-source_observed_at: 2024-06-12T13:42:00
-created_at: 2024-06-14T00:58:00
-updated_at: 2024-06-19T11:58:00
+source_created_at: 2025-06-13T12:23:00
+source_observed_at: 2025-06-13T15:01:00
+created_at: 2025-06-13T22:23:00
+updated_at: 2025-07-27T02:23:00
 tags: [#risk]
 ---
 # Project Atlas 46 Handoff Readiness Risk 486
@@ -14,9 +14,9 @@ tags: [#risk]
 Handoff Readiness may affect [[Project Atlas 46]] for [[Northstar Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Atlas 46 Metric Reconciliation Sync 706]]
+- Raised after [[Project Atlas 46 Metric Reconciliation Sync 486]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `closed`
 - Owner: [[Tara Bennett]]
 - [ ] Reassess [[Project Atlas 46 Handoff Readiness Risk 486]] during the next review #risk

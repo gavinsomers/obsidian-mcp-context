@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Retail]]"
-role: "Customer Success Manager"
-source_created_at: 2023-06-13T08:59:00
-source_observed_at: 2023-06-13T10:46:00
-created_at: 2023-06-15T05:59:00
-updated_at: 2023-08-08T13:59:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-06-13T11:02:00
+source_observed_at: 2023-06-13T12:34:00
+created_at: 2023-06-13T20:02:00
+updated_at: 2023-08-16T00:02:00
 tags: [#person]
 ---
 # Clara Grant
 
 ## Role
-Clara Grant is the Customer Success Manager at [[Harbor Retail]].
+Clara Grant is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Clara Grant]] #follow-up

@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Compass 23]]"
-source_created_at: 2023-10-16T09:53:00
-source_observed_at: 2023-10-16T11:21:00
-created_at: 2023-10-16T13:53:00
-updated_at: 2023-10-22T23:53:00
+source_created_at: 2025-05-08T14:41:00
+source_observed_at: 2025-05-08T15:04:00
+created_at: 2025-05-09T22:41:00
+updated_at: 2025-06-03T08:41:00
 tags: [#risk]
 ---
 # Project Compass 23 Contract Renewal Risk 463
@@ -14,9 +14,9 @@ tags: [#risk]
 Contract Renewal may affect [[Project Compass 23]] for [[Quantum FinTech]].
 
 ## Evidence
-- Raised after [[Project Compass 23 Security Review Sync 1343]]
+- Raised after [[Project Compass 23 Security Review Sync 463]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Lina Foster]]
+- Status: `closed`
+- Owner: [[Wendy Alvarez]]
 - [ ] Reassess [[Project Compass 23 Contract Renewal Risk 463]] during the next review #risk

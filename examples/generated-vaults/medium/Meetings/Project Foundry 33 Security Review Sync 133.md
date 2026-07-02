@@ -2,24 +2,24 @@
 type: meeting
 date: 2024-04-29
 project: "[[Project Foundry 33]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2024-04-29T11:34:00
-source_observed_at: 2024-04-29T13:12:00
-created_at: 2024-04-29T13:17:00
-updated_at: 2024-04-30T00:17:00
+company: "[[BrightWave Labs]]"
+source_created_at: 2024-04-29T09:32:00
+source_observed_at: 2024-04-29T10:16:00
+created_at: 2024-04-29T13:03:00
+updated_at: 2024-04-29T16:03:00
 tags: [#meeting]
 ---
 # Project Foundry 33 Security Review Sync 133
 
 ## Attendees
-- [[Farah Bennett]]
-- [[Sam Evans]]
-- [[Nadia Diaz]]
+- [[Nadia Bennett]]
+- [[Rachel Evans]]
+- [[Nadia Chen]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 33]] at [[Cobalt Labs]].
-[[Jonah Chen]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 33]] at [[BrightWave Labs]].
+[[Farah Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 33]] to [[Jonah Chen]] #follow-up
+- [ ] Send recap for [[Project Foundry 33]] to [[Farah Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

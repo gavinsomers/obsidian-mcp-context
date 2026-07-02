@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Beacon 2]]"
 company: "[[Apex Labs]]"
-source_created_at: 2024-05-31T15:19:00
-source_observed_at: 2024-05-31T15:57:00
-created_at: 2024-06-01T12:19:00
-updated_at: 2024-06-15T16:19:00
+source_created_at: 2024-05-31T09:02:00
+source_observed_at: 2024-05-31T10:08:00
+created_at: 2024-06-01T04:02:00
+updated_at: 2024-06-09T07:02:00
 tags: [#research]
 ---
 # Project Beacon 2 Lineage Audit Research 222

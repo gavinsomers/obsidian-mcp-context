@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Crescent Health]]"
-source_created_at: 2025-12-12T09:15:00
-source_observed_at: 2025-12-12T11:47:00
-created_at: 2025-12-12T19:15:00
-updated_at: 2026-02-03T04:15:00
+status: active
+company: "[[Keystone Health]]"
+source_created_at: 2025-12-12T15:48:00
+source_observed_at: 2025-12-12T17:38:00
+created_at: 2025-12-14T10:48:00
+updated_at: 2026-01-06T18:48:00
 tags: [#project]
 ---
 # Project Signal 194
 
 ## Overview
-Project Signal 194 supports [[Crescent Health]] through research program.
+Project Signal 194 supports [[Keystone Health]] through research program.
 
 ## Stakeholders
-- [[Grace Vance]]
-- [[Rachel Quinn]]
-- [[Victor Chen]]
-- [[Amara Morgan]]
+- [[Sam Rostova]]
+- [[Omar Ortega]]
+- [[Priya Diaz]]
+- [[Ben Vance]]
 
 ## Operating Notes
-- Owner: [[Rachel Quinn]]
-- Status: `blocked`
+- Owner: [[Kai Haddad]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 194]] #ops

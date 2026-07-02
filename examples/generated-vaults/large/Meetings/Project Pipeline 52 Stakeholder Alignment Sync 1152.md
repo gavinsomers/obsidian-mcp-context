@@ -3,23 +3,23 @@ type: meeting
 date: 2024-10-15
 project: "[[Project Pipeline 52]]"
 company: "[[Vanguard Manufacturing]]"
-source_created_at: 2024-10-15T10:44:00
-source_observed_at: 2024-10-15T13:38:00
-created_at: 2024-10-15T13:43:00
-updated_at: 2024-10-15T16:43:00
+source_created_at: 2024-10-15T14:53:00
+source_observed_at: 2024-10-15T15:47:00
+created_at: 2024-10-15T17:11:00
+updated_at: 2024-10-16T09:11:00
 tags: [#meeting]
 ---
 # Project Pipeline 52 Stakeholder Alignment Sync 1152
 
 ## Attendees
-- [[Kai Usman]]
-- [[Omar Grant]]
-- [[Elena Lee]]
+- [[Zoe Tan]]
+- [[Iris Patel]]
+- [[Victor Vance]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Pipeline 52]] at [[Vanguard Manufacturing]].
-[[Omar Grant]] flagged follow-up work for the next operating review.
+[[Zoe Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Pipeline 52]] to [[Omar Grant]] #follow-up
+- [ ] Send recap for [[Project Pipeline 52]] to [[Zoe Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

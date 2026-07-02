@@ -1,24 +1,19 @@
 ---
 type: company
 status: active
-segment: mid-market
-source_created_at: 2023-05-25T11:20:00
-source_observed_at: 2023-05-25T12:00:00
-created_at: 2023-05-27T09:20:00
-updated_at: 2023-07-03T12:20:00
+segment: enterprise
+source_created_at: 2023-05-27T11:47:00
+source_observed_at: 2023-05-27T14:00:00
+created_at: 2023-05-29T02:47:00
+updated_at: 2023-08-18T11:47:00
 tags: [#company]
 ---
 # BrightWave FinTech
 
 ## Account Context
-BrightWave FinTech is a mid-market account currently marked `active`.
+BrightWave FinTech is a enterprise account currently marked `active`.
 
-## Stakeholders
-- [[Sam Alvarez]] - SecOps Lead
-- [[Wendy Bennett]] - Operations Lead
-- [[Alex Diaz]] - Product Director
-- [[David Evans]] - VP Data Engineering
-- [[Hannah Foster]] - SecOps Lead
+## Assigned Account Team
 
 ## Projects
 

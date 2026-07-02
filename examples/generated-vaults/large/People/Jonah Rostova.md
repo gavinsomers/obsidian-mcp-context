@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Logistics]]"
-role: "VP Data Engineering"
-source_created_at: 2023-09-18T14:08:00
-source_observed_at: 2023-09-18T14:39:00
-created_at: 2023-09-19T18:08:00
-updated_at: 2023-12-01T05:08:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-09-18T08:18:00
+source_observed_at: 2023-09-18T10:32:00
+created_at: 2023-09-27T09:18:00
+updated_at: 2023-11-15T13:18:00
 tags: [#person]
 ---
 # Jonah Rostova
 
 ## Role
-Jonah Rostova is the VP Data Engineering at [[Cobalt Logistics]].
+Jonah Rostova is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Cobalt Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Jonah Rostova]] #follow-up

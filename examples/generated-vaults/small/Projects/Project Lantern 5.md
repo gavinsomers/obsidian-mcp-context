@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: active
 company: "[[Helio Labs]]"
-source_created_at: 2023-07-07T10:59:00
-source_observed_at: 2023-07-07T12:09:00
-created_at: 2023-07-07T23:59:00
-updated_at: 2023-09-11T23:59:00
+source_created_at: 2023-07-07T14:04:00
+source_observed_at: 2023-07-07T15:38:00
+created_at: 2023-07-09T10:04:00
+updated_at: 2023-08-07T21:04:00
 tags: [#project]
 ---
 # Project Lantern 5
@@ -14,12 +14,12 @@ tags: [#project]
 Project Lantern 5 supports [[Helio Labs]] through operations admin.
 
 ## Stakeholders
-- [[David Alvarez]]
-- [[Lina Alvarez]]
-- [[Uma Alvarez]]
-- [[Ben Bennett]]
+- [[Priya Alvarez]]
+- [[Amara Bennett]]
+- [[Zoe Alvarez]]
+- [[Xavier Alvarez]]
 
 ## Operating Notes
 - Owner: [[David Alvarez]]
-- Status: `planning`
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Lantern 5]] #ops

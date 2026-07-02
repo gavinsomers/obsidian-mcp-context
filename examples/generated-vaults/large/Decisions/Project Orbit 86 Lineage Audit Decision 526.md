@@ -4,10 +4,10 @@ date: 2025-06-03
 status: active
 project: "[[Project Orbit 86]]"
 company: "[[Summit Media]]"
-source_created_at: 2025-06-03T15:42:00
-source_observed_at: 2025-06-03T18:23:00
-created_at: 2025-06-03T18:28:00
-updated_at: 2025-06-04T03:28:00
+source_created_at: 2025-06-03T10:09:00
+source_observed_at: 2025-06-03T13:08:00
+created_at: 2025-06-03T13:13:00
+updated_at: 2025-06-03T14:13:00
 tags: [#decision]
 ---
 # Project Orbit 86 Lineage Audit Decision 526

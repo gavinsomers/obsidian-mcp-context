@@ -1,24 +1,25 @@
 ---
 type: meeting
-date: 2023-11-28
+date: 2025-11-27
 project: "[[Project Summit 12]]"
 company: "[[Pioneer Labs]]"
-source_created_at: 2023-11-28T16:18:00
-source_observed_at: 2023-11-28T18:51:00
-created_at: 2023-11-28T19:51:00
-updated_at: 2023-11-29T15:51:00
+source_created_at: 2025-11-27T16:23:00
+source_observed_at: 2025-11-27T16:44:00
+created_at: 2025-11-27T17:23:00
+updated_at: 2025-11-28T08:23:00
 tags: [#meeting]
 ---
 # Project Summit 12 Stakeholder Alignment Sync 672
 
 ## Attendees
-- [[Kai Alvarez]]
-- [[Amara Foster]]
+- [[Farah Ivanov]]
+- [[Zoe Haddad]]
+- [[Alex Haddad]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Summit 12]] at [[Pioneer Labs]].
-[[Amara Foster]] flagged follow-up work for the next operating review.
+[[Kai Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Summit 12]] to [[Amara Foster]] #follow-up
+- [ ] Send recap for [[Project Summit 12]] to [[Kai Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

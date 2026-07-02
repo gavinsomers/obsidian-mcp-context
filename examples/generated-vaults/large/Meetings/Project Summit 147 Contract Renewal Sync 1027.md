@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-05-05
 project: "[[Project Summit 147]]"
-company: "[[Pioneer FinTech]]"
-source_created_at: 2025-05-05T14:31:00
-source_observed_at: 2025-05-05T15:33:00
-created_at: 2025-05-05T16:33:00
-updated_at: 2025-05-06T15:33:00
+company: "[[Noble FinTech]]"
+source_created_at: 2025-05-05T12:18:00
+source_observed_at: 2025-05-05T14:54:00
+created_at: 2025-05-05T14:59:00
+updated_at: 2025-05-06T13:59:00
 tags: [#meeting]
 ---
 # Project Summit 147 Contract Renewal Sync 1027
 
 ## Attendees
-- [[Lina Tan]]
-- [[Farah Kim]]
-- [[Wendy Ortega]]
+- [[Iris Walker]]
+- [[Iris Alvarez]]
+- [[Lina Bennett]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Summit 147]] at [[Pioneer FinTech]].
+Contract Renewal reviewed for [[Project Summit 147]] at [[Noble FinTech]].
 [[Priya Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items

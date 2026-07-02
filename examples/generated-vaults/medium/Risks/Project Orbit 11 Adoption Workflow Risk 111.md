@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Orbit 11]]"
-source_created_at: 2024-08-05T15:55:00
-source_observed_at: 2024-08-05T18:42:00
-created_at: 2024-08-06T13:55:00
-updated_at: 2024-09-07T16:55:00
+source_created_at: 2024-08-05T12:20:00
+source_observed_at: 2024-08-05T15:16:00
+created_at: 2024-08-06T00:20:00
+updated_at: 2024-08-16T01:20:00
 tags: [#risk]
 ---
 # Project Orbit 11 Adoption Workflow Risk 111

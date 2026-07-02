@@ -1,24 +1,19 @@
 ---
 type: company
-status: churn-risk
-segment: smb
-source_created_at: 2023-08-23T14:35:00
-source_observed_at: 2023-08-23T16:54:00
-created_at: 2023-08-24T18:35:00
-updated_at: 2023-11-09T00:35:00
+status: active
+segment: mid-market
+source_created_at: 2023-08-25T10:36:00
+source_observed_at: 2023-08-25T13:27:00
+created_at: 2023-08-26T14:36:00
+updated_at: 2023-10-27T21:36:00
 tags: [#company]
 ---
 # BrightWave Health
 
 ## Account Context
-BrightWave Health is a smb account currently marked `churn-risk`.
+BrightWave Health is a mid-market account currently marked `active`.
 
-## Stakeholders
-- [[Kai Chen]] - Customer Success Manager
-- [[Amara Haddad]] - Customer Success Manager
-- [[Rachel Lee]] - Customer Success Manager
-- [[Grace Quinn]] - Customer Success Manager
-- [[Xavier Usman]] - Customer Success Manager
+## Assigned Account Team
 
 ## Projects
 

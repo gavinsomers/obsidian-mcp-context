@@ -4,10 +4,10 @@ date: 2023-09-18
 status: active
 project: "[[Project Lantern 5]]"
 company: "[[Helio Labs]]"
-source_created_at: 2023-09-18T13:07:00
-source_observed_at: 2023-09-18T13:18:00
-created_at: 2023-09-18T16:57:00
-updated_at: 2023-09-18T22:57:00
+source_created_at: 2023-09-18T13:46:00
+source_observed_at: 2023-09-18T16:41:00
+created_at: 2023-09-18T16:46:00
+updated_at: 2023-09-18T20:46:00
 tags: [#decision]
 ---
 # Project Lantern 5 Pipeline Hygiene Decision 17

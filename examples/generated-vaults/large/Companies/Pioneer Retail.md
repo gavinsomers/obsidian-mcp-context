@@ -1,22 +1,19 @@
 ---
 type: company
 status: active
-segment: smb
-source_created_at: 2023-07-10T11:42:00
-source_observed_at: 2023-07-10T13:22:00
-created_at: 2023-07-12T04:42:00
-updated_at: 2023-08-02T09:13:00
+segment: mid-market
+source_created_at: 2023-07-12T09:51:00
+source_observed_at: 2023-07-12T12:18:00
+created_at: 2023-07-13T07:51:00
+updated_at: 2023-08-21T14:51:00
 tags: [#company]
 ---
 # Pioneer Retail
 
 ## Account Context
-Pioneer Retail is a smb account currently marked `active`.
+Pioneer Retail is a mid-market account currently marked `active`.
 
-## Stakeholders
-- [[Omar Bennett]] - Finance Sponsor
-- [[Elena Grant]] - Finance Sponsor
-- [[Victor Kim]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

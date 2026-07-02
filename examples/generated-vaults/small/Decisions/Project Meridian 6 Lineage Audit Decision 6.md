@@ -4,10 +4,10 @@ date: 2023-08-24
 status: active
 project: "[[Project Meridian 6]]"
 company: "[[Meridian Labs]]"
-source_created_at: 2023-08-24T10:17:00
-source_observed_at: 2023-08-24T11:46:00
-created_at: 2023-08-24T13:26:00
-updated_at: 2023-08-24T14:26:00
+source_created_at: 2023-08-24T15:33:00
+source_observed_at: 2023-08-24T17:01:00
+created_at: 2023-08-31T15:33:00
+updated_at: 2023-08-31T16:33:00
 tags: [#decision]
 ---
 # Project Meridian 6 Lineage Audit Decision 6

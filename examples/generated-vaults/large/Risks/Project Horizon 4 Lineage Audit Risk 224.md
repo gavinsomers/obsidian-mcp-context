@@ -2,10 +2,10 @@
 type: risk
 status: closed
 project: "[[Project Horizon 4]]"
-source_created_at: 2024-04-24T11:05:00
-source_observed_at: 2024-04-24T12:34:00
-created_at: 2024-04-24T18:05:00
-updated_at: 2024-05-17T19:05:00
+source_created_at: 2024-04-24T11:14:00
+source_observed_at: 2024-04-24T13:19:00
+created_at: 2024-04-25T12:14:00
+updated_at: 2024-05-26T12:14:00
 tags: [#risk]
 ---
 # Project Horizon 4 Lineage Audit Risk 224

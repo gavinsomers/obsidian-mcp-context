@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit Retail]]"
-role: "Operations Lead"
-source_created_at: 2023-06-13T08:00:00
-source_observed_at: 2023-06-13T09:14:00
-created_at: 2023-06-14T14:00:00
-updated_at: 2023-07-27T00:00:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-06-13T16:46:00
+source_observed_at: 2023-06-13T18:08:00
+created_at: 2023-06-22T21:46:00
+updated_at: 2023-09-10T05:46:00
 tags: [#person]
 ---
 # David Grant
 
 ## Role
-David Grant is the Operations Lead at [[Summit Retail]].
+David Grant is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Summit Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[David Grant]] #follow-up

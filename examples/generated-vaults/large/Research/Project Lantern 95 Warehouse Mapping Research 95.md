@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Lantern 95]]"
 company: "[[Helio Logistics]]"
-source_created_at: 2024-09-06T14:02:00
-source_observed_at: 2024-09-06T14:43:00
-created_at: 2024-09-07T04:02:00
-updated_at: 2024-10-18T10:02:00
+source_created_at: 2024-09-06T12:33:00
+source_observed_at: 2024-09-06T14:50:00
+created_at: 2024-09-08T08:33:00
+updated_at: 2024-09-15T08:33:00
 tags: [#research]
 ---
 # Project Lantern 95 Warehouse Mapping Research 95
@@ -14,8 +14,8 @@ tags: [#research]
 Research on warehouse mapping for [[Project Lantern 95]] and [[Helio Logistics]].
 
 ## Evidence
-- Interview notes from [[Ben Walker]]
-- Related operating review: [[Project Lantern 95 Adoption Workflow Sync 1635]]
+- Interview notes from [[Priya Diaz]]
+- Related operating review: [[Project Lantern 95 Adoption Workflow Sync 315]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Lantern 95]] #research

@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Harbor Labs]]"
-role: "Legal Counsel"
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
 source_created_at: 2023-05-14T16:18:00
 source_observed_at: 2023-05-14T18:24:00
 created_at: 2023-05-15T21:18:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Rachel Chen
 
 ## Role
-Rachel Chen is the Legal Counsel at [[Harbor Labs]].
+Rachel Chen is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Labs]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Beacon 2]] ([[Apex Labs]])
 - [ ] Confirm next update with [[Rachel Chen]] #follow-up

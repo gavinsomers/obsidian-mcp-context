@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-11-25
+date: 2025-10-29
 project: "[[Project Venture 103]]"
 company: "[[Noble Logistics]]"
-source_created_at: 2024-11-25T12:03:00
-source_observed_at: 2024-11-25T13:20:00
-created_at: 2024-11-25T17:11:00
-updated_at: 2024-11-26T00:11:00
+source_created_at: 2025-10-29T09:16:00
+source_observed_at: 2025-10-29T10:58:00
+created_at: 2025-10-29T11:03:00
+updated_at: 2025-10-29T20:03:00
 tags: [#meeting]
 ---
 # Project Venture 103 Security Review Sync 1423
 
 ## Attendees
-- [[Uma Rostova]]
-- [[David Novak]]
-- [[Yara Diaz]]
+- [[Tara Jenkins]]
+- [[Sam Rostova]]
+- [[Nadia Foster]]
 
 ## Notes
 Security Review reviewed for [[Project Venture 103]] at [[Noble Logistics]].
-[[David Novak]] flagged follow-up work for the next operating review.
+[[Yara Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 103]] to [[David Novak]] #follow-up
+- [ ] Send recap for [[Project Venture 103]] to [[Yara Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

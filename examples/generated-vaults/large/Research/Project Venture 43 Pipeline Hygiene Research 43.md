@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Venture 43]]"
 company: "[[Noble Retail]]"
-source_created_at: 2023-12-25T10:59:00
-source_observed_at: 2023-12-25T13:17:00
-created_at: 2023-12-26T19:59:00
-updated_at: 2024-01-16T03:59:00
+source_created_at: 2023-12-25T15:59:00
+source_observed_at: 2023-12-25T18:15:00
+created_at: 2024-01-02T15:59:00
+updated_at: 2024-01-17T15:59:00
 tags: [#research]
 ---
 # Project Venture 43 Pipeline Hygiene Research 43
@@ -14,7 +14,7 @@ tags: [#research]
 Research on pipeline hygiene for [[Project Venture 43]] and [[Noble Retail]].
 
 ## Evidence
-- Interview notes from [[Wendy Kim]]
+- Interview notes from [[Priya Bennett]]
 - Related operating review: [[Project Venture 43 Security Review Sync 1583]]
 
 ## Follow Up

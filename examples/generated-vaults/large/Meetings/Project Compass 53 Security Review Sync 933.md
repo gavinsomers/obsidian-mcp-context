@@ -3,23 +3,23 @@ type: meeting
 date: 2024-01-29
 project: "[[Project Compass 53]]"
 company: "[[Quantum Manufacturing]]"
-source_created_at: 2024-01-29T13:23:00
-source_observed_at: 2024-01-29T14:03:00
-created_at: 2024-01-29T17:42:00
-updated_at: 2024-01-30T09:42:00
+source_created_at: 2024-01-29T09:21:00
+source_observed_at: 2024-01-29T10:14:00
+created_at: 2024-01-29T14:22:00
+updated_at: 2024-01-30T13:22:00
 tags: [#meeting]
 ---
 # Project Compass 53 Security Review Sync 933
 
 ## Attendees
-- [[Lina Usman]]
-- [[Priya Grant]]
-- [[Farah Lee]]
+- [[Sam Bennett]]
+- [[Sam Ortega]]
+- [[Zoe Jenkins]]
 
 ## Notes
 Security Review reviewed for [[Project Compass 53]] at [[Quantum Manufacturing]].
-[[Farah Lee]] flagged follow-up work for the next operating review.
+[[Alex Chen]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 53]] to [[Farah Lee]] #follow-up
+- [ ] Send recap for [[Project Compass 53]] to [[Alex Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

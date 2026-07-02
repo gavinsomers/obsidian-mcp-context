@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-08-11
 project: "[[Project Beacon 167]]"
-company: "[[Apex Manufacturing]]"
-source_created_at: 2025-08-11T12:27:00
-source_observed_at: 2025-08-11T14:21:00
-created_at: 2025-08-13T14:27:00
-updated_at: 2025-08-14T08:27:00
+company: "[[Cobalt Manufacturing]]"
+source_created_at: 2025-08-11T09:28:00
+source_observed_at: 2025-08-11T11:36:00
+created_at: 2025-08-11T11:41:00
+updated_at: 2025-08-11T18:41:00
 tags: [#meeting]
 ---
 # Project Beacon 167 Contract Renewal Sync 1707
 
 ## Attendees
-- [[Priya Patel]]
-- [[Uma Bennett]]
-- [[Farah Usman]]
+- [[David Chen]]
+- [[Wendy Rostova]]
+- [[Elena Usman]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Beacon 167]] at [[Apex Manufacturing]].
+Contract Renewal reviewed for [[Project Beacon 167]] at [[Cobalt Manufacturing]].
 [[Jonah Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items

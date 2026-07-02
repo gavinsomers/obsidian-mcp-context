@@ -4,10 +4,10 @@ date: 2026-02-23
 status: active
 project: "[[Project Pipeline 52]]"
 company: "[[Vanguard Manufacturing]]"
-source_created_at: 2026-02-23T09:57:00
-source_observed_at: 2026-02-23T10:11:00
-created_at: 2026-02-23T14:24:00
-updated_at: 2026-02-24T03:24:00
+source_created_at: 2026-02-23T10:34:00
+source_observed_at: 2026-02-23T13:18:00
+created_at: 2026-02-23T14:48:00
+updated_at: 2026-02-24T11:48:00
 tags: [#decision]
 ---
 # Project Pipeline 52 Finance Approval Decision 712

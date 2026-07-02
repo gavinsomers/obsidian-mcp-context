@@ -4,10 +4,10 @@ date: 2023-08-03
 status: superseded
 project: "[[Project Summit 12]]"
 company: "[[Pioneer Labs]]"
-source_created_at: 2023-08-03T10:05:00
-source_observed_at: 2023-08-03T11:31:00
-created_at: 2023-08-03T13:26:00
-updated_at: 2023-08-04T05:26:00
+source_created_at: 2023-08-03T11:53:00
+source_observed_at: 2023-08-03T14:29:00
+created_at: 2023-08-03T15:07:00
+updated_at: 2023-08-04T06:07:00
 tags: [#decision]
 ---
 # Project Summit 12 Finance Approval Decision 12

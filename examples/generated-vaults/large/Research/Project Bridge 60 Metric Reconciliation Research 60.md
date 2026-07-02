@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Bridge 60]]"
 company: "[[Keystone Manufacturing]]"
-source_created_at: 2024-03-18T14:31:00
-source_observed_at: 2024-03-18T15:49:00
-created_at: 2024-03-19T17:31:00
-updated_at: 2024-05-02T04:31:00
+source_created_at: 2024-03-18T15:09:00
+source_observed_at: 2024-03-18T16:01:00
+created_at: 2024-03-20T05:09:00
+updated_at: 2024-04-05T09:09:00
 tags: [#research]
 ---
 # Project Bridge 60 Metric Reconciliation Research 60
@@ -14,8 +14,8 @@ tags: [#research]
 Research on metric reconciliation for [[Project Bridge 60]] and [[Keystone Manufacturing]].
 
 ## Evidence
-- Interview notes from [[Tara Usman]]
-- Related operating review: [[Project Bridge 60 Handoff Readiness Sync 940]]
+- Interview notes from [[Grace Chen]]
+- Related operating review: [[Project Bridge 60 Handoff Readiness Sync 1600]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Bridge 60]] #research

@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Cobalt Health]]"
-source_created_at: 2025-10-20T11:48:00
-source_observed_at: 2025-10-20T13:59:00
-created_at: 2025-10-20T14:48:00
-updated_at: 2025-11-19T00:48:00
+status: active
+company: "[[BrightWave Health]]"
+source_created_at: 2025-10-20T14:28:00
+source_observed_at: 2025-10-20T14:59:00
+created_at: 2025-10-22T00:28:00
+updated_at: 2025-12-01T02:28:00
 tags: [#project]
 ---
 # Project Foundry 183
 
 ## Overview
-Project Foundry 183 supports [[Cobalt Health]] through customer success.
+Project Foundry 183 supports [[BrightWave Health]] through customer success.
 
 ## Stakeholders
-- [[Priya Lee]]
-- [[Farah Quinn]]
-- [[Jonah Chen]]
-- [[Wendy Usman]]
+- [[Elena Chen]]
+- [[Marcus Foster]]
+- [[Victor Tan]]
+- [[Jonah Lee]]
 
 ## Operating Notes
-- Owner: [[Priya Lee]]
-- Status: `closed`
-- Closed at: `2026-04-08`
+- Owner: [[Alex Haddad]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Foundry 183]] #ops

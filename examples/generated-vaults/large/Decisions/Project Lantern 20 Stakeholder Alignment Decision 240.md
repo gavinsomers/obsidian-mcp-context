@@ -4,10 +4,10 @@ date: 2024-04-24
 status: active
 project: "[[Project Lantern 20]]"
 company: "[[Helio FinTech]]"
-source_created_at: 2024-04-24T10:45:00
-source_observed_at: 2024-04-24T12:49:00
-created_at: 2024-04-24T12:54:00
-updated_at: 2024-04-25T01:54:00
+source_created_at: 2024-04-24T14:50:00
+source_observed_at: 2024-04-24T17:05:00
+created_at: 2024-04-24T17:10:00
+updated_at: 2024-04-25T00:10:00
 tags: [#decision]
 ---
 # Project Lantern 20 Stakeholder Alignment Decision 240

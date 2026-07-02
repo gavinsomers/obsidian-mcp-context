@@ -3,11 +3,11 @@ type: decision
 date: 2024-08-15
 status: active
 project: "[[Project Orbit 41]]"
-company: "[[Summit Labs]]"
-source_created_at: 2024-08-15T14:13:00
-source_observed_at: 2024-08-15T16:34:00
-created_at: 2024-08-15T16:39:00
-updated_at: 2024-08-16T03:39:00
+company: "[[Pioneer Labs]]"
+source_created_at: 2024-08-15T12:48:00
+source_observed_at: 2024-08-15T15:42:00
+created_at: 2024-08-15T16:00:00
+updated_at: 2024-08-16T08:00:00
 tags: [#decision]
 ---
 # Project Orbit 41 Security Review Decision 91
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with security review for [[Project Orbit 41]].
 
 ## Context
-This decision applies to [[Summit Labs]] and [[Project Orbit 41]].
-It follows [[Project Orbit 41 Warehouse Mapping Sync 191]].
-It incorporates [[Project Orbit 41 Contract Renewal Research 41]].
+This decision applies to [[Pioneer Labs]] and [[Project Orbit 41]].
+It follows [[Project Orbit 41 Warehouse Mapping Sync 91]].
+It incorporates [[Project Orbit 41 Contract Renewal Research 91]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

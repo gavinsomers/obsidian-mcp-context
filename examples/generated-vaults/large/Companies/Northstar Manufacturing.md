@@ -1,22 +1,19 @@
 ---
 type: company
-status: active
+status: pipeline
 segment: smb
-source_created_at: 2023-07-18T16:09:00
-source_observed_at: 2023-07-18T17:47:00
-created_at: 2023-07-20T00:09:00
-updated_at: 2023-08-16T04:09:00
+source_created_at: 2023-07-20T10:20:00
+source_observed_at: 2023-07-20T11:00:00
+created_at: 2023-07-20T19:20:00
+updated_at: 2023-08-27T00:20:00
 tags: [#company]
 ---
 # Northstar Manufacturing
 
 ## Account Context
-Northstar Manufacturing is a smb account currently marked `active`.
+Northstar Manufacturing is a smb account currently marked `pipeline`.
 
-## Stakeholders
-- [[Tara Bennett]] - Legal Counsel
-- [[Iris Grant]] - Legal Counsel
-- [[Zoe Kim]] - Legal Counsel
+## Assigned Account Team
 
 ## Projects
 

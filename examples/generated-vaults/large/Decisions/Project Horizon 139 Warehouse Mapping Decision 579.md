@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-07-11
+date: 2025-08-18
 status: active
 project: "[[Project Horizon 139]]"
-company: "[[BrightWave FinTech]]"
-source_created_at: 2025-07-11T09:07:00
-source_observed_at: 2025-07-11T11:40:00
-created_at: 2025-07-11T11:45:00
-updated_at: 2025-07-11T15:45:00
+company: "[[Helio FinTech]]"
+source_created_at: 2025-08-18T15:46:00
+source_observed_at: 2025-08-18T16:10:00
+created_at: 2025-08-18T19:56:00
+updated_at: 2025-08-19T16:56:00
 tags: [#decision]
 ---
 # Project Horizon 139 Warehouse Mapping Decision 579
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Horizon 139]].
 
 ## Context
-This decision applies to [[BrightWave FinTech]] and [[Project Horizon 139]].
-It follows [[Project Horizon 139 Pipeline Hygiene Sync 799]].
-It incorporates [[Project Horizon 139 Adoption Workflow Research 579]].
+This decision applies to [[Helio FinTech]] and [[Project Horizon 139]].
+It follows [[Project Horizon 139 Pipeline Hygiene Sync 579]].
+It incorporates [[Project Horizon 139 Adoption Workflow Research 359]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

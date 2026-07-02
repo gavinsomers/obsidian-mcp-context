@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Beacon 122]]"
-source_created_at: 2025-05-18T13:26:00
-source_observed_at: 2025-05-18T14:38:00
-created_at: 2025-05-25T16:26:00
-updated_at: 2025-06-03T18:26:00
+source_created_at: 2025-10-14T12:45:00
+source_observed_at: 2025-10-14T13:37:00
+created_at: 2025-10-16T10:45:00
+updated_at: 2025-11-02T10:45:00
 tags: [#risk]
 ---
 # Project Beacon 122 Metric Reconciliation Risk 562
 
 ## Risk
-Metric Reconciliation may affect [[Project Beacon 122]] for [[Apex Labs]].
+Metric Reconciliation may affect [[Project Beacon 122]] for [[Cobalt Labs]].
 
 ## Evidence
 - Raised after [[Project Beacon 122 Stakeholder Alignment Sync 562]]

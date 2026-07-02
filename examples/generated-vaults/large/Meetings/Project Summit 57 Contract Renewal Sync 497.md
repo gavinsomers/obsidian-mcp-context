@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-04-30
+date: 2025-03-27
 project: "[[Project Summit 57]]"
 company: "[[Pioneer Manufacturing]]"
-source_created_at: 2024-04-30T10:45:00
-source_observed_at: 2024-04-30T11:40:00
-created_at: 2024-04-30T12:02:00
-updated_at: 2024-04-30T15:02:00
+source_created_at: 2025-03-27T08:31:00
+source_observed_at: 2025-03-27T11:28:00
+created_at: 2025-03-27T12:06:00
+updated_at: 2025-03-28T02:06:00
 tags: [#meeting]
 ---
 # Project Summit 57 Contract Renewal Sync 497
 
 ## Attendees
-- [[Jonah Lee]]
-- [[David Chen]]
-- [[Alex Quinn]]
+- [[David Haddad]]
+- [[Hannah Foster]]
+- [[Lina Chen]]
 
 ## Notes
 Contract Renewal reviewed for [[Project Summit 57]] at [[Pioneer Manufacturing]].
-[[Uma Grant]] flagged follow-up work for the next operating review.
+[[David Chen]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Summit 57]] to [[Uma Grant]] #follow-up
+- [ ] Send recap for [[Project Summit 57]] to [[David Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

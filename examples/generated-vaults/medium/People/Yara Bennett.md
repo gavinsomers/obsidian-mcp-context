@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Meridian FinTech]]"
-role: "SecOps Lead"
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
 source_created_at: 2023-05-07T08:39:00
 source_observed_at: 2023-05-07T11:12:00
 created_at: 2023-05-09T01:39:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Yara Bennett
 
 ## Role
-Yara Bennett is the SecOps Lead at [[Meridian FinTech]].
+Yara Bennett is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Bennett]] #follow-up

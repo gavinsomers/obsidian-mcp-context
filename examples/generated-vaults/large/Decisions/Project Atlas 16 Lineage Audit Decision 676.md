@@ -4,10 +4,10 @@ date: 2026-01-01
 status: active
 project: "[[Project Atlas 16]]"
 company: "[[Northstar FinTech]]"
-source_created_at: 2026-01-01T12:53:00
-source_observed_at: 2026-01-01T13:16:00
-created_at: 2026-01-05T12:53:00
-updated_at: 2026-01-06T00:53:00
+source_created_at: 2026-01-01T16:09:00
+source_observed_at: 2026-01-01T18:01:00
+created_at: 2026-01-01T21:47:00
+updated_at: 2026-01-02T17:47:00
 tags: [#decision]
 ---
 # Project Atlas 16 Lineage Audit Decision 676

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Retail]]"
-role: "VP Data Engineering"
-source_created_at: 2023-10-10T10:10:00
-source_observed_at: 2023-10-10T10:31:00
-created_at: 2023-10-16T14:10:00
-updated_at: 2023-11-25T20:10:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-10-10T15:53:00
+source_observed_at: 2023-10-10T18:01:00
+created_at: 2023-10-11T20:53:00
+updated_at: 2023-11-25T23:53:00
 tags: [#person]
 ---
 # Wendy Tan
 
 ## Role
-Wendy Tan is the VP Data Engineering at [[Vanguard Retail]].
+Wendy Tan is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Pipeline 37]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Tan]] #follow-up

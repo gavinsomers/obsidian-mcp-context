@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-06-13
+date: 2026-02-13
 status: active
 project: "[[Project Atlas 46]]"
 company: "[[Northstar Manufacturing]]"
-source_created_at: 2024-06-13T11:40:00
-source_observed_at: 2024-06-13T14:09:00
-created_at: 2024-06-22T12:40:00
-updated_at: 2024-06-23T03:40:00
+source_created_at: 2026-02-13T16:14:00
+source_observed_at: 2026-02-13T16:57:00
+created_at: 2026-02-13T22:13:00
+updated_at: 2026-02-14T07:13:00
 tags: [#decision]
 ---
 # Project Atlas 46 Lineage Audit Decision 706

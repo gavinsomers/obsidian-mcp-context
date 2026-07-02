@@ -3,23 +3,23 @@ type: meeting
 date: 2024-02-12
 project: "[[Project Lantern 20]]"
 company: "[[Helio FinTech]]"
-source_created_at: 2024-02-12T11:12:00
-source_observed_at: 2024-02-12T13:06:00
-created_at: 2024-02-12T15:58:00
-updated_at: 2024-02-13T00:58:00
+source_created_at: 2024-02-12T15:31:00
+source_observed_at: 2024-02-12T18:30:00
+created_at: 2024-02-12T21:09:00
+updated_at: 2024-02-13T15:09:00
 tags: [#meeting]
 ---
 # Project Lantern 20 Handoff Readiness Sync 170
 
 ## Attendees
-- [[Iris Foster]]
-- [[Elena Evans]]
-- [[Amara Diaz]]
+- [[Sam Bennett]]
+- [[Xavier Bennett]]
+- [[Clara Evans]]
 
 ## Notes
 Handoff Readiness reviewed for [[Project Lantern 20]] at [[Helio FinTech]].
-[[Iris Foster]] flagged follow-up work for the next operating review.
+[[Tara Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 20]] to [[Iris Foster]] #follow-up
+- [ ] Send recap for [[Project Lantern 20]] to [[Tara Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -2,10 +2,10 @@
 type: project
 status: active
 company: "[[Keystone Retail]]"
-source_created_at: 2023-12-12T11:07:00
-source_observed_at: 2023-12-12T11:55:00
-created_at: 2023-12-13T04:07:00
-updated_at: 2024-02-04T11:07:00
+source_created_at: 2023-12-12T13:52:00
+source_observed_at: 2023-12-12T15:20:00
+created_at: 2023-12-13T13:52:00
+updated_at: 2024-01-26T17:52:00
 tags: [#project]
 ---
 # Project Bridge 45
@@ -14,12 +14,12 @@ tags: [#project]
 Project Bridge 45 supports [[Keystone Retail]] through operations admin.
 
 ## Stakeholders
-- [[Yara Kim]]
-- [[Nadia Patel]]
-- [[Sam Bennett]]
-- [[David Usman]]
+- [[Xavier Foster]]
+- [[Omar Vance]]
+- [[Uma Usman]]
+- [[Rachel Quinn]]
 
 ## Operating Notes
-- Owner: [[David Usman]]
+- Owner: [[Sam Bennett]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Bridge 45]] #ops

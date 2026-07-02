@@ -3,23 +3,23 @@ type: meeting
 date: 2024-06-01
 project: "[[Project Foundry 78]]"
 company: "[[Cobalt Media]]"
-source_created_at: 2024-06-01T13:40:00
-source_observed_at: 2024-06-01T15:29:00
-created_at: 2024-06-01T15:34:00
-updated_at: 2024-06-02T02:34:00
+source_created_at: 2024-06-01T12:49:00
+source_observed_at: 2024-06-01T14:28:00
+created_at: 2024-06-01T17:09:00
+updated_at: 2024-06-02T14:09:00
 tags: [#meeting]
 ---
 # Project Foundry 78 Lineage Audit Sync 78
 
 ## Attendees
-- [[Kai Vance]]
-- [[Victor Quinn]]
-- [[Omar Haddad]]
+- [[Hannah Foster]]
+- [[Xavier Chen]]
+- [[Wendy Haddad]]
 
 ## Notes
 Lineage Audit reviewed for [[Project Foundry 78]] at [[Cobalt Media]].
-[[Elena Morgan]] flagged follow-up work for the next operating review.
+[[Zoe Chen]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 78]] to [[Elena Morgan]] #follow-up
+- [ ] Send recap for [[Project Foundry 78]] to [[Zoe Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -3,11 +3,11 @@ type: decision
 date: 2026-02-21
 status: active
 project: "[[Project Pipeline 202]]"
-company: "[[Vanguard Media]]"
-source_created_at: 2026-02-21T11:21:00
-source_observed_at: 2026-02-21T12:05:00
-created_at: 2026-02-23T13:21:00
-updated_at: 2026-02-23T14:21:00
+company: "[[Quantum Media]]"
+source_created_at: 2026-02-21T15:49:00
+source_observed_at: 2026-02-21T16:34:00
+created_at: 2026-02-21T16:39:00
+updated_at: 2026-02-22T01:39:00
 tags: [#decision]
 ---
 # Project Pipeline 202 Finance Approval Decision 642
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with finance approval for [[Project Pipeline 202]].
 
 ## Context
-This decision applies to [[Vanguard Media]] and [[Project Pipeline 202]].
-It follows [[Project Pipeline 202 Stakeholder Alignment Sync 862]].
+This decision applies to [[Quantum Media]] and [[Project Pipeline 202]].
+It follows [[Project Pipeline 202 Stakeholder Alignment Sync 1082]].
 It incorporates [[Project Pipeline 202 Lineage Audit Research 202]].
 
 ## Supersession

@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-09-29
 project: "[[Project Summit 177]]"
-company: "[[Pioneer Manufacturing]]"
-source_created_at: 2025-09-29T14:54:00
-source_observed_at: 2025-09-29T17:23:00
-created_at: 2025-09-29T17:28:00
-updated_at: 2025-09-30T13:28:00
+company: "[[Noble Manufacturing]]"
+source_created_at: 2025-09-29T08:32:00
+source_observed_at: 2025-09-29T11:01:00
+created_at: 2025-09-29T11:06:00
+updated_at: 2025-09-30T01:06:00
 tags: [#meeting]
 ---
 # Project Summit 177 Contract Renewal Sync 1717
 
 ## Attendees
-- [[Alex Quinn]]
-- [[Priya Usman]]
-- [[David Chen]]
+- [[Sam Quinn]]
+- [[Farah Shah]]
+- [[Kai Vance]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Summit 177]] at [[Pioneer Manufacturing]].
+Contract Renewal reviewed for [[Project Summit 177]] at [[Noble Manufacturing]].
 [[Uma Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items

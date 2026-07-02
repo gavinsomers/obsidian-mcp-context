@@ -2,24 +2,24 @@
 type: meeting
 date: 2026-03-12
 project: "[[Project Horizon 199]]"
-company: "[[BrightWave Media]]"
-source_created_at: 2026-03-12T10:24:00
-source_observed_at: 2026-03-12T11:56:00
-created_at: 2026-03-12T12:47:00
-updated_at: 2026-03-13T07:47:00
+company: "[[Helio Media]]"
+source_created_at: 2026-03-12T11:06:00
+source_observed_at: 2026-03-12T11:58:00
+created_at: 2026-03-12T16:21:00
+updated_at: 2026-03-12T18:21:00
 tags: [#meeting]
 ---
 # Project Horizon 199 Pipeline Hygiene Sync 1519
 
 ## Attendees
-- [[Alex Diaz]]
-- [[Wendy Quinn]]
-- [[Farah Morgan]]
+- [[Kai Jenkins]]
+- [[Rachel Morgan]]
+- [[Clara Lee]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Horizon 199]] at [[BrightWave Media]].
-[[Wendy Quinn]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Horizon 199]] at [[Helio Media]].
+[[Priya Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Horizon 199]] to [[Wendy Quinn]] #follow-up
+- [ ] Send recap for [[Project Horizon 199]] to [[Priya Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Crescent Labs]]"
-source_created_at: 2025-02-20T12:15:00
-source_observed_at: 2025-02-20T13:18:00
-created_at: 2025-02-20T15:15:00
-updated_at: 2025-04-20T19:15:00
+status: planning
+company: "[[Keystone Labs]]"
+source_created_at: 2025-02-20T14:58:00
+source_observed_at: 2025-02-20T16:52:00
+created_at: 2025-02-22T01:58:00
+updated_at: 2025-04-23T01:58:00
 tags: [#project]
 ---
 # Project Signal 134
 
 ## Overview
-Project Signal 134 supports [[Crescent Labs]] through research program.
+Project Signal 134 supports [[Keystone Labs]] through research program.
 
 ## Stakeholders
-- [[Tara Jenkins]]
-- [[Zoe Shah]]
-- [[Iris Ortega]]
-- [[Clara Foster]]
+- [[David Ivanov]]
+- [[Farah Tan]]
+- [[Lina Morgan]]
+- [[Xavier Shah]]
 
 ## Operating Notes
-- Owner: [[Iris Ortega]]
-- Status: `active`
+- Owner: [[Clara Foster]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Signal 134]] #ops

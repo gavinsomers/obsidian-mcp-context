@@ -4,10 +4,10 @@ date: 2024-10-12
 status: active
 project: "[[Project Orbit 101]]"
 company: "[[Summit Logistics]]"
-source_created_at: 2024-10-12T10:27:00
-source_observed_at: 2024-10-12T11:48:00
-created_at: 2024-10-12T15:00:00
-updated_at: 2024-10-13T11:00:00
+source_created_at: 2024-10-12T15:25:00
+source_observed_at: 2024-10-12T16:41:00
+created_at: 2024-10-12T19:30:00
+updated_at: 2024-10-13T09:30:00
 tags: [#decision]
 ---
 # Project Orbit 101 Security Review Decision 101
@@ -17,7 +17,7 @@ Proceed with security review for [[Project Orbit 101]].
 
 ## Context
 This decision applies to [[Summit Logistics]] and [[Project Orbit 101]].
-It follows [[Project Orbit 101 Warehouse Mapping Sync 101]].
+It follows [[Project Orbit 101 Warehouse Mapping Sync 981]].
 It incorporates [[Project Orbit 101 Contract Renewal Research 101]].
 
 ## Supersession

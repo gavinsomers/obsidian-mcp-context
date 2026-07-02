@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Manufacturing]]"
-role: "Implementation Manager"
-source_created_at: 2023-07-29T08:07:00
-source_observed_at: 2023-07-29T09:20:00
-created_at: 2023-07-30T14:07:00
-updated_at: 2023-09-14T01:07:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-07-29T10:34:00
+source_observed_at: 2023-07-29T12:13:00
+created_at: 2023-07-30T17:34:00
+updated_at: 2023-09-18T02:34:00
 tags: [#person]
 ---
 # Marcus Lee
 
 ## Role
-Marcus Lee is the Implementation Manager at [[Keystone Manufacturing]].
+Marcus Lee is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Marcus Lee]] #follow-up

@@ -3,11 +3,11 @@ type: decision
 date: 2024-04-28
 status: active
 project: "[[Project Atlas 31]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2024-04-28T11:06:00
-source_observed_at: 2024-04-28T11:24:00
-created_at: 2024-04-28T15:38:00
-updated_at: 2024-04-29T10:38:00
+company: "[[Apex Labs]]"
+source_created_at: 2024-04-28T14:13:00
+source_observed_at: 2024-04-28T16:34:00
+created_at: 2024-04-28T16:39:00
+updated_at: 2024-04-29T03:39:00
 tags: [#decision]
 ---
 # Project Atlas 31 Security Review Decision 81
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with security review for [[Project Atlas 31]].
 
 ## Context
-This decision applies to [[Northstar Labs]] and [[Project Atlas 31]].
-It follows [[Project Atlas 31 Warehouse Mapping Sync 81]].
+This decision applies to [[Apex Labs]] and [[Project Atlas 31]].
+It follows [[Project Atlas 31 Warehouse Mapping Sync 31]].
 It incorporates [[Project Atlas 31 Contract Renewal Research 31]].
 
 ## Supersession

@@ -1,22 +1,19 @@
 ---
 type: company
-status: pipeline
-segment: mid-market
-source_created_at: 2023-06-24T13:38:00
-source_observed_at: 2023-06-24T14:39:00
-created_at: 2023-06-25T02:38:00
-updated_at: 2023-08-28T07:38:00
+status: active
+segment: smb
+source_created_at: 2023-06-26T14:58:00
+source_observed_at: 2023-06-26T15:29:00
+created_at: 2023-06-29T19:58:00
+updated_at: 2023-08-22T00:58:00
 tags: [#company]
 ---
 # BrightWave Retail
 
 ## Account Context
-BrightWave Retail is a mid-market account currently marked `pipeline`.
+BrightWave Retail is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Grace Bennett]] - Finance Sponsor
-- [[Xavier Foster]] - Finance Sponsor
-- [[Marcus Kim]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

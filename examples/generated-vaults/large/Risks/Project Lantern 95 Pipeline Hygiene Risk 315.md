@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Lantern 95]]"
-source_created_at: 2024-09-17T13:31:00
-source_observed_at: 2024-09-17T16:04:00
-created_at: 2024-09-17T16:31:00
-updated_at: 2024-10-04T23:31:00
+source_created_at: 2024-09-17T15:50:00
+source_observed_at: 2024-09-17T18:01:00
+created_at: 2024-09-18T00:50:00
+updated_at: 2024-09-28T08:50:00
 tags: [#risk]
 ---
 # Project Lantern 95 Pipeline Hygiene Risk 315
@@ -14,9 +14,9 @@ tags: [#risk]
 Pipeline Hygiene may affect [[Project Lantern 95]] for [[Helio Logistics]].
 
 ## Evidence
-- Raised after [[Project Lantern 95 Adoption Workflow Sync 1635]]
+- Raised after [[Project Lantern 95 Adoption Workflow Sync 315]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Ben Walker]]
+- Owner: [[Priya Diaz]]
 - [ ] Reassess [[Project Lantern 95 Pipeline Hygiene Risk 315]] during the next review #risk

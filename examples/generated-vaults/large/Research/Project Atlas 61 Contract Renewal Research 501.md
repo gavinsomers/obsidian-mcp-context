@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Atlas 61]]"
 company: "[[Northstar Health]]"
-source_created_at: 2025-09-29T08:03:00
-source_observed_at: 2025-09-29T09:06:00
-created_at: 2025-09-29T23:03:00
-updated_at: 2025-10-19T03:03:00
+source_created_at: 2025-09-29T15:41:00
+source_observed_at: 2025-09-29T16:00:00
+created_at: 2025-10-05T18:41:00
+updated_at: 2025-10-30T02:41:00
 tags: [#research]
 ---
 # Project Atlas 61 Contract Renewal Research 501

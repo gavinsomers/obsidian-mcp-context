@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Quantum Labs]]"
-role: "Customer Success Manager"
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
 source_created_at: 2023-06-02T10:35:00
 source_observed_at: 2023-06-02T13:20:00
 created_at: 2023-06-02T19:35:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Xavier Evans
 
 ## Role
-Xavier Evans is the Customer Success Manager at [[Quantum Labs]].
+Xavier Evans is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum Labs]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Xavier Evans]] #follow-up

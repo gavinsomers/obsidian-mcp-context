@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: planning
 company: "[[Quantum Media]]"
-source_created_at: 2024-06-14T13:08:00
-source_observed_at: 2024-06-14T15:41:00
-created_at: 2024-06-17T17:08:00
-updated_at: 2024-07-23T01:08:00
+source_created_at: 2024-06-14T09:56:00
+source_observed_at: 2024-06-14T11:30:00
+created_at: 2024-06-16T15:56:00
+updated_at: 2024-08-17T00:56:00
 tags: [#project]
 ---
 # Project Compass 83
@@ -14,12 +14,12 @@ tags: [#project]
 Project Compass 83 supports [[Quantum Media]] through customer success.
 
 ## Stakeholders
-- [[Jonah Morgan]]
-- [[Priya Vance]]
-- [[David Diaz]]
-- [[Uma Haddad]]
+- [[Alex Bennett]]
+- [[Elena Ortega]]
+- [[Victor Vance]]
+- [[Nadia Walker]]
 
 ## Operating Notes
-- Owner: [[Jonah Morgan]]
-- Status: `active`
+- Owner: [[David Diaz]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Compass 83]] #ops

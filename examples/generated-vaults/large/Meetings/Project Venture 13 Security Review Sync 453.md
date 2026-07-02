@@ -1,19 +1,20 @@
 ---
 type: meeting
-date: 2024-01-26
+date: 2025-01-24
 project: "[[Project Venture 13]]"
 company: "[[Noble Labs]]"
-source_created_at: 2024-01-26T15:27:00
-source_observed_at: 2024-01-26T17:19:00
-created_at: 2024-01-26T17:24:00
-updated_at: 2024-01-27T02:24:00
+source_created_at: 2025-01-24T08:50:00
+source_observed_at: 2025-01-24T09:59:00
+created_at: 2025-01-24T10:04:00
+updated_at: 2025-01-25T06:04:00
 tags: [#meeting]
 ---
 # Project Venture 13 Security Review Sync 453
 
 ## Attendees
-- [[Lina Alvarez]]
-- [[Ben Foster]]
+- [[Iris Grant]]
+- [[Zoe Evans]]
+- [[Sam Bennett]]
 
 ## Notes
 Security Review reviewed for [[Project Venture 13]] at [[Noble Labs]].

@@ -3,16 +3,18 @@ type: meeting
 date: 2025-06-12
 project: "[[Project Horizon 4]]"
 company: "[[BrightWave Labs]]"
-source_created_at: 2025-06-12T12:11:00
-source_observed_at: 2025-06-12T13:02:00
-created_at: 2025-06-12T16:25:00
-updated_at: 2025-06-13T03:25:00
+source_created_at: 2025-06-12T15:34:00
+source_observed_at: 2025-06-12T18:18:00
+created_at: 2025-06-12T18:23:00
+updated_at: 2025-06-13T12:23:00
 tags: [#meeting]
 ---
 # Project Horizon 4 Finance Approval Sync 1324
 
 ## Attendees
-- [[Clara Alvarez]]
+- [[David Chen]]
+- [[Tara Alvarez]]
+- [[Ben Diaz]]
 
 ## Notes
 Finance Approval reviewed for [[Project Horizon 4]] at [[BrightWave Labs]].

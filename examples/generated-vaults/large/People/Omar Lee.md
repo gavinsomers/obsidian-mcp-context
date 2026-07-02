@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex Health]]"
-role: "Legal Counsel"
-source_created_at: 2023-07-30T11:30:00
-source_observed_at: 2023-07-30T13:19:00
-created_at: 2023-07-31T08:30:00
-updated_at: 2023-09-24T10:30:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-07-30T16:23:00
+source_observed_at: 2023-07-30T18:29:00
+created_at: 2023-08-08T22:23:00
+updated_at: 2023-09-14T22:23:00
 tags: [#person]
 ---
 # Omar Lee
 
 ## Role
-Omar Lee is the Legal Counsel at [[Apex Health]].
+Omar Lee is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Apex Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Omar Lee]] #follow-up

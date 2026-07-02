@@ -1,20 +1,20 @@
 ---
 type: meeting
-date: 2023-10-28
+date: 2024-09-06
 project: "[[Project Keystone 25]]"
 company: "[[Harbor FinTech]]"
-source_created_at: 2023-10-28T13:20:00
-source_observed_at: 2023-10-28T14:10:00
-created_at: 2023-11-04T18:20:00
-updated_at: 2023-11-04T19:20:00
+source_created_at: 2024-09-06T09:13:00
+source_observed_at: 2024-09-06T11:28:00
+created_at: 2024-09-06T12:10:00
+updated_at: 2024-09-06T17:10:00
 tags: [#meeting]
 ---
 # Project Keystone 25 Adoption Workflow Sync 1125
 
 ## Attendees
-- [[David Kim]]
-- [[Uma Ortega]]
-- [[Nadia Foster]]
+- [[Amara Diaz]]
+- [[Sam Chen]]
+- [[Marcus Bennett]]
 
 ## Notes
 Adoption Workflow reviewed for [[Project Keystone 25]] at [[Harbor FinTech]].

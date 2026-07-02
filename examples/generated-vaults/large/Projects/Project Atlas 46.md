@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Northstar Manufacturing]]"
-source_created_at: 2023-12-15T15:35:00
-source_observed_at: 2023-12-15T17:36:00
-created_at: 2023-12-15T19:35:00
-updated_at: 2024-01-23T21:35:00
+source_created_at: 2023-12-15T16:24:00
+source_observed_at: 2023-12-15T17:53:00
+created_at: 2023-12-17T14:24:00
+updated_at: 2024-02-16T00:24:00
 tags: [#project]
 ---
 # Project Atlas 46
@@ -14,13 +14,12 @@ tags: [#project]
 Project Atlas 46 supports [[Northstar Manufacturing]] through consulting delivery.
 
 ## Stakeholders
-- [[Iris Grant]]
-- [[Tara Bennett]]
-- [[Elena Usman]]
-- [[Omar Patel]]
+- [[Iris Lee]]
+- [[Iris Jenkins]]
+- [[Wendy Lee]]
+- [[Uma Evans]]
 
 ## Operating Notes
 - Owner: [[Tara Bennett]]
-- Status: `closed`
-- Closed at: `2024-06-15`
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Atlas 46]] #ops

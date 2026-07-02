@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-05
 status: active
 project: "[[Project Atlas 211]]"
-company: "[[Northstar Logistics]]"
-source_created_at: 2026-04-05T10:52:00
-source_observed_at: 2026-04-05T11:28:00
-created_at: 2026-04-05T14:21:00
-updated_at: 2026-04-05T16:21:00
+company: "[[Apex Logistics]]"
+source_created_at: 2026-04-05T10:31:00
+source_observed_at: 2026-04-05T11:54:00
+created_at: 2026-04-05T11:59:00
+updated_at: 2026-04-05T18:59:00
 tags: [#decision]
 ---
 # Project Atlas 211 Security Review Decision 211
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with security review for [[Project Atlas 211]].
 
 ## Context
-This decision applies to [[Northstar Logistics]] and [[Project Atlas 211]].
+This decision applies to [[Apex Logistics]] and [[Project Atlas 211]].
 It follows [[Project Atlas 211 Warehouse Mapping Sync 1531]].
 It incorporates [[Project Atlas 211 Contract Renewal Research 431]].
 

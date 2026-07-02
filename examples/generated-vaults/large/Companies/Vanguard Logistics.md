@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
-segment: mid-market
-source_created_at: 2023-10-28T16:12:00
-source_observed_at: 2023-10-28T18:02:00
-created_at: 2023-10-28T21:12:00
-updated_at: 2023-12-12T04:12:00
+status: churn-risk
+segment: enterprise
+source_created_at: 2023-10-30T13:51:00
+source_observed_at: 2023-10-30T15:50:00
+created_at: 2023-10-30T19:51:00
+updated_at: 2023-12-17T06:51:00
 tags: [#company]
 ---
 # Vanguard Logistics
 
 ## Account Context
-Vanguard Logistics is a mid-market account currently marked `active`.
+Vanguard Logistics is a enterprise account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Sam Diaz]] - Operations Lead
-- [[Hannah Ivanov]] - Operations Lead
-- [[Yara Morgan]] - Operations Lead
-- [[Nadia Rostova]] - Operations Lead
-- [[David Walker]] - Operations Lead
+## Assigned Account Team
 
 ## Projects
 

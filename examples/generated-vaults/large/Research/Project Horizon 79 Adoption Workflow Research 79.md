@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Horizon 79]]"
 company: "[[BrightWave Media]]"
-source_created_at: 2024-06-20T14:44:00
-source_observed_at: 2024-06-20T15:55:00
-created_at: 2024-06-20T23:44:00
-updated_at: 2024-07-16T02:44:00
+source_created_at: 2024-06-20T16:30:00
+source_observed_at: 2024-06-20T18:07:00
+created_at: 2024-06-21T01:30:00
+updated_at: 2024-07-31T11:30:00
 tags: [#research]
 ---
 # Project Horizon 79 Adoption Workflow Research 79
@@ -14,7 +14,7 @@ tags: [#research]
 Research on adoption workflow for [[Project Horizon 79]] and [[BrightWave Media]].
 
 ## Evidence
-- Interview notes from [[Wendy Quinn]]
+- Interview notes from [[Alex Diaz]]
 - Related operating review: [[Project Horizon 79 Pipeline Hygiene Sync 1839]]
 
 ## Follow Up

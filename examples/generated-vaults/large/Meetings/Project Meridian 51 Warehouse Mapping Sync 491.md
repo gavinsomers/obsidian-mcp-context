@@ -1,20 +1,20 @@
 ---
 type: meeting
-date: 2025-03-19
+date: 2024-06-24
 project: "[[Project Meridian 51]]"
 company: "[[Meridian Manufacturing]]"
-source_created_at: 2025-03-19T09:35:00
-source_observed_at: 2025-03-19T11:36:00
-created_at: 2025-03-19T11:41:00
-updated_at: 2025-03-19T12:41:00
+source_created_at: 2024-06-24T09:22:00
+source_observed_at: 2024-06-24T11:37:00
+created_at: 2024-06-24T14:32:00
+updated_at: 2024-06-24T15:32:00
 tags: [#meeting]
 ---
 # Project Meridian 51 Warehouse Mapping Sync 491
 
 ## Attendees
-- [[Uma Patel]]
-- [[David Lee]]
-- [[Nadia Grant]]
+- [[Elena Ortega]]
+- [[Rachel Chen]]
+- [[Priya Usman]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Meridian 51]] at [[Meridian Manufacturing]].

@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Beacon 47]]"
-source_created_at: 2024-01-08T10:02:00
-source_observed_at: 2024-01-08T10:42:00
-created_at: 2024-01-10T03:02:00
-updated_at: 2024-01-18T11:02:00
+source_created_at: 2024-01-08T08:10:00
+source_observed_at: 2024-01-08T10:57:00
+created_at: 2024-01-08T19:10:00
+updated_at: 2024-02-21T19:10:00
 tags: [#risk]
 ---
 # Project Beacon 47 Warehouse Mapping Risk 47
@@ -14,9 +14,9 @@ tags: [#risk]
 Warehouse Mapping may affect [[Project Beacon 47]] for [[Apex Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Beacon 47 Contract Renewal Sync 927]]
+- Raised after [[Project Beacon 47 Contract Renewal Sync 47]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Jonah Grant]]
+- Status: `closed`
+- Owner: [[Uma Bennett]]
 - [ ] Reassess [[Project Beacon 47 Warehouse Mapping Risk 47]] during the next review #risk

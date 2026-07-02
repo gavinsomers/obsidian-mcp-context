@@ -1,7 +1,7 @@
 ---
 type: project
 status: closed
-company: "[[Quantum Labs]]"
+company: "[[Atlas Labs]]"
 source_created_at: 2024-06-12T12:50:00
 source_observed_at: 2024-06-12T15:41:00
 created_at: 2024-06-20T16:50:00
@@ -11,16 +11,16 @@ tags: [#project]
 # Project Compass 38
 
 ## Overview
-Project Compass 38 supports [[Quantum Labs]] through customer success.
+Project Compass 38 supports [[Atlas Labs]] through customer success.
 
 ## Stakeholders
-- [[Grace Alvarez]]
-- [[Tara Diaz]]
-- [[Kai Bennett]]
-- [[Omar Chen]]
+- [[Priya Alvarez]]
+- [[Ben Evans]]
+- [[Alex Evans]]
+- [[Farah Diaz]]
 
 ## Operating Notes
-- Owner: [[Omar Chen]]
+- Owner: [[Kai Bennett]]
 - Status: `closed`
 - Closed at: `2024-11-23`
 - [ ] Reconcile latest state for [[Project Compass 38]] #ops

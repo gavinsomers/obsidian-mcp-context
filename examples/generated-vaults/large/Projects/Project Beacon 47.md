@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Apex Manufacturing]]"
-source_created_at: 2023-12-21T12:08:00
-source_observed_at: 2023-12-21T12:25:00
-created_at: 2023-12-22T07:08:00
-updated_at: 2024-03-15T09:08:00
+source_created_at: 2023-12-21T09:34:00
+source_observed_at: 2023-12-21T10:44:00
+created_at: 2023-12-22T11:34:00
+updated_at: 2024-01-06T17:34:00
 tags: [#project]
 ---
 # Project Beacon 47
@@ -14,13 +14,12 @@ tags: [#project]
 Project Beacon 47 supports [[Apex Manufacturing]] through sales pipeline.
 
 ## Stakeholders
-- [[Farah Usman]]
-- [[Uma Bennett]]
-- [[Alex Lee]]
-- [[Jonah Grant]]
+- [[Jonah Jenkins]]
+- [[Marcus Quinn]]
+- [[Alex Shah]]
+- [[Lina Chen]]
 
 ## Operating Notes
-- Owner: [[Jonah Grant]]
-- Status: `closed`
-- Closed at: `2024-03-08`
+- Owner: [[Uma Bennett]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Beacon 47]] #ops

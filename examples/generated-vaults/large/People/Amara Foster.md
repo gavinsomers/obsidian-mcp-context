@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Pioneer Labs]]"
-role: "Implementation Manager"
-source_created_at: 2023-06-03T16:57:00
-source_observed_at: 2023-06-03T19:43:00
-created_at: 2023-06-06T23:57:00
-updated_at: 2023-08-23T01:57:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-06-03T09:49:00
+source_observed_at: 2023-06-03T11:54:00
+created_at: 2023-06-05T00:49:00
+updated_at: 2023-08-22T02:49:00
 tags: [#person]
 ---
 # Amara Foster
 
 ## Role
-Amara Foster is the Implementation Manager at [[Pioneer Labs]].
+Amara Foster is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Summit 12]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Amara Foster]] #follow-up

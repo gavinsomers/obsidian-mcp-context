@@ -1,18 +1,20 @@
 ---
 type: meeting
-date: 2025-06-11
+date: 2023-09-12
 project: "[[Project Foundry 3]]"
 company: "[[Cobalt Labs]]"
-source_created_at: 2025-06-11T09:38:00
-source_observed_at: 2025-06-11T12:19:00
-created_at: 2025-06-11T12:24:00
-updated_at: 2025-06-12T02:24:00
+source_created_at: 2023-09-12T15:10:00
+source_observed_at: 2023-09-12T15:44:00
+created_at: 2023-09-12T19:44:00
+updated_at: 2023-09-12T21:44:00
 tags: [#meeting]
 ---
 # Project Foundry 3 Security Review Sync 1323
 
 ## Attendees
-- [[Ben Alvarez]]
+- [[Uma Chen]]
+- [[Wendy Chen]]
+- [[David Diaz]]
 
 ## Notes
 Security Review reviewed for [[Project Foundry 3]] at [[Cobalt Labs]].

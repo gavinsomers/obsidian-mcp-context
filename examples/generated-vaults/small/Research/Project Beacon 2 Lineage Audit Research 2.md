@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Beacon 2]]"
 company: "[[Apex Labs]]"
-source_created_at: 2023-06-17T09:06:00
-source_observed_at: 2023-06-17T10:16:00
-created_at: 2023-06-17T19:06:00
-updated_at: 2023-07-15T02:06:00
+source_created_at: 2023-06-17T09:53:00
+source_observed_at: 2023-06-17T12:24:00
+created_at: 2023-06-18T00:53:00
+updated_at: 2023-07-05T05:53:00
 tags: [#research]
 ---
 # Project Beacon 2 Lineage Audit Research 2
@@ -14,7 +14,7 @@ tags: [#research]
 Research on lineage audit for [[Project Beacon 2]] and [[Apex Labs]].
 
 ## Evidence
-- Interview notes from [[Iris Alvarez]]
+- Interview notes from [[Amara Alvarez]]
 - Related operating review: [[Project Beacon 2 Finance Approval Sync 14]]
 
 ## Follow Up

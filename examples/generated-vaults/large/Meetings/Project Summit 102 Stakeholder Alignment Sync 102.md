@@ -3,23 +3,23 @@ type: meeting
 date: 2024-09-27
 project: "[[Project Summit 102]]"
 company: "[[Pioneer Logistics]]"
-source_created_at: 2024-09-27T12:00:00
-source_observed_at: 2024-09-27T12:53:00
-created_at: 2024-09-27T12:58:00
-updated_at: 2024-09-27T16:58:00
+source_created_at: 2024-09-27T11:59:00
+source_observed_at: 2024-09-27T14:36:00
+created_at: 2024-09-27T17:16:00
+updated_at: 2024-09-27T20:16:00
 tags: [#meeting]
 ---
 # Project Summit 102 Stakeholder Alignment Sync 102
 
 ## Attendees
-- [[Marcus Ivanov]]
-- [[Xavier Diaz]]
-- [[Tara Rostova]]
+- [[Marcus Jenkins]]
+- [[Nadia Morgan]]
+- [[Iris Shah]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Summit 102]] at [[Pioneer Logistics]].
-[[Marcus Ivanov]] flagged follow-up work for the next operating review.
+[[Xavier Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Summit 102]] to [[Marcus Ivanov]] #follow-up
+- [ ] Send recap for [[Project Summit 102]] to [[Xavier Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

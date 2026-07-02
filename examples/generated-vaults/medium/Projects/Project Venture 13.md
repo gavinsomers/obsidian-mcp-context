@@ -14,12 +14,12 @@ tags: [#project]
 Project Venture 13 supports [[Noble Labs]] through customer success.
 
 ## Stakeholders
-- [[Ben Foster]]
-- [[Yara Diaz]]
-- [[Uma Chen]]
-- [[Priya Bennett]]
+- [[Tara Bennett]]
+- [[Sam Foster]]
+- [[Omar Chen]]
+- [[Iris Alvarez]]
 
 ## Operating Notes
-- Owner: [[Uma Chen]]
+- Owner: [[Lina Alvarez]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Venture 13]] #ops

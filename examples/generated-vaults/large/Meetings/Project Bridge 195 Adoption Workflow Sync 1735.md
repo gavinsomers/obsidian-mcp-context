@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-12-27
 project: "[[Project Bridge 195]]"
-company: "[[Keystone Health]]"
-source_created_at: 2025-12-27T09:37:00
-source_observed_at: 2025-12-27T12:32:00
-created_at: 2025-12-27T15:12:00
-updated_at: 2025-12-28T06:12:00
+company: "[[Northstar Media]]"
+source_created_at: 2025-12-27T12:03:00
+source_observed_at: 2025-12-27T13:01:00
+created_at: 2025-12-27T13:07:00
+updated_at: 2025-12-27T16:07:00
 tags: [#meeting]
 ---
 # Project Bridge 195 Adoption Workflow Sync 1735
 
 ## Attendees
-- [[Sam Quinn]]
-- [[Lina Haddad]]
-- [[Ben Morgan]]
+- [[Wendy Ortega]]
+- [[Nadia Bennett]]
+- [[Alex Chen]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Bridge 195]] at [[Keystone Health]].
-[[Hannah Vance]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Bridge 195]] at [[Northstar Media]].
+[[Lina Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 195]] to [[Hannah Vance]] #follow-up
+- [ ] Send recap for [[Project Bridge 195]] to [[Lina Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

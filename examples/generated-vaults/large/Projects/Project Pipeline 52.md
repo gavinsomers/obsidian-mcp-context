@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: blocked
 company: "[[Vanguard Manufacturing]]"
-source_created_at: 2024-01-15T09:15:00
-source_observed_at: 2024-01-15T11:58:00
-created_at: 2024-01-16T07:15:00
-updated_at: 2024-03-12T16:15:00
+source_created_at: 2024-01-15T12:32:00
+source_observed_at: 2024-01-15T12:58:00
+created_at: 2024-01-17T04:32:00
+updated_at: 2024-04-10T15:32:00
 tags: [#project]
 ---
 # Project Pipeline 52
@@ -14,12 +14,12 @@ tags: [#project]
 Project Pipeline 52 supports [[Vanguard Manufacturing]] through sales pipeline.
 
 ## Stakeholders
-- [[Kai Usman]]
-- [[Omar Grant]]
-- [[Victor Patel]]
-- [[Elena Lee]]
+- [[Zoe Tan]]
+- [[Victor Vance]]
+- [[Uma Alvarez]]
+- [[Iris Patel]]
 
 ## Operating Notes
-- Owner: [[Omar Grant]]
-- Status: `active`
+- Owner: [[Zoe Bennett]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Pipeline 52]] #ops

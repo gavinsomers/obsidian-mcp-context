@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-12-09
+date: 2025-05-15
 status: active
 project: "[[Project Venture 73]]"
 company: "[[Noble Health]]"
-source_created_at: 2024-12-09T16:43:00
-source_observed_at: 2024-12-09T16:53:00
-created_at: 2024-12-15T21:43:00
-updated_at: 2024-12-16T00:43:00
+source_created_at: 2025-05-15T12:17:00
+source_observed_at: 2025-05-15T12:54:00
+created_at: 2025-05-17T12:17:00
+updated_at: 2025-05-17T22:17:00
 tags: [#decision]
 ---
 # Project Venture 73 Adoption Workflow Decision 513
@@ -17,8 +17,8 @@ Proceed with adoption workflow for [[Project Venture 73]].
 
 ## Context
 This decision applies to [[Noble Health]] and [[Project Venture 73]].
-It follows [[Project Venture 73 Security Review Sync 733]].
-It incorporates [[Project Venture 73 Pipeline Hygiene Research 513]].
+It follows [[Project Venture 73 Security Review Sync 513]].
+It incorporates [[Project Venture 73 Pipeline Hygiene Research 293]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

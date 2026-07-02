@@ -4,10 +4,10 @@ date: 2024-11-25
 status: active
 project: "[[Project Lantern 110]]"
 company: "[[Helio Analytics]]"
-source_created_at: 2024-11-25T13:25:00
-source_observed_at: 2024-11-25T13:38:00
-created_at: 2024-12-03T19:25:00
-updated_at: 2024-12-04T18:25:00
+source_created_at: 2024-11-25T16:47:00
+source_observed_at: 2024-11-25T17:35:00
+created_at: 2024-11-25T19:45:00
+updated_at: 2024-11-26T16:45:00
 tags: [#decision]
 ---
 # Project Lantern 110 Stakeholder Alignment Decision 330

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Helio Labs]]"
-role: "VP Data Engineering"
-source_created_at: 2023-08-20T16:08:00
-source_observed_at: 2023-08-20T17:10:00
-created_at: 2023-08-22T07:08:00
-updated_at: 2023-11-13T17:08:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-08-20T08:38:00
+source_observed_at: 2023-08-20T10:25:00
+created_at: 2023-08-21T11:38:00
+updated_at: 2023-11-16T20:38:00
 tags: [#person]
 ---
 # Alex Ortega
 
 ## Role
-Alex Ortega is the VP Data Engineering at [[Helio Labs]].
+Alex Ortega is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Lantern 5]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Alex Ortega]] #follow-up

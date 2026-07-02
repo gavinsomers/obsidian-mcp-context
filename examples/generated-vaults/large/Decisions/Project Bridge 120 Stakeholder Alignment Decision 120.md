@@ -3,11 +3,11 @@ type: decision
 date: 2025-01-13
 status: active
 project: "[[Project Bridge 120]]"
-company: "[[Keystone Analytics]]"
-source_created_at: 2025-01-13T12:35:00
-source_observed_at: 2025-01-13T14:51:00
-created_at: 2025-01-13T14:56:00
-updated_at: 2025-01-14T06:56:00
+company: "[[Northstar Labs]]"
+source_created_at: 2025-01-13T13:01:00
+source_observed_at: 2025-01-13T15:16:00
+created_at: 2025-01-13T15:21:00
+updated_at: 2025-01-14T11:21:00
 tags: [#decision]
 ---
 # Project Bridge 120 Stakeholder Alignment Decision 120
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 120]].
 
 ## Context
-This decision applies to [[Keystone Analytics]] and [[Project Bridge 120]].
-It follows [[Project Bridge 120 Handoff Readiness Sync 1880]].
+This decision applies to [[Northstar Labs]] and [[Project Bridge 120]].
+It follows [[Project Bridge 120 Handoff Readiness Sync 120]].
 It incorporates [[Project Bridge 120 Metric Reconciliation Research 340]].
 
 ## Supersession

@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-07-18
 project: "[[Project Summit 162]]"
-company: "[[Pioneer Retail]]"
-source_created_at: 2025-07-18T10:29:00
-source_observed_at: 2025-07-18T11:37:00
-created_at: 2025-07-18T13:42:00
-updated_at: 2025-07-19T10:42:00
+company: "[[Noble Retail]]"
+source_created_at: 2025-07-18T15:06:00
+source_observed_at: 2025-07-18T17:04:00
+created_at: 2025-07-18T17:46:00
+updated_at: 2025-07-18T23:46:00
 tags: [#meeting]
 ---
 # Project Summit 162 Stakeholder Alignment Sync 1702
 
 ## Attendees
-- [[Victor Kim]]
-- [[Kai Patel]]
-- [[Amara Usman]]
+- [[Sam Usman]]
+- [[Tara Jenkins]]
+- [[Elena Diaz]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 162]] at [[Pioneer Retail]].
+Stakeholder Alignment reviewed for [[Project Summit 162]] at [[Noble Retail]].
 [[Elena Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items

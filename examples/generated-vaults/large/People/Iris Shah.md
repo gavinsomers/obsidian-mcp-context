@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Analytics]]"
-role: "Legal Counsel"
-source_created_at: 2023-09-27T10:20:00
-source_observed_at: 2023-09-27T12:50:00
-created_at: 2023-09-28T11:20:00
-updated_at: 2023-12-19T14:46:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-09-27T13:57:00
+source_observed_at: 2023-09-27T15:47:00
+created_at: 2023-09-28T23:57:00
+updated_at: 2023-12-14T06:57:00
 tags: [#person]
 ---
 # Iris Shah
 
 ## Role
-Iris Shah is the Legal Counsel at [[Noble Analytics]].
+Iris Shah is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Iris Shah]] #follow-up

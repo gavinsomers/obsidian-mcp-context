@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Retail]]"
-role: "VP Data Engineering"
-source_created_at: 2023-07-22T10:54:00
-source_observed_at: 2023-07-22T11:09:00
-created_at: 2023-07-23T03:54:00
-updated_at: 2023-09-07T14:54:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-07-22T11:50:00
+source_observed_at: 2023-07-22T12:01:00
+created_at: 2023-07-23T01:50:00
+updated_at: 2023-09-27T09:50:00
 tags: [#person]
 ---
 # Priya Kim
 
 ## Role
-Priya Kim is the VP Data Engineering at [[Vanguard Retail]].
+Priya Kim is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Vanguard Retail]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Orbit 26]] ([[Summit FinTech]])
 - [ ] Confirm next update with [[Priya Kim]] #follow-up

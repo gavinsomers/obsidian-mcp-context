@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Keystone 25]]"
 company: "[[Harbor FinTech]]"
-source_created_at: 2023-09-29T15:57:00
-source_observed_at: 2023-09-29T16:27:00
-created_at: 2023-10-01T08:57:00
-updated_at: 2023-10-04T11:57:00
+source_created_at: 2023-09-29T12:41:00
+source_observed_at: 2023-09-29T14:15:00
+created_at: 2023-09-30T06:41:00
+updated_at: 2023-11-11T12:41:00
 tags: [#research]
 ---
 # Project Keystone 25 Warehouse Mapping Research 25

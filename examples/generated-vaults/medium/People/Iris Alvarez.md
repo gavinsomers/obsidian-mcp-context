@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Harbor Labs]]"
-role: "Finance Sponsor"
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
 source_created_at: 2023-04-24T13:26:00
 source_observed_at: 2023-04-24T15:01:00
 created_at: 2023-04-24T21:26:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Iris Alvarez
 
 ## Role
-Iris Alvarez is the Finance Sponsor at [[Harbor Labs]].
+Iris Alvarez is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Labs]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Iris Alvarez]] #follow-up

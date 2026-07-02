@@ -2,24 +2,24 @@
 type: meeting
 date: 2026-01-25
 project: "[[Project Meridian 201]]"
-company: "[[Meridian Media]]"
-source_created_at: 2026-01-25T09:18:00
-source_observed_at: 2026-01-25T09:33:00
-created_at: 2026-01-25T12:06:00
-updated_at: 2026-01-26T07:06:00
+company: "[[Vanguard Media]]"
+source_created_at: 2026-01-25T16:11:00
+source_observed_at: 2026-01-25T17:48:00
+created_at: 2026-01-25T18:38:00
+updated_at: 2026-01-26T03:38:00
 tags: [#meeting]
 ---
 # Project Meridian 201 Warehouse Mapping Sync 1081
 
 ## Attendees
-- [[Sam Haddad]]
-- [[Hannah Morgan]]
-- [[Yara Quinn]]
+- [[Elena Usman]]
+- [[Omar Tan]]
+- [[Iris Shah]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 201]] at [[Meridian Media]].
-[[Ben Diaz]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 201]] at [[Vanguard Media]].
+[[Sam Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 201]] to [[Ben Diaz]] #follow-up
+- [ ] Send recap for [[Project Meridian 201]] to [[Sam Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

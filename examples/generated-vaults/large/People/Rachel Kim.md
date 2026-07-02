@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Retail]]"
-role: "Legal Counsel"
-source_created_at: 2023-07-22T09:13:00
-source_observed_at: 2023-07-22T10:05:00
-created_at: 2023-07-22T17:13:00
-updated_at: 2023-08-14T00:13:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-07-22T14:25:00
+source_observed_at: 2023-07-22T15:38:00
+created_at: 2023-07-24T09:25:00
+updated_at: 2023-09-25T15:25:00
 tags: [#person]
 ---
 # Rachel Kim
 
 ## Role
-Rachel Kim is the Legal Counsel at [[Quantum Retail]].
+Rachel Kim is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Rachel Kim]] #follow-up

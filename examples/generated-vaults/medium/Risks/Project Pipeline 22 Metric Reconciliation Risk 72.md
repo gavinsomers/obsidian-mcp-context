@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Pipeline 22]]"
-source_created_at: 2024-02-26T12:00:00
-source_observed_at: 2024-02-26T13:26:00
-created_at: 2024-02-27T03:00:00
-updated_at: 2024-03-21T03:00:00
+source_created_at: 2024-02-26T13:32:00
+source_observed_at: 2024-02-26T14:38:00
+created_at: 2024-02-28T10:32:00
+updated_at: 2024-03-27T17:32:00
 tags: [#risk]
 ---
 # Project Pipeline 22 Metric Reconciliation Risk 72
@@ -18,5 +18,5 @@ Metric Reconciliation may affect [[Project Pipeline 22]] for [[Vanguard FinTech]
 
 ## Current State
 - Status: `open`
-- Owner: [[Zoe Bennett]]
+- Owner: [[Victor Alvarez]]
 - [ ] Reassess [[Project Pipeline 22 Metric Reconciliation Risk 72]] during the next review #risk

@@ -4,10 +4,10 @@ date: 2024-01-24
 status: active
 project: "[[Project Orbit 11]]"
 company: "[[Summit Labs]]"
-source_created_at: 2024-01-24T12:19:00
-source_observed_at: 2024-01-24T15:12:00
-created_at: 2024-01-24T16:30:00
-updated_at: 2024-01-24T20:30:00
+source_created_at: 2024-01-24T13:06:00
+source_observed_at: 2024-01-24T15:32:00
+created_at: 2024-01-24T15:37:00
+updated_at: 2024-01-24T16:37:00
 tags: [#decision]
 ---
 # Project Orbit 11 Security Review Decision 61

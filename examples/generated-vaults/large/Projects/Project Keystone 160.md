@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Harbor Retail]]"
-source_created_at: 2025-06-27T08:48:00
-source_observed_at: 2025-06-27T11:44:00
-created_at: 2025-06-28T14:48:00
-updated_at: 2025-08-19T23:48:00
+status: closed
+company: "[[Summit Retail]]"
+source_created_at: 2025-06-27T14:07:00
+source_observed_at: 2025-06-27T14:47:00
+created_at: 2025-06-28T10:07:00
+updated_at: 2025-07-17T18:07:00
 tags: [#project]
 ---
 # Project Keystone 160
 
 ## Overview
-Project Keystone 160 supports [[Harbor Retail]] through operations admin.
+Project Keystone 160 supports [[Summit Retail]] through operations admin.
 
 ## Stakeholders
-- [[Iris Patel]]
-- [[Marcus Bennett]]
-- [[Tara Kim]]
-- [[Zoe Tan]]
+- [[Farah Foster]]
+- [[Victor Shah]]
+- [[Alex Grant]]
+- [[Xavier Rostova]]
 
 ## Operating Notes
-- Owner: [[Zoe Tan]]
-- Status: `active`
+- Owner: [[Clara Grant]]
+- Status: `closed`
+- Closed at: `2025-11-14`
 - [ ] Reconcile latest state for [[Project Keystone 160]] #ops

@@ -1,23 +1,19 @@
 ---
 type: company
 status: active
-segment: smb
-source_created_at: 2023-07-30T15:14:00
-source_observed_at: 2023-07-30T17:07:00
-created_at: 2023-07-31T04:14:00
-updated_at: 2023-10-08T10:14:00
+segment: enterprise
+source_created_at: 2023-08-01T15:31:00
+source_observed_at: 2023-08-01T16:23:00
+created_at: 2023-08-02T18:31:00
+updated_at: 2023-09-22T18:31:00
 tags: [#company]
 ---
 # Vanguard Manufacturing
 
 ## Account Context
-Vanguard Manufacturing is a smb account currently marked `active`.
+Vanguard Manufacturing is a enterprise account currently marked `active`.
 
-## Stakeholders
-- [[Zoe Bennett]] - Implementation Manager
-- [[Omar Grant]] - Implementation Manager
-- [[Elena Lee]] - Implementation Manager
-- [[Victor Patel]] - Implementation Manager
+## Assigned Account Team
 
 ## Projects
 

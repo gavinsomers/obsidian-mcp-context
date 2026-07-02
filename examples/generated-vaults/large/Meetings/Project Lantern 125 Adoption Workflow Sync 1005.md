@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-01-18
 project: "[[Project Lantern 125]]"
-company: "[[Helio Labs]]"
-source_created_at: 2025-01-18T14:42:00
-source_observed_at: 2025-01-18T17:26:00
-created_at: 2025-01-18T17:54:00
-updated_at: 2025-01-18T21:54:00
+company: "[[Meridian Labs]]"
+source_created_at: 2025-01-18T15:33:00
+source_observed_at: 2025-01-18T17:42:00
+created_at: 2025-01-18T17:47:00
+updated_at: 2025-01-19T11:47:00
 tags: [#meeting]
 ---
 # Project Lantern 125 Adoption Workflow Sync 1005
 
 ## Attendees
-- [[Priya Shah]]
-- [[Alex Ortega]]
-- [[Jonah Jenkins]]
+- [[Sam Grant]]
+- [[Zoe Ortega]]
+- [[Victor Foster]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Lantern 125]] at [[Helio Labs]].
-[[Priya Shah]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Lantern 125]] at [[Meridian Labs]].
+[[Uma Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 125]] to [[Priya Shah]] #follow-up
+- [ ] Send recap for [[Project Lantern 125]] to [[Uma Evans]] #follow-up
 - [x] Capture meeting notes in vault #ops

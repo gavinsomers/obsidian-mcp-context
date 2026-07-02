@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Compass 53]]"
-source_created_at: 2024-07-11T09:55:00
-source_observed_at: 2024-07-11T11:56:00
-created_at: 2024-07-12T00:55:00
-updated_at: 2024-07-17T01:55:00
+source_created_at: 2024-07-11T08:55:00
+source_observed_at: 2024-07-11T10:52:00
+created_at: 2024-07-12T14:55:00
+updated_at: 2024-08-11T01:55:00
 tags: [#risk]
 ---
 # Project Compass 53 Contract Renewal Risk 273
@@ -18,5 +18,5 @@ Contract Renewal may affect [[Project Compass 53]] for [[Quantum Manufacturing]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Farah Lee]]
+- Owner: [[Alex Chen]]
 - [ ] Reassess [[Project Compass 53 Contract Renewal Risk 273]] during the next review #risk

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Retail]]"
-role: "Legal Counsel"
-source_created_at: 2023-08-31T13:23:00
-source_observed_at: 2023-08-31T15:10:00
-created_at: 2023-09-01T18:23:00
-updated_at: 2023-11-24T19:23:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-08-31T10:30:00
+source_observed_at: 2023-08-31T11:19:00
+created_at: 2023-09-01T22:30:00
+updated_at: 2023-10-28T05:30:00
 tags: [#person]
 ---
 # Grace Patel
 
 ## Role
-Grace Patel is the Legal Counsel at [[Quantum Retail]].
+Grace Patel is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Compass 38]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Grace Patel]] #follow-up

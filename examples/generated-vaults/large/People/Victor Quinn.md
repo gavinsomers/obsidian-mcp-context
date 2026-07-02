@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Media]]"
-role: "Legal Counsel"
-source_created_at: 2023-09-13T14:36:00
-source_observed_at: 2023-09-13T16:13:00
-created_at: 2023-09-14T07:36:00
-updated_at: 2023-10-20T17:36:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-09-13T16:13:00
+source_observed_at: 2023-09-13T19:12:00
+created_at: 2023-09-14T02:13:00
+updated_at: 2023-10-22T10:13:00
 tags: [#person]
 ---
 # Victor Quinn
 
 ## Role
-Victor Quinn is the Legal Counsel at [[Cobalt Media]].
+Victor Quinn is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Cobalt Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Victor Quinn]] #follow-up

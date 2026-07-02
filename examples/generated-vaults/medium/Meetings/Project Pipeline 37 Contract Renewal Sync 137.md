@@ -2,22 +2,22 @@
 type: meeting
 date: 2024-06-10
 project: "[[Project Pipeline 37]]"
-company: "[[Vanguard Labs]]"
-source_created_at: 2024-06-10T11:18:00
-source_observed_at: 2024-06-10T12:34:00
-created_at: 2024-06-10T14:49:00
-updated_at: 2024-06-11T13:49:00
+company: "[[Quantum Labs]]"
+source_created_at: 2024-06-10T12:29:00
+source_observed_at: 2024-06-10T13:46:00
+created_at: 2024-06-10T13:51:00
+updated_at: 2024-06-10T19:51:00
 tags: [#meeting]
 ---
 # Project Pipeline 37 Contract Renewal Sync 137
 
 ## Attendees
-- [[Sam Diaz]]
-- [[Wendy Evans]]
-- [[Farah Alvarez]]
+- [[Uma Diaz]]
+- [[Marcus Bennett]]
+- [[Lina Bennett]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 37]] at [[Vanguard Labs]].
+Contract Renewal reviewed for [[Project Pipeline 37]] at [[Quantum Labs]].
 [[Jonah Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items

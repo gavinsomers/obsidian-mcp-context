@@ -4,10 +4,10 @@ date: 2024-07-08
 status: active
 project: "[[Project Venture 73]]"
 company: "[[Noble Health]]"
-source_created_at: 2024-07-08T16:05:00
-source_observed_at: 2024-07-08T18:23:00
-created_at: 2024-07-09T16:05:00
-updated_at: 2024-07-10T14:05:00
+source_created_at: 2024-07-08T08:51:00
+source_observed_at: 2024-07-08T10:29:00
+created_at: 2024-07-08T14:29:00
+updated_at: 2024-07-09T12:29:00
 tags: [#decision]
 ---
 # Project Venture 73 Adoption Workflow Decision 293

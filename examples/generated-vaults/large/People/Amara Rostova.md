@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Media]]"
-role: "Implementation Manager"
-source_created_at: 2023-09-15T14:39:00
-source_observed_at: 2023-09-15T17:16:00
-created_at: 2023-09-16T05:39:00
-updated_at: 2023-11-09T09:39:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-09-15T15:54:00
+source_observed_at: 2023-09-15T17:04:00
+created_at: 2023-09-16T10:54:00
+updated_at: 2023-11-21T18:54:00
 tags: [#person]
 ---
 # Amara Rostova
 
 ## Role
-Amara Rostova is the Implementation Manager at [[Atlas Media]].
+Amara Rostova is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Amara Rostova]] #follow-up

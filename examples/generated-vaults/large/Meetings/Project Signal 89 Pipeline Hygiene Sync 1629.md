@@ -3,23 +3,23 @@ type: meeting
 date: 2024-07-25
 project: "[[Project Signal 89]]"
 company: "[[Crescent Media]]"
-source_created_at: 2024-07-25T13:07:00
-source_observed_at: 2024-07-25T14:19:00
-created_at: 2024-07-25T14:24:00
-updated_at: 2024-07-26T09:24:00
+source_created_at: 2024-07-25T14:04:00
+source_observed_at: 2024-07-25T16:54:00
+created_at: 2024-07-25T19:37:00
+updated_at: 2024-07-26T06:37:00
 tags: [#meeting]
 ---
 # Project Signal 89 Pipeline Hygiene Sync 1629
 
 ## Attendees
-- [[Wendy Vance]]
-- [[Jonah Diaz]]
-- [[Alex Ivanov]]
+- [[Xavier Evans]]
+- [[Jonah Usman]]
+- [[Uma Tan]]
 
 ## Notes
 Pipeline Hygiene reviewed for [[Project Signal 89]] at [[Crescent Media]].
-[[Farah Rostova]] flagged follow-up work for the next operating review.
+[[Jonah Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 89]] to [[Farah Rostova]] #follow-up
+- [ ] Send recap for [[Project Signal 89]] to [[Jonah Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

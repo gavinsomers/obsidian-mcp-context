@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Analytics]]"
-role: "VP Data Engineering"
-source_created_at: 2023-05-27T08:37:00
-source_observed_at: 2023-05-27T10:56:00
-created_at: 2023-05-28T09:37:00
-updated_at: 2023-12-01T15:55:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-05-27T13:27:00
+source_observed_at: 2023-05-27T14:06:00
+created_at: 2023-05-28T13:27:00
+updated_at: 2023-06-28T23:27:00
 tags: [#person]
 ---
 # David Evans
 
 ## Role
-David Evans is the VP Data Engineering at [[BrightWave Analytics]].
+David Evans is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[David Evans]] #follow-up

@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2025-02-11
+date: 2025-06-02
 project: "[[Project Signal 104]]"
 company: "[[Crescent Logistics]]"
-source_created_at: 2025-02-11T14:42:00
-source_observed_at: 2025-02-11T15:25:00
-created_at: 2025-02-11T18:48:00
-updated_at: 2025-02-12T14:48:00
+source_created_at: 2025-06-02T10:17:00
+source_observed_at: 2025-06-02T13:02:00
+created_at: 2025-06-02T13:07:00
+updated_at: 2025-06-03T10:07:00
 tags: [#meeting]
 ---
 # Project Signal 104 Finance Approval Sync 544
 
 ## Attendees
-- [[Omar Ivanov]]
-- [[Zoe Diaz]]
-- [[Victor Rostova]]
+- [[Kai Lee]]
+- [[Lina Quinn]]
+- [[Clara Patel]]
 
 ## Notes
 Finance Approval reviewed for [[Project Signal 104]] at [[Crescent Logistics]].
-[[Victor Rostova]] flagged follow-up work for the next operating review.
+[[Zoe Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 104]] to [[Victor Rostova]] #follow-up
+- [ ] Send recap for [[Project Signal 104]] to [[Zoe Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

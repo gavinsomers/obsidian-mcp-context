@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-05-01
 project: "[[Project Orbit 146]]"
-company: "[[Summit FinTech]]"
-source_created_at: 2025-05-01T14:11:00
-source_observed_at: 2025-05-01T14:58:00
-created_at: 2025-05-01T15:03:00
-updated_at: 2025-05-01T21:03:00
+company: "[[Pioneer FinTech]]"
+source_created_at: 2025-05-01T16:41:00
+source_observed_at: 2025-05-01T17:49:00
+created_at: 2025-05-01T17:54:00
+updated_at: 2025-05-02T00:54:00
 tags: [#meeting]
 ---
 # Project Orbit 146 Metric Reconciliation Sync 1686
 
 ## Attendees
-- [[Victor Ortega]]
-- [[Zoe Alvarez]]
-- [[Elena Kim]]
+- [[Kai Bennett]]
+- [[Priya Patel]]
+- [[Marcus Tan]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Orbit 146]] at [[Summit FinTech]].
-[[Zoe Alvarez]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Orbit 146]] at [[Pioneer FinTech]].
+[[Omar Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 146]] to [[Zoe Alvarez]] #follow-up
+- [ ] Send recap for [[Project Orbit 146]] to [[Omar Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

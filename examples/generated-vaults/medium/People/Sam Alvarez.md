@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[BrightWave FinTech]]"
-role: "SecOps Lead"
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
 source_created_at: 2023-04-27T12:26:00
 source_observed_at: 2023-04-27T14:39:00
 created_at: 2023-04-28T05:26:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Sam Alvarez
 
 ## Role
-Sam Alvarez is the SecOps Lead at [[BrightWave FinTech]].
+Sam Alvarez is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Sam Alvarez]] #follow-up

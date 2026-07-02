@@ -4,10 +4,10 @@ date: 2024-08-24
 status: active
 project: "[[Project Atlas 91]]"
 company: "[[Northstar Logistics]]"
-source_created_at: 2024-08-24T14:05:00
-source_observed_at: 2024-08-24T15:26:00
-created_at: 2024-08-24T17:17:00
-updated_at: 2024-08-24T22:17:00
+source_created_at: 2024-08-24T09:27:00
+source_observed_at: 2024-08-24T11:43:00
+created_at: 2024-08-24T12:23:00
+updated_at: 2024-08-25T08:23:00
 tags: [#decision]
 ---
 # Project Atlas 91 Security Review Decision 311
@@ -17,7 +17,7 @@ Proceed with security review for [[Project Atlas 91]].
 
 ## Context
 This decision applies to [[Northstar Logistics]] and [[Project Atlas 91]].
-It follows [[Project Atlas 91 Warehouse Mapping Sync 1851]].
+It follows [[Project Atlas 91 Warehouse Mapping Sync 1631]].
 It incorporates [[Project Atlas 91 Contract Renewal Research 91]].
 
 ## Supersession

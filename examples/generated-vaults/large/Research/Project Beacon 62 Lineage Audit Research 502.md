@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Beacon 62]]"
 company: "[[Apex Health]]"
-source_created_at: 2025-10-01T08:29:00
-source_observed_at: 2025-10-01T10:30:00
-created_at: 2025-10-01T20:29:00
-updated_at: 2025-10-12T02:29:00
+source_created_at: 2025-10-01T13:45:00
+source_observed_at: 2025-10-01T16:24:00
+created_at: 2025-10-01T18:45:00
+updated_at: 2025-10-13T01:45:00
 tags: [#research]
 ---
 # Project Beacon 62 Lineage Audit Research 502
@@ -14,7 +14,7 @@ tags: [#research]
 Research on lineage audit for [[Project Beacon 62]] and [[Apex Health]].
 
 ## Evidence
-- Interview notes from [[Zoe Grant]]
+- Interview notes from [[Iris Chen]]
 - Related operating review: [[Project Beacon 62 Stakeholder Alignment Sync 1382]]
 
 ## Follow Up

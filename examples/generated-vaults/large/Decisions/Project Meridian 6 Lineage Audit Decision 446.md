@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2023-08-17
+date: 2025-02-10
 status: active
 project: "[[Project Meridian 6]]"
 company: "[[Meridian Labs]]"
-source_created_at: 2023-08-17T10:31:00
-source_observed_at: 2023-08-17T11:18:00
-created_at: 2023-08-17T12:17:00
-updated_at: 2023-08-18T05:17:00
+source_created_at: 2025-02-10T09:03:00
+source_observed_at: 2025-02-10T11:48:00
+created_at: 2025-02-10T11:53:00
+updated_at: 2025-02-11T00:53:00
 tags: [#decision]
 ---
 # Project Meridian 6 Lineage Audit Decision 446
@@ -17,7 +17,7 @@ Proceed with lineage audit for [[Project Meridian 6]].
 
 ## Context
 This decision applies to [[Meridian Labs]] and [[Project Meridian 6]].
-It follows [[Project Meridian 6 Metric Reconciliation Sync 1106]].
+It follows [[Project Meridian 6 Metric Reconciliation Sync 446]].
 It incorporates [[Project Meridian 6 Stakeholder Alignment Research 226]].
 
 ## Supersession

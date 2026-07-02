@@ -3,11 +3,11 @@ type: decision
 date: 2025-02-08
 status: active
 project: "[[Project Lantern 125]]"
-company: "[[Helio Labs]]"
-source_created_at: 2025-02-08T10:34:00
-source_observed_at: 2025-02-08T12:34:00
-created_at: 2025-02-08T12:39:00
-updated_at: 2025-02-09T06:39:00
+company: "[[Meridian Labs]]"
+source_created_at: 2025-02-08T15:31:00
+source_observed_at: 2025-02-08T17:13:00
+created_at: 2025-02-08T18:39:00
+updated_at: 2025-02-09T07:39:00
 tags: [#decision]
 ---
 # Project Lantern 125 Contract Renewal Decision 125
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Lantern 125]].
 
 ## Context
-This decision applies to [[Helio Labs]] and [[Project Lantern 125]].
+This decision applies to [[Meridian Labs]] and [[Project Lantern 125]].
 It follows [[Project Lantern 125 Adoption Workflow Sync 1225]].
 It incorporates [[Project Lantern 125 Warehouse Mapping Research 345]].
 

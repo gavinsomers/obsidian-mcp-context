@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2026-02-18
+date: 2024-05-15
 status: active
 project: "[[Project Horizon 49]]"
 company: "[[BrightWave Manufacturing]]"
-source_created_at: 2026-02-18T10:52:00
-source_observed_at: 2026-02-18T11:32:00
-created_at: 2026-02-21T17:52:00
-updated_at: 2026-02-22T04:52:00
+source_created_at: 2024-05-15T12:02:00
+source_observed_at: 2024-05-15T13:23:00
+created_at: 2024-05-15T15:31:00
+updated_at: 2024-05-16T02:31:00
 tags: [#decision]
 ---
 # Project Horizon 49 Warehouse Mapping Decision 709
@@ -17,7 +17,7 @@ Proceed with warehouse mapping for [[Project Horizon 49]].
 
 ## Context
 This decision applies to [[BrightWave Manufacturing]] and [[Project Horizon 49]].
-It follows [[Project Horizon 49 Pipeline Hygiene Sync 709]].
+It follows [[Project Horizon 49 Pipeline Hygiene Sync 1369]].
 It incorporates [[Project Horizon 49 Adoption Workflow Research 489]].
 
 ## Supersession

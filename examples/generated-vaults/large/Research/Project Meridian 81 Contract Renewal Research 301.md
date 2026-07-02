@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 81]]"
 company: "[[Meridian Media]]"
-source_created_at: 2024-10-16T16:47:00
-source_observed_at: 2024-10-16T17:06:00
-created_at: 2024-10-18T07:47:00
-updated_at: 2024-11-25T10:47:00
+source_created_at: 2024-10-16T10:16:00
+source_observed_at: 2024-10-16T12:21:00
+created_at: 2024-10-16T17:16:00
+updated_at: 2024-10-23T18:16:00
 tags: [#research]
 ---
 # Project Meridian 81 Contract Renewal Research 301

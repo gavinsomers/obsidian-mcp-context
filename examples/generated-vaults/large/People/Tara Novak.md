@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Analytics]]"
-role: "Legal Counsel"
-source_created_at: 2023-08-18T15:55:00
-source_observed_at: 2023-08-18T18:37:00
-created_at: 2023-08-19T04:55:00
-updated_at: 2023-12-19T14:46:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-08-18T15:47:00
+source_observed_at: 2023-08-18T18:40:00
+created_at: 2023-08-19T10:47:00
+updated_at: 2023-09-21T13:47:00
 tags: [#person]
 ---
 # Tara Novak
 
 ## Role
-Tara Novak is the Legal Counsel at [[Noble Analytics]].
+Tara Novak is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Tara Novak]] #follow-up

@@ -3,18 +3,18 @@ type: meeting
 date: 2024-09-21
 project: "[[Project Orbit 101]]"
 company: "[[Summit Logistics]]"
-source_created_at: 2024-09-21T14:48:00
-source_observed_at: 2024-09-21T15:20:00
-created_at: 2024-09-27T16:48:00
-updated_at: 2024-09-28T01:48:00
+source_created_at: 2024-09-21T09:42:00
+source_observed_at: 2024-09-21T10:26:00
+created_at: 2024-09-21T15:16:00
+updated_at: 2024-09-22T07:16:00
 tags: [#meeting]
 ---
 # Project Orbit 101 Warehouse Mapping Sync 101
 
 ## Attendees
-- [[Lina Ivanov]]
-- [[Wendy Diaz]]
-- [[Hannah Walker]]
+- [[Omar Novak]]
+- [[Clara Foster]]
+- [[Sam Patel]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Orbit 101]] at [[Summit Logistics]].

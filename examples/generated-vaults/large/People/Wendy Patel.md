@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Manufacturing]]"
-role: "VP Data Engineering"
-source_created_at: 2023-09-05T12:53:00
-source_observed_at: 2023-09-05T13:10:00
-created_at: 2023-09-06T14:53:00
-updated_at: 2023-11-27T16:53:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-09-05T16:20:00
+source_observed_at: 2023-09-05T17:39:00
+created_at: 2023-09-07T15:20:00
+updated_at: 2023-10-28T00:20:00
 tags: [#person]
 ---
 # Wendy Patel
 
 ## Role
-Wendy Patel is the VP Data Engineering at [[Quantum Manufacturing]].
+Wendy Patel is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Patel]] #follow-up

@@ -1,24 +1,19 @@
 ---
 type: company
 status: active
-segment: enterprise
-source_created_at: 2023-09-16T10:15:00
-source_observed_at: 2023-09-16T11:02:00
-created_at: 2023-09-17T03:15:00
-updated_at: 2023-11-20T10:15:00
+segment: smb
+source_created_at: 2023-09-18T10:30:00
+source_observed_at: 2023-09-18T10:58:00
+created_at: 2023-09-18T17:30:00
+updated_at: 2023-10-15T18:30:00
 tags: [#company]
 ---
 # Northstar Media
 
 ## Account Context
-Northstar Media is a enterprise account currently marked `active`.
+Northstar Media is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Xavier Chen]] - Implementation Manager
-- [[Marcus Haddad]] - Implementation Manager
-- [[Clara Morgan]] - Implementation Manager
-- [[Tara Quinn]] - Implementation Manager
-- [[Iris Vance]] - Implementation Manager
+## Assigned Account Team
 
 ## Projects
 

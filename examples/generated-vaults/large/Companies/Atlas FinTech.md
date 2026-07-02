@@ -1,21 +1,19 @@
 ---
 type: company
-status: pipeline
+status: active
 segment: smb
-source_created_at: 2023-06-04T12:09:00
-source_observed_at: 2023-06-04T13:56:00
-created_at: 2023-06-06T06:09:00
-updated_at: 2023-07-09T17:09:00
+source_created_at: 2023-06-06T16:11:00
+source_observed_at: 2023-06-06T18:41:00
+created_at: 2023-06-14T19:11:00
+updated_at: 2023-08-23T23:11:00
 tags: [#company]
 ---
 # Atlas FinTech
 
 ## Account Context
-Atlas FinTech is a smb account currently marked `pipeline`.
+Atlas FinTech is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Xavier Alvarez]] - Customer Success Manager
-- [[Marcus Foster]] - Customer Success Manager
+## Assigned Account Team
 
 ## Projects
 

@@ -4,10 +4,10 @@ date: 2024-03-07
 status: active
 project: "[[Project Orbit 26]]"
 company: "[[Summit FinTech]]"
-source_created_at: 2024-03-07T09:12:00
-source_observed_at: 2024-03-07T11:19:00
-created_at: 2024-03-14T11:12:00
-updated_at: 2024-03-14T21:12:00
+source_created_at: 2024-03-07T13:18:00
+source_observed_at: 2024-03-07T15:24:00
+created_at: 2024-03-07T18:44:00
+updated_at: 2024-03-08T00:44:00
 tags: [#decision]
 ---
 # Project Orbit 26 Lineage Audit Decision 26
