@@ -30,6 +30,7 @@ obsidian-mcp-context-replay-scheduler = "obsidian_mcp_context.replay_scheduler:m
 obsidian-mcp-context-replay-dashboard = "obsidian_mcp_context.replay_dashboard:main"
 obsidian-mcp-context-replay-qa = "obsidian_mcp_context.replay_qa:main"
 obsidian-mcp-context-synthetic-demo-health = "obsidian_mcp_context.synthetic_demo_health:main"
+obsidian-mcp-context-profile-vault = "obsidian_mcp_context.profiler:main"
 
 [tool.setuptools.packages.find]
 where = ["."]

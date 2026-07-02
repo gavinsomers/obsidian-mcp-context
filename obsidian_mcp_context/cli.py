@@ -18,6 +18,11 @@ from obsidian_mcp_context.pipeline import (
     run_pipeline,
     run_pipeline_doctor,
 )
+from obsidian_mcp_context.profiler import (
+    ProfilerOptions,
+    profile_vault,
+    write_profile_report,
+)
 from obsidian_mcp_context.query import list_notes, list_tasks, search_blocks
 from obsidian_mcp_context.services import ContextService
 from obsidian_mcp_context.link_review import (
@@ -241,6 +246,21 @@ def build_parser() -> argparse.ArgumentParser:
         ),
     )
 
+    profile_vault_parser = subparsers.add_parser(
+        "profile-vault",
+        help="Write a read-only aggregate vault profile report.",
+    )
+    profile_vault_parser.add_argument(
+        "--output",
+        default="var/vault-profile-report.json",
+        help="Report output path. Defaults to var/vault-profile-report.json.",
+    )
+    profile_vault_parser.add_argument(
+        "--include-samples",
+        action="store_true",
+        help="Include a few local source-path samples. Never includes note content.",
+    )
+
     return parser
 
 
@@ -289,6 +309,23 @@ def main(argv: list[str] | None = None) -> int:
         )
         print(format_json(report) if args.json else format_human(report))
         return exit_code(report, strict=args.strict)
+
+    if args.command == "profile-vault":
+        if not args.vault:
+            parser.error("--vault is required for profile-vault")
+        report = profile_vault(
+            ProfilerOptions(
+                vault_path=Path(args.vault),
+                config_path=Path(args.config) if args.config else None,
+                profile_path=Path(args.vault_profile) if args.vault_profile else None,
+                output_path=Path(args.output),
+                include_samples=args.include_samples,
+            )
+        )
+        output_path = write_profile_report(report, Path(args.output))
+        _print_json(report)
+        print(f"Vault profile report written to {output_path}")
+        return 0
 
     app_config = load_app_config(
         Path(args.config) if args.config else None,
