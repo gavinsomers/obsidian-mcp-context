@@ -28,6 +28,9 @@ def test_dataset_workflow_script_prints_help_without_starting_services():
     assert "run_dataset_workflow.sh" in result.stdout
     assert "small|medium|large|synthetic" in result.stdout
     assert "start the MCP server" in result.stdout
+    assert "--with-dbt-docs" in result.stdout
+    assert "--with-table-browser" in result.stdout
+    assert "--with-inspection" in result.stdout
 
 
 def test_dataset_workflow_script_requires_dataset_argument():
@@ -43,13 +46,13 @@ def test_dataset_workflow_script_requires_dataset_argument():
 
 def test_dataset_workflow_script_rejects_unknown_option_before_docker():
     result = subprocess.run(
-        ["bash", SCRIPT, "--with-inspection"],
+        ["bash", SCRIPT, "--unknown"],
         text=True,
         capture_output=True,
     )
 
     assert result.returncode == 2
-    assert "Unknown option: --with-inspection" in result.stderr
+    assert "Unknown option: --unknown" in result.stderr
 
 
 def test_dataset_workflow_script_rejects_missing_manifest_before_docker(tmp_path):
@@ -92,3 +95,17 @@ def test_dataset_workflow_script_keeps_replay_out_of_default_path():
     assert "vault-obsidian" not in script
     assert "replay-qa" not in script
 
+
+def test_dataset_workflow_script_starts_inspection_services_only_behind_flags():
+    script = Path(SCRIPT).read_text(encoding="utf-8")
+
+    assert "--with-dbt-docs" in script
+    assert "--with-table-browser" in script
+    assert "--with-inspection" in script
+    assert 'run_logged dbt-docs "${compose[@]}" up -d dbt-docs' in script
+    assert (
+        'run_logged postgres-browser "${compose[@]}" up -d postgres-browser'
+        in script
+    )
+    assert 'if [[ "$start_dbt_docs" == "1" ]]; then' in script
+    assert 'if [[ "$start_table_browser" == "1" ]]; then' in script

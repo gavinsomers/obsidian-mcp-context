@@ -5,14 +5,17 @@ usage() {
   cat <<'EOF'
 Usage:
   scripts/run_dataset_workflow.sh /path/to/generated-vault
-  scripts/run_dataset_workflow.sh [small|medium|large|synthetic]
+  scripts/run_dataset_workflow.sh [small|medium|large|synthetic] [options]
 
 Run the quiet completed-dataset workflow:
   validate vault manifest, start Postgres, ingest the full vault, run dbt,
   run dbt tests, and start the MCP server.
 
 Options:
-  --help    Show this help.
+  --with-dbt-docs        Generate and serve dbt Docs after dbt tests pass.
+  --with-table-browser   Start the Postgres table browser after dbt tests pass.
+  --with-inspection      Start both dbt Docs and the Postgres table browser.
+  --help                 Show this help.
 
 Environment:
   ENV_FILE       Compose env file. Defaults to .env.analytics,
@@ -23,6 +26,8 @@ EOF
 
 compose_file="${COMPOSE_FILE:-docker-compose.analytics.yml}"
 dataset_arg=""
+start_dbt_docs=0
+start_table_browser=0
 
 if [[ $# -eq 0 ]]; then
   usage >&2
@@ -34,6 +39,19 @@ while [[ $# -gt 0 ]]; do
     --help|-h)
       usage
       exit 0
+      ;;
+    --with-dbt-docs)
+      start_dbt_docs=1
+      shift
+      ;;
+    --with-table-browser)
+      start_table_browser=1
+      shift
+      ;;
+    --with-inspection)
+      start_dbt_docs=1
+      start_table_browser=1
+      shift
       ;;
     --*)
       echo "Unknown option: $1" >&2
@@ -222,10 +240,34 @@ echo "[6/6] Starting MCP..."
 run_logged mcp "${compose[@]}" up -d mcp
 echo "[6/6] Starting MCP... ready"
 
+if [[ "$start_dbt_docs" == "1" ]]; then
+  echo "Starting dbt Docs..."
+  run_logged dbt-docs "${compose[@]}" up -d dbt-docs
+  echo "Starting dbt Docs... ready"
+fi
+
+if [[ "$start_table_browser" == "1" ]]; then
+  echo "Starting Postgres table browser..."
+  run_logged postgres-browser "${compose[@]}" up -d postgres-browser
+  echo "Starting Postgres table browser... ready"
+fi
+
+dbt_docs_line=""
+if [[ "$start_dbt_docs" == "1" ]]; then
+  dbt_docs_line="  dbt Docs: http://localhost:$(env_value DBT_DOCS_PORT 8081)"
+fi
+
+table_browser_line=""
+if [[ "$start_table_browser" == "1" ]]; then
+  table_browser_line="  Postgres browser: http://localhost:$(env_value POSTGRES_BROWSER_PORT 8082)"
+fi
+
 cat <<EOF
 
 Dataset workflow passed.
 
 Open:
   MCP HTTP: http://localhost:$(env_value MCP_PORT 8000)
+$dbt_docs_line
+$table_browser_line
 EOF

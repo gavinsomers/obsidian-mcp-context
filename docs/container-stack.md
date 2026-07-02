@@ -51,6 +51,28 @@ dbt, runs dbt tests, and starts MCP. It writes Compose output to
 It does not copy datasets from the generator automatically; provide the path you
 want processed.
 
+Inspection surfaces are explicit. Start both dbt lineage docs and the table
+browser with:
+
+```bash
+scripts/run_dataset_workflow.sh /path/to/generated-vault --with-inspection
+```
+
+Or start only one:
+
+```bash
+scripts/run_dataset_workflow.sh /path/to/generated-vault --with-dbt-docs
+scripts/run_dataset_workflow.sh /path/to/generated-vault --with-table-browser
+```
+
+Open:
+
+```text
+MCP HTTP:         http://localhost:8000
+dbt Docs:         http://localhost:8081
+Postgres browser: http://localhost:8082
+```
+
 Run the full synthetic-vault path:
 
 ```bash
