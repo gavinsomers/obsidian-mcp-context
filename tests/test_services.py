@@ -5,6 +5,7 @@ from pathlib import Path
 import pytest
 
 from obsidian_mcp_context import postgres_warehouse
+from obsidian_mcp_context.config import load_app_config
 from obsidian_mcp_context.security import VaultPathError
 from obsidian_mcp_context.services import ContextService
 from obsidian_mcp_context.vault import VaultConfig, build_context
@@ -110,6 +111,18 @@ class FakePresetWarehouse:
         )
         return [{"entity_type": entity_type, "entity_name": entity}]
 
+
+class FakeProfileWarehouse:
+    def list_vault_profiles(self, handle: str, limit: int) -> list[dict[str, object]]:
+        return [
+            {
+                "vault_profile_id": "profile_123",
+                "profile_loaded": True,
+                "source_file_count": 42,
+                "limit": limit,
+            }
+        ]
+
     def list_entity_open_loops(
         self,
         handle: str,
@@ -180,3 +193,61 @@ def test_context_service_context_preset_reports_mart_requirement(
     assert result["mode"] == "parser-diagnostic"
     assert result["rows"] == []
     assert result["warning"] == "Preset requires a valid Postgres/dbt mart warehouse."
+
+
+def test_context_service_profile_metadata_redacts_local_paths(tmp_path: Path):
+    vault = tmp_path / "vault"
+    profile_path = tmp_path / "profile.toml"
+    (vault / "Accounts").mkdir(parents=True)
+    (vault / "Accounts" / "Acme.md").write_text("# Acme\n", encoding="utf-8")
+    profile_path.write_text(
+        """
+[entities.folders]
+Accounts = "account"
+""".strip(),
+        encoding="utf-8",
+    )
+    app_config = load_app_config(
+        config_path=tmp_path / "missing.toml",
+        profile_path=profile_path,
+    )
+    service = ContextService(app_config=app_config)
+
+    result = service.vault_profile_metadata(vault)
+    profile = result["profiles"][0]
+
+    assert result["mode"] == "parser-diagnostic"
+    assert profile["profile_loaded"] is True
+    assert profile["profile_ref"] == "<redacted:profile.toml>"
+    assert profile["folder_note_types"] == {"Accounts": "account"}
+    assert profile["note_type_counts"] == {"account": 1}
+    assert profile["source_file_count"] == 1
+    assert str(tmp_path) not in str(result)
+
+
+def test_context_service_profile_metadata_uses_mart_reader(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+):
+    service = ContextService()
+    fake_warehouse = FakeProfileWarehouse()
+    monkeypatch.setattr(
+        service,
+        "dbt_reader",
+        lambda postgres_dsn=None: (fake_warehouse, "postgresql://example"),
+    )
+
+    result = service.vault_profile_metadata(tmp_path, limit=3)
+
+    assert result == {
+        "mode": "mart-backed",
+        "row_count": 1,
+        "profiles": [
+            {
+                "vault_profile_id": "profile_123",
+                "profile_loaded": True,
+                "source_file_count": 42,
+                "limit": 3,
+            }
+        ],
+    }

@@ -179,6 +179,7 @@ Mart-backed tools read dbt-built Postgres marts:
 - `list_vault_context_presets`
 - `get_vault_context_preset`
 - `get_vault_warehouse_summary`
+- `get_vault_profile_metadata`
 - `list_vault_entity_types`
 - `get_vault_entity_context`
 - `list_vault_entity_events`
