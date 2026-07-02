@@ -8,44 +8,66 @@ import re
 from typing import Iterator
 
 
-DEFAULT_SCHEMA = "marts"
+DEFAULT_SCHEMAS = ("mart", "fact", "dim", "intermediate", "staging")
 MAX_LIMIT = 500
-REQUIRED_MARTS = {
-    "dim_notes",
-    "dim_entities",
-    "dim_entity_types",
-    "fact_blocks",
-    "fact_tasks",
-    "fact_links",
-    "fact_tags",
-    "fact_mentions",
-    "fact_entity_relationships",
-    "fact_entity_states",
-    "fact_entity_events",
-    "dim_people",
-    "dim_companies",
-    "dim_projects",
-    "fact_decisions",
-    "fact_risks",
-    "mart_open_loops",
-    "mart_entity_open_loops",
-    "mart_entity_context",
-    "mart_person_context",
-    "mart_project_context",
-    "mart_person_summary",
-    "mart_company_summary",
-    "mart_project_summary",
+REQUIRED_RELATIONS = {
+    "dim": {
+        "dim_notes",
+        "dim_entities",
+        "dim_entity_types",
+        "dim_people",
+        "dim_companies",
+        "dim_projects",
+    },
+    "fact": {
+        "fact_blocks",
+        "fact_tasks",
+        "fact_links",
+        "fact_tags",
+        "fact_mentions",
+        "fact_entity_relationships",
+        "fact_entity_states",
+        "fact_entity_events",
+        "fact_decisions",
+        "fact_risks",
+    },
+    "mart": {
+        "mart_timeline",
+        "mart_open_loops",
+        "mart_entity_open_loops",
+        "mart_entity_context",
+        "mart_person_context",
+        "mart_project_context",
+        "mart_person_summary",
+        "mart_company_summary",
+        "mart_project_summary",
+    },
 }
 SCHEMA_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
 
 
-def _schema() -> str:
-    schema = os.environ.get("POSTGRES_MART_SCHEMA") or os.environ.get(
-        "DBT_TARGET_SCHEMA", DEFAULT_SCHEMA
-    )
+def _validate_schema(schema: str) -> str:
     if not SCHEMA_RE.fullmatch(schema):
         raise ValueError(f"Invalid Postgres schema name: {schema}")
     return schema
+
+
+def _schemas() -> tuple[str, ...]:
+    configured = os.environ.get("POSTGRES_WAREHOUSE_SCHEMAS")
+    if configured:
+        schemas = tuple(
+            _validate_schema(schema.strip())
+            for schema in configured.split(",")
+            if schema.strip()
+        )
+        if schemas:
+            return schemas
+
+    legacy_schema = os.environ.get("POSTGRES_MART_SCHEMA")
+    if legacy_schema:
+        return (_validate_schema(legacy_schema),)
+
+    return DEFAULT_SCHEMAS
 
 
 def resolve_postgres_dsn(value: str | None = None) -> str | None:
@@ -58,7 +80,8 @@ def connect(postgres_dsn: str) -> Iterator[object]:
 
     connection = psycopg.connect(postgres_dsn)
     try:
-        connection.execute(f"set search_path to {_schema()}")
+        search_path = ", ".join(_schemas())
+        connection.execute(f"set search_path to {search_path}")
         yield connection
     finally:
         connection.close()
@@ -69,22 +92,36 @@ def is_available(postgres_dsn: str | None) -> bool:
     if dsn is None:
         return False
     try:
-        schema = _schema()
+        schemas = _schemas()
         with connect(dsn) as connection:
             rows = _fetchall_dict(
                 connection.execute(
                     """
-                    select table_name
+                    select table_schema, table_name
                     from information_schema.tables
-                    where table_schema = %s
+                    where table_schema = any(%s)
                     """,
-                    (schema,),
+                    (list(schemas),),
                 )
             )
-            tables = {row["table_name"] for row in rows}
+            relations = {
+                (str(row["table_schema"]), str(row["table_name"])) for row in rows
+            }
     except (Exception, OSError, ValueError):
         return False
-    return REQUIRED_MARTS.issubset(tables)
+    expected = {
+        (schema, table)
+        for schema, tables in REQUIRED_RELATIONS.items()
+        for table in tables
+    }
+    if expected.issubset(relations):
+        return True
+
+    legacy_relations = {table for _, table in relations}
+    legacy_required = {
+        table for tables in REQUIRED_RELATIONS.values() for table in tables
+    }
+    return legacy_required.issubset(legacy_relations)
 
 
 def _bounded_limit(limit: int, maximum: int = MAX_LIMIT) -> int:

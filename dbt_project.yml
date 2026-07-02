@@ -11,14 +11,19 @@ models:
   obsidian_mcp_context:
     +materialized: table
     staging:
+      +schema: staging
       +materialized: view
     intermediate:
+      +schema: intermediate
       +materialized: view
     marts:
       +materialized: table
       dim:
+        +schema: dim
         +materialized: table
       fact:
+        +schema: fact
         +materialized: table
       mart:
+        +schema: mart
         +materialized: table

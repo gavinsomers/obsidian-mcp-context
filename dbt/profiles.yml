@@ -8,5 +8,5 @@ obsidian_mcp_context:
       user: "{{ env_var('POSTGRES_USER', 'obsidian') }}"
       password: "{{ env_var('POSTGRES_PASSWORD', 'obsidian') }}"
       dbname: "{{ env_var('POSTGRES_DB', 'obsidian_context') }}"
-      schema: "{{ env_var('DBT_TARGET_SCHEMA', 'marts') }}"
+      schema: "{{ env_var('DBT_TARGET_SCHEMA', 'dbt') }}"
       threads: "{{ env_var('DBT_THREADS', '1') | int }}"

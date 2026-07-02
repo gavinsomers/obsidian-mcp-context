@@ -65,7 +65,7 @@ services:
     environment:
       DBT_TARGET: postgres
       DBT_SOURCE_SCHEMA: ${POSTGRES_RAW_SCHEMA:-raw}
-      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-marts}
+      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-dbt}
       DBT_THREADS: ${DBT_THREADS:-1}
       POSTGRES_HOST: postgres
       POSTGRES_PORT: 5432
@@ -124,6 +124,7 @@ services:
       WITH_DBT_DOCS: ${WITH_DBT_DOCS:-0}
       WITH_TABLE_BROWSER: ${WITH_TABLE_BROWSER:-0}
       WITH_INSPECTION: ${WITH_INSPECTION:-0}
+      RESET_WAREHOUSE_SCHEMAS: ${RESET_WAREHOUSE_SCHEMAS:-1}
       MCP_PORT: ${MCP_PORT:-8000}
       DBT_DOCS_PORT: ${DBT_DOCS_PORT:-8081}
       POSTGRES_BROWSER_PORT: ${POSTGRES_BROWSER_PORT:-8082}
@@ -176,6 +177,13 @@ services:
         docker compose --env-file "$${env_file}" -f "$${compose_file}" run --rm ingest
         echo "[3/6] Ingesting vault into Postgres... passed"
 
+        if [ "$${RESET_WAREHOUSE_SCHEMAS}" = "1" ]; then
+          echo "Resetting dbt warehouse schemas..."
+          docker compose --env-file "$${env_file}" -f "$${compose_file}" run --rm dbt \
+            dbt run-operation reset_warehouse_schemas --profiles-dir dbt --project-dir .
+          echo "Resetting dbt warehouse schemas... passed"
+        fi
+
         echo "[4/6] Running dbt models..."
         docker compose --env-file "$${env_file}" -f "$${compose_file}" run --rm dbt
         echo "[4/6] Running dbt models... passed"
@@ -224,7 +232,8 @@ services:
     environment:
       POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
       POSTGRES_RAW_SCHEMA: ${POSTGRES_RAW_SCHEMA:-raw}
-      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-marts}
+      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-dbt}
+      POSTGRES_WAREHOUSE_SCHEMAS: ${POSTGRES_WAREHOUSE_SCHEMAS:-mart,fact,dim,intermediate,staging}
       REPLAY_STATE_DIR: /replay-vault
     volumes:
       - ${REPLAY_TARGET_VAULT:-./var/replay-vault}:/replay-vault:ro
@@ -251,7 +260,8 @@ services:
     environment:
       POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
       POSTGRES_RAW_SCHEMA: ${POSTGRES_RAW_SCHEMA:-raw}
-      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-marts}
+      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-dbt}
+      POSTGRES_WAREHOUSE_SCHEMAS: ${POSTGRES_WAREHOUSE_SCHEMAS:-mart,fact,dim,intermediate,staging}
       REPLAY_STATE_DIR: /replay-vault
       VAULT_PATH: /vault
       OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
@@ -288,7 +298,8 @@ services:
     environment:
       POSTGRES_DSN: postgresql://${POSTGRES_USER:-obsidian}:${POSTGRES_PASSWORD:-obsidian}@postgres:5432/${POSTGRES_DB:-obsidian_context}
       WAREHOUSE_BACKEND: postgres
-      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-marts}
+      DBT_TARGET_SCHEMA: ${DBT_TARGET_SCHEMA:-dbt}
+      POSTGRES_WAREHOUSE_SCHEMAS: ${POSTGRES_WAREHOUSE_SCHEMAS:-mart,fact,dim,intermediate,staging}
       OBSIDIAN_MCP_ALLOWED_ROOTS: /vault
       OBSIDIAN_MCP_VAULT_PROFILE: ${OBSIDIAN_MCP_VAULT_PROFILE:-}
     volumes:

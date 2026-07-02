@@ -34,7 +34,7 @@ The MCP container reads the Postgres marts with:
 ```dotenv
 WAREHOUSE_BACKEND=postgres
 POSTGRES_DSN=postgresql://obsidian:obsidian@postgres:5432/obsidian_context
-DBT_TARGET_SCHEMA=marts
+POSTGRES_WAREHOUSE_SCHEMAS=mart,fact,dim,intermediate,staging
 OBSIDIAN_MCP_ALLOWED_ROOTS=/vault
 ```
 
@@ -62,7 +62,7 @@ cwd = "/home/gavman/code/obsidian-mcp-context"
 [mcp_servers.obsidian_generated_large_postgres.env]
 WAREHOUSE_BACKEND = "postgres"
 POSTGRES_DSN = "postgresql://obsidian:obsidian@localhost:5432/obsidian_context"
-DBT_TARGET_SCHEMA = "marts"
+POSTGRES_WAREHOUSE_SCHEMAS = "mart,fact,dim,intermediate,staging"
 OBSIDIAN_MCP_ALLOWED_ROOTS = "/home/gavman/code/obsidian-mcp-context/examples/generated-vaults"
 ```
 

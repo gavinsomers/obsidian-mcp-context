@@ -352,7 +352,7 @@ The host port is configurable with `REPLAY_DASHBOARD_PORT`. The dashboard reads:
 - `var/replay-vault/.obsidian-mcp-replay-state.json`
 - `var/replay-vault/.obsidian-mcp-scheduler-state.json`
 - Postgres raw table counts from `POSTGRES_RAW_SCHEMA`
-- Postgres mart counts from `DBT_TARGET_SCHEMA`
+- Postgres mart counts from the configured modeled schemas
 
 It shows replay virtual time, loaded and remaining note counts, latest scheduler
 status, latest successful ingest/dbt run, and whether the current mart state is
@@ -525,8 +525,16 @@ Database: obsidian_context
 ```
 
 The host port is configurable with `POSTGRES_BROWSER_PORT`. For demos, inspect
-the `marts` schema for dbt outputs and the `raw` schema for landing tables. This
-is a local inspection tool, so avoid editing table data unless you are
+the `raw` schema for landing tables and the dbt layer schemas for modeled
+outputs:
+
+- `staging` for `stg_*`
+- `intermediate` for `int_*`
+- `dim` for `dim_*`
+- `fact` for `fact_*`
+- `mart` for `mart_*`
+
+This is a local inspection tool, so avoid editing table data unless you are
 deliberately testing a database change.
 
 ## VS Code Workflow
@@ -554,8 +562,8 @@ Postgres and Obsidian running as services.
 ## MCP And AI Enrichment
 
 The MCP container uses `WAREHOUSE_BACKEND=postgres`, `POSTGRES_DSN`, and
-`DBT_TARGET_SCHEMA` to read from the dbt marts in Postgres. Build the warehouse
-before starting MCP:
+`POSTGRES_WAREHOUSE_SCHEMAS=mart,fact,dim,intermediate,staging` to read from
+the split dbt schemas in Postgres. Build the warehouse before starting MCP:
 
 ```bash
 docker compose --env-file .env.analytics -f docker-compose.analytics.yml run --rm ingest
