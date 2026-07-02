@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Pipeline 52]]"
-source_created_at: 2024-02-02T13:14:00
-source_observed_at: 2024-02-02T15:57:00
-created_at: 2024-02-04T10:14:00
-updated_at: 2024-02-07T17:14:00
+source_created_at: 2024-02-02T16:46:00
+source_observed_at: 2024-02-02T17:36:00
+created_at: 2024-02-04T02:46:00
+updated_at: 2024-03-11T13:46:00
 tags: [#risk]
 ---
 # Project Pipeline 52 Metric Reconciliation Risk 52
@@ -14,9 +14,9 @@ tags: [#risk]
 Metric Reconciliation may affect [[Project Pipeline 52]] for [[Vanguard Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Pipeline 52 Stakeholder Alignment Sync 52]]
+- Raised after [[Project Pipeline 52 Stakeholder Alignment Sync 1592]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Omar Grant]]
+- Status: `mitigating`
+- Owner: [[Zoe Bennett]]
 - [ ] Reassess [[Project Pipeline 52 Metric Reconciliation Risk 52]] during the next review #risk

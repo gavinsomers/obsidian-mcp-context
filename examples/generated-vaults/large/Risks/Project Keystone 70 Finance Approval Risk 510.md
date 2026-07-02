@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Keystone 70]]"
-source_created_at: 2024-08-25T10:23:00
-source_observed_at: 2024-08-25T13:08:00
-created_at: 2024-08-26T13:23:00
-updated_at: 2024-09-17T18:23:00
+source_created_at: 2025-07-23T11:46:00
+source_observed_at: 2025-07-23T14:19:00
+created_at: 2025-07-25T04:46:00
+updated_at: 2025-08-05T12:46:00
 tags: [#risk]
 ---
 # Project Keystone 70 Finance Approval Risk 510
@@ -17,6 +17,6 @@ Finance Approval may affect [[Project Keystone 70]] for [[Harbor Health]].
 - Raised after [[Project Keystone 70 Handoff Readiness Sync 510]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Clara Vance]]
+- Status: `mitigating`
+- Owner: [[Rachel Chen]]
 - [ ] Reassess [[Project Keystone 70 Finance Approval Risk 510]] during the next review #risk

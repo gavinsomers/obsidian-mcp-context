@@ -4,10 +4,10 @@ date: 2025-01-04
 status: active
 project: "[[Project Venture 118]]"
 company: "[[Noble Analytics]]"
-source_created_at: 2025-01-04T09:11:00
-source_observed_at: 2025-01-04T10:12:00
-created_at: 2025-01-04T11:36:00
-updated_at: 2025-01-04T18:36:00
+source_created_at: 2025-01-04T12:16:00
+source_observed_at: 2025-01-04T14:34:00
+created_at: 2025-01-04T14:39:00
+updated_at: 2025-01-05T12:39:00
 tags: [#decision]
 ---
 # Project Venture 118 Handoff Readiness Decision 338
@@ -17,8 +17,8 @@ Proceed with handoff readiness for [[Project Venture 118]].
 
 ## Context
 This decision applies to [[Noble Analytics]] and [[Project Venture 118]].
-It follows [[Project Venture 118 Lineage Audit Sync 1878]].
-It incorporates [[Project Venture 118 Finance Approval Research 338]].
+It follows [[Project Venture 118 Lineage Audit Sync 1658]].
+It incorporates [[Project Venture 118 Finance Approval Research 118]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

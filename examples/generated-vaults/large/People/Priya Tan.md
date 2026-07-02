@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Retail]]"
-role: "Product Director"
-source_created_at: 2023-10-08T14:44:00
-source_observed_at: 2023-10-08T16:55:00
-created_at: 2023-10-09T05:44:00
-updated_at: 2023-11-10T15:44:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-10-08T15:37:00
+source_observed_at: 2023-10-08T17:51:00
+created_at: 2023-10-15T17:37:00
+updated_at: 2023-11-26T02:37:00
 tags: [#person]
 ---
 # Priya Tan
 
 ## Role
-Priya Tan is the Product Director at [[Northstar Retail]].
+Priya Tan is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Atlas 31]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Tan]] #follow-up

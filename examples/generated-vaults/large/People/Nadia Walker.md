@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex Analytics]]"
-role: "SecOps Lead"
-source_created_at: 2023-11-02T10:32:00
-source_observed_at: 2023-11-02T11:38:00
-created_at: 2023-11-03T23:32:00
-updated_at: 2024-01-24T07:32:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-11-02T08:33:00
+source_observed_at: 2023-11-02T09:38:00
+created_at: 2023-11-03T04:33:00
+updated_at: 2023-12-08T12:33:00
 tags: [#person]
 ---
 # Nadia Walker
 
 ## Role
-Nadia Walker is the SecOps Lead at [[Apex Analytics]].
+Nadia Walker is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Apex Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Nadia Walker]] #follow-up

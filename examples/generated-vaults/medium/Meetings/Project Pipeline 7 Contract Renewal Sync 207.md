@@ -3,23 +3,23 @@ type: meeting
 date: 2024-04-15
 project: "[[Project Pipeline 7]]"
 company: "[[Vanguard Labs]]"
-source_created_at: 2024-04-15T16:07:00
-source_observed_at: 2024-04-15T17:54:00
-created_at: 2024-04-15T19:48:00
-updated_at: 2024-04-15T21:48:00
+source_created_at: 2024-04-15T13:00:00
+source_observed_at: 2024-04-15T14:32:00
+created_at: 2024-04-15T17:41:00
+updated_at: 2024-04-16T00:41:00
 tags: [#meeting]
 ---
 # Project Pipeline 7 Contract Renewal Sync 207
 
 ## Attendees
-- [[Wendy Evans]]
-- [[Jonah Bennett]]
-- [[Sam Diaz]]
+- [[Grace Diaz]]
+- [[Kai Chen]]
+- [[Priya Chen]]
 
 ## Notes
 Contract Renewal reviewed for [[Project Pipeline 7]] at [[Vanguard Labs]].
-[[Jonah Bennett]] flagged follow-up work for the next operating review.
+[[Farah Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Pipeline 7]] to [[Jonah Bennett]] #follow-up
+- [ ] Send recap for [[Project Pipeline 7]] to [[Farah Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

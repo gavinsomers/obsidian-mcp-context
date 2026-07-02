@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: blocked
 company: "[[Keystone Health]]"
-source_created_at: 2024-05-07T11:45:00
-source_observed_at: 2024-05-07T12:47:00
-created_at: 2024-05-08T06:45:00
-updated_at: 2024-06-27T17:45:00
+source_created_at: 2024-05-07T12:33:00
+source_observed_at: 2024-05-07T14:03:00
+created_at: 2024-05-08T00:33:00
+updated_at: 2024-07-01T11:33:00
 tags: [#project]
 ---
 # Project Bridge 75
@@ -14,12 +14,12 @@ tags: [#project]
 Project Bridge 75 supports [[Keystone Health]] through operations admin.
 
 ## Stakeholders
-- [[Lina Haddad]]
-- [[Sam Quinn]]
-- [[Ben Morgan]]
-- [[Hannah Vance]]
+- [[Victor Jenkins]]
+- [[Lina Evans]]
+- [[Alex Bennett]]
+- [[Hannah Haddad]]
 
 ## Operating Notes
-- Owner: [[Hannah Vance]]
-- Status: `active`
+- Owner: [[Wendy Chen]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Bridge 75]] #ops

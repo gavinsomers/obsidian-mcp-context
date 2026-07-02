@@ -3,23 +3,23 @@ type: meeting
 date: 2023-07-28
 project: "[[Project Foundry 3]]"
 company: "[[Cobalt Labs]]"
-source_created_at: 2023-07-28T08:11:00
-source_observed_at: 2023-07-28T09:41:00
-created_at: 2023-08-01T10:11:00
-updated_at: 2023-08-02T09:11:00
+source_created_at: 2023-07-28T14:43:00
+source_observed_at: 2023-07-28T17:11:00
+created_at: 2023-07-28T17:16:00
+updated_at: 2023-07-29T16:16:00
 tags: [#meeting]
 ---
 # Project Foundry 3 Security Review Sync 53
 
 ## Attendees
-- [[Nadia Diaz]]
-- [[Sam Evans]]
-- [[Ben Alvarez]]
+- [[Clara Chen]]
+- [[Elena Alvarez]]
+- [[Priya Alvarez]]
 
 ## Notes
 Security Review reviewed for [[Project Foundry 3]] at [[Cobalt Labs]].
-[[Jonah Chen]] flagged follow-up work for the next operating review.
+[[Ben Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 3]] to [[Jonah Chen]] #follow-up
+- [ ] Send recap for [[Project Foundry 3]] to [[Ben Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

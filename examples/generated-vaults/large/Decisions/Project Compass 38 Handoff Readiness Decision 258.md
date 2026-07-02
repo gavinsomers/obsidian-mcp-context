@@ -4,10 +4,10 @@ date: 2024-05-20
 status: active
 project: "[[Project Compass 38]]"
 company: "[[Quantum Retail]]"
-source_created_at: 2024-05-20T13:16:00
-source_observed_at: 2024-05-20T14:37:00
-created_at: 2024-05-20T16:26:00
-updated_at: 2024-05-20T17:26:00
+source_created_at: 2024-05-20T10:46:00
+source_observed_at: 2024-05-20T12:41:00
+created_at: 2024-05-27T15:46:00
+updated_at: 2024-05-28T05:46:00
 tags: [#decision]
 ---
 # Project Compass 38 Handoff Readiness Decision 258

@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
+status: churn-risk
 segment: smb
-source_created_at: 2023-11-21T12:10:00
-source_observed_at: 2023-11-21T13:55:00
-created_at: 2023-11-22T07:10:00
-updated_at: 2023-12-21T07:10:00
+source_created_at: 2023-11-23T14:54:00
+source_observed_at: 2023-11-23T16:22:00
+created_at: 2023-12-02T17:54:00
+updated_at: 2024-02-08T00:54:00
 tags: [#company]
 ---
 # BrightWave Analytics
 
 ## Account Context
-BrightWave Analytics is a smb account currently marked `active`.
+BrightWave Analytics is a smb account currently marked `churn-risk`.
 
-## Stakeholders
-- [[David Evans]] - VP Data Engineering
-- [[Uma Ivanov]] - VP Data Engineering
-- [[Jonah Novak]] - VP Data Engineering
-- [[Alex Shah]] - VP Data Engineering
-- [[Priya Walker]] - VP Data Engineering
+## Assigned Account Team
 
 ## Projects
 

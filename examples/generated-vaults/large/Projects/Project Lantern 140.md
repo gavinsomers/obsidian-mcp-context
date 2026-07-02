@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Helio FinTech]]"
-source_created_at: 2025-03-21T08:32:00
-source_observed_at: 2025-03-21T09:08:00
-created_at: 2025-03-21T17:32:00
-updated_at: 2025-04-30T22:32:00
+status: closed
+company: "[[Meridian FinTech]]"
+source_created_at: 2025-03-21T12:57:00
+source_observed_at: 2025-03-21T15:22:00
+created_at: 2025-03-21T23:57:00
+updated_at: 2025-05-26T06:57:00
 tags: [#project]
 ---
 # Project Lantern 140
 
 ## Overview
-Project Lantern 140 supports [[Helio FinTech]] through operations admin.
+Project Lantern 140 supports [[Meridian FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Omar Ortega]]
-- [[Tara Alvarez]]
-- [[Iris Foster]]
-- [[Zoe Jenkins]]
+- [[Grace Evans]]
+- [[Kai Jenkins]]
+- [[Nadia Jenkins]]
+- [[Zoe Bennett]]
 
 ## Operating Notes
-- Owner: [[Elena Tan]]
-- Status: `active`
+- Owner: [[Iris Foster]]
+- Status: `closed`
+- Closed at: `2025-07-01`
 - [ ] Reconcile latest state for [[Project Lantern 140]] #ops

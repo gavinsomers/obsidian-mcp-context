@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Northstar Labs]]"
-role: "SecOps Lead"
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
 source_created_at: 2023-05-21T14:55:00
 source_observed_at: 2023-05-21T15:15:00
 created_at: 2023-05-22T21:55:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Lina Diaz
 
 ## Role
-Lina Diaz is the SecOps Lead at [[Northstar Labs]].
+Lina Diaz is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Atlas 1]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Diaz]] #follow-up

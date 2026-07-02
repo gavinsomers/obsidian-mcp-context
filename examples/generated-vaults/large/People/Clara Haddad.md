@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian Health]]"
-role: "Finance Sponsor"
-source_created_at: 2023-06-21T16:55:00
-source_observed_at: 2023-06-21T19:27:00
-created_at: 2023-06-21T20:55:00
-updated_at: 2023-09-06T09:41:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-06-21T11:16:00
+source_observed_at: 2023-06-21T14:06:00
+created_at: 2023-06-23T11:16:00
+updated_at: 2023-09-09T21:16:00
 tags: [#person]
 ---
 # Clara Haddad
 
 ## Role
-Clara Haddad is the Finance Sponsor at [[Meridian Health]].
+Clara Haddad is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian Health]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Compass 23]] ([[Quantum FinTech]])
 - [ ] Confirm next update with [[Clara Haddad]] #follow-up

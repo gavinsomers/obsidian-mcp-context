@@ -1,23 +1,27 @@
 ---
 type: company
-status: active
-segment: mid-market
-source_created_at: 2023-05-13T14:35:00
-source_observed_at: 2023-05-13T16:46:00
-created_at: 2023-05-14T16:35:00
-updated_at: 2023-06-14T17:41:00
+status: pipeline
+segment: enterprise
+source_created_at: 2023-05-15T12:06:00
+source_observed_at: 2023-05-15T12:49:00
+created_at: 2023-05-22T19:06:00
+updated_at: 2023-08-16T03:06:00
 tags: [#company]
 ---
 # Noble Labs
 
 ## Account Context
-Noble Labs is a mid-market account currently marked `active`.
+Noble Labs is a enterprise account currently marked `pipeline`.
 
-## Stakeholders
-- [[Lina Alvarez]] - VP Data Engineering
-- [[Ben Foster]] - VP Data Engineering
+## Assigned Account Team
+- [[Lina Alvarez]] - Data Platform Engineer
+- [[Zoe Evans]] - Senior Data Consultant
+- [[Iris Grant]] - Analytics Engineer
+- [[Sam Bennett]] - Data Platform Engineer
+- [[Jonah Alvarez]] - Delivery Lead
 
 ## Projects
+- [[Project Venture 13]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Noble Labs]] #account

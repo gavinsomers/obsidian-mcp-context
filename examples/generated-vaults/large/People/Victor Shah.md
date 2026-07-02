@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Labs]]"
-role: "Finance Sponsor"
-source_created_at: 2023-10-01T13:57:00
-source_observed_at: 2023-10-01T15:47:00
-created_at: 2023-10-02T23:57:00
-updated_at: 2023-12-18T06:57:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-10-01T08:15:00
+source_observed_at: 2023-10-01T11:11:00
+created_at: 2023-10-01T21:15:00
+updated_at: 2023-10-22T01:15:00
 tags: [#person]
 ---
 # Victor Shah
 
 ## Role
-Victor Shah is the Finance Sponsor at [[Harbor Labs]].
+Victor Shah is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Keystone 10]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Victor Shah]] #follow-up

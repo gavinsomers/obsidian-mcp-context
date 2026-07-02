@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Pioneer Labs]]"
-role: "Implementation Manager"
-source_created_at: 2023-08-22T08:22:00
-source_observed_at: 2023-08-22T08:52:00
-created_at: 2023-08-23T16:22:00
-updated_at: 2023-09-24T00:22:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-08-22T16:08:00
+source_observed_at: 2023-08-22T17:58:00
+created_at: 2023-08-23T22:08:00
+updated_at: 2023-09-10T00:08:00
 tags: [#person]
 ---
 # Grace Ortega
 
 ## Role
-Grace Ortega is the Implementation Manager at [[Pioneer Labs]].
+Grace Ortega is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Summit 12]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Grace Ortega]] #follow-up

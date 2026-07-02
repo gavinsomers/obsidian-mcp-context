@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-11-23
 project: "[[Project Compass 188]]"
-company: "[[Quantum Health]]"
-source_created_at: 2025-11-23T10:06:00
-source_observed_at: 2025-11-23T10:19:00
-created_at: 2025-11-23T12:10:00
-updated_at: 2025-11-23T15:10:00
+company: "[[Atlas Health]]"
+source_created_at: 2025-11-23T08:13:00
+source_observed_at: 2025-11-23T10:48:00
+created_at: 2025-11-23T13:45:00
+updated_at: 2025-11-24T00:45:00
 tags: [#meeting]
 ---
 # Project Compass 188 Lineage Audit Sync 628
 
 ## Attendees
-- [[Elena Haddad]]
-- [[Omar Chen]]
-- [[Kai Quinn]]
+- [[Nadia Novak]]
+- [[Alex Patel]]
+- [[Rachel Usman]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 188]] at [[Quantum Health]].
-[[Victor Lee]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 188]] at [[Atlas Health]].
+[[Elena Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 188]] to [[Victor Lee]] #follow-up
+- [ ] Send recap for [[Project Compass 188]] to [[Elena Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -4,10 +4,10 @@ date: 2026-02-09
 status: active
 project: "[[Project Summit 42]]"
 company: "[[Pioneer Retail]]"
-source_created_at: 2026-02-09T14:48:00
-source_observed_at: 2026-02-09T16:29:00
-created_at: 2026-02-09T16:34:00
-updated_at: 2026-02-10T03:34:00
+source_created_at: 2026-02-09T14:46:00
+source_observed_at: 2026-02-09T16:03:00
+created_at: 2026-02-09T17:32:00
+updated_at: 2026-02-10T13:32:00
 tags: [#decision]
 ---
 # Project Summit 42 Finance Approval Decision 702

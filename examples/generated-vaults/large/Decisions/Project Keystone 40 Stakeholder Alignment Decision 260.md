@@ -4,10 +4,10 @@ date: 2024-05-22
 status: active
 project: "[[Project Keystone 40]]"
 company: "[[Harbor Retail]]"
-source_created_at: 2024-05-22T08:26:00
-source_observed_at: 2024-05-22T09:09:00
-created_at: 2024-05-22T12:29:00
-updated_at: 2024-05-22T21:29:00
+source_created_at: 2024-05-22T09:02:00
+source_observed_at: 2024-05-22T11:26:00
+created_at: 2024-05-22T14:21:00
+updated_at: 2024-05-23T06:21:00
 tags: [#decision]
 ---
 # Project Keystone 40 Stakeholder Alignment Decision 260

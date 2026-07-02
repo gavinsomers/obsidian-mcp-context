@@ -3,18 +3,18 @@ type: meeting
 date: 2024-06-15
 project: "[[Project Meridian 81]]"
 company: "[[Meridian Media]]"
-source_created_at: 2024-06-15T11:39:00
-source_observed_at: 2024-06-15T12:09:00
-created_at: 2024-06-21T18:39:00
-updated_at: 2024-06-22T04:39:00
+source_created_at: 2024-06-15T08:07:00
+source_observed_at: 2024-06-15T08:40:00
+created_at: 2024-06-15T11:33:00
+updated_at: 2024-06-16T00:33:00
 tags: [#meeting]
 ---
 # Project Meridian 81 Warehouse Mapping Sync 81
 
 ## Attendees
-- [[Hannah Morgan]]
-- [[Ben Diaz]]
-- [[Yara Quinn]]
+- [[Elena Grant]]
+- [[Farah Ortega]]
+- [[Alex Usman]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Meridian 81]] at [[Meridian Media]].

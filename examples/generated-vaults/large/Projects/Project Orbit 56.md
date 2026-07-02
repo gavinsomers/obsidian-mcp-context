@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: blocked
 company: "[[Summit Manufacturing]]"
-source_created_at: 2024-02-05T14:30:00
-source_observed_at: 2024-02-05T15:43:00
-created_at: 2024-02-06T01:30:00
-updated_at: 2024-04-06T08:30:00
+source_created_at: 2024-02-05T10:54:00
+source_observed_at: 2024-02-05T13:36:00
+created_at: 2024-02-06T08:54:00
+updated_at: 2024-04-17T15:54:00
 tags: [#project]
 ---
 # Project Orbit 56
@@ -14,12 +14,12 @@ tags: [#project]
 Project Orbit 56 supports [[Summit Manufacturing]] through consulting delivery.
 
 ## Stakeholders
-- [[Omar Usman]]
-- [[Clara Chen]]
-- [[Iris Lee]]
-- [[Zoe Patel]]
+- [[Marcus Vance]]
+- [[Hannah Novak]]
+- [[Xavier Grant]]
+- [[Grace Shah]]
 
 ## Operating Notes
 - Owner: [[Clara Chen]]
-- Status: `planning`
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Orbit 56]] #ops

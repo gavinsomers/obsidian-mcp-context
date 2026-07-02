@@ -1,24 +1,19 @@
 ---
 type: company
 status: active
-segment: mid-market
-source_created_at: 2023-09-10T16:10:00
-source_observed_at: 2023-09-10T17:42:00
-created_at: 2023-09-11T12:10:00
-updated_at: 2023-11-01T21:10:00
+segment: enterprise
+source_created_at: 2023-09-12T10:03:00
+source_observed_at: 2023-09-12T11:54:00
+created_at: 2023-09-14T08:03:00
+updated_at: 2023-10-27T14:03:00
 tags: [#company]
 ---
 # Noble Health
 
 ## Account Context
-Noble Health is a mid-market account currently marked `active`.
+Noble Health is a enterprise account currently marked `active`.
 
-## Stakeholders
-- [[Uma Chen]] - Operations Lead
-- [[Jonah Haddad]] - Operations Lead
-- [[Alex Morgan]] - Operations Lead
-- [[Priya Quinn]] - Operations Lead
-- [[Farah Vance]] - Operations Lead
+## Assigned Account Team
 
 ## Projects
 

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Media]]"
-role: "VP Data Engineering"
-source_created_at: 2023-10-26T12:12:00
-source_observed_at: 2023-10-26T12:27:00
-created_at: 2023-11-03T13:12:00
-updated_at: 2024-01-21T19:12:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-10-26T10:31:00
+source_observed_at: 2023-10-26T13:26:00
+created_at: 2023-10-26T19:31:00
+updated_at: 2023-12-15T02:31:00
 tags: [#person]
 ---
 # Sam Vance
 
 ## Role
-Sam Vance is the VP Data Engineering at [[Harbor Media]].
+Sam Vance is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Sam Vance]] #follow-up

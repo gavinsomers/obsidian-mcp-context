@@ -1,24 +1,24 @@
 ---
 type: company
-status: churn-risk
-segment: enterprise
-source_created_at: 2023-04-25T12:06:00
-source_observed_at: 2023-04-25T14:44:00
-created_at: 2023-04-30T18:06:00
-updated_at: 2023-07-04T05:06:00
+status: active
+segment: smb
+source_created_at: 2023-04-27T11:04:00
+source_observed_at: 2023-04-27T13:45:00
+created_at: 2023-04-29T05:04:00
+updated_at: 2023-06-22T13:00:00
 tags: [#company]
 ---
 # BrightWave Labs
 
 ## Account Context
-BrightWave Labs is a enterprise account currently marked `churn-risk`.
+BrightWave Labs is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Clara Alvarez]] - Implementation Manager
-- [[Grace Bennett]] - Finance Sponsor
-- [[Kai Chen]] - Customer Success Manager
-- [[Omar Diaz]] - Legal Counsel
-- [[Tara Evans]] - Implementation Manager
+## Assigned Account Team
+- [[Clara Alvarez]] - Solution Architect
+- [[Jonah Alvarez]] - Delivery Lead
+- [[Marcus Diaz]] - Solution Architect
+- [[Amara Chen]] - Analytics Engineer
+- [[Kai Chen]] - Technical Director
 
 ## Projects
 - [[Project Horizon 4]]

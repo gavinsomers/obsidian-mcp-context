@@ -14,12 +14,12 @@ tags: [#project]
 Project Lantern 5 supports [[Helio Labs]] through operations admin.
 
 ## Stakeholders
-- [[Lina Chen]]
-- [[Hannah Bennett]]
-- [[Uma Evans]]
-- [[David Alvarez]]
+- [[Lina Diaz]]
+- [[Marcus Foster]]
+- [[Alex Evans]]
+- [[Marcus Bennett]]
 
 ## Operating Notes
-- Owner: [[Uma Evans]]
+- Owner: [[David Alvarez]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Lantern 5]] #ops

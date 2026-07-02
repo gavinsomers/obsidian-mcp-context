@@ -3,11 +3,11 @@ type: decision
 date: 2025-10-31
 status: active
 project: "[[Project Signal 179]]"
-company: "[[Crescent Manufacturing]]"
-source_created_at: 2025-10-31T13:28:00
-source_observed_at: 2025-10-31T16:22:00
-created_at: 2025-10-31T17:11:00
-updated_at: 2025-10-31T23:11:00
+company: "[[Keystone Manufacturing]]"
+source_created_at: 2025-10-31T16:31:00
+source_observed_at: 2025-10-31T19:02:00
+created_at: 2025-10-31T20:33:00
+updated_at: 2025-11-01T12:33:00
 tags: [#decision]
 ---
 # Project Signal 179 Warehouse Mapping Decision 619
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Signal 179]].
 
 ## Context
-This decision applies to [[Crescent Manufacturing]] and [[Project Signal 179]].
-It follows [[Project Signal 179 Pipeline Hygiene Sync 839]].
+This decision applies to [[Keystone Manufacturing]] and [[Project Signal 179]].
+It follows [[Project Signal 179 Pipeline Hygiene Sync 619]].
 It incorporates [[Project Signal 179 Adoption Workflow Research 179]].
 
 ## Supersession

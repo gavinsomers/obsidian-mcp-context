@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit Logistics]]"
-role: "VP Data Engineering"
-source_created_at: 2023-07-03T16:55:00
-source_observed_at: 2023-07-03T19:14:00
-created_at: 2023-07-04T03:55:00
-updated_at: 2023-11-15T15:08:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-07-03T10:54:00
+source_observed_at: 2023-07-03T13:52:00
+created_at: 2023-07-07T17:54:00
+updated_at: 2023-08-10T18:54:00
 tags: [#person]
 ---
 # Lina Ivanov
 
 ## Role
-Lina Ivanov is the VP Data Engineering at [[Summit Logistics]].
+Lina Ivanov is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Summit Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Ivanov]] #follow-up

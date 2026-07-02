@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Atlas 166]]"
-source_created_at: 2025-12-22T15:53:00
-source_observed_at: 2025-12-22T18:44:00
-created_at: 2025-12-23T08:53:00
-updated_at: 2026-01-31T14:53:00
+source_created_at: 2025-12-22T14:22:00
+source_observed_at: 2025-12-22T16:20:00
+created_at: 2025-12-24T07:22:00
+updated_at: 2026-02-04T10:22:00
 tags: [#risk]
 ---
 # Project Atlas 166 Handoff Readiness Risk 606
 
 ## Risk
-Handoff Readiness may affect [[Project Atlas 166]] for [[Northstar Manufacturing]].
+Handoff Readiness may affect [[Project Atlas 166]] for [[Apex Manufacturing]].
 
 ## Evidence
 - Raised after [[Project Atlas 166 Metric Reconciliation Sync 606]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Tara Bennett]]
+- Status: `closed`
+- Owner: [[Iris Grant]]
 - [ ] Reassess [[Project Atlas 166 Handoff Readiness Risk 606]] during the next review #risk

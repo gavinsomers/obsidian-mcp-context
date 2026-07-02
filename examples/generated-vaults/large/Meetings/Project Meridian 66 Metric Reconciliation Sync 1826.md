@@ -3,18 +3,18 @@ type: meeting
 date: 2024-05-30
 project: "[[Project Meridian 66]]"
 company: "[[Meridian Health]]"
-source_created_at: 2024-05-30T16:21:00
-source_observed_at: 2024-05-30T19:13:00
-created_at: 2024-05-30T19:34:00
-updated_at: 2024-05-31T12:34:00
+source_created_at: 2024-05-30T08:41:00
+source_observed_at: 2024-05-30T11:39:00
+created_at: 2024-05-30T12:15:00
+updated_at: 2024-05-30T17:15:00
 tags: [#meeting]
 ---
 # Project Meridian 66 Metric Reconciliation Sync 1826
 
 ## Attendees
-- [[Marcus Chen]]
-- [[Iris Quinn]]
-- [[Tara Lee]]
+- [[Xavier Morgan]]
+- [[Priya Lee]]
+- [[Nadia Rostova]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Meridian 66]] at [[Meridian Health]].

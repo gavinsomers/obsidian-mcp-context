@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian Media]]"
-role: "Operations Lead"
-source_created_at: 2023-10-24T12:30:00
-source_observed_at: 2023-10-24T13:54:00
-created_at: 2023-10-26T02:30:00
-updated_at: 2023-11-27T11:30:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-10-24T16:29:00
+source_observed_at: 2023-10-24T19:04:00
+created_at: 2023-10-25T02:29:00
+updated_at: 2023-12-03T04:29:00
 tags: [#person]
 ---
 # Nadia Vance
 
 ## Role
-Nadia Vance is the Operations Lead at [[Meridian Media]].
+Nadia Vance is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Nadia Vance]] #follow-up

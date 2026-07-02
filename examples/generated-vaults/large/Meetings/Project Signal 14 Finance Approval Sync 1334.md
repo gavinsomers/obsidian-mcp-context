@@ -1,24 +1,25 @@
 ---
 type: meeting
-date: 2023-11-14
+date: 2023-09-28
 project: "[[Project Signal 14]]"
 company: "[[Crescent Labs]]"
-source_created_at: 2023-11-14T12:45:00
-source_observed_at: 2023-11-14T14:50:00
-created_at: 2023-11-14T14:55:00
-updated_at: 2023-11-15T04:55:00
+source_created_at: 2023-09-28T13:25:00
+source_observed_at: 2023-09-28T16:04:00
+created_at: 2023-10-07T16:25:00
+updated_at: 2023-10-07T21:25:00
 tags: [#meeting]
 ---
 # Project Signal 14 Finance Approval Sync 1334
 
 ## Attendees
-- [[Marcus Alvarez]]
+- [[Zoe Grant]]
+- [[David Foster]]
 - [[Clara Foster]]
 
 ## Notes
 Finance Approval reviewed for [[Project Signal 14]] at [[Crescent Labs]].
-[[Clara Foster]] flagged follow-up work for the next operating review.
+[[Marcus Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 14]] to [[Clara Foster]] #follow-up
+- [ ] Send recap for [[Project Signal 14]] to [[Marcus Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

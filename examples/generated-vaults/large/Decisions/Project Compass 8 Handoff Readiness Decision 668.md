@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-12-22
+date: 2023-11-02
 status: active
 project: "[[Project Compass 8]]"
 company: "[[Quantum Labs]]"
-source_created_at: 2025-12-22T10:56:00
-source_observed_at: 2025-12-22T12:10:00
-created_at: 2025-12-22T14:27:00
-updated_at: 2025-12-23T06:27:00
+source_created_at: 2023-11-02T08:40:00
+source_observed_at: 2023-11-02T09:25:00
+created_at: 2023-11-03T15:40:00
+updated_at: 2023-11-03T19:40:00
 tags: [#decision]
 ---
 # Project Compass 8 Handoff Readiness Decision 668
@@ -17,7 +17,7 @@ Proceed with handoff readiness for [[Project Compass 8]].
 
 ## Context
 This decision applies to [[Quantum Labs]] and [[Project Compass 8]].
-It follows [[Project Compass 8 Lineage Audit Sync 668]].
+It follows [[Project Compass 8 Lineage Audit Sync 1108]].
 It incorporates [[Project Compass 8 Finance Approval Research 448]].
 
 ## Supersession

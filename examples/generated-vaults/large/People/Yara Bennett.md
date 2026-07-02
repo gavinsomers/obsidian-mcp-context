@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian Manufacturing]]"
-role: "SecOps Lead"
-source_created_at: 2023-05-07T08:27:00
-source_observed_at: 2023-05-07T08:59:00
-created_at: 2023-05-09T04:27:00
-updated_at: 2023-08-07T10:15:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-05-07T12:33:00
+source_observed_at: 2023-05-07T14:40:00
+created_at: 2023-05-07T14:45:00
+updated_at: 2023-08-04T22:45:00
 tags: [#person]
 ---
 # Yara Bennett
 
 ## Role
-Yara Bennett is the SecOps Lead at [[Meridian Manufacturing]].
+Yara Bennett is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Bennett]] #follow-up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Manufacturing]]"
-role: "Legal Counsel"
-source_created_at: 2023-05-06T09:35:00
-source_observed_at: 2023-05-06T10:08:00
-created_at: 2023-05-08T02:35:00
-updated_at: 2023-07-28T16:35:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-05-06T15:36:00
+source_observed_at: 2023-05-06T16:46:00
+created_at: 2023-05-06T22:36:00
+updated_at: 2023-07-10T09:36:00
 tags: [#person]
 ---
 # Tara Bennett
 
 ## Role
-Tara Bennett is the Legal Counsel at [[Northstar Manufacturing]].
+Tara Bennett is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Tara Bennett]] #follow-up

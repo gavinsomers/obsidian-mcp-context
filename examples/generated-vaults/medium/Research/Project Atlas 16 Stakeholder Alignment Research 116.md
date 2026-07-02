@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Atlas 16]]"
 company: "[[Northstar FinTech]]"
-source_created_at: 2024-09-02T12:26:00
-source_observed_at: 2024-09-02T14:37:00
-created_at: 2024-09-03T03:26:00
-updated_at: 2024-09-15T13:26:00
+source_created_at: 2024-09-02T08:59:00
+source_observed_at: 2024-09-02T11:26:00
+created_at: 2024-09-02T11:59:00
+updated_at: 2024-10-06T19:59:00
 tags: [#research]
 ---
 # Project Atlas 16 Stakeholder Alignment Research 116

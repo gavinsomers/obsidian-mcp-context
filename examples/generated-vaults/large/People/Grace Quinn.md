@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Health]]"
-role: "Customer Success Manager"
-source_created_at: 2023-09-09T08:39:00
-source_observed_at: 2023-09-09T11:12:00
-created_at: 2023-09-09T23:39:00
-updated_at: 2023-12-02T04:39:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-09-09T14:37:00
+source_observed_at: 2023-09-09T16:32:00
+created_at: 2023-09-10T07:37:00
+updated_at: 2023-12-03T09:37:00
 tags: [#person]
 ---
 # Grace Quinn
 
 ## Role
-Grace Quinn is the Customer Success Manager at [[BrightWave Health]].
+Grace Quinn is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Grace Quinn]] #follow-up

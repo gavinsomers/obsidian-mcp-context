@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-12-23
+date: 2025-05-06
 project: "[[Project Pipeline 112]]"
 company: "[[Vanguard Analytics]]"
-source_created_at: 2024-12-23T13:59:00
-source_observed_at: 2024-12-23T15:52:00
-created_at: 2024-12-23T18:06:00
-updated_at: 2024-12-24T09:06:00
+source_created_at: 2025-05-06T10:06:00
+source_observed_at: 2025-05-06T10:29:00
+created_at: 2025-05-06T15:46:00
+updated_at: 2025-05-06T22:46:00
 tags: [#meeting]
 ---
 # Project Pipeline 112 Stakeholder Alignment Sync 772
 
 ## Attendees
-- [[Tara Walker]]
-- [[Xavier Ivanov]]
-- [[Clara Shah]]
+- [[Alex Chen]]
+- [[Uma Patel]]
+- [[Uma Bennett]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Pipeline 112]] at [[Vanguard Analytics]].
-[[Xavier Ivanov]] flagged follow-up work for the next operating review.
+[[Grace Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Pipeline 112]] to [[Xavier Ivanov]] #follow-up
+- [ ] Send recap for [[Project Pipeline 112]] to [[Grace Evans]] #follow-up
 - [x] Capture meeting notes in vault #ops

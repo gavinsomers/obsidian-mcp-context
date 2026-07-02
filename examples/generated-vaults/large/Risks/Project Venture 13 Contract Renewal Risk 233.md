@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Venture 13]]"
-source_created_at: 2024-01-27T12:20:00
-source_observed_at: 2024-01-27T15:00:00
-created_at: 2024-01-27T15:20:00
-updated_at: 2024-02-05T21:20:00
+source_created_at: 2024-05-09T15:36:00
+source_observed_at: 2024-05-09T17:22:00
+created_at: 2024-05-14T17:36:00
+updated_at: 2024-06-10T00:36:00
 tags: [#risk]
 ---
 # Project Venture 13 Contract Renewal Risk 233
@@ -14,7 +14,7 @@ tags: [#risk]
 Contract Renewal may affect [[Project Venture 13]] for [[Noble Labs]].
 
 ## Evidence
-- Raised after [[Project Venture 13 Security Review Sync 453]]
+- Raised after [[Project Venture 13 Security Review Sync 233]]
 
 ## Current State
 - Status: `open`

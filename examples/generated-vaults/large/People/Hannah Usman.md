@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Manufacturing]]"
-role: "Operations Lead"
-source_created_at: 2023-10-14T15:53:00
-source_observed_at: 2023-10-14T18:01:00
-created_at: 2023-10-15T20:53:00
-updated_at: 2023-11-29T23:53:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-10-14T11:08:00
+source_observed_at: 2023-10-14T12:43:00
+created_at: 2023-10-14T20:08:00
+updated_at: 2023-12-29T07:08:00
 tags: [#person]
 ---
 # Hannah Usman
 
 ## Role
-Hannah Usman is the Operations Lead at [[BrightWave Manufacturing]].
+Hannah Usman is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Hannah Usman]] #follow-up

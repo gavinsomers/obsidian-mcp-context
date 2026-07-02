@@ -2,10 +2,10 @@
 type: risk
 status: closed
 project: "[[Project Orbit 116]]"
-source_created_at: 2025-10-03T10:08:00
-source_observed_at: 2025-10-03T12:29:00
-created_at: 2025-10-04T18:08:00
-updated_at: 2025-10-15T02:08:00
+source_created_at: 2025-10-03T13:05:00
+source_observed_at: 2025-10-03T13:37:00
+created_at: 2025-10-05T10:05:00
+updated_at: 2025-10-28T18:05:00
 tags: [#risk]
 ---
 # Project Orbit 116 Handoff Readiness Risk 556

@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-06-08
+date: 2026-01-06
 project: "[[Project Keystone 40]]"
 company: "[[Harbor Retail]]"
-source_created_at: 2024-06-08T08:59:00
-source_observed_at: 2024-06-08T11:26:00
-created_at: 2024-06-08T11:31:00
-updated_at: 2024-06-08T21:31:00
+source_created_at: 2026-01-06T10:28:00
+source_observed_at: 2026-01-06T10:44:00
+created_at: 2026-01-06T13:55:00
+updated_at: 2026-01-07T08:55:00
 tags: [#meeting]
 ---
 # Project Keystone 40 Handoff Readiness Sync 700
 
 ## Attendees
-- [[Iris Patel]]
-- [[Tara Kim]]
-- [[Clara Grant]]
+- [[Uma Tan]]
+- [[Grace Jenkins]]
+- [[Omar Patel]]
 
 ## Notes
 Handoff Readiness reviewed for [[Project Keystone 40]] at [[Harbor Retail]].
-[[Zoe Tan]] flagged follow-up work for the next operating review.
+[[Marcus Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 40]] to [[Zoe Tan]] #follow-up
+- [ ] Send recap for [[Project Keystone 40]] to [[Marcus Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

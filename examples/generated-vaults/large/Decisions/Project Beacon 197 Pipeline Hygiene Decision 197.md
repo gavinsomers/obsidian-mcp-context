@@ -3,11 +3,11 @@ type: decision
 date: 2026-01-26
 status: active
 project: "[[Project Beacon 197]]"
-company: "[[Apex Media]]"
-source_created_at: 2026-01-26T13:40:00
-source_observed_at: 2026-01-26T16:13:00
-created_at: 2026-01-31T18:40:00
-updated_at: 2026-02-01T10:40:00
+company: "[[Cobalt Media]]"
+source_created_at: 2026-01-26T12:14:00
+source_observed_at: 2026-01-26T12:24:00
+created_at: 2026-01-26T13:26:00
+updated_at: 2026-01-26T14:26:00
 tags: [#decision]
 ---
 # Project Beacon 197 Pipeline Hygiene Decision 197
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Beacon 197]].
 
 ## Context
-This decision applies to [[Apex Media]] and [[Project Beacon 197]].
-It follows [[Project Beacon 197 Contract Renewal Sync 637]].
+This decision applies to [[Cobalt Media]] and [[Project Beacon 197]].
+It follows [[Project Beacon 197 Contract Renewal Sync 1297]].
 It incorporates [[Project Beacon 197 Security Review Research 417]].
 
 ## Supersession

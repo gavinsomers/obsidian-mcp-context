@@ -2,10 +2,10 @@
 type: project
 status: active
 company: "[[Crescent FinTech]]"
-source_created_at: 2023-09-25T13:10:00
-source_observed_at: 2023-09-25T13:25:00
-created_at: 2023-09-25T17:10:00
-updated_at: 2023-12-07T03:10:00
+source_created_at: 2023-09-25T16:51:00
+source_observed_at: 2023-09-25T19:38:00
+created_at: 2023-09-26T21:51:00
+updated_at: 2023-12-22T08:51:00
 tags: [#project]
 ---
 # Project Signal 29
@@ -14,10 +14,10 @@ tags: [#project]
 Project Signal 29 supports [[Crescent FinTech]] through research program.
 
 ## Stakeholders
-- [[Ben Bennett]]
-- [[Sam Foster]]
-- [[Hannah Kim]]
-- [[Yara Ortega]]
+- [[Iris Quinn]]
+- [[Priya Novak]]
+- [[David Patel]]
+- [[Grace Morgan]]
 
 ## Operating Notes
 - Owner: [[Ben Bennett]]

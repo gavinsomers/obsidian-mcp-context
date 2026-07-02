@@ -1,24 +1,19 @@
 ---
 type: company
-status: pipeline
-segment: smb
-source_created_at: 2023-10-06T10:03:00
-source_observed_at: 2023-10-06T11:54:00
-created_at: 2023-10-08T08:03:00
-updated_at: 2023-11-20T14:03:00
+status: active
+segment: mid-market
+source_created_at: 2023-10-08T08:23:00
+source_observed_at: 2023-10-08T09:54:00
+created_at: 2023-10-09T22:23:00
+updated_at: 2023-12-16T03:23:00
 tags: [#company]
 ---
 # Summit Media
 
 ## Account Context
-Summit Media is a smb account currently marked `pipeline`.
+Summit Media is a mid-market account currently marked `active`.
 
-## Stakeholders
-- [[Grace Diaz]] - Legal Counsel
-- [[Xavier Haddad]] - Legal Counsel
-- [[Marcus Morgan]] - Legal Counsel
-- [[Clara Rostova]] - Legal Counsel
-- [[Tara Vance]] - Legal Counsel
+## Assigned Account Team
 
 ## Projects
 

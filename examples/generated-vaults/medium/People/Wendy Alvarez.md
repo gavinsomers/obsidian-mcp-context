@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Quantum FinTech]]"
-role: "Product Director"
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
 source_created_at: 2023-04-28T15:34:00
 source_observed_at: 2023-04-28T17:47:00
 created_at: 2023-04-30T04:34:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Wendy Alvarez
 
 ## Role
-Wendy Alvarez is the Product Director at [[Quantum FinTech]].
+Wendy Alvarez is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Alvarez]] #follow-up

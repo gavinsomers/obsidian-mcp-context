@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-10-03
+date: 2024-07-11
 status: superseded
 project: "[[Project Pipeline 22]]"
 company: "[[Vanguard FinTech]]"
-source_created_at: 2024-10-03T14:20:00
-source_observed_at: 2024-10-03T16:56:00
-created_at: 2024-10-11T15:20:00
-updated_at: 2024-10-12T14:20:00
+source_created_at: 2024-07-11T16:11:00
+source_observed_at: 2024-07-11T16:25:00
+created_at: 2024-07-11T20:45:00
+updated_at: 2024-07-12T02:45:00
 tags: [#decision]
 ---
 # Project Pipeline 22 Finance Approval Decision 122
@@ -18,7 +18,7 @@ Proceed with finance approval for [[Project Pipeline 22]].
 ## Context
 This decision applies to [[Vanguard FinTech]] and [[Project Pipeline 22]].
 It follows [[Project Pipeline 22 Stakeholder Alignment Sync 272]].
-It incorporates [[Project Pipeline 22 Lineage Audit Research 122]].
+It incorporates [[Project Pipeline 22 Lineage Audit Research 72]].
 
 ## Supersession
 Marked superseded by a later unlinked stakeholder review. #superseded

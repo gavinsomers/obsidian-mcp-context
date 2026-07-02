@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Helio Labs]]"
-role: "Operations Lead"
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
 source_created_at: 2023-05-12T15:49:00
 source_observed_at: 2023-05-12T17:31:00
 created_at: 2023-05-12T23:49:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Lina Chen
 
 ## Role
-Lina Chen is the Operations Lead at [[Helio Labs]].
+Lina Chen is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Lantern 5]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Chen]] #follow-up

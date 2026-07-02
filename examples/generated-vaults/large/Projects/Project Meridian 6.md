@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: blocked
 company: "[[Meridian Labs]]"
-source_created_at: 2023-06-02T11:54:00
-source_observed_at: 2023-06-02T12:21:00
-created_at: 2023-06-03T19:54:00
-updated_at: 2023-08-03T21:54:00
+source_created_at: 2023-06-02T08:48:00
+source_observed_at: 2023-06-02T09:06:00
+created_at: 2023-06-02T17:48:00
+updated_at: 2023-08-05T00:48:00
 tags: [#project]
 ---
 # Project Meridian 6
@@ -14,11 +14,12 @@ tags: [#project]
 Project Meridian 6 supports [[Meridian Labs]] through consulting delivery.
 
 ## Stakeholders
-- [[Elena Alvarez]]
-- [[Victor Evans]]
+- [[Nadia Alvarez]]
+- [[Lina Diaz]]
+- [[Sam Alvarez]]
+- [[Amara Diaz]]
 
 ## Operating Notes
-- Owner: [[Victor Evans]]
-- Status: `closed`
-- Closed at: `2023-08-25`
+- Owner: [[Elena Alvarez]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Meridian 6]] #ops

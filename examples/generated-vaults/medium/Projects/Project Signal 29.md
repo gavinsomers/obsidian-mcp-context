@@ -14,12 +14,12 @@ tags: [#project]
 Project Signal 29 supports [[Crescent FinTech]] through research program.
 
 ## Stakeholders
-- [[Nadia Evans]]
-- [[Sam Foster]]
-- [[Ben Bennett]]
-- [[Jonah Diaz]]
+- [[Amara Alvarez]]
+- [[Amara Bennett]]
+- [[David Evans]]
+- [[David Chen]]
 
 ## Operating Notes
-- Owner: [[Nadia Evans]]
+- Owner: [[Ben Bennett]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 29]] #ops

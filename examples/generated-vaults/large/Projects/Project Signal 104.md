@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Crescent Logistics]]"
-source_created_at: 2024-09-26T16:12:00
-source_observed_at: 2024-09-26T18:27:00
-created_at: 2024-09-27T18:12:00
-updated_at: 2024-12-10T22:12:00
+source_created_at: 2024-09-26T09:27:00
+source_observed_at: 2024-09-26T11:53:00
+created_at: 2024-10-03T10:27:00
+updated_at: 2024-10-18T12:27:00
 tags: [#project]
 ---
 # Project Signal 104
@@ -14,13 +14,12 @@ tags: [#project]
 Project Signal 104 supports [[Crescent Logistics]] through research program.
 
 ## Stakeholders
-- [[Zoe Diaz]]
-- [[Elena Novak]]
-- [[Omar Ivanov]]
-- [[Victor Rostova]]
+- [[Zoe Bennett]]
+- [[Kai Lee]]
+- [[Clara Patel]]
+- [[Lina Quinn]]
 
 ## Operating Notes
-- Owner: [[Victor Rostova]]
-- Status: `closed`
-- Closed at: `2025-02-23`
+- Owner: [[Zoe Diaz]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 104]] #ops

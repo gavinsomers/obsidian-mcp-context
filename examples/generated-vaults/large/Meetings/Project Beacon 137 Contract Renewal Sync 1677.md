@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-03-17
 project: "[[Project Beacon 137]]"
-company: "[[Apex FinTech]]"
-source_created_at: 2025-03-17T09:24:00
-source_observed_at: 2025-03-17T09:43:00
-created_at: 2025-03-17T10:28:00
-updated_at: 2025-03-18T05:28:00
+company: "[[Cobalt FinTech]]"
+source_created_at: 2025-03-17T12:25:00
+source_observed_at: 2025-03-17T13:37:00
+created_at: 2025-03-17T17:49:00
+updated_at: 2025-03-18T04:49:00
 tags: [#meeting]
 ---
 # Project Beacon 137 Contract Renewal Sync 1677
 
 ## Attendees
-- [[Ben Tan]]
-- [[Lina Ortega]]
-- [[Wendy Jenkins]]
+- [[Rachel Bennett]]
+- [[Ben Diaz]]
+- [[Kai Lee]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Beacon 137]] at [[Apex FinTech]].
+Contract Renewal reviewed for [[Project Beacon 137]] at [[Cobalt FinTech]].
 [[Farah Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items

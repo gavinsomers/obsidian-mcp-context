@@ -4,10 +4,10 @@ date: 2025-05-21
 status: active
 project: "[[Project Beacon 77]]"
 company: "[[Apex Media]]"
-source_created_at: 2025-05-21T14:06:00
-source_observed_at: 2025-05-21T15:21:00
-created_at: 2025-05-21T17:17:00
-updated_at: 2025-05-22T00:17:00
+source_created_at: 2025-05-21T16:56:00
+source_observed_at: 2025-05-21T19:49:00
+created_at: 2025-05-21T22:18:00
+updated_at: 2025-05-22T18:18:00
 tags: [#decision]
 ---
 # Project Beacon 77 Pipeline Hygiene Decision 517

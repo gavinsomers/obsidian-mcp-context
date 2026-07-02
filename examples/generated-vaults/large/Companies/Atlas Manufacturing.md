@@ -1,22 +1,19 @@
 ---
 type: company
-status: active
+status: pipeline
 segment: smb
-source_created_at: 2023-08-03T14:00:00
-source_observed_at: 2023-08-03T15:04:00
-created_at: 2023-08-05T13:00:00
-updated_at: 2023-08-27T22:00:00
+source_created_at: 2023-08-05T15:35:00
+source_observed_at: 2023-08-05T17:55:00
+created_at: 2023-08-07T19:35:00
+updated_at: 2023-10-30T00:35:00
 tags: [#company]
 ---
 # Atlas Manufacturing
 
 ## Account Context
-Atlas Manufacturing is a smb account currently marked `active`.
+Atlas Manufacturing is a smb account currently marked `pipeline`.
 
-## Stakeholders
-- [[Amara Chen]] - Legal Counsel
-- [[Rachel Grant]] - Legal Counsel
-- [[Grace Lee]] - Legal Counsel
+## Assigned Account Team
 
 ## Projects
 

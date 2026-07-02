@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Lantern 35]]"
-source_created_at: 2023-11-11T16:50:00
-source_observed_at: 2023-11-11T18:30:00
-created_at: 2023-11-12T16:50:00
-updated_at: 2023-12-08T00:50:00
+source_created_at: 2023-11-11T12:00:00
+source_observed_at: 2023-11-11T12:46:00
+created_at: 2023-11-12T02:00:00
+updated_at: 2023-11-27T10:00:00
 tags: [#risk]
 ---
 # Project Lantern 35 Pipeline Hygiene Risk 35
@@ -17,6 +17,6 @@ Pipeline Hygiene may affect [[Project Lantern 35]] for [[Helio Retail]].
 - Raised after [[Project Lantern 35 Adoption Workflow Sync 1575]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Uma Tan]]
+- Status: `closed`
+- Owner: [[Hannah Bennett]]
 - [ ] Reassess [[Project Lantern 35 Pipeline Hygiene Risk 35]] during the next review #risk

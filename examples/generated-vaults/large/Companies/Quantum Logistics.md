@@ -1,24 +1,19 @@
 ---
 type: company
-status: churn-risk
-segment: enterprise
-source_created_at: 2023-10-30T14:07:00
-source_observed_at: 2023-10-30T15:18:00
-created_at: 2023-11-01T06:07:00
-updated_at: 2023-11-24T14:07:00
+status: active
+segment: mid-market
+source_created_at: 2023-11-01T09:31:00
+source_observed_at: 2023-11-01T11:37:00
+created_at: 2023-11-01T14:31:00
+updated_at: 2024-01-17T23:31:00
 tags: [#company]
 ---
 # Quantum Logistics
 
 ## Account Context
-Quantum Logistics is a enterprise account currently marked `churn-risk`.
+Quantum Logistics is a mid-market account currently marked `active`.
 
-## Stakeholders
-- [[Tara Diaz]] - Finance Sponsor
-- [[Iris Ivanov]] - Finance Sponsor
-- [[Zoe Morgan]] - Finance Sponsor
-- [[Omar Rostova]] - Finance Sponsor
-- [[Elena Walker]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

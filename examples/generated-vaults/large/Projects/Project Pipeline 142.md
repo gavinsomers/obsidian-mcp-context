@@ -1,26 +1,26 @@
 ---
 type: project
 status: closed
-company: "[[Vanguard FinTech]]"
-source_created_at: 2025-04-01T09:09:00
-source_observed_at: 2025-04-01T12:04:00
-created_at: 2025-04-01T19:09:00
-updated_at: 2025-04-30T22:09:00
+company: "[[Quantum FinTech]]"
+source_created_at: 2025-04-01T13:56:00
+source_observed_at: 2025-04-01T16:52:00
+created_at: 2025-04-02T03:56:00
+updated_at: 2025-05-24T04:56:00
 tags: [#project]
 ---
 # Project Pipeline 142
 
 ## Overview
-Project Pipeline 142 supports [[Vanguard FinTech]] through sales pipeline.
+Project Pipeline 142 supports [[Quantum FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Amara Kim]]
-- [[Kai Foster]]
-- [[Grace Tan]]
-- [[Victor Alvarez]]
+- [[Omar Shah]]
+- [[Yara Diaz]]
+- [[Jonah Foster]]
+- [[Elena Alvarez]]
 
 ## Operating Notes
 - Owner: [[Kai Foster]]
 - Status: `closed`
-- Closed at: `2025-09-15`
+- Closed at: `2025-06-25`
 - [ ] Reconcile latest state for [[Project Pipeline 142]] #ops

@@ -1,23 +1,19 @@
 ---
 type: company
-status: active
-segment: mid-market
-source_created_at: 2023-06-30T16:11:00
-source_observed_at: 2023-06-30T18:41:00
-created_at: 2023-07-08T19:11:00
-updated_at: 2023-09-16T23:11:00
+status: pipeline
+segment: enterprise
+source_created_at: 2023-07-02T09:01:00
+source_observed_at: 2023-07-02T10:38:00
+created_at: 2023-07-04T06:01:00
+updated_at: 2023-08-08T17:01:00
 tags: [#company]
 ---
 # Vanguard Retail
 
 ## Account Context
-Vanguard Retail is a mid-market account currently marked `active`.
+Vanguard Retail is a enterprise account currently marked `pipeline`.
 
-## Stakeholders
-- [[Jonah Bennett]] - VP Data Engineering
-- [[Alex Grant]] - VP Data Engineering
-- [[Priya Kim]] - VP Data Engineering
-- [[Farah Patel]] - VP Data Engineering
+## Assigned Account Team
 
 ## Projects
 

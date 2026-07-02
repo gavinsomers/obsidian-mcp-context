@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-03
 status: active
 project: "[[Project Atlas 136]]"
-company: "[[Northstar FinTech]]"
-source_created_at: 2025-04-03T12:33:00
-source_observed_at: 2025-04-03T12:43:00
-created_at: 2025-04-03T14:16:00
-updated_at: 2025-04-03T21:16:00
+company: "[[Apex FinTech]]"
+source_created_at: 2025-04-03T08:24:00
+source_observed_at: 2025-04-03T09:51:00
+created_at: 2025-04-03T09:56:00
+updated_at: 2025-04-03T14:56:00
 tags: [#decision]
 ---
 # Project Atlas 136 Lineage Audit Decision 356
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 136]].
 
 ## Context
-This decision applies to [[Northstar FinTech]] and [[Project Atlas 136]].
+This decision applies to [[Apex FinTech]] and [[Project Atlas 136]].
 It follows [[Project Atlas 136 Metric Reconciliation Sync 1676]].
-It incorporates [[Project Atlas 136 Stakeholder Alignment Research 356]].
+It incorporates [[Project Atlas 136 Stakeholder Alignment Research 136]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

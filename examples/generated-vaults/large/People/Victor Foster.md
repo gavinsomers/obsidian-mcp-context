@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex Retail]]"
-role: "Customer Success Manager"
-source_created_at: 2023-06-10T10:45:00
-source_observed_at: 2023-06-10T13:41:00
-created_at: 2023-06-10T23:45:00
-updated_at: 2023-08-28T07:45:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-06-10T10:47:00
+source_observed_at: 2023-06-10T13:08:00
+created_at: 2023-06-11T16:47:00
+updated_at: 2023-07-31T00:47:00
 tags: [#person]
 ---
 # Victor Foster
 
 ## Role
-Victor Foster is the Customer Success Manager at [[Apex Retail]].
+Victor Foster is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Apex Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Victor Foster]] #follow-up

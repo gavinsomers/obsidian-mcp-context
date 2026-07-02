@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Orbit 26]]"
 company: "[[Summit FinTech]]"
-source_created_at: 2024-10-14T14:12:00
-source_observed_at: 2024-10-14T15:45:00
-created_at: 2024-10-14T23:12:00
-updated_at: 2024-11-07T02:12:00
+source_created_at: 2024-10-14T15:53:00
+source_observed_at: 2024-10-14T18:01:00
+created_at: 2024-10-15T20:53:00
+updated_at: 2024-11-02T23:53:00
 tags: [#research]
 ---
 # Project Orbit 26 Stakeholder Alignment Research 126

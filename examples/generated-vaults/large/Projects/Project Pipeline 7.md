@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: planning
 company: "[[Vanguard Labs]]"
-source_created_at: 2023-06-08T08:43:00
-source_observed_at: 2023-06-08T10:58:00
-created_at: 2023-06-09T11:43:00
-updated_at: 2023-08-18T19:43:00
+source_created_at: 2023-06-08T13:54:00
+source_observed_at: 2023-06-08T15:40:00
+created_at: 2023-06-08T17:54:00
+updated_at: 2023-06-26T19:54:00
 tags: [#project]
 ---
 # Project Pipeline 7
@@ -14,10 +14,12 @@ tags: [#project]
 Project Pipeline 7 supports [[Vanguard Labs]] through sales pipeline.
 
 ## Stakeholders
-- [[Farah Alvarez]]
-- [[Wendy Evans]]
+- [[Kai Evans]]
+- [[Iris Alvarez]]
+- [[Nadia Alvarez]]
+- [[Priya Diaz]]
 
 ## Operating Notes
 - Owner: [[Farah Alvarez]]
-- Status: `active`
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Pipeline 7]] #ops

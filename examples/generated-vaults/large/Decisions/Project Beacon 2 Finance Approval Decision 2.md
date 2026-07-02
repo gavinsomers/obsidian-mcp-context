@@ -4,10 +4,10 @@ date: 2023-06-15
 status: active
 project: "[[Project Beacon 2]]"
 company: "[[Apex Labs]]"
-source_created_at: 2023-06-15T13:59:00
-source_observed_at: 2023-06-15T15:46:00
-created_at: 2023-06-15T17:49:00
-updated_at: 2023-06-16T15:49:00
+source_created_at: 2023-06-15T09:06:00
+source_observed_at: 2023-06-15T11:45:00
+created_at: 2023-06-15T11:50:00
+updated_at: 2023-06-15T13:50:00
 tags: [#decision]
 ---
 # Project Beacon 2 Finance Approval Decision 2

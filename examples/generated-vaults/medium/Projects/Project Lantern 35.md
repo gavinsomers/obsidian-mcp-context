@@ -1,7 +1,7 @@
 ---
 type: project
-status: active
-company: "[[Helio Labs]]"
+status: planning
+company: "[[Meridian Labs]]"
 source_created_at: 2024-05-10T16:08:00
 source_observed_at: 2024-05-10T17:41:00
 created_at: 2024-05-11T14:08:00
@@ -11,15 +11,15 @@ tags: [#project]
 # Project Lantern 35
 
 ## Overview
-Project Lantern 35 supports [[Helio Labs]] through operations admin.
+Project Lantern 35 supports [[Meridian Labs]] through operations admin.
 
 ## Stakeholders
-- [[Priya Diaz]]
-- [[David Alvarez]]
-- [[Lina Chen]]
-- [[Hannah Bennett]]
+- [[Hannah Evans]]
+- [[Tara Alvarez]]
+- [[Victor Chen]]
+- [[Hannah Chen]]
 
 ## Operating Notes
-- Owner: [[Uma Evans]]
-- Status: `active`
+- Owner: [[Hannah Bennett]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Lantern 35]] #ops

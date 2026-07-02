@@ -4,10 +4,10 @@ date: 2023-07-22
 status: active
 project: "[[Project Lantern 5]]"
 company: "[[Helio Labs]]"
-source_created_at: 2023-07-22T15:53:00
-source_observed_at: 2023-07-22T18:01:00
-created_at: 2023-07-22T19:42:00
-updated_at: 2023-07-23T03:42:00
+source_created_at: 2023-07-22T09:24:00
+source_observed_at: 2023-07-22T10:59:00
+created_at: 2023-07-22T12:05:00
+updated_at: 2023-07-23T02:05:00
 tags: [#decision]
 ---
 # Project Lantern 5 Contract Renewal Decision 5

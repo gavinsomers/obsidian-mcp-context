@@ -1,23 +1,19 @@
 ---
 type: company
-status: active
-segment: enterprise
-source_created_at: 2023-09-12T12:54:00
-source_observed_at: 2023-09-12T15:15:00
-created_at: 2023-09-14T09:54:00
-updated_at: 2023-10-10T11:54:00
+status: churn-risk
+segment: smb
+source_created_at: 2023-09-14T09:45:00
+source_observed_at: 2023-09-14T10:19:00
+created_at: 2023-09-22T10:45:00
+updated_at: 2023-10-22T19:45:00
 tags: [#company]
 ---
 # Crescent Health
 
 ## Account Context
-Crescent Health is a enterprise account currently marked `active`.
+Crescent Health is a smb account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Victor Chen]] - Finance Sponsor
-- [[Kai Haddad]] - Finance Sponsor
-- [[Amara Morgan]] - Finance Sponsor
-- [[Rachel Quinn]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

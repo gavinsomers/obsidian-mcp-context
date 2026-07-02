@@ -1,22 +1,19 @@
 ---
 type: company
-status: churn-risk
-segment: enterprise
-source_created_at: 2023-06-10T16:26:00
-source_observed_at: 2023-06-10T17:02:00
-created_at: 2023-06-16T17:26:00
-updated_at: 2023-08-10T23:26:00
+status: active
+segment: smb
+source_created_at: 2023-06-12T15:37:00
+source_observed_at: 2023-06-12T17:29:00
+created_at: 2023-06-14T13:37:00
+updated_at: 2023-08-20T21:37:00
 tags: [#company]
 ---
 # Pioneer FinTech
 
 ## Account Context
-Pioneer FinTech is a enterprise account currently marked `churn-risk`.
+Pioneer FinTech is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Alex Bennett]] - SecOps Lead
-- [[Priya Foster]] - SecOps Lead
-- [[Farah Kim]] - SecOps Lead
+## Assigned Account Team
 
 ## Projects
 

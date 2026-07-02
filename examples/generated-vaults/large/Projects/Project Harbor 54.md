@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Atlas Manufacturing]]"
-source_created_at: 2024-01-24T10:13:00
-source_observed_at: 2024-01-24T11:33:00
-created_at: 2024-01-25T04:13:00
-updated_at: 2024-04-23T04:13:00
+source_created_at: 2024-01-24T15:50:00
+source_observed_at: 2024-01-24T18:44:00
+created_at: 2024-01-25T18:50:00
+updated_at: 2024-03-05T04:50:00
 tags: [#project]
 ---
 # Project Harbor 54
@@ -14,13 +14,12 @@ tags: [#project]
 Project Harbor 54 supports [[Atlas Manufacturing]] through research program.
 
 ## Stakeholders
-- [[Marcus Usman]]
-- [[Xavier Patel]]
-- [[Amara Chen]]
-- [[Grace Lee]]
+- [[Amara Ortega]]
+- [[Rachel Chen]]
+- [[Omar Novak]]
+- [[Lina Jenkins]]
 
 ## Operating Notes
-- Owner: [[Xavier Patel]]
-- Status: `closed`
-- Closed at: `2024-04-13`
+- Owner: [[Amara Chen]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Harbor 54]] #ops

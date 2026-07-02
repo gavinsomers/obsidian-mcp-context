@@ -3,11 +3,11 @@ type: decision
 date: 2024-11-09
 status: active
 project: "[[Project Horizon 49]]"
-company: "[[BrightWave FinTech]]"
-source_created_at: 2024-11-09T09:47:00
-source_observed_at: 2024-11-09T10:40:00
-created_at: 2024-11-13T14:47:00
-updated_at: 2024-11-13T21:47:00
+company: "[[Helio FinTech]]"
+source_created_at: 2024-11-09T09:24:00
+source_observed_at: 2024-11-09T11:29:00
+created_at: 2024-11-09T12:46:00
+updated_at: 2024-11-10T03:46:00
 tags: [#decision]
 ---
 # Project Horizon 49 Warehouse Mapping Decision 99
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Horizon 49]].
 
 ## Context
-This decision applies to [[BrightWave FinTech]] and [[Project Horizon 49]].
-It follows [[Project Horizon 49 Pipeline Hygiene Sync 299]].
-It incorporates [[Project Horizon 49 Adoption Workflow Research 99]].
+This decision applies to [[Helio FinTech]] and [[Project Horizon 49]].
+It follows [[Project Horizon 49 Pipeline Hygiene Sync 49]].
+It incorporates [[Project Horizon 49 Adoption Workflow Research 49]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

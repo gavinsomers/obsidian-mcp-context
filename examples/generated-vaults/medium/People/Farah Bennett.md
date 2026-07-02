@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Cobalt Labs]]"
-role: "Operations Lead"
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
 source_created_at: 2023-05-01T12:22:00
 source_observed_at: 2023-05-01T14:07:00
 created_at: 2023-05-02T05:22:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Farah Bennett
 
 ## Role
-Farah Bennett is the Operations Lead at [[Cobalt Labs]].
+Farah Bennett is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Foundry 3]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Farah Bennett]] #follow-up

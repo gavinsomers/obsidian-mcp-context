@@ -3,11 +3,11 @@ type: decision
 date: 2025-10-20
 status: superseded
 project: "[[Project Summit 177]]"
-company: "[[Pioneer Manufacturing]]"
-source_created_at: 2025-10-20T16:27:00
-source_observed_at: 2025-10-20T17:40:00
-created_at: 2025-10-20T21:35:00
-updated_at: 2025-10-21T09:35:00
+company: "[[Noble Manufacturing]]"
+source_created_at: 2025-10-20T15:56:00
+source_observed_at: 2025-10-20T18:09:00
+created_at: 2025-10-20T20:44:00
+updated_at: 2025-10-21T01:44:00
 tags: [#decision]
 ---
 # Project Summit 177 Pipeline Hygiene Decision 177
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Summit 177]].
 
 ## Context
-This decision applies to [[Pioneer Manufacturing]] and [[Project Summit 177]].
-It follows [[Project Summit 177 Contract Renewal Sync 1277]].
+This decision applies to [[Noble Manufacturing]] and [[Project Summit 177]].
+It follows [[Project Summit 177 Contract Renewal Sync 397]].
 It incorporates [[Project Summit 177 Security Review Research 397]].
 
 ## Supersession

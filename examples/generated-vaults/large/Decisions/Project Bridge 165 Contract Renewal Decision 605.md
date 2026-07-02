@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-23
 status: active
 project: "[[Project Bridge 165]]"
-company: "[[Keystone Retail]]"
-source_created_at: 2025-09-23T13:41:00
-source_observed_at: 2025-09-23T15:31:00
-created_at: 2025-09-23T18:14:00
-updated_at: 2025-09-24T10:14:00
+company: "[[Northstar Manufacturing]]"
+source_created_at: 2025-09-23T16:09:00
+source_observed_at: 2025-09-23T17:36:00
+created_at: 2025-09-28T16:09:00
+updated_at: 2025-09-29T10:09:00
 tags: [#decision]
 ---
 # Project Bridge 165 Contract Renewal Decision 605
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Bridge 165]].
 
 ## Context
-This decision applies to [[Keystone Retail]] and [[Project Bridge 165]].
+This decision applies to [[Northstar Manufacturing]] and [[Project Bridge 165]].
 It follows [[Project Bridge 165 Adoption Workflow Sync 605]].
-It incorporates [[Project Bridge 165 Warehouse Mapping Research 165]].
+It incorporates [[Project Bridge 165 Warehouse Mapping Research 385]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

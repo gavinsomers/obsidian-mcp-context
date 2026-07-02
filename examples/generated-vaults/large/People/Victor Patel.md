@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Manufacturing]]"
-role: "Implementation Manager"
-source_created_at: 2023-09-05T13:35:00
-source_observed_at: 2023-09-05T16:02:00
-created_at: 2023-09-11T18:35:00
-updated_at: 2023-10-03T20:35:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-09-05T08:39:00
+source_observed_at: 2023-09-05T11:12:00
+created_at: 2023-09-05T23:39:00
+updated_at: 2023-11-28T04:39:00
 tags: [#person]
 ---
 # Victor Patel
 
 ## Role
-Victor Patel is the Implementation Manager at [[Vanguard Manufacturing]].
+Victor Patel is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Vanguard Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Victor Patel]] #follow-up

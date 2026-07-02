@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Summit 177]]"
-source_created_at: 2026-01-08T11:18:00
-source_observed_at: 2026-01-08T12:21:00
-created_at: 2026-01-09T12:18:00
-updated_at: 2026-02-20T22:18:00
+source_created_at: 2026-01-08T10:33:00
+source_observed_at: 2026-01-08T11:25:00
+created_at: 2026-01-08T12:33:00
+updated_at: 2026-01-18T20:33:00
 tags: [#risk]
 ---
 # Project Summit 177 Warehouse Mapping Risk 617
 
 ## Risk
-Warehouse Mapping may affect [[Project Summit 177]] for [[Pioneer Manufacturing]].
+Warehouse Mapping may affect [[Project Summit 177]] for [[Noble Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Summit 177 Contract Renewal Sync 1277]]
+- Raised after [[Project Summit 177 Contract Renewal Sync 397]]
 
 ## Current State
 - Status: `open`

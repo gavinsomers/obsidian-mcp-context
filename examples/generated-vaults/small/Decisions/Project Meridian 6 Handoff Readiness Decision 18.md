@@ -4,10 +4,10 @@ date: 2023-09-25
 status: active
 project: "[[Project Meridian 6]]"
 company: "[[Meridian Labs]]"
-source_created_at: 2023-09-25T10:24:00
-source_observed_at: 2023-09-25T12:50:00
-created_at: 2023-09-25T14:50:00
-updated_at: 2023-09-26T08:50:00
+source_created_at: 2023-09-25T10:16:00
+source_observed_at: 2023-09-25T11:16:00
+created_at: 2023-09-25T11:44:00
+updated_at: 2023-09-26T08:44:00
 tags: [#decision]
 ---
 # Project Meridian 6 Handoff Readiness Decision 18

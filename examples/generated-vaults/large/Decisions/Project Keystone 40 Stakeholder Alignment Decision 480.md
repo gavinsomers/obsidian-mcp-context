@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-06-12
+date: 2025-03-31
 status: active
 project: "[[Project Keystone 40]]"
 company: "[[Harbor Retail]]"
-source_created_at: 2024-06-12T10:05:00
-source_observed_at: 2024-06-12T12:55:00
-created_at: 2024-06-12T14:08:00
-updated_at: 2024-06-13T09:08:00
+source_created_at: 2025-03-31T11:23:00
+source_observed_at: 2025-03-31T13:15:00
+created_at: 2025-03-31T16:24:00
+updated_at: 2025-04-01T14:24:00
 tags: [#decision]
 ---
 # Project Keystone 40 Stakeholder Alignment Decision 480
@@ -17,8 +17,8 @@ Proceed with stakeholder alignment for [[Project Keystone 40]].
 
 ## Context
 This decision applies to [[Harbor Retail]] and [[Project Keystone 40]].
-It follows [[Project Keystone 40 Handoff Readiness Sync 1140]].
-It incorporates [[Project Keystone 40 Metric Reconciliation Research 40]].
+It follows [[Project Keystone 40 Handoff Readiness Sync 480]].
+It incorporates [[Project Keystone 40 Metric Reconciliation Research 260]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

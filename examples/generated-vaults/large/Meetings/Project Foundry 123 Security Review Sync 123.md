@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-01-09
 project: "[[Project Foundry 123]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2025-01-09T14:36:00
-source_observed_at: 2025-01-09T14:46:00
-created_at: 2025-01-09T19:48:00
-updated_at: 2025-01-10T13:48:00
+company: "[[BrightWave Labs]]"
+source_created_at: 2025-01-09T11:42:00
+source_observed_at: 2025-01-09T12:22:00
+created_at: 2025-01-09T16:58:00
+updated_at: 2025-01-10T15:58:00
 tags: [#meeting]
 ---
 # Project Foundry 123 Security Review Sync 123
 
 ## Attendees
-- [[Nadia Shah]]
-- [[Hannah Jenkins]]
-- [[Yara Novak]]
+- [[Clara Morgan]]
+- [[Zoe Walker]]
+- [[Rachel Shah]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 123]] at [[Cobalt Labs]].
-[[Hannah Jenkins]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 123]] at [[BrightWave Labs]].
+[[Sam Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 123]] to [[Hannah Jenkins]] #follow-up
+- [ ] Send recap for [[Project Foundry 123]] to [[Sam Evans]] #follow-up
 - [x] Capture meeting notes in vault #ops

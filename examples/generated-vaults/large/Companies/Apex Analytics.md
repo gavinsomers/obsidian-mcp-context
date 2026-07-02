@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
+status: churn-risk
 segment: mid-market
-source_created_at: 2023-11-17T08:19:00
-source_observed_at: 2023-11-17T11:17:00
-created_at: 2023-11-17T17:19:00
-updated_at: 2023-12-03T04:19:00
+source_created_at: 2023-11-19T16:48:00
+source_observed_at: 2023-11-19T18:00:00
+created_at: 2023-11-20T20:48:00
+updated_at: 2023-12-07T23:48:00
 tags: [#company]
 ---
 # Apex Analytics
 
 ## Account Context
-Apex Analytics is a mid-market account currently marked `active`.
+Apex Analytics is a mid-market account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Ben Evans]] - SecOps Lead
-- [[Sam Ivanov]] - SecOps Lead
-- [[Hannah Novak]] - SecOps Lead
-- [[Yara Rostova]] - SecOps Lead
-- [[Nadia Walker]] - SecOps Lead
+## Assigned Account Team
 
 ## Projects
 

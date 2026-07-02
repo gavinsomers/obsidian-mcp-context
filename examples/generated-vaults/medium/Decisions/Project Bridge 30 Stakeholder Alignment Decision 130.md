@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-08-25
+date: 2024-11-06
 status: active
 project: "[[Project Bridge 30]]"
-company: "[[Keystone FinTech]]"
-source_created_at: 2024-08-25T14:25:00
-source_observed_at: 2024-08-25T15:39:00
-created_at: 2024-08-25T18:27:00
-updated_at: 2024-08-26T16:27:00
+company: "[[Northstar Labs]]"
+source_created_at: 2024-11-06T15:35:00
+source_observed_at: 2024-11-06T17:36:00
+created_at: 2024-11-06T17:41:00
+updated_at: 2024-11-07T00:41:00
 tags: [#decision]
 ---
 # Project Bridge 30 Stakeholder Alignment Decision 130
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 30]].
 
 ## Context
-This decision applies to [[Keystone FinTech]] and [[Project Bridge 30]].
+This decision applies to [[Northstar Labs]] and [[Project Bridge 30]].
 It follows [[Project Bridge 30 Handoff Readiness Sync 280]].
 It incorporates [[Project Bridge 30 Metric Reconciliation Research 130]].
 

@@ -1,23 +1,19 @@
 ---
 type: company
-status: active
+status: churn-risk
 segment: smb
-source_created_at: 2023-08-21T08:55:00
-source_observed_at: 2023-08-21T10:36:00
-created_at: 2023-08-22T17:55:00
-updated_at: 2023-09-22T20:55:00
+source_created_at: 2023-08-23T10:15:00
+source_observed_at: 2023-08-23T11:02:00
+created_at: 2023-08-24T03:15:00
+updated_at: 2023-10-27T10:15:00
 tags: [#company]
 ---
 # Cobalt Health
 
 ## Account Context
-Cobalt Health is a smb account currently marked `active`.
+Cobalt Health is a smb account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Jonah Chen]] - Product Director
-- [[Alex Haddad]] - Product Director
-- [[Priya Lee]] - Product Director
-- [[Farah Quinn]] - Product Director
+## Assigned Account Team
 
 ## Projects
 

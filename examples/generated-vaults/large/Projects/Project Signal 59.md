@@ -2,10 +2,10 @@
 type: project
 status: closed
 company: "[[Crescent Manufacturing]]"
-source_created_at: 2024-02-19T09:34:00
-source_observed_at: 2024-02-19T10:44:00
-created_at: 2024-02-20T11:34:00
-updated_at: 2024-03-06T17:34:00
+source_created_at: 2024-02-19T08:01:00
+source_observed_at: 2024-02-19T10:33:00
+created_at: 2024-02-21T02:01:00
+updated_at: 2024-04-04T03:01:00
 tags: [#project]
 ---
 # Project Signal 59
@@ -14,13 +14,13 @@ tags: [#project]
 Project Signal 59 supports [[Crescent Manufacturing]] through research program.
 
 ## Stakeholders
-- [[Farah Chen]]
-- [[Ben Quinn]]
-- [[Sam Usman]]
-- [[Wendy Grant]]
+- [[Kai Morgan]]
+- [[Elena Morgan]]
+- [[Grace Usman]]
+- [[Rachel Patel]]
 
 ## Operating Notes
-- Owner: [[Ben Quinn]]
+- Owner: [[Farah Chen]]
 - Status: `closed`
-- Closed at: `2024-07-08`
+- Closed at: `2024-08-03`
 - [ ] Reconcile latest state for [[Project Signal 59]] #ops

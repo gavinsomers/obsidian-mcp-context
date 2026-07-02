@@ -2,24 +2,24 @@
 type: meeting
 date: 2026-01-22
 project: "[[Project Lantern 200]]"
-company: "[[Helio Media]]"
-source_created_at: 2026-01-22T10:33:00
-source_observed_at: 2026-01-22T11:43:00
-created_at: 2026-01-22T11:48:00
-updated_at: 2026-01-22T16:48:00
+company: "[[Meridian Media]]"
+source_created_at: 2026-01-22T11:44:00
+source_observed_at: 2026-01-22T14:22:00
+created_at: 2026-01-27T16:44:00
+updated_at: 2026-01-27T21:44:00
 tags: [#meeting]
 ---
 # Project Lantern 200 Handoff Readiness Sync 1300
 
 ## Attendees
-- [[Rachel Haddad]]
-- [[Amara Diaz]]
-- [[Grace Morgan]]
+- [[Iris Shah]]
+- [[Clara Morgan]]
+- [[Alex Vance]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 200]] at [[Helio Media]].
-[[Marcus Vance]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 200]] at [[Meridian Media]].
+[[Rachel Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 200]] to [[Marcus Vance]] #follow-up
+- [ ] Send recap for [[Project Lantern 200]] to [[Rachel Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

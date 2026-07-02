@@ -4,10 +4,10 @@ date: 2025-04-28
 status: active
 project: "[[Project Bridge 60]]"
 company: "[[Keystone Manufacturing]]"
-source_created_at: 2025-04-28T13:15:00
-source_observed_at: 2025-04-28T13:48:00
-created_at: 2025-04-28T16:14:00
-updated_at: 2025-04-29T06:14:00
+source_created_at: 2025-04-28T10:51:00
+source_observed_at: 2025-04-28T11:33:00
+created_at: 2025-04-28T12:54:00
+updated_at: 2025-04-28T15:54:00
 tags: [#decision]
 ---
 # Project Bridge 60 Stakeholder Alignment Decision 500

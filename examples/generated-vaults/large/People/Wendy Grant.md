@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent Manufacturing]]"
-role: "SecOps Lead"
-source_created_at: 2023-06-19T16:04:00
-source_observed_at: 2023-06-19T18:41:00
-created_at: 2023-06-20T10:04:00
-updated_at: 2023-08-25T16:04:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-06-19T09:16:00
+source_observed_at: 2023-06-19T09:51:00
+created_at: 2023-06-21T00:16:00
+updated_at: 2023-09-05T05:16:00
 tags: [#person]
 ---
 # Wendy Grant
 
 ## Role
-Wendy Grant is the SecOps Lead at [[Crescent Manufacturing]].
+Wendy Grant is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Crescent Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Grant]] #follow-up

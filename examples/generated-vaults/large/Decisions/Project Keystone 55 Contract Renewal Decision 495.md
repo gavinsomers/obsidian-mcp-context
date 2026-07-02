@@ -4,10 +4,10 @@ date: 2025-04-21
 status: active
 project: "[[Project Keystone 55]]"
 company: "[[Harbor Manufacturing]]"
-source_created_at: 2025-04-21T16:12:00
-source_observed_at: 2025-04-21T17:04:00
-created_at: 2025-04-21T21:28:00
-updated_at: 2025-04-22T11:28:00
+source_created_at: 2025-04-21T13:41:00
+source_observed_at: 2025-04-21T15:31:00
+created_at: 2025-04-21T18:14:00
+updated_at: 2025-04-22T10:14:00
 tags: [#decision]
 ---
 # Project Keystone 55 Contract Renewal Decision 495

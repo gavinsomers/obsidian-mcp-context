@@ -3,18 +3,18 @@ type: meeting
 date: 2024-03-09
 project: "[[Project Atlas 61]]"
 company: "[[Northstar Health]]"
-source_created_at: 2024-03-09T10:57:00
-source_observed_at: 2024-03-09T13:45:00
-created_at: 2024-03-09T15:01:00
-updated_at: 2024-03-10T04:01:00
+source_created_at: 2024-03-09T15:04:00
+source_observed_at: 2024-03-09T16:39:00
+created_at: 2024-03-17T21:04:00
+updated_at: 2024-03-18T14:04:00
 tags: [#meeting]
 ---
 # Project Atlas 61 Warehouse Mapping Sync 61
 
 ## Attendees
-- [[Nadia Lee]]
-- [[Uma Usman]]
-- [[Hannah Chen]]
+- [[Amara Novak]]
+- [[Tara Kim]]
+- [[Wendy Bennett]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Atlas 61]] at [[Northstar Health]].

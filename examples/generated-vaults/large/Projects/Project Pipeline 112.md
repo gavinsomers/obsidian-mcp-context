@@ -2,10 +2,10 @@
 type: project
 status: closed
 company: "[[Vanguard Analytics]]"
-source_created_at: 2024-11-05T09:49:00
-source_observed_at: 2024-11-05T12:07:00
-created_at: 2024-11-13T11:49:00
-updated_at: 2024-12-20T17:49:00
+source_created_at: 2024-11-05T14:03:00
+source_observed_at: 2024-11-05T15:38:00
+created_at: 2024-11-12T20:03:00
+updated_at: 2025-01-29T07:03:00
 tags: [#project]
 ---
 # Project Pipeline 112
@@ -14,13 +14,13 @@ tags: [#project]
 Project Pipeline 112 supports [[Vanguard Analytics]] through sales pipeline.
 
 ## Stakeholders
-- [[Xavier Ivanov]]
-- [[Tara Walker]]
-- [[Marcus Novak]]
-- [[Clara Shah]]
+- [[Jonah Ortega]]
+- [[Uma Bennett]]
+- [[Uma Patel]]
+- [[Alex Chen]]
 
 ## Operating Notes
-- Owner: [[Xavier Ivanov]]
+- Owner: [[Grace Evans]]
 - Status: `closed`
-- Closed at: `2024-12-30`
+- Closed at: `2025-05-12`
 - [ ] Reconcile latest state for [[Project Pipeline 112]] #ops

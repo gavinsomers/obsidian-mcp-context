@@ -2,10 +2,10 @@
 type: risk
 status: closed
 project: "[[Project Meridian 6]]"
-source_created_at: 2024-07-15T12:09:00
-source_observed_at: 2024-07-15T13:07:00
-created_at: 2024-07-18T12:09:00
-updated_at: 2024-08-29T21:09:00
+source_created_at: 2024-07-15T08:35:00
+source_observed_at: 2024-07-15T10:24:00
+created_at: 2024-07-17T02:35:00
+updated_at: 2024-07-23T05:35:00
 tags: [#risk]
 ---
 # Project Meridian 6 Handoff Readiness Risk 106

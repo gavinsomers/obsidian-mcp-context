@@ -3,23 +3,23 @@ type: meeting
 date: 2024-12-17
 project: "[[Project Pipeline 97]]"
 company: "[[Vanguard Logistics]]"
-source_created_at: 2024-12-17T09:18:00
-source_observed_at: 2024-12-17T09:33:00
-created_at: 2024-12-17T15:17:00
-updated_at: 2024-12-18T04:17:00
+source_created_at: 2024-12-17T10:23:00
+source_observed_at: 2024-12-17T11:44:00
+created_at: 2024-12-17T14:46:00
+updated_at: 2024-12-17T19:46:00
 tags: [#meeting]
 ---
 # Project Pipeline 97 Contract Renewal Sync 1197
 
 ## Attendees
-- [[Yara Morgan]]
-- [[Hannah Ivanov]]
-- [[David Walker]]
+- [[Xavier Lee]]
+- [[Lina Vance]]
+- [[Alex Tan]]
 
 ## Notes
 Contract Renewal reviewed for [[Project Pipeline 97]] at [[Vanguard Logistics]].
-[[Hannah Ivanov]] flagged follow-up work for the next operating review.
+[[Sam Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Pipeline 97]] to [[Hannah Ivanov]] #follow-up
+- [ ] Send recap for [[Project Pipeline 97]] to [[Sam Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

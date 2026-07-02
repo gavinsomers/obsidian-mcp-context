@@ -4,10 +4,10 @@ date: 2026-01-19
 status: active
 project: "[[Project Summit 27]]"
 company: "[[Pioneer FinTech]]"
-source_created_at: 2026-01-19T16:39:00
-source_observed_at: 2026-01-19T19:23:00
-created_at: 2026-01-19T19:28:00
-updated_at: 2026-01-19T22:28:00
+source_created_at: 2026-01-19T12:51:00
+source_observed_at: 2026-01-19T13:14:00
+created_at: 2026-01-20T18:51:00
+updated_at: 2026-01-21T13:51:00
 tags: [#decision]
 ---
 # Project Summit 27 Pipeline Hygiene Decision 687

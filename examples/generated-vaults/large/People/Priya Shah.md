@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Helio Labs]]"
-role: "VP Data Engineering"
-source_created_at: 2023-09-29T13:03:00
-source_observed_at: 2023-09-29T14:19:00
-created_at: 2023-09-30T07:03:00
-updated_at: 2023-11-05T14:03:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-09-29T08:12:00
+source_observed_at: 2023-09-29T08:28:00
+created_at: 2023-09-30T23:12:00
+updated_at: 2023-11-14T06:12:00
 tags: [#person]
 ---
 # Priya Shah
 
 ## Role
-Priya Shah is the VP Data Engineering at [[Helio Labs]].
+Priya Shah is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Lantern 5]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Shah]] #follow-up

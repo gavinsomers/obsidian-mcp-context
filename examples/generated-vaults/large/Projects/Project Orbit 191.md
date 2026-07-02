@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Summit Health]]"
-source_created_at: 2025-11-27T14:52:00
-source_observed_at: 2025-11-27T15:32:00
-created_at: 2025-12-01T17:52:00
-updated_at: 2026-02-17T01:52:00
+status: blocked
+company: "[[Pioneer Health]]"
+source_created_at: 2025-11-27T12:48:00
+source_observed_at: 2025-11-27T14:53:00
+created_at: 2025-11-29T08:48:00
+updated_at: 2026-01-23T13:48:00
 tags: [#project]
 ---
 # Project Orbit 191
 
 ## Overview
-Project Orbit 191 supports [[Summit Health]] through consulting delivery.
+Project Orbit 191 supports [[Pioneer Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Sam Chen]]
-- [[Hannah Haddad]]
-- [[Yara Lee]]
-- [[Nadia Quinn]]
+- [[Rachel Foster]]
+- [[Farah Shah]]
+- [[Grace Chen]]
+- [[Clara Walker]]
 
 ## Operating Notes
-- Owner: [[Sam Chen]]
-- Status: `active`
+- Owner: [[Hannah Haddad]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Orbit 191]] #ops

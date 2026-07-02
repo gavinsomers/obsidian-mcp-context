@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave FinTech]]"
-role: "SecOps Lead"
-source_created_at: 2023-07-16T09:44:00
-source_observed_at: 2023-07-16T12:06:00
-created_at: 2023-07-18T07:44:00
-updated_at: 2023-08-02T07:44:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-07-16T16:11:00
+source_observed_at: 2023-07-16T17:33:00
+created_at: 2023-07-18T13:11:00
+updated_at: 2023-10-05T20:11:00
 tags: [#person]
 ---
 # Yara Jenkins
 
 ## Role
-Yara Jenkins is the SecOps Lead at [[BrightWave FinTech]].
+Yara Jenkins is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Jenkins]] #follow-up

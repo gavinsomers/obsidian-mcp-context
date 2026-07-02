@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent Health]]"
-role: "Finance Sponsor"
-source_created_at: 2023-06-24T10:36:00
-source_observed_at: 2023-06-24T13:11:00
-created_at: 2023-06-25T08:36:00
-updated_at: 2023-09-22T14:03:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-06-24T13:24:00
+source_observed_at: 2023-06-24T15:34:00
+created_at: 2023-06-24T17:24:00
+updated_at: 2023-07-14T03:24:00
 tags: [#person]
 ---
 # Kai Haddad
 
 ## Role
-Kai Haddad is the Finance Sponsor at [[Crescent Health]].
+Kai Haddad is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Crescent Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Haddad]] #follow-up

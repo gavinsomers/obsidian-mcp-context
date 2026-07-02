@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Logistics]]"
-role: "Operations Lead"
-source_created_at: 2023-09-22T08:18:00
-source_observed_at: 2023-09-22T10:32:00
-created_at: 2023-10-01T09:18:00
-updated_at: 2023-11-23T11:59:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-09-22T11:46:00
+source_observed_at: 2023-09-22T14:26:00
+created_at: 2023-09-23T22:46:00
+updated_at: 2023-11-20T08:46:00
 tags: [#person]
 ---
 # Wendy Rostova
 
 ## Role
-Wendy Rostova is the Operations Lead at [[Keystone Logistics]].
+Wendy Rostova is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Rostova]] #follow-up

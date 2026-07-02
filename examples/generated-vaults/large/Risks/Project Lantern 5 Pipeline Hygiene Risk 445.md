@@ -2,10 +2,10 @@
 type: risk
 status: closed
 project: "[[Project Lantern 5]]"
-source_created_at: 2025-04-10T09:15:00
-source_observed_at: 2025-04-10T11:11:00
-created_at: 2025-04-11T21:15:00
-updated_at: 2025-05-25T21:15:00
+source_created_at: 2025-04-10T09:38:00
+source_observed_at: 2025-04-10T10:35:00
+created_at: 2025-04-11T18:38:00
+updated_at: 2025-04-19T21:38:00
 tags: [#risk]
 ---
 # Project Lantern 5 Pipeline Hygiene Risk 445

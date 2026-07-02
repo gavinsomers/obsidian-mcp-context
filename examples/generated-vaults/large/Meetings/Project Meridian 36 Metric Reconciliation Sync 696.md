@@ -1,20 +1,20 @@
 ---
 type: meeting
-date: 2025-12-31
+date: 2024-01-06
 project: "[[Project Meridian 36]]"
 company: "[[Meridian Retail]]"
-source_created_at: 2025-12-31T09:33:00
-source_observed_at: 2025-12-31T10:48:00
-created_at: 2026-01-01T09:33:00
-updated_at: 2026-01-02T07:33:00
+source_created_at: 2024-01-06T13:42:00
+source_observed_at: 2024-01-06T15:34:00
+created_at: 2024-01-06T18:23:00
+updated_at: 2024-01-07T01:23:00
 tags: [#meeting]
 ---
 # Project Meridian 36 Metric Reconciliation Sync 696
 
 ## Attendees
-- [[Iris Bennett]]
-- [[Victor Tan]]
-- [[Omar Kim]]
+- [[Priya Ortega]]
+- [[Yara Shah]]
+- [[Victor Vance]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Meridian 36]] at [[Meridian Retail]].

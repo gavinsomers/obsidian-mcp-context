@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Analytics]]"
-role: "Implementation Manager"
-source_created_at: 2023-05-26T10:58:00
-source_observed_at: 2023-05-26T12:51:00
-created_at: 2023-05-30T12:58:00
-updated_at: 2023-11-29T12:17:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-05-26T12:16:00
+source_observed_at: 2023-05-26T14:24:00
+created_at: 2023-05-29T12:16:00
+updated_at: 2023-07-19T17:16:00
 tags: [#person]
 ---
 # Clara Evans
 
 ## Role
-Clara Evans is the Implementation Manager at [[Cobalt Analytics]].
+Clara Evans is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Cobalt Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Clara Evans]] #follow-up

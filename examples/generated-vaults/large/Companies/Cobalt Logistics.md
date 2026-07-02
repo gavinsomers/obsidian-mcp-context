@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
+status: pipeline
 segment: enterprise
-source_created_at: 2023-10-20T09:57:00
-source_observed_at: 2023-10-20T10:32:00
-created_at: 2023-10-20T18:57:00
-updated_at: 2024-01-18T05:57:00
+source_created_at: 2023-10-22T14:46:00
+source_observed_at: 2023-10-22T15:57:00
+created_at: 2023-10-24T20:46:00
+updated_at: 2023-11-22T03:46:00
 tags: [#company]
 ---
 # Cobalt Logistics
 
 ## Account Context
-Cobalt Logistics is a enterprise account currently marked `active`.
+Cobalt Logistics is a enterprise account currently marked `pipeline`.
 
-## Stakeholders
-- [[Nadia Diaz]] - VP Data Engineering
-- [[David Ivanov]] - VP Data Engineering
-- [[Uma Morgan]] - VP Data Engineering
-- [[Jonah Rostova]] - VP Data Engineering
-- [[Alex Walker]] - VP Data Engineering
+## Assigned Account Team
 
 ## Projects
 

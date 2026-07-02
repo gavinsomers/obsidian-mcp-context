@@ -3,11 +3,11 @@ type: decision
 date: 2025-06-15
 status: active
 project: "[[Project Atlas 151]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2025-06-15T10:46:00
-source_observed_at: 2025-06-15T12:41:00
-created_at: 2025-06-22T15:46:00
-updated_at: 2025-06-23T05:46:00
+company: "[[Apex Retail]]"
+source_created_at: 2025-06-15T08:05:00
+source_observed_at: 2025-06-15T08:23:00
+created_at: 2025-06-15T12:57:00
+updated_at: 2025-06-15T19:57:00
 tags: [#decision]
 ---
 # Project Atlas 151 Security Review Decision 371
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with security review for [[Project Atlas 151]].
 
 ## Context
-This decision applies to [[Northstar Retail]] and [[Project Atlas 151]].
-It follows [[Project Atlas 151 Warehouse Mapping Sync 1031]].
+This decision applies to [[Apex Retail]] and [[Project Atlas 151]].
+It follows [[Project Atlas 151 Warehouse Mapping Sync 1251]].
 It incorporates [[Project Atlas 151 Contract Renewal Research 151]].
 
 ## Supersession

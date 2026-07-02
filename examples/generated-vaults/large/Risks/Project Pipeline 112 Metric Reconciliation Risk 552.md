@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Pipeline 112]]"
-source_created_at: 2024-12-26T15:43:00
-source_observed_at: 2024-12-26T18:27:00
-created_at: 2024-12-27T07:43:00
-updated_at: 2025-01-24T18:43:00
+source_created_at: 2025-05-06T11:21:00
+source_observed_at: 2025-05-06T12:17:00
+created_at: 2025-05-08T08:21:00
+updated_at: 2025-05-19T14:21:00
 tags: [#risk]
 ---
 # Project Pipeline 112 Metric Reconciliation Risk 552
@@ -14,9 +14,9 @@ tags: [#risk]
 Metric Reconciliation may affect [[Project Pipeline 112]] for [[Vanguard Analytics]].
 
 ## Evidence
-- Raised after [[Project Pipeline 112 Stakeholder Alignment Sync 1212]]
+- Raised after [[Project Pipeline 112 Stakeholder Alignment Sync 772]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Xavier Ivanov]]
+- Status: `mitigating`
+- Owner: [[Grace Evans]]
 - [ ] Reassess [[Project Pipeline 112 Metric Reconciliation Risk 552]] during the next review #risk

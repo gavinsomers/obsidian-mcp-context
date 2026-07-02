@@ -3,18 +3,18 @@ type: meeting
 date: 2023-11-06
 project: "[[Project Meridian 36]]"
 company: "[[Meridian Retail]]"
-source_created_at: 2023-11-06T15:50:00
-source_observed_at: 2023-11-06T18:49:00
-created_at: 2023-11-06T18:54:00
-updated_at: 2023-11-07T11:54:00
+source_created_at: 2023-11-06T11:04:00
+source_observed_at: 2023-11-06T12:52:00
+created_at: 2023-11-06T13:13:00
+updated_at: 2023-11-06T23:13:00
 tags: [#meeting]
 ---
 # Project Meridian 36 Metric Reconciliation Sync 36
 
 ## Attendees
-- [[Omar Kim]]
-- [[Iris Bennett]]
-- [[Zoe Foster]]
+- [[Yara Shah]]
+- [[Priya Ortega]]
+- [[Amara Evans]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Meridian 36]] at [[Meridian Retail]].

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Analytics]]"
-role: "SecOps Lead"
-source_created_at: 2023-11-05T12:02:00
-source_observed_at: 2023-11-05T12:28:00
-created_at: 2023-11-05T14:02:00
-updated_at: 2023-12-13T17:21:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-11-05T08:43:00
+source_observed_at: 2023-11-05T10:58:00
+created_at: 2023-11-06T11:43:00
+updated_at: 2024-01-15T19:43:00
 tags: [#person]
 ---
 # Wendy Walker
 
 ## Role
-Wendy Walker is the SecOps Lead at [[Harbor Analytics]].
+Wendy Walker is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Walker]] #follow-up

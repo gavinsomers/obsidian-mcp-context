@@ -1,23 +1,19 @@
 ---
 type: company
-status: active
-segment: smb
-source_created_at: 2023-09-04T12:22:00
-source_observed_at: 2023-09-04T12:54:00
-created_at: 2023-09-04T21:22:00
-updated_at: 2023-10-19T00:22:00
+status: pipeline
+segment: mid-market
+source_created_at: 2023-09-06T15:01:00
+source_observed_at: 2023-09-06T15:42:00
+created_at: 2023-09-07T03:01:00
+updated_at: 2023-11-16T10:01:00
 tags: [#company]
 ---
 # Harbor Health
 
 ## Account Context
-Harbor Health is a smb account currently marked `active`.
+Harbor Health is a mid-market account currently marked `pipeline`.
 
-## Stakeholders
-- [[Rachel Chen]] - Legal Counsel
-- [[Grace Haddad]] - Legal Counsel
-- [[Xavier Lee]] - Legal Counsel
-- [[Marcus Quinn]] - Legal Counsel
+## Assigned Account Team
 
 ## Projects
 

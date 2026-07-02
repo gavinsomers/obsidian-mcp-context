@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Retail]]"
-role: "Product Director"
-source_created_at: 2023-06-12T16:24:00
-source_observed_at: 2023-06-12T17:34:00
-created_at: 2023-06-14T14:24:00
-updated_at: 2023-08-04T01:24:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-06-12T16:52:00
+source_observed_at: 2023-06-12T19:48:00
+created_at: 2023-06-18T23:52:00
+updated_at: 2023-08-02T09:52:00
 tags: [#person]
 ---
 # Ben Grant
 
 ## Role
-Ben Grant is the Product Director at [[Atlas Retail]].
+Ben Grant is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Ben Grant]] #follow-up

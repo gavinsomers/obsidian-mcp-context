@@ -4,10 +4,10 @@ date: 2025-06-18
 status: active
 project: "[[Project Meridian 96]]"
 company: "[[Meridian Logistics]]"
-source_created_at: 2025-06-18T13:51:00
-source_observed_at: 2025-06-18T14:52:00
-created_at: 2025-06-18T14:57:00
-updated_at: 2025-06-19T00:57:00
+source_created_at: 2025-06-18T09:12:00
+source_observed_at: 2025-06-18T10:17:00
+created_at: 2025-06-18T13:04:00
+updated_at: 2025-06-19T02:04:00
 tags: [#decision]
 ---
 # Project Meridian 96 Lineage Audit Decision 536

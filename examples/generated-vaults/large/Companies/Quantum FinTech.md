@@ -1,21 +1,19 @@
 ---
 type: company
 status: pipeline
-segment: enterprise
-source_created_at: 2023-06-02T14:05:00
-source_observed_at: 2023-06-02T16:53:00
-created_at: 2023-06-03T07:05:00
-updated_at: 2023-06-26T08:05:00
+segment: smb
+source_created_at: 2023-06-04T14:17:00
+source_observed_at: 2023-06-04T16:07:00
+created_at: 2023-06-06T04:17:00
+updated_at: 2023-07-15T13:17:00
 tags: [#company]
 ---
 # Quantum FinTech
 
 ## Account Context
-Quantum FinTech is a enterprise account currently marked `pipeline`.
+Quantum FinTech is a smb account currently marked `pipeline`.
 
-## Stakeholders
-- [[Wendy Alvarez]] - Product Director
-- [[Lina Foster]] - Product Director
+## Assigned Account Team
 
 ## Projects
 

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent Logistics]]"
-role: "Customer Success Manager"
-source_created_at: 2023-09-22T15:37:00
-source_observed_at: 2023-09-22T16:30:00
-created_at: 2023-09-24T11:37:00
-updated_at: 2023-11-21T14:49:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-09-22T12:17:00
+source_observed_at: 2023-09-22T12:52:00
+created_at: 2023-09-24T03:17:00
+updated_at: 2023-11-27T10:17:00
 tags: [#person]
 ---
 # Victor Rostova
 
 ## Role
-Victor Rostova is the Customer Success Manager at [[Crescent Logistics]].
+Victor Rostova is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Crescent Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Victor Rostova]] #follow-up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Labs]]"
-role: "Operations Lead"
-source_created_at: 2023-04-21T11:09:00
-source_observed_at: 2023-04-21T12:54:00
-created_at: 2023-04-22T23:09:00
-updated_at: 2023-07-12T23:09:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-04-21T12:42:00
+source_observed_at: 2023-04-21T14:56:00
+created_at: 2023-04-21T22:42:00
+updated_at: 2023-07-18T07:42:00
 tags: [#person]
 ---
 # Alex Alvarez
 
 ## Role
-Alex Alvarez is the Operations Lead at [[Northstar Labs]].
+Alex Alvarez is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Atlas 1]]
+## Active Project Allocations
+- Managing/Supporting [[Project Atlas 1]] ([[Northstar Labs]])
 - [ ] Confirm next update with [[Alex Alvarez]] #follow-up

@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Harbor 9]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2023-10-10T09:20:00
-source_observed_at: 2023-10-10T11:19:00
-created_at: 2023-10-11T03:20:00
-updated_at: 2023-11-06T05:20:00
+company: "[[Apex Labs]]"
+source_created_at: 2023-10-10T16:01:00
+source_observed_at: 2023-10-10T18:46:00
+created_at: 2023-10-12T14:01:00
+updated_at: 2023-11-01T14:01:00
 tags: [#research]
 ---
 # Project Harbor 9 Contract Renewal Research 21
 
 ## Research Summary
-Research on contract renewal for [[Project Harbor 9]] and [[Northstar Labs]].
+Research on contract renewal for [[Project Harbor 9]] and [[Apex Labs]].
 
 ## Evidence
-- Interview notes from [[Alex Alvarez]]
-- Related operating review: [[Project Harbor 9 Warehouse Mapping Sync 21]]
+- Interview notes from [[Hannah Alvarez]]
+- Related operating review: [[Project Harbor 9 Security Review Sync 33]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Harbor 9]] #research

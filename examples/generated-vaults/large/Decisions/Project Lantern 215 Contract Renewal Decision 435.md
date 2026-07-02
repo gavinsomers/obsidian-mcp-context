@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-25
 status: active
 project: "[[Project Lantern 215]]"
-company: "[[Helio Logistics]]"
-source_created_at: 2026-04-25T12:51:00
-source_observed_at: 2026-04-25T13:16:00
-created_at: 2026-04-25T18:50:00
-updated_at: 2026-04-26T09:50:00
+company: "[[Meridian Logistics]]"
+source_created_at: 2026-04-25T09:49:00
+source_observed_at: 2026-04-25T10:17:00
+created_at: 2026-04-25T10:41:00
+updated_at: 2026-04-26T09:41:00
 tags: [#decision]
 ---
 # Project Lantern 215 Contract Renewal Decision 435
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Lantern 215]].
 
 ## Context
-This decision applies to [[Helio Logistics]] and [[Project Lantern 215]].
-It follows [[Project Lantern 215 Adoption Workflow Sync 1535]].
+This decision applies to [[Meridian Logistics]] and [[Project Lantern 215]].
+It follows [[Project Lantern 215 Adoption Workflow Sync 215]].
 It incorporates [[Project Lantern 215 Warehouse Mapping Research 215]].
 
 ## Supersession

@@ -1,20 +1,20 @@
 ---
 type: meeting
-date: 2025-08-18
+date: 2024-06-24
 project: "[[Project Meridian 51]]"
 company: "[[Meridian Manufacturing]]"
-source_created_at: 2025-08-18T11:42:00
-source_observed_at: 2025-08-18T12:41:00
-created_at: 2025-08-18T14:19:00
-updated_at: 2025-08-19T00:19:00
+source_created_at: 2024-06-24T09:31:00
+source_observed_at: 2024-06-24T10:23:00
+created_at: 2024-06-24T11:22:00
+updated_at: 2024-06-24T15:22:00
 tags: [#meeting]
 ---
 # Project Meridian 51 Warehouse Mapping Sync 1371
 
 ## Attendees
-- [[Uma Patel]]
-- [[Jonah Usman]]
-- [[Nadia Grant]]
+- [[Elena Ortega]]
+- [[Sam Usman]]
+- [[Rachel Chen]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Meridian 51]] at [[Meridian Manufacturing]].

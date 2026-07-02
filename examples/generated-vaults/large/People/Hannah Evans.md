@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Analytics]]"
-role: "Operations Lead"
-source_created_at: 2023-05-28T08:19:00
-source_observed_at: 2023-05-28T10:16:00
-created_at: 2023-05-30T04:19:00
-updated_at: 2023-12-09T14:17:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-05-28T10:07:00
+source_observed_at: 2023-05-28T10:50:00
+created_at: 2023-05-28T15:07:00
+updated_at: 2023-07-01T16:07:00
 tags: [#person]
 ---
 # Hannah Evans
 
 ## Role
-Hannah Evans is the Operations Lead at [[Quantum Analytics]].
+Hannah Evans is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Hannah Evans]] #follow-up

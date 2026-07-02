@@ -4,10 +4,10 @@ date: 2024-05-09
 status: active
 project: "[[Project Harbor 69]]"
 company: "[[Atlas Health]]"
-source_created_at: 2024-05-09T08:25:00
-source_observed_at: 2024-05-09T09:33:00
-created_at: 2024-05-15T13:25:00
-updated_at: 2024-05-15T19:25:00
+source_created_at: 2024-05-09T11:35:00
+source_observed_at: 2024-05-09T14:09:00
+created_at: 2024-05-09T14:14:00
+updated_at: 2024-05-10T04:14:00
 tags: [#decision]
 ---
 # Project Harbor 69 Warehouse Mapping Decision 69
@@ -17,7 +17,7 @@ Proceed with warehouse mapping for [[Project Harbor 69]].
 
 ## Context
 This decision applies to [[Atlas Health]] and [[Project Harbor 69]].
-It follows [[Project Harbor 69 Pipeline Hygiene Sync 1609]].
+It follows [[Project Harbor 69 Pipeline Hygiene Sync 69]].
 It incorporates [[Project Harbor 69 Adoption Workflow Research 69]].
 
 ## Supersession

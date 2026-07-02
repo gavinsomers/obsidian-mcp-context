@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Labs]]"
-role: "Product Director"
-source_created_at: 2023-07-12T13:49:00
-source_observed_at: 2023-07-12T15:56:00
-created_at: 2023-07-14T04:49:00
-updated_at: 2023-07-31T11:49:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-07-12T09:44:00
+source_observed_at: 2023-07-12T12:06:00
+created_at: 2023-07-14T07:44:00
+updated_at: 2023-07-29T07:44:00
 tags: [#person]
 ---
 # Lina Jenkins
 
 ## Role
-Lina Jenkins is the Product Director at [[Vanguard Labs]].
+Lina Jenkins is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Pipeline 7]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Jenkins]] #follow-up

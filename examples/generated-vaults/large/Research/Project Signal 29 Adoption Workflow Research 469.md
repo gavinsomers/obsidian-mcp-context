@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Signal 29]]"
 company: "[[Crescent FinTech]]"
-source_created_at: 2025-08-05T14:40:00
-source_observed_at: 2025-08-05T16:17:00
-created_at: 2025-08-06T06:40:00
-updated_at: 2025-08-28T13:40:00
+source_created_at: 2025-08-05T15:21:00
+source_observed_at: 2025-08-05T16:46:00
+created_at: 2025-08-07T01:21:00
+updated_at: 2025-08-26T08:21:00
 tags: [#research]
 ---
 # Project Signal 29 Adoption Workflow Research 469

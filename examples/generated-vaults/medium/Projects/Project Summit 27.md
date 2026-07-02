@@ -1,6 +1,6 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Pioneer FinTech]]"
 source_created_at: 2024-02-14T14:32:00
 source_observed_at: 2024-02-14T16:39:00
@@ -14,13 +14,12 @@ tags: [#project]
 Project Summit 27 supports [[Pioneer FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Alex Bennett]]
-- [[Priya Foster]]
+- [[Sam Alvarez]]
 - [[Lina Evans]]
-- [[David Chen]]
+- [[Ben Evans]]
+- [[Rachel Foster]]
 
 ## Operating Notes
-- Owner: [[David Chen]]
-- Status: `closed`
-- Closed at: `2024-04-17`
+- Owner: [[Alex Bennett]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Summit 27]] #ops

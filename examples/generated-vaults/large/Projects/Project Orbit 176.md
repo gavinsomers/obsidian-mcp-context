@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Summit Manufacturing]]"
-source_created_at: 2025-09-16T16:22:00
-source_observed_at: 2025-09-16T16:49:00
-created_at: 2025-09-17T20:22:00
-updated_at: 2025-12-02T05:22:00
+company: "[[Pioneer Manufacturing]]"
+source_created_at: 2025-09-16T10:18:00
+source_observed_at: 2025-09-16T11:04:00
+created_at: 2025-09-16T17:18:00
+updated_at: 2025-10-19T21:18:00
 tags: [#project]
 ---
 # Project Orbit 176
 
 ## Overview
-Project Orbit 176 supports [[Summit Manufacturing]] through consulting delivery.
+Project Orbit 176 supports [[Pioneer Manufacturing]] through consulting delivery.
 
 ## Stakeholders
-- [[Iris Lee]]
-- [[Tara Grant]]
-- [[Zoe Patel]]
-- [[Omar Usman]]
+- [[Victor Usman]]
+- [[Alex Foster]]
+- [[Uma Ivanov]]
+- [[Clara Alvarez]]
 
 ## Operating Notes
-- Owner: [[Clara Chen]]
+- Owner: [[Tara Grant]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Orbit 176]] #ops

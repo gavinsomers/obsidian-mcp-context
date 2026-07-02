@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Signal 89]]"
-source_created_at: 2025-02-10T08:04:00
-source_observed_at: 2025-02-10T09:16:00
-created_at: 2025-02-12T04:04:00
-updated_at: 2025-02-23T11:04:00
+source_created_at: 2025-08-21T10:21:00
+source_observed_at: 2025-08-21T10:45:00
+created_at: 2025-08-23T07:21:00
+updated_at: 2025-09-10T15:21:00
 tags: [#risk]
 ---
 # Project Signal 89 Security Review Risk 529
@@ -14,9 +14,9 @@ tags: [#risk]
 Security Review may affect [[Project Signal 89]] for [[Crescent Media]].
 
 ## Evidence
-- Raised after [[Project Signal 89 Pipeline Hygiene Sync 749]]
+- Raised after [[Project Signal 89 Pipeline Hygiene Sync 529]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Farah Rostova]]
+- Owner: [[Jonah Diaz]]
 - [ ] Reassess [[Project Signal 89 Security Review Risk 529]] during the next review #risk

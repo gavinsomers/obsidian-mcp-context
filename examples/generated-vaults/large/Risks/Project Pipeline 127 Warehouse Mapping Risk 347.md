@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Pipeline 127]]"
-source_created_at: 2025-02-04T13:46:00
-source_observed_at: 2025-02-04T14:51:00
-created_at: 2025-02-05T05:46:00
-updated_at: 2025-02-13T11:46:00
+source_created_at: 2025-02-04T10:08:00
+source_observed_at: 2025-02-04T13:00:00
+created_at: 2025-02-04T16:08:00
+updated_at: 2025-03-02T01:08:00
 tags: [#risk]
 ---
 # Project Pipeline 127 Warehouse Mapping Risk 347
 
 ## Risk
-Warehouse Mapping may affect [[Project Pipeline 127]] for [[Vanguard Labs]].
+Warehouse Mapping may affect [[Project Pipeline 127]] for [[Quantum Labs]].
 
 ## Evidence
-- Raised after [[Project Pipeline 127 Contract Renewal Sync 1667]]
+- Raised after [[Project Pipeline 127 Contract Renewal Sync 1227]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `open`
 - Owner: [[Wendy Evans]]
 - [ ] Reassess [[Project Pipeline 127 Warehouse Mapping Risk 347]] during the next review #risk

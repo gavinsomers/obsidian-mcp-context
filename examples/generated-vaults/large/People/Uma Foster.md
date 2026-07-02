@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Retail]]"
-role: "Product Director"
-source_created_at: 2023-06-10T11:12:00
-source_observed_at: 2023-06-10T12:15:00
-created_at: 2023-06-11T07:12:00
-updated_at: 2023-08-08T17:12:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-06-10T11:18:00
+source_observed_at: 2023-06-10T13:22:00
+created_at: 2023-06-12T08:18:00
+updated_at: 2023-07-05T10:18:00
 tags: [#person]
 ---
 # Uma Foster
 
 ## Role
-Uma Foster is the Product Director at [[Northstar Retail]].
+Uma Foster is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Uma Foster]] #follow-up

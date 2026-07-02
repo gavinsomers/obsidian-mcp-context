@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-03-08
 project: "[[Project Bridge 135]]"
-company: "[[Keystone Labs]]"
-source_created_at: 2025-03-08T10:40:00
-source_observed_at: 2025-03-08T12:33:00
-created_at: 2025-03-08T12:38:00
-updated_at: 2025-03-08T20:38:00
+company: "[[Northstar FinTech]]"
+source_created_at: 2025-03-08T14:14:00
+source_observed_at: 2025-03-08T16:00:00
+created_at: 2025-03-08T16:05:00
+updated_at: 2025-03-08T22:05:00
 tags: [#meeting]
 ---
 # Project Bridge 135 Adoption Workflow Sync 135
 
 ## Attendees
-- [[Nadia Alvarez]]
-- [[Jonah Ortega]]
-- [[Uma Jenkins]]
+- [[Hannah Lee]]
+- [[Uma Evans]]
+- [[Uma Kim]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Bridge 135]] at [[Keystone Labs]].
-[[Alex Tan]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Bridge 135]] at [[Northstar FinTech]].
+[[David Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 135]] to [[Alex Tan]] #follow-up
+- [ ] Send recap for [[Project Bridge 135]] to [[David Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Orbit 41]]"
-source_created_at: 2024-06-21T10:07:00
-source_observed_at: 2024-06-21T11:30:00
-created_at: 2024-06-22T00:07:00
-updated_at: 2024-08-01T04:07:00
+source_created_at: 2024-06-21T15:53:00
+source_observed_at: 2024-06-21T17:29:00
+created_at: 2024-06-22T08:53:00
+updated_at: 2024-07-31T16:53:00
 tags: [#risk]
 ---
 # Project Orbit 41 Adoption Workflow Risk 261

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Manufacturing]]"
-role: "Finance Sponsor"
-source_created_at: 2023-09-07T15:46:00
-source_observed_at: 2023-09-07T18:10:00
-created_at: 2023-09-08T13:46:00
-updated_at: 2023-10-10T14:46:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-09-07T15:36:00
+source_observed_at: 2023-09-07T16:19:00
+created_at: 2023-09-15T16:36:00
+updated_at: 2023-11-26T20:36:00
 tags: [#person]
 ---
 # Amara Quinn
 
 ## Role
-Amara Quinn is the Finance Sponsor at [[Noble Manufacturing]].
+Amara Quinn is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Amara Quinn]] #follow-up

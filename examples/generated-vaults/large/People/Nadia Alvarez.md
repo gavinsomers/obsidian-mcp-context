@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Keystone Labs]]"
-role: "Product Director"
-source_created_at: 2023-04-25T14:23:00
-source_observed_at: 2023-04-25T17:14:00
-created_at: 2023-04-25T21:23:00
-updated_at: 2023-07-28T13:00:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-04-25T14:22:00
+source_observed_at: 2023-04-25T15:16:00
+created_at: 2023-04-27T05:22:00
+updated_at: 2023-06-20T16:22:00
 tags: [#person]
 ---
 # Nadia Alvarez
 
 ## Role
-Nadia Alvarez is the Product Director at [[Keystone Labs]].
+Nadia Alvarez is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Bridge 15]]
+## Active Project Allocations
+- Managing/Supporting [[Project Meridian 6]] ([[Meridian Labs]])
+- Managing/Supporting [[Project Pipeline 7]] ([[Vanguard Labs]])
 - [ ] Confirm next update with [[Nadia Alvarez]] #follow-up

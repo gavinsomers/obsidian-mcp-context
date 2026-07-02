@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Signal 59]]"
 company: "[[Crescent Manufacturing]]"
-source_created_at: 2024-06-29T11:02:00
-source_observed_at: 2024-06-29T12:23:00
-created_at: 2024-06-30T14:02:00
-updated_at: 2024-07-10T20:02:00
+source_created_at: 2024-08-01T10:01:00
+source_observed_at: 2024-08-01T11:56:00
+created_at: 2024-08-01T17:01:00
+updated_at: 2024-09-07T04:01:00
 tags: [#research]
 ---
 # Project Signal 59 Adoption Workflow Research 279
@@ -14,7 +14,7 @@ tags: [#research]
 Research on adoption workflow for [[Project Signal 59]] and [[Crescent Manufacturing]].
 
 ## Evidence
-- Interview notes from [[Ben Quinn]]
+- Interview notes from [[Farah Chen]]
 - Related operating review: [[Project Signal 59 Pipeline Hygiene Sync 719]]
 
 ## Follow Up

@@ -3,11 +3,11 @@ type: decision
 date: 2025-11-06
 status: active
 project: "[[Project Bridge 180]]"
-company: "[[Keystone Manufacturing]]"
-source_created_at: 2025-11-06T13:38:00
-source_observed_at: 2025-11-06T14:25:00
-created_at: 2025-11-06T18:42:00
-updated_at: 2025-11-07T04:42:00
+company: "[[Northstar Health]]"
+source_created_at: 2025-11-06T14:41:00
+source_observed_at: 2025-11-06T16:26:00
+created_at: 2025-11-06T18:46:00
+updated_at: 2025-11-07T11:46:00
 tags: [#decision]
 ---
 # Project Bridge 180 Stakeholder Alignment Decision 400
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 180]].
 
 ## Context
-This decision applies to [[Keystone Manufacturing]] and [[Project Bridge 180]].
-It follows [[Project Bridge 180 Handoff Readiness Sync 620]].
+This decision applies to [[Northstar Health]] and [[Project Bridge 180]].
+It follows [[Project Bridge 180 Handoff Readiness Sync 1280]].
 It incorporates [[Project Bridge 180 Metric Reconciliation Research 180]].
 
 ## Supersession

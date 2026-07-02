@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: blocked
 company: "[[Vanguard Retail]]"
-source_created_at: 2023-11-02T16:30:00
-source_observed_at: 2023-11-02T18:29:00
-created_at: 2023-11-02T22:30:00
-updated_at: 2023-12-25T06:30:00
+source_created_at: 2023-11-02T12:55:00
+source_observed_at: 2023-11-02T13:21:00
+created_at: 2023-11-03T16:55:00
+updated_at: 2024-01-03T02:55:00
 tags: [#project]
 ---
 # Project Pipeline 37
@@ -14,12 +14,12 @@ tags: [#project]
 Project Pipeline 37 supports [[Vanguard Retail]] through sales pipeline.
 
 ## Stakeholders
-- [[Farah Patel]]
-- [[Alex Grant]]
-- [[Wendy Tan]]
-- [[Priya Kim]]
+- [[Elena Lee]]
+- [[Grace Diaz]]
+- [[Hannah Grant]]
+- [[Tara Kim]]
 
 ## Operating Notes
-- Owner: [[Alex Grant]]
-- Status: `planning`
+- Owner: [[Jonah Bennett]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Pipeline 37]] #ops

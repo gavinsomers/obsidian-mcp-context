@@ -4,10 +4,10 @@ date: 2024-09-13
 status: active
 project: "[[Project Lantern 95]]"
 company: "[[Helio Logistics]]"
-source_created_at: 2024-09-13T11:52:00
-source_observed_at: 2024-09-13T13:04:00
-created_at: 2024-09-13T16:59:00
-updated_at: 2024-09-14T07:59:00
+source_created_at: 2024-09-13T15:40:00
+source_observed_at: 2024-09-13T17:25:00
+created_at: 2024-09-13T18:45:00
+updated_at: 2024-09-13T23:45:00
 tags: [#decision]
 ---
 # Project Lantern 95 Contract Renewal Decision 315
@@ -17,7 +17,7 @@ Proceed with contract renewal for [[Project Lantern 95]].
 
 ## Context
 This decision applies to [[Helio Logistics]] and [[Project Lantern 95]].
-It follows [[Project Lantern 95 Adoption Workflow Sync 1635]].
+It follows [[Project Lantern 95 Adoption Workflow Sync 315]].
 It incorporates [[Project Lantern 95 Warehouse Mapping Research 95]].
 
 ## Supersession

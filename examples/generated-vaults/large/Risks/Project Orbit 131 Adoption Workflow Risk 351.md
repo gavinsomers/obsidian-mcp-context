@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Orbit 131]]"
-source_created_at: 2025-02-24T15:27:00
-source_observed_at: 2025-02-24T17:24:00
-created_at: 2025-02-25T14:27:00
-updated_at: 2025-03-03T19:27:00
+source_created_at: 2025-02-24T09:35:00
+source_observed_at: 2025-02-24T12:14:00
+created_at: 2025-02-25T06:35:00
+updated_at: 2025-03-08T16:35:00
 tags: [#risk]
 ---
 # Project Orbit 131 Adoption Workflow Risk 351
 
 ## Risk
-Adoption Workflow may affect [[Project Orbit 131]] for [[Summit Labs]].
+Adoption Workflow may affect [[Project Orbit 131]] for [[Pioneer Labs]].
 
 ## Evidence
-- Raised after [[Project Orbit 131 Warehouse Mapping Sync 131]]
+- Raised after [[Project Orbit 131 Warehouse Mapping Sync 1011]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Jonah Alvarez]]
+- Status: `open`
+- Owner: [[Alex Foster]]
 - [ ] Reassess [[Project Orbit 131 Adoption Workflow Risk 351]] during the next review #risk

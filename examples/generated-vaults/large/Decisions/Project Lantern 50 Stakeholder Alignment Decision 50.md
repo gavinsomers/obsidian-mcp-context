@@ -4,10 +4,10 @@ date: 2024-02-04
 status: active
 project: "[[Project Lantern 50]]"
 company: "[[Helio Manufacturing]]"
-source_created_at: 2024-02-04T08:22:00
-source_observed_at: 2024-02-04T11:04:00
-created_at: 2024-02-04T11:58:00
-updated_at: 2024-02-05T07:58:00
+source_created_at: 2024-02-04T12:46:00
+source_observed_at: 2024-02-04T13:32:00
+created_at: 2024-02-12T15:46:00
+updated_at: 2024-02-13T06:46:00
 tags: [#decision]
 ---
 # Project Lantern 50 Stakeholder Alignment Decision 50
@@ -17,7 +17,7 @@ Proceed with stakeholder alignment for [[Project Lantern 50]].
 
 ## Context
 This decision applies to [[Helio Manufacturing]] and [[Project Lantern 50]].
-It follows [[Project Lantern 50 Handoff Readiness Sync 50]].
+It follows [[Project Lantern 50 Handoff Readiness Sync 930]].
 It incorporates [[Project Lantern 50 Metric Reconciliation Research 50]].
 
 ## Supersession

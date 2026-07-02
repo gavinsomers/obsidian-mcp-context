@@ -4,10 +4,10 @@ date: 2025-06-05
 status: active
 project: "[[Project Venture 88]]"
 company: "[[Noble Media]]"
-source_created_at: 2025-06-05T09:47:00
-source_observed_at: 2025-06-05T12:02:00
-created_at: 2025-06-11T11:47:00
-updated_at: 2025-06-11T16:47:00
+source_created_at: 2025-06-05T12:14:00
+source_observed_at: 2025-06-05T13:34:00
+created_at: 2025-06-05T13:39:00
+updated_at: 2025-06-06T09:39:00
 tags: [#decision]
 ---
 # Project Venture 88 Handoff Readiness Decision 528

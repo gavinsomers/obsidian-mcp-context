@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
-segment: smb
-source_created_at: 2023-11-11T16:58:00
-source_observed_at: 2023-11-11T18:00:00
-created_at: 2023-11-12T03:58:00
-updated_at: 2024-02-02T08:58:00
+status: churn-risk
+segment: enterprise
+source_created_at: 2023-11-13T16:02:00
+source_observed_at: 2023-11-13T17:54:00
+created_at: 2023-11-21T20:02:00
+updated_at: 2024-01-14T01:02:00
 tags: [#company]
 ---
 # Crescent Logistics
 
 ## Account Context
-Crescent Logistics is a smb account currently marked `active`.
+Crescent Logistics is a enterprise account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Zoe Diaz]] - Customer Success Manager
-- [[Omar Ivanov]] - Customer Success Manager
-- [[Elena Novak]] - Customer Success Manager
-- [[Victor Rostova]] - Customer Success Manager
-- [[Kai Walker]] - Customer Success Manager
+## Assigned Account Team
 
 ## Projects
 

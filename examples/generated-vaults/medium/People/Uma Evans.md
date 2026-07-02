@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Helio Labs]]"
-role: "VP Data Engineering"
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
 source_created_at: 2023-06-01T11:01:00
 source_observed_at: 2023-06-01T12:32:00
 created_at: 2023-06-03T10:01:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Uma Evans
 
 ## Role
-Uma Evans is the VP Data Engineering at [[Helio Labs]].
+Uma Evans is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Lantern 5]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Uma Evans]] #follow-up

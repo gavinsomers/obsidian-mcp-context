@@ -2,24 +2,24 @@
 type: meeting
 date: 2023-10-30
 project: "[[Project Summit 12]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2023-10-30T16:30:00
-source_observed_at: 2023-10-30T18:08:00
-created_at: 2023-10-30T21:18:00
-updated_at: 2023-10-31T10:18:00
+company: "[[Helio Labs]]"
+source_created_at: 2023-10-30T16:02:00
+source_observed_at: 2023-10-30T18:50:00
+created_at: 2023-11-04T19:02:00
+updated_at: 2023-11-04T22:02:00
 tags: [#meeting]
 ---
 # Project Summit 12 Handoff Readiness Sync 60
 
 ## Attendees
-- [[Amara Bennett]]
-- [[Kai Alvarez]]
-- [[Clara Alvarez]]
+- [[Elena Bennett]]
+- [[Jonah Alvarez]]
+- [[Uma Alvarez]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Summit 12]] at [[BrightWave Labs]].
-[[Amara Bennett]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Summit 12]] at [[Helio Labs]].
+[[Kai Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Summit 12]] to [[Amara Bennett]] #follow-up
+- [ ] Send recap for [[Project Summit 12]] to [[Kai Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

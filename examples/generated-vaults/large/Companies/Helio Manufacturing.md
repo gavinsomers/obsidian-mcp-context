@@ -1,22 +1,19 @@
 ---
 type: company
-status: pipeline
+status: churn-risk
 segment: enterprise
-source_created_at: 2023-07-26T09:01:00
-source_observed_at: 2023-07-26T10:38:00
-created_at: 2023-07-28T06:01:00
-updated_at: 2023-09-01T17:01:00
+source_created_at: 2023-07-28T08:55:00
+source_observed_at: 2023-07-28T10:36:00
+created_at: 2023-07-29T17:55:00
+updated_at: 2023-08-29T20:55:00
 tags: [#company]
 ---
 # Helio Manufacturing
 
 ## Account Context
-Helio Manufacturing is a enterprise account currently marked `pipeline`.
+Helio Manufacturing is a enterprise account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Xavier Bennett]] - Finance Sponsor
-- [[Marcus Grant]] - Finance Sponsor
-- [[Clara Lee]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

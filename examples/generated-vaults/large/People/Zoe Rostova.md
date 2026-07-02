@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Analytics]]"
-role: "Implementation Manager"
-source_created_at: 2023-09-23T10:16:00
-source_observed_at: 2023-09-23T11:26:00
-created_at: 2023-09-24T21:16:00
-updated_at: 2023-11-29T12:17:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-09-23T12:16:00
+source_observed_at: 2023-09-23T13:15:00
+created_at: 2023-09-25T12:16:00
+updated_at: 2023-11-05T21:16:00
 tags: [#person]
 ---
 # Zoe Rostova
 
 ## Role
-Zoe Rostova is the Implementation Manager at [[Cobalt Analytics]].
+Zoe Rostova is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Cobalt Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Zoe Rostova]] #follow-up

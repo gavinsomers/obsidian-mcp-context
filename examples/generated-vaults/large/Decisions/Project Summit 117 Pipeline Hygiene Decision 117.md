@@ -4,10 +4,10 @@ date: 2024-12-30
 status: active
 project: "[[Project Summit 117]]"
 company: "[[Pioneer Analytics]]"
-source_created_at: 2024-12-30T15:23:00
-source_observed_at: 2024-12-30T16:50:00
-created_at: 2024-12-30T18:07:00
-updated_at: 2024-12-31T10:07:00
+source_created_at: 2024-12-30T16:27:00
+source_observed_at: 2024-12-30T19:26:00
+created_at: 2024-12-30T20:44:00
+updated_at: 2024-12-30T21:44:00
 tags: [#decision]
 ---
 # Project Summit 117 Pipeline Hygiene Decision 117
@@ -17,7 +17,7 @@ Proceed with pipeline hygiene for [[Project Summit 117]].
 
 ## Context
 This decision applies to [[Pioneer Analytics]] and [[Project Summit 117]].
-It follows [[Project Summit 117 Contract Renewal Sync 117]].
+It follows [[Project Summit 117 Contract Renewal Sync 997]].
 It incorporates [[Project Summit 117 Security Review Research 337]].
 
 ## Supersession

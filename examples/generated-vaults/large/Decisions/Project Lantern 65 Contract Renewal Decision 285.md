@@ -4,10 +4,10 @@ date: 2024-06-26
 status: active
 project: "[[Project Lantern 65]]"
 company: "[[Helio Health]]"
-source_created_at: 2024-06-26T11:09:00
-source_observed_at: 2024-06-26T11:51:00
-created_at: 2024-06-26T12:22:00
-updated_at: 2024-06-26T13:22:00
+source_created_at: 2024-06-26T11:52:00
+source_observed_at: 2024-06-26T14:28:00
+created_at: 2024-06-26T14:33:00
+updated_at: 2024-06-26T18:33:00
 tags: [#decision]
 ---
 # Project Lantern 65 Contract Renewal Decision 285

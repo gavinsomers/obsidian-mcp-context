@@ -3,10 +3,10 @@ type: meeting
 date: 2023-06-03
 project: "[[Project Beacon 2]]"
 company: "[[Apex Labs]]"
-source_created_at: 2023-06-03T09:42:00
-source_observed_at: 2023-06-03T11:16:00
-created_at: 2023-06-03T15:31:00
-updated_at: 2023-06-03T19:31:00
+source_created_at: 2023-06-03T11:09:00
+source_observed_at: 2023-06-03T14:06:00
+created_at: 2023-06-03T14:11:00
+updated_at: 2023-06-04T04:11:00
 tags: [#meeting]
 ---
 # Project Beacon 2 Stakeholder Alignment Sync 2
@@ -14,12 +14,12 @@ tags: [#meeting]
 ## Attendees
 - [[Rachel Alvarez]]
 - [[Zoe Alvarez]]
-- [[Iris Alvarez]]
+- [[Marcus Alvarez]]
 
 ## Notes
 Stakeholder Alignment reviewed for [[Project Beacon 2]] at [[Apex Labs]].
-[[Iris Alvarez]] flagged follow-up work for the next operating review.
+[[Amara Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Beacon 2]] to [[Iris Alvarez]] #follow-up
+- [ ] Send recap for [[Project Beacon 2]] to [[Amara Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

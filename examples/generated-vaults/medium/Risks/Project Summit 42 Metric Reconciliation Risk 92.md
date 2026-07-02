@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Summit 42]]"
-source_created_at: 2024-08-12T08:18:00
-source_observed_at: 2024-08-12T09:19:00
-created_at: 2024-08-14T01:18:00
-updated_at: 2024-09-03T01:18:00
+source_created_at: 2024-08-12T16:43:00
+source_observed_at: 2024-08-12T19:29:00
+created_at: 2024-08-14T13:43:00
+updated_at: 2024-08-31T19:43:00
 tags: [#risk]
 ---
 # Project Summit 42 Metric Reconciliation Risk 92
 
 ## Risk
-Metric Reconciliation may affect [[Project Summit 42]] for [[Pioneer Labs]].
+Metric Reconciliation may affect [[Project Summit 42]] for [[Noble Labs]].
 
 ## Evidence
-- Raised after [[Project Summit 42 Stakeholder Alignment Sync 142]]
+- Raised after [[Project Summit 42 Stakeholder Alignment Sync 242]]
 
 ## Current State
-- Status: `open`
+- Status: `closed`
 - Owner: [[Omar Bennett]]
 - [ ] Reassess [[Project Summit 42 Metric Reconciliation Risk 92]] during the next review #risk

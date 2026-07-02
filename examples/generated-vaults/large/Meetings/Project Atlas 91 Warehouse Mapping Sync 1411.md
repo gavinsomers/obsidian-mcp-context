@@ -1,20 +1,20 @@
 ---
 type: meeting
-date: 2024-10-05
+date: 2025-10-13
 project: "[[Project Atlas 91]]"
 company: "[[Northstar Logistics]]"
-source_created_at: 2024-10-05T14:09:00
-source_observed_at: 2024-10-05T17:02:00
-created_at: 2024-10-05T17:07:00
-updated_at: 2024-10-06T16:07:00
+source_created_at: 2025-10-13T12:47:00
+source_observed_at: 2025-10-13T13:53:00
+created_at: 2025-10-13T15:08:00
+updated_at: 2025-10-13T18:08:00
 tags: [#meeting]
 ---
 # Project Atlas 91 Warehouse Mapping Sync 1411
 
 ## Attendees
-- [[Sam Morgan]]
-- [[Ben Ivanov]]
-- [[Yara Vance]]
+- [[David Lee]]
+- [[Ben Diaz]]
+- [[Priya Novak]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Atlas 91]] at [[Northstar Logistics]].

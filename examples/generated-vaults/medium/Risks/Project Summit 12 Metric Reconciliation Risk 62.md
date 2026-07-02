@@ -2,10 +2,10 @@
 type: risk
 status: mitigating
 project: "[[Project Summit 12]]"
-source_created_at: 2024-01-15T08:23:00
-source_observed_at: 2024-01-15T09:29:00
-created_at: 2024-01-15T14:23:00
-updated_at: 2024-01-18T17:23:00
+source_created_at: 2024-01-15T11:36:00
+source_observed_at: 2024-01-15T14:05:00
+created_at: 2024-01-17T00:36:00
+updated_at: 2024-02-05T05:36:00
 tags: [#risk]
 ---
 # Project Summit 12 Metric Reconciliation Risk 62
@@ -18,5 +18,5 @@ Metric Reconciliation may affect [[Project Summit 12]] for [[Pioneer Labs]].
 
 ## Current State
 - Status: `mitigating`
-- Owner: [[Omar Bennett]]
+- Owner: [[Kai Alvarez]]
 - [ ] Reassess [[Project Summit 12 Metric Reconciliation Risk 62]] during the next review #risk

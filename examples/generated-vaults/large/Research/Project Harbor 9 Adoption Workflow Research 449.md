@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Harbor 9]]"
 company: "[[Atlas Labs]]"
-source_created_at: 2025-07-01T09:51:00
-source_observed_at: 2025-07-01T11:20:00
-created_at: 2025-07-01T19:51:00
-updated_at: 2025-07-16T04:51:00
+source_created_at: 2025-07-01T16:05:00
+source_observed_at: 2025-07-01T17:25:00
+created_at: 2025-07-03T09:05:00
+updated_at: 2025-07-08T17:05:00
 tags: [#research]
 ---
 # Project Harbor 9 Adoption Workflow Research 449

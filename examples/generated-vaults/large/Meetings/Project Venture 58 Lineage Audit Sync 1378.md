@@ -3,23 +3,23 @@ type: meeting
 date: 2025-08-27
 project: "[[Project Venture 58]]"
 company: "[[Noble Manufacturing]]"
-source_created_at: 2025-08-27T10:56:00
-source_observed_at: 2025-08-27T11:35:00
-created_at: 2025-09-03T17:56:00
-updated_at: 2025-09-04T01:56:00
+source_created_at: 2025-08-27T11:24:00
+source_observed_at: 2025-08-27T11:43:00
+created_at: 2025-09-04T12:24:00
+updated_at: 2025-09-04T17:24:00
 tags: [#meeting]
 ---
 # Project Venture 58 Lineage Audit Sync 1378
 
 ## Attendees
-- [[Elena Chen]]
-- [[Rachel Usman]]
-- [[Amara Quinn]]
+- [[Wendy Haddad]]
+- [[Nadia Lee]]
+- [[Yara Haddad]]
 
 ## Notes
 Lineage Audit reviewed for [[Project Venture 58]] at [[Noble Manufacturing]].
-[[Kai Lee]] flagged follow-up work for the next operating review.
+[[Elena Chen]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 58]] to [[Kai Lee]] #follow-up
+- [ ] Send recap for [[Project Venture 58]] to [[Elena Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -4,10 +4,10 @@ date: 2025-05-08
 status: active
 project: "[[Project Compass 68]]"
 company: "[[Quantum Health]]"
-source_created_at: 2025-05-08T08:24:00
-source_observed_at: 2025-05-08T08:50:00
-created_at: 2025-05-08T12:05:00
-updated_at: 2025-05-09T04:05:00
+source_created_at: 2025-05-08T08:39:00
+source_observed_at: 2025-05-08T09:58:00
+created_at: 2025-05-08T10:25:00
+updated_at: 2025-05-08T23:25:00
 tags: [#decision]
 ---
 # Project Compass 68 Handoff Readiness Decision 508

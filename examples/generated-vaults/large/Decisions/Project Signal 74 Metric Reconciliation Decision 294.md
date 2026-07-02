@@ -4,10 +4,10 @@ date: 2024-07-09
 status: active
 project: "[[Project Signal 74]]"
 company: "[[Crescent Health]]"
-source_created_at: 2024-07-09T14:09:00
-source_observed_at: 2024-07-09T15:38:00
-created_at: 2024-07-09T17:48:00
-updated_at: 2024-07-10T05:48:00
+source_created_at: 2024-07-09T10:26:00
+source_observed_at: 2024-07-09T10:44:00
+created_at: 2024-07-09T14:35:00
+updated_at: 2024-07-09T15:35:00
 tags: [#decision]
 ---
 # Project Signal 74 Metric Reconciliation Decision 294

@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2026-01-16
+date: 2023-10-26
 status: active
 project: "[[Project Orbit 26]]"
 company: "[[Summit FinTech]]"
-source_created_at: 2026-01-16T13:57:00
-source_observed_at: 2026-01-16T16:03:00
-created_at: 2026-01-16T16:08:00
-updated_at: 2026-01-16T19:08:00
+source_created_at: 2023-10-26T12:50:00
+source_observed_at: 2023-10-26T15:30:00
+created_at: 2023-10-26T15:36:00
+updated_at: 2023-10-27T05:36:00
 tags: [#decision]
 ---
 # Project Orbit 26 Lineage Audit Decision 686

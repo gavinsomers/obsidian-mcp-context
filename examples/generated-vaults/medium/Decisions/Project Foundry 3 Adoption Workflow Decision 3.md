@@ -4,10 +4,10 @@ date: 2023-07-01
 status: active
 project: "[[Project Foundry 3]]"
 company: "[[Cobalt Labs]]"
-source_created_at: 2023-07-01T10:50:00
-source_observed_at: 2023-07-01T13:43:00
-created_at: 2023-07-01T13:48:00
-updated_at: 2023-07-02T08:48:00
+source_created_at: 2023-07-01T15:49:00
+source_observed_at: 2023-07-01T16:34:00
+created_at: 2023-07-01T19:26:00
+updated_at: 2023-07-02T01:26:00
 tags: [#decision]
 ---
 # Project Foundry 3 Adoption Workflow Decision 3

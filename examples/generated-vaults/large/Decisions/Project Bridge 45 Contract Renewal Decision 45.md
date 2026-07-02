@@ -4,10 +4,10 @@ date: 2024-01-12
 status: superseded
 project: "[[Project Bridge 45]]"
 company: "[[Keystone Retail]]"
-source_created_at: 2024-01-12T15:09:00
-source_observed_at: 2024-01-12T16:16:00
-created_at: 2024-01-19T18:09:00
-updated_at: 2024-01-19T22:09:00
+source_created_at: 2024-01-12T13:41:00
+source_observed_at: 2024-01-12T15:55:00
+created_at: 2024-01-12T19:11:00
+updated_at: 2024-01-12T20:11:00
 tags: [#decision]
 ---
 # Project Bridge 45 Contract Renewal Decision 45

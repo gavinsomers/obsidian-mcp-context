@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Beacon 167]]"
-company: "[[Apex Manufacturing]]"
-source_created_at: 2025-08-25T16:08:00
-source_observed_at: 2025-08-25T16:53:00
-created_at: 2025-08-29T17:08:00
-updated_at: 2025-10-05T04:08:00
+company: "[[Cobalt Manufacturing]]"
+source_created_at: 2025-08-25T11:41:00
+source_observed_at: 2025-08-25T14:32:00
+created_at: 2025-09-01T15:41:00
+updated_at: 2025-09-22T21:41:00
 tags: [#research]
 ---
 # Project Beacon 167 Security Review Research 387
 
 ## Research Summary
-Research on security review for [[Project Beacon 167]] and [[Apex Manufacturing]].
+Research on security review for [[Project Beacon 167]] and [[Cobalt Manufacturing]].
 
 ## Evidence
 - Interview notes from [[Jonah Grant]]

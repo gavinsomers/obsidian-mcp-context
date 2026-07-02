@@ -4,10 +4,10 @@ date: 2023-11-13
 status: active
 project: "[[Project Foundry 33]]"
 company: "[[Cobalt Retail]]"
-source_created_at: 2023-11-13T16:38:00
-source_observed_at: 2023-11-13T17:00:00
-created_at: 2023-11-13T22:18:00
-updated_at: 2023-11-14T15:18:00
+source_created_at: 2023-11-13T10:21:00
+source_observed_at: 2023-11-13T12:53:00
+created_at: 2023-11-13T15:55:00
+updated_at: 2023-11-14T10:55:00
 tags: [#decision]
 ---
 # Project Foundry 33 Adoption Workflow Decision 33

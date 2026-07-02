@@ -4,10 +4,10 @@ date: 2024-10-27
 status: active
 project: "[[Project Signal 104]]"
 company: "[[Crescent Logistics]]"
-source_created_at: 2024-10-27T10:31:00
-source_observed_at: 2024-10-27T11:54:00
-created_at: 2024-10-27T11:59:00
-updated_at: 2024-10-27T18:59:00
+source_created_at: 2024-10-27T09:42:00
+source_observed_at: 2024-10-27T12:08:00
+created_at: 2024-10-27T12:13:00
+updated_at: 2024-10-28T11:13:00
 tags: [#decision]
 ---
 # Project Signal 104 Metric Reconciliation Decision 324
@@ -17,7 +17,7 @@ Proceed with metric reconciliation for [[Project Signal 104]].
 
 ## Context
 This decision applies to [[Crescent Logistics]] and [[Project Signal 104]].
-It follows [[Project Signal 104 Finance Approval Sync 324]].
+It follows [[Project Signal 104 Finance Approval Sync 984]].
 It incorporates [[Project Signal 104 Handoff Readiness Research 104]].
 
 ## Supersession

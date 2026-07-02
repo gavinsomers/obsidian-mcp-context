@@ -4,10 +4,10 @@ date: 2024-12-26
 status: active
 project: "[[Project Orbit 116]]"
 company: "[[Summit Analytics]]"
-source_created_at: 2024-12-26T14:36:00
-source_observed_at: 2024-12-26T15:28:00
-created_at: 2024-12-26T15:33:00
-updated_at: 2024-12-27T04:33:00
+source_created_at: 2024-12-26T09:21:00
+source_observed_at: 2024-12-26T10:57:00
+created_at: 2024-12-26T11:35:00
+updated_at: 2024-12-26T13:35:00
 tags: [#decision]
 ---
 # Project Orbit 116 Lineage Audit Decision 336
@@ -17,7 +17,7 @@ Proceed with lineage audit for [[Project Orbit 116]].
 
 ## Context
 This decision applies to [[Summit Analytics]] and [[Project Orbit 116]].
-It follows [[Project Orbit 116 Metric Reconciliation Sync 336]].
+It follows [[Project Orbit 116 Metric Reconciliation Sync 1656]].
 It incorporates [[Project Orbit 116 Stakeholder Alignment Research 336]].
 
 ## Supersession

@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2025-06-24
+date: 2025-05-27
 project: "[[Project Bridge 120]]"
-company: "[[Keystone Analytics]]"
-source_created_at: 2025-06-24T13:46:00
-source_observed_at: 2025-06-24T14:57:00
-created_at: 2025-06-24T15:38:00
-updated_at: 2025-06-25T02:38:00
+company: "[[Northstar Labs]]"
+source_created_at: 2025-05-27T14:49:00
+source_observed_at: 2025-05-27T16:07:00
+created_at: 2025-05-27T17:13:00
+updated_at: 2025-05-28T09:13:00
 tags: [#meeting]
 ---
 # Project Bridge 120 Handoff Readiness Sync 560
 
 ## Attendees
-- [[Omar Evans]]
-- [[Kai Shah]]
-- [[Amara Xu]]
+- [[Uma Lee]]
+- [[Lina Patel]]
+- [[Jonah Grant]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 120]] at [[Keystone Analytics]].
-[[Amara Xu]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 120]] at [[Northstar Labs]].
+[[Omar Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 120]] to [[Amara Xu]] #follow-up
+- [ ] Send recap for [[Project Bridge 120]] to [[Omar Evans]] #follow-up
 - [x] Capture meeting notes in vault #ops

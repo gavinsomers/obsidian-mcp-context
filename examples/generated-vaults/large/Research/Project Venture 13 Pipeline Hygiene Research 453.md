@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Venture 13]]"
 company: "[[Noble Labs]]"
-source_created_at: 2024-02-01T12:48:00
-source_observed_at: 2024-02-01T14:22:00
-created_at: 2024-02-01T23:48:00
-updated_at: 2024-03-04T03:48:00
+source_created_at: 2025-07-08T10:28:00
+source_observed_at: 2025-07-08T13:09:00
+created_at: 2025-07-10T11:28:00
+updated_at: 2025-07-16T22:28:00
 tags: [#research]
 ---
 # Project Venture 13 Pipeline Hygiene Research 453

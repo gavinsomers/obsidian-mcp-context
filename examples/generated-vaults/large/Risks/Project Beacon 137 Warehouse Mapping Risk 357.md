@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Beacon 137]]"
-source_created_at: 2025-03-25T10:04:00
-source_observed_at: 2025-03-25T10:49:00
-created_at: 2025-03-27T04:04:00
-updated_at: 2025-05-02T15:04:00
+source_created_at: 2025-03-25T10:27:00
+source_observed_at: 2025-03-25T12:27:00
+created_at: 2025-03-26T20:27:00
+updated_at: 2025-04-30T20:27:00
 tags: [#risk]
 ---
 # Project Beacon 137 Warehouse Mapping Risk 357
 
 ## Risk
-Warehouse Mapping may affect [[Project Beacon 137]] for [[Apex FinTech]].
+Warehouse Mapping may affect [[Project Beacon 137]] for [[Cobalt FinTech]].
 
 ## Evidence
-- Raised after [[Project Beacon 137 Contract Renewal Sync 1897]]
+- Raised after [[Project Beacon 137 Contract Renewal Sync 1677]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `open`
 - Owner: [[Farah Foster]]
 - [ ] Reassess [[Project Beacon 137 Warehouse Mapping Risk 357]] during the next review #risk

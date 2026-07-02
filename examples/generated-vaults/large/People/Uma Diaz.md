@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Logistics]]"
-role: "SecOps Lead"
-source_created_at: 2023-05-23T15:09:00
-source_observed_at: 2023-05-23T16:39:00
-created_at: 2023-05-24T04:09:00
-updated_at: 2023-11-11T10:04:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-05-23T09:41:00
+source_observed_at: 2023-05-23T09:56:00
+created_at: 2023-05-25T15:41:00
+updated_at: 2023-08-03T21:41:00
 tags: [#person]
 ---
 # Uma Diaz
 
 ## Role
-Uma Diaz is the SecOps Lead at [[Atlas Logistics]].
+Uma Diaz is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Uma Diaz]] #follow-up

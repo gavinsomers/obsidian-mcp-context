@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: active
 company: "[[Atlas Media]]"
-source_created_at: 2024-06-20T15:59:00
-source_observed_at: 2024-06-20T17:35:00
-created_at: 2024-06-21T01:59:00
-updated_at: 2024-07-16T06:59:00
+source_created_at: 2024-06-20T09:53:00
+source_observed_at: 2024-06-20T11:25:00
+created_at: 2024-06-20T16:53:00
+updated_at: 2024-09-01T03:53:00
 tags: [#project]
 ---
 # Project Harbor 84
@@ -14,12 +14,12 @@ tags: [#project]
 Project Harbor 84 supports [[Atlas Media]] through research program.
 
 ## Stakeholders
-- [[Amara Rostova]]
-- [[Victor Haddad]]
-- [[Kai Morgan]]
-- [[Rachel Vance]]
+- [[Jonah Shah]]
+- [[Sam Vance]]
+- [[Ben Foster]]
+- [[Jonah Diaz]]
 
 ## Operating Notes
-- Owner: [[Amara Rostova]]
-- Status: `planning`
+- Owner: [[Elena Diaz]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Harbor 84]] #ops

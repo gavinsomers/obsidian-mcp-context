@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: planning
 company: "[[Keystone Manufacturing]]"
-source_created_at: 2024-02-23T12:19:00
-source_observed_at: 2024-02-23T12:52:00
-created_at: 2024-02-24T05:19:00
-updated_at: 2024-04-16T08:19:00
+source_created_at: 2024-02-23T15:12:00
+source_observed_at: 2024-02-23T16:29:00
+created_at: 2024-02-24T03:12:00
+updated_at: 2024-03-15T09:12:00
 tags: [#project]
 ---
 # Project Bridge 60
@@ -14,12 +14,12 @@ tags: [#project]
 Project Bridge 60 supports [[Keystone Manufacturing]] through operations admin.
 
 ## Stakeholders
-- [[Xavier Grant]]
-- [[Clara Quinn]]
-- [[Grace Chen]]
-- [[Tara Usman]]
+- [[Zoe Jenkins]]
+- [[Kai Bennett]]
+- [[Marcus Haddad]]
+- [[Farah Lee]]
 
 ## Operating Notes
-- Owner: [[Tara Usman]]
-- Status: `active`
+- Owner: [[Grace Chen]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Bridge 60]] #ops

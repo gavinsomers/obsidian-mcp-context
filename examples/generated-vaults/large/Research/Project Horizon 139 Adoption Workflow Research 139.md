@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Horizon 139]]"
-company: "[[BrightWave FinTech]]"
-source_created_at: 2025-04-11T08:07:00
-source_observed_at: 2025-04-11T10:38:00
-created_at: 2025-04-17T09:07:00
-updated_at: 2025-05-02T15:07:00
+company: "[[Helio FinTech]]"
+source_created_at: 2025-04-11T08:27:00
+source_observed_at: 2025-04-11T09:53:00
+created_at: 2025-04-12T12:27:00
+updated_at: 2025-04-19T22:27:00
 tags: [#research]
 ---
 # Project Horizon 139 Adoption Workflow Research 139
 
 ## Research Summary
-Research on adoption workflow for [[Project Horizon 139]] and [[BrightWave FinTech]].
+Research on adoption workflow for [[Project Horizon 139]] and [[Helio FinTech]].
 
 ## Evidence
-- Interview notes from [[Nadia Ortega]]
+- Interview notes from [[Hannah Foster]]
 - Related operating review: [[Project Horizon 139 Pipeline Hygiene Sync 799]]
 
 ## Follow Up

@@ -2,10 +2,10 @@
 type: risk
 status: closed
 project: "[[Project Venture 118]]"
-source_created_at: 2025-10-07T16:39:00
-source_observed_at: 2025-10-07T19:02:00
-created_at: 2025-10-09T06:39:00
-updated_at: 2025-11-11T10:39:00
+source_created_at: 2025-05-10T15:27:00
+source_observed_at: 2025-05-10T16:00:00
+created_at: 2025-05-12T10:27:00
+updated_at: 2025-06-10T18:27:00
 tags: [#risk]
 ---
 # Project Venture 118 Stakeholder Alignment Risk 558
@@ -14,9 +14,9 @@ tags: [#risk]
 Stakeholder Alignment may affect [[Project Venture 118]] for [[Noble Analytics]].
 
 ## Evidence
-- Raised after [[Project Venture 118 Lineage Audit Sync 558]]
+- Raised after [[Project Venture 118 Lineage Audit Sync 1438]]
 
 ## Current State
 - Status: `closed`
-- Owner: [[Tara Novak]]
+- Owner: [[Marcus Evans]]
 - [ ] Reassess [[Project Venture 118 Stakeholder Alignment Risk 558]] during the next review #risk

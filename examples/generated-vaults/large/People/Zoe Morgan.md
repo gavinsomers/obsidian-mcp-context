@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Logistics]]"
-role: "Finance Sponsor"
-source_created_at: 2023-08-11T14:26:00
-source_observed_at: 2023-08-11T15:06:00
-created_at: 2023-08-12T06:26:00
-updated_at: 2023-11-09T17:45:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-08-11T13:09:00
+source_observed_at: 2023-08-11T13:40:00
+created_at: 2023-08-12T16:09:00
+updated_at: 2023-09-13T20:09:00
 tags: [#person]
 ---
 # Zoe Morgan
 
 ## Role
-Zoe Morgan is the Finance Sponsor at [[Quantum Logistics]].
+Zoe Morgan is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Zoe Morgan]] #follow-up

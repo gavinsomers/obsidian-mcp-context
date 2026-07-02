@@ -1,24 +1,25 @@
 ---
 type: meeting
-date: 2025-01-17
+date: 2023-10-26
 project: "[[Project Compass 8]]"
 company: "[[Quantum Labs]]"
-source_created_at: 2025-01-17T11:07:00
-source_observed_at: 2025-01-17T12:30:00
-created_at: 2025-01-17T15:05:00
-updated_at: 2025-01-18T02:05:00
+source_created_at: 2023-10-26T15:21:00
+source_observed_at: 2023-10-26T15:55:00
+created_at: 2023-11-03T17:21:00
+updated_at: 2023-11-03T20:21:00
 tags: [#meeting]
 ---
 # Project Compass 8 Lineage Audit Sync 448
 
 ## Attendees
-- [[Grace Alvarez]]
-- [[Xavier Evans]]
+- [[Amara Grant]]
+- [[Wendy Foster]]
+- [[Tara Alvarez]]
 
 ## Notes
 Lineage Audit reviewed for [[Project Compass 8]] at [[Quantum Labs]].
-[[Xavier Evans]] flagged follow-up work for the next operating review.
+[[Grace Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 8]] to [[Xavier Evans]] #follow-up
+- [ ] Send recap for [[Project Compass 8]] to [[Grace Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

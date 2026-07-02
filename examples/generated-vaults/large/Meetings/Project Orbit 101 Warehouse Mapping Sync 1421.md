@@ -1,20 +1,20 @@
 ---
 type: meeting
-date: 2025-10-27
+date: 2025-03-07
 project: "[[Project Orbit 101]]"
 company: "[[Summit Logistics]]"
-source_created_at: 2025-10-27T14:25:00
-source_observed_at: 2025-10-27T15:52:00
-created_at: 2025-10-27T16:08:00
-updated_at: 2025-10-27T20:08:00
+source_created_at: 2025-03-07T15:21:00
+source_observed_at: 2025-03-07T17:11:00
+created_at: 2025-03-07T20:01:00
+updated_at: 2025-03-08T19:01:00
 tags: [#meeting]
 ---
 # Project Orbit 101 Warehouse Mapping Sync 1421
 
 ## Attendees
-- [[Lina Ivanov]]
-- [[Ben Novak]]
-- [[Hannah Walker]]
+- [[Omar Ortega]]
+- [[Omar Novak]]
+- [[Sam Patel]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Orbit 101]] at [[Summit Logistics]].

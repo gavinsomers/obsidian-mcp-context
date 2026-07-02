@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Health]]"
-role: "Operations Lead"
-source_created_at: 2023-06-24T13:31:00
-source_observed_at: 2023-06-24T15:36:00
-created_at: 2023-06-26T09:31:00
-updated_at: 2023-09-20T09:37:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-06-24T11:04:00
+source_observed_at: 2023-06-24T12:21:00
+created_at: 2023-06-24T15:04:00
+updated_at: 2023-08-03T23:04:00
 tags: [#person]
 ---
 # Jonah Haddad
 
 ## Role
-Jonah Haddad is the Operations Lead at [[Noble Health]].
+Jonah Haddad is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Noble Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Jonah Haddad]] #follow-up

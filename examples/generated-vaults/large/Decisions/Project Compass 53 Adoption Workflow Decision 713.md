@@ -4,10 +4,10 @@ date: 2026-02-24
 status: active
 project: "[[Project Compass 53]]"
 company: "[[Quantum Manufacturing]]"
-source_created_at: 2026-02-24T10:15:00
-source_observed_at: 2026-02-24T10:38:00
-created_at: 2026-02-24T13:16:00
-updated_at: 2026-02-25T08:16:00
+source_created_at: 2026-02-24T12:43:00
+source_observed_at: 2026-02-24T15:35:00
+created_at: 2026-02-24T15:55:00
+updated_at: 2026-02-24T21:55:00
 tags: [#decision]
 ---
 # Project Compass 53 Adoption Workflow Decision 713

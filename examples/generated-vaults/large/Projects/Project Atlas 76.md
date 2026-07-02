@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: planning
 company: "[[Northstar Media]]"
-source_created_at: 2024-05-13T15:24:00
-source_observed_at: 2024-05-13T16:07:00
-created_at: 2024-05-14T06:24:00
-updated_at: 2024-06-24T10:24:00
+source_created_at: 2024-05-13T15:48:00
+source_observed_at: 2024-05-13T16:36:00
+created_at: 2024-05-15T11:48:00
+updated_at: 2024-07-24T11:48:00
 tags: [#project]
 ---
 # Project Atlas 76
@@ -14,12 +14,12 @@ tags: [#project]
 Project Atlas 76 supports [[Northstar Media]] through consulting delivery.
 
 ## Stakeholders
-- [[Marcus Haddad]]
-- [[Xavier Chen]]
-- [[Clara Morgan]]
-- [[Iris Vance]]
+- [[Jonah Usman]]
+- [[Farah Patel]]
+- [[Clara Walker]]
+- [[Priya Evans]]
 
 ## Operating Notes
 - Owner: [[Xavier Chen]]
-- Status: `active`
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Atlas 76]] #ops

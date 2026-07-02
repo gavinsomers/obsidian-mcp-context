@@ -4,10 +4,10 @@ date: 2024-08-06
 status: active
 project: "[[Project Compass 8]]"
 company: "[[Quantum Labs]]"
-source_created_at: 2024-08-06T16:21:00
-source_observed_at: 2024-08-06T18:49:00
-created_at: 2024-08-06T18:54:00
-updated_at: 2024-08-07T08:54:00
+source_created_at: 2024-08-06T13:03:00
+source_observed_at: 2024-08-06T16:02:00
+created_at: 2024-08-06T16:07:00
+updated_at: 2024-08-07T13:07:00
 tags: [#decision]
 ---
 # Project Compass 8 Handoff Readiness Decision 108

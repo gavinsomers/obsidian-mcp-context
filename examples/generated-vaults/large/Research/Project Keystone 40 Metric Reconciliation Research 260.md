@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Keystone 40]]"
 company: "[[Harbor Retail]]"
-source_created_at: 2024-06-14T11:22:00
-source_observed_at: 2024-06-14T11:43:00
-created_at: 2024-06-14T17:22:00
-updated_at: 2024-07-12T17:22:00
+source_created_at: 2024-08-06T09:30:00
+source_observed_at: 2024-08-06T10:38:00
+created_at: 2024-08-07T16:30:00
+updated_at: 2024-09-17T18:30:00
 tags: [#research]
 ---
 # Project Keystone 40 Metric Reconciliation Research 260
@@ -14,8 +14,8 @@ tags: [#research]
 Research on metric reconciliation for [[Project Keystone 40]] and [[Harbor Retail]].
 
 ## Evidence
-- Interview notes from [[Zoe Tan]]
-- Related operating review: [[Project Keystone 40 Handoff Readiness Sync 1140]]
+- Interview notes from [[Marcus Bennett]]
+- Related operating review: [[Project Keystone 40 Handoff Readiness Sync 260]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Keystone 40]] #research

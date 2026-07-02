@@ -4,10 +4,10 @@ date: 2026-01-09
 status: active
 project: "[[Project Pipeline 22]]"
 company: "[[Vanguard FinTech]]"
-source_created_at: 2026-01-09T16:42:00
-source_observed_at: 2026-01-09T17:18:00
-created_at: 2026-01-09T18:18:00
-updated_at: 2026-01-10T11:18:00
+source_created_at: 2026-01-09T16:05:00
+source_observed_at: 2026-01-09T18:44:00
+created_at: 2026-01-09T21:37:00
+updated_at: 2026-01-10T12:37:00
 tags: [#decision]
 ---
 # Project Pipeline 22 Finance Approval Decision 682

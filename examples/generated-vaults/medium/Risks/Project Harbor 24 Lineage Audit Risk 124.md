@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Harbor 24]]"
-source_created_at: 2024-06-23T12:00:00
-source_observed_at: 2024-06-23T14:07:00
-created_at: 2024-06-24T21:00:00
-updated_at: 2024-07-31T21:00:00
+source_created_at: 2024-05-10T08:06:00
+source_observed_at: 2024-05-10T10:42:00
+created_at: 2024-05-12T02:06:00
+updated_at: 2024-06-17T03:06:00
 tags: [#risk]
 ---
 # Project Harbor 24 Lineage Audit Risk 124
@@ -14,9 +14,9 @@ tags: [#risk]
 Lineage Audit may affect [[Project Harbor 24]] for [[Atlas FinTech]].
 
 ## Evidence
-- Raised after [[Project Harbor 24 Finance Approval Sync 274]]
+- Raised after [[Project Harbor 24 Finance Approval Sync 174]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Iris Evans]]
+- Owner: [[Xavier Alvarez]]
 - [ ] Reassess [[Project Harbor 24 Lineage Audit Risk 124]] during the next review #risk

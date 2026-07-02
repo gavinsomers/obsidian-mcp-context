@@ -3,18 +3,18 @@ type: meeting
 date: 2023-09-22
 project: "[[Project Atlas 1]]"
 company: "[[Northstar Labs]]"
-source_created_at: 2023-09-22T08:48:00
-source_observed_at: 2023-09-22T10:06:00
-created_at: 2023-09-22T10:27:00
-updated_at: 2023-09-23T02:27:00
+source_created_at: 2023-09-22T11:45:00
+source_observed_at: 2023-09-22T12:35:00
+created_at: 2023-09-22T12:40:00
+updated_at: 2023-09-23T06:40:00
 tags: [#meeting]
 ---
 # Project Atlas 1 Pipeline Hygiene Sync 49
 
 ## Attendees
-- [[Yara Alvarez]]
-- [[Hannah Alvarez]]
-- [[Alex Alvarez]]
+- [[Ben Alvarez]]
+- [[Uma Alvarez]]
+- [[Nadia Alvarez]]
 
 ## Notes
 Pipeline Hygiene reviewed for [[Project Atlas 1]] at [[Northstar Labs]].

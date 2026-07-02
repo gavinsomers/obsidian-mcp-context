@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Pioneer Manufacturing]]"
-role: "Operations Lead"
-source_created_at: 2023-05-09T16:03:00
-source_observed_at: 2023-05-09T17:52:00
-created_at: 2023-05-10T20:03:00
-updated_at: 2023-08-19T16:15:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-05-09T13:01:00
+source_observed_at: 2023-05-09T14:37:00
+created_at: 2023-05-10T10:01:00
+updated_at: 2023-07-02T14:01:00
 tags: [#person]
 ---
 # David Chen
 
 ## Role
-David Chen is the Operations Lead at [[Pioneer Manufacturing]].
+David Chen is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Pioneer Manufacturing]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Horizon 4]] ([[BrightWave Labs]])
+- Managing/Supporting [[Project Lantern 5]] ([[Helio Labs]])
 - [ ] Confirm next update with [[David Chen]] #follow-up

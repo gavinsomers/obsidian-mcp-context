@@ -4,10 +4,10 @@ date: 2023-10-06
 status: active
 project: "[[Project Keystone 25]]"
 company: "[[Harbor FinTech]]"
-source_created_at: 2023-10-06T09:50:00
-source_observed_at: 2023-10-06T10:29:00
-created_at: 2023-10-06T12:34:00
-updated_at: 2023-10-06T20:34:00
+source_created_at: 2023-10-06T13:00:00
+source_observed_at: 2023-10-06T13:20:00
+created_at: 2023-10-06T16:00:00
+updated_at: 2023-10-06T21:00:00
 tags: [#decision]
 ---
 # Project Keystone 25 Contract Renewal Decision 25

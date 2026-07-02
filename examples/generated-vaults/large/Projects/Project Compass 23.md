@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Quantum FinTech]]"
-source_created_at: 2023-08-25T16:54:00
-source_observed_at: 2023-08-25T17:44:00
-created_at: 2023-08-26T19:54:00
-updated_at: 2023-10-13T02:54:00
+source_created_at: 2023-08-25T12:16:00
+source_observed_at: 2023-08-25T12:38:00
+created_at: 2023-08-27T02:16:00
+updated_at: 2023-10-31T05:16:00
 tags: [#project]
 ---
 # Project Compass 23
@@ -14,12 +14,12 @@ tags: [#project]
 Project Compass 23 supports [[Quantum FinTech]] through customer success.
 
 ## Stakeholders
-- [[Wendy Alvarez]]
-- [[Lina Foster]]
-- [[Ben Kim]]
+- [[Iris Alvarez]]
+- [[Clara Haddad]]
+- [[Ben Grant]]
+- [[Nadia Diaz]]
 
 ## Operating Notes
-- Owner: [[Lina Foster]]
-- Status: `closed`
-- Closed at: `2023-10-23`
+- Owner: [[Wendy Alvarez]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Compass 23]] #ops

@@ -3,18 +3,18 @@ type: meeting
 date: 2024-10-07
 project: "[[Project Orbit 11]]"
 company: "[[Summit Labs]]"
-source_created_at: 2024-10-07T08:51:00
-source_observed_at: 2024-10-07T09:24:00
-created_at: 2024-10-07T13:02:00
-updated_at: 2024-10-08T09:02:00
+source_created_at: 2024-10-07T14:32:00
+source_observed_at: 2024-10-07T15:09:00
+created_at: 2024-10-07T18:59:00
+updated_at: 2024-10-08T04:59:00
 tags: [#meeting]
 ---
 # Project Orbit 11 Warehouse Mapping Sync 311
 
 ## Attendees
-- [[Sam Chen]]
-- [[Nadia Bennett]]
-- [[Jonah Alvarez]]
+- [[Kai Diaz]]
+- [[Tara Chen]]
+- [[Rachel Alvarez]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Orbit 11]] at [[Summit Labs]].

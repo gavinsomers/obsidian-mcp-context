@@ -1,7 +1,7 @@
 ---
 type: project
 status: closed
-company: "[[Apex Labs]]"
+company: "[[Cobalt Labs]]"
 source_created_at: 2024-04-09T09:08:00
 source_observed_at: 2024-04-09T09:42:00
 created_at: 2024-04-10T08:08:00
@@ -11,13 +11,13 @@ tags: [#project]
 # Project Beacon 32
 
 ## Overview
-Project Beacon 32 supports [[Apex Labs]] through sales pipeline.
+Project Beacon 32 supports [[Cobalt Labs]] through sales pipeline.
 
 ## Stakeholders
-- [[Marcus Diaz]]
-- [[Iris Chen]]
-- [[Elena Bennett]]
-- [[Rachel Evans]]
+- [[Clara Diaz]]
+- [[Iris Evans]]
+- [[Zoe Evans]]
+- [[Elena Evans]]
 
 ## Operating Notes
 - Owner: [[Elena Bennett]]

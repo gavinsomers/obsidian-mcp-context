@@ -3,17 +3,18 @@ type: meeting
 date: 2023-06-29
 project: "[[Project Harbor 9]]"
 company: "[[Atlas Labs]]"
-source_created_at: 2023-06-29T11:56:00
-source_observed_at: 2023-06-29T14:21:00
-created_at: 2023-06-29T16:47:00
-updated_at: 2023-06-30T15:47:00
+source_created_at: 2023-06-29T15:36:00
+source_observed_at: 2023-06-29T15:58:00
+created_at: 2023-06-29T17:01:00
+updated_at: 2023-06-30T11:01:00
 tags: [#meeting]
 ---
 # Project Harbor 9 Pipeline Hygiene Sync 1549
 
 ## Attendees
-- [[Hannah Alvarez]]
-- [[Yara Evans]]
+- [[Jonah Alvarez]]
+- [[Sam Foster]]
+- [[Nadia Evans]]
 
 ## Notes
 Pipeline Hygiene reviewed for [[Project Harbor 9]] at [[Atlas Labs]].

@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-01-03
 project: "[[Project Beacon 122]]"
-company: "[[Apex Labs]]"
-source_created_at: 2025-01-03T16:27:00
-source_observed_at: 2025-01-03T17:02:00
-created_at: 2025-01-03T18:27:00
-updated_at: 2025-01-03T20:27:00
+company: "[[Cobalt Labs]]"
+source_created_at: 2025-01-03T15:08:00
+source_observed_at: 2025-01-03T17:17:00
+created_at: 2025-01-03T17:22:00
+updated_at: 2025-01-04T16:22:00
 tags: [#meeting]
 ---
 # Project Beacon 122 Stakeholder Alignment Sync 1662
 
 ## Attendees
-- [[Grace Jenkins]]
-- [[Amara Alvarez]]
-- [[Rachel Evans]]
+- [[Marcus Ortega]]
+- [[Hannah Evans]]
+- [[Rachel Alvarez]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 122]] at [[Apex Labs]].
+Stakeholder Alignment reviewed for [[Project Beacon 122]] at [[Cobalt Labs]].
 [[Rachel Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items

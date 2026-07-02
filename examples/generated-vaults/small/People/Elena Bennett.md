@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Labs]]"
-role: "Customer Success Manager"
-source_created_at: 2023-05-01T13:49:00
-source_observed_at: 2023-05-01T14:32:00
-created_at: 2023-05-02T07:49:00
-updated_at: 2023-06-05T18:49:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-05-01T11:25:00
+source_observed_at: 2023-05-01T12:59:00
+created_at: 2023-05-01T17:25:00
+updated_at: 2023-06-19T22:25:00
 tags: [#person]
 ---
 # Elena Bennett
 
 ## Role
-Elena Bennett is the Customer Success Manager at [[Quantum Labs]].
+Elena Bennett is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum Labs]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Foundry 3]] ([[Cobalt Labs]])
 - [ ] Confirm next update with [[Elena Bennett]] #follow-up

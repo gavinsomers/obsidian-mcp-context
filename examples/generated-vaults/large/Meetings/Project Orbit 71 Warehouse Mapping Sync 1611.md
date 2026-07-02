@@ -3,18 +3,18 @@ type: meeting
 date: 2024-04-27
 project: "[[Project Orbit 71]]"
 company: "[[Summit Health]]"
-source_created_at: 2024-04-27T15:47:00
-source_observed_at: 2024-04-27T17:33:00
-created_at: 2024-04-27T21:00:00
-updated_at: 2024-04-28T10:00:00
+source_created_at: 2024-04-27T15:43:00
+source_observed_at: 2024-04-27T16:30:00
+created_at: 2024-04-27T18:56:00
+updated_at: 2024-04-28T05:56:00
 tags: [#meeting]
 ---
 # Project Orbit 71 Warehouse Mapping Sync 1611
 
 ## Attendees
-- [[Sam Chen]]
-- [[David Vance]]
-- [[Yara Lee]]
+- [[Priya Chen]]
+- [[Farah Ortega]]
+- [[Kai Ortega]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Orbit 71]] at [[Summit Health]].

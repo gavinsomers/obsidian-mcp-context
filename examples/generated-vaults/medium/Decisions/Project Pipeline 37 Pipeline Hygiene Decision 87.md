@@ -3,11 +3,11 @@ type: decision
 date: 2024-07-01
 status: active
 project: "[[Project Pipeline 37]]"
-company: "[[Vanguard Labs]]"
-source_created_at: 2024-07-01T16:36:00
-source_observed_at: 2024-07-01T17:03:00
-created_at: 2024-07-02T19:36:00
-updated_at: 2024-07-03T18:36:00
+company: "[[Quantum Labs]]"
+source_created_at: 2024-07-01T08:43:00
+source_observed_at: 2024-07-01T10:58:00
+created_at: 2024-07-01T12:15:00
+updated_at: 2024-07-02T03:15:00
 tags: [#decision]
 ---
 # Project Pipeline 37 Pipeline Hygiene Decision 87
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Pipeline 37]].
 
 ## Context
-This decision applies to [[Vanguard Labs]] and [[Project Pipeline 37]].
-It follows [[Project Pipeline 37 Contract Renewal Sync 237]].
-It incorporates [[Project Pipeline 37 Security Review Research 87]].
+This decision applies to [[Quantum Labs]] and [[Project Pipeline 37]].
+It follows [[Project Pipeline 37 Contract Renewal Sync 87]].
+It incorporates [[Project Pipeline 37 Security Review Research 37]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

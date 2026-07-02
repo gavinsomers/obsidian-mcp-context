@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Media]]"
-role: "Implementation Manager"
-source_created_at: 2023-05-16T13:52:00
-source_observed_at: 2023-05-16T16:00:00
-created_at: 2023-05-18T07:52:00
-updated_at: 2023-09-26T09:32:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-05-16T08:51:00
+source_observed_at: 2023-05-16T11:34:00
+created_at: 2023-05-17T06:51:00
+updated_at: 2023-06-17T17:51:00
 tags: [#person]
 ---
 # Xavier Chen
 
 ## Role
-Xavier Chen is the Implementation Manager at [[Northstar Media]].
+Xavier Chen is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Xavier Chen]] #follow-up

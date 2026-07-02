@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-06-14
 project: "[[Project Lantern 155]]"
-company: "[[Helio Retail]]"
-source_created_at: 2025-06-14T15:02:00
-source_observed_at: 2025-06-14T17:21:00
-created_at: 2025-06-14T17:26:00
-updated_at: 2025-06-14T19:26:00
+company: "[[Meridian Retail]]"
+source_created_at: 2025-06-14T12:35:00
+source_observed_at: 2025-06-14T13:43:00
+created_at: 2025-06-14T14:37:00
+updated_at: 2025-06-15T01:37:00
 tags: [#meeting]
 ---
 # Project Lantern 155 Adoption Workflow Sync 1035
 
 ## Attendees
-- [[Nadia Kim]]
-- [[David Patel]]
-- [[Hannah Bennett]]
+- [[Omar Rostova]]
+- [[Marcus Kim]]
+- [[Ben Patel]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Lantern 155]] at [[Helio Retail]].
-[[Uma Tan]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Lantern 155]] at [[Meridian Retail]].
+[[Yara Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 155]] to [[Uma Tan]] #follow-up
+- [ ] Send recap for [[Project Lantern 155]] to [[Yara Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-04-26
 project: "[[Project Keystone 145]]"
-company: "[[Harbor FinTech]]"
-source_created_at: 2025-04-26T14:34:00
-source_observed_at: 2025-04-26T15:47:00
-created_at: 2025-04-26T19:57:00
-updated_at: 2025-04-27T09:57:00
+company: "[[Summit FinTech]]"
+source_created_at: 2025-04-26T16:59:00
+source_observed_at: 2025-04-26T18:03:00
+created_at: 2025-04-26T18:11:00
+updated_at: 2025-04-26T20:11:00
 tags: [#meeting]
 ---
 # Project Keystone 145 Adoption Workflow Sync 1245
 
 ## Attendees
-- [[David Kim]]
-- [[Uma Ortega]]
-- [[Yara Alvarez]]
+- [[Amara Vance]]
+- [[Kai Quinn]]
+- [[Xavier Grant]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Keystone 145]] at [[Harbor FinTech]].
-[[Jonah Tan]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Keystone 145]] at [[Summit FinTech]].
+[[Nadia Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 145]] to [[Jonah Tan]] #follow-up
+- [ ] Send recap for [[Project Keystone 145]] to [[Nadia Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

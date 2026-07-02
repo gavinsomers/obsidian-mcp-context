@@ -4,10 +4,10 @@ date: 2026-04-20
 status: active
 project: "[[Project Beacon 92]]"
 company: "[[Apex Logistics]]"
-source_created_at: 2026-04-20T10:51:00
-source_observed_at: 2026-04-20T11:28:00
-created_at: 2026-04-20T11:33:00
-updated_at: 2026-04-20T13:33:00
+source_created_at: 2026-04-20T14:36:00
+source_observed_at: 2026-04-20T16:56:00
+created_at: 2026-04-20T17:50:00
+updated_at: 2026-04-21T11:50:00
 tags: [#decision]
 ---
 # Project Beacon 92 Finance Approval Decision 752

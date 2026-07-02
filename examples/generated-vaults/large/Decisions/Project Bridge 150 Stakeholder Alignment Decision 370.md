@@ -3,11 +3,11 @@ type: decision
 date: 2025-06-09
 status: active
 project: "[[Project Bridge 150]]"
-company: "[[Keystone FinTech]]"
-source_created_at: 2025-06-09T09:53:00
-source_observed_at: 2025-06-09T12:02:00
-created_at: 2025-06-09T12:07:00
-updated_at: 2025-06-10T09:07:00
+company: "[[Northstar Retail]]"
+source_created_at: 2025-06-09T16:36:00
+source_observed_at: 2025-06-09T18:58:00
+created_at: 2025-06-09T21:25:00
+updated_at: 2025-06-10T09:25:00
 tags: [#decision]
 ---
 # Project Bridge 150 Stakeholder Alignment Decision 370
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 150]].
 
 ## Context
-This decision applies to [[Keystone FinTech]] and [[Project Bridge 150]].
-It follows [[Project Bridge 150 Handoff Readiness Sync 1690]].
+This decision applies to [[Northstar Retail]] and [[Project Bridge 150]].
+It follows [[Project Bridge 150 Handoff Readiness Sync 1250]].
 It incorporates [[Project Bridge 150 Metric Reconciliation Research 150]].
 
 ## Supersession

@@ -3,11 +3,11 @@ type: decision
 date: 2025-08-07
 status: active
 project: "[[Project Summit 132]]"
-company: "[[Pioneer Labs]]"
-source_created_at: 2025-08-07T08:24:00
-source_observed_at: 2025-08-07T10:03:00
-created_at: 2025-08-07T13:56:00
-updated_at: 2025-08-07T23:56:00
+company: "[[Noble Labs]]"
+source_created_at: 2025-08-07T11:58:00
+source_observed_at: 2025-08-07T13:45:00
+created_at: 2025-08-07T17:51:00
+updated_at: 2025-08-08T14:51:00
 tags: [#decision]
 ---
 # Project Summit 132 Finance Approval Decision 572
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with finance approval for [[Project Summit 132]].
 
 ## Context
-This decision applies to [[Pioneer Labs]] and [[Project Summit 132]].
+This decision applies to [[Noble Labs]] and [[Project Summit 132]].
 It follows [[Project Summit 132 Stakeholder Alignment Sync 572]].
 It incorporates [[Project Summit 132 Lineage Audit Research 132]].
 

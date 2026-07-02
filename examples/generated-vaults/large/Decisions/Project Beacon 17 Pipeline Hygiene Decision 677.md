@@ -4,10 +4,10 @@ date: 2026-01-02
 status: active
 project: "[[Project Beacon 17]]"
 company: "[[Apex FinTech]]"
-source_created_at: 2026-01-02T09:01:00
-source_observed_at: 2026-01-02T11:44:00
-created_at: 2026-01-02T13:23:00
-updated_at: 2026-01-02T18:23:00
+source_created_at: 2026-01-02T13:03:00
+source_observed_at: 2026-01-02T15:29:00
+created_at: 2026-01-07T13:03:00
+updated_at: 2026-01-07T19:03:00
 tags: [#decision]
 ---
 # Project Beacon 17 Pipeline Hygiene Decision 677

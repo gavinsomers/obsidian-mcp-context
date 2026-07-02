@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Pioneer Manufacturing]]"
-role: "Operations Lead"
-source_created_at: 2023-09-06T09:28:00
-source_observed_at: 2023-09-06T11:47:00
-created_at: 2023-09-14T11:28:00
-updated_at: 2023-10-22T16:28:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-09-06T15:39:00
+source_observed_at: 2023-09-06T17:20:00
+created_at: 2023-09-07T05:39:00
+updated_at: 2023-11-28T06:39:00
 tags: [#person]
 ---
 # Alex Quinn
 
 ## Role
-Alex Quinn is the Operations Lead at [[Pioneer Manufacturing]].
+Alex Quinn is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Pioneer Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Alex Quinn]] #follow-up

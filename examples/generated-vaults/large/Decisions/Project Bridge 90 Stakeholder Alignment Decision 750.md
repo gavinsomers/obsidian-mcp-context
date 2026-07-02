@@ -4,10 +4,10 @@ date: 2026-04-16
 status: active
 project: "[[Project Bridge 90]]"
 company: "[[Keystone Media]]"
-source_created_at: 2026-04-16T16:45:00
-source_observed_at: 2026-04-16T19:26:00
-created_at: 2026-04-16T20:48:00
-updated_at: 2026-04-17T11:48:00
+source_created_at: 2026-04-16T12:06:00
+source_observed_at: 2026-04-16T14:04:00
+created_at: 2026-04-16T15:29:00
+updated_at: 2026-04-17T06:29:00
 tags: [#decision]
 ---
 # Project Bridge 90 Stakeholder Alignment Decision 750

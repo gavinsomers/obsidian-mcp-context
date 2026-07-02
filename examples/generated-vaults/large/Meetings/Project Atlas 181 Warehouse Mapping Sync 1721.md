@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-10-19
 project: "[[Project Atlas 181]]"
-company: "[[Northstar Health]]"
-source_created_at: 2025-10-19T14:35:00
-source_observed_at: 2025-10-19T15:24:00
-created_at: 2025-10-19T16:02:00
-updated_at: 2025-10-19T19:02:00
+company: "[[Apex Health]]"
+source_created_at: 2025-10-19T13:12:00
+source_observed_at: 2025-10-19T14:25:00
+created_at: 2025-10-19T14:30:00
+updated_at: 2025-10-19T20:30:00
 tags: [#meeting]
 ---
 # Project Atlas 181 Warehouse Mapping Sync 1721
 
 ## Attendees
-- [[Uma Usman]]
-- [[David Quinn]]
-- [[Hannah Chen]]
+- [[Omar Rostova]]
+- [[Priya Jenkins]]
+- [[Hannah Bennett]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 181]] at [[Northstar Health]].
-[[Hannah Chen]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 181]] at [[Apex Health]].
+[[Yara Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Atlas 181]] to [[Hannah Chen]] #follow-up
+- [ ] Send recap for [[Project Atlas 181]] to [[Yara Grant]] #follow-up
 - [x] Capture meeting notes in vault #ops

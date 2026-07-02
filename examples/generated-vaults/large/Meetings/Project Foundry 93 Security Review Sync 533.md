@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2025-05-16
+date: 2025-02-05
 project: "[[Project Foundry 93]]"
 company: "[[Cobalt Logistics]]"
-source_created_at: 2025-05-16T11:32:00
-source_observed_at: 2025-05-16T14:19:00
-created_at: 2025-05-16T15:34:00
-updated_at: 2025-05-17T05:34:00
+source_created_at: 2025-02-05T09:06:00
+source_observed_at: 2025-02-05T09:53:00
+created_at: 2025-02-05T14:12:00
+updated_at: 2025-02-05T18:12:00
 tags: [#meeting]
 ---
 # Project Foundry 93 Security Review Sync 533
 
 ## Attendees
-- [[Alex Walker]]
-- [[David Ivanov]]
-- [[Uma Morgan]]
+- [[Rachel Diaz]]
+- [[Priya Grant]]
+- [[Uma Tan]]
 
 ## Notes
 Security Review reviewed for [[Project Foundry 93]] at [[Cobalt Logistics]].
-[[Uma Morgan]] flagged follow-up work for the next operating review.
+[[Nadia Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 93]] to [[Uma Morgan]] #follow-up
+- [ ] Send recap for [[Project Foundry 93]] to [[Nadia Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

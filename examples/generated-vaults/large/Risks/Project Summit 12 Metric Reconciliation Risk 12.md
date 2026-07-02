@@ -2,10 +2,10 @@
 type: risk
 status: closed
 project: "[[Project Summit 12]]"
-source_created_at: 2023-07-21T14:09:00
-source_observed_at: 2023-07-21T16:56:00
-created_at: 2023-07-21T20:09:00
-updated_at: 2023-08-13T07:09:00
+source_created_at: 2023-07-21T16:45:00
+source_observed_at: 2023-07-21T18:06:00
+created_at: 2023-07-23T08:45:00
+updated_at: 2023-07-30T12:45:00
 tags: [#risk]
 ---
 # Project Summit 12 Metric Reconciliation Risk 12
@@ -18,5 +18,5 @@ Metric Reconciliation may affect [[Project Summit 12]] for [[Pioneer Labs]].
 
 ## Current State
 - Status: `closed`
-- Owner: [[Amara Foster]]
+- Owner: [[Kai Alvarez]]
 - [ ] Reassess [[Project Summit 12 Metric Reconciliation Risk 12]] during the next review #risk

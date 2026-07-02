@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit FinTech]]"
-role: "Finance Sponsor"
-source_created_at: 2023-07-18T10:26:00
-source_observed_at: 2023-07-18T12:43:00
-created_at: 2023-07-20T04:26:00
-updated_at: 2023-10-08T12:26:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-07-18T09:13:00
+source_observed_at: 2023-07-18T10:05:00
+created_at: 2023-07-18T17:13:00
+updated_at: 2023-08-10T00:13:00
 tags: [#person]
 ---
 # Elena Kim
 
 ## Role
-Elena Kim is the Finance Sponsor at [[Summit FinTech]].
+Elena Kim is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Orbit 26]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Elena Kim]] #follow-up

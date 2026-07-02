@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 96]]"
 company: "[[Meridian Logistics]]"
-source_created_at: 2025-11-28T13:01:00
-source_observed_at: 2025-11-28T13:56:00
-created_at: 2025-11-29T15:01:00
-updated_at: 2025-12-25T01:01:00
+source_created_at: 2025-11-28T12:56:00
+source_observed_at: 2025-11-28T14:19:00
+created_at: 2025-12-01T15:56:00
+updated_at: 2025-12-31T18:56:00
 tags: [#research]
 ---
 # Project Meridian 96 Stakeholder Alignment Research 536

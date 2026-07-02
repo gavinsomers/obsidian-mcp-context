@@ -4,10 +4,10 @@ date: 2023-11-09
 status: active
 project: "[[Project Beacon 32]]"
 company: "[[Apex Retail]]"
-source_created_at: 2023-11-09T12:37:00
-source_observed_at: 2023-11-09T14:05:00
-created_at: 2023-11-09T14:10:00
-updated_at: 2023-11-10T10:10:00
+source_created_at: 2023-11-09T12:29:00
+source_observed_at: 2023-11-09T14:21:00
+created_at: 2023-11-09T15:47:00
+updated_at: 2023-11-09T19:47:00
 tags: [#decision]
 ---
 # Project Beacon 32 Finance Approval Decision 32
@@ -17,7 +17,7 @@ Proceed with finance approval for [[Project Beacon 32]].
 
 ## Context
 This decision applies to [[Apex Retail]] and [[Project Beacon 32]].
-It follows [[Project Beacon 32 Stakeholder Alignment Sync 1572]].
+It follows [[Project Beacon 32 Stakeholder Alignment Sync 32]].
 It incorporates [[Project Beacon 32 Lineage Audit Research 32]].
 
 ## Supersession

@@ -1,22 +1,19 @@
 ---
 type: company
 status: churn-risk
-segment: mid-market
-source_created_at: 2023-08-11T10:52:00
-source_observed_at: 2023-08-11T12:18:00
-created_at: 2023-08-13T01:52:00
-updated_at: 2023-09-06T11:52:00
+segment: smb
+source_created_at: 2023-08-13T13:55:00
+source_observed_at: 2023-08-13T16:41:00
+created_at: 2023-08-14T01:55:00
+updated_at: 2023-09-14T04:55:00
 tags: [#company]
 ---
 # Noble Manufacturing
 
 ## Account Context
-Noble Manufacturing is a mid-market account currently marked `churn-risk`.
+Noble Manufacturing is a smb account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Elena Chen]] - Finance Sponsor
-- [[Victor Grant]] - Finance Sponsor
-- [[Kai Lee]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

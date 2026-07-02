@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Crescent Analytics]]"
-role: "Product Director"
-source_created_at: 2023-09-27T09:33:00
-source_observed_at: 2023-09-27T10:09:00
-created_at: 2023-09-28T09:33:00
-updated_at: 2023-12-21T17:07:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-09-27T14:25:00
+source_observed_at: 2023-09-27T14:52:00
+created_at: 2023-09-27T16:25:00
+updated_at: 2023-11-30T03:25:00
 tags: [#person]
 ---
 # Jonah Shah
 
 ## Role
-Jonah Shah is the Product Director at [[Crescent Analytics]].
+Jonah Shah is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Crescent Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Jonah Shah]] #follow-up

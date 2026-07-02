@@ -1,19 +1,20 @@
 ---
 type: meeting
-date: 2024-02-09
+date: 2024-08-19
 project: "[[Project Orbit 11]]"
 company: "[[Summit Labs]]"
-source_created_at: 2024-02-09T13:03:00
-source_observed_at: 2024-02-09T13:49:00
-created_at: 2024-02-09T15:43:00
-updated_at: 2024-02-10T08:43:00
+source_created_at: 2024-08-19T09:33:00
+source_observed_at: 2024-08-19T10:45:00
+created_at: 2024-08-19T13:53:00
+updated_at: 2024-08-19T19:53:00
 tags: [#meeting]
 ---
 # Project Orbit 11 Warehouse Mapping Sync 1111
 
 ## Attendees
-- [[Jonah Alvarez]]
-- [[Alex Foster]]
+- [[Lina Bennett]]
+- [[Omar Alvarez]]
+- [[Kai Evans]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Orbit 11]] at [[Summit Labs]].

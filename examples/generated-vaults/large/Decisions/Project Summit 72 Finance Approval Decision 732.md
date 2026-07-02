@@ -4,10 +4,10 @@ date: 2026-03-23
 status: active
 project: "[[Project Summit 72]]"
 company: "[[Pioneer Health]]"
-source_created_at: 2026-03-23T11:32:00
-source_observed_at: 2026-03-23T13:44:00
-created_at: 2026-03-23T13:49:00
-updated_at: 2026-03-23T18:49:00
+source_created_at: 2026-03-23T12:22:00
+source_observed_at: 2026-03-23T13:18:00
+created_at: 2026-03-23T18:01:00
+updated_at: 2026-03-24T17:01:00
 tags: [#decision]
 ---
 # Project Summit 72 Finance Approval Decision 732

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Media]]"
-role: "Product Director"
-source_created_at: 2023-08-05T08:36:00
-source_observed_at: 2023-08-05T11:30:00
-created_at: 2023-08-07T04:36:00
-updated_at: 2023-10-22T12:36:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-08-05T12:23:00
+source_observed_at: 2023-08-05T14:28:00
+created_at: 2023-08-06T15:23:00
+updated_at: 2023-08-21T02:23:00
 tags: [#person]
 ---
 # Farah Morgan
 
 ## Role
-Farah Morgan is the Product Director at [[BrightWave Media]].
+Farah Morgan is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Farah Morgan]] #follow-up

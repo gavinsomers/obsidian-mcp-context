@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Atlas 1]]"
 company: "[[Northstar Labs]]"
-source_created_at: 2023-06-03T12:30:00
-source_observed_at: 2023-06-03T13:14:00
-created_at: 2023-06-04T07:30:00
-updated_at: 2023-06-28T15:30:00
+source_created_at: 2023-06-03T08:07:00
+source_observed_at: 2023-06-03T09:42:00
+created_at: 2023-06-04T22:07:00
+updated_at: 2023-07-16T22:07:00
 tags: [#research]
 ---
 # Project Atlas 1 Contract Renewal Research 1

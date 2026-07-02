@@ -3,23 +3,23 @@ type: meeting
 date: 2024-12-20
 project: "[[Project Signal 119]]"
 company: "[[Crescent Analytics]]"
-source_created_at: 2024-12-20T12:40:00
-source_observed_at: 2024-12-20T13:30:00
-created_at: 2024-12-20T15:29:00
-updated_at: 2024-12-21T13:29:00
+source_created_at: 2024-12-20T11:15:00
+source_observed_at: 2024-12-20T13:19:00
+created_at: 2024-12-20T16:57:00
+updated_at: 2024-12-20T18:57:00
 tags: [#meeting]
 ---
 # Project Signal 119 Pipeline Hygiene Sync 779
 
 ## Attendees
-- [[Nadia Evans]]
-- [[David Jenkins]]
-- [[Uma Novak]]
+- [[Xavier Morgan]]
+- [[Marcus Foster]]
+- [[Grace Usman]]
 
 ## Notes
 Pipeline Hygiene reviewed for [[Project Signal 119]] at [[Crescent Analytics]].
-[[Jonah Shah]] flagged follow-up work for the next operating review.
+[[Nadia Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 119]] to [[Jonah Shah]] #follow-up
+- [ ] Send recap for [[Project Signal 119]] to [[Nadia Evans]] #follow-up
 - [x] Capture meeting notes in vault #ops

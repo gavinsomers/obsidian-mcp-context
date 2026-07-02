@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-07-07
+date: 2025-05-13
 status: active
 project: "[[Project Horizon 109]]"
 company: "[[BrightWave Analytics]]"
-source_created_at: 2025-07-07T11:48:00
-source_observed_at: 2025-07-07T12:57:00
-created_at: 2025-07-13T15:48:00
-updated_at: 2025-07-14T08:48:00
+source_created_at: 2025-05-13T16:33:00
+source_observed_at: 2025-05-13T18:23:00
+created_at: 2025-05-13T22:02:00
+updated_at: 2025-05-14T08:02:00
 tags: [#decision]
 ---
 # Project Horizon 109 Warehouse Mapping Decision 549

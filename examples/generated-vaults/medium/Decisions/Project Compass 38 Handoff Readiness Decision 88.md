@@ -3,11 +3,11 @@ type: decision
 date: 2024-07-13
 status: active
 project: "[[Project Compass 38]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2024-07-13T11:18:00
-source_observed_at: 2024-07-13T12:11:00
-created_at: 2024-07-13T16:03:00
-updated_at: 2024-07-13T17:03:00
+company: "[[Atlas Labs]]"
+source_created_at: 2024-07-13T16:42:00
+source_observed_at: 2024-07-13T17:13:00
+created_at: 2024-07-20T22:42:00
+updated_at: 2024-07-21T21:42:00
 tags: [#decision]
 ---
 # Project Compass 38 Handoff Readiness Decision 88
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 38]].
 
 ## Context
-This decision applies to [[Quantum Labs]] and [[Project Compass 38]].
-It follows [[Project Compass 38 Lineage Audit Sync 238]].
-It incorporates [[Project Compass 38 Finance Approval Research 38]].
+This decision applies to [[Atlas Labs]] and [[Project Compass 38]].
+It follows [[Project Compass 38 Lineage Audit Sync 188]].
+It incorporates [[Project Compass 38 Finance Approval Research 88]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

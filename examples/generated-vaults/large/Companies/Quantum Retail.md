@@ -1,22 +1,19 @@
 ---
 type: company
-status: pipeline
-segment: enterprise
-source_created_at: 2023-07-02T09:52:00
-source_observed_at: 2023-07-02T11:46:00
-created_at: 2023-07-02T19:52:00
-updated_at: 2023-08-23T22:52:00
+status: active
+segment: smb
+source_created_at: 2023-07-04T11:33:00
+source_observed_at: 2023-07-04T12:27:00
+created_at: 2023-07-05T10:33:00
+updated_at: 2023-09-28T16:33:00
 tags: [#company]
 ---
 # Quantum Retail
 
 ## Account Context
-Quantum Retail is a enterprise account currently marked `pipeline`.
+Quantum Retail is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Kai Bennett]] - Legal Counsel
-- [[Amara Grant]] - Legal Counsel
-- [[Rachel Kim]] - Legal Counsel
+## Assigned Account Team
 
 ## Projects
 

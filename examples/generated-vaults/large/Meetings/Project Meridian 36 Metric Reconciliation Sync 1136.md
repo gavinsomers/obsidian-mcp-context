@@ -1,20 +1,20 @@
 ---
 type: meeting
-date: 2024-09-23
+date: 2024-01-10
 project: "[[Project Meridian 36]]"
 company: "[[Meridian Retail]]"
-source_created_at: 2024-09-23T15:47:00
-source_observed_at: 2024-09-23T16:06:00
-created_at: 2024-09-23T20:29:00
-updated_at: 2024-09-24T07:29:00
+source_created_at: 2024-01-10T09:24:00
+source_observed_at: 2024-01-10T11:17:00
+created_at: 2024-01-13T09:24:00
+updated_at: 2024-01-13T13:24:00
 tags: [#meeting]
 ---
 # Project Meridian 36 Metric Reconciliation Sync 1136
 
 ## Attendees
-- [[Victor Tan]]
-- [[Zoe Foster]]
-- [[Omar Kim]]
+- [[Yara Shah]]
+- [[Priya Ortega]]
+- [[Amara Evans]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Meridian 36]] at [[Meridian Retail]].

@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Beacon 17]]"
-source_created_at: 2026-04-14T08:51:00
-source_observed_at: 2026-04-14T10:19:00
-created_at: 2026-04-15T14:51:00
-updated_at: 2026-05-16T22:51:00
+source_created_at: 2026-04-14T08:04:00
+source_observed_at: 2026-04-14T09:23:00
+created_at: 2026-04-16T00:04:00
+updated_at: 2026-05-18T04:04:00
 tags: [#risk]
 ---
 # Project Beacon 17 Warehouse Mapping Risk 677
@@ -18,5 +18,5 @@ Warehouse Mapping may affect [[Project Beacon 17]] for [[Apex FinTech]].
 
 ## Current State
 - Status: `open`
-- Owner: [[Farah Foster]]
+- Owner: [[Priya Alvarez]]
 - [ ] Reassess [[Project Beacon 17 Warehouse Mapping Risk 677]] during the next review #risk

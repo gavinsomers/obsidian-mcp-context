@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-01-27
 project: "[[Project Pipeline 127]]"
-company: "[[Vanguard Labs]]"
-source_created_at: 2025-01-27T15:14:00
-source_observed_at: 2025-01-27T17:14:00
-created_at: 2025-01-27T17:19:00
-updated_at: 2025-01-28T16:19:00
+company: "[[Quantum Labs]]"
+source_created_at: 2025-01-27T13:14:00
+source_observed_at: 2025-01-27T13:34:00
+created_at: 2025-01-27T13:41:00
+updated_at: 2025-01-27T16:41:00
 tags: [#meeting]
 ---
 # Project Pipeline 127 Contract Renewal Sync 1007
 
 ## Attendees
-- [[Farah Alvarez]]
-- [[Lina Jenkins]]
-- [[Wendy Evans]]
+- [[Iris Rostova]]
+- [[Lina Quinn]]
+- [[Iris Morgan]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 127]] at [[Vanguard Labs]].
+Contract Renewal reviewed for [[Project Pipeline 127]] at [[Quantum Labs]].
 [[Wendy Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items

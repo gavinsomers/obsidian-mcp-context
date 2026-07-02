@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Venture 58]]"
-source_created_at: 2024-03-03T08:08:00
-source_observed_at: 2024-03-03T09:53:00
-created_at: 2024-03-04T21:08:00
-updated_at: 2024-04-04T21:08:00
+source_created_at: 2024-03-03T13:05:00
+source_observed_at: 2024-03-03T15:30:00
+created_at: 2024-03-03T20:05:00
+updated_at: 2024-04-05T04:05:00
 tags: [#risk]
 ---
 # Project Venture 58 Stakeholder Alignment Risk 58
@@ -17,6 +17,6 @@ Stakeholder Alignment may affect [[Project Venture 58]] for [[Noble Manufacturin
 - Raised after [[Project Venture 58 Lineage Audit Sync 1598]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Kai Lee]]
+- Status: `open`
+- Owner: [[Elena Chen]]
 - [ ] Reassess [[Project Venture 58 Stakeholder Alignment Risk 58]] during the next review #risk

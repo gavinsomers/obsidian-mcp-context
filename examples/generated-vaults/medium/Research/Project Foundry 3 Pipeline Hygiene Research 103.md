@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Foundry 3]]"
 company: "[[Cobalt Labs]]"
-source_created_at: 2024-07-10T11:31:00
-source_observed_at: 2024-07-10T13:20:00
-created_at: 2024-07-19T15:31:00
-updated_at: 2024-08-22T23:31:00
+source_created_at: 2024-07-10T10:21:00
+source_observed_at: 2024-07-10T10:47:00
+created_at: 2024-07-10T21:21:00
+updated_at: 2024-08-08T23:21:00
 tags: [#research]
 ---
 # Project Foundry 3 Pipeline Hygiene Research 103
@@ -14,7 +14,7 @@ tags: [#research]
 Research on pipeline hygiene for [[Project Foundry 3]] and [[Cobalt Labs]].
 
 ## Evidence
-- Interview notes from [[Jonah Chen]]
+- Interview notes from [[Ben Alvarez]]
 - Related operating review: [[Project Foundry 3 Security Review Sync 253]]
 
 ## Follow Up

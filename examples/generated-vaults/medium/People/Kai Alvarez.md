@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Pioneer Labs]]"
-role: "Implementation Manager"
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
 source_created_at: 2023-04-24T15:05:00
 source_observed_at: 2023-04-24T16:35:00
 created_at: 2023-04-25T00:05:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Kai Alvarez
 
 ## Role
-Kai Alvarez is the Implementation Manager at [[Pioneer Labs]].
+Kai Alvarez is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Pioneer Labs]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Alvarez]] #follow-up

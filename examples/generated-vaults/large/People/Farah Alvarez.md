@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Labs]]"
-role: "Product Director"
-source_created_at: 2023-04-23T12:14:00
-source_observed_at: 2023-04-23T12:43:00
-created_at: 2023-04-23T22:14:00
-updated_at: 2023-07-20T23:14:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-04-23T13:13:00
+source_observed_at: 2023-04-23T14:10:00
+created_at: 2023-04-24T19:13:00
+updated_at: 2023-05-27T19:13:00
 tags: [#person]
 ---
 # Farah Alvarez
 
 ## Role
-Farah Alvarez is the Product Director at [[Vanguard Labs]].
+Farah Alvarez is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Pipeline 7]]
+## Active Project Allocations
+- Managing/Supporting [[Project Atlas 1]] ([[Northstar Labs]])
 - [ ] Confirm next update with [[Farah Alvarez]] #follow-up

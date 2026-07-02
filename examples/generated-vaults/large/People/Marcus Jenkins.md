@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Labs]]"
-role: "Customer Success Manager"
-source_created_at: 2023-07-12T09:16:00
-source_observed_at: 2023-07-12T09:43:00
-created_at: 2023-07-13T01:16:00
-updated_at: 2023-08-25T06:16:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-07-12T11:24:00
+source_observed_at: 2023-07-12T14:02:00
+created_at: 2023-07-18T15:24:00
+updated_at: 2023-08-24T23:24:00
 tags: [#person]
 ---
 # Marcus Jenkins
 
 ## Role
-Marcus Jenkins is the Customer Success Manager at [[Quantum Labs]].
+Marcus Jenkins is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Compass 8]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Marcus Jenkins]] #follow-up

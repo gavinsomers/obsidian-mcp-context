@@ -4,10 +4,10 @@ date: 2024-08-09
 status: active
 project: "[[Project Harbor 9]]"
 company: "[[Atlas Labs]]"
-source_created_at: 2024-08-09T09:24:00
-source_observed_at: 2024-08-09T11:29:00
-created_at: 2024-08-09T12:46:00
-updated_at: 2024-08-10T03:46:00
+source_created_at: 2024-08-09T12:37:00
+source_observed_at: 2024-08-09T13:08:00
+created_at: 2024-08-09T13:20:00
+updated_at: 2024-08-09T23:20:00
 tags: [#decision]
 ---
 # Project Harbor 9 Warehouse Mapping Decision 109

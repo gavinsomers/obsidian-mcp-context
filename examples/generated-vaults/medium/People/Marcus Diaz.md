@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Apex Labs]]"
-role: "Implementation Manager"
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
 source_created_at: 2023-05-21T14:36:00
 source_observed_at: 2023-05-21T16:29:00
 created_at: 2023-05-22T18:36:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Marcus Diaz
 
 ## Role
-Marcus Diaz is the Implementation Manager at [[Apex Labs]].
+Marcus Diaz is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Beacon 2]]
+## Active Project Allocations
+- Managing/Supporting [[Project Horizon 4]] ([[BrightWave Labs]])
 - [ ] Confirm next update with [[Marcus Diaz]] #follow-up

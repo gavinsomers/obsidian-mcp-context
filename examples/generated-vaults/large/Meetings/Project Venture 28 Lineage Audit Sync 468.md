@@ -3,23 +3,23 @@ type: meeting
 date: 2025-02-14
 project: "[[Project Venture 28]]"
 company: "[[Noble FinTech]]"
-source_created_at: 2025-02-14T14:18:00
-source_observed_at: 2025-02-14T16:17:00
-created_at: 2025-02-21T18:18:00
-updated_at: 2025-02-22T10:18:00
+source_created_at: 2025-02-14T08:17:00
+source_observed_at: 2025-02-14T11:02:00
+created_at: 2025-02-14T12:45:00
+updated_at: 2025-02-15T02:45:00
 tags: [#meeting]
 ---
 # Project Venture 28 Lineage Audit Sync 468
 
 ## Attendees
-- [[Grace Kim]]
-- [[Xavier Ortega]]
-- [[Amara Bennett]]
+- [[Jonah Haddad]]
+- [[Alex Diaz]]
+- [[Tara Lee]]
 
 ## Notes
 Lineage Audit reviewed for [[Project Venture 28]] at [[Noble FinTech]].
-[[Xavier Ortega]] flagged follow-up work for the next operating review.
+[[Amara Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 28]] to [[Xavier Ortega]] #follow-up
+- [ ] Send recap for [[Project Venture 28]] to [[Amara Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

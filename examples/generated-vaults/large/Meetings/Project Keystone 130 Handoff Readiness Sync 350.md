@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-02-10
 project: "[[Project Keystone 130]]"
-company: "[[Harbor Labs]]"
-source_created_at: 2025-02-10T09:08:00
-source_observed_at: 2025-02-10T11:32:00
-created_at: 2025-02-10T11:58:00
-updated_at: 2025-02-11T04:58:00
+company: "[[Summit Labs]]"
+source_created_at: 2025-02-10T13:39:00
+source_observed_at: 2025-02-10T16:12:00
+created_at: 2025-02-10T16:17:00
+updated_at: 2025-02-11T07:17:00
 tags: [#meeting]
 ---
 # Project Keystone 130 Handoff Readiness Sync 350
 
 ## Attendees
-- [[Zoe Evans]]
-- [[Iris Alvarez]]
-- [[Elena Ortega]]
+- [[Iris Morgan]]
+- [[Victor Ortega]]
+- [[Sam Usman]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 130]] at [[Harbor Labs]].
-[[Victor Shah]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 130]] at [[Summit Labs]].
+[[Zoe Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 130]] to [[Victor Shah]] #follow-up
+- [ ] Send recap for [[Project Keystone 130]] to [[Zoe Evans]] #follow-up
 - [x] Capture meeting notes in vault #ops

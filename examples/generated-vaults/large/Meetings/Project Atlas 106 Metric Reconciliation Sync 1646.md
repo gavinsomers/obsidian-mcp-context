@@ -3,18 +3,18 @@ type: meeting
 date: 2024-10-17
 project: "[[Project Atlas 106]]"
 company: "[[Northstar Analytics]]"
-source_created_at: 2024-10-17T10:32:00
-source_observed_at: 2024-10-17T12:59:00
-created_at: 2024-10-17T13:04:00
-updated_at: 2024-10-18T09:04:00
+source_created_at: 2024-10-17T12:38:00
+source_observed_at: 2024-10-17T14:19:00
+created_at: 2024-10-17T14:59:00
+updated_at: 2024-10-18T09:59:00
 tags: [#meeting]
 ---
 # Project Atlas 106 Metric Reconciliation Sync 1646
 
 ## Attendees
-- [[Rachel Ivanov]]
-- [[Marcus Walker]]
-- [[Grace Novak]]
+- [[Priya Tan]]
+- [[Grace Grant]]
+- [[Jonah Shah]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Atlas 106]] at [[Northstar Analytics]].

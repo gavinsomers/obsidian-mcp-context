@@ -1,6 +1,6 @@
 ---
 type: project
-status: planning
+status: closed
 company: "[[Apex FinTech]]"
 source_created_at: 2023-10-30T13:53:00
 source_observed_at: 2023-10-30T16:27:00
@@ -14,12 +14,13 @@ tags: [#project]
 Project Beacon 17 supports [[Apex FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Priya Alvarez]]
-- [[Ben Evans]]
-- [[Farah Foster]]
-- [[Yara Chen]]
+- [[Omar Diaz]]
+- [[Farah Evans]]
+- [[Rachel Alvarez]]
+- [[Farah Diaz]]
 
 ## Operating Notes
-- Owner: [[Uma Bennett]]
-- Status: `planning`
+- Owner: [[Priya Alvarez]]
+- Status: `closed`
+- Closed at: `2024-03-03`
 - [ ] Reconcile latest state for [[Project Beacon 17]] #ops

@@ -1,25 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Northstar Manufacturing]]"
-source_created_at: 2025-07-29T14:56:00
-source_observed_at: 2025-07-29T15:39:00
-created_at: 2025-07-30T20:56:00
-updated_at: 2025-08-23T01:56:00
+status: closed
+company: "[[Apex Manufacturing]]"
+source_created_at: 2025-07-29T10:48:00
+source_observed_at: 2025-07-29T11:33:00
+created_at: 2025-07-30T17:48:00
+updated_at: 2025-10-10T03:48:00
 tags: [#project]
 ---
 # Project Atlas 166
 
 ## Overview
-Project Atlas 166 supports [[Northstar Manufacturing]] through consulting delivery.
+Project Atlas 166 supports [[Apex Manufacturing]] through consulting delivery.
 
 ## Stakeholders
-- [[Elena Usman]]
-- [[Tara Bennett]]
-- [[Iris Grant]]
-- [[Zoe Kim]]
+- [[Ben Ivanov]]
+- [[Zoe Walker]]
+- [[Farah Tan]]
+- [[Omar Diaz]]
 
 ## Operating Notes
-- Owner: [[Tara Bennett]]
-- Status: `blocked`
+- Owner: [[Iris Grant]]
+- Status: `closed`
+- Closed at: `2026-01-04`
 - [ ] Reconcile latest state for [[Project Atlas 166]] #ops

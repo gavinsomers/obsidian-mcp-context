@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian Logistics]]"
-role: "Customer Success Manager"
-source_created_at: 2023-10-29T12:40:00
-source_observed_at: 2023-10-29T15:32:00
-created_at: 2023-10-31T07:40:00
-updated_at: 2023-12-20T13:40:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-10-29T16:44:00
+source_observed_at: 2023-10-29T17:23:00
+created_at: 2023-10-29T22:44:00
+updated_at: 2023-11-27T00:44:00
 tags: [#person]
 ---
 # Clara Walker
 
 ## Role
-Clara Walker is the Customer Success Manager at [[Meridian Logistics]].
+Clara Walker is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Clara Walker]] #follow-up

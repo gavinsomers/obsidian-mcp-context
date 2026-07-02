@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Venture 103]]"
 company: "[[Noble Logistics]]"
-source_created_at: 2024-10-14T15:03:00
-source_observed_at: 2024-10-14T17:09:00
-created_at: 2024-10-16T03:03:00
-updated_at: 2024-11-22T06:03:00
+source_created_at: 2024-10-14T10:14:00
+source_observed_at: 2024-10-14T10:58:00
+created_at: 2024-10-14T16:14:00
+updated_at: 2024-11-04T03:14:00
 tags: [#research]
 ---
 # Project Venture 103 Pipeline Hygiene Research 103
@@ -14,7 +14,7 @@ tags: [#research]
 Research on pipeline hygiene for [[Project Venture 103]] and [[Noble Logistics]].
 
 ## Evidence
-- Interview notes from [[David Novak]]
+- Interview notes from [[Yara Diaz]]
 - Related operating review: [[Project Venture 103 Security Review Sync 103]]
 
 ## Follow Up

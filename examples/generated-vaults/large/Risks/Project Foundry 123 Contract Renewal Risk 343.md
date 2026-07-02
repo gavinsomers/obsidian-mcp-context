@@ -2,21 +2,21 @@
 type: risk
 status: open
 project: "[[Project Foundry 123]]"
-source_created_at: 2025-01-17T08:00:00
-source_observed_at: 2025-01-17T08:24:00
-created_at: 2025-01-17T21:00:00
-updated_at: 2025-02-27T07:00:00
+source_created_at: 2025-01-17T10:33:00
+source_observed_at: 2025-01-17T13:27:00
+created_at: 2025-01-18T02:33:00
+updated_at: 2025-02-11T13:33:00
 tags: [#risk]
 ---
 # Project Foundry 123 Contract Renewal Risk 343
 
 ## Risk
-Contract Renewal may affect [[Project Foundry 123]] for [[Cobalt Labs]].
+Contract Renewal may affect [[Project Foundry 123]] for [[BrightWave Labs]].
 
 ## Evidence
-- Raised after [[Project Foundry 123 Security Review Sync 343]]
+- Raised after [[Project Foundry 123 Security Review Sync 783]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Hannah Jenkins]]
+- Owner: [[Sam Evans]]
 - [ ] Reassess [[Project Foundry 123 Contract Renewal Risk 343]] during the next review #risk

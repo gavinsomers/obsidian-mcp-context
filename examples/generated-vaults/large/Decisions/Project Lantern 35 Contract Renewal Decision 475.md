@@ -4,10 +4,10 @@ date: 2025-03-24
 status: active
 project: "[[Project Lantern 35]]"
 company: "[[Helio Retail]]"
-source_created_at: 2025-03-24T13:59:00
-source_observed_at: 2025-03-24T16:00:00
-created_at: 2025-03-24T16:05:00
-updated_at: 2025-03-25T06:05:00
+source_created_at: 2025-03-24T09:17:00
+source_observed_at: 2025-03-24T11:57:00
+created_at: 2025-03-24T12:44:00
+updated_at: 2025-03-25T05:44:00
 tags: [#decision]
 ---
 # Project Lantern 35 Contract Renewal Decision 475

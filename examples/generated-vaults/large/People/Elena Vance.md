@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Pioneer Health]]"
-role: "Customer Success Manager"
-source_created_at: 2023-10-21T16:53:00
-source_observed_at: 2023-10-21T19:23:00
-created_at: 2023-10-22T13:53:00
-updated_at: 2024-01-16T15:53:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-10-21T13:03:00
+source_observed_at: 2023-10-21T15:48:00
+created_at: 2023-10-23T04:03:00
+updated_at: 2024-01-12T07:03:00
 tags: [#person]
 ---
 # Elena Vance
 
 ## Role
-Elena Vance is the Customer Success Manager at [[Pioneer Health]].
+Elena Vance is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Pioneer Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Elena Vance]] #follow-up

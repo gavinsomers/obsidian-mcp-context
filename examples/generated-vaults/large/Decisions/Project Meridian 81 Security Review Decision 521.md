@@ -4,10 +4,10 @@ date: 2025-05-27
 status: active
 project: "[[Project Meridian 81]]"
 company: "[[Meridian Media]]"
-source_created_at: 2025-05-27T09:36:00
-source_observed_at: 2025-05-27T12:01:00
-created_at: 2025-05-27T15:22:00
-updated_at: 2025-05-27T16:22:00
+source_created_at: 2025-05-27T09:20:00
+source_observed_at: 2025-05-27T11:37:00
+created_at: 2025-05-31T13:20:00
+updated_at: 2025-06-01T04:20:00
 tags: [#decision]
 ---
 # Project Meridian 81 Security Review Decision 521

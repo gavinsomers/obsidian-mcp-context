@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2023-12-03
+date: 2025-12-26
 status: superseded
 project: "[[Project Summit 12]]"
 company: "[[Pioneer Labs]]"
-source_created_at: 2023-12-03T08:19:00
-source_observed_at: 2023-12-03T09:03:00
-created_at: 2023-12-03T10:10:00
-updated_at: 2023-12-04T07:10:00
+source_created_at: 2025-12-26T11:47:00
+source_observed_at: 2025-12-26T13:30:00
+created_at: 2025-12-26T16:43:00
+updated_at: 2025-12-27T01:43:00
 tags: [#decision]
 ---
 # Project Summit 12 Finance Approval Decision 672
@@ -17,8 +17,8 @@ Proceed with finance approval for [[Project Summit 12]].
 
 ## Context
 This decision applies to [[Pioneer Labs]] and [[Project Summit 12]].
-It follows [[Project Summit 12 Stakeholder Alignment Sync 1332]].
-It incorporates [[Project Summit 12 Lineage Audit Research 232]].
+It follows [[Project Summit 12 Stakeholder Alignment Sync 672]].
+It incorporates [[Project Summit 12 Lineage Audit Research 452]].
 
 ## Supersession
 Marked superseded by a later unlinked stakeholder review. #superseded

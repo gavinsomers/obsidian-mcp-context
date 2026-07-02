@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Keystone 25]]"
-source_created_at: 2024-02-11T09:13:00
-source_observed_at: 2024-02-11T10:05:00
-created_at: 2024-02-11T17:13:00
-updated_at: 2024-02-19T00:13:00
+source_created_at: 2024-02-11T15:19:00
+source_observed_at: 2024-02-11T15:31:00
+created_at: 2024-02-12T11:19:00
+updated_at: 2024-03-24T14:19:00
 tags: [#risk]
 ---
 # Project Keystone 25 Pipeline Hygiene Risk 25
@@ -14,9 +14,9 @@ tags: [#risk]
 Pipeline Hygiene may affect [[Project Keystone 25]] for [[Harbor FinTech]].
 
 ## Evidence
-- Raised after [[Project Keystone 25 Adoption Workflow Sync 125]]
+- Raised after [[Project Keystone 25 Adoption Workflow Sync 75]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Nadia Foster]]
+- Status: `closed`
+- Owner: [[Yara Alvarez]]
 - [ ] Reassess [[Project Keystone 25 Pipeline Hygiene Risk 25]] during the next review #risk

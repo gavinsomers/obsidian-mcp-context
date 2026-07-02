@@ -1,11 +1,11 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Foundry 18]]"
-source_created_at: 2024-02-08T16:21:00
-source_observed_at: 2024-02-08T19:19:00
-created_at: 2024-02-10T08:21:00
-updated_at: 2024-03-12T13:21:00
+source_created_at: 2024-02-08T15:11:00
+source_observed_at: 2024-02-08T17:25:00
+created_at: 2024-02-10T13:11:00
+updated_at: 2024-03-20T14:11:00
 tags: [#risk]
 ---
 # Project Foundry 18 Stakeholder Alignment Risk 68
@@ -17,6 +17,6 @@ Stakeholder Alignment may affect [[Project Foundry 18]] for [[Cobalt FinTech]].
 - Raised after [[Project Foundry 18 Lineage Audit Sync 168]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Zoe Chen]]
+- Status: `mitigating`
+- Owner: [[Rachel Alvarez]]
 - [ ] Reassess [[Project Foundry 18 Stakeholder Alignment Risk 68]] during the next review #risk

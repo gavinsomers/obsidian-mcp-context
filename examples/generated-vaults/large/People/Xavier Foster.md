@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Retail]]"
-role: "Finance Sponsor"
-source_created_at: 2023-06-11T14:43:00
-source_observed_at: 2023-06-11T17:09:00
-created_at: 2023-06-12T19:43:00
-updated_at: 2023-07-04T17:55:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-06-11T15:45:00
+source_observed_at: 2023-06-11T16:34:00
+created_at: 2023-06-17T15:45:00
+updated_at: 2023-08-08T22:45:00
 tags: [#person]
 ---
 # Xavier Foster
 
 ## Role
-Xavier Foster is the Finance Sponsor at [[BrightWave Retail]].
+Xavier Foster is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Xavier Foster]] #follow-up

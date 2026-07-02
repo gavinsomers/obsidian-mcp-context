@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit Logistics]]"
-role: "VP Data Engineering"
-source_created_at: 2023-09-21T08:57:00
-source_observed_at: 2023-09-21T10:34:00
-created_at: 2023-09-21T10:57:00
-updated_at: 2023-12-04T17:57:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-09-21T14:30:00
+source_observed_at: 2023-09-21T15:47:00
+created_at: 2023-09-22T19:30:00
+updated_at: 2023-10-07T23:30:00
 tags: [#person]
 ---
 # Sam Rostova
 
 ## Role
-Sam Rostova is the VP Data Engineering at [[Summit Logistics]].
+Sam Rostova is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Summit Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Sam Rostova]] #follow-up

@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Orbit 116]]"
 company: "[[Summit Analytics]]"
-source_created_at: 2026-01-02T11:03:00
-source_observed_at: 2026-01-02T14:01:00
-created_at: 2026-01-04T09:03:00
-updated_at: 2026-01-19T19:03:00
+source_created_at: 2026-01-02T12:51:00
+source_observed_at: 2026-01-02T14:08:00
+created_at: 2026-01-03T17:51:00
+updated_at: 2026-01-08T00:51:00
 tags: [#research]
 ---
 # Project Orbit 116 Stakeholder Alignment Research 556

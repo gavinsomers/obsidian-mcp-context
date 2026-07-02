@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Foundry 48]]"
-source_created_at: 2024-01-13T11:05:00
-source_observed_at: 2024-01-13T11:38:00
-created_at: 2024-01-13T22:05:00
-updated_at: 2024-02-10T04:05:00
+source_created_at: 2024-01-13T09:22:00
+source_observed_at: 2024-01-13T11:47:00
+created_at: 2024-01-13T19:22:00
+updated_at: 2024-02-07T03:22:00
 tags: [#risk]
 ---
 # Project Foundry 48 Stakeholder Alignment Risk 48
@@ -14,9 +14,9 @@ tags: [#risk]
 Stakeholder Alignment may affect [[Project Foundry 48]] for [[Cobalt Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Foundry 48 Lineage Audit Sync 928]]
+- Raised after [[Project Foundry 48 Lineage Audit Sync 48]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Amara Lee]]
+- Status: `open`
+- Owner: [[Victor Bennett]]
 - [ ] Reassess [[Project Foundry 48 Stakeholder Alignment Risk 48]] during the next review #risk

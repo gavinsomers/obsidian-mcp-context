@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Helio Logistics]]"
-role: "Product Director"
-source_created_at: 2023-10-29T15:35:00
-source_observed_at: 2023-10-29T17:43:00
-created_at: 2023-10-29T17:48:00
-updated_at: 2023-12-01T21:48:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-10-29T10:32:00
+source_observed_at: 2023-10-29T11:38:00
+created_at: 2023-10-30T23:32:00
+updated_at: 2024-01-20T07:32:00
 tags: [#person]
 ---
 # Ben Walker
 
 ## Role
-Ben Walker is the Product Director at [[Helio Logistics]].
+Ben Walker is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Helio Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Ben Walker]] #follow-up

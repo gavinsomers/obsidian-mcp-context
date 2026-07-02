@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Labs]]"
-role: "Implementation Manager"
-source_created_at: 2023-09-29T10:49:00
-source_observed_at: 2023-09-29T11:17:00
-created_at: 2023-09-29T15:49:00
-updated_at: 2023-11-30T21:49:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-09-29T13:31:00
+source_observed_at: 2023-09-29T14:02:00
+created_at: 2023-09-30T19:31:00
+updated_at: 2023-11-07T21:31:00
 tags: [#person]
 ---
 # Omar Shah
 
 ## Role
-Omar Shah is the Implementation Manager at [[BrightWave Labs]].
+Omar Shah is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Horizon 4]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Omar Shah]] #follow-up

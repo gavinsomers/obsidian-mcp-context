@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Labs]]"
-role: "Product Director"
-source_created_at: 2023-06-02T14:49:00
-source_observed_at: 2023-06-02T16:30:00
-created_at: 2023-06-04T11:49:00
-updated_at: 2023-07-04T18:49:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-06-02T11:54:00
+source_observed_at: 2023-06-02T14:00:00
+created_at: 2023-06-04T04:54:00
+updated_at: 2023-08-17T15:54:00
 tags: [#person]
 ---
 # Wendy Evans
 
 ## Role
-Wendy Evans is the Product Director at [[Vanguard Labs]].
+Wendy Evans is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Pipeline 7]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Evans]] #follow-up

@@ -1,6 +1,6 @@
 ---
 type: project
-status: blocked
+status: planning
 company: "[[Cobalt Labs]]"
 source_created_at: 2023-05-31T12:49:00
 source_observed_at: 2023-05-31T14:05:00
@@ -14,12 +14,12 @@ tags: [#project]
 Project Foundry 3 supports [[Cobalt Labs]] through customer success.
 
 ## Stakeholders
-- [[Sam Evans]]
-- [[Ben Alvarez]]
-- [[Farah Bennett]]
-- [[Nadia Diaz]]
+- [[Clara Chen]]
+- [[Priya Alvarez]]
+- [[Elena Alvarez]]
+- [[Marcus Bennett]]
 
 ## Operating Notes
-- Owner: [[Jonah Chen]]
-- Status: `blocked`
+- Owner: [[Ben Alvarez]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Foundry 3]] #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Noble Labs]]"
-role: "VP Data Engineering"
-source_created_at: 2023-07-14T11:12:00
-source_observed_at: 2023-07-14T12:25:00
-created_at: 2023-07-15T11:12:00
-updated_at: 2023-08-17T12:12:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-07-14T14:12:00
+source_observed_at: 2023-07-14T14:59:00
+created_at: 2023-07-15T01:12:00
+updated_at: 2023-09-27T01:12:00
 tags: [#person]
 ---
 # Sam Jenkins
 
 ## Role
-Sam Jenkins is the VP Data Engineering at [[Noble Labs]].
+Sam Jenkins is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Venture 13]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Sam Jenkins]] #follow-up

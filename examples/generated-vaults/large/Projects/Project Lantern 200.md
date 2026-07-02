@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Helio Media]]"
-source_created_at: 2026-01-12T16:18:00
-source_observed_at: 2026-01-12T16:39:00
-created_at: 2026-01-14T04:18:00
-updated_at: 2026-04-10T05:18:00
+status: planning
+company: "[[Meridian Media]]"
+source_created_at: 2026-01-12T11:00:00
+source_observed_at: 2026-01-12T12:00:00
+created_at: 2026-01-14T05:00:00
+updated_at: 2026-03-19T06:00:00
 tags: [#project]
 ---
 # Project Lantern 200
 
 ## Overview
-Project Lantern 200 supports [[Helio Media]] through operations admin.
+Project Lantern 200 supports [[Meridian Media]] through operations admin.
 
 ## Stakeholders
-- [[Rachel Haddad]]
-- [[Grace Morgan]]
-- [[Amara Diaz]]
-- [[Marcus Vance]]
+- [[Iris Shah]]
+- [[Alex Vance]]
+- [[Clara Ortega]]
+- [[Clara Morgan]]
 
 ## Operating Notes
-- Owner: [[Marcus Vance]]
-- Status: `closed`
-- Closed at: `2026-07-29`
+- Owner: [[Rachel Haddad]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Lantern 200]] #ops

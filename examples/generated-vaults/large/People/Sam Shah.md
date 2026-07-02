@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Labs]]"
-role: "Product Director"
-source_created_at: 2023-09-30T10:34:00
-source_observed_at: 2023-09-30T12:34:00
-created_at: 2023-10-02T05:34:00
-updated_at: 2023-10-29T12:34:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-09-30T08:02:00
+source_observed_at: 2023-09-30T09:38:00
+created_at: 2023-10-01T14:02:00
+updated_at: 2023-10-30T17:02:00
 tags: [#person]
 ---
 # Sam Shah
 
 ## Role
-Sam Shah is the Product Director at [[Vanguard Labs]].
+Sam Shah is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Pipeline 7]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Sam Shah]] #follow-up

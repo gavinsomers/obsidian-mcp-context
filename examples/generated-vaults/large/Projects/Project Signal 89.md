@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Crescent Media]]"
-source_created_at: 2024-07-15T11:09:00
-source_observed_at: 2024-07-15T11:32:00
-created_at: 2024-07-15T15:09:00
-updated_at: 2024-09-27T19:09:00
+source_created_at: 2024-07-15T11:49:00
+source_observed_at: 2024-07-15T13:41:00
+created_at: 2024-07-19T13:49:00
+updated_at: 2024-09-20T19:49:00
 tags: [#project]
 ---
 # Project Signal 89
@@ -14,13 +14,12 @@ tags: [#project]
 Project Signal 89 supports [[Crescent Media]] through research program.
 
 ## Stakeholders
-- [[Wendy Vance]]
-- [[Alex Ivanov]]
-- [[Jonah Diaz]]
-- [[Priya Morgan]]
+- [[Uma Tan]]
+- [[David Chen]]
+- [[Xavier Evans]]
+- [[Jonah Usman]]
 
 ## Operating Notes
-- Owner: [[Farah Rostova]]
-- Status: `closed`
-- Closed at: `2025-02-18`
+- Owner: [[Jonah Diaz]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 89]] #ops

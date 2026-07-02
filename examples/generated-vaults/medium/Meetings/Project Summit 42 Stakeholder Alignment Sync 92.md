@@ -2,22 +2,22 @@
 type: meeting
 date: 2024-08-04
 project: "[[Project Summit 42]]"
-company: "[[Pioneer Labs]]"
-source_created_at: 2024-08-04T16:13:00
-source_observed_at: 2024-08-04T18:11:00
-created_at: 2024-08-08T20:13:00
-updated_at: 2024-08-08T22:13:00
+company: "[[Noble Labs]]"
+source_created_at: 2024-08-04T09:28:00
+source_observed_at: 2024-08-04T10:08:00
+created_at: 2024-08-04T11:39:00
+updated_at: 2024-08-04T18:39:00
 tags: [#meeting]
 ---
 # Project Summit 42 Stakeholder Alignment Sync 92
 
 ## Attendees
-- [[Kai Alvarez]]
-- [[Omar Bennett]]
-- [[Xavier Diaz]]
+- [[David Chen]]
+- [[Uma Evans]]
+- [[Iris Foster]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 42]] at [[Pioneer Labs]].
+Stakeholder Alignment reviewed for [[Project Summit 42]] at [[Noble Labs]].
 [[Omar Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items

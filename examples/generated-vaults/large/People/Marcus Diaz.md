@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex Logistics]]"
-role: "Implementation Manager"
-source_created_at: 2023-05-21T12:54:00
-source_observed_at: 2023-05-21T13:47:00
-created_at: 2023-05-23T01:54:00
-updated_at: 2023-10-28T13:18:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-05-21T16:12:00
+source_observed_at: 2023-05-21T16:26:00
+created_at: 2023-05-23T10:12:00
+updated_at: 2023-07-07T13:12:00
 tags: [#person]
 ---
 # Marcus Diaz
 
 ## Role
-Marcus Diaz is the Implementation Manager at [[Apex Logistics]].
+Marcus Diaz is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Apex Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Marcus Diaz]] #follow-up

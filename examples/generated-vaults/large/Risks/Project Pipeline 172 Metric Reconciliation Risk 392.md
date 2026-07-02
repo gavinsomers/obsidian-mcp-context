@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Pipeline 172]]"
-source_created_at: 2025-09-14T11:33:00
-source_observed_at: 2025-09-14T13:53:00
-created_at: 2025-09-14T15:33:00
-updated_at: 2025-10-05T19:33:00
+source_created_at: 2025-09-14T09:26:00
+source_observed_at: 2025-09-14T10:11:00
+created_at: 2025-09-15T09:26:00
+updated_at: 2025-09-25T14:26:00
 tags: [#risk]
 ---
 # Project Pipeline 172 Metric Reconciliation Risk 392
 
 ## Risk
-Metric Reconciliation may affect [[Project Pipeline 172]] for [[Vanguard Manufacturing]].
+Metric Reconciliation may affect [[Project Pipeline 172]] for [[Quantum Manufacturing]].
 
 ## Evidence
 - Raised after [[Project Pipeline 172 Stakeholder Alignment Sync 1712]]

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Analytics]]"
-role: "Customer Success Manager"
-source_created_at: 2023-09-27T12:16:00
-source_observed_at: 2023-09-27T13:15:00
-created_at: 2023-09-29T12:16:00
-updated_at: 2023-12-23T13:02:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-09-27T15:07:00
+source_observed_at: 2023-09-27T17:42:00
+created_at: 2023-09-28T15:07:00
+updated_at: 2023-11-24T01:07:00
 tags: [#person]
 ---
 # Kai Shah
 
 ## Role
-Kai Shah is the Customer Success Manager at [[Keystone Analytics]].
+Kai Shah is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Shah]] #follow-up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Labs]]"
-role: "Product Director"
-source_created_at: 2023-05-01T15:16:00
-source_observed_at: 2023-05-01T15:39:00
-created_at: 2023-05-08T19:16:00
-updated_at: 2023-05-27T19:16:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-05-01T11:52:00
+source_observed_at: 2023-05-01T13:59:00
+created_at: 2023-05-02T03:52:00
+updated_at: 2023-06-13T03:52:00
 tags: [#person]
 ---
 # David Bennett
 
 ## Role
-David Bennett is the Product Director at [[Vanguard Labs]].
+David Bennett is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Vanguard Labs]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[David Bennett]] #follow-up

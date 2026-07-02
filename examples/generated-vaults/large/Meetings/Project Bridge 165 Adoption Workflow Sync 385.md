@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-08-02
 project: "[[Project Bridge 165]]"
-company: "[[Keystone Retail]]"
-source_created_at: 2025-08-02T13:27:00
-source_observed_at: 2025-08-02T15:39:00
-created_at: 2025-08-02T15:44:00
-updated_at: 2025-08-02T16:44:00
+company: "[[Northstar Manufacturing]]"
+source_created_at: 2025-08-02T13:36:00
+source_observed_at: 2025-08-02T15:21:00
+created_at: 2025-08-02T19:34:00
+updated_at: 2025-08-03T09:34:00
 tags: [#meeting]
 ---
 # Project Bridge 165 Adoption Workflow Sync 385
 
 ## Attendees
-- [[Hannah Grant]]
-- [[Nadia Patel]]
-- [[Sam Bennett]]
+- [[Lina Grant]]
+- [[Lina Usman]]
+- [[Xavier Morgan]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Bridge 165]] at [[Keystone Retail]].
-[[David Usman]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Bridge 165]] at [[Northstar Manufacturing]].
+[[Hannah Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 165]] to [[David Usman]] #follow-up
+- [ ] Send recap for [[Project Bridge 165]] to [[Hannah Grant]] #follow-up
 - [x] Capture meeting notes in vault #ops

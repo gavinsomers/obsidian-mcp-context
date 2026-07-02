@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: blocked
 company: "[[Harbor Media]]"
-source_created_at: 2024-06-25T16:27:00
-source_observed_at: 2024-06-25T17:13:00
-created_at: 2024-06-26T14:27:00
-updated_at: 2024-07-15T16:27:00
+source_created_at: 2024-06-25T15:29:00
+source_observed_at: 2024-06-25T18:19:00
+created_at: 2024-06-27T07:29:00
+updated_at: 2024-07-11T12:29:00
 tags: [#project]
 ---
 # Project Keystone 85
@@ -14,12 +14,12 @@ tags: [#project]
 Project Keystone 85 supports [[Harbor Media]] through operations admin.
 
 ## Stakeholders
-- [[Farah Diaz]]
-- [[Sam Vance]]
-- [[Wendy Haddad]]
-- [[Lina Morgan]]
+- [[David Morgan]]
+- [[Rachel Patel]]
+- [[Wendy Shah]]
+- [[Sam Usman]]
 
 ## Operating Notes
-- Owner: [[Sam Vance]]
-- Status: `planning`
+- Owner: [[Farah Diaz]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Keystone 85]] #ops

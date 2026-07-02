@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: active
 company: "[[Summit Labs]]"
-source_created_at: 2023-06-28T12:48:00
-source_observed_at: 2023-06-28T15:42:00
-created_at: 2023-06-29T12:48:00
-updated_at: 2023-09-11T22:48:00
+source_created_at: 2023-06-28T16:54:00
+source_observed_at: 2023-06-28T17:44:00
+created_at: 2023-06-29T19:54:00
+updated_at: 2023-08-16T02:54:00
 tags: [#project]
 ---
 # Project Orbit 11
@@ -14,11 +14,12 @@ tags: [#project]
 Project Orbit 11 supports [[Summit Labs]] through consulting delivery.
 
 ## Stakeholders
-- [[Jonah Alvarez]]
-- [[Alex Foster]]
+- [[Yara Evans]]
+- [[Lina Bennett]]
+- [[Omar Alvarez]]
+- [[Kai Evans]]
 
 ## Operating Notes
 - Owner: [[Jonah Alvarez]]
-- Status: `closed`
-- Closed at: `2024-02-22`
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Orbit 11]] #ops

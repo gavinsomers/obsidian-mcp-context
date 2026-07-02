@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-10-08
+date: 2024-06-07
 status: active
 project: "[[Project Compass 23]]"
 company: "[[Quantum FinTech]]"
-source_created_at: 2024-10-08T11:21:00
-source_observed_at: 2024-10-08T13:38:00
-created_at: 2024-10-08T17:12:00
-updated_at: 2024-10-09T04:12:00
+source_created_at: 2024-06-07T15:13:00
+source_observed_at: 2024-06-07T18:12:00
+created_at: 2024-06-07T19:22:00
+updated_at: 2024-06-08T04:22:00
 tags: [#decision]
 ---
 # Project Compass 23 Adoption Workflow Decision 123
@@ -17,7 +17,7 @@ Proceed with adoption workflow for [[Project Compass 23]].
 
 ## Context
 This decision applies to [[Quantum FinTech]] and [[Project Compass 23]].
-It follows [[Project Compass 23 Security Review Sync 273]].
+It follows [[Project Compass 23 Security Review Sync 223]].
 It incorporates [[Project Compass 23 Pipeline Hygiene Research 123]].
 
 ## Supersession

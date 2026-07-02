@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Manufacturing]]"
-role: "VP Data Engineering"
-source_created_at: 2023-10-15T08:44:00
-source_observed_at: 2023-10-15T10:38:00
-created_at: 2023-10-15T18:44:00
-updated_at: 2023-12-13T22:44:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-10-15T15:39:00
+source_observed_at: 2023-10-15T17:23:00
+created_at: 2023-10-17T13:39:00
+updated_at: 2023-11-08T16:39:00
 tags: [#person]
 ---
 # Lina Usman
 
 ## Role
-Lina Usman is the VP Data Engineering at [[Quantum Manufacturing]].
+Lina Usman is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Usman]] #follow-up

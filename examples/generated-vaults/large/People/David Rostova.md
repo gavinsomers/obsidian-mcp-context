@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Pioneer Media]]"
-role: "Product Director"
-source_created_at: 2023-09-16T13:57:00
-source_observed_at: 2023-09-16T16:27:00
-created_at: 2023-09-16T16:32:00
-updated_at: 2023-12-10T21:32:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-09-16T16:05:00
+source_observed_at: 2023-09-16T18:28:00
+created_at: 2023-09-16T23:05:00
+updated_at: 2023-11-01T06:05:00
 tags: [#person]
 ---
 # David Rostova
 
 ## Role
-David Rostova is the Product Director at [[Pioneer Media]].
+David Rostova is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Pioneer Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[David Rostova]] #follow-up

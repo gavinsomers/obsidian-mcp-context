@@ -3,11 +3,11 @@ type: decision
 date: 2024-05-31
 status: active
 project: "[[Project Horizon 34]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2024-05-31T11:37:00
-source_observed_at: 2024-05-31T12:38:00
-created_at: 2024-05-31T14:46:00
-updated_at: 2024-05-31T15:46:00
+company: "[[Helio Labs]]"
+source_created_at: 2024-05-31T12:29:00
+source_observed_at: 2024-05-31T15:12:00
+created_at: 2024-05-31T16:26:00
+updated_at: 2024-06-01T00:26:00
 tags: [#decision]
 ---
 # Project Horizon 34 Metric Reconciliation Decision 84
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Horizon 34]].
 
 ## Context
-This decision applies to [[BrightWave Labs]] and [[Project Horizon 34]].
+This decision applies to [[Helio Labs]] and [[Project Horizon 34]].
 It follows [[Project Horizon 34 Finance Approval Sync 234]].
 It incorporates [[Project Horizon 34 Handoff Readiness Research 34]].
 

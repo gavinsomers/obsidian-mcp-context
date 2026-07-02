@@ -17,29 +17,29 @@
   },
   "actual_lifecycle_ranges": {
     "source_created_at": [
-      "2023-04-19T08:15:00",
-      "2024-11-21T15:20:00"
+      "2023-04-19T08:48:00",
+      "2024-11-21T16:47:00"
     ],
     "source_observed_at": [
-      "2023-04-19T09:16:00",
-      "2024-11-21T18:04:00"
+      "2023-04-19T09:05:00",
+      "2024-11-21T18:55:00"
     ],
     "created_at": [
-      "2023-04-19T20:45:00",
-      "2024-11-21T18:32:00"
+      "2023-04-19T22:48:00",
+      "2024-11-21T20:49:00"
     ],
     "updated_at": [
-      "2023-04-19T22:50:00",
+      "2023-04-20T12:17:00",
       "2025-01-15T21:13:00"
     ]
   },
   "realism_metrics": {
-    "total_wikilinks": 6934,
+    "total_wikilinks": 6853,
     "unresolved_links": 0,
     "accidental_future_artifact_links": 0,
     "profile_links_after_updated_at": 0,
-    "entity_mentions_before_canonical": 61,
-    "late_captured_notes": 362,
+    "entity_mentions_before_canonical": 59,
+    "late_captured_notes": 359,
     "stale_open_tasks": 1199
   },
   "scenario_packs": [

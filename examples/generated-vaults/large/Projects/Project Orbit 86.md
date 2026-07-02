@@ -2,10 +2,10 @@
 type: project
 status: planning
 company: "[[Summit Media]]"
-source_created_at: 2024-07-01T15:55:00
-source_observed_at: 2024-07-01T17:16:00
-created_at: 2024-07-02T20:55:00
-updated_at: 2024-08-22T00:55:00
+source_created_at: 2024-07-01T08:41:00
+source_observed_at: 2024-07-01T11:30:00
+created_at: 2024-07-02T06:41:00
+updated_at: 2024-09-26T08:41:00
 tags: [#project]
 ---
 # Project Orbit 86
@@ -14,10 +14,10 @@ tags: [#project]
 Project Orbit 86 supports [[Summit Media]] through consulting delivery.
 
 ## Stakeholders
-- [[Clara Rostova]]
-- [[Tara Vance]]
-- [[Grace Diaz]]
-- [[Xavier Haddad]]
+- [[Clara Quinn]]
+- [[Priya Walker]]
+- [[Xavier Chen]]
+- [[Yara Evans]]
 
 ## Operating Notes
 - Owner: [[Grace Diaz]]

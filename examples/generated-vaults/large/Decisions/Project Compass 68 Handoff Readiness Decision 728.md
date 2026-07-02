@@ -4,10 +4,10 @@ date: 2026-03-17
 status: active
 project: "[[Project Compass 68]]"
 company: "[[Quantum Health]]"
-source_created_at: 2026-03-17T10:43:00
-source_observed_at: 2026-03-17T11:52:00
-created_at: 2026-03-17T13:55:00
-updated_at: 2026-03-18T03:55:00
+source_created_at: 2026-03-17T15:42:00
+source_observed_at: 2026-03-17T17:27:00
+created_at: 2026-03-17T17:32:00
+updated_at: 2026-03-18T10:32:00
 tags: [#decision]
 ---
 # Project Compass 68 Handoff Readiness Decision 728

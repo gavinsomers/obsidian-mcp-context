@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Foundry 3]]"
 company: "[[Cobalt Labs]]"
-source_created_at: 2023-08-25T16:19:00
-source_observed_at: 2023-08-25T18:26:00
-created_at: 2023-08-25T19:19:00
-updated_at: 2023-09-01T02:19:00
+source_created_at: 2023-08-25T15:04:00
+source_observed_at: 2023-08-25T15:37:00
+created_at: 2023-08-25T22:04:00
+updated_at: 2023-09-24T23:04:00
 tags: [#research]
 ---
 # Project Foundry 3 Warehouse Mapping Research 15
@@ -14,7 +14,7 @@ tags: [#research]
 Research on warehouse mapping for [[Project Foundry 3]] and [[Cobalt Labs]].
 
 ## Evidence
-- Interview notes from [[Sam Alvarez]]
+- Interview notes from [[Ben Alvarez]]
 - Related operating review: [[Project Foundry 3 Pipeline Hygiene Sync 39]]
 
 ## Follow Up

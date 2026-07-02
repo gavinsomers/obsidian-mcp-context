@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-31
 status: active
 project: "[[Project Venture 148]]"
-company: "[[Noble FinTech]]"
-source_created_at: 2025-05-31T08:03:00
-source_observed_at: 2025-05-31T09:44:00
-created_at: 2025-05-31T10:00:00
-updated_at: 2025-05-31T23:00:00
+company: "[[Crescent FinTech]]"
+source_created_at: 2025-05-31T16:58:00
+source_observed_at: 2025-05-31T18:37:00
+created_at: 2025-05-31T18:42:00
+updated_at: 2025-06-01T10:42:00
 tags: [#decision]
 ---
 # Project Venture 148 Handoff Readiness Decision 148
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Venture 148]].
 
 ## Context
-This decision applies to [[Noble FinTech]] and [[Project Venture 148]].
-It follows [[Project Venture 148 Lineage Audit Sync 1688]].
-It incorporates [[Project Venture 148 Finance Approval Research 368]].
+This decision applies to [[Crescent FinTech]] and [[Project Venture 148]].
+It follows [[Project Venture 148 Lineage Audit Sync 1248]].
+It incorporates [[Project Venture 148 Finance Approval Research 148]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

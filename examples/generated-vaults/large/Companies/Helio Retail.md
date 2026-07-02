@@ -1,22 +1,19 @@
 ---
 type: company
-status: active
-segment: smb
-source_created_at: 2023-06-26T12:47:00
-source_observed_at: 2023-06-26T15:39:00
-created_at: 2023-06-28T02:47:00
-updated_at: 2023-08-12T07:47:00
+status: pipeline
+segment: mid-market
+source_created_at: 2023-06-28T15:50:00
+source_observed_at: 2023-06-28T16:52:00
+created_at: 2023-06-29T15:50:00
+updated_at: 2023-09-11T16:50:00
 tags: [#company]
 ---
 # Helio Retail
 
 ## Account Context
-Helio Retail is a smb account currently marked `active`.
+Helio Retail is a mid-market account currently marked `pipeline`.
 
-## Stakeholders
-- [[Hannah Bennett]] - SecOps Lead
-- [[Yara Foster]] - SecOps Lead
-- [[Nadia Kim]] - SecOps Lead
+## Assigned Account Team
 
 ## Projects
 

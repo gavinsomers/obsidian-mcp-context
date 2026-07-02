@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Meridian Labs]]"
-role: "Customer Success Manager"
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
 source_created_at: 2023-05-22T13:49:00
 source_observed_at: 2023-05-22T14:42:00
 created_at: 2023-05-24T16:49:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Rachel Diaz
 
 ## Role
-Rachel Diaz is the Customer Success Manager at [[Meridian Labs]].
+Rachel Diaz is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Meridian 6]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Rachel Diaz]] #follow-up

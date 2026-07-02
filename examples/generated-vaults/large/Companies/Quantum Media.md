@@ -1,24 +1,19 @@
 ---
 type: company
-status: pipeline
-segment: enterprise
-source_created_at: 2023-09-30T15:01:00
-source_observed_at: 2023-09-30T15:42:00
-created_at: 2023-10-01T03:01:00
-updated_at: 2023-12-10T10:01:00
+status: active
+segment: smb
+source_created_at: 2023-10-02T08:54:00
+source_observed_at: 2023-10-02T11:52:00
+created_at: 2023-10-02T23:54:00
+updated_at: 2023-12-22T08:54:00
 tags: [#company]
 ---
 # Quantum Media
 
 ## Account Context
-Quantum Media is a enterprise account currently marked `pipeline`.
+Quantum Media is a smb account currently marked `active`.
 
-## Stakeholders
-- [[David Diaz]] - SecOps Lead
-- [[Uma Haddad]] - SecOps Lead
-- [[Jonah Morgan]] - SecOps Lead
-- [[Alex Rostova]] - SecOps Lead
-- [[Priya Vance]] - SecOps Lead
+## Assigned Account Team
 
 ## Projects
 

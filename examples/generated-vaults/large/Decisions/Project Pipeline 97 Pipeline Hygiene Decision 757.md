@@ -4,10 +4,10 @@ date: 2026-04-27
 status: active
 project: "[[Project Pipeline 97]]"
 company: "[[Vanguard Logistics]]"
-source_created_at: 2026-04-27T08:44:00
-source_observed_at: 2026-04-27T10:13:00
-created_at: 2026-04-27T12:23:00
-updated_at: 2026-04-28T04:23:00
+source_created_at: 2026-04-27T15:03:00
+source_observed_at: 2026-04-27T15:31:00
+created_at: 2026-04-27T17:35:00
+updated_at: 2026-04-28T12:35:00
 tags: [#decision]
 ---
 # Project Pipeline 97 Pipeline Hygiene Decision 757

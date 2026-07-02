@@ -1,23 +1,19 @@
 ---
 type: company
 status: churn-risk
-segment: smb
-source_created_at: 2023-08-13T10:20:00
-source_observed_at: 2023-08-13T11:00:00
-created_at: 2023-08-13T19:20:00
-updated_at: 2023-09-20T00:20:00
+segment: mid-market
+source_created_at: 2023-08-15T11:51:00
+source_observed_at: 2023-08-15T12:16:00
+created_at: 2023-08-16T23:51:00
+updated_at: 2023-10-05T08:51:00
 tags: [#company]
 ---
 # Crescent Manufacturing
 
 ## Account Context
-Crescent Manufacturing is a smb account currently marked `churn-risk`.
+Crescent Manufacturing is a mid-market account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Farah Chen]] - SecOps Lead
-- [[Wendy Grant]] - SecOps Lead
-- [[Lina Lee]] - SecOps Lead
-- [[Ben Quinn]] - SecOps Lead
+## Assigned Account Team
 
 ## Projects
 

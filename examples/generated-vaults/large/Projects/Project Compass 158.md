@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Quantum Retail]]"
-source_created_at: 2025-06-18T11:53:00
-source_observed_at: 2025-06-18T13:20:00
-created_at: 2025-06-19T21:53:00
-updated_at: 2025-07-18T08:53:00
+status: planning
+company: "[[Atlas Retail]]"
+source_created_at: 2025-06-18T15:08:00
+source_observed_at: 2025-06-18T17:29:00
+created_at: 2025-06-19T00:08:00
+updated_at: 2025-07-30T07:08:00
 tags: [#project]
 ---
 # Project Compass 158
 
 ## Overview
-Project Compass 158 supports [[Quantum Retail]] through customer success.
+Project Compass 158 supports [[Atlas Retail]] through customer success.
 
 ## Stakeholders
-- [[Kai Bennett]]
-- [[Amara Grant]]
-- [[Xavier Tan]]
-- [[Rachel Kim]]
+- [[Ben Morgan]]
+- [[Grace Grant]]
+- [[Zoe Patel]]
+- [[Uma Tan]]
 
 ## Operating Notes
-- Owner: [[Rachel Kim]]
-- Status: `closed`
-- Closed at: `2025-09-28`
+- Owner: [[Amara Grant]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Compass 158]] #ops

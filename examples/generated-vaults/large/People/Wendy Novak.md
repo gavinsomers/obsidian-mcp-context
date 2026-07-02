@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Northstar Labs]]"
-role: "Operations Lead"
-source_created_at: 2023-08-19T16:17:00
-source_observed_at: 2023-08-19T16:42:00
-created_at: 2023-08-20T18:17:00
-updated_at: 2023-09-07T02:17:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-08-19T15:45:00
+source_observed_at: 2023-08-19T18:41:00
+created_at: 2023-08-20T17:45:00
+updated_at: 2023-11-05T00:45:00
 tags: [#person]
 ---
 # Wendy Novak
 
 ## Role
-Wendy Novak is the Operations Lead at [[Northstar Labs]].
+Wendy Novak is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Atlas 1]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Wendy Novak]] #follow-up

@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Beacon 2]]"
-source_created_at: 2023-06-11T15:02:00
-source_observed_at: 2023-06-11T15:44:00
-created_at: 2023-06-13T06:02:00
-updated_at: 2023-07-07T07:02:00
+source_created_at: 2023-06-11T13:23:00
+source_observed_at: 2023-06-11T15:23:00
+created_at: 2023-06-13T00:23:00
+updated_at: 2023-07-12T09:23:00
 tags: [#risk]
 ---
 # Project Beacon 2 Metric Reconciliation Risk 2
@@ -14,9 +14,9 @@ tags: [#risk]
 Metric Reconciliation may affect [[Project Beacon 2]] for [[Apex Labs]].
 
 ## Evidence
-- Raised after [[Project Beacon 2 Finance Approval Sync 14]]
+- Raised after [[Project Beacon 2 Stakeholder Alignment Sync 2]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Iris Alvarez]]
+- Status: `mitigating`
+- Owner: [[Amara Alvarez]]
 - [ ] Reassess [[Project Beacon 2 Metric Reconciliation Risk 2]] during the next review #risk

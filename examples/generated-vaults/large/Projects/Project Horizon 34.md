@@ -1,11 +1,11 @@
 ---
 type: project
-status: closed
+status: blocked
 company: "[[BrightWave Retail]]"
-source_created_at: 2023-10-18T11:31:00
-source_observed_at: 2023-10-18T14:23:00
-created_at: 2023-10-18T17:31:00
-updated_at: 2024-01-08T20:31:00
+source_created_at: 2023-10-18T15:35:00
+source_observed_at: 2023-10-18T17:36:00
+created_at: 2023-10-18T19:35:00
+updated_at: 2023-11-26T21:35:00
 tags: [#project]
 ---
 # Project Horizon 34
@@ -14,13 +14,12 @@ tags: [#project]
 Project Horizon 34 supports [[BrightWave Retail]] through research program.
 
 ## Stakeholders
-- [[Tara Tan]]
-- [[Xavier Foster]]
-- [[Clara Patel]]
-- [[Marcus Kim]]
+- [[Ben Lee]]
+- [[Amara Patel]]
+- [[Uma Tan]]
+- [[Uma Usman]]
 
 ## Operating Notes
-- Owner: [[Clara Patel]]
-- Status: `closed`
-- Closed at: `2024-01-09`
+- Owner: [[Grace Bennett]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Horizon 34]] #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Health]]"
-role: "VP Data Engineering"
-source_created_at: 2023-05-13T13:01:00
-source_observed_at: 2023-05-13T14:37:00
-created_at: 2023-05-14T10:01:00
-updated_at: 2023-09-12T15:57:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-05-13T08:30:00
+source_observed_at: 2023-05-13T09:13:00
+created_at: 2023-05-15T00:30:00
+updated_at: 2023-05-30T03:30:00
 tags: [#person]
 ---
 # Priya Chen
 
 ## Role
-Priya Chen is the VP Data Engineering at [[Atlas Health]].
+Priya Chen is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Chen]] #follow-up

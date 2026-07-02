@@ -1,7 +1,7 @@
 ---
 type: project
-status: active
-company: "[[Northstar Labs]]"
+status: closed
+company: "[[Apex Labs]]"
 source_created_at: 2024-03-28T12:04:00
 source_observed_at: 2024-03-28T13:52:00
 created_at: 2024-03-30T01:04:00
@@ -11,15 +11,16 @@ tags: [#project]
 # Project Atlas 31
 
 ## Overview
-Project Atlas 31 supports [[Northstar Labs]] through consulting delivery.
+Project Atlas 31 supports [[Apex Labs]] through consulting delivery.
 
 ## Stakeholders
-- [[Alex Alvarez]]
-- [[David Bennett]]
-- [[Priya Evans]]
-- [[Lina Diaz]]
+- [[Elena Bennett]]
+- [[Lina Evans]]
+- [[Hannah Bennett]]
+- [[Nadia Evans]]
 
 ## Operating Notes
-- Owner: [[Alex Alvarez]]
-- Status: `active`
+- Owner: [[David Bennett]]
+- Status: `closed`
+- Closed at: `2024-10-02`
 - [ ] Reconcile latest state for [[Project Atlas 31]] #ops

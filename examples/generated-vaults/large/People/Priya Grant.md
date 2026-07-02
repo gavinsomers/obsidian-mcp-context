@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum Manufacturing]]"
-role: "VP Data Engineering"
-source_created_at: 2023-06-17T16:46:00
-source_observed_at: 2023-06-17T18:08:00
-created_at: 2023-06-26T21:46:00
-updated_at: 2023-09-14T05:46:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-06-17T12:40:00
+source_observed_at: 2023-06-17T13:26:00
+created_at: 2023-06-19T07:40:00
+updated_at: 2023-08-19T07:40:00
 tags: [#person]
 ---
 # Priya Grant
 
 ## Role
-Priya Grant is the VP Data Engineering at [[Quantum Manufacturing]].
+Priya Grant is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Quantum Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Grant]] #follow-up

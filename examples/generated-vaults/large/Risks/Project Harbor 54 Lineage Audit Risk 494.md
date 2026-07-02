@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Harbor 54]]"
-source_created_at: 2024-03-31T14:22:00
-source_observed_at: 2024-03-31T15:19:00
-created_at: 2024-04-01T08:22:00
-updated_at: 2024-04-13T16:22:00
+source_created_at: 2025-06-26T10:44:00
+source_observed_at: 2025-06-26T12:05:00
+created_at: 2025-06-27T11:44:00
+updated_at: 2025-06-30T22:44:00
 tags: [#risk]
 ---
 # Project Harbor 54 Lineage Audit Risk 494
@@ -14,9 +14,9 @@ tags: [#risk]
 Lineage Audit may affect [[Project Harbor 54]] for [[Atlas Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Harbor 54 Finance Approval Sync 934]]
+- Raised after [[Project Harbor 54 Finance Approval Sync 494]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Xavier Patel]]
+- Owner: [[Amara Chen]]
 - [ ] Reassess [[Project Harbor 54 Lineage Audit Risk 494]] during the next review #risk

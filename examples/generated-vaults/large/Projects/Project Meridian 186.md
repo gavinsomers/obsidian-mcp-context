@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Meridian Health]]"
-source_created_at: 2025-11-04T15:55:00
-source_observed_at: 2025-11-04T16:10:00
-created_at: 2025-11-05T04:55:00
-updated_at: 2026-01-11T04:55:00
+status: closed
+company: "[[Vanguard Health]]"
+source_created_at: 2025-11-04T10:00:00
+source_observed_at: 2025-11-04T10:25:00
+created_at: 2025-11-05T18:00:00
+updated_at: 2025-12-24T03:00:00
 tags: [#project]
 ---
 # Project Meridian 186
 
 ## Overview
-Project Meridian 186 supports [[Meridian Health]] through consulting delivery.
+Project Meridian 186 supports [[Vanguard Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Tara Lee]]
-- [[Marcus Chen]]
-- [[Clara Haddad]]
-- [[Zoe Usman]]
+- [[Victor Lee]]
+- [[Victor Kim]]
+- [[Jonah Chen]]
+- [[Yara Vance]]
 
 ## Operating Notes
-- Owner: [[Marcus Chen]]
-- Status: `active`
+- Owner: [[Clara Haddad]]
+- Status: `closed`
+- Closed at: `2026-06-25`
 - [ ] Reconcile latest state for [[Project Meridian 186]] #ops

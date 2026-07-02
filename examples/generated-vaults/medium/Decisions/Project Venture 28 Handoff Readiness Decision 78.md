@@ -4,10 +4,10 @@ date: 2024-04-04
 status: superseded
 project: "[[Project Venture 28]]"
 company: "[[Noble FinTech]]"
-source_created_at: 2024-04-04T12:01:00
-source_observed_at: 2024-04-04T12:41:00
-created_at: 2024-04-04T13:23:00
-updated_at: 2024-04-05T12:23:00
+source_created_at: 2024-04-04T11:18:00
+source_observed_at: 2024-04-04T12:11:00
+created_at: 2024-04-04T16:03:00
+updated_at: 2024-04-04T17:03:00
 tags: [#decision]
 ---
 # Project Venture 28 Handoff Readiness Decision 78

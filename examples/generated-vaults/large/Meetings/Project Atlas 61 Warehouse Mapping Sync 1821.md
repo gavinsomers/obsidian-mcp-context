@@ -3,18 +3,18 @@ type: meeting
 date: 2024-05-23
 project: "[[Project Atlas 61]]"
 company: "[[Northstar Health]]"
-source_created_at: 2024-05-23T10:23:00
-source_observed_at: 2024-05-23T11:37:00
-created_at: 2024-05-23T11:51:00
-updated_at: 2024-05-23T14:51:00
+source_created_at: 2024-05-23T13:24:00
+source_observed_at: 2024-05-23T16:10:00
+created_at: 2024-05-23T18:41:00
+updated_at: 2024-05-24T16:41:00
 tags: [#meeting]
 ---
 # Project Atlas 61 Warehouse Mapping Sync 1821
 
 ## Attendees
-- [[Nadia Lee]]
-- [[Uma Usman]]
-- [[Yara Grant]]
+- [[Amara Novak]]
+- [[Tara Kim]]
+- [[Wendy Bennett]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Atlas 61]] at [[Northstar Health]].

@@ -112,7 +112,7 @@ def test_generated_project_atlas_1_open_loop_query_keeps_source_provenance(
     expected_open_loops = {
         (
             "Meetings/Project Atlas 1 Warehouse Mapping Sync 1.md",
-            23,
+            24,
             "Send recap for [[Project Atlas 1]] to [[Alex Alvarez]] #follow-up",
         ),
         (

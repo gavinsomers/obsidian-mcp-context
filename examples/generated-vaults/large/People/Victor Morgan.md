@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Logistics]]"
-role: "Legal Counsel"
-source_created_at: 2023-08-10T15:22:00
-source_observed_at: 2023-08-10T16:11:00
-created_at: 2023-08-11T16:22:00
-updated_at: 2023-11-07T19:22:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-08-10T09:17:00
+source_observed_at: 2023-08-10T11:17:00
+created_at: 2023-08-11T23:17:00
+updated_at: 2023-09-06T00:17:00
 tags: [#person]
 ---
 # Victor Morgan
 
 ## Role
-Victor Morgan is the Legal Counsel at [[BrightWave Logistics]].
+Victor Morgan is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Victor Morgan]] #follow-up

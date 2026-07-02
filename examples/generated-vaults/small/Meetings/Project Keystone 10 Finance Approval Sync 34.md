@@ -2,22 +2,22 @@
 type: meeting
 date: 2023-10-01
 project: "[[Project Keystone 10]]"
-company: "[[Apex Labs]]"
-source_created_at: 2023-10-01T12:19:00
-source_observed_at: 2023-10-01T13:33:00
-created_at: 2023-10-01T14:07:00
-updated_at: 2023-10-02T01:07:00
+company: "[[Cobalt Labs]]"
+source_created_at: 2023-10-01T09:35:00
+source_observed_at: 2023-10-01T11:31:00
+created_at: 2023-10-01T15:01:00
+updated_at: 2023-10-01T23:01:00
 tags: [#meeting]
 ---
 # Project Keystone 10 Finance Approval Sync 34
 
 ## Attendees
-- [[Amara Alvarez]]
-- [[Rachel Alvarez]]
-- [[Zoe Alvarez]]
+- [[Priya Alvarez]]
+- [[Clara Bennett]]
+- [[Alex Alvarez]]
 
 ## Notes
-Finance Approval reviewed for [[Project Keystone 10]] at [[Apex Labs]].
+Finance Approval reviewed for [[Project Keystone 10]] at [[Cobalt Labs]].
 [[Iris Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items

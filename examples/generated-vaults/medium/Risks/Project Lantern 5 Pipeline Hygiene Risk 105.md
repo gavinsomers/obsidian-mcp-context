@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Lantern 5]]"
-source_created_at: 2024-07-11T08:48:00
-source_observed_at: 2024-07-11T10:19:00
-created_at: 2024-07-12T12:48:00
-updated_at: 2024-08-10T16:48:00
+source_created_at: 2024-07-11T16:06:00
+source_observed_at: 2024-07-11T18:11:00
+created_at: 2024-07-11T20:06:00
+updated_at: 2024-07-30T04:06:00
 tags: [#risk]
 ---
 # Project Lantern 5 Pipeline Hygiene Risk 105
@@ -18,5 +18,5 @@ Pipeline Hygiene may affect [[Project Lantern 5]] for [[Helio Labs]].
 
 ## Current State
 - Status: `open`
-- Owner: [[Uma Evans]]
+- Owner: [[David Alvarez]]
 - [ ] Reassess [[Project Lantern 5 Pipeline Hygiene Risk 105]] during the next review #risk

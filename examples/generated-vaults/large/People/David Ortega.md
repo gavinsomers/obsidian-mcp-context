@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Labs]]"
-role: "Operations Lead"
-source_created_at: 2023-08-21T10:46:00
-source_observed_at: 2023-08-21T11:03:00
-created_at: 2023-08-22T14:46:00
-updated_at: 2023-10-27T18:46:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-08-21T12:28:00
+source_observed_at: 2023-08-21T14:19:00
+created_at: 2023-08-22T08:28:00
+updated_at: 2023-11-03T10:28:00
 tags: [#person]
 ---
 # David Ortega
 
 ## Role
-David Ortega is the Operations Lead at [[Atlas Labs]].
+David Ortega is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Harbor 9]]
+## Active Project Allocations
+- Managing/Supporting [[Project Atlas 31]] ([[Northstar Retail]])
 - [ ] Confirm next update with [[David Ortega]] #follow-up

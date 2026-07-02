@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-01-01
+date: 2024-04-16
 project: "[[Project Horizon 34]]"
 company: "[[BrightWave Retail]]"
-source_created_at: 2024-01-01T11:36:00
-source_observed_at: 2024-01-01T11:54:00
-created_at: 2024-01-01T14:32:00
-updated_at: 2024-01-01T23:32:00
+source_created_at: 2024-04-16T11:00:00
+source_observed_at: 2024-04-16T12:44:00
+created_at: 2024-04-16T16:20:00
+updated_at: 2024-04-17T09:20:00
 tags: [#meeting]
 ---
 # Project Horizon 34 Finance Approval Sync 1794
 
 ## Attendees
-- [[Tara Tan]]
-- [[Marcus Kim]]
-- [[Xavier Foster]]
+- [[Amara Patel]]
+- [[Uma Usman]]
+- [[Ben Lee]]
 
 ## Notes
 Finance Approval reviewed for [[Project Horizon 34]] at [[BrightWave Retail]].
-[[Clara Patel]] flagged follow-up work for the next operating review.
+[[Grace Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Horizon 34]] to [[Clara Patel]] #follow-up
+- [ ] Send recap for [[Project Horizon 34]] to [[Grace Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

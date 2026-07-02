@@ -4,10 +4,10 @@ date: 2024-06-20
 status: active
 project: "[[Project Atlas 61]]"
 company: "[[Northstar Health]]"
-source_created_at: 2024-06-20T09:23:00
-source_observed_at: 2024-06-20T09:47:00
-created_at: 2024-06-20T10:49:00
-updated_at: 2024-06-20T11:49:00
+source_created_at: 2024-06-20T13:33:00
+source_observed_at: 2024-06-20T14:41:00
+created_at: 2024-06-20T17:34:00
+updated_at: 2024-06-21T14:34:00
 tags: [#decision]
 ---
 # Project Atlas 61 Security Review Decision 281

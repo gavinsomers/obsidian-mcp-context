@@ -1,25 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Atlas FinTech]]"
-source_created_at: 2025-04-10T16:10:00
-source_observed_at: 2025-04-10T16:41:00
-created_at: 2025-04-12T15:10:00
-updated_at: 2025-06-18T20:10:00
+status: closed
+company: "[[Harbor FinTech]]"
+source_created_at: 2025-04-10T12:13:00
+source_observed_at: 2025-04-10T12:46:00
+created_at: 2025-04-11T09:13:00
+updated_at: 2025-06-30T14:13:00
 tags: [#project]
 ---
 # Project Harbor 144
 
 ## Overview
-Project Harbor 144 supports [[Atlas FinTech]] through research program.
+Project Harbor 144 supports [[Harbor FinTech]] through research program.
 
 ## Stakeholders
-- [[Iris Tan]]
-- [[Xavier Alvarez]]
-- [[Tara Ortega]]
-- [[Clara Kim]]
+- [[Priya Morgan]]
+- [[Farah Lee]]
+- [[Hannah Chen]]
+- [[Marcus Diaz]]
 
 ## Operating Notes
-- Owner: [[Tara Ortega]]
-- Status: `blocked`
+- Owner: [[Marcus Foster]]
+- Status: `closed`
+- Closed at: `2025-07-23`
 - [ ] Reconcile latest state for [[Project Harbor 144]] #ops

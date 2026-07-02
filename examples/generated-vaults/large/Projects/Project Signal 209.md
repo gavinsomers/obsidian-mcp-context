@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Crescent Media]]"
-source_created_at: 2026-02-24T15:23:00
-source_observed_at: 2026-02-24T16:22:00
-created_at: 2026-02-25T07:23:00
-updated_at: 2026-03-13T11:23:00
+status: active
+company: "[[Keystone Media]]"
+source_created_at: 2026-02-24T09:56:00
+source_observed_at: 2026-02-24T12:32:00
+created_at: 2026-02-25T01:56:00
+updated_at: 2026-05-04T02:56:00
 tags: [#project]
 ---
 # Project Signal 209
 
 ## Overview
-Project Signal 209 supports [[Crescent Media]] through research program.
+Project Signal 209 supports [[Keystone Media]] through research program.
 
 ## Stakeholders
-- [[Alex Ivanov]]
-- [[Priya Morgan]]
-- [[Farah Rostova]]
-- [[Jonah Diaz]]
+- [[Marcus Vance]]
+- [[Farah Tan]]
+- [[Farah Haddad]]
+- [[Iris Vance]]
 
 ## Operating Notes
-- Owner: [[Farah Rostova]]
-- Status: `blocked`
+- Owner: [[Alex Ivanov]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 209]] #ops

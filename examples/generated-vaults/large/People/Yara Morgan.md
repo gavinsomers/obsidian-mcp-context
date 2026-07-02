@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Vanguard Logistics]]"
-role: "Operations Lead"
-source_created_at: 2023-08-11T12:02:00
-source_observed_at: 2023-08-11T14:39:00
-created_at: 2023-08-11T17:02:00
-updated_at: 2023-11-07T13:10:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-08-11T10:28:00
+source_observed_at: 2023-08-11T10:49:00
+created_at: 2023-08-12T02:28:00
+updated_at: 2023-09-20T12:28:00
 tags: [#person]
 ---
 # Yara Morgan
 
 ## Role
-Yara Morgan is the Operations Lead at [[Vanguard Logistics]].
+Yara Morgan is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Vanguard Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Morgan]] #follow-up

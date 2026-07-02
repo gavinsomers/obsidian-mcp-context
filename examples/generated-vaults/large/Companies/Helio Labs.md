@@ -1,21 +1,24 @@
 ---
 type: company
 status: active
-segment: smb
-source_created_at: 2023-04-27T14:08:00
-source_observed_at: 2023-04-27T16:59:00
-created_at: 2023-04-29T13:08:00
-updated_at: 2023-06-11T15:25:00
+segment: enterprise
+source_created_at: 2023-04-29T12:10:00
+source_observed_at: 2023-04-29T14:44:00
+created_at: 2023-04-30T14:10:00
+updated_at: 2023-07-22T19:10:00
 tags: [#company]
 ---
 # Helio Labs
 
 ## Account Context
-Helio Labs is a smb account currently marked `active`.
+Helio Labs is a enterprise account currently marked `active`.
 
-## Stakeholders
-- [[David Alvarez]] - VP Data Engineering
-- [[Uma Evans]] - VP Data Engineering
+## Assigned Account Team
+- [[David Alvarez]] - Data Platform Engineer
+- [[Hannah Chen]] - Data Platform Engineer
+- [[David Chen]] - Principal Analytics Engineer
+- [[Ben Diaz]] - Principal Analytics Engineer
+- [[Lina Bennett]] - Client Partner
 
 ## Projects
 - [[Project Lantern 5]]

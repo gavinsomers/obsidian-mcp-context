@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Analytics]]"
-role: "SecOps Lead"
-source_created_at: 2023-08-17T12:03:00
-source_observed_at: 2023-08-17T14:12:00
-created_at: 2023-08-17T14:17:00
-updated_at: 2023-12-13T17:21:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-08-17T14:58:00
+source_observed_at: 2023-08-17T15:45:00
+created_at: 2023-08-19T04:58:00
+updated_at: 2023-09-22T09:58:00
 tags: [#person]
 ---
 # Priya Novak
 
 ## Role
-Priya Novak is the SecOps Lead at [[Harbor Analytics]].
+Priya Novak is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Novak]] #follow-up

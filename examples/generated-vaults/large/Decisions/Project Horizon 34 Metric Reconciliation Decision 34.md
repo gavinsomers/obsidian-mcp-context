@@ -4,10 +4,10 @@ date: 2023-11-18
 status: superseded
 project: "[[Project Horizon 34]]"
 company: "[[BrightWave Retail]]"
-source_created_at: 2023-11-18T09:37:00
-source_observed_at: 2023-11-18T11:24:00
-created_at: 2023-11-18T12:21:00
-updated_at: 2023-11-19T00:21:00
+source_created_at: 2023-11-18T08:03:00
+source_observed_at: 2023-11-18T09:44:00
+created_at: 2023-11-18T10:00:00
+updated_at: 2023-11-18T23:00:00
 tags: [#decision]
 ---
 # Project Horizon 34 Metric Reconciliation Decision 34

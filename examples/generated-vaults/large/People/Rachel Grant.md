@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Manufacturing]]"
-role: "Legal Counsel"
-source_created_at: 2023-06-17T15:31:00
-source_observed_at: 2023-06-17T15:52:00
-created_at: 2023-06-19T10:31:00
-updated_at: 2023-08-13T12:04:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-06-17T16:55:00
+source_observed_at: 2023-06-17T19:27:00
+created_at: 2023-06-17T20:55:00
+updated_at: 2023-07-02T05:55:00
 tags: [#person]
 ---
 # Rachel Grant
 
 ## Role
-Rachel Grant is the Legal Counsel at [[Atlas Manufacturing]].
+Rachel Grant is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Rachel Grant]] #follow-up

@@ -3,18 +3,18 @@ type: meeting
 date: 2025-10-06
 project: "[[Project Orbit 86]]"
 company: "[[Summit Media]]"
-source_created_at: 2025-10-06T14:12:00
-source_observed_at: 2025-10-06T15:40:00
-created_at: 2025-10-06T15:58:00
-updated_at: 2025-10-07T14:58:00
+source_created_at: 2025-10-06T12:36:00
+source_observed_at: 2025-10-06T14:35:00
+created_at: 2025-10-06T16:43:00
+updated_at: 2025-10-07T07:43:00
 tags: [#meeting]
 ---
 # Project Orbit 86 Metric Reconciliation Sync 1406
 
 ## Attendees
-- [[Tara Vance]]
-- [[Grace Diaz]]
-- [[Xavier Haddad]]
+- [[Clara Quinn]]
+- [[Yara Evans]]
+- [[Priya Walker]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Orbit 86]] at [[Summit Media]].

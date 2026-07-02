@@ -4,10 +4,10 @@ date: 2024-07-15
 status: superseded
 project: "[[Project Foundry 78]]"
 company: "[[Cobalt Media]]"
-source_created_at: 2024-07-15T16:34:00
-source_observed_at: 2024-07-15T17:20:00
-created_at: 2024-07-15T20:56:00
-updated_at: 2024-07-16T17:56:00
+source_created_at: 2024-07-15T11:36:00
+source_observed_at: 2024-07-15T12:14:00
+created_at: 2024-07-15T15:57:00
+updated_at: 2024-07-16T06:57:00
 tags: [#decision]
 ---
 # Project Foundry 78 Handoff Readiness Decision 298

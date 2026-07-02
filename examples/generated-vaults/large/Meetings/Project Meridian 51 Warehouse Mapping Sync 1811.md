@@ -3,18 +3,18 @@ type: meeting
 date: 2024-05-09
 project: "[[Project Meridian 51]]"
 company: "[[Meridian Manufacturing]]"
-source_created_at: 2024-05-09T15:25:00
-source_observed_at: 2024-05-09T16:25:00
-created_at: 2024-05-17T19:25:00
-updated_at: 2024-05-18T14:25:00
+source_created_at: 2024-05-09T16:58:00
+source_observed_at: 2024-05-09T18:16:00
+created_at: 2024-05-09T20:35:00
+updated_at: 2024-05-10T19:35:00
 tags: [#meeting]
 ---
 # Project Meridian 51 Warehouse Mapping Sync 1811
 
 ## Attendees
-- [[Uma Patel]]
-- [[David Lee]]
-- [[Jonah Usman]]
+- [[Priya Usman]]
+- [[Sam Usman]]
+- [[Elena Ortega]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Meridian 51]] at [[Meridian Manufacturing]].

@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Pipeline 22]]"
 company: "[[Vanguard FinTech]]"
-source_created_at: 2025-07-23T15:47:00
-source_observed_at: 2025-07-23T18:15:00
-created_at: 2025-07-25T12:47:00
-updated_at: 2025-08-19T14:47:00
+source_created_at: 2025-07-23T09:54:00
+source_observed_at: 2025-07-23T11:16:00
+created_at: 2025-07-25T06:54:00
+updated_at: 2025-08-13T15:54:00
 tags: [#research]
 ---
 # Project Pipeline 22 Lineage Audit Research 462

@@ -4,10 +4,10 @@ date: 2026-02-04
 status: active
 project: "[[Project Harbor 39]]"
 company: "[[Atlas Retail]]"
-source_created_at: 2026-02-04T09:37:00
-source_observed_at: 2026-02-04T11:32:00
-created_at: 2026-02-04T12:48:00
-updated_at: 2026-02-04T16:48:00
+source_created_at: 2026-02-04T16:59:00
+source_observed_at: 2026-02-04T19:24:00
+created_at: 2026-02-04T19:29:00
+updated_at: 2026-02-05T00:29:00
 tags: [#decision]
 ---
 # Project Harbor 39 Warehouse Mapping Decision 699

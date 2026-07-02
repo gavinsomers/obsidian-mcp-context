@@ -1,25 +1,27 @@
 ---
 type: company
-status: churn-risk
-segment: enterprise
-source_created_at: 2023-04-25T10:40:00
-source_observed_at: 2023-04-25T11:30:00
-created_at: 2023-04-26T15:40:00
-updated_at: 2023-05-18T21:40:00
+status: active
+segment: smb
+source_created_at: 2023-04-27T11:45:00
+source_observed_at: 2023-04-27T13:14:00
+created_at: 2023-04-29T07:45:00
+updated_at: 2023-07-03T13:00:00
 tags: [#company]
 ---
 # BrightWave Labs
 
 ## Account Context
-BrightWave Labs is a enterprise account currently marked `churn-risk`.
+BrightWave Labs is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Clara Alvarez]] - Implementation Manager
-- [[Kai Alvarez]] - Implementation Manager
-- [[Tara Alvarez]] - Implementation Manager
-- [[Amara Bennett]] - Implementation Manager
+## Assigned Account Team
+- [[Clara Alvarez]] - Solution Architect
+- [[Iris Alvarez]] - Senior Data Consultant
+- [[Priya Alvarez]] - Principal Analytics Engineer
+- [[Hannah Alvarez]] - Principal Analytics Engineer
+- [[Omar Alvarez]] - Technical Director
 
 ## Projects
+- [[Project Horizon 4]]
 
 ## Open Loops
 - [ ] Refresh account context for [[BrightWave Labs]] #account

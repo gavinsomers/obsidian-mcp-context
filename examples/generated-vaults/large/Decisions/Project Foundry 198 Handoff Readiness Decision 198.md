@@ -3,11 +3,11 @@ type: decision
 date: 2026-02-01
 status: active
 project: "[[Project Foundry 198]]"
-company: "[[Cobalt Media]]"
-source_created_at: 2026-02-01T11:45:00
-source_observed_at: 2026-02-01T13:04:00
-created_at: 2026-02-01T16:49:00
-updated_at: 2026-02-02T02:49:00
+company: "[[BrightWave Media]]"
+source_created_at: 2026-02-01T14:05:00
+source_observed_at: 2026-02-01T15:26:00
+created_at: 2026-02-01T17:17:00
+updated_at: 2026-02-01T22:17:00
 tags: [#decision]
 ---
 # Project Foundry 198 Handoff Readiness Decision 198
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 198]].
 
 ## Context
-This decision applies to [[Cobalt Media]] and [[Project Foundry 198]].
-It follows [[Project Foundry 198 Lineage Audit Sync 1078]].
-It incorporates [[Project Foundry 198 Finance Approval Research 198]].
+This decision applies to [[BrightWave Media]] and [[Project Foundry 198]].
+It follows [[Project Foundry 198 Lineage Audit Sync 1298]].
+It incorporates [[Project Foundry 198 Finance Approval Research 418]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

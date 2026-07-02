@@ -1,24 +1,19 @@
 ---
 type: company
-status: churn-risk
+status: active
 segment: smb
-source_created_at: 2023-05-05T10:46:00
-source_observed_at: 2023-05-05T13:09:00
-created_at: 2023-05-06T05:46:00
-updated_at: 2023-07-27T12:46:00
+source_created_at: 2023-05-07T15:27:00
+source_observed_at: 2023-05-07T18:08:00
+created_at: 2023-05-08T08:27:00
+updated_at: 2023-06-02T12:27:00
 tags: [#company]
 ---
 # Atlas Labs
 
 ## Account Context
-Atlas Labs is a smb account currently marked `churn-risk`.
+Atlas Labs is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Hannah Alvarez]] - Operations Lead
-- [[Lina Bennett]] - Product Director
-- [[Priya Chen]] - VP Data Engineering
-- [[Uma Diaz]] - SecOps Lead
-- [[Yara Evans]] - Operations Lead
+## Assigned Account Team
 
 ## Projects
 

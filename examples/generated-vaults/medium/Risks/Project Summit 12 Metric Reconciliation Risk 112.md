@@ -1,11 +1,11 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Summit 12]]"
-source_created_at: 2024-08-08T14:49:00
-source_observed_at: 2024-08-08T15:09:00
-created_at: 2024-08-09T16:49:00
-updated_at: 2024-09-01T22:49:00
+source_created_at: 2024-08-08T15:40:00
+source_observed_at: 2024-08-08T17:22:00
+created_at: 2024-08-15T17:40:00
+updated_at: 2024-09-12T01:40:00
 tags: [#risk]
 ---
 # Project Summit 12 Metric Reconciliation Risk 112
@@ -17,6 +17,6 @@ Metric Reconciliation may affect [[Project Summit 12]] for [[Pioneer Labs]].
 - Raised after [[Project Summit 12 Stakeholder Alignment Sync 262]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Omar Bennett]]
+- Status: `open`
+- Owner: [[Kai Alvarez]]
 - [ ] Reassess [[Project Summit 12 Metric Reconciliation Risk 112]] during the next review #risk

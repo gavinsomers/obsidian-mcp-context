@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Compass 158]]"
-company: "[[Quantum Retail]]"
-source_created_at: 2025-07-12T14:54:00
-source_observed_at: 2025-07-12T15:19:00
-created_at: 2025-07-17T17:54:00
-updated_at: 2025-08-08T22:54:00
+company: "[[Atlas Retail]]"
+source_created_at: 2025-07-12T16:51:00
+source_observed_at: 2025-07-12T17:10:00
+created_at: 2025-07-14T03:51:00
+updated_at: 2025-07-21T12:51:00
 tags: [#research]
 ---
 # Project Compass 158 Finance Approval Research 158
 
 ## Research Summary
-Research on finance approval for [[Project Compass 158]] and [[Quantum Retail]].
+Research on finance approval for [[Project Compass 158]] and [[Atlas Retail]].
 
 ## Evidence
-- Interview notes from [[Rachel Kim]]
-- Related operating review: [[Project Compass 158 Lineage Audit Sync 1038]]
+- Interview notes from [[Amara Grant]]
+- Related operating review: [[Project Compass 158 Lineage Audit Sync 1258]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Compass 158]] #research

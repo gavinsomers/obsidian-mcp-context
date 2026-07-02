@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Signal 14]]"
 company: "[[Crescent Labs]]"
-source_created_at: 2023-11-12T10:25:00
-source_observed_at: 2023-11-12T12:12:00
-created_at: 2023-11-14T08:25:00
-updated_at: 2023-11-25T10:25:00
+source_created_at: 2023-09-22T14:01:00
+source_observed_at: 2023-09-22T15:08:00
+created_at: 2023-09-23T20:01:00
+updated_at: 2023-10-18T23:01:00
 tags: [#research]
 ---
 # Project Signal 14 Handoff Readiness Research 234
@@ -14,8 +14,8 @@ tags: [#research]
 Research on handoff readiness for [[Project Signal 14]] and [[Crescent Labs]].
 
 ## Evidence
-- Interview notes from [[Clara Foster]]
-- Related operating review: [[Project Signal 14 Finance Approval Sync 234]]
+- Interview notes from [[Marcus Alvarez]]
+- Related operating review: [[Project Signal 14 Finance Approval Sync 14]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Signal 14]] #research

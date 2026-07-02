@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Keystone Media]]"
-source_created_at: 2026-03-02T13:12:00
-source_observed_at: 2026-03-02T13:45:00
-created_at: 2026-03-04T07:12:00
-updated_at: 2026-04-25T18:12:00
+company: "[[Northstar Logistics]]"
+source_created_at: 2026-03-02T11:12:00
+source_observed_at: 2026-03-02T12:04:00
+created_at: 2026-03-02T17:12:00
+updated_at: 2026-03-28T17:12:00
 tags: [#project]
 ---
 # Project Bridge 210
 
 ## Overview
-Project Bridge 210 supports [[Keystone Media]] through operations admin.
+Project Bridge 210 supports [[Northstar Logistics]] through operations admin.
 
 ## Stakeholders
-- [[Rachel Morgan]]
-- [[Kai Diaz]]
-- [[Xavier Vance]]
-- [[Grace Rostova]]
+- [[Priya Usman]]
+- [[Hannah Bennett]]
+- [[Yara Chen]]
+- [[Xavier Bennett]]
 
 ## Operating Notes
-- Owner: [[Xavier Vance]]
+- Owner: [[Amara Ivanov]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Bridge 210]] #ops

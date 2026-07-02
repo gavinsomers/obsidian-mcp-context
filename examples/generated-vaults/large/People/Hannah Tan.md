@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Quantum FinTech]]"
-role: "Product Director"
-source_created_at: 2023-10-05T09:29:00
-source_observed_at: 2023-10-05T12:15:00
-created_at: 2023-10-07T00:29:00
-updated_at: 2023-10-29T01:29:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-10-05T13:55:00
+source_observed_at: 2023-10-05T16:23:00
+created_at: 2023-10-06T20:55:00
+updated_at: 2023-11-16T00:55:00
 tags: [#person]
 ---
 # Hannah Tan
 
 ## Role
-Hannah Tan is the Product Director at [[Quantum FinTech]].
+Hannah Tan is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Compass 23]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Hannah Tan]] #follow-up

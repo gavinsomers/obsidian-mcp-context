@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Northstar FinTech]]"
-role: "Customer Success Manager"
-source_created_at: 2023-04-26T12:58:00
-source_observed_at: 2023-04-26T13:27:00
-created_at: 2023-04-28T15:58:00
-updated_at: 2023-07-07T17:58:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-04-26T13:58:00
+source_observed_at: 2023-04-26T16:39:00
+created_at: 2023-05-02T15:58:00
+updated_at: 2023-07-31T13:00:00
 tags: [#person]
 ---
 # Omar Alvarez
 
 ## Role
-Omar Alvarez is the Customer Success Manager at [[Northstar FinTech]].
+Omar Alvarez is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Northstar FinTech]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Orbit 11]] ([[Summit Labs]])
+- Managing/Supporting [[Project Atlas 16]] ([[Northstar FinTech]])
 - [ ] Confirm next update with [[Omar Alvarez]] #follow-up

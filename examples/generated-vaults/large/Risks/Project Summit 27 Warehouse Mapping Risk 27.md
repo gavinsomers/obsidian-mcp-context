@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Summit 27]]"
-source_created_at: 2023-10-02T08:09:00
-source_observed_at: 2023-10-02T09:44:00
-created_at: 2023-10-03T23:09:00
-updated_at: 2023-11-14T10:09:00
+source_created_at: 2023-10-02T11:25:00
+source_observed_at: 2023-10-02T12:05:00
+created_at: 2023-10-11T11:25:00
+updated_at: 2023-11-19T13:25:00
 tags: [#risk]
 ---
 # Project Summit 27 Warehouse Mapping Risk 27
@@ -18,5 +18,5 @@ Warehouse Mapping may affect [[Project Summit 27]] for [[Pioneer FinTech]].
 
 ## Current State
 - Status: `open`
-- Owner: [[Farah Kim]]
+- Owner: [[Alex Bennett]]
 - [ ] Reassess [[Project Summit 27 Warehouse Mapping Risk 27]] during the next review #risk

@@ -4,10 +4,10 @@ date: 2025-05-14
 status: active
 project: "[[Project Summit 72]]"
 company: "[[Pioneer Health]]"
-source_created_at: 2025-05-14T14:41:00
-source_observed_at: 2025-05-14T16:26:00
-created_at: 2025-05-14T18:46:00
-updated_at: 2025-05-15T11:46:00
+source_created_at: 2025-05-14T13:20:00
+source_observed_at: 2025-05-14T13:34:00
+created_at: 2025-05-14T15:49:00
+updated_at: 2025-05-14T23:49:00
 tags: [#decision]
 ---
 # Project Summit 72 Finance Approval Decision 512

@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Orbit 86]]"
 company: "[[Summit Media]]"
-source_created_at: 2024-10-24T11:01:00
-source_observed_at: 2024-10-24T13:16:00
-created_at: 2024-10-26T10:01:00
-updated_at: 2024-11-15T11:01:00
+source_created_at: 2024-10-24T11:02:00
+source_observed_at: 2024-10-24T13:22:00
+created_at: 2024-10-26T01:02:00
+updated_at: 2024-11-08T11:02:00
 tags: [#research]
 ---
 # Project Orbit 86 Stakeholder Alignment Research 306
@@ -15,7 +15,7 @@ Research on stakeholder alignment for [[Project Orbit 86]] and [[Summit Media]].
 
 ## Evidence
 - Interview notes from [[Grace Diaz]]
-- Related operating review: [[Project Orbit 86 Metric Reconciliation Sync 1626]]
+- Related operating review: [[Project Orbit 86 Metric Reconciliation Sync 1846]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Orbit 86]] #research

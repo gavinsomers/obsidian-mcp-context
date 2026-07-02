@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Health]]"
-role: "SecOps Lead"
-source_created_at: 2023-06-24T08:20:00
-source_observed_at: 2023-06-24T09:33:00
-created_at: 2023-06-26T07:20:00
-updated_at: 2023-09-24T17:58:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-06-24T13:06:00
+source_observed_at: 2023-06-24T15:29:00
+created_at: 2023-06-25T08:06:00
+updated_at: 2023-08-11T17:06:00
 tags: [#person]
 ---
 # Lina Haddad
 
 ## Role
-Lina Haddad is the SecOps Lead at [[Keystone Health]].
+Lina Haddad is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Haddad]] #follow-up

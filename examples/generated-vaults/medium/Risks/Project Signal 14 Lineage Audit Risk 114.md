@@ -1,11 +1,11 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Signal 14]]"
-source_created_at: 2024-08-16T08:35:00
-source_observed_at: 2024-08-16T10:24:00
-created_at: 2024-08-18T02:35:00
-updated_at: 2024-08-24T05:35:00
+source_created_at: 2024-08-16T10:49:00
+source_observed_at: 2024-08-16T11:12:00
+created_at: 2024-08-17T07:49:00
+updated_at: 2024-09-17T11:49:00
 tags: [#risk]
 ---
 # Project Signal 14 Lineage Audit Risk 114
@@ -17,6 +17,6 @@ Lineage Audit may affect [[Project Signal 14]] for [[Crescent Labs]].
 - Raised after [[Project Signal 14 Finance Approval Sync 264]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Zoe Diaz]]
+- Status: `open`
+- Owner: [[Marcus Alvarez]]
 - [ ] Reassess [[Project Signal 14 Lineage Audit Risk 114]] during the next review #risk

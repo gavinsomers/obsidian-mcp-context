@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-11
 status: active
 project: "[[Project Beacon 212]]"
-company: "[[Apex Logistics]]"
-source_created_at: 2026-04-11T09:41:00
-source_observed_at: 2026-04-11T11:03:00
-created_at: 2026-04-11T14:49:00
-updated_at: 2026-04-12T10:49:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2026-04-11T12:42:00
+source_observed_at: 2026-04-11T14:07:00
+created_at: 2026-04-11T14:12:00
+updated_at: 2026-04-12T05:12:00
 tags: [#decision]
 ---
 # Project Beacon 212 Finance Approval Decision 652
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 212]].
 
 ## Context
-This decision applies to [[Apex Logistics]] and [[Project Beacon 212]].
+This decision applies to [[Cobalt Logistics]] and [[Project Beacon 212]].
 It follows [[Project Beacon 212 Stakeholder Alignment Sync 1532]].
-It incorporates [[Project Beacon 212 Lineage Audit Research 212]].
+It incorporates [[Project Beacon 212 Lineage Audit Research 432]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

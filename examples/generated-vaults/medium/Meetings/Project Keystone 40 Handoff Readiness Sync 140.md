@@ -2,24 +2,24 @@
 type: meeting
 date: 2024-07-14
 project: "[[Project Keystone 40]]"
-company: "[[Harbor Labs]]"
-source_created_at: 2024-07-14T12:29:00
-source_observed_at: 2024-07-14T13:46:00
-created_at: 2024-07-14T13:51:00
-updated_at: 2024-07-14T19:51:00
+company: "[[Summit Labs]]"
+source_created_at: 2024-07-14T09:51:00
+source_observed_at: 2024-07-14T10:36:00
+created_at: 2024-07-14T10:41:00
+updated_at: 2024-07-14T18:41:00
 tags: [#meeting]
 ---
 # Project Keystone 40 Handoff Readiness Sync 140
 
 ## Attendees
-- [[Rachel Chen]]
-- [[Marcus Bennett]]
-- [[Zoe Evans]]
+- [[Elena Alvarez]]
+- [[Tara Foster]]
+- [[Tara Diaz]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 40]] at [[Harbor Labs]].
-[[Zoe Evans]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 40]] at [[Summit Labs]].
+[[Marcus Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 40]] to [[Zoe Evans]] #follow-up
+- [ ] Send recap for [[Project Keystone 40]] to [[Marcus Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

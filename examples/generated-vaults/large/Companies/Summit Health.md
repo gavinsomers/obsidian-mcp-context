@@ -1,23 +1,19 @@
 ---
 type: company
-status: pipeline
+status: churn-risk
 segment: mid-market
-source_created_at: 2023-09-06T13:55:00
-source_observed_at: 2023-09-06T16:41:00
-created_at: 2023-09-07T01:55:00
-updated_at: 2023-10-08T04:55:00
+source_created_at: 2023-09-08T08:27:00
+source_observed_at: 2023-09-08T09:28:00
+created_at: 2023-09-08T18:27:00
+updated_at: 2023-10-30T20:27:00
 tags: [#company]
 ---
 # Summit Health
 
 ## Account Context
-Summit Health is a mid-market account currently marked `pipeline`.
+Summit Health is a mid-market account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Sam Chen]] - Product Director
-- [[Hannah Haddad]] - Product Director
-- [[Yara Lee]] - Product Director
-- [[Nadia Quinn]] - Product Director
+## Assigned Account Team
 
 ## Projects
 

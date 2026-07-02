@@ -14,13 +14,13 @@ tags: [#project]
 Project Harbor 24 supports [[Atlas FinTech]] through research program.
 
 ## Stakeholders
-- [[Iris Evans]]
-- [[Marcus Foster]]
-- [[Elena Diaz]]
-- [[Xavier Alvarez]]
+- [[Rachel Bennett]]
+- [[Victor Alvarez]]
+- [[Uma Chen]]
+- [[Amara Foster]]
 
 ## Operating Notes
-- Owner: [[Iris Evans]]
+- Owner: [[Xavier Alvarez]]
 - Status: `closed`
-- Closed at: `2024-06-26`
+- Closed at: `2024-05-21`
 - [ ] Reconcile latest state for [[Project Harbor 24]] #ops

@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-07-09
 project: "[[Project Orbit 131]]"
-company: "[[Summit Labs]]"
-source_created_at: 2025-07-09T12:45:00
-source_observed_at: 2025-07-09T13:35:00
-created_at: 2025-07-09T15:31:00
-updated_at: 2025-07-10T07:31:00
+company: "[[Pioneer Labs]]"
+source_created_at: 2025-07-09T10:20:00
+source_observed_at: 2025-07-09T12:29:00
+created_at: 2025-07-09T13:35:00
+updated_at: 2025-07-10T00:35:00
 tags: [#meeting]
 ---
 # Project Orbit 131 Warehouse Mapping Sync 571
 
 ## Attendees
-- [[Wendy Shah]]
-- [[Farah Ortega]]
-- [[Priya Jenkins]]
+- [[Zoe Usman]]
+- [[Lina Novak]]
+- [[Marcus Vance]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 131]] at [[Summit Labs]].
-[[Jonah Alvarez]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 131]] at [[Pioneer Labs]].
+[[Alex Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 131]] to [[Jonah Alvarez]] #follow-up
+- [ ] Send recap for [[Project Orbit 131]] to [[Alex Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

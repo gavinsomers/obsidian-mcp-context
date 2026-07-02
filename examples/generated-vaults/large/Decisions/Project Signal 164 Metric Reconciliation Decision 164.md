@@ -3,11 +3,11 @@ type: decision
 date: 2025-08-17
 status: active
 project: "[[Project Signal 164]]"
-company: "[[Crescent Retail]]"
-source_created_at: 2025-08-17T12:46:00
-source_observed_at: 2025-08-17T13:32:00
-created_at: 2025-08-25T15:46:00
-updated_at: 2025-08-26T06:46:00
+company: "[[Keystone Retail]]"
+source_created_at: 2025-08-17T11:05:00
+source_observed_at: 2025-08-17T11:52:00
+created_at: 2025-08-17T13:35:00
+updated_at: 2025-08-17T19:35:00
 tags: [#decision]
 ---
 # Project Signal 164 Metric Reconciliation Decision 164
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Signal 164]].
 
 ## Context
-This decision applies to [[Crescent Retail]] and [[Project Signal 164]].
-It follows [[Project Signal 164 Finance Approval Sync 604]].
-It incorporates [[Project Signal 164 Handoff Readiness Research 164]].
+This decision applies to [[Keystone Retail]] and [[Project Signal 164]].
+It follows [[Project Signal 164 Finance Approval Sync 384]].
+It incorporates [[Project Signal 164 Handoff Readiness Research 384]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

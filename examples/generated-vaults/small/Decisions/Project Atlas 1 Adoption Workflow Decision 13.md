@@ -4,10 +4,10 @@ date: 2023-08-18
 status: active
 project: "[[Project Atlas 1]]"
 company: "[[Northstar Labs]]"
-source_created_at: 2023-08-18T15:26:00
-source_observed_at: 2023-08-18T16:45:00
-created_at: 2023-08-18T19:58:00
-updated_at: 2023-08-18T23:58:00
+source_created_at: 2023-08-18T08:20:00
+source_observed_at: 2023-08-18T09:13:00
+created_at: 2023-08-18T13:46:00
+updated_at: 2023-08-19T04:46:00
 tags: [#decision]
 ---
 # Project Atlas 1 Adoption Workflow Decision 13

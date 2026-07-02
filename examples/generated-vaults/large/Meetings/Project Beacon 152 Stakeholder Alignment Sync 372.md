@@ -2,22 +2,22 @@
 type: meeting
 date: 2025-05-30
 project: "[[Project Beacon 152]]"
-company: "[[Apex Retail]]"
-source_created_at: 2025-05-30T09:02:00
-source_observed_at: 2025-05-30T09:30:00
-created_at: 2025-05-30T12:23:00
-updated_at: 2025-05-31T08:23:00
+company: "[[Cobalt Retail]]"
+source_created_at: 2025-05-30T14:34:00
+source_observed_at: 2025-05-30T14:57:00
+created_at: 2025-05-30T15:02:00
+updated_at: 2025-05-31T09:02:00
 tags: [#meeting]
 ---
 # Project Beacon 152 Stakeholder Alignment Sync 372
 
 ## Attendees
-- [[Victor Foster]]
-- [[Kai Kim]]
-- [[Amara Patel]]
+- [[Zoe Patel]]
+- [[Omar Haddad]]
+- [[Xavier Grant]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 152]] at [[Apex Retail]].
+Stakeholder Alignment reviewed for [[Project Beacon 152]] at [[Cobalt Retail]].
 [[Victor Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items

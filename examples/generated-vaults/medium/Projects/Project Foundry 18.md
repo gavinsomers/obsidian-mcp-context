@@ -1,6 +1,6 @@
 ---
 type: project
-status: closed
+status: blocked
 company: "[[Cobalt FinTech]]"
 source_created_at: 2023-11-09T12:41:00
 source_observed_at: 2023-11-09T13:44:00
@@ -14,13 +14,12 @@ tags: [#project]
 Project Foundry 18 supports [[Cobalt FinTech]] through customer success.
 
 ## Stakeholders
-- [[Clara Evans]]
-- [[Rachel Alvarez]]
-- [[Zoe Chen]]
-- [[Victor Bennett]]
+- [[Elena Bennett]]
+- [[Yara Chen]]
+- [[Zoe Evans]]
+- [[Amara Diaz]]
 
 ## Operating Notes
-- Owner: [[Zoe Chen]]
-- Status: `closed`
-- Closed at: `2024-03-13`
+- Owner: [[Rachel Alvarez]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Foundry 18]] #ops

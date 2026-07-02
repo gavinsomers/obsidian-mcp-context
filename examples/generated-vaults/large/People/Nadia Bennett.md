@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit Retail]]"
-role: "Operations Lead"
-source_created_at: 2023-05-04T12:13:00
-source_observed_at: 2023-05-04T13:26:00
-created_at: 2023-05-05T12:13:00
-updated_at: 2023-07-18T14:31:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-05-04T09:19:00
+source_observed_at: 2023-05-04T11:10:00
+created_at: 2023-05-06T05:19:00
+updated_at: 2023-06-22T06:19:00
 tags: [#person]
 ---
 # Nadia Bennett
 
 ## Role
-Nadia Bennett is the Operations Lead at [[Summit Retail]].
+Nadia Bennett is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Summit Retail]] account context
+## Active Project Allocations
+- Managing/Supporting [[Project Horizon 4]] ([[BrightWave Labs]])
 - [ ] Confirm next update with [[Nadia Bennett]] #follow-up

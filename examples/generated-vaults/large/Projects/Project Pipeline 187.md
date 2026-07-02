@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Vanguard Health]]"
-source_created_at: 2025-11-07T16:20:00
-source_observed_at: 2025-11-07T18:07:00
-created_at: 2025-11-08T01:20:00
-updated_at: 2025-12-04T09:20:00
+status: active
+company: "[[Quantum Health]]"
+source_created_at: 2025-11-07T12:53:00
+source_observed_at: 2025-11-07T14:40:00
+created_at: 2025-11-09T06:53:00
+updated_at: 2025-12-20T15:53:00
 tags: [#project]
 ---
 # Project Pipeline 187
 
 ## Overview
-Project Pipeline 187 supports [[Vanguard Health]] through sales pipeline.
+Project Pipeline 187 supports [[Quantum Health]] through sales pipeline.
 
 ## Stakeholders
-- [[David Haddad]]
-- [[Nadia Chen]]
-- [[Jonah Quinn]]
-- [[Alex Vance]]
+- [[Xavier Grant]]
+- [[Victor Quinn]]
+- [[Xavier Vance]]
+- [[Marcus Tan]]
 
 ## Operating Notes
 - Owner: [[David Haddad]]
-- Status: `planning`
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Pipeline 187]] #ops

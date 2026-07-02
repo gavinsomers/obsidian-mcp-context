@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Helio Labs]]"
-role: "VP Data Engineering"
-source_created_at: 2023-04-25T14:46:00
-source_observed_at: 2023-04-25T16:22:00
-created_at: 2023-04-25T22:46:00
-updated_at: 2023-06-10T01:46:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-04-25T11:37:00
+source_observed_at: 2023-04-25T14:19:00
+created_at: 2023-04-27T17:37:00
+updated_at: 2023-07-25T02:37:00
 tags: [#person]
 ---
 # Lina Alvarez
 
 ## Role
-Lina Alvarez is the VP Data Engineering at [[Helio Labs]].
+Lina Alvarez is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Helio Labs]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Lina Alvarez]] #follow-up

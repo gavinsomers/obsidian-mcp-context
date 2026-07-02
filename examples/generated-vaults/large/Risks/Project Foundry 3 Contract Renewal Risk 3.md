@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Foundry 3]]"
-source_created_at: 2023-06-06T15:58:00
-source_observed_at: 2023-06-06T16:52:00
-created_at: 2023-06-06T20:58:00
-updated_at: 2023-06-25T22:58:00
+source_created_at: 2023-06-06T12:46:00
+source_observed_at: 2023-06-06T14:58:00
+created_at: 2023-06-14T12:46:00
+updated_at: 2023-06-30T20:46:00
 tags: [#risk]
 ---
 # Project Foundry 3 Contract Renewal Risk 3
@@ -17,6 +17,6 @@ Contract Renewal may affect [[Project Foundry 3]] for [[Cobalt Labs]].
 - Raised after [[Project Foundry 3 Security Review Sync 3]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `closed`
 - Owner: [[Ben Alvarez]]
 - [ ] Reassess [[Project Foundry 3 Contract Renewal Risk 3]] during the next review #risk

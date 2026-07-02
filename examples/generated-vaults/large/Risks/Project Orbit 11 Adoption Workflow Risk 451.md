@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Orbit 11]]"
-source_created_at: 2024-02-16T15:26:00
-source_observed_at: 2024-02-16T17:07:00
-created_at: 2024-02-16T23:26:00
-updated_at: 2024-03-16T06:26:00
+source_created_at: 2025-04-21T09:19:00
+source_observed_at: 2025-04-21T10:45:00
+created_at: 2025-04-22T11:19:00
+updated_at: 2025-05-06T18:19:00
 tags: [#risk]
 ---
 # Project Orbit 11 Adoption Workflow Risk 451
@@ -14,9 +14,9 @@ tags: [#risk]
 Adoption Workflow may affect [[Project Orbit 11]] for [[Summit Labs]].
 
 ## Evidence
-- Raised after [[Project Orbit 11 Warehouse Mapping Sync 231]]
+- Raised after [[Project Orbit 11 Warehouse Mapping Sync 451]]
 
 ## Current State
-- Status: `open`
+- Status: `closed`
 - Owner: [[Jonah Alvarez]]
 - [ ] Reassess [[Project Orbit 11 Adoption Workflow Risk 451]] during the next review #risk

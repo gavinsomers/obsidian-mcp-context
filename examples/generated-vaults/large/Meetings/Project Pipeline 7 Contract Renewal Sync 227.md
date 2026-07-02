@@ -3,17 +3,18 @@ type: meeting
 date: 2024-03-14
 project: "[[Project Pipeline 7]]"
 company: "[[Vanguard Labs]]"
-source_created_at: 2024-03-14T10:24:00
-source_observed_at: 2024-03-14T10:40:00
-created_at: 2024-03-14T14:11:00
-updated_at: 2024-03-15T02:11:00
+source_created_at: 2024-03-14T08:23:00
+source_observed_at: 2024-03-14T09:46:00
+created_at: 2024-03-14T13:50:00
+updated_at: 2024-03-15T11:50:00
 tags: [#meeting]
 ---
 # Project Pipeline 7 Contract Renewal Sync 227
 
 ## Attendees
-- [[Farah Alvarez]]
-- [[Wendy Evans]]
+- [[Iris Alvarez]]
+- [[Priya Diaz]]
+- [[Nadia Alvarez]]
 
 ## Notes
 Contract Renewal reviewed for [[Project Pipeline 7]] at [[Vanguard Labs]].

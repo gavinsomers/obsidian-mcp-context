@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-10-16
 project: "[[Project Bridge 180]]"
-company: "[[Keystone Manufacturing]]"
-source_created_at: 2025-10-16T12:28:00
-source_observed_at: 2025-10-16T13:12:00
-created_at: 2025-10-16T16:07:00
-updated_at: 2025-10-17T01:07:00
+company: "[[Northstar Health]]"
+source_created_at: 2025-10-16T14:22:00
+source_observed_at: 2025-10-16T15:05:00
+created_at: 2025-10-16T16:54:00
+updated_at: 2025-10-17T08:54:00
 tags: [#meeting]
 ---
 # Project Bridge 180 Handoff Readiness Sync 1280
 
 ## Attendees
-- [[Grace Chen]]
-- [[Marcus Lee]]
-- [[Xavier Grant]]
+- [[Priya Alvarez]]
+- [[Lina Jenkins]]
+- [[Priya Chen]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 180]] at [[Keystone Manufacturing]].
-[[Tara Usman]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 180]] at [[Northstar Health]].
+[[Xavier Grant]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 180]] to [[Tara Usman]] #follow-up
+- [ ] Send recap for [[Project Bridge 180]] to [[Xavier Grant]] #follow-up
 - [x] Capture meeting notes in vault #ops

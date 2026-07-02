@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Logistics]]"
-role: "SecOps Lead"
-source_created_at: 2023-09-20T16:05:00
-source_observed_at: 2023-09-20T18:28:00
-created_at: 2023-09-20T23:05:00
-updated_at: 2023-11-11T10:04:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-09-20T13:03:00
+source_observed_at: 2023-09-20T15:57:00
+created_at: 2023-09-20T22:03:00
+updated_at: 2023-10-11T00:03:00
 tags: [#person]
 ---
 # Priya Rostova
 
 ## Role
-Priya Rostova is the SecOps Lead at [[Atlas Logistics]].
+Priya Rostova is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Rostova]] #follow-up

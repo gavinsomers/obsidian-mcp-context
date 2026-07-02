@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Pipeline 7]]"
 company: "[[Vanguard Labs]]"
-source_created_at: 2025-06-26T12:34:00
-source_observed_at: 2025-06-26T15:14:00
-created_at: 2025-06-30T12:34:00
-updated_at: 2025-07-19T17:34:00
+source_created_at: 2025-06-26T13:21:00
+source_observed_at: 2025-06-26T15:38:00
+created_at: 2025-06-27T20:21:00
+updated_at: 2025-07-20T05:21:00
 tags: [#research]
 ---
 # Project Pipeline 7 Security Review Research 447

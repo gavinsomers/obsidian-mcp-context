@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Compass 53]]"
 company: "[[Quantum Manufacturing]]"
-source_created_at: 2024-02-12T11:19:00
-source_observed_at: 2024-02-12T14:18:00
-created_at: 2024-02-13T19:19:00
-updated_at: 2024-03-12T01:19:00
+source_created_at: 2024-02-12T09:49:00
+source_observed_at: 2024-02-12T09:59:00
+created_at: 2024-02-13T04:49:00
+updated_at: 2024-03-21T04:49:00
 tags: [#research]
 ---
 # Project Compass 53 Pipeline Hygiene Research 53
@@ -14,7 +14,7 @@ tags: [#research]
 Research on pipeline hygiene for [[Project Compass 53]] and [[Quantum Manufacturing]].
 
 ## Evidence
-- Interview notes from [[Farah Lee]]
+- Interview notes from [[Alex Chen]]
 - Related operating review: [[Project Compass 53 Security Review Sync 53]]
 
 ## Follow Up

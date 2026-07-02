@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian Logistics]]"
-role: "Customer Success Manager"
-source_created_at: 2023-07-01T10:03:00
-source_observed_at: 2023-07-01T10:55:00
-created_at: 2023-07-01T23:03:00
-updated_at: 2023-11-05T09:00:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-07-01T16:07:00
+source_observed_at: 2023-07-01T18:30:00
+created_at: 2023-07-05T21:07:00
+updated_at: 2023-09-10T02:07:00
 tags: [#person]
 ---
 # Grace Ivanov
 
 ## Role
-Grace Ivanov is the Customer Success Manager at [[Meridian Logistics]].
+Grace Ivanov is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian Logistics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Grace Ivanov]] #follow-up

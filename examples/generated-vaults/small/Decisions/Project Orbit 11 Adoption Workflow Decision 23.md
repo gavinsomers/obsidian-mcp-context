@@ -3,11 +3,11 @@ type: decision
 date: 2023-11-05
 status: superseded
 project: "[[Project Orbit 11]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2023-11-05T13:05:00
-source_observed_at: 2023-11-05T15:06:00
-created_at: 2023-11-05T15:19:00
-updated_at: 2023-11-06T05:19:00
+company: "[[BrightWave Labs]]"
+source_created_at: 2023-11-05T08:23:00
+source_observed_at: 2023-11-05T09:46:00
+created_at: 2023-11-07T14:23:00
+updated_at: 2023-11-08T05:23:00
 tags: [#decision]
 ---
 # Project Orbit 11 Adoption Workflow Decision 23
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Orbit 11]].
 
 ## Context
-This decision applies to [[Cobalt Labs]] and [[Project Orbit 11]].
+This decision applies to [[BrightWave Labs]] and [[Project Orbit 11]].
 It follows [[Project Orbit 11 Pipeline Hygiene Sync 59]].
-It incorporates [[Project Orbit 11 Pipeline Hygiene Research 23]].
+It incorporates [[Project Orbit 11 Contract Renewal Research 11]].
 
 ## Supersession
 Marked superseded by a later unlinked stakeholder review. #superseded

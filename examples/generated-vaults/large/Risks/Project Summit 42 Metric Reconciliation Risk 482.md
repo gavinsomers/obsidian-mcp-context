@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Summit 42]]"
-source_created_at: 2025-06-09T14:49:00
-source_observed_at: 2025-06-09T17:35:00
-created_at: 2025-06-11T10:49:00
-updated_at: 2025-07-25T14:49:00
+source_created_at: 2025-06-09T11:25:00
+source_observed_at: 2025-06-09T11:44:00
+created_at: 2025-06-10T23:25:00
+updated_at: 2025-07-09T02:25:00
 tags: [#risk]
 ---
 # Project Summit 42 Metric Reconciliation Risk 482
@@ -18,5 +18,5 @@ Metric Reconciliation may affect [[Project Summit 42]] for [[Pioneer Retail]].
 
 ## Current State
 - Status: `open`
-- Owner: [[Elena Grant]]
+- Owner: [[Omar Bennett]]
 - [ ] Reassess [[Project Summit 42 Metric Reconciliation Risk 482]] during the next review #risk

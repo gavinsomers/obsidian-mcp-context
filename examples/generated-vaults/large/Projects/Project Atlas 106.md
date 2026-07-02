@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: blocked
 company: "[[Northstar Analytics]]"
-source_created_at: 2024-10-07T14:05:00
-source_observed_at: 2024-10-07T14:25:00
-created_at: 2024-10-08T21:05:00
-updated_at: 2024-11-20T07:05:00
+source_created_at: 2024-10-07T13:44:00
+source_observed_at: 2024-10-07T15:35:00
+created_at: 2024-10-07T20:44:00
+updated_at: 2024-11-06T22:44:00
 tags: [#project]
 ---
 # Project Atlas 106
@@ -14,12 +14,12 @@ tags: [#project]
 Project Atlas 106 supports [[Northstar Analytics]] through consulting delivery.
 
 ## Stakeholders
-- [[Xavier Rostova]]
-- [[Marcus Walker]]
-- [[Grace Novak]]
-- [[Rachel Ivanov]]
+- [[Grace Grant]]
+- [[Priya Tan]]
+- [[Grace Usman]]
+- [[Jonah Shah]]
 
 ## Operating Notes
 - Owner: [[Amara Evans]]
-- Status: `active`
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Atlas 106]] #ops

@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Keystone 10]]"
 company: "[[Harbor Labs]]"
-source_created_at: 2024-06-14T08:53:00
-source_observed_at: 2024-06-14T09:43:00
-created_at: 2024-06-15T22:53:00
-updated_at: 2024-06-22T01:53:00
+source_created_at: 2023-12-01T08:29:00
+source_observed_at: 2023-12-01T09:47:00
+created_at: 2023-12-05T15:29:00
+updated_at: 2023-12-24T19:29:00
 tags: [#research]
 ---
 # Project Keystone 10 Metric Reconciliation Research 230
@@ -14,8 +14,8 @@ tags: [#research]
 Research on metric reconciliation for [[Project Keystone 10]] and [[Harbor Labs]].
 
 ## Evidence
-- Interview notes from [[Zoe Evans]]
-- Related operating review: [[Project Keystone 10 Handoff Readiness Sync 230]]
+- Interview notes from [[Iris Alvarez]]
+- Related operating review: [[Project Keystone 10 Handoff Readiness Sync 1770]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Keystone 10]] #research

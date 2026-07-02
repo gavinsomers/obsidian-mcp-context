@@ -2,10 +2,10 @@
 type: project
 status: planning
 company: "[[Vanguard FinTech]]"
-source_created_at: 2023-08-21T15:42:00
-source_observed_at: 2023-08-21T18:13:00
-created_at: 2023-08-23T05:42:00
-updated_at: 2023-11-05T12:42:00
+source_created_at: 2023-08-21T11:31:00
+source_observed_at: 2023-08-21T14:23:00
+created_at: 2023-08-21T17:31:00
+updated_at: 2023-11-11T20:31:00
 tags: [#project]
 ---
 # Project Pipeline 22
@@ -14,9 +14,10 @@ tags: [#project]
 Project Pipeline 22 supports [[Vanguard FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Victor Alvarez]]
-- [[Kai Foster]]
-- [[Amara Kim]]
+- [[Sam Morgan]]
+- [[Elena Novak]]
+- [[Hannah Ivanov]]
+- [[Alex Kim]]
 
 ## Operating Notes
 - Owner: [[Victor Alvarez]]

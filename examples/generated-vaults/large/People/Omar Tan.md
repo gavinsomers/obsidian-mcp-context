@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone FinTech]]"
-role: "Legal Counsel"
-source_created_at: 2023-10-07T09:00:00
-source_observed_at: 2023-10-07T09:11:00
-created_at: 2023-10-07T16:00:00
-updated_at: 2024-01-04T20:00:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-10-07T09:15:00
+source_observed_at: 2023-10-07T11:10:00
+created_at: 2023-10-08T11:15:00
+updated_at: 2023-11-19T12:15:00
 tags: [#person]
 ---
 # Omar Tan
 
 ## Role
-Omar Tan is the Legal Counsel at [[Keystone FinTech]].
+Omar Tan is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Bridge 30]]
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Omar Tan]] #follow-up

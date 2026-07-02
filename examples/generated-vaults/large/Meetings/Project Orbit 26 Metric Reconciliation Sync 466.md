@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2025-02-12
+date: 2023-10-27
 project: "[[Project Orbit 26]]"
 company: "[[Summit FinTech]]"
-source_created_at: 2025-02-12T09:47:00
-source_observed_at: 2025-02-12T12:27:00
-created_at: 2025-02-12T12:32:00
-updated_at: 2025-02-13T08:32:00
+source_created_at: 2023-10-27T13:57:00
+source_observed_at: 2023-10-27T14:50:00
+created_at: 2023-10-27T19:07:00
+updated_at: 2023-10-28T07:07:00
 tags: [#meeting]
 ---
 # Project Orbit 26 Metric Reconciliation Sync 466
 
 ## Attendees
-- [[Elena Kim]]
-- [[Omar Foster]]
-- [[Victor Ortega]]
+- [[Zoe Jenkins]]
+- [[Priya Kim]]
+- [[David Patel]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Orbit 26]] at [[Summit FinTech]].
-[[Omar Foster]] flagged follow-up work for the next operating review.
+[[Zoe Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 26]] to [[Omar Foster]] #follow-up
+- [ ] Send recap for [[Project Orbit 26]] to [[Zoe Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

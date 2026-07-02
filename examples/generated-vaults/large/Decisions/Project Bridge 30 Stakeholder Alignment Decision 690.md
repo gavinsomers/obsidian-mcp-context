@@ -4,10 +4,10 @@ date: 2026-01-22
 status: active
 project: "[[Project Bridge 30]]"
 company: "[[Keystone FinTech]]"
-source_created_at: 2026-01-22T15:46:00
-source_observed_at: 2026-01-22T16:10:00
-created_at: 2026-01-22T19:56:00
-updated_at: 2026-01-23T16:56:00
+source_created_at: 2026-01-22T13:51:00
+source_observed_at: 2026-01-22T15:34:00
+created_at: 2026-01-22T18:15:00
+updated_at: 2026-01-23T09:15:00
 tags: [#decision]
 ---
 # Project Bridge 30 Stakeholder Alignment Decision 690

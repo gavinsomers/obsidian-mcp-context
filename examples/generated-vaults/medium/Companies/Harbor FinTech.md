@@ -1,24 +1,19 @@
 ---
 type: company
-status: active
-segment: smb
-source_created_at: 2023-06-06T15:07:00
-source_observed_at: 2023-06-06T15:33:00
-created_at: 2023-06-06T21:07:00
-updated_at: 2023-09-02T07:07:00
+status: churn-risk
+segment: enterprise
+source_created_at: 2023-06-08T08:09:00
+source_observed_at: 2023-06-08T08:57:00
+created_at: 2023-06-09T05:09:00
+updated_at: 2023-07-03T08:09:00
 tags: [#company]
 ---
 # Harbor FinTech
 
 ## Account Context
-Harbor FinTech is a smb account currently marked `active`.
+Harbor FinTech is a enterprise account currently marked `churn-risk`.
 
-## Stakeholders
-- [[Yara Alvarez]] - Operations Lead
-- [[Ben Chen]] - Product Director
-- [[Farah Diaz]] - VP Data Engineering
-- [[Jonah Evans]] - SecOps Lead
-- [[Nadia Foster]] - Operations Lead
+## Assigned Account Team
 
 ## Projects
 

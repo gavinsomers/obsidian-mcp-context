@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: blocked
 company: "[[Atlas Logistics]]"
-source_created_at: 2024-09-02T11:55:00
-source_observed_at: 2024-09-02T12:17:00
-created_at: 2024-09-03T07:55:00
-updated_at: 2024-10-28T07:55:00
+source_created_at: 2024-09-02T09:29:00
+source_observed_at: 2024-09-02T12:28:00
+created_at: 2024-09-03T03:29:00
+updated_at: 2024-11-01T07:29:00
 tags: [#project]
 ---
 # Project Harbor 99
@@ -14,12 +14,12 @@ tags: [#project]
 Project Harbor 99 supports [[Atlas Logistics]] through research program.
 
 ## Stakeholders
-- [[Priya Rostova]]
-- [[Uma Diaz]]
-- [[Alex Novak]]
-- [[Jonah Ivanov]]
+- [[Elena Grant]]
+- [[Hannah Rostova]]
+- [[Iris Quinn]]
+- [[Amara Tan]]
 
 ## Operating Notes
-- Owner: [[Priya Rostova]]
-- Status: `planning`
+- Owner: [[Uma Diaz]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Harbor 99]] #ops

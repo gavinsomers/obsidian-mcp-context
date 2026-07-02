@@ -1,7 +1,7 @@
 ---
 type: project
-status: closed
-company: "[[Crescent Labs]]"
+status: active
+company: "[[Keystone Labs]]"
 source_created_at: 2024-08-15T16:21:00
 source_observed_at: 2024-08-15T18:50:00
 created_at: 2024-08-17T13:21:00
@@ -11,16 +11,15 @@ tags: [#project]
 # Project Signal 44
 
 ## Overview
-Project Signal 44 supports [[Crescent Labs]] through research program.
+Project Signal 44 supports [[Keystone Labs]] through research program.
 
 ## Stakeholders
+- [[Hannah Diaz]]
 - [[Zoe Diaz]]
-- [[Rachel Bennett]]
-- [[Clara Foster]]
-- [[Marcus Alvarez]]
+- [[Priya Bennett]]
+- [[Omar Evans]]
 
 ## Operating Notes
-- Owner: [[Zoe Diaz]]
-- Status: `closed`
-- Closed at: `2025-02-12`
+- Owner: [[Rachel Bennett]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 44]] #ops

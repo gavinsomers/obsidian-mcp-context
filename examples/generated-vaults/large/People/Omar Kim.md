@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Meridian Retail]]"
-role: "Implementation Manager"
-source_created_at: 2023-07-21T13:47:00
-source_observed_at: 2023-07-21T16:27:00
-created_at: 2023-07-22T19:47:00
-updated_at: 2023-09-26T21:47:00
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
+source_created_at: 2023-07-21T15:48:00
+source_observed_at: 2023-07-21T18:00:00
+created_at: 2023-07-22T20:48:00
+updated_at: 2023-09-12T05:48:00
 tags: [#person]
 ---
 # Omar Kim
 
 ## Role
-Omar Kim is the Implementation Manager at [[Meridian Retail]].
+Omar Kim is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Meridian Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Omar Kim]] #follow-up

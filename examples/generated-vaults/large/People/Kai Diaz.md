@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Media]]"
-role: "Finance Sponsor"
-source_created_at: 2023-05-20T14:47:00
-source_observed_at: 2023-05-20T15:06:00
-created_at: 2023-05-22T04:47:00
-updated_at: 2023-10-24T10:56:00
+company: "[[Evergreen Analytics]]"
+role: "Senior Data Consultant"
+source_created_at: 2023-05-20T10:39:00
+source_observed_at: 2023-05-20T12:40:00
+created_at: 2023-05-21T13:39:00
+updated_at: 2023-07-28T20:39:00
 tags: [#person]
 ---
 # Kai Diaz
 
 ## Role
-Kai Diaz is the Finance Sponsor at [[Keystone Media]].
+Kai Diaz is the Senior Data Consultant at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Diaz]] #follow-up

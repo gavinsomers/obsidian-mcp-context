@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2025-12-25
+date: 2025-07-13
 project: "[[Project Harbor 144]]"
-company: "[[Atlas FinTech]]"
-source_created_at: 2025-12-25T13:15:00
-source_observed_at: 2025-12-25T16:08:00
-created_at: 2025-12-25T18:48:00
-updated_at: 2025-12-26T16:48:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2025-07-13T16:21:00
+source_observed_at: 2025-07-13T16:55:00
+created_at: 2025-07-13T17:25:00
+updated_at: 2025-07-14T01:25:00
 tags: [#meeting]
 ---
 # Project Harbor 144 Finance Approval Sync 1464
 
 ## Attendees
-- [[Tara Ortega]]
-- [[Iris Tan]]
-- [[Clara Kim]]
+- [[Priya Morgan]]
+- [[Marcus Diaz]]
+- [[Farah Lee]]
 
 ## Notes
-Finance Approval reviewed for [[Project Harbor 144]] at [[Atlas FinTech]].
-[[Tara Ortega]] flagged follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Harbor 144]] at [[Harbor FinTech]].
+[[Marcus Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Harbor 144]] to [[Tara Ortega]] #follow-up
+- [ ] Send recap for [[Project Harbor 144]] to [[Marcus Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Horizon 19]]"
 company: "[[BrightWave FinTech]]"
-source_created_at: 2025-07-17T14:57:00
-source_observed_at: 2025-07-17T15:34:00
-created_at: 2025-07-18T07:57:00
-updated_at: 2025-08-26T16:57:00
+source_created_at: 2025-07-17T10:22:00
+source_observed_at: 2025-07-17T13:09:00
+created_at: 2025-07-18T19:22:00
+updated_at: 2025-07-29T19:22:00
 tags: [#research]
 ---
 # Project Horizon 19 Adoption Workflow Research 459

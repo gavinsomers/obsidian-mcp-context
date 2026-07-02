@@ -4,10 +4,10 @@ date: 2024-07-12
 status: active
 project: "[[Project Pipeline 82]]"
 company: "[[Vanguard Media]]"
-source_created_at: 2024-07-12T11:00:00
-source_observed_at: 2024-07-12T11:32:00
-created_at: 2024-07-19T13:00:00
-updated_at: 2024-07-19T18:00:00
+source_created_at: 2024-07-12T08:38:00
+source_observed_at: 2024-07-12T09:38:00
+created_at: 2024-07-12T12:20:00
+updated_at: 2024-07-12T22:20:00
 tags: [#decision]
 ---
 # Project Pipeline 82 Finance Approval Decision 82

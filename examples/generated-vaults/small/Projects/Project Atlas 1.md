@@ -2,10 +2,10 @@
 type: project
 status: planning
 company: "[[Northstar Labs]]"
-source_created_at: 2023-05-10T15:35:00
-source_observed_at: 2023-05-10T17:34:00
-created_at: 2023-05-11T00:35:00
-updated_at: 2023-06-03T11:35:00
+source_created_at: 2023-05-10T16:25:00
+source_observed_at: 2023-05-10T18:52:00
+created_at: 2023-05-10T19:25:00
+updated_at: 2023-06-07T23:25:00
 tags: [#project]
 ---
 # Project Atlas 1
@@ -14,10 +14,10 @@ tags: [#project]
 Project Atlas 1 supports [[Northstar Labs]] through consulting delivery.
 
 ## Stakeholders
-- [[Alex Alvarez]]
-- [[Hannah Alvarez]]
-- [[Priya Alvarez]]
-- [[Yara Alvarez]]
+- [[Uma Alvarez]]
+- [[Clara Alvarez]]
+- [[Nadia Alvarez]]
+- [[Ben Alvarez]]
 
 ## Operating Notes
 - Owner: [[Alex Alvarez]]

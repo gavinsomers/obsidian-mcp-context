@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Harbor Manufacturing]]"
-role: "Product Director"
-source_created_at: 2023-09-06T14:05:00
-source_observed_at: 2023-09-06T16:22:00
-created_at: 2023-09-07T15:05:00
-updated_at: 2023-11-17T19:05:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-09-06T08:08:00
+source_observed_at: 2023-09-06T08:25:00
+created_at: 2023-09-08T05:08:00
+updated_at: 2023-09-28T06:08:00
 tags: [#person]
 ---
 # Yara Patel
 
 ## Role
-Yara Patel is the Product Director at [[Harbor Manufacturing]].
+Yara Patel is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Harbor Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Patel]] #follow-up

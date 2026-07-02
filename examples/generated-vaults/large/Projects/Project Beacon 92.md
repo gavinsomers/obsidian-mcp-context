@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: planning
 company: "[[Apex Logistics]]"
-source_created_at: 2024-07-30T10:07:00
-source_observed_at: 2024-07-30T11:46:00
-created_at: 2024-08-04T12:07:00
-updated_at: 2024-09-08T23:07:00
+source_created_at: 2024-07-30T16:12:00
+source_observed_at: 2024-07-30T18:27:00
+created_at: 2024-07-31T18:12:00
+updated_at: 2024-10-13T22:12:00
 tags: [#project]
 ---
 # Project Beacon 92
@@ -14,12 +14,12 @@ tags: [#project]
 Project Beacon 92 supports [[Apex Logistics]] through sales pipeline.
 
 ## Stakeholders
-- [[Iris Rostova]]
-- [[Tara Morgan]]
-- [[Clara Ivanov]]
-- [[Zoe Vance]]
+- [[Tara Haddad]]
+- [[Sam Vance]]
+- [[Victor Kim]]
+- [[Yara Evans]]
 
 ## Operating Notes
-- Owner: [[Clara Ivanov]]
-- Status: `active`
+- Owner: [[Marcus Diaz]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Beacon 92]] #ops

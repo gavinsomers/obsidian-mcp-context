@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Keystone 10]]"
-source_created_at: 2024-05-03T08:25:00
-source_observed_at: 2024-05-03T08:43:00
-created_at: 2024-05-07T08:25:00
-updated_at: 2024-05-21T16:25:00
+source_created_at: 2023-12-02T16:00:00
+source_observed_at: 2023-12-02T16:18:00
+created_at: 2023-12-03T23:00:00
+updated_at: 2023-12-15T03:00:00
 tags: [#risk]
 ---
 # Project Keystone 10 Finance Approval Risk 230
@@ -14,9 +14,9 @@ tags: [#risk]
 Finance Approval may affect [[Project Keystone 10]] for [[Harbor Labs]].
 
 ## Evidence
-- Raised after [[Project Keystone 10 Handoff Readiness Sync 230]]
+- Raised after [[Project Keystone 10 Handoff Readiness Sync 670]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Zoe Evans]]
+- Status: `mitigating`
+- Owner: [[Iris Alvarez]]
 - [ ] Reassess [[Project Keystone 10 Finance Approval Risk 230]] during the next review #risk

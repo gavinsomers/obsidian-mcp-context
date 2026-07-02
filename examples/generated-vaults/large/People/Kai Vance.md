@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Cobalt Media]]"
-role: "Legal Counsel"
-source_created_at: 2023-10-23T13:22:00
-source_observed_at: 2023-10-23T14:09:00
-created_at: 2023-10-25T01:22:00
-updated_at: 2023-11-28T09:22:00
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
+source_created_at: 2023-10-23T10:51:00
+source_observed_at: 2023-10-23T12:49:00
+created_at: 2023-10-24T14:51:00
+updated_at: 2023-11-24T23:51:00
 tags: [#person]
 ---
 # Kai Vance
 
 ## Role
-Kai Vance is the Legal Counsel at [[Cobalt Media]].
+Kai Vance is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Cobalt Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Vance]] #follow-up

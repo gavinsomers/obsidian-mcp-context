@@ -3,11 +3,11 @@ type: decision
 date: 2026-03-22
 status: active
 project: "[[Project Venture 208]]"
-company: "[[Noble Media]]"
-source_created_at: 2026-03-22T11:01:00
-source_observed_at: 2026-03-22T12:02:00
-created_at: 2026-03-22T16:31:00
-updated_at: 2026-03-22T18:31:00
+company: "[[Crescent Media]]"
+source_created_at: 2026-03-22T14:27:00
+source_observed_at: 2026-03-22T16:22:00
+created_at: 2026-03-22T16:27:00
+updated_at: 2026-03-22T22:27:00
 tags: [#decision]
 ---
 # Project Venture 208 Handoff Readiness Decision 428
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Venture 208]].
 
 ## Context
-This decision applies to [[Noble Media]] and [[Project Venture 208]].
-It follows [[Project Venture 208 Lineage Audit Sync 208]].
+This decision applies to [[Crescent Media]] and [[Project Venture 208]].
+It follows [[Project Venture 208 Lineage Audit Sync 1748]].
 It incorporates [[Project Venture 208 Finance Approval Research 428]].
 
 ## Supersession

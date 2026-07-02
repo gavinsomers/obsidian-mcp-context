@@ -4,10 +4,10 @@ date: 2025-04-04
 status: active
 project: "[[Project Signal 44]]"
 company: "[[Crescent Retail]]"
-source_created_at: 2025-04-04T09:02:00
-source_observed_at: 2025-04-04T10:46:00
-created_at: 2025-04-04T13:54:00
-updated_at: 2025-04-04T20:54:00
+source_created_at: 2025-04-04T15:12:00
+source_observed_at: 2025-04-04T16:54:00
+created_at: 2025-04-04T20:04:00
+updated_at: 2025-04-05T01:04:00
 tags: [#decision]
 ---
 # Project Signal 44 Metric Reconciliation Decision 484

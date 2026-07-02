@@ -1,24 +1,19 @@
 ---
 type: company
-status: churn-risk
-segment: smb
-source_created_at: 2023-09-24T16:25:00
-source_observed_at: 2023-09-24T17:30:00
-created_at: 2023-09-25T07:25:00
-updated_at: 2023-12-11T11:25:00
+status: active
+segment: mid-market
+source_created_at: 2023-09-26T09:57:00
+source_observed_at: 2023-09-26T10:32:00
+created_at: 2023-09-26T18:57:00
+updated_at: 2023-12-25T05:57:00
 tags: [#company]
 ---
 # Helio Media
 
 ## Account Context
-Helio Media is a smb account currently marked `churn-risk`.
+Helio Media is a mid-market account currently marked `active`.
 
-## Stakeholders
-- [[Amara Diaz]] - Customer Success Manager
-- [[Rachel Haddad]] - Customer Success Manager
-- [[Grace Morgan]] - Customer Success Manager
-- [[Xavier Quinn]] - Customer Success Manager
-- [[Marcus Vance]] - Customer Success Manager
+## Assigned Account Team
 
 ## Projects
 

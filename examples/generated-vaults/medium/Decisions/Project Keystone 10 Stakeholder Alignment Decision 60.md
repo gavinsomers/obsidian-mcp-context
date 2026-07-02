@@ -4,10 +4,10 @@ date: 2024-01-19
 status: active
 project: "[[Project Keystone 10]]"
 company: "[[Harbor Labs]]"
-source_created_at: 2024-01-19T16:47:00
-source_observed_at: 2024-01-19T18:55:00
-created_at: 2024-01-19T19:00:00
-updated_at: 2024-01-20T00:00:00
+source_created_at: 2024-01-19T10:34:00
+source_observed_at: 2024-01-19T12:06:00
+created_at: 2024-01-19T13:18:00
+updated_at: 2024-01-19T22:18:00
 tags: [#decision]
 ---
 # Project Keystone 10 Stakeholder Alignment Decision 60

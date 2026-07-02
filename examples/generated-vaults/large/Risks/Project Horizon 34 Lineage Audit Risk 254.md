@@ -1,11 +1,11 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Horizon 34]]"
-source_created_at: 2023-12-31T14:50:00
-source_observed_at: 2023-12-31T15:25:00
-created_at: 2024-01-02T02:50:00
-updated_at: 2024-01-14T06:50:00
+source_created_at: 2024-06-11T15:35:00
+source_observed_at: 2024-06-11T15:59:00
+created_at: 2024-06-11T21:35:00
+updated_at: 2024-07-23T21:35:00
 tags: [#risk]
 ---
 # Project Horizon 34 Lineage Audit Risk 254
@@ -14,9 +14,9 @@ tags: [#risk]
 Lineage Audit may affect [[Project Horizon 34]] for [[BrightWave Retail]].
 
 ## Evidence
-- Raised after [[Project Horizon 34 Finance Approval Sync 1794]]
+- Raised after [[Project Horizon 34 Finance Approval Sync 254]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Clara Patel]]
+- Status: `mitigating`
+- Owner: [[Grace Bennett]]
 - [ ] Reassess [[Project Horizon 34 Lineage Audit Risk 254]] during the next review #risk

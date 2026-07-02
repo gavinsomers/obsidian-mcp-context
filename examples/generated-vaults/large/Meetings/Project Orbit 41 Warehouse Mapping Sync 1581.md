@@ -3,18 +3,18 @@ type: meeting
 date: 2023-12-02
 project: "[[Project Orbit 41]]"
 company: "[[Summit Retail]]"
-source_created_at: 2023-12-02T12:53:00
-source_observed_at: 2023-12-02T13:30:00
-created_at: 2023-12-02T16:35:00
-updated_at: 2023-12-03T00:35:00
+source_created_at: 2023-12-02T10:17:00
+source_observed_at: 2023-12-02T12:02:00
+created_at: 2023-12-02T12:29:00
+updated_at: 2023-12-03T06:29:00
 tags: [#meeting]
 ---
 # Project Orbit 41 Warehouse Mapping Sync 1581
 
 ## Attendees
-- [[David Grant]]
-- [[Jonah Patel]]
-- [[Uma Kim]]
+- [[Elena Diaz]]
+- [[Ben Bennett]]
+- [[Tara Ortega]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Orbit 41]] at [[Summit Retail]].

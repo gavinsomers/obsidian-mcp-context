@@ -1,11 +1,11 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Compass 23]]"
-source_created_at: 2024-09-24T12:46:00
-source_observed_at: 2024-09-24T14:50:00
-created_at: 2024-09-25T01:46:00
-updated_at: 2024-10-05T03:46:00
+source_created_at: 2024-06-09T09:44:00
+source_observed_at: 2024-06-09T11:04:00
+created_at: 2024-06-10T13:44:00
+updated_at: 2024-07-16T16:44:00
 tags: [#risk]
 ---
 # Project Compass 23 Contract Renewal Risk 123
@@ -14,9 +14,9 @@ tags: [#risk]
 Contract Renewal may affect [[Project Compass 23]] for [[Quantum FinTech]].
 
 ## Evidence
-- Raised after [[Project Compass 23 Security Review Sync 273]]
+- Raised after [[Project Compass 23 Security Review Sync 223]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[David Diaz]]
+- Status: `open`
+- Owner: [[Wendy Alvarez]]
 - [ ] Reassess [[Project Compass 23 Contract Renewal Risk 123]] during the next review #risk

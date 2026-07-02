@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Venture 28]]"
-source_created_at: 2024-03-15T10:33:00
-source_observed_at: 2024-03-15T11:26:00
-created_at: 2024-03-21T15:33:00
-updated_at: 2024-04-23T22:33:00
+source_created_at: 2024-03-15T14:40:00
+source_observed_at: 2024-03-15T15:51:00
+created_at: 2024-03-17T07:40:00
+updated_at: 2024-04-06T11:40:00
 tags: [#risk]
 ---
 # Project Venture 28 Stakeholder Alignment Risk 28
@@ -18,5 +18,5 @@ Stakeholder Alignment may affect [[Project Venture 28]] for [[Noble FinTech]].
 
 ## Current State
 - Status: `open`
-- Owner: [[Iris Diaz]]
+- Owner: [[Amara Bennett]]
 - [ ] Reassess [[Project Venture 28 Stakeholder Alignment Risk 28]] during the next review #risk

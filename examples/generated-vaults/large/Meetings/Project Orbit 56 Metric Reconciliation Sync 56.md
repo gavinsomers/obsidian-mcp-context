@@ -3,18 +3,18 @@ type: meeting
 date: 2024-02-15
 project: "[[Project Orbit 56]]"
 company: "[[Summit Manufacturing]]"
-source_created_at: 2024-02-15T16:26:00
-source_observed_at: 2024-02-15T18:38:00
-created_at: 2024-02-15T19:55:00
-updated_at: 2024-02-16T02:55:00
+source_created_at: 2024-02-15T11:59:00
+source_observed_at: 2024-02-15T14:27:00
+created_at: 2024-02-15T15:48:00
+updated_at: 2024-02-15T19:48:00
 tags: [#meeting]
 ---
 # Project Orbit 56 Metric Reconciliation Sync 56
 
 ## Attendees
-- [[Clara Chen]]
-- [[Omar Usman]]
-- [[Zoe Patel]]
+- [[Hannah Novak]]
+- [[Marcus Vance]]
+- [[Xavier Grant]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Orbit 56]] at [[Summit Manufacturing]].

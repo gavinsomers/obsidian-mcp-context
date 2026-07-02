@@ -3,11 +3,11 @@ type: decision
 date: 2025-07-25
 status: active
 project: "[[Project Foundry 123]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2025-07-25T12:28:00
-source_observed_at: 2025-07-25T12:53:00
-created_at: 2025-07-28T17:28:00
-updated_at: 2025-07-29T16:28:00
+company: "[[BrightWave Labs]]"
+source_created_at: 2025-07-25T14:58:00
+source_observed_at: 2025-07-25T17:08:00
+created_at: 2025-07-25T19:44:00
+updated_at: 2025-07-26T18:44:00
 tags: [#decision]
 ---
 # Project Foundry 123 Adoption Workflow Decision 563
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Foundry 123]].
 
 ## Context
-This decision applies to [[Cobalt Labs]] and [[Project Foundry 123]].
+This decision applies to [[BrightWave Labs]] and [[Project Foundry 123]].
 It follows [[Project Foundry 123 Security Review Sync 563]].
 It incorporates [[Project Foundry 123 Pipeline Hygiene Research 343]].
 

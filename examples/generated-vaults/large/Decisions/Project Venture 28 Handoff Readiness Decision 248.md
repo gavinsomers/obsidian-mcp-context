@@ -4,10 +4,10 @@ date: 2024-05-06
 status: active
 project: "[[Project Venture 28]]"
 company: "[[Noble FinTech]]"
-source_created_at: 2024-05-06T10:03:00
-source_observed_at: 2024-05-06T12:02:00
-created_at: 2024-05-06T12:07:00
-updated_at: 2024-05-06T16:07:00
+source_created_at: 2024-05-06T09:21:00
+source_observed_at: 2024-05-06T11:34:00
+created_at: 2024-05-06T15:09:00
+updated_at: 2024-05-06T16:09:00
 tags: [#decision]
 ---
 # Project Venture 28 Handoff Readiness Decision 248

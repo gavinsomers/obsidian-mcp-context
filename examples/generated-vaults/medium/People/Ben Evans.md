@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Apex FinTech]]"
-role: "SecOps Lead"
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
 source_created_at: 2023-05-26T14:49:00
 source_observed_at: 2023-05-26T16:25:00
 created_at: 2023-05-26T19:49:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Ben Evans
 
 ## Role
-Ben Evans is the SecOps Lead at [[Apex FinTech]].
+Ben Evans is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Apex FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Ben Evans]] #follow-up

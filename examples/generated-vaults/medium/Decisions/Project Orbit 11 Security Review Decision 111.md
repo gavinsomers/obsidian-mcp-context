@@ -4,10 +4,10 @@ date: 2024-08-19
 status: superseded
 project: "[[Project Orbit 11]]"
 company: "[[Summit Labs]]"
-source_created_at: 2024-08-19T10:31:00
-source_observed_at: 2024-08-19T12:31:00
-created_at: 2024-08-19T14:00:00
-updated_at: 2024-08-20T06:00:00
+source_created_at: 2024-08-19T14:36:00
+source_observed_at: 2024-08-19T16:57:00
+created_at: 2024-08-19T17:02:00
+updated_at: 2024-08-19T18:02:00
 tags: [#decision]
 ---
 # Project Orbit 11 Security Review Decision 111

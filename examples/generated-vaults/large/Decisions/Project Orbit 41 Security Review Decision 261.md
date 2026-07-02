@@ -4,10 +4,10 @@ date: 2024-05-23
 status: active
 project: "[[Project Orbit 41]]"
 company: "[[Summit Retail]]"
-source_created_at: 2024-05-23T13:25:00
-source_observed_at: 2024-05-23T15:25:00
-created_at: 2024-05-23T15:30:00
-updated_at: 2024-05-24T13:30:00
+source_created_at: 2024-05-23T11:22:00
+source_observed_at: 2024-05-23T13:40:00
+created_at: 2024-05-23T15:37:00
+updated_at: 2024-05-24T10:37:00
 tags: [#decision]
 ---
 # Project Orbit 41 Security Review Decision 261

@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2025-12-05
+date: 2024-03-02
 project: "[[Project Foundry 18]]"
 company: "[[Cobalt FinTech]]"
-source_created_at: 2025-12-05T11:28:00
-source_observed_at: 2025-12-05T14:23:00
-created_at: 2025-12-05T14:28:00
-updated_at: 2025-12-05T15:28:00
+source_created_at: 2024-03-02T15:08:00
+source_observed_at: 2024-03-02T18:07:00
+created_at: 2024-03-02T18:12:00
+updated_at: 2024-03-03T15:12:00
 tags: [#meeting]
 ---
 # Project Foundry 18 Lineage Audit Sync 678
 
 ## Attendees
-- [[Rachel Alvarez]]
-- [[Grace Foster]]
-- [[Xavier Jenkins]]
+- [[Wendy Lee]]
+- [[Omar Bennett]]
+- [[Nadia Grant]]
 
 ## Notes
 Lineage Audit reviewed for [[Project Foundry 18]] at [[Cobalt FinTech]].
-[[Xavier Jenkins]] flagged follow-up work for the next operating review.
+[[Rachel Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 18]] to [[Xavier Jenkins]] #follow-up
+- [ ] Send recap for [[Project Foundry 18]] to [[Rachel Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

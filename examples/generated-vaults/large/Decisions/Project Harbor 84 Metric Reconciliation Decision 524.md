@@ -4,10 +4,10 @@ date: 2025-05-30
 status: active
 project: "[[Project Harbor 84]]"
 company: "[[Atlas Media]]"
-source_created_at: 2025-05-30T12:12:00
-source_observed_at: 2025-05-30T13:09:00
-created_at: 2025-05-30T17:10:00
-updated_at: 2025-05-31T10:10:00
+source_created_at: 2025-05-30T12:26:00
+source_observed_at: 2025-05-30T13:17:00
+created_at: 2025-06-02T13:26:00
+updated_at: 2025-06-02T21:26:00
 tags: [#decision]
 ---
 # Project Harbor 84 Metric Reconciliation Decision 524

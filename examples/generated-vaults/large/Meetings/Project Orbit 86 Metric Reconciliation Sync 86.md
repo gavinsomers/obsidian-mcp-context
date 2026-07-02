@@ -3,18 +3,18 @@ type: meeting
 date: 2024-07-11
 project: "[[Project Orbit 86]]"
 company: "[[Summit Media]]"
-source_created_at: 2024-07-11T11:03:00
-source_observed_at: 2024-07-11T13:55:00
-created_at: 2024-07-11T14:00:00
-updated_at: 2024-07-11T19:00:00
+source_created_at: 2024-07-11T10:12:00
+source_observed_at: 2024-07-11T12:26:00
+created_at: 2024-07-11T12:31:00
+updated_at: 2024-07-12T03:31:00
 tags: [#meeting]
 ---
 # Project Orbit 86 Metric Reconciliation Sync 86
 
 ## Attendees
-- [[Clara Rostova]]
-- [[Xavier Haddad]]
-- [[Grace Diaz]]
+- [[Priya Walker]]
+- [[Clara Quinn]]
+- [[Xavier Chen]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Orbit 86]] at [[Summit Media]].

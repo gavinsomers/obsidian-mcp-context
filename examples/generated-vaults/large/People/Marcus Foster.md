@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas FinTech]]"
-role: "Customer Success Manager"
-source_created_at: 2023-06-07T09:49:00
-source_observed_at: 2023-06-07T11:54:00
-created_at: 2023-06-09T00:49:00
-updated_at: 2023-08-26T02:49:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-06-07T12:48:00
+source_observed_at: 2023-06-07T13:39:00
+created_at: 2023-06-09T09:48:00
+updated_at: 2023-07-25T11:48:00
 tags: [#person]
 ---
 # Marcus Foster
 
 ## Role
-Marcus Foster is the Customer Success Manager at [[Atlas FinTech]].
+Marcus Foster is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Marcus Foster]] #follow-up

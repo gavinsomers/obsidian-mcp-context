@@ -1,24 +1,19 @@
 ---
 type: company
-status: pipeline
+status: active
 segment: smb
-source_created_at: 2023-05-19T09:18:00
-source_observed_at: 2023-05-19T10:24:00
-created_at: 2023-05-20T02:18:00
-updated_at: 2023-07-12T12:18:00
+source_created_at: 2023-05-21T13:30:00
+source_observed_at: 2023-05-21T16:01:00
+created_at: 2023-05-22T18:30:00
+updated_at: 2023-08-14T23:30:00
 tags: [#company]
 ---
 # Northstar FinTech
 
 ## Account Context
-Northstar FinTech is a smb account currently marked `pipeline`.
+Northstar FinTech is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Omar Alvarez]] - Customer Success Manager
-- [[Tara Bennett]] - Legal Counsel
-- [[Xavier Chen]] - Implementation Manager
-- [[Amara Evans]] - Finance Sponsor
-- [[Elena Foster]] - Customer Success Manager
+## Assigned Account Team
 
 ## Projects
 

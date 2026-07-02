@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[Vanguard FinTech]]"
-role: "Legal Counsel"
+company: "[[Evergreen Analytics]]"
+role: "Analytics Engineer"
 source_created_at: 2023-06-07T15:57:00
 source_observed_at: 2023-06-07T17:45:00
 created_at: 2023-06-08T04:57:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Kai Foster
 
 ## Role
-Kai Foster is the Legal Counsel at [[Vanguard FinTech]].
+Kai Foster is the Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Vanguard FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Foster]] #follow-up

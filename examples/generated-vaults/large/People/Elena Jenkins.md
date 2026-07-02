@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone Analytics]]"
-role: "Customer Success Manager"
-source_created_at: 2023-07-09T08:23:00
-source_observed_at: 2023-07-09T09:34:00
-created_at: 2023-07-09T20:23:00
-updated_at: 2023-12-23T13:02:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-07-09T11:31:00
+source_observed_at: 2023-07-09T12:32:00
+created_at: 2023-07-10T04:31:00
+updated_at: 2023-08-26T07:31:00
 tags: [#person]
 ---
 # Elena Jenkins
 
 ## Role
-Elena Jenkins is the Customer Success Manager at [[Keystone Analytics]].
+Elena Jenkins is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone Analytics]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Elena Jenkins]] #follow-up

@@ -4,10 +4,10 @@ date: 2024-07-01
 status: active
 project: "[[Project Lantern 80]]"
 company: "[[Helio Media]]"
-source_created_at: 2024-07-01T12:40:00
-source_observed_at: 2024-07-01T14:10:00
-created_at: 2024-07-01T15:43:00
-updated_at: 2024-07-02T10:43:00
+source_created_at: 2024-07-01T15:32:00
+source_observed_at: 2024-07-01T17:13:00
+created_at: 2024-07-01T21:04:00
+updated_at: 2024-07-02T06:04:00
 tags: [#decision]
 ---
 # Project Lantern 80 Stakeholder Alignment Decision 80

@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Pioneer Manufacturing]]"
-source_created_at: 2025-09-19T12:36:00
-source_observed_at: 2025-09-19T14:41:00
-created_at: 2025-09-20T14:36:00
-updated_at: 2025-12-04T01:36:00
+status: closed
+company: "[[Noble Manufacturing]]"
+source_created_at: 2025-09-19T14:43:00
+source_observed_at: 2025-09-19T15:36:00
+created_at: 2025-09-25T16:43:00
+updated_at: 2025-10-13T03:43:00
 tags: [#project]
 ---
 # Project Summit 177
 
 ## Overview
-Project Summit 177 supports [[Pioneer Manufacturing]] through sales pipeline.
+Project Summit 177 supports [[Noble Manufacturing]] through sales pipeline.
 
 ## Stakeholders
-- [[Jonah Lee]]
-- [[Priya Usman]]
-- [[Alex Quinn]]
-- [[David Chen]]
+- [[Tara Lee]]
+- [[Farah Shah]]
+- [[Kai Vance]]
+- [[Sam Quinn]]
 
 ## Operating Notes
 - Owner: [[Uma Grant]]
-- Status: `active`
+- Status: `closed`
+- Closed at: `2026-02-08`
 - [ ] Reconcile latest state for [[Project Summit 177]] #ops

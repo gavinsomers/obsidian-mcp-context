@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-08-29
+date: 2024-11-14
 project: "[[Project Signal 74]]"
 company: "[[Crescent Health]]"
-source_created_at: 2024-08-29T11:59:00
-source_observed_at: 2024-08-29T14:33:00
-created_at: 2024-08-29T14:38:00
-updated_at: 2024-08-29T15:38:00
+source_created_at: 2024-11-14T15:03:00
+source_observed_at: 2024-11-14T17:24:00
+created_at: 2024-11-14T19:49:00
+updated_at: 2024-11-15T01:49:00
 tags: [#meeting]
 ---
 # Project Signal 74 Finance Approval Sync 1174
 
 ## Attendees
-- [[Victor Chen]]
-- [[Amara Morgan]]
-- [[Rachel Quinn]]
+- [[Wendy Usman]]
+- [[Iris Morgan]]
+- [[Kai Ortega]]
 
 ## Notes
 Finance Approval reviewed for [[Project Signal 74]] at [[Crescent Health]].
-[[Rachel Quinn]] flagged follow-up work for the next operating review.
+[[Victor Chen]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 74]] to [[Rachel Quinn]] #follow-up
+- [ ] Send recap for [[Project Signal 74]] to [[Victor Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

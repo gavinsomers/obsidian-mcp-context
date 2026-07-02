@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Pipeline 82]]"
 company: "[[Vanguard Media]]"
-source_created_at: 2025-11-05T14:16:00
-source_observed_at: 2025-11-05T14:56:00
-created_at: 2025-11-05T16:16:00
-updated_at: 2025-11-29T19:16:00
+source_created_at: 2025-11-05T15:31:00
+source_observed_at: 2025-11-05T16:23:00
+created_at: 2025-11-06T22:31:00
+updated_at: 2025-11-14T03:31:00
 tags: [#research]
 ---
 # Project Pipeline 82 Lineage Audit Research 522
@@ -14,7 +14,7 @@ tags: [#research]
 Research on lineage audit for [[Project Pipeline 82]] and [[Vanguard Media]].
 
 ## Evidence
-- Interview notes from [[Tara Haddad]]
+- Interview notes from [[Clara Diaz]]
 - Related operating review: [[Project Pipeline 82 Stakeholder Alignment Sync 1402]]
 
 ## Follow Up

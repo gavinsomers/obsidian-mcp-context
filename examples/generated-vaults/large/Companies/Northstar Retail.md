@@ -1,23 +1,19 @@
 ---
 type: company
 status: active
-segment: smb
-source_created_at: 2023-06-18T15:50:00
-source_observed_at: 2023-06-18T16:19:00
-created_at: 2023-06-19T08:50:00
-updated_at: 2023-09-08T10:57:00
+segment: enterprise
+source_created_at: 2023-06-20T09:16:00
+source_observed_at: 2023-06-20T10:22:00
+created_at: 2023-06-21T20:16:00
+updated_at: 2023-09-15T05:16:00
 tags: [#company]
 ---
 # Northstar Retail
 
 ## Account Context
-Northstar Retail is a smb account currently marked `active`.
+Northstar Retail is a enterprise account currently marked `active`.
 
-## Stakeholders
-- [[David Bennett]] - Product Director
-- [[Uma Foster]] - Product Director
-- [[Jonah Kim]] - Product Director
-- [[Alex Patel]] - Product Director
+## Assigned Account Team
 
 ## Projects
 

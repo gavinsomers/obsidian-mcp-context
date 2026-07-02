@@ -3,11 +3,11 @@ type: decision
 date: 2025-01-24
 status: superseded
 project: "[[Project Beacon 122]]"
-company: "[[Apex Labs]]"
-source_created_at: 2025-01-24T11:29:00
-source_observed_at: 2025-01-24T14:01:00
-created_at: 2025-01-24T15:41:00
-updated_at: 2025-01-25T14:41:00
+company: "[[Cobalt Labs]]"
+source_created_at: 2025-01-24T11:58:00
+source_observed_at: 2025-01-24T13:33:00
+created_at: 2025-01-31T16:58:00
+updated_at: 2025-02-01T04:58:00
 tags: [#decision]
 ---
 # Project Beacon 122 Finance Approval Decision 342
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 122]].
 
 ## Context
-This decision applies to [[Apex Labs]] and [[Project Beacon 122]].
-It follows [[Project Beacon 122 Stakeholder Alignment Sync 1002]].
+This decision applies to [[Cobalt Labs]] and [[Project Beacon 122]].
+It follows [[Project Beacon 122 Stakeholder Alignment Sync 1222]].
 It incorporates [[Project Beacon 122 Lineage Audit Research 122]].
 
 ## Supersession

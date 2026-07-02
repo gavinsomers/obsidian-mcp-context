@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Health]]"
-role: "VP Data Engineering"
-source_created_at: 2023-06-22T10:14:00
-source_observed_at: 2023-06-22T13:01:00
-created_at: 2023-06-23T00:14:00
-updated_at: 2023-09-12T15:57:00
+company: "[[Evergreen Analytics]]"
+role: "Data Platform Engineer"
+source_created_at: 2023-06-22T10:23:00
+source_observed_at: 2023-06-22T12:13:00
+created_at: 2023-06-24T01:23:00
+updated_at: 2023-08-14T03:23:00
 tags: [#person]
 ---
 # Farah Haddad
 
 ## Role
-Farah Haddad is the VP Data Engineering at [[Atlas Health]].
+Farah Haddad is the Data Platform Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Farah Haddad]] #follow-up

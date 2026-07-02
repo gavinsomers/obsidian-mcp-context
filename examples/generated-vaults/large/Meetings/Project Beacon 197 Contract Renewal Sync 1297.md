@@ -2,22 +2,22 @@
 type: meeting
 date: 2026-01-05
 project: "[[Project Beacon 197]]"
-company: "[[Apex Media]]"
-source_created_at: 2026-01-05T08:19:00
-source_observed_at: 2026-01-05T09:49:00
-created_at: 2026-01-05T09:54:00
-updated_at: 2026-01-06T01:54:00
+company: "[[Cobalt Media]]"
+source_created_at: 2026-01-05T08:28:00
+source_observed_at: 2026-01-05T09:50:00
+created_at: 2026-01-13T09:28:00
+updated_at: 2026-01-14T00:28:00
 tags: [#meeting]
 ---
 # Project Beacon 197 Contract Renewal Sync 1297
 
 ## Attendees
-- [[Nadia Haddad]]
-- [[Yara Chen]]
-- [[Uma Quinn]]
+- [[Yara Lee]]
+- [[Ben Novak]]
+- [[Hannah Ivanov]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Beacon 197]] at [[Apex Media]].
+Contract Renewal reviewed for [[Project Beacon 197]] at [[Cobalt Media]].
 [[Nadia Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items

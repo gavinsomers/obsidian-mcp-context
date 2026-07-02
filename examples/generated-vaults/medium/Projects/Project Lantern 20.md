@@ -14,13 +14,13 @@ tags: [#project]
 Project Lantern 20 supports [[Helio FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Amara Diaz]]
-- [[Elena Evans]]
-- [[Iris Foster]]
 - [[Xavier Bennett]]
+- [[Clara Evans]]
+- [[Tara Diaz]]
+- [[Sam Bennett]]
 
 ## Operating Notes
-- Owner: [[Iris Foster]]
+- Owner: [[Tara Alvarez]]
 - Status: `closed`
-- Closed at: `2024-02-15`
+- Closed at: `2024-06-07`
 - [ ] Reconcile latest state for [[Project Lantern 20]] #ops

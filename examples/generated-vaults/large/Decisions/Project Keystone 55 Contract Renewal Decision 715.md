@@ -4,10 +4,10 @@ date: 2026-02-26
 status: active
 project: "[[Project Keystone 55]]"
 company: "[[Harbor Manufacturing]]"
-source_created_at: 2026-02-26T16:51:00
-source_observed_at: 2026-02-26T17:05:00
-created_at: 2026-02-26T20:34:00
-updated_at: 2026-02-27T06:34:00
+source_created_at: 2026-02-26T15:50:00
+source_observed_at: 2026-02-26T17:09:00
+created_at: 2026-02-26T21:19:00
+updated_at: 2026-02-27T04:19:00
 tags: [#decision]
 ---
 # Project Keystone 55 Contract Renewal Decision 715

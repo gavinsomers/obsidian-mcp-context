@@ -2,24 +2,24 @@
 type: meeting
 date: 2026-03-01
 project: "[[Project Venture 208]]"
-company: "[[Noble Media]]"
-source_created_at: 2026-03-01T12:48:00
-source_observed_at: 2026-03-01T15:00:00
-created_at: 2026-03-01T15:05:00
-updated_at: 2026-03-02T10:05:00
+company: "[[Crescent Media]]"
+source_created_at: 2026-03-01T13:21:00
+source_observed_at: 2026-03-01T15:16:00
+created_at: 2026-03-01T15:38:00
+updated_at: 2026-03-01T16:38:00
 tags: [#meeting]
 ---
 # Project Venture 208 Lineage Audit Sync 428
 
 ## Attendees
-- [[Victor Vance]]
-- [[Iris Diaz]]
-- [[Elena Rostova]]
+- [[Clara Shah]]
+- [[Rachel Grant]]
+- [[Wendy Novak]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 208]] at [[Noble Media]].
-[[Omar Morgan]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 208]] at [[Crescent Media]].
+[[Zoe Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 208]] to [[Omar Morgan]] #follow-up
+- [ ] Send recap for [[Project Venture 208]] to [[Zoe Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

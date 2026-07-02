@@ -3,23 +3,23 @@ type: meeting
 date: 2026-03-27
 project: "[[Project Compass 98]]"
 company: "[[Quantum Logistics]]"
-source_created_at: 2026-03-27T13:55:00
-source_observed_at: 2026-03-27T16:15:00
-created_at: 2026-03-27T16:20:00
-updated_at: 2026-03-27T21:20:00
+source_created_at: 2026-03-27T15:25:00
+source_observed_at: 2026-03-27T17:54:00
+created_at: 2026-04-03T21:25:00
+updated_at: 2026-04-04T20:25:00
 tags: [#meeting]
 ---
 # Project Compass 98 Lineage Audit Sync 758
 
 ## Attendees
-- [[Tara Diaz]]
-- [[Omar Rostova]]
-- [[Elena Walker]]
+- [[Sam Lee]]
+- [[Wendy Rostova]]
+- [[Zoe Patel]]
 
 ## Notes
 Lineage Audit reviewed for [[Project Compass 98]] at [[Quantum Logistics]].
-[[Zoe Morgan]] flagged follow-up work for the next operating review.
+[[Tara Diaz]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 98]] to [[Zoe Morgan]] #follow-up
+- [ ] Send recap for [[Project Compass 98]] to [[Tara Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

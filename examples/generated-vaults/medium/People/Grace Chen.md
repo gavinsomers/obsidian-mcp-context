@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Keystone FinTech]]"
-role: "Implementation Manager"
+company: "[[Evergreen Analytics]]"
+role: "Solution Architect"
 source_created_at: 2023-05-10T11:08:00
 source_observed_at: 2023-05-10T13:42:00
 created_at: 2023-05-12T00:08:00
-updated_at: 2023-06-26T17:31:00
+updated_at: 2023-06-21T09:08:00
 tags: [#person]
 ---
 # Grace Chen
 
 ## Role
-Grace Chen is the Implementation Manager at [[Keystone FinTech]].
+Grace Chen is the Solution Architect at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Keystone FinTech]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Grace Chen]] #follow-up

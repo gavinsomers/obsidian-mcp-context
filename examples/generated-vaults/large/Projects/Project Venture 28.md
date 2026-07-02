@@ -1,11 +1,11 @@
 ---
 type: project
-status: blocked
+status: active
 company: "[[Noble FinTech]]"
-source_created_at: 2023-09-19T12:37:00
-source_observed_at: 2023-09-19T13:08:00
-created_at: 2023-09-19T18:37:00
-updated_at: 2023-11-11T19:37:00
+source_created_at: 2023-09-19T16:55:00
+source_observed_at: 2023-09-19T17:52:00
+created_at: 2023-09-20T07:55:00
+updated_at: 2023-12-02T11:55:00
 tags: [#project]
 ---
 # Project Venture 28
@@ -14,12 +14,12 @@ tags: [#project]
 Project Venture 28 supports [[Noble FinTech]] through customer success.
 
 ## Stakeholders
-- [[Amara Bennett]]
-- [[Rachel Foster]]
-- [[Grace Kim]]
-- [[Xavier Ortega]]
+- [[Tara Lee]]
+- [[Jonah Haddad]]
+- [[Alex Diaz]]
+- [[Elena Diaz]]
 
 ## Operating Notes
-- Owner: [[Xavier Ortega]]
-- Status: `blocked`
+- Owner: [[Amara Bennett]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Venture 28]] #ops

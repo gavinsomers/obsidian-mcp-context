@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Atlas Retail]]"
-role: "Product Director"
-source_created_at: 2023-07-22T16:03:00
-source_observed_at: 2023-07-22T16:19:00
-created_at: 2023-07-24T03:03:00
-updated_at: 2023-08-17T04:03:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-07-22T11:16:00
+source_observed_at: 2023-07-22T11:46:00
+created_at: 2023-07-23T04:16:00
+updated_at: 2023-10-11T13:16:00
 tags: [#person]
 ---
 # Sam Kim
 
 ## Role
-Sam Kim is the Product Director at [[Atlas Retail]].
+Sam Kim is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Atlas Retail]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Sam Kim]] #follow-up

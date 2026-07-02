@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-03-31
 project: "[[Project Lantern 140]]"
-company: "[[Helio FinTech]]"
-source_created_at: 2025-03-31T09:22:00
-source_observed_at: 2025-03-31T11:57:00
-created_at: 2025-03-31T13:47:00
-updated_at: 2025-03-31T21:47:00
+company: "[[Meridian FinTech]]"
+source_created_at: 2025-03-31T09:01:00
+source_observed_at: 2025-03-31T09:11:00
+created_at: 2025-03-31T12:32:00
+updated_at: 2025-03-31T22:32:00
 tags: [#meeting]
 ---
 # Project Lantern 140 Handoff Readiness Sync 1900
 
 ## Attendees
-- [[Iris Foster]]
-- [[Tara Alvarez]]
-- [[Zoe Jenkins]]
+- [[Kai Jenkins]]
+- [[Grace Evans]]
+- [[Nadia Jenkins]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 140]] at [[Helio FinTech]].
-[[Elena Tan]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 140]] at [[Meridian FinTech]].
+[[Iris Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 140]] to [[Elena Tan]] #follow-up
+- [ ] Send recap for [[Project Lantern 140]] to [[Iris Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

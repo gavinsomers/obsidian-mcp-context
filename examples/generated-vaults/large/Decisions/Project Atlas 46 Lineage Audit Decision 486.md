@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-06-15
+date: 2025-04-08
 status: active
 project: "[[Project Atlas 46]]"
 company: "[[Northstar Manufacturing]]"
-source_created_at: 2024-06-15T10:25:00
-source_observed_at: 2024-06-15T11:47:00
-created_at: 2024-06-19T13:25:00
-updated_at: 2024-06-20T12:25:00
+source_created_at: 2025-04-08T15:28:00
+source_observed_at: 2025-04-08T18:13:00
+created_at: 2025-04-08T20:52:00
+updated_at: 2025-04-09T16:52:00
 tags: [#decision]
 ---
 # Project Atlas 46 Lineage Audit Decision 486
@@ -17,8 +17,8 @@ Proceed with lineage audit for [[Project Atlas 46]].
 
 ## Context
 This decision applies to [[Northstar Manufacturing]] and [[Project Atlas 46]].
-It follows [[Project Atlas 46 Metric Reconciliation Sync 706]].
-It incorporates [[Project Atlas 46 Stakeholder Alignment Research 486]].
+It follows [[Project Atlas 46 Metric Reconciliation Sync 486]].
+It incorporates [[Project Atlas 46 Stakeholder Alignment Research 266]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

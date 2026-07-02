@@ -1,24 +1,19 @@
 ---
 type: company
 status: active
-segment: smb
-source_created_at: 2023-11-15T14:46:00
-source_observed_at: 2023-11-15T15:57:00
-created_at: 2023-11-17T20:46:00
-updated_at: 2023-12-16T03:46:00
+segment: mid-market
+source_created_at: 2023-11-17T11:29:00
+source_observed_at: 2023-11-17T13:13:00
+created_at: 2023-11-18T20:29:00
+updated_at: 2023-12-28T07:29:00
 tags: [#company]
 ---
 # Northstar Analytics
 
 ## Account Context
-Northstar Analytics is a smb account currently marked `active`.
+Northstar Analytics is a mid-market account currently marked `active`.
 
-## Stakeholders
-- [[Amara Evans]] - Finance Sponsor
-- [[Rachel Ivanov]] - Finance Sponsor
-- [[Grace Novak]] - Finance Sponsor
-- [[Xavier Rostova]] - Finance Sponsor
-- [[Marcus Walker]] - Finance Sponsor
+## Assigned Account Team
 
 ## Projects
 

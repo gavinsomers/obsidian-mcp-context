@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Beacon 92]]"
-source_created_at: 2025-08-27T08:49:00
-source_observed_at: 2025-08-27T11:19:00
-created_at: 2025-08-29T05:49:00
-updated_at: 2025-09-05T15:49:00
+source_created_at: 2025-08-27T14:12:00
+source_observed_at: 2025-08-27T15:44:00
+created_at: 2025-08-28T06:12:00
+updated_at: 2025-09-01T17:12:00
 tags: [#risk]
 ---
 # Project Beacon 92 Metric Reconciliation Risk 532
@@ -18,5 +18,5 @@ Metric Reconciliation may affect [[Project Beacon 92]] for [[Apex Logistics]].
 
 ## Current State
 - Status: `open`
-- Owner: [[Clara Ivanov]]
+- Owner: [[Marcus Diaz]]
 - [ ] Reassess [[Project Beacon 92 Metric Reconciliation Risk 532]] during the next review #risk

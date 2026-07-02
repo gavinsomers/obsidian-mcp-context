@@ -3,18 +3,18 @@ type: meeting
 date: 2025-07-03
 project: "[[Project Horizon 19]]"
 company: "[[BrightWave FinTech]]"
-source_created_at: 2025-07-03T09:20:00
-source_observed_at: 2025-07-03T10:17:00
-created_at: 2025-07-03T10:22:00
-updated_at: 2025-07-03T22:22:00
+source_created_at: 2025-07-03T14:14:00
+source_observed_at: 2025-07-03T16:04:00
+created_at: 2025-07-03T16:09:00
+updated_at: 2025-07-04T11:09:00
 tags: [#meeting]
 ---
 # Project Horizon 19 Pipeline Hygiene Sync 1339
 
 ## Attendees
-- [[Sam Alvarez]]
-- [[Hannah Foster]]
-- [[Yara Jenkins]]
+- [[Sam Haddad]]
+- [[Xavier Grant]]
+- [[Ben Grant]]
 
 ## Notes
 Pipeline Hygiene reviewed for [[Project Horizon 19]] at [[BrightWave FinTech]].

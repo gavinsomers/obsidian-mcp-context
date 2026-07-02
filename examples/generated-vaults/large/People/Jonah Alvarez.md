@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Summit Labs]]"
-role: "SecOps Lead"
-source_created_at: 2023-04-24T13:09:00
-source_observed_at: 2023-04-24T13:42:00
-created_at: 2023-04-25T13:09:00
-updated_at: 2023-07-08T13:00:00
+company: "[[Evergreen Analytics]]"
+role: "Delivery Lead"
+source_created_at: 2023-04-24T16:50:00
+source_observed_at: 2023-04-24T19:04:00
+created_at: 2023-04-26T06:50:00
+updated_at: 2023-07-17T13:00:00
 tags: [#person]
 ---
 # Jonah Alvarez
 
 ## Role
-Jonah Alvarez is the SecOps Lead at [[Summit Labs]].
+Jonah Alvarez is the Delivery Lead at [[Evergreen Analytics]].
 
-## Current Context
-- Connected to [[Project Orbit 11]]
+## Active Project Allocations
+- Managing/Supporting [[Project Harbor 9]] ([[Atlas Labs]])
+- Managing/Supporting [[Project Orbit 11]] ([[Summit Labs]])
+- Managing/Supporting [[Project Venture 13]] ([[Noble Labs]])
 - [ ] Confirm next update with [[Jonah Alvarez]] #follow-up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Helio Media]]"
-role: "Customer Success Manager"
-source_created_at: 2023-08-05T12:03:00
-source_observed_at: 2023-08-05T13:46:00
-created_at: 2023-08-07T11:03:00
-updated_at: 2023-10-04T17:20:00
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
+source_created_at: 2023-08-05T08:18:00
+source_observed_at: 2023-08-05T11:00:00
+created_at: 2023-08-08T12:18:00
+updated_at: 2023-08-22T16:18:00
 tags: [#person]
 ---
 # Grace Morgan
 
 ## Role
-Grace Morgan is the Customer Success Manager at [[Helio Media]].
+Grace Morgan is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Helio Media]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Grace Morgan]] #follow-up

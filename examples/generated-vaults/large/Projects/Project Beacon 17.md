@@ -1,11 +1,11 @@
 ---
 type: project
-status: blocked
+status: planning
 company: "[[Apex FinTech]]"
-source_created_at: 2023-07-27T15:31:00
-source_observed_at: 2023-07-27T17:50:00
-created_at: 2023-07-28T14:31:00
-updated_at: 2023-10-19T22:31:00
+source_created_at: 2023-07-27T13:10:00
+source_observed_at: 2023-07-27T13:25:00
+created_at: 2023-07-27T17:10:00
+updated_at: 2023-10-08T03:10:00
 tags: [#project]
 ---
 # Project Beacon 17
@@ -14,11 +14,12 @@ tags: [#project]
 Project Beacon 17 supports [[Apex FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Priya Alvarez]]
-- [[Farah Foster]]
-- [[Wendy Jenkins]]
+- [[Wendy Bennett]]
+- [[Zoe Kim]]
+- [[Omar Haddad]]
+- [[Omar Foster]]
 
 ## Operating Notes
-- Owner: [[Farah Foster]]
-- Status: `blocked`
+- Owner: [[Priya Alvarez]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Beacon 17]] #ops

@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-05-10
 project: "[[Project Venture 148]]"
-company: "[[Noble FinTech]]"
-source_created_at: 2025-05-10T10:36:00
-source_observed_at: 2025-05-10T12:55:00
-created_at: 2025-05-10T15:15:00
-updated_at: 2025-05-11T00:15:00
+company: "[[Crescent FinTech]]"
+source_created_at: 2025-05-10T10:53:00
+source_observed_at: 2025-05-10T13:16:00
+created_at: 2025-05-10T15:46:00
+updated_at: 2025-05-10T22:46:00
 tags: [#meeting]
 ---
 # Project Venture 148 Lineage Audit Sync 368
 
 ## Attendees
-- [[Xavier Ortega]]
-- [[Rachel Foster]]
-- [[Amara Bennett]]
+- [[Elena Novak]]
+- [[Elena Lee]]
+- [[Jonah Vance]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 148]] at [[Noble FinTech]].
-[[Grace Kim]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 148]] at [[Crescent FinTech]].
+[[Rachel Foster]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 148]] to [[Grace Kim]] #follow-up
+- [ ] Send recap for [[Project Venture 148]] to [[Rachel Foster]] #follow-up
 - [x] Capture meeting notes in vault #ops

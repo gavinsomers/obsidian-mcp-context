@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2025-05-26
+date: 2025-12-01
 project: "[[Project Meridian 126]]"
-company: "[[Meridian Labs]]"
-source_created_at: 2025-05-26T10:13:00
-source_observed_at: 2025-05-26T11:18:00
-created_at: 2025-05-26T11:41:00
-updated_at: 2025-05-26T16:41:00
+company: "[[Vanguard Labs]]"
+source_created_at: 2025-12-01T10:05:00
+source_observed_at: 2025-12-01T10:37:00
+created_at: 2025-12-01T11:16:00
+updated_at: 2025-12-02T04:16:00
 tags: [#meeting]
 ---
 # Project Meridian 126 Metric Reconciliation Sync 1446
 
 ## Attendees
-- [[Amara Ortega]]
-- [[Elena Alvarez]]
-- [[Rachel Shah]]
+- [[Marcus Haddad]]
+- [[Hannah Evans]]
+- [[Farah Bennett]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 126]] at [[Meridian Labs]].
-[[Elena Alvarez]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 126]] at [[Vanguard Labs]].
+[[Victor Evans]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 126]] to [[Elena Alvarez]] #follow-up
+- [ ] Send recap for [[Project Meridian 126]] to [[Victor Evans]] #follow-up
 - [x] Capture meeting notes in vault #ops

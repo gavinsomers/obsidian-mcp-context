@@ -2,24 +2,24 @@
 type: meeting
 date: 2023-09-16
 project: "[[Project Harbor 9]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2023-09-16T08:57:00
-source_observed_at: 2023-09-16T09:34:00
-created_at: 2023-09-16T10:59:00
-updated_at: 2023-09-16T16:59:00
+company: "[[Apex Labs]]"
+source_created_at: 2023-09-16T14:30:00
+source_observed_at: 2023-09-16T14:41:00
+created_at: 2023-09-16T17:12:00
+updated_at: 2023-09-17T06:12:00
 tags: [#meeting]
 ---
 # Project Harbor 9 Pipeline Hygiene Sync 9
 
 ## Attendees
-- [[Yara Alvarez]]
-- [[Alex Alvarez]]
-- [[Priya Alvarez]]
+- [[Sam Alvarez]]
+- [[Grace Alvarez]]
+- [[Rachel Alvarez]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 9]] at [[Northstar Labs]].
-[[Alex Alvarez]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 9]] at [[Apex Labs]].
+[[Hannah Alvarez]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Harbor 9]] to [[Alex Alvarez]] #follow-up
+- [ ] Send recap for [[Project Harbor 9]] to [[Hannah Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

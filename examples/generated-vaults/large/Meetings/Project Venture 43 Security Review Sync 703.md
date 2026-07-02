@@ -1,25 +1,25 @@
 ---
 type: meeting
-date: 2024-04-11
+date: 2026-01-09
 project: "[[Project Venture 43]]"
 company: "[[Noble Retail]]"
-source_created_at: 2024-04-11T11:23:00
-source_observed_at: 2024-04-11T12:09:00
-created_at: 2024-04-11T15:44:00
-updated_at: 2024-04-11T22:44:00
+source_created_at: 2026-01-09T09:05:00
+source_observed_at: 2026-01-09T09:20:00
+created_at: 2026-01-10T14:05:00
+updated_at: 2026-01-10T17:05:00
 tags: [#meeting]
 ---
 # Project Venture 43 Security Review Sync 703
 
 ## Attendees
-- [[Ben Usman]]
-- [[Farah Grant]]
-- [[Priya Bennett]]
+- [[Lina Foster]]
+- [[Omar Shah]]
+- [[Grace Lee]]
 
 ## Notes
 Security Review reviewed for [[Project Venture 43]] at [[Noble Retail]].
-[[Wendy Kim]] flagged follow-up work for the next operating review.
+[[Priya Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 43]] to [[Wendy Kim]] #follow-up
+- [ ] Send recap for [[Project Venture 43]] to [[Priya Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

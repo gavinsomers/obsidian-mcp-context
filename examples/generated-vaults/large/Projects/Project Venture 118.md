@@ -1,11 +1,11 @@
 ---
 type: project
-status: planning
+status: closed
 company: "[[Noble Analytics]]"
-source_created_at: 2024-12-04T13:44:00
-source_observed_at: 2024-12-04T15:35:00
-created_at: 2024-12-04T20:44:00
-updated_at: 2025-01-03T22:44:00
+source_created_at: 2024-12-04T11:37:00
+source_observed_at: 2024-12-04T13:13:00
+created_at: 2024-12-06T10:37:00
+updated_at: 2025-02-17T12:37:00
 tags: [#project]
 ---
 # Project Venture 118
@@ -14,12 +14,13 @@ tags: [#project]
 Project Venture 118 supports [[Noble Analytics]] through customer success.
 
 ## Stakeholders
-- [[Iris Shah]]
-- [[Clara Jenkins]]
-- [[Zoe Walker]]
-- [[Marcus Evans]]
+- [[Marcus Bennett]]
+- [[Jonah Foster]]
+- [[Clara Novak]]
+- [[Rachel Shah]]
 
 ## Operating Notes
-- Owner: [[Tara Novak]]
-- Status: `planning`
+- Owner: [[Marcus Evans]]
+- Status: `closed`
+- Closed at: `2025-05-14`
 - [ ] Reconcile latest state for [[Project Venture 118]] #ops

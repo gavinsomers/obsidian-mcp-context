@@ -2,24 +2,24 @@
 type: meeting
 date: 2025-12-18
 project: "[[Project Venture 193]]"
-company: "[[Noble Health]]"
-source_created_at: 2025-12-18T11:33:00
-source_observed_at: 2025-12-18T12:50:00
-created_at: 2025-12-18T12:55:00
-updated_at: 2025-12-18T16:55:00
+company: "[[Crescent Health]]"
+source_created_at: 2025-12-18T12:22:00
+source_observed_at: 2025-12-18T14:27:00
+created_at: 2025-12-18T16:51:00
+updated_at: 2025-12-19T07:51:00
 tags: [#meeting]
 ---
 # Project Venture 193 Security Review Sync 1073
 
 ## Attendees
-- [[Farah Vance]]
-- [[Alex Morgan]]
-- [[Uma Chen]]
+- [[Nadia Jenkins]]
+- [[Alex Ivanov]]
+- [[Amara Kim]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 193]] at [[Noble Health]].
-[[Alex Morgan]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 193]] at [[Crescent Health]].
+[[Jonah Haddad]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 193]] to [[Alex Morgan]] #follow-up
+- [ ] Send recap for [[Project Venture 193]] to [[Jonah Haddad]] #follow-up
 - [x] Capture meeting notes in vault #ops

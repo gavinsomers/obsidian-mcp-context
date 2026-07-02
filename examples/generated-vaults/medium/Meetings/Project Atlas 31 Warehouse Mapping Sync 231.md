@@ -2,24 +2,24 @@
 type: meeting
 date: 2024-05-24
 project: "[[Project Atlas 31]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2024-05-24T08:45:00
-source_observed_at: 2024-05-24T11:09:00
-created_at: 2024-05-24T13:50:00
-updated_at: 2024-05-25T08:50:00
+company: "[[Apex Labs]]"
+source_created_at: 2024-05-24T14:52:00
+source_observed_at: 2024-05-24T16:02:00
+created_at: 2024-06-01T21:52:00
+updated_at: 2024-06-02T00:52:00
 tags: [#meeting]
 ---
 # Project Atlas 31 Warehouse Mapping Sync 231
 
 ## Attendees
-- [[David Bennett]]
-- [[Priya Evans]]
-- [[Lina Diaz]]
+- [[Nadia Evans]]
+- [[Lina Evans]]
+- [[Hannah Bennett]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 31]] at [[Northstar Labs]].
-[[Alex Alvarez]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 31]] at [[Apex Labs]].
+[[David Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Atlas 31]] to [[Alex Alvarez]] #follow-up
+- [ ] Send recap for [[Project Atlas 31]] to [[David Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Meridian 66]]"
 company: "[[Meridian Health]]"
-source_created_at: 2024-04-18T09:58:00
-source_observed_at: 2024-04-18T10:48:00
-created_at: 2024-04-19T13:58:00
-updated_at: 2024-05-08T16:58:00
+source_created_at: 2024-04-18T15:56:00
+source_observed_at: 2024-04-18T17:58:00
+created_at: 2024-04-19T21:56:00
+updated_at: 2024-05-31T02:56:00
 tags: [#research]
 ---
 # Project Meridian 66 Stakeholder Alignment Research 66

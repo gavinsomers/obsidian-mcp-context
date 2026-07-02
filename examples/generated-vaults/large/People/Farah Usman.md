@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Apex Manufacturing]]"
-role: "Product Director"
-source_created_at: 2023-10-13T13:14:00
-source_observed_at: 2023-10-13T14:39:00
-created_at: 2023-10-15T07:14:00
-updated_at: 2023-11-19T16:14:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-10-13T13:56:00
+source_observed_at: 2023-10-13T14:19:00
+created_at: 2023-10-19T20:56:00
+updated_at: 2023-11-08T01:56:00
 tags: [#person]
 ---
 # Farah Usman
 
 ## Role
-Farah Usman is the Product Director at [[Apex Manufacturing]].
+Farah Usman is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Apex Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Farah Usman]] #follow-up

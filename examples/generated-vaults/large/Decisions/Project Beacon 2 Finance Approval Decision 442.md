@@ -4,10 +4,10 @@ date: 2025-02-04
 status: active
 project: "[[Project Beacon 2]]"
 company: "[[Apex Labs]]"
-source_created_at: 2025-02-04T16:18:00
-source_observed_at: 2025-02-04T18:22:00
-created_at: 2025-02-04T20:52:00
-updated_at: 2025-02-05T08:52:00
+source_created_at: 2025-02-04T10:17:00
+source_observed_at: 2025-02-04T11:12:00
+created_at: 2025-02-04T12:42:00
+updated_at: 2025-02-05T02:42:00
 tags: [#decision]
 ---
 # Project Beacon 2 Finance Approval Decision 442

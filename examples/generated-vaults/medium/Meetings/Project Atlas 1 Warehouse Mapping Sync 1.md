@@ -12,8 +12,9 @@ tags: [#meeting]
 # Project Atlas 1 Warehouse Mapping Sync 1
 
 ## Attendees
-- [[Alex Alvarez]]
-- [[David Bennett]]
+- [[David Chen]]
+- [[David Alvarez]]
+- [[Sam Bennett]]
 
 ## Notes
 Warehouse Mapping reviewed for [[Project Atlas 1]] at [[Northstar Labs]].

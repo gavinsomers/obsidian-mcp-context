@@ -1,11 +1,11 @@
 ---
 type: project
-status: blocked
+status: active
 company: "[[Quantum Manufacturing]]"
-source_created_at: 2024-01-19T14:51:00
-source_observed_at: 2024-01-19T16:01:00
-created_at: 2024-01-20T05:51:00
-updated_at: 2024-02-21T06:51:00
+source_created_at: 2024-01-19T13:29:00
+source_observed_at: 2024-01-19T13:46:00
+created_at: 2024-01-21T08:29:00
+updated_at: 2024-02-27T18:29:00
 tags: [#project]
 ---
 # Project Compass 53
@@ -14,12 +14,12 @@ tags: [#project]
 Project Compass 53 supports [[Quantum Manufacturing]] through customer success.
 
 ## Stakeholders
-- [[Farah Lee]]
-- [[Wendy Patel]]
-- [[Priya Grant]]
-- [[Lina Usman]]
+- [[Sam Bennett]]
+- [[Farah Patel]]
+- [[Sam Ortega]]
+- [[Zoe Jenkins]]
 
 ## Operating Notes
-- Owner: [[Farah Lee]]
-- Status: `blocked`
+- Owner: [[Alex Chen]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Compass 53]] #ops

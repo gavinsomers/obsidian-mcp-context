@@ -3,23 +3,23 @@ type: meeting
 date: 2024-05-27
 project: "[[Project Signal 59]]"
 company: "[[Crescent Manufacturing]]"
-source_created_at: 2024-05-27T11:00:00
-source_observed_at: 2024-05-27T12:56:00
-created_at: 2024-05-28T13:00:00
-updated_at: 2024-05-29T01:00:00
+source_created_at: 2024-05-27T14:15:00
+source_observed_at: 2024-05-27T16:52:00
+created_at: 2024-05-28T14:15:00
+updated_at: 2024-05-29T05:15:00
 tags: [#meeting]
 ---
 # Project Signal 59 Pipeline Hygiene Sync 279
 
 ## Attendees
-- [[Sam Usman]]
-- [[Ben Quinn]]
-- [[Farah Chen]]
+- [[Grace Usman]]
+- [[Kai Morgan]]
+- [[Elena Morgan]]
 
 ## Notes
 Pipeline Hygiene reviewed for [[Project Signal 59]] at [[Crescent Manufacturing]].
-[[Ben Quinn]] flagged follow-up work for the next operating review.
+[[Farah Chen]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 59]] to [[Ben Quinn]] #follow-up
+- [ ] Send recap for [[Project Signal 59]] to [[Farah Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[BrightWave Manufacturing]]"
-role: "Operations Lead"
-source_created_at: 2023-09-04T13:53:00
-source_observed_at: 2023-09-04T15:29:00
-created_at: 2023-09-05T21:53:00
-updated_at: 2023-11-18T21:53:00
+company: "[[Evergreen Analytics]]"
+role: "Principal Analytics Engineer"
+source_created_at: 2023-09-04T15:56:00
+source_observed_at: 2023-09-04T16:17:00
+created_at: 2023-09-09T15:56:00
+updated_at: 2023-12-05T19:56:00
 tags: [#person]
 ---
 # Sam Patel
 
 ## Role
-Sam Patel is the Operations Lead at [[BrightWave Manufacturing]].
+Sam Patel is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Manufacturing]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Sam Patel]] #follow-up

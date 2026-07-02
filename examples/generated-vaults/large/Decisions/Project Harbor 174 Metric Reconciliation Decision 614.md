@@ -3,11 +3,11 @@ type: decision
 date: 2025-10-07
 status: active
 project: "[[Project Harbor 174]]"
-company: "[[Atlas Manufacturing]]"
-source_created_at: 2025-10-07T15:49:00
-source_observed_at: 2025-10-07T18:23:00
-created_at: 2025-10-12T18:49:00
-updated_at: 2025-10-12T21:49:00
+company: "[[Harbor Manufacturing]]"
+source_created_at: 2025-10-07T09:15:00
+source_observed_at: 2025-10-07T10:51:00
+created_at: 2025-10-07T13:18:00
+updated_at: 2025-10-08T08:18:00
 tags: [#decision]
 ---
 # Project Harbor 174 Metric Reconciliation Decision 614
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Harbor 174]].
 
 ## Context
-This decision applies to [[Atlas Manufacturing]] and [[Project Harbor 174]].
-It follows [[Project Harbor 174 Finance Approval Sync 834]].
+This decision applies to [[Harbor Manufacturing]] and [[Project Harbor 174]].
+It follows [[Project Harbor 174 Finance Approval Sync 174]].
 It incorporates [[Project Harbor 174 Handoff Readiness Research 174]].
 
 ## Supersession

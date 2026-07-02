@@ -2,10 +2,10 @@
 type: research
 project: "[[Project Compass 98]]"
 company: "[[Quantum Logistics]]"
-source_created_at: 2024-11-14T13:08:00
-source_observed_at: 2024-11-14T15:19:00
-created_at: 2024-11-15T11:08:00
-updated_at: 2024-12-23T15:08:00
+source_created_at: 2024-11-14T14:00:00
+source_observed_at: 2024-11-14T16:05:00
+created_at: 2024-11-15T07:00:00
+updated_at: 2024-12-08T07:00:00
 tags: [#research]
 ---
 # Project Compass 98 Finance Approval Research 318
@@ -14,8 +14,8 @@ tags: [#research]
 Research on finance approval for [[Project Compass 98]] and [[Quantum Logistics]].
 
 ## Evidence
-- Interview notes from [[Zoe Morgan]]
-- Related operating review: [[Project Compass 98 Lineage Audit Sync 1858]]
+- Interview notes from [[Tara Diaz]]
+- Related operating review: [[Project Compass 98 Lineage Audit Sync 978]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Compass 98]] #research

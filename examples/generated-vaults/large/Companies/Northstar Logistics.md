@@ -1,24 +1,19 @@
 ---
 type: company
-status: pipeline
+status: active
 segment: smb
-source_created_at: 2023-10-16T16:36:00
-source_observed_at: 2023-10-16T16:48:00
-created_at: 2023-10-17T04:36:00
-updated_at: 2023-12-26T09:36:00
+source_created_at: 2023-10-18T16:58:00
+source_observed_at: 2023-10-18T18:00:00
+created_at: 2023-10-19T03:58:00
+updated_at: 2024-01-09T08:58:00
 tags: [#company]
 ---
 # Northstar Logistics
 
 ## Account Context
-Northstar Logistics is a smb account currently marked `pipeline`.
+Northstar Logistics is a smb account currently marked `active`.
 
-## Stakeholders
-- [[Lina Diaz]] - SecOps Lead
-- [[Ben Ivanov]] - SecOps Lead
-- [[Sam Morgan]] - SecOps Lead
-- [[Hannah Rostova]] - SecOps Lead
-- [[Yara Vance]] - SecOps Lead
+## Assigned Account Team
 
 ## Projects
 

@@ -1,7 +1,7 @@
 ---
 type: person
-company: "[[BrightWave Labs]]"
-role: "Customer Success Manager"
+company: "[[Evergreen Analytics]]"
+role: "Technical Director"
 source_created_at: 2023-05-12T08:11:00
 source_observed_at: 2023-05-12T09:28:00
 created_at: 2023-05-19T09:11:00
@@ -11,8 +11,8 @@ tags: [#person]
 # Kai Chen
 
 ## Role
-Kai Chen is the Customer Success Manager at [[BrightWave Labs]].
+Kai Chen is the Technical Director at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[BrightWave Labs]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Chen]] #follow-up

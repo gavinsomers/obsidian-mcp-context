@@ -3,18 +3,18 @@ type: meeting
 date: 2024-12-05
 project: "[[Project Orbit 116]]"
 company: "[[Summit Analytics]]"
-source_created_at: 2024-12-05T10:19:00
-source_observed_at: 2024-12-05T12:49:00
-created_at: 2024-12-05T12:54:00
-updated_at: 2024-12-06T04:54:00
+source_created_at: 2024-12-05T15:04:00
+source_observed_at: 2024-12-05T15:53:00
+created_at: 2024-12-05T18:37:00
+updated_at: 2024-12-06T16:37:00
 tags: [#meeting]
 ---
 # Project Orbit 116 Metric Reconciliation Sync 776
 
 ## Attendees
-- [[Rachel Novak]]
-- [[Grace Shah]]
-- [[Xavier Walker]]
+- [[Rachel Foster]]
+- [[Iris Novak]]
+- [[Jonah Ortega]]
 
 ## Notes
 Metric Reconciliation reviewed for [[Project Orbit 116]] at [[Summit Analytics]].

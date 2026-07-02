@@ -1,11 +1,11 @@
 ---
 type: project
-status: active
+status: closed
 company: "[[Cobalt FinTech]]"
-source_created_at: 2023-08-01T08:48:00
-source_observed_at: 2023-08-01T09:06:00
-created_at: 2023-08-01T17:48:00
-updated_at: 2023-10-04T00:48:00
+source_created_at: 2023-08-01T14:36:00
+source_observed_at: 2023-08-01T16:57:00
+created_at: 2023-08-02T09:36:00
+updated_at: 2023-08-18T20:36:00
 tags: [#project]
 ---
 # Project Foundry 18
@@ -14,11 +14,13 @@ tags: [#project]
 Project Foundry 18 supports [[Cobalt FinTech]] through customer success.
 
 ## Stakeholders
-- [[Rachel Alvarez]]
-- [[Grace Foster]]
-- [[Xavier Jenkins]]
+- [[Wendy Lee]]
+- [[Yara Chen]]
+- [[Nadia Grant]]
+- [[Omar Bennett]]
 
 ## Operating Notes
-- Owner: [[Xavier Jenkins]]
-- Status: `active`
+- Owner: [[Rachel Alvarez]]
+- Status: `closed`
+- Closed at: `2024-03-02`
 - [ ] Reconcile latest state for [[Project Foundry 18]] #ops

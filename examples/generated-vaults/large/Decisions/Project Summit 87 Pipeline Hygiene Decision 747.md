@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-12-04
+date: 2026-04-13
 status: active
 project: "[[Project Summit 87]]"
 company: "[[Pioneer Media]]"
-source_created_at: 2024-12-04T15:35:00
-source_observed_at: 2024-12-04T18:33:00
-created_at: 2024-12-04T18:38:00
-updated_at: 2024-12-05T16:38:00
+source_created_at: 2026-04-13T13:58:00
+source_observed_at: 2026-04-13T14:19:00
+created_at: 2026-04-13T16:20:00
+updated_at: 2026-04-14T05:20:00
 tags: [#decision]
 ---
 # Project Summit 87 Pipeline Hygiene Decision 747
@@ -17,7 +17,7 @@ Proceed with pipeline hygiene for [[Project Summit 87]].
 
 ## Context
 This decision applies to [[Pioneer Media]] and [[Project Summit 87]].
-It follows [[Project Summit 87 Contract Renewal Sync 1187]].
+It follows [[Project Summit 87 Contract Renewal Sync 747]].
 It incorporates [[Project Summit 87 Security Review Research 527]].
 
 ## Supersession

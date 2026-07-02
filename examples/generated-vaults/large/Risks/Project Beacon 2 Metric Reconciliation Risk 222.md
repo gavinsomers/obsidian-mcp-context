@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Beacon 2]]"
-source_created_at: 2024-04-22T15:31:00
-source_observed_at: 2024-04-22T18:27:00
-created_at: 2024-04-22T23:31:00
-updated_at: 2024-05-28T02:31:00
+source_created_at: 2024-04-22T14:38:00
+source_observed_at: 2024-04-22T16:38:00
+created_at: 2024-04-22T19:38:00
+updated_at: 2024-05-15T00:38:00
 tags: [#risk]
 ---
 # Project Beacon 2 Metric Reconciliation Risk 222

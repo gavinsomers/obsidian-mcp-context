@@ -1,11 +1,11 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Compass 113]]"
-source_created_at: 2024-11-29T14:18:00
-source_observed_at: 2024-11-29T15:23:00
-created_at: 2024-11-30T06:18:00
-updated_at: 2025-01-09T10:18:00
+source_created_at: 2024-11-29T10:55:00
+source_observed_at: 2024-11-29T12:41:00
+created_at: 2024-11-29T19:55:00
+updated_at: 2025-01-07T01:55:00
 tags: [#risk]
 ---
 # Project Compass 113 Contract Renewal Risk 113
@@ -14,9 +14,9 @@ tags: [#risk]
 Contract Renewal may affect [[Project Compass 113]] for [[Quantum Analytics]].
 
 ## Evidence
-- Raised after [[Project Compass 113 Security Review Sync 993]]
+- Raised after [[Project Compass 113 Security Review Sync 1653]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Nadia Novak]]
+- Status: `mitigating`
+- Owner: [[Hannah Evans]]
 - [ ] Reassess [[Project Compass 113 Contract Renewal Risk 113]] during the next review #risk

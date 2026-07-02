@@ -3,23 +3,23 @@ type: meeting
 date: 2024-05-07
 project: "[[Project Horizon 49]]"
 company: "[[BrightWave Manufacturing]]"
-source_created_at: 2024-05-07T09:08:00
-source_observed_at: 2024-05-07T10:26:00
-created_at: 2024-05-07T10:31:00
-updated_at: 2024-05-07T16:31:00
+source_created_at: 2024-05-07T10:19:00
+source_observed_at: 2024-05-07T11:10:00
+created_at: 2024-05-07T13:40:00
+updated_at: 2024-05-07T20:40:00
 tags: [#meeting]
 ---
 # Project Horizon 49 Pipeline Hygiene Sync 1809
 
 ## Attendees
-- [[Hannah Usman]]
-- [[Lina Grant]]
-- [[Ben Lee]]
+- [[Amara Alvarez]]
+- [[Xavier Quinn]]
+- [[Rachel Foster]]
 
 ## Notes
 Pipeline Hygiene reviewed for [[Project Horizon 49]] at [[BrightWave Manufacturing]].
-[[Sam Patel]] flagged follow-up work for the next operating review.
+[[Wendy Bennett]] flagged follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Horizon 49]] to [[Sam Patel]] #follow-up
+- [ ] Send recap for [[Project Horizon 49]] to [[Wendy Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

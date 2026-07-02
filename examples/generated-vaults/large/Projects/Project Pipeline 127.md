@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Vanguard Labs]]"
-source_created_at: 2025-01-17T16:04:00
-source_observed_at: 2025-01-17T17:22:00
-created_at: 2025-01-18T20:04:00
-updated_at: 2025-04-02T21:04:00
+status: blocked
+company: "[[Quantum Labs]]"
+source_created_at: 2025-01-17T15:53:00
+source_observed_at: 2025-01-17T16:31:00
+created_at: 2025-01-19T08:53:00
+updated_at: 2025-02-15T16:53:00
 tags: [#project]
 ---
 # Project Pipeline 127
 
 ## Overview
-Project Pipeline 127 supports [[Vanguard Labs]] through sales pipeline.
+Project Pipeline 127 supports [[Quantum Labs]] through sales pipeline.
 
 ## Stakeholders
-- [[Farah Alvarez]]
-- [[Sam Shah]]
-- [[Wendy Evans]]
-- [[Lina Jenkins]]
+- [[Iris Rostova]]
+- [[Iris Morgan]]
+- [[Lina Quinn]]
+- [[Zoe Foster]]
 
 ## Operating Notes
 - Owner: [[Wendy Evans]]
-- Status: `closed`
-- Closed at: `2025-08-17`
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Pipeline 127]] #ops

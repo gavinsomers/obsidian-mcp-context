@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Summit Health]]"
-role: "Product Director"
-source_created_at: 2023-08-02T15:45:00
-source_observed_at: 2023-08-02T17:47:00
-created_at: 2023-08-04T03:45:00
-updated_at: 2023-10-19T06:45:00
+company: "[[Evergreen Analytics]]"
+role: "Client Partner"
+source_created_at: 2023-08-02T08:52:00
+source_observed_at: 2023-08-02T11:39:00
+created_at: 2023-08-02T12:52:00
+updated_at: 2023-08-25T16:52:00
 tags: [#person]
 ---
 # Yara Lee
 
 ## Role
-Yara Lee is the Product Director at [[Summit Health]].
+Yara Lee is the Client Partner at [[Evergreen Analytics]].
 
-## Current Context
-- First seen through [[Summit Health]] account context
+## Active Project Allocations
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Lee]] #follow-up

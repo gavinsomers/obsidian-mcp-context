@@ -2,10 +2,10 @@
 type: risk
 status: open
 project: "[[Project Compass 68]]"
-source_created_at: 2025-07-18T09:11:00
-source_observed_at: 2025-07-18T10:16:00
-created_at: 2025-07-19T01:11:00
-updated_at: 2025-08-24T09:11:00
+source_created_at: 2025-07-18T12:13:00
+source_observed_at: 2025-07-18T14:23:00
+created_at: 2025-07-19T23:13:00
+updated_at: 2025-08-16T05:13:00
 tags: [#risk]
 ---
 # Project Compass 68 Stakeholder Alignment Risk 508
@@ -18,5 +18,5 @@ Stakeholder Alignment may affect [[Project Compass 68]] for [[Quantum Health]].
 
 ## Current State
 - Status: `open`
-- Owner: [[Victor Lee]]
+- Owner: [[Omar Chen]]
 - [ ] Reassess [[Project Compass 68 Stakeholder Alignment Risk 508]] during the next review #risk
