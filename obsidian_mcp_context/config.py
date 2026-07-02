@@ -384,6 +384,80 @@ def _deep_merge(base: dict[str, object], override: dict[str, object]) -> dict[st
     return merged
 
 
+def _validate_known_keys(
+    data: dict[str, object],
+    *,
+    allowed: dict[str, object],
+    label: str,
+    prefix: str = "",
+) -> None:
+    for key, value in data.items():
+        if key not in allowed:
+            qualified = f"{prefix}.{key}" if prefix else key
+            raise ValueError(f"{label} contains unsupported key: {qualified}")
+        nested_allowed = allowed[key]
+        if isinstance(nested_allowed, dict):
+            if value is None:
+                continue
+            if not isinstance(value, dict):
+                qualified = f"{prefix}.{key}" if prefix else key
+                raise ValueError(f"{label} {qualified} must be a TOML table")
+            _validate_known_keys(
+                value,
+                allowed=nested_allowed,
+                label=label,
+                prefix=f"{prefix}.{key}" if prefix else key,
+            )
+
+
+ALLOWED_CONFIG_KEYS: dict[str, object] = {
+    "source": {"type": None, "sample_name": None, "vault_path": None},
+    "pipeline": {"output_dir": None, "run_mode": None},
+    "privacy": {
+        "allow_raw_text_to_ai": None,
+        "allow_hosted_ai": None,
+        "max_context_chars": None,
+        "redact_file_paths": None,
+    },
+    "ai": {
+        "enabled": None,
+        "provider": None,
+        "model": None,
+        "base_url": None,
+        "api_key_env": None,
+    },
+    "scan": {
+        "include_globs": None,
+        "exclude_globs": None,
+        "extra_exclude_globs": None,
+        "source_extensions": None,
+    },
+    "entities": {
+        "folders": None,
+        "non_entity_note_types": None,
+    },
+    "doctor": {
+        "lifecycle_metadata": None,
+        "ignored_files": None,
+        "unsupported_files": None,
+        "empty_notes": None,
+        "notes_without_blocks": None,
+        "large_notes": None,
+        "unresolved_wikilinks": None,
+    },
+    "replay_qa": {
+        "entity_type_preferences": None,
+        "eval_pack": None,
+        "intent_words": {
+            "decisions": None,
+            "risks": None,
+            "open_loops": None,
+            "timeline": None,
+        },
+    },
+}
+
+
 def resolve_profile_path(profile_path: str | Path | None = None) -> Path | None:
     value = profile_path or os.environ.get(VAULT_PROFILE_ENV)
     if not value:
@@ -408,6 +482,7 @@ def _load_toml_file(path: Path, *, label: str) -> dict[str, object]:
     data = tomllib.loads(path.read_text(encoding="utf-8"))
     if not isinstance(data, dict):
         raise ValueError(f"{label} must contain TOML tables: {path}")
+    _validate_known_keys(data, allowed=ALLOWED_CONFIG_KEYS, label=label)
     return data
 
 

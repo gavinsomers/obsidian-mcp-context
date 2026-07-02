@@ -64,6 +64,11 @@ and non-entity note types. Checked-in examples live under
 For the portability rules behind those settings, see
 [`docs/portability-contract.md`](portability-contract.md).
 
+Checked-in vault profiles must be generic or synthetic fixtures. Do not commit
+profiles that name private vault paths, private clients, private note titles,
+personal reports, screenshots, or local machine conventions. The public
+`generated-demo` profile is the reference contract for generated demo vaults.
+
 Use a checked-in profile by name:
 
 ```bash
@@ -95,6 +100,27 @@ For container or MCP server startup, use the environment variable:
 ```dotenv
 OBSIDIAN_MCP_VAULT_PROFILE=/absolute/path/to/private-profile.toml
 ```
+
+Vault profile and config files are schema-checked. Unsupported keys fail during
+startup with a qualified key path, for example
+`Vault profile contains unsupported key: private_paths`. This keeps typos and
+private-only conventions from silently changing public behavior.
+
+Supported tables:
+
+- `source`: `type`, `sample_name`, `vault_path`
+- `pipeline`: `output_dir`, `run_mode`
+- `privacy`: `allow_raw_text_to_ai`, `allow_hosted_ai`, `max_context_chars`,
+  `redact_file_paths`
+- `ai`: `enabled`, `provider`, `model`, `base_url`, `api_key_env`
+- `scan`: `include_globs`, `exclude_globs`, `extra_exclude_globs`,
+  `source_extensions`
+- `entities`: `non_entity_note_types`; `entities.folders` for
+  folder-to-note-type mappings
+- `doctor`: `lifecycle_metadata`, `ignored_files`, `unsupported_files`,
+  `empty_notes`, `notes_without_blocks`, `large_notes`, `unresolved_wikilinks`
+- `replay_qa`: `entity_type_preferences`, `eval_pack`; `replay_qa.intent_words`
+  with `decisions`, `risks`, `open_loops`, and `timeline`
 
 ## Example Config
 
