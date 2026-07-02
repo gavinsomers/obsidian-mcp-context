@@ -17,14 +17,15 @@ The stricter demo-readiness prompt pack is:
 examples/eval-packs/consultancy-demo.json
 ```
 
-Run the default pack through the generated demo health check:
+Run the completed generated-small workflow before using these prompts through
+an MCP client:
 
 ```bash
-scripts/run_synthetic_demo.sh small --fast
-scripts/check_synthetic_demo.sh --skip-dbt-docs
+scripts/run_dataset_workflow.sh small --with-inspection
 ```
 
-Run the stricter pack after loading the full generated-small fixture:
+The old replay health check can still exercise the JSON packs for legacy replay
+flows, but it is no longer the primary validation route for the main workflow:
 
 ```bash
 scripts/run_synthetic_demo.sh small --fast
@@ -46,8 +47,8 @@ Both packs use generated/synthetic vault context only.
 
 ## Current Result
 
-On 2026-07-01, the stricter `consultancy-demo` pack passed against the
-generated-small Postgres/dbt stack after loading enough replay notes. The
+On 2026-07-01, the stricter `consultancy-demo` pack passed against the legacy
+generated-small replay stack after loading enough notes. The
 validation covered:
 
 - mart-backed mode, not parser fallback

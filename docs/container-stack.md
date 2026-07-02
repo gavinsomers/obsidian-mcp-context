@@ -20,8 +20,8 @@ service, dbt container, and editor-visible model code.
   catalog metadata.
 - `dbt-docs`: generates and serves dbt docs in a local browser.
 - `postgres-browser`: local Adminer UI for inspecting raw tables and dbt marts.
-- `replay-dashboard`: local browser dashboard for replay, scheduler, and
-  Postgres mart freshness.
+- `replay-dashboard`: legacy local browser dashboard for virtual-time replay,
+  scheduler, and Postgres mart freshness.
 - `mcp`: MCP server container backed by the Postgres dbt marts.
 - `ollama` and `enrichment`: optional AI profile scaffold for local enrichment
   work.
@@ -29,16 +29,16 @@ service, dbt container, and editor-visible model code.
 Postgres is the canonical warehouse for this project.
 
 The default Compose service set is intentionally quiet: `postgres`, `ingest`,
-`dbt`, `dbt-test`, and `mcp`. Browser and replay surfaces are behind explicit
+`dbt`, `dbt-test`, and `mcp`. Browser and legacy replay surfaces are behind explicit
 profiles:
 
 - `inspection`: `dbt-docs`, `dbt-docs-generate`, and `postgres-browser`.
 - `obsidian`: `vault-obsidian`.
-- `replay`: `replay-dashboard` and `replay-qa`.
+- `legacy-replay`: `replay-dashboard` and `replay-qa`.
 
 Targeting a service by name still works for the project scripts, but plain
-`docker compose up` no longer starts Obsidian, replay, dbt Docs, or the table
-browser by accident.
+`docker compose up` no longer starts Obsidian, replay, Replay Q&A, dbt Docs, or
+the table browser by accident.
 
 ## One-Command Check
 
@@ -106,7 +106,11 @@ scripts/analytics_stack_check.sh large
 
 This sets `VAULT_PATH` to the selected checked-in generated vault for that run.
 
-## Full Synthetic Demo
+## Legacy Synthetic Replay Demo
+
+The main workflow is the completed-dataset path above. The replay demo remains
+available only for old virtual-time experiments where you explicitly want
+Obsidian/webtop, replay monitoring, and replay Q&A.
 
 Start the complete generated-large replay demo with one command:
 
@@ -233,7 +237,7 @@ The Obsidian webtop starts Electron with software-rendering defaults
 or blank windows in browser-backed desktops. Override `OBSIDIAN_ELECTRON_FLAGS`
 only when debugging host-specific rendering behavior.
 
-## Generated Vault Replay
+## Legacy Generated Vault Replay
 
 To start with an empty isolated vault and replay generated notes into it over
 virtual time, run:
@@ -314,10 +318,10 @@ dbt. The scheduler is single-process, so it never starts a new ingest/dbt cycle
 until the previous one has completed. Failed runs are recorded and leave the
 last successful marts in Postgres for MCP to continue reading.
 
-## Replay Observability Dashboard
+## Legacy Replay Observability Dashboard
 
-The `replay-dashboard` service exposes a local browser dashboard for the
-generated replay environment:
+The `replay-dashboard` service is a legacy browser dashboard for the generated
+replay environment:
 
 ```bash
 docker compose --env-file .env.analytics -f docker-compose.analytics.yml up -d replay-dashboard
@@ -354,9 +358,10 @@ Raw and mart table counts remain visible for debugging. The page refreshes
 itself every five seconds. It does not expose note content or personal vault
 paths.
 
-## Replay Q&A
+## Legacy Replay Q&A
 
-Start the browser Q&A page:
+Replay Q&A is no longer the primary interaction surface. Use MCP for completed
+datasets. Start the legacy browser Q&A page only when running old replay flows:
 
 ```bash
 docker compose --env-file .env.analytics -f docker-compose.analytics.yml up -d replay-qa

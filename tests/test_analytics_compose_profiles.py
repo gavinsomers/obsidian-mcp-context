@@ -45,8 +45,8 @@ def test_inspection_profile_exposes_dbt_docs_and_table_browser():
     assert "replay-dashboard" not in services
 
 
-def test_replay_and_obsidian_profiles_are_explicit():
-    replay_services = _compose_services("--profile", "replay")
+def test_legacy_replay_and_obsidian_profiles_are_explicit():
+    replay_services = _compose_services("--profile", "legacy-replay")
     obsidian_services = _compose_services("--profile", "obsidian")
 
     assert "replay-dashboard" in replay_services

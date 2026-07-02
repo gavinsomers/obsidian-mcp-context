@@ -18,10 +18,13 @@ fixtures, tests, docs, generated outputs, and MCP serving examples.
 ## Defaults
 
 - `.env.analytics.example` points to `./examples/synthetic-vault`.
+- `scripts/run_dataset_workflow.sh small|medium|large` processes checked-in
+  generated fixtures as completed datasets without replay or Obsidian.
 - `scripts/analytics_stack_check.sh small|medium|large` overrides `VAULT_PATH`
   with checked-in generated fixtures.
-- `scripts/run_synthetic_demo.sh` accepts only `small`, `medium`, or `large` and
-  replays into ignored `var/replay-vault` storage.
+- `scripts/run_synthetic_demo.sh` is a legacy replay path. It accepts only
+  `small`, `medium`, or `large` and replays into ignored `var/replay-vault`
+  storage.
 - `scripts/run_generated_obsidian.sh` accepts only generated fixture sizes or the
   checked-in synthetic fixture.
 - `doctor` diagnostic samples are redacted by default.
@@ -36,12 +39,11 @@ Run these before demo capture:
 
 ```bash
 scripts/privacy_check.sh --all
-scripts/run_synthetic_demo.sh small --fast
-scripts/check_synthetic_demo.sh --skip-dbt-docs
+scripts/run_dataset_workflow.sh small --with-inspection
 ```
 
-Use `scripts/run_synthetic_demo.sh stop` after validation if the demo stack does
-not need to stay running.
+Use `docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml down`
+after validation if the local stack does not need to stay running.
 
 ## Caveats
 
