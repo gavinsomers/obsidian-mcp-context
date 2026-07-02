@@ -30,6 +30,27 @@ Postgres is the canonical warehouse for this project.
 
 ## One-Command Check
 
+Run the quiet completed-dataset workflow when you already have a finished
+generated vault and want the main pipeline only:
+
+```bash
+scripts/run_dataset_workflow.sh /path/to/generated-vault
+```
+
+For checked-in generated fixtures, pass a shortcut:
+
+```bash
+scripts/run_dataset_workflow.sh small
+scripts/run_dataset_workflow.sh medium
+scripts/run_dataset_workflow.sh large
+```
+
+The workflow validates the vault manifest, starts Postgres, runs ingest, runs
+dbt, runs dbt tests, and starts MCP. It writes Compose output to
+`logs/dataset-workflow/` so the terminal stays focused on the stage summary.
+It does not copy datasets from the generator automatically; provide the path you
+want processed.
+
 Run the full synthetic-vault path:
 
 ```bash
