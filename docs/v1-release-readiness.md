@@ -156,23 +156,19 @@ Expected:
 Postgres analytics stack check passed.
 ```
 
-### 7. Browser Demo Readiness
+### 7. Completed Dataset Demo Readiness
 
-- [ ] Generated replay demo starts without personal vault input.
-- [ ] Replay dashboard reports ready.
-- [ ] Replay Q&A reports ready.
-- [ ] Default Q&A pack passes against the startup seed.
-- [ ] Stricter consultancy prompt pack passes against the full generated-small
-      fixture seed.
+- [ ] Completed generated-small workflow runs without personal vault input.
+- [ ] MCP starts against the dbt-built marts.
+- [ ] dbt Docs is available on demand for lineage proof.
+- [ ] Postgres browser is available on demand for raw/mart row inspection.
+- [ ] Representative prompts can be asked through an MCP client against the
+      completed dataset.
 
 Verify:
 
 ```bash
-scripts/run_synthetic_demo.sh small --fast
-scripts/check_synthetic_demo.sh --skip-dbt-docs
-
-scripts/run_synthetic_demo.sh small --fast
-scripts/check_synthetic_demo.sh --skip-dbt-docs --examples examples/eval-packs/consultancy-demo.json
+scripts/run_dataset_workflow.sh small --with-inspection
 ```
 
 Expected:

@@ -114,7 +114,7 @@ services:
       - "${POSTGRES_BROWSER_PORT:-8082}:8080"
 
   replay-dashboard:
-    profiles: ["replay"]
+    profiles: ["legacy-replay"]
     build:
       context: .
       dockerfile: docker/python/Dockerfile
@@ -141,7 +141,7 @@ services:
       - /replay-vault
 
   replay-qa:
-    profiles: ["replay"]
+    profiles: ["legacy-replay"]
     build:
       context: .
       dockerfile: docker/python/Dockerfile

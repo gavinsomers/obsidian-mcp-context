@@ -89,17 +89,10 @@ This builds the required images, starts Postgres, ingests the generated vault,
 runs dbt, runs dbt tests, and executes a Postgres-backed MCP smoke check against
 the marts.
 
-Check the running demo and canned Q&A examples:
-
-```bash
-scripts/check_synthetic_demo.sh
-```
-
-The health check validates replay/scheduler state, browser service endpoints,
-dashboard readiness, and the generated-demo eval pack in
-`examples/eval-packs/generated-demo.json`. Override the pack with
-`--examples /path/to/private-eval-pack.json` or select one from a vault profile
-with `--vault-profile`.
+Use your MCP client as the primary Q&A surface once the workflow has passed.
+Parser diagnostic commands remain available for source inspection, and dbt Docs
+or the table browser can be started explicitly when you need lineage or row-level
+evidence.
 
 For the current representative prompt set and demo caveats, see
 [docs/retrieval-validation.md](docs/retrieval-validation.md).
@@ -132,29 +125,8 @@ scripts/analytics_stack_check.sh small
 scripts/analytics_stack_check.sh medium
 ```
 
-Start the complete generated-large browser demo when you want Obsidian/webtop,
-Postgres, MCP, Adminer, replay dashboard, Q&A, dbt docs, replay, and scheduler
-services together:
-
-```bash
-scripts/run_synthetic_demo.sh large
-```
-
-For a faster smoke/demo run that loads the full small fixture before the first
-ingest/dbt cycle and skips background replay loops:
-
-```bash
-scripts/run_synthetic_demo.sh small --fast
-```
-
-Stop it with:
-
-```bash
-scripts/run_synthetic_demo.sh stop
-```
-
-Open the generated-large vault in an isolated browser-accessible Obsidian
-container:
+Open a generated vault in an isolated browser-accessible Obsidian container only
+when you explicitly want to inspect the Markdown vault surface:
 
 ```bash
 scripts/run_generated_obsidian.sh large
@@ -163,35 +135,8 @@ scripts/run_generated_obsidian.sh large
 Then open `http://localhost:3000`. Obsidian auto-launches in the webtop and
 opens the mounted `/vault` folder.
 
-Replay generated-large into an initially empty isolated vault so notes appear
-over virtual time:
-
-```bash
-scripts/run_generated_replay.sh large --reset --speed 86400 --batch-size 25
-```
-
-This mounts `var/replay-vault` into browser Obsidian and copies notes from
-`examples/generated-vaults/large` in `created_at` order. Use `--dry-run` to
-inspect the replay manifest without copying files.
-
-In a second terminal, refresh Postgres raw tables and dbt marts on a schedule as
-the replay vault changes:
-
-```bash
-scripts/run_replay_scheduler.sh --interval-seconds 60
-```
-
-Use `--once` for a single ingest/dbt cycle. Scheduler state is written to
-`var/replay-vault/.obsidian-mcp-scheduler-state.json`.
-
-Open the replay observability dashboard:
-
-```bash
-docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up -d replay-dashboard
-```
-
-Then open `http://localhost:8083` to see replay progress, ingest/dbt status,
-and current Postgres raw/mart counts.
+Legacy replay scripts still exist for old virtual-time experiments, but replay,
+Replay Q&A, and replay dashboards are no longer part of the main workflow.
 
 Keep the generated-large stack running for an MCP client:
 
@@ -209,7 +154,7 @@ http://localhost:8000
 Serve dbt lineage and model documentation after building the warehouse:
 
 ```bash
-docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up dbt-docs
+scripts/run_dataset_workflow.sh large --with-dbt-docs
 ```
 
 Then open:
@@ -221,7 +166,7 @@ http://localhost:8081
 Inspect live Postgres raw tables and dbt marts in the browser:
 
 ```bash
-docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up -d postgres-browser
+scripts/run_dataset_workflow.sh large --with-table-browser
 ```
 
 Then open `http://localhost:8082` and log in to Adminer with server
