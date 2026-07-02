@@ -1,5 +1,7 @@
 from pathlib import Path
 
+import yaml
+
 
 MODELS_DIR = Path("models")
 MARTS_DIR = MODELS_DIR / "marts"
@@ -40,3 +42,17 @@ def test_typed_dimensions_do_not_depend_on_fact_models():
         sql = model.read_text(encoding="utf-8")
         assert "ref('fact_" not in sql
         assert 'ref("fact_' not in sql
+
+
+def test_dbt_model_folders_map_to_physical_postgres_schemas():
+    project = yaml.safe_load(Path("dbt_project.yml").read_text(encoding="utf-8"))
+    models = project["models"]["obsidian_mcp_context"]
+
+    assert models["staging"]["+schema"] == "staging"
+    assert models["intermediate"]["+schema"] == "intermediate"
+    assert models["marts"]["dim"]["+schema"] == "dim"
+    assert models["marts"]["fact"]["+schema"] == "fact"
+    assert models["marts"]["mart"]["+schema"] == "mart"
+
+    macro = Path("macros/generate_schema_name.sql").read_text(encoding="utf-8")
+    assert "custom_schema_name | trim" in macro

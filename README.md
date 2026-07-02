@@ -101,7 +101,7 @@ Prove the same data is available through an agent-ready preset:
 
 ```bash
 POSTGRES_DSN=postgresql://obsidian:obsidian@localhost:5432/obsidian_context \
-DBT_TARGET_SCHEMA=marts \
+POSTGRES_WAREHOUSE_SCHEMAS=mart,fact,dim,intermediate,staging \
 .venv/bin/obsidian-mcp-context \
   --vault examples/generated-vaults/large \
   context-preset project_brief \
@@ -147,7 +147,8 @@ scripts/run_dataset_workflow.sh large --with-table-browser
 
 Then open `http://localhost:8082` and log in to Adminer with server
 `postgres`, database `obsidian_context`, username `obsidian`, and password
-`obsidian`.
+`obsidian`. The raw landing tables are in `raw`; dbt outputs are split across
+`staging`, `intermediate`, `dim`, `fact`, and `mart`.
 
 For MCP client configuration, see
 [docs/mcp-client-setup.md](docs/mcp-client-setup.md).

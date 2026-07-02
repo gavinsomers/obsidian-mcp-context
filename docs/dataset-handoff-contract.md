@@ -118,4 +118,5 @@ Postgres browser: http://localhost:8082
 ```
 
 Use dbt Docs for model lineage and column documentation. Use the Postgres table
-browser for row-level inspection of raw tables and dbt marts.
+browser for row-level inspection of `raw` landing tables and dbt outputs in
+`staging`, `intermediate`, `dim`, `fact`, and `mart`.

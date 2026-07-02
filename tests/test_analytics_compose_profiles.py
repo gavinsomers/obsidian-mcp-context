@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import subprocess
+from pathlib import Path
 
 
 COMPOSE = [
@@ -63,3 +64,11 @@ def test_workflow_profile_exposes_dataset_workflow_orchestrator():
     assert "vault-obsidian" not in services
     assert "replay-dashboard" not in services
     assert "replay-qa" not in services
+
+
+def test_workflow_resets_split_warehouse_schemas_before_dbt_run():
+    compose = Path("docker-compose.analytics.yml").read_text(encoding="utf-8")
+
+    assert "RESET_WAREHOUSE_SCHEMAS" in compose
+    assert "dbt run-operation reset_warehouse_schemas" in compose
+    assert "POSTGRES_WAREHOUSE_SCHEMAS" in compose
