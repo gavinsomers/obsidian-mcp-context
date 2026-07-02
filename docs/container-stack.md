@@ -59,6 +59,17 @@ Start the complete generated-large replay demo with one command:
 scripts/run_synthetic_demo.sh large
 ```
 
+For a quick smoke/demo run, use fast mode:
+
+```bash
+scripts/run_synthetic_demo.sh small --fast
+```
+
+Fast mode preloads all notes from the selected generated fixture before the
+first ingest/dbt cycle, runs one scheduler cycle, skips background replay and
+scheduler loops, and skips dbt docs. Use the default command when you want to
+watch notes arrive over virtual time.
+
 The script accepts `small`, `medium`, or `large`; `large` is the default. It
 uses checked-in generated fixtures only, resets the ignored
 `var/replay-vault` target by default, starts the browser-accessible services,
@@ -79,7 +90,9 @@ Useful options:
 
 ```bash
 scripts/run_synthetic_demo.sh large --no-reset
+scripts/run_synthetic_demo.sh small --fast
 scripts/run_synthetic_demo.sh large --no-continuous
+scripts/run_synthetic_demo.sh large --initial-limit 0 --no-continuous --no-dbt-docs
 scripts/run_synthetic_demo.sh large --speed 86400 --batch-size 25 --scheduler-interval 60
 scripts/run_synthetic_demo.sh status
 scripts/run_synthetic_demo.sh stop

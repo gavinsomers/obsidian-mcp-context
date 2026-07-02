@@ -19,7 +19,9 @@ Options:
   --batch-size COUNT              Replay notes per tick. Default: 25.
   --scheduler-interval SECONDS    Ingest/dbt scheduler cadence. Default: 60.
   --initial-limit COUNT           Seed the first COUNT replay notes before first dbt run.
-                                  Default: 3.
+                                  Default: 3. Use 0 to preload all selected notes.
+  --fast                          Preload all selected notes, run one ingest/dbt cycle,
+                                  skip background loops, and skip dbt docs.
   --no-continuous                 Do not start background replay/scheduler loops.
   --no-dbt-docs                   Do not start dbt docs service.
   --help                          Show this help.
@@ -61,6 +63,7 @@ size="large"
 reset=1
 continuous=1
 start_dbt_docs=1
+fast=0
 speed="${REPLAY_DEMO_SPEED:-86400}"
 batch_size="${REPLAY_DEMO_BATCH_SIZE:-25}"
 scheduler_interval="${REPLAY_SCHEDULER_INTERVAL_SECONDS:-60}"
@@ -142,6 +145,15 @@ while [[ $# -gt 0 ]]; do
     --initial-limit)
       initial_limit="$2"
       shift 2
+      ;;
+    --fast)
+      fast=1
+      speed=0
+      batch_size=0
+      initial_limit=0
+      continuous=0
+      start_dbt_docs=0
+      shift
       ;;
     --no-continuous)
       continuous=0
@@ -358,6 +370,9 @@ echo "Using isolated replay target: $target_vault"
 echo "Using replay speed: $speed virtual seconds per real second"
 echo "Using replay batch size: $batch_size"
 echo "Using scheduler interval: $scheduler_interval seconds"
+if [[ "$fast" == "1" ]]; then
+  echo "Using fast mode: preload all notes, run one ingest/dbt cycle, skip background loops and dbt docs"
+fi
 
 "${compose[@]}" config >/dev/null
 
@@ -381,14 +396,24 @@ fi
 wait_for_obsidian_webtop
 "${compose[@]}" up -d mcp postgres-browser replay-dashboard replay-qa
 
-echo "Seeding replay target with $initial_limit note(s) before first ingest/dbt cycle."
-"$python_bin" -m obsidian_mcp_context.replay_loader \
-  --source "$source_vault" \
-  --target "$target_vault" \
-  --limit "$initial_limit" \
-  --speed 0 \
-  --batch-size "$initial_limit" \
-  >"$log_dir/initial-replay.log" 2>&1
+if [[ "$initial_limit" == "0" ]]; then
+  echo "Seeding replay target with all selected notes before first ingest/dbt cycle."
+  "$python_bin" -m obsidian_mcp_context.replay_loader \
+    --source "$source_vault" \
+    --target "$target_vault" \
+    --speed 0 \
+    --batch-size 0 \
+    >"$log_dir/initial-replay.log" 2>&1
+else
+  echo "Seeding replay target with $initial_limit note(s) before first ingest/dbt cycle."
+  "$python_bin" -m obsidian_mcp_context.replay_loader \
+    --source "$source_vault" \
+    --target "$target_vault" \
+    --limit "$initial_limit" \
+    --speed 0 \
+    --batch-size "$initial_limit" \
+    >"$log_dir/initial-replay.log" 2>&1
+fi
 
 printf -v target_vault_q "%q" "$target_vault"
 printf -v env_file_q "%q" "$env_file"

@@ -36,7 +36,7 @@ Run these before demo capture:
 
 ```bash
 scripts/privacy_check.sh --all
-scripts/run_synthetic_demo.sh large --no-continuous --no-dbt-docs
+scripts/run_synthetic_demo.sh small --fast
 scripts/check_synthetic_demo.sh --skip-dbt-docs
 ```
 
