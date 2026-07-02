@@ -1,18 +1,21 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-08-06T15:22:00
-source_observed_at: 2023-08-06T16:11:00
-created_at: 2023-08-07T16:22:00
-updated_at: 2023-11-03T19:22:00
+company: "[[Cobalt Labs]]"
+role: "Finance Lead"
+source_created_at: 2023-06-23T13:49:00
+source_observed_at: 2023-06-23T15:56:00
+created_at: 2023-06-25T04:49:00
+updated_at: 2026-02-05T13:00:00
 tags: [#person]
 ---
 # Iris Morgan
 
 ## Role
-Iris Morgan is the Senior Data Consultant at [[Evergreen Analytics]].
+Iris Morgan is the Finance Lead at [[Cobalt Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Compass 83]] ([[Cobalt Labs]])
+- Client stakeholder on [[Project Compass 128]] ([[Cobalt Labs]])
+- Client stakeholder on [[Project Horizon 139]] ([[Cobalt Labs]])
+- Client stakeholder on [[Project Compass 203]] ([[Cobalt Labs]])
 - [ ] Confirm next update with [[Iris Morgan]] #follow-up

@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-05-21
 project: "[[Project Signal 59]]"
-company: "[[Crescent Manufacturing]]"
-source_created_at: 2024-05-21T12:11:00
-source_observed_at: 2024-05-21T14:55:00
-created_at: 2024-05-21T15:00:00
-updated_at: 2024-05-21T21:00:00
+company: "[[BrightWave FinTech]]"
+source_created_at: 2024-05-21T12:49:00
+source_observed_at: 2024-05-21T14:04:00
+created_at: 2024-05-21T14:09:00
+updated_at: 2024-05-22T05:09:00
 tags: [#meeting]
 ---
 # Project Signal 59 Pipeline Hygiene Sync 1819
 
-## Attendees
-- [[Rachel Patel]]
-- [[Grace Usman]]
-- [[Kai Morgan]]
+## Evergreen Attendees
+- [[Farah Chen]]
+
+## Client Attendees
+- [[Clara Walker]]
+- [[Zoe Morgan]]
+- [[Jonah Ivanov]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 59]] at [[Crescent Manufacturing]].
-[[Farah Chen]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 59]] at [[BrightWave FinTech]].
+[[Farah Chen]] aligned with [[Clara Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 59]] to [[Farah Chen]] #follow-up

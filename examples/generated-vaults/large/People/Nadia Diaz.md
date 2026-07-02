@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Data Platform Engineer"
-source_created_at: 2023-05-21T13:19:00
-source_observed_at: 2023-05-21T14:02:00
-created_at: 2023-05-30T17:19:00
-updated_at: 2023-07-04T18:19:00
+source_created_at: 2023-05-21T14:52:00
+source_observed_at: 2023-05-21T16:43:00
+created_at: 2023-05-22T16:52:00
+updated_at: 2024-08-12T13:00:00
 tags: [#person]
 ---
 # Nadia Diaz
@@ -14,5 +14,5 @@ tags: [#person]
 Nadia Diaz is the Data Platform Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Foundry 93]] ([[BrightWave Analytics]])
 - [ ] Confirm next update with [[Nadia Diaz]] #follow-up

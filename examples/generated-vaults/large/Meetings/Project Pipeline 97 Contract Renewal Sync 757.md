@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2026-03-26
+date: 2024-11-24
 project: "[[Project Pipeline 97]]"
-company: "[[Vanguard Logistics]]"
-source_created_at: 2026-03-26T09:48:00
-source_observed_at: 2026-03-26T11:30:00
-created_at: 2026-03-26T12:51:00
-updated_at: 2026-03-26T15:51:00
+company: "[[Summit Analytics]]"
+source_created_at: 2024-11-24T14:22:00
+source_observed_at: 2024-11-24T15:27:00
+created_at: 2024-11-24T19:38:00
+updated_at: 2024-11-25T04:38:00
 tags: [#meeting]
 ---
 # Project Pipeline 97 Contract Renewal Sync 757
 
-## Attendees
-- [[Alex Tan]]
-- [[Jonah Lee]]
-- [[Lina Vance]]
+## Evergreen Attendees
+- [[Sam Diaz]]
+
+## Client Attendees
+- [[Clara Morgan]]
+- [[Sam Quinn]]
+- [[Grace Vance]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 97]] at [[Vanguard Logistics]].
-[[Sam Diaz]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 97]] at [[Summit Analytics]].
+[[Sam Diaz]] aligned with [[Clara Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 97]] to [[Sam Diaz]] #follow-up

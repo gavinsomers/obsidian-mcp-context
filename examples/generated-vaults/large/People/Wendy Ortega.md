@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-08-27T12:30:00
-source_observed_at: 2023-08-27T13:14:00
-created_at: 2023-08-28T07:30:00
-updated_at: 2023-10-23T15:30:00
+company: "[[Quantum Health]]"
+role: "Operations Manager"
+source_created_at: 2023-09-03T10:34:00
+source_observed_at: 2023-09-03T12:13:00
+created_at: 2023-09-04T17:34:00
+updated_at: 2024-01-29T13:00:00
 tags: [#person]
 ---
 # Wendy Ortega
 
 ## Role
-Wendy Ortega is the Delivery Lead at [[Evergreen Analytics]].
+Wendy Ortega is the Operations Manager at [[Quantum Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Compass 53]] ([[Quantum Health]])
 - [ ] Confirm next update with [[Wendy Ortega]] #follow-up

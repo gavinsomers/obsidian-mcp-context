@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Pipeline 157]]"
-company: "[[Quantum Retail]]"
-source_created_at: 2025-07-07T11:10:00
-source_observed_at: 2025-07-07T13:17:00
-created_at: 2025-07-09T09:10:00
-updated_at: 2025-08-02T10:10:00
+company: "[[Crescent Retail]]"
+source_created_at: 2025-07-07T10:04:00
+source_observed_at: 2025-07-07T10:26:00
+created_at: 2025-07-08T08:04:00
+updated_at: 2025-07-17T11:04:00
 tags: [#research]
 ---
 # Project Pipeline 157 Security Review Research 377
 
 ## Research Summary
-Research on security review for [[Project Pipeline 157]] and [[Quantum Retail]].
+Research on security review for [[Project Pipeline 157]] and [[Crescent Retail]].
 
 ## Evidence
 - Interview notes from [[Alex Grant]]
-- Related operating review: [[Project Pipeline 157 Contract Renewal Sync 157]]
+- Related operating review: [[Project Pipeline 157 Contract Renewal Sync 1257]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Pipeline 157]] #research

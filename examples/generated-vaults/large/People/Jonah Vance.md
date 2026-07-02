@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-10-23T09:13:00
-source_observed_at: 2023-10-23T11:16:00
-created_at: 2023-10-24T13:13:00
-updated_at: 2024-01-02T17:13:00
+company: "[[Crescent Analytics]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-12-14T09:44:00
+source_observed_at: 2023-12-14T10:41:00
+created_at: 2023-12-15T16:44:00
+updated_at: 2025-05-01T13:00:00
 tags: [#person]
 ---
 # Jonah Vance
 
 ## Role
-Jonah Vance is the Data Platform Engineer at [[Evergreen Analytics]].
+Jonah Vance is the Revenue Operations Lead at [[Crescent Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 69]] ([[Crescent Analytics]])
+- Client stakeholder on [[Project Orbit 146]] ([[Crescent Analytics]])
 - [ ] Confirm next update with [[Jonah Vance]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 53]]"
-company: "[[Quantum Manufacturing]]"
-source_created_at: 2024-02-12T09:49:00
-source_observed_at: 2024-02-12T09:59:00
-created_at: 2024-02-13T04:49:00
-updated_at: 2024-03-21T04:49:00
+company: "[[Quantum Health]]"
+source_created_at: 2024-02-12T16:59:00
+source_observed_at: 2024-02-12T18:06:00
+created_at: 2024-02-13T07:59:00
+updated_at: 2024-03-05T13:59:00
 tags: [#research]
 ---
 # Project Compass 53 Pipeline Hygiene Research 53
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Compass 53]] and [[Quantum Manufacturing]].
+Research on pipeline hygiene for [[Project Compass 53]] and [[Quantum Health]].
 
 ## Evidence
 - Interview notes from [[Alex Chen]]

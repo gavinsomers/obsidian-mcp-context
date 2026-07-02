@@ -3,11 +3,11 @@ type: decision
 date: 2026-01-17
 status: active
 project: "[[Project Bridge 195]]"
-company: "[[Northstar Media]]"
-source_created_at: 2026-01-17T08:47:00
-source_observed_at: 2026-01-17T10:56:00
-created_at: 2026-01-17T11:01:00
-updated_at: 2026-01-17T23:01:00
+company: "[[Meridian Media]]"
+source_created_at: 2026-01-17T08:14:00
+source_observed_at: 2026-01-17T09:26:00
+created_at: 2026-01-17T09:31:00
+updated_at: 2026-01-18T08:31:00
 tags: [#decision]
 ---
 # Project Bridge 195 Contract Renewal Decision 635
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Bridge 195]].
 
 ## Context
-This decision applies to [[Northstar Media]] and [[Project Bridge 195]].
-It follows [[Project Bridge 195 Adoption Workflow Sync 415]].
-It incorporates [[Project Bridge 195 Warehouse Mapping Research 195]].
+This decision applies to [[Meridian Media]] and [[Project Bridge 195]].
+It follows [[Project Bridge 195 Adoption Workflow Sync 1735]].
+It incorporates [[Project Bridge 195 Warehouse Mapping Research 415]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

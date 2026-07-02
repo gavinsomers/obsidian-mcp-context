@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-07-14T10:26:00
-source_observed_at: 2023-07-14T12:43:00
-created_at: 2023-07-16T04:26:00
-updated_at: 2023-10-04T12:26:00
+company: "[[Atlas Manufacturing]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-08-06T16:04:00
+source_observed_at: 2023-08-06T18:41:00
+created_at: 2023-08-07T10:04:00
+updated_at: 2025-07-13T13:00:00
 tags: [#person]
 ---
 # Tara Jenkins
 
 ## Role
-Tara Jenkins is the Analytics Engineer at [[Evergreen Analytics]].
+Tara Jenkins is the Product Analytics Lead at [[Atlas Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Orbit 161]] ([[Atlas Manufacturing]])
 - [ ] Confirm next update with [[Tara Jenkins]] #follow-up

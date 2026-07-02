@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Delivery Lead"
-source_created_at: 2023-06-11T16:22:00
-source_observed_at: 2023-06-11T16:50:00
-created_at: 2023-06-12T14:22:00
-updated_at: 2023-09-01T17:22:00
+source_created_at: 2023-06-11T11:43:00
+source_observed_at: 2023-06-11T12:45:00
+created_at: 2023-06-12T15:43:00
+updated_at: 2025-06-14T13:00:00
 tags: [#person]
 ---
 # Yara Foster
@@ -14,5 +14,5 @@ tags: [#person]
 Yara Foster is the Delivery Lead at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Lantern 155]] ([[Helio Manufacturing]])
 - [ ] Confirm next update with [[Yara Foster]] #follow-up

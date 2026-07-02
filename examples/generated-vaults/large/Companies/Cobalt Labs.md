@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: enterprise
-source_created_at: 2023-04-25T15:17:00
-source_observed_at: 2023-04-25T15:38:00
-created_at: 2023-04-27T12:17:00
-updated_at: 2023-06-15T20:17:00
+source_created_at: 2023-04-25T12:04:00
+source_observed_at: 2023-04-25T13:52:00
+created_at: 2023-04-27T01:04:00
+updated_at: 2023-06-15T10:04:00
 tags: [#company]
 ---
 # Cobalt Labs
@@ -14,14 +14,11 @@ tags: [#company]
 Cobalt Labs is a enterprise account currently marked `churn-risk`.
 
 ## Assigned Account Team
-- [[Ben Alvarez]] - Delivery Lead
-- [[Uma Chen]] - Principal Analytics Engineer
-- [[Wendy Chen]] - Delivery Lead
-- [[Elena Chen]] - Senior Data Consultant
-- [[David Diaz]] - Delivery Lead
+
+## Client Stakeholders
+- [[Uma Haddad]] - Operations Manager
 
 ## Projects
-- [[Project Foundry 3]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Cobalt Labs]] #account

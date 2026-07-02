@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Meridian 156]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2026-03-12T13:42:00
-source_observed_at: 2026-03-12T14:06:00
-created_at: 2026-03-13T11:42:00
-updated_at: 2026-04-25T18:42:00
+company: "[[BrightWave Retail]]"
+source_created_at: 2026-03-12T13:57:00
+source_observed_at: 2026-03-12T15:35:00
+created_at: 2026-03-14T12:57:00
+updated_at: 2026-04-07T21:57:00
 tags: [#research]
 ---
 # Project Meridian 156 Stakeholder Alignment Research 596
 
 ## Research Summary
-Research on stakeholder alignment for [[Project Meridian 156]] and [[Vanguard Retail]].
+Research on stakeholder alignment for [[Project Meridian 156]] and [[BrightWave Retail]].
 
 ## Evidence
 - Interview notes from [[Zoe Foster]]

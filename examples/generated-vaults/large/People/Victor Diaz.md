@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-05-24T09:35:00
-source_observed_at: 2023-05-24T10:49:00
-created_at: 2023-05-24T20:35:00
-updated_at: 2023-07-04T07:35:00
+source_created_at: 2023-05-24T15:33:00
+source_observed_at: 2023-05-24T17:14:00
+created_at: 2023-05-25T07:33:00
+updated_at: 2024-09-16T13:00:00
 tags: [#person]
 ---
 # Victor Diaz
@@ -14,5 +14,5 @@ tags: [#person]
 Victor Diaz is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Keystone 100]] ([[Noble Health]])
 - [ ] Confirm next update with [[Victor Diaz]] #follow-up

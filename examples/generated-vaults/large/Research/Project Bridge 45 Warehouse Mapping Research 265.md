@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Bridge 45]]"
-company: "[[Keystone Retail]]"
-source_created_at: 2024-08-14T13:31:00
-source_observed_at: 2024-08-14T13:42:00
-created_at: 2024-08-15T05:31:00
-updated_at: 2024-09-25T16:31:00
+company: "[[Pioneer Retail]]"
+source_created_at: 2024-08-14T10:01:00
+source_observed_at: 2024-08-14T12:30:00
+created_at: 2024-08-14T15:01:00
+updated_at: 2024-08-22T19:01:00
 tags: [#research]
 ---
 # Project Bridge 45 Warehouse Mapping Research 265
 
 ## Research Summary
-Research on warehouse mapping for [[Project Bridge 45]] and [[Keystone Retail]].
+Research on warehouse mapping for [[Project Bridge 45]] and [[Pioneer Retail]].
 
 ## Evidence
 - Interview notes from [[Sam Bennett]]

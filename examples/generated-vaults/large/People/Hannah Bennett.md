@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Delivery Lead"
-source_created_at: 2023-05-02T08:27:00
-source_observed_at: 2023-05-02T11:24:00
-created_at: 2023-05-03T13:27:00
-updated_at: 2023-06-06T13:27:00
+source_created_at: 2023-05-02T16:25:00
+source_observed_at: 2023-05-02T17:30:00
+created_at: 2023-05-03T07:25:00
+updated_at: 2023-11-03T13:00:00
 tags: [#person]
 ---
 # Hannah Bennett
@@ -14,5 +14,5 @@ tags: [#person]
 Hannah Bennett is the Delivery Lead at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Lantern 35]] ([[Cobalt Analytics]])
 - [ ] Confirm next update with [[Hannah Bennett]] #follow-up

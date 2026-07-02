@@ -1,26 +1,27 @@
 ---
 type: project
 status: closed
-company: "[[Crescent FinTech]]"
-source_created_at: 2025-04-30T08:48:00
-source_observed_at: 2025-04-30T11:44:00
-created_at: 2025-05-01T14:48:00
-updated_at: 2025-06-22T23:48:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2025-04-30T14:38:00
+source_observed_at: 2025-04-30T15:54:00
+created_at: 2025-05-01T15:38:00
+updated_at: 2025-06-06T00:38:00
 tags: [#project]
 ---
 # Project Venture 148
 
 ## Overview
-Project Venture 148 supports [[Crescent FinTech]] through customer success.
+Project Venture 148 supports [[Harbor FinTech]] through customer success.
 
 ## Stakeholders
+- [[Priya Ivanov]]
 - [[Elena Novak]]
-- [[Elena Lee]]
-- [[Xavier Rostova]]
-- [[Jonah Vance]]
+- [[Uma Rostova]]
+- [[Iris Walker]]
 
 ## Operating Notes
-- Owner: [[Rachel Foster]]
+- Evergreen owner: [[Rachel Foster]]
+- Client account: [[Harbor FinTech]]
 - Status: `closed`
-- Closed at: `2025-10-18`
+- Closed at: `2025-11-09`
 - [ ] Reconcile latest state for [[Project Venture 148]] #ops

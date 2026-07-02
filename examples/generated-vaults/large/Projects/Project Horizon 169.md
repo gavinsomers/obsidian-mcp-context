@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Helio Manufacturing]]"
-source_created_at: 2025-08-12T09:55:00
-source_observed_at: 2025-08-12T10:47:00
-created_at: 2025-08-13T23:55:00
-updated_at: 2025-10-06T07:55:00
+status: blocked
+company: "[[Pioneer Retail]]"
+source_created_at: 2025-08-12T08:33:00
+source_observed_at: 2025-08-12T11:09:00
+created_at: 2025-08-12T14:33:00
+updated_at: 2025-09-26T21:33:00
 tags: [#project]
 ---
 # Project Horizon 169
 
 ## Overview
-Project Horizon 169 supports [[Helio Manufacturing]] through research program.
+Project Horizon 169 supports [[Pioneer Retail]] through research program.
 
 ## Stakeholders
-- [[Clara Morgan]]
-- [[Wendy Alvarez]]
-- [[Omar Patel]]
-- [[Alex Kim]]
+- [[Grace Jenkins]]
+- [[Wendy Novak]]
+- [[Kai Shah]]
+- [[Alex Xu]]
 
 ## Operating Notes
-- Owner: [[Lina Grant]]
-- Status: `active`
+- Evergreen owner: [[Lina Grant]]
+- Client account: [[Pioneer Retail]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Horizon 169]] #ops

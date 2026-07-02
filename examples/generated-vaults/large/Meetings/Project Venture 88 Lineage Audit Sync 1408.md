@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-10-08
 project: "[[Project Venture 88]]"
-company: "[[Noble Media]]"
-source_created_at: 2025-10-08T08:11:00
-source_observed_at: 2025-10-08T09:55:00
-created_at: 2025-10-08T10:00:00
-updated_at: 2025-10-09T03:00:00
+company: "[[Noble Retail]]"
+source_created_at: 2025-10-08T16:28:00
+source_observed_at: 2025-10-08T17:27:00
+created_at: 2025-10-08T18:39:00
+updated_at: 2025-10-09T10:39:00
 tags: [#meeting]
 ---
 # Project Venture 88 Lineage Audit Sync 1408
 
-## Attendees
-- [[Sam Vance]]
-- [[Ben Foster]]
-- [[David Haddad]]
+## Evergreen Attendees
+- [[Iris Diaz]]
+
+## Client Attendees
+- [[Xavier Novak]]
+- [[Amara Xu]]
+- [[Hannah Jenkins]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 88]] at [[Noble Media]].
-[[Iris Diaz]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 88]] at [[Noble Retail]].
+[[Iris Diaz]] aligned with [[Xavier Novak]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 88]] to [[Iris Diaz]] #follow-up

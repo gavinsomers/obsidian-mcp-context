@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-05-22
+date: 2024-09-04
 status: superseded
 project: "[[Project Foundry 78]]"
-company: "[[Cobalt Media]]"
-source_created_at: 2025-05-22T09:13:00
-source_observed_at: 2025-05-22T10:02:00
-created_at: 2025-05-22T14:44:00
-updated_at: 2025-05-23T09:44:00
+company: "[[Vanguard Retail]]"
+source_created_at: 2024-09-04T13:11:00
+source_observed_at: 2024-09-04T14:53:00
+created_at: 2024-09-04T17:12:00
+updated_at: 2024-09-05T11:12:00
 tags: [#decision]
 ---
 # Project Foundry 78 Handoff Readiness Decision 518
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 78]].
 
 ## Context
-This decision applies to [[Cobalt Media]] and [[Project Foundry 78]].
-It follows [[Project Foundry 78 Lineage Audit Sync 518]].
-It incorporates [[Project Foundry 78 Finance Approval Research 298]].
+This decision applies to [[Vanguard Retail]] and [[Project Foundry 78]].
+It follows [[Project Foundry 78 Lineage Audit Sync 298]].
+It incorporates [[Project Foundry 78 Finance Approval Research 78]].
 
 ## Supersession
 Marked superseded by a later unlinked stakeholder review. #superseded

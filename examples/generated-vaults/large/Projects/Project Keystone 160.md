@@ -1,26 +1,26 @@
 ---
 type: project
 status: closed
-company: "[[Summit Retail]]"
-source_created_at: 2025-06-27T14:07:00
-source_observed_at: 2025-06-27T14:47:00
-created_at: 2025-06-28T10:07:00
-updated_at: 2025-07-17T18:07:00
+company: "[[Crescent Health]]"
+source_created_at: 2025-06-27T16:27:00
+source_observed_at: 2025-06-27T17:13:00
+created_at: 2025-06-28T14:27:00
+updated_at: 2025-07-17T16:27:00
 tags: [#project]
 ---
 # Project Keystone 160
 
 ## Overview
-Project Keystone 160 supports [[Summit Retail]] through operations admin.
+Project Keystone 160 supports [[Crescent Health]] through operations admin.
 
 ## Stakeholders
-- [[Farah Foster]]
-- [[Victor Shah]]
-- [[Alex Grant]]
-- [[Xavier Rostova]]
+- [[Marcus Kim]]
+- [[Ben Patel]]
+- [[Rachel Tan]]
 
 ## Operating Notes
-- Owner: [[Clara Grant]]
+- Evergreen owner: [[Clara Grant]]
+- Client account: [[Crescent Health]]
 - Status: `closed`
-- Closed at: `2025-11-14`
+- Closed at: `2026-01-21`
 - [ ] Reconcile latest state for [[Project Keystone 160]] #ops

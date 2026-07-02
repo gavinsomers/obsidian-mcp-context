@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Lantern 170]]"
-company: "[[Meridian Manufacturing]]"
-source_created_at: 2025-09-11T12:48:00
-source_observed_at: 2025-09-11T14:44:00
-created_at: 2025-09-11T17:48:00
-updated_at: 2025-09-28T02:48:00
+company: "[[Helio Health]]"
+source_created_at: 2025-09-11T14:04:00
+source_observed_at: 2025-09-11T14:46:00
+created_at: 2025-09-14T15:04:00
+updated_at: 2025-10-28T20:04:00
 tags: [#research]
 ---
 # Project Lantern 170 Metric Reconciliation Research 170
 
 ## Research Summary
-Research on metric reconciliation for [[Project Lantern 170]] and [[Meridian Manufacturing]].
+Research on metric reconciliation for [[Project Lantern 170]] and [[Helio Health]].
 
 ## Evidence
 - Interview notes from [[Marcus Grant]]

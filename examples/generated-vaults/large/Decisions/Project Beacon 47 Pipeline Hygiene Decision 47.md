@@ -3,11 +3,11 @@ type: decision
 date: 2024-01-21
 status: active
 project: "[[Project Beacon 47]]"
-company: "[[Apex Manufacturing]]"
-source_created_at: 2024-01-21T13:48:00
-source_observed_at: 2024-01-21T14:27:00
-created_at: 2024-01-21T17:33:00
-updated_at: 2024-01-22T12:33:00
+company: "[[Helio FinTech]]"
+source_created_at: 2024-01-21T14:25:00
+source_observed_at: 2024-01-21T15:32:00
+created_at: 2024-01-21T19:25:00
+updated_at: 2024-01-22T09:25:00
 tags: [#decision]
 ---
 # Project Beacon 47 Pipeline Hygiene Decision 47
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Beacon 47]].
 
 ## Context
-This decision applies to [[Apex Manufacturing]] and [[Project Beacon 47]].
-It follows [[Project Beacon 47 Contract Renewal Sync 47]].
+This decision applies to [[Helio FinTech]] and [[Project Beacon 47]].
+It follows [[Project Beacon 47 Contract Renewal Sync 1587]].
 It incorporates [[Project Beacon 47 Security Review Research 47]].
 
 ## Supersession

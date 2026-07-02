@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-03-15
 project: "[[Project Atlas 211]]"
-company: "[[Apex Logistics]]"
-source_created_at: 2026-03-15T13:37:00
-source_observed_at: 2026-03-15T14:17:00
-created_at: 2026-03-15T14:23:00
-updated_at: 2026-03-16T10:23:00
+company: "[[Summit FinTech]]"
+source_created_at: 2026-03-15T11:03:00
+source_observed_at: 2026-03-15T13:19:00
+created_at: 2026-03-15T13:52:00
+updated_at: 2026-03-16T00:52:00
 tags: [#meeting]
 ---
 # Project Atlas 211 Warehouse Mapping Sync 651
 
-## Attendees
-- [[Farah Quinn]]
-- [[Ben Jenkins]]
-- [[Jonah Foster]]
+## Evergreen Attendees
+- [[Jonah Alvarez]]
+
+## Client Attendees
+- [[Farah Novak]]
+- [[Rachel Ivanov]]
+- [[Jonah Walker]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 211]] at [[Apex Logistics]].
-[[Ben Ivanov]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 211]] at [[Summit FinTech]].
+[[Jonah Alvarez]] aligned with [[Farah Novak]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Atlas 211]] to [[Ben Ivanov]] #follow-up
+- [ ] Send recap for [[Project Atlas 211]] to [[Jonah Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

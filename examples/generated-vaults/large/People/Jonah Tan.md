@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-10-06T10:10:00
-source_observed_at: 2023-10-06T10:31:00
-created_at: 2023-10-12T14:10:00
-updated_at: 2023-11-21T20:10:00
+company: "[[Vanguard Health]]"
+role: "Executive Sponsor"
+source_created_at: 2023-09-23T15:36:00
+source_observed_at: 2023-09-23T16:19:00
+created_at: 2023-10-01T16:36:00
+updated_at: 2025-07-24T13:00:00
 tags: [#person]
 ---
 # Jonah Tan
 
 ## Role
-Jonah Tan is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Jonah Tan is the Executive Sponsor at [[Vanguard Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Venture 13]] ([[Vanguard Health]])
+- Client stakeholder on [[Project Venture 163]] ([[Vanguard Health]])
 - [ ] Confirm next update with [[Jonah Tan]] #follow-up

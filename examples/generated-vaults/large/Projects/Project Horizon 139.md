@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Helio FinTech]]"
-source_created_at: 2025-03-18T16:55:00
-source_observed_at: 2025-03-18T18:22:00
-created_at: 2025-03-19T14:55:00
-updated_at: 2025-05-16T14:55:00
+status: planning
+company: "[[Cobalt Labs]]"
+source_created_at: 2025-03-18T12:32:00
+source_observed_at: 2025-03-18T12:58:00
+created_at: 2025-03-20T04:32:00
+updated_at: 2025-06-12T15:32:00
 tags: [#project]
 ---
 # Project Horizon 139
 
 ## Overview
-Project Horizon 139 supports [[Helio FinTech]] through research program.
+Project Horizon 139 supports [[Cobalt Labs]] through research program.
 
 ## Stakeholders
-- [[Elena Vance]]
-- [[Rachel Kim]]
-- [[Clara Walker]]
-- [[Sam Kim]]
+- [[Uma Haddad]]
+- [[Iris Morgan]]
+- [[Yara Quinn]]
+- [[Marcus Vance]]
 
 ## Operating Notes
-- Owner: [[Hannah Foster]]
-- Status: `active`
+- Evergreen owner: [[Hannah Foster]]
+- Client account: [[Cobalt Labs]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Horizon 139]] #ops

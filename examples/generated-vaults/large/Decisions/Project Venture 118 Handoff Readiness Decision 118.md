@@ -3,11 +3,11 @@ type: decision
 date: 2025-01-04
 status: active
 project: "[[Project Venture 118]]"
-company: "[[Noble Analytics]]"
-source_created_at: 2025-01-04T16:00:00
-source_observed_at: 2025-01-04T18:54:00
-created_at: 2025-01-04T18:59:00
-updated_at: 2025-01-05T14:59:00
+company: "[[Meridian Labs]]"
+source_created_at: 2025-01-04T15:09:00
+source_observed_at: 2025-01-04T16:01:00
+created_at: 2025-01-04T20:14:00
+updated_at: 2025-01-05T03:14:00
 tags: [#decision]
 ---
 # Project Venture 118 Handoff Readiness Decision 118
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Venture 118]].
 
 ## Context
-This decision applies to [[Noble Analytics]] and [[Project Venture 118]].
+This decision applies to [[Meridian Labs]] and [[Project Venture 118]].
 It follows [[Project Venture 118 Lineage Audit Sync 1658]].
 It incorporates [[Project Venture 118 Finance Approval Research 118]].
 

@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2023-10-18
+date: 2025-02-05
 project: "[[Project Meridian 21]]"
-company: "[[Meridian FinTech]]"
-source_created_at: 2023-10-18T12:32:00
-source_observed_at: 2023-10-18T12:45:00
-created_at: 2023-10-18T12:59:00
-updated_at: 2023-10-19T09:59:00
+company: "[[Vanguard Media]]"
+source_created_at: 2025-02-05T11:42:00
+source_observed_at: 2025-02-05T14:37:00
+created_at: 2025-02-05T14:42:00
+updated_at: 2025-02-06T13:42:00
 tags: [#meeting]
 ---
 # Project Meridian 21 Warehouse Mapping Sync 461
 
-## Attendees
-- [[Marcus Chen]]
-- [[Elena Novak]]
-- [[Lina Grant]]
+## Evergreen Attendees
+- [[Uma Alvarez]]
+
+## Client Attendees
+- [[Victor Kim]]
+- [[Jonah Patel]]
+- [[Zoe Tan]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 21]] at [[Meridian FinTech]].
-[[Uma Alvarez]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 21]] at [[Vanguard Media]].
+[[Uma Alvarez]] aligned with [[Victor Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 21]] to [[Uma Alvarez]] #follow-up

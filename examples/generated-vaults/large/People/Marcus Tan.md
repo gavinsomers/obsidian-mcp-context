@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-10-07T09:04:00
-source_observed_at: 2023-10-07T10:14:00
-created_at: 2023-10-09T00:04:00
-updated_at: 2024-01-05T05:04:00
+company: "[[Harbor Health]]"
+role: "Data Owner"
+source_created_at: 2023-09-24T08:04:00
+source_observed_at: 2023-09-24T10:15:00
+created_at: 2023-10-02T15:04:00
+updated_at: 2026-03-12T13:00:00
 tags: [#person]
 ---
 # Marcus Tan
 
 ## Role
-Marcus Tan is the Solution Architect at [[Evergreen Analytics]].
+Marcus Tan is the Data Owner at [[Harbor Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Compass 68]] ([[Harbor Health]])
+- Client stakeholder on [[Project Bridge 210]] ([[Harbor Health]])
 - [ ] Confirm next update with [[Marcus Tan]] #follow-up

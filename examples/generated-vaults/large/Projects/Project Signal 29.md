@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Crescent FinTech]]"
-source_created_at: 2023-09-25T16:51:00
-source_observed_at: 2023-09-25T19:38:00
-created_at: 2023-09-26T21:51:00
-updated_at: 2023-12-22T08:51:00
+status: blocked
+company: "[[Meridian Analytics]]"
+source_created_at: 2023-09-25T10:22:00
+source_observed_at: 2023-09-25T11:44:00
+created_at: 2023-09-25T22:22:00
+updated_at: 2023-12-08T17:30:00
 tags: [#project]
 ---
 # Project Signal 29
 
 ## Overview
-Project Signal 29 supports [[Crescent FinTech]] through research program.
+Project Signal 29 supports [[Meridian Analytics]] through research program.
 
 ## Stakeholders
-- [[Iris Quinn]]
-- [[Priya Novak]]
-- [[David Patel]]
-- [[Grace Morgan]]
+- [[Yara Lee]]
+- [[Marcus Quinn]]
+- [[Ben Vance]]
 
 ## Operating Notes
-- Owner: [[Ben Bennett]]
-- Status: `active`
+- Evergreen owner: [[Ben Bennett]]
+- Client account: [[Meridian Analytics]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Signal 29]] #ops

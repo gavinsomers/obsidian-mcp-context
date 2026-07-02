@@ -1,26 +1,26 @@
 ---
 type: project
-status: closed
-company: "[[Meridian Manufacturing]]"
-source_created_at: 2024-01-10T14:59:00
-source_observed_at: 2024-01-10T16:34:00
-created_at: 2024-01-10T22:59:00
-updated_at: 2024-02-14T09:59:00
+status: active
+company: "[[Summit FinTech]]"
+source_created_at: 2024-01-10T12:40:00
+source_observed_at: 2024-01-10T15:32:00
+created_at: 2024-01-12T07:40:00
+updated_at: 2024-03-02T13:40:00
 tags: [#project]
 ---
 # Project Meridian 51
 
 ## Overview
-Project Meridian 51 supports [[Meridian Manufacturing]] through consulting delivery.
+Project Meridian 51 supports [[Summit FinTech]] through consulting delivery.
 
 ## Stakeholders
-- [[Priya Usman]]
-- [[Elena Ortega]]
-- [[Rachel Chen]]
-- [[Sam Usman]]
+- [[Rachel Ivanov]]
+- [[Farah Novak]]
+- [[Victor Rostova]]
+- [[Jonah Walker]]
 
 ## Operating Notes
-- Owner: [[Yara Bennett]]
-- Status: `closed`
-- Closed at: `2024-07-02`
+- Evergreen owner: [[Yara Bennett]]
+- Client account: [[Summit FinTech]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Meridian 51]] #ops

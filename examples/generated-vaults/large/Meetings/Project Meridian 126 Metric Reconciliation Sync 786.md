@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-01-23
 project: "[[Project Meridian 126]]"
-company: "[[Vanguard Labs]]"
-source_created_at: 2025-01-23T11:52:00
-source_observed_at: 2025-01-23T13:43:00
-created_at: 2025-01-30T12:52:00
-updated_at: 2025-01-31T05:52:00
+company: "[[Noble Retail]]"
+source_created_at: 2025-01-23T13:14:00
+source_observed_at: 2025-01-23T14:43:00
+created_at: 2025-01-23T14:48:00
+updated_at: 2025-01-23T23:48:00
 tags: [#meeting]
 ---
 # Project Meridian 126 Metric Reconciliation Sync 786
 
-## Attendees
-- [[Farah Bennett]]
-- [[Hannah Evans]]
-- [[Marcus Haddad]]
+## Evergreen Attendees
+- [[Victor Evans]]
+
+## Client Attendees
+- [[Hannah Jenkins]]
+- [[Lina Shah]]
+- [[Amara Xu]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 126]] at [[Vanguard Labs]].
-[[Victor Evans]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 126]] at [[Noble Retail]].
+[[Victor Evans]] aligned with [[Hannah Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 126]] to [[Victor Evans]] #follow-up

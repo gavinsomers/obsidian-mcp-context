@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Pioneer Logistics]]"
-source_created_at: 2024-09-17T15:48:00
-source_observed_at: 2024-09-17T17:53:00
-created_at: 2024-09-18T09:48:00
-updated_at: 2024-11-14T11:48:00
+status: blocked
+company: "[[Noble Logistics]]"
+source_created_at: 2024-09-17T13:26:00
+source_observed_at: 2024-09-17T15:05:00
+created_at: 2024-09-21T16:26:00
+updated_at: 2024-11-05T02:26:00
 tags: [#project]
 ---
 # Project Summit 102
 
 ## Overview
-Project Summit 102 supports [[Pioneer Logistics]] through sales pipeline.
+Project Summit 102 supports [[Noble Logistics]] through sales pipeline.
 
 ## Stakeholders
-- [[David Evans]]
-- [[Nadia Morgan]]
-- [[Marcus Jenkins]]
-- [[Iris Shah]]
+- [[Priya Lee]]
+- [[Elena Quinn]]
+- [[Uma Usman]]
 
 ## Operating Notes
-- Owner: [[Xavier Diaz]]
-- Status: `active`
+- Evergreen owner: [[Xavier Diaz]]
+- Client account: [[Noble Logistics]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Summit 102]] #ops

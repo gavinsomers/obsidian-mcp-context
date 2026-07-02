@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-05-03
 project: "[[Project Venture 43]]"
-company: "[[Noble Retail]]"
-source_created_at: 2024-05-03T11:43:00
-source_observed_at: 2024-05-03T13:40:00
-created_at: 2024-05-03T14:33:00
-updated_at: 2024-05-04T11:33:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2024-05-03T09:11:00
+source_observed_at: 2024-05-03T11:35:00
+created_at: 2024-05-03T11:57:00
+updated_at: 2024-05-04T06:57:00
 tags: [#meeting]
 ---
 # Project Venture 43 Security Review Sync 263
 
-## Attendees
-- [[Lina Shah]]
-- [[Grace Lee]]
-- [[Lina Foster]]
+## Evergreen Attendees
+- [[Priya Bennett]]
+
+## Client Attendees
+- [[Farah Lee]]
+- [[Victor Patel]]
+- [[Jonah Usman]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 43]] at [[Noble Retail]].
-[[Priya Bennett]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 43]] at [[Cobalt Logistics]].
+[[Priya Bennett]] aligned with [[Farah Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 43]] to [[Priya Bennett]] #follow-up

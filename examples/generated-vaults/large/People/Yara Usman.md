@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-10-19T12:23:00
-source_observed_at: 2023-10-19T13:20:00
-created_at: 2023-10-21T11:23:00
-updated_at: 2023-11-08T21:23:00
+company: "[[Apex Analytics]]"
+role: "Executive Sponsor"
+source_created_at: 2023-11-20T14:15:00
+source_observed_at: 2023-11-20T17:14:00
+created_at: 2023-11-22T08:15:00
+updated_at: 2026-01-16T13:00:00
 tags: [#person]
 ---
 # Yara Usman
 
 ## Role
-Yara Usman is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Yara Usman is the Executive Sponsor at [[Apex Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 145]] ([[Apex Analytics]])
+- Client stakeholder on [[Project Horizon 199]] ([[Apex Analytics]])
 - [ ] Confirm next update with [[Yara Usman]] #follow-up

@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-10-29T10:32:00
-source_observed_at: 2023-10-29T11:38:00
-created_at: 2023-10-30T23:32:00
-updated_at: 2024-01-20T07:32:00
+company: "[[Cobalt FinTech]]"
+role: "Security Contact"
+source_created_at: 2023-10-28T16:29:00
+source_observed_at: 2023-10-28T18:56:00
+created_at: 2023-10-30T07:29:00
+updated_at: 2026-04-10T13:00:00
 tags: [#person]
 ---
 # Ben Walker
 
 ## Role
-Ben Walker is the Client Partner at [[Evergreen Analytics]].
+Ben Walker is the Security Contact at [[Cobalt FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 48]] ([[Cobalt FinTech]])
+- Client stakeholder on [[Project Meridian 216]] ([[Cobalt FinTech]])
 - [ ] Confirm next update with [[Ben Walker]] #follow-up

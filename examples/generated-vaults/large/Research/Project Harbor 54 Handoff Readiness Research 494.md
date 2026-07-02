@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Harbor 54]]"
-company: "[[Atlas Manufacturing]]"
-source_created_at: 2025-09-17T10:50:00
-source_observed_at: 2025-09-17T12:53:00
-created_at: 2025-09-18T18:50:00
-updated_at: 2025-10-26T00:50:00
+company: "[[Helio Health]]"
+source_created_at: 2025-09-17T16:55:00
+source_observed_at: 2025-09-17T18:39:00
+created_at: 2025-09-19T15:55:00
+updated_at: 2025-10-23T22:55:00
 tags: [#research]
 ---
 # Project Harbor 54 Handoff Readiness Research 494
 
 ## Research Summary
-Research on handoff readiness for [[Project Harbor 54]] and [[Atlas Manufacturing]].
+Research on handoff readiness for [[Project Harbor 54]] and [[Helio Health]].
 
 ## Evidence
 - Interview notes from [[Amara Chen]]

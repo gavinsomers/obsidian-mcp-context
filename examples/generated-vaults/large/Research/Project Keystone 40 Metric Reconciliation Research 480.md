@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Keystone 40]]"
-company: "[[Harbor Retail]]"
-source_created_at: 2025-08-22T15:04:00
-source_observed_at: 2025-08-22T17:31:00
-created_at: 2025-08-24T10:04:00
-updated_at: 2025-09-06T14:04:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-08-22T13:00:00
+source_observed_at: 2025-08-22T15:57:00
+created_at: 2025-08-24T01:00:00
+updated_at: 2025-09-28T07:00:00
 tags: [#research]
 ---
 # Project Keystone 40 Metric Reconciliation Research 480
 
 ## Research Summary
-Research on metric reconciliation for [[Project Keystone 40]] and [[Harbor Retail]].
+Research on metric reconciliation for [[Project Keystone 40]] and [[Vanguard Manufacturing]].
 
 ## Evidence
 - Interview notes from [[Marcus Bennett]]

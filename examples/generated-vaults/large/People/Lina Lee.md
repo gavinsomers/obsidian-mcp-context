@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-07-29T15:45:00
-source_observed_at: 2023-07-29T17:47:00
-created_at: 2023-07-31T03:45:00
-updated_at: 2023-10-15T06:45:00
+company: "[[Atlas Logistics]]"
+role: "Operations Manager"
+source_created_at: 2023-11-04T14:33:00
+source_observed_at: 2023-11-04T16:30:00
+created_at: 2023-11-04T18:33:00
+updated_at: 2025-05-30T13:00:00
 tags: [#person]
 ---
 # Lina Lee
 
 ## Role
-Lina Lee is the Delivery Lead at [[Evergreen Analytics]].
+Lina Lee is the Operations Manager at [[Atlas Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 152]] ([[Atlas Logistics]])
 - [ ] Confirm next update with [[Lina Lee]] #follow-up

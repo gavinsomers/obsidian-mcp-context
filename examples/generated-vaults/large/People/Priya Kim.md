@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-07-22T11:50:00
-source_observed_at: 2023-07-22T12:01:00
-created_at: 2023-07-23T01:50:00
-updated_at: 2023-09-27T09:50:00
+company: "[[Apex Media]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-09-21T15:32:00
+source_observed_at: 2023-09-21T17:52:00
+created_at: 2023-09-27T15:32:00
+updated_at: 2024-12-09T13:00:00
 tags: [#person]
 ---
 # Priya Kim
 
 ## Role
-Priya Kim is the Data Platform Engineer at [[Evergreen Analytics]].
+Priya Kim is the Revenue Operations Lead at [[Apex Media]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Orbit 26]] ([[Summit FinTech]])
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 25]] ([[Apex Media]])
+- Client stakeholder on [[Project Summit 117]] ([[Apex Media]])
 - [ ] Confirm next update with [[Priya Kim]] #follow-up

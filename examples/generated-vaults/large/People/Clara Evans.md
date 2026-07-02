@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-05-26T12:16:00
-source_observed_at: 2023-05-26T14:24:00
-created_at: 2023-05-29T12:16:00
-updated_at: 2023-07-19T17:16:00
+source_created_at: 2023-05-26T13:04:00
+source_observed_at: 2023-05-26T14:49:00
+created_at: 2023-05-28T09:04:00
+updated_at: 2024-10-26T13:00:00
 tags: [#person]
 ---
 # Clara Evans
@@ -14,5 +14,5 @@ tags: [#person]
 Clara Evans is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Foundry 108]] ([[Harbor Media]])
 - [ ] Confirm next update with [[Clara Evans]] #follow-up

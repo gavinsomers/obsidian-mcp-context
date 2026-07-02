@@ -1,25 +1,26 @@
 ---
 type: project
-status: planning
-company: "[[Northstar Logistics]]"
-source_created_at: 2024-07-24T12:57:00
-source_observed_at: 2024-07-24T15:41:00
-created_at: 2024-07-26T08:57:00
-updated_at: 2024-08-21T13:57:00
+status: closed
+company: "[[Pioneer Analytics]]"
+source_created_at: 2024-07-24T16:49:00
+source_observed_at: 2024-07-24T19:05:00
+created_at: 2024-07-25T06:49:00
+updated_at: 2024-09-14T16:49:00
 tags: [#project]
 ---
 # Project Atlas 91
 
 ## Overview
-Project Atlas 91 supports [[Northstar Logistics]] through consulting delivery.
+Project Atlas 91 supports [[Pioneer Analytics]] through consulting delivery.
 
 ## Stakeholders
-- [[Priya Novak]]
-- [[Kai Usman]]
-- [[David Lee]]
-- [[Ben Diaz]]
+- [[David Morgan]]
+- [[Tara Quinn]]
+- [[Hannah Vance]]
 
 ## Operating Notes
-- Owner: [[Lina Diaz]]
-- Status: `planning`
+- Evergreen owner: [[Lina Diaz]]
+- Client account: [[Pioneer Analytics]]
+- Status: `closed`
+- Closed at: `2025-01-23`
 - [ ] Reconcile latest state for [[Project Atlas 91]] #ops

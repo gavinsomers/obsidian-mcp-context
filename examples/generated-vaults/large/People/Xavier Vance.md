@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-10-27T12:18:00
-source_observed_at: 2023-10-27T14:43:00
-created_at: 2023-10-27T18:18:00
-updated_at: 2024-01-14T21:18:00
+company: "[[Noble Labs]]"
+role: "Finance Lead"
+source_created_at: 2023-10-25T16:02:00
+source_observed_at: 2023-10-25T17:50:00
+created_at: 2023-10-26T13:02:00
+updated_at: 2024-12-05T13:00:00
 tags: [#person]
 ---
 # Xavier Vance
 
 ## Role
-Xavier Vance is the Senior Data Consultant at [[Evergreen Analytics]].
+Xavier Vance is the Finance Lead at [[Noble Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Orbit 116]] ([[Noble Labs]])
 - [ ] Confirm next update with [[Xavier Vance]] #follow-up

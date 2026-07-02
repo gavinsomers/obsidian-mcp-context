@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Senior Data Consultant"
-source_created_at: 2023-05-20T10:39:00
-source_observed_at: 2023-05-20T12:40:00
-created_at: 2023-05-21T13:39:00
-updated_at: 2023-07-28T20:39:00
+source_created_at: 2023-05-20T14:23:00
+source_observed_at: 2023-05-20T17:14:00
+created_at: 2023-05-20T21:23:00
+updated_at: 2024-07-29T13:00:00
 tags: [#person]
 ---
 # Kai Diaz
@@ -14,5 +14,5 @@ tags: [#person]
 Kai Diaz is the Senior Data Consultant at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Bridge 90]] ([[Helio Labs]])
 - [ ] Confirm next update with [[Kai Diaz]] #follow-up

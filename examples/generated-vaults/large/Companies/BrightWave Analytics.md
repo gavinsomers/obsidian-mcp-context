@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: smb
-source_created_at: 2023-11-23T14:54:00
-source_observed_at: 2023-11-23T16:22:00
-created_at: 2023-12-02T17:54:00
-updated_at: 2024-02-08T00:54:00
+source_created_at: 2023-11-23T12:47:00
+source_observed_at: 2023-11-23T15:39:00
+created_at: 2023-11-25T02:47:00
+updated_at: 2024-01-09T07:47:00
 tags: [#company]
 ---
 # BrightWave Analytics
@@ -14,6 +14,11 @@ tags: [#company]
 BrightWave Analytics is a smb account currently marked `churn-risk`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Wendy Lee]] - Revenue Operations Lead
+- [[Kai Quinn]] - Data Owner
+- [[Alex Vance]] - Operations Manager
 
 ## Projects
 

@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-05-29T15:07:00
-source_observed_at: 2023-05-29T17:02:00
-created_at: 2023-05-29T21:07:00
-updated_at: 2023-07-16T07:07:00
+source_created_at: 2023-05-29T12:13:00
+source_observed_at: 2023-05-29T13:26:00
+created_at: 2023-05-30T12:13:00
+updated_at: 2024-12-05T13:00:00
 tags: [#person]
 ---
 # Kai Evans
@@ -14,6 +14,5 @@ tags: [#person]
 Kai Evans is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Managing/Supporting [[Project Pipeline 7]] ([[Vanguard Labs]])
-- Managing/Supporting [[Project Orbit 11]] ([[Summit Labs]])
+- Delivery owner for [[Project Orbit 116]] ([[Noble Labs]])
 - [ ] Confirm next update with [[Kai Evans]] #follow-up

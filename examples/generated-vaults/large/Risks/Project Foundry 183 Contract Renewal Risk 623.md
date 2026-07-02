@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Foundry 183]]"
-source_created_at: 2026-01-19T13:38:00
-source_observed_at: 2026-01-19T16:28:00
-created_at: 2026-01-20T23:38:00
-updated_at: 2026-03-04T06:38:00
+source_created_at: 2026-01-19T16:51:00
+source_observed_at: 2026-01-19T18:11:00
+created_at: 2026-01-26T18:51:00
+updated_at: 2026-02-14T04:51:00
 tags: [#risk]
 ---
 # Project Foundry 183 Contract Renewal Risk 623
 
 ## Risk
-Contract Renewal may affect [[Project Foundry 183]] for [[BrightWave Health]].
+Contract Renewal may affect [[Project Foundry 183]] for [[Meridian FinTech]].
 
 ## Evidence
-- Raised after [[Project Foundry 183 Security Review Sync 1063]]
+- Raised after [[Project Foundry 183 Security Review Sync 1723]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `closed`
 - Owner: [[Alex Haddad]]
 - [ ] Reassess [[Project Foundry 183 Contract Renewal Risk 623]] during the next review #risk

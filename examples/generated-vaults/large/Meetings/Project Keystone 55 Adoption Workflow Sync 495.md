@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2025-03-25
+date: 2024-03-13
 project: "[[Project Keystone 55]]"
-company: "[[Harbor Manufacturing]]"
-source_created_at: 2025-03-25T10:10:00
-source_observed_at: 2025-03-25T12:01:00
-created_at: 2025-03-25T12:06:00
-updated_at: 2025-03-26T03:06:00
+company: "[[Quantum Labs]]"
+source_created_at: 2024-03-13T10:33:00
+source_observed_at: 2024-03-13T11:57:00
+created_at: 2024-03-13T16:23:00
+updated_at: 2024-03-13T22:23:00
 tags: [#meeting]
 ---
 # Project Keystone 55 Adoption Workflow Sync 495
 
-## Attendees
-- [[Xavier Walker]]
-- [[Ben Novak]]
-- [[Tara Bennett]]
+## Evergreen Attendees
+- [[Ben Chen]]
+
+## Client Attendees
+- [[Clara Rostova]]
+- [[Nadia Morgan]]
+- [[Sam Vance]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Keystone 55]] at [[Harbor Manufacturing]].
-[[Ben Chen]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Keystone 55]] at [[Quantum Labs]].
+[[Ben Chen]] aligned with [[Clara Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 55]] to [[Ben Chen]] #follow-up

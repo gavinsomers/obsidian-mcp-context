@@ -2,23 +2,26 @@
 type: meeting
 date: 2026-01-02
 project: "[[Project Atlas 196]]"
-company: "[[Apex Media]]"
-source_created_at: 2026-01-02T15:11:00
-source_observed_at: 2026-01-02T15:49:00
-created_at: 2026-01-02T16:43:00
-updated_at: 2026-01-03T13:43:00
+company: "[[Quantum Media]]"
+source_created_at: 2026-01-02T10:14:00
+source_observed_at: 2026-01-02T12:35:00
+created_at: 2026-01-02T12:40:00
+updated_at: 2026-01-02T20:40:00
 tags: [#meeting]
 ---
 # Project Atlas 196 Metric Reconciliation Sync 856
 
-## Attendees
-- [[Jonah Haddad]]
-- [[Wendy Shah]]
-- [[Alex Walker]]
+## Evergreen Attendees
+- [[Marcus Haddad]]
+
+## Client Attendees
+- [[Wendy Kim]]
+- [[Kai Patel]]
+- [[Alex Usman]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Atlas 196]] at [[Apex Media]].
-[[Marcus Haddad]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Atlas 196]] at [[Quantum Media]].
+[[Marcus Haddad]] aligned with [[Wendy Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 196]] to [[Marcus Haddad]] #follow-up

@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-09-30T16:29:00
-source_observed_at: 2023-09-30T18:56:00
-created_at: 2023-10-02T07:29:00
-updated_at: 2023-11-14T08:29:00
+company: "[[Helio Manufacturing]]"
+role: "Customer Success Lead"
+source_created_at: 2023-09-14T12:53:00
+source_observed_at: 2023-09-14T13:10:00
+created_at: 2023-09-15T14:53:00
+updated_at: 2025-06-14T13:00:00
 tags: [#person]
 ---
 # Tara Shah
 
 ## Role
-Tara Shah is the Technical Director at [[Evergreen Analytics]].
+Tara Shah is the Customer Success Lead at [[Helio Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Pipeline 67]] ([[Helio Manufacturing]])
+- Client stakeholder on [[Project Lantern 155]] ([[Helio Manufacturing]])
 - [ ] Confirm next update with [[Tara Shah]] #follow-up

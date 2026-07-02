@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Summit 12]]"
-company: "[[Pioneer Labs]]"
-source_created_at: 2025-07-07T16:27:00
-source_observed_at: 2025-07-07T17:30:00
-created_at: 2025-07-08T17:27:00
-updated_at: 2025-07-26T22:27:00
+company: "[[Atlas Retail]]"
+source_created_at: 2025-07-07T09:57:00
+source_observed_at: 2025-07-07T10:56:00
+created_at: 2025-07-08T07:57:00
+updated_at: 2025-07-30T17:57:00
 tags: [#research]
 ---
 # Project Summit 12 Lineage Audit Research 452
 
 ## Research Summary
-Research on lineage audit for [[Project Summit 12]] and [[Pioneer Labs]].
+Research on lineage audit for [[Project Summit 12]] and [[Atlas Retail]].
 
 ## Evidence
 - Interview notes from [[Kai Alvarez]]

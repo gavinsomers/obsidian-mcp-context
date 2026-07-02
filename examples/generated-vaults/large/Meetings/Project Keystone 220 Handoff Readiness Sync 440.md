@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-04-30
 project: "[[Project Keystone 220]]"
-company: "[[Summit Logistics]]"
-source_created_at: 2026-04-30T08:17:00
-source_observed_at: 2026-04-30T09:20:00
-created_at: 2026-04-30T12:37:00
-updated_at: 2026-05-01T06:37:00
+company: "[[Helio FinTech]]"
+source_created_at: 2026-04-30T13:57:00
+source_observed_at: 2026-04-30T15:06:00
+created_at: 2026-04-30T17:24:00
+updated_at: 2026-05-01T03:24:00
 tags: [#meeting]
 ---
 # Project Keystone 220 Handoff Readiness Sync 440
 
-## Attendees
-- [[Farah Bennett]]
-- [[Victor Lee]]
-- [[Xavier Ivanov]]
+## Evergreen Attendees
+- [[Tara Alvarez]]
+
+## Client Attendees
+- [[Alex Novak]]
+- [[Omar Rostova]]
+- [[Kai Ivanov]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 220]] at [[Summit Logistics]].
-[[Kai Ivanov]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 220]] at [[Helio FinTech]].
+[[Tara Alvarez]] aligned with [[Alex Novak]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 220]] to [[Kai Ivanov]] #follow-up
+- [ ] Send recap for [[Project Keystone 220]] to [[Tara Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

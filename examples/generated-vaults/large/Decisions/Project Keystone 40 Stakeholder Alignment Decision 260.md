@@ -3,11 +3,11 @@ type: decision
 date: 2024-05-22
 status: active
 project: "[[Project Keystone 40]]"
-company: "[[Harbor Retail]]"
-source_created_at: 2024-05-22T09:02:00
-source_observed_at: 2024-05-22T11:26:00
-created_at: 2024-05-22T14:21:00
-updated_at: 2024-05-23T06:21:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2024-05-22T16:32:00
+source_observed_at: 2024-05-22T18:28:00
+created_at: 2024-05-22T18:33:00
+updated_at: 2024-05-23T12:33:00
 tags: [#decision]
 ---
 # Project Keystone 40 Stakeholder Alignment Decision 260
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Keystone 40]].
 
 ## Context
-This decision applies to [[Harbor Retail]] and [[Project Keystone 40]].
+This decision applies to [[Vanguard Manufacturing]] and [[Project Keystone 40]].
 It follows [[Project Keystone 40 Handoff Readiness Sync 260]].
 It incorporates [[Project Keystone 40 Metric Reconciliation Research 40]].
 

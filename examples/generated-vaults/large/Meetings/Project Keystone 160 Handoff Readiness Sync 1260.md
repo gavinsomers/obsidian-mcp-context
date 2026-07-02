@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-07-07
 project: "[[Project Keystone 160]]"
-company: "[[Summit Retail]]"
-source_created_at: 2025-07-07T09:36:00
-source_observed_at: 2025-07-07T11:42:00
-created_at: 2025-07-07T11:47:00
-updated_at: 2025-07-08T10:47:00
+company: "[[Crescent Health]]"
+source_created_at: 2025-07-07T14:35:00
+source_observed_at: 2025-07-07T16:09:00
+created_at: 2025-07-07T20:20:00
+updated_at: 2025-07-08T03:20:00
 tags: [#meeting]
 ---
 # Project Keystone 160 Handoff Readiness Sync 1260
 
-## Attendees
-- [[Victor Shah]]
-- [[Farah Foster]]
-- [[Alex Grant]]
+## Evergreen Attendees
+- [[Clara Grant]]
+
+## Client Attendees
+- [[Marcus Kim]]
+- [[Ben Patel]]
+- [[Rachel Tan]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 160]] at [[Summit Retail]].
-[[Clara Grant]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 160]] at [[Crescent Health]].
+[[Clara Grant]] aligned with [[Marcus Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 160]] to [[Clara Grant]] #follow-up

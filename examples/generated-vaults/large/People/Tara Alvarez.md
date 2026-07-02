@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-04-27T08:09:00
-source_observed_at: 2023-04-27T10:49:00
-created_at: 2023-04-27T19:09:00
-updated_at: 2023-06-03T13:00:00
+source_created_at: 2023-04-27T15:31:00
+source_observed_at: 2023-04-27T16:23:00
+created_at: 2023-04-28T18:31:00
+updated_at: 2026-04-30T13:00:00
 tags: [#person]
 ---
 # Tara Alvarez
@@ -14,6 +14,6 @@ tags: [#person]
 Tara Alvarez is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Managing/Supporting [[Project Beacon 2]] ([[Apex Labs]])
-- Managing/Supporting [[Project Horizon 4]] ([[BrightWave Labs]])
+- Delivery owner for [[Project Lantern 20]] ([[Vanguard Manufacturing]])
+- Delivery owner for [[Project Keystone 220]] ([[Helio FinTech]])
 - [ ] Confirm next update with [[Tara Alvarez]] #follow-up

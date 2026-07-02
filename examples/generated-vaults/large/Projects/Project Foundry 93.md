@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Cobalt Logistics]]"
-source_created_at: 2024-08-02T14:05:00
-source_observed_at: 2024-08-02T16:03:00
-created_at: 2024-08-04T07:05:00
-updated_at: 2024-09-10T13:05:00
+status: planning
+company: "[[BrightWave Analytics]]"
+source_created_at: 2024-08-02T08:48:00
+source_observed_at: 2024-08-02T09:06:00
+created_at: 2024-08-02T17:48:00
+updated_at: 2024-10-05T00:48:00
 tags: [#project]
 ---
 # Project Foundry 93
 
 ## Overview
-Project Foundry 93 supports [[Cobalt Logistics]] through customer success.
+Project Foundry 93 supports [[BrightWave Analytics]] through customer success.
 
 ## Stakeholders
+- [[Wendy Lee]]
+- [[Kai Quinn]]
 - [[Alex Vance]]
-- [[Rachel Diaz]]
-- [[Uma Tan]]
-- [[Priya Grant]]
 
 ## Operating Notes
-- Owner: [[Nadia Diaz]]
-- Status: `closed`
-- Closed at: `2025-02-11`
+- Evergreen owner: [[Nadia Diaz]]
+- Client account: [[BrightWave Analytics]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Foundry 93]] #ops

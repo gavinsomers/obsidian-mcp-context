@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-12-14
 project: "[[Project Venture 118]]"
-company: "[[Noble Analytics]]"
-source_created_at: 2024-12-14T13:48:00
-source_observed_at: 2024-12-14T15:12:00
-created_at: 2024-12-14T15:17:00
-updated_at: 2024-12-14T21:17:00
+company: "[[Meridian Labs]]"
+source_created_at: 2024-12-14T14:30:00
+source_observed_at: 2024-12-14T15:23:00
+created_at: 2024-12-14T19:40:00
+updated_at: 2024-12-15T18:40:00
 tags: [#meeting]
 ---
 # Project Venture 118 Lineage Audit Sync 998
 
-## Attendees
-- [[Rachel Shah]]
-- [[Marcus Bennett]]
-- [[Jonah Foster]]
+## Evergreen Attendees
+- [[Marcus Evans]]
+
+## Client Attendees
+- [[Amara Rostova]]
+- [[Lina Morgan]]
+- [[Xavier Haddad]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 118]] at [[Noble Analytics]].
-[[Marcus Evans]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 118]] at [[Meridian Labs]].
+[[Marcus Evans]] aligned with [[Amara Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 118]] to [[Marcus Evans]] #follow-up

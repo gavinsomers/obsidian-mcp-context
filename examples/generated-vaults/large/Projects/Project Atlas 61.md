@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Northstar Health]]"
-source_created_at: 2024-02-28T14:38:00
-source_observed_at: 2024-02-28T15:54:00
-created_at: 2024-02-29T15:38:00
-updated_at: 2024-04-05T00:38:00
+status: active
+company: "[[Atlas Analytics]]"
+source_created_at: 2024-02-28T12:23:00
+source_observed_at: 2024-02-28T14:37:00
+created_at: 2024-02-29T00:23:00
+updated_at: 2024-03-27T03:23:00
 tags: [#project]
 ---
 # Project Atlas 61
 
 ## Overview
-Project Atlas 61 supports [[Northstar Health]] through consulting delivery.
+Project Atlas 61 supports [[Atlas Analytics]] through consulting delivery.
 
 ## Stakeholders
-- [[Wendy Bennett]]
-- [[Amara Novak]]
-- [[Tara Kim]]
-- [[Xavier Evans]]
+- [[Amara Morgan]]
+- [[Priya Quinn]]
+- [[Elena Vance]]
 
 ## Operating Notes
-- Owner: [[Hannah Chen]]
-- Status: `planning`
+- Evergreen owner: [[Hannah Chen]]
+- Client account: [[Atlas Analytics]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Atlas 61]] #ops

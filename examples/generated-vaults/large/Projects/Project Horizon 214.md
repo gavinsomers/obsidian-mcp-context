@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[Helio Logistics]]"
-source_created_at: 2026-03-20T15:37:00
-source_observed_at: 2026-03-20T16:18:00
-created_at: 2026-03-21T15:37:00
-updated_at: 2026-05-22T20:37:00
+company: "[[Pioneer Labs]]"
+source_created_at: 2026-03-20T15:53:00
+source_observed_at: 2026-03-20T16:31:00
+created_at: 2026-03-22T08:53:00
+updated_at: 2026-04-18T16:53:00
 tags: [#project]
 ---
 # Project Horizon 214
 
 ## Overview
-Project Horizon 214 supports [[Helio Logistics]] through research program.
+Project Horizon 214 supports [[Pioneer Labs]] through research program.
 
 ## Stakeholders
-- [[Yara Usman]]
-- [[Sam Vance]]
-- [[Elena Quinn]]
-- [[Lina Alvarez]]
+- [[Clara Ivanov]]
+- [[Sam Morgan]]
+- [[Grace Rostova]]
+- [[Wendy Vance]]
 
 ## Operating Notes
-- Owner: [[Elena Ivanov]]
+- Evergreen owner: [[Marcus Alvarez]]
+- Client account: [[Pioneer Labs]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Horizon 214]] #ops

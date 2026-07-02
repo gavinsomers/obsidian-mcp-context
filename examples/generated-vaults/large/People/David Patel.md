@@ -1,19 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-08-30T16:35:00
-source_observed_at: 2023-08-30T18:07:00
-created_at: 2023-08-31T01:35:00
-updated_at: 2023-10-26T06:35:00
+company: "[[Northstar Media]]"
+role: "Operations Manager"
+source_created_at: 2023-09-19T12:03:00
+source_observed_at: 2023-09-19T13:46:00
+created_at: 2023-09-21T11:03:00
+updated_at: 2025-12-18T13:00:00
 tags: [#person]
 ---
 # David Patel
 
 ## Role
-David Patel is the Delivery Lead at [[Evergreen Analytics]].
+David Patel is the Operations Manager at [[Northstar Media]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Orbit 26]] ([[Summit FinTech]])
-- Managing/Supporting [[Project Signal 29]] ([[Crescent FinTech]])
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 95]] ([[Northstar Media]])
+- Client stakeholder on [[Project Keystone 175]] ([[Northstar Media]])
+- Client stakeholder on [[Project Venture 193]] ([[Northstar Media]])
 - [ ] Confirm next update with [[David Patel]] #follow-up

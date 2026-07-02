@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-07-08T09:16:00
-source_observed_at: 2023-07-08T09:43:00
-created_at: 2023-07-09T01:16:00
-updated_at: 2023-08-21T06:16:00
+company: "[[Meridian Retail]]"
+role: "Data Owner"
+source_created_at: 2023-07-01T08:00:00
+source_observed_at: 2023-07-01T09:14:00
+created_at: 2023-07-02T14:00:00
+updated_at: 2025-02-21T13:00:00
 tags: [#person]
 ---
 # Amara Jenkins
 
 ## Role
-Amara Jenkins is the Solution Architect at [[Evergreen Analytics]].
+Amara Jenkins is the Data Owner at [[Meridian Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 18]] ([[Meridian Retail]])
+- Client stakeholder on [[Project Summit 132]] ([[Meridian Retail]])
 - [ ] Confirm next update with [[Amara Jenkins]] #follow-up

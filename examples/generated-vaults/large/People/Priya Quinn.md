@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-09-12T12:58:00
-source_observed_at: 2023-09-12T14:59:00
-created_at: 2023-09-13T12:58:00
-updated_at: 2023-10-08T21:58:00
+company: "[[Atlas Analytics]]"
+role: "Executive Sponsor"
+source_created_at: 2023-12-04T15:55:00
+source_observed_at: 2023-12-04T18:37:00
+created_at: 2023-12-05T04:55:00
+updated_at: 2025-10-16T13:00:00
 tags: [#person]
 ---
 # Priya Quinn
 
 ## Role
-Priya Quinn is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Priya Quinn is the Executive Sponsor at [[Atlas Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Atlas 61]] ([[Atlas Analytics]])
+- Client stakeholder on [[Project Bridge 180]] ([[Atlas Analytics]])
 - [ ] Confirm next update with [[Priya Quinn]] #follow-up

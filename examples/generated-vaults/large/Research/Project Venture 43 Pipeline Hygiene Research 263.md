@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Venture 43]]"
-company: "[[Noble Retail]]"
-source_created_at: 2024-08-12T12:25:00
-source_observed_at: 2024-08-12T13:28:00
-created_at: 2024-08-14T00:25:00
-updated_at: 2024-09-24T07:25:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2024-08-12T14:34:00
+source_observed_at: 2024-08-12T16:09:00
+created_at: 2024-08-14T05:34:00
+updated_at: 2024-08-27T16:34:00
 tags: [#research]
 ---
 # Project Venture 43 Pipeline Hygiene Research 263
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Venture 43]] and [[Noble Retail]].
+Research on pipeline hygiene for [[Project Venture 43]] and [[Cobalt Logistics]].
 
 ## Evidence
 - Interview notes from [[Priya Bennett]]

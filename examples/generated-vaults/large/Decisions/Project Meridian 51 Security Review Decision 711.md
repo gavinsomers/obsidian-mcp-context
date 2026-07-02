@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-06-24
+date: 2026-02-20
 status: active
 project: "[[Project Meridian 51]]"
-company: "[[Meridian Manufacturing]]"
-source_created_at: 2024-06-24T09:07:00
-source_observed_at: 2024-06-24T09:21:00
-created_at: 2024-06-24T10:26:00
-updated_at: 2024-06-25T09:26:00
+company: "[[Summit FinTech]]"
+source_created_at: 2026-02-20T15:30:00
+source_observed_at: 2026-02-20T17:22:00
+created_at: 2026-02-25T20:30:00
+updated_at: 2026-02-26T13:30:00
 tags: [#decision]
 ---
 # Project Meridian 51 Security Review Decision 711
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with security review for [[Project Meridian 51]].
 
 ## Context
-This decision applies to [[Meridian Manufacturing]] and [[Project Meridian 51]].
-It follows [[Project Meridian 51 Warehouse Mapping Sync 271]].
-It incorporates [[Project Meridian 51 Contract Renewal Research 51]].
+This decision applies to [[Summit FinTech]] and [[Project Meridian 51]].
+It follows [[Project Meridian 51 Warehouse Mapping Sync 711]].
+It incorporates [[Project Meridian 51 Contract Renewal Research 491]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

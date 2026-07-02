@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-10-28T16:37:00
-source_observed_at: 2023-10-28T18:17:00
-created_at: 2023-10-28T18:37:00
-updated_at: 2023-11-29T02:37:00
+company: "[[Northstar FinTech]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-10-27T14:04:00
+source_observed_at: 2023-10-27T16:32:00
+created_at: 2023-10-28T23:04:00
+updated_at: 2025-12-04T13:00:00
 tags: [#person]
 ---
 # Alex Walker
 
 ## Role
-Alex Walker is the Data Platform Engineer at [[Evergreen Analytics]].
+Alex Walker is the Revenue Operations Lead at [[Northstar FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 190]] ([[Northstar FinTech]])
 - [ ] Confirm next update with [[Alex Walker]] #follow-up

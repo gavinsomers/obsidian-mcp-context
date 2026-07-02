@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2025-04-03
+date: 2024-05-20
 project: "[[Project Beacon 62]]"
-company: "[[Apex Health]]"
-source_created_at: 2025-04-03T13:43:00
-source_observed_at: 2025-04-03T15:08:00
-created_at: 2025-04-03T15:13:00
-updated_at: 2025-04-04T09:13:00
+company: "[[Pioneer Health]]"
+source_created_at: 2024-05-20T12:11:00
+source_observed_at: 2024-05-20T14:45:00
+created_at: 2024-05-20T15:06:00
+updated_at: 2024-05-21T10:06:00
 tags: [#meeting]
 ---
 # Project Beacon 62 Stakeholder Alignment Sync 502
 
-## Attendees
-- [[Hannah Rostova]]
-- [[Elena Rostova]]
-- [[Tara Patel]]
+## Evergreen Attendees
+- [[Iris Chen]]
+
+## Client Attendees
+- [[Kai Kim]]
+- [[Alex Patel]]
+- [[Omar Tan]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 62]] at [[Apex Health]].
-[[Iris Chen]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 62]] at [[Pioneer Health]].
+[[Iris Chen]] aligned with [[Kai Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 62]] to [[Iris Chen]] #follow-up

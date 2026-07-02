@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Signal 14]]"
-company: "[[Crescent Labs]]"
-source_created_at: 2023-09-27T13:51:00
-source_observed_at: 2023-09-27T14:19:00
-created_at: 2023-09-28T07:51:00
-updated_at: 2023-10-27T17:51:00
+company: "[[Quantum Manufacturing]]"
+source_created_at: 2023-11-02T16:58:00
+source_observed_at: 2023-11-02T17:53:00
+created_at: 2023-11-02T22:58:00
+updated_at: 2023-11-09T22:58:00
 tags: [#research]
 ---
 # Project Signal 14 Handoff Readiness Research 454
 
 ## Research Summary
-Research on handoff readiness for [[Project Signal 14]] and [[Crescent Labs]].
+Research on handoff readiness for [[Project Signal 14]] and [[Quantum Manufacturing]].
 
 ## Evidence
 - Interview notes from [[Marcus Alvarez]]

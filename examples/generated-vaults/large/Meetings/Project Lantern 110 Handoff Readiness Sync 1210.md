@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-01-03
 project: "[[Project Lantern 110]]"
-company: "[[Helio Analytics]]"
-source_created_at: 2025-01-03T10:19:00
-source_observed_at: 2025-01-03T12:44:00
-created_at: 2025-01-03T12:49:00
-updated_at: 2025-01-03T18:49:00
+company: "[[Crescent Manufacturing]]"
+source_created_at: 2025-01-03T12:09:00
+source_observed_at: 2025-01-03T12:55:00
+created_at: 2025-01-03T13:59:00
+updated_at: 2025-01-03T16:59:00
 tags: [#meeting]
 ---
 # Project Lantern 110 Handoff Readiness Sync 1210
 
-## Attendees
-- [[Marcus Shah]]
-- [[Farah Lee]]
-- [[Clara Vance]]
+## Evergreen Attendees
+- [[Elena Evans]]
+
+## Client Attendees
+- [[Yara Jenkins]]
+- [[Marcus Ortega]]
+- [[Ben Tan]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 110]] at [[Helio Analytics]].
-[[Elena Evans]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 110]] at [[Crescent Manufacturing]].
+[[Elena Evans]] aligned with [[Yara Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 110]] to [[Elena Evans]] #follow-up

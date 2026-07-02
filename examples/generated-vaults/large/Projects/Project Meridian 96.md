@@ -1,25 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Meridian Logistics]]"
-source_created_at: 2024-08-19T12:29:00
-source_observed_at: 2024-08-19T14:30:00
-created_at: 2024-08-27T16:29:00
-updated_at: 2024-09-29T18:29:00
+status: planning
+company: "[[Harbor FinTech]]"
+source_created_at: 2024-08-19T10:19:00
+source_observed_at: 2024-08-19T12:08:00
+created_at: 2024-08-19T19:19:00
+updated_at: 2024-11-14T05:19:00
 tags: [#project]
 ---
 # Project Meridian 96
 
 ## Overview
-Project Meridian 96 supports [[Meridian Logistics]] through consulting delivery.
+Project Meridian 96 supports [[Harbor FinTech]] through consulting delivery.
 
 ## Stakeholders
-- [[Grace Ivanov]]
-- [[Marcus Walker]]
-- [[Jonah Quinn]]
-- [[Elena Bennett]]
+- [[Priya Ivanov]]
+- [[Elena Novak]]
+- [[Uma Rostova]]
+- [[Iris Walker]]
 
 ## Operating Notes
-- Owner: [[Rachel Diaz]]
-- Status: `blocked`
+- Evergreen owner: [[Rachel Diaz]]
+- Client account: [[Harbor FinTech]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Meridian 96]] #ops

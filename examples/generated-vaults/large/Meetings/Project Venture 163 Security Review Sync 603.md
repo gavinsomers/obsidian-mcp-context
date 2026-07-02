@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-08-22
 project: "[[Project Venture 163]]"
-company: "[[Crescent Retail]]"
-source_created_at: 2025-08-22T15:54:00
-source_observed_at: 2025-08-22T17:32:00
-created_at: 2025-08-22T20:59:00
-updated_at: 2025-08-23T09:59:00
+company: "[[Vanguard Health]]"
+source_created_at: 2025-08-22T13:43:00
+source_observed_at: 2025-08-22T16:39:00
+created_at: 2025-08-22T16:44:00
+updated_at: 2025-08-23T07:44:00
 tags: [#meeting]
 ---
 # Project Venture 163 Security Review Sync 603
 
-## Attendees
-- [[Jonah Evans]]
-- [[Farah Ortega]]
-- [[Amara Diaz]]
+## Evergreen Attendees
+- [[Farah Grant]]
+
+## Client Attendees
+- [[Farah Kim]]
+- [[Victor Ortega]]
+- [[Jonah Tan]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 163]] at [[Crescent Retail]].
-[[Farah Grant]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 163]] at [[Vanguard Health]].
+[[Farah Grant]] aligned with [[Farah Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 163]] to [[Farah Grant]] #follow-up

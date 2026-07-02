@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Atlas 31]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2025-08-07T11:26:00
-source_observed_at: 2025-08-07T11:36:00
-created_at: 2025-08-09T03:26:00
-updated_at: 2025-09-08T05:26:00
+company: "[[Summit Manufacturing]]"
+source_created_at: 2025-08-07T11:20:00
+source_observed_at: 2025-08-07T14:03:00
+created_at: 2025-08-15T17:20:00
+updated_at: 2025-09-08T17:20:00
 tags: [#research]
 ---
 # Project Atlas 31 Contract Renewal Research 471
 
 ## Research Summary
-Research on contract renewal for [[Project Atlas 31]] and [[Northstar Retail]].
+Research on contract renewal for [[Project Atlas 31]] and [[Summit Manufacturing]].
 
 ## Evidence
 - Interview notes from [[David Bennett]]

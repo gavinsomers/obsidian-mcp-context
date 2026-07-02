@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 128]]"
-company: "[[Atlas Labs]]"
-source_created_at: 2026-01-23T11:54:00
-source_observed_at: 2026-01-23T12:11:00
-created_at: 2026-01-24T14:54:00
-updated_at: 2026-02-17T22:54:00
+company: "[[Cobalt Labs]]"
+source_created_at: 2025-03-20T12:51:00
+source_observed_at: 2025-03-20T13:49:00
+created_at: 2025-03-20T21:51:00
+updated_at: 2025-04-02T06:51:00
 tags: [#research]
 ---
 # Project Compass 128 Finance Approval Research 568
 
 ## Research Summary
-Research on finance approval for [[Project Compass 128]] and [[Atlas Labs]].
+Research on finance approval for [[Project Compass 128]] and [[Cobalt Labs]].
 
 ## Evidence
 - Interview notes from [[Xavier Evans]]

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 23]]"
-company: "[[Quantum FinTech]]"
-source_created_at: 2024-07-08T13:36:00
-source_observed_at: 2024-07-08T15:05:00
-created_at: 2024-07-09T03:36:00
-updated_at: 2024-07-14T10:36:00
+company: "[[Northstar Retail]]"
+source_created_at: 2024-07-08T09:09:00
+source_observed_at: 2024-07-08T09:37:00
+created_at: 2024-07-11T13:09:00
+updated_at: 2024-07-23T16:09:00
 tags: [#research]
 ---
 # Project Compass 23 Pipeline Hygiene Research 243
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Compass 23]] and [[Quantum FinTech]].
+Research on pipeline hygiene for [[Project Compass 23]] and [[Northstar Retail]].
 
 ## Evidence
 - Interview notes from [[Wendy Alvarez]]

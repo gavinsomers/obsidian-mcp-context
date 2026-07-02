@@ -2,19 +2,19 @@
 type: risk
 status: mitigating
 project: "[[Project Harbor 24]]"
-source_created_at: 2023-09-17T14:19:00
-source_observed_at: 2023-09-17T16:28:00
-created_at: 2023-09-19T04:19:00
-updated_at: 2023-10-30T12:19:00
+source_created_at: 2023-09-17T14:24:00
+source_observed_at: 2023-09-17T15:30:00
+created_at: 2023-09-21T19:24:00
+updated_at: 2023-09-27T22:24:00
 tags: [#risk]
 ---
 # Project Harbor 24 Lineage Audit Risk 24
 
 ## Risk
-Lineage Audit may affect [[Project Harbor 24]] for [[Atlas FinTech]].
+Lineage Audit may affect [[Project Harbor 24]] for [[Pioneer Health]].
 
 ## Evidence
-- Raised after [[Project Harbor 24 Finance Approval Sync 1564]]
+- Raised after [[Project Harbor 24 Finance Approval Sync 24]]
 
 ## Current State
 - Status: `mitigating`

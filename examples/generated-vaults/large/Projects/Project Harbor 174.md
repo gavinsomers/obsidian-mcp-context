@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Harbor Manufacturing]]"
-source_created_at: 2025-09-05T15:55:00
-source_observed_at: 2025-09-05T16:10:00
-created_at: 2025-09-06T04:55:00
-updated_at: 2025-11-12T04:55:00
+status: blocked
+company: "[[Noble Retail]]"
+source_created_at: 2025-09-05T11:55:00
+source_observed_at: 2025-09-05T12:17:00
+created_at: 2025-09-06T07:55:00
+updated_at: 2025-10-31T07:55:00
 tags: [#project]
 ---
 # Project Harbor 174
 
 ## Overview
-Project Harbor 174 supports [[Harbor Manufacturing]] through research program.
+Project Harbor 174 supports [[Noble Retail]] through research program.
 
 ## Stakeholders
-- [[Wendy Ortega]]
-- [[Uma Ortega]]
-- [[David Diaz]]
-- [[Farah Vance]]
+- [[Hannah Jenkins]]
+- [[Xavier Novak]]
+- [[Lina Shah]]
+- [[Amara Xu]]
 
 ## Operating Notes
-- Owner: [[Rachel Grant]]
-- Status: `active`
+- Evergreen owner: [[Rachel Grant]]
+- Client account: [[Noble Retail]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Harbor 174]] #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-10-21T16:07:00
-source_observed_at: 2023-10-21T17:35:00
-created_at: 2023-10-25T23:07:00
-updated_at: 2023-12-24T00:07:00
+company: "[[Quantum Analytics]]"
+role: "Security Contact"
+source_created_at: 2023-12-02T12:17:00
+source_observed_at: 2023-12-02T12:52:00
+created_at: 2023-12-04T03:17:00
+updated_at: 2024-02-06T10:17:00
 tags: [#person]
 ---
 # David Vance
 
 ## Role
-David Vance is the Client Partner at [[Evergreen Analytics]].
+David Vance is the Security Contact at [[Quantum Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- First seen through [[Quantum Analytics]] account context
 - [ ] Confirm next update with [[David Vance]] #follow-up

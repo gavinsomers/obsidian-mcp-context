@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-07-05
 project: "[[Project Keystone 85]]"
-company: "[[Harbor Media]]"
-source_created_at: 2024-07-05T10:55:00
-source_observed_at: 2024-07-05T13:22:00
-created_at: 2024-07-05T13:27:00
-updated_at: 2024-07-05T22:27:00
+company: "[[Northstar Health]]"
+source_created_at: 2024-07-05T09:05:00
+source_observed_at: 2024-07-05T10:49:00
+created_at: 2024-07-05T13:03:00
+updated_at: 2024-07-05T16:03:00
 tags: [#meeting]
 ---
 # Project Keystone 85 Adoption Workflow Sync 1845
 
-## Attendees
-- [[Wendy Shah]]
-- [[Rachel Patel]]
-- [[David Morgan]]
+## Evergreen Attendees
+- [[Farah Diaz]]
+
+## Client Attendees
+- [[Alex Kim]]
+- [[Omar Ortega]]
+- [[David Tan]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Keystone 85]] at [[Harbor Media]].
-[[Farah Diaz]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Keystone 85]] at [[Northstar Health]].
+[[Farah Diaz]] aligned with [[Alex Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 85]] to [[Farah Diaz]] #follow-up

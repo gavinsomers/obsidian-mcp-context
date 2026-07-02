@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: mid-market
-source_created_at: 2023-06-14T08:50:00
-source_observed_at: 2023-06-14T10:32:00
-created_at: 2023-06-15T20:50:00
-updated_at: 2023-07-09T21:50:00
+source_created_at: 2023-06-14T16:47:00
+source_observed_at: 2023-06-14T17:06:00
+created_at: 2023-06-15T05:47:00
+updated_at: 2023-08-21T07:47:00
 tags: [#company]
 ---
 # Noble FinTech
@@ -14,6 +14,10 @@ tags: [#company]
 Noble FinTech is a mid-market account currently marked `churn-risk`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Tara Ivanov]] - Data Owner
+- [[Hannah Novak]] - Operations Manager
 
 ## Projects
 

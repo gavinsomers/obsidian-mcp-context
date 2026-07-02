@@ -3,11 +3,11 @@ type: decision
 date: 2025-02-13
 status: active
 project: "[[Project Meridian 126]]"
-company: "[[Vanguard Labs]]"
-source_created_at: 2025-02-13T15:40:00
-source_observed_at: 2025-02-13T17:57:00
-created_at: 2025-02-13T18:09:00
-updated_at: 2025-02-14T06:09:00
+company: "[[Noble Retail]]"
+source_created_at: 2025-02-13T09:59:00
+source_observed_at: 2025-02-13T11:10:00
+created_at: 2025-02-13T11:51:00
+updated_at: 2025-02-13T15:51:00
 tags: [#decision]
 ---
 # Project Meridian 126 Lineage Audit Decision 346
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Meridian 126]].
 
 ## Context
-This decision applies to [[Vanguard Labs]] and [[Project Meridian 126]].
-It follows [[Project Meridian 126 Metric Reconciliation Sync 786]].
+This decision applies to [[Noble Retail]] and [[Project Meridian 126]].
+It follows [[Project Meridian 126 Metric Reconciliation Sync 1226]].
 It incorporates [[Project Meridian 126 Stakeholder Alignment Research 346]].
 
 ## Supersession

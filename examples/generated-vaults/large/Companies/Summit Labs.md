@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: mid-market
-source_created_at: 2023-05-11T12:09:00
-source_observed_at: 2023-05-11T13:56:00
-created_at: 2023-05-13T06:09:00
-updated_at: 2023-06-15T17:09:00
+source_created_at: 2023-05-11T11:46:00
+source_observed_at: 2023-05-11T12:09:00
+created_at: 2023-05-11T23:46:00
+updated_at: 2023-08-01T09:46:00
 tags: [#company]
 ---
 # Summit Labs
@@ -14,6 +14,10 @@ tags: [#company]
 Summit Labs is a mid-market account currently marked `pipeline`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Ben Ivanov]] - Operations Manager
+- [[Rachel Morgan]] - Finance Lead
 
 ## Projects
 

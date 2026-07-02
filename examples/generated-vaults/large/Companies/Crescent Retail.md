@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: mid-market
-source_created_at: 2023-07-16T14:39:00
-source_observed_at: 2023-07-16T16:29:00
-created_at: 2023-07-17T14:39:00
-updated_at: 2023-09-14T21:39:00
+source_created_at: 2023-07-16T10:10:00
+source_observed_at: 2023-07-16T11:43:00
+created_at: 2023-07-17T16:10:00
+updated_at: 2023-08-15T02:10:00
 tags: [#company]
 ---
 # Crescent Retail
@@ -14,6 +14,10 @@ tags: [#company]
 Crescent Retail is a mid-market account currently marked `active`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Iris Jenkins]] - Data Owner
+- [[Yara Novak]] - Operations Manager
 
 ## Projects
 

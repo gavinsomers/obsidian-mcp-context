@@ -1,25 +1,27 @@
 ---
 type: project
-status: active
-company: "[[Atlas Labs]]"
-source_created_at: 2025-01-22T08:32:00
-source_observed_at: 2025-01-22T09:08:00
-created_at: 2025-01-22T17:32:00
-updated_at: 2025-03-03T22:32:00
+status: closed
+company: "[[Cobalt Labs]]"
+source_created_at: 2025-01-22T14:51:00
+source_observed_at: 2025-01-22T16:01:00
+created_at: 2025-01-23T05:51:00
+updated_at: 2025-02-24T06:51:00
 tags: [#project]
 ---
 # Project Compass 128
 
 ## Overview
-Project Compass 128 supports [[Atlas Labs]] through customer success.
+Project Compass 128 supports [[Cobalt Labs]] through customer success.
 
 ## Stakeholders
-- [[Alex Ivanov]]
-- [[David Quinn]]
-- [[Tara Tan]]
-- [[Nadia Shah]]
+- [[Uma Haddad]]
+- [[Iris Morgan]]
+- [[Yara Quinn]]
+- [[Marcus Vance]]
 
 ## Operating Notes
-- Owner: [[Xavier Evans]]
-- Status: `active`
+- Evergreen owner: [[Xavier Evans]]
+- Client account: [[Cobalt Labs]]
+- Status: `closed`
+- Closed at: `2025-03-22`
 - [ ] Reconcile latest state for [[Project Compass 128]] #ops

@@ -2,16 +2,16 @@
 type: risk
 status: closed
 project: "[[Project Lantern 80]]"
-source_created_at: 2025-08-07T08:05:00
-source_observed_at: 2025-08-07T09:21:00
-created_at: 2025-08-07T15:05:00
-updated_at: 2025-08-15T15:05:00
+source_created_at: 2025-08-07T12:16:00
+source_observed_at: 2025-08-07T12:31:00
+created_at: 2025-08-08T22:16:00
+updated_at: 2025-08-15T04:16:00
 tags: [#risk]
 ---
 # Project Lantern 80 Finance Approval Risk 520
 
 ## Risk
-Finance Approval may affect [[Project Lantern 80]] for [[Helio Media]].
+Finance Approval may affect [[Project Lantern 80]] for [[Crescent Logistics]].
 
 ## Evidence
 - Raised after [[Project Lantern 80 Handoff Readiness Sync 520]]

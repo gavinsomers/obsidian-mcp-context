@@ -1,25 +1,27 @@
 ---
 type: project
-status: blocked
-company: "[[Cobalt Media]]"
-source_created_at: 2024-05-22T10:45:00
-source_observed_at: 2024-05-22T12:54:00
-created_at: 2024-05-23T19:45:00
-updated_at: 2024-06-12T02:45:00
+status: closed
+company: "[[Vanguard Retail]]"
+source_created_at: 2024-05-22T09:33:00
+source_observed_at: 2024-05-22T10:17:00
+created_at: 2024-05-23T10:33:00
+updated_at: 2024-07-12T18:33:00
 tags: [#project]
 ---
 # Project Foundry 78
 
 ## Overview
-Project Foundry 78 supports [[Cobalt Media]] through customer success.
+Project Foundry 78 supports [[Vanguard Retail]] through customer success.
 
 ## Stakeholders
-- [[Wendy Haddad]]
-- [[Victor Evans]]
-- [[Hannah Foster]]
-- [[Xavier Chen]]
+- [[Ben Jenkins]]
+- [[Rachel Novak]]
+- [[Farah Shah]]
+- [[Victor Walker]]
 
 ## Operating Notes
-- Owner: [[Zoe Chen]]
-- Status: `blocked`
+- Evergreen owner: [[Zoe Chen]]
+- Client account: [[Vanguard Retail]]
+- Status: `closed`
+- Closed at: `2024-09-17`
 - [ ] Reconcile latest state for [[Project Foundry 78]] #ops

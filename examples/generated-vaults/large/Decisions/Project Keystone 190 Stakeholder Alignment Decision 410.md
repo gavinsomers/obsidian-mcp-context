@@ -3,11 +3,11 @@ type: decision
 date: 2025-12-25
 status: active
 project: "[[Project Keystone 190]]"
-company: "[[Summit Health]]"
-source_created_at: 2025-12-25T08:51:00
-source_observed_at: 2025-12-25T10:28:00
-created_at: 2025-12-25T14:22:00
-updated_at: 2025-12-25T18:22:00
+company: "[[Northstar FinTech]]"
+source_created_at: 2025-12-25T16:07:00
+source_observed_at: 2025-12-25T18:55:00
+created_at: 2025-12-25T20:52:00
+updated_at: 2025-12-26T05:52:00
 tags: [#decision]
 ---
 # Project Keystone 190 Stakeholder Alignment Decision 410
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Keystone 190]].
 
 ## Context
-This decision applies to [[Summit Health]] and [[Project Keystone 190]].
-It follows [[Project Keystone 190 Handoff Readiness Sync 190]].
+This decision applies to [[Northstar FinTech]] and [[Project Keystone 190]].
+It follows [[Project Keystone 190 Handoff Readiness Sync 850]].
 It incorporates [[Project Keystone 190 Metric Reconciliation Research 410]].
 
 ## Supersession

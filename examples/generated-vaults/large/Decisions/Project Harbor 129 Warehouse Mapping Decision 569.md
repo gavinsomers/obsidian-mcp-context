@@ -3,11 +3,11 @@ type: decision
 date: 2025-08-04
 status: active
 project: "[[Project Harbor 129]]"
-company: "[[Harbor Labs]]"
-source_created_at: 2025-08-04T16:37:00
-source_observed_at: 2025-08-04T17:40:00
-created_at: 2025-08-04T20:55:00
-updated_at: 2025-08-05T10:55:00
+company: "[[Crescent Health]]"
+source_created_at: 2025-08-04T16:55:00
+source_observed_at: 2025-08-04T19:08:00
+created_at: 2025-08-04T21:45:00
+updated_at: 2025-08-05T01:45:00
 tags: [#decision]
 ---
 # Project Harbor 129 Warehouse Mapping Decision 569
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Harbor 129]].
 
 ## Context
-This decision applies to [[Harbor Labs]] and [[Project Harbor 129]].
+This decision applies to [[Crescent Health]] and [[Project Harbor 129]].
 It follows [[Project Harbor 129 Pipeline Hygiene Sync 569]].
 It incorporates [[Project Harbor 129 Adoption Workflow Research 129]].
 

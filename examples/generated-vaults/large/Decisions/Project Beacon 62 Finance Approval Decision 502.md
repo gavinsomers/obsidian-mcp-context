@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-04-30
+date: 2024-05-19
 status: active
 project: "[[Project Beacon 62]]"
-company: "[[Apex Health]]"
-source_created_at: 2025-04-30T11:36:00
-source_observed_at: 2025-04-30T14:32:00
-created_at: 2025-04-30T15:30:00
-updated_at: 2025-05-01T03:30:00
+company: "[[Pioneer Health]]"
+source_created_at: 2024-05-19T09:11:00
+source_observed_at: 2024-05-19T09:30:00
+created_at: 2024-05-23T13:11:00
+updated_at: 2024-05-23T23:11:00
 tags: [#decision]
 ---
 # Project Beacon 62 Finance Approval Decision 502
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 62]].
 
 ## Context
-This decision applies to [[Apex Health]] and [[Project Beacon 62]].
+This decision applies to [[Pioneer Health]] and [[Project Beacon 62]].
 It follows [[Project Beacon 62 Stakeholder Alignment Sync 502]].
 It incorporates [[Project Beacon 62 Lineage Audit Research 282]].
 

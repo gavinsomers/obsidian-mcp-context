@@ -1,24 +1,26 @@
 ---
 type: meeting
-date: 2025-12-09
+date: 2023-12-03
 project: "[[Project Lantern 20]]"
-company: "[[Helio FinTech]]"
-source_created_at: 2025-12-09T12:54:00
-source_observed_at: 2025-12-09T15:29:00
-created_at: 2025-12-09T15:34:00
-updated_at: 2025-12-10T04:34:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2023-12-03T10:59:00
+source_observed_at: 2023-12-03T11:11:00
+created_at: 2023-12-03T14:13:00
+updated_at: 2023-12-04T07:13:00
 tags: [#meeting]
 ---
 # Project Lantern 20 Handoff Readiness Sync 680
 
-## Attendees
-- [[Rachel Bennett]]
-- [[Sam Lee]]
-- [[Alex Lee]]
+## Evergreen Attendees
+- [[Tara Alvarez]]
+
+## Client Attendees
+- [[Rachel Jenkins]]
+- [[Farah Ortega]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 20]] at [[Helio FinTech]].
-[[Tara Alvarez]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 20]] at [[Vanguard Manufacturing]].
+[[Tara Alvarez]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 20]] to [[Tara Alvarez]] #follow-up

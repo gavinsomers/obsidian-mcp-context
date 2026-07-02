@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-10-21T15:21:00
-source_observed_at: 2023-10-21T15:59:00
-created_at: 2023-10-21T19:21:00
-updated_at: 2023-11-22T05:21:00
+company: "[[Vanguard Analytics]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-11-30T16:40:00
+source_observed_at: 2023-11-30T18:20:00
+created_at: 2023-12-01T21:40:00
+updated_at: 2024-01-19T02:40:00
 tags: [#person]
 ---
 # Clara Vance
 
 ## Role
-Clara Vance is the Analytics Engineer at [[Evergreen Analytics]].
+Clara Vance is the Product Analytics Lead at [[Vanguard Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Summit 42]] ([[Vanguard Analytics]])
 - [ ] Confirm next update with [[Clara Vance]] #follow-up

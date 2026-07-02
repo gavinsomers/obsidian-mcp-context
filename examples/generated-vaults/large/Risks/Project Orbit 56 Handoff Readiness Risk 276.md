@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Orbit 56]]"
-source_created_at: 2024-07-16T12:27:00
-source_observed_at: 2024-07-16T15:25:00
-created_at: 2024-07-16T15:30:00
-updated_at: 2024-07-30T17:30:00
+source_created_at: 2024-04-16T10:37:00
+source_observed_at: 2024-04-16T11:02:00
+created_at: 2024-04-17T11:37:00
+updated_at: 2024-04-20T11:37:00
 tags: [#risk]
 ---
 # Project Orbit 56 Handoff Readiness Risk 276
 
 ## Risk
-Handoff Readiness may affect [[Project Orbit 56]] for [[Summit Manufacturing]].
+Handoff Readiness may affect [[Project Orbit 56]] for [[Northstar Labs]].
 
 ## Evidence
-- Raised after [[Project Orbit 56 Metric Reconciliation Sync 276]]
+- Raised after [[Project Orbit 56 Metric Reconciliation Sync 1376]]
 
 ## Current State
 - Status: `open`

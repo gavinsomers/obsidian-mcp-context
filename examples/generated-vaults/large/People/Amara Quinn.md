@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-09-07T15:36:00
-source_observed_at: 2023-09-07T16:19:00
-created_at: 2023-09-15T16:36:00
-updated_at: 2023-11-26T20:36:00
+company: "[[Atlas Logistics]]"
+role: "Finance Lead"
+source_created_at: 2023-11-04T08:35:00
+source_observed_at: 2023-11-04T10:27:00
+created_at: 2023-11-05T11:35:00
+updated_at: 2025-05-30T13:00:00
 tags: [#person]
 ---
 # Amara Quinn
 
 ## Role
-Amara Quinn is the Senior Data Consultant at [[Evergreen Analytics]].
+Amara Quinn is the Finance Lead at [[Atlas Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 152]] ([[Atlas Logistics]])
 - [ ] Confirm next update with [[Amara Quinn]] #follow-up

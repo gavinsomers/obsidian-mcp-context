@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-02-24
 project: "[[Project Venture 58]]"
-company: "[[Noble Manufacturing]]"
-source_created_at: 2024-02-24T09:42:00
-source_observed_at: 2024-02-24T11:03:00
-created_at: 2024-02-24T13:00:00
-updated_at: 2024-02-24T15:00:00
+company: "[[Meridian Health]]"
+source_created_at: 2024-02-24T12:56:00
+source_observed_at: 2024-02-24T14:56:00
+created_at: 2024-02-24T17:24:00
+updated_at: 2024-02-25T04:24:00
 tags: [#meeting]
 ---
 # Project Venture 58 Lineage Audit Sync 58
 
-## Attendees
-- [[Nadia Lee]]
-- [[Wendy Haddad]]
-- [[Yara Haddad]]
+## Evergreen Attendees
+- [[Elena Chen]]
+
+## Client Attendees
+- [[Elena Kim]]
+- [[Uma Ortega]]
+- [[Iris Tan]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 58]] at [[Noble Manufacturing]].
-[[Elena Chen]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 58]] at [[Meridian Health]].
+[[Elena Chen]] aligned with [[Elena Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 58]] to [[Elena Chen]] #follow-up

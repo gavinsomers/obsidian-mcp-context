@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-08-28T13:16:00
-source_observed_at: 2023-08-28T15:40:00
-created_at: 2023-08-30T06:16:00
-updated_at: 2023-10-28T08:16:00
+company: "[[Summit Health]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-09-09T13:49:00
+source_observed_at: 2023-09-09T16:37:00
+created_at: 2023-09-09T19:49:00
+updated_at: 2024-12-29T13:00:00
 tags: [#person]
 ---
 # Zoe Ortega
 
 ## Role
-Zoe Ortega is the Analytics Engineer at [[Evergreen Analytics]].
+Zoe Ortega is the Product Analytics Lead at [[Summit Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Signal 89]] ([[Summit Health]])
+- Client stakeholder on [[Project Beacon 107]] ([[Summit Health]])
+- Client stakeholder on [[Project Atlas 121]] ([[Summit Health]])
 - [ ] Confirm next update with [[Zoe Ortega]] #follow-up

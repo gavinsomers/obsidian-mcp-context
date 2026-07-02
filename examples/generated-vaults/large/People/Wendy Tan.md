@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-10-10T15:53:00
-source_observed_at: 2023-10-10T18:01:00
-created_at: 2023-10-11T20:53:00
-updated_at: 2023-11-25T23:53:00
+company: "[[BrightWave Media]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-09-29T15:41:00
+source_observed_at: 2023-09-29T18:40:00
+created_at: 2023-10-03T17:41:00
+updated_at: 2025-03-08T13:00:00
 tags: [#person]
 ---
 # Wendy Tan
 
 ## Role
-Wendy Tan is the Data Platform Engineer at [[Evergreen Analytics]].
+Wendy Tan is the Revenue Operations Lead at [[BrightWave Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Bridge 135]] ([[BrightWave Media]])
 - [ ] Confirm next update with [[Wendy Tan]] #follow-up

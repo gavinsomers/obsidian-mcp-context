@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Meridian 111]]"
-company: "[[Meridian Analytics]]"
-source_created_at: 2025-12-25T16:46:00
-source_observed_at: 2025-12-25T17:48:00
-created_at: 2025-12-28T19:46:00
-updated_at: 2026-01-28T05:46:00
+company: "[[Pioneer Retail]]"
+source_created_at: 2025-12-25T13:23:00
+source_observed_at: 2025-12-25T14:23:00
+created_at: 2025-12-25T19:23:00
+updated_at: 2026-01-17T22:23:00
 tags: [#research]
 ---
 # Project Meridian 111 Contract Renewal Research 551
 
 ## Research Summary
-Research on contract renewal for [[Project Meridian 111]] and [[Meridian Analytics]].
+Research on contract renewal for [[Project Meridian 111]] and [[Pioneer Retail]].
 
 ## Evidence
 - Interview notes from [[Farah Evans]]

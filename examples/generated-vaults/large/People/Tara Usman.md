@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-10-17T16:53:00
-source_observed_at: 2023-10-17T19:23:00
-created_at: 2023-10-18T13:53:00
-updated_at: 2024-01-12T15:53:00
+company: "[[Pioneer Logistics]]"
+role: "Data Owner"
+source_created_at: 2023-11-10T08:18:00
+source_observed_at: 2023-11-10T10:32:00
+created_at: 2023-11-19T09:18:00
+updated_at: 2024-01-07T13:18:00
 tags: [#person]
 ---
 # Tara Usman
 
 ## Role
-Tara Usman is the Solution Architect at [[Evergreen Analytics]].
+Tara Usman is the Data Owner at [[Pioneer Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- First seen through [[Pioneer Logistics]] account context
 - [ ] Confirm next update with [[Tara Usman]] #follow-up

@@ -1,26 +1,26 @@
 ---
 type: project
-status: closed
-company: "[[Crescent Manufacturing]]"
-source_created_at: 2024-02-19T08:01:00
-source_observed_at: 2024-02-19T10:33:00
-created_at: 2024-02-21T02:01:00
-updated_at: 2024-04-04T03:01:00
+status: planning
+company: "[[BrightWave FinTech]]"
+source_created_at: 2024-02-19T13:52:00
+source_observed_at: 2024-02-19T15:19:00
+created_at: 2024-02-21T11:52:00
+updated_at: 2024-04-21T12:52:00
 tags: [#project]
 ---
 # Project Signal 59
 
 ## Overview
-Project Signal 59 supports [[Crescent Manufacturing]] through research program.
+Project Signal 59 supports [[BrightWave FinTech]] through research program.
 
 ## Stakeholders
-- [[Kai Morgan]]
-- [[Elena Morgan]]
-- [[Grace Usman]]
-- [[Rachel Patel]]
+- [[Jonah Ivanov]]
+- [[Zoe Morgan]]
+- [[Nadia Rostova]]
+- [[Clara Walker]]
 
 ## Operating Notes
-- Owner: [[Farah Chen]]
-- Status: `closed`
-- Closed at: `2024-08-03`
+- Evergreen owner: [[Farah Chen]]
+- Client account: [[BrightWave FinTech]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Signal 59]] #ops

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Lantern 200]]"
-company: "[[Meridian Media]]"
-source_created_at: 2026-02-05T08:00:00
-source_observed_at: 2026-02-05T09:37:00
-created_at: 2026-02-06T17:00:00
-updated_at: 2026-02-14T03:00:00
+company: "[[Keystone Health]]"
+source_created_at: 2026-02-05T16:04:00
+source_observed_at: 2026-02-05T16:36:00
+created_at: 2026-02-06T07:04:00
+updated_at: 2026-03-14T18:04:00
 tags: [#research]
 ---
 # Project Lantern 200 Metric Reconciliation Research 420
 
 ## Research Summary
-Research on metric reconciliation for [[Project Lantern 200]] and [[Meridian Media]].
+Research on metric reconciliation for [[Project Lantern 200]] and [[Keystone Health]].
 
 ## Evidence
 - Interview notes from [[Rachel Haddad]]

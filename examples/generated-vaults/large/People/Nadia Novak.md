@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-08-16T16:08:00
-source_observed_at: 2023-08-16T17:10:00
-created_at: 2023-08-18T07:08:00
-updated_at: 2023-11-09T17:08:00
+company: "[[BrightWave Retail]]"
+role: "Executive Sponsor"
+source_created_at: 2023-07-09T09:13:00
+source_observed_at: 2023-07-09T10:05:00
+created_at: 2023-07-09T17:13:00
+updated_at: 2025-09-06T13:00:00
 tags: [#person]
 ---
 # Nadia Novak
 
 ## Role
-Nadia Novak is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Nadia Novak is the Executive Sponsor at [[BrightWave Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Meridian 156]] ([[BrightWave Retail]])
+- Client stakeholder on [[Project Pipeline 172]] ([[BrightWave Retail]])
 - [ ] Confirm next update with [[Nadia Novak]] #follow-up

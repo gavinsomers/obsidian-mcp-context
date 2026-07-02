@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-08-16T11:55:00
-source_observed_at: 2023-08-16T12:40:00
-created_at: 2023-08-18T10:55:00
-updated_at: 2023-11-07T12:55:00
+company: "[[Helio Retail]]"
+role: "Finance Lead"
+source_created_at: 2023-07-09T16:03:00
+source_observed_at: 2023-07-09T16:19:00
+created_at: 2023-07-11T03:03:00
+updated_at: 2025-08-11T13:00:00
 tags: [#person]
 ---
 # Omar Novak
 
 ## Role
-Omar Novak is the Senior Data Consultant at [[Evergreen Analytics]].
+Omar Novak is the Finance Lead at [[Helio Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 167]] ([[Helio Retail]])
 - [ ] Confirm next update with [[Omar Novak]] #follow-up

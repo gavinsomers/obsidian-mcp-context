@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-11-03T11:32:00
-source_observed_at: 2023-11-03T12:40:00
-created_at: 2023-11-04T09:32:00
-updated_at: 2023-12-03T16:32:00
+company: "[[Cobalt Retail]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-11-04T13:55:00
+source_observed_at: 2023-11-04T16:23:00
+created_at: 2023-11-05T20:55:00
+updated_at: 2025-11-08T13:00:00
 tags: [#person]
 ---
 # Rachel Walker
 
 ## Role
-Rachel Walker is the Analytics Engineer at [[Evergreen Analytics]].
+Rachel Walker is the Product Analytics Lead at [[Cobalt Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 185]] ([[Cobalt Retail]])
 - [ ] Confirm next update with [[Rachel Walker]] #follow-up

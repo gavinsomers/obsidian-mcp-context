@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2025-03-12
+date: 2024-07-08
 project: "[[Project Atlas 46]]"
-company: "[[Northstar Manufacturing]]"
-source_created_at: 2025-03-12T15:25:00
-source_observed_at: 2025-03-12T16:17:00
-created_at: 2025-03-12T21:12:00
-updated_at: 2025-03-13T02:12:00
+company: "[[Vanguard Labs]]"
+source_created_at: 2024-07-08T13:28:00
+source_observed_at: 2024-07-08T15:43:00
+created_at: 2024-07-08T18:17:00
+updated_at: 2024-07-09T03:17:00
 tags: [#meeting]
 ---
 # Project Atlas 46 Metric Reconciliation Sync 486
 
-## Attendees
-- [[Iris Jenkins]]
-- [[Iris Lee]]
-- [[Uma Evans]]
+## Evergreen Attendees
+- [[Tara Bennett]]
+
+## Client Attendees
+- [[Rachel Vance]]
+- [[Marcus Morgan]]
+- [[Ben Rostova]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Atlas 46]] at [[Northstar Manufacturing]].
-[[Tara Bennett]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Atlas 46]] at [[Vanguard Labs]].
+[[Tara Bennett]] aligned with [[Rachel Vance]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 46]] to [[Tara Bennett]] #follow-up

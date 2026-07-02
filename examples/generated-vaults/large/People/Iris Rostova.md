@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-09-18T15:37:00
-source_observed_at: 2023-09-18T16:30:00
-created_at: 2023-09-20T11:37:00
-updated_at: 2023-11-10T22:37:00
+company: "[[Crescent Labs]]"
+role: "Data Owner"
+source_created_at: 2023-08-27T08:38:00
+source_observed_at: 2023-08-27T10:25:00
+created_at: 2023-08-28T11:38:00
+updated_at: 2025-01-27T13:00:00
 tags: [#person]
 ---
 # Iris Rostova
 
 ## Role
-Iris Rostova is the Solution Architect at [[Evergreen Analytics]].
+Iris Rostova is the Data Owner at [[Crescent Labs]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Foundry 33]] ([[Cobalt Retail]])
+## Client Project Involvement
+- Client stakeholder on [[Project Pipeline 127]] ([[Crescent Labs]])
 - [ ] Confirm next update with [[Iris Rostova]] #follow-up

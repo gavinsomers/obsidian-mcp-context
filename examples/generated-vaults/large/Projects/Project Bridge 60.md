@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Keystone Manufacturing]]"
-source_created_at: 2024-02-23T15:12:00
-source_observed_at: 2024-02-23T16:29:00
-created_at: 2024-02-24T03:12:00
-updated_at: 2024-03-15T09:12:00
+status: blocked
+company: "[[Crescent Retail]]"
+source_created_at: 2024-02-23T16:37:00
+source_observed_at: 2024-02-23T18:17:00
+created_at: 2024-02-23T18:37:00
+updated_at: 2024-03-26T02:37:00
 tags: [#project]
 ---
 # Project Bridge 60
 
 ## Overview
-Project Bridge 60 supports [[Keystone Manufacturing]] through operations admin.
+Project Bridge 60 supports [[Crescent Retail]] through operations admin.
 
 ## Stakeholders
-- [[Zoe Jenkins]]
-- [[Kai Bennett]]
-- [[Marcus Haddad]]
-- [[Farah Lee]]
+- [[Iris Jenkins]]
+- [[Yara Novak]]
+- [[Marcus Shah]]
 
 ## Operating Notes
-- Owner: [[Grace Chen]]
-- Status: `planning`
+- Evergreen owner: [[Grace Chen]]
+- Client account: [[Crescent Retail]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Bridge 60]] #ops

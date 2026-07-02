@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-09-28T16:54:00
-source_observed_at: 2023-09-28T18:31:00
-created_at: 2023-10-06T20:54:00
-updated_at: 2023-11-14T22:54:00
+company: "[[Crescent Retail]]"
+role: "Finance Lead"
+source_created_at: 2023-09-11T16:35:00
+source_observed_at: 2023-09-11T18:07:00
+created_at: 2023-09-12T01:35:00
+updated_at: 2026-04-13T13:00:00
 tags: [#person]
 ---
 # Marcus Shah
 
 ## Role
-Marcus Shah is the Senior Data Consultant at [[Evergreen Analytics]].
+Marcus Shah is the Finance Lead at [[Crescent Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Bridge 60]] ([[Crescent Retail]])
+- Client stakeholder on [[Project Pipeline 157]] ([[Crescent Retail]])
+- Client stakeholder on [[Project Pipeline 217]] ([[Crescent Retail]])
 - [ ] Confirm next update with [[Marcus Shah]] #follow-up

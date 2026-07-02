@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-08-27T13:23:00
-source_observed_at: 2023-08-27T15:10:00
-created_at: 2023-08-28T18:23:00
-updated_at: 2023-11-20T19:23:00
+company: "[[Vanguard Health]]"
+role: "Finance Lead"
+source_created_at: 2023-09-01T15:45:00
+source_observed_at: 2023-09-01T17:47:00
+created_at: 2023-09-03T03:45:00
+updated_at: 2025-07-24T13:00:00
 tags: [#person]
 ---
 # Victor Ortega
 
 ## Role
-Victor Ortega is the Senior Data Consultant at [[Evergreen Analytics]].
+Victor Ortega is the Finance Lead at [[Vanguard Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Venture 13]] ([[Vanguard Health]])
+- Client stakeholder on [[Project Venture 163]] ([[Vanguard Health]])
 - [ ] Confirm next update with [[Victor Ortega]] #follow-up

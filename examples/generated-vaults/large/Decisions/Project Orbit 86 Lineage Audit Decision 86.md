@@ -3,11 +3,11 @@ type: decision
 date: 2024-08-01
 status: active
 project: "[[Project Orbit 86]]"
-company: "[[Summit Media]]"
-source_created_at: 2024-08-01T15:49:00
-source_observed_at: 2024-08-01T18:19:00
-created_at: 2024-08-01T18:45:00
-updated_at: 2024-08-01T23:45:00
+company: "[[Helio Logistics]]"
+source_created_at: 2024-08-01T14:29:00
+source_observed_at: 2024-08-01T14:41:00
+created_at: 2024-08-01T16:08:00
+updated_at: 2024-08-01T20:08:00
 tags: [#decision]
 ---
 # Project Orbit 86 Lineage Audit Decision 86
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Orbit 86]].
 
 ## Context
-This decision applies to [[Summit Media]] and [[Project Orbit 86]].
+This decision applies to [[Helio Logistics]] and [[Project Orbit 86]].
 It follows [[Project Orbit 86 Metric Reconciliation Sync 1846]].
 It incorporates [[Project Orbit 86 Stakeholder Alignment Research 86]].
 

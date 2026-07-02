@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-26
 status: active
 project: "[[Project Summit 147]]"
-company: "[[Noble FinTech]]"
-source_created_at: 2025-05-26T13:49:00
-source_observed_at: 2025-05-26T14:39:00
-created_at: 2025-06-03T16:49:00
-updated_at: 2025-06-04T00:49:00
+company: "[[Summit Retail]]"
+source_created_at: 2025-05-26T14:54:00
+source_observed_at: 2025-05-26T16:36:00
+created_at: 2025-05-26T18:38:00
+updated_at: 2025-05-26T21:38:00
 tags: [#decision]
 ---
 # Project Summit 147 Pipeline Hygiene Decision 367
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Summit 147]].
 
 ## Context
-This decision applies to [[Noble FinTech]] and [[Project Summit 147]].
-It follows [[Project Summit 147 Contract Renewal Sync 1687]].
-It incorporates [[Project Summit 147 Security Review Research 147]].
+This decision applies to [[Summit Retail]] and [[Project Summit 147]].
+It follows [[Project Summit 147 Contract Renewal Sync 807]].
+It incorporates [[Project Summit 147 Security Review Research 367]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

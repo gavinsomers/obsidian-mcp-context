@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Foundry 18]]"
-company: "[[Cobalt FinTech]]"
-source_created_at: 2024-02-25T12:01:00
-source_observed_at: 2024-02-25T12:26:00
-created_at: 2024-02-26T08:01:00
-updated_at: 2024-04-02T14:01:00
+company: "[[Meridian Retail]]"
+source_created_at: 2024-06-28T11:00:00
+source_observed_at: 2024-06-28T13:29:00
+created_at: 2024-06-29T01:00:00
+updated_at: 2024-07-02T09:00:00
 tags: [#research]
 ---
 # Project Foundry 18 Finance Approval Research 238
 
 ## Research Summary
-Research on finance approval for [[Project Foundry 18]] and [[Cobalt FinTech]].
+Research on finance approval for [[Project Foundry 18]] and [[Meridian Retail]].
 
 ## Evidence
 - Interview notes from [[Rachel Alvarez]]

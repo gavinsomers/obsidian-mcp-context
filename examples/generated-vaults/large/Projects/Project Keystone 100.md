@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Harbor Logistics]]"
-source_created_at: 2024-09-06T09:49:00
-source_observed_at: 2024-09-06T12:07:00
-created_at: 2024-09-14T11:49:00
-updated_at: 2024-10-21T17:49:00
+status: active
+company: "[[Noble Health]]"
+source_created_at: 2024-09-06T08:37:00
+source_observed_at: 2024-09-06T08:58:00
+created_at: 2024-09-07T09:37:00
+updated_at: 2024-11-04T20:37:00
 tags: [#project]
 ---
 # Project Keystone 100
 
 ## Overview
-Project Keystone 100 supports [[Harbor Logistics]] through operations admin.
+Project Keystone 100 supports [[Noble Health]] through operations admin.
 
 ## Stakeholders
-- [[Alex Ivanov]]
-- [[Jonah Novak]]
-- [[Rachel Foster]]
-- [[Hannah Morgan]]
+- [[Lina Kim]]
+- [[Amara Patel]]
+- [[Priya Tan]]
 
 ## Operating Notes
-- Owner: [[Victor Diaz]]
-- Status: `planning`
+- Evergreen owner: [[Victor Diaz]]
+- Client account: [[Noble Health]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Keystone 100]] #ops

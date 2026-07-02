@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Pipeline 37]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2024-07-31T09:16:00
-source_observed_at: 2024-07-31T09:46:00
-created_at: 2024-08-01T02:16:00
-updated_at: 2024-08-21T11:16:00
+company: "[[Quantum Logistics]]"
+source_created_at: 2024-07-31T16:58:00
+source_observed_at: 2024-07-31T18:00:00
+created_at: 2024-08-01T12:58:00
+updated_at: 2024-09-05T20:58:00
 tags: [#research]
 ---
 # Project Pipeline 37 Security Review Research 257
 
 ## Research Summary
-Research on security review for [[Project Pipeline 37]] and [[Vanguard Retail]].
+Research on security review for [[Project Pipeline 37]] and [[Quantum Logistics]].
 
 ## Evidence
 - Interview notes from [[Jonah Bennett]]

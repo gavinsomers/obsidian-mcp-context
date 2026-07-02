@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-01-25
 project: "[[Project Meridian 201]]"
-company: "[[Vanguard Media]]"
-source_created_at: 2026-01-25T15:40:00
-source_observed_at: 2026-01-25T17:27:00
-created_at: 2026-01-25T17:32:00
-updated_at: 2026-01-26T00:32:00
+company: "[[Northstar Retail]]"
+source_created_at: 2026-01-25T15:57:00
+source_observed_at: 2026-01-25T17:22:00
+created_at: 2026-01-25T19:11:00
+updated_at: 2026-01-26T10:11:00
 tags: [#meeting]
 ---
 # Project Meridian 201 Warehouse Mapping Sync 1741
 
-## Attendees
-- [[Elena Usman]]
-- [[David Ortega]]
-- [[Iris Shah]]
+## Evergreen Attendees
+- [[Alex Alvarez]]
+
+## Client Attendees
+- [[Alex Shah]]
+- [[Omar Walker]]
+- [[Wendy Ivanov]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 201]] at [[Vanguard Media]].
-[[Sam Haddad]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 201]] at [[Northstar Retail]].
+[[Alex Alvarez]] aligned with [[Alex Shah]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 201]] to [[Sam Haddad]] #follow-up
+- [ ] Send recap for [[Project Meridian 201]] to [[Alex Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

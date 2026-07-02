@@ -2,23 +2,26 @@
 type: meeting
 date: 2026-01-01
 project: "[[Project Pipeline 37]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2026-01-01T11:55:00
-source_observed_at: 2026-01-01T14:53:00
-created_at: 2026-01-01T15:11:00
-updated_at: 2026-01-02T06:11:00
+company: "[[Quantum Logistics]]"
+source_created_at: 2026-01-01T11:40:00
+source_observed_at: 2026-01-01T13:25:00
+created_at: 2026-01-01T13:56:00
+updated_at: 2026-01-01T23:56:00
 tags: [#meeting]
 ---
 # Project Pipeline 37 Contract Renewal Sync 697
 
-## Attendees
-- [[Tara Kim]]
-- [[Grace Diaz]]
-- [[Hannah Grant]]
+## Evergreen Attendees
+- [[Jonah Bennett]]
+
+## Client Attendees
+- [[Kai Lee]]
+- [[Alex Quinn]]
+- [[Omar Usman]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 37]] at [[Vanguard Retail]].
-[[Jonah Bennett]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 37]] at [[Quantum Logistics]].
+[[Jonah Bennett]] aligned with [[Kai Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 37]] to [[Jonah Bennett]] #follow-up

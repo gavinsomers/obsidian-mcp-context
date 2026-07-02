@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 34]]"
-company: "[[BrightWave Retail]]"
-source_created_at: 2024-07-26T14:44:00
-source_observed_at: 2024-07-26T15:33:00
-created_at: 2024-07-27T23:44:00
-updated_at: 2024-08-09T02:44:00
+company: "[[Helio Analytics]]"
+source_created_at: 2024-07-26T09:05:00
+source_observed_at: 2024-07-26T10:39:00
+created_at: 2024-07-28T09:05:00
+updated_at: 2024-08-04T15:05:00
 tags: [#research]
 ---
 # Project Horizon 34 Handoff Readiness Research 254
 
 ## Research Summary
-Research on handoff readiness for [[Project Horizon 34]] and [[BrightWave Retail]].
+Research on handoff readiness for [[Project Horizon 34]] and [[Helio Analytics]].
 
 ## Evidence
 - Interview notes from [[Grace Bennett]]

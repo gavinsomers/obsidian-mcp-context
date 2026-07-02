@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-10-08T15:11:00
-source_observed_at: 2023-10-08T17:00:00
-created_at: 2023-10-09T22:11:00
-updated_at: 2023-11-17T08:11:00
+company: "[[Crescent Health]]"
+role: "Customer Success Lead"
+source_created_at: 2023-09-26T15:24:00
+source_observed_at: 2023-09-26T15:50:00
+created_at: 2023-09-28T13:24:00
+updated_at: 2025-07-07T13:00:00
 tags: [#person]
 ---
 # Rachel Tan
 
 ## Role
-Rachel Tan is the Technical Director at [[Evergreen Analytics]].
+Rachel Tan is the Customer Success Lead at [[Crescent Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 129]] ([[Crescent Health]])
+- Client stakeholder on [[Project Keystone 160]] ([[Crescent Health]])
 - [ ] Confirm next update with [[Rachel Tan]] #follow-up

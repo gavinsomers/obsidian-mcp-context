@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Foundry 123]]"
-source_created_at: 2025-10-15T10:31:00
-source_observed_at: 2025-10-15T12:29:00
-created_at: 2025-10-15T13:31:00
-updated_at: 2025-11-07T17:31:00
+source_created_at: 2025-10-15T10:55:00
+source_observed_at: 2025-10-15T13:28:00
+created_at: 2025-10-16T08:55:00
+updated_at: 2025-11-03T10:55:00
 tags: [#risk]
 ---
 # Project Foundry 123 Contract Renewal Risk 563
 
 ## Risk
-Contract Renewal may affect [[Project Foundry 123]] for [[BrightWave Labs]].
+Contract Renewal may affect [[Project Foundry 123]] for [[Apex Retail]].
 
 ## Evidence
 - Raised after [[Project Foundry 123 Security Review Sync 563]]

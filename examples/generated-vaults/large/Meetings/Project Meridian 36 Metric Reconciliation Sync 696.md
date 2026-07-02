@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2024-01-06
+date: 2024-03-29
 project: "[[Project Meridian 36]]"
-company: "[[Meridian Retail]]"
-source_created_at: 2024-01-06T13:42:00
-source_observed_at: 2024-01-06T15:34:00
-created_at: 2024-01-06T18:23:00
-updated_at: 2024-01-07T01:23:00
+company: "[[Harbor Analytics]]"
+source_created_at: 2024-03-29T13:37:00
+source_observed_at: 2024-03-29T16:27:00
+created_at: 2024-03-29T16:32:00
+updated_at: 2024-03-29T17:32:00
 tags: [#meeting]
 ---
 # Project Meridian 36 Metric Reconciliation Sync 696
 
-## Attendees
-- [[Priya Ortega]]
-- [[Yara Shah]]
-- [[Victor Vance]]
+## Evergreen Attendees
+- [[Iris Bennett]]
+
+## Client Attendees
+- [[Ben Morgan]]
+- [[Rachel Quinn]]
+- [[Farah Vance]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 36]] at [[Meridian Retail]].
-[[Iris Bennett]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 36]] at [[Harbor Analytics]].
+[[Iris Bennett]] aligned with [[Ben Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 36]] to [[Iris Bennett]] #follow-up

@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-07-21T12:23:00
-source_observed_at: 2023-07-21T14:18:00
-created_at: 2023-07-22T09:23:00
-updated_at: 2023-08-06T09:23:00
+company: "[[Crescent Health]]"
+role: "Finance Lead"
+source_created_at: 2023-09-15T08:52:00
+source_observed_at: 2023-09-15T11:30:00
+created_at: 2023-09-16T23:52:00
+updated_at: 2025-07-07T13:00:00
 tags: [#person]
 ---
 # Marcus Kim
 
 ## Role
-Marcus Kim is the Senior Data Consultant at [[Evergreen Analytics]].
+Marcus Kim is the Finance Lead at [[Crescent Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 129]] ([[Crescent Health]])
+- Client stakeholder on [[Project Keystone 160]] ([[Crescent Health]])
 - [ ] Confirm next update with [[Marcus Kim]] #follow-up

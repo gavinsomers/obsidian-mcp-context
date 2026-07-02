@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Technical Director"
-source_created_at: 2023-05-17T12:54:00
-source_observed_at: 2023-05-17T13:47:00
-created_at: 2023-05-19T01:54:00
-updated_at: 2023-06-25T05:54:00
+source_created_at: 2023-05-17T08:27:00
+source_observed_at: 2023-05-17T11:26:00
+created_at: 2023-05-18T01:27:00
+updated_at: 2024-06-10T13:00:00
 tags: [#person]
 ---
 # Amara Diaz
@@ -14,5 +14,5 @@ tags: [#person]
 Amara Diaz is the Technical Director at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Managing/Supporting [[Project Meridian 6]] ([[Meridian Labs]])
+- Delivery owner for [[Project Lantern 80]] ([[Crescent Logistics]])
 - [ ] Confirm next update with [[Amara Diaz]] #follow-up

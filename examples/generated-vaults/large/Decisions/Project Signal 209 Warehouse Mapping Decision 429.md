@@ -3,11 +3,11 @@ type: decision
 date: 2026-03-27
 status: active
 project: "[[Project Signal 209]]"
-company: "[[Keystone Media]]"
-source_created_at: 2026-03-27T11:12:00
-source_observed_at: 2026-03-27T13:04:00
-created_at: 2026-04-03T16:12:00
-updated_at: 2026-04-04T03:12:00
+company: "[[Quantum Labs]]"
+source_created_at: 2026-03-27T10:44:00
+source_observed_at: 2026-03-27T11:56:00
+created_at: 2026-03-27T12:02:00
+updated_at: 2026-03-28T10:02:00
 tags: [#decision]
 ---
 # Project Signal 209 Warehouse Mapping Decision 429
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Signal 209]].
 
 ## Context
-This decision applies to [[Keystone Media]] and [[Project Signal 209]].
+This decision applies to [[Quantum Labs]] and [[Project Signal 209]].
 It follows [[Project Signal 209 Pipeline Hygiene Sync 1529]].
-It incorporates [[Project Signal 209 Adoption Workflow Research 429]].
+It incorporates [[Project Signal 209 Adoption Workflow Research 209]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

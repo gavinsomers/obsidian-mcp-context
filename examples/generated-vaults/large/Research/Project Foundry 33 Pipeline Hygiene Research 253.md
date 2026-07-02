@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Foundry 33]]"
-company: "[[Cobalt Retail]]"
-source_created_at: 2024-07-24T15:15:00
-source_observed_at: 2024-07-24T15:51:00
-created_at: 2024-07-25T06:15:00
-updated_at: 2024-09-02T10:15:00
+company: "[[BrightWave Logistics]]"
+source_created_at: 2024-07-24T12:30:00
+source_observed_at: 2024-07-24T13:42:00
+created_at: 2024-07-24T21:30:00
+updated_at: 2024-08-18T04:30:00
 tags: [#research]
 ---
 # Project Foundry 33 Pipeline Hygiene Research 253
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Foundry 33]] and [[Cobalt Retail]].
+Research on pipeline hygiene for [[Project Foundry 33]] and [[BrightWave Logistics]].
 
 ## Evidence
 - Interview notes from [[Farah Bennett]]

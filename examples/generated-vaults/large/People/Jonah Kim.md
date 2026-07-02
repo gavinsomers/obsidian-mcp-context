@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-07-20T16:59:00
-source_observed_at: 2023-07-20T18:18:00
-created_at: 2023-07-21T02:59:00
-updated_at: 2023-10-12T04:59:00
+company: "[[Summit Health]]"
+role: "Security Contact"
+source_created_at: 2023-09-09T13:08:00
+source_observed_at: 2023-09-09T14:42:00
+created_at: 2023-09-10T20:08:00
+updated_at: 2024-12-29T13:00:00
 tags: [#person]
 ---
 # Jonah Kim
 
 ## Role
-Jonah Kim is the Client Partner at [[Evergreen Analytics]].
+Jonah Kim is the Security Contact at [[Summit Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Signal 89]] ([[Summit Health]])
+- Client stakeholder on [[Project Beacon 107]] ([[Summit Health]])
+- Client stakeholder on [[Project Atlas 121]] ([[Summit Health]])
 - [ ] Confirm next update with [[Jonah Kim]] #follow-up

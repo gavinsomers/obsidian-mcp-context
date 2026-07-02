@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-08-08T10:20:00
-source_observed_at: 2023-08-08T12:38:00
-created_at: 2023-08-08T21:20:00
-updated_at: 2023-08-29T07:20:00
+company: "[[Atlas Labs]]"
+role: "Customer Success Lead"
+source_created_at: 2023-06-26T11:12:00
+source_observed_at: 2023-06-26T12:25:00
+created_at: 2023-06-27T11:12:00
+updated_at: 2024-09-21T13:00:00
 tags: [#person]
 ---
 # Omar Morgan
 
 ## Role
-Omar Morgan is the Technical Director at [[Evergreen Analytics]].
+Omar Morgan is the Customer Success Lead at [[Atlas Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Orbit 101]] ([[Atlas Labs]])
 - [ ] Confirm next update with [[Omar Morgan]] #follow-up

@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: smb
-source_created_at: 2023-06-22T11:28:00
-source_observed_at: 2023-06-22T13:13:00
-created_at: 2023-06-24T08:28:00
-updated_at: 2023-09-21T19:28:00
+source_created_at: 2023-06-22T12:12:00
+source_observed_at: 2023-06-22T12:50:00
+created_at: 2023-06-23T19:12:00
+updated_at: 2023-08-09T06:12:00
 tags: [#company]
 ---
 # Apex Retail
@@ -14,6 +14,10 @@ tags: [#company]
 Apex Retail is a smb account currently marked `churn-risk`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Xavier Ivanov]] - Customer Success Lead
+- [[Lina Novak]] - Security Contact
 
 ## Projects
 

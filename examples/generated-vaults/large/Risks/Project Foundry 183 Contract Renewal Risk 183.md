@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Foundry 183]]"
-source_created_at: 2025-11-07T11:58:00
-source_observed_at: 2025-11-07T14:27:00
-created_at: 2025-11-07T18:58:00
-updated_at: 2025-12-01T01:58:00
+source_created_at: 2025-11-07T10:53:00
+source_observed_at: 2025-11-07T13:13:00
+created_at: 2025-11-08T18:53:00
+updated_at: 2025-12-12T20:53:00
 tags: [#risk]
 ---
 # Project Foundry 183 Contract Renewal Risk 183
 
 ## Risk
-Contract Renewal may affect [[Project Foundry 183]] for [[BrightWave Health]].
+Contract Renewal may affect [[Project Foundry 183]] for [[Meridian FinTech]].
 
 ## Evidence
-- Raised after [[Project Foundry 183 Security Review Sync 1063]]
+- Raised after [[Project Foundry 183 Security Review Sync 1723]]
 
 ## Current State
 - Status: `open`

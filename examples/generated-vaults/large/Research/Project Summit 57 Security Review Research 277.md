@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Summit 57]]"
-company: "[[Pioneer Manufacturing]]"
-source_created_at: 2024-09-04T11:40:00
-source_observed_at: 2024-09-04T13:35:00
-created_at: 2024-09-05T12:40:00
-updated_at: 2024-09-28T23:40:00
+company: "[[BrightWave Logistics]]"
+source_created_at: 2024-09-04T08:32:00
+source_observed_at: 2024-09-04T09:03:00
+created_at: 2024-09-04T18:32:00
+updated_at: 2024-10-18T00:32:00
 tags: [#research]
 ---
 # Project Summit 57 Security Review Research 277
 
 ## Research Summary
-Research on security review for [[Project Summit 57]] and [[Pioneer Manufacturing]].
+Research on security review for [[Project Summit 57]] and [[BrightWave Logistics]].
 
 ## Evidence
 - Interview notes from [[David Chen]]

@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-06-15
 project: "[[Project Meridian 81]]"
-company: "[[Meridian Media]]"
-source_created_at: 2024-06-15T09:05:00
-source_observed_at: 2024-06-15T10:19:00
-created_at: 2024-06-15T13:49:00
-updated_at: 2024-06-16T10:49:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2024-06-15T09:07:00
+source_observed_at: 2024-06-15T09:57:00
+created_at: 2024-06-15T13:27:00
+updated_at: 2024-06-15T16:27:00
 tags: [#meeting]
 ---
 # Project Meridian 81 Warehouse Mapping Sync 961
 
-## Attendees
-- [[Wendy Grant]]
-- [[Elena Grant]]
-- [[Alex Usman]]
+## Evergreen Attendees
+- [[Ben Diaz]]
+
+## Client Attendees
+- [[Ben Novak]]
+- [[Rachel Rostova]]
+- [[Farah Walker]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 81]] at [[Meridian Media]].
-[[Ben Diaz]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 81]] at [[Vanguard FinTech]].
+[[Ben Diaz]] aligned with [[Ben Novak]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 81]] to [[Ben Diaz]] #follow-up

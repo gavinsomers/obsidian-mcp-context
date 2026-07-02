@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-07-31T11:33:00
-source_observed_at: 2023-07-31T13:50:00
-created_at: 2023-07-31T22:33:00
-updated_at: 2023-09-20T03:33:00
+company: "[[Crescent Logistics]]"
+role: "Customer Success Lead"
+source_created_at: 2023-11-14T09:09:00
+source_observed_at: 2023-11-14T11:08:00
+created_at: 2023-11-15T03:09:00
+updated_at: 2026-04-19T13:00:00
 tags: [#person]
 ---
 # Rachel Lee
 
 ## Role
-Rachel Lee is the Technical Director at [[Evergreen Analytics]].
+Rachel Lee is the Customer Success Lead at [[Crescent Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 80]] ([[Crescent Logistics]])
+- Client stakeholder on [[Project Compass 218]] ([[Crescent Logistics]])
 - [ ] Confirm next update with [[Rachel Lee]] #follow-up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-07-16T16:11:00
-source_observed_at: 2023-07-16T17:33:00
-created_at: 2023-07-18T13:11:00
-updated_at: 2023-10-05T20:11:00
+company: "[[Crescent Manufacturing]]"
+role: "Operations Manager"
+source_created_at: 2023-08-16T08:30:00
+source_observed_at: 2023-08-16T09:20:00
+created_at: 2023-08-16T18:30:00
+updated_at: 2024-11-04T13:00:00
 tags: [#person]
 ---
 # Yara Jenkins
 
 ## Role
-Yara Jenkins is the Delivery Lead at [[Evergreen Analytics]].
+Yara Jenkins is the Operations Manager at [[Crescent Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 110]] ([[Crescent Manufacturing]])
 - [ ] Confirm next update with [[Yara Jenkins]] #follow-up

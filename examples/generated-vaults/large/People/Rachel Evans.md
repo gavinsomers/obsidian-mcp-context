@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Senior Data Consultant"
-source_created_at: 2023-05-31T16:14:00
-source_observed_at: 2023-05-31T18:44:00
-created_at: 2023-06-01T19:14:00
-updated_at: 2023-07-15T20:14:00
+source_created_at: 2023-05-31T08:27:00
+source_observed_at: 2023-05-31T11:24:00
+created_at: 2023-06-01T13:27:00
+updated_at: 2025-01-03T13:00:00
 tags: [#person]
 ---
 # Rachel Evans
@@ -14,5 +14,5 @@ tags: [#person]
 Rachel Evans is the Senior Data Consultant at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Beacon 122]] ([[Keystone FinTech]])
 - [ ] Confirm next update with [[Rachel Evans]] #follow-up

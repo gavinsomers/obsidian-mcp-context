@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2025-07-23
+date: 2025-07-28
 project: "[[Project Harbor 144]]"
-company: "[[Harbor FinTech]]"
-source_created_at: 2025-07-23T15:55:00
-source_observed_at: 2025-07-23T16:58:00
-created_at: 2025-07-23T19:53:00
-updated_at: 2025-07-24T10:53:00
+company: "[[Harbor Retail]]"
+source_created_at: 2025-07-28T11:51:00
+source_observed_at: 2025-07-28T13:21:00
+created_at: 2025-07-28T16:21:00
+updated_at: 2025-07-29T11:21:00
 tags: [#meeting]
 ---
 # Project Harbor 144 Finance Approval Sync 584
 
-## Attendees
-- [[Marcus Diaz]]
-- [[Priya Morgan]]
-- [[Hannah Chen]]
+## Evergreen Attendees
+- [[Marcus Foster]]
+
+## Client Attendees
+- [[Iris Shah]]
+- [[Elena Jenkins]]
+- [[Uma Novak]]
 
 ## Notes
-Finance Approval reviewed for [[Project Harbor 144]] at [[Harbor FinTech]].
-[[Marcus Foster]] flagged follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Harbor 144]] at [[Harbor Retail]].
+[[Marcus Foster]] aligned with [[Iris Shah]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 144]] to [[Marcus Foster]] #follow-up

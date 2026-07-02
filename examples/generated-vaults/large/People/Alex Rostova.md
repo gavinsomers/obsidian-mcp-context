@@ -1,18 +1,21 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-09-15T14:22:00
-source_observed_at: 2023-09-15T15:29:00
-created_at: 2023-09-17T06:22:00
-updated_at: 2023-10-01T15:22:00
+company: "[[Helio Labs]]"
+role: "Operations Manager"
+source_created_at: 2023-08-23T09:35:00
+source_observed_at: 2023-08-23T12:01:00
+created_at: 2023-08-23T18:35:00
+updated_at: 2025-06-28T13:00:00
 tags: [#person]
 ---
 # Alex Rostova
 
 ## Role
-Alex Rostova is the Delivery Lead at [[Evergreen Analytics]].
+Alex Rostova is the Operations Manager at [[Helio Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Bridge 90]] ([[Helio Labs]])
+- Client stakeholder on [[Project Horizon 94]] ([[Helio Labs]])
+- Client stakeholder on [[Project Lantern 125]] ([[Helio Labs]])
+- Client stakeholder on [[Project Compass 158]] ([[Helio Labs]])
 - [ ] Confirm next update with [[Alex Rostova]] #follow-up

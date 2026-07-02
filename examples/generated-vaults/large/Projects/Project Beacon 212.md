@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Cobalt Logistics]]"
-source_created_at: 2026-03-11T11:06:00
-source_observed_at: 2026-03-11T13:17:00
-created_at: 2026-03-12T10:06:00
-updated_at: 2026-04-01T15:06:00
+status: blocked
+company: "[[Northstar Analytics]]"
+source_created_at: 2026-03-11T15:16:00
+source_observed_at: 2026-03-11T16:53:00
+created_at: 2026-03-11T19:16:00
+updated_at: 2026-06-04T23:16:00
 tags: [#project]
 ---
 # Project Beacon 212
 
 ## Overview
-Project Beacon 212 supports [[Cobalt Logistics]] through sales pipeline.
+Project Beacon 212 supports [[Northstar Analytics]] through sales pipeline.
 
 ## Stakeholders
-- [[Iris Alvarez]]
-- [[Omar Ivanov]]
-- [[Xavier Tan]]
-- [[Yara Rostova]]
+- [[Tara Lee]]
+- [[Hannah Quinn]]
+- [[Xavier Usman]]
 
 ## Operating Notes
-- Owner: [[Clara Ivanov]]
-- Status: `planning`
+- Evergreen owner: [[Kai Alvarez]]
+- Client account: [[Northstar Analytics]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Beacon 212]] #ops

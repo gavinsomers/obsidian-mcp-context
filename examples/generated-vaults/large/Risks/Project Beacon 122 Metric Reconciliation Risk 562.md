@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Beacon 122]]"
-source_created_at: 2025-10-14T12:45:00
-source_observed_at: 2025-10-14T13:37:00
-created_at: 2025-10-16T10:45:00
-updated_at: 2025-11-02T10:45:00
+source_created_at: 2025-05-03T15:13:00
+source_observed_at: 2025-05-03T15:57:00
+created_at: 2025-05-04T18:13:00
+updated_at: 2025-05-25T22:13:00
 tags: [#risk]
 ---
 # Project Beacon 122 Metric Reconciliation Risk 562
 
 ## Risk
-Metric Reconciliation may affect [[Project Beacon 122]] for [[Cobalt Labs]].
+Metric Reconciliation may affect [[Project Beacon 122]] for [[Keystone FinTech]].
 
 ## Evidence
-- Raised after [[Project Beacon 122 Stakeholder Alignment Sync 562]]
+- Raised after [[Project Beacon 122 Stakeholder Alignment Sync 1442]]
 
 ## Current State
 - Status: `open`

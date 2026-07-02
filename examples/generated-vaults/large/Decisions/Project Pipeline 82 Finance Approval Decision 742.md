@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-06
 status: active
 project: "[[Project Pipeline 82]]"
-company: "[[Vanguard Media]]"
-source_created_at: 2026-04-06T13:36:00
-source_observed_at: 2026-04-06T14:10:00
-created_at: 2026-04-06T14:15:00
-updated_at: 2026-04-07T00:15:00
+company: "[[Atlas Retail]]"
+source_created_at: 2026-04-06T15:45:00
+source_observed_at: 2026-04-06T16:18:00
+created_at: 2026-04-06T21:44:00
+updated_at: 2026-04-06T23:44:00
 tags: [#decision]
 ---
 # Project Pipeline 82 Finance Approval Decision 742
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with finance approval for [[Project Pipeline 82]].
 
 ## Context
-This decision applies to [[Vanguard Media]] and [[Project Pipeline 82]].
+This decision applies to [[Atlas Retail]] and [[Project Pipeline 82]].
 It follows [[Project Pipeline 82 Stakeholder Alignment Sync 742]].
 It incorporates [[Project Pipeline 82 Lineage Audit Research 522]].
 

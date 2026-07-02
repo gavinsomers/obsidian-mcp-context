@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-07-21T15:48:00
-source_observed_at: 2023-07-21T18:00:00
-created_at: 2023-07-22T20:48:00
-updated_at: 2023-09-12T05:48:00
+company: "[[Northstar Media]]"
+role: "Data Owner"
+source_created_at: 2023-09-19T10:23:00
+source_observed_at: 2023-09-19T12:13:00
+created_at: 2023-09-21T01:23:00
+updated_at: 2025-12-18T13:00:00
 tags: [#person]
 ---
 # Omar Kim
 
 ## Role
-Omar Kim is the Solution Architect at [[Evergreen Analytics]].
+Omar Kim is the Data Owner at [[Northstar Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 95]] ([[Northstar Media]])
+- Client stakeholder on [[Project Keystone 175]] ([[Northstar Media]])
+- Client stakeholder on [[Project Venture 193]] ([[Northstar Media]])
 - [ ] Confirm next update with [[Omar Kim]] #follow-up

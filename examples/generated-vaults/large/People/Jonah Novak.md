@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-08-15T16:17:00
-source_observed_at: 2023-08-15T16:42:00
-created_at: 2023-08-16T18:17:00
-updated_at: 2023-09-03T02:17:00
+company: "[[Keystone FinTech]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-07-07T14:54:00
+source_observed_at: 2023-07-07T15:22:00
+created_at: 2023-07-13T17:54:00
+updated_at: 2025-01-03T13:00:00
 tags: [#person]
 ---
 # Jonah Novak
 
 ## Role
-Jonah Novak is the Data Platform Engineer at [[Evergreen Analytics]].
+Jonah Novak is the Revenue Operations Lead at [[Keystone FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 122]] ([[Keystone FinTech]])
 - [ ] Confirm next update with [[Jonah Novak]] #follow-up

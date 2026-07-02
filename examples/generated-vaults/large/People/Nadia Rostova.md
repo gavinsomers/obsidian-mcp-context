@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-09-20T09:09:00
-source_observed_at: 2023-09-20T11:51:00
-created_at: 2023-09-20T20:09:00
-updated_at: 2023-12-07T02:09:00
+company: "[[BrightWave FinTech]]"
+role: "Executive Sponsor"
+source_created_at: 2023-08-30T14:18:00
+source_observed_at: 2023-08-30T17:04:00
+created_at: 2023-09-01T12:18:00
+updated_at: 2025-07-18T13:00:00
 tags: [#person]
 ---
 # Nadia Rostova
 
 ## Role
-Nadia Rostova is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Nadia Rostova is the Executive Sponsor at [[BrightWave FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Signal 59]] ([[BrightWave FinTech]])
+- Client stakeholder on [[Project Summit 87]] ([[BrightWave FinTech]])
+- Client stakeholder on [[Project Summit 162]] ([[BrightWave FinTech]])
 - [ ] Confirm next update with [[Nadia Rostova]] #follow-up

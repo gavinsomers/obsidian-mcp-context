@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-10-22T11:31:00
-source_observed_at: 2023-10-22T13:02:00
-created_at: 2023-10-23T21:31:00
-updated_at: 2023-11-14T07:31:00
+company: "[[Summit Analytics]]"
+role: "Finance Lead"
+source_created_at: 2023-12-08T09:33:00
+source_observed_at: 2023-12-08T10:09:00
+created_at: 2023-12-09T09:33:00
+updated_at: 2025-05-25T13:00:00
 tags: [#person]
 ---
 # Grace Vance
 
 ## Role
-Grace Vance is the Senior Data Consultant at [[Evergreen Analytics]].
+Grace Vance is the Finance Lead at [[Summit Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Summit 27]] ([[Summit Analytics]])
+- Client stakeholder on [[Project Pipeline 97]] ([[Summit Analytics]])
+- Client stakeholder on [[Project Atlas 151]] ([[Summit Analytics]])
 - [ ] Confirm next update with [[Grace Vance]] #follow-up

@@ -2,23 +2,26 @@
 type: meeting
 date: 2023-10-17
 project: "[[Project Summit 12]]"
-company: "[[Pioneer Labs]]"
-source_created_at: 2023-10-17T16:19:00
-source_observed_at: 2023-10-17T17:44:00
-created_at: 2023-10-17T19:54:00
-updated_at: 2023-10-18T09:54:00
+company: "[[Atlas Retail]]"
+source_created_at: 2023-10-17T15:35:00
+source_observed_at: 2023-10-17T18:20:00
+created_at: 2023-10-17T18:57:00
+updated_at: 2023-10-18T14:57:00
 tags: [#meeting]
 ---
 # Project Summit 12 Stakeholder Alignment Sync 892
 
-## Attendees
-- [[Farah Ivanov]]
-- [[Alex Haddad]]
-- [[Iris Diaz]]
+## Evergreen Attendees
+- [[Kai Alvarez]]
+
+## Client Attendees
+- [[Xavier Walker]]
+- [[David Jenkins]]
+- [[Hannah Shah]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 12]] at [[Pioneer Labs]].
-[[Kai Alvarez]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Summit 12]] at [[Atlas Retail]].
+[[Kai Alvarez]] aligned with [[Xavier Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 12]] to [[Kai Alvarez]] #follow-up

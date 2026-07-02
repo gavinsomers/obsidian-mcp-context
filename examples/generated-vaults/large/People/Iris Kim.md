@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-07-19T08:42:00
-source_observed_at: 2023-07-19T10:23:00
-created_at: 2023-07-20T06:42:00
-updated_at: 2023-10-02T13:42:00
+company: "[[Harbor Health]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-09-07T08:20:00
+source_observed_at: 2023-09-07T09:33:00
+created_at: 2023-09-09T07:20:00
+updated_at: 2026-03-12T13:00:00
 tags: [#person]
 ---
 # Iris Kim
 
 ## Role
-Iris Kim is the Analytics Engineer at [[Evergreen Analytics]].
+Iris Kim is the Product Analytics Lead at [[Harbor Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Compass 68]] ([[Harbor Health]])
+- Client stakeholder on [[Project Bridge 210]] ([[Harbor Health]])
 - [ ] Confirm next update with [[Iris Kim]] #follow-up

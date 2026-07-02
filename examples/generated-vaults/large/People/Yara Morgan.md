@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-08-11T10:28:00
-source_observed_at: 2023-08-11T10:49:00
-created_at: 2023-08-12T02:28:00
-updated_at: 2023-09-20T12:28:00
+company: "[[Cobalt FinTech]]"
+role: "Executive Sponsor"
+source_created_at: 2023-07-01T10:31:00
+source_observed_at: 2023-07-01T12:29:00
+created_at: 2023-07-03T08:31:00
+updated_at: 2026-04-10T13:00:00
 tags: [#person]
 ---
 # Yara Morgan
 
 ## Role
-Yara Morgan is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Yara Morgan is the Executive Sponsor at [[Cobalt FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 48]] ([[Cobalt FinTech]])
+- Client stakeholder on [[Project Meridian 216]] ([[Cobalt FinTech]])
 - [ ] Confirm next update with [[Yara Morgan]] #follow-up

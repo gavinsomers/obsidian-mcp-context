@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-05-13T11:43:00
-source_observed_at: 2023-05-13T12:45:00
-created_at: 2023-05-14T15:43:00
-updated_at: 2023-08-01T15:43:00
+source_created_at: 2023-05-13T09:14:00
+source_observed_at: 2023-05-13T11:34:00
+created_at: 2023-05-14T12:14:00
+updated_at: 2024-04-13T13:00:00
 tags: [#person]
 ---
 # Omar Chen
@@ -14,5 +14,5 @@ tags: [#person]
 Omar Chen is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Compass 68]] ([[Harbor Health]])
 - [ ] Confirm next update with [[Omar Chen]] #follow-up

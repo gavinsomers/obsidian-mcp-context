@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-10-05
 project: "[[Project Venture 178]]"
-company: "[[Crescent Manufacturing]]"
-source_created_at: 2025-10-05T08:44:00
-source_observed_at: 2025-10-05T09:36:00
-created_at: 2025-10-05T10:01:00
-updated_at: 2025-10-06T03:01:00
+company: "[[Meridian FinTech]]"
+source_created_at: 2025-10-05T15:40:00
+source_observed_at: 2025-10-05T18:18:00
+created_at: 2025-10-09T18:40:00
+updated_at: 2025-10-10T08:40:00
 tags: [#meeting]
 ---
 # Project Venture 178 Lineage Audit Sync 398
 
-## Attendees
-- [[Priya Novak]]
-- [[Tara Jenkins]]
-- [[Clara Shah]]
+## Evergreen Attendees
+- [[Victor Grant]]
+
+## Client Attendees
+- [[Amara Novak]]
+- [[Priya Rostova]]
+- [[Elena Walker]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 178]] at [[Crescent Manufacturing]].
-[[Victor Grant]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 178]] at [[Meridian FinTech]].
+[[Victor Grant]] aligned with [[Amara Novak]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 178]] to [[Victor Grant]] #follow-up

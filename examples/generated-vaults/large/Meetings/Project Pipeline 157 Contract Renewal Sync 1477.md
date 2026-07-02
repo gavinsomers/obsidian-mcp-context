@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2026-01-13
+date: 2025-10-03
 project: "[[Project Pipeline 157]]"
-company: "[[Quantum Retail]]"
-source_created_at: 2026-01-13T14:01:00
-source_observed_at: 2026-01-13T14:54:00
-created_at: 2026-01-13T14:59:00
-updated_at: 2026-01-13T15:59:00
+company: "[[Crescent Retail]]"
+source_created_at: 2025-10-03T09:10:00
+source_observed_at: 2025-10-03T10:31:00
+created_at: 2025-10-03T10:50:00
+updated_at: 2025-10-03T21:50:00
 tags: [#meeting]
 ---
 # Project Pipeline 157 Contract Renewal Sync 1477
 
-## Attendees
-- [[Kai Chen]]
-- [[David Ortega]]
-- [[Rachel Evans]]
+## Evergreen Attendees
+- [[Alex Grant]]
+
+## Client Attendees
+- [[Iris Jenkins]]
+- [[Yara Novak]]
+- [[Marcus Shah]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 157]] at [[Quantum Retail]].
-[[Alex Grant]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 157]] at [[Crescent Retail]].
+[[Alex Grant]] aligned with [[Iris Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 157]] to [[Alex Grant]] #follow-up

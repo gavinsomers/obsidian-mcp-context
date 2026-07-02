@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-03-06
 project: "[[Project Signal 209]]"
-company: "[[Keystone Media]]"
-source_created_at: 2026-03-06T10:40:00
-source_observed_at: 2026-03-06T12:19:00
-created_at: 2026-03-06T12:24:00
-updated_at: 2026-03-07T04:24:00
+company: "[[Quantum Labs]]"
+source_created_at: 2026-03-06T12:53:00
+source_observed_at: 2026-03-06T15:05:00
+created_at: 2026-03-06T15:21:00
+updated_at: 2026-03-06T21:21:00
 tags: [#meeting]
 ---
 # Project Signal 209 Pipeline Hygiene Sync 1309
 
-## Attendees
-- [[Farah Tan]]
-- [[Iris Vance]]
-- [[Farah Haddad]]
+## Evergreen Attendees
+- [[Hannah Alvarez]]
+
+## Client Attendees
+- [[Sam Vance]]
+- [[Zoe Haddad]]
+- [[Nadia Morgan]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 209]] at [[Keystone Media]].
-[[Alex Ivanov]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 209]] at [[Quantum Labs]].
+[[Hannah Alvarez]] aligned with [[Sam Vance]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 209]] to [[Alex Ivanov]] #follow-up
+- [ ] Send recap for [[Project Signal 209]] to [[Hannah Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

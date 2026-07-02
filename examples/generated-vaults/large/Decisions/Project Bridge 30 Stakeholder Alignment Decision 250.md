@@ -3,11 +3,11 @@ type: decision
 date: 2024-05-08
 status: active
 project: "[[Project Bridge 30]]"
-company: "[[Keystone FinTech]]"
-source_created_at: 2024-05-08T11:24:00
-source_observed_at: 2024-05-08T13:29:00
-created_at: 2024-05-08T13:34:00
-updated_at: 2024-05-09T08:34:00
+company: "[[BrightWave Health]]"
+source_created_at: 2024-05-08T08:22:00
+source_observed_at: 2024-05-08T11:12:00
+created_at: 2024-05-15T13:22:00
+updated_at: 2024-05-16T02:22:00
 tags: [#decision]
 ---
 # Project Bridge 30 Stakeholder Alignment Decision 250
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 30]].
 
 ## Context
-This decision applies to [[Keystone FinTech]] and [[Project Bridge 30]].
+This decision applies to [[BrightWave Health]] and [[Project Bridge 30]].
 It follows [[Project Bridge 30 Handoff Readiness Sync 250]].
 It incorporates [[Project Bridge 30 Metric Reconciliation Research 30]].
 

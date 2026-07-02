@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: smb
-source_created_at: 2023-10-06T14:07:00
-source_observed_at: 2023-10-06T15:18:00
-created_at: 2023-10-08T06:07:00
-updated_at: 2023-10-31T14:07:00
+source_created_at: 2023-10-06T14:29:00
+source_observed_at: 2023-10-06T17:03:00
+created_at: 2023-10-08T12:29:00
+updated_at: 2023-11-19T16:29:00
 tags: [#company]
 ---
 # Harbor Media
@@ -14,6 +14,11 @@ tags: [#company]
 Harbor Media is a smb account currently marked `pipeline`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Yara Kim]] - Revenue Operations Lead
+- [[Marcus Patel]] - Data Owner
+- [[Ben Usman]] - Operations Manager
 
 ## Projects
 

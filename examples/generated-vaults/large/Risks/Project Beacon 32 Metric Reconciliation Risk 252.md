@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Beacon 32]]"
-source_created_at: 2024-06-07T15:27:00
-source_observed_at: 2024-06-07T17:24:00
-created_at: 2024-06-08T14:27:00
-updated_at: 2024-06-14T19:27:00
+source_created_at: 2024-06-07T11:20:00
+source_observed_at: 2024-06-07T12:31:00
+created_at: 2024-06-08T15:20:00
+updated_at: 2024-06-12T22:20:00
 tags: [#risk]
 ---
 # Project Beacon 32 Metric Reconciliation Risk 252
 
 ## Risk
-Metric Reconciliation may affect [[Project Beacon 32]] for [[Apex Retail]].
+Metric Reconciliation may affect [[Project Beacon 32]] for [[Northstar Analytics]].
 
 ## Evidence
 - Raised after [[Project Beacon 32 Stakeholder Alignment Sync 252]]
 
 ## Current State
-- Status: `closed`
+- Status: `mitigating`
 - Owner: [[Elena Bennett]]
 - [ ] Reassess [[Project Beacon 32 Metric Reconciliation Risk 252]] during the next review #risk

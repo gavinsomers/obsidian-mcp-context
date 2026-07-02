@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Signal 134]]"
-company: "[[Keystone Labs]]"
-source_created_at: 2026-02-03T09:57:00
-source_observed_at: 2026-02-03T12:34:00
-created_at: 2026-02-03T12:57:00
-updated_at: 2026-02-19T16:57:00
+company: "[[Helio Analytics]]"
+source_created_at: 2026-02-03T12:13:00
+source_observed_at: 2026-02-03T12:32:00
+created_at: 2026-02-10T17:13:00
+updated_at: 2026-03-25T22:13:00
 tags: [#research]
 ---
 # Project Signal 134 Handoff Readiness Research 574
 
 ## Research Summary
-Research on handoff readiness for [[Project Signal 134]] and [[Keystone Labs]].
+Research on handoff readiness for [[Project Signal 134]] and [[Helio Analytics]].
 
 ## Evidence
 - Interview notes from [[Clara Foster]]

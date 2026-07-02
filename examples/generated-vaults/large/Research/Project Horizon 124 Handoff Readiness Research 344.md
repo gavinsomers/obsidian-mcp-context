@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 124]]"
-company: "[[Helio Labs]]"
-source_created_at: 2025-01-26T15:20:00
-source_observed_at: 2025-01-26T17:23:00
-created_at: 2025-01-28T07:20:00
-updated_at: 2025-02-05T08:20:00
+company: "[[Pioneer Manufacturing]]"
+source_created_at: 2025-01-26T13:53:00
+source_observed_at: 2025-01-26T16:04:00
+created_at: 2025-01-27T18:53:00
+updated_at: 2025-02-10T00:53:00
 tags: [#research]
 ---
 # Project Horizon 124 Handoff Readiness Research 344
 
 ## Research Summary
-Research on handoff readiness for [[Project Horizon 124]] and [[Helio Labs]].
+Research on handoff readiness for [[Project Horizon 124]] and [[Pioneer Manufacturing]].
 
 ## Evidence
 - Interview notes from [[Tara Evans]]

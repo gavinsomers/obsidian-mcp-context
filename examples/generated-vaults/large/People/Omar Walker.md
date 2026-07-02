@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-11-02T08:46:00
-source_observed_at: 2023-11-02T09:21:00
-created_at: 2023-11-03T18:46:00
-updated_at: 2024-01-16T23:46:00
+company: "[[Northstar Retail]]"
+role: "Data Owner"
+source_created_at: 2023-11-03T10:45:00
+source_observed_at: 2023-11-03T13:02:00
+created_at: 2023-11-03T17:45:00
+updated_at: 2026-04-24T13:00:00
 tags: [#person]
 ---
 # Omar Walker
 
 ## Role
-Omar Walker is the Solution Architect at [[Evergreen Analytics]].
+Omar Walker is the Data Owner at [[Northstar Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 140]] ([[Northstar Retail]])
+- Client stakeholder on [[Project Meridian 201]] ([[Northstar Retail]])
+- Client stakeholder on [[Project Harbor 219]] ([[Northstar Retail]])
 - [ ] Confirm next update with [[Omar Walker]] #follow-up

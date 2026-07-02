@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-06-30T11:51:00
-source_observed_at: 2023-06-30T14:04:00
-created_at: 2023-07-01T13:51:00
-updated_at: 2023-08-28T22:51:00
+company: "[[Noble Labs]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-05-16T16:13:00
+source_observed_at: 2023-05-16T19:10:00
+created_at: 2023-05-17T15:13:00
+updated_at: 2024-12-05T13:00:00
 tags: [#person]
 ---
 # David Ivanov
 
 ## Role
-David Ivanov is the Data Platform Engineer at [[Evergreen Analytics]].
+David Ivanov is the Revenue Operations Lead at [[Noble Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Orbit 116]] ([[Noble Labs]])
 - [ ] Confirm next update with [[David Ivanov]] #follow-up

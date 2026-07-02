@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-11-08
 project: "[[Project Lantern 185]]"
-company: "[[Meridian Health]]"
-source_created_at: 2025-11-08T16:38:00
-source_observed_at: 2025-11-08T19:12:00
-created_at: 2025-11-08T21:13:00
-updated_at: 2025-11-09T19:13:00
+company: "[[Cobalt Retail]]"
+source_created_at: 2025-11-08T15:18:00
+source_observed_at: 2025-11-08T15:52:00
+created_at: 2025-11-08T17:55:00
+updated_at: 2025-11-09T07:55:00
 tags: [#meeting]
 ---
 # Project Lantern 185 Adoption Workflow Sync 625
 
-## Attendees
-- [[Sam Ivanov]]
-- [[Xavier Lee]]
-- [[Marcus Usman]]
+## Evergreen Attendees
+- [[Ben Haddad]]
+
+## Client Attendees
+- [[Rachel Walker]]
+- [[Marcus Novak]]
+- [[Yara Ivanov]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Lantern 185]] at [[Meridian Health]].
-[[Ben Haddad]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Lantern 185]] at [[Cobalt Retail]].
+[[Ben Haddad]] aligned with [[Rachel Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 185]] to [[Ben Haddad]] #follow-up

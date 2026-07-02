@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Lantern 5]]"
-company: "[[Helio Labs]]"
-source_created_at: 2024-06-06T09:28:00
-source_observed_at: 2024-06-06T12:08:00
-created_at: 2024-06-07T06:28:00
-updated_at: 2024-06-29T13:28:00
+company: "[[Northstar Logistics]]"
+source_created_at: 2024-06-06T14:07:00
+source_observed_at: 2024-06-06T14:38:00
+created_at: 2024-06-07T22:07:00
+updated_at: 2024-07-05T05:07:00
 tags: [#research]
 ---
 # Project Lantern 5 Warehouse Mapping Research 225
 
 ## Research Summary
-Research on warehouse mapping for [[Project Lantern 5]] and [[Helio Labs]].
+Research on warehouse mapping for [[Project Lantern 5]] and [[Northstar Logistics]].
 
 ## Evidence
 - Interview notes from [[David Alvarez]]

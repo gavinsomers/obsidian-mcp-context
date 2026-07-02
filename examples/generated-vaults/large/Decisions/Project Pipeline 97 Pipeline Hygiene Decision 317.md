@@ -3,11 +3,11 @@ type: decision
 date: 2024-09-22
 status: active
 project: "[[Project Pipeline 97]]"
-company: "[[Vanguard Logistics]]"
-source_created_at: 2024-09-22T10:13:00
-source_observed_at: 2024-09-22T13:09:00
-created_at: 2024-09-25T16:13:00
-updated_at: 2024-09-26T05:13:00
+company: "[[Summit Analytics]]"
+source_created_at: 2024-09-22T14:19:00
+source_observed_at: 2024-09-22T14:47:00
+created_at: 2024-09-29T14:19:00
+updated_at: 2024-09-29T22:19:00
 tags: [#decision]
 ---
 # Project Pipeline 97 Pipeline Hygiene Decision 317
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Pipeline 97]].
 
 ## Context
-This decision applies to [[Vanguard Logistics]] and [[Project Pipeline 97]].
-It follows [[Project Pipeline 97 Contract Renewal Sync 1857]].
+This decision applies to [[Summit Analytics]] and [[Project Pipeline 97]].
+It follows [[Project Pipeline 97 Contract Renewal Sync 317]].
 It incorporates [[Project Pipeline 97 Security Review Research 97]].
 
 ## Supersession

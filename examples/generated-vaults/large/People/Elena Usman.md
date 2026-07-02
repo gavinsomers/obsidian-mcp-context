@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-10-13T11:50:00
-source_observed_at: 2023-10-13T12:20:00
-created_at: 2023-10-14T10:50:00
-updated_at: 2023-11-04T18:50:00
+company: "[[Noble Media]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-10-13T14:53:00
+source_observed_at: 2023-10-13T16:35:00
+created_at: 2023-10-14T01:53:00
+updated_at: 2023-12-03T11:53:00
 tags: [#person]
 ---
 # Elena Usman
 
 ## Role
-Elena Usman is the Analytics Engineer at [[Evergreen Analytics]].
+Elena Usman is the Product Analytics Lead at [[Noble Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- First seen through [[Noble Media]] account context
 - [ ] Confirm next update with [[Elena Usman]] #follow-up

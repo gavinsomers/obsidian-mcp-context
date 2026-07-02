@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-06-14T09:13:00
-source_observed_at: 2023-06-14T12:04:00
-created_at: 2023-06-16T06:13:00
-updated_at: 2023-08-23T07:13:00
+source_created_at: 2023-06-14T08:41:00
+source_observed_at: 2023-06-14T10:58:00
+created_at: 2023-06-15T02:41:00
+updated_at: 2025-07-27T13:00:00
 tags: [#person]
 ---
 # Grace Grant
@@ -14,5 +14,5 @@ tags: [#person]
 Grace Grant is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Signal 164]] ([[Atlas Retail]])
 - [ ] Confirm next update with [[Grace Grant]] #follow-up

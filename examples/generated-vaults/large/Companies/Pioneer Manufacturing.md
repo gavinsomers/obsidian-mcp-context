@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: mid-market
-source_created_at: 2023-08-11T12:22:00
-source_observed_at: 2023-08-11T12:54:00
-created_at: 2023-08-11T21:22:00
-updated_at: 2023-09-25T00:22:00
+source_created_at: 2023-08-11T08:25:00
+source_observed_at: 2023-08-11T10:27:00
+created_at: 2023-08-11T23:25:00
+updated_at: 2023-09-02T01:25:00
 tags: [#company]
 ---
 # Pioneer Manufacturing
@@ -14,6 +14,10 @@ tags: [#company]
 Pioneer Manufacturing is a mid-market account currently marked `churn-risk`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Wendy Jenkins]] - Executive Sponsor
+- [[Kai Ortega]] - Customer Success Lead
 
 ## Projects
 

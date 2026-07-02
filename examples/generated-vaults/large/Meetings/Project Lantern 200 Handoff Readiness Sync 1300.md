@@ -2,23 +2,26 @@
 type: meeting
 date: 2026-01-22
 project: "[[Project Lantern 200]]"
-company: "[[Meridian Media]]"
-source_created_at: 2026-01-22T11:44:00
-source_observed_at: 2026-01-22T14:22:00
-created_at: 2026-01-27T16:44:00
-updated_at: 2026-01-27T21:44:00
+company: "[[Keystone Health]]"
+source_created_at: 2026-01-22T08:26:00
+source_observed_at: 2026-01-22T09:03:00
+created_at: 2026-01-22T12:24:00
+updated_at: 2026-01-22T17:24:00
 tags: [#meeting]
 ---
 # Project Lantern 200 Handoff Readiness Sync 1300
 
-## Attendees
-- [[Iris Shah]]
-- [[Clara Morgan]]
-- [[Alex Vance]]
+## Evergreen Attendees
+- [[Rachel Haddad]]
+
+## Client Attendees
+- [[Nadia Kim]]
+- [[Clara Patel]]
+- [[Sam Tan]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 200]] at [[Meridian Media]].
-[[Rachel Haddad]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 200]] at [[Keystone Health]].
+[[Rachel Haddad]] aligned with [[Nadia Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 200]] to [[Rachel Haddad]] #follow-up

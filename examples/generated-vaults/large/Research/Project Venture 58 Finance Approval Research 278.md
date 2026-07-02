@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Venture 58]]"
-company: "[[Noble Manufacturing]]"
-source_created_at: 2024-09-06T14:04:00
-source_observed_at: 2024-09-06T16:49:00
-created_at: 2024-09-06T20:04:00
-updated_at: 2024-10-13T04:04:00
+company: "[[Meridian Health]]"
+source_created_at: 2024-09-06T16:04:00
+source_observed_at: 2024-09-06T17:43:00
+created_at: 2024-09-08T06:04:00
+updated_at: 2024-09-30T13:04:00
 tags: [#research]
 ---
 # Project Venture 58 Finance Approval Research 278
 
 ## Research Summary
-Research on finance approval for [[Project Venture 58]] and [[Noble Manufacturing]].
+Research on finance approval for [[Project Venture 58]] and [[Meridian Health]].
 
 ## Evidence
 - Interview notes from [[Elena Chen]]

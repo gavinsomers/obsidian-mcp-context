@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-10-31T10:13:00
-source_observed_at: 2023-10-31T10:56:00
-created_at: 2023-11-01T15:13:00
-updated_at: 2023-11-29T16:13:00
+company: "[[Quantum FinTech]]"
+role: "Data Owner"
+source_created_at: 2023-10-30T14:21:00
+source_observed_at: 2023-10-30T16:13:00
+created_at: 2023-11-01T11:21:00
+updated_at: 2025-07-04T13:00:00
 tags: [#person]
 ---
 # Grace Walker
 
 ## Role
-Grace Walker is the Solution Architect at [[Evergreen Analytics]].
+Grace Walker is the Data Owner at [[Quantum FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 159]] ([[Quantum FinTech]])
 - [ ] Confirm next update with [[Grace Walker]] #follow-up

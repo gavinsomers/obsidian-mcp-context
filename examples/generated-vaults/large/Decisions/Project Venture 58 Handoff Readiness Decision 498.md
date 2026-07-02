@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-24
 status: active
 project: "[[Project Venture 58]]"
-company: "[[Noble Manufacturing]]"
-source_created_at: 2025-04-24T15:32:00
-source_observed_at: 2025-04-24T16:13:00
-created_at: 2025-05-03T17:32:00
-updated_at: 2025-05-04T06:32:00
+company: "[[Meridian Health]]"
+source_created_at: 2025-04-24T11:25:00
+source_observed_at: 2025-04-24T13:59:00
+created_at: 2025-04-24T17:13:00
+updated_at: 2025-04-24T22:13:00
 tags: [#decision]
 ---
 # Project Venture 58 Handoff Readiness Decision 498
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Venture 58]].
 
 ## Context
-This decision applies to [[Noble Manufacturing]] and [[Project Venture 58]].
+This decision applies to [[Meridian Health]] and [[Project Venture 58]].
 It follows [[Project Venture 58 Lineage Audit Sync 498]].
 It incorporates [[Project Venture 58 Finance Approval Research 278]].
 

@@ -1,26 +1,26 @@
 ---
 type: project
-status: closed
-company: "[[Quantum FinTech]]"
-source_created_at: 2025-04-01T13:56:00
-source_observed_at: 2025-04-01T16:52:00
-created_at: 2025-04-02T03:56:00
-updated_at: 2025-05-24T04:56:00
+status: active
+company: "[[Helio FinTech]]"
+source_created_at: 2025-04-01T12:20:00
+source_observed_at: 2025-04-01T14:57:00
+created_at: 2025-04-04T15:20:00
+updated_at: 2025-06-24T02:20:00
 tags: [#project]
 ---
 # Project Pipeline 142
 
 ## Overview
-Project Pipeline 142 supports [[Quantum FinTech]] through sales pipeline.
+Project Pipeline 142 supports [[Helio FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Omar Shah]]
-- [[Yara Diaz]]
-- [[Jonah Foster]]
-- [[Elena Alvarez]]
+- [[Kai Ivanov]]
+- [[Alex Novak]]
+- [[Omar Rostova]]
+- [[David Walker]]
 
 ## Operating Notes
-- Owner: [[Kai Foster]]
-- Status: `closed`
-- Closed at: `2025-06-25`
+- Evergreen owner: [[Kai Foster]]
+- Client account: [[Helio FinTech]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Pipeline 142]] #ops

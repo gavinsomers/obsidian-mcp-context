@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-07-17T12:45:00
-source_observed_at: 2023-07-17T14:03:00
-created_at: 2023-07-18T15:45:00
-updated_at: 2023-09-04T22:45:00
+company: "[[Cobalt Health]]"
+role: "Security Contact"
+source_created_at: 2023-08-24T13:13:00
+source_observed_at: 2023-08-24T15:08:00
+created_at: 2023-08-25T23:13:00
+updated_at: 2023-09-27T01:13:00
 tags: [#person]
 ---
 # Ben Kim
 
 ## Role
-Ben Kim is the Client Partner at [[Evergreen Analytics]].
+Ben Kim is the Security Contact at [[Cobalt Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- First seen through [[Cobalt Health]] account context
 - [ ] Confirm next update with [[Ben Kim]] #follow-up

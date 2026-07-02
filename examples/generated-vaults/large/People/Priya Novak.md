@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-08-17T14:58:00
-source_observed_at: 2023-08-17T15:45:00
-created_at: 2023-08-19T04:58:00
-updated_at: 2023-09-22T09:58:00
+company: "[[Meridian Retail]]"
+role: "Operations Manager"
+source_created_at: 2023-07-10T12:39:00
+source_observed_at: 2023-07-10T13:28:00
+created_at: 2023-07-17T16:39:00
+updated_at: 2025-02-21T13:00:00
 tags: [#person]
 ---
 # Priya Novak
 
 ## Role
-Priya Novak is the Delivery Lead at [[Evergreen Analytics]].
+Priya Novak is the Operations Manager at [[Meridian Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 18]] ([[Meridian Retail]])
+- Client stakeholder on [[Project Summit 132]] ([[Meridian Retail]])
 - [ ] Confirm next update with [[Priya Novak]] #follow-up

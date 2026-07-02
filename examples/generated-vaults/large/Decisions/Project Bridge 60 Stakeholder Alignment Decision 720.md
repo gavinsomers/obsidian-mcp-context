@@ -3,11 +3,11 @@ type: decision
 date: 2026-03-05
 status: active
 project: "[[Project Bridge 60]]"
-company: "[[Keystone Manufacturing]]"
-source_created_at: 2026-03-05T12:12:00
-source_observed_at: 2026-03-05T15:02:00
-created_at: 2026-03-05T16:49:00
-updated_at: 2026-03-06T05:49:00
+company: "[[Crescent Retail]]"
+source_created_at: 2026-03-05T15:05:00
+source_observed_at: 2026-03-05T16:23:00
+created_at: 2026-03-05T16:56:00
+updated_at: 2026-03-06T02:56:00
 tags: [#decision]
 ---
 # Project Bridge 60 Stakeholder Alignment Decision 720
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 60]].
 
 ## Context
-This decision applies to [[Keystone Manufacturing]] and [[Project Bridge 60]].
+This decision applies to [[Crescent Retail]] and [[Project Bridge 60]].
 It follows [[Project Bridge 60 Handoff Readiness Sync 720]].
 It incorporates [[Project Bridge 60 Metric Reconciliation Research 500]].
 

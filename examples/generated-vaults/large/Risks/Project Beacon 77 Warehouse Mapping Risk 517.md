@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Beacon 77]]"
-source_created_at: 2025-08-04T11:59:00
-source_observed_at: 2025-08-04T13:19:00
-created_at: 2025-08-06T04:59:00
-updated_at: 2025-09-19T10:59:00
+source_created_at: 2025-08-04T08:42:00
+source_observed_at: 2025-08-04T10:45:00
+created_at: 2025-08-04T10:50:00
+updated_at: 2025-08-16T16:50:00
 tags: [#risk]
 ---
 # Project Beacon 77 Warehouse Mapping Risk 517
 
 ## Risk
-Warehouse Mapping may affect [[Project Beacon 77]] for [[Apex Media]].
+Warehouse Mapping may affect [[Project Beacon 77]] for [[Atlas FinTech]].
 
 ## Evidence
 - Raised after [[Project Beacon 77 Contract Renewal Sync 517]]
 
 ## Current State
-- Status: `closed`
+- Status: `mitigating`
 - Owner: [[Yara Chen]]
 - [ ] Reassess [[Project Beacon 77 Warehouse Mapping Risk 517]] during the next review #risk

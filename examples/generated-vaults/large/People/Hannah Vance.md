@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-10-22T13:25:00
-source_observed_at: 2023-10-22T14:12:00
-created_at: 2023-10-23T18:25:00
-updated_at: 2023-12-24T00:25:00
+company: "[[Pioneer Analytics]]"
+role: "Operations Manager"
+source_created_at: 2023-12-10T12:16:00
+source_observed_at: 2023-12-10T13:15:00
+created_at: 2023-12-12T12:16:00
+updated_at: 2024-10-31T13:00:00
 tags: [#person]
 ---
 # Hannah Vance
 
 ## Role
-Hannah Vance is the Delivery Lead at [[Evergreen Analytics]].
+Hannah Vance is the Operations Manager at [[Pioneer Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Atlas 91]] ([[Pioneer Analytics]])
+- Client stakeholder on [[Project Atlas 106]] ([[Pioneer Analytics]])
+- Client stakeholder on [[Project Horizon 109]] ([[Pioneer Analytics]])
 - [ ] Confirm next update with [[Hannah Vance]] #follow-up

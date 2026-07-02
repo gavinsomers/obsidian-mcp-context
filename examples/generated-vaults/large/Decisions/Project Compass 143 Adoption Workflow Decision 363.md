@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-08
 status: active
 project: "[[Project Compass 143]]"
-company: "[[Atlas FinTech]]"
-source_created_at: 2025-05-08T16:42:00
-source_observed_at: 2025-05-08T17:46:00
-created_at: 2025-05-08T22:28:00
-updated_at: 2025-05-09T14:28:00
+company: "[[Harbor Analytics]]"
+source_created_at: 2025-05-08T16:54:00
+source_observed_at: 2025-05-08T18:21:00
+created_at: 2025-05-08T20:16:00
+updated_at: 2025-05-09T15:16:00
 tags: [#decision]
 ---
 # Project Compass 143 Adoption Workflow Decision 363
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Compass 143]].
 
 ## Context
-This decision applies to [[Atlas FinTech]] and [[Project Compass 143]].
-It follows [[Project Compass 143 Security Review Sync 143]].
+This decision applies to [[Harbor Analytics]] and [[Project Compass 143]].
+It follows [[Project Compass 143 Security Review Sync 363]].
 It incorporates [[Project Compass 143 Pipeline Hygiene Research 363]].
 
 ## Supersession

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 68]]"
-company: "[[Quantum Health]]"
-source_created_at: 2024-09-24T10:58:00
-source_observed_at: 2024-09-24T13:45:00
-created_at: 2024-09-25T04:58:00
-updated_at: 2024-10-14T08:58:00
+company: "[[Harbor Health]]"
+source_created_at: 2024-09-24T14:11:00
+source_observed_at: 2024-09-24T16:52:00
+created_at: 2024-09-25T19:11:00
+updated_at: 2024-10-26T01:11:00
 tags: [#research]
 ---
 # Project Compass 68 Finance Approval Research 288
 
 ## Research Summary
-Research on finance approval for [[Project Compass 68]] and [[Quantum Health]].
+Research on finance approval for [[Project Compass 68]] and [[Harbor Health]].
 
 ## Evidence
 - Interview notes from [[Omar Chen]]

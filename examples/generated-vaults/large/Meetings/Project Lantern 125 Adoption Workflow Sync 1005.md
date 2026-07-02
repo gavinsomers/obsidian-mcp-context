@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-01-18
 project: "[[Project Lantern 125]]"
-company: "[[Meridian Labs]]"
-source_created_at: 2025-01-18T15:33:00
-source_observed_at: 2025-01-18T17:42:00
-created_at: 2025-01-18T17:47:00
-updated_at: 2025-01-19T11:47:00
+company: "[[Helio Labs]]"
+source_created_at: 2025-01-18T14:21:00
+source_observed_at: 2025-01-18T14:41:00
+created_at: 2025-01-18T20:07:00
+updated_at: 2025-01-19T11:07:00
 tags: [#meeting]
 ---
 # Project Lantern 125 Adoption Workflow Sync 1005
 
-## Attendees
-- [[Sam Grant]]
-- [[Zoe Ortega]]
-- [[Victor Foster]]
+## Evergreen Attendees
+- [[Uma Evans]]
+
+## Client Attendees
+- [[Wendy Haddad]]
+- [[Kai Morgan]]
+- [[Omar Vance]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Lantern 125]] at [[Meridian Labs]].
-[[Uma Evans]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Lantern 125]] at [[Helio Labs]].
+[[Uma Evans]] aligned with [[Wendy Haddad]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 125]] to [[Uma Evans]] #follow-up

@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-06-03T09:49:00
-source_observed_at: 2023-06-03T11:54:00
-created_at: 2023-06-05T00:49:00
-updated_at: 2023-08-22T02:49:00
+source_created_at: 2023-06-03T16:03:00
+source_observed_at: 2023-06-03T17:52:00
+created_at: 2023-06-04T20:03:00
+updated_at: 2025-02-21T13:00:00
 tags: [#person]
 ---
 # Amara Foster
@@ -14,5 +14,5 @@ tags: [#person]
 Amara Foster is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Summit 132]] ([[Meridian Retail]])
 - [ ] Confirm next update with [[Amara Foster]] #follow-up

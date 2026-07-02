@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Harbor Labs]]"
-source_created_at: 2025-01-28T10:46:00
-source_observed_at: 2025-01-28T12:10:00
-created_at: 2025-01-29T20:46:00
-updated_at: 2025-04-17T07:46:00
+status: active
+company: "[[Crescent Health]]"
+source_created_at: 2025-01-28T10:13:00
+source_observed_at: 2025-01-28T11:33:00
+created_at: 2025-01-29T04:13:00
+updated_at: 2025-04-28T04:13:00
 tags: [#project]
 ---
 # Project Harbor 129
 
 ## Overview
-Project Harbor 129 supports [[Harbor Labs]] through research program.
+Project Harbor 129 supports [[Crescent Health]] through research program.
 
 ## Stakeholders
-- [[Kai Foster]]
-- [[Kai Usman]]
-- [[David Ivanov]]
-- [[Ben Walker]]
+- [[Marcus Kim]]
+- [[Ben Patel]]
+- [[Rachel Tan]]
 
 ## Operating Notes
-- Owner: [[Yara Evans]]
-- Status: `planning`
+- Evergreen owner: [[Yara Evans]]
+- Client account: [[Crescent Health]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Harbor 129]] #ops

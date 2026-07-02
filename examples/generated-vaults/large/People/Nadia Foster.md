@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Principal Analytics Engineer"
-source_created_at: 2023-06-08T08:44:00
-source_observed_at: 2023-06-08T10:09:00
-created_at: 2023-06-09T20:44:00
-updated_at: 2023-06-28T01:44:00
+source_created_at: 2023-06-08T15:54:00
+source_observed_at: 2023-06-08T16:29:00
+created_at: 2023-06-09T07:54:00
+updated_at: 2025-04-26T13:00:00
 tags: [#person]
 ---
 # Nadia Foster
@@ -14,5 +14,5 @@ tags: [#person]
 Nadia Foster is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Keystone 145]] ([[Apex Analytics]])
 - [ ] Confirm next update with [[Nadia Foster]] #follow-up

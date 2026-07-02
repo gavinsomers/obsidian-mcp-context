@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2025-02-10
+date: 2026-03-20
 project: "[[Project Foundry 93]]"
-company: "[[Cobalt Logistics]]"
-source_created_at: 2025-02-10T08:55:00
-source_observed_at: 2025-02-10T10:28:00
-created_at: 2025-02-10T12:13:00
-updated_at: 2025-02-10T17:13:00
+company: "[[BrightWave Analytics]]"
+source_created_at: 2026-03-20T15:43:00
+source_observed_at: 2026-03-20T17:52:00
+created_at: 2026-03-23T20:43:00
+updated_at: 2026-03-24T15:43:00
 tags: [#meeting]
 ---
 # Project Foundry 93 Security Review Sync 753
 
-## Attendees
-- [[Uma Tan]]
-- [[Priya Grant]]
-- [[Rachel Diaz]]
+## Evergreen Attendees
+- [[Nadia Diaz]]
+
+## Client Attendees
+- [[Wendy Lee]]
+- [[Kai Quinn]]
+- [[Alex Vance]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 93]] at [[Cobalt Logistics]].
-[[Nadia Diaz]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 93]] at [[BrightWave Analytics]].
+[[Nadia Diaz]] aligned with [[Wendy Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 93]] to [[Nadia Diaz]] #follow-up

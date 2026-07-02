@@ -3,11 +3,11 @@ type: decision
 date: 2023-07-20
 status: active
 project: "[[Project Harbor 9]]"
-company: "[[Atlas Labs]]"
-source_created_at: 2023-07-20T08:35:00
-source_observed_at: 2023-07-20T09:26:00
-created_at: 2023-07-20T12:12:00
-updated_at: 2023-07-21T04:12:00
+company: "[[Northstar Health]]"
+source_created_at: 2023-07-20T14:22:00
+source_observed_at: 2023-07-20T16:09:00
+created_at: 2023-07-20T19:30:00
+updated_at: 2023-07-20T21:30:00
 tags: [#decision]
 ---
 # Project Harbor 9 Warehouse Mapping Decision 9
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Harbor 9]].
 
 ## Context
-This decision applies to [[Atlas Labs]] and [[Project Harbor 9]].
-It follows [[Project Harbor 9 Pipeline Hygiene Sync 1549]].
+This decision applies to [[Northstar Health]] and [[Project Harbor 9]].
+It follows [[Project Harbor 9 Pipeline Hygiene Sync 9]].
 It incorporates [[Project Harbor 9 Adoption Workflow Research 9]].
 
 ## Supersession

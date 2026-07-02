@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-09-09T15:24:00
-source_observed_at: 2023-09-09T15:50:00
-created_at: 2023-09-11T13:24:00
-updated_at: 2023-12-09T19:24:00
+company: "[[Northstar Analytics]]"
+role: "Executive Sponsor"
+source_created_at: 2023-11-18T13:09:00
+source_observed_at: 2023-11-18T13:40:00
+created_at: 2023-11-19T16:09:00
+updated_at: 2026-03-21T13:00:00
 tags: [#person]
 ---
 # Hannah Quinn
 
 ## Role
-Hannah Quinn is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Hannah Quinn is the Executive Sponsor at [[Northstar Analytics]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Harbor 39]] ([[Atlas Retail]])
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 32]] ([[Northstar Analytics]])
+- Client stakeholder on [[Project Foundry 63]] ([[Northstar Analytics]])
+- Client stakeholder on [[Project Beacon 212]] ([[Northstar Analytics]])
 - [ ] Confirm next update with [[Hannah Quinn]] #follow-up

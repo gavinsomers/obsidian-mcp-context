@@ -1,25 +1,26 @@
 ---
 type: project
-status: planning
-company: "[[Vanguard Retail]]"
-source_created_at: 2025-06-09T15:40:00
-source_observed_at: 2025-06-09T17:38:00
-created_at: 2025-06-11T13:40:00
-updated_at: 2025-08-27T00:40:00
+status: active
+company: "[[BrightWave Retail]]"
+source_created_at: 2025-06-09T09:35:00
+source_observed_at: 2025-06-09T10:00:00
+created_at: 2025-06-13T16:35:00
+updated_at: 2025-08-12T01:35:00
 tags: [#project]
 ---
 # Project Meridian 156
 
 ## Overview
-Project Meridian 156 supports [[Vanguard Retail]] through consulting delivery.
+Project Meridian 156 supports [[BrightWave Retail]] through consulting delivery.
 
 ## Stakeholders
-- [[Xavier Lee]]
-- [[Yara Walker]]
-- [[Nadia Walker]]
-- [[Kai Alvarez]]
+- [[Zoe Ivanov]]
+- [[Nadia Novak]]
+- [[Clara Shah]]
+- [[Sam Walker]]
 
 ## Operating Notes
-- Owner: [[Zoe Foster]]
-- Status: `planning`
+- Evergreen owner: [[Zoe Foster]]
+- Client account: [[BrightWave Retail]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Meridian 156]] #ops

@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-01-14
 project: "[[Project Lantern 50]]"
-company: "[[Helio Manufacturing]]"
-source_created_at: 2024-01-14T08:03:00
-source_observed_at: 2024-01-14T08:37:00
-created_at: 2024-01-14T09:22:00
-updated_at: 2024-01-14T20:22:00
+company: "[[Atlas FinTech]]"
+source_created_at: 2024-01-14T09:50:00
+source_observed_at: 2024-01-14T10:29:00
+created_at: 2024-01-22T16:50:00
+updated_at: 2024-01-22T20:50:00
 tags: [#meeting]
 ---
 # Project Lantern 50 Handoff Readiness Sync 1590
 
-## Attendees
-- [[Lina Jenkins]]
-- [[Iris Haddad]]
-- [[Lina Walker]]
+## Evergreen Attendees
+- [[Xavier Bennett]]
+
+## Client Attendees
+- [[Tara Rostova]]
+- [[Omar Ivanov]]
+- [[Hannah Walker]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 50]] at [[Helio Manufacturing]].
-[[Xavier Bennett]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 50]] at [[Atlas FinTech]].
+[[Xavier Bennett]] aligned with [[Tara Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 50]] to [[Xavier Bennett]] #follow-up

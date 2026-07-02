@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-20
 status: active
 project: "[[Project Horizon 214]]"
-company: "[[Helio Logistics]]"
-source_created_at: 2026-04-20T16:36:00
-source_observed_at: 2026-04-20T19:23:00
-created_at: 2026-04-20T22:22:00
-updated_at: 2026-04-21T07:22:00
+company: "[[Pioneer Labs]]"
+source_created_at: 2026-04-20T12:45:00
+source_observed_at: 2026-04-20T14:10:00
+created_at: 2026-04-20T14:15:00
+updated_at: 2026-04-20T21:15:00
 tags: [#decision]
 ---
 # Project Horizon 214 Metric Reconciliation Decision 654
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Horizon 214]].
 
 ## Context
-This decision applies to [[Helio Logistics]] and [[Project Horizon 214]].
-It follows [[Project Horizon 214 Finance Approval Sync 434]].
+This decision applies to [[Pioneer Labs]] and [[Project Horizon 214]].
+It follows [[Project Horizon 214 Finance Approval Sync 1534]].
 It incorporates [[Project Horizon 214 Handoff Readiness Research 214]].
 
 ## Supersession

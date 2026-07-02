@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-05-18T08:55:00
-source_observed_at: 2023-05-18T11:47:00
-created_at: 2023-05-20T01:55:00
-updated_at: 2023-06-12T08:55:00
+source_created_at: 2023-05-18T16:22:00
+source_observed_at: 2023-05-18T17:25:00
+created_at: 2023-05-19T23:22:00
+updated_at: 2024-06-30T13:00:00
 tags: [#person]
 ---
 # Elena Diaz
@@ -14,5 +14,5 @@ tags: [#person]
 Elena Diaz is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Harbor 84]] ([[Meridian FinTech]])
 - [ ] Confirm next update with [[Elena Diaz]] #follow-up

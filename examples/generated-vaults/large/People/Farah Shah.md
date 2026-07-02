@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-09-26T10:34:00
-source_observed_at: 2023-09-26T12:34:00
-created_at: 2023-09-28T05:34:00
-updated_at: 2023-10-25T12:34:00
+company: "[[Vanguard Retail]]"
+role: "Operations Manager"
+source_created_at: 2023-09-08T14:33:00
+source_observed_at: 2023-09-08T15:36:00
+created_at: 2023-09-10T07:33:00
+updated_at: 2024-06-01T13:00:00
 tags: [#person]
 ---
 # Farah Shah
 
 ## Role
-Farah Shah is the Delivery Lead at [[Evergreen Analytics]].
+Farah Shah is the Operations Manager at [[Vanguard Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Meridian 66]] ([[Vanguard Retail]])
+- Client stakeholder on [[Project Orbit 71]] ([[Vanguard Retail]])
+- Client stakeholder on [[Project Foundry 78]] ([[Vanguard Retail]])
 - [ ] Confirm next update with [[Farah Shah]] #follow-up

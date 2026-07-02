@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-03-12
 project: "[[Project Bridge 210]]"
-company: "[[Northstar Logistics]]"
-source_created_at: 2026-03-12T13:28:00
-source_observed_at: 2026-03-12T16:23:00
-created_at: 2026-03-12T16:28:00
-updated_at: 2026-03-12T20:28:00
+company: "[[Harbor Health]]"
+source_created_at: 2026-03-12T09:19:00
+source_observed_at: 2026-03-12T11:49:00
+created_at: 2026-03-12T13:28:00
+updated_at: 2026-03-12T19:28:00
 tags: [#meeting]
 ---
 # Project Bridge 210 Handoff Readiness Sync 210
 
-## Attendees
-- [[Hannah Bennett]]
-- [[Priya Usman]]
-- [[Yara Chen]]
+## Evergreen Attendees
+- [[Iris Alvarez]]
+
+## Client Attendees
+- [[Iris Kim]]
+- [[Yara Ortega]]
+- [[Marcus Tan]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 210]] at [[Northstar Logistics]].
-[[Amara Ivanov]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 210]] at [[Harbor Health]].
+[[Iris Alvarez]] aligned with [[Iris Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 210]] to [[Amara Ivanov]] #follow-up
+- [ ] Send recap for [[Project Bridge 210]] to [[Iris Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

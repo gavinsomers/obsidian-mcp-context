@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[Meridian Media]]"
-source_created_at: 2024-06-05T16:52:00
-source_observed_at: 2024-06-05T18:11:00
-created_at: 2024-06-07T12:52:00
-updated_at: 2024-09-03T15:52:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2024-06-05T11:54:00
+source_observed_at: 2024-06-05T12:21:00
+created_at: 2024-06-06T19:54:00
+updated_at: 2024-08-06T21:54:00
 tags: [#project]
 ---
 # Project Meridian 81
 
 ## Overview
-Project Meridian 81 supports [[Meridian Media]] through consulting delivery.
+Project Meridian 81 supports [[Vanguard FinTech]] through consulting delivery.
 
 ## Stakeholders
-- [[Elena Grant]]
-- [[Wendy Grant]]
-- [[Farah Ortega]]
-- [[Alex Usman]]
+- [[Marcus Ivanov]]
+- [[Ben Novak]]
+- [[Rachel Rostova]]
+- [[Farah Walker]]
 
 ## Operating Notes
-- Owner: [[Ben Diaz]]
+- Evergreen owner: [[Ben Diaz]]
+- Client account: [[Vanguard FinTech]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Meridian 81]] #ops

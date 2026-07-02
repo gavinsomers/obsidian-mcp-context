@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-07-31T14:41:00
-source_observed_at: 2023-07-31T16:13:00
-created_at: 2023-08-09T15:41:00
-updated_at: 2023-08-28T17:41:00
+company: "[[Keystone Logistics]]"
+role: "Executive Sponsor"
+source_created_at: 2023-11-16T14:36:00
+source_observed_at: 2023-11-16T16:19:00
+created_at: 2023-11-18T11:36:00
+updated_at: 2025-08-31T13:00:00
 tags: [#person]
 ---
 # Sam Lee
 
 ## Role
-Sam Lee is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Sam Lee is the Executive Sponsor at [[Keystone Logistics]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Lantern 20]] ([[Helio FinTech]])
+## Client Project Involvement
+- Client stakeholder on [[Project Compass 98]] ([[Keystone Logistics]])
+- Client stakeholder on [[Project Meridian 171]] ([[Keystone Logistics]])
 - [ ] Confirm next update with [[Sam Lee]] #follow-up

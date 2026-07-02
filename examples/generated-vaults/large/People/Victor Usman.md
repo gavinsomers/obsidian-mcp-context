@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-10-18T10:22:00
-source_observed_at: 2023-10-18T11:44:00
-created_at: 2023-10-18T22:22:00
-updated_at: 2023-11-22T09:22:00
+company: "[[Crescent Logistics]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-11-14T09:38:00
+source_observed_at: 2023-11-14T10:32:00
+created_at: 2023-11-14T20:38:00
+updated_at: 2026-04-19T13:00:00
 tags: [#person]
 ---
 # Victor Usman
 
 ## Role
-Victor Usman is the Analytics Engineer at [[Evergreen Analytics]].
+Victor Usman is the Product Analytics Lead at [[Crescent Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 80]] ([[Crescent Logistics]])
+- Client stakeholder on [[Project Compass 218]] ([[Crescent Logistics]])
 - [ ] Confirm next update with [[Victor Usman]] #follow-up

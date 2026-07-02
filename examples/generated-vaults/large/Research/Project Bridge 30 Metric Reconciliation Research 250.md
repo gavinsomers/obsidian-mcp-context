@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Bridge 30]]"
-company: "[[Keystone FinTech]]"
-source_created_at: 2024-07-19T08:56:00
-source_observed_at: 2024-07-19T09:20:00
-created_at: 2024-07-21T06:56:00
-updated_at: 2024-08-30T15:56:00
+company: "[[BrightWave Health]]"
+source_created_at: 2024-07-19T12:08:00
+source_observed_at: 2024-07-19T13:55:00
+created_at: 2024-07-20T13:08:00
+updated_at: 2024-08-04T20:08:00
 tags: [#research]
 ---
 # Project Bridge 30 Metric Reconciliation Research 250
 
 ## Research Summary
-Research on metric reconciliation for [[Project Bridge 30]] and [[Keystone FinTech]].
+Research on metric reconciliation for [[Project Bridge 30]] and [[BrightWave Health]].
 
 ## Evidence
 - Interview notes from [[Clara Bennett]]

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Orbit 41]]"
-company: "[[Summit Retail]]"
-source_created_at: 2025-08-26T12:29:00
-source_observed_at: 2025-08-26T14:09:00
-created_at: 2025-08-26T18:29:00
-updated_at: 2025-09-04T20:29:00
+company: "[[Vanguard Logistics]]"
+source_created_at: 2025-08-26T08:43:00
+source_observed_at: 2025-08-26T09:17:00
+created_at: 2025-08-28T04:43:00
+updated_at: 2025-09-18T08:43:00
 tags: [#research]
 ---
 # Project Orbit 41 Contract Renewal Research 481
 
 ## Research Summary
-Research on contract renewal for [[Project Orbit 41]] and [[Summit Retail]].
+Research on contract renewal for [[Project Orbit 41]] and [[Vanguard Logistics]].
 
 ## Evidence
 - Interview notes from [[Nadia Bennett]]

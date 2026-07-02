@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Atlas 136]]"
-company: "[[Apex FinTech]]"
-source_created_at: 2026-02-06T16:45:00
-source_observed_at: 2026-02-06T19:00:00
-created_at: 2026-02-08T06:45:00
-updated_at: 2026-03-23T09:45:00
+company: "[[Noble Analytics]]"
+source_created_at: 2026-02-06T16:59:00
+source_observed_at: 2026-02-06T19:19:00
+created_at: 2026-02-07T18:59:00
+updated_at: 2026-03-05T00:59:00
 tags: [#research]
 ---
 # Project Atlas 136 Stakeholder Alignment Research 576
 
 ## Research Summary
-Research on stakeholder alignment for [[Project Atlas 136]] and [[Apex FinTech]].
+Research on stakeholder alignment for [[Project Atlas 136]] and [[Noble Analytics]].
 
 ## Evidence
 - Interview notes from [[Elena Foster]]

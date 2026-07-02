@@ -2,23 +2,26 @@
 type: meeting
 date: 2023-07-08
 project: "[[Project Orbit 11]]"
-company: "[[Summit Labs]]"
-source_created_at: 2023-07-08T11:08:00
-source_observed_at: 2023-07-08T12:59:00
-created_at: 2023-07-10T12:08:00
-updated_at: 2023-07-11T07:08:00
+company: "[[Keystone Health]]"
+source_created_at: 2023-07-08T11:12:00
+source_observed_at: 2023-07-08T14:01:00
+created_at: 2023-07-08T14:06:00
+updated_at: 2023-07-08T16:06:00
 tags: [#meeting]
 ---
 # Project Orbit 11 Warehouse Mapping Sync 1551
 
-## Attendees
-- [[Lina Bennett]]
-- [[Omar Alvarez]]
-- [[Yara Evans]]
+## Evergreen Attendees
+- [[Jonah Alvarez]]
+
+## Client Attendees
+- [[Nadia Kim]]
+- [[Clara Patel]]
+- [[Sam Tan]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 11]] at [[Summit Labs]].
-[[Jonah Alvarez]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 11]] at [[Keystone Health]].
+[[Jonah Alvarez]] aligned with [[Nadia Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Orbit 11]] to [[Jonah Alvarez]] #follow-up

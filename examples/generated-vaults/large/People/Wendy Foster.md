@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Principal Analytics Engineer"
-source_created_at: 2023-06-10T12:08:00
-source_observed_at: 2023-06-10T12:59:00
-created_at: 2023-06-11T06:08:00
-updated_at: 2023-06-25T11:08:00
+source_created_at: 2023-06-10T16:22:00
+source_observed_at: 2023-06-10T18:00:00
+created_at: 2023-06-11T10:22:00
+updated_at: 2025-06-05T13:00:00
 tags: [#person]
 ---
 # Wendy Foster
@@ -14,5 +14,5 @@ tags: [#person]
 Wendy Foster is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Managing/Supporting [[Project Compass 8]] ([[Quantum Labs]])
+- Delivery owner for [[Project Foundry 153]] ([[Apex Manufacturing]])
 - [ ] Confirm next update with [[Wendy Foster]] #follow-up

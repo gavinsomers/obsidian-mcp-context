@@ -3,11 +3,11 @@ type: decision
 date: 2025-11-15
 status: active
 project: "[[Project Beacon 182]]"
-company: "[[Cobalt Health]]"
-source_created_at: 2025-11-15T15:33:00
-source_observed_at: 2025-11-15T18:20:00
-created_at: 2025-11-15T19:25:00
-updated_at: 2025-11-16T02:25:00
+company: "[[Summit Retail]]"
+source_created_at: 2025-11-15T14:10:00
+source_observed_at: 2025-11-15T15:58:00
+created_at: 2025-11-15T19:27:00
+updated_at: 2025-11-15T22:27:00
 tags: [#decision]
 ---
 # Project Beacon 182 Finance Approval Decision 182
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 182]].
 
 ## Context
-This decision applies to [[Cobalt Health]] and [[Project Beacon 182]].
-It follows [[Project Beacon 182 Stakeholder Alignment Sync 1282]].
-It incorporates [[Project Beacon 182 Lineage Audit Research 182]].
+This decision applies to [[Summit Retail]] and [[Project Beacon 182]].
+It follows [[Project Beacon 182 Stakeholder Alignment Sync 1722]].
+It incorporates [[Project Beacon 182 Lineage Audit Research 402]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

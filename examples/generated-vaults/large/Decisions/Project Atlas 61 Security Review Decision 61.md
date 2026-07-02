@@ -3,11 +3,11 @@ type: decision
 date: 2024-03-30
 status: active
 project: "[[Project Atlas 61]]"
-company: "[[Northstar Health]]"
-source_created_at: 2024-03-30T14:40:00
-source_observed_at: 2024-03-30T14:59:00
-created_at: 2024-03-30T18:44:00
-updated_at: 2024-03-31T02:44:00
+company: "[[Atlas Analytics]]"
+source_created_at: 2024-03-30T13:17:00
+source_observed_at: 2024-03-30T14:40:00
+created_at: 2024-03-30T14:45:00
+updated_at: 2024-03-31T07:45:00
 tags: [#decision]
 ---
 # Project Atlas 61 Security Review Decision 61
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with security review for [[Project Atlas 61]].
 
 ## Context
-This decision applies to [[Northstar Health]] and [[Project Atlas 61]].
-It follows [[Project Atlas 61 Warehouse Mapping Sync 61]].
+This decision applies to [[Atlas Analytics]] and [[Project Atlas 61]].
+It follows [[Project Atlas 61 Warehouse Mapping Sync 941]].
 It incorporates [[Project Atlas 61 Contract Renewal Research 61]].
 
 ## Supersession

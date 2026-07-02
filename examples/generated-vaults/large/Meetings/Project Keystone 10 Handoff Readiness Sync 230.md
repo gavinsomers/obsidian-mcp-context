@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2023-11-29
+date: 2024-03-19
 project: "[[Project Keystone 10]]"
-company: "[[Harbor Labs]]"
-source_created_at: 2023-11-29T10:36:00
-source_observed_at: 2023-11-29T12:28:00
-created_at: 2023-11-29T12:40:00
-updated_at: 2023-11-30T01:40:00
+company: "[[Keystone Retail]]"
+source_created_at: 2024-03-19T10:28:00
+source_observed_at: 2024-03-19T12:41:00
+created_at: 2024-03-19T12:46:00
+updated_at: 2024-03-19T19:46:00
 tags: [#meeting]
 ---
 # Project Keystone 10 Handoff Readiness Sync 230
 
-## Attendees
-- [[David Diaz]]
-- [[Wendy Bennett]]
-- [[Priya Foster]]
+## Evergreen Attendees
+- [[Iris Alvarez]]
+
+## Client Attendees
+- [[Jonah Jenkins]]
+- [[Zoe Novak]]
+- [[Nadia Shah]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 10]] at [[Harbor Labs]].
-[[Iris Alvarez]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 10]] at [[Keystone Retail]].
+[[Iris Alvarez]] aligned with [[Jonah Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 10]] to [[Iris Alvarez]] #follow-up

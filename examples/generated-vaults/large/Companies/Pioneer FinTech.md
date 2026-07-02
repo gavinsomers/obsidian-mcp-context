@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: smb
-source_created_at: 2023-06-12T15:37:00
-source_observed_at: 2023-06-12T17:29:00
-created_at: 2023-06-14T13:37:00
-updated_at: 2023-08-20T21:37:00
+source_created_at: 2023-06-12T12:41:00
+source_observed_at: 2023-06-12T13:06:00
+created_at: 2023-06-12T19:41:00
+updated_at: 2023-09-13T09:22:00
 tags: [#company]
 ---
 # Pioneer FinTech
@@ -14,6 +14,11 @@ tags: [#company]
 Pioneer FinTech is a smb account currently marked `active`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Sam Ivanov]] - Operations Manager
+- [[Grace Novak]] - Finance Lead
+- [[Wendy Rostova]] - Executive Sponsor
 
 ## Projects
 

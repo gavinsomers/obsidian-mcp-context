@@ -2,23 +2,26 @@
 type: meeting
 date: 2023-12-31
 project: "[[Project Beacon 47]]"
-company: "[[Apex Manufacturing]]"
-source_created_at: 2023-12-31T15:01:00
-source_observed_at: 2023-12-31T15:29:00
-created_at: 2023-12-31T20:56:00
-updated_at: 2024-01-01T11:56:00
+company: "[[Helio FinTech]]"
+source_created_at: 2023-12-31T08:39:00
+source_observed_at: 2023-12-31T10:12:00
+created_at: 2023-12-31T10:17:00
+updated_at: 2023-12-31T20:17:00
 tags: [#meeting]
 ---
 # Project Beacon 47 Contract Renewal Sync 47
 
-## Attendees
-- [[Lina Chen]]
-- [[Marcus Quinn]]
-- [[Alex Shah]]
+## Evergreen Attendees
+- [[Uma Bennett]]
+
+## Client Attendees
+- [[David Walker]]
+- [[Kai Ivanov]]
+- [[Alex Novak]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Beacon 47]] at [[Apex Manufacturing]].
-[[Uma Bennett]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Beacon 47]] at [[Helio FinTech]].
+[[Uma Bennett]] aligned with [[David Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 47]] to [[Uma Bennett]] #follow-up

@@ -3,11 +3,11 @@ type: decision
 date: 2025-01-19
 status: active
 project: "[[Project Atlas 121]]"
-company: "[[Apex Labs]]"
-source_created_at: 2025-01-19T14:05:00
-source_observed_at: 2025-01-19T14:54:00
-created_at: 2025-01-19T16:07:00
-updated_at: 2025-01-19T23:07:00
+company: "[[Summit Health]]"
+source_created_at: 2025-01-19T14:33:00
+source_observed_at: 2025-01-19T16:12:00
+created_at: 2025-01-19T16:17:00
+updated_at: 2025-01-20T06:17:00
 tags: [#decision]
 ---
 # Project Atlas 121 Security Review Decision 121
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with security review for [[Project Atlas 121]].
 
 ## Context
-This decision applies to [[Apex Labs]] and [[Project Atlas 121]].
-It follows [[Project Atlas 121 Warehouse Mapping Sync 781]].
+This decision applies to [[Summit Health]] and [[Project Atlas 121]].
+It follows [[Project Atlas 121 Warehouse Mapping Sync 1001]].
 It incorporates [[Project Atlas 121 Contract Renewal Research 121]].
 
 ## Supersession

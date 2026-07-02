@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Venture 178]]"
-company: "[[Crescent Manufacturing]]"
-source_created_at: 2026-04-21T09:21:00
-source_observed_at: 2026-04-21T11:43:00
-created_at: 2026-04-21T15:21:00
-updated_at: 2026-05-27T22:21:00
+company: "[[Meridian FinTech]]"
+source_created_at: 2026-04-21T13:20:00
+source_observed_at: 2026-04-21T16:16:00
+created_at: 2026-04-22T04:20:00
+updated_at: 2026-05-30T07:20:00
 tags: [#research]
 ---
 # Project Venture 178 Finance Approval Research 618
 
 ## Research Summary
-Research on finance approval for [[Project Venture 178]] and [[Crescent Manufacturing]].
+Research on finance approval for [[Project Venture 178]] and [[Meridian FinTech]].
 
 ## Evidence
 - Interview notes from [[Victor Grant]]

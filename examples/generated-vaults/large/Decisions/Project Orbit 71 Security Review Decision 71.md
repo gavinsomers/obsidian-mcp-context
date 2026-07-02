@@ -3,11 +3,11 @@ type: decision
 date: 2024-05-18
 status: active
 project: "[[Project Orbit 71]]"
-company: "[[Summit Health]]"
-source_created_at: 2024-05-18T15:03:00
-source_observed_at: 2024-05-18T17:24:00
-created_at: 2024-05-18T17:29:00
-updated_at: 2024-05-18T19:29:00
+company: "[[Vanguard Retail]]"
+source_created_at: 2024-05-18T11:00:00
+source_observed_at: 2024-05-18T13:20:00
+created_at: 2024-05-18T14:32:00
+updated_at: 2024-05-19T00:32:00
 tags: [#decision]
 ---
 # Project Orbit 71 Security Review Decision 71
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with security review for [[Project Orbit 71]].
 
 ## Context
-This decision applies to [[Summit Health]] and [[Project Orbit 71]].
-It follows [[Project Orbit 71 Warehouse Mapping Sync 71]].
+This decision applies to [[Vanguard Retail]] and [[Project Orbit 71]].
+It follows [[Project Orbit 71 Warehouse Mapping Sync 1611]].
 It incorporates [[Project Orbit 71 Contract Renewal Research 71]].
 
 ## Supersession

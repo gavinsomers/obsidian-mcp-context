@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 49]]"
-company: "[[BrightWave Manufacturing]]"
-source_created_at: 2024-01-25T14:54:00
-source_observed_at: 2024-01-25T15:19:00
-created_at: 2024-01-30T17:54:00
-updated_at: 2024-02-21T22:54:00
+company: "[[Meridian Labs]]"
+source_created_at: 2024-01-25T14:08:00
+source_observed_at: 2024-01-25T17:00:00
+created_at: 2024-01-27T04:08:00
+updated_at: 2024-03-05T09:08:00
 tags: [#research]
 ---
 # Project Horizon 49 Adoption Workflow Research 49
 
 ## Research Summary
-Research on adoption workflow for [[Project Horizon 49]] and [[BrightWave Manufacturing]].
+Research on adoption workflow for [[Project Horizon 49]] and [[Meridian Labs]].
 
 ## Evidence
 - Interview notes from [[Wendy Bennett]]

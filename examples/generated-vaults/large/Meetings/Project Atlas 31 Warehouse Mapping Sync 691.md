@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-12-24
 project: "[[Project Atlas 31]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2025-12-24T15:58:00
-source_observed_at: 2025-12-24T17:08:00
-created_at: 2025-12-24T21:21:00
-updated_at: 2025-12-25T06:21:00
+company: "[[Summit Manufacturing]]"
+source_created_at: 2025-12-24T08:04:00
+source_observed_at: 2025-12-24T09:03:00
+created_at: 2025-12-24T12:30:00
+updated_at: 2025-12-24T17:30:00
 tags: [#meeting]
 ---
 # Project Atlas 31 Warehouse Mapping Sync 691
 
-## Attendees
-- [[Rachel Evans]]
-- [[Ben Tan]]
-- [[David Ortega]]
+## Evergreen Attendees
+- [[David Bennett]]
+
+## Client Attendees
+- [[Victor Jenkins]]
+- [[Jonah Ortega]]
+- [[Zoe Shah]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 31]] at [[Northstar Retail]].
-[[David Bennett]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 31]] at [[Summit Manufacturing]].
+[[David Bennett]] aligned with [[Victor Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 31]] to [[David Bennett]] #follow-up

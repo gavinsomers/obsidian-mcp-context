@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Keystone FinTech]]"
-source_created_at: 2025-05-06T08:29:00
-source_observed_at: 2025-05-06T10:05:00
-created_at: 2025-05-07T23:29:00
-updated_at: 2025-08-02T10:29:00
+company: "[[Pioneer Manufacturing]]"
+source_created_at: 2025-05-06T09:00:00
+source_observed_at: 2025-05-06T11:24:00
+created_at: 2025-05-07T16:00:00
+updated_at: 2025-07-23T17:00:00
 tags: [#project]
 ---
 # Project Signal 149
 
 ## Overview
-Project Signal 149 supports [[Keystone FinTech]] through research program.
+Project Signal 149 supports [[Pioneer Manufacturing]] through research program.
 
 ## Stakeholders
-- [[Grace Foster]]
-- [[Wendy Tan]]
-- [[Kai Shah]]
-- [[Tara Kim]]
+- [[Wendy Jenkins]]
+- [[Kai Ortega]]
+- [[Alex Tan]]
 
 ## Operating Notes
-- Owner: [[Sam Foster]]
+- Evergreen owner: [[Sam Foster]]
+- Client account: [[Pioneer Manufacturing]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 149]] #ops

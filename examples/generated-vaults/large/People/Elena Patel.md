@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-08-30T14:46:00
-source_observed_at: 2023-08-30T17:21:00
-created_at: 2023-08-30T17:46:00
-updated_at: 2023-10-05T20:46:00
+company: "[[Apex Media]]"
+role: "Data Owner"
+source_created_at: 2023-09-21T11:41:00
+source_observed_at: 2023-09-21T13:56:00
+created_at: 2023-09-21T18:41:00
+updated_at: 2024-12-09T13:00:00
 tags: [#person]
 ---
 # Elena Patel
 
 ## Role
-Elena Patel is the Solution Architect at [[Evergreen Analytics]].
+Elena Patel is the Data Owner at [[Apex Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 25]] ([[Apex Media]])
+- Client stakeholder on [[Project Summit 117]] ([[Apex Media]])
 - [ ] Confirm next update with [[Elena Patel]] #follow-up

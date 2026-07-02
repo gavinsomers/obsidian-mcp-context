@@ -3,11 +3,11 @@ type: decision
 date: 2024-03-01
 status: active
 project: "[[Project Keystone 55]]"
-company: "[[Harbor Manufacturing]]"
-source_created_at: 2024-03-01T11:38:00
-source_observed_at: 2024-03-01T13:44:00
-created_at: 2024-03-01T16:58:00
-updated_at: 2024-03-02T07:58:00
+company: "[[Quantum Labs]]"
+source_created_at: 2024-03-01T14:37:00
+source_observed_at: 2024-03-01T15:13:00
+created_at: 2024-03-04T16:37:00
+updated_at: 2024-03-04T23:37:00
 tags: [#decision]
 ---
 # Project Keystone 55 Contract Renewal Decision 55
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Keystone 55]].
 
 ## Context
-This decision applies to [[Harbor Manufacturing]] and [[Project Keystone 55]].
-It follows [[Project Keystone 55 Adoption Workflow Sync 55]].
+This decision applies to [[Quantum Labs]] and [[Project Keystone 55]].
+It follows [[Project Keystone 55 Adoption Workflow Sync 935]].
 It incorporates [[Project Keystone 55 Warehouse Mapping Research 55]].
 
 ## Supersession

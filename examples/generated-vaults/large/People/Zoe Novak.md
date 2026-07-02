@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-08-20T15:44:00
-source_observed_at: 2023-08-20T17:17:00
-created_at: 2023-08-21T08:44:00
-updated_at: 2023-10-28T14:44:00
+company: "[[Keystone Retail]]"
+role: "Data Owner"
+source_created_at: 2023-07-19T11:50:00
+source_observed_at: 2023-07-19T12:01:00
+created_at: 2023-07-20T01:50:00
+updated_at: 2023-09-24T09:50:00
 tags: [#person]
 ---
 # Zoe Novak
 
 ## Role
-Zoe Novak is the Solution Architect at [[Evergreen Analytics]].
+Zoe Novak is the Data Owner at [[Keystone Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 10]] ([[Keystone Retail]])
 - [ ] Confirm next update with [[Zoe Novak]] #follow-up

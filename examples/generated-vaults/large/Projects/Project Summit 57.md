@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Pioneer Manufacturing]]"
-source_created_at: 2024-02-08T10:16:00
-source_observed_at: 2024-02-08T11:10:00
-created_at: 2024-02-09T08:16:00
-updated_at: 2024-03-30T11:16:00
+status: blocked
+company: "[[BrightWave Logistics]]"
+source_created_at: 2024-02-08T12:18:00
+source_observed_at: 2024-02-08T14:43:00
+created_at: 2024-02-08T18:18:00
+updated_at: 2024-04-27T21:18:00
 tags: [#project]
 ---
 # Project Summit 57
 
 ## Overview
-Project Summit 57 supports [[Pioneer Manufacturing]] through sales pipeline.
+Project Summit 57 supports [[BrightWave Logistics]] through sales pipeline.
 
 ## Stakeholders
-- [[David Haddad]]
-- [[Hannah Foster]]
-- [[Lina Chen]]
-- [[Alex Shah]]
+- [[Grace Lee]]
+- [[Wendy Patel]]
+- [[Kai Usman]]
 
 ## Operating Notes
-- Owner: [[David Chen]]
-- Status: `active`
+- Evergreen owner: [[David Chen]]
+- Client account: [[BrightWave Logistics]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Summit 57]] #ops

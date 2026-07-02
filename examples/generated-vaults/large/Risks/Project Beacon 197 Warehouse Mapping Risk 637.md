@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Beacon 197]]"
-source_created_at: 2026-02-10T08:22:00
-source_observed_at: 2026-02-10T09:34:00
-created_at: 2026-02-11T11:22:00
-updated_at: 2026-02-16T20:22:00
+source_created_at: 2026-02-10T16:37:00
+source_observed_at: 2026-02-10T18:04:00
+created_at: 2026-02-12T08:37:00
+updated_at: 2026-03-27T14:37:00
 tags: [#risk]
 ---
 # Project Beacon 197 Warehouse Mapping Risk 637
 
 ## Risk
-Warehouse Mapping may affect [[Project Beacon 197]] for [[Cobalt Media]].
+Warehouse Mapping may affect [[Project Beacon 197]] for [[Pioneer Media]].
 
 ## Evidence
-- Raised after [[Project Beacon 197 Contract Renewal Sync 1297]]
+- Raised after [[Project Beacon 197 Contract Renewal Sync 1077]]
 
 ## Current State
-- Status: `closed`
+- Status: `open`
 - Owner: [[Nadia Haddad]]
 - [ ] Reassess [[Project Beacon 197 Warehouse Mapping Risk 637]] during the next review #risk

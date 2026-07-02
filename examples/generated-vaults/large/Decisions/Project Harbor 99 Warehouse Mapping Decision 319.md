@@ -3,11 +3,11 @@ type: decision
 date: 2024-10-03
 status: active
 project: "[[Project Harbor 99]]"
-company: "[[Atlas Logistics]]"
-source_created_at: 2024-10-03T13:54:00
-source_observed_at: 2024-10-03T15:46:00
-created_at: 2024-10-03T15:51:00
-updated_at: 2024-10-03T23:51:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2024-10-03T16:02:00
+source_observed_at: 2024-10-03T17:41:00
+created_at: 2024-10-03T19:35:00
+updated_at: 2024-10-04T03:35:00
 tags: [#decision]
 ---
 # Project Harbor 99 Warehouse Mapping Decision 319
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Harbor 99]].
 
 ## Context
-This decision applies to [[Atlas Logistics]] and [[Project Harbor 99]].
-It follows [[Project Harbor 99 Pipeline Hygiene Sync 1859]].
+This decision applies to [[Harbor FinTech]] and [[Project Harbor 99]].
+It follows [[Project Harbor 99 Pipeline Hygiene Sync 979]].
 It incorporates [[Project Harbor 99 Adoption Workflow Research 99]].
 
 ## Supersession

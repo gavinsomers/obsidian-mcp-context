@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-05-21
 project: "[[Project Meridian 96]]"
-company: "[[Meridian Logistics]]"
-source_created_at: 2025-05-21T13:50:00
-source_observed_at: 2025-05-21T15:55:00
-created_at: 2025-05-21T18:50:00
-updated_at: 2025-05-22T03:50:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2025-05-21T15:32:00
+source_observed_at: 2025-05-21T17:12:00
+created_at: 2025-05-21T20:28:00
+updated_at: 2025-05-22T01:28:00
 tags: [#meeting]
 ---
 # Project Meridian 96 Metric Reconciliation Sync 536
 
-## Attendees
-- [[Grace Ivanov]]
-- [[Elena Bennett]]
-- [[Jonah Quinn]]
+## Evergreen Attendees
+- [[Rachel Diaz]]
+
+## Client Attendees
+- [[Priya Ivanov]]
+- [[Elena Novak]]
+- [[Uma Rostova]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 96]] at [[Meridian Logistics]].
-[[Rachel Diaz]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 96]] at [[Harbor FinTech]].
+[[Rachel Diaz]] aligned with [[Priya Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 96]] to [[Rachel Diaz]] #follow-up

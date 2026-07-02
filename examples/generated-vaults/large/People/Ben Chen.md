@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Client Partner"
-source_created_at: 2023-05-09T15:02:00
-source_observed_at: 2023-05-09T15:56:00
-created_at: 2023-05-10T02:02:00
-updated_at: 2023-07-14T02:02:00
+source_created_at: 2023-05-09T16:43:00
+source_observed_at: 2023-05-09T17:37:00
+created_at: 2023-05-09T22:43:00
+updated_at: 2024-02-09T13:00:00
 tags: [#person]
 ---
 # Ben Chen
@@ -14,5 +14,5 @@ tags: [#person]
 Ben Chen is the Client Partner at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Keystone 55]] ([[Quantum Labs]])
 - [ ] Confirm next update with [[Ben Chen]] #follow-up

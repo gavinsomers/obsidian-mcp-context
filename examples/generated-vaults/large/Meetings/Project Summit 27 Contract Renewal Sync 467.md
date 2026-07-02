@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-02-13
 project: "[[Project Summit 27]]"
-company: "[[Pioneer FinTech]]"
-source_created_at: 2025-02-13T14:53:00
-source_observed_at: 2025-02-13T15:18:00
-created_at: 2025-02-22T16:53:00
-updated_at: 2025-02-23T01:53:00
+company: "[[Summit Analytics]]"
+source_created_at: 2025-02-13T10:43:00
+source_observed_at: 2025-02-13T12:11:00
+created_at: 2025-02-13T15:48:00
+updated_at: 2025-02-14T12:48:00
 tags: [#meeting]
 ---
 # Project Summit 27 Contract Renewal Sync 467
 
-## Attendees
-- [[Alex Novak]]
-- [[David Morgan]]
-- [[Priya Grant]]
+## Evergreen Attendees
+- [[Alex Bennett]]
+
+## Client Attendees
+- [[Clara Morgan]]
+- [[Sam Quinn]]
+- [[Grace Vance]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Summit 27]] at [[Pioneer FinTech]].
-[[Alex Bennett]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Summit 27]] at [[Summit Analytics]].
+[[Alex Bennett]] aligned with [[Clara Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 27]] to [[Alex Bennett]] #follow-up

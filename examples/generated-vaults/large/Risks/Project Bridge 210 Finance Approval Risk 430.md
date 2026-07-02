@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Bridge 210]]"
-source_created_at: 2026-03-20T08:17:00
-source_observed_at: 2026-03-20T08:29:00
-created_at: 2026-03-20T23:17:00
-updated_at: 2026-04-10T05:17:00
+source_created_at: 2026-03-20T16:59:00
+source_observed_at: 2026-03-20T17:26:00
+created_at: 2026-03-21T13:59:00
+updated_at: 2026-03-29T21:59:00
 tags: [#risk]
 ---
 # Project Bridge 210 Finance Approval Risk 430
 
 ## Risk
-Finance Approval may affect [[Project Bridge 210]] for [[Northstar Logistics]].
+Finance Approval may affect [[Project Bridge 210]] for [[Harbor Health]].
 
 ## Evidence
-- Raised after [[Project Bridge 210 Handoff Readiness Sync 650]]
+- Raised after [[Project Bridge 210 Handoff Readiness Sync 430]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Amara Ivanov]]
+- Status: `closed`
+- Owner: [[Iris Alvarez]]
 - [ ] Reassess [[Project Bridge 210 Finance Approval Risk 430]] during the next review #risk

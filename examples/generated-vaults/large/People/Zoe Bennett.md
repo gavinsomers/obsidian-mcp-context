@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-05-08T14:07:00
-source_observed_at: 2023-05-08T16:03:00
-created_at: 2023-05-10T04:07:00
-updated_at: 2023-08-07T13:07:00
+source_created_at: 2023-05-08T16:12:00
+source_observed_at: 2023-05-08T18:02:00
+created_at: 2023-05-08T21:12:00
+updated_at: 2024-01-25T13:00:00
 tags: [#person]
 ---
 # Zoe Bennett
@@ -14,5 +14,5 @@ tags: [#person]
 Zoe Bennett is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Pipeline 52]] ([[Meridian Logistics]])
 - [ ] Confirm next update with [[Zoe Bennett]] #follow-up

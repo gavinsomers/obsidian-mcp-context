@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Harbor 99]]"
-company: "[[Atlas Logistics]]"
-source_created_at: 2025-12-04T15:36:00
-source_observed_at: 2025-12-04T17:07:00
-created_at: 2025-12-04T20:36:00
-updated_at: 2025-12-09T00:36:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2025-12-04T16:49:00
+source_observed_at: 2025-12-04T19:16:00
+created_at: 2025-12-05T04:49:00
+updated_at: 2025-12-15T11:49:00
 tags: [#research]
 ---
 # Project Harbor 99 Adoption Workflow Research 539
 
 ## Research Summary
-Research on adoption workflow for [[Project Harbor 99]] and [[Atlas Logistics]].
+Research on adoption workflow for [[Project Harbor 99]] and [[Harbor FinTech]].
 
 ## Evidence
 - Interview notes from [[Uma Diaz]]

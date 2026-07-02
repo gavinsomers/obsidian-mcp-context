@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2025-07-23
+date: 2025-07-16
 project: "[[Project Meridian 141]]"
-company: "[[Vanguard FinTech]]"
-source_created_at: 2025-07-23T08:34:00
-source_observed_at: 2025-07-23T11:18:00
-created_at: 2025-07-23T11:23:00
-updated_at: 2025-07-23T16:23:00
+company: "[[Vanguard Logistics]]"
+source_created_at: 2025-07-16T10:01:00
+source_observed_at: 2025-07-16T11:34:00
+created_at: 2025-07-16T13:15:00
+updated_at: 2025-07-17T00:15:00
 tags: [#meeting]
 ---
 # Project Meridian 141 Warehouse Mapping Sync 581
 
-## Attendees
-- [[Yara Diaz]]
-- [[David Jenkins]]
-- [[Amara Chen]]
+## Evergreen Attendees
+- [[Jonah Foster]]
+
+## Client Attendees
+- [[Jonah Lee]]
+- [[Zoe Patel]]
+- [[Nadia Usman]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 141]] at [[Vanguard FinTech]].
-[[Jonah Foster]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 141]] at [[Vanguard Logistics]].
+[[Jonah Foster]] aligned with [[Jonah Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 141]] to [[Jonah Foster]] #follow-up

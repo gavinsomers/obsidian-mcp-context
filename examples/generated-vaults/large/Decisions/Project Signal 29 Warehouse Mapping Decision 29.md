@@ -3,11 +3,11 @@ type: decision
 date: 2023-10-26
 status: active
 project: "[[Project Signal 29]]"
-company: "[[Crescent FinTech]]"
-source_created_at: 2023-10-26T11:15:00
-source_observed_at: 2023-10-26T11:27:00
-created_at: 2023-10-26T11:41:00
-updated_at: 2023-10-27T02:41:00
+company: "[[Meridian Analytics]]"
+source_created_at: 2023-10-26T12:25:00
+source_observed_at: 2023-10-26T15:06:00
+created_at: 2023-10-26T16:22:00
+updated_at: 2023-10-27T13:22:00
 tags: [#decision]
 ---
 # Project Signal 29 Warehouse Mapping Decision 29
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Signal 29]].
 
 ## Context
-This decision applies to [[Crescent FinTech]] and [[Project Signal 29]].
-It follows [[Project Signal 29 Pipeline Hygiene Sync 29]].
+This decision applies to [[Meridian Analytics]] and [[Project Signal 29]].
+It follows [[Project Signal 29 Pipeline Hygiene Sync 1569]].
 It incorporates [[Project Signal 29 Adoption Workflow Research 29]].
 
 ## Supersession

@@ -1,18 +1,21 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-10-24T14:05:00
-source_observed_at: 2023-10-24T14:16:00
-created_at: 2023-10-25T09:05:00
-updated_at: 2023-12-31T11:05:00
+company: "[[Cobalt Labs]]"
+role: "Customer Success Lead"
+source_created_at: 2023-10-20T13:03:00
+source_observed_at: 2023-10-20T14:19:00
+created_at: 2023-10-21T07:03:00
+updated_at: 2026-02-05T13:00:00
 tags: [#person]
 ---
 # Marcus Vance
 
 ## Role
-Marcus Vance is the Technical Director at [[Evergreen Analytics]].
+Marcus Vance is the Customer Success Lead at [[Cobalt Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Compass 83]] ([[Cobalt Labs]])
+- Client stakeholder on [[Project Compass 128]] ([[Cobalt Labs]])
+- Client stakeholder on [[Project Horizon 139]] ([[Cobalt Labs]])
+- Client stakeholder on [[Project Compass 203]] ([[Cobalt Labs]])
 - [ ] Confirm next update with [[Marcus Vance]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Harbor 39]]"
-company: "[[Atlas Retail]]"
-source_created_at: 2025-08-21T12:15:00
-source_observed_at: 2025-08-21T13:28:00
-created_at: 2025-08-29T14:15:00
-updated_at: 2025-10-13T01:15:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-08-21T13:25:00
+source_observed_at: 2025-08-21T15:37:00
+created_at: 2025-08-22T17:25:00
+updated_at: 2025-09-22T04:25:00
 tags: [#research]
 ---
 # Project Harbor 39 Adoption Workflow Research 479
 
 ## Research Summary
-Research on adoption workflow for [[Project Harbor 39]] and [[Atlas Retail]].
+Research on adoption workflow for [[Project Harbor 39]] and [[Vanguard Manufacturing]].
 
 ## Evidence
 - Interview notes from [[Lina Bennett]]

@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-10-16
 project: "[[Project Bridge 180]]"
-company: "[[Northstar Health]]"
-source_created_at: 2025-10-16T09:54:00
-source_observed_at: 2025-10-16T10:24:00
-created_at: 2025-10-16T13:51:00
-updated_at: 2025-10-17T04:51:00
+company: "[[Atlas Analytics]]"
+source_created_at: 2025-10-16T13:47:00
+source_observed_at: 2025-10-16T15:18:00
+created_at: 2025-10-16T15:44:00
+updated_at: 2025-10-16T18:44:00
 tags: [#meeting]
 ---
 # Project Bridge 180 Handoff Readiness Sync 840
 
-## Attendees
-- [[Lina Jenkins]]
-- [[Clara Ivanov]]
-- [[Priya Chen]]
+## Evergreen Attendees
+- [[Xavier Grant]]
+
+## Client Attendees
+- [[Amara Morgan]]
+- [[Priya Quinn]]
+- [[Elena Vance]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 180]] at [[Northstar Health]].
-[[Xavier Grant]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 180]] at [[Atlas Analytics]].
+[[Xavier Grant]] aligned with [[Amara Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Bridge 180]] to [[Xavier Grant]] #follow-up

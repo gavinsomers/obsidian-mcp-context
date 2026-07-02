@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Signal 134]]"
-source_created_at: 2025-03-10T15:25:00
-source_observed_at: 2025-03-10T16:07:00
-created_at: 2025-03-12T03:25:00
-updated_at: 2025-03-28T09:25:00
+source_created_at: 2025-03-10T08:47:00
+source_observed_at: 2025-03-10T10:38:00
+created_at: 2025-03-11T06:47:00
+updated_at: 2025-03-30T06:47:00
 tags: [#risk]
 ---
 # Project Signal 134 Lineage Audit Risk 354
 
 ## Risk
-Lineage Audit may affect [[Project Signal 134]] for [[Keystone Labs]].
+Lineage Audit may affect [[Project Signal 134]] for [[Helio Analytics]].
 
 ## Evidence
-- Raised after [[Project Signal 134 Finance Approval Sync 1674]]
+- Raised after [[Project Signal 134 Finance Approval Sync 1234]]
 
 ## Current State
-- Status: `closed`
+- Status: `open`
 - Owner: [[Clara Foster]]
 - [ ] Reassess [[Project Signal 134 Lineage Audit Risk 354]] during the next review #risk

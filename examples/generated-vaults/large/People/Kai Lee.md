@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-07-29T11:01:00
-source_observed_at: 2023-07-29T12:47:00
-created_at: 2023-07-29T21:01:00
-updated_at: 2023-09-13T21:01:00
+company: "[[Quantum Logistics]]"
+role: "Finance Lead"
+source_created_at: 2023-11-02T09:30:00
+source_observed_at: 2023-11-02T12:28:00
+created_at: 2023-11-04T01:30:00
+updated_at: 2026-02-09T13:00:00
 tags: [#person]
 ---
 # Kai Lee
 
 ## Role
-Kai Lee is the Senior Data Consultant at [[Evergreen Analytics]].
+Kai Lee is the Finance Lead at [[Quantum Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Pipeline 37]] ([[Quantum Logistics]])
+- Client stakeholder on [[Project Harbor 204]] ([[Quantum Logistics]])
 - [ ] Confirm next update with [[Kai Lee]] #follow-up

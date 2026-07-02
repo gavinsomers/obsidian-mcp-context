@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-10-24T09:09:00
-source_observed_at: 2023-10-24T10:12:00
-created_at: 2023-10-25T20:09:00
-updated_at: 2023-12-20T21:09:00
+company: "[[Apex Labs]]"
+role: "Security Contact"
+source_created_at: 2023-10-20T10:49:00
+source_observed_at: 2023-10-20T11:17:00
+created_at: 2023-10-20T15:49:00
+updated_at: 2023-12-21T21:49:00
 tags: [#person]
 ---
 # Lina Vance
 
 ## Role
-Lina Vance is the Client Partner at [[Evergreen Analytics]].
+Lina Vance is the Security Contact at [[Apex Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- First seen through [[Apex Labs]] account context
 - [ ] Confirm next update with [[Lina Vance]] #follow-up

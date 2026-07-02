@@ -3,11 +3,11 @@ type: decision
 date: 2024-11-07
 status: active
 project: "[[Project Atlas 106]]"
-company: "[[Northstar Analytics]]"
-source_created_at: 2024-11-07T12:07:00
-source_observed_at: 2024-11-07T13:37:00
-created_at: 2024-11-07T14:10:00
-updated_at: 2024-11-07T21:10:00
+company: "[[Pioneer Analytics]]"
+source_created_at: 2024-11-07T08:00:00
+source_observed_at: 2024-11-07T09:49:00
+created_at: 2024-11-07T10:48:00
+updated_at: 2024-11-07T21:48:00
 tags: [#decision]
 ---
 # Project Atlas 106 Lineage Audit Decision 106
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 106]].
 
 ## Context
-This decision applies to [[Northstar Analytics]] and [[Project Atlas 106]].
-It follows [[Project Atlas 106 Metric Reconciliation Sync 1866]].
+This decision applies to [[Pioneer Analytics]] and [[Project Atlas 106]].
+It follows [[Project Atlas 106 Metric Reconciliation Sync 106]].
 It incorporates [[Project Atlas 106 Stakeholder Alignment Research 106]].
 
 ## Supersession

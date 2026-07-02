@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-08-16T11:36:00
-source_observed_at: 2023-08-16T12:25:00
-created_at: 2023-08-17T08:36:00
-updated_at: 2023-10-12T15:36:00
+company: "[[Cobalt Retail]]"
+role: "Customer Success Lead"
+source_created_at: 2023-07-08T10:54:00
+source_observed_at: 2023-07-08T11:09:00
+created_at: 2023-07-09T03:54:00
+updated_at: 2025-11-08T13:00:00
 tags: [#person]
 ---
 # Marcus Novak
 
 ## Role
-Marcus Novak is the Technical Director at [[Evergreen Analytics]].
+Marcus Novak is the Customer Success Lead at [[Cobalt Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 185]] ([[Cobalt Retail]])
 - [ ] Confirm next update with [[Marcus Novak]] #follow-up

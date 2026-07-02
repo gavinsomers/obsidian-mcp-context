@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2024-06-24
+date: 2024-07-16
 project: "[[Project Foundry 63]]"
-company: "[[Cobalt Health]]"
-source_created_at: 2024-06-24T09:33:00
-source_observed_at: 2024-06-24T10:44:00
-created_at: 2024-06-24T13:46:00
-updated_at: 2024-06-24T14:46:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2024-07-16T16:17:00
+source_observed_at: 2024-07-16T16:59:00
+created_at: 2024-07-16T20:03:00
+updated_at: 2024-07-17T03:03:00
 tags: [#meeting]
 ---
 # Project Foundry 63 Security Review Sync 1163
 
-## Attendees
-- [[Iris Haddad]]
-- [[Lina Ortega]]
-- [[Nadia Tan]]
+## Evergreen Attendees
+- [[Jonah Chen]]
+
+## Client Attendees
+- [[Tara Lee]]
+- [[Hannah Quinn]]
+- [[Xavier Usman]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 63]] at [[Cobalt Health]].
-[[Jonah Chen]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 63]] at [[Northstar Analytics]].
+[[Jonah Chen]] aligned with [[Tara Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 63]] to [[Jonah Chen]] #follow-up

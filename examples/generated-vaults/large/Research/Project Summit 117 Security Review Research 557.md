@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Summit 117]]"
-company: "[[Pioneer Analytics]]"
-source_created_at: 2026-01-05T09:16:00
-source_observed_at: 2026-01-05T11:38:00
-created_at: 2026-01-06T12:16:00
-updated_at: 2026-01-31T12:16:00
+company: "[[Apex Media]]"
+source_created_at: 2026-01-05T12:21:00
+source_observed_at: 2026-01-05T13:10:00
+created_at: 2026-01-10T13:21:00
+updated_at: 2026-02-22T00:21:00
 tags: [#research]
 ---
 # Project Summit 117 Security Review Research 557
 
 ## Research Summary
-Research on security review for [[Project Summit 117]] and [[Pioneer Analytics]].
+Research on security review for [[Project Summit 117]] and [[Apex Media]].
 
 ## Evidence
 - Interview notes from [[Lina Evans]]

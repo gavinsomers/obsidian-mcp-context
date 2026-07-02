@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Technical Director"
-source_created_at: 2023-05-22T10:58:00
-source_observed_at: 2023-05-22T12:51:00
-created_at: 2023-05-26T12:58:00
-updated_at: 2023-07-06T23:58:00
+source_created_at: 2023-05-22T09:17:00
+source_observed_at: 2023-05-22T11:05:00
+created_at: 2023-05-22T23:17:00
+updated_at: 2024-08-29T13:00:00
 tags: [#person]
 ---
 # Rachel Diaz
@@ -14,5 +14,5 @@ tags: [#person]
 Rachel Diaz is the Technical Director at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Meridian 96]] ([[Harbor FinTech]])
 - [ ] Confirm next update with [[Rachel Diaz]] #follow-up

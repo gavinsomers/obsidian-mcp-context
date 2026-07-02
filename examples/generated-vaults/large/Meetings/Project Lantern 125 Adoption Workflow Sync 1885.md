@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-01-18
 project: "[[Project Lantern 125]]"
-company: "[[Meridian Labs]]"
-source_created_at: 2025-01-18T08:45:00
-source_observed_at: 2025-01-18T10:31:00
-created_at: 2025-01-18T12:02:00
-updated_at: 2025-01-18T19:02:00
+company: "[[Helio Labs]]"
+source_created_at: 2025-01-18T13:27:00
+source_observed_at: 2025-01-18T14:46:00
+created_at: 2025-01-20T19:27:00
+updated_at: 2025-01-21T14:27:00
 tags: [#meeting]
 ---
 # Project Lantern 125 Adoption Workflow Sync 1885
 
-## Attendees
-- [[Sam Grant]]
-- [[Zoe Ortega]]
-- [[Priya Usman]]
+## Evergreen Attendees
+- [[Uma Evans]]
+
+## Client Attendees
+- [[Kai Morgan]]
+- [[Alex Rostova]]
+- [[Omar Vance]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Lantern 125]] at [[Meridian Labs]].
-[[Uma Evans]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Lantern 125]] at [[Helio Labs]].
+[[Uma Evans]] aligned with [[Kai Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 125]] to [[Uma Evans]] #follow-up

@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-05-31
 project: "[[Project Pipeline 67]]"
-company: "[[Vanguard Health]]"
-source_created_at: 2024-05-31T08:55:00
-source_observed_at: 2024-05-31T10:17:00
-created_at: 2024-05-31T13:53:00
-updated_at: 2024-05-31T16:53:00
+company: "[[Helio Manufacturing]]"
+source_created_at: 2024-05-31T10:40:00
+source_observed_at: 2024-05-31T11:51:00
+created_at: 2024-05-31T11:56:00
+updated_at: 2024-06-01T09:56:00
 tags: [#meeting]
 ---
 # Project Pipeline 67 Contract Renewal Sync 1827
 
-## Attendees
-- [[Nadia Grant]]
-- [[Victor Novak]]
-- [[Uma Quinn]]
+## Evergreen Attendees
+- [[Nadia Chen]]
+
+## Client Attendees
+- [[Omar Jenkins]]
+- [[David Ortega]]
+- [[Tara Shah]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 67]] at [[Vanguard Health]].
-[[Nadia Chen]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 67]] at [[Helio Manufacturing]].
+[[Nadia Chen]] aligned with [[Omar Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 67]] to [[Nadia Chen]] #follow-up

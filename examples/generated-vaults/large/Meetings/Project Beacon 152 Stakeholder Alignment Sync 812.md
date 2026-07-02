@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-05-30
 project: "[[Project Beacon 152]]"
-company: "[[Cobalt Retail]]"
-source_created_at: 2025-05-30T09:33:00
-source_observed_at: 2025-05-30T10:51:00
-created_at: 2025-05-30T10:56:00
-updated_at: 2025-05-30T20:56:00
+company: "[[Atlas Logistics]]"
+source_created_at: 2025-05-30T08:20:00
+source_observed_at: 2025-05-30T10:19:00
+created_at: 2025-05-30T11:16:00
+updated_at: 2025-05-31T05:16:00
 tags: [#meeting]
 ---
 # Project Beacon 152 Stakeholder Alignment Sync 812
 
-## Attendees
-- [[Xavier Grant]]
-- [[Victor Quinn]]
-- [[Omar Haddad]]
+## Evergreen Attendees
+- [[Victor Foster]]
+
+## Client Attendees
+- [[Lina Lee]]
+- [[Amara Quinn]]
+- [[Priya Usman]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 152]] at [[Cobalt Retail]].
-[[Victor Foster]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 152]] at [[Atlas Logistics]].
+[[Victor Foster]] aligned with [[Lina Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 152]] to [[Victor Foster]] #follow-up

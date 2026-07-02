@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-10-19
 project: "[[Project Atlas 181]]"
-company: "[[Apex Health]]"
-source_created_at: 2025-10-19T09:40:00
-source_observed_at: 2025-10-19T10:39:00
-created_at: 2025-10-19T13:24:00
-updated_at: 2025-10-19T19:24:00
+company: "[[Summit Manufacturing]]"
+source_created_at: 2025-10-19T16:03:00
+source_observed_at: 2025-10-19T18:27:00
+created_at: 2025-10-19T19:35:00
+updated_at: 2025-10-20T18:35:00
 tags: [#meeting]
 ---
 # Project Atlas 181 Warehouse Mapping Sync 1061
 
-## Attendees
-- [[Xavier Bennett]]
-- [[Priya Jenkins]]
-- [[Omar Rostova]]
+## Evergreen Attendees
+- [[Yara Grant]]
+
+## Client Attendees
+- [[Victor Jenkins]]
+- [[Jonah Ortega]]
+- [[Zoe Shah]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 181]] at [[Apex Health]].
-[[Yara Grant]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 181]] at [[Summit Manufacturing]].
+[[Yara Grant]] aligned with [[Victor Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 181]] to [[Yara Grant]] #follow-up

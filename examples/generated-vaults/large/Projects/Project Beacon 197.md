@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Cobalt Media]]"
-source_created_at: 2025-12-26T15:23:00
-source_observed_at: 2025-12-26T16:22:00
-created_at: 2025-12-27T07:23:00
-updated_at: 2026-01-12T11:23:00
+company: "[[Pioneer Media]]"
+source_created_at: 2025-12-26T14:01:00
+source_observed_at: 2025-12-26T14:40:00
+created_at: 2025-12-27T01:01:00
+updated_at: 2026-03-07T08:01:00
 tags: [#project]
 ---
 # Project Beacon 197
 
 ## Overview
-Project Beacon 197 supports [[Cobalt Media]] through sales pipeline.
+Project Beacon 197 supports [[Pioneer Media]] through sales pipeline.
 
 ## Stakeholders
-- [[Ben Novak]]
-- [[Yara Lee]]
-- [[Omar Alvarez]]
-- [[Hannah Ivanov]]
+- [[Alex Lee]]
+- [[Omar Patel]]
+- [[David Usman]]
 
 ## Operating Notes
-- Owner: [[Nadia Haddad]]
+- Evergreen owner: [[Nadia Haddad]]
+- Client account: [[Pioneer Media]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Beacon 197]] #ops

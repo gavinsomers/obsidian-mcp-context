@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: enterprise
-source_created_at: 2023-07-26T10:31:00
-source_observed_at: 2023-07-26T11:54:00
-created_at: 2023-07-27T08:31:00
-updated_at: 2023-10-06T17:31:00
+source_created_at: 2023-07-26T09:59:00
+source_observed_at: 2023-07-26T12:09:00
+created_at: 2023-08-02T11:59:00
+updated_at: 2023-09-02T21:59:00
 tags: [#company]
 ---
 # BrightWave Manufacturing
@@ -14,6 +14,10 @@ tags: [#company]
 BrightWave Manufacturing is a enterprise account currently marked `pipeline`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Nadia Jenkins]] - Executive Sponsor
+- [[Clara Ortega]] - Customer Success Lead
 
 ## Projects
 

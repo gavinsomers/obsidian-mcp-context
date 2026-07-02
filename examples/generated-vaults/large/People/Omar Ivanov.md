@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-07-04T14:05:00
-source_observed_at: 2023-07-04T14:31:00
-created_at: 2023-07-05T15:05:00
-updated_at: 2023-07-30T00:05:00
+company: "[[Atlas FinTech]]"
+role: "Customer Success Lead"
+source_created_at: 2023-06-07T13:18:00
+source_observed_at: 2023-06-07T15:23:00
+created_at: 2023-06-07T23:18:00
+updated_at: 2024-05-26T13:00:00
 tags: [#person]
 ---
 # Omar Ivanov
 
 ## Role
-Omar Ivanov is the Technical Director at [[Evergreen Analytics]].
+Omar Ivanov is the Customer Success Lead at [[Atlas FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 50]] ([[Atlas FinTech]])
+- Client stakeholder on [[Project Beacon 77]] ([[Atlas FinTech]])
 - [ ] Confirm next update with [[Omar Ivanov]] #follow-up

@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2023-10-28
+date: 2025-11-21
 project: "[[Project Compass 8]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2023-10-28T09:31:00
-source_observed_at: 2023-10-28T09:47:00
-created_at: 2023-10-28T12:25:00
-updated_at: 2023-10-29T06:25:00
+company: "[[Northstar Logistics]]"
+source_created_at: 2025-11-21T09:08:00
+source_observed_at: 2025-11-21T11:31:00
+created_at: 2025-11-21T12:34:00
+updated_at: 2025-11-21T23:34:00
 tags: [#meeting]
 ---
 # Project Compass 8 Lineage Audit Sync 668
 
-## Attendees
-- [[Wendy Foster]]
-- [[Amara Grant]]
-- [[Xavier Alvarez]]
+## Evergreen Attendees
+- [[Grace Alvarez]]
+
+## Client Attendees
+- [[David Lee]]
+- [[Tara Patel]]
+- [[Hannah Usman]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 8]] at [[Quantum Labs]].
-[[Grace Alvarez]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 8]] at [[Northstar Logistics]].
+[[Grace Alvarez]] aligned with [[David Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 8]] to [[Grace Alvarez]] #follow-up

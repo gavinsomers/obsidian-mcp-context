@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: enterprise
-source_created_at: 2023-07-28T08:55:00
-source_observed_at: 2023-07-28T10:36:00
-created_at: 2023-07-29T17:55:00
-updated_at: 2023-08-29T20:55:00
+source_created_at: 2023-07-28T14:23:00
+source_observed_at: 2023-07-28T16:10:00
+created_at: 2023-07-29T16:23:00
+updated_at: 2023-09-29T17:23:00
 tags: [#company]
 ---
 # Helio Manufacturing
@@ -14,6 +14,11 @@ tags: [#company]
 Helio Manufacturing is a enterprise account currently marked `churn-risk`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Omar Jenkins]] - Finance Lead
+- [[David Ortega]] - Executive Sponsor
+- [[Tara Shah]] - Customer Success Lead
 
 ## Projects
 

@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-12-25
 project: "[[Project Venture 103]]"
-company: "[[Noble Logistics]]"
-source_created_at: 2024-12-25T16:39:00
-source_observed_at: 2024-12-25T17:52:00
-created_at: 2024-12-25T21:46:00
-updated_at: 2024-12-26T10:46:00
+company: "[[Northstar Labs]]"
+source_created_at: 2024-12-25T09:38:00
+source_observed_at: 2024-12-25T11:03:00
+created_at: 2024-12-25T14:10:00
+updated_at: 2024-12-26T08:10:00
 tags: [#meeting]
 ---
 # Project Venture 103 Security Review Sync 1203
 
-## Attendees
-- [[Nadia Foster]]
-- [[Sam Rostova]]
-- [[Tara Jenkins]]
+## Evergreen Attendees
+- [[Yara Diaz]]
+
+## Client Attendees
+- [[Kai Vance]]
+- [[Sam Haddad]]
+- [[Grace Morgan]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 103]] at [[Noble Logistics]].
-[[Yara Diaz]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 103]] at [[Northstar Labs]].
+[[Yara Diaz]] aligned with [[Kai Vance]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 103]] to [[Yara Diaz]] #follow-up

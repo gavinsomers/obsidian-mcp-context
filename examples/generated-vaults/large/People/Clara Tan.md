@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-10-03T09:00:00
-source_observed_at: 2023-10-03T09:11:00
-created_at: 2023-10-03T16:00:00
-updated_at: 2023-12-31T20:00:00
+company: "[[Keystone Manufacturing]]"
+role: "Finance Lead"
+source_created_at: 2023-09-19T15:42:00
+source_observed_at: 2023-09-19T16:22:00
+created_at: 2023-09-20T03:42:00
+updated_at: 2023-11-08T04:42:00
 tags: [#person]
 ---
 # Clara Tan
 
 ## Role
-Clara Tan is the Senior Data Consultant at [[Evergreen Analytics]].
+Clara Tan is the Finance Lead at [[Keystone Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Bridge 15]] ([[Keystone Manufacturing]])
 - [ ] Confirm next update with [[Clara Tan]] #follow-up

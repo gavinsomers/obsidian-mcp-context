@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Lantern 110]]"
-company: "[[Helio Analytics]]"
-source_created_at: 2024-12-05T13:00:00
-source_observed_at: 2024-12-05T14:31:00
-created_at: 2024-12-07T08:00:00
-updated_at: 2025-01-18T14:00:00
+company: "[[Crescent Manufacturing]]"
+source_created_at: 2024-12-05T13:02:00
+source_observed_at: 2024-12-05T13:45:00
+created_at: 2024-12-07T07:02:00
+updated_at: 2024-12-10T11:02:00
 tags: [#research]
 ---
 # Project Lantern 110 Metric Reconciliation Research 330
 
 ## Research Summary
-Research on metric reconciliation for [[Project Lantern 110]] and [[Helio Analytics]].
+Research on metric reconciliation for [[Project Lantern 110]] and [[Crescent Manufacturing]].
 
 ## Evidence
 - Interview notes from [[Elena Evans]]

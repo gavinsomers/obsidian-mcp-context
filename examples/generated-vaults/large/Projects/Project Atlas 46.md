@@ -1,25 +1,27 @@
 ---
 type: project
-status: active
-company: "[[Northstar Manufacturing]]"
-source_created_at: 2023-12-15T16:24:00
-source_observed_at: 2023-12-15T17:53:00
-created_at: 2023-12-17T14:24:00
-updated_at: 2024-02-16T00:24:00
+status: closed
+company: "[[Vanguard Labs]]"
+source_created_at: 2023-12-15T09:09:00
+source_observed_at: 2023-12-15T10:12:00
+created_at: 2023-12-16T20:09:00
+updated_at: 2024-02-10T21:09:00
 tags: [#project]
 ---
 # Project Atlas 46
 
 ## Overview
-Project Atlas 46 supports [[Northstar Manufacturing]] through consulting delivery.
+Project Atlas 46 supports [[Vanguard Labs]] through consulting delivery.
 
 ## Stakeholders
-- [[Iris Lee]]
-- [[Iris Jenkins]]
-- [[Wendy Lee]]
-- [[Uma Evans]]
+- [[Yara Haddad]]
+- [[Marcus Morgan]]
+- [[Ben Rostova]]
+- [[Rachel Vance]]
 
 ## Operating Notes
-- Owner: [[Tara Bennett]]
-- Status: `active`
+- Evergreen owner: [[Tara Bennett]]
+- Client account: [[Vanguard Labs]]
+- Status: `closed`
+- Closed at: `2024-07-20`
 - [ ] Reconcile latest state for [[Project Atlas 46]] #ops

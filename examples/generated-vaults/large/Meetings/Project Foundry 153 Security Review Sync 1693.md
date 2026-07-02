@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-06-05
 project: "[[Project Foundry 153]]"
-company: "[[BrightWave Retail]]"
-source_created_at: 2025-06-05T08:26:00
-source_observed_at: 2025-06-05T08:43:00
-created_at: 2025-06-05T13:00:00
-updated_at: 2025-06-06T06:00:00
+company: "[[Apex Manufacturing]]"
+source_created_at: 2025-06-05T10:09:00
+source_observed_at: 2025-06-05T10:50:00
+created_at: 2025-06-07T10:09:00
+updated_at: 2025-06-07T16:09:00
 tags: [#meeting]
 ---
 # Project Foundry 153 Security Review Sync 1693
 
-## Attendees
-- [[Grace Haddad]]
-- [[Tara Diaz]]
-- [[Jonah Diaz]]
+## Evergreen Attendees
+- [[Wendy Foster]]
+
+## Client Attendees
+- [[Lina Jenkins]]
+- [[Amara Ortega]]
+- [[Priya Shah]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 153]] at [[BrightWave Retail]].
-[[Wendy Foster]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 153]] at [[Apex Manufacturing]].
+[[Wendy Foster]] aligned with [[Lina Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 153]] to [[Wendy Foster]] #follow-up

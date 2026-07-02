@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-10-02T14:21:00
-source_observed_at: 2023-10-02T16:13:00
-created_at: 2023-10-04T11:21:00
-updated_at: 2023-12-30T19:21:00
+company: "[[Harbor Manufacturing]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-09-17T15:46:00
+source_observed_at: 2023-09-17T18:10:00
+created_at: 2023-09-18T13:46:00
+updated_at: 2023-10-20T14:46:00
 tags: [#person]
 ---
 # Yara Shah
 
 ## Role
-Yara Shah is the Data Platform Engineer at [[Evergreen Analytics]].
+Yara Shah is the Revenue Operations Lead at [[Harbor Manufacturing]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Meridian 36]] ([[Meridian Retail]])
+## Client Project Involvement
+- First seen through [[Harbor Manufacturing]] account context
 - [ ] Confirm next update with [[Yara Shah]] #follow-up

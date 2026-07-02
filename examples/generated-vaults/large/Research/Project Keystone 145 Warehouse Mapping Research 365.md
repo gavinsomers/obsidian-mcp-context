@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Keystone 145]]"
-company: "[[Summit FinTech]]"
-source_created_at: 2025-05-10T14:01:00
-source_observed_at: 2025-05-10T15:17:00
-created_at: 2025-05-12T05:01:00
-updated_at: 2025-06-25T13:01:00
+company: "[[Apex Analytics]]"
+source_created_at: 2025-05-10T10:10:00
+source_observed_at: 2025-05-10T10:45:00
+created_at: 2025-05-11T03:10:00
+updated_at: 2025-06-08T12:10:00
 tags: [#research]
 ---
 # Project Keystone 145 Warehouse Mapping Research 365
 
 ## Research Summary
-Research on warehouse mapping for [[Project Keystone 145]] and [[Summit FinTech]].
+Research on warehouse mapping for [[Project Keystone 145]] and [[Apex Analytics]].
 
 ## Evidence
 - Interview notes from [[Nadia Foster]]

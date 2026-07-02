@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-07-24T08:34:00
-source_observed_at: 2023-07-24T08:49:00
-created_at: 2023-07-24T16:34:00
-updated_at: 2023-09-12T20:34:00
+company: "[[Quantum Media]]"
+role: "Operations Manager"
+source_created_at: 2023-10-03T16:36:00
+source_observed_at: 2023-10-03T17:30:00
+created_at: 2023-10-04T18:36:00
+updated_at: 2026-01-02T13:00:00
 tags: [#person]
 ---
 # Wendy Kim
 
 ## Role
-Wendy Kim is the Delivery Lead at [[Evergreen Analytics]].
+Wendy Kim is the Operations Manager at [[Quantum Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Atlas 196]] ([[Quantum Media]])
 - [ ] Confirm next update with [[Wendy Kim]] #follow-up

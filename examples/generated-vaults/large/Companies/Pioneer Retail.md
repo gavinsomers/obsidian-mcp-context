@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: mid-market
-source_created_at: 2023-07-12T09:51:00
-source_observed_at: 2023-07-12T12:18:00
-created_at: 2023-07-13T07:51:00
-updated_at: 2023-08-21T14:51:00
+source_created_at: 2023-07-12T09:33:00
+source_observed_at: 2023-07-12T11:37:00
+created_at: 2023-07-13T10:33:00
+updated_at: 2023-08-05T19:33:00
 tags: [#company]
 ---
 # Pioneer Retail
@@ -14,6 +14,10 @@ tags: [#company]
 Pioneer Retail is a mid-market account currently marked `active`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Grace Jenkins]] - Finance Lead
+- [[Wendy Novak]] - Executive Sponsor
 
 ## Projects
 

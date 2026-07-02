@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-09-05T16:20:00
-source_observed_at: 2023-09-05T17:39:00
-created_at: 2023-09-07T15:20:00
-updated_at: 2023-10-28T00:20:00
+company: "[[BrightWave Logistics]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-10-25T14:26:00
+source_observed_at: 2023-10-25T15:06:00
+created_at: 2023-10-26T06:26:00
+updated_at: 2024-05-06T13:00:00
 tags: [#person]
 ---
 # Wendy Patel
 
 ## Role
-Wendy Patel is the Data Platform Engineer at [[Evergreen Analytics]].
+Wendy Patel is the Revenue Operations Lead at [[BrightWave Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 33]] ([[BrightWave Logistics]])
+- Client stakeholder on [[Project Summit 57]] ([[BrightWave Logistics]])
+- Client stakeholder on [[Project Venture 73]] ([[BrightWave Logistics]])
 - [ ] Confirm next update with [[Wendy Patel]] #follow-up

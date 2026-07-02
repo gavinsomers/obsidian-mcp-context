@@ -3,11 +3,11 @@ type: decision
 date: 2026-03-02
 status: active
 project: "[[Project Harbor 204]]"
-company: "[[Harbor Media]]"
-source_created_at: 2026-03-02T09:01:00
-source_observed_at: 2026-03-02T09:22:00
-created_at: 2026-03-02T14:35:00
-updated_at: 2026-03-03T00:35:00
+company: "[[Quantum Logistics]]"
+source_created_at: 2026-03-02T12:10:00
+source_observed_at: 2026-03-02T13:00:00
+created_at: 2026-03-02T17:46:00
+updated_at: 2026-03-03T01:46:00
 tags: [#decision]
 ---
 # Project Harbor 204 Metric Reconciliation Decision 204
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Harbor 204]].
 
 ## Context
-This decision applies to [[Harbor Media]] and [[Project Harbor 204]].
+This decision applies to [[Quantum Logistics]] and [[Project Harbor 204]].
 It follows [[Project Harbor 204 Finance Approval Sync 1304]].
 It incorporates [[Project Harbor 204 Handoff Readiness Research 424]].
 

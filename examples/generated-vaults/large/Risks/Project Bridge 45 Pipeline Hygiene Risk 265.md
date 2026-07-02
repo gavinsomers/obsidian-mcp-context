@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Bridge 45]]"
-source_created_at: 2024-06-28T09:56:00
-source_observed_at: 2024-06-28T11:33:00
-created_at: 2024-06-29T20:56:00
-updated_at: 2024-07-10T20:56:00
+source_created_at: 2024-06-28T08:05:00
+source_observed_at: 2024-06-28T08:59:00
+created_at: 2024-06-28T18:05:00
+updated_at: 2024-08-07T05:05:00
 tags: [#risk]
 ---
 # Project Bridge 45 Pipeline Hygiene Risk 265
 
 ## Risk
-Pipeline Hygiene may affect [[Project Bridge 45]] for [[Keystone Retail]].
+Pipeline Hygiene may affect [[Project Bridge 45]] for [[Pioneer Retail]].
 
 ## Evidence
 - Raised after [[Project Bridge 45 Adoption Workflow Sync 265]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `open`
 - Owner: [[Sam Bennett]]
 - [ ] Reassess [[Project Bridge 45 Pipeline Hygiene Risk 265]] during the next review #risk

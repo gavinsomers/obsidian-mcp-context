@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[Keystone Retail]]"
-source_created_at: 2023-12-12T13:52:00
-source_observed_at: 2023-12-12T15:20:00
-created_at: 2023-12-13T13:52:00
-updated_at: 2024-01-26T17:52:00
+company: "[[Pioneer Retail]]"
+source_created_at: 2023-12-12T10:51:00
+source_observed_at: 2023-12-12T12:49:00
+created_at: 2023-12-13T14:51:00
+updated_at: 2024-01-13T23:51:00
 tags: [#project]
 ---
 # Project Bridge 45
 
 ## Overview
-Project Bridge 45 supports [[Keystone Retail]] through operations admin.
+Project Bridge 45 supports [[Pioneer Retail]] through operations admin.
 
 ## Stakeholders
-- [[Xavier Foster]]
-- [[Omar Vance]]
-- [[Uma Usman]]
-- [[Rachel Quinn]]
+- [[Grace Jenkins]]
+- [[Wendy Novak]]
+- [[Kai Shah]]
+- [[Alex Xu]]
 
 ## Operating Notes
-- Owner: [[Sam Bennett]]
+- Evergreen owner: [[Sam Bennett]]
+- Client account: [[Pioneer Retail]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Bridge 45]] #ops

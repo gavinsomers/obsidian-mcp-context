@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Principal Analytics Engineer"
-source_created_at: 2023-05-25T16:31:00
-source_observed_at: 2023-05-25T17:34:00
-created_at: 2023-05-27T00:31:00
-updated_at: 2023-07-22T03:31:00
+source_created_at: 2023-05-25T11:38:00
+source_observed_at: 2023-05-25T12:44:00
+created_at: 2023-06-02T11:38:00
+updated_at: 2024-10-11T13:00:00
 tags: [#person]
 ---
 # Alex Evans
@@ -14,5 +14,5 @@ tags: [#person]
 Alex Evans is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Bridge 105]] ([[Northstar Labs]])
 - [ ] Confirm next update with [[Alex Evans]] #follow-up

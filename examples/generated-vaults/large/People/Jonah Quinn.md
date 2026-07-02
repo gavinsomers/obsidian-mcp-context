@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-09-10T09:47:00
-source_observed_at: 2023-09-10T12:23:00
-created_at: 2023-09-10T18:47:00
-updated_at: 2023-12-09T03:47:00
+company: "[[Cobalt Analytics]]"
+role: "Operations Manager"
+source_created_at: 2023-11-22T11:47:00
+source_observed_at: 2023-11-22T14:14:00
+created_at: 2023-11-23T23:47:00
+updated_at: 2024-02-12T03:47:00
 tags: [#person]
 ---
 # Jonah Quinn
 
 ## Role
-Jonah Quinn is the Delivery Lead at [[Evergreen Analytics]].
+Jonah Quinn is the Operations Manager at [[Cobalt Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 2]] ([[Cobalt Analytics]])
+- Client stakeholder on [[Project Lantern 35]] ([[Cobalt Analytics]])
 - [ ] Confirm next update with [[Jonah Quinn]] #follow-up

@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-09-26T12:06:00
-source_observed_at: 2023-09-26T12:24:00
-created_at: 2023-10-01T19:06:00
-updated_at: 2023-10-18T02:06:00
+company: "[[Quantum Retail]]"
+role: "Data Owner"
+source_created_at: 2023-09-08T16:05:00
+source_observed_at: 2023-09-08T18:18:00
+created_at: 2023-09-10T08:05:00
+updated_at: 2025-11-14T13:00:00
 tags: [#person]
 ---
 # Grace Shah
 
 ## Role
-Grace Shah is the Solution Architect at [[Evergreen Analytics]].
+Grace Shah is the Data Owner at [[Quantum Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 138]] ([[Quantum Retail]])
+- Client stakeholder on [[Project Meridian 186]] ([[Quantum Retail]])
 - [ ] Confirm next update with [[Grace Shah]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 19]]"
-company: "[[BrightWave FinTech]]"
-source_created_at: 2025-07-17T10:22:00
-source_observed_at: 2025-07-17T13:09:00
-created_at: 2025-07-18T19:22:00
-updated_at: 2025-07-29T19:22:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2023-10-28T12:05:00
+source_observed_at: 2023-10-28T12:31:00
+created_at: 2023-10-30T00:05:00
+updated_at: 2023-11-14T09:05:00
 tags: [#research]
 ---
 # Project Horizon 19 Adoption Workflow Research 459
 
 ## Research Summary
-Research on adoption workflow for [[Project Horizon 19]] and [[BrightWave FinTech]].
+Research on adoption workflow for [[Project Horizon 19]] and [[Vanguard FinTech]].
 
 ## Evidence
 - Interview notes from [[Sam Alvarez]]

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-08-31T13:53:00
-source_observed_at: 2023-08-31T15:29:00
-created_at: 2023-09-01T21:53:00
-updated_at: 2023-11-14T21:53:00
+company: "[[Cobalt Media]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-09-23T08:23:00
+source_observed_at: 2023-09-23T10:55:00
+created_at: 2023-09-24T12:23:00
+updated_at: 2024-05-03T13:00:00
 tags: [#person]
 ---
 # Farah Patel
 
 ## Role
-Farah Patel is the Data Platform Engineer at [[Evergreen Analytics]].
+Farah Patel is the Revenue Operations Lead at [[Cobalt Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Summit 72]] ([[Cobalt Media]])
 - [ ] Confirm next update with [[Farah Patel]] #follow-up

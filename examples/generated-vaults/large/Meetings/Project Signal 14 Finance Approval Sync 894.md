@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2023-10-03
+date: 2023-10-19
 project: "[[Project Signal 14]]"
-company: "[[Crescent Labs]]"
-source_created_at: 2023-10-03T09:28:00
-source_observed_at: 2023-10-03T10:10:00
-created_at: 2023-10-03T10:15:00
-updated_at: 2023-10-03T20:15:00
+company: "[[Quantum Manufacturing]]"
+source_created_at: 2023-10-19T14:52:00
+source_observed_at: 2023-10-19T16:42:00
+created_at: 2023-10-19T16:47:00
+updated_at: 2023-10-20T04:47:00
 tags: [#meeting]
 ---
 # Project Signal 14 Finance Approval Sync 894
 
-## Attendees
-- [[David Foster]]
-- [[Clara Foster]]
-- [[Hannah Evans]]
+## Evergreen Attendees
+- [[Marcus Alvarez]]
+
+## Client Attendees
+- [[Sam Jenkins]]
+- [[Grace Ortega]]
+- [[Wendy Shah]]
 
 ## Notes
-Finance Approval reviewed for [[Project Signal 14]] at [[Crescent Labs]].
-[[Marcus Alvarez]] flagged follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Signal 14]] at [[Quantum Manufacturing]].
+[[Marcus Alvarez]] aligned with [[Sam Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 14]] to [[Marcus Alvarez]] #follow-up

@@ -2,23 +2,26 @@
 type: meeting
 date: 2026-04-09
 project: "[[Project Beacon 107]]"
-company: "[[Apex Analytics]]"
-source_created_at: 2026-04-09T11:11:00
-source_observed_at: 2026-04-09T11:49:00
-created_at: 2026-04-11T14:11:00
-updated_at: 2026-04-11T21:11:00
+company: "[[Summit Health]]"
+source_created_at: 2026-04-09T08:13:00
+source_observed_at: 2026-04-09T10:50:00
+created_at: 2026-04-09T10:55:00
+updated_at: 2026-04-10T08:55:00
 tags: [#meeting]
 ---
 # Project Beacon 107 Contract Renewal Sync 767
 
-## Attendees
-- [[Xavier Alvarez]]
-- [[Nadia Diaz]]
-- [[Clara Morgan]]
+## Evergreen Attendees
+- [[Ben Evans]]
+
+## Client Attendees
+- [[Jonah Kim]]
+- [[Zoe Ortega]]
+- [[Nadia Tan]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Beacon 107]] at [[Apex Analytics]].
-[[Ben Evans]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Beacon 107]] at [[Summit Health]].
+[[Ben Evans]] aligned with [[Jonah Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 107]] to [[Ben Evans]] #follow-up

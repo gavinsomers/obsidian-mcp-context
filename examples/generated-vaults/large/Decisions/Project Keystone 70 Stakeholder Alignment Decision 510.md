@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-12
 status: active
 project: "[[Project Keystone 70]]"
-company: "[[Harbor Health]]"
-source_created_at: 2025-05-12T12:12:00
-source_observed_at: 2025-05-12T13:13:00
-created_at: 2025-05-12T15:50:00
-updated_at: 2025-05-13T09:50:00
+company: "[[Apex FinTech]]"
+source_created_at: 2025-05-12T15:49:00
+source_observed_at: 2025-05-12T16:12:00
+created_at: 2025-05-12T21:16:00
+updated_at: 2025-05-13T15:16:00
 tags: [#decision]
 ---
 # Project Keystone 70 Stakeholder Alignment Decision 510
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Keystone 70]].
 
 ## Context
-This decision applies to [[Harbor Health]] and [[Project Keystone 70]].
+This decision applies to [[Apex FinTech]] and [[Project Keystone 70]].
 It follows [[Project Keystone 70 Handoff Readiness Sync 510]].
 It incorporates [[Project Keystone 70 Metric Reconciliation Research 290]].
 

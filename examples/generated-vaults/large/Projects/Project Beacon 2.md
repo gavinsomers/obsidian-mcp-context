@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Apex Labs]]"
-source_created_at: 2023-05-15T08:53:00
-source_observed_at: 2023-05-15T09:20:00
-created_at: 2023-05-15T11:53:00
-updated_at: 2023-06-20T17:53:00
+status: planning
+company: "[[Cobalt Analytics]]"
+source_created_at: 2023-05-15T13:14:00
+source_observed_at: 2023-05-15T14:39:00
+created_at: 2023-05-17T07:14:00
+updated_at: 2023-12-02T15:07:00
 tags: [#project]
 ---
 # Project Beacon 2
 
 ## Overview
-Project Beacon 2 supports [[Apex Labs]] through sales pipeline.
+Project Beacon 2 supports [[Cobalt Analytics]] through sales pipeline.
 
 ## Stakeholders
-- [[Tara Alvarez]]
-- [[Iris Alvarez]]
-- [[Wendy Alvarez]]
-- [[Kai Chen]]
+- [[Victor Lee]]
+- [[Jonah Quinn]]
+- [[Zoe Usman]]
 
 ## Operating Notes
-- Owner: [[Amara Alvarez]]
-- Status: `blocked`
+- Evergreen owner: [[Amara Alvarez]]
+- Client account: [[Cobalt Analytics]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Beacon 2]] #ops

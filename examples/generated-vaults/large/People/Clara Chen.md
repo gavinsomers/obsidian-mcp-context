@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Technical Director"
-source_created_at: 2023-05-09T14:56:00
-source_observed_at: 2023-05-09T16:30:00
-created_at: 2023-05-09T19:56:00
-updated_at: 2023-07-22T23:56:00
+source_created_at: 2023-05-09T09:00:00
+source_observed_at: 2023-05-09T10:17:00
+created_at: 2023-05-09T14:00:00
+updated_at: 2024-02-15T13:00:00
 tags: [#person]
 ---
 # Clara Chen
@@ -14,5 +14,5 @@ tags: [#person]
 Clara Chen is the Technical Director at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Orbit 56]] ([[Northstar Labs]])
 - [ ] Confirm next update with [[Clara Chen]] #follow-up

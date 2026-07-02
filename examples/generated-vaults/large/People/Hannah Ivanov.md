@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-07-02T09:09:00
-source_observed_at: 2023-07-02T11:08:00
-created_at: 2023-07-03T03:09:00
-updated_at: 2023-08-19T11:09:00
+company: "[[Apex FinTech]]"
+role: "Executive Sponsor"
+source_created_at: 2023-05-24T15:08:00
+source_observed_at: 2023-05-24T17:02:00
+created_at: 2023-05-28T18:08:00
+updated_at: 2024-04-22T13:00:00
 tags: [#person]
 ---
 # Hannah Ivanov
 
 ## Role
-Hannah Ivanov is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Hannah Ivanov is the Executive Sponsor at [[Apex FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 70]] ([[Apex FinTech]])
 - [ ] Confirm next update with [[Hannah Ivanov]] #follow-up

@@ -4,10 +4,10 @@ date: 2024-06-07
 status: active
 project: "[[Project Bridge 75]]"
 company: "[[Keystone Health]]"
-source_created_at: 2024-06-07T11:18:00
-source_observed_at: 2024-06-07T13:37:00
-created_at: 2024-06-07T16:16:00
-updated_at: 2024-06-07T23:16:00
+source_created_at: 2024-06-07T15:44:00
+source_observed_at: 2024-06-07T16:10:00
+created_at: 2024-06-07T17:28:00
+updated_at: 2024-06-07T21:28:00
 tags: [#decision]
 ---
 # Project Bridge 75 Contract Renewal Decision 75
@@ -17,7 +17,7 @@ Proceed with contract renewal for [[Project Bridge 75]].
 
 ## Context
 This decision applies to [[Keystone Health]] and [[Project Bridge 75]].
-It follows [[Project Bridge 75 Adoption Workflow Sync 1615]].
+It follows [[Project Bridge 75 Adoption Workflow Sync 75]].
 It incorporates [[Project Bridge 75 Warehouse Mapping Research 75]].
 
 ## Supersession

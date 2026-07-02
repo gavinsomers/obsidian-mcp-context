@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Foundry 168]]"
-source_created_at: 2025-08-25T10:41:00
-source_observed_at: 2025-08-25T12:36:00
-created_at: 2025-08-26T12:41:00
-updated_at: 2025-09-16T21:41:00
+source_created_at: 2025-08-25T15:53:00
+source_observed_at: 2025-08-25T18:20:00
+created_at: 2025-08-31T15:53:00
+updated_at: 2025-09-05T02:53:00
 tags: [#risk]
 ---
 # Project Foundry 168 Stakeholder Alignment Risk 168
 
 ## Risk
-Stakeholder Alignment may affect [[Project Foundry 168]] for [[BrightWave Manufacturing]].
+Stakeholder Alignment may affect [[Project Foundry 168]] for [[Meridian Media]].
 
 ## Evidence
-- Raised after [[Project Foundry 168 Lineage Audit Sync 1048]]
+- Raised after [[Project Foundry 168 Lineage Audit Sync 608]]
 
 ## Current State
 - Status: `open`

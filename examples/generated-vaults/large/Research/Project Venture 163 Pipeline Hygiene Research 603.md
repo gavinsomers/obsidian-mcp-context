@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Venture 163]]"
-company: "[[Crescent Retail]]"
-source_created_at: 2026-03-25T14:27:00
-source_observed_at: 2026-03-25T17:04:00
-created_at: 2026-03-26T00:27:00
-updated_at: 2026-04-03T11:27:00
+company: "[[Vanguard Health]]"
+source_created_at: 2025-11-04T11:59:00
+source_observed_at: 2025-11-04T12:11:00
+created_at: 2025-11-04T16:59:00
+updated_at: 2025-12-13T19:59:00
 tags: [#research]
 ---
 # Project Venture 163 Pipeline Hygiene Research 603
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Venture 163]] and [[Crescent Retail]].
+Research on pipeline hygiene for [[Project Venture 163]] and [[Vanguard Health]].
 
 ## Evidence
 - Interview notes from [[Farah Grant]]

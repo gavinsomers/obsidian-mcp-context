@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Meridian 216]]"
-source_created_at: 2026-04-18T12:30:00
-source_observed_at: 2026-04-18T15:02:00
-created_at: 2026-04-19T19:30:00
-updated_at: 2026-05-11T06:30:00
+source_created_at: 2026-04-18T14:34:00
+source_observed_at: 2026-04-18T17:13:00
+created_at: 2026-04-24T21:34:00
+updated_at: 2026-05-28T06:34:00
 tags: [#risk]
 ---
 # Project Meridian 216 Handoff Readiness Risk 216
 
 ## Risk
-Handoff Readiness may affect [[Project Meridian 216]] for [[Vanguard Logistics]].
+Handoff Readiness may affect [[Project Meridian 216]] for [[Cobalt FinTech]].
 
 ## Evidence
-- Raised after [[Project Meridian 216 Metric Reconciliation Sync 1096]]
+- Raised after [[Project Meridian 216 Metric Reconciliation Sync 216]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Grace Ivanov]]
+- Status: `open`
+- Owner: [[Omar Alvarez]]
 - [ ] Reassess [[Project Meridian 216 Handoff Readiness Risk 216]] during the next review #risk

@@ -2,19 +2,19 @@
 type: risk
 status: closed
 project: "[[Project Venture 118]]"
-source_created_at: 2025-05-10T15:27:00
-source_observed_at: 2025-05-10T16:00:00
-created_at: 2025-05-12T10:27:00
-updated_at: 2025-06-10T18:27:00
+source_created_at: 2025-10-07T12:40:00
+source_observed_at: 2025-10-07T15:13:00
+created_at: 2025-10-09T01:40:00
+updated_at: 2025-10-12T06:40:00
 tags: [#risk]
 ---
 # Project Venture 118 Stakeholder Alignment Risk 558
 
 ## Risk
-Stakeholder Alignment may affect [[Project Venture 118]] for [[Noble Analytics]].
+Stakeholder Alignment may affect [[Project Venture 118]] for [[Meridian Labs]].
 
 ## Evidence
-- Raised after [[Project Venture 118 Lineage Audit Sync 1438]]
+- Raised after [[Project Venture 118 Lineage Audit Sync 558]]
 
 ## Current State
 - Status: `closed`

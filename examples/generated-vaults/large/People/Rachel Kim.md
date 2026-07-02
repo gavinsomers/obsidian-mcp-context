@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-07-22T14:25:00
-source_observed_at: 2023-07-22T15:38:00
-created_at: 2023-07-24T09:25:00
-updated_at: 2023-09-25T15:25:00
+company: "[[Cobalt Media]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-09-23T10:48:00
+source_observed_at: 2023-09-23T13:09:00
+created_at: 2023-09-23T22:48:00
+updated_at: 2024-05-03T13:00:00
 tags: [#person]
 ---
 # Rachel Kim
 
 ## Role
-Rachel Kim is the Analytics Engineer at [[Evergreen Analytics]].
+Rachel Kim is the Product Analytics Lead at [[Cobalt Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Summit 72]] ([[Cobalt Media]])
 - [ ] Confirm next update with [[Rachel Kim]] #follow-up

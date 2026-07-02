@@ -3,11 +3,11 @@ type: decision
 date: 2023-06-24
 status: active
 project: "[[Project Horizon 4]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2023-06-24T11:46:00
-source_observed_at: 2023-06-24T14:08:00
-created_at: 2023-06-24T17:29:00
-updated_at: 2023-06-25T04:29:00
+company: "[[Noble Retail]]"
+source_created_at: 2023-06-24T16:04:00
+source_observed_at: 2023-06-24T18:10:00
+created_at: 2023-06-24T19:23:00
+updated_at: 2023-06-24T22:23:00
 tags: [#decision]
 ---
 # Project Horizon 4 Metric Reconciliation Decision 4
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Horizon 4]].
 
 ## Context
-This decision applies to [[BrightWave Labs]] and [[Project Horizon 4]].
+This decision applies to [[Noble Retail]] and [[Project Horizon 4]].
 It follows [[Project Horizon 4 Finance Approval Sync 4]].
 It incorporates [[Project Horizon 4 Handoff Readiness Research 4]].
 

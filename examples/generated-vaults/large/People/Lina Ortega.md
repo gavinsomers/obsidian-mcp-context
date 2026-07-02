@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-08-24T10:11:00
-source_observed_at: 2023-08-24T10:34:00
-created_at: 2023-08-25T07:11:00
-updated_at: 2023-11-04T11:11:00
+company: "[[Noble Manufacturing]]"
+role: "Executive Sponsor"
+source_created_at: 2023-08-14T11:30:00
+source_observed_at: 2023-08-14T13:19:00
+created_at: 2023-08-15T08:30:00
+updated_at: 2023-10-09T10:30:00
 tags: [#person]
 ---
 # Lina Ortega
 
 ## Role
-Lina Ortega is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Lina Ortega is the Executive Sponsor at [[Noble Manufacturing]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Foundry 33]] ([[Cobalt Retail]])
+## Client Project Involvement
+- First seen through [[Noble Manufacturing]] account context
 - [ ] Confirm next update with [[Lina Ortega]] #follow-up

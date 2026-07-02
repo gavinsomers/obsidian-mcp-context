@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-07-07T16:18:00
-source_observed_at: 2023-07-07T17:55:00
-created_at: 2023-07-09T02:18:00
-updated_at: 2023-08-24T10:18:00
+company: "[[Cobalt Retail]]"
+role: "Executive Sponsor"
+source_created_at: 2023-06-25T15:06:00
+source_observed_at: 2023-06-25T17:53:00
+created_at: 2023-06-27T04:06:00
+updated_at: 2025-11-08T13:00:00
 tags: [#person]
 ---
 # Yara Ivanov
 
 ## Role
-Yara Ivanov is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Yara Ivanov is the Executive Sponsor at [[Cobalt Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 185]] ([[Cobalt Retail]])
 - [ ] Confirm next update with [[Yara Ivanov]] #follow-up

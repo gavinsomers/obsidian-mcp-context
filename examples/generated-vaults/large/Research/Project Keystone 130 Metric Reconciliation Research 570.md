@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Keystone 130]]"
-company: "[[Summit Labs]]"
-source_created_at: 2026-01-27T11:39:00
-source_observed_at: 2026-01-27T14:35:00
-created_at: 2026-01-28T18:39:00
-updated_at: 2026-02-22T03:39:00
+company: "[[Apex Manufacturing]]"
+source_created_at: 2025-04-15T16:56:00
+source_observed_at: 2025-04-15T19:50:00
+created_at: 2025-04-18T22:56:00
+updated_at: 2025-04-23T04:56:00
 tags: [#research]
 ---
 # Project Keystone 130 Metric Reconciliation Research 570
 
 ## Research Summary
-Research on metric reconciliation for [[Project Keystone 130]] and [[Summit Labs]].
+Research on metric reconciliation for [[Project Keystone 130]] and [[Apex Manufacturing]].
 
 ## Evidence
 - Interview notes from [[Zoe Evans]]

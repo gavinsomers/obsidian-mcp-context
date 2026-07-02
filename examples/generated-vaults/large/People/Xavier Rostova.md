@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-09-23T10:20:00
-source_observed_at: 2023-09-23T12:50:00
-created_at: 2023-09-24T11:20:00
-updated_at: 2023-10-09T17:20:00
+company: "[[Noble FinTech]]"
+role: "Finance Lead"
+source_created_at: 2023-09-03T15:31:00
+source_observed_at: 2023-09-03T17:48:00
+created_at: 2023-09-03T17:53:00
+updated_at: 2023-11-19T20:53:00
 tags: [#person]
 ---
 # Xavier Rostova
 
 ## Role
-Xavier Rostova is the Senior Data Consultant at [[Evergreen Analytics]].
+Xavier Rostova is the Finance Lead at [[Noble FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Compass 38]] ([[Noble FinTech]])
 - [ ] Confirm next update with [[Xavier Rostova]] #follow-up

@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-04-13
 project: "[[Project Compass 68]]"
-company: "[[Quantum Health]]"
-source_created_at: 2024-04-13T11:50:00
-source_observed_at: 2024-04-13T13:23:00
-created_at: 2024-04-13T14:22:00
-updated_at: 2024-04-14T08:22:00
+company: "[[Harbor Health]]"
+source_created_at: 2024-04-13T16:32:00
+source_observed_at: 2024-04-13T17:41:00
+created_at: 2024-04-13T20:27:00
+updated_at: 2024-04-14T13:27:00
 tags: [#meeting]
 ---
 # Project Compass 68 Lineage Audit Sync 1608
 
-## Attendees
-- [[Clara Rostova]]
-- [[Victor Kim]]
-- [[Xavier Novak]]
+## Evergreen Attendees
+- [[Omar Chen]]
+
+## Client Attendees
+- [[Iris Kim]]
+- [[Yara Ortega]]
+- [[Marcus Tan]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 68]] at [[Quantum Health]].
-[[Omar Chen]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 68]] at [[Harbor Health]].
+[[Omar Chen]] aligned with [[Iris Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 68]] to [[Omar Chen]] #follow-up

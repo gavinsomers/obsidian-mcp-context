@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Quantum Labs]]"
-source_created_at: 2023-06-13T16:42:00
-source_observed_at: 2023-06-13T18:09:00
-created_at: 2023-06-14T04:42:00
-updated_at: 2023-08-29T10:42:00
+status: blocked
+company: "[[Northstar Logistics]]"
+source_created_at: 2023-06-13T08:44:00
+source_observed_at: 2023-06-13T10:38:00
+created_at: 2023-06-13T18:44:00
+updated_at: 2023-10-29T17:49:00
 tags: [#project]
 ---
 # Project Compass 8
 
 ## Overview
-Project Compass 8 supports [[Quantum Labs]] through customer success.
+Project Compass 8 supports [[Northstar Logistics]] through customer success.
 
 ## Stakeholders
-- [[Tara Alvarez]]
-- [[Xavier Alvarez]]
-- [[Amara Grant]]
-- [[Wendy Foster]]
+- [[David Lee]]
+- [[Tara Patel]]
+- [[Hannah Usman]]
 
 ## Operating Notes
-- Owner: [[Grace Alvarez]]
-- Status: `closed`
-- Closed at: `2023-11-03`
+- Evergreen owner: [[Grace Alvarez]]
+- Client account: [[Northstar Logistics]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Compass 8]] #ops

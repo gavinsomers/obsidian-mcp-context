@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[BrightWave Retail]]"
-source_created_at: 2023-10-18T15:35:00
-source_observed_at: 2023-10-18T17:36:00
-created_at: 2023-10-18T19:35:00
-updated_at: 2023-11-26T21:35:00
+status: active
+company: "[[Helio Analytics]]"
+source_created_at: 2023-10-18T12:07:00
+source_observed_at: 2023-10-18T12:23:00
+created_at: 2023-10-19T21:07:00
+updated_at: 2023-12-06T11:48:00
 tags: [#project]
 ---
 # Project Horizon 34
 
 ## Overview
-Project Horizon 34 supports [[BrightWave Retail]] through research program.
+Project Horizon 34 supports [[Helio Analytics]] through research program.
 
 ## Stakeholders
-- [[Ben Lee]]
-- [[Amara Patel]]
-- [[Uma Tan]]
-- [[Uma Usman]]
+- [[Xavier Lee]]
+- [[Lina Quinn]]
+- [[Amara Vance]]
 
 ## Operating Notes
-- Owner: [[Grace Bennett]]
-- Status: `blocked`
+- Evergreen owner: [[Grace Bennett]]
+- Client account: [[Helio Analytics]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Horizon 34]] #ops

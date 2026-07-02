@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Keystone 70]]"
-company: "[[Harbor Health]]"
-source_created_at: 2025-10-15T16:42:00
-source_observed_at: 2025-10-15T17:59:00
-created_at: 2025-10-16T21:42:00
-updated_at: 2025-11-20T08:42:00
+company: "[[Apex FinTech]]"
+source_created_at: 2025-10-15T08:50:00
+source_observed_at: 2025-10-15T09:08:00
+created_at: 2025-10-15T12:50:00
+updated_at: 2025-11-23T16:50:00
 tags: [#research]
 ---
 # Project Keystone 70 Metric Reconciliation Research 510
 
 ## Research Summary
-Research on metric reconciliation for [[Project Keystone 70]] and [[Harbor Health]].
+Research on metric reconciliation for [[Project Keystone 70]] and [[Apex FinTech]].
 
 ## Evidence
 - Interview notes from [[Rachel Chen]]

@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2026-03-23
+date: 2024-09-11
 status: active
 project: "[[Project Summit 72]]"
-company: "[[Pioneer Health]]"
-source_created_at: 2026-03-23T12:22:00
-source_observed_at: 2026-03-23T13:18:00
-created_at: 2026-03-23T18:01:00
-updated_at: 2026-03-24T17:01:00
+company: "[[Cobalt Media]]"
+source_created_at: 2024-09-11T15:52:00
+source_observed_at: 2024-09-11T18:00:00
+created_at: 2024-09-18T17:52:00
+updated_at: 2024-09-19T09:52:00
 tags: [#decision]
 ---
 # Project Summit 72 Finance Approval Decision 732
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with finance approval for [[Project Summit 72]].
 
 ## Context
-This decision applies to [[Pioneer Health]] and [[Project Summit 72]].
-It follows [[Project Summit 72 Stakeholder Alignment Sync 732]].
+This decision applies to [[Cobalt Media]] and [[Project Summit 72]].
+It follows [[Project Summit 72 Stakeholder Alignment Sync 1392]].
 It incorporates [[Project Summit 72 Lineage Audit Research 512]].
 
 ## Supersession

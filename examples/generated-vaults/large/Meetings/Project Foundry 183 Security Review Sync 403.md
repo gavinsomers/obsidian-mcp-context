@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-10-30
 project: "[[Project Foundry 183]]"
-company: "[[BrightWave Health]]"
-source_created_at: 2025-10-30T09:14:00
-source_observed_at: 2025-10-30T10:40:00
-created_at: 2025-10-30T10:45:00
-updated_at: 2025-10-31T05:45:00
+company: "[[Meridian FinTech]]"
+source_created_at: 2025-10-30T13:11:00
+source_observed_at: 2025-10-30T15:42:00
+created_at: 2025-10-30T17:58:00
+updated_at: 2025-10-31T07:58:00
 tags: [#meeting]
 ---
 # Project Foundry 183 Security Review Sync 403
 
-## Attendees
-- [[Jonah Lee]]
-- [[Marcus Foster]]
-- [[Victor Tan]]
+## Evergreen Attendees
+- [[Alex Haddad]]
+
+## Client Attendees
+- [[Elena Walker]]
+- [[Amara Novak]]
+- [[Priya Rostova]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 183]] at [[BrightWave Health]].
-[[Alex Haddad]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 183]] at [[Meridian FinTech]].
+[[Alex Haddad]] aligned with [[Elena Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 183]] to [[Alex Haddad]] #follow-up

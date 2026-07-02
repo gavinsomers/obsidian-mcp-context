@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-11-28
 project: "[[Project Harbor 189]]"
-company: "[[Harbor Health]]"
-source_created_at: 2025-11-28T08:46:00
-source_observed_at: 2025-11-28T10:52:00
-created_at: 2025-11-28T11:05:00
-updated_at: 2025-11-28T23:05:00
+company: "[[Helio Health]]"
+source_created_at: 2025-11-28T14:25:00
+source_observed_at: 2025-11-28T16:28:00
+created_at: 2025-11-28T16:48:00
+updated_at: 2025-11-28T18:48:00
 tags: [#meeting]
 ---
 # Project Harbor 189 Pipeline Hygiene Sync 629
 
-## Attendees
-- [[Victor Lee]]
-- [[Wendy Foster]]
-- [[Ben Quinn]]
+## Evergreen Attendees
+- [[Farah Haddad]]
+
+## Client Attendees
+- [[David Kim]]
+- [[Tara Ortega]]
+- [[Hannah Tan]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 189]] at [[Harbor Health]].
-[[Farah Haddad]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 189]] at [[Helio Health]].
+[[Farah Haddad]] aligned with [[David Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 189]] to [[Farah Haddad]] #follow-up

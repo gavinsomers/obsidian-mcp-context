@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-24
 status: active
 project: "[[Project Meridian 96]]"
-company: "[[Meridian Logistics]]"
-source_created_at: 2026-04-24T15:34:00
-source_observed_at: 2026-04-24T18:20:00
-created_at: 2026-04-24T18:25:00
-updated_at: 2026-04-25T09:25:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2026-04-24T09:06:00
+source_observed_at: 2026-04-24T11:45:00
+created_at: 2026-04-24T11:50:00
+updated_at: 2026-04-24T13:50:00
 tags: [#decision]
 ---
 # Project Meridian 96 Lineage Audit Decision 756
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Meridian 96]].
 
 ## Context
-This decision applies to [[Meridian Logistics]] and [[Project Meridian 96]].
+This decision applies to [[Harbor FinTech]] and [[Project Meridian 96]].
 It follows [[Project Meridian 96 Metric Reconciliation Sync 756]].
 It incorporates [[Project Meridian 96 Stakeholder Alignment Research 536]].
 

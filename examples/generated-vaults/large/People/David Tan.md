@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-10-04T14:44:00
-source_observed_at: 2023-10-04T16:55:00
-created_at: 2023-10-05T05:44:00
-updated_at: 2023-11-06T15:44:00
+company: "[[Northstar Health]]"
+role: "Operations Manager"
+source_created_at: 2023-09-20T08:39:00
+source_observed_at: 2023-09-20T11:12:00
+created_at: 2023-09-20T23:39:00
+updated_at: 2024-07-05T13:00:00
 tags: [#person]
 ---
 # David Tan
 
 ## Role
-David Tan is the Delivery Lead at [[Evergreen Analytics]].
+David Tan is the Operations Manager at [[Northstar Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 9]] ([[Northstar Health]])
+- Client stakeholder on [[Project Keystone 85]] ([[Northstar Health]])
 - [ ] Confirm next update with [[David Tan]] #follow-up

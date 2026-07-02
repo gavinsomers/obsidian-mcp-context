@@ -3,11 +3,11 @@ type: decision
 date: 2023-11-04
 status: active
 project: "[[Project Atlas 31]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2023-11-04T09:27:00
-source_observed_at: 2023-11-04T11:48:00
-created_at: 2023-11-04T15:08:00
-updated_at: 2023-11-04T20:08:00
+company: "[[Summit Manufacturing]]"
+source_created_at: 2023-11-04T11:18:00
+source_observed_at: 2023-11-04T11:59:00
+created_at: 2023-11-04T14:11:00
+updated_at: 2023-11-05T09:11:00
 tags: [#decision]
 ---
 # Project Atlas 31 Security Review Decision 31
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with security review for [[Project Atlas 31]].
 
 ## Context
-This decision applies to [[Northstar Retail]] and [[Project Atlas 31]].
-It follows [[Project Atlas 31 Warehouse Mapping Sync 31]].
+This decision applies to [[Summit Manufacturing]] and [[Project Atlas 31]].
+It follows [[Project Atlas 31 Warehouse Mapping Sync 1571]].
 It incorporates [[Project Atlas 31 Contract Renewal Research 31]].
 
 ## Supersession

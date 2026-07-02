@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Keystone 175]]"
-source_created_at: 2025-09-28T11:52:00
-source_observed_at: 2025-09-28T12:59:00
-created_at: 2025-09-30T04:52:00
-updated_at: 2025-10-24T07:52:00
+source_created_at: 2025-09-28T15:08:00
+source_observed_at: 2025-09-28T18:06:00
+created_at: 2025-09-29T03:08:00
+updated_at: 2025-10-25T07:08:00
 tags: [#risk]
 ---
 # Project Keystone 175 Pipeline Hygiene Risk 395
 
 ## Risk
-Pipeline Hygiene may affect [[Project Keystone 175]] for [[Summit Manufacturing]].
+Pipeline Hygiene may affect [[Project Keystone 175]] for [[Northstar Media]].
 
 ## Evidence
-- Raised after [[Project Keystone 175 Adoption Workflow Sync 175]]
+- Raised after [[Project Keystone 175 Adoption Workflow Sync 1275]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `closed`
 - Owner: [[Sam Grant]]
 - [ ] Reassess [[Project Keystone 175 Pipeline Hygiene Risk 395]] during the next review #risk

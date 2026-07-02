@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Client Partner"
-source_created_at: 2023-06-07T09:01:00
-source_observed_at: 2023-06-07T10:48:00
-created_at: 2023-06-09T05:01:00
-updated_at: 2023-06-30T08:01:00
+source_created_at: 2023-06-07T14:56:00
+source_observed_at: 2023-06-07T16:30:00
+created_at: 2023-06-07T19:56:00
+updated_at: 2025-04-17T13:00:00
 tags: [#person]
 ---
 # Lina Foster
@@ -14,5 +14,5 @@ tags: [#person]
 Lina Foster is the Client Partner at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Compass 143]] ([[Harbor Analytics]])
 - [ ] Confirm next update with [[Lina Foster]] #follow-up

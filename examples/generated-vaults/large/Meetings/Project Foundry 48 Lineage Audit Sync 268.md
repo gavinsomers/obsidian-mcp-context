@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2024-04-09
+date: 2024-05-10
 project: "[[Project Foundry 48]]"
-company: "[[Cobalt Manufacturing]]"
-source_created_at: 2024-04-09T13:45:00
-source_observed_at: 2024-04-09T16:16:00
-created_at: 2024-04-09T17:54:00
-updated_at: 2024-04-10T09:54:00
+company: "[[Cobalt FinTech]]"
+source_created_at: 2024-05-10T11:43:00
+source_observed_at: 2024-05-10T14:28:00
+created_at: 2024-05-10T15:47:00
+updated_at: 2024-05-10T21:47:00
 tags: [#meeting]
 ---
 # Project Foundry 48 Lineage Audit Sync 268
 
-## Attendees
-- [[Grace Usman]]
-- [[Priya Alvarez]]
-- [[Ben Vance]]
+## Evergreen Attendees
+- [[Victor Bennett]]
+
+## Client Attendees
+- [[Ben Walker]]
+- [[Yara Morgan]]
+- [[Marcus Rostova]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 48]] at [[Cobalt Manufacturing]].
-[[Victor Bennett]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 48]] at [[Cobalt FinTech]].
+[[Victor Bennett]] aligned with [[Ben Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 48]] to [[Victor Bennett]] #follow-up

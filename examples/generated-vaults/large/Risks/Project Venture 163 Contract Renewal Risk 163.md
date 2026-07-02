@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Venture 163]]"
-source_created_at: 2025-08-01T10:07:00
-source_observed_at: 2025-08-01T11:30:00
-created_at: 2025-08-02T00:07:00
-updated_at: 2025-09-11T04:07:00
+source_created_at: 2025-08-01T10:19:00
+source_observed_at: 2025-08-01T12:44:00
+created_at: 2025-08-03T04:19:00
+updated_at: 2025-09-13T11:19:00
 tags: [#risk]
 ---
 # Project Venture 163 Contract Renewal Risk 163
 
 ## Risk
-Contract Renewal may affect [[Project Venture 163]] for [[Crescent Retail]].
+Contract Renewal may affect [[Project Venture 163]] for [[Vanguard Health]].
 
 ## Evidence
-- Raised after [[Project Venture 163 Security Review Sync 1043]]
+- Raised after [[Project Venture 163 Security Review Sync 163]]
 
 ## Current State
 - Status: `open`

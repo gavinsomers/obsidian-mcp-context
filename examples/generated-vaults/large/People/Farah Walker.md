@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-10-30T09:14:00
-source_observed_at: 2023-10-30T09:56:00
-created_at: 2023-10-30T20:14:00
-updated_at: 2023-12-13T00:14:00
+company: "[[Vanguard FinTech]]"
+role: "Operations Manager"
+source_created_at: 2023-10-30T09:31:00
+source_observed_at: 2023-10-30T12:13:00
+created_at: 2023-10-31T01:31:00
+updated_at: 2025-09-26T13:00:00
 tags: [#person]
 ---
 # Farah Walker
 
 ## Role
-Farah Walker is the Delivery Lead at [[Evergreen Analytics]].
+Farah Walker is the Operations Manager at [[Vanguard FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Meridian 81]] ([[Vanguard FinTech]])
+- Client stakeholder on [[Project Orbit 176]] ([[Vanguard FinTech]])
 - [ ] Confirm next update with [[Farah Walker]] #follow-up

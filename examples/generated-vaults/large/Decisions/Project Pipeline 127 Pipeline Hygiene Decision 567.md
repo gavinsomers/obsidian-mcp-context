@@ -3,11 +3,11 @@ type: decision
 date: 2025-07-31
 status: active
 project: "[[Project Pipeline 127]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2025-07-31T12:51:00
-source_observed_at: 2025-07-31T14:59:00
-created_at: 2025-07-31T15:04:00
-updated_at: 2025-08-01T03:04:00
+company: "[[Crescent Labs]]"
+source_created_at: 2025-07-31T14:16:00
+source_observed_at: 2025-07-31T15:05:00
+created_at: 2025-07-31T18:39:00
+updated_at: 2025-08-01T16:39:00
 tags: [#decision]
 ---
 # Project Pipeline 127 Pipeline Hygiene Decision 567
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Pipeline 127]].
 
 ## Context
-This decision applies to [[Quantum Labs]] and [[Project Pipeline 127]].
+This decision applies to [[Crescent Labs]] and [[Project Pipeline 127]].
 It follows [[Project Pipeline 127 Contract Renewal Sync 567]].
-It incorporates [[Project Pipeline 127 Security Review Research 347]].
+It incorporates [[Project Pipeline 127 Security Review Research 127]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.
