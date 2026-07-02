@@ -20,7 +20,8 @@ The generic pipeline works without vault-specific code for:
 Vault-specific behavior belongs in a vault profile when folder names or question
 vocabulary differ from the built-in demo conventions. Profiles can be checked in
 only when they are generic fixtures. Private vault profiles should stay outside
-the repo or in ignored local paths.
+the repo or in ignored local paths. Profile files are schema-checked so unknown
+tables and keys fail fast instead of becoming implicit private conventions.
 
 ## Folder And Note-Type Inference
 
@@ -226,6 +227,8 @@ Recommended checks:
 - Run `doctor` and review aggregate counts for ignored files, unsupported files,
   empty notes, large notes, and unresolved wikilinks.
 - Run entity listing or context queries against synthetic fixtures first.
+- Use `examples/vault-profiles/generated-demo.toml` as the checked-in reference
+  for public generated vault conventions.
 - Use a private local profile for real vault validation, and do not commit raw
   note content, unresolved-link exports, local vault paths, or screenshots from
   private vaults.

@@ -235,6 +235,76 @@ def test_named_vault_profile_resolves_to_examples_directory():
     )
 
 
+def test_generated_demo_vault_profile_is_public_synthetic_contract():
+    profile_path = Path("examples/vault-profiles/generated-demo.toml")
+
+    app_config = load_app_config(
+        config_path=Path("missing.toml"),
+        profile_path=profile_path,
+    )
+
+    assert app_config.profile_path == profile_path
+    assert app_config.include_globs == ("**/*.md",)
+    assert "System/Marts/**" in app_config.exclude_globs
+    assert app_config.folder_note_types == {
+        "Companies": "company",
+        "Daily": "daily",
+        "Decisions": "decision",
+        "Meetings": "meeting",
+        "People": "person",
+        "Projects": "project",
+        "Research": "research",
+        "Risks": "risk",
+    }
+    assert app_config.replay_qa_eval_pack == "generated-demo"
+
+
+def test_vault_profile_rejects_unknown_keys_with_clear_error(tmp_path: Path):
+    profile_path = tmp_path / "profile.toml"
+    profile_path.write_text(
+        """
+[scan]
+include_globs = ["**/*.md"]
+
+[private_paths]
+vault_path = "/do/not/commit"
+""".strip(),
+        encoding="utf-8",
+    )
+
+    try:
+        load_app_config(config_path=tmp_path / "missing.toml", profile_path=profile_path)
+    except ValueError as exc:
+        message = str(exc)
+    else:
+        raise AssertionError("Expected invalid profile to raise ValueError")
+
+    assert "Vault profile contains unsupported key: private_paths" in message
+
+
+def test_vault_profile_rejects_unknown_nested_keys(tmp_path: Path):
+    profile_path = tmp_path / "profile.toml"
+    profile_path.write_text(
+        """
+[replay_qa.intent_words]
+actions = ["action"]
+""".strip(),
+        encoding="utf-8",
+    )
+
+    try:
+        load_app_config(config_path=tmp_path / "missing.toml", profile_path=profile_path)
+    except ValueError as exc:
+        message = str(exc)
+    else:
+        raise AssertionError("Expected invalid profile to raise ValueError")
+
+    assert (
+        "Vault profile contains unsupported key: replay_qa.intent_words.actions"
+        in message
+    )
+
+
 def test_doctor_reports_loaded_config_without_content_samples(tmp_path: Path):
     vault = tmp_path / "vault"
     config_path = tmp_path / "config.toml"
