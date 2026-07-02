@@ -36,7 +36,7 @@ flowchart LR
 | Module | Responsibility |
 | --- | --- |
 | `obsidian_mcp_context.parser` and `vault` | Parse Markdown into headings, blocks, tasks, links, tags, semantic lines, and provenance. |
-| `obsidian_mcp_context.ingest_postgres` | Load parsed generated-vault rows into Postgres landing tables. |
+| `obsidian_mcp_context.ingest_postgres` | Load parsed generated-vault rows and redacted profile metadata into Postgres landing tables. |
 | `obsidian_mcp_context.postgres_warehouse` | Read dbt marts from Postgres for entities, relationships, states, events, open loops, decisions, risks, and typed compatibility rows. |
 | `obsidian_mcp_context.services` | Shared service layer for MCP calls, including Postgres mart routing and diagnostic fallback. |
 | `obsidian_mcp_context.mcp_server` | MCP tools for parser diagnostics and Postgres mart-backed context. |
