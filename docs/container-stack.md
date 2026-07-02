@@ -68,7 +68,7 @@ scripts/run_synthetic_demo.sh small --fast
 Fast mode preloads all notes from the selected generated fixture before the
 first ingest/dbt cycle, runs one scheduler cycle, skips background replay and
 scheduler loops, and skips dbt docs. Use the default command when you want to
-watch notes arrive over virtual time.
+watch notes and graph relationships arrive over virtual time.
 
 The script accepts `small`, `medium`, or `large`; `large` is the default. It
 uses checked-in generated fixtures only, resets the ignored
@@ -194,9 +194,9 @@ default replay order uses note frontmatter `created_at`, falling back to
 `source_created_at`, `source_observed_at`, `updated_at`, frontmatter/filename
 date, and finally file mtime if needed.
 
-The replay workspace opens Graph view with unresolved nodes hidden. That keeps
-future wikilink targets out of the visual graph until their notes are actually
-copied into the replay vault.
+The replay workspace opens Graph view with unresolved and orphan nodes hidden.
+That keeps future wikilink targets and disconnected notes out of the visual
+graph until their notes have visible relationships in the replay vault.
 
 Useful replay flags:
 
