@@ -308,6 +308,30 @@ EOF
   cat >"$target/.obsidian/app.json" <<'EOF'
 {}
 EOF
+  cat >"$target/.obsidian/graph.json" <<'EOF'
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.2,
+  "close": false
+}
+EOF
 }
 
 wait_for_obsidian_webtop() {
@@ -378,6 +402,7 @@ fi
 
 if [[ "$reset" == "1" ]]; then
   stop_background_processes
+  "${compose[@]}" stop vault-obsidian >/dev/null || true
   safe_reset_target "$target_vault"
   recreate_vault_services=1
 else
