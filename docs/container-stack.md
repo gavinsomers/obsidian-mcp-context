@@ -1,13 +1,14 @@
 # Containerized Analytics Stack
 
-This mode mirrors a warehouse-first analytics workflow:
+This mode is Act 2 of the demo: a warehouse-first analytics workflow for a
+completed generated vault.
 
 ```text
-Obsidian vault -> Postgres raw schema -> dbt marts -> MCP/web/API consumers
+completed generated vault -> Postgres raw schema -> dbt marts -> MCP consumers
 ```
 
-Use it when you want the supported analytics-engineering setup with a database
-service, dbt container, and editor-visible model code.
+The generator repo owns Act 1: dataset generation plus D3 growth visualization.
+This repo starts after the dataset is complete and handed over manually.
 
 ## Services
 
@@ -40,7 +41,7 @@ Targeting a service by name still works for the project scripts, but plain
 `docker compose up` no longer starts Obsidian, replay, Replay Q&A, dbt Docs, or
 the table browser by accident.
 
-## One-Command Check
+## Completed-Dataset Workflow
 
 Run the quiet completed-dataset workflow when you already have a finished
 generated vault and want the main pipeline only:
@@ -86,7 +87,11 @@ dbt Docs:         http://localhost:8081
 Postgres browser: http://localhost:8082
 ```
 
-Run the full synthetic-vault path:
+For the full two-act demo sequence, see
+[`docs/demo-workflow.md`](demo-workflow.md).
+
+The older `analytics_stack_check.sh` remains available as a stack smoke check,
+but it is no longer the primary demo command:
 
 ```bash
 scripts/analytics_stack_check.sh

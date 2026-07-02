@@ -24,14 +24,6 @@ an MCP client:
 scripts/run_dataset_workflow.sh small --with-inspection
 ```
 
-The old replay health check can still exercise the JSON packs for legacy replay
-flows, but it is no longer the primary validation route for the main workflow:
-
-```bash
-scripts/run_synthetic_demo.sh small --fast
-scripts/check_synthetic_demo.sh --skip-dbt-docs --examples examples/eval-packs/consultancy-demo.json
-```
-
 Both packs use generated/synthetic vault context only.
 
 ## Prompt Set
@@ -47,9 +39,7 @@ Both packs use generated/synthetic vault context only.
 
 ## Current Result
 
-On 2026-07-01, the stricter `consultancy-demo` pack passed against the legacy
-generated-small replay stack after loading enough notes. The
-validation covered:
+The completed-dataset path should cover:
 
 - mart-backed mode, not parser fallback
 - exact entity resolution for `Project Atlas 1` and `Project Beacon 2`
