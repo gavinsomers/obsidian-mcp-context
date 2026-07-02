@@ -43,7 +43,8 @@ For generator outputs created outside this repository, import the completed
 vault manually into an ignored local path and then pass that path explicitly:
 
 ```bash
-scripts/run_dataset_workflow.sh var/imported-vaults/generated-current
+VAULT_PATH=./var/imported-vaults/generated-current \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 See [`docs/dataset-handoff-contract.md`](dataset-handoff-contract.md) for the
@@ -52,7 +53,8 @@ manual generator-to-main handoff contract.
 ## 4. Use MCP
 
 ```bash
-scripts/run_dataset_workflow.sh large
+VAULT_PATH=./var/imported-vaults/generated-current \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 The workflow leaves the MCP container running at:
@@ -69,7 +71,8 @@ Start inspection surfaces only when you want to show lineage or row-level
 evidence:
 
 ```bash
-scripts/run_dataset_workflow.sh large --with-inspection
+VAULT_PATH=./var/imported-vaults/generated-current WITH_INSPECTION=1 \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 Open:

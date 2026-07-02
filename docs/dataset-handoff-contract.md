@@ -95,18 +95,20 @@ has been selected.
 Run the quiet batch workflow against the manually imported path:
 
 ```bash
-scripts/run_dataset_workflow.sh var/imported-vaults/generated-current
+VAULT_PATH=./var/imported-vaults/generated-current \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 Start dbt lineage and table inspection only when you need them:
 
 ```bash
-scripts/run_dataset_workflow.sh var/imported-vaults/generated-current --with-inspection
+VAULT_PATH=./var/imported-vaults/generated-current WITH_INSPECTION=1 \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
-The script validates the manifest, counts Markdown notes, starts Postgres,
-ingests the whole vault, runs dbt models, runs dbt tests, and starts MCP. It
-does not copy from the generator and does not run replay.
+The Compose workflow validates the manifest, counts Markdown notes, starts
+Postgres, ingests the whole vault, runs dbt models, runs dbt tests, and starts
+MCP. It does not copy from the generator and does not run replay.
 
 Open the optional inspection surfaces after a successful run:
 
