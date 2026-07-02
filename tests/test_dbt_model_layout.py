@@ -56,3 +56,13 @@ def test_dbt_model_folders_map_to_physical_postgres_schemas():
 
     macro = Path("macros/generate_schema_name.sql").read_text(encoding="utf-8")
     assert "custom_schema_name | trim" in macro
+
+
+def test_dbt_sources_include_profile_aware_ingest_metadata():
+    sources = yaml.safe_load(Path("models/sources.yml").read_text(encoding="utf-8"))
+    obsidian_source = next(
+        source for source in sources["sources"] if source["name"] == "obsidian"
+    )
+    source_tables = {table["name"] for table in obsidian_source["tables"]}
+
+    assert "base_obsidian_ingest_profile" in source_tables

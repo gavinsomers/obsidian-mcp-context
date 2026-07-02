@@ -95,6 +95,13 @@ obsidian-mcp-context-ingest-postgres \
   --vault-profile /absolute/path/to/private-profile.toml
 ```
 
+Each Postgres ingest writes one aggregate `raw.base_obsidian_ingest_profile`
+row alongside the parsed landing tables. The row records the effective scan
+globs, source extensions, folder note-type mappings, non-entity note types,
+note-type counts, source-file count, and a deterministic profile fingerprint.
+Absolute config/profile paths are redacted in that metadata row; note content is
+not included.
+
 For container or MCP server startup, use the environment variable:
 
 ```dotenv

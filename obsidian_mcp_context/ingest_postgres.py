@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import argparse
 from dataclasses import asdict
+from hashlib import sha256
+import json
 import os
 from pathlib import Path
 import re
@@ -24,6 +26,7 @@ LANDING_TABLES = (
     "base_obsidian_tags",
     "base_obsidian_lines",
     "base_obsidian_config_non_entity_note_types",
+    "base_obsidian_ingest_profile",
 )
 SCHEMA_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
 
@@ -137,18 +140,49 @@ def _create_schema_and_tables(cursor, schema: str) -> None:
         )
         """
     )
+    cursor.execute(
+        f"""
+        create table {schema}.base_obsidian_ingest_profile (
+            profile_loaded boolean,
+            config_loaded boolean,
+            profile_ref text,
+            config_ref text,
+            include_globs jsonb,
+            exclude_globs jsonb,
+            source_extensions jsonb,
+            folder_note_types jsonb,
+            non_entity_note_types jsonb,
+            note_type_counts jsonb,
+            source_file_count integer,
+            profile_fingerprint text
+        )
+        """
+    )
 
 
-def ingest_vault_postgres(
+def _profile_ref(path: Path | None) -> str:
+    if not path:
+        return ""
+    if not path.is_absolute():
+        return path.as_posix()
+    return f"<redacted:{path.name}>"
+
+
+def _profile_fingerprint(values: dict[str, object]) -> str:
+    payload = json.dumps(values, sort_keys=True, separators=(",", ":"))
+    return sha256(payload.encode("utf-8")).hexdigest()
+
+
+def _json(value: object) -> str:
+    return json.dumps(value, sort_keys=True)
+
+
+def build_ingest_payload(
     vault_path: Path,
-    connection_string: str,
     *,
-    schema: str = "raw",
     config_path: Path | None = None,
     profile_path: Path | None = None,
-) -> dict[str, int]:
-    import psycopg
-
+) -> dict[str, object]:
     app_config = (
         load_app_config(config_path, profile_path=profile_path)
         if config_path or profile_path or os.environ.get("OBSIDIAN_MCP_VAULT_PROFILE")
@@ -162,8 +196,12 @@ def ingest_vault_postgres(
         [source_file.source_path for source_file in context.files]
     )
     files = []
+    note_type_counts: dict[str, int] = {}
     for source_file in context.files:
         first_block_text = first_block_text_by_source.get(source_file.source_path)
+        note_type_counts[source_file.note_type] = (
+            note_type_counts.get(source_file.note_type, 0) + 1
+        )
         files.append(
             (
                 note_ids_by_source[source_file.source_path],
@@ -178,6 +216,55 @@ def ingest_vault_postgres(
                 frontmatter_value(first_block_text, "updated_at"),
             )
         )
+
+    profile_fingerprint_values = {
+        "include_globs": app_config.include_globs,
+        "exclude_globs": app_config.exclude_globs,
+        "source_extensions": app_config.source_extensions,
+        "folder_note_types": app_config.folder_note_types,
+        "non_entity_note_types": app_config.non_entity_note_types,
+    }
+    profile_row = (
+        app_config.profile_path is not None,
+        app_config.loaded,
+        _profile_ref(app_config.profile_path),
+        _profile_ref(app_config.config_path) if config_path else "",
+        _json(list(app_config.include_globs)),
+        _json(list(app_config.exclude_globs)),
+        _json(list(app_config.source_extensions)),
+        _json(app_config.folder_note_types),
+        _json(list(app_config.non_entity_note_types)),
+        _json(note_type_counts),
+        len(context.files),
+        _profile_fingerprint(profile_fingerprint_values),
+    )
+    return {
+        "app_config": app_config,
+        "context": context,
+        "files": files,
+        "profile_row": profile_row,
+    }
+
+
+def ingest_vault_postgres(
+    vault_path: Path,
+    connection_string: str,
+    *,
+    schema: str = "raw",
+    config_path: Path | None = None,
+    profile_path: Path | None = None,
+) -> dict[str, int]:
+    import psycopg
+
+    payload = build_ingest_payload(
+        vault_path,
+        config_path=config_path,
+        profile_path=profile_path,
+    )
+    app_config = payload["app_config"]
+    context = payload["context"]
+    files = payload["files"]
+    profile_row = payload["profile_row"]
 
     with psycopg.connect(connection_string) as connection:
         with connection.cursor() as cursor:
@@ -217,6 +304,10 @@ def ingest_vault_postgres(
                 cursor,
                 f"insert into {schema}.base_obsidian_config_non_entity_note_types values (%s)",
                 [(note_type,) for note_type in app_config.non_entity_note_types],
+            )
+            cursor.execute(
+                f"insert into {schema}.base_obsidian_ingest_profile values (%s, %s, %s, %s, %s::jsonb, %s::jsonb, %s::jsonb, %s::jsonb, %s::jsonb, %s::jsonb, %s, %s)",
+                profile_row,
             )
             counts = {}
             for table in LANDING_TABLES:
