@@ -527,7 +527,9 @@ Open the repo normally in VS Code/Cursor and edit:
 
 - `models/staging`
 - `models/intermediate`
-- `models/marts`
+- `models/marts/dim`
+- `models/marts/fact`
+- `models/marts/mart`
 - `models/*/schema.yml`
 - `dbt_project.yml`
 

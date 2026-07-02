@@ -16,3 +16,9 @@ models:
       +materialized: view
     marts:
       +materialized: table
+      dim:
+        +materialized: table
+      fact:
+        +materialized: table
+      mart:
+        +materialized: table
