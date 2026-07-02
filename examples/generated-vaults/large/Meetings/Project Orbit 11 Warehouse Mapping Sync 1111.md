@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-08-19
 project: "[[Project Orbit 11]]"
-company: "[[Keystone Health]]"
-source_created_at: 2024-08-19T13:01:00
-source_observed_at: 2024-08-19T14:16:00
-created_at: 2024-08-19T16:27:00
-updated_at: 2024-08-20T10:27:00
+company: "[[Harbor Logistics]]"
+source_created_at: 2024-08-19T10:23:00
+source_observed_at: 2024-08-19T13:21:00
+created_at: 2024-08-19T15:15:00
+updated_at: 2024-08-20T09:15:00
 tags: [#meeting]
 ---
 # Project Orbit 11 Warehouse Mapping Sync 1111
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Jonah Alvarez]]
 
 ## Client Attendees
-- [[Nadia Kim]]
-- [[Clara Patel]]
-- [[Sam Tan]]
+- [[Marcus Lee]]
+- [[Ben Quinn]]
+- [[Rachel Usman]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 11]] at [[Keystone Health]].
-[[Jonah Alvarez]] aligned with [[Nadia Kim]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 11]] at [[Harbor Logistics]].
+[[Jonah Alvarez]] aligned with [[Marcus Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Orbit 11]] to [[Jonah Alvarez]] #follow-up

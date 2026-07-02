@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-03-11
 project: "[[Project Compass 8]]"
-company: "[[Northstar Logistics]]"
-source_created_at: 2024-03-11T08:26:00
-source_observed_at: 2024-03-11T10:40:00
-created_at: 2024-03-11T13:31:00
-updated_at: 2024-03-11T14:31:00
+company: "[[Noble Media]]"
+source_created_at: 2024-03-11T14:58:00
+source_observed_at: 2024-03-11T17:49:00
+created_at: 2024-03-11T17:54:00
+updated_at: 2024-03-12T06:54:00
 tags: [#meeting]
 ---
 # Project Compass 8 Lineage Audit Sync 1768
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Grace Alvarez]]
 
 ## Client Attendees
-- [[David Lee]]
-- [[Tara Patel]]
-- [[Hannah Usman]]
+- [[Amara Lee]]
+- [[Priya Patel]]
+- [[Elena Usman]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 8]] at [[Northstar Logistics]].
-[[Grace Alvarez]] aligned with [[David Lee]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 8]] at [[Noble Media]].
+[[Grace Alvarez]] aligned with [[Amara Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 8]] to [[Grace Alvarez]] #follow-up

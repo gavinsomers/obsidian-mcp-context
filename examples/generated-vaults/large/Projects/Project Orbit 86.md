@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Helio Logistics]]"
-source_created_at: 2024-07-01T12:48:00
-source_observed_at: 2024-07-01T15:42:00
-created_at: 2024-07-02T12:48:00
-updated_at: 2024-09-14T22:48:00
+status: planning
+company: "[[Harbor Media]]"
+source_created_at: 2024-07-01T08:48:00
+source_observed_at: 2024-07-01T11:38:00
+created_at: 2024-07-01T16:48:00
+updated_at: 2024-09-07T21:48:00
 tags: [#project]
 ---
 # Project Orbit 86
 
 ## Overview
-Project Orbit 86 supports [[Helio Logistics]] through consulting delivery.
+Project Orbit 86 supports [[Harbor Media]] through consulting delivery.
 
 ## Stakeholders
-- [[Hannah Lee]]
-- [[Xavier Patel]]
-- [[Lina Usman]]
+- [[Yara Kim]]
+- [[Marcus Patel]]
+- [[Ben Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Grace Diaz]]
-- Client account: [[Helio Logistics]]
-- Status: `blocked`
+- Client account: [[Harbor Media]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Orbit 86]] #ops

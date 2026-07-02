@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Analytics Engineer"
-source_created_at: 2023-06-25T09:23:00
-source_observed_at: 2023-06-25T11:00:00
-created_at: 2023-06-26T12:23:00
-updated_at: 2026-01-11T13:00:00
+source_created_at: 2023-06-25T16:13:00
+source_observed_at: 2023-06-25T19:10:00
+created_at: 2023-06-26T15:13:00
+updated_at: 2023-08-25T15:13:00
 tags: [#person]
 ---
 # Omar Haddad
@@ -14,5 +14,5 @@ tags: [#person]
 Omar Haddad is the Analytics Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Foundry 198]] ([[Summit Media]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Omar Haddad]] #follow-up

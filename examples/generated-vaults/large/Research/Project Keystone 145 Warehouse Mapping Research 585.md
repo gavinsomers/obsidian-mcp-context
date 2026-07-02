@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Keystone 145]]"
-company: "[[Apex Analytics]]"
-source_created_at: 2026-02-23T13:56:00
-source_observed_at: 2026-02-23T14:29:00
-created_at: 2026-02-24T17:56:00
-updated_at: 2026-03-29T20:56:00
+company: "[[Northstar FinTech]]"
+source_created_at: 2026-02-23T09:50:00
+source_observed_at: 2026-02-23T12:22:00
+created_at: 2026-02-23T22:50:00
+updated_at: 2026-04-06T07:50:00
 tags: [#research]
 ---
 # Project Keystone 145 Warehouse Mapping Research 585
 
 ## Research Summary
-Research on warehouse mapping for [[Project Keystone 145]] and [[Apex Analytics]].
+Research on warehouse mapping for [[Project Keystone 145]] and [[Northstar FinTech]].
 
 ## Evidence
-- Interview notes from [[Nadia Foster]]
+- Interview notes from [[Sam Bennett]]
 - Related operating review: [[Project Keystone 145 Adoption Workflow Sync 1465]]
 
 ## Follow Up

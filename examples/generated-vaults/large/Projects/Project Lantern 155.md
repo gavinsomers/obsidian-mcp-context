@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Helio Manufacturing]]"
-source_created_at: 2025-06-04T11:45:00
-source_observed_at: 2025-06-04T13:33:00
-created_at: 2025-06-06T03:45:00
-updated_at: 2025-07-22T04:45:00
+status: blocked
+company: "[[Harbor Analytics]]"
+source_created_at: 2025-06-04T09:56:00
+source_observed_at: 2025-06-04T11:30:00
+created_at: 2025-06-06T15:56:00
+updated_at: 2025-08-07T00:56:00
 tags: [#project]
 ---
 # Project Lantern 155
 
 ## Overview
-Project Lantern 155 supports [[Helio Manufacturing]] through operations admin.
+Project Lantern 155 supports [[Harbor Analytics]] through operations admin.
 
 ## Stakeholders
-- [[Omar Jenkins]]
-- [[David Ortega]]
-- [[Tara Shah]]
+- [[Ben Morgan]]
+- [[Rachel Quinn]]
+- [[Farah Vance]]
 
 ## Operating Notes
-- Evergreen owner: [[Yara Foster]]
-- Client account: [[Helio Manufacturing]]
-- Status: `active`
+- Evergreen owner: [[Ben Chen]]
+- Client account: [[Harbor Analytics]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Lantern 155]] #ops

@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-07-01
 project: "[[Project Beacon 17]]"
-company: "[[Noble Health]]"
-source_created_at: 2025-07-01T10:26:00
-source_observed_at: 2025-07-01T11:03:00
-created_at: 2025-07-01T12:01:00
-updated_at: 2025-07-01T21:01:00
+company: "[[Vanguard Media]]"
+source_created_at: 2025-07-01T13:31:00
+source_observed_at: 2025-07-01T14:39:00
+created_at: 2025-07-01T18:28:00
+updated_at: 2025-07-01T19:28:00
 tags: [#meeting]
 ---
 # Project Beacon 17 Contract Renewal Sync 1337
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Priya Alvarez]]
 
 ## Client Attendees
-- [[Lina Kim]]
-- [[Amara Patel]]
-- [[Priya Tan]]
+- [[Victor Kim]]
+- [[Jonah Patel]]
+- [[Zoe Tan]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Beacon 17]] at [[Noble Health]].
-[[Priya Alvarez]] aligned with [[Lina Kim]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Beacon 17]] at [[Vanguard Media]].
+[[Priya Alvarez]] aligned with [[Victor Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 17]] to [[Priya Alvarez]] #follow-up

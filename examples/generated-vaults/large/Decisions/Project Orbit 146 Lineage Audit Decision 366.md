@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-22
 status: active
 project: "[[Project Orbit 146]]"
-company: "[[Crescent Analytics]]"
-source_created_at: 2025-05-22T09:31:00
-source_observed_at: 2025-05-22T11:40:00
-created_at: 2025-05-22T11:46:00
-updated_at: 2025-05-23T08:46:00
+company: "[[Summit Analytics]]"
+source_created_at: 2025-05-22T16:06:00
+source_observed_at: 2025-05-22T16:44:00
+created_at: 2025-05-22T16:53:00
+updated_at: 2025-05-23T07:53:00
 tags: [#decision]
 ---
 # Project Orbit 146 Lineage Audit Decision 366
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Orbit 146]].
 
 ## Context
-This decision applies to [[Crescent Analytics]] and [[Project Orbit 146]].
-It follows [[Project Orbit 146 Metric Reconciliation Sync 366]].
+This decision applies to [[Summit Analytics]] and [[Project Orbit 146]].
+It follows [[Project Orbit 146 Metric Reconciliation Sync 806]].
 It incorporates [[Project Orbit 146 Stakeholder Alignment Research 366]].
 
 ## Supersession

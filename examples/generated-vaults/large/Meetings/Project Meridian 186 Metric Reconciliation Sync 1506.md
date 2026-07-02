@@ -2,27 +2,27 @@
 type: meeting
 date: 2026-02-23
 project: "[[Project Meridian 186]]"
-company: "[[Quantum Retail]]"
-source_created_at: 2026-02-23T16:47:00
-source_observed_at: 2026-02-23T17:43:00
-created_at: 2026-02-23T19:22:00
-updated_at: 2026-02-24T05:22:00
+company: "[[Helio Manufacturing]]"
+source_created_at: 2026-02-23T16:06:00
+source_observed_at: 2026-02-23T18:39:00
+created_at: 2026-02-23T19:25:00
+updated_at: 2026-02-24T07:25:00
 tags: [#meeting]
 ---
 # Project Meridian 186 Metric Reconciliation Sync 1506
 
 ## Evergreen Attendees
-- [[Clara Haddad]]
+- [[Grace Diaz]]
 
 ## Client Attendees
-- [[Grace Shah]]
-- [[Wendy Walker]]
-- [[Sam Novak]]
+- [[Omar Jenkins]]
+- [[David Ortega]]
+- [[Tara Shah]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 186]] at [[Quantum Retail]].
-[[Clara Haddad]] aligned with [[Grace Shah]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 186]] at [[Helio Manufacturing]].
+[[Grace Diaz]] aligned with [[Omar Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 186]] to [[Clara Haddad]] #follow-up
+- [ ] Send recap for [[Project Meridian 186]] to [[Grace Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

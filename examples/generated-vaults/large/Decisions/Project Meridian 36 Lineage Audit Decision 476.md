@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-03-27
+date: 2025-03-25
 status: active
 project: "[[Project Meridian 36]]"
-company: "[[Harbor Analytics]]"
-source_created_at: 2024-03-27T08:15:00
-source_observed_at: 2024-03-27T09:13:00
-created_at: 2024-03-27T13:25:00
-updated_at: 2024-03-28T09:25:00
+company: "[[Pioneer Health]]"
+source_created_at: 2025-03-25T13:47:00
+source_observed_at: 2025-03-25T15:27:00
+created_at: 2025-03-25T17:43:00
+updated_at: 2025-03-26T04:43:00
 tags: [#decision]
 ---
 # Project Meridian 36 Lineage Audit Decision 476
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Meridian 36]].
 
 ## Context
-This decision applies to [[Harbor Analytics]] and [[Project Meridian 36]].
-It follows [[Project Meridian 36 Metric Reconciliation Sync 1356]].
+This decision applies to [[Pioneer Health]] and [[Project Meridian 36]].
+It follows [[Project Meridian 36 Metric Reconciliation Sync 476]].
 It incorporates [[Project Meridian 36 Stakeholder Alignment Research 256]].
 
 ## Supersession

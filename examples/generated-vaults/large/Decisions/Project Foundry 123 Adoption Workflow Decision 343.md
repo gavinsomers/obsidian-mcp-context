@@ -3,11 +3,11 @@ type: decision
 date: 2025-01-30
 status: active
 project: "[[Project Foundry 123]]"
-company: "[[Apex Retail]]"
-source_created_at: 2025-01-30T13:54:00
-source_observed_at: 2025-01-30T16:18:00
-created_at: 2025-01-30T16:52:00
-updated_at: 2025-01-31T14:52:00
+company: "[[Noble Retail]]"
+source_created_at: 2025-01-30T08:19:00
+source_observed_at: 2025-01-30T09:48:00
+created_at: 2025-01-30T12:46:00
+updated_at: 2025-01-31T00:46:00
 tags: [#decision]
 ---
 # Project Foundry 123 Adoption Workflow Decision 343
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Foundry 123]].
 
 ## Context
-This decision applies to [[Apex Retail]] and [[Project Foundry 123]].
+This decision applies to [[Noble Retail]] and [[Project Foundry 123]].
 It follows [[Project Foundry 123 Security Review Sync 1223]].
 It incorporates [[Project Foundry 123 Pipeline Hygiene Research 123]].
 

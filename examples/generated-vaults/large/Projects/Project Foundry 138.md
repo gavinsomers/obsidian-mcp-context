@@ -1,26 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Quantum Retail]]"
-source_created_at: 2025-03-12T14:59:00
-source_observed_at: 2025-03-12T16:34:00
-created_at: 2025-03-12T22:59:00
-updated_at: 2025-04-16T09:59:00
+status: blocked
+company: "[[Vanguard FinTech]]"
+source_created_at: 2025-03-12T12:15:00
+source_observed_at: 2025-03-12T15:03:00
+created_at: 2025-03-13T05:15:00
+updated_at: 2025-05-13T14:15:00
 tags: [#project]
 ---
 # Project Foundry 138
 
 ## Overview
-Project Foundry 138 supports [[Quantum Retail]] through customer success.
+Project Foundry 138 supports [[Vanguard FinTech]] through customer success.
 
 ## Stakeholders
-- [[Clara Jenkins]]
-- [[Sam Novak]]
-- [[Grace Shah]]
-- [[Wendy Walker]]
+- [[Marcus Ivanov]]
+- [[Ben Novak]]
+- [[Rachel Rostova]]
+- [[Farah Walker]]
 
 ## Operating Notes
-- Evergreen owner: [[Grace Foster]]
-- Client account: [[Quantum Retail]]
-- Status: `active`
+- Evergreen owner: [[Kai Bennett]]
+- Client account: [[Vanguard FinTech]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Foundry 138]] #ops

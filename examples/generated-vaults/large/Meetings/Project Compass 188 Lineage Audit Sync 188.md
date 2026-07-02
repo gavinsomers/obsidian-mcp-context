@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-11-23
 project: "[[Project Compass 188]]"
-company: "[[Harbor Retail]]"
-source_created_at: 2025-11-23T16:34:00
-source_observed_at: 2025-11-23T19:32:00
-created_at: 2025-11-23T21:44:00
-updated_at: 2025-11-24T07:44:00
+company: "[[Crescent Analytics]]"
+source_created_at: 2025-11-23T12:00:00
+source_observed_at: 2025-11-23T12:53:00
+created_at: 2025-11-23T12:58:00
+updated_at: 2025-11-23T16:58:00
 tags: [#meeting]
 ---
 # Project Compass 188 Lineage Audit Sync 188
 
 ## Evergreen Attendees
-- [[Elena Haddad]]
+- [[Iris Diaz]]
 
 ## Client Attendees
-- [[Yara Walker]]
-- [[Iris Shah]]
-- [[Elena Jenkins]]
+- [[Farah Morgan]]
+- [[Victor Quinn]]
+- [[Jonah Vance]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 188]] at [[Harbor Retail]].
-[[Elena Haddad]] aligned with [[Yara Walker]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 188]] at [[Crescent Analytics]].
+[[Iris Diaz]] aligned with [[Farah Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 188]] to [[Elena Haddad]] #follow-up
+- [ ] Send recap for [[Project Compass 188]] to [[Iris Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

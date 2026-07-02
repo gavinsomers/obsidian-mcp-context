@@ -1,28 +1,28 @@
 ---
 type: meeting
-date: 2025-01-21
+date: 2025-11-17
 project: "[[Project Orbit 116]]"
-company: "[[Noble Labs]]"
-source_created_at: 2025-01-21T10:03:00
-source_observed_at: 2025-01-21T12:07:00
-created_at: 2025-01-21T13:39:00
-updated_at: 2025-01-22T03:39:00
+company: "[[Helio Retail]]"
+source_created_at: 2025-11-17T16:56:00
+source_observed_at: 2025-11-17T18:25:00
+created_at: 2025-11-17T18:45:00
+updated_at: 2025-11-18T00:45:00
 tags: [#meeting]
 ---
 # Project Orbit 116 Metric Reconciliation Sync 1436
 
 ## Evergreen Attendees
-- [[Kai Evans]]
+- [[Omar Alvarez]]
 
 ## Client Attendees
-- [[Tara Morgan]]
-- [[Hannah Rostova]]
-- [[David Ivanov]]
+- [[Omar Novak]]
+- [[Alex Jenkins]]
+- [[David Shah]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Orbit 116]] at [[Noble Labs]].
-[[Kai Evans]] aligned with [[Tara Morgan]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Orbit 116]] at [[Helio Retail]].
+[[Omar Alvarez]] aligned with [[Omar Novak]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 116]] to [[Kai Evans]] #follow-up
+- [ ] Send recap for [[Project Orbit 116]] to [[Omar Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

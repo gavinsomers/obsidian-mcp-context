@@ -1,26 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Apex FinTech]]"
-source_created_at: 2024-04-12T12:02:00
-source_observed_at: 2024-04-12T12:28:00
-created_at: 2024-04-12T14:02:00
-updated_at: 2024-05-08T15:02:00
+status: blocked
+company: "[[Crescent Analytics]]"
+source_created_at: 2024-04-12T14:07:00
+source_observed_at: 2024-04-12T15:16:00
+created_at: 2024-04-13T23:07:00
+updated_at: 2024-06-02T10:07:00
 tags: [#project]
 ---
 # Project Keystone 70
 
 ## Overview
-Project Keystone 70 supports [[Apex FinTech]] through operations admin.
+Project Keystone 70 supports [[Crescent Analytics]] through operations admin.
 
 ## Stakeholders
-- [[Hannah Ivanov]]
-- [[Xavier Morgan]]
-- [[Lina Rostova]]
-- [[Amara Walker]]
+- [[Farah Morgan]]
+- [[Victor Quinn]]
+- [[Jonah Vance]]
 
 ## Operating Notes
 - Evergreen owner: [[Rachel Chen]]
-- Client account: [[Apex FinTech]]
-- Status: `active`
+- Client account: [[Crescent Analytics]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Keystone 70]] #ops

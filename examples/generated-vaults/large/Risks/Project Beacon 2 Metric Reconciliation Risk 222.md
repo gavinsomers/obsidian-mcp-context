@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Beacon 2]]"
-source_created_at: 2024-04-22T16:51:00
-source_observed_at: 2024-04-22T17:18:00
-created_at: 2024-04-22T18:51:00
-updated_at: 2024-05-24T22:51:00
+source_created_at: 2023-08-22T16:31:00
+source_observed_at: 2023-08-22T17:33:00
+created_at: 2023-08-23T22:31:00
+updated_at: 2023-10-07T09:31:00
 tags: [#risk]
 ---
 # Project Beacon 2 Metric Reconciliation Risk 222
 
 ## Risk
-Metric Reconciliation may affect [[Project Beacon 2]] for [[Cobalt Analytics]].
+Metric Reconciliation may affect [[Project Beacon 2]] for [[Northstar Retail]].
 
 ## Evidence
-- Raised after [[Project Beacon 2 Stakeholder Alignment Sync 222]]
+- Raised after [[Project Beacon 2 Stakeholder Alignment Sync 1762]]
 
 ## Current State
 - Status: `open`

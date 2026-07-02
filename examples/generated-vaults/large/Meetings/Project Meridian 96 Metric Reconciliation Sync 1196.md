@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-12-16
 project: "[[Project Meridian 96]]"
-company: "[[Harbor FinTech]]"
-source_created_at: 2024-12-16T12:07:00
-source_observed_at: 2024-12-16T14:51:00
-created_at: 2024-12-16T15:32:00
-updated_at: 2024-12-17T04:32:00
+company: "[[Atlas Logistics]]"
+source_created_at: 2024-12-16T16:38:00
+source_observed_at: 2024-12-16T19:03:00
+created_at: 2024-12-16T19:08:00
+updated_at: 2024-12-17T08:08:00
 tags: [#meeting]
 ---
 # Project Meridian 96 Metric Reconciliation Sync 1196
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Rachel Diaz]]
 
 ## Client Attendees
-- [[Uma Rostova]]
-- [[Elena Novak]]
-- [[Priya Ivanov]]
+- [[Lina Lee]]
+- [[Amara Quinn]]
+- [[Priya Usman]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 96]] at [[Harbor FinTech]].
-[[Rachel Diaz]] aligned with [[Uma Rostova]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 96]] at [[Atlas Logistics]].
+[[Rachel Diaz]] aligned with [[Lina Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 96]] to [[Rachel Diaz]] #follow-up

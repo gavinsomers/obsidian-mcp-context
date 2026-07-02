@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-09-11
 project: "[[Project Compass 173]]"
-company: "[[Keystone Health]]"
-source_created_at: 2025-09-11T12:10:00
-source_observed_at: 2025-09-11T13:10:00
-created_at: 2025-09-11T13:50:00
-updated_at: 2025-09-12T09:50:00
+company: "[[Helio Health]]"
+source_created_at: 2025-09-11T16:09:00
+source_observed_at: 2025-09-11T18:40:00
+created_at: 2025-09-11T18:45:00
+updated_at: 2025-09-12T07:45:00
 tags: [#meeting]
 ---
 # Project Compass 173 Security Review Sync 173
 
 ## Evergreen Attendees
-- [[Priya Grant]]
+- [[Uma Chen]]
 
 ## Client Attendees
-- [[Nadia Kim]]
-- [[Clara Patel]]
-- [[Sam Tan]]
+- [[David Kim]]
+- [[Tara Ortega]]
+- [[Hannah Tan]]
 
 ## Notes
-Security Review reviewed for [[Project Compass 173]] at [[Keystone Health]].
-[[Priya Grant]] aligned with [[Nadia Kim]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Compass 173]] at [[Helio Health]].
+[[Uma Chen]] aligned with [[David Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 173]] to [[Priya Grant]] #follow-up
+- [ ] Send recap for [[Project Compass 173]] to [[Uma Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

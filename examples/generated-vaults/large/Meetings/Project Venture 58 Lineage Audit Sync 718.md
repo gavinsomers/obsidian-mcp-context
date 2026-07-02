@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2026-01-30
+date: 2024-03-31
 project: "[[Project Venture 58]]"
-company: "[[Meridian Health]]"
-source_created_at: 2026-01-30T15:10:00
-source_observed_at: 2026-01-30T16:48:00
-created_at: 2026-02-08T21:10:00
-updated_at: 2026-02-09T20:10:00
+company: "[[Pioneer Media]]"
+source_created_at: 2024-03-31T10:08:00
+source_observed_at: 2024-03-31T13:07:00
+created_at: 2024-03-31T13:12:00
+updated_at: 2024-03-31T16:12:00
 tags: [#meeting]
 ---
 # Project Venture 58 Lineage Audit Sync 718
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Elena Chen]]
 
 ## Client Attendees
-- [[Elena Kim]]
-- [[Uma Ortega]]
-- [[Iris Tan]]
+- [[Alex Lee]]
+- [[Omar Patel]]
+- [[David Usman]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 58]] at [[Meridian Health]].
-[[Elena Chen]] aligned with [[Elena Kim]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 58]] at [[Pioneer Media]].
+[[Elena Chen]] aligned with [[Alex Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 58]] to [[Elena Chen]] #follow-up

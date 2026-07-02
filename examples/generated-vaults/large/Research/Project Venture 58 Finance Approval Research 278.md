@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Venture 58]]"
-company: "[[Meridian Health]]"
-source_created_at: 2024-09-06T16:04:00
-source_observed_at: 2024-09-06T17:43:00
-created_at: 2024-09-08T06:04:00
-updated_at: 2024-09-30T13:04:00
+company: "[[Pioneer Media]]"
+source_created_at: 2024-04-08T14:23:00
+source_observed_at: 2024-04-08T17:09:00
+created_at: 2024-04-09T17:23:00
+updated_at: 2024-05-08T00:23:00
 tags: [#research]
 ---
 # Project Venture 58 Finance Approval Research 278
 
 ## Research Summary
-Research on finance approval for [[Project Venture 58]] and [[Meridian Health]].
+Research on finance approval for [[Project Venture 58]] and [[Pioneer Media]].
 
 ## Evidence
 - Interview notes from [[Elena Chen]]

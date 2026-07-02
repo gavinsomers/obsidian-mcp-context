@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-04-19
 project: "[[Project Compass 218]]"
-company: "[[Crescent Logistics]]"
-source_created_at: 2026-04-19T16:25:00
-source_observed_at: 2026-04-19T16:50:00
-created_at: 2026-04-19T16:55:00
-updated_at: 2026-04-19T23:55:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2026-04-19T13:30:00
+source_observed_at: 2026-04-19T15:38:00
+created_at: 2026-04-19T16:45:00
+updated_at: 2026-04-20T10:45:00
 tags: [#meeting]
 ---
 # Project Compass 218 Lineage Audit Sync 1538
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Rachel Alvarez]]
 
 ## Client Attendees
-- [[Rachel Lee]]
-- [[Farah Quinn]]
-- [[Victor Usman]]
+- [[Uma Rostova]]
+- [[Elena Novak]]
+- [[Priya Ivanov]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 218]] at [[Crescent Logistics]].
-[[Rachel Alvarez]] aligned with [[Rachel Lee]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 218]] at [[Harbor FinTech]].
+[[Rachel Alvarez]] aligned with [[Uma Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 218]] to [[Rachel Alvarez]] #follow-up

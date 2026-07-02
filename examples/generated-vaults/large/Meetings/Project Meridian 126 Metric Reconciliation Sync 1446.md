@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-12-01
 project: "[[Project Meridian 126]]"
-company: "[[Noble Retail]]"
-source_created_at: 2025-12-01T13:03:00
-source_observed_at: 2025-12-01T13:49:00
-created_at: 2025-12-01T15:43:00
-updated_at: 2025-12-02T08:43:00
+company: "[[Atlas Media]]"
+source_created_at: 2025-12-01T10:49:00
+source_observed_at: 2025-12-01T11:47:00
+created_at: 2025-12-01T13:39:00
+updated_at: 2025-12-02T08:39:00
 tags: [#meeting]
 ---
 # Project Meridian 126 Metric Reconciliation Sync 1446
 
 ## Evergreen Attendees
-- [[Victor Evans]]
+- [[Zoe Alvarez]]
 
 ## Client Attendees
-- [[Hannah Jenkins]]
-- [[Amara Xu]]
-- [[Xavier Novak]]
+- [[Xavier Kim]]
+- [[Lina Patel]]
+- [[Amara Usman]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 126]] at [[Noble Retail]].
-[[Victor Evans]] aligned with [[Hannah Jenkins]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 126]] at [[Atlas Media]].
+[[Zoe Alvarez]] aligned with [[Xavier Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 126]] to [[Victor Evans]] #follow-up
+- [ ] Send recap for [[Project Meridian 126]] to [[Zoe Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

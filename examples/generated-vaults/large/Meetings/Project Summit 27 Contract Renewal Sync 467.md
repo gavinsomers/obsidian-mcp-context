@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2025-02-13
+date: 2024-01-25
 project: "[[Project Summit 27]]"
-company: "[[Summit Analytics]]"
-source_created_at: 2025-02-13T10:43:00
-source_observed_at: 2025-02-13T12:11:00
-created_at: 2025-02-13T15:48:00
-updated_at: 2025-02-14T12:48:00
+company: "[[Cobalt Retail]]"
+source_created_at: 2024-01-25T15:11:00
+source_observed_at: 2024-01-25T16:29:00
+created_at: 2024-02-03T22:11:00
+updated_at: 2024-02-04T10:11:00
 tags: [#meeting]
 ---
 # Project Summit 27 Contract Renewal Sync 467
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Alex Bennett]]
 
 ## Client Attendees
-- [[Clara Morgan]]
-- [[Sam Quinn]]
-- [[Grace Vance]]
+- [[Yara Ivanov]]
+- [[Marcus Novak]]
+- [[Ben Shah]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Summit 27]] at [[Summit Analytics]].
-[[Alex Bennett]] aligned with [[Clara Morgan]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Summit 27]] at [[Cobalt Retail]].
+[[Alex Bennett]] aligned with [[Yara Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 27]] to [[Alex Bennett]] #follow-up

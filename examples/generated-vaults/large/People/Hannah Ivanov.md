@@ -2,10 +2,10 @@
 type: person
 company: "[[Apex FinTech]]"
 role: "Executive Sponsor"
-source_created_at: 2023-05-24T15:08:00
-source_observed_at: 2023-05-24T17:02:00
-created_at: 2023-05-28T18:08:00
-updated_at: 2024-04-22T13:00:00
+source_created_at: 2023-05-24T08:44:00
+source_observed_at: 2023-05-24T10:09:00
+created_at: 2023-05-25T20:44:00
+updated_at: 2025-11-28T13:00:00
 tags: [#person]
 ---
 # Hannah Ivanov
@@ -14,5 +14,6 @@ tags: [#person]
 Hannah Ivanov is the Executive Sponsor at [[Apex FinTech]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Keystone 70]] ([[Apex FinTech]])
+- Client stakeholder on [[Project Pipeline 7]] ([[Apex FinTech]])
+- Client stakeholder on [[Project Harbor 189]] ([[Apex FinTech]])
 - [ ] Confirm next update with [[Hannah Ivanov]] #follow-up

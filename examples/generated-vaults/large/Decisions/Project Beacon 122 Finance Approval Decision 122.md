@@ -3,11 +3,11 @@ type: decision
 date: 2025-01-24
 status: superseded
 project: "[[Project Beacon 122]]"
-company: "[[Keystone FinTech]]"
-source_created_at: 2025-01-24T14:46:00
-source_observed_at: 2025-01-24T17:27:00
-created_at: 2025-01-24T17:32:00
-updated_at: 2025-01-25T14:32:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-01-24T15:43:00
+source_observed_at: 2025-01-24T16:06:00
+created_at: 2025-01-24T16:28:00
+updated_at: 2025-01-25T04:28:00
 tags: [#decision]
 ---
 # Project Beacon 122 Finance Approval Decision 122
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 122]].
 
 ## Context
-This decision applies to [[Keystone FinTech]] and [[Project Beacon 122]].
+This decision applies to [[Vanguard Manufacturing]] and [[Project Beacon 122]].
 It follows [[Project Beacon 122 Stakeholder Alignment Sync 1222]].
-It incorporates [[Project Beacon 122 Lineage Audit Research 342]].
+It incorporates [[Project Beacon 122 Lineage Audit Research 122]].
 
 ## Supersession
 Marked superseded by a later unlinked stakeholder review. #superseded

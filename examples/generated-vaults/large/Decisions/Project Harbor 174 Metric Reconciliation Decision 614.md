@@ -3,11 +3,11 @@ type: decision
 date: 2025-10-07
 status: active
 project: "[[Project Harbor 174]]"
-company: "[[Noble Retail]]"
-source_created_at: 2025-10-07T14:11:00
-source_observed_at: 2025-10-07T16:38:00
-created_at: 2025-10-07T16:43:00
-updated_at: 2025-10-08T01:43:00
+company: "[[Quantum Labs]]"
+source_created_at: 2025-10-07T16:16:00
+source_observed_at: 2025-10-07T18:21:00
+created_at: 2025-10-07T18:26:00
+updated_at: 2025-10-08T02:26:00
 tags: [#decision]
 ---
 # Project Harbor 174 Metric Reconciliation Decision 614
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Harbor 174]].
 
 ## Context
-This decision applies to [[Noble Retail]] and [[Project Harbor 174]].
-It follows [[Project Harbor 174 Finance Approval Sync 394]].
+This decision applies to [[Quantum Labs]] and [[Project Harbor 174]].
+It follows [[Project Harbor 174 Finance Approval Sync 1054]].
 It incorporates [[Project Harbor 174 Handoff Readiness Research 394]].
 
 ## Supersession

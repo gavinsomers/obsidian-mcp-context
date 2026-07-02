@@ -2,10 +2,10 @@
 type: person
 company: "[[Helio Health]]"
 role: "Customer Success Lead"
-source_created_at: 2023-08-28T10:31:00
-source_observed_at: 2023-08-28T11:40:00
-created_at: 2023-08-29T23:31:00
-updated_at: 2025-11-28T13:00:00
+source_created_at: 2023-08-28T09:13:00
+source_observed_at: 2023-08-28T11:35:00
+created_at: 2023-09-01T15:13:00
+updated_at: 2025-09-11T13:00:00
 tags: [#person]
 ---
 # Tara Ortega
@@ -14,7 +14,6 @@ tags: [#person]
 Tara Ortega is the Customer Success Lead at [[Helio Health]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Harbor 54]] ([[Helio Health]])
-- Client stakeholder on [[Project Lantern 170]] ([[Helio Health]])
-- Client stakeholder on [[Project Harbor 189]] ([[Helio Health]])
+- Client stakeholder on [[Project Meridian 6]] ([[Helio Health]])
+- Client stakeholder on [[Project Compass 173]] ([[Helio Health]])
 - [ ] Confirm next update with [[Tara Ortega]] #follow-up

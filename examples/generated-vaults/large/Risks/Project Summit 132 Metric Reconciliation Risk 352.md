@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Summit 132]]"
-source_created_at: 2025-03-01T10:16:00
-source_observed_at: 2025-03-01T11:37:00
-created_at: 2025-03-02T02:16:00
-updated_at: 2025-03-12T09:16:00
+source_created_at: 2025-03-01T12:49:00
+source_observed_at: 2025-03-01T14:39:00
+created_at: 2025-03-02T15:49:00
+updated_at: 2025-03-14T22:49:00
 tags: [#risk]
 ---
 # Project Summit 132 Metric Reconciliation Risk 352
 
 ## Risk
-Metric Reconciliation may affect [[Project Summit 132]] for [[Meridian Retail]].
+Metric Reconciliation may affect [[Project Summit 132]] for [[Vanguard Health]].
 
 ## Evidence
-- Raised after [[Project Summit 132 Stakeholder Alignment Sync 1232]]
+- Raised after [[Project Summit 132 Stakeholder Alignment Sync 1012]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Amara Foster]]
+- Status: `mitigating`
+- Owner: [[Elena Bennett]]
 - [ ] Reassess [[Project Summit 132 Metric Reconciliation Risk 352]] during the next review #risk

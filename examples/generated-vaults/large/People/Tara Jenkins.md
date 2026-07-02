@@ -2,10 +2,10 @@
 type: person
 company: "[[Atlas Manufacturing]]"
 role: "Product Analytics Lead"
-source_created_at: 2023-08-06T16:04:00
-source_observed_at: 2023-08-06T18:41:00
-created_at: 2023-08-07T10:04:00
-updated_at: 2025-07-13T13:00:00
+source_created_at: 2023-08-06T10:36:00
+source_observed_at: 2023-08-06T13:11:00
+created_at: 2023-08-07T08:36:00
+updated_at: 2023-12-16T13:00:00
 tags: [#person]
 ---
 # Tara Jenkins
@@ -14,5 +14,5 @@ tags: [#person]
 Tara Jenkins is the Product Analytics Lead at [[Atlas Manufacturing]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Orbit 161]] ([[Atlas Manufacturing]])
+- Client stakeholder on [[Project Signal 44]] ([[Atlas Manufacturing]])
 - [ ] Confirm next update with [[Tara Jenkins]] #follow-up

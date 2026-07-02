@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-01-29
 project: "[[Project Atlas 16]]"
-company: "[[Vanguard Media]]"
-source_created_at: 2025-01-29T10:59:00
-source_observed_at: 2025-01-29T11:44:00
-created_at: 2025-01-29T12:10:00
-updated_at: 2025-01-29T17:10:00
+company: "[[Quantum Manufacturing]]"
+source_created_at: 2025-01-29T15:42:00
+source_observed_at: 2025-01-29T17:57:00
+created_at: 2025-01-29T18:36:00
+updated_at: 2025-01-30T10:36:00
 tags: [#meeting]
 ---
 # Project Atlas 16 Metric Reconciliation Sync 456
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Omar Alvarez]]
 
 ## Client Attendees
-- [[Victor Kim]]
-- [[Jonah Patel]]
-- [[Zoe Tan]]
+- [[Sam Jenkins]]
+- [[Grace Ortega]]
+- [[Wendy Shah]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Atlas 16]] at [[Vanguard Media]].
-[[Omar Alvarez]] aligned with [[Victor Kim]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Atlas 16]] at [[Quantum Manufacturing]].
+[[Omar Alvarez]] aligned with [[Sam Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 16]] to [[Omar Alvarez]] #follow-up

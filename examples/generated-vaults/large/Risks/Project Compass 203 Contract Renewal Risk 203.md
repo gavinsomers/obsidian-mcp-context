@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Compass 203]]"
-source_created_at: 2026-02-13T08:59:00
-source_observed_at: 2026-02-13T10:16:00
-created_at: 2026-02-16T11:59:00
-updated_at: 2026-02-24T20:59:00
+source_created_at: 2026-02-13T13:15:00
+source_observed_at: 2026-02-13T16:03:00
+created_at: 2026-02-14T18:15:00
+updated_at: 2026-03-23T23:15:00
 tags: [#risk]
 ---
 # Project Compass 203 Contract Renewal Risk 203
 
 ## Risk
-Contract Renewal may affect [[Project Compass 203]] for [[Cobalt Labs]].
+Contract Renewal may affect [[Project Compass 203]] for [[Meridian FinTech]].
 
 ## Evidence
-- Raised after [[Project Compass 203 Security Review Sync 1743]]
+- Raised after [[Project Compass 203 Security Review Sync 863]]
 
 ## Current State
 - Status: `open`

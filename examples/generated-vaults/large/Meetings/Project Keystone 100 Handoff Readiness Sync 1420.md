@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-10-24
 project: "[[Project Keystone 100]]"
-company: "[[Noble Health]]"
-source_created_at: 2025-10-24T11:57:00
-source_observed_at: 2025-10-24T14:20:00
-created_at: 2025-10-24T16:54:00
-updated_at: 2025-10-24T17:54:00
+company: "[[Summit Analytics]]"
+source_created_at: 2025-10-24T10:43:00
+source_observed_at: 2025-10-24T12:49:00
+created_at: 2025-10-28T11:43:00
+updated_at: 2025-10-28T17:43:00
 tags: [#meeting]
 ---
 # Project Keystone 100 Handoff Readiness Sync 1420
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Victor Diaz]]
 
 ## Client Attendees
-- [[Lina Kim]]
-- [[Amara Patel]]
-- [[Priya Tan]]
+- [[Clara Morgan]]
+- [[Sam Quinn]]
+- [[Grace Vance]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 100]] at [[Noble Health]].
-[[Victor Diaz]] aligned with [[Lina Kim]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 100]] at [[Summit Analytics]].
+[[Victor Diaz]] aligned with [[Clara Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 100]] to [[Victor Diaz]] #follow-up

@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Lantern 200]]"
-company: "[[Keystone Health]]"
-source_created_at: 2026-02-05T08:13:00
-source_observed_at: 2026-02-05T09:21:00
-created_at: 2026-02-06T19:13:00
-updated_at: 2026-02-17T20:13:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2026-02-05T09:58:00
+source_observed_at: 2026-02-05T10:28:00
+created_at: 2026-02-06T18:58:00
+updated_at: 2026-03-09T00:58:00
 tags: [#research]
 ---
 # Project Lantern 200 Metric Reconciliation Research 200
 
 ## Research Summary
-Research on metric reconciliation for [[Project Lantern 200]] and [[Keystone Health]].
+Research on metric reconciliation for [[Project Lantern 200]] and [[Vanguard FinTech]].
 
 ## Evidence
-- Interview notes from [[Rachel Haddad]]
-- Related operating review: [[Project Lantern 200 Handoff Readiness Sync 200]]
+- Interview notes from [[Victor Diaz]]
+- Related operating review: [[Project Lantern 200 Handoff Readiness Sync 640]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Lantern 200]] #research

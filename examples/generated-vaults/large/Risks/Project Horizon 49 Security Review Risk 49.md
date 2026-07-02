@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Horizon 49]]"
-source_created_at: 2024-01-19T11:28:00
-source_observed_at: 2024-01-19T14:04:00
-created_at: 2024-01-19T17:28:00
-updated_at: 2024-02-02T18:28:00
+source_created_at: 2024-01-19T10:12:00
+source_observed_at: 2024-01-19T12:06:00
+created_at: 2024-01-21T06:12:00
+updated_at: 2024-02-01T06:12:00
 tags: [#risk]
 ---
 # Project Horizon 49 Security Review Risk 49
 
 ## Risk
-Security Review may affect [[Project Horizon 49]] for [[Meridian Labs]].
+Security Review may affect [[Project Horizon 49]] for [[Crescent FinTech]].
 
 ## Evidence
-- Raised after [[Project Horizon 49 Pipeline Hygiene Sync 929]]
+- Raised after [[Project Horizon 49 Pipeline Hygiene Sync 49]]
 
 ## Current State
-- Status: `open`
+- Status: `mitigating`
 - Owner: [[Wendy Bennett]]
 - [ ] Reassess [[Project Horizon 49 Security Review Risk 49]] during the next review #risk

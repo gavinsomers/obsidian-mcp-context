@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-01-06
 project: "[[Project Meridian 111]]"
-company: "[[Pioneer Retail]]"
-source_created_at: 2025-01-06T14:17:00
-source_observed_at: 2025-01-06T16:07:00
-created_at: 2025-01-06T16:12:00
-updated_at: 2025-01-07T02:12:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-01-06T14:35:00
+source_observed_at: 2025-01-06T17:03:00
+created_at: 2025-01-06T19:13:00
+updated_at: 2025-01-07T10:13:00
 tags: [#meeting]
 ---
 # Project Meridian 111 Warehouse Mapping Sync 1211
 
 ## Evergreen Attendees
-- [[Farah Evans]]
+- [[Jonah Alvarez]]
 
 ## Client Attendees
-- [[Grace Jenkins]]
-- [[Alex Xu]]
-- [[Kai Shah]]
+- [[Rachel Jenkins]]
+- [[Farah Ortega]]
+- [[Victor Shah]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 111]] at [[Pioneer Retail]].
-[[Farah Evans]] aligned with [[Grace Jenkins]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 111]] at [[Vanguard Manufacturing]].
+[[Jonah Alvarez]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 111]] to [[Farah Evans]] #follow-up
+- [ ] Send recap for [[Project Meridian 111]] to [[Jonah Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Apex Manufacturing]]"
-source_created_at: 2025-05-26T12:15:00
-source_observed_at: 2025-05-26T15:03:00
-created_at: 2025-05-27T05:15:00
-updated_at: 2025-07-27T14:15:00
+status: active
+company: "[[Helio Analytics]]"
+source_created_at: 2025-05-26T16:52:00
+source_observed_at: 2025-05-26T18:11:00
+created_at: 2025-05-28T12:52:00
+updated_at: 2025-08-24T15:52:00
 tags: [#project]
 ---
 # Project Foundry 153
 
 ## Overview
-Project Foundry 153 supports [[Apex Manufacturing]] through customer success.
+Project Foundry 153 supports [[Helio Analytics]] through customer success.
 
 ## Stakeholders
-- [[Lina Jenkins]]
-- [[Amara Ortega]]
-- [[Priya Shah]]
+- [[Xavier Lee]]
+- [[Lina Quinn]]
+- [[Amara Vance]]
 
 ## Operating Notes
-- Evergreen owner: [[Wendy Foster]]
-- Client account: [[Apex Manufacturing]]
-- Status: `closed`
-- Closed at: `2025-07-20`
+- Evergreen owner: [[Alex Chen]]
+- Client account: [[Helio Analytics]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Foundry 153]] #ops

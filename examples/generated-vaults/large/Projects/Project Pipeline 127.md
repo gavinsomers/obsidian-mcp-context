@@ -1,26 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Crescent Labs]]"
-source_created_at: 2025-01-17T09:15:00
-source_observed_at: 2025-01-17T11:58:00
-created_at: 2025-01-18T07:15:00
-updated_at: 2025-03-15T16:15:00
+status: planning
+company: "[[Northstar Logistics]]"
+source_created_at: 2025-01-17T12:20:00
+source_observed_at: 2025-01-17T14:57:00
+created_at: 2025-01-20T15:20:00
+updated_at: 2025-04-11T02:20:00
 tags: [#project]
 ---
 # Project Pipeline 127
 
 ## Overview
-Project Pipeline 127 supports [[Crescent Labs]] through sales pipeline.
+Project Pipeline 127 supports [[Northstar Logistics]] through sales pipeline.
 
 ## Stakeholders
-- [[Elena Ivanov]]
-- [[Uma Morgan]]
-- [[Iris Rostova]]
-- [[Yara Vance]]
+- [[David Lee]]
+- [[Tara Patel]]
+- [[Hannah Usman]]
 
 ## Operating Notes
-- Evergreen owner: [[Wendy Evans]]
-- Client account: [[Crescent Labs]]
-- Status: `blocked`
+- Evergreen owner: [[Alex Bennett]]
+- Client account: [[Northstar Logistics]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Pipeline 127]] #ops

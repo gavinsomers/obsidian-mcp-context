@@ -2,10 +2,10 @@
 type: person
 company: "[[Northstar FinTech]]"
 role: "Security Contact"
-source_created_at: 2023-06-30T11:24:00
-source_observed_at: 2023-06-30T14:02:00
-created_at: 2023-07-06T15:24:00
-updated_at: 2025-12-04T13:00:00
+source_created_at: 2023-06-30T12:45:00
+source_observed_at: 2023-06-30T14:03:00
+created_at: 2023-07-01T15:45:00
+updated_at: 2025-04-26T13:00:00
 tags: [#person]
 ---
 # Wendy Morgan
@@ -14,6 +14,6 @@ tags: [#person]
 Wendy Morgan is the Security Contact at [[Northstar FinTech]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Orbit 26]] ([[Northstar FinTech]])
-- Client stakeholder on [[Project Keystone 190]] ([[Northstar FinTech]])
+- Client stakeholder on [[Project Keystone 115]] ([[Northstar FinTech]])
+- Client stakeholder on [[Project Keystone 145]] ([[Northstar FinTech]])
 - [ ] Confirm next update with [[Wendy Morgan]] #follow-up

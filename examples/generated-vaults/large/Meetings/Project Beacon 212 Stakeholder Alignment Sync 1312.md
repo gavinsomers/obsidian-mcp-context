@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-03-21
 project: "[[Project Beacon 212]]"
-company: "[[Northstar Analytics]]"
-source_created_at: 2026-03-21T09:17:00
-source_observed_at: 2026-03-21T12:15:00
-created_at: 2026-03-21T12:20:00
-updated_at: 2026-03-22T01:20:00
+company: "[[BrightWave Analytics]]"
+source_created_at: 2026-03-21T09:45:00
+source_observed_at: 2026-03-21T11:42:00
+created_at: 2026-03-21T15:04:00
+updated_at: 2026-03-22T07:04:00
 tags: [#meeting]
 ---
 # Project Beacon 212 Stakeholder Alignment Sync 1312
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Kai Alvarez]]
 
 ## Client Attendees
-- [[Tara Lee]]
-- [[Hannah Quinn]]
-- [[Xavier Usman]]
+- [[Wendy Lee]]
+- [[Kai Quinn]]
+- [[Alex Vance]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 212]] at [[Northstar Analytics]].
-[[Kai Alvarez]] aligned with [[Tara Lee]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 212]] at [[BrightWave Analytics]].
+[[Kai Alvarez]] aligned with [[Wendy Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 212]] to [[Kai Alvarez]] #follow-up

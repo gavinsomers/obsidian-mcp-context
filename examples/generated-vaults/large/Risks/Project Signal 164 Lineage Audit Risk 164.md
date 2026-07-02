@@ -2,21 +2,21 @@
 type: risk
 status: open
 project: "[[Project Signal 164]]"
-source_created_at: 2025-08-04T15:00:00
-source_observed_at: 2025-08-04T16:34:00
-created_at: 2025-08-06T02:00:00
-updated_at: 2025-08-28T06:00:00
+source_created_at: 2025-08-04T15:04:00
+source_observed_at: 2025-08-04T15:28:00
+created_at: 2025-08-04T20:04:00
+updated_at: 2025-09-10T06:04:00
 tags: [#risk]
 ---
 # Project Signal 164 Lineage Audit Risk 164
 
 ## Risk
-Lineage Audit may affect [[Project Signal 164]] for [[Atlas Retail]].
+Lineage Audit may affect [[Project Signal 164]] for [[Pioneer Retail]].
 
 ## Evidence
-- Raised after [[Project Signal 164 Finance Approval Sync 1264]]
+- Raised after [[Project Signal 164 Finance Approval Sync 1044]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Grace Grant]]
+- Owner: [[Kai Chen]]
 - [ ] Reassess [[Project Signal 164 Lineage Audit Risk 164]] during the next review #risk

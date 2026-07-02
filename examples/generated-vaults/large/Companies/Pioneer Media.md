@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: mid-market
-source_created_at: 2023-10-10T14:35:00
-source_observed_at: 2023-10-10T16:46:00
-created_at: 2023-10-11T16:35:00
-updated_at: 2023-11-04T23:35:00
+source_created_at: 2023-10-10T08:18:00
+source_observed_at: 2023-10-10T10:13:00
+created_at: 2023-10-10T15:18:00
+updated_at: 2024-02-24T13:00:00
 tags: [#company]
 ---
 # Pioneer Media
@@ -14,6 +14,7 @@ tags: [#company]
 Pioneer Media is a mid-market account currently marked `active`.
 
 ## Assigned Account Team
+- [[Elena Chen]] - Senior Data Consultant
 
 ## Client Stakeholders
 - [[Alex Lee]] - Security Contact
@@ -21,6 +22,7 @@ Pioneer Media is a mid-market account currently marked `active`.
 - [[David Usman]] - Revenue Operations Lead
 
 ## Projects
+- [[Project Venture 58]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Pioneer Media]] #account

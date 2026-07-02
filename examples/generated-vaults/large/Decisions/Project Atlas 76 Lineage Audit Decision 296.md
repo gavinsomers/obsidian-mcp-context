@@ -3,11 +3,11 @@ type: decision
 date: 2024-07-11
 status: active
 project: "[[Project Atlas 76]]"
-company: "[[Summit FinTech]]"
-source_created_at: 2024-07-11T09:53:00
-source_observed_at: 2024-07-11T10:31:00
-created_at: 2024-07-11T10:36:00
-updated_at: 2024-07-12T09:36:00
+company: "[[Meridian Labs]]"
+source_created_at: 2024-07-11T16:32:00
+source_observed_at: 2024-07-11T18:28:00
+created_at: 2024-07-11T18:33:00
+updated_at: 2024-07-12T12:33:00
 tags: [#decision]
 ---
 # Project Atlas 76 Lineage Audit Decision 296
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 76]].
 
 ## Context
-This decision applies to [[Summit FinTech]] and [[Project Atlas 76]].
+This decision applies to [[Meridian Labs]] and [[Project Atlas 76]].
 It follows [[Project Atlas 76 Metric Reconciliation Sync 296]].
 It incorporates [[Project Atlas 76 Stakeholder Alignment Research 76]].
 

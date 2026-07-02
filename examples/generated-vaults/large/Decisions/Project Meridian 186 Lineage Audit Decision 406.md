@@ -3,11 +3,11 @@ type: decision
 date: 2025-12-05
 status: active
 project: "[[Project Meridian 186]]"
-company: "[[Quantum Retail]]"
-source_created_at: 2025-12-05T12:08:00
-source_observed_at: 2025-12-05T14:37:00
-created_at: 2025-12-05T18:02:00
-updated_at: 2025-12-05T21:02:00
+company: "[[Helio Manufacturing]]"
+source_created_at: 2025-12-05T14:52:00
+source_observed_at: 2025-12-05T16:15:00
+created_at: 2025-12-05T18:18:00
+updated_at: 2025-12-05T21:18:00
 tags: [#decision]
 ---
 # Project Meridian 186 Lineage Audit Decision 406
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Meridian 186]].
 
 ## Context
-This decision applies to [[Quantum Retail]] and [[Project Meridian 186]].
-It follows [[Project Meridian 186 Metric Reconciliation Sync 1286]].
-It incorporates [[Project Meridian 186 Stakeholder Alignment Research 186]].
+This decision applies to [[Helio Manufacturing]] and [[Project Meridian 186]].
+It follows [[Project Meridian 186 Metric Reconciliation Sync 626]].
+It incorporates [[Project Meridian 186 Stakeholder Alignment Research 406]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

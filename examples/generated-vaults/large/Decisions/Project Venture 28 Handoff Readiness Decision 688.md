@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-04-23
+date: 2026-01-20
 status: active
 project: "[[Project Venture 28]]"
-company: "[[Apex Labs]]"
-source_created_at: 2024-04-23T09:05:00
-source_observed_at: 2024-04-23T12:01:00
-created_at: 2024-04-23T14:58:00
-updated_at: 2024-04-23T16:58:00
+company: "[[Pioneer Analytics]]"
+source_created_at: 2026-01-20T12:45:00
+source_observed_at: 2026-01-20T14:10:00
+created_at: 2026-01-20T14:15:00
+updated_at: 2026-01-20T21:15:00
 tags: [#decision]
 ---
 # Project Venture 28 Handoff Readiness Decision 688
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Venture 28]].
 
 ## Context
-This decision applies to [[Apex Labs]] and [[Project Venture 28]].
+This decision applies to [[Pioneer Analytics]] and [[Project Venture 28]].
 It follows [[Project Venture 28 Lineage Audit Sync 688]].
 It incorporates [[Project Venture 28 Finance Approval Research 468]].
 

@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-11
 status: active
 project: "[[Project Beacon 212]]"
-company: "[[Northstar Analytics]]"
-source_created_at: 2026-04-11T09:25:00
-source_observed_at: 2026-04-11T12:21:00
-created_at: 2026-04-11T12:26:00
-updated_at: 2026-04-12T08:26:00
+company: "[[BrightWave Analytics]]"
+source_created_at: 2026-04-11T15:31:00
+source_observed_at: 2026-04-11T18:25:00
+created_at: 2026-04-11T18:30:00
+updated_at: 2026-04-11T20:30:00
 tags: [#decision]
 ---
 # Project Beacon 212 Finance Approval Decision 652
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 212]].
 
 ## Context
-This decision applies to [[Northstar Analytics]] and [[Project Beacon 212]].
+This decision applies to [[BrightWave Analytics]] and [[Project Beacon 212]].
 It follows [[Project Beacon 212 Stakeholder Alignment Sync 1532]].
 It incorporates [[Project Beacon 212 Lineage Audit Research 212]].
 

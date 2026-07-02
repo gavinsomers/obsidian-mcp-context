@@ -3,11 +3,11 @@ type: decision
 date: 2025-02-28
 status: active
 project: "[[Project Harbor 129]]"
-company: "[[Crescent Health]]"
-source_created_at: 2025-02-28T11:52:00
-source_observed_at: 2025-02-28T13:23:00
-created_at: 2025-02-28T13:28:00
-updated_at: 2025-02-28T17:28:00
+company: "[[Keystone Retail]]"
+source_created_at: 2025-02-28T12:01:00
+source_observed_at: 2025-02-28T13:07:00
+created_at: 2025-02-28T16:01:00
+updated_at: 2025-03-01T01:01:00
 tags: [#decision]
 ---
 # Project Harbor 129 Warehouse Mapping Decision 349
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Harbor 129]].
 
 ## Context
-This decision applies to [[Crescent Health]] and [[Project Harbor 129]].
-It follows [[Project Harbor 129 Pipeline Hygiene Sync 1669]].
-It incorporates [[Project Harbor 129 Adoption Workflow Research 129]].
+This decision applies to [[Keystone Retail]] and [[Project Harbor 129]].
+It follows [[Project Harbor 129 Pipeline Hygiene Sync 1889]].
+It incorporates [[Project Harbor 129 Adoption Workflow Research 349]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

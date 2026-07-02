@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Venture 148]]"
-source_created_at: 2025-05-18T13:50:00
-source_observed_at: 2025-05-18T14:44:00
-created_at: 2025-05-19T21:50:00
-updated_at: 2025-06-03T21:50:00
+source_created_at: 2025-05-18T08:41:00
+source_observed_at: 2025-05-18T09:21:00
+created_at: 2025-05-18T20:41:00
+updated_at: 2025-06-17T06:41:00
 tags: [#risk]
 ---
 # Project Venture 148 Stakeholder Alignment Risk 148
 
 ## Risk
-Stakeholder Alignment may affect [[Project Venture 148]] for [[Harbor FinTech]].
+Stakeholder Alignment may affect [[Project Venture 148]] for [[Meridian Analytics]].
 
 ## Evidence
-- Raised after [[Project Venture 148 Lineage Audit Sync 1028]]
+- Raised after [[Project Venture 148 Lineage Audit Sync 808]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Rachel Foster]]
+- Status: `closed`
+- Owner: [[Victor Bennett]]
 - [ ] Reassess [[Project Venture 148 Stakeholder Alignment Risk 148]] during the next review #risk

@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Data Platform Engineer"
-source_created_at: 2023-06-12T12:38:00
-source_observed_at: 2023-06-12T14:06:00
-created_at: 2023-06-14T11:38:00
-updated_at: 2025-06-23T13:00:00
+source_created_at: 2023-06-12T11:32:00
+source_observed_at: 2023-06-12T12:12:00
+created_at: 2023-06-13T13:32:00
+updated_at: 2023-09-02T17:32:00
 tags: [#person]
 ---
 # Alex Grant
@@ -14,5 +14,5 @@ tags: [#person]
 Alex Grant is the Data Platform Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Pipeline 157]] ([[Crescent Retail]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Alex Grant]] #follow-up

@@ -1,26 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Summit FinTech]]"
-source_created_at: 2024-01-10T12:40:00
-source_observed_at: 2024-01-10T15:32:00
-created_at: 2024-01-12T07:40:00
-updated_at: 2024-03-02T13:40:00
+status: closed
+company: "[[Summit Health]]"
+source_created_at: 2024-01-10T09:14:00
+source_observed_at: 2024-01-10T09:56:00
+created_at: 2024-01-10T20:14:00
+updated_at: 2024-02-23T00:14:00
 tags: [#project]
 ---
 # Project Meridian 51
 
 ## Overview
-Project Meridian 51 supports [[Summit FinTech]] through consulting delivery.
+Project Meridian 51 supports [[Summit Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Rachel Ivanov]]
-- [[Farah Novak]]
-- [[Victor Rostova]]
-- [[Jonah Walker]]
+- [[Jonah Kim]]
+- [[Zoe Ortega]]
+- [[Nadia Tan]]
 
 ## Operating Notes
 - Evergreen owner: [[Yara Bennett]]
-- Client account: [[Summit FinTech]]
-- Status: `active`
+- Client account: [[Summit Health]]
+- Status: `closed`
+- Closed at: `2024-08-06`
 - [ ] Reconcile latest state for [[Project Meridian 51]] #ops

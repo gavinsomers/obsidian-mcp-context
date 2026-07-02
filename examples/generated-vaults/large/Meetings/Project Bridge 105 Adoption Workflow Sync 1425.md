@@ -1,28 +1,28 @@
 ---
 type: meeting
-date: 2025-03-31
+date: 2025-02-27
 project: "[[Project Bridge 105]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2025-03-31T10:49:00
-source_observed_at: 2025-03-31T11:47:00
-created_at: 2025-03-31T13:39:00
-updated_at: 2025-04-01T08:39:00
+company: "[[BrightWave Health]]"
+source_created_at: 2025-02-27T12:57:00
+source_observed_at: 2025-02-27T15:28:00
+created_at: 2025-03-08T19:57:00
+updated_at: 2025-03-09T02:57:00
 tags: [#meeting]
 ---
 # Project Bridge 105 Adoption Workflow Sync 1425
 
 ## Evergreen Attendees
-- [[Alex Evans]]
+- [[David Alvarez]]
 
 ## Client Attendees
-- [[Wendy Quinn]]
-- [[Sam Haddad]]
-- [[Grace Morgan]]
+- [[Clara Kim]]
+- [[Sam Ortega]]
+- [[Grace Tan]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Bridge 105]] at [[Northstar Labs]].
-[[Alex Evans]] aligned with [[Wendy Quinn]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Bridge 105]] at [[BrightWave Health]].
+[[David Alvarez]] aligned with [[Clara Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 105]] to [[Alex Evans]] #follow-up
+- [ ] Send recap for [[Project Bridge 105]] to [[David Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

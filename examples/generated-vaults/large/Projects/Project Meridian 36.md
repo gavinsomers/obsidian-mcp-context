@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Harbor Analytics]]"
-source_created_at: 2023-10-27T12:30:00
-source_observed_at: 2023-10-27T13:54:00
-created_at: 2023-10-29T02:30:00
-updated_at: 2023-12-16T16:59:00
+status: planning
+company: "[[Pioneer Health]]"
+source_created_at: 2023-10-27T12:40:00
+source_observed_at: 2023-10-27T15:32:00
+created_at: 2023-10-29T07:40:00
+updated_at: 2023-12-18T13:40:00
 tags: [#project]
 ---
 # Project Meridian 36
 
 ## Overview
-Project Meridian 36 supports [[Harbor Analytics]] through consulting delivery.
+Project Meridian 36 supports [[Pioneer Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Ben Morgan]]
-- [[Rachel Quinn]]
-- [[Farah Vance]]
+- [[Kai Kim]]
+- [[Alex Patel]]
+- [[Omar Tan]]
 
 ## Operating Notes
 - Evergreen owner: [[Iris Bennett]]
-- Client account: [[Harbor Analytics]]
-- Status: `closed`
-- Closed at: `2024-03-31`
+- Client account: [[Pioneer Health]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Meridian 36]] #ops

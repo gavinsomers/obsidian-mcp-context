@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Keystone 25]]"
-source_created_at: 2024-05-28T11:08:00
-source_observed_at: 2024-05-28T13:24:00
-created_at: 2024-05-29T18:08:00
-updated_at: 2024-07-09T04:08:00
+source_created_at: 2024-05-28T15:16:00
+source_observed_at: 2024-05-28T16:44:00
+created_at: 2024-05-28T20:16:00
+updated_at: 2024-06-09T23:16:00
 tags: [#risk]
 ---
 # Project Keystone 25 Pipeline Hygiene Risk 245
 
 ## Risk
-Pipeline Hygiene may affect [[Project Keystone 25]] for [[Apex Media]].
+Pipeline Hygiene may affect [[Project Keystone 25]] for [[Quantum FinTech]].
 
 ## Evidence
 - Raised after [[Project Keystone 25 Adoption Workflow Sync 245]]

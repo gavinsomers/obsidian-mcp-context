@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-08-04
 project: "[[Project Orbit 41]]"
-company: "[[Vanguard Logistics]]"
-source_created_at: 2025-08-04T14:30:00
-source_observed_at: 2025-08-04T14:50:00
-created_at: 2025-08-04T18:39:00
-updated_at: 2025-08-04T19:39:00
+company: "[[Atlas Health]]"
+source_created_at: 2025-08-04T10:57:00
+source_observed_at: 2025-08-04T11:20:00
+created_at: 2025-08-04T15:40:00
+updated_at: 2025-08-04T19:40:00
 tags: [#meeting]
 ---
 # Project Orbit 41 Warehouse Mapping Sync 1361
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Nadia Bennett]]
 
 ## Client Attendees
-- [[Jonah Lee]]
-- [[Zoe Patel]]
-- [[Nadia Usman]]
+- [[Hannah Kim]]
+- [[Xavier Ortega]]
+- [[Lina Tan]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 41]] at [[Vanguard Logistics]].
-[[Nadia Bennett]] aligned with [[Jonah Lee]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 41]] at [[Atlas Health]].
+[[Nadia Bennett]] aligned with [[Hannah Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Orbit 41]] to [[Nadia Bennett]] #follow-up

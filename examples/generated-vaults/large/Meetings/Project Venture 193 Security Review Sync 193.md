@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-12-18
 project: "[[Project Venture 193]]"
-company: "[[Northstar Media]]"
-source_created_at: 2025-12-18T10:12:00
-source_observed_at: 2025-12-18T12:26:00
-created_at: 2025-12-18T12:31:00
-updated_at: 2025-12-19T03:31:00
+company: "[[Apex Logistics]]"
+source_created_at: 2025-12-18T10:05:00
+source_observed_at: 2025-12-18T11:30:00
+created_at: 2025-12-20T14:05:00
+updated_at: 2025-12-20T17:05:00
 tags: [#meeting]
 ---
 # Project Venture 193 Security Review Sync 193
 
 ## Evergreen Attendees
-- [[Jonah Haddad]]
+- [[Nadia Diaz]]
 
 ## Client Attendees
-- [[Omar Kim]]
-- [[David Patel]]
-- [[Tara Tan]]
+- [[Elena Lee]]
+- [[Uma Patel]]
+- [[Iris Usman]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 193]] at [[Northstar Media]].
-[[Jonah Haddad]] aligned with [[Omar Kim]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 193]] at [[Apex Logistics]].
+[[Nadia Diaz]] aligned with [[Elena Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 193]] to [[Jonah Haddad]] #follow-up
+- [ ] Send recap for [[Project Venture 193]] to [[Nadia Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

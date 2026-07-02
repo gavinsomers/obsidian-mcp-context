@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: mid-market
-source_created_at: 2023-11-01T12:09:00
-source_observed_at: 2023-11-01T13:56:00
-created_at: 2023-11-03T06:09:00
-updated_at: 2023-12-06T17:09:00
+source_created_at: 2023-11-01T12:42:00
+source_observed_at: 2023-11-01T13:31:00
+created_at: 2023-11-02T14:42:00
+updated_at: 2025-06-19T13:00:00
 tags: [#company]
 ---
 # Quantum Logistics
@@ -14,7 +14,8 @@ tags: [#company]
 Quantum Logistics is a mid-market account currently marked `active`.
 
 ## Assigned Account Team
-- [[Jonah Bennett]] - Data Platform Engineer
+- [[Clara Diaz]] - Senior Data Consultant
+- [[Clara Chen]] - Technical Director
 
 ## Client Stakeholders
 - [[Kai Lee]] - Finance Lead
@@ -22,7 +23,8 @@ Quantum Logistics is a mid-market account currently marked `active`.
 - [[Omar Usman]] - Customer Success Lead
 
 ## Projects
-- [[Project Pipeline 37]]
+- [[Project Pipeline 82]]
+- [[Project Meridian 156]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Quantum Logistics]] #account

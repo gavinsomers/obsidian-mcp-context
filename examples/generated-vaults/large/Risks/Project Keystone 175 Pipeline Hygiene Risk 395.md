@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Keystone 175]]"
-source_created_at: 2025-09-28T15:08:00
-source_observed_at: 2025-09-28T18:06:00
-created_at: 2025-09-29T03:08:00
-updated_at: 2025-10-25T07:08:00
+source_created_at: 2025-09-28T09:08:00
+source_observed_at: 2025-09-28T10:26:00
+created_at: 2025-09-28T16:08:00
+updated_at: 2025-10-12T01:08:00
 tags: [#risk]
 ---
 # Project Keystone 175 Pipeline Hygiene Risk 395
 
 ## Risk
-Pipeline Hygiene may affect [[Project Keystone 175]] for [[Northstar Media]].
+Pipeline Hygiene may affect [[Project Keystone 175]] for [[Northstar Labs]].
 
 ## Evidence
-- Raised after [[Project Keystone 175 Adoption Workflow Sync 1275]]
+- Raised after [[Project Keystone 175 Adoption Workflow Sync 615]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Sam Grant]]
+- Status: `open`
+- Owner: [[Wendy Chen]]
 - [ ] Reassess [[Project Keystone 175 Pipeline Hygiene Risk 395]] during the next review #risk

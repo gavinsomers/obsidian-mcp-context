@@ -2,10 +2,10 @@
 type: person
 company: "[[Keystone Labs]]"
 role: "Revenue Operations Lead"
-source_created_at: 2023-08-28T16:33:00
-source_observed_at: 2023-08-28T19:27:00
-created_at: 2023-08-28T20:33:00
-updated_at: 2023-11-16T21:33:00
+source_created_at: 2023-08-28T08:15:00
+source_observed_at: 2023-08-28T10:45:00
+created_at: 2023-08-30T02:15:00
+updated_at: 2023-11-23T05:15:00
 tags: [#person]
 ---
 # Jonah Rostova
@@ -14,5 +14,5 @@ tags: [#person]
 Jonah Rostova is the Revenue Operations Lead at [[Keystone Labs]].
 
 ## Client Project Involvement
-- First seen through [[Keystone Labs]] account context
+- Client stakeholder on [[Project Harbor 24]] ([[Keystone Labs]])
 - [ ] Confirm next update with [[Jonah Rostova]] #follow-up

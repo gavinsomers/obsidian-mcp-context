@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2025-04-08
+date: 2024-10-07
 project: "[[Project Lantern 65]]"
-company: "[[Meridian Health]]"
-source_created_at: 2025-04-08T09:08:00
-source_observed_at: 2025-04-08T11:32:00
-created_at: 2025-04-08T11:58:00
-updated_at: 2025-04-09T04:58:00
+company: "[[BrightWave FinTech]]"
+source_created_at: 2024-10-07T14:29:00
+source_observed_at: 2024-10-07T14:46:00
+created_at: 2024-10-07T14:52:00
+updated_at: 2024-10-08T04:52:00
 tags: [#meeting]
 ---
 # Project Lantern 65 Adoption Workflow Sync 505
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Lina Chen]]
 
 ## Client Attendees
-- [[Elena Kim]]
-- [[Uma Ortega]]
-- [[Iris Tan]]
+- [[Jonah Ivanov]]
+- [[Clara Walker]]
+- [[Zoe Morgan]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Lantern 65]] at [[Meridian Health]].
-[[Lina Chen]] aligned with [[Elena Kim]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Lantern 65]] at [[BrightWave FinTech]].
+[[Lina Chen]] aligned with [[Jonah Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 65]] to [[Lina Chen]] #follow-up

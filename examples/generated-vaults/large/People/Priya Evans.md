@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Principal Analytics Engineer"
-source_created_at: 2023-05-31T09:35:00
-source_observed_at: 2023-05-31T10:08:00
-created_at: 2023-06-02T02:35:00
-updated_at: 2024-12-29T13:00:00
+source_created_at: 2023-05-31T14:05:00
+source_observed_at: 2023-05-31T16:06:00
+created_at: 2023-06-02T08:05:00
+updated_at: 2023-07-04T17:05:00
 tags: [#person]
 ---
 # Priya Evans
@@ -14,5 +14,5 @@ tags: [#person]
 Priya Evans is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Atlas 121]] ([[Summit Health]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Priya Evans]] #follow-up

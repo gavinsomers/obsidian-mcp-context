@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Harbor 39]]"
-source_created_at: 2025-06-03T10:47:00
-source_observed_at: 2025-06-03T11:09:00
-created_at: 2025-06-03T23:47:00
-updated_at: 2025-07-15T07:47:00
+source_created_at: 2025-06-03T09:24:00
+source_observed_at: 2025-06-03T12:20:00
+created_at: 2025-06-05T00:24:00
+updated_at: 2025-06-17T10:24:00
 tags: [#risk]
 ---
 # Project Harbor 39 Security Review Risk 479
 
 ## Risk
-Security Review may affect [[Project Harbor 39]] for [[Vanguard Manufacturing]].
+Security Review may affect [[Project Harbor 39]] for [[Summit Logistics]].
 
 ## Evidence
 - Raised after [[Project Harbor 39 Pipeline Hygiene Sync 479]]

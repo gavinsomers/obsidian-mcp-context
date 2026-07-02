@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2023-10-25
+date: 2023-09-09
 status: active
 project: "[[Project Signal 14]]"
-company: "[[Quantum Manufacturing]]"
-source_created_at: 2023-10-25T08:35:00
-source_observed_at: 2023-10-25T11:04:00
-created_at: 2023-10-25T11:09:00
-updated_at: 2023-10-26T06:09:00
+company: "[[Helio Media]]"
+source_created_at: 2023-09-09T08:07:00
+source_observed_at: 2023-09-09T09:50:00
+created_at: 2023-09-09T10:02:00
+updated_at: 2023-09-10T01:02:00
 tags: [#decision]
 ---
 # Project Signal 14 Metric Reconciliation Decision 674
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Signal 14]].
 
 ## Context
-This decision applies to [[Quantum Manufacturing]] and [[Project Signal 14]].
-It follows [[Project Signal 14 Finance Approval Sync 1774]].
-It incorporates [[Project Signal 14 Handoff Readiness Research 14]].
+This decision applies to [[Helio Media]] and [[Project Signal 14]].
+It follows [[Project Signal 14 Finance Approval Sync 1334]].
+It incorporates [[Project Signal 14 Handoff Readiness Research 234]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

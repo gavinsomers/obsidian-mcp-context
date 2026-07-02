@@ -2,11 +2,11 @@
 type: meeting
 date: 2023-10-05
 project: "[[Project Signal 29]]"
-company: "[[Meridian Analytics]]"
-source_created_at: 2023-10-05T08:14:00
-source_observed_at: 2023-10-05T09:37:00
-created_at: 2023-10-06T09:14:00
-updated_at: 2023-10-06T10:14:00
+company: "[[Quantum Health]]"
+source_created_at: 2023-10-05T10:46:00
+source_observed_at: 2023-10-05T11:34:00
+created_at: 2023-10-08T11:46:00
+updated_at: 2023-10-09T09:46:00
 tags: [#meeting]
 ---
 # Project Signal 29 Pipeline Hygiene Sync 1569
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Ben Bennett]]
 
 ## Client Attendees
-- [[Yara Lee]]
-- [[Marcus Quinn]]
-- [[Ben Vance]]
+- [[Grace Kim]]
+- [[Wendy Ortega]]
+- [[Kai Tan]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 29]] at [[Meridian Analytics]].
-[[Ben Bennett]] aligned with [[Yara Lee]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 29]] at [[Quantum Health]].
+[[Ben Bennett]] aligned with [[Grace Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 29]] to [[Ben Bennett]] #follow-up

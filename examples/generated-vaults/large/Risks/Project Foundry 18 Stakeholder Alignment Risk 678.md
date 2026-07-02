@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Foundry 18]]"
-source_created_at: 2026-04-15T11:46:00
-source_observed_at: 2026-04-15T13:48:00
-created_at: 2026-04-17T00:46:00
-updated_at: 2026-05-04T06:46:00
+source_created_at: 2026-04-15T09:19:00
+source_observed_at: 2026-04-15T09:45:00
+created_at: 2026-04-16T17:19:00
+updated_at: 2026-04-23T03:19:00
 tags: [#risk]
 ---
 # Project Foundry 18 Stakeholder Alignment Risk 678
 
 ## Risk
-Stakeholder Alignment may affect [[Project Foundry 18]] for [[Meridian Retail]].
+Stakeholder Alignment may affect [[Project Foundry 18]] for [[Keystone Health]].
 
 ## Evidence
 - Raised after [[Project Foundry 18 Lineage Audit Sync 678]]

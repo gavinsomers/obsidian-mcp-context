@@ -2,10 +2,10 @@
 type: person
 company: "[[Pioneer FinTech]]"
 role: "Customer Success Lead"
-source_created_at: 2023-11-01T09:50:00
-source_observed_at: 2023-11-01T12:41:00
-created_at: 2023-11-01T21:50:00
-updated_at: 2023-11-18T04:50:00
+source_created_at: 2023-11-01T15:11:00
+source_observed_at: 2023-11-01T17:00:00
+created_at: 2023-11-02T22:11:00
+updated_at: 2023-12-11T08:11:00
 tags: [#person]
 ---
 # Kai Walker

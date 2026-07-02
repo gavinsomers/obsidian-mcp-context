@@ -2,10 +2,10 @@
 type: person
 company: "[[Northstar Retail]]"
 role: "Revenue Operations Lead"
-source_created_at: 2023-09-05T08:11:00
-source_observed_at: 2023-09-05T08:58:00
-created_at: 2023-09-11T08:11:00
-updated_at: 2026-04-24T13:00:00
+source_created_at: 2023-09-05T13:53:00
+source_observed_at: 2023-09-05T15:29:00
+created_at: 2023-09-06T21:53:00
+updated_at: 2025-04-11T13:00:00
 tags: [#person]
 ---
 # Alex Shah
@@ -14,7 +14,6 @@ tags: [#person]
 Alex Shah is the Revenue Operations Lead at [[Northstar Retail]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Lantern 140]] ([[Northstar Retail]])
-- Client stakeholder on [[Project Meridian 201]] ([[Northstar Retail]])
-- Client stakeholder on [[Project Harbor 219]] ([[Northstar Retail]])
+- Client stakeholder on [[Project Beacon 2]] ([[Northstar Retail]])
+- Client stakeholder on [[Project Pipeline 142]] ([[Northstar Retail]])
 - [ ] Confirm next update with [[Alex Shah]] #follow-up

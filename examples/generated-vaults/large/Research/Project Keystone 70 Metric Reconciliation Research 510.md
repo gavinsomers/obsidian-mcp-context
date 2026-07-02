@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Keystone 70]]"
-company: "[[Apex FinTech]]"
-source_created_at: 2025-10-15T08:50:00
-source_observed_at: 2025-10-15T09:08:00
-created_at: 2025-10-15T12:50:00
-updated_at: 2025-11-23T16:50:00
+company: "[[Crescent Analytics]]"
+source_created_at: 2025-10-15T13:00:00
+source_observed_at: 2025-10-15T15:57:00
+created_at: 2025-10-17T01:00:00
+updated_at: 2025-11-21T07:00:00
 tags: [#research]
 ---
 # Project Keystone 70 Metric Reconciliation Research 510
 
 ## Research Summary
-Research on metric reconciliation for [[Project Keystone 70]] and [[Apex FinTech]].
+Research on metric reconciliation for [[Project Keystone 70]] and [[Crescent Analytics]].
 
 ## Evidence
 - Interview notes from [[Rachel Chen]]

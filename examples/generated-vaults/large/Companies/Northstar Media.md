@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: smb
-source_created_at: 2023-09-18T13:16:00
-source_observed_at: 2023-09-18T15:31:00
-created_at: 2023-09-20T08:16:00
-updated_at: 2023-12-05T15:16:00
+source_created_at: 2023-09-18T08:13:00
+source_observed_at: 2023-09-18T10:53:00
+created_at: 2023-09-20T07:13:00
+updated_at: 2026-03-30T13:00:00
 tags: [#company]
 ---
 # Northstar Media
@@ -14,6 +14,8 @@ tags: [#company]
 Northstar Media is a smb account currently marked `active`.
 
 ## Assigned Account Team
+- [[Iris Alvarez]] - Senior Data Consultant
+- [[Marcus Alvarez]] - Analytics Engineer
 
 ## Client Stakeholders
 - [[Omar Kim]] - Data Owner
@@ -21,6 +23,8 @@ Northstar Media is a smb account currently marked `active`.
 - [[Tara Tan]] - Finance Lead
 
 ## Projects
+- [[Project Keystone 10]]
+- [[Project Horizon 214]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Northstar Media]] #account

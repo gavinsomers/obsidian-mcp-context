@@ -3,11 +3,11 @@ type: decision
 date: 2024-03-25
 status: active
 project: "[[Project Bridge 60]]"
-company: "[[Crescent Retail]]"
-source_created_at: 2024-03-25T12:24:00
-source_observed_at: 2024-03-25T14:09:00
-created_at: 2024-03-25T14:14:00
-updated_at: 2024-03-26T02:14:00
+company: "[[Harbor Analytics]]"
+source_created_at: 2024-03-25T16:21:00
+source_observed_at: 2024-03-25T19:17:00
+created_at: 2024-03-25T19:22:00
+updated_at: 2024-03-26T15:22:00
 tags: [#decision]
 ---
 # Project Bridge 60 Stakeholder Alignment Decision 60
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 60]].
 
 ## Context
-This decision applies to [[Crescent Retail]] and [[Project Bridge 60]].
-It follows [[Project Bridge 60 Handoff Readiness Sync 940]].
+This decision applies to [[Harbor Analytics]] and [[Project Bridge 60]].
+It follows [[Project Bridge 60 Handoff Readiness Sync 1600]].
 It incorporates [[Project Bridge 60 Metric Reconciliation Research 60]].
 
 ## Supersession

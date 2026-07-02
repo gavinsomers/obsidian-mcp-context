@@ -3,11 +3,11 @@ type: decision
 date: 2024-07-17
 status: active
 project: "[[Project Lantern 80]]"
-company: "[[Crescent Logistics]]"
-source_created_at: 2024-07-17T09:53:00
-source_observed_at: 2024-07-17T10:29:00
-created_at: 2024-07-17T15:18:00
-updated_at: 2024-07-17T20:18:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2024-07-17T15:13:00
+source_observed_at: 2024-07-17T17:53:00
+created_at: 2024-07-17T17:58:00
+updated_at: 2024-07-17T19:58:00
 tags: [#decision]
 ---
 # Project Lantern 80 Stakeholder Alignment Decision 300
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Lantern 80]].
 
 ## Context
-This decision applies to [[Crescent Logistics]] and [[Project Lantern 80]].
+This decision applies to [[Vanguard FinTech]] and [[Project Lantern 80]].
 It follows [[Project Lantern 80 Handoff Readiness Sync 300]].
 It incorporates [[Project Lantern 80 Metric Reconciliation Research 80]].
 

@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-04-24
 project: "[[Project Harbor 219]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2026-04-24T13:07:00
-source_observed_at: 2026-04-24T13:19:00
-created_at: 2026-04-24T13:24:00
-updated_at: 2026-04-25T12:24:00
+company: "[[Noble Health]]"
+source_created_at: 2026-04-24T13:57:00
+source_observed_at: 2026-04-24T15:06:00
+created_at: 2026-04-24T17:24:00
+updated_at: 2026-04-25T03:24:00
 tags: [#meeting]
 ---
 # Project Harbor 219 Pipeline Hygiene Sync 439
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Sam Alvarez]]
 
 ## Client Attendees
-- [[Alex Shah]]
-- [[Wendy Ivanov]]
-- [[Kai Novak]]
+- [[Lina Kim]]
+- [[Amara Patel]]
+- [[Priya Tan]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 219]] at [[Northstar Retail]].
-[[Sam Alvarez]] aligned with [[Alex Shah]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 219]] at [[Noble Health]].
+[[Sam Alvarez]] aligned with [[Lina Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 219]] to [[Sam Alvarez]] #follow-up

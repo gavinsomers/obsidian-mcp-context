@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Helio Manufacturing]]"
-source_created_at: 2024-03-28T10:13:00
-source_observed_at: 2024-03-28T10:56:00
-created_at: 2024-03-29T15:13:00
-updated_at: 2024-04-26T16:13:00
+status: blocked
+company: "[[Meridian FinTech]]"
+source_created_at: 2024-03-28T08:43:00
+source_observed_at: 2024-03-28T10:58:00
+created_at: 2024-03-29T11:43:00
+updated_at: 2024-06-07T19:43:00
 tags: [#project]
 ---
 # Project Pipeline 67
 
 ## Overview
-Project Pipeline 67 supports [[Helio Manufacturing]] through sales pipeline.
+Project Pipeline 67 supports [[Meridian FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Omar Jenkins]]
-- [[David Ortega]]
-- [[Tara Shah]]
+- [[Lina Ivanov]]
+- [[Amara Novak]]
+- [[Priya Rostova]]
+- [[Elena Walker]]
 
 ## Operating Notes
 - Evergreen owner: [[Nadia Chen]]
-- Client account: [[Helio Manufacturing]]
-- Status: `active`
+- Client account: [[Meridian FinTech]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Pipeline 67]] #ops

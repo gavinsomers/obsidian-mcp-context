@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Foundry 33]]"
-company: "[[BrightWave Logistics]]"
-source_created_at: 2023-11-06T08:54:00
-source_observed_at: 2023-11-06T09:23:00
-created_at: 2023-11-10T12:54:00
-updated_at: 2023-12-17T16:54:00
+company: "[[Apex Retail]]"
+source_created_at: 2023-11-06T10:13:00
+source_observed_at: 2023-11-06T11:25:00
+created_at: 2023-11-07T10:13:00
+updated_at: 2023-11-14T17:13:00
 tags: [#research]
 ---
 # Project Foundry 33 Pipeline Hygiene Research 33
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Foundry 33]] and [[BrightWave Logistics]].
+Research on pipeline hygiene for [[Project Foundry 33]] and [[Apex Retail]].
 
 ## Evidence
 - Interview notes from [[Farah Bennett]]

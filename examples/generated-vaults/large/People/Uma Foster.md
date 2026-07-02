@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Client Partner"
-source_created_at: 2023-06-10T13:52:00
-source_observed_at: 2023-06-10T16:00:00
-created_at: 2023-06-12T07:52:00
-updated_at: 2025-05-25T13:00:00
+source_created_at: 2023-06-10T11:43:00
+source_observed_at: 2023-06-10T14:09:00
+created_at: 2023-06-11T19:43:00
+updated_at: 2023-08-10T03:43:00
 tags: [#person]
 ---
 # Uma Foster
@@ -14,5 +14,5 @@ tags: [#person]
 Uma Foster is the Client Partner at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Atlas 151]] ([[Summit Analytics]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Uma Foster]] #follow-up

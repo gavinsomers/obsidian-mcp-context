@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Senior Data Consultant"
-source_created_at: 2023-06-03T15:02:00
-source_observed_at: 2023-06-03T16:19:00
-created_at: 2023-06-04T09:02:00
-updated_at: 2025-02-10T13:00:00
+source_created_at: 2023-06-03T15:54:00
+source_observed_at: 2023-06-03T16:29:00
+created_at: 2023-06-04T07:54:00
+updated_at: 2023-07-05T11:54:00
 tags: [#person]
 ---
 # Zoe Evans
@@ -14,5 +14,5 @@ tags: [#person]
 Zoe Evans is the Senior Data Consultant at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Keystone 130]] ([[Apex Manufacturing]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Zoe Evans]] #follow-up

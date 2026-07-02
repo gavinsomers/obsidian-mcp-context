@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-10-30
 project: "[[Project Signal 104]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2025-10-30T13:26:00
-source_observed_at: 2025-10-30T16:17:00
-created_at: 2025-11-03T13:26:00
-updated_at: 2025-11-04T07:26:00
+company: "[[Crescent Media]]"
+source_created_at: 2025-10-30T11:33:00
+source_observed_at: 2025-10-30T12:50:00
+created_at: 2025-10-30T12:55:00
+updated_at: 2025-10-30T16:55:00
 tags: [#meeting]
 ---
 # Project Signal 104 Finance Approval Sync 1424
 
 ## Evergreen Attendees
-- [[Zoe Diaz]]
+- [[Clara Alvarez]]
 
 ## Client Attendees
-- [[Nadia Vance]]
-- [[Jonah Morgan]]
-- [[Victor Haddad]]
+- [[Ben Lee]]
+- [[Rachel Patel]]
+- [[Farah Usman]]
 
 ## Notes
-Finance Approval reviewed for [[Project Signal 104]] at [[BrightWave Labs]].
-[[Zoe Diaz]] aligned with [[Nadia Vance]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Signal 104]] at [[Crescent Media]].
+[[Clara Alvarez]] aligned with [[Ben Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 104]] to [[Zoe Diaz]] #follow-up
+- [ ] Send recap for [[Project Signal 104]] to [[Clara Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

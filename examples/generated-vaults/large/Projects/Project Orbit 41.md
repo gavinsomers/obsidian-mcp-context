@@ -1,25 +1,25 @@
 ---
 type: project
 status: planning
-company: "[[Vanguard Logistics]]"
-source_created_at: 2023-11-22T11:31:00
-source_observed_at: 2023-11-22T13:02:00
-created_at: 2023-11-23T21:31:00
-updated_at: 2023-12-15T07:31:00
+company: "[[Atlas Health]]"
+source_created_at: 2023-11-22T10:03:00
+source_observed_at: 2023-11-22T11:22:00
+created_at: 2023-11-24T04:03:00
+updated_at: 2024-01-22T04:03:00
 tags: [#project]
 ---
 # Project Orbit 41
 
 ## Overview
-Project Orbit 41 supports [[Vanguard Logistics]] through consulting delivery.
+Project Orbit 41 supports [[Atlas Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Jonah Lee]]
-- [[Zoe Patel]]
-- [[Nadia Usman]]
+- [[Hannah Kim]]
+- [[Xavier Ortega]]
+- [[Lina Tan]]
 
 ## Operating Notes
 - Evergreen owner: [[Nadia Bennett]]
-- Client account: [[Vanguard Logistics]]
+- Client account: [[Atlas Health]]
 - Status: `planning`
 - [ ] Reconcile latest state for [[Project Orbit 41]] #ops

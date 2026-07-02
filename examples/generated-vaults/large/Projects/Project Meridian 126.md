@@ -1,26 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Noble Retail]]"
-source_created_at: 2025-01-13T16:42:00
-source_observed_at: 2025-01-13T19:20:00
-created_at: 2025-01-15T03:42:00
-updated_at: 2025-03-02T10:42:00
+company: "[[Atlas Media]]"
+source_created_at: 2025-01-13T15:50:00
+source_observed_at: 2025-01-13T18:44:00
+created_at: 2025-01-14T18:50:00
+updated_at: 2025-02-23T04:50:00
 tags: [#project]
 ---
 # Project Meridian 126
 
 ## Overview
-Project Meridian 126 supports [[Noble Retail]] through consulting delivery.
+Project Meridian 126 supports [[Atlas Media]] through consulting delivery.
 
 ## Stakeholders
-- [[Hannah Jenkins]]
-- [[Xavier Novak]]
-- [[Lina Shah]]
-- [[Amara Xu]]
+- [[Xavier Kim]]
+- [[Lina Patel]]
+- [[Amara Usman]]
 
 ## Operating Notes
-- Evergreen owner: [[Victor Evans]]
-- Client account: [[Noble Retail]]
+- Evergreen owner: [[Zoe Alvarez]]
+- Client account: [[Atlas Media]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Meridian 126]] #ops

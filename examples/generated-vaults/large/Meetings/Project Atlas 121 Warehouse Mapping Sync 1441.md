@@ -1,28 +1,28 @@
 ---
 type: meeting
-date: 2025-11-24
+date: 2025-05-22
 project: "[[Project Atlas 121]]"
-company: "[[Summit Health]]"
-source_created_at: 2025-11-24T10:12:00
-source_observed_at: 2025-11-24T11:50:00
-created_at: 2025-11-24T13:47:00
-updated_at: 2025-11-24T17:47:00
+company: "[[Cobalt Analytics]]"
+source_created_at: 2025-05-22T10:42:00
+source_observed_at: 2025-05-22T13:15:00
+created_at: 2025-05-22T13:20:00
+updated_at: 2025-05-22T14:20:00
 tags: [#meeting]
 ---
 # Project Atlas 121 Warehouse Mapping Sync 1441
 
 ## Evergreen Attendees
-- [[Priya Evans]]
+- [[Uma Alvarez]]
 
 ## Client Attendees
-- [[Jonah Kim]]
-- [[Zoe Ortega]]
-- [[Nadia Tan]]
+- [[Victor Lee]]
+- [[Jonah Quinn]]
+- [[Zoe Usman]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 121]] at [[Summit Health]].
-[[Priya Evans]] aligned with [[Jonah Kim]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 121]] at [[Cobalt Analytics]].
+[[Uma Alvarez]] aligned with [[Victor Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Atlas 121]] to [[Priya Evans]] #follow-up
+- [ ] Send recap for [[Project Atlas 121]] to [[Uma Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

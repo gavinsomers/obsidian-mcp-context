@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-03-18
 project: "[[Project Compass 203]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2026-03-18T13:11:00
-source_observed_at: 2026-03-18T14:05:00
-created_at: 2026-03-18T18:11:00
-updated_at: 2026-03-19T14:11:00
+company: "[[Meridian FinTech]]"
+source_created_at: 2026-03-18T12:39:00
+source_observed_at: 2026-03-18T13:19:00
+created_at: 2026-03-18T16:28:00
+updated_at: 2026-03-19T03:28:00
 tags: [#meeting]
 ---
 # Project Compass 203 Security Review Sync 1523
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Ben Alvarez]]
 
 ## Client Attendees
-- [[Iris Morgan]]
-- [[Yara Quinn]]
-- [[Marcus Vance]]
+- [[Lina Ivanov]]
+- [[Elena Walker]]
+- [[Priya Rostova]]
 
 ## Notes
-Security Review reviewed for [[Project Compass 203]] at [[Cobalt Labs]].
-[[Ben Alvarez]] aligned with [[Iris Morgan]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Compass 203]] at [[Meridian FinTech]].
+[[Ben Alvarez]] aligned with [[Lina Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 203]] to [[Ben Alvarez]] #follow-up

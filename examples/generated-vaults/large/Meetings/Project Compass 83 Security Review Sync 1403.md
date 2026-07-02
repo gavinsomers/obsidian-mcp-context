@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-10-01
 project: "[[Project Compass 83]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2025-10-01T14:56:00
-source_observed_at: 2025-10-01T17:41:00
-created_at: 2025-10-02T20:56:00
-updated_at: 2025-10-03T01:56:00
+company: "[[Noble Manufacturing]]"
+source_created_at: 2025-10-01T13:14:00
+source_observed_at: 2025-10-01T13:34:00
+created_at: 2025-10-01T13:41:00
+updated_at: 2025-10-01T16:41:00
 tags: [#meeting]
 ---
 # Project Compass 83 Security Review Sync 1403
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[David Diaz]]
 
 ## Client Attendees
-- [[Marcus Vance]]
-- [[Uma Haddad]]
-- [[Iris Morgan]]
+- [[Xavier Jenkins]]
+- [[Lina Ortega]]
+- [[Amara Tan]]
 
 ## Notes
-Security Review reviewed for [[Project Compass 83]] at [[Cobalt Labs]].
-[[David Diaz]] aligned with [[Marcus Vance]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Compass 83]] at [[Noble Manufacturing]].
+[[David Diaz]] aligned with [[Xavier Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 83]] to [[David Diaz]] #follow-up

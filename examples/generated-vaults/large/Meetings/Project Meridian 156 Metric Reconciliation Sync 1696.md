@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-06-19
 project: "[[Project Meridian 156]]"
-company: "[[BrightWave Retail]]"
-source_created_at: 2025-06-19T14:07:00
-source_observed_at: 2025-06-19T14:19:00
-created_at: 2025-06-19T16:48:00
-updated_at: 2025-06-19T23:48:00
+company: "[[Quantum Logistics]]"
+source_created_at: 2025-06-19T15:18:00
+source_observed_at: 2025-06-19T17:45:00
+created_at: 2025-06-19T19:39:00
+updated_at: 2025-06-20T17:39:00
 tags: [#meeting]
 ---
 # Project Meridian 156 Metric Reconciliation Sync 1696
 
 ## Evergreen Attendees
-- [[Zoe Foster]]
+- [[Clara Chen]]
 
 ## Client Attendees
-- [[Clara Shah]]
-- [[Nadia Novak]]
-- [[Zoe Ivanov]]
+- [[Kai Lee]]
+- [[Alex Quinn]]
+- [[Omar Usman]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 156]] at [[BrightWave Retail]].
-[[Zoe Foster]] aligned with [[Clara Shah]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 156]] at [[Quantum Logistics]].
+[[Clara Chen]] aligned with [[Kai Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 156]] to [[Zoe Foster]] #follow-up
+- [ ] Send recap for [[Project Meridian 156]] to [[Clara Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

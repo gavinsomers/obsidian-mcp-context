@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Orbit 71]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2025-10-16T08:50:00
-source_observed_at: 2025-10-16T10:44:00
-created_at: 2025-10-17T08:50:00
-updated_at: 2025-11-21T10:50:00
+company: "[[Harbor Labs]]"
+source_created_at: 2025-10-16T08:43:00
+source_observed_at: 2025-10-16T09:17:00
+created_at: 2025-10-18T04:43:00
+updated_at: 2025-11-08T08:43:00
 tags: [#research]
 ---
 # Project Orbit 71 Contract Renewal Research 511
 
 ## Research Summary
-Research on contract renewal for [[Project Orbit 71]] and [[Vanguard Retail]].
+Research on contract renewal for [[Project Orbit 71]] and [[Harbor Labs]].
 
 ## Evidence
 - Interview notes from [[Sam Chen]]

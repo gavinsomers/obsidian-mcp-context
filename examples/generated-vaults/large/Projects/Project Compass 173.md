@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Keystone Health]]"
-source_created_at: 2025-09-01T08:41:00
-source_observed_at: 2025-09-01T11:30:00
-created_at: 2025-09-02T06:41:00
-updated_at: 2025-11-27T08:41:00
+status: planning
+company: "[[Helio Health]]"
+source_created_at: 2025-09-01T08:05:00
+source_observed_at: 2025-09-01T10:01:00
+created_at: 2025-09-02T05:05:00
+updated_at: 2025-10-26T14:05:00
 tags: [#project]
 ---
 # Project Compass 173
 
 ## Overview
-Project Compass 173 supports [[Keystone Health]] through customer success.
+Project Compass 173 supports [[Helio Health]] through customer success.
 
 ## Stakeholders
-- [[Nadia Kim]]
-- [[Clara Patel]]
-- [[Sam Tan]]
+- [[David Kim]]
+- [[Tara Ortega]]
+- [[Hannah Tan]]
 
 ## Operating Notes
-- Evergreen owner: [[Priya Grant]]
-- Client account: [[Keystone Health]]
-- Status: `blocked`
+- Evergreen owner: [[Uma Chen]]
+- Client account: [[Helio Health]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Compass 173]] #ops

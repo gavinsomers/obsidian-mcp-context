@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-03-01
 project: "[[Project Venture 208]]"
-company: "[[Keystone Media]]"
-source_created_at: 2026-03-01T11:28:00
-source_observed_at: 2026-03-01T13:12:00
-created_at: 2026-03-01T13:17:00
-updated_at: 2026-03-02T10:17:00
+company: "[[Summit Health]]"
+source_created_at: 2026-03-01T08:25:00
+source_observed_at: 2026-03-01T09:34:00
+created_at: 2026-03-01T12:39:00
+updated_at: 2026-03-02T07:39:00
 tags: [#meeting]
 ---
 # Project Venture 208 Lineage Audit Sync 648
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Grace Alvarez]]
 
 ## Client Attendees
-- [[Clara Lee]]
-- [[Sam Patel]]
-- [[Grace Usman]]
+- [[Jonah Kim]]
+- [[Zoe Ortega]]
+- [[Nadia Tan]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 208]] at [[Keystone Media]].
-[[Grace Alvarez]] aligned with [[Clara Lee]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 208]] at [[Summit Health]].
+[[Grace Alvarez]] aligned with [[Jonah Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 208]] to [[Grace Alvarez]] #follow-up

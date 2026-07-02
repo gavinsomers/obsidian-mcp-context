@@ -2,10 +2,10 @@
 type: person
 company: "[[Summit Retail]]"
 role: "Security Contact"
-source_created_at: 2023-09-10T12:12:00
-source_observed_at: 2023-09-10T12:22:00
-created_at: 2023-09-18T13:12:00
-updated_at: 2025-10-25T13:00:00
+source_created_at: 2023-09-10T16:43:00
+source_observed_at: 2023-09-10T17:26:00
+created_at: 2023-09-10T20:43:00
+updated_at: 2023-11-22T02:43:00
 tags: [#person]
 ---
 # Jonah Shah
@@ -14,7 +14,5 @@ tags: [#person]
 Jonah Shah is the Security Contact at [[Summit Retail]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Summit 147]] ([[Summit Retail]])
-- Client stakeholder on [[Project Signal 179]] ([[Summit Retail]])
-- Client stakeholder on [[Project Beacon 182]] ([[Summit Retail]])
+- Client stakeholder on [[Project Summit 12]] ([[Summit Retail]])
 - [ ] Confirm next update with [[Jonah Shah]] #follow-up

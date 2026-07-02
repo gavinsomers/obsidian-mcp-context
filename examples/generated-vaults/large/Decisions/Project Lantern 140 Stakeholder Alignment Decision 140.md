@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-21
 status: active
 project: "[[Project Lantern 140]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2025-04-21T09:07:00
-source_observed_at: 2025-04-21T11:45:00
-created_at: 2025-04-21T13:43:00
-updated_at: 2025-04-21T14:43:00
+company: "[[Vanguard Media]]"
+source_created_at: 2025-04-21T14:00:00
+source_observed_at: 2025-04-21T15:34:00
+created_at: 2025-04-28T18:00:00
+updated_at: 2025-04-29T12:00:00
 tags: [#decision]
 ---
 # Project Lantern 140 Stakeholder Alignment Decision 140
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Lantern 140]].
 
 ## Context
-This decision applies to [[Northstar Retail]] and [[Project Lantern 140]].
-It follows [[Project Lantern 140 Handoff Readiness Sync 1900]].
+This decision applies to [[Vanguard Media]] and [[Project Lantern 140]].
+It follows [[Project Lantern 140 Handoff Readiness Sync 800]].
 It incorporates [[Project Lantern 140 Metric Reconciliation Research 140]].
 
 ## Supersession

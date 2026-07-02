@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Crescent Health]]"
-source_created_at: 2025-06-27T16:27:00
-source_observed_at: 2025-06-27T17:13:00
-created_at: 2025-06-28T14:27:00
-updated_at: 2025-07-17T16:27:00
+status: active
+company: "[[Vanguard Logistics]]"
+source_created_at: 2025-06-27T09:35:00
+source_observed_at: 2025-06-27T12:19:00
+created_at: 2025-06-28T12:35:00
+updated_at: 2025-08-13T14:35:00
 tags: [#project]
 ---
 # Project Keystone 160
 
 ## Overview
-Project Keystone 160 supports [[Crescent Health]] through operations admin.
+Project Keystone 160 supports [[Vanguard Logistics]] through operations admin.
 
 ## Stakeholders
-- [[Marcus Kim]]
-- [[Ben Patel]]
-- [[Rachel Tan]]
+- [[Jonah Lee]]
+- [[Zoe Patel]]
+- [[Nadia Usman]]
 
 ## Operating Notes
-- Evergreen owner: [[Clara Grant]]
-- Client account: [[Crescent Health]]
-- Status: `closed`
-- Closed at: `2026-01-21`
+- Evergreen owner: [[Grace Chen]]
+- Client account: [[Vanguard Logistics]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Keystone 160]] #ops

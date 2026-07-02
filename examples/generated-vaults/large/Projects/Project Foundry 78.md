@@ -1,27 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Vanguard Retail]]"
-source_created_at: 2024-05-22T09:33:00
-source_observed_at: 2024-05-22T10:17:00
-created_at: 2024-05-23T10:33:00
-updated_at: 2024-07-12T18:33:00
+status: blocked
+company: "[[Keystone Retail]]"
+source_created_at: 2024-05-22T08:48:00
+source_observed_at: 2024-05-22T09:06:00
+created_at: 2024-05-22T17:48:00
+updated_at: 2024-07-25T00:48:00
 tags: [#project]
 ---
 # Project Foundry 78
 
 ## Overview
-Project Foundry 78 supports [[Vanguard Retail]] through customer success.
+Project Foundry 78 supports [[Keystone Retail]] through customer success.
 
 ## Stakeholders
-- [[Ben Jenkins]]
-- [[Rachel Novak]]
-- [[Farah Shah]]
-- [[Victor Walker]]
+- [[Jonah Jenkins]]
+- [[Zoe Novak]]
+- [[Nadia Shah]]
 
 ## Operating Notes
 - Evergreen owner: [[Zoe Chen]]
-- Client account: [[Vanguard Retail]]
-- Status: `closed`
-- Closed at: `2024-09-17`
+- Client account: [[Keystone Retail]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Foundry 78]] #ops

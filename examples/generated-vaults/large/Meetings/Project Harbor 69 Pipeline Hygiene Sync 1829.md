@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-06-04
 project: "[[Project Harbor 69]]"
-company: "[[Crescent Analytics]]"
-source_created_at: 2024-06-04T10:46:00
-source_observed_at: 2024-06-04T12:08:00
-created_at: 2024-06-04T12:31:00
-updated_at: 2024-06-05T00:31:00
+company: "[[Apex Manufacturing]]"
+source_created_at: 2024-06-04T09:15:00
+source_observed_at: 2024-06-04T11:00:00
+created_at: 2024-06-04T11:05:00
+updated_at: 2024-06-04T16:05:00
 tags: [#meeting]
 ---
 # Project Harbor 69 Pipeline Hygiene Sync 1829
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Priya Chen]]
 
 ## Client Attendees
-- [[Farah Morgan]]
-- [[Victor Quinn]]
-- [[Jonah Vance]]
+- [[Lina Jenkins]]
+- [[Amara Ortega]]
+- [[Priya Shah]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 69]] at [[Crescent Analytics]].
-[[Priya Chen]] aligned with [[Farah Morgan]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 69]] at [[Apex Manufacturing]].
+[[Priya Chen]] aligned with [[Lina Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 69]] to [[Priya Chen]] #follow-up

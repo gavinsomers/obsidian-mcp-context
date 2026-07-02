@@ -1,28 +1,28 @@
 ---
 type: meeting
-date: 2025-07-17
+date: 2025-08-08
 project: "[[Project Foundry 153]]"
-company: "[[Apex Manufacturing]]"
-source_created_at: 2025-07-17T14:43:00
-source_observed_at: 2025-07-17T17:22:00
-created_at: 2025-07-17T20:03:00
-updated_at: 2025-07-18T05:03:00
+company: "[[Helio Analytics]]"
+source_created_at: 2025-08-08T08:38:00
+source_observed_at: 2025-08-08T10:48:00
+created_at: 2025-08-08T13:14:00
+updated_at: 2025-08-09T04:14:00
 tags: [#meeting]
 ---
 # Project Foundry 153 Security Review Sync 593
 
 ## Evergreen Attendees
-- [[Wendy Foster]]
+- [[Alex Chen]]
 
 ## Client Attendees
-- [[Lina Jenkins]]
-- [[Amara Ortega]]
-- [[Priya Shah]]
+- [[Xavier Lee]]
+- [[Lina Quinn]]
+- [[Amara Vance]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 153]] at [[Apex Manufacturing]].
-[[Wendy Foster]] aligned with [[Lina Jenkins]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 153]] at [[Helio Analytics]].
+[[Alex Chen]] aligned with [[Xavier Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 153]] to [[Wendy Foster]] #follow-up
+- [ ] Send recap for [[Project Foundry 153]] to [[Alex Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

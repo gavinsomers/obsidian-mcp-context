@@ -2,10 +2,10 @@
 type: person
 company: "[[BrightWave Media]]"
 role: "Revenue Operations Lead"
-source_created_at: 2023-09-29T15:41:00
-source_observed_at: 2023-09-29T18:40:00
-created_at: 2023-10-03T17:41:00
-updated_at: 2025-03-08T13:00:00
+source_created_at: 2023-09-29T13:02:00
+source_observed_at: 2023-09-29T13:21:00
+created_at: 2023-10-01T12:02:00
+updated_at: 2024-03-24T13:00:00
 tags: [#person]
 ---
 # Wendy Tan
@@ -14,5 +14,5 @@ tags: [#person]
 Wendy Tan is the Revenue Operations Lead at [[BrightWave Media]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Bridge 135]] ([[BrightWave Media]])
+- Client stakeholder on [[Project Horizon 64]] ([[BrightWave Media]])
 - [ ] Confirm next update with [[Wendy Tan]] #follow-up

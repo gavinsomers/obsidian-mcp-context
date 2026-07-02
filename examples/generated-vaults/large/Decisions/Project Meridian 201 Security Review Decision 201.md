@@ -3,11 +3,11 @@ type: decision
 date: 2026-02-15
 status: active
 project: "[[Project Meridian 201]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2026-02-15T15:55:00
-source_observed_at: 2026-02-15T17:29:00
-created_at: 2026-02-15T17:34:00
-updated_at: 2026-02-15T18:34:00
+company: "[[Atlas Retail]]"
+source_created_at: 2026-02-15T08:14:00
+source_observed_at: 2026-02-15T10:05:00
+created_at: 2026-02-24T13:14:00
+updated_at: 2026-02-24T23:14:00
 tags: [#decision]
 ---
 # Project Meridian 201 Security Review Decision 201
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with security review for [[Project Meridian 201]].
 
 ## Context
-This decision applies to [[Northstar Retail]] and [[Project Meridian 201]].
-It follows [[Project Meridian 201 Warehouse Mapping Sync 641]].
+This decision applies to [[Atlas Retail]] and [[Project Meridian 201]].
+It follows [[Project Meridian 201 Warehouse Mapping Sync 1741]].
 It incorporates [[Project Meridian 201 Contract Renewal Research 201]].
 
 ## Supersession

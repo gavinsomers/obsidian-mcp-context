@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Northstar Health]]"
-source_created_at: 2024-06-25T14:07:00
-source_observed_at: 2024-06-25T15:16:00
-created_at: 2024-06-26T23:07:00
-updated_at: 2024-08-15T10:07:00
+status: planning
+company: "[[Northstar Logistics]]"
+source_created_at: 2024-06-25T08:37:00
+source_observed_at: 2024-06-25T08:58:00
+created_at: 2024-06-26T09:37:00
+updated_at: 2024-08-23T20:37:00
 tags: [#project]
 ---
 # Project Keystone 85
 
 ## Overview
-Project Keystone 85 supports [[Northstar Health]] through operations admin.
+Project Keystone 85 supports [[Northstar Logistics]] through operations admin.
 
 ## Stakeholders
-- [[Alex Kim]]
-- [[Omar Ortega]]
-- [[David Tan]]
+- [[David Lee]]
+- [[Tara Patel]]
+- [[Hannah Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Farah Diaz]]
-- Client account: [[Northstar Health]]
-- Status: `active`
+- Client account: [[Northstar Logistics]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Keystone 85]] #ops

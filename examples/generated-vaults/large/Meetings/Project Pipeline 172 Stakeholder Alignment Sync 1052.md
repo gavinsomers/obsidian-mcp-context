@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-09-06
 project: "[[Project Pipeline 172]]"
-company: "[[BrightWave Retail]]"
-source_created_at: 2025-09-06T14:05:00
-source_observed_at: 2025-09-06T15:49:00
-created_at: 2025-09-06T15:54:00
-updated_at: 2025-09-07T06:54:00
+company: "[[Quantum Health]]"
+source_created_at: 2025-09-06T08:31:00
+source_observed_at: 2025-09-06T10:21:00
+created_at: 2025-09-06T13:22:00
+updated_at: 2025-09-06T22:22:00
 tags: [#meeting]
 ---
 # Project Pipeline 172 Stakeholder Alignment Sync 1052
 
 ## Evergreen Attendees
-- [[Omar Grant]]
+- [[Tara Chen]]
 
 ## Client Attendees
-- [[Sam Walker]]
-- [[Clara Shah]]
-- [[Zoe Ivanov]]
+- [[Grace Kim]]
+- [[Wendy Ortega]]
+- [[Kai Tan]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Pipeline 172]] at [[BrightWave Retail]].
-[[Omar Grant]] aligned with [[Sam Walker]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Pipeline 172]] at [[Quantum Health]].
+[[Tara Chen]] aligned with [[Grace Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Pipeline 172]] to [[Omar Grant]] #follow-up
+- [ ] Send recap for [[Project Pipeline 172]] to [[Tara Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

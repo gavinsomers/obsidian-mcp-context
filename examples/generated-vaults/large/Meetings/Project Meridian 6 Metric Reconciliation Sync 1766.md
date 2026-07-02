@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-03-07
 project: "[[Project Meridian 6]]"
-company: "[[Summit Media]]"
-source_created_at: 2024-03-07T10:34:00
-source_observed_at: 2024-03-07T12:15:00
-created_at: 2024-03-07T12:48:00
-updated_at: 2024-03-08T00:48:00
+company: "[[Helio Health]]"
+source_created_at: 2024-03-07T16:14:00
+source_observed_at: 2024-03-07T17:28:00
+created_at: 2024-03-07T21:01:00
+updated_at: 2024-03-08T14:01:00
 tags: [#meeting]
 ---
 # Project Meridian 6 Metric Reconciliation Sync 1766
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Elena Alvarez]]
 
 ## Client Attendees
-- [[Zoe Kim]]
-- [[Nadia Patel]]
-- [[Clara Usman]]
+- [[David Kim]]
+- [[Tara Ortega]]
+- [[Hannah Tan]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 6]] at [[Summit Media]].
-[[Elena Alvarez]] aligned with [[Zoe Kim]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 6]] at [[Helio Health]].
+[[Elena Alvarez]] aligned with [[David Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 6]] to [[Elena Alvarez]] #follow-up

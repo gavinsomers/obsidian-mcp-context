@@ -2,11 +2,11 @@
 type: meeting
 date: 2023-11-20
 project: "[[Project Meridian 36]]"
-company: "[[Harbor Analytics]]"
-source_created_at: 2023-11-20T14:35:00
-source_observed_at: 2023-11-20T17:06:00
-created_at: 2023-11-20T17:11:00
-updated_at: 2023-11-21T07:11:00
+company: "[[Pioneer Health]]"
+source_created_at: 2023-11-20T14:20:00
+source_observed_at: 2023-11-20T17:09:00
+created_at: 2023-11-20T17:14:00
+updated_at: 2023-11-21T06:14:00
 tags: [#meeting]
 ---
 # Project Meridian 36 Metric Reconciliation Sync 916
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Iris Bennett]]
 
 ## Client Attendees
-- [[Ben Morgan]]
-- [[Rachel Quinn]]
-- [[Farah Vance]]
+- [[Kai Kim]]
+- [[Alex Patel]]
+- [[Omar Tan]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 36]] at [[Harbor Analytics]].
-[[Iris Bennett]] aligned with [[Ben Morgan]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 36]] at [[Pioneer Health]].
+[[Iris Bennett]] aligned with [[Kai Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 36]] to [[Iris Bennett]] #follow-up

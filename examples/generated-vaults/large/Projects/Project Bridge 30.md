@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[BrightWave Health]]"
-source_created_at: 2023-09-28T16:18:00
-source_observed_at: 2023-09-28T17:14:00
-created_at: 2023-09-30T15:18:00
-updated_at: 2023-11-02T17:18:00
+status: closed
+company: "[[Summit Media]]"
+source_created_at: 2023-09-28T10:51:00
+source_observed_at: 2023-09-28T12:49:00
+created_at: 2023-09-29T14:51:00
+updated_at: 2023-10-30T23:51:00
 tags: [#project]
 ---
 # Project Bridge 30
 
 ## Overview
-Project Bridge 30 supports [[BrightWave Health]] through operations admin.
+Project Bridge 30 supports [[Summit Media]] through operations admin.
 
 ## Stakeholders
-- [[Clara Kim]]
-- [[Sam Ortega]]
-- [[Grace Tan]]
+- [[Zoe Kim]]
+- [[Nadia Patel]]
+- [[Clara Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Clara Bennett]]
-- Client account: [[BrightWave Health]]
-- Status: `active`
+- Client account: [[Summit Media]]
+- Status: `closed`
+- Closed at: `2023-12-28`
 - [ ] Reconcile latest state for [[Project Bridge 30]] #ops

@@ -2,10 +2,10 @@
 type: person
 company: "[[Vanguard Media]]"
 role: "Executive Sponsor"
-source_created_at: 2023-10-01T16:26:00
-source_observed_at: 2023-10-01T17:03:00
-created_at: 2023-10-03T06:26:00
-updated_at: 2023-12-01T16:26:00
+source_created_at: 2023-10-01T14:28:00
+source_observed_at: 2023-10-01T17:10:00
+created_at: 2023-10-01T21:28:00
+updated_at: 2025-03-31T13:00:00
 tags: [#person]
 ---
 # Jonah Patel
@@ -14,6 +14,7 @@ tags: [#person]
 Jonah Patel is the Executive Sponsor at [[Vanguard Media]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Atlas 16]] ([[Vanguard Media]])
-- Client stakeholder on [[Project Meridian 21]] ([[Vanguard Media]])
+- Client stakeholder on [[Project Beacon 17]] ([[Vanguard Media]])
+- Client stakeholder on [[Project Bridge 135]] ([[Vanguard Media]])
+- Client stakeholder on [[Project Lantern 140]] ([[Vanguard Media]])
 - [ ] Confirm next update with [[Jonah Patel]] #follow-up

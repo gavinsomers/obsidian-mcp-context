@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-05-01
 project: "[[Project Orbit 146]]"
-company: "[[Crescent Analytics]]"
-source_created_at: 2025-05-01T10:54:00
-source_observed_at: 2025-05-01T11:44:00
-created_at: 2025-05-01T12:24:00
-updated_at: 2025-05-01T23:24:00
+company: "[[Summit Analytics]]"
+source_created_at: 2025-05-01T16:56:00
+source_observed_at: 2025-05-01T17:19:00
+created_at: 2025-05-01T22:30:00
+updated_at: 2025-05-02T01:30:00
 tags: [#meeting]
 ---
 # Project Orbit 146 Metric Reconciliation Sync 806
 
 ## Evergreen Attendees
-- [[Omar Foster]]
+- [[Tara Bennett]]
 
 ## Client Attendees
-- [[Farah Morgan]]
-- [[Victor Quinn]]
-- [[Jonah Vance]]
+- [[Clara Morgan]]
+- [[Sam Quinn]]
+- [[Grace Vance]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Orbit 146]] at [[Crescent Analytics]].
-[[Omar Foster]] aligned with [[Farah Morgan]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Orbit 146]] at [[Summit Analytics]].
+[[Tara Bennett]] aligned with [[Clara Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 146]] to [[Omar Foster]] #follow-up
+- [ ] Send recap for [[Project Orbit 146]] to [[Tara Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

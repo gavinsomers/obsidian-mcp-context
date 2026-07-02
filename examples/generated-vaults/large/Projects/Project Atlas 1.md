@@ -1,23 +1,26 @@
 ---
 type: project
 status: planning
-company: "[[Northstar Labs]]"
-source_created_at: 2023-05-10T12:08:00
-source_observed_at: 2023-05-10T12:46:00
-created_at: 2023-05-11T19:08:00
-updated_at: 2023-07-17T21:08:00
+company: "[[Noble Labs]]"
+source_created_at: 2023-05-10T11:08:00
+source_observed_at: 2023-05-10T12:43:00
+created_at: 2023-05-10T20:08:00
+updated_at: 2023-11-04T17:45:00
 tags: [#project]
 ---
 # Project Atlas 1
 
 ## Overview
-Project Atlas 1 supports [[Northstar Labs]] through consulting delivery.
+Project Atlas 1 supports [[Noble Labs]] through consulting delivery.
 
 ## Stakeholders
-- [[Sam Haddad]]
+- [[David Ivanov]]
+- [[Tara Morgan]]
+- [[Hannah Rostova]]
+- [[Xavier Vance]]
 
 ## Operating Notes
 - Evergreen owner: [[Alex Alvarez]]
-- Client account: [[Northstar Labs]]
+- Client account: [[Noble Labs]]
 - Status: `planning`
 - [ ] Reconcile latest state for [[Project Atlas 1]] #ops

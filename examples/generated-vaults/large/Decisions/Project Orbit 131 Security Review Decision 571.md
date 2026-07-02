@@ -3,11 +3,11 @@ type: decision
 date: 2025-08-06
 status: active
 project: "[[Project Orbit 131]]"
-company: "[[Vanguard Logistics]]"
-source_created_at: 2025-08-06T16:17:00
-source_observed_at: 2025-08-06T18:21:00
-created_at: 2025-08-06T18:26:00
-updated_at: 2025-08-07T04:26:00
+company: "[[Atlas Retail]]"
+source_created_at: 2025-08-06T15:52:00
+source_observed_at: 2025-08-06T17:15:00
+created_at: 2025-08-10T18:52:00
+updated_at: 2025-08-11T08:52:00
 tags: [#decision]
 ---
 # Project Orbit 131 Security Review Decision 571
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with security review for [[Project Orbit 131]].
 
 ## Context
-This decision applies to [[Vanguard Logistics]] and [[Project Orbit 131]].
+This decision applies to [[Atlas Retail]] and [[Project Orbit 131]].
 It follows [[Project Orbit 131 Warehouse Mapping Sync 571]].
 It incorporates [[Project Orbit 131 Contract Renewal Research 351]].
 

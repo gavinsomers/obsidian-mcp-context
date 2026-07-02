@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: mid-market
-source_created_at: 2023-07-16T10:10:00
-source_observed_at: 2023-07-16T11:43:00
-created_at: 2023-07-17T16:10:00
-updated_at: 2023-08-15T02:10:00
+source_created_at: 2023-07-16T13:15:00
+source_observed_at: 2023-07-16T14:42:00
+created_at: 2023-07-18T09:15:00
+updated_at: 2025-10-10T13:00:00
 tags: [#company]
 ---
 # Crescent Retail
@@ -14,12 +14,17 @@ tags: [#company]
 Crescent Retail is a mid-market account currently marked `active`.
 
 ## Assigned Account Team
+- [[Farah Alvarez]] - Client Partner
+- [[Alex Diaz]] - Client Partner
 
 ## Client Stakeholders
 - [[Iris Jenkins]] - Data Owner
 - [[Yara Novak]] - Operations Manager
+- [[Marcus Shah]] - Finance Lead
 
 ## Projects
+- [[Project Beacon 107]]
+- [[Project Signal 179]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Crescent Retail]] #account

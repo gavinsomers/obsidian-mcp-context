@@ -2,10 +2,10 @@
 type: person
 company: "[[Vanguard Health]]"
 role: "Executive Sponsor"
-source_created_at: 2023-09-23T15:36:00
-source_observed_at: 2023-09-23T16:19:00
-created_at: 2023-10-01T16:36:00
-updated_at: 2025-07-24T13:00:00
+source_created_at: 2023-09-23T12:58:00
+source_observed_at: 2023-09-23T14:59:00
+created_at: 2023-09-24T12:58:00
+updated_at: 2025-02-21T13:00:00
 tags: [#person]
 ---
 # Jonah Tan
@@ -14,6 +14,6 @@ tags: [#person]
 Jonah Tan is the Executive Sponsor at [[Vanguard Health]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Venture 13]] ([[Vanguard Health]])
-- Client stakeholder on [[Project Venture 163]] ([[Vanguard Health]])
+- Client stakeholder on [[Project Orbit 101]] ([[Vanguard Health]])
+- Client stakeholder on [[Project Summit 132]] ([[Vanguard Health]])
 - [ ] Confirm next update with [[Jonah Tan]] #follow-up

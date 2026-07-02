@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Lantern 95]]"
-company: "[[Northstar Media]]"
-source_created_at: 2024-11-08T14:57:00
-source_observed_at: 2024-11-08T17:27:00
-created_at: 2024-11-10T10:57:00
-updated_at: 2024-12-09T15:57:00
+company: "[[Vanguard Analytics]]"
+source_created_at: 2024-11-08T14:38:00
+source_observed_at: 2024-11-08T15:47:00
+created_at: 2024-11-09T18:38:00
+updated_at: 2024-12-05T04:38:00
 tags: [#research]
 ---
 # Project Lantern 95 Warehouse Mapping Research 315
 
 ## Research Summary
-Research on warehouse mapping for [[Project Lantern 95]] and [[Northstar Media]].
+Research on warehouse mapping for [[Project Lantern 95]] and [[Vanguard Analytics]].
 
 ## Evidence
 - Interview notes from [[Priya Diaz]]
-- Related operating review: [[Project Lantern 95 Adoption Workflow Sync 1635]]
+- Related operating review: [[Project Lantern 95 Adoption Workflow Sync 95]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Lantern 95]] #research

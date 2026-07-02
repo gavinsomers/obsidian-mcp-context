@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Venture 13]]"
-source_created_at: 2025-04-23T11:51:00
-source_observed_at: 2025-04-23T12:14:00
-created_at: 2025-04-25T09:51:00
-updated_at: 2025-05-02T16:51:00
+source_created_at: 2023-09-17T13:42:00
+source_observed_at: 2023-09-17T15:08:00
+created_at: 2023-09-17T20:42:00
+updated_at: 2023-10-24T01:42:00
 tags: [#risk]
 ---
 # Project Venture 13 Contract Renewal Risk 453
 
 ## Risk
-Contract Renewal may affect [[Project Venture 13]] for [[Vanguard Health]].
+Contract Renewal may affect [[Project Venture 13]] for [[Apex Media]].
 
 ## Evidence
-- Raised after [[Project Venture 13 Security Review Sync 453]]
+- Raised after [[Project Venture 13 Security Review Sync 893]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `open`
 - Owner: [[Lina Alvarez]]
 - [ ] Reassess [[Project Venture 13 Contract Renewal Risk 453]] during the next review #risk

@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: smb
-source_created_at: 2023-11-21T13:38:00
-source_observed_at: 2023-11-21T14:39:00
-created_at: 2023-11-22T02:38:00
-updated_at: 2024-01-25T07:38:00
+source_created_at: 2023-11-21T15:46:00
+source_observed_at: 2023-11-21T17:51:00
+created_at: 2023-11-22T12:46:00
+updated_at: 2025-06-08T13:00:00
 tags: [#company]
 ---
 # Cobalt Analytics
@@ -14,8 +14,9 @@ tags: [#company]
 Cobalt Analytics is a smb account currently marked `active`.
 
 ## Assigned Account Team
-- [[Amara Alvarez]] - Senior Data Consultant
-- [[Hannah Bennett]] - Delivery Lead
+- [[Farah Chen]] - Delivery Lead
+- [[Uma Alvarez]] - Data Platform Engineer
+- [[Amara Chen]] - Analytics Engineer
 
 ## Client Stakeholders
 - [[Victor Lee]] - Data Owner
@@ -23,8 +24,9 @@ Cobalt Analytics is a smb account currently marked `active`.
 - [[Zoe Usman]] - Finance Lead
 
 ## Projects
-- [[Project Beacon 2]]
-- [[Project Lantern 35]]
+- [[Project Signal 59]]
+- [[Project Atlas 121]]
+- [[Project Horizon 154]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Cobalt Analytics]] #account

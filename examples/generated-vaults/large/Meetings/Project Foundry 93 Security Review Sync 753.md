@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-03-20
 project: "[[Project Foundry 93]]"
-company: "[[BrightWave Analytics]]"
-source_created_at: 2026-03-20T15:43:00
-source_observed_at: 2026-03-20T17:52:00
-created_at: 2026-03-23T20:43:00
-updated_at: 2026-03-24T15:43:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2026-03-20T15:37:00
+source_observed_at: 2026-03-20T17:34:00
+created_at: 2026-03-20T18:35:00
+updated_at: 2026-03-21T12:35:00
 tags: [#meeting]
 ---
 # Project Foundry 93 Security Review Sync 753
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Nadia Diaz]]
 
 ## Client Attendees
-- [[Wendy Lee]]
-- [[Kai Quinn]]
-- [[Alex Vance]]
+- [[Tara Lee]]
+- [[Hannah Quinn]]
+- [[Xavier Usman]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 93]] at [[BrightWave Analytics]].
-[[Nadia Diaz]] aligned with [[Wendy Lee]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 93]] at [[Northstar Analytics]].
+[[Nadia Diaz]] aligned with [[Tara Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 93]] to [[Nadia Diaz]] #follow-up

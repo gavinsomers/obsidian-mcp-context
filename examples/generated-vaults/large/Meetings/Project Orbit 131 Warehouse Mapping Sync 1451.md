@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-12-08
 project: "[[Project Orbit 131]]"
-company: "[[Vanguard Logistics]]"
-source_created_at: 2025-12-08T10:36:00
-source_observed_at: 2025-12-08T13:05:00
-created_at: 2025-12-08T14:57:00
-updated_at: 2025-12-09T12:57:00
+company: "[[Atlas Retail]]"
+source_created_at: 2025-12-08T14:58:00
+source_observed_at: 2025-12-08T16:47:00
+created_at: 2025-12-09T15:58:00
+updated_at: 2025-12-10T04:58:00
 tags: [#meeting]
 ---
 # Project Orbit 131 Warehouse Mapping Sync 1451
 
 ## Evergreen Attendees
-- [[Alex Foster]]
+- [[David Bennett]]
 
 ## Client Attendees
-- [[Jonah Lee]]
-- [[Zoe Patel]]
-- [[Nadia Usman]]
+- [[Tara Novak]]
+- [[David Jenkins]]
+- [[Hannah Shah]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 131]] at [[Vanguard Logistics]].
-[[Alex Foster]] aligned with [[Jonah Lee]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 131]] at [[Atlas Retail]].
+[[David Bennett]] aligned with [[Tara Novak]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 131]] to [[Alex Foster]] #follow-up
+- [ ] Send recap for [[Project Orbit 131]] to [[David Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

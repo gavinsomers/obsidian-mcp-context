@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Beacon 47]]"
-company: "[[Helio FinTech]]"
-source_created_at: 2024-01-14T13:10:00
-source_observed_at: 2024-01-14T14:33:00
-created_at: 2024-01-15T08:10:00
-updated_at: 2024-02-12T14:10:00
+company: "[[Pioneer Logistics]]"
+source_created_at: 2024-01-14T08:37:00
+source_observed_at: 2024-01-14T10:09:00
+created_at: 2024-01-15T14:37:00
+updated_at: 2024-02-19T00:37:00
 tags: [#research]
 ---
 # Project Beacon 47 Security Review Research 47
 
 ## Research Summary
-Research on security review for [[Project Beacon 47]] and [[Helio FinTech]].
+Research on security review for [[Project Beacon 47]] and [[Pioneer Logistics]].
 
 ## Evidence
 - Interview notes from [[Uma Bennett]]

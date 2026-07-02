@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: smb
-source_created_at: 2023-08-21T14:26:00
-source_observed_at: 2023-08-21T15:14:00
-created_at: 2023-08-22T03:26:00
-updated_at: 2023-11-12T10:26:00
+source_created_at: 2023-08-21T10:46:00
+source_observed_at: 2023-08-21T12:26:00
+created_at: 2023-08-22T22:46:00
+updated_at: 2023-12-11T13:00:00
 tags: [#company]
 ---
 # Apex Health
@@ -14,6 +14,7 @@ tags: [#company]
 Apex Health is a smb account currently marked `active`.
 
 ## Assigned Account Team
+- [[Priya Bennett]] - Delivery Lead
 
 ## Client Stakeholders
 - [[Amara Kim]] - Product Analytics Lead
@@ -21,6 +22,7 @@ Apex Health is a smb account currently marked `active`.
 - [[Elena Tan]] - Data Owner
 
 ## Projects
+- [[Project Venture 43]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Apex Health]] #account

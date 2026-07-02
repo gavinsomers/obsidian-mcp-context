@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Signal 14]]"
-company: "[[Quantum Manufacturing]]"
-source_created_at: 2023-10-24T11:00:00
-source_observed_at: 2023-10-24T12:01:00
-created_at: 2023-11-02T16:00:00
-updated_at: 2023-11-18T18:00:00
+company: "[[Helio Media]]"
+source_created_at: 2023-09-06T10:44:00
+source_observed_at: 2023-09-06T11:08:00
+created_at: 2023-09-08T08:44:00
+updated_at: 2023-09-28T13:44:00
 tags: [#research]
 ---
 # Project Signal 14 Handoff Readiness Research 234
 
 ## Research Summary
-Research on handoff readiness for [[Project Signal 14]] and [[Quantum Manufacturing]].
+Research on handoff readiness for [[Project Signal 14]] and [[Helio Media]].
 
 ## Evidence
 - Interview notes from [[Marcus Alvarez]]
-- Related operating review: [[Project Signal 14 Finance Approval Sync 1114]]
+- Related operating review: [[Project Signal 14 Finance Approval Sync 1334]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Signal 14]] #research

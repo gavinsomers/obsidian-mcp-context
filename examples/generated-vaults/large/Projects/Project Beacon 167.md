@@ -1,26 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Helio Retail]]"
-source_created_at: 2025-08-01T10:07:00
-source_observed_at: 2025-08-01T11:46:00
-created_at: 2025-08-06T12:07:00
-updated_at: 2025-09-10T23:07:00
+status: planning
+company: "[[Cobalt FinTech]]"
+source_created_at: 2025-08-01T10:59:00
+source_observed_at: 2025-08-01T13:15:00
+created_at: 2025-08-03T05:59:00
+updated_at: 2025-10-23T06:59:00
 tags: [#project]
 ---
 # Project Beacon 167
 
 ## Overview
-Project Beacon 167 supports [[Helio Retail]] through sales pipeline.
+Project Beacon 167 supports [[Cobalt FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Alex Jenkins]]
-- [[Omar Novak]]
-- [[David Shah]]
-- [[Tara Walker]]
+- [[Iris Ivanov]]
+- [[Yara Morgan]]
+- [[Marcus Rostova]]
+- [[Ben Walker]]
 
 ## Operating Notes
-- Evergreen owner: [[Jonah Grant]]
-- Client account: [[Helio Retail]]
-- Status: `blocked`
+- Evergreen owner: [[Nadia Chen]]
+- Client account: [[Cobalt FinTech]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Beacon 167]] #ops

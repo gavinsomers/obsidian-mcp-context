@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Atlas 61]]"
-company: "[[Atlas Analytics]]"
-source_created_at: 2025-09-29T10:43:00
-source_observed_at: 2025-09-29T12:38:00
-created_at: 2025-09-30T12:43:00
-updated_at: 2025-10-18T18:43:00
+company: "[[Helio Labs]]"
+source_created_at: 2025-09-29T08:15:00
+source_observed_at: 2025-09-29T10:50:00
+created_at: 2025-10-01T00:15:00
+updated_at: 2025-10-31T04:15:00
 tags: [#research]
 ---
 # Project Atlas 61 Contract Renewal Research 501
 
 ## Research Summary
-Research on contract renewal for [[Project Atlas 61]] and [[Atlas Analytics]].
+Research on contract renewal for [[Project Atlas 61]] and [[Helio Labs]].
 
 ## Evidence
 - Interview notes from [[Hannah Chen]]

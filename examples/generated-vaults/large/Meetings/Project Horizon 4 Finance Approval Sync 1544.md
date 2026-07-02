@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-04-16
 project: "[[Project Horizon 4]]"
-company: "[[Noble Retail]]"
-source_created_at: 2026-04-16T14:30:00
-source_observed_at: 2026-04-16T15:01:00
-created_at: 2026-04-16T19:43:00
-updated_at: 2026-04-17T11:43:00
+company: "[[Noble Analytics]]"
+source_created_at: 2026-04-16T11:47:00
+source_observed_at: 2026-04-16T13:42:00
+created_at: 2026-04-16T13:47:00
+updated_at: 2026-04-17T03:47:00
 tags: [#meeting]
 ---
 # Project Horizon 4 Finance Approval Sync 1544
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Clara Alvarez]]
 
 ## Client Attendees
-- [[Hannah Jenkins]]
-- [[Lina Shah]]
-- [[Amara Xu]]
+- [[Elena Morgan]]
+- [[Uma Quinn]]
+- [[Iris Vance]]
 
 ## Notes
-Finance Approval reviewed for [[Project Horizon 4]] at [[Noble Retail]].
-[[Clara Alvarez]] aligned with [[Hannah Jenkins]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Horizon 4]] at [[Noble Analytics]].
+[[Clara Alvarez]] aligned with [[Elena Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Horizon 4]] to [[Clara Alvarez]] #follow-up

@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-10-25
 project: "[[Project Beacon 182]]"
-company: "[[Summit Retail]]"
-source_created_at: 2025-10-25T16:38:00
-source_observed_at: 2025-10-25T19:21:00
-created_at: 2025-10-25T19:53:00
-updated_at: 2025-10-25T23:53:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2025-10-25T09:08:00
+source_observed_at: 2025-10-25T10:24:00
+created_at: 2025-10-25T11:47:00
+updated_at: 2025-10-26T09:47:00
 tags: [#meeting]
 ---
 # Project Beacon 182 Stakeholder Alignment Sync 1282
 
 ## Evergreen Attendees
-- [[Zoe Grant]]
+- [[Clara Diaz]]
 
 ## Client Attendees
-- [[Farah Jenkins]]
-- [[Victor Novak]]
-- [[Jonah Shah]]
+- [[Tara Lee]]
+- [[Hannah Quinn]]
+- [[Xavier Usman]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 182]] at [[Summit Retail]].
-[[Zoe Grant]] aligned with [[Farah Jenkins]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 182]] at [[Northstar Analytics]].
+[[Clara Diaz]] aligned with [[Tara Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Beacon 182]] to [[Zoe Grant]] #follow-up
+- [ ] Send recap for [[Project Beacon 182]] to [[Clara Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

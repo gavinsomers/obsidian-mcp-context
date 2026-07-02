@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-08-03
 project: "[[Project Atlas 91]]"
-company: "[[Pioneer Analytics]]"
-source_created_at: 2024-08-03T11:47:00
-source_observed_at: 2024-08-03T13:38:00
-created_at: 2024-08-03T16:29:00
-updated_at: 2024-08-04T09:29:00
+company: "[[Quantum Retail]]"
+source_created_at: 2024-08-03T12:55:00
+source_observed_at: 2024-08-03T13:18:00
+created_at: 2024-08-03T15:12:00
+updated_at: 2024-08-03T22:12:00
 tags: [#meeting]
 ---
 # Project Atlas 91 Warehouse Mapping Sync 311
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Lina Diaz]]
 
 ## Client Attendees
-- [[David Morgan]]
-- [[Tara Quinn]]
-- [[Hannah Vance]]
+- [[Clara Jenkins]]
+- [[Wendy Walker]]
+- [[Sam Novak]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 91]] at [[Pioneer Analytics]].
-[[Lina Diaz]] aligned with [[David Morgan]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 91]] at [[Quantum Retail]].
+[[Lina Diaz]] aligned with [[Clara Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 91]] to [[Lina Diaz]] #follow-up

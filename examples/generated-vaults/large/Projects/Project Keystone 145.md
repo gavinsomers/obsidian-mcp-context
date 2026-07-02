@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Apex Analytics]]"
-source_created_at: 2025-04-16T09:26:00
-source_observed_at: 2025-04-16T11:10:00
-created_at: 2025-04-17T11:26:00
-updated_at: 2025-07-13T14:26:00
+status: planning
+company: "[[Northstar FinTech]]"
+source_created_at: 2025-04-16T16:27:00
+source_observed_at: 2025-04-16T17:13:00
+created_at: 2025-04-17T14:27:00
+updated_at: 2025-05-06T16:27:00
 tags: [#project]
 ---
 # Project Keystone 145
 
 ## Overview
-Project Keystone 145 supports [[Apex Analytics]] through operations admin.
+Project Keystone 145 supports [[Northstar FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Uma Lee]]
-- [[Iris Quinn]]
-- [[Yara Usman]]
+- [[Grace Ivanov]]
+- [[Wendy Morgan]]
+- [[Kai Rostova]]
+- [[Alex Walker]]
 
 ## Operating Notes
-- Evergreen owner: [[Nadia Foster]]
-- Client account: [[Apex Analytics]]
-- Status: `active`
+- Evergreen owner: [[Sam Bennett]]
+- Client account: [[Northstar FinTech]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Keystone 145]] #ops

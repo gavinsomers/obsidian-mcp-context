@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-03-06
 project: "[[Project Signal 209]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2026-03-06T12:21:00
-source_observed_at: 2026-03-06T13:07:00
-created_at: 2026-03-06T13:13:00
-updated_at: 2026-03-06T17:13:00
+company: "[[Helio Labs]]"
+source_created_at: 2026-03-06T09:41:00
+source_observed_at: 2026-03-06T11:10:00
+created_at: 2026-03-06T15:13:00
+updated_at: 2026-03-06T18:13:00
 tags: [#meeting]
 ---
 # Project Signal 209 Pipeline Hygiene Sync 649
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Hannah Alvarez]]
 
 ## Client Attendees
-- [[Nadia Morgan]]
-- [[Zoe Haddad]]
-- [[Sam Vance]]
+- [[Wendy Haddad]]
+- [[Alex Rostova]]
+- [[Omar Vance]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 209]] at [[Quantum Labs]].
-[[Hannah Alvarez]] aligned with [[Nadia Morgan]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 209]] at [[Helio Labs]].
+[[Hannah Alvarez]] aligned with [[Wendy Haddad]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 209]] to [[Hannah Alvarez]] #follow-up

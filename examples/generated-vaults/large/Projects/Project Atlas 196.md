@@ -1,25 +1,27 @@
 ---
 type: project
-status: active
-company: "[[Quantum Media]]"
-source_created_at: 2025-12-23T16:12:00
-source_observed_at: 2025-12-23T16:44:00
-created_at: 2025-12-24T23:12:00
-updated_at: 2026-01-26T06:12:00
+status: closed
+company: "[[Atlas FinTech]]"
+source_created_at: 2025-12-23T13:27:00
+source_observed_at: 2025-12-23T14:06:00
+created_at: 2025-12-23T22:27:00
+updated_at: 2026-03-19T01:27:00
 tags: [#project]
 ---
 # Project Atlas 196
 
 ## Overview
-Project Atlas 196 supports [[Quantum Media]] through consulting delivery.
+Project Atlas 196 supports [[Atlas FinTech]] through consulting delivery.
 
 ## Stakeholders
-- [[Wendy Kim]]
-- [[Kai Patel]]
-- [[Alex Usman]]
+- [[Omar Ivanov]]
+- [[David Novak]]
+- [[Tara Rostova]]
+- [[Hannah Walker]]
 
 ## Operating Notes
-- Evergreen owner: [[Marcus Haddad]]
-- Client account: [[Quantum Media]]
-- Status: `active`
+- Evergreen owner: [[Rachel Diaz]]
+- Client account: [[Atlas FinTech]]
+- Status: `closed`
+- Closed at: `2026-06-08`
 - [ ] Reconcile latest state for [[Project Atlas 196]] #ops

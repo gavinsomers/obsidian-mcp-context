@@ -3,11 +3,11 @@ type: decision
 date: 2025-03-26
 status: active
 project: "[[Project Pipeline 37]]"
-company: "[[Quantum Logistics]]"
-source_created_at: 2025-03-26T13:08:00
-source_observed_at: 2025-03-26T15:39:00
-created_at: 2025-03-26T15:44:00
-updated_at: 2025-03-26T21:44:00
+company: "[[Keystone Manufacturing]]"
+source_created_at: 2025-03-26T15:31:00
+source_observed_at: 2025-03-26T18:14:00
+created_at: 2025-03-26T18:19:00
+updated_at: 2025-03-26T22:19:00
 tags: [#decision]
 ---
 # Project Pipeline 37 Pipeline Hygiene Decision 477
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Pipeline 37]].
 
 ## Context
-This decision applies to [[Quantum Logistics]] and [[Project Pipeline 37]].
+This decision applies to [[Keystone Manufacturing]] and [[Project Pipeline 37]].
 It follows [[Project Pipeline 37 Contract Renewal Sync 477]].
 It incorporates [[Project Pipeline 37 Security Review Research 257]].
 

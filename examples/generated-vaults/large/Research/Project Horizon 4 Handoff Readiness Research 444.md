@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 4]]"
-company: "[[Noble Retail]]"
-source_created_at: 2025-06-23T16:56:00
-source_observed_at: 2025-06-23T18:04:00
-created_at: 2025-06-23T21:56:00
-updated_at: 2025-07-23T07:56:00
+company: "[[Noble Analytics]]"
+source_created_at: 2025-06-23T16:41:00
+source_observed_at: 2025-06-23T17:55:00
+created_at: 2025-06-25T00:41:00
+updated_at: 2025-07-16T09:41:00
 tags: [#research]
 ---
 # Project Horizon 4 Handoff Readiness Research 444
 
 ## Research Summary
-Research on handoff readiness for [[Project Horizon 4]] and [[Noble Retail]].
+Research on handoff readiness for [[Project Horizon 4]] and [[Noble Analytics]].
 
 ## Evidence
 - Interview notes from [[Clara Alvarez]]

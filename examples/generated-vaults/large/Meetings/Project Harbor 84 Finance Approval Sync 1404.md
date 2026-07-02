@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2025-10-02
+date: 2024-09-08
 project: "[[Project Harbor 84]]"
-company: "[[Meridian FinTech]]"
-source_created_at: 2025-10-02T11:06:00
-source_observed_at: 2025-10-02T12:00:00
-created_at: 2025-10-02T13:26:00
-updated_at: 2025-10-03T00:26:00
+company: "[[Harbor Retail]]"
+source_created_at: 2024-09-08T16:31:00
+source_observed_at: 2024-09-08T18:04:00
+created_at: 2024-09-08T18:09:00
+updated_at: 2024-09-09T09:09:00
 tags: [#meeting]
 ---
 # Project Harbor 84 Finance Approval Sync 1404
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Elena Diaz]]
 
 ## Client Attendees
-- [[Priya Rostova]]
-- [[Lina Ivanov]]
-- [[Amara Novak]]
+- [[Yara Walker]]
+- [[Iris Shah]]
+- [[Elena Jenkins]]
 
 ## Notes
-Finance Approval reviewed for [[Project Harbor 84]] at [[Meridian FinTech]].
-[[Elena Diaz]] aligned with [[Priya Rostova]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Harbor 84]] at [[Harbor Retail]].
+[[Elena Diaz]] aligned with [[Yara Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 84]] to [[Elena Diaz]] #follow-up

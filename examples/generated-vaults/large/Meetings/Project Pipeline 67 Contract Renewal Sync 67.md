@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-04-07
 project: "[[Project Pipeline 67]]"
-company: "[[Helio Manufacturing]]"
-source_created_at: 2024-04-07T12:51:00
-source_observed_at: 2024-04-07T13:57:00
-created_at: 2024-04-07T17:13:00
-updated_at: 2024-04-08T05:13:00
+company: "[[Meridian FinTech]]"
+source_created_at: 2024-04-07T09:05:00
+source_observed_at: 2024-04-07T09:30:00
+created_at: 2024-04-07T12:28:00
+updated_at: 2024-04-07T23:28:00
 tags: [#meeting]
 ---
 # Project Pipeline 67 Contract Renewal Sync 67
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Nadia Chen]]
 
 ## Client Attendees
-- [[Omar Jenkins]]
-- [[David Ortega]]
-- [[Tara Shah]]
+- [[Lina Ivanov]]
+- [[Elena Walker]]
+- [[Priya Rostova]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 67]] at [[Helio Manufacturing]].
-[[Nadia Chen]] aligned with [[Omar Jenkins]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 67]] at [[Meridian FinTech]].
+[[Nadia Chen]] aligned with [[Lina Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 67]] to [[Nadia Chen]] #follow-up

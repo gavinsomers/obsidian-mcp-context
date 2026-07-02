@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2025-02-18
+date: 2023-12-23
 project: "[[Project Bridge 30]]"
-company: "[[BrightWave Health]]"
-source_created_at: 2025-02-18T12:07:00
-source_observed_at: 2025-02-18T14:37:00
-created_at: 2025-02-25T15:07:00
-updated_at: 2025-02-25T20:07:00
+company: "[[Summit Media]]"
+source_created_at: 2023-12-23T09:03:00
+source_observed_at: 2023-12-23T11:59:00
+created_at: 2023-12-23T12:49:00
+updated_at: 2023-12-23T19:49:00
 tags: [#meeting]
 ---
 # Project Bridge 30 Handoff Readiness Sync 470
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Clara Bennett]]
 
 ## Client Attendees
-- [[Clara Kim]]
-- [[Sam Ortega]]
-- [[Grace Tan]]
+- [[Zoe Kim]]
+- [[Nadia Patel]]
+- [[Clara Usman]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 30]] at [[BrightWave Health]].
-[[Clara Bennett]] aligned with [[Clara Kim]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 30]] at [[Summit Media]].
+[[Clara Bennett]] aligned with [[Zoe Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Bridge 30]] to [[Clara Bennett]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Meridian 81]]"
-company: "[[Vanguard FinTech]]"
-source_created_at: 2024-06-29T12:09:00
-source_observed_at: 2024-06-29T12:50:00
-created_at: 2024-06-30T02:09:00
-updated_at: 2024-07-19T10:09:00
+company: "[[Vanguard Logistics]]"
+source_created_at: 2024-06-29T14:08:00
+source_observed_at: 2024-06-29T17:00:00
+created_at: 2024-07-01T04:08:00
+updated_at: 2024-08-08T09:08:00
 tags: [#research]
 ---
 # Project Meridian 81 Contract Renewal Research 81
 
 ## Research Summary
-Research on contract renewal for [[Project Meridian 81]] and [[Vanguard FinTech]].
+Research on contract renewal for [[Project Meridian 81]] and [[Vanguard Logistics]].
 
 ## Evidence
 - Interview notes from [[Ben Diaz]]

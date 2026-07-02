@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Noble Health]]"
-source_created_at: 2024-09-06T08:37:00
-source_observed_at: 2024-09-06T08:58:00
-created_at: 2024-09-07T09:37:00
-updated_at: 2024-11-04T20:37:00
+company: "[[Summit Analytics]]"
+source_created_at: 2024-09-06T16:55:00
+source_observed_at: 2024-09-06T17:52:00
+created_at: 2024-09-07T07:55:00
+updated_at: 2024-11-19T11:55:00
 tags: [#project]
 ---
 # Project Keystone 100
 
 ## Overview
-Project Keystone 100 supports [[Noble Health]] through operations admin.
+Project Keystone 100 supports [[Summit Analytics]] through operations admin.
 
 ## Stakeholders
-- [[Lina Kim]]
-- [[Amara Patel]]
-- [[Priya Tan]]
+- [[Clara Morgan]]
+- [[Sam Quinn]]
+- [[Grace Vance]]
 
 ## Operating Notes
 - Evergreen owner: [[Victor Diaz]]
-- Client account: [[Noble Health]]
+- Client account: [[Summit Analytics]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Keystone 100]] #ops

@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Delivery Lead"
-source_created_at: 2023-05-26T08:09:00
-source_observed_at: 2023-05-26T10:49:00
-created_at: 2023-05-26T19:09:00
-updated_at: 2024-10-20T13:00:00
+source_created_at: 2023-05-26T08:27:00
+source_observed_at: 2023-05-26T11:24:00
+created_at: 2023-05-27T13:27:00
+updated_at: 2023-06-30T13:27:00
 tags: [#person]
 ---
 # Ben Evans
@@ -14,5 +14,5 @@ tags: [#person]
 Ben Evans is the Delivery Lead at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Beacon 107]] ([[Summit Health]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Ben Evans]] #follow-up

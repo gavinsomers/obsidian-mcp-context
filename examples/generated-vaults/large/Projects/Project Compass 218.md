@@ -1,25 +1,27 @@
 ---
 type: project
-status: active
-company: "[[Crescent Logistics]]"
-source_created_at: 2026-04-09T15:26:00
-source_observed_at: 2026-04-09T15:37:00
-created_at: 2026-04-10T23:26:00
-updated_at: 2026-06-07T03:26:00
+status: closed
+company: "[[Harbor FinTech]]"
+source_created_at: 2026-04-09T11:53:00
+source_observed_at: 2026-04-09T13:20:00
+created_at: 2026-04-10T21:53:00
+updated_at: 2026-05-09T08:53:00
 tags: [#project]
 ---
 # Project Compass 218
 
 ## Overview
-Project Compass 218 supports [[Crescent Logistics]] through customer success.
+Project Compass 218 supports [[Harbor FinTech]] through customer success.
 
 ## Stakeholders
-- [[Rachel Lee]]
-- [[Farah Quinn]]
-- [[Victor Usman]]
+- [[Priya Ivanov]]
+- [[Elena Novak]]
+- [[Uma Rostova]]
+- [[Iris Walker]]
 
 ## Operating Notes
 - Evergreen owner: [[Rachel Alvarez]]
-- Client account: [[Crescent Logistics]]
-- Status: `active`
+- Client account: [[Harbor FinTech]]
+- Status: `closed`
+- Closed at: `2026-07-16`
 - [ ] Reconcile latest state for [[Project Compass 218]] #ops

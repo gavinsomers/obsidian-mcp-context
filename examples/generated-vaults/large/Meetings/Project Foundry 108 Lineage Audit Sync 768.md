@@ -1,28 +1,28 @@
 ---
 type: meeting
-date: 2024-12-24
+date: 2026-04-10
 project: "[[Project Foundry 108]]"
-company: "[[Harbor Media]]"
-source_created_at: 2024-12-24T15:15:00
-source_observed_at: 2024-12-24T16:10:00
-created_at: 2024-12-24T19:41:00
-updated_at: 2024-12-25T16:41:00
+company: "[[Helio Manufacturing]]"
+source_created_at: 2026-04-10T15:10:00
+source_observed_at: 2026-04-10T16:05:00
+created_at: 2026-04-10T16:10:00
+updated_at: 2026-04-11T10:10:00
 tags: [#meeting]
 ---
 # Project Foundry 108 Lineage Audit Sync 768
 
 ## Evergreen Attendees
-- [[Clara Evans]]
+- [[Grace Alvarez]]
 
 ## Client Attendees
-- [[Yara Kim]]
-- [[Marcus Patel]]
-- [[Ben Usman]]
+- [[Omar Jenkins]]
+- [[David Ortega]]
+- [[Tara Shah]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 108]] at [[Harbor Media]].
-[[Clara Evans]] aligned with [[Yara Kim]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 108]] at [[Helio Manufacturing]].
+[[Grace Alvarez]] aligned with [[Omar Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 108]] to [[Clara Evans]] #follow-up
+- [ ] Send recap for [[Project Foundry 108]] to [[Grace Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

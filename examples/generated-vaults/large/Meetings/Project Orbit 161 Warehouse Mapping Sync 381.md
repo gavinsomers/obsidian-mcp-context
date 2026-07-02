@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-07-13
 project: "[[Project Orbit 161]]"
-company: "[[Atlas Manufacturing]]"
-source_created_at: 2025-07-13T14:32:00
-source_observed_at: 2025-07-13T16:37:00
-created_at: 2025-07-13T20:31:00
-updated_at: 2025-07-13T22:31:00
+company: "[[Vanguard Analytics]]"
+source_created_at: 2025-07-13T10:54:00
+source_observed_at: 2025-07-13T11:30:00
+created_at: 2025-07-13T12:25:00
+updated_at: 2025-07-14T07:25:00
 tags: [#meeting]
 ---
 # Project Orbit 161 Warehouse Mapping Sync 381
 
 ## Evergreen Attendees
-- [[David Grant]]
+- [[Hannah Chen]]
 
 ## Client Attendees
-- [[Tara Jenkins]]
-- [[Hannah Ortega]]
-- [[Xavier Shah]]
+- [[Zoe Lee]]
+- [[Nadia Quinn]]
+- [[Clara Vance]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 161]] at [[Atlas Manufacturing]].
-[[David Grant]] aligned with [[Tara Jenkins]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 161]] at [[Vanguard Analytics]].
+[[Hannah Chen]] aligned with [[Zoe Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 161]] to [[David Grant]] #follow-up
+- [ ] Send recap for [[Project Orbit 161]] to [[Hannah Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

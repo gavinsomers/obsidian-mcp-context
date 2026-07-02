@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Summit Health]]"
-source_created_at: 2024-10-10T13:36:00
-source_observed_at: 2024-10-10T14:11:00
-created_at: 2024-10-10T21:36:00
-updated_at: 2024-11-20T02:36:00
+status: active
+company: "[[Crescent Retail]]"
+source_created_at: 2024-10-10T12:08:00
+source_observed_at: 2024-10-10T12:25:00
+created_at: 2024-10-11T07:08:00
+updated_at: 2025-01-03T09:08:00
 tags: [#project]
 ---
 # Project Beacon 107
 
 ## Overview
-Project Beacon 107 supports [[Summit Health]] through sales pipeline.
+Project Beacon 107 supports [[Crescent Retail]] through sales pipeline.
 
 ## Stakeholders
-- [[Jonah Kim]]
-- [[Zoe Ortega]]
-- [[Nadia Tan]]
+- [[Iris Jenkins]]
+- [[Yara Novak]]
+- [[Marcus Shah]]
 
 ## Operating Notes
-- Evergreen owner: [[Ben Evans]]
-- Client account: [[Summit Health]]
-- Status: `blocked`
+- Evergreen owner: [[Farah Alvarez]]
+- Client account: [[Crescent Retail]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Beacon 107]] #ops

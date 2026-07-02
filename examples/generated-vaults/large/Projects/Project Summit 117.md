@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Apex Media]]"
-source_created_at: 2024-11-29T08:33:00
-source_observed_at: 2024-11-29T09:34:00
-created_at: 2024-11-29T19:33:00
-updated_at: 2025-01-12T21:33:00
+status: blocked
+company: "[[Noble Retail]]"
+source_created_at: 2024-11-29T13:52:00
+source_observed_at: 2024-11-29T15:20:00
+created_at: 2024-11-30T13:52:00
+updated_at: 2025-01-13T17:52:00
 tags: [#project]
 ---
 # Project Summit 117
 
 ## Overview
-Project Summit 117 supports [[Apex Media]] through sales pipeline.
+Project Summit 117 supports [[Noble Retail]] through sales pipeline.
 
 ## Stakeholders
-- [[Priya Kim]]
-- [[Elena Patel]]
-- [[Uma Tan]]
+- [[Hannah Jenkins]]
+- [[Xavier Novak]]
+- [[Lina Shah]]
+- [[Amara Xu]]
 
 ## Operating Notes
-- Evergreen owner: [[Lina Evans]]
-- Client account: [[Apex Media]]
-- Status: `active`
+- Evergreen owner: [[Priya Alvarez]]
+- Client account: [[Noble Retail]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Summit 117]] #ops

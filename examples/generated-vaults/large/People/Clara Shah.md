@@ -2,10 +2,10 @@
 type: person
 company: "[[BrightWave Retail]]"
 role: "Customer Success Lead"
-source_created_at: 2023-09-06T10:29:00
-source_observed_at: 2023-09-06T13:07:00
-created_at: 2023-09-06T14:29:00
-updated_at: 2025-09-06T13:00:00
+source_created_at: 2023-09-06T13:35:00
+source_observed_at: 2023-09-06T16:02:00
+created_at: 2023-09-12T18:35:00
+updated_at: 2023-12-07T13:00:00
 tags: [#person]
 ---
 # Clara Shah
@@ -14,6 +14,5 @@ tags: [#person]
 Clara Shah is the Customer Success Lead at [[BrightWave Retail]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Meridian 156]] ([[BrightWave Retail]])
-- Client stakeholder on [[Project Pipeline 172]] ([[BrightWave Retail]])
+- Client stakeholder on [[Project Summit 42]] ([[BrightWave Retail]])
 - [ ] Confirm next update with [[Clara Shah]] #follow-up

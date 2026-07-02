@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 38]]"
-company: "[[Noble FinTech]]"
-source_created_at: 2024-08-02T11:22:00
-source_observed_at: 2024-08-02T13:37:00
-created_at: 2024-08-04T03:22:00
-updated_at: 2024-08-18T04:22:00
+company: "[[Cobalt FinTech]]"
+source_created_at: 2024-08-02T11:10:00
+source_observed_at: 2024-08-02T13:05:00
+created_at: 2024-08-03T16:10:00
+updated_at: 2024-08-07T21:10:00
 tags: [#research]
 ---
 # Project Compass 38 Finance Approval Research 258
 
 ## Research Summary
-Research on finance approval for [[Project Compass 38]] and [[Noble FinTech]].
+Research on finance approval for [[Project Compass 38]] and [[Cobalt FinTech]].
 
 ## Evidence
 - Interview notes from [[Kai Bennett]]

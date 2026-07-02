@@ -1,25 +1,23 @@
 ---
 type: project
 status: active
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2023-05-19T16:54:00
-source_observed_at: 2023-05-19T18:02:00
-created_at: 2023-05-28T23:54:00
-updated_at: 2023-09-25T17:18:00
+company: "[[Northstar Labs]]"
+source_created_at: 2023-05-19T14:17:00
+source_observed_at: 2023-05-19T14:40:00
+created_at: 2023-05-25T21:17:00
+updated_at: 2023-08-10T05:17:00
 tags: [#project]
 ---
 # Project Foundry 3
 
 ## Overview
-Project Foundry 3 supports [[Vanguard Manufacturing]] through customer success.
+Project Foundry 3 supports [[Northstar Labs]] through customer success.
 
 ## Stakeholders
-- [[Rachel Jenkins]]
-- [[Farah Ortega]]
-- [[Victor Shah]]
+- [[Sam Haddad]]
 
 ## Operating Notes
 - Evergreen owner: [[Ben Alvarez]]
-- Client account: [[Vanguard Manufacturing]]
+- Client account: [[Northstar Labs]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Foundry 3]] #ops

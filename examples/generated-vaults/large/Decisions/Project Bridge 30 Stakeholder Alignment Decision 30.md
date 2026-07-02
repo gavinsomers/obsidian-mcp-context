@@ -3,11 +3,11 @@ type: decision
 date: 2023-10-29
 status: active
 project: "[[Project Bridge 30]]"
-company: "[[BrightWave Health]]"
-source_created_at: 2023-10-29T09:16:00
-source_observed_at: 2023-10-29T11:32:00
-created_at: 2023-10-29T13:36:00
-updated_at: 2023-10-30T12:36:00
+company: "[[Summit Media]]"
+source_created_at: 2023-10-29T14:40:00
+source_observed_at: 2023-10-29T15:25:00
+created_at: 2023-10-29T15:30:00
+updated_at: 2023-10-30T12:30:00
 tags: [#decision]
 ---
 # Project Bridge 30 Stakeholder Alignment Decision 30
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 30]].
 
 ## Context
-This decision applies to [[BrightWave Health]] and [[Project Bridge 30]].
+This decision applies to [[Summit Media]] and [[Project Bridge 30]].
 It follows [[Project Bridge 30 Handoff Readiness Sync 1570]].
 It incorporates [[Project Bridge 30 Metric Reconciliation Research 30]].
 

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Beacon 92]]"
-company: "[[Summit Labs]]"
-source_created_at: 2024-08-23T09:15:00
-source_observed_at: 2024-08-23T11:46:00
-created_at: 2024-08-23T16:15:00
-updated_at: 2024-08-29T02:15:00
+company: "[[Harbor Health]]"
+source_created_at: 2024-08-23T14:03:00
+source_observed_at: 2024-08-23T16:13:00
+created_at: 2024-08-23T16:18:00
+updated_at: 2024-09-01T20:18:00
 tags: [#research]
 ---
 # Project Beacon 92 Lineage Audit Research 92
 
 ## Research Summary
-Research on lineage audit for [[Project Beacon 92]] and [[Summit Labs]].
+Research on lineage audit for [[Project Beacon 92]] and [[Harbor Health]].
 
 ## Evidence
 - Interview notes from [[Marcus Diaz]]

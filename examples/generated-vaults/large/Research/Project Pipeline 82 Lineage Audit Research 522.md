@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Pipeline 82]]"
-company: "[[Atlas Retail]]"
-source_created_at: 2025-11-05T08:17:00
-source_observed_at: 2025-11-05T10:25:00
-created_at: 2025-11-06T12:17:00
-updated_at: 2025-12-04T22:17:00
+company: "[[Quantum Logistics]]"
+source_created_at: 2025-11-05T09:01:00
+source_observed_at: 2025-11-05T09:31:00
+created_at: 2025-11-05T20:01:00
+updated_at: 2025-12-07T04:01:00
 tags: [#research]
 ---
 # Project Pipeline 82 Lineage Audit Research 522
 
 ## Research Summary
-Research on lineage audit for [[Project Pipeline 82]] and [[Atlas Retail]].
+Research on lineage audit for [[Project Pipeline 82]] and [[Quantum Logistics]].
 
 ## Evidence
 - Interview notes from [[Clara Diaz]]

@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-08-15
 project: "[[Project Harbor 9]]"
-company: "[[Northstar Health]]"
-source_created_at: 2024-08-15T13:13:00
-source_observed_at: 2024-08-15T14:40:00
-created_at: 2024-08-15T18:24:00
-updated_at: 2024-08-16T10:24:00
+company: "[[Apex Logistics]]"
+source_created_at: 2024-08-15T14:35:00
+source_observed_at: 2024-08-15T16:50:00
+created_at: 2024-08-15T16:55:00
+updated_at: 2024-08-16T02:55:00
 tags: [#meeting]
 ---
 # Project Harbor 9 Pipeline Hygiene Sync 1109
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Hannah Alvarez]]
 
 ## Client Attendees
-- [[Alex Kim]]
-- [[Omar Ortega]]
-- [[David Tan]]
+- [[Elena Lee]]
+- [[Uma Patel]]
+- [[Iris Usman]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 9]] at [[Northstar Health]].
-[[Hannah Alvarez]] aligned with [[Alex Kim]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 9]] at [[Apex Logistics]].
+[[Hannah Alvarez]] aligned with [[Elena Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 9]] to [[Hannah Alvarez]] #follow-up

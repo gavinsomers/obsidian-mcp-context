@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-08-22
 project: "[[Project Horizon 169]]"
-company: "[[Pioneer Retail]]"
-source_created_at: 2025-08-22T13:50:00
-source_observed_at: 2025-08-22T15:50:00
-created_at: 2025-08-22T15:55:00
-updated_at: 2025-08-22T17:55:00
+company: "[[Atlas FinTech]]"
+source_created_at: 2025-08-22T09:19:00
+source_observed_at: 2025-08-22T11:24:00
+created_at: 2025-08-22T13:57:00
+updated_at: 2025-08-22T20:57:00
 tags: [#meeting]
 ---
 # Project Horizon 169 Pipeline Hygiene Sync 389
 
 ## Evergreen Attendees
-- [[Lina Grant]]
+- [[Priya Chen]]
 
 ## Client Attendees
-- [[Wendy Novak]]
-- [[Grace Jenkins]]
-- [[Alex Xu]]
+- [[Tara Rostova]]
+- [[Omar Ivanov]]
+- [[Hannah Walker]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Horizon 169]] at [[Pioneer Retail]].
-[[Lina Grant]] aligned with [[Wendy Novak]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Horizon 169]] at [[Atlas FinTech]].
+[[Priya Chen]] aligned with [[Tara Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Horizon 169]] to [[Lina Grant]] #follow-up
+- [ ] Send recap for [[Project Horizon 169]] to [[Priya Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

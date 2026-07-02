@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-07-22
 project: "[[Project Lantern 140]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2025-07-22T13:36:00
-source_observed_at: 2025-07-22T15:21:00
-created_at: 2025-07-22T19:34:00
-updated_at: 2025-07-23T09:34:00
+company: "[[Vanguard Media]]"
+source_created_at: 2025-07-22T11:40:00
+source_observed_at: 2025-07-22T12:34:00
+created_at: 2025-07-22T17:06:00
+updated_at: 2025-07-23T14:06:00
 tags: [#meeting]
 ---
 # Project Lantern 140 Handoff Readiness Sync 580
 
 ## Evergreen Attendees
-- [[Iris Foster]]
+- [[Marcus Bennett]]
 
 ## Client Attendees
-- [[Wendy Ivanov]]
-- [[Alex Shah]]
-- [[Kai Novak]]
+- [[Victor Kim]]
+- [[Jonah Patel]]
+- [[Zoe Tan]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 140]] at [[Northstar Retail]].
-[[Iris Foster]] aligned with [[Wendy Ivanov]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 140]] at [[Vanguard Media]].
+[[Marcus Bennett]] aligned with [[Victor Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 140]] to [[Iris Foster]] #follow-up
+- [ ] Send recap for [[Project Lantern 140]] to [[Marcus Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

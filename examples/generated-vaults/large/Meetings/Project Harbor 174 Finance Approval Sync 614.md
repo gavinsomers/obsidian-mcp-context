@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-09-15
 project: "[[Project Harbor 174]]"
-company: "[[Noble Retail]]"
-source_created_at: 2025-09-15T09:28:00
-source_observed_at: 2025-09-15T11:28:00
-created_at: 2025-09-15T11:33:00
-updated_at: 2025-09-15T16:33:00
+company: "[[Quantum Labs]]"
+source_created_at: 2025-09-15T10:06:00
+source_observed_at: 2025-09-15T11:08:00
+created_at: 2025-09-15T14:36:00
+updated_at: 2025-09-15T20:36:00
 tags: [#meeting]
 ---
 # Project Harbor 174 Finance Approval Sync 614
 
 ## Evergreen Attendees
-- [[Rachel Grant]]
+- [[Victor Chen]]
 
 ## Client Attendees
-- [[Lina Shah]]
-- [[Amara Xu]]
-- [[Hannah Jenkins]]
+- [[Zoe Haddad]]
+- [[Clara Rostova]]
+- [[Sam Vance]]
 
 ## Notes
-Finance Approval reviewed for [[Project Harbor 174]] at [[Noble Retail]].
-[[Rachel Grant]] aligned with [[Lina Shah]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Harbor 174]] at [[Quantum Labs]].
+[[Victor Chen]] aligned with [[Zoe Haddad]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Harbor 174]] to [[Rachel Grant]] #follow-up
+- [ ] Send recap for [[Project Harbor 174]] to [[Victor Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-03-02
 project: "[[Project Signal 134]]"
-company: "[[Helio Analytics]]"
-source_created_at: 2025-03-02T12:12:00
-source_observed_at: 2025-03-02T12:51:00
-created_at: 2025-03-02T17:44:00
-updated_at: 2025-03-03T06:44:00
+company: "[[Keystone Manufacturing]]"
+source_created_at: 2025-03-02T10:53:00
+source_observed_at: 2025-03-02T11:54:00
+created_at: 2025-03-02T11:59:00
+updated_at: 2025-03-02T12:59:00
 tags: [#meeting]
 ---
 # Project Signal 134 Finance Approval Sync 1894
 
 ## Evergreen Attendees
-- [[Clara Foster]]
+- [[Grace Bennett]]
 
 ## Client Attendees
-- [[Xavier Lee]]
-- [[Lina Quinn]]
-- [[Amara Vance]]
+- [[Zoe Jenkins]]
+- [[Nadia Ortega]]
+- [[Clara Tan]]
 
 ## Notes
-Finance Approval reviewed for [[Project Signal 134]] at [[Helio Analytics]].
-[[Clara Foster]] aligned with [[Xavier Lee]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Signal 134]] at [[Keystone Manufacturing]].
+[[Grace Bennett]] aligned with [[Zoe Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 134]] to [[Clara Foster]] #follow-up
+- [ ] Send recap for [[Project Signal 134]] to [[Grace Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

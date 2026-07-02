@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2026-03-03
+date: 2024-04-09
 status: active
 project: "[[Project Venture 58]]"
-company: "[[Meridian Health]]"
-source_created_at: 2026-03-03T13:58:00
-source_observed_at: 2026-03-03T15:14:00
-created_at: 2026-03-03T17:31:00
-updated_at: 2026-03-04T10:31:00
+company: "[[Pioneer Media]]"
+source_created_at: 2024-04-09T15:29:00
+source_observed_at: 2024-04-09T17:07:00
+created_at: 2024-04-09T17:12:00
+updated_at: 2024-04-10T05:12:00
 tags: [#decision]
 ---
 # Project Venture 58 Handoff Readiness Decision 718
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Venture 58]].
 
 ## Context
-This decision applies to [[Meridian Health]] and [[Project Venture 58]].
-It follows [[Project Venture 58 Lineage Audit Sync 718]].
+This decision applies to [[Pioneer Media]] and [[Project Venture 58]].
+It follows [[Project Venture 58 Lineage Audit Sync 278]].
 It incorporates [[Project Venture 58 Finance Approval Research 498]].
 
 ## Supersession

@@ -2,11 +2,11 @@
 type: meeting
 date: 2023-11-26
 project: "[[Project Keystone 40]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2023-11-26T11:50:00
-source_observed_at: 2023-11-26T14:17:00
-created_at: 2023-11-26T14:22:00
-updated_at: 2023-11-27T07:22:00
+company: "[[Summit FinTech]]"
+source_created_at: 2023-11-26T14:54:00
+source_observed_at: 2023-11-26T16:11:00
+created_at: 2023-11-26T17:58:00
+updated_at: 2023-11-27T11:58:00
 tags: [#meeting]
 ---
 # Project Keystone 40 Handoff Readiness Sync 920
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Marcus Bennett]]
 
 ## Client Attendees
-- [[Rachel Jenkins]]
-- [[Farah Ortega]]
-- [[Victor Shah]]
+- [[Victor Rostova]]
+- [[Farah Novak]]
+- [[Rachel Ivanov]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 40]] at [[Vanguard Manufacturing]].
-[[Marcus Bennett]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 40]] at [[Summit FinTech]].
+[[Marcus Bennett]] aligned with [[Victor Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 40]] to [[Marcus Bennett]] #follow-up

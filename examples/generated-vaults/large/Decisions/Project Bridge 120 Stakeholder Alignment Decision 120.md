@@ -3,11 +3,11 @@ type: decision
 date: 2025-01-13
 status: active
 project: "[[Project Bridge 120]]"
-company: "[[Atlas Media]]"
-source_created_at: 2025-01-13T11:37:00
-source_observed_at: 2025-01-13T11:49:00
-created_at: 2025-01-13T13:59:00
-updated_at: 2025-01-14T11:59:00
+company: "[[Northstar Labs]]"
+source_created_at: 2025-01-13T12:50:00
+source_observed_at: 2025-01-13T15:25:00
+created_at: 2025-01-21T12:50:00
+updated_at: 2025-01-21T20:50:00
 tags: [#decision]
 ---
 # Project Bridge 120 Stakeholder Alignment Decision 120
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 120]].
 
 ## Context
-This decision applies to [[Atlas Media]] and [[Project Bridge 120]].
-It follows [[Project Bridge 120 Handoff Readiness Sync 1880]].
-It incorporates [[Project Bridge 120 Metric Reconciliation Research 340]].
+This decision applies to [[Northstar Labs]] and [[Project Bridge 120]].
+It follows [[Project Bridge 120 Handoff Readiness Sync 120]].
+It incorporates [[Project Bridge 120 Metric Reconciliation Research 120]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

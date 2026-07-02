@@ -3,11 +3,11 @@ type: decision
 date: 2024-09-02
 status: active
 project: "[[Project Foundry 93]]"
-company: "[[BrightWave Analytics]]"
-source_created_at: 2024-09-02T12:01:00
-source_observed_at: 2024-09-02T13:07:00
-created_at: 2024-09-02T16:01:00
-updated_at: 2024-09-03T01:01:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2024-09-02T08:01:00
+source_observed_at: 2024-09-02T08:18:00
+created_at: 2024-09-02T10:40:00
+updated_at: 2024-09-02T18:40:00
 tags: [#decision]
 ---
 # Project Foundry 93 Adoption Workflow Decision 313
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Foundry 93]].
 
 ## Context
-This decision applies to [[BrightWave Analytics]] and [[Project Foundry 93]].
-It follows [[Project Foundry 93 Security Review Sync 1633]].
+This decision applies to [[Northstar Analytics]] and [[Project Foundry 93]].
+It follows [[Project Foundry 93 Security Review Sync 973]].
 It incorporates [[Project Foundry 93 Pipeline Hygiene Research 93]].
 
 ## Supersession

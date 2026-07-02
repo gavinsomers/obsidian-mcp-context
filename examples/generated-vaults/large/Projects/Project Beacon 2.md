@@ -1,25 +1,27 @@
 ---
 type: project
-status: planning
-company: "[[Cobalt Analytics]]"
-source_created_at: 2023-05-15T13:14:00
-source_observed_at: 2023-05-15T14:39:00
-created_at: 2023-05-17T07:14:00
-updated_at: 2023-12-02T15:07:00
+status: closed
+company: "[[Northstar Retail]]"
+source_created_at: 2023-05-15T11:48:00
+source_observed_at: 2023-05-15T12:55:00
+created_at: 2023-05-16T06:48:00
+updated_at: 2023-11-13T10:15:00
 tags: [#project]
 ---
 # Project Beacon 2
 
 ## Overview
-Project Beacon 2 supports [[Cobalt Analytics]] through sales pipeline.
+Project Beacon 2 supports [[Northstar Retail]] through sales pipeline.
 
 ## Stakeholders
-- [[Victor Lee]]
-- [[Jonah Quinn]]
-- [[Zoe Usman]]
+- [[Wendy Ivanov]]
+- [[Kai Novak]]
+- [[Alex Shah]]
+- [[Omar Walker]]
 
 ## Operating Notes
 - Evergreen owner: [[Amara Alvarez]]
-- Client account: [[Cobalt Analytics]]
-- Status: `planning`
+- Client account: [[Northstar Retail]]
+- Status: `closed`
+- Closed at: `2023-08-25`
 - [ ] Reconcile latest state for [[Project Beacon 2]] #ops

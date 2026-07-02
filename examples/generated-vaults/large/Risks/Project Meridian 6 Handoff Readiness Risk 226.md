@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Meridian 6]]"
-source_created_at: 2024-04-29T12:19:00
-source_observed_at: 2024-04-29T14:23:00
-created_at: 2024-04-30T20:19:00
-updated_at: 2024-05-15T02:19:00
+source_created_at: 2024-04-29T14:08:00
+source_observed_at: 2024-04-29T15:47:00
+created_at: 2024-04-30T02:08:00
+updated_at: 2024-05-05T06:08:00
 tags: [#risk]
 ---
 # Project Meridian 6 Handoff Readiness Risk 226
 
 ## Risk
-Handoff Readiness may affect [[Project Meridian 6]] for [[Summit Media]].
+Handoff Readiness may affect [[Project Meridian 6]] for [[Helio Health]].
 
 ## Evidence
 - Raised after [[Project Meridian 6 Metric Reconciliation Sync 226]]

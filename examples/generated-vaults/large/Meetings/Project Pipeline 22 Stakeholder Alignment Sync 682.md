@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-12-11
 project: "[[Project Pipeline 22]]"
-company: "[[Cobalt Logistics]]"
-source_created_at: 2025-12-11T12:32:00
-source_observed_at: 2025-12-11T12:45:00
-created_at: 2025-12-11T12:59:00
-updated_at: 2025-12-12T09:59:00
+company: "[[Helio FinTech]]"
+source_created_at: 2025-12-11T13:46:00
+source_observed_at: 2025-12-11T15:44:00
+created_at: 2025-12-11T18:42:00
+updated_at: 2025-12-12T01:42:00
 tags: [#meeting]
 ---
 # Project Pipeline 22 Stakeholder Alignment Sync 682
@@ -15,13 +15,12 @@ tags: [#meeting]
 - [[Victor Alvarez]]
 
 ## Client Attendees
-- [[Farah Lee]]
-- [[Victor Patel]]
-- [[Jonah Usman]]
+- [[Kai Ivanov]]
+- [[Alex Novak]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Pipeline 22]] at [[Cobalt Logistics]].
-[[Victor Alvarez]] aligned with [[Farah Lee]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Pipeline 22]] at [[Helio FinTech]].
+[[Victor Alvarez]] aligned with [[Kai Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 22]] to [[Victor Alvarez]] #follow-up

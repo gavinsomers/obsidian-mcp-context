@@ -3,11 +3,11 @@ type: decision
 date: 2024-10-03
 status: active
 project: "[[Project Harbor 99]]"
-company: "[[Harbor FinTech]]"
-source_created_at: 2024-10-03T16:02:00
-source_observed_at: 2024-10-03T17:41:00
-created_at: 2024-10-03T19:35:00
-updated_at: 2024-10-04T03:35:00
+company: "[[Summit Labs]]"
+source_created_at: 2024-10-03T14:03:00
+source_observed_at: 2024-10-03T14:14:00
+created_at: 2024-10-03T16:20:00
+updated_at: 2024-10-03T18:20:00
 tags: [#decision]
 ---
 # Project Harbor 99 Warehouse Mapping Decision 319
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Harbor 99]].
 
 ## Context
-This decision applies to [[Harbor FinTech]] and [[Project Harbor 99]].
-It follows [[Project Harbor 99 Pipeline Hygiene Sync 979]].
+This decision applies to [[Summit Labs]] and [[Project Harbor 99]].
+It follows [[Project Harbor 99 Pipeline Hygiene Sync 319]].
 It incorporates [[Project Harbor 99 Adoption Workflow Research 99]].
 
 ## Supersession

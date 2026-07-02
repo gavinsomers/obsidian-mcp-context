@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Keystone 25]]"
-company: "[[Apex Media]]"
-source_created_at: 2024-07-11T15:54:00
-source_observed_at: 2024-07-11T18:53:00
-created_at: 2024-07-12T23:54:00
-updated_at: 2024-07-22T08:54:00
+company: "[[Quantum FinTech]]"
+source_created_at: 2024-07-11T13:03:00
+source_observed_at: 2024-07-11T16:00:00
+created_at: 2024-07-11T16:05:00
+updated_at: 2024-07-18T17:05:00
 tags: [#research]
 ---
 # Project Keystone 25 Warehouse Mapping Research 245
 
 ## Research Summary
-Research on warehouse mapping for [[Project Keystone 25]] and [[Apex Media]].
+Research on warehouse mapping for [[Project Keystone 25]] and [[Quantum FinTech]].
 
 ## Evidence
 - Interview notes from [[Yara Alvarez]]

@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-09-06
+date: 2026-03-31
 status: superseded
 project: "[[Project Foundry 78]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2024-09-06T09:41:00
-source_observed_at: 2024-09-06T11:45:00
-created_at: 2024-09-06T12:27:00
-updated_at: 2024-09-07T03:27:00
+company: "[[Keystone Retail]]"
+source_created_at: 2026-03-31T11:35:00
+source_observed_at: 2026-03-31T13:50:00
+created_at: 2026-03-31T16:33:00
+updated_at: 2026-04-01T13:33:00
 tags: [#decision]
 ---
 # Project Foundry 78 Handoff Readiness Decision 738
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 78]].
 
 ## Context
-This decision applies to [[Vanguard Retail]] and [[Project Foundry 78]].
-It follows [[Project Foundry 78 Lineage Audit Sync 298]].
-It incorporates [[Project Foundry 78 Finance Approval Research 78]].
+This decision applies to [[Keystone Retail]] and [[Project Foundry 78]].
+It follows [[Project Foundry 78 Lineage Audit Sync 738]].
+It incorporates [[Project Foundry 78 Finance Approval Research 518]].
 
 ## Supersession
 Marked superseded by a later unlinked stakeholder review. #superseded

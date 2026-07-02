@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-04-30
 project: "[[Project Signal 44]]"
-company: "[[Meridian Manufacturing]]"
-source_created_at: 2024-04-30T10:03:00
-source_observed_at: 2024-04-30T11:17:00
-created_at: 2024-05-05T17:03:00
-updated_at: 2024-05-06T02:03:00
+company: "[[Atlas Manufacturing]]"
+source_created_at: 2024-04-30T10:14:00
+source_observed_at: 2024-04-30T11:20:00
+created_at: 2024-04-30T11:25:00
+updated_at: 2024-04-30T14:25:00
 tags: [#meeting]
 ---
 # Project Signal 44 Finance Approval Sync 1804
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Rachel Bennett]]
 
 ## Client Attendees
-- [[Priya Jenkins]]
-- [[Elena Ortega]]
-- [[Uma Shah]]
+- [[Tara Jenkins]]
+- [[Hannah Ortega]]
+- [[Xavier Shah]]
 
 ## Notes
-Finance Approval reviewed for [[Project Signal 44]] at [[Meridian Manufacturing]].
-[[Rachel Bennett]] aligned with [[Priya Jenkins]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Signal 44]] at [[Atlas Manufacturing]].
+[[Rachel Bennett]] aligned with [[Tara Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 44]] to [[Rachel Bennett]] #follow-up

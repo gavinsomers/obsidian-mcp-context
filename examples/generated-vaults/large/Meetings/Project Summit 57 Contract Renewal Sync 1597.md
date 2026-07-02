@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-02-18
 project: "[[Project Summit 57]]"
-company: "[[BrightWave Logistics]]"
-source_created_at: 2024-02-18T08:31:00
-source_observed_at: 2024-02-18T10:43:00
-created_at: 2024-02-18T10:48:00
-updated_at: 2024-02-18T18:48:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2024-02-18T10:27:00
+source_observed_at: 2024-02-18T12:49:00
+created_at: 2024-02-19T11:27:00
+updated_at: 2024-02-20T09:27:00
 tags: [#meeting]
 ---
 # Project Summit 57 Contract Renewal Sync 1597
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[David Chen]]
 
 ## Client Attendees
-- [[Grace Lee]]
-- [[Wendy Patel]]
-- [[Kai Usman]]
+- [[Farah Lee]]
+- [[Victor Patel]]
+- [[Jonah Usman]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Summit 57]] at [[BrightWave Logistics]].
-[[David Chen]] aligned with [[Grace Lee]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Summit 57]] at [[Cobalt Logistics]].
+[[David Chen]] aligned with [[Farah Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 57]] to [[David Chen]] #follow-up

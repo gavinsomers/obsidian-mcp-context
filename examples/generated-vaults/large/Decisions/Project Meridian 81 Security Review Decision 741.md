@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-03
 status: active
 project: "[[Project Meridian 81]]"
-company: "[[Vanguard FinTech]]"
-source_created_at: 2026-04-03T10:27:00
-source_observed_at: 2026-04-03T11:48:00
-created_at: 2026-04-03T15:00:00
-updated_at: 2026-04-04T11:00:00
+company: "[[Vanguard Logistics]]"
+source_created_at: 2026-04-03T14:26:00
+source_observed_at: 2026-04-03T15:46:00
+created_at: 2026-04-03T18:41:00
+updated_at: 2026-04-04T17:41:00
 tags: [#decision]
 ---
 # Project Meridian 81 Security Review Decision 741
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with security review for [[Project Meridian 81]].
 
 ## Context
-This decision applies to [[Vanguard FinTech]] and [[Project Meridian 81]].
+This decision applies to [[Vanguard Logistics]] and [[Project Meridian 81]].
 It follows [[Project Meridian 81 Warehouse Mapping Sync 741]].
 It incorporates [[Project Meridian 81 Contract Renewal Research 521]].
 

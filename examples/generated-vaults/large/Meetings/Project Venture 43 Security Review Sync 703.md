@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-01-09
 project: "[[Project Venture 43]]"
-company: "[[Cobalt Logistics]]"
-source_created_at: 2026-01-09T14:09:00
-source_observed_at: 2026-01-09T16:36:00
-created_at: 2026-01-09T18:01:00
-updated_at: 2026-01-10T06:01:00
+company: "[[Apex Health]]"
+source_created_at: 2026-01-09T15:16:00
+source_observed_at: 2026-01-09T15:49:00
+created_at: 2026-01-09T20:22:00
+updated_at: 2026-01-10T08:22:00
 tags: [#meeting]
 ---
 # Project Venture 43 Security Review Sync 703
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Priya Bennett]]
 
 ## Client Attendees
-- [[Farah Lee]]
-- [[Victor Patel]]
-- [[Jonah Usman]]
+- [[Amara Kim]]
+- [[Priya Ortega]]
+- [[Elena Tan]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 43]] at [[Cobalt Logistics]].
-[[Priya Bennett]] aligned with [[Farah Lee]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 43]] at [[Apex Health]].
+[[Priya Bennett]] aligned with [[Amara Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 43]] to [[Priya Bennett]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 214]]"
-company: "[[Pioneer Labs]]"
-source_created_at: 2026-04-13T09:52:00
-source_observed_at: 2026-04-13T10:55:00
-created_at: 2026-04-14T22:52:00
-updated_at: 2026-05-04T03:52:00
+company: "[[Northstar Media]]"
+source_created_at: 2026-04-13T08:53:00
+source_observed_at: 2026-04-13T10:07:00
+created_at: 2026-04-14T10:53:00
+updated_at: 2026-05-21T19:53:00
 tags: [#research]
 ---
 # Project Horizon 214 Handoff Readiness Research 434
 
 ## Research Summary
-Research on handoff readiness for [[Project Horizon 214]] and [[Pioneer Labs]].
+Research on handoff readiness for [[Project Horizon 214]] and [[Northstar Media]].
 
 ## Evidence
 - Interview notes from [[Marcus Alvarez]]

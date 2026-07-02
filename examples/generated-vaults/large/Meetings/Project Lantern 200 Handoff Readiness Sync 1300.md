@@ -2,27 +2,27 @@
 type: meeting
 date: 2026-01-22
 project: "[[Project Lantern 200]]"
-company: "[[Keystone Health]]"
-source_created_at: 2026-01-22T08:26:00
-source_observed_at: 2026-01-22T09:03:00
-created_at: 2026-01-22T12:24:00
-updated_at: 2026-01-22T17:24:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2026-01-22T12:21:00
+source_observed_at: 2026-01-22T14:16:00
+created_at: 2026-01-22T17:02:00
+updated_at: 2026-01-23T05:02:00
 tags: [#meeting]
 ---
 # Project Lantern 200 Handoff Readiness Sync 1300
 
 ## Evergreen Attendees
-- [[Rachel Haddad]]
+- [[Victor Diaz]]
 
 ## Client Attendees
-- [[Nadia Kim]]
-- [[Clara Patel]]
-- [[Sam Tan]]
+- [[Marcus Ivanov]]
+- [[Ben Novak]]
+- [[Rachel Rostova]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 200]] at [[Keystone Health]].
-[[Rachel Haddad]] aligned with [[Nadia Kim]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 200]] at [[Vanguard FinTech]].
+[[Victor Diaz]] aligned with [[Marcus Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 200]] to [[Rachel Haddad]] #follow-up
+- [ ] Send recap for [[Project Lantern 200]] to [[Victor Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

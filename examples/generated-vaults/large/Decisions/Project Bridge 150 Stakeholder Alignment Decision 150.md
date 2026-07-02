@@ -3,11 +3,11 @@ type: decision
 date: 2025-06-09
 status: active
 project: "[[Project Bridge 150]]"
-company: "[[Atlas Media]]"
-source_created_at: 2025-06-09T16:31:00
-source_observed_at: 2025-06-09T17:32:00
-created_at: 2025-06-09T17:37:00
-updated_at: 2025-06-10T02:37:00
+company: "[[Summit Manufacturing]]"
+source_created_at: 2025-06-09T09:34:00
+source_observed_at: 2025-06-09T10:07:00
+created_at: 2025-06-09T13:02:00
+updated_at: 2025-06-09T14:02:00
 tags: [#decision]
 ---
 # Project Bridge 150 Stakeholder Alignment Decision 150
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 150]].
 
 ## Context
-This decision applies to [[Atlas Media]] and [[Project Bridge 150]].
-It follows [[Project Bridge 150 Handoff Readiness Sync 370]].
-It incorporates [[Project Bridge 150 Metric Reconciliation Research 370]].
+This decision applies to [[Summit Manufacturing]] and [[Project Bridge 150]].
+It follows [[Project Bridge 150 Handoff Readiness Sync 150]].
+It incorporates [[Project Bridge 150 Metric Reconciliation Research 150]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

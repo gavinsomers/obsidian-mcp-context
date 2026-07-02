@@ -2,9 +2,9 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Senior Data Consultant"
-source_created_at: 2023-04-21T14:58:00
-source_observed_at: 2023-04-21T15:29:00
-created_at: 2023-04-24T19:58:00
+source_created_at: 2023-04-21T10:31:00
+source_observed_at: 2023-04-21T11:54:00
+created_at: 2023-04-22T08:31:00
 updated_at: 2026-01-31T13:00:00
 tags: [#person]
 ---
@@ -14,6 +14,7 @@ tags: [#person]
 Amara Alvarez is the Senior Data Consultant at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Beacon 2]] ([[Cobalt Analytics]])
-- Delivery owner for [[Project Pipeline 202]] ([[Summit Media]])
+- Delivery owner for [[Project Beacon 2]] ([[Northstar Retail]])
+- Delivery owner for [[Project Summit 102]] ([[Quantum Analytics]])
+- Delivery owner for [[Project Pipeline 202]] ([[Cobalt Labs]])
 - [ ] Confirm next update with [[Amara Alvarez]] #follow-up

@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-08-17
 project: "[[Project Foundry 168]]"
-company: "[[Meridian Media]]"
-source_created_at: 2025-08-17T09:49:00
-source_observed_at: 2025-08-17T11:49:00
-created_at: 2025-08-17T13:57:00
-updated_at: 2025-08-18T04:57:00
+company: "[[Meridian Labs]]"
+source_created_at: 2025-08-17T15:15:00
+source_observed_at: 2025-08-17T16:36:00
+created_at: 2025-08-17T20:25:00
+updated_at: 2025-08-18T09:25:00
 tags: [#meeting]
 ---
 # Project Foundry 168 Lineage Audit Sync 828
 
 ## Evergreen Attendees
-- [[Kai Grant]]
+- [[Omar Chen]]
 
 ## Client Attendees
-- [[Uma Kim]]
-- [[Iris Patel]]
-- [[Yara Tan]]
+- [[Xavier Haddad]]
+- [[Priya Vance]]
+- [[Amara Rostova]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 168]] at [[Meridian Media]].
-[[Kai Grant]] aligned with [[Uma Kim]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 168]] at [[Meridian Labs]].
+[[Omar Chen]] aligned with [[Xavier Haddad]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 168]] to [[Kai Grant]] #follow-up
+- [ ] Send recap for [[Project Foundry 168]] to [[Omar Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

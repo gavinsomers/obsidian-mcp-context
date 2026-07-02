@@ -3,11 +3,11 @@ type: decision
 date: 2023-11-24
 status: active
 project: "[[Project Lantern 35]]"
-company: "[[Cobalt Analytics]]"
-source_created_at: 2023-11-24T08:48:00
-source_observed_at: 2023-11-24T09:24:00
-created_at: 2023-11-24T09:29:00
-updated_at: 2023-11-24T22:29:00
+company: "[[Apex Labs]]"
+source_created_at: 2023-11-24T13:46:00
+source_observed_at: 2023-11-24T16:42:00
+created_at: 2023-11-24T16:47:00
+updated_at: 2023-11-25T10:47:00
 tags: [#decision]
 ---
 # Project Lantern 35 Contract Renewal Decision 35
@@ -16,9 +16,8 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Lantern 35]].
 
 ## Context
-This decision applies to [[Cobalt Analytics]] and [[Project Lantern 35]].
+This decision applies to [[Apex Labs]] and [[Project Lantern 35]].
 It follows [[Project Lantern 35 Adoption Workflow Sync 915]].
-It incorporates [[Project Lantern 35 Warehouse Mapping Research 35]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

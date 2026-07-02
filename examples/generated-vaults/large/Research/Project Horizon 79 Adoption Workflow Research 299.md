@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 79]]"
-company: "[[Harbor FinTech]]"
-source_created_at: 2024-10-14T16:27:00
-source_observed_at: 2024-10-14T16:47:00
-created_at: 2024-10-20T16:27:00
-updated_at: 2024-10-24T03:27:00
+company: "[[BrightWave Analytics]]"
+source_created_at: 2024-10-14T13:17:00
+source_observed_at: 2024-10-14T14:20:00
+created_at: 2024-10-15T22:17:00
+updated_at: 2024-10-26T04:17:00
 tags: [#research]
 ---
 # Project Horizon 79 Adoption Workflow Research 299
 
 ## Research Summary
-Research on adoption workflow for [[Project Horizon 79]] and [[Harbor FinTech]].
+Research on adoption workflow for [[Project Horizon 79]] and [[BrightWave Analytics]].
 
 ## Evidence
 - Interview notes from [[Alex Diaz]]

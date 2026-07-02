@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-24
 status: superseded
 project: "[[Project Atlas 166]]"
-company: "[[Northstar Manufacturing]]"
-source_created_at: 2025-09-24T08:15:00
-source_observed_at: 2025-09-24T08:45:00
-created_at: 2025-09-24T14:10:00
-updated_at: 2025-09-24T20:10:00
+company: "[[Helio FinTech]]"
+source_created_at: 2025-09-24T16:17:00
+source_observed_at: 2025-09-24T18:21:00
+created_at: 2025-09-24T18:26:00
+updated_at: 2025-09-25T04:26:00
 tags: [#decision]
 ---
 # Project Atlas 166 Lineage Audit Decision 606
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 166]].
 
 ## Context
-This decision applies to [[Northstar Manufacturing]] and [[Project Atlas 166]].
+This decision applies to [[Helio FinTech]] and [[Project Atlas 166]].
 It follows [[Project Atlas 166 Metric Reconciliation Sync 606]].
 It incorporates [[Project Atlas 166 Stakeholder Alignment Research 386]].
 

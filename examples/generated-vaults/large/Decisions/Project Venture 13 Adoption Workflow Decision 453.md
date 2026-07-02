@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-02-19
+date: 2023-09-10
 status: active
 project: "[[Project Venture 13]]"
-company: "[[Vanguard Health]]"
-source_created_at: 2025-02-19T15:17:00
-source_observed_at: 2025-02-19T17:06:00
-created_at: 2025-02-19T17:11:00
-updated_at: 2025-02-20T01:11:00
+company: "[[Apex Media]]"
+source_created_at: 2023-09-10T09:55:00
+source_observed_at: 2023-09-10T11:51:00
+created_at: 2023-09-10T11:58:00
+updated_at: 2023-09-10T15:58:00
 tags: [#decision]
 ---
 # Project Venture 13 Adoption Workflow Decision 453
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Venture 13]].
 
 ## Context
-This decision applies to [[Vanguard Health]] and [[Project Venture 13]].
-It follows [[Project Venture 13 Security Review Sync 453]].
-It incorporates [[Project Venture 13 Pipeline Hygiene Research 233]].
+This decision applies to [[Apex Media]] and [[Project Venture 13]].
+It follows [[Project Venture 13 Security Review Sync 1553]].
+It incorporates [[Project Venture 13 Pipeline Hygiene Research 13]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

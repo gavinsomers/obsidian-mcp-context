@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: smb
-source_created_at: 2023-05-07T12:30:00
-source_observed_at: 2023-05-07T12:44:00
-created_at: 2023-05-09T09:30:00
-updated_at: 2023-06-06T15:30:00
+source_created_at: 2023-05-07T11:03:00
+source_observed_at: 2023-05-07T11:38:00
+created_at: 2023-05-09T10:03:00
+updated_at: 2026-04-30T13:00:00
 tags: [#company]
 ---
 # Atlas Labs
@@ -14,11 +14,18 @@ tags: [#company]
 Atlas Labs is a smb account currently marked `active`.
 
 ## Assigned Account Team
+- [[Iris Chen]] - Analytics Engineer
+- [[Tara Alvarez]] - Solution Architect
 
 ## Client Stakeholders
 - [[Alex Ivanov]] - Executive Sponsor
+- [[Omar Morgan]] - Customer Success Lead
+- [[David Rostova]] - Security Contact
+- [[Tara Vance]] - Product Analytics Lead
 
 ## Projects
+- [[Project Beacon 62]]
+- [[Project Keystone 220]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Atlas Labs]] #account

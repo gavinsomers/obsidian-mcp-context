@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-01-31
 project: "[[Project Foundry 18]]"
-company: "[[Meridian Retail]]"
-source_created_at: 2025-01-31T15:42:00
-source_observed_at: 2025-01-31T16:23:00
-created_at: 2025-01-31T17:55:00
-updated_at: 2025-02-01T12:55:00
+company: "[[Keystone Health]]"
+source_created_at: 2025-01-31T16:53:00
+source_observed_at: 2025-01-31T18:05:00
+created_at: 2025-01-31T18:48:00
+updated_at: 2025-02-01T17:48:00
 tags: [#meeting]
 ---
 # Project Foundry 18 Lineage Audit Sync 458
@@ -15,12 +15,13 @@ tags: [#meeting]
 - [[Rachel Alvarez]]
 
 ## Client Attendees
-- [[Amara Jenkins]]
-- [[Priya Novak]]
+- [[Nadia Kim]]
+- [[Clara Patel]]
+- [[Sam Tan]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 18]] at [[Meridian Retail]].
-[[Rachel Alvarez]] aligned with [[Amara Jenkins]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 18]] at [[Keystone Health]].
+[[Rachel Alvarez]] aligned with [[Nadia Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 18]] to [[Rachel Alvarez]] #follow-up

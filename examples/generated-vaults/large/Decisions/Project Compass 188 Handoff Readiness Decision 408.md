@@ -3,11 +3,11 @@ type: decision
 date: 2025-12-14
 status: superseded
 project: "[[Project Compass 188]]"
-company: "[[Harbor Retail]]"
-source_created_at: 2025-12-14T14:20:00
-source_observed_at: 2025-12-14T14:46:00
-created_at: 2025-12-14T17:17:00
-updated_at: 2025-12-15T05:17:00
+company: "[[Crescent Analytics]]"
+source_created_at: 2025-12-14T09:44:00
+source_observed_at: 2025-12-14T12:34:00
+created_at: 2025-12-14T12:39:00
+updated_at: 2025-12-15T02:39:00
 tags: [#decision]
 ---
 # Project Compass 188 Handoff Readiness Decision 408
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 188]].
 
 ## Context
-This decision applies to [[Harbor Retail]] and [[Project Compass 188]].
-It follows [[Project Compass 188 Lineage Audit Sync 1728]].
+This decision applies to [[Crescent Analytics]] and [[Project Compass 188]].
+It follows [[Project Compass 188 Lineage Audit Sync 848]].
 It incorporates [[Project Compass 188 Finance Approval Research 408]].
 
 ## Supersession

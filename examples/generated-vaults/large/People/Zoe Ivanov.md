@@ -2,10 +2,10 @@
 type: person
 company: "[[BrightWave Retail]]"
 role: "Finance Lead"
-source_created_at: 2023-06-27T16:24:00
-source_observed_at: 2023-06-27T17:34:00
-created_at: 2023-06-29T14:24:00
-updated_at: 2025-09-06T13:00:00
+source_created_at: 2023-06-27T15:31:00
+source_observed_at: 2023-06-27T15:52:00
+created_at: 2023-06-29T10:31:00
+updated_at: 2023-12-07T13:00:00
 tags: [#person]
 ---
 # Zoe Ivanov
@@ -14,6 +14,5 @@ tags: [#person]
 Zoe Ivanov is the Finance Lead at [[BrightWave Retail]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Meridian 156]] ([[BrightWave Retail]])
-- Client stakeholder on [[Project Pipeline 172]] ([[BrightWave Retail]])
+- Client stakeholder on [[Project Summit 42]] ([[BrightWave Retail]])
 - [ ] Confirm next update with [[Zoe Ivanov]] #follow-up

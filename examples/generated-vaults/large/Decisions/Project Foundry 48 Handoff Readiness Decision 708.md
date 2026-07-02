@@ -3,11 +3,11 @@ type: decision
 date: 2026-02-17
 status: active
 project: "[[Project Foundry 48]]"
-company: "[[Cobalt FinTech]]"
-source_created_at: 2026-02-17T12:33:00
-source_observed_at: 2026-02-17T14:33:00
-created_at: 2026-02-17T14:59:00
-updated_at: 2026-02-17T18:59:00
+company: "[[Crescent Health]]"
+source_created_at: 2026-02-17T09:37:00
+source_observed_at: 2026-02-17T11:24:00
+created_at: 2026-02-17T12:21:00
+updated_at: 2026-02-18T00:21:00
 tags: [#decision]
 ---
 # Project Foundry 48 Handoff Readiness Decision 708
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 48]].
 
 ## Context
-This decision applies to [[Cobalt FinTech]] and [[Project Foundry 48]].
+This decision applies to [[Crescent Health]] and [[Project Foundry 48]].
 It follows [[Project Foundry 48 Lineage Audit Sync 708]].
 It incorporates [[Project Foundry 48 Finance Approval Research 488]].
 

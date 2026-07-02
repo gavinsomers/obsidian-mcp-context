@@ -2,10 +2,10 @@
 type: person
 company: "[[Meridian Retail]]"
 role: "Data Owner"
-source_created_at: 2023-07-01T08:00:00
-source_observed_at: 2023-07-01T09:14:00
-created_at: 2023-07-02T14:00:00
-updated_at: 2025-02-21T13:00:00
+source_created_at: 2023-07-01T09:13:00
+source_observed_at: 2023-07-01T12:04:00
+created_at: 2023-07-03T06:13:00
+updated_at: 2025-03-17T13:00:00
 tags: [#person]
 ---
 # Amara Jenkins
@@ -14,6 +14,6 @@ tags: [#person]
 Amara Jenkins is the Data Owner at [[Meridian Retail]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Foundry 18]] ([[Meridian Retail]])
-- Client stakeholder on [[Project Summit 132]] ([[Meridian Retail]])
+- Client stakeholder on [[Project Venture 73]] ([[Meridian Retail]])
+- Client stakeholder on [[Project Beacon 137]] ([[Meridian Retail]])
 - [ ] Confirm next update with [[Amara Jenkins]] #follow-up

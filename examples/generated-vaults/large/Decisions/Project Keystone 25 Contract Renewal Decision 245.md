@@ -3,11 +3,11 @@ type: decision
 date: 2024-05-01
 status: active
 project: "[[Project Keystone 25]]"
-company: "[[Apex Media]]"
-source_created_at: 2024-05-01T14:46:00
-source_observed_at: 2024-05-01T15:20:00
-created_at: 2024-05-01T16:46:00
-updated_at: 2024-05-02T12:46:00
+company: "[[Quantum FinTech]]"
+source_created_at: 2024-05-01T08:36:00
+source_observed_at: 2024-05-01T08:55:00
+created_at: 2024-05-01T14:11:00
+updated_at: 2024-05-01T16:11:00
 tags: [#decision]
 ---
 # Project Keystone 25 Contract Renewal Decision 245
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Keystone 25]].
 
 ## Context
-This decision applies to [[Apex Media]] and [[Project Keystone 25]].
+This decision applies to [[Quantum FinTech]] and [[Project Keystone 25]].
 It follows [[Project Keystone 25 Adoption Workflow Sync 245]].
 It incorporates [[Project Keystone 25 Warehouse Mapping Research 25]].
 

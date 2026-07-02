@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Lantern 155]]"
-company: "[[Helio Manufacturing]]"
-source_created_at: 2025-06-28T09:34:00
-source_observed_at: 2025-06-28T10:21:00
-created_at: 2025-06-29T14:34:00
-updated_at: 2025-08-05T22:34:00
+company: "[[Harbor Analytics]]"
+source_created_at: 2025-06-28T12:24:00
+source_observed_at: 2025-06-28T12:58:00
+created_at: 2025-06-28T22:24:00
+updated_at: 2025-07-07T08:24:00
 tags: [#research]
 ---
 # Project Lantern 155 Warehouse Mapping Research 375
 
 ## Research Summary
-Research on warehouse mapping for [[Project Lantern 155]] and [[Helio Manufacturing]].
+Research on warehouse mapping for [[Project Lantern 155]] and [[Harbor Analytics]].
 
 ## Evidence
-- Interview notes from [[Yara Foster]]
-- Related operating review: [[Project Lantern 155 Adoption Workflow Sync 1695]]
+- Interview notes from [[Ben Chen]]
+- Related operating review: [[Project Lantern 155 Adoption Workflow Sync 815]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Lantern 155]] #research

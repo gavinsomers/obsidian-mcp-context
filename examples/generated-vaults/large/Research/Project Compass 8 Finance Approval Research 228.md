@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 8]]"
-company: "[[Northstar Logistics]]"
-source_created_at: 2024-06-11T11:23:00
-source_observed_at: 2024-06-11T12:21:00
-created_at: 2024-06-13T06:23:00
-updated_at: 2024-07-20T07:23:00
+company: "[[Noble Media]]"
+source_created_at: 2024-06-11T10:36:00
+source_observed_at: 2024-06-11T11:14:00
+created_at: 2024-06-13T06:36:00
+updated_at: 2024-07-09T06:36:00
 tags: [#research]
 ---
 # Project Compass 8 Finance Approval Research 228
 
 ## Research Summary
-Research on finance approval for [[Project Compass 8]] and [[Northstar Logistics]].
+Research on finance approval for [[Project Compass 8]] and [[Noble Media]].
 
 ## Evidence
 - Interview notes from [[Grace Alvarez]]

@@ -2,27 +2,27 @@
 type: meeting
 date: 2024-11-15
 project: "[[Project Pipeline 112]]"
-company: "[[Pioneer Media]]"
-source_created_at: 2024-11-15T11:54:00
-source_observed_at: 2024-11-15T13:38:00
-created_at: 2024-11-15T15:31:00
-updated_at: 2024-11-16T04:31:00
+company: "[[Summit Manufacturing]]"
+source_created_at: 2024-11-15T12:31:00
+source_observed_at: 2024-11-15T13:18:00
+created_at: 2024-11-15T17:56:00
+updated_at: 2024-11-15T21:56:00
 tags: [#meeting]
 ---
 # Project Pipeline 112 Stakeholder Alignment Sync 1652
 
 ## Evergreen Attendees
-- [[Grace Evans]]
+- [[Kai Alvarez]]
 
 ## Client Attendees
-- [[Alex Lee]]
-- [[Omar Patel]]
-- [[David Usman]]
+- [[Victor Jenkins]]
+- [[Jonah Ortega]]
+- [[Zoe Shah]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Pipeline 112]] at [[Pioneer Media]].
-[[Grace Evans]] aligned with [[Alex Lee]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Pipeline 112]] at [[Summit Manufacturing]].
+[[Kai Alvarez]] aligned with [[Victor Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Pipeline 112]] to [[Grace Evans]] #follow-up
+- [ ] Send recap for [[Project Pipeline 112]] to [[Kai Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

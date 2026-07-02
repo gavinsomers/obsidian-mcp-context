@@ -3,11 +3,11 @@ type: decision
 date: 2024-08-15
 status: superseded
 project: "[[Project Signal 89]]"
-company: "[[Summit Health]]"
-source_created_at: 2024-08-15T09:27:00
-source_observed_at: 2024-08-15T12:03:00
-created_at: 2024-08-15T12:08:00
-updated_at: 2024-08-16T06:08:00
+company: "[[Crescent Labs]]"
+source_created_at: 2024-08-15T16:52:00
+source_observed_at: 2024-08-15T17:41:00
+created_at: 2024-08-15T17:46:00
+updated_at: 2024-08-16T10:46:00
 tags: [#decision]
 ---
 # Project Signal 89 Warehouse Mapping Decision 89
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Signal 89]].
 
 ## Context
-This decision applies to [[Summit Health]] and [[Project Signal 89]].
+This decision applies to [[Crescent Labs]] and [[Project Signal 89]].
 It follows [[Project Signal 89 Pipeline Hygiene Sync 969]].
 It incorporates [[Project Signal 89 Adoption Workflow Research 89]].
 

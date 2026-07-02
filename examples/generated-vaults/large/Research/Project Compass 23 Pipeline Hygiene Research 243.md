@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 23]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2024-07-08T09:09:00
-source_observed_at: 2024-07-08T09:37:00
-created_at: 2024-07-11T13:09:00
-updated_at: 2024-07-23T16:09:00
+company: "[[Vanguard Labs]]"
+source_created_at: 2024-07-08T16:23:00
+source_observed_at: 2024-07-08T18:20:00
+created_at: 2024-07-10T15:23:00
+updated_at: 2024-07-16T16:23:00
 tags: [#research]
 ---
 # Project Compass 23 Pipeline Hygiene Research 243
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Compass 23]] and [[Northstar Retail]].
+Research on pipeline hygiene for [[Project Compass 23]] and [[Vanguard Labs]].
 
 ## Evidence
 - Interview notes from [[Wendy Alvarez]]

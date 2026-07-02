@@ -1,25 +1,26 @@
 ---
 type: project
 status: blocked
-company: "[[Cobalt Manufacturing]]"
-source_created_at: 2024-11-20T16:55:00
-source_observed_at: 2024-11-20T17:52:00
-created_at: 2024-11-21T07:55:00
-updated_at: 2025-02-02T11:55:00
+company: "[[Northstar FinTech]]"
+source_created_at: 2024-11-20T15:34:00
+source_observed_at: 2024-11-20T17:19:00
+created_at: 2024-11-21T00:34:00
+updated_at: 2025-01-14T08:34:00
 tags: [#project]
 ---
 # Project Keystone 115
 
 ## Overview
-Project Keystone 115 supports [[Cobalt Manufacturing]] through operations admin.
+Project Keystone 115 supports [[Northstar FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Marcus Jenkins]]
-- [[Ben Ortega]]
-- [[Rachel Shah]]
+- [[Grace Ivanov]]
+- [[Wendy Morgan]]
+- [[Kai Rostova]]
+- [[Alex Walker]]
 
 ## Operating Notes
-- Evergreen owner: [[Jonah Evans]]
-- Client account: [[Cobalt Manufacturing]]
+- Evergreen owner: [[Nadia Alvarez]]
+- Client account: [[Northstar FinTech]]
 - Status: `blocked`
 - [ ] Reconcile latest state for [[Project Keystone 115]] #ops

@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: smb
-source_created_at: 2023-08-13T16:18:00
-source_observed_at: 2023-08-13T17:27:00
-created_at: 2023-08-15T06:18:00
-updated_at: 2023-10-08T15:18:00
+source_created_at: 2023-08-13T13:26:00
+source_observed_at: 2023-08-13T13:47:00
+created_at: 2023-08-14T05:26:00
+updated_at: 2024-06-24T13:00:00
 tags: [#company]
 ---
 # Noble Manufacturing
@@ -14,6 +14,7 @@ tags: [#company]
 Noble Manufacturing is a smb account currently marked `churn-risk`.
 
 ## Assigned Account Team
+- [[David Diaz]] - Delivery Lead
 
 ## Client Stakeholders
 - [[Xavier Jenkins]] - Finance Lead
@@ -21,6 +22,7 @@ Noble Manufacturing is a smb account currently marked `churn-risk`.
 - [[Amara Tan]] - Customer Success Lead
 
 ## Projects
+- [[Project Compass 83]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Noble Manufacturing]] #account

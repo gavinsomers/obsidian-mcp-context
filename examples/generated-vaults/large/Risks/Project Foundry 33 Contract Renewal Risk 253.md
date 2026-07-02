@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Foundry 33]]"
-source_created_at: 2024-06-10T14:36:00
-source_observed_at: 2024-06-10T17:21:00
-created_at: 2024-06-11T10:36:00
-updated_at: 2024-07-21T21:36:00
+source_created_at: 2023-12-02T10:51:00
+source_observed_at: 2023-12-02T12:51:00
+created_at: 2023-12-03T13:51:00
+updated_at: 2023-12-25T00:51:00
 tags: [#risk]
 ---
 # Project Foundry 33 Contract Renewal Risk 253
 
 ## Risk
-Contract Renewal may affect [[Project Foundry 33]] for [[BrightWave Logistics]].
+Contract Renewal may affect [[Project Foundry 33]] for [[Apex Retail]].
 
 ## Evidence
-- Raised after [[Project Foundry 33 Security Review Sync 253]]
+- Raised after [[Project Foundry 33 Security Review Sync 1793]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `open`
 - Owner: [[Farah Bennett]]
 - [ ] Reassess [[Project Foundry 33 Contract Renewal Risk 253]] during the next review #risk

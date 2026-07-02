@@ -3,11 +3,11 @@ type: decision
 date: 2026-03-26
 status: active
 project: "[[Project Bridge 75]]"
-company: "[[Keystone Health]]"
-source_created_at: 2026-03-26T14:36:00
-source_observed_at: 2026-03-26T16:10:00
-created_at: 2026-03-26T16:15:00
-updated_at: 2026-03-27T15:15:00
+company: "[[Northstar Manufacturing]]"
+source_created_at: 2026-03-26T13:20:00
+source_observed_at: 2026-03-26T13:58:00
+created_at: 2026-03-26T14:28:00
+updated_at: 2026-03-27T09:28:00
 tags: [#decision]
 ---
 # Project Bridge 75 Contract Renewal Decision 735
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Bridge 75]].
 
 ## Context
-This decision applies to [[Keystone Health]] and [[Project Bridge 75]].
+This decision applies to [[Northstar Manufacturing]] and [[Project Bridge 75]].
 It follows [[Project Bridge 75 Adoption Workflow Sync 735]].
 It incorporates [[Project Bridge 75 Warehouse Mapping Research 515]].
 

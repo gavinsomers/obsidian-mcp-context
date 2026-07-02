@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-02-14
+date: 2023-12-19
 status: active
 project: "[[Project Keystone 10]]"
-company: "[[Keystone Retail]]"
-source_created_at: 2025-02-14T16:38:00
-source_observed_at: 2025-02-14T18:24:00
-created_at: 2025-02-23T19:38:00
-updated_at: 2025-02-24T04:38:00
+company: "[[Northstar Media]]"
+source_created_at: 2023-12-19T11:42:00
+source_observed_at: 2023-12-19T13:01:00
+created_at: 2023-12-19T17:19:00
+updated_at: 2023-12-20T02:19:00
 tags: [#decision]
 ---
 # Project Keystone 10 Stakeholder Alignment Decision 450
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Keystone 10]].
 
 ## Context
-This decision applies to [[Keystone Retail]] and [[Project Keystone 10]].
-It follows [[Project Keystone 10 Handoff Readiness Sync 450]].
+This decision applies to [[Northstar Media]] and [[Project Keystone 10]].
+It follows [[Project Keystone 10 Handoff Readiness Sync 1770]].
 It incorporates [[Project Keystone 10 Metric Reconciliation Research 230]].
 
 ## Supersession

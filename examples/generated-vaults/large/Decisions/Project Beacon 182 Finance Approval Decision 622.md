@@ -3,11 +3,11 @@ type: decision
 date: 2025-11-15
 status: active
 project: "[[Project Beacon 182]]"
-company: "[[Summit Retail]]"
-source_created_at: 2025-11-15T13:21:00
-source_observed_at: 2025-11-15T14:57:00
-created_at: 2025-11-15T17:01:00
-updated_at: 2025-11-16T10:01:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2025-11-15T14:08:00
+source_observed_at: 2025-11-15T14:51:00
+created_at: 2025-11-15T16:20:00
+updated_at: 2025-11-15T18:20:00
 tags: [#decision]
 ---
 # Project Beacon 182 Finance Approval Decision 622
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 182]].
 
 ## Context
-This decision applies to [[Summit Retail]] and [[Project Beacon 182]].
-It follows [[Project Beacon 182 Stakeholder Alignment Sync 1722]].
+This decision applies to [[Northstar Analytics]] and [[Project Beacon 182]].
+It follows [[Project Beacon 182 Stakeholder Alignment Sync 622]].
 It incorporates [[Project Beacon 182 Lineage Audit Research 402]].
 
 ## Supersession

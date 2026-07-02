@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-05-01
 project: "[[Project Pipeline 82]]"
-company: "[[Atlas Retail]]"
-source_created_at: 2025-05-01T08:58:00
-source_observed_at: 2025-05-01T10:38:00
-created_at: 2025-05-01T13:07:00
-updated_at: 2025-05-02T04:07:00
+company: "[[Quantum Logistics]]"
+source_created_at: 2025-05-01T10:29:00
+source_observed_at: 2025-05-01T12:36:00
+created_at: 2025-05-01T12:41:00
+updated_at: 2025-05-02T00:41:00
 tags: [#meeting]
 ---
 # Project Pipeline 82 Stakeholder Alignment Sync 522
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Clara Diaz]]
 
 ## Client Attendees
-- [[Hannah Shah]]
-- [[David Jenkins]]
-- [[Xavier Walker]]
+- [[Kai Lee]]
+- [[Alex Quinn]]
+- [[Omar Usman]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Pipeline 82]] at [[Atlas Retail]].
-[[Clara Diaz]] aligned with [[Hannah Shah]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Pipeline 82]] at [[Quantum Logistics]].
+[[Clara Diaz]] aligned with [[Kai Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 82]] to [[Clara Diaz]] #follow-up

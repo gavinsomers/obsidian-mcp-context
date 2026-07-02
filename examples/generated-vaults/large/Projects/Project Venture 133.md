@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[BrightWave Health]]"
-source_created_at: 2025-02-17T16:24:00
-source_observed_at: 2025-02-17T17:53:00
-created_at: 2025-02-19T14:24:00
-updated_at: 2025-04-21T00:24:00
+company: "[[Quantum Manufacturing]]"
+source_created_at: 2025-02-17T14:38:00
+source_observed_at: 2025-02-17T15:54:00
+created_at: 2025-02-18T15:38:00
+updated_at: 2025-03-26T00:38:00
 tags: [#project]
 ---
 # Project Venture 133
 
 ## Overview
-Project Venture 133 supports [[BrightWave Health]] through customer success.
+Project Venture 133 supports [[Quantum Manufacturing]] through customer success.
 
 ## Stakeholders
-- [[Clara Kim]]
-- [[Sam Ortega]]
-- [[Grace Tan]]
+- [[Sam Jenkins]]
+- [[Grace Ortega]]
+- [[Wendy Shah]]
 
 ## Operating Notes
-- Evergreen owner: [[Ben Foster]]
-- Client account: [[BrightWave Health]]
+- Evergreen owner: [[Farah Bennett]]
+- Client account: [[Quantum Manufacturing]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Venture 133]] #ops

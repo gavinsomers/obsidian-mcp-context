@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-08-09
 project: "[[Project Beacon 92]]"
-company: "[[Summit Labs]]"
-source_created_at: 2024-08-09T14:54:00
-source_observed_at: 2024-08-09T15:20:00
-created_at: 2024-08-09T19:11:00
-updated_at: 2024-08-09T22:11:00
+company: "[[Harbor Health]]"
+source_created_at: 2024-08-09T15:42:00
+source_observed_at: 2024-08-09T18:34:00
+created_at: 2024-08-10T20:42:00
+updated_at: 2024-08-11T04:42:00
 tags: [#meeting]
 ---
 # Project Beacon 92 Stakeholder Alignment Sync 1632
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Marcus Diaz]]
 
 ## Client Attendees
-- [[Rachel Morgan]]
-- [[Farah Rostova]]
-- [[Victor Vance]]
+- [[Iris Kim]]
+- [[Yara Ortega]]
+- [[Marcus Tan]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 92]] at [[Summit Labs]].
-[[Marcus Diaz]] aligned with [[Rachel Morgan]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 92]] at [[Harbor Health]].
+[[Marcus Diaz]] aligned with [[Iris Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 92]] to [[Marcus Diaz]] #follow-up

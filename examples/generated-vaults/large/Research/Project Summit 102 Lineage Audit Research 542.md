@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Summit 102]]"
-company: "[[Noble Logistics]]"
-source_created_at: 2025-12-09T13:51:00
-source_observed_at: 2025-12-09T16:13:00
-created_at: 2025-12-09T22:51:00
-updated_at: 2026-01-06T05:51:00
+company: "[[Quantum Analytics]]"
+source_created_at: 2025-12-09T11:47:00
+source_observed_at: 2025-12-09T13:11:00
+created_at: 2025-12-10T10:47:00
+updated_at: 2025-12-28T18:47:00
 tags: [#research]
 ---
 # Project Summit 102 Lineage Audit Research 542
 
 ## Research Summary
-Research on lineage audit for [[Project Summit 102]] and [[Noble Logistics]].
+Research on lineage audit for [[Project Summit 102]] and [[Quantum Analytics]].
 
 ## Evidence
-- Interview notes from [[Xavier Diaz]]
+- Interview notes from [[Amara Alvarez]]
 - Related operating review: [[Project Summit 102 Stakeholder Alignment Sync 1422]]
 
 ## Follow Up

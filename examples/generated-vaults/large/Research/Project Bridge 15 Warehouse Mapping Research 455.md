@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Bridge 15]]"
-company: "[[Keystone Manufacturing]]"
-source_created_at: 2025-07-10T11:20:00
-source_observed_at: 2025-07-10T13:08:00
-created_at: 2025-07-11T06:20:00
-updated_at: 2025-07-25T17:20:00
+company: "[[Noble Health]]"
+source_created_at: 2025-07-10T11:50:00
+source_observed_at: 2025-07-10T12:43:00
+created_at: 2025-07-14T14:50:00
+updated_at: 2025-08-12T15:50:00
 tags: [#research]
 ---
 # Project Bridge 15 Warehouse Mapping Research 455
 
 ## Research Summary
-Research on warehouse mapping for [[Project Bridge 15]] and [[Keystone Manufacturing]].
+Research on warehouse mapping for [[Project Bridge 15]] and [[Noble Health]].
 
 ## Evidence
 - Interview notes from [[Nadia Alvarez]]

@@ -3,11 +3,11 @@ type: decision
 date: 2024-04-05
 status: active
 project: "[[Project Beacon 62]]"
-company: "[[Pioneer Health]]"
-source_created_at: 2024-04-05T09:51:00
-source_observed_at: 2024-04-05T12:17:00
-created_at: 2024-04-05T12:56:00
-updated_at: 2024-04-05T15:56:00
+company: "[[Atlas Labs]]"
+source_created_at: 2024-04-05T13:22:00
+source_observed_at: 2024-04-05T15:53:00
+created_at: 2024-04-11T20:22:00
+updated_at: 2024-04-12T16:22:00
 tags: [#decision]
 ---
 # Project Beacon 62 Finance Approval Decision 62
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 62]].
 
 ## Context
-This decision applies to [[Pioneer Health]] and [[Project Beacon 62]].
-It follows [[Project Beacon 62 Stakeholder Alignment Sync 1602]].
+This decision applies to [[Atlas Labs]] and [[Project Beacon 62]].
+It follows [[Project Beacon 62 Stakeholder Alignment Sync 942]].
 It incorporates [[Project Beacon 62 Lineage Audit Research 62]].
 
 ## Supersession

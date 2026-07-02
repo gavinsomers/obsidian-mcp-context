@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Northstar Analytics]]"
-source_created_at: 2023-10-09T12:23:00
-source_observed_at: 2023-10-09T13:20:00
-created_at: 2023-10-11T11:23:00
-updated_at: 2023-11-28T17:17:00
+status: blocked
+company: "[[Meridian Media]]"
+source_created_at: 2023-10-09T14:05:00
+source_observed_at: 2023-10-09T14:16:00
+created_at: 2023-10-10T09:05:00
+updated_at: 2023-12-16T11:05:00
 tags: [#project]
 ---
 # Project Beacon 32
 
 ## Overview
-Project Beacon 32 supports [[Northstar Analytics]] through sales pipeline.
+Project Beacon 32 supports [[Meridian Media]] through sales pipeline.
 
 ## Stakeholders
-- [[Tara Lee]]
-- [[Hannah Quinn]]
-- [[Xavier Usman]]
+- [[Uma Kim]]
+- [[Iris Patel]]
+- [[Yara Tan]]
 
 ## Operating Notes
 - Evergreen owner: [[Elena Bennett]]
-- Client account: [[Northstar Analytics]]
-- Status: `planning`
+- Client account: [[Meridian Media]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Beacon 32]] #ops

@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-09-29
 project: "[[Project Meridian 81]]"
-company: "[[Vanguard FinTech]]"
-source_created_at: 2025-09-29T15:59:00
-source_observed_at: 2025-09-29T17:50:00
-created_at: 2025-09-29T17:55:00
-updated_at: 2025-09-30T10:55:00
+company: "[[Vanguard Logistics]]"
+source_created_at: 2025-09-29T09:34:00
+source_observed_at: 2025-09-29T09:56:00
+created_at: 2025-09-29T11:25:00
+updated_at: 2025-09-29T19:25:00
 tags: [#meeting]
 ---
 # Project Meridian 81 Warehouse Mapping Sync 1401
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Ben Diaz]]
 
 ## Client Attendees
-- [[Marcus Ivanov]]
-- [[Farah Walker]]
-- [[Rachel Rostova]]
+- [[Jonah Lee]]
+- [[Zoe Patel]]
+- [[Nadia Usman]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 81]] at [[Vanguard FinTech]].
-[[Ben Diaz]] aligned with [[Marcus Ivanov]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 81]] at [[Vanguard Logistics]].
+[[Ben Diaz]] aligned with [[Jonah Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 81]] to [[Ben Diaz]] #follow-up

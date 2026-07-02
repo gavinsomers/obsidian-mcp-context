@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Summit 162]]"
-company: "[[BrightWave FinTech]]"
-source_created_at: 2026-03-24T14:19:00
-source_observed_at: 2026-03-24T14:57:00
-created_at: 2026-03-25T20:19:00
-updated_at: 2026-05-01T05:19:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2026-03-24T14:50:00
+source_observed_at: 2026-03-24T16:31:00
+created_at: 2026-03-25T22:50:00
+updated_at: 2026-04-14T05:50:00
 tags: [#research]
 ---
 # Project Summit 162 Lineage Audit Research 602
 
 ## Research Summary
-Research on lineage audit for [[Project Summit 162]] and [[BrightWave FinTech]].
+Research on lineage audit for [[Project Summit 162]] and [[Cobalt Logistics]].
 
 ## Evidence
-- Interview notes from [[Elena Grant]]
+- Interview notes from [[Iris Chen]]
 - Related operating review: [[Project Summit 162 Stakeholder Alignment Sync 1482]]
 
 ## Follow Up

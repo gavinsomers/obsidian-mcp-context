@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-12-05
 project: "[[Project Signal 89]]"
-company: "[[Summit Health]]"
-source_created_at: 2024-12-05T16:32:00
-source_observed_at: 2024-12-05T16:56:00
-created_at: 2024-12-05T18:07:00
-updated_at: 2024-12-05T20:07:00
+company: "[[Crescent Labs]]"
+source_created_at: 2024-12-05T16:39:00
+source_observed_at: 2024-12-05T18:28:00
+created_at: 2024-12-05T21:59:00
+updated_at: 2024-12-06T04:59:00
 tags: [#meeting]
 ---
 # Project Signal 89 Pipeline Hygiene Sync 1189
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Jonah Diaz]]
 
 ## Client Attendees
-- [[Jonah Kim]]
-- [[Zoe Ortega]]
-- [[Nadia Tan]]
+- [[Iris Rostova]]
+- [[Elena Ivanov]]
+- [[Yara Vance]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 89]] at [[Summit Health]].
-[[Jonah Diaz]] aligned with [[Jonah Kim]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 89]] at [[Crescent Labs]].
+[[Jonah Diaz]] aligned with [[Iris Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 89]] to [[Jonah Diaz]] #follow-up

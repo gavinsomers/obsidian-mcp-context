@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Technical Director"
-source_created_at: 2023-06-15T09:30:00
-source_observed_at: 2023-06-15T10:12:00
-created_at: 2023-06-16T22:30:00
-updated_at: 2025-08-17T13:00:00
+source_created_at: 2023-06-15T10:58:00
+source_observed_at: 2023-06-15T12:51:00
+created_at: 2023-06-19T12:58:00
+updated_at: 2023-07-30T23:58:00
 tags: [#person]
 ---
 # Kai Grant
@@ -14,5 +14,5 @@ tags: [#person]
 Kai Grant is the Technical Director at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Foundry 168]] ([[Meridian Media]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Kai Grant]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 83]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2025-11-06T14:35:00
-source_observed_at: 2025-11-06T15:22:00
-created_at: 2025-11-06T17:35:00
-updated_at: 2025-12-03T04:35:00
+company: "[[Noble Manufacturing]]"
+source_created_at: 2025-11-06T14:38:00
+source_observed_at: 2025-11-06T16:13:00
+created_at: 2025-11-10T14:38:00
+updated_at: 2025-12-02T00:38:00
 tags: [#research]
 ---
 # Project Compass 83 Pipeline Hygiene Research 523
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Compass 83]] and [[Cobalt Labs]].
+Research on pipeline hygiene for [[Project Compass 83]] and [[Noble Manufacturing]].
 
 ## Evidence
 - Interview notes from [[David Diaz]]

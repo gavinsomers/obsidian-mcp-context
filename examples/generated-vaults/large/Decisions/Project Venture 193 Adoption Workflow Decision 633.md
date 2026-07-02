@@ -3,11 +3,11 @@ type: decision
 date: 2026-01-08
 status: active
 project: "[[Project Venture 193]]"
-company: "[[Northstar Media]]"
-source_created_at: 2026-01-08T10:26:00
-source_observed_at: 2026-01-08T11:46:00
-created_at: 2026-01-15T10:26:00
-updated_at: 2026-01-16T07:26:00
+company: "[[Apex Logistics]]"
+source_created_at: 2026-01-08T16:21:00
+source_observed_at: 2026-01-08T18:42:00
+created_at: 2026-01-08T18:47:00
+updated_at: 2026-01-09T06:47:00
 tags: [#decision]
 ---
 # Project Venture 193 Adoption Workflow Decision 633
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Venture 193]].
 
 ## Context
-This decision applies to [[Northstar Media]] and [[Project Venture 193]].
-It follows [[Project Venture 193 Security Review Sync 633]].
+This decision applies to [[Apex Logistics]] and [[Project Venture 193]].
+It follows [[Project Venture 193 Security Review Sync 193]].
 It incorporates [[Project Venture 193 Pipeline Hygiene Research 413]].
 
 ## Supersession

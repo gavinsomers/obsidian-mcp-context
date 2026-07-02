@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: mid-market
-source_created_at: 2023-08-25T08:35:00
-source_observed_at: 2023-08-25T10:30:00
-created_at: 2023-08-26T21:35:00
-updated_at: 2023-11-15T23:35:00
+source_created_at: 2023-08-25T14:08:00
+source_observed_at: 2023-08-25T16:59:00
+created_at: 2023-08-27T13:08:00
+updated_at: 2025-05-16T13:00:00
 tags: [#company]
 ---
 # BrightWave Health
@@ -14,7 +14,8 @@ tags: [#company]
 BrightWave Health is a mid-market account currently marked `active`.
 
 ## Assigned Account Team
-- [[Clara Bennett]] - Analytics Engineer
+- [[David Alvarez]] - Data Platform Engineer
+- [[Wendy Bennett]] - Principal Analytics Engineer
 
 ## Client Stakeholders
 - [[Clara Kim]] - Customer Success Lead
@@ -22,7 +23,8 @@ BrightWave Health is a mid-market account currently marked `active`.
 - [[Grace Tan]] - Product Analytics Lead
 
 ## Projects
-- [[Project Bridge 30]]
+- [[Project Bridge 105]]
+- [[Project Signal 149]]
 
 ## Open Loops
 - [ ] Refresh account context for [[BrightWave Health]] #account

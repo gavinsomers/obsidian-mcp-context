@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Keystone Logistics]]"
-source_created_at: 2024-08-28T16:54:00
-source_observed_at: 2024-08-28T17:44:00
-created_at: 2024-08-29T19:54:00
-updated_at: 2024-10-16T02:54:00
+status: blocked
+company: "[[BrightWave Logistics]]"
+source_created_at: 2024-08-28T12:27:00
+source_observed_at: 2024-08-28T15:26:00
+created_at: 2024-08-29T02:27:00
+updated_at: 2024-11-04T08:27:00
 tags: [#project]
 ---
 # Project Compass 98
 
 ## Overview
-Project Compass 98 supports [[Keystone Logistics]] through customer success.
+Project Compass 98 supports [[BrightWave Logistics]] through customer success.
 
 ## Stakeholders
-- [[Sam Lee]]
-- [[Grace Quinn]]
-- [[Wendy Usman]]
+- [[Grace Lee]]
+- [[Wendy Patel]]
+- [[Kai Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Tara Diaz]]
-- Client account: [[Keystone Logistics]]
-- Status: `active`
+- Client account: [[BrightWave Logistics]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Compass 98]] #ops

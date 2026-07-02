@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Foundry 153]]"
-company: "[[Apex Manufacturing]]"
-source_created_at: 2025-07-14T15:32:00
-source_observed_at: 2025-07-14T15:46:00
-created_at: 2025-07-15T18:32:00
-updated_at: 2025-08-04T23:32:00
+company: "[[Helio Analytics]]"
+source_created_at: 2026-03-09T14:09:00
+source_observed_at: 2026-03-09T14:26:00
+created_at: 2026-03-11T08:09:00
+updated_at: 2026-03-31T15:09:00
 tags: [#research]
 ---
 # Project Foundry 153 Pipeline Hygiene Research 593
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Foundry 153]] and [[Apex Manufacturing]].
+Research on pipeline hygiene for [[Project Foundry 153]] and [[Helio Analytics]].
 
 ## Evidence
-- Interview notes from [[Wendy Foster]]
+- Interview notes from [[Alex Chen]]
 - Related operating review: [[Project Foundry 153 Security Review Sync 1473]]
 
 ## Follow Up

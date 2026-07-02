@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Venture 73]]"
-company: "[[BrightWave Logistics]]"
-source_created_at: 2024-06-30T14:23:00
-source_observed_at: 2024-06-30T15:35:00
-created_at: 2024-07-01T03:23:00
-updated_at: 2024-07-16T13:23:00
+company: "[[Meridian Retail]]"
+source_created_at: 2025-10-20T14:36:00
+source_observed_at: 2025-10-20T16:58:00
+created_at: 2025-10-21T09:36:00
+updated_at: 2025-11-13T09:36:00
 tags: [#research]
 ---
 # Project Venture 73 Pipeline Hygiene Research 513
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Venture 73]] and [[BrightWave Logistics]].
+Research on pipeline hygiene for [[Project Venture 73]] and [[Meridian Retail]].
 
 ## Evidence
 - Interview notes from [[Uma Chen]]

@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2025-03-21
+date: 2024-07-20
 project: "[[Project Compass 53]]"
-company: "[[Quantum Health]]"
-source_created_at: 2025-03-21T09:27:00
-source_observed_at: 2025-03-21T11:33:00
-created_at: 2025-03-21T12:34:00
-updated_at: 2025-03-21T22:34:00
+company: "[[Cobalt Health]]"
+source_created_at: 2024-07-20T10:29:00
+source_observed_at: 2024-07-20T11:17:00
+created_at: 2024-07-20T13:07:00
+updated_at: 2024-07-21T09:07:00
 tags: [#meeting]
 ---
 # Project Compass 53 Security Review Sync 493
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Alex Chen]]
 
 ## Client Attendees
-- [[Grace Kim]]
-- [[Wendy Ortega]]
-- [[Kai Tan]]
+- [[Ben Kim]]
+- [[Rachel Ortega]]
+- [[Farah Tan]]
 
 ## Notes
-Security Review reviewed for [[Project Compass 53]] at [[Quantum Health]].
-[[Alex Chen]] aligned with [[Grace Kim]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Compass 53]] at [[Cobalt Health]].
+[[Alex Chen]] aligned with [[Ben Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 53]] to [[Alex Chen]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Orbit 56]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2024-04-27T08:12:00
-source_observed_at: 2024-04-27T10:10:00
-created_at: 2024-04-28T05:12:00
-updated_at: 2024-05-19T08:12:00
+company: "[[Atlas Analytics]]"
+source_created_at: 2024-09-13T14:27:00
+source_observed_at: 2024-09-13T17:13:00
+created_at: 2024-09-13T18:27:00
+updated_at: 2024-10-19T00:27:00
 tags: [#research]
 ---
 # Project Orbit 56 Stakeholder Alignment Research 496
 
 ## Research Summary
-Research on stakeholder alignment for [[Project Orbit 56]] and [[Northstar Labs]].
+Research on stakeholder alignment for [[Project Orbit 56]] and [[Atlas Analytics]].
 
 ## Evidence
 - Interview notes from [[Clara Chen]]

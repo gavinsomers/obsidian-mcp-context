@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: enterprise
-source_created_at: 2023-09-12T13:26:00
-source_observed_at: 2023-09-12T13:47:00
-created_at: 2023-09-13T05:26:00
-updated_at: 2023-10-15T05:26:00
+source_created_at: 2023-09-12T14:41:00
+source_observed_at: 2023-09-12T16:15:00
+created_at: 2023-09-12T22:41:00
+updated_at: 2026-04-24T13:00:00
 tags: [#company]
 ---
 # Noble Health
@@ -14,7 +14,9 @@ tags: [#company]
 Noble Health is a enterprise account currently marked `active`.
 
 ## Assigned Account Team
-- [[Priya Alvarez]] - Principal Analytics Engineer
+- [[Nadia Alvarez]] - Client Partner
+- [[Iris Bennett]] - Solution Architect
+- [[Sam Alvarez]] - Delivery Lead
 
 ## Client Stakeholders
 - [[Lina Kim]] - Executive Sponsor
@@ -22,7 +24,9 @@ Noble Health is a enterprise account currently marked `active`.
 - [[Priya Tan]] - Security Contact
 
 ## Projects
-- [[Project Beacon 17]]
+- [[Project Bridge 15]]
+- [[Project Atlas 136]]
+- [[Project Harbor 219]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Noble Health]] #account

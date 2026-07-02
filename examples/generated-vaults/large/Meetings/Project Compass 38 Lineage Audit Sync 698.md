@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-01-02
 project: "[[Project Compass 38]]"
-company: "[[Noble FinTech]]"
-source_created_at: 2026-01-02T11:47:00
-source_observed_at: 2026-01-02T12:30:00
-created_at: 2026-01-02T15:11:00
-updated_at: 2026-01-03T14:11:00
+company: "[[Cobalt FinTech]]"
+source_created_at: 2026-01-02T15:05:00
+source_observed_at: 2026-01-02T15:44:00
+created_at: 2026-01-02T16:48:00
+updated_at: 2026-01-02T19:48:00
 tags: [#meeting]
 ---
 # Project Compass 38 Lineage Audit Sync 698
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Kai Bennett]]
 
 ## Client Attendees
-- [[Xavier Rostova]]
-- [[Tara Ivanov]]
-- [[Hannah Novak]]
+- [[Yara Morgan]]
+- [[Ben Walker]]
+- [[Iris Ivanov]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 38]] at [[Noble FinTech]].
-[[Kai Bennett]] aligned with [[Xavier Rostova]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 38]] at [[Cobalt FinTech]].
+[[Kai Bennett]] aligned with [[Yara Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 38]] to [[Kai Bennett]] #follow-up

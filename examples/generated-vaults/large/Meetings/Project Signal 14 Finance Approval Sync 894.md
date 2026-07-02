@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2023-10-19
+date: 2023-09-10
 project: "[[Project Signal 14]]"
-company: "[[Quantum Manufacturing]]"
-source_created_at: 2023-10-19T14:52:00
-source_observed_at: 2023-10-19T16:42:00
-created_at: 2023-10-19T16:47:00
-updated_at: 2023-10-20T04:47:00
+company: "[[Helio Media]]"
+source_created_at: 2023-09-10T12:52:00
+source_observed_at: 2023-09-10T13:33:00
+created_at: 2023-09-10T18:14:00
+updated_at: 2023-09-11T09:14:00
 tags: [#meeting]
 ---
 # Project Signal 14 Finance Approval Sync 894
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Marcus Alvarez]]
 
 ## Client Attendees
-- [[Sam Jenkins]]
-- [[Grace Ortega]]
-- [[Wendy Shah]]
+- [[Tara Kim]]
+- [[Hannah Patel]]
+- [[Xavier Tan]]
 
 ## Notes
-Finance Approval reviewed for [[Project Signal 14]] at [[Quantum Manufacturing]].
-[[Marcus Alvarez]] aligned with [[Sam Jenkins]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Signal 14]] at [[Helio Media]].
+[[Marcus Alvarez]] aligned with [[Tara Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 14]] to [[Marcus Alvarez]] #follow-up

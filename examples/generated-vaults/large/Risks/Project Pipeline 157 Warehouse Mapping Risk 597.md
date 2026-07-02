@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Pipeline 157]]"
-source_created_at: 2025-09-29T11:56:00
-source_observed_at: 2025-09-29T14:24:00
-created_at: 2025-09-29T14:29:00
-updated_at: 2025-11-10T21:29:00
+source_created_at: 2025-12-08T10:31:00
+source_observed_at: 2025-12-08T12:36:00
+created_at: 2025-12-09T01:31:00
+updated_at: 2025-12-25T02:31:00
 tags: [#risk]
 ---
 # Project Pipeline 157 Warehouse Mapping Risk 597
 
 ## Risk
-Warehouse Mapping may affect [[Project Pipeline 157]] for [[Crescent Retail]].
+Warehouse Mapping may affect [[Project Pipeline 157]] for [[Noble FinTech]].
 
 ## Evidence
 - Raised after [[Project Pipeline 157 Contract Renewal Sync 597]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Alex Grant]]
+- Status: `open`
+- Owner: [[David Chen]]
 - [ ] Reassess [[Project Pipeline 157 Warehouse Mapping Risk 597]] during the next review #risk

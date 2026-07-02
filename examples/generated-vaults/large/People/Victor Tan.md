@@ -2,10 +2,10 @@
 type: person
 company: "[[Cobalt Media]]"
 role: "Data Owner"
-source_created_at: 2023-09-28T09:38:00
-source_observed_at: 2023-09-28T10:15:00
-created_at: 2023-09-30T01:38:00
-updated_at: 2024-05-03T13:00:00
+source_created_at: 2023-09-28T15:54:00
+source_observed_at: 2023-09-28T17:04:00
+created_at: 2023-09-29T10:54:00
+updated_at: 2025-12-07T13:00:00
 tags: [#person]
 ---
 # Victor Tan
@@ -14,5 +14,6 @@ tags: [#person]
 Victor Tan is the Data Owner at [[Cobalt Media]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Summit 72]] ([[Cobalt Media]])
+- Client stakeholder on [[Project Horizon 94]] ([[Cobalt Media]])
+- Client stakeholder on [[Project Orbit 191]] ([[Cobalt Media]])
 - [ ] Confirm next update with [[Victor Tan]] #follow-up

@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-08-28
 project: "[[Project Lantern 170]]"
-company: "[[Helio Health]]"
-source_created_at: 2025-08-28T12:00:00
-source_observed_at: 2025-08-28T14:49:00
-created_at: 2025-08-28T14:54:00
-updated_at: 2025-08-28T15:54:00
+company: "[[Summit FinTech]]"
+source_created_at: 2025-08-28T13:49:00
+source_observed_at: 2025-08-28T15:44:00
+created_at: 2025-08-28T15:49:00
+updated_at: 2025-08-29T10:49:00
 tags: [#meeting]
 ---
 # Project Lantern 170 Handoff Readiness Sync 830
 
 ## Evergreen Attendees
-- [[Marcus Grant]]
+- [[Rachel Chen]]
 
 ## Client Attendees
-- [[David Kim]]
-- [[Tara Ortega]]
-- [[Hannah Tan]]
+- [[Victor Rostova]]
+- [[Jonah Walker]]
+- [[Rachel Ivanov]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 170]] at [[Helio Health]].
-[[Marcus Grant]] aligned with [[David Kim]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 170]] at [[Summit FinTech]].
+[[Rachel Chen]] aligned with [[Victor Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 170]] to [[Marcus Grant]] #follow-up
+- [ ] Send recap for [[Project Lantern 170]] to [[Rachel Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

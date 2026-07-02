@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: enterprise
-source_created_at: 2023-07-14T09:03:00
-source_observed_at: 2023-07-14T11:33:00
-created_at: 2023-07-14T23:03:00
-updated_at: 2023-10-10T07:03:00
+source_created_at: 2023-07-14T16:18:00
+source_observed_at: 2023-07-14T17:27:00
+created_at: 2023-07-16T06:18:00
+updated_at: 2026-02-23T13:00:00
 tags: [#company]
 ---
 # Noble Retail
@@ -14,15 +14,20 @@ tags: [#company]
 Noble Retail is a enterprise account currently marked `active`.
 
 ## Assigned Account Team
-- [[Clara Alvarez]] - Solution Architect
+- [[Priya Alvarez]] - Principal Analytics Engineer
+- [[Wendy Alvarez]] - Client Partner
+- [[Farah Alvarez]] - Client Partner
 
 ## Client Stakeholders
 - [[Hannah Jenkins]] - Operations Manager
 - [[Xavier Novak]] - Finance Lead
 - [[Lina Shah]] - Executive Sponsor
+- [[Amara Xu]] - Customer Success Lead
 
 ## Projects
-- [[Project Horizon 4]]
+- [[Project Summit 117]]
+- [[Project Foundry 123]]
+- [[Project Summit 207]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Noble Retail]] #account

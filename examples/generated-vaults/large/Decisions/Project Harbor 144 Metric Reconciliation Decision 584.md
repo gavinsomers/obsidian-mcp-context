@@ -3,11 +3,11 @@ type: decision
 date: 2025-08-25
 status: superseded
 project: "[[Project Harbor 144]]"
-company: "[[Harbor Retail]]"
-source_created_at: 2025-08-25T08:07:00
-source_observed_at: 2025-08-25T08:56:00
-created_at: 2025-08-25T12:47:00
-updated_at: 2025-08-25T22:47:00
+company: "[[Apex Media]]"
+source_created_at: 2025-08-25T11:28:00
+source_observed_at: 2025-08-25T12:52:00
+created_at: 2025-08-31T12:28:00
+updated_at: 2025-08-31T19:28:00
 tags: [#decision]
 ---
 # Project Harbor 144 Metric Reconciliation Decision 584
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Harbor 144]].
 
 ## Context
-This decision applies to [[Harbor Retail]] and [[Project Harbor 144]].
+This decision applies to [[Apex Media]] and [[Project Harbor 144]].
 It follows [[Project Harbor 144 Finance Approval Sync 584]].
-It incorporates [[Project Harbor 144 Handoff Readiness Research 364]].
+It incorporates [[Project Harbor 144 Handoff Readiness Research 144]].
 
 ## Supersession
 Marked superseded by a later unlinked stakeholder review. #superseded

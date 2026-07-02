@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Pipeline 142]]"
-company: "[[Helio FinTech]]"
-source_created_at: 2025-04-25T09:43:00
-source_observed_at: 2025-04-25T11:52:00
-created_at: 2025-04-26T11:43:00
-updated_at: 2025-05-20T12:43:00
+company: "[[Northstar Retail]]"
+source_created_at: 2025-04-25T13:02:00
+source_observed_at: 2025-04-25T13:45:00
+created_at: 2025-04-27T07:02:00
+updated_at: 2025-04-30T11:02:00
 tags: [#research]
 ---
 # Project Pipeline 142 Lineage Audit Research 362
 
 ## Research Summary
-Research on lineage audit for [[Project Pipeline 142]] and [[Helio FinTech]].
+Research on lineage audit for [[Project Pipeline 142]] and [[Northstar Retail]].
 
 ## Evidence
-- Interview notes from [[Kai Foster]]
-- Related operating review: [[Project Pipeline 142 Stakeholder Alignment Sync 1682]]
+- Interview notes from [[Omar Bennett]]
+- Related operating review: [[Project Pipeline 142 Stakeholder Alignment Sync 362]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Pipeline 142]] #research

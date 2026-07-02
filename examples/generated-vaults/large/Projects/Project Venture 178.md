@@ -1,26 +1,26 @@
 ---
 type: project
 status: planning
-company: "[[Meridian FinTech]]"
-source_created_at: 2025-09-25T12:57:00
-source_observed_at: 2025-09-25T15:41:00
-created_at: 2025-09-27T08:57:00
-updated_at: 2025-10-23T13:57:00
+company: "[[BrightWave FinTech]]"
+source_created_at: 2025-09-25T13:44:00
+source_observed_at: 2025-09-25T15:35:00
+created_at: 2025-09-25T20:44:00
+updated_at: 2025-10-25T22:44:00
 tags: [#project]
 ---
 # Project Venture 178
 
 ## Overview
-Project Venture 178 supports [[Meridian FinTech]] through customer success.
+Project Venture 178 supports [[BrightWave FinTech]] through customer success.
 
 ## Stakeholders
-- [[Lina Ivanov]]
-- [[Amara Novak]]
-- [[Priya Rostova]]
-- [[Elena Walker]]
+- [[Jonah Ivanov]]
+- [[Zoe Morgan]]
+- [[Nadia Rostova]]
+- [[Clara Walker]]
 
 ## Operating Notes
-- Evergreen owner: [[Victor Grant]]
-- Client account: [[Meridian FinTech]]
+- Evergreen owner: [[Zoe Chen]]
+- Client account: [[BrightWave FinTech]]
 - Status: `planning`
 - [ ] Reconcile latest state for [[Project Venture 178]] #ops

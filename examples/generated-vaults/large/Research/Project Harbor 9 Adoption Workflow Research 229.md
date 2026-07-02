@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Harbor 9]]"
-company: "[[Northstar Health]]"
-source_created_at: 2024-06-13T13:27:00
-source_observed_at: 2024-06-13T15:00:00
-created_at: 2024-06-14T00:27:00
-updated_at: 2024-07-21T05:27:00
+company: "[[Apex Logistics]]"
+source_created_at: 2024-06-13T10:09:00
+source_observed_at: 2024-06-13T11:09:00
+created_at: 2024-06-14T19:09:00
+updated_at: 2024-07-17T03:09:00
 tags: [#research]
 ---
 # Project Harbor 9 Adoption Workflow Research 229
 
 ## Research Summary
-Research on adoption workflow for [[Project Harbor 9]] and [[Northstar Health]].
+Research on adoption workflow for [[Project Harbor 9]] and [[Apex Logistics]].
 
 ## Evidence
 - Interview notes from [[Hannah Alvarez]]

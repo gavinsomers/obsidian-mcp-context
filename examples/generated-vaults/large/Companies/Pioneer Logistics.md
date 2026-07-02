@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: smb
-source_created_at: 2023-11-09T08:18:00
-source_observed_at: 2023-11-09T10:13:00
-created_at: 2023-11-09T15:18:00
-updated_at: 2024-02-02T18:18:00
+source_created_at: 2023-11-09T14:48:00
+source_observed_at: 2023-11-09T16:22:00
+created_at: 2023-11-10T19:48:00
+updated_at: 2023-12-31T13:00:00
 tags: [#company]
 ---
 # Pioneer Logistics
@@ -14,6 +14,7 @@ tags: [#company]
 Pioneer Logistics is a smb account currently marked `pipeline`.
 
 ## Assigned Account Team
+- [[Uma Bennett]] - Client Partner
 
 ## Client Stakeholders
 - [[Omar Lee]] - Product Analytics Lead
@@ -21,6 +22,7 @@ Pioneer Logistics is a smb account currently marked `pipeline`.
 - [[Tara Usman]] - Data Owner
 
 ## Projects
+- [[Project Beacon 47]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Pioneer Logistics]] #account

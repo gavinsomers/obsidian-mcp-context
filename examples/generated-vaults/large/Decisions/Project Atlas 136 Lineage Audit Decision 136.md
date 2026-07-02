@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-03
 status: active
 project: "[[Project Atlas 136]]"
-company: "[[Noble Analytics]]"
-source_created_at: 2025-04-03T14:20:00
-source_observed_at: 2025-04-03T15:05:00
-created_at: 2025-04-03T15:16:00
-updated_at: 2025-04-03T20:16:00
+company: "[[Noble Health]]"
+source_created_at: 2025-04-03T15:36:00
+source_observed_at: 2025-04-03T18:14:00
+created_at: 2025-04-07T20:36:00
+updated_at: 2025-04-08T16:36:00
 tags: [#decision]
 ---
 # Project Atlas 136 Lineage Audit Decision 136
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 136]].
 
 ## Context
-This decision applies to [[Noble Analytics]] and [[Project Atlas 136]].
+This decision applies to [[Noble Health]] and [[Project Atlas 136]].
 It follows [[Project Atlas 136 Metric Reconciliation Sync 1896]].
 It incorporates [[Project Atlas 136 Stakeholder Alignment Research 356]].
 

@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-05-20
+date: 2024-06-15
 project: "[[Project Beacon 62]]"
-company: "[[Pioneer Health]]"
-source_created_at: 2024-05-20T12:11:00
-source_observed_at: 2024-05-20T14:45:00
-created_at: 2024-05-20T15:06:00
-updated_at: 2024-05-21T10:06:00
+company: "[[Atlas Labs]]"
+source_created_at: 2024-06-15T11:16:00
+source_observed_at: 2024-06-15T12:00:00
+created_at: 2024-06-15T13:08:00
+updated_at: 2024-06-15T23:08:00
 tags: [#meeting]
 ---
 # Project Beacon 62 Stakeholder Alignment Sync 502
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Iris Chen]]
 
 ## Client Attendees
-- [[Kai Kim]]
-- [[Alex Patel]]
-- [[Omar Tan]]
+- [[David Rostova]]
+- [[Alex Ivanov]]
+- [[Omar Morgan]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 62]] at [[Pioneer Health]].
-[[Iris Chen]] aligned with [[Kai Kim]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 62]] at [[Atlas Labs]].
+[[Iris Chen]] aligned with [[David Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 62]] to [[Iris Chen]] #follow-up

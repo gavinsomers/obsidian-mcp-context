@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Orbit 11]]"
-company: "[[Keystone Health]]"
-source_created_at: 2025-07-03T12:06:00
-source_observed_at: 2025-07-03T13:35:00
-created_at: 2025-07-04T02:06:00
-updated_at: 2025-08-15T10:06:00
+company: "[[Harbor Logistics]]"
+source_created_at: 2025-07-03T14:38:00
+source_observed_at: 2025-07-03T16:06:00
+created_at: 2025-07-04T05:38:00
+updated_at: 2025-08-07T13:38:00
 tags: [#research]
 ---
 # Project Orbit 11 Contract Renewal Research 451
 
 ## Research Summary
-Research on contract renewal for [[Project Orbit 11]] and [[Keystone Health]].
+Research on contract renewal for [[Project Orbit 11]] and [[Harbor Logistics]].
 
 ## Evidence
 - Interview notes from [[Jonah Alvarez]]

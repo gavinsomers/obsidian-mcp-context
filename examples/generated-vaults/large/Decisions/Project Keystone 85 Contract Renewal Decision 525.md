@@ -3,11 +3,11 @@ type: decision
 date: 2025-06-02
 status: active
 project: "[[Project Keystone 85]]"
-company: "[[Northstar Health]]"
-source_created_at: 2025-06-02T14:16:00
-source_observed_at: 2025-06-02T14:56:00
-created_at: 2025-06-02T15:01:00
-updated_at: 2025-06-03T02:01:00
+company: "[[Northstar Logistics]]"
+source_created_at: 2025-06-02T13:15:00
+source_observed_at: 2025-06-02T13:26:00
+created_at: 2025-06-02T16:34:00
+updated_at: 2025-06-03T04:34:00
 tags: [#decision]
 ---
 # Project Keystone 85 Contract Renewal Decision 525
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Keystone 85]].
 
 ## Context
-This decision applies to [[Northstar Health]] and [[Project Keystone 85]].
+This decision applies to [[Northstar Logistics]] and [[Project Keystone 85]].
 It follows [[Project Keystone 85 Adoption Workflow Sync 525]].
 It incorporates [[Project Keystone 85 Warehouse Mapping Research 305]].
 

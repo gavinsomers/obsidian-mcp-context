@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-07-05
 project: "[[Project Keystone 85]]"
-company: "[[Northstar Health]]"
-source_created_at: 2024-07-05T15:33:00
-source_observed_at: 2024-07-05T17:07:00
-created_at: 2024-07-05T17:12:00
-updated_at: 2024-07-05T21:12:00
+company: "[[Northstar Logistics]]"
+source_created_at: 2024-07-05T08:35:00
+source_observed_at: 2024-07-05T09:14:00
+created_at: 2024-07-05T12:30:00
+updated_at: 2024-07-05T19:30:00
 tags: [#meeting]
 ---
 # Project Keystone 85 Adoption Workflow Sync 85
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Farah Diaz]]
 
 ## Client Attendees
-- [[Alex Kim]]
-- [[Omar Ortega]]
-- [[David Tan]]
+- [[David Lee]]
+- [[Tara Patel]]
+- [[Hannah Usman]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Keystone 85]] at [[Northstar Health]].
-[[Farah Diaz]] aligned with [[Alex Kim]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Keystone 85]] at [[Northstar Logistics]].
+[[Farah Diaz]] aligned with [[David Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 85]] to [[Farah Diaz]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Signal 89]]"
-company: "[[Summit Health]]"
-source_created_at: 2025-11-17T13:04:00
-source_observed_at: 2025-11-17T14:09:00
-created_at: 2025-11-19T01:04:00
-updated_at: 2025-12-16T07:04:00
+company: "[[Crescent Labs]]"
+source_created_at: 2025-11-17T13:28:00
+source_observed_at: 2025-11-17T15:25:00
+created_at: 2025-11-18T20:28:00
+updated_at: 2025-12-05T21:28:00
 tags: [#research]
 ---
 # Project Signal 89 Adoption Workflow Research 529
 
 ## Research Summary
-Research on adoption workflow for [[Project Signal 89]] and [[Summit Health]].
+Research on adoption workflow for [[Project Signal 89]] and [[Crescent Labs]].
 
 ## Evidence
 - Interview notes from [[Jonah Diaz]]

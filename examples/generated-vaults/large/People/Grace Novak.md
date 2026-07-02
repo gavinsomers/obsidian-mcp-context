@@ -2,10 +2,10 @@
 type: person
 company: "[[Pioneer FinTech]]"
 role: "Finance Lead"
-source_created_at: 2023-07-05T16:11:00
-source_observed_at: 2023-07-05T17:33:00
-created_at: 2023-07-07T13:11:00
-updated_at: 2023-09-24T20:11:00
+source_created_at: 2023-07-05T12:23:00
+source_observed_at: 2023-07-05T14:18:00
+created_at: 2023-07-06T09:23:00
+updated_at: 2023-08-17T13:00:00
 tags: [#person]
 ---
 # Grace Novak
@@ -14,5 +14,5 @@ tags: [#person]
 Grace Novak is the Finance Lead at [[Pioneer FinTech]].
 
 ## Client Project Involvement
-- First seen through [[Pioneer FinTech]] account context
+- Client stakeholder on [[Project Horizon 19]] ([[Pioneer FinTech]])
 - [ ] Confirm next update with [[Grace Novak]] #follow-up

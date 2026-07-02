@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-04-23
+date: 2024-01-13
 project: "[[Project Lantern 35]]"
-company: "[[Cobalt Analytics]]"
-source_created_at: 2024-04-23T10:46:00
-source_observed_at: 2024-04-23T13:35:00
-created_at: 2024-04-23T15:37:00
-updated_at: 2024-04-24T00:37:00
+company: "[[Apex Labs]]"
+source_created_at: 2024-01-13T14:06:00
+source_observed_at: 2024-01-13T14:47:00
+created_at: 2024-01-13T16:52:00
+updated_at: 2024-01-14T11:52:00
 tags: [#meeting]
 ---
 # Project Lantern 35 Adoption Workflow Sync 255
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Hannah Bennett]]
 
 ## Client Attendees
-- [[Victor Lee]]
-- [[Jonah Quinn]]
-- [[Zoe Usman]]
+- [[Lina Vance]]
+- [[Tara Haddad]]
+- [[Hannah Morgan]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Lantern 35]] at [[Cobalt Analytics]].
-[[Hannah Bennett]] aligned with [[Victor Lee]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Lantern 35]] at [[Apex Labs]].
+[[Hannah Bennett]] aligned with [[Lina Vance]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 35]] to [[Hannah Bennett]] #follow-up

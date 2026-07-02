@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2023-11-01
+date: 2023-12-22
 project: "[[Project Horizon 19]]"
-company: "[[Vanguard FinTech]]"
-source_created_at: 2023-11-01T14:13:00
-source_observed_at: 2023-11-01T17:00:00
-created_at: 2023-11-01T17:05:00
-updated_at: 2023-11-02T06:05:00
+company: "[[Pioneer FinTech]]"
+source_created_at: 2023-12-22T12:45:00
+source_observed_at: 2023-12-22T13:31:00
+created_at: 2023-12-22T17:41:00
+updated_at: 2023-12-23T08:41:00
 tags: [#meeting]
 ---
 # Project Horizon 19 Pipeline Hygiene Sync 679
@@ -15,12 +15,12 @@ tags: [#meeting]
 - [[Sam Alvarez]]
 
 ## Client Attendees
-- [[Marcus Ivanov]]
-- [[Ben Novak]]
+- [[Sam Ivanov]]
+- [[Grace Novak]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Horizon 19]] at [[Vanguard FinTech]].
-[[Sam Alvarez]] aligned with [[Marcus Ivanov]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Horizon 19]] at [[Pioneer FinTech]].
+[[Sam Alvarez]] aligned with [[Sam Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Horizon 19]] to [[Sam Alvarez]] #follow-up

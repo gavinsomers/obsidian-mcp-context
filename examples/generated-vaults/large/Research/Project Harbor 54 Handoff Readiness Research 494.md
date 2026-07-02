@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Harbor 54]]"
-company: "[[Helio Health]]"
-source_created_at: 2025-09-17T16:55:00
-source_observed_at: 2025-09-17T18:39:00
-created_at: 2025-09-19T15:55:00
-updated_at: 2025-10-23T22:55:00
+company: "[[Vanguard Retail]]"
+source_created_at: 2025-09-17T11:17:00
+source_observed_at: 2025-09-17T13:11:00
+created_at: 2025-09-18T08:17:00
+updated_at: 2025-10-24T16:17:00
 tags: [#research]
 ---
 # Project Harbor 54 Handoff Readiness Research 494
 
 ## Research Summary
-Research on handoff readiness for [[Project Harbor 54]] and [[Helio Health]].
+Research on handoff readiness for [[Project Harbor 54]] and [[Vanguard Retail]].
 
 ## Evidence
 - Interview notes from [[Amara Chen]]

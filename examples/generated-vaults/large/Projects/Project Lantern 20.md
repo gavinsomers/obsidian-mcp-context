@@ -1,25 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2023-08-10T15:39:00
-source_observed_at: 2023-08-10T17:23:00
-created_at: 2023-08-12T13:39:00
-updated_at: 2023-09-03T16:39:00
+status: blocked
+company: "[[Crescent Manufacturing]]"
+source_created_at: 2023-08-10T13:09:00
+source_observed_at: 2023-08-10T13:20:00
+created_at: 2023-08-12T01:09:00
+updated_at: 2023-10-29T06:09:00
 tags: [#project]
 ---
 # Project Lantern 20
 
 ## Overview
-Project Lantern 20 supports [[Vanguard Manufacturing]] through operations admin.
+Project Lantern 20 supports [[Crescent Manufacturing]] through operations admin.
 
 ## Stakeholders
-- [[Rachel Jenkins]]
-- [[Farah Ortega]]
+- [[Yara Jenkins]]
+- [[Marcus Ortega]]
+- [[Ben Tan]]
 
 ## Operating Notes
 - Evergreen owner: [[Tara Alvarez]]
-- Client account: [[Vanguard Manufacturing]]
-- Status: `closed`
-- Closed at: `2023-12-08`
+- Client account: [[Crescent Manufacturing]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Lantern 20]] #ops

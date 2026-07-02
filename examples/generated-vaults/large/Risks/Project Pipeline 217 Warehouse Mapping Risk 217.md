@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Pipeline 217]]"
-source_created_at: 2026-04-21T08:03:00
-source_observed_at: 2026-04-21T08:37:00
-created_at: 2026-04-21T18:03:00
-updated_at: 2026-05-16T03:03:00
+source_created_at: 2026-04-21T10:11:00
+source_observed_at: 2026-04-21T12:30:00
+created_at: 2026-04-22T05:11:00
+updated_at: 2026-06-03T13:11:00
 tags: [#risk]
 ---
 # Project Pipeline 217 Warehouse Mapping Risk 217
 
 ## Risk
-Warehouse Mapping may affect [[Project Pipeline 217]] for [[Crescent Retail]].
+Warehouse Mapping may affect [[Project Pipeline 217]] for [[Keystone Logistics]].
 
 ## Evidence
 - Raised after [[Project Pipeline 217 Contract Renewal Sync 657]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `open`
 - Owner: [[Priya Alvarez]]
 - [ ] Reassess [[Project Pipeline 217 Warehouse Mapping Risk 217]] during the next review #risk

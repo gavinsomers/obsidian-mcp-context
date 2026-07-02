@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-06-13
 project: "[[Project Atlas 76]]"
-company: "[[Summit FinTech]]"
-source_created_at: 2024-06-13T14:59:00
-source_observed_at: 2024-06-13T17:41:00
-created_at: 2024-06-13T18:24:00
-updated_at: 2024-06-13T21:24:00
+company: "[[Meridian Labs]]"
+source_created_at: 2024-06-13T09:39:00
+source_observed_at: 2024-06-13T11:28:00
+created_at: 2024-06-13T11:33:00
+updated_at: 2024-06-14T06:33:00
 tags: [#meeting]
 ---
 # Project Atlas 76 Metric Reconciliation Sync 1836
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Xavier Chen]]
 
 ## Client Attendees
-- [[Jonah Walker]]
-- [[Rachel Ivanov]]
-- [[Farah Novak]]
+- [[Xavier Haddad]]
+- [[Priya Vance]]
+- [[Amara Rostova]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Atlas 76]] at [[Summit FinTech]].
-[[Xavier Chen]] aligned with [[Jonah Walker]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Atlas 76]] at [[Meridian Labs]].
+[[Xavier Chen]] aligned with [[Xavier Haddad]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 76]] to [[Xavier Chen]] #follow-up

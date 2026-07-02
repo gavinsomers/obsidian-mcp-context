@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-05-08
+date: 2024-07-22
 status: active
 project: "[[Project Compass 68]]"
-company: "[[Harbor Health]]"
-source_created_at: 2025-05-08T10:11:00
-source_observed_at: 2025-05-08T12:07:00
-created_at: 2025-05-09T12:11:00
-updated_at: 2025-05-09T17:11:00
+company: "[[Meridian Health]]"
+source_created_at: 2024-07-22T10:09:00
+source_observed_at: 2024-07-22T11:07:00
+created_at: 2024-07-22T14:35:00
+updated_at: 2024-07-23T01:35:00
 tags: [#decision]
 ---
 # Project Compass 68 Handoff Readiness Decision 508
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 68]].
 
 ## Context
-This decision applies to [[Harbor Health]] and [[Project Compass 68]].
-It follows [[Project Compass 68 Lineage Audit Sync 508]].
-It incorporates [[Project Compass 68 Finance Approval Research 288]].
+This decision applies to [[Meridian Health]] and [[Project Compass 68]].
+It follows [[Project Compass 68 Lineage Audit Sync 1168]].
+It incorporates [[Project Compass 68 Finance Approval Research 68]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

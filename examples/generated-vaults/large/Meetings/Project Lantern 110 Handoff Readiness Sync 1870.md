@@ -2,27 +2,27 @@
 type: meeting
 date: 2024-11-04
 project: "[[Project Lantern 110]]"
-company: "[[Crescent Manufacturing]]"
-source_created_at: 2024-11-04T09:54:00
-source_observed_at: 2024-11-04T12:10:00
-created_at: 2024-11-04T15:26:00
-updated_at: 2024-11-05T05:26:00
+company: "[[Meridian Logistics]]"
+source_created_at: 2024-11-04T16:52:00
+source_observed_at: 2024-11-04T18:33:00
+created_at: 2024-11-04T18:38:00
+updated_at: 2024-11-04T22:38:00
 tags: [#meeting]
 ---
 # Project Lantern 110 Handoff Readiness Sync 1870
 
 ## Evergreen Attendees
-- [[Elena Evans]]
+- [[Iris Alvarez]]
 
 ## Client Attendees
-- [[Yara Jenkins]]
-- [[Marcus Ortega]]
-- [[Ben Tan]]
+- [[Iris Lee]]
+- [[Yara Patel]]
+- [[Marcus Usman]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 110]] at [[Crescent Manufacturing]].
-[[Elena Evans]] aligned with [[Yara Jenkins]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 110]] at [[Meridian Logistics]].
+[[Iris Alvarez]] aligned with [[Iris Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 110]] to [[Elena Evans]] #follow-up
+- [ ] Send recap for [[Project Lantern 110]] to [[Iris Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

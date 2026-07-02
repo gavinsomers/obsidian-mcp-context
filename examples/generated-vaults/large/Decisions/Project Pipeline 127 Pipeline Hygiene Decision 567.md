@@ -3,11 +3,11 @@ type: decision
 date: 2025-07-31
 status: active
 project: "[[Project Pipeline 127]]"
-company: "[[Crescent Labs]]"
-source_created_at: 2025-07-31T14:16:00
-source_observed_at: 2025-07-31T15:05:00
-created_at: 2025-07-31T18:39:00
-updated_at: 2025-08-01T16:39:00
+company: "[[Northstar Logistics]]"
+source_created_at: 2025-07-31T09:39:00
+source_observed_at: 2025-07-31T12:11:00
+created_at: 2025-07-31T14:33:00
+updated_at: 2025-07-31T15:33:00
 tags: [#decision]
 ---
 # Project Pipeline 127 Pipeline Hygiene Decision 567
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Pipeline 127]].
 
 ## Context
-This decision applies to [[Crescent Labs]] and [[Project Pipeline 127]].
+This decision applies to [[Northstar Logistics]] and [[Project Pipeline 127]].
 It follows [[Project Pipeline 127 Contract Renewal Sync 567]].
 It incorporates [[Project Pipeline 127 Security Review Research 127]].
 
