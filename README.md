@@ -68,6 +68,16 @@ runs dbt, runs dbt tests, and starts MCP at `http://localhost:8000`. It does not
 copy data from the generator; pass the generated vault path explicitly after
 manually importing or placing it where you want it.
 
+Start lineage and table inspection views only when you want to show them:
+
+```bash
+scripts/run_dataset_workflow.sh large --with-inspection
+```
+
+That also opens dbt Docs at `http://localhost:8081` and the Postgres table
+browser at `http://localhost:8082`. Use `--with-dbt-docs` or
+`--with-table-browser` to start only one inspection surface.
+
 Run the generated-large Postgres stack end to end with an MCP smoke check when
 you want the older verification command:
 
