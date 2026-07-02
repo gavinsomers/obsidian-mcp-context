@@ -56,3 +56,22 @@ def test_synthetic_demo_script_rebuilds_obsidian_webtop_image():
 
     assert 'up -d --build --force-recreate vault-obsidian' in script
     assert 'up -d --build vault-obsidian' in script
+
+
+def test_synthetic_demo_script_hides_unresolved_graph_nodes():
+    script = Path("scripts/run_synthetic_demo.sh").read_text(encoding="utf-8")
+
+    assert 'cat >"$target/.obsidian/graph.json"' in script
+    assert '"hideUnresolved": true' in script
+
+
+def test_synthetic_demo_script_stops_obsidian_before_resetting_vault():
+    script = Path("scripts/run_synthetic_demo.sh").read_text(encoding="utf-8")
+
+    reset_block = script.split('if [[ "$reset" == "1" ]]; then', maxsplit=1)[1].split(
+        "else", maxsplit=1
+    )[0]
+    assert '"${compose[@]}" stop vault-obsidian >/dev/null || true' in reset_block
+    assert reset_block.index('"${compose[@]}" stop vault-obsidian') < reset_block.index(
+        'safe_reset_target "$target_vault"'
+    )

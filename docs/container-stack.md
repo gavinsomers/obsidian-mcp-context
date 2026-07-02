@@ -194,6 +194,10 @@ default replay order uses note frontmatter `created_at`, falling back to
 `source_created_at`, `source_observed_at`, `updated_at`, frontmatter/filename
 date, and finally file mtime if needed.
 
+The replay workspace opens Graph view with unresolved nodes hidden. That keeps
+future wikilink targets out of the visual graph until their notes are actually
+copied into the replay vault.
+
 Useful replay flags:
 
 - `--reset`: clears the isolated target vault before replaying.
