@@ -24,6 +24,8 @@ def test_synthetic_demo_script_prints_help_without_starting_services():
     assert "run_synthetic_demo.sh" in result.stdout
     assert "stop" in result.stdout
     assert "status" in result.stdout
+    assert "--fast" in result.stdout
+    assert "--initial-limit" in result.stdout
 
 
 def test_synthetic_demo_script_rejects_unknown_fixture_size_before_docker():

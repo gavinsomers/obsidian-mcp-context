@@ -168,10 +168,10 @@ Postgres analytics stack check passed.
 Verify:
 
 ```bash
-scripts/run_synthetic_demo.sh small --no-continuous --no-dbt-docs
+scripts/run_synthetic_demo.sh small --fast
 scripts/check_synthetic_demo.sh --skip-dbt-docs
 
-scripts/run_synthetic_demo.sh small --no-continuous --no-dbt-docs --initial-limit 250
+scripts/run_synthetic_demo.sh small --fast
 scripts/check_synthetic_demo.sh --skip-dbt-docs --examples examples/eval-packs/consultancy-demo.json
 ```
 

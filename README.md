@@ -109,6 +109,13 @@ services together:
 scripts/run_synthetic_demo.sh large
 ```
 
+For a faster smoke/demo run that loads the full small fixture before the first
+ingest/dbt cycle and skips background replay loops:
+
+```bash
+scripts/run_synthetic_demo.sh small --fast
+```
+
 Stop it with:
 
 ```bash

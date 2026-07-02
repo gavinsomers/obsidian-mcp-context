@@ -20,14 +20,14 @@ examples/eval-packs/consultancy-demo.json
 Run the default pack through the generated demo health check:
 
 ```bash
-scripts/run_synthetic_demo.sh small --no-continuous --no-dbt-docs
+scripts/run_synthetic_demo.sh small --fast
 scripts/check_synthetic_demo.sh --skip-dbt-docs
 ```
 
-Run the stricter pack after loading enough generated notes:
+Run the stricter pack after loading the full generated-small fixture:
 
 ```bash
-scripts/run_synthetic_demo.sh small --no-continuous --no-dbt-docs --initial-limit 250
+scripts/run_synthetic_demo.sh small --fast
 scripts/check_synthetic_demo.sh --skip-dbt-docs --examples examples/eval-packs/consultancy-demo.json
 ```
 
