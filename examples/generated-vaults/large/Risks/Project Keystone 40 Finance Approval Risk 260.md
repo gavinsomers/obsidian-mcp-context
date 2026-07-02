@@ -2,16 +2,16 @@
 type: risk
 status: mitigating
 project: "[[Project Keystone 40]]"
-source_created_at: 2024-06-20T10:38:00
-source_observed_at: 2024-06-20T12:07:00
-created_at: 2024-06-20T14:38:00
-updated_at: 2024-06-25T01:38:00
+source_created_at: 2024-06-20T09:10:00
+source_observed_at: 2024-06-20T11:58:00
+created_at: 2024-06-29T11:10:00
+updated_at: 2024-08-06T22:10:00
 tags: [#risk]
 ---
 # Project Keystone 40 Finance Approval Risk 260
 
 ## Risk
-Finance Approval may affect [[Project Keystone 40]] for [[Harbor Retail]].
+Finance Approval may affect [[Project Keystone 40]] for [[Vanguard Manufacturing]].
 
 ## Evidence
 - Raised after [[Project Keystone 40 Handoff Readiness Sync 260]]

@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-21
 status: active
 project: "[[Project Beacon 77]]"
-company: "[[Apex Media]]"
-source_created_at: 2025-05-21T16:56:00
-source_observed_at: 2025-05-21T19:49:00
-created_at: 2025-05-21T22:18:00
-updated_at: 2025-05-22T18:18:00
+company: "[[Atlas FinTech]]"
+source_created_at: 2025-05-21T14:56:00
+source_observed_at: 2025-05-21T16:13:00
+created_at: 2025-05-21T20:27:00
+updated_at: 2025-05-22T05:27:00
 tags: [#decision]
 ---
 # Project Beacon 77 Pipeline Hygiene Decision 517
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Beacon 77]].
 
 ## Context
-This decision applies to [[Apex Media]] and [[Project Beacon 77]].
+This decision applies to [[Atlas FinTech]] and [[Project Beacon 77]].
 It follows [[Project Beacon 77 Contract Renewal Sync 517]].
 It incorporates [[Project Beacon 77 Security Review Research 297]].
 

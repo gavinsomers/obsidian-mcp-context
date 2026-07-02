@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Venture 103]]"
-company: "[[Noble Logistics]]"
-source_created_at: 2025-12-11T09:12:00
-source_observed_at: 2025-12-11T10:16:00
-created_at: 2025-12-13T06:12:00
-updated_at: 2026-01-24T12:12:00
+company: "[[Northstar Labs]]"
+source_created_at: 2025-12-11T13:48:00
+source_observed_at: 2025-12-11T16:36:00
+created_at: 2025-12-13T01:48:00
+updated_at: 2025-12-29T02:48:00
 tags: [#research]
 ---
 # Project Venture 103 Pipeline Hygiene Research 543
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Venture 103]] and [[Noble Logistics]].
+Research on pipeline hygiene for [[Project Venture 103]] and [[Northstar Labs]].
 
 ## Evidence
 - Interview notes from [[Yara Diaz]]

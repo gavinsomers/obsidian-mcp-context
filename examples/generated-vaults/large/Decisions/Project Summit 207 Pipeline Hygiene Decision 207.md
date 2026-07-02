@@ -3,11 +3,11 @@ type: decision
 date: 2026-03-16
 status: active
 project: "[[Project Summit 207]]"
-company: "[[Noble Media]]"
-source_created_at: 2026-03-16T09:46:00
-source_observed_at: 2026-03-16T12:11:00
-created_at: 2026-03-16T12:16:00
-updated_at: 2026-03-17T04:16:00
+company: "[[Northstar Logistics]]"
+source_created_at: 2026-03-16T10:27:00
+source_observed_at: 2026-03-16T11:18:00
+created_at: 2026-03-16T14:35:00
+updated_at: 2026-03-16T22:35:00
 tags: [#decision]
 ---
 # Project Summit 207 Pipeline Hygiene Decision 207
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Summit 207]].
 
 ## Context
-This decision applies to [[Noble Media]] and [[Project Summit 207]].
-It follows [[Project Summit 207 Contract Renewal Sync 1747]].
-It incorporates [[Project Summit 207 Security Review Research 207]].
+This decision applies to [[Northstar Logistics]] and [[Project Summit 207]].
+It follows [[Project Summit 207 Contract Renewal Sync 207]].
+It incorporates [[Project Summit 207 Security Review Research 427]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

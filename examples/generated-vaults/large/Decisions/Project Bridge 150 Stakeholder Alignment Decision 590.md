@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-02
 status: active
 project: "[[Project Bridge 150]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2025-09-02T14:48:00
-source_observed_at: 2025-09-02T16:29:00
-created_at: 2025-09-02T16:34:00
-updated_at: 2025-09-03T03:34:00
+company: "[[Atlas Media]]"
+source_created_at: 2025-09-02T08:08:00
+source_observed_at: 2025-09-02T08:51:00
+created_at: 2025-09-02T10:51:00
+updated_at: 2025-09-02T18:51:00
 tags: [#decision]
 ---
 # Project Bridge 150 Stakeholder Alignment Decision 590
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 150]].
 
 ## Context
-This decision applies to [[Northstar Retail]] and [[Project Bridge 150]].
+This decision applies to [[Atlas Media]] and [[Project Bridge 150]].
 It follows [[Project Bridge 150 Handoff Readiness Sync 590]].
 It incorporates [[Project Bridge 150 Metric Reconciliation Research 370]].
 

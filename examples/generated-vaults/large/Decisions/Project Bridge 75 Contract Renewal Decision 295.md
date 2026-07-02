@@ -4,10 +4,10 @@ date: 2024-07-10
 status: active
 project: "[[Project Bridge 75]]"
 company: "[[Keystone Health]]"
-source_created_at: 2024-07-10T14:55:00
-source_observed_at: 2024-07-10T17:20:00
-created_at: 2024-07-10T18:46:00
-updated_at: 2024-07-11T10:46:00
+source_created_at: 2024-07-10T15:15:00
+source_observed_at: 2024-07-10T17:23:00
+created_at: 2024-07-16T15:15:00
+updated_at: 2024-07-16T23:15:00
 tags: [#decision]
 ---
 # Project Bridge 75 Contract Renewal Decision 295

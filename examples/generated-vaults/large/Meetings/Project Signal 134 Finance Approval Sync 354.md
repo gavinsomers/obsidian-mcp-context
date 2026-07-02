@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-03-02
 project: "[[Project Signal 134]]"
-company: "[[Keystone Labs]]"
-source_created_at: 2025-03-02T14:39:00
-source_observed_at: 2025-03-02T15:03:00
-created_at: 2025-03-02T15:45:00
-updated_at: 2025-03-03T10:45:00
+company: "[[Helio Analytics]]"
+source_created_at: 2025-03-02T08:36:00
+source_observed_at: 2025-03-02T10:32:00
+created_at: 2025-03-02T10:37:00
+updated_at: 2025-03-03T02:37:00
 tags: [#meeting]
 ---
 # Project Signal 134 Finance Approval Sync 354
 
-## Attendees
-- [[Xavier Shah]]
-- [[Farah Tan]]
-- [[David Ivanov]]
+## Evergreen Attendees
+- [[Clara Foster]]
+
+## Client Attendees
+- [[Xavier Lee]]
+- [[Lina Quinn]]
+- [[Amara Vance]]
 
 ## Notes
-Finance Approval reviewed for [[Project Signal 134]] at [[Keystone Labs]].
-[[Clara Foster]] flagged follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Signal 134]] at [[Helio Analytics]].
+[[Clara Foster]] aligned with [[Xavier Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 134]] to [[Clara Foster]] #follow-up

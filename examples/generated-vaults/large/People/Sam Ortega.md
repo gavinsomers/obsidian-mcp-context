@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-08-26T12:21:00
-source_observed_at: 2023-08-26T12:53:00
-created_at: 2023-09-02T14:21:00
-updated_at: 2023-10-07T00:21:00
+company: "[[BrightWave Health]]"
+role: "Security Contact"
+source_created_at: 2023-08-26T08:03:00
+source_observed_at: 2023-08-26T09:44:00
+created_at: 2023-08-28T06:03:00
+updated_at: 2025-02-27T13:00:00
 tags: [#person]
 ---
 # Sam Ortega
 
 ## Role
-Sam Ortega is the Client Partner at [[Evergreen Analytics]].
+Sam Ortega is the Security Contact at [[BrightWave Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Bridge 30]] ([[BrightWave Health]])
+- Client stakeholder on [[Project Venture 133]] ([[BrightWave Health]])
 - [ ] Confirm next update with [[Sam Ortega]] #follow-up

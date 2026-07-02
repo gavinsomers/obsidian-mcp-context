@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 94]]"
-company: "[[BrightWave Logistics]]"
-source_created_at: 2024-09-01T15:23:00
-source_observed_at: 2024-09-01T16:49:00
-created_at: 2024-09-02T10:23:00
-updated_at: 2024-09-09T16:23:00
+company: "[[Helio Labs]]"
+source_created_at: 2024-09-01T12:10:00
+source_observed_at: 2024-09-01T13:23:00
+created_at: 2024-09-01T21:10:00
+updated_at: 2024-09-27T01:10:00
 tags: [#research]
 ---
 # Project Horizon 94 Handoff Readiness Research 94
 
 ## Research Summary
-Research on handoff readiness for [[Project Horizon 94]] and [[BrightWave Logistics]].
+Research on handoff readiness for [[Project Horizon 94]] and [[Helio Labs]].
 
 ## Evidence
 - Interview notes from [[Omar Diaz]]

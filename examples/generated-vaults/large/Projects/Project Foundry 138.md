@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[BrightWave FinTech]]"
-source_created_at: 2025-03-12T08:40:00
-source_observed_at: 2025-03-12T11:39:00
-created_at: 2025-03-13T04:40:00
-updated_at: 2025-05-19T10:40:00
+company: "[[Quantum Retail]]"
+source_created_at: 2025-03-12T14:59:00
+source_observed_at: 2025-03-12T16:34:00
+created_at: 2025-03-12T22:59:00
+updated_at: 2025-04-16T09:59:00
 tags: [#project]
 ---
 # Project Foundry 138
 
 ## Overview
-Project Foundry 138 supports [[BrightWave FinTech]] through customer success.
+Project Foundry 138 supports [[Quantum Retail]] through customer success.
 
 ## Stakeholders
-- [[Jonah Rostova]]
-- [[Ben Kim]]
-- [[Wendy Shah]]
-- [[Kai Ivanov]]
+- [[Clara Jenkins]]
+- [[Sam Novak]]
+- [[Grace Shah]]
+- [[Wendy Walker]]
 
 ## Operating Notes
-- Owner: [[Grace Foster]]
+- Evergreen owner: [[Grace Foster]]
+- Client account: [[Quantum Retail]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Foundry 138]] #ops

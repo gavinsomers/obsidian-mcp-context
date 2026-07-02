@@ -1,25 +1,27 @@
 ---
 type: project
-status: active
-company: "[[Vanguard Logistics]]"
-source_created_at: 2026-03-31T14:04:00
-source_observed_at: 2026-03-31T14:40:00
-created_at: 2026-04-02T03:04:00
-updated_at: 2026-04-22T07:04:00
+status: closed
+company: "[[Cobalt FinTech]]"
+source_created_at: 2026-03-31T10:46:00
+source_observed_at: 2026-03-31T12:10:00
+created_at: 2026-04-01T20:46:00
+updated_at: 2026-06-18T07:46:00
 tags: [#project]
 ---
 # Project Meridian 216
 
 ## Overview
-Project Meridian 216 supports [[Vanguard Logistics]] through consulting delivery.
+Project Meridian 216 supports [[Cobalt FinTech]] through consulting delivery.
 
 ## Stakeholders
-- [[Uma Tan]]
-- [[Yara Quinn]]
-- [[Amara Haddad]]
-- [[Elena Evans]]
+- [[Iris Ivanov]]
+- [[Yara Morgan]]
+- [[Marcus Rostova]]
+- [[Ben Walker]]
 
 ## Operating Notes
-- Owner: [[Grace Ivanov]]
-- Status: `active`
+- Evergreen owner: [[Omar Alvarez]]
+- Client account: [[Cobalt FinTech]]
+- Status: `closed`
+- Closed at: `2026-09-09`
 - [ ] Reconcile latest state for [[Project Meridian 216]] #ops

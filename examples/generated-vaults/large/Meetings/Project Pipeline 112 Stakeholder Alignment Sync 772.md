@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2025-05-06
+date: 2026-04-16
 project: "[[Project Pipeline 112]]"
-company: "[[Vanguard Analytics]]"
-source_created_at: 2025-05-06T10:06:00
-source_observed_at: 2025-05-06T10:29:00
-created_at: 2025-05-06T15:46:00
-updated_at: 2025-05-06T22:46:00
+company: "[[Pioneer Media]]"
+source_created_at: 2026-04-16T08:18:00
+source_observed_at: 2026-04-16T10:09:00
+created_at: 2026-04-16T10:14:00
+updated_at: 2026-04-16T22:14:00
 tags: [#meeting]
 ---
 # Project Pipeline 112 Stakeholder Alignment Sync 772
 
-## Attendees
-- [[Alex Chen]]
-- [[Uma Patel]]
-- [[Uma Bennett]]
+## Evergreen Attendees
+- [[Grace Evans]]
+
+## Client Attendees
+- [[Alex Lee]]
+- [[Omar Patel]]
+- [[David Usman]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Pipeline 112]] at [[Vanguard Analytics]].
-[[Grace Evans]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Pipeline 112]] at [[Pioneer Media]].
+[[Grace Evans]] aligned with [[Alex Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 112]] to [[Grace Evans]] #follow-up

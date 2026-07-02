@@ -2,23 +2,26 @@
 type: meeting
 date: 2023-11-23
 project: "[[Project Harbor 39]]"
-company: "[[Atlas Retail]]"
-source_created_at: 2023-11-23T11:39:00
-source_observed_at: 2023-11-23T14:32:00
-created_at: 2023-11-23T16:49:00
-updated_at: 2023-11-24T15:49:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2023-11-23T11:20:00
+source_observed_at: 2023-11-23T13:48:00
+created_at: 2023-11-23T13:53:00
+updated_at: 2023-11-24T00:53:00
 tags: [#meeting]
 ---
 # Project Harbor 39 Pipeline Hygiene Sync 919
 
-## Attendees
-- [[Tara Rostova]]
-- [[Amara Bennett]]
-- [[Hannah Quinn]]
+## Evergreen Attendees
+- [[Lina Bennett]]
+
+## Client Attendees
+- [[Rachel Jenkins]]
+- [[Farah Ortega]]
+- [[Victor Shah]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 39]] at [[Atlas Retail]].
-[[Lina Bennett]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 39]] at [[Vanguard Manufacturing]].
+[[Lina Bennett]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 39]] to [[Lina Bennett]] #follow-up

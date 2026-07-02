@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[BrightWave Manufacturing]]"
-source_created_at: 2025-08-07T13:34:00
-source_observed_at: 2025-08-07T13:55:00
-created_at: 2025-08-08T19:34:00
-updated_at: 2025-09-27T05:34:00
+status: planning
+company: "[[Meridian Media]]"
+source_created_at: 2025-08-07T16:52:00
+source_observed_at: 2025-08-07T18:11:00
+created_at: 2025-08-09T12:52:00
+updated_at: 2025-11-05T15:52:00
 tags: [#project]
 ---
 # Project Foundry 168
 
 ## Overview
-Project Foundry 168 supports [[BrightWave Manufacturing]] through customer success.
+Project Foundry 168 supports [[Meridian Media]] through customer success.
 
 ## Stakeholders
-- [[Zoe Rostova]]
-- [[Elena Walker]]
-- [[Grace Chen]]
-- [[Alex Walker]]
+- [[Uma Kim]]
+- [[Iris Patel]]
+- [[Yara Tan]]
 
 ## Operating Notes
-- Owner: [[Kai Grant]]
-- Status: `blocked`
+- Evergreen owner: [[Kai Grant]]
+- Client account: [[Meridian Media]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Foundry 168]] #ops

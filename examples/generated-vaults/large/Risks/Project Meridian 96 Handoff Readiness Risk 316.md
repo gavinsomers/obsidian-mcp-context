@@ -2,16 +2,16 @@
 type: risk
 status: mitigating
 project: "[[Project Meridian 96]]"
-source_created_at: 2024-09-18T10:20:00
-source_observed_at: 2024-09-18T11:02:00
-created_at: 2024-09-19T18:20:00
-updated_at: 2024-11-03T02:20:00
+source_created_at: 2024-09-18T11:19:00
+source_observed_at: 2024-09-18T13:49:00
+created_at: 2024-09-19T16:19:00
+updated_at: 2024-09-23T17:19:00
 tags: [#risk]
 ---
 # Project Meridian 96 Handoff Readiness Risk 316
 
 ## Risk
-Handoff Readiness may affect [[Project Meridian 96]] for [[Meridian Logistics]].
+Handoff Readiness may affect [[Project Meridian 96]] for [[Harbor FinTech]].
 
 ## Evidence
 - Raised after [[Project Meridian 96 Metric Reconciliation Sync 976]]

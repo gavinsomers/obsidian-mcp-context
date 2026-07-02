@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-09-11T14:39:00
-source_observed_at: 2023-09-11T17:16:00
-created_at: 2023-09-12T05:39:00
-updated_at: 2023-11-05T09:39:00
+company: "[[Quantum Analytics]]"
+role: "Customer Success Lead"
+source_created_at: 2023-12-02T14:14:00
+source_observed_at: 2023-12-02T16:01:00
+created_at: 2023-12-04T13:14:00
+updated_at: 2023-12-30T18:14:00
 tags: [#person]
 ---
 # Omar Quinn
 
 ## Role
-Omar Quinn is the Technical Director at [[Evergreen Analytics]].
+Omar Quinn is the Customer Success Lead at [[Quantum Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- First seen through [[Quantum Analytics]] account context
 - [ ] Confirm next update with [[Omar Quinn]] #follow-up

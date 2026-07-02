@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Delivery Lead"
-source_created_at: 2023-06-24T13:06:00
-source_observed_at: 2023-06-24T15:29:00
-created_at: 2023-06-25T08:06:00
-updated_at: 2023-08-11T17:06:00
+source_created_at: 2023-06-24T12:16:00
+source_observed_at: 2023-06-24T14:24:00
+created_at: 2023-06-27T12:16:00
+updated_at: 2025-12-27T13:00:00
 tags: [#person]
 ---
 # Lina Haddad
@@ -14,5 +14,5 @@ tags: [#person]
 Lina Haddad is the Delivery Lead at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Bridge 195]] ([[Meridian Media]])
 - [ ] Confirm next update with [[Lina Haddad]] #follow-up

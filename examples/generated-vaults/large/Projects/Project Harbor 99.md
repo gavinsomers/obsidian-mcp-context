@@ -1,25 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Atlas Logistics]]"
-source_created_at: 2024-09-02T09:29:00
-source_observed_at: 2024-09-02T12:28:00
-created_at: 2024-09-03T03:29:00
-updated_at: 2024-11-01T07:29:00
+status: active
+company: "[[Harbor FinTech]]"
+source_created_at: 2024-09-02T14:39:00
+source_observed_at: 2024-09-02T16:19:00
+created_at: 2024-09-03T10:39:00
+updated_at: 2024-10-28T10:39:00
 tags: [#project]
 ---
 # Project Harbor 99
 
 ## Overview
-Project Harbor 99 supports [[Atlas Logistics]] through research program.
+Project Harbor 99 supports [[Harbor FinTech]] through research program.
 
 ## Stakeholders
-- [[Elena Grant]]
-- [[Hannah Rostova]]
-- [[Iris Quinn]]
-- [[Amara Tan]]
+- [[Priya Ivanov]]
+- [[Elena Novak]]
+- [[Uma Rostova]]
+- [[Iris Walker]]
 
 ## Operating Notes
-- Owner: [[Uma Diaz]]
-- Status: `blocked`
+- Evergreen owner: [[Uma Diaz]]
+- Client account: [[Harbor FinTech]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Harbor 99]] #ops

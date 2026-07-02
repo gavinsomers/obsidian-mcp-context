@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-10-27T10:03:00
-source_observed_at: 2023-10-27T11:22:00
-created_at: 2023-10-29T04:03:00
-updated_at: 2023-12-27T04:03:00
+company: "[[Pioneer Labs]]"
+role: "Executive Sponsor"
+source_created_at: 2023-10-25T16:54:00
+source_observed_at: 2023-10-25T18:31:00
+created_at: 2023-11-02T20:54:00
+updated_at: 2026-03-30T13:00:00
 tags: [#person]
 ---
 # Wendy Vance
 
 ## Role
-Wendy Vance is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Wendy Vance is the Executive Sponsor at [[Pioneer Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Horizon 214]] ([[Pioneer Labs]])
 - [ ] Confirm next update with [[Wendy Vance]] #follow-up

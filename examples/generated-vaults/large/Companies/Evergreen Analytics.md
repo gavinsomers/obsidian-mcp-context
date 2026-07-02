@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: enterprise
-source_created_at: 2023-04-19T14:24:00
-source_observed_at: 2023-04-19T16:10:00
-created_at: 2023-04-19T19:24:00
-updated_at: 2023-05-05T06:24:00
+source_created_at: 2023-04-19T08:18:00
+source_observed_at: 2023-04-19T10:34:00
+created_at: 2023-04-21T03:18:00
+updated_at: 2023-07-04T07:18:00
 tags: [#company]
 ---
 # Evergreen Analytics
@@ -24,6 +24,14 @@ Evergreen Analytics is a enterprise account currently marked `active`.
 - [[Grace Alvarez]] - Technical Director
 
 ## Client Projects
+- [[Project Atlas 1]]
+- [[Project Beacon 2]]
+- [[Project Foundry 3]]
+- [[Project Horizon 4]]
+- [[Project Lantern 5]]
+- [[Project Meridian 6]]
+- [[Project Pipeline 7]]
+- [[Project Compass 8]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Evergreen Analytics]] #account

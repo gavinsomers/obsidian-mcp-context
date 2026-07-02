@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-09-06T08:08:00
-source_observed_at: 2023-09-06T08:25:00
-created_at: 2023-09-08T05:08:00
-updated_at: 2023-09-28T06:08:00
+company: "[[Meridian Logistics]]"
+role: "Security Contact"
+source_created_at: 2023-10-29T10:20:00
+source_observed_at: 2023-10-29T12:38:00
+created_at: 2023-10-29T21:20:00
+updated_at: 2025-11-03T13:00:00
 tags: [#person]
 ---
 # Yara Patel
 
 ## Role
-Yara Patel is the Client Partner at [[Evergreen Analytics]].
+Yara Patel is the Security Contact at [[Meridian Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Pipeline 52]] ([[Meridian Logistics]])
+- Client stakeholder on [[Project Horizon 184]] ([[Meridian Logistics]])
 - [ ] Confirm next update with [[Yara Patel]] #follow-up

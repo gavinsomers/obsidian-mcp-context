@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-08-29T12:12:00
-source_observed_at: 2023-08-29T12:22:00
-created_at: 2023-09-06T13:12:00
-updated_at: 2023-10-16T22:12:00
+company: "[[Noble Health]]"
+role: "Customer Success Lead"
+source_created_at: 2023-09-13T14:41:00
+source_observed_at: 2023-09-13T16:13:00
+created_at: 2023-09-22T15:41:00
+updated_at: 2024-09-16T13:00:00
 tags: [#person]
 ---
 # Amara Patel
 
 ## Role
-Amara Patel is the Technical Director at [[Evergreen Analytics]].
+Amara Patel is the Customer Success Lead at [[Noble Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 17]] ([[Noble Health]])
+- Client stakeholder on [[Project Keystone 100]] ([[Noble Health]])
 - [ ] Confirm next update with [[Amara Patel]] #follow-up

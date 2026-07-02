@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Orbit 131]]"
-company: "[[Pioneer Labs]]"
-source_created_at: 2026-01-28T08:53:00
-source_observed_at: 2026-01-28T11:30:00
-created_at: 2026-01-28T19:53:00
-updated_at: 2026-03-06T00:53:00
+company: "[[Vanguard Logistics]]"
+source_created_at: 2026-01-28T08:18:00
+source_observed_at: 2026-01-28T10:49:00
+created_at: 2026-01-31T12:18:00
+updated_at: 2026-02-03T18:18:00
 tags: [#research]
 ---
 # Project Orbit 131 Contract Renewal Research 571
 
 ## Research Summary
-Research on contract renewal for [[Project Orbit 131]] and [[Pioneer Labs]].
+Research on contract renewal for [[Project Orbit 131]] and [[Vanguard Logistics]].
 
 ## Evidence
 - Interview notes from [[Alex Foster]]

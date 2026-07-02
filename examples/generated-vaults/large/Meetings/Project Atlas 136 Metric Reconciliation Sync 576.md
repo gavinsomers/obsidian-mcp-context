@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-07-16
 project: "[[Project Atlas 136]]"
-company: "[[Apex FinTech]]"
-source_created_at: 2025-07-16T09:49:00
-source_observed_at: 2025-07-16T11:49:00
-created_at: 2025-07-16T13:57:00
-updated_at: 2025-07-17T04:57:00
+company: "[[Noble Analytics]]"
+source_created_at: 2025-07-16T10:55:00
+source_observed_at: 2025-07-16T13:43:00
+created_at: 2025-07-16T13:48:00
+updated_at: 2025-07-16T17:48:00
 tags: [#meeting]
 ---
 # Project Atlas 136 Metric Reconciliation Sync 576
 
-## Attendees
-- [[Yara Ortega]]
-- [[Nadia Patel]]
-- [[Omar Novak]]
+## Evergreen Attendees
+- [[Elena Foster]]
+
+## Client Attendees
+- [[Elena Morgan]]
+- [[Uma Quinn]]
+- [[Iris Vance]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Atlas 136]] at [[Apex FinTech]].
-[[Elena Foster]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Atlas 136]] at [[Noble Analytics]].
+[[Elena Foster]] aligned with [[Elena Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 136]] to [[Elena Foster]] #follow-up

@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-04-02
+date: 2024-07-16
 status: active
 project: "[[Project Summit 42]]"
-company: "[[Pioneer Retail]]"
-source_created_at: 2025-04-02T10:22:00
-source_observed_at: 2025-04-02T10:43:00
-created_at: 2025-04-08T11:22:00
-updated_at: 2025-04-09T01:22:00
+company: "[[Vanguard Analytics]]"
+source_created_at: 2024-07-16T15:31:00
+source_observed_at: 2024-07-16T16:00:00
+created_at: 2024-07-16T20:54:00
+updated_at: 2024-07-17T07:54:00
 tags: [#decision]
 ---
 # Project Summit 42 Finance Approval Decision 482
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Summit 42]].
 
 ## Context
-This decision applies to [[Pioneer Retail]] and [[Project Summit 42]].
+This decision applies to [[Vanguard Analytics]] and [[Project Summit 42]].
 It follows [[Project Summit 42 Stakeholder Alignment Sync 482]].
-It incorporates [[Project Summit 42 Lineage Audit Research 262]].
+It incorporates [[Project Summit 42 Lineage Audit Research 482]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

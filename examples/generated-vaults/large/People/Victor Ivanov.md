@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-07-06T09:58:00
-source_observed_at: 2023-07-06T10:31:00
-created_at: 2023-07-07T22:58:00
-updated_at: 2023-10-04T03:58:00
+company: "[[Keystone FinTech]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-06-19T09:01:00
+source_observed_at: 2023-06-19T10:48:00
+created_at: 2023-06-21T05:01:00
+updated_at: 2025-01-03T13:00:00
 tags: [#person]
 ---
 # Victor Ivanov
 
 ## Role
-Victor Ivanov is the Analytics Engineer at [[Evergreen Analytics]].
+Victor Ivanov is the Product Analytics Lead at [[Keystone FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 122]] ([[Keystone FinTech]])
 - [ ] Confirm next update with [[Victor Ivanov]] #follow-up

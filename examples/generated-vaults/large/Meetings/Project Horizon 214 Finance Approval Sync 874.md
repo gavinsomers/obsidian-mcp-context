@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-03-30
 project: "[[Project Horizon 214]]"
-company: "[[Helio Logistics]]"
-source_created_at: 2026-03-30T11:00:00
-source_observed_at: 2026-03-30T11:26:00
-created_at: 2026-03-30T11:31:00
-updated_at: 2026-03-30T20:31:00
+company: "[[Pioneer Labs]]"
+source_created_at: 2026-03-30T16:10:00
+source_observed_at: 2026-03-30T17:55:00
+created_at: 2026-03-30T22:08:00
+updated_at: 2026-03-31T04:08:00
 tags: [#meeting]
 ---
 # Project Horizon 214 Finance Approval Sync 874
 
-## Attendees
-- [[Lina Alvarez]]
-- [[Yara Usman]]
-- [[Elena Quinn]]
+## Evergreen Attendees
+- [[Marcus Alvarez]]
+
+## Client Attendees
+- [[Sam Morgan]]
+- [[Grace Rostova]]
+- [[Clara Ivanov]]
 
 ## Notes
-Finance Approval reviewed for [[Project Horizon 214]] at [[Helio Logistics]].
-[[Elena Ivanov]] flagged follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Horizon 214]] at [[Pioneer Labs]].
+[[Marcus Alvarez]] aligned with [[Sam Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Horizon 214]] to [[Elena Ivanov]] #follow-up
+- [ ] Send recap for [[Project Horizon 214]] to [[Marcus Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

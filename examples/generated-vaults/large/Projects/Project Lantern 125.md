@@ -1,25 +1,27 @@
 ---
 type: project
-status: active
-company: "[[Meridian Labs]]"
-source_created_at: 2025-01-08T15:16:00
-source_observed_at: 2025-01-08T16:53:00
-created_at: 2025-01-08T19:16:00
-updated_at: 2025-04-03T23:16:00
+status: closed
+company: "[[Helio Labs]]"
+source_created_at: 2025-01-08T09:25:00
+source_observed_at: 2025-01-08T10:10:00
+created_at: 2025-01-09T23:25:00
+updated_at: 2025-03-29T00:25:00
 tags: [#project]
 ---
 # Project Lantern 125
 
 ## Overview
-Project Lantern 125 supports [[Meridian Labs]] through operations admin.
+Project Lantern 125 supports [[Helio Labs]] through operations admin.
 
 ## Stakeholders
-- [[Sam Grant]]
-- [[Priya Usman]]
-- [[Zoe Ortega]]
-- [[Victor Foster]]
+- [[Wendy Haddad]]
+- [[Kai Morgan]]
+- [[Alex Rostova]]
+- [[Omar Vance]]
 
 ## Operating Notes
-- Owner: [[Uma Evans]]
-- Status: `active`
+- Evergreen owner: [[Uma Evans]]
+- Client account: [[Helio Labs]]
+- Status: `closed`
+- Closed at: `2025-04-09`
 - [ ] Reconcile latest state for [[Project Lantern 125]] #ops

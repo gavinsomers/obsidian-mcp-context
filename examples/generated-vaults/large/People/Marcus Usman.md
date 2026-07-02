@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-10-15T15:05:00
-source_observed_at: 2023-10-15T15:35:00
-created_at: 2023-10-16T04:05:00
-updated_at: 2023-12-05T05:05:00
+company: "[[Meridian Logistics]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-10-29T16:05:00
+source_observed_at: 2023-10-29T18:28:00
+created_at: 2023-10-29T23:05:00
+updated_at: 2025-11-03T13:00:00
 tags: [#person]
 ---
 # Marcus Usman
 
 ## Role
-Marcus Usman is the Analytics Engineer at [[Evergreen Analytics]].
+Marcus Usman is the Product Analytics Lead at [[Meridian Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Pipeline 52]] ([[Meridian Logistics]])
+- Client stakeholder on [[Project Horizon 184]] ([[Meridian Logistics]])
 - [ ] Confirm next update with [[Marcus Usman]] #follow-up

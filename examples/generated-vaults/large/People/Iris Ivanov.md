@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-07-02T14:36:00
-source_observed_at: 2023-07-02T16:19:00
-created_at: 2023-07-04T11:36:00
-updated_at: 2023-09-06T14:36:00
+company: "[[Cobalt FinTech]]"
+role: "Finance Lead"
+source_created_at: 2023-05-26T11:29:00
+source_observed_at: 2023-05-26T12:27:00
+created_at: 2023-05-26T19:29:00
+updated_at: 2026-04-10T13:00:00
 tags: [#person]
 ---
 # Iris Ivanov
 
 ## Role
-Iris Ivanov is the Senior Data Consultant at [[Evergreen Analytics]].
+Iris Ivanov is the Finance Lead at [[Cobalt FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 48]] ([[Cobalt FinTech]])
+- Client stakeholder on [[Project Meridian 216]] ([[Cobalt FinTech]])
 - [ ] Confirm next update with [[Iris Ivanov]] #follow-up

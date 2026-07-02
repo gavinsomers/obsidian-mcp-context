@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: smb
-source_created_at: 2023-08-23T10:15:00
-source_observed_at: 2023-08-23T11:02:00
-created_at: 2023-08-24T03:15:00
-updated_at: 2023-10-27T10:15:00
+source_created_at: 2023-08-23T11:54:00
+source_observed_at: 2023-08-23T13:01:00
+created_at: 2023-08-25T10:54:00
+updated_at: 2023-10-01T10:20:00
 tags: [#company]
 ---
 # Cobalt Health
@@ -14,6 +14,11 @@ tags: [#company]
 Cobalt Health is a smb account currently marked `churn-risk`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Ben Kim]] - Security Contact
+- [[Rachel Ortega]] - Product Analytics Lead
+- [[Farah Tan]] - Revenue Operations Lead
 
 ## Projects
 

@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-05-06
+date: 2024-05-01
 status: active
 project: "[[Project Venture 28]]"
-company: "[[Noble FinTech]]"
-source_created_at: 2024-05-06T09:21:00
-source_observed_at: 2024-05-06T11:34:00
-created_at: 2024-05-06T15:09:00
-updated_at: 2024-05-06T16:09:00
+company: "[[Apex Labs]]"
+source_created_at: 2024-05-01T16:33:00
+source_observed_at: 2024-05-01T17:12:00
+created_at: 2024-05-01T21:03:00
+updated_at: 2024-05-02T13:03:00
 tags: [#decision]
 ---
 # Project Venture 28 Handoff Readiness Decision 248
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Venture 28]].
 
 ## Context
-This decision applies to [[Noble FinTech]] and [[Project Venture 28]].
-It follows [[Project Venture 28 Lineage Audit Sync 248]].
-It incorporates [[Project Venture 28 Finance Approval Research 28]].
+This decision applies to [[Apex Labs]] and [[Project Venture 28]].
+It follows [[Project Venture 28 Lineage Audit Sync 1348]].
+It incorporates [[Project Venture 28 Finance Approval Research 468]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-10-13T13:56:00
-source_observed_at: 2023-10-13T14:19:00
-created_at: 2023-10-19T20:56:00
-updated_at: 2023-11-08T01:56:00
+company: "[[Crescent Media]]"
+role: "Security Contact"
+source_created_at: 2023-10-15T10:08:00
+source_observed_at: 2023-10-15T10:20:00
+created_at: 2023-10-16T12:08:00
+updated_at: 2025-12-22T13:00:00
 tags: [#person]
 ---
 # Farah Usman
 
 ## Role
-Farah Usman is the Client Partner at [[Evergreen Analytics]].
+Farah Usman is the Security Contact at [[Crescent Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Signal 194]] ([[Crescent Media]])
 - [ ] Confirm next update with [[Farah Usman]] #follow-up

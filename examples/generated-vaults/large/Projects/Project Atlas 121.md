@@ -1,25 +1,25 @@
 ---
 type: project
 status: blocked
-company: "[[Apex Labs]]"
-source_created_at: 2024-12-19T10:12:00
-source_observed_at: 2024-12-19T11:02:00
-created_at: 2024-12-19T18:12:00
-updated_at: 2025-02-25T01:12:00
+company: "[[Summit Health]]"
+source_created_at: 2024-12-19T15:35:00
+source_observed_at: 2024-12-19T17:36:00
+created_at: 2024-12-19T19:35:00
+updated_at: 2025-01-27T21:35:00
 tags: [#project]
 ---
 # Project Atlas 121
 
 ## Overview
-Project Atlas 121 supports [[Apex Labs]] through consulting delivery.
+Project Atlas 121 supports [[Summit Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Zoe Usman]]
-- [[Grace Tan]]
-- [[David Walker]]
-- [[Uma Lee]]
+- [[Jonah Kim]]
+- [[Zoe Ortega]]
+- [[Nadia Tan]]
 
 ## Operating Notes
-- Owner: [[Priya Evans]]
+- Evergreen owner: [[Priya Evans]]
+- Client account: [[Summit Health]]
 - Status: `blocked`
 - [ ] Reconcile latest state for [[Project Atlas 121]] #ops

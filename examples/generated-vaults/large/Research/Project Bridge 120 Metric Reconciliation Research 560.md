@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Bridge 120]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2025-06-06T11:42:00
-source_observed_at: 2025-06-06T13:59:00
-created_at: 2025-06-07T21:42:00
-updated_at: 2025-06-14T22:42:00
+company: "[[Atlas Media]]"
+source_created_at: 2026-01-09T12:08:00
+source_observed_at: 2026-01-09T12:49:00
+created_at: 2026-01-09T23:08:00
+updated_at: 2026-02-08T07:08:00
 tags: [#research]
 ---
 # Project Bridge 120 Metric Reconciliation Research 560
 
 ## Research Summary
-Research on metric reconciliation for [[Project Bridge 120]] and [[Northstar Labs]].
+Research on metric reconciliation for [[Project Bridge 120]] and [[Atlas Media]].
 
 ## Evidence
 - Interview notes from [[Omar Evans]]

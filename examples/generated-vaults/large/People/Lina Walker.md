@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-11-01T10:54:00
-source_observed_at: 2023-11-01T12:15:00
-created_at: 2023-11-02T10:54:00
-updated_at: 2023-12-31T12:54:00
+company: "[[Noble FinTech]]"
+role: "Executive Sponsor"
+source_created_at: 2023-11-02T09:00:00
+source_observed_at: 2023-11-02T09:11:00
+created_at: 2023-11-02T16:00:00
+updated_at: 2024-01-30T20:00:00
 tags: [#person]
 ---
 # Lina Walker
 
 ## Role
-Lina Walker is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Lina Walker is the Executive Sponsor at [[Noble FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Compass 38]] ([[Noble FinTech]])
 - [ ] Confirm next update with [[Lina Walker]] #follow-up

@@ -3,11 +3,11 @@ type: decision
 date: 2024-08-10
 status: active
 project: "[[Project Venture 88]]"
-company: "[[Noble Media]]"
-source_created_at: 2024-08-10T13:58:00
-source_observed_at: 2024-08-10T14:30:00
-created_at: 2024-08-10T17:54:00
-updated_at: 2024-08-11T11:54:00
+company: "[[Noble Retail]]"
+source_created_at: 2024-08-10T13:10:00
+source_observed_at: 2024-08-10T15:02:00
+created_at: 2024-08-10T15:07:00
+updated_at: 2024-08-10T21:07:00
 tags: [#decision]
 ---
 # Project Venture 88 Handoff Readiness Decision 88
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Venture 88]].
 
 ## Context
-This decision applies to [[Noble Media]] and [[Project Venture 88]].
-It follows [[Project Venture 88 Lineage Audit Sync 968]].
+This decision applies to [[Noble Retail]] and [[Project Venture 88]].
+It follows [[Project Venture 88 Lineage Audit Sync 88]].
 It incorporates [[Project Venture 88 Finance Approval Research 88]].
 
 ## Supersession

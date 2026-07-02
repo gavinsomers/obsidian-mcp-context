@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-09-02T11:33:00
-source_observed_at: 2023-09-02T13:00:00
-created_at: 2023-09-03T12:33:00
-updated_at: 2023-09-21T15:33:00
+company: "[[Harbor Media]]"
+role: "Data Owner"
+source_created_at: 2023-10-07T13:35:00
+source_observed_at: 2023-10-07T15:08:00
+created_at: 2023-10-08T17:35:00
+updated_at: 2024-10-26T13:00:00
 tags: [#person]
 ---
 # Marcus Patel
 
 ## Role
-Marcus Patel is the Solution Architect at [[Evergreen Analytics]].
+Marcus Patel is the Data Owner at [[Harbor Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 108]] ([[Harbor Media]])
 - [ ] Confirm next update with [[Marcus Patel]] #follow-up

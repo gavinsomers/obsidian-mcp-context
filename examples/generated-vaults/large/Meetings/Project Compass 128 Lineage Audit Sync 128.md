@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-02-01
 project: "[[Project Compass 128]]"
-company: "[[Atlas Labs]]"
-source_created_at: 2025-02-01T11:02:00
-source_observed_at: 2025-02-01T12:00:00
-created_at: 2025-02-01T13:02:00
-updated_at: 2025-02-01T18:02:00
+company: "[[Cobalt Labs]]"
+source_created_at: 2025-02-01T12:05:00
+source_observed_at: 2025-02-01T12:58:00
+created_at: 2025-02-10T14:05:00
+updated_at: 2025-02-10T16:05:00
 tags: [#meeting]
 ---
 # Project Compass 128 Lineage Audit Sync 128
 
-## Attendees
-- [[David Quinn]]
-- [[Tara Tan]]
-- [[Nadia Shah]]
+## Evergreen Attendees
+- [[Xavier Evans]]
+
+## Client Attendees
+- [[Marcus Vance]]
+- [[Uma Haddad]]
+- [[Yara Quinn]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 128]] at [[Atlas Labs]].
-[[Xavier Evans]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 128]] at [[Cobalt Labs]].
+[[Xavier Evans]] aligned with [[Marcus Vance]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 128]] to [[Xavier Evans]] #follow-up

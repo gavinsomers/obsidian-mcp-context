@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-29
 status: active
 project: "[[Project Compass 83]]"
-company: "[[Quantum Media]]"
-source_created_at: 2025-05-29T10:24:00
-source_observed_at: 2025-05-29T11:21:00
-created_at: 2025-05-29T13:25:00
-updated_at: 2025-05-30T00:25:00
+company: "[[Cobalt Labs]]"
+source_created_at: 2025-05-29T10:34:00
+source_observed_at: 2025-05-29T12:02:00
+created_at: 2025-05-29T15:11:00
+updated_at: 2025-05-29T17:11:00
 tags: [#decision]
 ---
 # Project Compass 83 Adoption Workflow Decision 523
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Compass 83]].
 
 ## Context
-This decision applies to [[Quantum Media]] and [[Project Compass 83]].
+This decision applies to [[Cobalt Labs]] and [[Project Compass 83]].
 It follows [[Project Compass 83 Security Review Sync 523]].
 It incorporates [[Project Compass 83 Pipeline Hygiene Research 303]].
 

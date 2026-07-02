@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-02-21
 project: "[[Project Summit 132]]"
-company: "[[Noble Labs]]"
-source_created_at: 2025-02-21T14:52:00
-source_observed_at: 2025-02-21T15:41:00
-created_at: 2025-02-21T18:44:00
-updated_at: 2025-02-22T07:44:00
+company: "[[Meridian Retail]]"
+source_created_at: 2025-02-21T16:26:00
+source_observed_at: 2025-02-21T18:38:00
+created_at: 2025-02-21T19:55:00
+updated_at: 2025-02-22T02:55:00
 tags: [#meeting]
 ---
 # Project Summit 132 Stakeholder Alignment Sync 132
 
-## Attendees
-- [[Jonah Kim]]
-- [[Nadia Haddad]]
-- [[Sam Jenkins]]
+## Evergreen Attendees
+- [[Amara Foster]]
+
+## Client Attendees
+- [[Priya Novak]]
+- [[Amara Jenkins]]
+- [[Uma Walker]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 132]] at [[Noble Labs]].
-[[Amara Foster]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Summit 132]] at [[Meridian Retail]].
+[[Amara Foster]] aligned with [[Priya Novak]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 132]] to [[Amara Foster]] #follow-up

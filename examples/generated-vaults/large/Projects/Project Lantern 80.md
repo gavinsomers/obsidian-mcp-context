@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Helio Media]]"
-source_created_at: 2024-05-31T10:07:00
-source_observed_at: 2024-05-31T11:46:00
-created_at: 2024-06-05T12:07:00
-updated_at: 2024-07-10T23:07:00
+status: active
+company: "[[Crescent Logistics]]"
+source_created_at: 2024-05-31T12:43:00
+source_observed_at: 2024-05-31T14:46:00
+created_at: 2024-06-01T16:43:00
+updated_at: 2024-07-22T22:43:00
 tags: [#project]
 ---
 # Project Lantern 80
 
 ## Overview
-Project Lantern 80 supports [[Helio Media]] through operations admin.
+Project Lantern 80 supports [[Crescent Logistics]] through operations admin.
 
 ## Stakeholders
-- [[Nadia Chen]]
-- [[Rachel Vance]]
-- [[Iris Vance]]
-- [[Kai Lee]]
+- [[Rachel Lee]]
+- [[Farah Quinn]]
+- [[Victor Usman]]
 
 ## Operating Notes
-- Owner: [[Amara Diaz]]
-- Status: `planning`
+- Evergreen owner: [[Amara Diaz]]
+- Client account: [[Crescent Logistics]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Lantern 80]] #ops

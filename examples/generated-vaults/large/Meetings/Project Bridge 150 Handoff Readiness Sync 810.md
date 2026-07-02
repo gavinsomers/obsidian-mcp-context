@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-05-19
 project: "[[Project Bridge 150]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2025-05-19T15:04:00
-source_observed_at: 2025-05-19T18:02:00
-created_at: 2025-05-19T18:45:00
-updated_at: 2025-05-19T22:45:00
+company: "[[Atlas Media]]"
+source_created_at: 2025-05-19T13:41:00
+source_observed_at: 2025-05-19T14:26:00
+created_at: 2025-05-19T16:11:00
+updated_at: 2025-05-19T17:11:00
 tags: [#meeting]
 ---
 # Project Bridge 150 Handoff Readiness Sync 810
 
-## Attendees
-- [[Kai Evans]]
-- [[Amara Shah]]
-- [[Jonah Grant]]
+## Evergreen Attendees
+- [[Tara Foster]]
+
+## Client Attendees
+- [[Xavier Kim]]
+- [[Lina Patel]]
+- [[Amara Usman]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 150]] at [[Northstar Retail]].
-[[Tara Foster]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 150]] at [[Atlas Media]].
+[[Tara Foster]] aligned with [[Xavier Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Bridge 150]] to [[Tara Foster]] #follow-up

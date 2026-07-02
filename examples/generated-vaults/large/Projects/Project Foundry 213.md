@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[BrightWave Logistics]]"
-source_created_at: 2026-03-16T16:50:00
-source_observed_at: 2026-03-16T18:00:00
-created_at: 2026-03-18T08:50:00
-updated_at: 2026-05-27T09:50:00
+company: "[[BrightWave Analytics]]"
+source_created_at: 2026-03-16T10:54:00
+source_observed_at: 2026-03-16T13:15:00
+created_at: 2026-03-16T18:54:00
+updated_at: 2026-04-06T01:54:00
 tags: [#project]
 ---
 # Project Foundry 213
 
 ## Overview
-Project Foundry 213 supports [[BrightWave Logistics]] through customer success.
+Project Foundry 213 supports [[BrightWave Analytics]] through customer success.
 
 ## Stakeholders
-- [[Iris Chen]]
-- [[Alex Tan]]
-- [[Elena Tan]]
-- [[Priya Alvarez]]
+- [[Wendy Lee]]
+- [[Kai Quinn]]
+- [[Alex Vance]]
 
 ## Operating Notes
-- Owner: [[David Ivanov]]
+- Evergreen owner: [[Lina Alvarez]]
+- Client account: [[BrightWave Analytics]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Foundry 213]] #ops

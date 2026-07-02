@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Orbit 206]]"
-source_created_at: 2026-02-28T13:55:00
-source_observed_at: 2026-02-28T14:55:00
-created_at: 2026-03-05T18:55:00
-updated_at: 2026-03-11T18:55:00
+source_created_at: 2026-02-28T08:19:00
+source_observed_at: 2026-02-28T10:34:00
+created_at: 2026-03-02T02:19:00
+updated_at: 2026-03-31T13:19:00
 tags: [#risk]
 ---
 # Project Orbit 206 Handoff Readiness Risk 426
 
 ## Risk
-Handoff Readiness may affect [[Project Orbit 206]] for [[Pioneer Media]].
+Handoff Readiness may affect [[Project Orbit 206]] for [[BrightWave Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Orbit 206 Metric Reconciliation Sync 866]]
+- Raised after [[Project Orbit 206 Metric Reconciliation Sync 646]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Xavier Haddad]]
+- Status: `closed`
+- Owner: [[Elena Alvarez]]
 - [ ] Reassess [[Project Orbit 206 Handoff Readiness Risk 426]] during the next review #risk

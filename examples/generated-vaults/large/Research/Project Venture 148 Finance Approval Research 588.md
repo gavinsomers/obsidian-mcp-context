@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Venture 148]]"
-company: "[[Crescent FinTech]]"
-source_created_at: 2025-10-08T12:24:00
-source_observed_at: 2025-10-08T14:03:00
-created_at: 2025-10-09T01:24:00
-updated_at: 2025-11-06T09:24:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2025-11-03T16:47:00
+source_observed_at: 2025-11-03T18:42:00
+created_at: 2025-11-04T15:47:00
+updated_at: 2025-12-02T02:47:00
 tags: [#research]
 ---
 # Project Venture 148 Finance Approval Research 588
 
 ## Research Summary
-Research on finance approval for [[Project Venture 148]] and [[Crescent FinTech]].
+Research on finance approval for [[Project Venture 148]] and [[Harbor FinTech]].
 
 ## Evidence
 - Interview notes from [[Rachel Foster]]

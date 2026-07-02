@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: enterprise
-source_created_at: 2023-05-27T11:29:00
-source_observed_at: 2023-05-27T12:06:00
-created_at: 2023-05-27T13:29:00
-updated_at: 2023-07-30T18:29:00
+source_created_at: 2023-05-27T13:35:00
+source_observed_at: 2023-05-27T14:55:00
+created_at: 2023-05-29T03:35:00
+updated_at: 2023-08-20T09:35:00
 tags: [#company]
 ---
 # BrightWave FinTech
@@ -14,6 +14,10 @@ tags: [#company]
 BrightWave FinTech is a enterprise account currently marked `active`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Jonah Ivanov]] - Operations Manager
+- [[Zoe Morgan]] - Finance Lead
 
 ## Projects
 

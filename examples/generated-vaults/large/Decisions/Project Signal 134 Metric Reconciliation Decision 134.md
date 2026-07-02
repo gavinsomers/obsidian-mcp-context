@@ -3,11 +3,11 @@ type: decision
 date: 2025-03-23
 status: active
 project: "[[Project Signal 134]]"
-company: "[[Keystone Labs]]"
-source_created_at: 2025-03-23T10:03:00
-source_observed_at: 2025-03-23T12:02:00
-created_at: 2025-03-23T12:07:00
-updated_at: 2025-03-23T16:07:00
+company: "[[Helio Analytics]]"
+source_created_at: 2025-03-23T12:45:00
+source_observed_at: 2025-03-23T13:53:00
+created_at: 2025-03-23T13:58:00
+updated_at: 2025-03-24T02:58:00
 tags: [#decision]
 ---
 # Project Signal 134 Metric Reconciliation Decision 134
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Signal 134]].
 
 ## Context
-This decision applies to [[Keystone Labs]] and [[Project Signal 134]].
-It follows [[Project Signal 134 Finance Approval Sync 1674]].
-It incorporates [[Project Signal 134 Handoff Readiness Research 134]].
+This decision applies to [[Helio Analytics]] and [[Project Signal 134]].
+It follows [[Project Signal 134 Finance Approval Sync 1234]].
+It incorporates [[Project Signal 134 Handoff Readiness Research 354]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

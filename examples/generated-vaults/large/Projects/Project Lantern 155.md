@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Meridian Retail]]"
-source_created_at: 2025-06-04T16:25:00
-source_observed_at: 2025-06-04T19:05:00
-created_at: 2025-06-05T19:25:00
-updated_at: 2025-07-23T04:25:00
+status: active
+company: "[[Helio Manufacturing]]"
+source_created_at: 2025-06-04T11:45:00
+source_observed_at: 2025-06-04T13:33:00
+created_at: 2025-06-06T03:45:00
+updated_at: 2025-07-22T04:45:00
 tags: [#project]
 ---
 # Project Lantern 155
 
 ## Overview
-Project Lantern 155 supports [[Meridian Retail]] through operations admin.
+Project Lantern 155 supports [[Helio Manufacturing]] through operations admin.
 
 ## Stakeholders
-- [[Ben Patel]]
-- [[Grace Jenkins]]
-- [[Omar Rostova]]
-- [[Marcus Kim]]
+- [[Omar Jenkins]]
+- [[David Ortega]]
+- [[Tara Shah]]
 
 ## Operating Notes
-- Owner: [[Yara Foster]]
-- Status: `planning`
+- Evergreen owner: [[Yara Foster]]
+- Client account: [[Helio Manufacturing]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Lantern 155]] #ops

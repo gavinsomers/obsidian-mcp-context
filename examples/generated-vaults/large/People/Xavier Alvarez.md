@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Technical Director"
-source_created_at: 2023-04-28T10:24:00
-source_observed_at: 2023-04-28T11:52:00
-created_at: 2023-04-29T06:24:00
-updated_at: 2023-05-29T08:24:00
+source_created_at: 2023-04-28T14:06:00
+source_observed_at: 2023-04-28T17:03:00
+created_at: 2023-04-29T11:06:00
+updated_at: 2023-09-09T13:00:00
 tags: [#person]
 ---
 # Xavier Alvarez
@@ -14,5 +14,5 @@ tags: [#person]
 Xavier Alvarez is the Technical Director at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Harbor 24]] ([[Pioneer Health]])
 - [ ] Confirm next update with [[Xavier Alvarez]] #follow-up

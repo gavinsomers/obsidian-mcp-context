@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-12-23
 project: "[[Project Bridge 120]]"
-company: "[[Northstar Labs]]"
+company: "[[Atlas Media]]"
 source_created_at: 2024-12-23T15:41:00
-source_observed_at: 2024-12-23T18:01:00
-created_at: 2024-12-23T20:51:00
-updated_at: 2024-12-24T15:51:00
+source_observed_at: 2024-12-23T18:02:00
+created_at: 2024-12-23T18:07:00
+updated_at: 2024-12-24T07:07:00
 tags: [#meeting]
 ---
 # Project Bridge 120 Handoff Readiness Sync 120
 
-## Attendees
-- [[Farah Novak]]
+## Evergreen Attendees
+- [[Omar Evans]]
+
+## Client Attendees
+- [[Xavier Kim]]
 - [[Lina Patel]]
-- [[Jonah Grant]]
+- [[Amara Usman]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 120]] at [[Northstar Labs]].
-[[Omar Evans]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 120]] at [[Atlas Media]].
+[[Omar Evans]] aligned with [[Xavier Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Bridge 120]] to [[Omar Evans]] #follow-up

@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Summit 192]]"
-source_created_at: 2025-12-21T12:32:00
-source_observed_at: 2025-12-21T14:10:00
-created_at: 2025-12-21T19:32:00
-updated_at: 2026-01-12T05:32:00
+source_created_at: 2025-12-21T14:19:00
+source_observed_at: 2025-12-21T15:04:00
+created_at: 2025-12-23T13:19:00
+updated_at: 2026-01-01T19:19:00
 tags: [#risk]
 ---
 # Project Summit 192 Metric Reconciliation Risk 412
 
 ## Risk
-Metric Reconciliation may affect [[Project Summit 192]] for [[Noble Health]].
+Metric Reconciliation may affect [[Project Summit 192]] for [[Apex Health]].
 
 ## Evidence
 - Raised after [[Project Summit 192 Stakeholder Alignment Sync 1732]]

@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-10-26T10:31:00
-source_observed_at: 2023-10-26T13:26:00
-created_at: 2023-10-26T19:31:00
-updated_at: 2023-12-15T02:31:00
+company: "[[Quantum Labs]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-10-23T13:57:00
+source_observed_at: 2023-10-23T15:47:00
+created_at: 2023-10-24T23:57:00
+updated_at: 2026-03-06T13:00:00
 tags: [#person]
 ---
 # Sam Vance
 
 ## Role
-Sam Vance is the Data Platform Engineer at [[Evergreen Analytics]].
+Sam Vance is the Revenue Operations Lead at [[Quantum Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 55]] ([[Quantum Labs]])
+- Client stakeholder on [[Project Signal 209]] ([[Quantum Labs]])
 - [ ] Confirm next update with [[Sam Vance]] #follow-up

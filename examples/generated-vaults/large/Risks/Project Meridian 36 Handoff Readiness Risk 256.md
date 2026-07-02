@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Meridian 36]]"
-source_created_at: 2024-01-03T08:24:00
-source_observed_at: 2024-01-03T11:15:00
-created_at: 2024-01-05T02:24:00
-updated_at: 2024-02-04T05:24:00
+source_created_at: 2024-03-20T10:41:00
+source_observed_at: 2024-03-20T11:47:00
+created_at: 2024-03-22T02:41:00
+updated_at: 2024-04-12T02:41:00
 tags: [#risk]
 ---
 # Project Meridian 36 Handoff Readiness Risk 256
 
 ## Risk
-Handoff Readiness may affect [[Project Meridian 36]] for [[Meridian Retail]].
+Handoff Readiness may affect [[Project Meridian 36]] for [[Harbor Analytics]].
 
 ## Evidence
-- Raised after [[Project Meridian 36 Metric Reconciliation Sync 1356]]
+- Raised after [[Project Meridian 36 Metric Reconciliation Sync 1136]]
 
 ## Current State
-- Status: `closed`
+- Status: `open`
 - Owner: [[Iris Bennett]]
 - [ ] Reassess [[Project Meridian 36 Handoff Readiness Risk 256]] during the next review #risk

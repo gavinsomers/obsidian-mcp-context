@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-09-27T14:25:00
-source_observed_at: 2023-09-27T14:52:00
-created_at: 2023-09-27T16:25:00
-updated_at: 2023-11-30T03:25:00
+company: "[[Summit Retail]]"
+role: "Security Contact"
+source_created_at: 2023-09-10T12:12:00
+source_observed_at: 2023-09-10T12:22:00
+created_at: 2023-09-18T13:12:00
+updated_at: 2025-10-25T13:00:00
 tags: [#person]
 ---
 # Jonah Shah
 
 ## Role
-Jonah Shah is the Client Partner at [[Evergreen Analytics]].
+Jonah Shah is the Security Contact at [[Summit Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Summit 147]] ([[Summit Retail]])
+- Client stakeholder on [[Project Signal 179]] ([[Summit Retail]])
+- Client stakeholder on [[Project Beacon 182]] ([[Summit Retail]])
 - [ ] Confirm next update with [[Jonah Shah]] #follow-up

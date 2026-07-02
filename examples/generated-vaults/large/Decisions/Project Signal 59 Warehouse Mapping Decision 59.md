@@ -3,11 +3,11 @@ type: decision
 date: 2024-03-21
 status: active
 project: "[[Project Signal 59]]"
-company: "[[Crescent Manufacturing]]"
-source_created_at: 2024-03-21T13:49:00
-source_observed_at: 2024-03-21T14:19:00
-created_at: 2024-03-21T14:24:00
-updated_at: 2024-03-21T19:24:00
+company: "[[BrightWave FinTech]]"
+source_created_at: 2024-03-21T14:48:00
+source_observed_at: 2024-03-21T16:19:00
+created_at: 2024-03-21T17:13:00
+updated_at: 2024-03-22T14:13:00
 tags: [#decision]
 ---
 # Project Signal 59 Warehouse Mapping Decision 59
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Signal 59]].
 
 ## Context
-This decision applies to [[Crescent Manufacturing]] and [[Project Signal 59]].
+This decision applies to [[BrightWave FinTech]] and [[Project Signal 59]].
 It follows [[Project Signal 59 Pipeline Hygiene Sync 1599]].
 It incorporates [[Project Signal 59 Adoption Workflow Research 59]].
 

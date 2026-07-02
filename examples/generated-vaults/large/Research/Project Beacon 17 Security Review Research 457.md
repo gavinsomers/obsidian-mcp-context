@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Beacon 17]]"
-company: "[[Apex FinTech]]"
-source_created_at: 2025-07-15T11:03:00
-source_observed_at: 2025-07-15T14:01:00
-created_at: 2025-07-17T09:03:00
-updated_at: 2025-08-01T19:03:00
+company: "[[Noble Health]]"
+source_created_at: 2025-07-15T14:27:00
+source_observed_at: 2025-07-15T17:06:00
+created_at: 2025-07-16T19:27:00
+updated_at: 2025-08-26T21:27:00
 tags: [#research]
 ---
 # Project Beacon 17 Security Review Research 457
 
 ## Research Summary
-Research on security review for [[Project Beacon 17]] and [[Apex FinTech]].
+Research on security review for [[Project Beacon 17]] and [[Noble Health]].
 
 ## Evidence
 - Interview notes from [[Priya Alvarez]]

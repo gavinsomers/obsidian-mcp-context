@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Foundry 123]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2026-01-14T13:38:00
-source_observed_at: 2026-01-14T16:23:00
-created_at: 2026-01-16T05:38:00
-updated_at: 2026-02-13T11:38:00
+company: "[[Apex Retail]]"
+source_created_at: 2026-01-14T08:33:00
+source_observed_at: 2026-01-14T09:32:00
+created_at: 2026-01-15T17:33:00
+updated_at: 2026-02-24T04:33:00
 tags: [#research]
 ---
 # Project Foundry 123 Pipeline Hygiene Research 563
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Foundry 123]] and [[BrightWave Labs]].
+Research on pipeline hygiene for [[Project Foundry 123]] and [[Apex Retail]].
 
 ## Evidence
 - Interview notes from [[Sam Evans]]

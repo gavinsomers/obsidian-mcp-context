@@ -2,23 +2,25 @@
 type: meeting
 date: 2023-09-04
 project: "[[Project Compass 23]]"
-company: "[[Quantum FinTech]]"
-source_created_at: 2023-09-04T15:32:00
-source_observed_at: 2023-09-04T18:21:00
-created_at: 2023-09-04T19:32:00
-updated_at: 2023-09-05T10:32:00
+company: "[[Northstar Retail]]"
+source_created_at: 2023-09-04T14:55:00
+source_observed_at: 2023-09-04T16:12:00
+created_at: 2023-09-04T20:30:00
+updated_at: 2023-09-05T10:30:00
 tags: [#meeting]
 ---
 # Project Compass 23 Security Review Sync 23
 
-## Attendees
-- [[Nadia Diaz]]
-- [[Clara Haddad]]
-- [[Ben Grant]]
+## Evergreen Attendees
+- [[Wendy Alvarez]]
+
+## Client Attendees
+- [[Wendy Ivanov]]
+- [[Kai Novak]]
 
 ## Notes
-Security Review reviewed for [[Project Compass 23]] at [[Quantum FinTech]].
-[[Wendy Alvarez]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Compass 23]] at [[Northstar Retail]].
+[[Wendy Alvarez]] aligned with [[Wendy Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 23]] to [[Wendy Alvarez]] #follow-up

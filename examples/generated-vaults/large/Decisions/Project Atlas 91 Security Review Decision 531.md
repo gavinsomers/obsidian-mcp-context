@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-06-10
+date: 2025-01-15
 status: active
 project: "[[Project Atlas 91]]"
-company: "[[Northstar Logistics]]"
-source_created_at: 2025-06-10T16:54:00
-source_observed_at: 2025-06-10T17:23:00
-created_at: 2025-06-16T17:54:00
-updated_at: 2025-06-17T06:54:00
+company: "[[Pioneer Analytics]]"
+source_created_at: 2025-01-15T13:15:00
+source_observed_at: 2025-01-15T15:00:00
+created_at: 2025-01-15T15:43:00
+updated_at: 2025-01-15T18:43:00
 tags: [#decision]
 ---
 # Project Atlas 91 Security Review Decision 531
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with security review for [[Project Atlas 91]].
 
 ## Context
-This decision applies to [[Northstar Logistics]] and [[Project Atlas 91]].
-It follows [[Project Atlas 91 Warehouse Mapping Sync 531]].
+This decision applies to [[Pioneer Analytics]] and [[Project Atlas 91]].
+It follows [[Project Atlas 91 Warehouse Mapping Sync 1411]].
 It incorporates [[Project Atlas 91 Contract Renewal Research 311]].
 
 ## Supersession

@@ -3,11 +3,11 @@ type: decision
 date: 2026-01-02
 status: active
 project: "[[Project Beacon 17]]"
-company: "[[Apex FinTech]]"
-source_created_at: 2026-01-02T13:03:00
-source_observed_at: 2026-01-02T15:29:00
-created_at: 2026-01-07T13:03:00
-updated_at: 2026-01-07T19:03:00
+company: "[[Noble Health]]"
+source_created_at: 2026-01-02T11:12:00
+source_observed_at: 2026-01-02T12:44:00
+created_at: 2026-01-02T16:09:00
+updated_at: 2026-01-03T15:09:00
 tags: [#decision]
 ---
 # Project Beacon 17 Pipeline Hygiene Decision 677
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Beacon 17]].
 
 ## Context
-This decision applies to [[Apex FinTech]] and [[Project Beacon 17]].
+This decision applies to [[Noble Health]] and [[Project Beacon 17]].
 It follows [[Project Beacon 17 Contract Renewal Sync 677]].
 It incorporates [[Project Beacon 17 Security Review Research 457]].
 

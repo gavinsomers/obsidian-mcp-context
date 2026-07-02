@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Meridian 51]]"
-source_created_at: 2024-06-30T10:47:00
-source_observed_at: 2024-06-30T12:06:00
-created_at: 2024-07-09T13:47:00
-updated_at: 2024-07-15T19:47:00
+source_created_at: 2025-06-23T16:30:00
+source_observed_at: 2025-06-23T17:13:00
+created_at: 2025-07-02T22:30:00
+updated_at: 2025-08-16T03:30:00
 tags: [#risk]
 ---
 # Project Meridian 51 Adoption Workflow Risk 491
 
 ## Risk
-Adoption Workflow may affect [[Project Meridian 51]] for [[Meridian Manufacturing]].
+Adoption Workflow may affect [[Project Meridian 51]] for [[Summit FinTech]].
 
 ## Evidence
-- Raised after [[Project Meridian 51 Warehouse Mapping Sync 711]]
+- Raised after [[Project Meridian 51 Warehouse Mapping Sync 491]]
 
 ## Current State
 - Status: `open`

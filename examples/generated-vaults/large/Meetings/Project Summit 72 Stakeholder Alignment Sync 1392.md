@@ -1,24 +1,27 @@
 ---
 type: meeting
-date: 2025-09-16
+date: 2024-09-13
 project: "[[Project Summit 72]]"
-company: "[[Pioneer Health]]"
-source_created_at: 2025-09-16T15:35:00
-source_observed_at: 2025-09-16T17:52:00
-created_at: 2025-09-16T17:57:00
-updated_at: 2025-09-16T19:57:00
+company: "[[Cobalt Media]]"
+source_created_at: 2024-09-13T16:08:00
+source_observed_at: 2024-09-13T18:50:00
+created_at: 2024-09-13T18:55:00
+updated_at: 2024-09-14T02:55:00
 tags: [#meeting]
 ---
 # Project Summit 72 Stakeholder Alignment Sync 1392
 
-## Attendees
-- [[Sam Rostova]]
-- [[Hannah Walker]]
-- [[Amara Grant]]
+## Evergreen Attendees
+- [[Tara Chen]]
+
+## Client Attendees
+- [[Rachel Kim]]
+- [[Farah Patel]]
+- [[Victor Tan]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 72]] at [[Pioneer Health]].
-[[Tara Chen]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Summit 72]] at [[Cobalt Media]].
+[[Tara Chen]] aligned with [[Rachel Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 72]] to [[Tara Chen]] #follow-up

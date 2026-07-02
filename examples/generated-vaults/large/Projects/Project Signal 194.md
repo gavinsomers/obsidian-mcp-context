@@ -1,25 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Keystone Health]]"
-source_created_at: 2025-12-12T15:48:00
-source_observed_at: 2025-12-12T17:38:00
-created_at: 2025-12-14T10:48:00
-updated_at: 2026-01-06T18:48:00
+company: "[[Crescent Media]]"
+source_created_at: 2025-12-12T08:12:00
+source_observed_at: 2025-12-12T08:50:00
+created_at: 2025-12-14T06:12:00
+updated_at: 2026-01-21T06:12:00
 tags: [#project]
 ---
 # Project Signal 194
 
 ## Overview
-Project Signal 194 supports [[Keystone Health]] through research program.
+Project Signal 194 supports [[Crescent Media]] through research program.
 
 ## Stakeholders
-- [[Sam Rostova]]
-- [[Omar Ortega]]
-- [[Priya Diaz]]
-- [[Ben Vance]]
+- [[Ben Lee]]
+- [[Rachel Patel]]
+- [[Farah Usman]]
 
 ## Operating Notes
-- Owner: [[Kai Haddad]]
+- Evergreen owner: [[Kai Haddad]]
+- Client account: [[Crescent Media]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 194]] #ops

@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[Quantum Manufacturing]]"
-source_created_at: 2025-08-27T16:11:00
-source_observed_at: 2025-08-27T16:25:00
-created_at: 2025-08-28T07:11:00
-updated_at: 2025-10-12T18:11:00
+company: "[[BrightWave Retail]]"
+source_created_at: 2025-08-27T15:29:00
+source_observed_at: 2025-08-27T18:19:00
+created_at: 2025-08-29T07:29:00
+updated_at: 2025-09-12T12:29:00
 tags: [#project]
 ---
 # Project Pipeline 172
 
 ## Overview
-Project Pipeline 172 supports [[Quantum Manufacturing]] through sales pipeline.
+Project Pipeline 172 supports [[BrightWave Retail]] through sales pipeline.
 
 ## Stakeholders
-- [[Omar Shah]]
-- [[Farah Bennett]]
-- [[Grace Lee]]
-- [[Ben Quinn]]
+- [[Zoe Ivanov]]
+- [[Nadia Novak]]
+- [[Clara Shah]]
+- [[Sam Walker]]
 
 ## Operating Notes
-- Owner: [[Omar Grant]]
+- Evergreen owner: [[Omar Grant]]
+- Client account: [[BrightWave Retail]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Pipeline 172]] #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-10-23T13:00:00
-source_observed_at: 2023-10-23T14:22:00
-created_at: 2023-10-24T10:00:00
-updated_at: 2024-01-03T18:00:00
+company: "[[Noble Analytics]]"
+role: "Data Owner"
+source_created_at: 2023-12-12T09:45:00
+source_observed_at: 2023-12-12T10:25:00
+created_at: 2023-12-15T15:45:00
+updated_at: 2025-03-13T13:00:00
 tags: [#person]
 ---
 # Iris Vance
 
 ## Role
-Iris Vance is the Solution Architect at [[Evergreen Analytics]].
+Iris Vance is the Data Owner at [[Noble Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Atlas 136]] ([[Noble Analytics]])
 - [ ] Confirm next update with [[Iris Vance]] #follow-up

@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2026-01-07
+date: 2023-12-07
 status: active
 project: "[[Project Lantern 20]]"
-company: "[[Helio FinTech]]"
-source_created_at: 2026-01-07T13:56:00
-source_observed_at: 2026-01-07T16:51:00
-created_at: 2026-01-07T18:31:00
-updated_at: 2026-01-07T19:31:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2023-12-07T08:54:00
+source_observed_at: 2023-12-07T11:51:00
+created_at: 2023-12-07T13:44:00
+updated_at: 2023-12-08T08:44:00
 tags: [#decision]
 ---
 # Project Lantern 20 Stakeholder Alignment Decision 680
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Lantern 20]].
 
 ## Context
-This decision applies to [[Helio FinTech]] and [[Project Lantern 20]].
+This decision applies to [[Vanguard Manufacturing]] and [[Project Lantern 20]].
 It follows [[Project Lantern 20 Handoff Readiness Sync 680]].
 It incorporates [[Project Lantern 20 Metric Reconciliation Research 460]].
 

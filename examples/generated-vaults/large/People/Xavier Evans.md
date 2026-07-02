@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Technical Director"
-source_created_at: 2023-06-02T13:45:00
-source_observed_at: 2023-06-02T15:50:00
-created_at: 2023-06-06T13:45:00
-updated_at: 2023-08-02T18:45:00
+source_created_at: 2023-06-02T09:19:00
+source_observed_at: 2023-06-02T11:10:00
+created_at: 2023-06-04T05:19:00
+updated_at: 2025-02-01T13:00:00
 tags: [#person]
 ---
 # Xavier Evans
@@ -14,5 +14,5 @@ tags: [#person]
 Xavier Evans is the Technical Director at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Compass 128]] ([[Cobalt Labs]])
 - [ ] Confirm next update with [[Xavier Evans]] #follow-up

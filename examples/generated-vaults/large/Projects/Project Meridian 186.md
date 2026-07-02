@@ -1,26 +1,27 @@
 ---
 type: project
 status: closed
-company: "[[Vanguard Health]]"
-source_created_at: 2025-11-04T10:00:00
-source_observed_at: 2025-11-04T10:25:00
-created_at: 2025-11-05T18:00:00
-updated_at: 2025-12-24T03:00:00
+company: "[[Quantum Retail]]"
+source_created_at: 2025-11-04T09:29:00
+source_observed_at: 2025-11-04T12:28:00
+created_at: 2025-11-05T03:29:00
+updated_at: 2026-01-03T07:29:00
 tags: [#project]
 ---
 # Project Meridian 186
 
 ## Overview
-Project Meridian 186 supports [[Vanguard Health]] through consulting delivery.
+Project Meridian 186 supports [[Quantum Retail]] through consulting delivery.
 
 ## Stakeholders
-- [[Victor Lee]]
-- [[Victor Kim]]
-- [[Jonah Chen]]
-- [[Yara Vance]]
+- [[Clara Jenkins]]
+- [[Sam Novak]]
+- [[Grace Shah]]
+- [[Wendy Walker]]
 
 ## Operating Notes
-- Owner: [[Clara Haddad]]
+- Evergreen owner: [[Clara Haddad]]
+- Client account: [[Quantum Retail]]
 - Status: `closed`
-- Closed at: `2026-06-25`
+- Closed at: `2026-05-11`
 - [ ] Reconcile latest state for [[Project Meridian 186]] #ops

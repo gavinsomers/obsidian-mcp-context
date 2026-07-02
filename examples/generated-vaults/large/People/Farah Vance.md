@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-10-22T12:12:00
-source_observed_at: 2023-10-22T12:27:00
-created_at: 2023-10-30T13:12:00
-updated_at: 2024-01-17T19:12:00
+company: "[[Harbor Analytics]]"
+role: "Executive Sponsor"
+source_created_at: 2023-12-06T10:20:00
+source_observed_at: 2023-12-06T12:50:00
+created_at: 2023-12-07T11:20:00
+updated_at: 2025-04-17T13:00:00
 tags: [#person]
 ---
 # Farah Vance
 
 ## Role
-Farah Vance is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Farah Vance is the Executive Sponsor at [[Harbor Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Meridian 36]] ([[Harbor Analytics]])
+- Client stakeholder on [[Project Compass 143]] ([[Harbor Analytics]])
 - [ ] Confirm next update with [[Farah Vance]] #follow-up

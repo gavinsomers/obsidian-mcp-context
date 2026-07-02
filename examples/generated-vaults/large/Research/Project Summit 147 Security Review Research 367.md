@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Summit 147]]"
-company: "[[Noble FinTech]]"
-source_created_at: 2025-05-19T08:29:00
-source_observed_at: 2025-05-19T11:14:00
-created_at: 2025-05-20T22:29:00
-updated_at: 2025-06-20T03:29:00
+company: "[[Summit Retail]]"
+source_created_at: 2025-05-19T15:07:00
+source_observed_at: 2025-05-19T15:23:00
+created_at: 2025-05-21T05:07:00
+updated_at: 2025-06-25T15:07:00
 tags: [#research]
 ---
 # Project Summit 147 Security Review Research 367
 
 ## Research Summary
-Research on security review for [[Project Summit 147]] and [[Noble FinTech]].
+Research on security review for [[Project Summit 147]] and [[Summit Retail]].
 
 ## Evidence
 - Interview notes from [[Priya Foster]]
-- Related operating review: [[Project Summit 147 Contract Renewal Sync 1687]]
+- Related operating review: [[Project Summit 147 Contract Renewal Sync 807]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Summit 147]] #research

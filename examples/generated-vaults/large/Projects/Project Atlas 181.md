@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Apex Health]]"
-source_created_at: 2025-10-09T14:04:00
-source_observed_at: 2025-10-09T16:17:00
-created_at: 2025-10-13T14:04:00
-updated_at: 2025-11-30T22:04:00
+status: planning
+company: "[[Summit Manufacturing]]"
+source_created_at: 2025-10-09T14:05:00
+source_observed_at: 2025-10-09T14:25:00
+created_at: 2025-10-10T21:05:00
+updated_at: 2025-11-22T07:05:00
 tags: [#project]
 ---
 # Project Atlas 181
 
 ## Overview
-Project Atlas 181 supports [[Apex Health]] through consulting delivery.
+Project Atlas 181 supports [[Summit Manufacturing]] through consulting delivery.
 
 ## Stakeholders
-- [[Hannah Bennett]]
-- [[Omar Rostova]]
-- [[Xavier Bennett]]
-- [[Priya Jenkins]]
+- [[Victor Jenkins]]
+- [[Jonah Ortega]]
+- [[Zoe Shah]]
 
 ## Operating Notes
-- Owner: [[Yara Grant]]
-- Status: `active`
+- Evergreen owner: [[Yara Grant]]
+- Client account: [[Summit Manufacturing]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Atlas 181]] #ops

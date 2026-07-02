@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Pipeline 172]]"
-company: "[[Quantum Manufacturing]]"
-source_created_at: 2026-04-09T14:04:00
-source_observed_at: 2026-04-09T15:15:00
-created_at: 2026-04-14T18:04:00
-updated_at: 2026-05-22T22:04:00
+company: "[[BrightWave Retail]]"
+source_created_at: 2026-04-09T15:06:00
+source_observed_at: 2026-04-09T16:44:00
+created_at: 2026-04-10T10:06:00
+updated_at: 2026-05-09T10:06:00
 tags: [#research]
 ---
 # Project Pipeline 172 Lineage Audit Research 612
 
 ## Research Summary
-Research on lineage audit for [[Project Pipeline 172]] and [[Quantum Manufacturing]].
+Research on lineage audit for [[Project Pipeline 172]] and [[BrightWave Retail]].
 
 ## Evidence
 - Interview notes from [[Omar Grant]]

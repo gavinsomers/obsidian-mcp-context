@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-11-17
 project: "[[Project Pipeline 187]]"
-company: "[[Quantum Health]]"
-source_created_at: 2025-11-17T13:21:00
-source_observed_at: 2025-11-17T13:44:00
-created_at: 2025-11-17T17:18:00
-updated_at: 2025-11-18T02:18:00
+company: "[[BrightWave Labs]]"
+source_created_at: 2025-11-17T08:06:00
+source_observed_at: 2025-11-17T10:18:00
+created_at: 2025-11-23T14:06:00
+updated_at: 2025-11-24T08:06:00
 tags: [#meeting]
 ---
 # Project Pipeline 187 Contract Renewal Sync 1287
 
-## Attendees
-- [[Xavier Grant]]
-- [[Victor Quinn]]
-- [[Xavier Vance]]
+## Evergreen Attendees
+- [[David Haddad]]
+
+## Client Attendees
+- [[Victor Haddad]]
+- [[Jonah Morgan]]
+- [[Nadia Vance]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 187]] at [[Quantum Health]].
-[[David Haddad]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 187]] at [[BrightWave Labs]].
+[[David Haddad]] aligned with [[Victor Haddad]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 187]] to [[David Haddad]] #follow-up

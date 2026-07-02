@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-08-02
 project: "[[Project Bridge 165]]"
-company: "[[Northstar Manufacturing]]"
-source_created_at: 2025-08-02T10:47:00
-source_observed_at: 2025-08-02T12:42:00
-created_at: 2025-08-02T15:48:00
-updated_at: 2025-08-03T09:48:00
+company: "[[Cobalt Manufacturing]]"
+source_created_at: 2025-08-02T09:25:00
+source_observed_at: 2025-08-02T12:12:00
+created_at: 2025-08-02T14:37:00
+updated_at: 2025-08-02T23:37:00
 tags: [#meeting]
 ---
 # Project Bridge 165 Adoption Workflow Sync 1705
 
-## Attendees
-- [[Lina Grant]]
-- [[Jonah Rostova]]
-- [[Xavier Morgan]]
+## Evergreen Attendees
+- [[Hannah Grant]]
+
+## Client Attendees
+- [[Marcus Jenkins]]
+- [[Ben Ortega]]
+- [[Rachel Shah]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Bridge 165]] at [[Northstar Manufacturing]].
-[[Hannah Grant]] flagged follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Bridge 165]] at [[Cobalt Manufacturing]].
+[[Hannah Grant]] aligned with [[Marcus Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Bridge 165]] to [[Hannah Grant]] #follow-up

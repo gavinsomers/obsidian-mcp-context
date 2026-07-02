@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Foundry 78]]"
-source_created_at: 2025-08-05T16:27:00
-source_observed_at: 2025-08-05T18:27:00
-created_at: 2025-08-07T04:27:00
-updated_at: 2025-09-18T13:27:00
+source_created_at: 2024-09-12T13:05:00
+source_observed_at: 2024-09-12T14:52:00
+created_at: 2024-09-13T18:05:00
+updated_at: 2024-10-24T21:05:00
 tags: [#risk]
 ---
 # Project Foundry 78 Stakeholder Alignment Risk 518
 
 ## Risk
-Stakeholder Alignment may affect [[Project Foundry 78]] for [[Cobalt Media]].
+Stakeholder Alignment may affect [[Project Foundry 78]] for [[Vanguard Retail]].
 
 ## Evidence
-- Raised after [[Project Foundry 78 Lineage Audit Sync 518]]
+- Raised after [[Project Foundry 78 Lineage Audit Sync 738]]
 
 ## Current State
-- Status: `closed`
+- Status: `open`
 - Owner: [[Zoe Chen]]
 - [ ] Reassess [[Project Foundry 78 Stakeholder Alignment Risk 518]] during the next review #risk

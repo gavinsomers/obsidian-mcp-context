@@ -3,11 +3,11 @@ type: decision
 date: 2023-10-06
 status: active
 project: "[[Project Keystone 25]]"
-company: "[[Harbor FinTech]]"
-source_created_at: 2023-10-06T13:00:00
-source_observed_at: 2023-10-06T13:20:00
-created_at: 2023-10-06T16:00:00
-updated_at: 2023-10-06T21:00:00
+company: "[[Apex Media]]"
+source_created_at: 2023-10-06T12:53:00
+source_observed_at: 2023-10-06T15:07:00
+created_at: 2023-10-06T17:19:00
+updated_at: 2023-10-06T21:19:00
 tags: [#decision]
 ---
 # Project Keystone 25 Contract Renewal Decision 25
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Keystone 25]].
 
 ## Context
-This decision applies to [[Harbor FinTech]] and [[Project Keystone 25]].
-It follows [[Project Keystone 25 Adoption Workflow Sync 1565]].
+This decision applies to [[Apex Media]] and [[Project Keystone 25]].
+It follows [[Project Keystone 25 Adoption Workflow Sync 25]].
 It incorporates [[Project Keystone 25 Warehouse Mapping Research 25]].
 
 ## Supersession

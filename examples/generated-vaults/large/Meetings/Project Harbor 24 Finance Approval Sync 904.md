@@ -2,23 +2,26 @@
 type: meeting
 date: 2023-11-02
 project: "[[Project Harbor 24]]"
-company: "[[Atlas FinTech]]"
-source_created_at: 2023-11-02T16:48:00
-source_observed_at: 2023-11-02T18:54:00
-created_at: 2023-11-08T16:48:00
-updated_at: 2023-11-09T06:48:00
+company: "[[Pioneer Health]]"
+source_created_at: 2023-11-02T12:06:00
+source_observed_at: 2023-11-02T12:39:00
+created_at: 2023-11-02T14:56:00
+updated_at: 2023-11-03T10:56:00
 tags: [#meeting]
 ---
 # Project Harbor 24 Finance Approval Sync 904
 
-## Attendees
-- [[Sam Grant]]
-- [[Ben Patel]]
-- [[Nadia Jenkins]]
+## Evergreen Attendees
+- [[Xavier Alvarez]]
+
+## Client Attendees
+- [[Kai Kim]]
+- [[Alex Patel]]
+- [[Omar Tan]]
 
 ## Notes
-Finance Approval reviewed for [[Project Harbor 24]] at [[Atlas FinTech]].
-[[Xavier Alvarez]] flagged follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Harbor 24]] at [[Pioneer Health]].
+[[Xavier Alvarez]] aligned with [[Kai Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 24]] to [[Xavier Alvarez]] #follow-up

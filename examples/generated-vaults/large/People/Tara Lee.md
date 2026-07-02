@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-07-31T10:55:00
-source_observed_at: 2023-07-31T11:13:00
-created_at: 2023-08-01T19:55:00
-updated_at: 2023-09-08T20:55:00
+company: "[[Northstar Analytics]]"
+role: "Finance Lead"
+source_created_at: 2023-11-18T14:35:00
+source_observed_at: 2023-11-18T17:07:00
+created_at: 2023-11-19T15:35:00
+updated_at: 2026-03-21T13:00:00
 tags: [#person]
 ---
 # Tara Lee
 
 ## Role
-Tara Lee is the Senior Data Consultant at [[Evergreen Analytics]].
+Tara Lee is the Finance Lead at [[Northstar Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 32]] ([[Northstar Analytics]])
+- Client stakeholder on [[Project Foundry 63]] ([[Northstar Analytics]])
+- Client stakeholder on [[Project Beacon 212]] ([[Northstar Analytics]])
 - [ ] Confirm next update with [[Tara Lee]] #follow-up

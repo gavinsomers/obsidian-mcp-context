@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Crescent Health]]"
-source_created_at: 2025-12-08T08:38:00
-source_observed_at: 2025-12-08T10:49:00
-created_at: 2025-12-09T10:38:00
-updated_at: 2026-02-13T18:38:00
+status: blocked
+company: "[[Northstar Media]]"
+source_created_at: 2025-12-08T13:44:00
+source_observed_at: 2025-12-08T15:35:00
+created_at: 2025-12-08T20:44:00
+updated_at: 2026-01-07T22:44:00
 tags: [#project]
 ---
 # Project Venture 193
 
 ## Overview
-Project Venture 193 supports [[Crescent Health]] through customer success.
+Project Venture 193 supports [[Northstar Media]] through customer success.
 
 ## Stakeholders
-- [[Nadia Jenkins]]
-- [[Amara Kim]]
-- [[Alex Ivanov]]
-- [[Alex Novak]]
+- [[Omar Kim]]
+- [[David Patel]]
+- [[Tara Tan]]
 
 ## Operating Notes
-- Owner: [[Jonah Haddad]]
-- Status: `active`
+- Evergreen owner: [[Jonah Haddad]]
+- Client account: [[Northstar Media]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Venture 193]] #ops

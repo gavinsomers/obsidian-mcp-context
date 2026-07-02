@@ -1,25 +1,26 @@
 ---
 type: project
 status: blocked
-company: "[[Summit Health]]"
-source_created_at: 2024-04-17T13:08:00
-source_observed_at: 2024-04-17T15:41:00
-created_at: 2024-04-20T17:08:00
-updated_at: 2024-05-26T01:08:00
+company: "[[Vanguard Retail]]"
+source_created_at: 2024-04-17T11:37:00
+source_observed_at: 2024-04-17T12:38:00
+created_at: 2024-04-18T11:37:00
+updated_at: 2024-05-05T12:37:00
 tags: [#project]
 ---
 # Project Orbit 71
 
 ## Overview
-Project Orbit 71 supports [[Summit Health]] through consulting delivery.
+Project Orbit 71 supports [[Vanguard Retail]] through consulting delivery.
 
 ## Stakeholders
-- [[Priya Chen]]
-- [[Grace Jenkins]]
-- [[Kai Ortega]]
-- [[Farah Ortega]]
+- [[Ben Jenkins]]
+- [[Rachel Novak]]
+- [[Farah Shah]]
+- [[Victor Walker]]
 
 ## Operating Notes
-- Owner: [[Sam Chen]]
+- Evergreen owner: [[Sam Chen]]
+- Client account: [[Vanguard Retail]]
 - Status: `blocked`
 - [ ] Reconcile latest state for [[Project Orbit 71]] #ops

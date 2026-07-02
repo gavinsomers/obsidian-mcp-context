@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Technical Director"
-source_created_at: 2023-05-12T13:52:00
-source_observed_at: 2023-05-12T16:00:00
-created_at: 2023-05-14T07:52:00
-updated_at: 2023-06-12T17:52:00
+source_created_at: 2023-05-12T12:10:00
+source_observed_at: 2023-05-12T13:55:00
+created_at: 2023-05-13T07:10:00
+updated_at: 2024-03-24T13:00:00
 tags: [#person]
 ---
 # Kai Chen
@@ -14,5 +14,5 @@ tags: [#person]
 Kai Chen is the Technical Director at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Managing/Supporting [[Project Beacon 2]] ([[Apex Labs]])
+- Delivery owner for [[Project Horizon 64]] ([[Crescent FinTech]])
 - [ ] Confirm next update with [[Kai Chen]] #follow-up

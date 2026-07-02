@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-08-17T10:46:00
-source_observed_at: 2023-08-17T11:03:00
-created_at: 2023-08-18T14:46:00
-updated_at: 2023-10-23T18:46:00
+company: "[[Quantum Retail]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-07-11T08:42:00
+source_observed_at: 2023-07-11T10:23:00
+created_at: 2023-07-12T06:42:00
+updated_at: 2025-11-14T13:00:00
 tags: [#person]
 ---
 # Sam Novak
 
 ## Role
-Sam Novak is the Data Platform Engineer at [[Evergreen Analytics]].
+Sam Novak is the Revenue Operations Lead at [[Quantum Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 138]] ([[Quantum Retail]])
+- Client stakeholder on [[Project Meridian 186]] ([[Quantum Retail]])
 - [ ] Confirm next update with [[Sam Novak]] #follow-up

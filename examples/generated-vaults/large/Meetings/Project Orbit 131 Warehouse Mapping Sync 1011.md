@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-02-16
 project: "[[Project Orbit 131]]"
-company: "[[Pioneer Labs]]"
-source_created_at: 2025-02-16T13:30:00
-source_observed_at: 2025-02-16T16:23:00
-created_at: 2025-02-16T16:28:00
-updated_at: 2025-02-17T02:28:00
+company: "[[Vanguard Logistics]]"
+source_created_at: 2025-02-16T09:09:00
+source_observed_at: 2025-02-16T11:45:00
+created_at: 2025-02-16T11:50:00
+updated_at: 2025-02-16T14:50:00
 tags: [#meeting]
 ---
 # Project Orbit 131 Warehouse Mapping Sync 1011
 
-## Attendees
-- [[Ben Shah]]
-- [[Lina Novak]]
-- [[Zoe Usman]]
+## Evergreen Attendees
+- [[Alex Foster]]
+
+## Client Attendees
+- [[Jonah Lee]]
+- [[Zoe Patel]]
+- [[Nadia Usman]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 131]] at [[Pioneer Labs]].
-[[Alex Foster]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 131]] at [[Vanguard Logistics]].
+[[Alex Foster]] aligned with [[Jonah Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Orbit 131]] to [[Alex Foster]] #follow-up

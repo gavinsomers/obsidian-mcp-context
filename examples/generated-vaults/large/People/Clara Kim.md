@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-07-17T13:47:00
-source_observed_at: 2023-07-17T16:27:00
-created_at: 2023-07-18T19:47:00
-updated_at: 2023-09-22T21:47:00
+company: "[[BrightWave Health]]"
+role: "Customer Success Lead"
+source_created_at: 2023-08-26T10:14:00
+source_observed_at: 2023-08-26T13:01:00
+created_at: 2023-08-27T00:14:00
+updated_at: 2025-02-27T13:00:00
 tags: [#person]
 ---
 # Clara Kim
 
 ## Role
-Clara Kim is the Technical Director at [[Evergreen Analytics]].
+Clara Kim is the Customer Success Lead at [[BrightWave Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Bridge 30]] ([[BrightWave Health]])
+- Client stakeholder on [[Project Venture 133]] ([[BrightWave Health]])
 - [ ] Confirm next update with [[Clara Kim]] #follow-up

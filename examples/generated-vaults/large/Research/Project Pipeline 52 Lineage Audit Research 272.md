@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Pipeline 52]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2024-08-27T09:08:00
-source_observed_at: 2024-08-27T09:40:00
-created_at: 2024-08-27T11:08:00
-updated_at: 2024-09-02T21:08:00
+company: "[[Meridian Logistics]]"
+source_created_at: 2024-08-27T16:07:00
+source_observed_at: 2024-08-27T16:17:00
+created_at: 2024-08-28T13:07:00
+updated_at: 2024-10-04T13:07:00
 tags: [#research]
 ---
 # Project Pipeline 52 Lineage Audit Research 272
 
 ## Research Summary
-Research on lineage audit for [[Project Pipeline 52]] and [[Vanguard Manufacturing]].
+Research on lineage audit for [[Project Pipeline 52]] and [[Meridian Logistics]].
 
 ## Evidence
 - Interview notes from [[Zoe Bennett]]

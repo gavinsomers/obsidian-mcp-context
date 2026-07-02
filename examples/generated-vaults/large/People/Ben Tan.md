@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-10-03T09:50:00
-source_observed_at: 2023-10-03T12:41:00
-created_at: 2023-10-03T21:50:00
-updated_at: 2023-10-20T04:50:00
+company: "[[Crescent Manufacturing]]"
+role: "Executive Sponsor"
+source_created_at: 2023-09-19T11:20:00
+source_observed_at: 2023-09-19T12:21:00
+created_at: 2023-09-20T06:20:00
+updated_at: 2024-11-04T13:00:00
 tags: [#person]
 ---
 # Ben Tan
 
 ## Role
-Ben Tan is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Ben Tan is the Executive Sponsor at [[Crescent Manufacturing]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Atlas 31]] ([[Northstar Retail]])
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 110]] ([[Crescent Manufacturing]])
 - [ ] Confirm next update with [[Ben Tan]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Beacon 122]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2026-01-13T14:55:00
-source_observed_at: 2026-01-13T15:57:00
-created_at: 2026-01-20T21:55:00
-updated_at: 2026-01-24T21:55:00
+company: "[[Keystone FinTech]]"
+source_created_at: 2025-04-30T10:41:00
+source_observed_at: 2025-04-30T12:28:00
+created_at: 2025-05-02T00:41:00
+updated_at: 2025-05-29T02:41:00
 tags: [#research]
 ---
 # Project Beacon 122 Lineage Audit Research 562
 
 ## Research Summary
-Research on lineage audit for [[Project Beacon 122]] and [[Cobalt Labs]].
+Research on lineage audit for [[Project Beacon 122]] and [[Keystone FinTech]].
 
 ## Evidence
 - Interview notes from [[Rachel Evans]]

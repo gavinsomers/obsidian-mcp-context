@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-07-28T09:15:00
-source_observed_at: 2023-07-28T10:05:00
-created_at: 2023-07-30T06:15:00
-updated_at: 2023-09-25T16:15:00
+company: "[[Helio Logistics]]"
+role: "Security Contact"
+source_created_at: 2023-10-27T09:14:00
+source_observed_at: 2023-10-27T11:00:00
+created_at: 2023-10-27T17:14:00
+updated_at: 2025-06-08T13:00:00
 tags: [#person]
 ---
 # Hannah Lee
 
 ## Role
-Hannah Lee is the Client Partner at [[Evergreen Analytics]].
+Hannah Lee is the Security Contact at [[Helio Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Orbit 86]] ([[Helio Logistics]])
+- Client stakeholder on [[Project Horizon 154]] ([[Helio Logistics]])
 - [ ] Confirm next update with [[Hannah Lee]] #follow-up

@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Compass 218]]"
-source_created_at: 2026-04-27T11:47:00
-source_observed_at: 2026-04-27T13:34:00
-created_at: 2026-04-28T18:47:00
-updated_at: 2026-06-03T03:47:00
+source_created_at: 2026-04-27T16:28:00
+source_observed_at: 2026-04-27T18:48:00
+created_at: 2026-04-28T21:28:00
+updated_at: 2026-05-23T00:28:00
 tags: [#risk]
 ---
 # Project Compass 218 Stakeholder Alignment Risk 438
 
 ## Risk
-Stakeholder Alignment may affect [[Project Compass 218]] for [[Atlas Logistics]].
+Stakeholder Alignment may affect [[Project Compass 218]] for [[Crescent Logistics]].
 
 ## Evidence
-- Raised after [[Project Compass 218 Lineage Audit Sync 1318]]
+- Raised after [[Project Compass 218 Lineage Audit Sync 438]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Iris Ivanov]]
+- Status: `open`
+- Owner: [[Rachel Alvarez]]
 - [ ] Reassess [[Project Compass 218 Stakeholder Alignment Risk 438]] during the next review #risk

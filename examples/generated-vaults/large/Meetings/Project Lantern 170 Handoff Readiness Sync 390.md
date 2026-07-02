@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-08-28
 project: "[[Project Lantern 170]]"
-company: "[[Meridian Manufacturing]]"
-source_created_at: 2025-08-28T16:46:00
-source_observed_at: 2025-08-28T17:27:00
-created_at: 2025-08-28T21:26:00
-updated_at: 2025-08-28T23:26:00
+company: "[[Helio Health]]"
+source_created_at: 2025-08-28T12:16:00
+source_observed_at: 2025-08-28T15:08:00
+created_at: 2025-08-28T15:13:00
+updated_at: 2025-08-28T18:13:00
 tags: [#meeting]
 ---
 # Project Lantern 170 Handoff Readiness Sync 390
 
-## Attendees
-- [[Uma Bennett]]
-- [[Wendy Chen]]
-- [[Uma Walker]]
+## Evergreen Attendees
+- [[Marcus Grant]]
+
+## Client Attendees
+- [[David Kim]]
+- [[Tara Ortega]]
+- [[Hannah Tan]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 170]] at [[Meridian Manufacturing]].
-[[Marcus Grant]] flagged follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 170]] at [[Helio Health]].
+[[Marcus Grant]] aligned with [[David Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 170]] to [[Marcus Grant]] #follow-up

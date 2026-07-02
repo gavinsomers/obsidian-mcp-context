@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-11-10
 project: "[[Project Meridian 111]]"
-company: "[[Meridian Analytics]]"
-source_created_at: 2024-11-10T08:09:00
-source_observed_at: 2024-11-10T10:53:00
-created_at: 2024-11-10T12:45:00
-updated_at: 2024-11-10T16:45:00
+company: "[[Pioneer Retail]]"
+source_created_at: 2024-11-10T13:54:00
+source_observed_at: 2024-11-10T14:25:00
+created_at: 2024-11-10T18:09:00
+updated_at: 2024-11-11T13:09:00
 tags: [#meeting]
 ---
 # Project Meridian 111 Warehouse Mapping Sync 331
 
-## Attendees
-- [[Grace Foster]]
-- [[Zoe Quinn]]
-- [[Jonah Kim]]
+## Evergreen Attendees
+- [[Farah Evans]]
+
+## Client Attendees
+- [[Alex Xu]]
+- [[Grace Jenkins]]
+- [[Wendy Novak]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 111]] at [[Meridian Analytics]].
-[[Farah Evans]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 111]] at [[Pioneer Retail]].
+[[Farah Evans]] aligned with [[Alex Xu]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 111]] to [[Farah Evans]] #follow-up

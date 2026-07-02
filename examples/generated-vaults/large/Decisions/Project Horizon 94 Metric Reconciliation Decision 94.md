@@ -3,11 +3,11 @@ type: decision
 date: 2024-09-08
 status: active
 project: "[[Project Horizon 94]]"
-company: "[[BrightWave Logistics]]"
-source_created_at: 2024-09-08T14:17:00
-source_observed_at: 2024-09-08T16:07:00
-created_at: 2024-09-08T19:54:00
-updated_at: 2024-09-09T01:54:00
+company: "[[Helio Labs]]"
+source_created_at: 2024-09-08T09:30:00
+source_observed_at: 2024-09-08T10:59:00
+created_at: 2024-09-08T11:49:00
+updated_at: 2024-09-09T00:49:00
 tags: [#decision]
 ---
 # Project Horizon 94 Metric Reconciliation Decision 94
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Horizon 94]].
 
 ## Context
-This decision applies to [[BrightWave Logistics]] and [[Project Horizon 94]].
+This decision applies to [[Helio Labs]] and [[Project Horizon 94]].
 It follows [[Project Horizon 94 Finance Approval Sync 974]].
 It incorporates [[Project Horizon 94 Handoff Readiness Research 94]].
 

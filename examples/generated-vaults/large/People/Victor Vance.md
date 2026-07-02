@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-10-27T10:37:00
-source_observed_at: 2023-10-27T11:01:00
-created_at: 2023-10-28T17:37:00
-updated_at: 2023-11-28T22:37:00
+company: "[[Summit Labs]]"
+role: "Customer Success Lead"
+source_created_at: 2023-10-24T12:25:00
+source_observed_at: 2023-10-24T12:49:00
+created_at: 2023-10-26T07:25:00
+updated_at: 2024-08-09T13:00:00
 tags: [#person]
 ---
 # Victor Vance
 
 ## Role
-Victor Vance is the Technical Director at [[Evergreen Analytics]].
+Victor Vance is the Customer Success Lead at [[Summit Labs]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Meridian 36]] ([[Meridian Retail]])
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 92]] ([[Summit Labs]])
 - [ ] Confirm next update with [[Victor Vance]] #follow-up

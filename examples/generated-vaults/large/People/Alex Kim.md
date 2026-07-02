@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-07-16T10:55:00
-source_observed_at: 2023-07-16T11:47:00
-created_at: 2023-07-17T09:55:00
-updated_at: 2023-09-22T19:55:00
+company: "[[Northstar Health]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-08-20T16:55:00
+source_observed_at: 2023-08-20T19:27:00
+created_at: 2023-08-20T20:55:00
+updated_at: 2024-07-05T13:00:00
 tags: [#person]
 ---
 # Alex Kim
 
 ## Role
-Alex Kim is the Data Platform Engineer at [[Evergreen Analytics]].
+Alex Kim is the Revenue Operations Lead at [[Northstar Health]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Pipeline 22]] ([[Vanguard FinTech]])
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 9]] ([[Northstar Health]])
+- Client stakeholder on [[Project Keystone 85]] ([[Northstar Health]])
 - [ ] Confirm next update with [[Alex Kim]] #follow-up

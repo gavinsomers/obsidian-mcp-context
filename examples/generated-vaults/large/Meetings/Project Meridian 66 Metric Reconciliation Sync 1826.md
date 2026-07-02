@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-05-30
 project: "[[Project Meridian 66]]"
-company: "[[Meridian Health]]"
-source_created_at: 2024-05-30T08:41:00
-source_observed_at: 2024-05-30T11:39:00
-created_at: 2024-05-30T12:15:00
-updated_at: 2024-05-30T17:15:00
+company: "[[Vanguard Retail]]"
+source_created_at: 2024-05-30T16:47:00
+source_observed_at: 2024-05-30T19:03:00
+created_at: 2024-05-30T22:01:00
+updated_at: 2024-05-31T20:01:00
 tags: [#meeting]
 ---
 # Project Meridian 66 Metric Reconciliation Sync 1826
 
-## Attendees
-- [[Xavier Morgan]]
-- [[Priya Lee]]
-- [[Nadia Rostova]]
+## Evergreen Attendees
+- [[Marcus Chen]]
+
+## Client Attendees
+- [[Ben Jenkins]]
+- [[Farah Shah]]
+- [[Rachel Novak]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 66]] at [[Meridian Health]].
-[[Marcus Chen]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 66]] at [[Vanguard Retail]].
+[[Marcus Chen]] aligned with [[Ben Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 66]] to [[Marcus Chen]] #follow-up

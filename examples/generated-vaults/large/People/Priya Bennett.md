@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Delivery Lead"
-source_created_at: 2023-05-05T15:02:00
-source_observed_at: 2023-05-05T16:19:00
-created_at: 2023-05-06T09:02:00
-updated_at: 2023-06-17T13:02:00
+source_created_at: 2023-05-05T11:33:00
+source_observed_at: 2023-05-05T13:36:00
+created_at: 2023-05-11T12:33:00
+updated_at: 2023-12-11T13:00:00
 tags: [#person]
 ---
 # Priya Bennett
@@ -14,5 +14,5 @@ tags: [#person]
 Priya Bennett is the Delivery Lead at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Venture 43]] ([[Cobalt Logistics]])
 - [ ] Confirm next update with [[Priya Bennett]] #follow-up

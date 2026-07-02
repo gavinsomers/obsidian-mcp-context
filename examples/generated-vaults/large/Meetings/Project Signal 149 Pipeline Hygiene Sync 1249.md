@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-05-16
 project: "[[Project Signal 149]]"
-company: "[[Keystone FinTech]]"
-source_created_at: 2025-05-16T08:58:00
-source_observed_at: 2025-05-16T10:08:00
-created_at: 2025-05-16T11:36:00
-updated_at: 2025-05-16T22:36:00
+company: "[[Pioneer Manufacturing]]"
+source_created_at: 2025-05-16T13:00:00
+source_observed_at: 2025-05-16T13:36:00
+created_at: 2025-05-16T17:26:00
+updated_at: 2025-05-17T00:26:00
 tags: [#meeting]
 ---
 # Project Signal 149 Pipeline Hygiene Sync 1249
 
-## Attendees
-- [[Wendy Tan]]
-- [[Kai Shah]]
-- [[Grace Foster]]
+## Evergreen Attendees
+- [[Sam Foster]]
+
+## Client Attendees
+- [[Wendy Jenkins]]
+- [[Kai Ortega]]
+- [[Alex Tan]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 149]] at [[Keystone FinTech]].
-[[Sam Foster]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 149]] at [[Pioneer Manufacturing]].
+[[Sam Foster]] aligned with [[Wendy Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 149]] to [[Sam Foster]] #follow-up

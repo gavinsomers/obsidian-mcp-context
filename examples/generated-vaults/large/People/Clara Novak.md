@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-08-12T16:02:00
-source_observed_at: 2023-08-12T17:17:00
-created_at: 2023-08-13T12:02:00
-updated_at: 2023-09-21T23:02:00
+company: "[[Quantum FinTech]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-07-03T13:50:00
+source_observed_at: 2023-07-03T16:04:00
+created_at: 2023-07-05T02:50:00
+updated_at: 2025-07-04T13:00:00
 tags: [#person]
 ---
 # Clara Novak
 
 ## Role
-Clara Novak is the Analytics Engineer at [[Evergreen Analytics]].
+Clara Novak is the Product Analytics Lead at [[Quantum FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 159]] ([[Quantum FinTech]])
 - [ ] Confirm next update with [[Clara Novak]] #follow-up

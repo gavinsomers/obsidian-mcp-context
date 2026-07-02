@@ -3,11 +3,11 @@ type: decision
 date: 2026-03-17
 status: active
 project: "[[Project Compass 68]]"
-company: "[[Quantum Health]]"
-source_created_at: 2026-03-17T15:42:00
-source_observed_at: 2026-03-17T17:27:00
-created_at: 2026-03-17T17:32:00
-updated_at: 2026-03-18T10:32:00
+company: "[[Harbor Health]]"
+source_created_at: 2026-03-17T08:50:00
+source_observed_at: 2026-03-17T11:29:00
+created_at: 2026-03-17T11:34:00
+updated_at: 2026-03-18T10:34:00
 tags: [#decision]
 ---
 # Project Compass 68 Handoff Readiness Decision 728
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 68]].
 
 ## Context
-This decision applies to [[Quantum Health]] and [[Project Compass 68]].
+This decision applies to [[Harbor Health]] and [[Project Compass 68]].
 It follows [[Project Compass 68 Lineage Audit Sync 728]].
 It incorporates [[Project Compass 68 Finance Approval Research 508]].
 

@@ -1,26 +1,26 @@
 ---
 type: project
-status: closed
-company: "[[Keystone Retail]]"
-source_created_at: 2025-07-17T16:22:00
-source_observed_at: 2025-07-17T16:49:00
-created_at: 2025-07-18T20:22:00
-updated_at: 2025-10-02T05:22:00
+status: planning
+company: "[[Atlas Retail]]"
+source_created_at: 2025-07-17T11:09:00
+source_observed_at: 2025-07-17T11:32:00
+created_at: 2025-07-17T15:09:00
+updated_at: 2025-09-29T19:09:00
 tags: [#project]
 ---
 # Project Signal 164
 
 ## Overview
-Project Signal 164 supports [[Keystone Retail]] through research program.
+Project Signal 164 supports [[Atlas Retail]] through research program.
 
 ## Stakeholders
-- [[Nadia Vance]]
-- [[Xavier Tan]]
-- [[Zoe Haddad]]
-- [[Nadia Walker]]
+- [[David Jenkins]]
+- [[Tara Novak]]
+- [[Hannah Shah]]
+- [[Xavier Walker]]
 
 ## Operating Notes
-- Owner: [[Grace Grant]]
-- Status: `closed`
-- Closed at: `2025-10-08`
+- Evergreen owner: [[Grace Grant]]
+- Client account: [[Atlas Retail]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Signal 164]] #ops

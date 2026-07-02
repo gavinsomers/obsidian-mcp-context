@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Data Platform Engineer"
-source_created_at: 2023-06-09T08:00:00
-source_observed_at: 2023-06-09T09:14:00
-created_at: 2023-06-10T14:00:00
-updated_at: 2023-07-23T00:00:00
+source_created_at: 2023-06-09T08:11:00
+source_observed_at: 2023-06-09T09:10:00
+created_at: 2023-06-09T22:11:00
+updated_at: 2025-05-16T13:00:00
 tags: [#person]
 ---
 # Sam Foster
@@ -14,5 +14,5 @@ tags: [#person]
 Sam Foster is the Data Platform Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Managing/Supporting [[Project Harbor 9]] ([[Atlas Labs]])
+- Delivery owner for [[Project Signal 149]] ([[Pioneer Manufacturing]])
 - [ ] Confirm next update with [[Sam Foster]] #follow-up

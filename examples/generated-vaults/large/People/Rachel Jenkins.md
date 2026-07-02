@@ -1,18 +1,21 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-07-13T11:52:00
-source_observed_at: 2023-07-13T12:27:00
-created_at: 2023-07-14T04:52:00
-updated_at: 2023-10-07T10:52:00
+company: "[[Vanguard Manufacturing]]"
+role: "Data Owner"
+source_created_at: 2023-08-02T11:34:00
+source_observed_at: 2023-08-02T13:35:00
+created_at: 2023-08-02T17:34:00
+updated_at: 2023-11-26T13:00:00
 tags: [#person]
 ---
 # Rachel Jenkins
 
 ## Role
-Rachel Jenkins is the Solution Architect at [[Evergreen Analytics]].
+Rachel Jenkins is the Data Owner at [[Vanguard Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 3]] ([[Vanguard Manufacturing]])
+- Client stakeholder on [[Project Lantern 20]] ([[Vanguard Manufacturing]])
+- Client stakeholder on [[Project Harbor 39]] ([[Vanguard Manufacturing]])
+- Client stakeholder on [[Project Keystone 40]] ([[Vanguard Manufacturing]])
 - [ ] Confirm next update with [[Rachel Jenkins]] #follow-up

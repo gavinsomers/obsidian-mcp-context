@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-09-08T09:20:00
-source_observed_at: 2023-09-08T11:52:00
-created_at: 2023-09-09T06:20:00
-updated_at: 2023-11-30T13:20:00
+company: "[[Crescent Logistics]]"
+role: "Security Contact"
+source_created_at: 2023-11-14T08:49:00
+source_observed_at: 2023-11-14T10:17:00
+created_at: 2023-11-15T08:49:00
+updated_at: 2026-04-19T13:00:00
 tags: [#person]
 ---
 # Farah Quinn
 
 ## Role
-Farah Quinn is the Client Partner at [[Evergreen Analytics]].
+Farah Quinn is the Security Contact at [[Crescent Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 80]] ([[Crescent Logistics]])
+- Client stakeholder on [[Project Compass 218]] ([[Crescent Logistics]])
 - [ ] Confirm next update with [[Farah Quinn]] #follow-up

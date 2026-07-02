@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-07-27T11:40:00
-source_observed_at: 2023-07-27T13:41:00
-created_at: 2023-07-27T23:40:00
-updated_at: 2023-09-15T08:40:00
+company: "[[Cobalt Logistics]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-10-23T15:55:00
+source_observed_at: 2023-10-23T18:08:00
+created_at: 2023-10-24T19:55:00
+updated_at: 2023-12-11T13:00:00
 tags: [#person]
 ---
 # Farah Lee
 
 ## Role
-Farah Lee is the Data Platform Engineer at [[Evergreen Analytics]].
+Farah Lee is the Revenue Operations Lead at [[Cobalt Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Pipeline 22]] ([[Cobalt Logistics]])
+- Client stakeholder on [[Project Venture 43]] ([[Cobalt Logistics]])
 - [ ] Confirm next update with [[Farah Lee]] #follow-up

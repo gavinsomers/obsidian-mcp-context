@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-07-12T09:44:00
-source_observed_at: 2023-07-12T12:06:00
-created_at: 2023-07-14T07:44:00
-updated_at: 2023-07-29T07:44:00
+company: "[[Apex Manufacturing]]"
+role: "Security Contact"
+source_created_at: 2023-07-23T11:02:00
+source_observed_at: 2023-07-23T12:34:00
+created_at: 2023-07-23T20:02:00
+updated_at: 2025-06-05T13:00:00
 tags: [#person]
 ---
 # Lina Jenkins
 
 ## Role
-Lina Jenkins is the Client Partner at [[Evergreen Analytics]].
+Lina Jenkins is the Security Contact at [[Apex Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 130]] ([[Apex Manufacturing]])
+- Client stakeholder on [[Project Foundry 153]] ([[Apex Manufacturing]])
 - [ ] Confirm next update with [[Lina Jenkins]] #follow-up

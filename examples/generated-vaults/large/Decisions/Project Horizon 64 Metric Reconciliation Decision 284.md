@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-06-02
+date: 2024-06-25
 status: active
 project: "[[Project Horizon 64]]"
-company: "[[BrightWave Health]]"
-source_created_at: 2024-06-02T08:15:00
-source_observed_at: 2024-06-02T09:20:00
-created_at: 2024-06-02T09:34:00
-updated_at: 2024-06-03T01:34:00
+company: "[[Crescent FinTech]]"
+source_created_at: 2024-06-25T10:14:00
+source_observed_at: 2024-06-25T11:37:00
+created_at: 2024-07-02T17:14:00
+updated_at: 2024-07-03T08:14:00
 tags: [#decision]
 ---
 # Project Horizon 64 Metric Reconciliation Decision 284
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Horizon 64]].
 
 ## Context
-This decision applies to [[BrightWave Health]] and [[Project Horizon 64]].
-It follows [[Project Horizon 64 Finance Approval Sync 1604]].
+This decision applies to [[Crescent FinTech]] and [[Project Horizon 64]].
+It follows [[Project Horizon 64 Finance Approval Sync 284]].
 It incorporates [[Project Horizon 64 Handoff Readiness Research 64]].
 
 ## Supersession

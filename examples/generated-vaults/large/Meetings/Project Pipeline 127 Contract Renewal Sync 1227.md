@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-01-28
 project: "[[Project Pipeline 127]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2025-01-28T16:20:00
-source_observed_at: 2025-01-28T17:34:00
-created_at: 2025-01-28T18:47:00
-updated_at: 2025-01-28T20:47:00
+company: "[[Crescent Labs]]"
+source_created_at: 2025-01-28T10:21:00
+source_observed_at: 2025-01-28T11:11:00
+created_at: 2025-01-28T15:34:00
+updated_at: 2025-01-29T04:34:00
 tags: [#meeting]
 ---
 # Project Pipeline 127 Contract Renewal Sync 1227
 
-## Attendees
+## Evergreen Attendees
+- [[Wendy Evans]]
+
+## Client Attendees
+- [[Elena Ivanov]]
+- [[Yara Vance]]
 - [[Iris Rostova]]
-- [[Lina Quinn]]
-- [[Iris Morgan]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 127]] at [[Quantum Labs]].
-[[Wendy Evans]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 127]] at [[Crescent Labs]].
+[[Wendy Evans]] aligned with [[Elena Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 127]] to [[Wendy Evans]] #follow-up

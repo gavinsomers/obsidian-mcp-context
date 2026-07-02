@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-09-22T11:46:00
-source_observed_at: 2023-09-22T14:26:00
-created_at: 2023-09-23T22:46:00
-updated_at: 2023-11-20T08:46:00
+company: "[[Pioneer FinTech]]"
+role: "Executive Sponsor"
+source_created_at: 2023-09-03T10:07:00
+source_observed_at: 2023-09-03T10:50:00
+created_at: 2023-09-03T12:07:00
+updated_at: 2023-10-19T12:07:00
 tags: [#person]
 ---
 # Wendy Rostova
 
 ## Role
-Wendy Rostova is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Wendy Rostova is the Executive Sponsor at [[Pioneer FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- First seen through [[Pioneer FinTech]] account context
 - [ ] Confirm next update with [[Wendy Rostova]] #follow-up

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-10-04T10:45:00
-source_observed_at: 2023-10-04T13:02:00
-created_at: 2023-10-04T17:45:00
-updated_at: 2023-11-25T22:45:00
+company: "[[Cobalt Health]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-09-21T11:10:00
+source_observed_at: 2023-09-21T11:38:00
+created_at: 2023-09-22T10:10:00
+updated_at: 2023-12-14T17:10:00
 tags: [#person]
 ---
 # Farah Tan
 
 ## Role
-Farah Tan is the Data Platform Engineer at [[Evergreen Analytics]].
+Farah Tan is the Revenue Operations Lead at [[Cobalt Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- First seen through [[Cobalt Health]] account context
 - [ ] Confirm next update with [[Farah Tan]] #follow-up

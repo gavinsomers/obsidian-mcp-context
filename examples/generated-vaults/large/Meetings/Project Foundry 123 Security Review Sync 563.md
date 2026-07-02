@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-06-27
 project: "[[Project Foundry 123]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2025-06-27T08:52:00
-source_observed_at: 2025-06-27T09:53:00
-created_at: 2025-06-27T11:13:00
-updated_at: 2025-06-27T21:13:00
+company: "[[Apex Retail]]"
+source_created_at: 2025-06-27T12:54:00
+source_observed_at: 2025-06-27T15:40:00
+created_at: 2025-06-27T15:45:00
+updated_at: 2025-06-28T04:45:00
 tags: [#meeting]
 ---
 # Project Foundry 123 Security Review Sync 563
 
-## Attendees
-- [[Amara Bennett]]
-- [[Zoe Walker]]
-- [[Clara Morgan]]
+## Evergreen Attendees
+- [[Sam Evans]]
+
+## Client Attendees
+- [[Priya Walker]]
+- [[Lina Novak]]
+- [[Xavier Ivanov]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 123]] at [[BrightWave Labs]].
-[[Sam Evans]] flagged follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 123]] at [[Apex Retail]].
+[[Sam Evans]] aligned with [[Priya Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 123]] to [[Sam Evans]] #follow-up

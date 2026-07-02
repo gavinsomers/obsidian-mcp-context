@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-08-31T10:30:00
-source_observed_at: 2023-08-31T11:19:00
-created_at: 2023-09-01T22:30:00
-updated_at: 2023-10-28T05:30:00
+company: "[[BrightWave Media]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-09-25T08:52:00
+source_observed_at: 2023-09-25T11:39:00
+created_at: 2023-09-25T12:52:00
+updated_at: 2025-03-08T13:00:00
 tags: [#person]
 ---
 # Grace Patel
 
 ## Role
-Grace Patel is the Analytics Engineer at [[Evergreen Analytics]].
+Grace Patel is the Product Analytics Lead at [[BrightWave Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Bridge 135]] ([[BrightWave Media]])
 - [ ] Confirm next update with [[Grace Patel]] #follow-up

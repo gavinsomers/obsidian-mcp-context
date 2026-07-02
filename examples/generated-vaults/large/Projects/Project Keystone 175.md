@@ -1,25 +1,25 @@
 ---
 type: project
 status: blocked
-company: "[[Summit Manufacturing]]"
-source_created_at: 2025-09-10T16:20:00
-source_observed_at: 2025-09-10T18:07:00
-created_at: 2025-09-11T01:20:00
-updated_at: 2025-10-07T09:20:00
+company: "[[Northstar Media]]"
+source_created_at: 2025-09-10T09:35:00
+source_observed_at: 2025-09-10T12:19:00
+created_at: 2025-09-11T12:35:00
+updated_at: 2025-10-27T14:35:00
 tags: [#project]
 ---
 # Project Keystone 175
 
 ## Overview
-Project Keystone 175 supports [[Summit Manufacturing]] through operations admin.
+Project Keystone 175 supports [[Northstar Media]] through operations admin.
 
 ## Stakeholders
-- [[Sam Novak]]
-- [[Rachel Evans]]
-- [[Alex Haddad]]
-- [[David Vance]]
+- [[Omar Kim]]
+- [[David Patel]]
+- [[Tara Tan]]
 
 ## Operating Notes
-- Owner: [[Sam Grant]]
+- Evergreen owner: [[Sam Grant]]
+- Client account: [[Northstar Media]]
 - Status: `blocked`
 - [ ] Reconcile latest state for [[Project Keystone 175]] #ops

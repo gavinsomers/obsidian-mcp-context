@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Venture 103]]"
-source_created_at: 2024-10-08T16:25:00
-source_observed_at: 2024-10-08T17:48:00
-created_at: 2024-10-09T09:25:00
-updated_at: 2024-10-24T09:25:00
+source_created_at: 2024-10-08T10:44:00
+source_observed_at: 2024-10-08T12:34:00
+created_at: 2024-10-10T08:44:00
+updated_at: 2024-11-07T16:44:00
 tags: [#risk]
 ---
 # Project Venture 103 Contract Renewal Risk 103
 
 ## Risk
-Contract Renewal may affect [[Project Venture 103]] for [[Noble Logistics]].
+Contract Renewal may affect [[Project Venture 103]] for [[Northstar Labs]].
 
 ## Evidence
-- Raised after [[Project Venture 103 Security Review Sync 103]]
+- Raised after [[Project Venture 103 Security Review Sync 323]]
 
 ## Current State
 - Status: `open`

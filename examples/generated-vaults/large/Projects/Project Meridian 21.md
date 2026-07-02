@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Meridian FinTech]]"
-source_created_at: 2023-08-16T15:32:00
-source_observed_at: 2023-08-16T17:08:00
-created_at: 2023-08-17T12:32:00
-updated_at: 2023-10-16T18:32:00
+status: planning
+company: "[[Vanguard Media]]"
+source_created_at: 2023-08-16T15:05:00
+source_observed_at: 2023-08-16T15:35:00
+created_at: 2023-08-17T04:05:00
+updated_at: 2023-10-11T17:58:00
 tags: [#project]
 ---
 # Project Meridian 21
 
 ## Overview
-Project Meridian 21 supports [[Meridian FinTech]] through consulting delivery.
+Project Meridian 21 supports [[Vanguard Media]] through consulting delivery.
 
 ## Stakeholders
-- [[Rachel Morgan]]
-- [[Lina Grant]]
-- [[Marcus Chen]]
-- [[Elena Novak]]
+- [[Victor Kim]]
+- [[Jonah Patel]]
+- [[Zoe Tan]]
 
 ## Operating Notes
-- Owner: [[Uma Alvarez]]
-- Status: `closed`
-- Closed at: `2023-10-23`
+- Evergreen owner: [[Uma Alvarez]]
+- Client account: [[Vanguard Media]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Meridian 21]] #ops

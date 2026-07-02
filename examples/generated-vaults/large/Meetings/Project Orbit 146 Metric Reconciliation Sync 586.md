@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-07-30
 project: "[[Project Orbit 146]]"
-company: "[[Pioneer FinTech]]"
-source_created_at: 2025-07-30T13:47:00
-source_observed_at: 2025-07-30T15:18:00
-created_at: 2025-07-30T15:44:00
-updated_at: 2025-07-30T18:44:00
+company: "[[Crescent Analytics]]"
+source_created_at: 2025-07-30T09:59:00
+source_observed_at: 2025-07-30T11:06:00
+created_at: 2025-07-30T15:03:00
+updated_at: 2025-07-31T12:03:00
 tags: [#meeting]
 ---
 # Project Orbit 146 Metric Reconciliation Sync 586
 
-## Attendees
-- [[Marcus Tan]]
-- [[Priya Patel]]
-- [[Hannah Haddad]]
+## Evergreen Attendees
+- [[Omar Foster]]
+
+## Client Attendees
+- [[Farah Morgan]]
+- [[Victor Quinn]]
+- [[Jonah Vance]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Orbit 146]] at [[Pioneer FinTech]].
-[[Omar Foster]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Orbit 146]] at [[Crescent Analytics]].
+[[Omar Foster]] aligned with [[Farah Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Orbit 146]] to [[Omar Foster]] #follow-up

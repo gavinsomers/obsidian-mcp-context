@@ -3,11 +3,11 @@ type: decision
 date: 2025-06-29
 status: active
 project: "[[Project Horizon 154]]"
-company: "[[Helio Retail]]"
-source_created_at: 2025-06-29T13:12:00
-source_observed_at: 2025-06-29T13:33:00
-created_at: 2025-07-04T20:12:00
-updated_at: 2025-07-05T01:12:00
+company: "[[Helio Logistics]]"
+source_created_at: 2025-06-29T16:32:00
+source_observed_at: 2025-06-29T16:43:00
+created_at: 2025-06-29T16:51:00
+updated_at: 2025-06-30T03:51:00
 tags: [#decision]
 ---
 # Project Horizon 154 Metric Reconciliation Decision 154
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Horizon 154]].
 
 ## Context
-This decision applies to [[Helio Retail]] and [[Project Horizon 154]].
-It follows [[Project Horizon 154 Finance Approval Sync 1254]].
+This decision applies to [[Helio Logistics]] and [[Project Horizon 154]].
+It follows [[Project Horizon 154 Finance Approval Sync 1694]].
 It incorporates [[Project Horizon 154 Handoff Readiness Research 374]].
 
 ## Supersession

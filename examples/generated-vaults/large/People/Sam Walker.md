@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-11-03T09:33:00
-source_observed_at: 2023-11-03T10:17:00
-created_at: 2023-11-04T10:33:00
-updated_at: 2023-12-24T18:33:00
+company: "[[BrightWave Retail]]"
+role: "Security Contact"
+source_created_at: 2023-11-05T08:12:00
+source_observed_at: 2023-11-05T08:50:00
+created_at: 2023-11-07T05:12:00
+updated_at: 2025-09-06T13:00:00
 tags: [#person]
 ---
 # Sam Walker
 
 ## Role
-Sam Walker is the Client Partner at [[Evergreen Analytics]].
+Sam Walker is the Security Contact at [[BrightWave Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Meridian 156]] ([[BrightWave Retail]])
+- Client stakeholder on [[Project Pipeline 172]] ([[BrightWave Retail]])
 - [ ] Confirm next update with [[Sam Walker]] #follow-up

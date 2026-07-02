@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[BrightWave Logistics]]"
-source_created_at: 2024-08-08T14:05:00
-source_observed_at: 2024-08-08T14:25:00
-created_at: 2024-08-09T21:05:00
-updated_at: 2024-09-21T07:05:00
+company: "[[Helio Labs]]"
+source_created_at: 2024-08-08T13:54:00
+source_observed_at: 2024-08-08T15:40:00
+created_at: 2024-08-08T17:54:00
+updated_at: 2024-08-26T19:54:00
 tags: [#project]
 ---
 # Project Horizon 94
 
 ## Overview
-Project Horizon 94 supports [[BrightWave Logistics]] through research program.
+Project Horizon 94 supports [[Helio Labs]] through research program.
 
 ## Stakeholders
-- [[Amara Grant]]
-- [[Tara Grant]]
-- [[Grace Novak]]
-- [[Elena Walker]]
+- [[Wendy Haddad]]
+- [[Kai Morgan]]
+- [[Alex Rostova]]
+- [[Omar Vance]]
 
 ## Operating Notes
-- Owner: [[Omar Diaz]]
+- Evergreen owner: [[Omar Diaz]]
+- Client account: [[Helio Labs]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Horizon 94]] #ops

@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[Helio Manufacturing]]"
-source_created_at: 2024-01-04T12:55:00
-source_observed_at: 2024-01-04T13:25:00
-created_at: 2024-01-05T21:55:00
-updated_at: 2024-03-20T08:55:00
+company: "[[Atlas FinTech]]"
+source_created_at: 2024-01-04T15:35:00
+source_observed_at: 2024-01-04T17:43:00
+created_at: 2024-01-04T17:48:00
+updated_at: 2024-02-06T21:48:00
 tags: [#project]
 ---
 # Project Lantern 50
 
 ## Overview
-Project Lantern 50 supports [[Helio Manufacturing]] through operations admin.
+Project Lantern 50 supports [[Atlas FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Lina Jenkins]]
-- [[Lina Walker]]
-- [[Jonah Quinn]]
-- [[Iris Haddad]]
+- [[Omar Ivanov]]
+- [[David Novak]]
+- [[Tara Rostova]]
+- [[Hannah Walker]]
 
 ## Operating Notes
-- Owner: [[Xavier Bennett]]
+- Evergreen owner: [[Xavier Bennett]]
+- Client account: [[Atlas FinTech]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Lantern 50]] #ops

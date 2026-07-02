@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Cobalt Labs]]"
-source_created_at: 2023-05-19T13:09:00
-source_observed_at: 2023-05-19T14:36:00
-created_at: 2023-05-19T21:09:00
-updated_at: 2023-06-12T07:09:00
+status: active
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2023-05-19T16:54:00
+source_observed_at: 2023-05-19T18:02:00
+created_at: 2023-05-28T23:54:00
+updated_at: 2023-09-25T17:18:00
 tags: [#project]
 ---
 # Project Foundry 3
 
 ## Overview
-Project Foundry 3 supports [[Cobalt Labs]] through customer success.
+Project Foundry 3 supports [[Vanguard Manufacturing]] through customer success.
 
 ## Stakeholders
-- [[Uma Chen]]
-- [[Wendy Chen]]
-- [[Elena Chen]]
-- [[David Diaz]]
+- [[Rachel Jenkins]]
+- [[Farah Ortega]]
+- [[Victor Shah]]
 
 ## Operating Notes
-- Owner: [[Ben Alvarez]]
-- Status: `closed`
-- Closed at: `2023-09-23`
+- Evergreen owner: [[Ben Alvarez]]
+- Client account: [[Vanguard Manufacturing]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Foundry 3]] #ops

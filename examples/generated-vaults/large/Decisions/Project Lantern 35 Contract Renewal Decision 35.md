@@ -3,11 +3,11 @@ type: decision
 date: 2023-11-24
 status: active
 project: "[[Project Lantern 35]]"
-company: "[[Helio Retail]]"
-source_created_at: 2023-11-24T14:38:00
-source_observed_at: 2023-11-24T15:41:00
-created_at: 2023-11-24T19:00:00
-updated_at: 2023-11-25T09:00:00
+company: "[[Cobalt Analytics]]"
+source_created_at: 2023-11-24T08:48:00
+source_observed_at: 2023-11-24T09:24:00
+created_at: 2023-11-24T09:29:00
+updated_at: 2023-11-24T22:29:00
 tags: [#decision]
 ---
 # Project Lantern 35 Contract Renewal Decision 35
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Lantern 35]].
 
 ## Context
-This decision applies to [[Helio Retail]] and [[Project Lantern 35]].
+This decision applies to [[Cobalt Analytics]] and [[Project Lantern 35]].
 It follows [[Project Lantern 35 Adoption Workflow Sync 915]].
 It incorporates [[Project Lantern 35 Warehouse Mapping Research 35]].
 

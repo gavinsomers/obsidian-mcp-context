@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: enterprise
-source_created_at: 2023-12-07T16:22:00
-source_observed_at: 2023-12-07T17:25:00
-created_at: 2023-12-08T23:22:00
-updated_at: 2024-01-25T00:22:00
+source_created_at: 2023-12-07T11:42:00
+source_observed_at: 2023-12-07T13:22:00
+created_at: 2023-12-09T04:42:00
+updated_at: 2023-12-28T13:42:00
 tags: [#company]
 ---
 # Summit Analytics
@@ -14,8 +14,15 @@ tags: [#company]
 Summit Analytics is a enterprise account currently marked `pipeline`.
 
 ## Assigned Account Team
+- [[Alex Bennett]] - Delivery Lead
+
+## Client Stakeholders
+- [[Clara Morgan]] - Data Owner
+- [[Sam Quinn]] - Operations Manager
+- [[Grace Vance]] - Finance Lead
 
 ## Projects
+- [[Project Summit 27]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Summit Analytics]] #account

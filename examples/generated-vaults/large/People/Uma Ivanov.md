@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-07-06T14:22:00
-source_observed_at: 2023-07-06T16:13:00
-created_at: 2023-07-07T04:22:00
-updated_at: 2023-09-25T04:22:00
+company: "[[Crescent FinTech]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-06-17T14:43:00
+source_observed_at: 2023-06-17T17:09:00
+created_at: 2023-06-18T19:43:00
+updated_at: 2024-03-24T13:00:00
 tags: [#person]
 ---
 # Uma Ivanov
 
 ## Role
-Uma Ivanov is the Data Platform Engineer at [[Evergreen Analytics]].
+Uma Ivanov is the Revenue Operations Lead at [[Crescent FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Horizon 64]] ([[Crescent FinTech]])
 - [ ] Confirm next update with [[Uma Ivanov]] #follow-up

@@ -1,25 +1,26 @@
 ---
 type: project
-status: planning
-company: "[[Vanguard FinTech]]"
-source_created_at: 2025-03-27T11:56:00
-source_observed_at: 2025-03-27T14:25:00
-created_at: 2025-03-29T04:56:00
-updated_at: 2025-06-07T15:56:00
+status: closed
+company: "[[Vanguard Logistics]]"
+source_created_at: 2025-03-27T15:50:00
+source_observed_at: 2025-03-27T18:44:00
+created_at: 2025-03-28T18:50:00
+updated_at: 2025-05-07T04:50:00
 tags: [#project]
 ---
 # Project Meridian 141
 
 ## Overview
-Project Meridian 141 supports [[Vanguard FinTech]] through consulting delivery.
+Project Meridian 141 supports [[Vanguard Logistics]] through consulting delivery.
 
 ## Stakeholders
-- [[David Jenkins]]
-- [[Amara Chen]]
-- [[Yara Diaz]]
-- [[Grace Quinn]]
+- [[Jonah Lee]]
+- [[Zoe Patel]]
+- [[Nadia Usman]]
 
 ## Operating Notes
-- Owner: [[Jonah Foster]]
-- Status: `planning`
+- Evergreen owner: [[Jonah Foster]]
+- Client account: [[Vanguard Logistics]]
+- Status: `closed`
+- Closed at: `2025-07-20`
 - [ ] Reconcile latest state for [[Project Meridian 141]] #ops

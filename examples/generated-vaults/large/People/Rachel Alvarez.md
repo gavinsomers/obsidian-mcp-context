@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Senior Data Consultant"
-source_created_at: 2023-04-26T11:38:00
-source_observed_at: 2023-04-26T12:44:00
-created_at: 2023-05-04T11:38:00
-updated_at: 2023-06-29T20:38:00
+source_created_at: 2023-04-26T08:55:00
+source_observed_at: 2023-04-26T10:36:00
+created_at: 2023-04-27T17:55:00
+updated_at: 2026-04-19T13:00:00
 tags: [#person]
 ---
 # Rachel Alvarez
@@ -14,5 +14,6 @@ tags: [#person]
 Rachel Alvarez is the Senior Data Consultant at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Foundry 18]] ([[Meridian Retail]])
+- Delivery owner for [[Project Compass 218]] ([[Crescent Logistics]])
 - [ ] Confirm next update with [[Rachel Alvarez]] #follow-up

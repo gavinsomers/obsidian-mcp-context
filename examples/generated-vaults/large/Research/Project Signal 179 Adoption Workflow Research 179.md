@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Signal 179]]"
-company: "[[Keystone Manufacturing]]"
-source_created_at: 2025-10-24T11:22:00
-source_observed_at: 2025-10-24T13:19:00
-created_at: 2025-10-25T18:22:00
-updated_at: 2025-11-30T21:22:00
+company: "[[Summit Retail]]"
+source_created_at: 2025-10-24T16:36:00
+source_observed_at: 2025-10-24T17:24:00
+created_at: 2025-10-26T14:36:00
+updated_at: 2025-11-02T17:36:00
 tags: [#research]
 ---
 # Project Signal 179 Adoption Workflow Research 179
 
 ## Research Summary
-Research on adoption workflow for [[Project Signal 179]] and [[Keystone Manufacturing]].
+Research on adoption workflow for [[Project Signal 179]] and [[Summit Retail]].
 
 ## Evidence
 - Interview notes from [[Wendy Grant]]
-- Related operating review: [[Project Signal 179 Pipeline Hygiene Sync 619]]
+- Related operating review: [[Project Signal 179 Pipeline Hygiene Sync 839]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Signal 179]] #research

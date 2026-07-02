@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-07-08T13:49:00
-source_observed_at: 2023-07-08T15:56:00
-created_at: 2023-07-10T04:49:00
-updated_at: 2023-07-27T11:49:00
+company: "[[Helio Retail]]"
+role: "Operations Manager"
+source_created_at: 2023-06-29T08:59:00
+source_observed_at: 2023-06-29T10:46:00
+created_at: 2023-07-01T05:59:00
+updated_at: 2025-08-11T13:00:00
 tags: [#person]
 ---
 # Alex Jenkins
 
 ## Role
-Alex Jenkins is the Delivery Lead at [[Evergreen Analytics]].
+Alex Jenkins is the Operations Manager at [[Helio Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 167]] ([[Helio Retail]])
 - [ ] Confirm next update with [[Alex Jenkins]] #follow-up

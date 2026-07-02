@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-03-01
 project: "[[Project Venture 208]]"
-company: "[[Crescent Media]]"
-source_created_at: 2026-03-01T08:28:00
-source_observed_at: 2026-03-01T10:21:00
-created_at: 2026-03-01T13:51:00
-updated_at: 2026-03-02T04:51:00
+company: "[[Keystone Media]]"
+source_created_at: 2026-03-01T13:27:00
+source_observed_at: 2026-03-01T16:21:00
+created_at: 2026-03-10T15:27:00
+updated_at: 2026-03-10T19:27:00
 tags: [#meeting]
 ---
 # Project Venture 208 Lineage Audit Sync 868
 
-## Attendees
-- [[Wendy Novak]]
-- [[Rachel Grant]]
-- [[Priya Grant]]
+## Evergreen Attendees
+- [[Grace Alvarez]]
+
+## Client Attendees
+- [[Clara Lee]]
+- [[Sam Patel]]
+- [[Grace Usman]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 208]] at [[Crescent Media]].
-[[Zoe Haddad]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 208]] at [[Keystone Media]].
+[[Grace Alvarez]] aligned with [[Clara Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 208]] to [[Zoe Haddad]] #follow-up
+- [ ] Send recap for [[Project Venture 208]] to [[Grace Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -3,11 +3,11 @@ type: decision
 date: 2023-08-27
 status: active
 project: "[[Project Beacon 17]]"
-company: "[[Apex FinTech]]"
-source_created_at: 2023-08-27T16:48:00
-source_observed_at: 2023-08-27T18:44:00
-created_at: 2023-08-27T20:40:00
-updated_at: 2023-08-28T15:40:00
+company: "[[Noble Health]]"
+source_created_at: 2023-08-27T15:29:00
+source_observed_at: 2023-08-27T16:37:00
+created_at: 2023-08-27T20:53:00
+updated_at: 2023-08-28T05:53:00
 tags: [#decision]
 ---
 # Project Beacon 17 Pipeline Hygiene Decision 17
@@ -16,9 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Beacon 17]].
 
 ## Context
-This decision applies to [[Apex FinTech]] and [[Project Beacon 17]].
-It follows [[Project Beacon 17 Contract Renewal Sync 1557]].
-It incorporates [[Project Beacon 17 Security Review Research 17]].
+This decision applies to [[Noble Health]] and [[Project Beacon 17]].
+It follows [[Project Beacon 17 Contract Renewal Sync 17]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

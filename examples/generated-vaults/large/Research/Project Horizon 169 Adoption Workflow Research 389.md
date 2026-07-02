@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 169]]"
-company: "[[Helio Manufacturing]]"
-source_created_at: 2025-09-05T13:20:00
-source_observed_at: 2025-09-05T14:57:00
-created_at: 2025-09-05T18:20:00
-updated_at: 2025-09-17T00:20:00
+company: "[[Pioneer Retail]]"
+source_created_at: 2025-09-05T12:23:00
+source_observed_at: 2025-09-05T13:39:00
+created_at: 2025-09-06T16:23:00
+updated_at: 2025-10-17T23:23:00
 tags: [#research]
 ---
 # Project Horizon 169 Adoption Workflow Research 389
 
 ## Research Summary
-Research on adoption workflow for [[Project Horizon 169]] and [[Helio Manufacturing]].
+Research on adoption workflow for [[Project Horizon 169]] and [[Pioneer Retail]].
 
 ## Evidence
 - Interview notes from [[Lina Grant]]

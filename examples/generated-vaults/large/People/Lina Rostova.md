@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-09-19T09:38:00
-source_observed_at: 2023-09-19T10:32:00
-created_at: 2023-09-19T20:38:00
-updated_at: 2023-11-30T01:38:00
+company: "[[Apex FinTech]]"
+role: "Security Contact"
+source_created_at: 2023-08-29T14:47:00
+source_observed_at: 2023-08-29T15:07:00
+created_at: 2023-08-31T01:47:00
+updated_at: 2024-04-22T13:00:00
 tags: [#person]
 ---
 # Lina Rostova
 
 ## Role
-Lina Rostova is the Client Partner at [[Evergreen Analytics]].
+Lina Rostova is the Security Contact at [[Apex FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 70]] ([[Apex FinTech]])
 - [ ] Confirm next update with [[Lina Rostova]] #follow-up

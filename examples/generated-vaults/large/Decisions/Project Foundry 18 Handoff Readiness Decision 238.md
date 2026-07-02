@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-03-01
+date: 2024-04-22
 status: active
 project: "[[Project Foundry 18]]"
-company: "[[Cobalt FinTech]]"
-source_created_at: 2024-03-01T15:16:00
-source_observed_at: 2024-03-01T17:58:00
-created_at: 2024-03-07T18:16:00
-updated_at: 2024-03-08T12:16:00
+company: "[[Meridian Retail]]"
+source_created_at: 2024-04-22T11:01:00
+source_observed_at: 2024-04-22T13:01:00
+created_at: 2024-04-22T14:41:00
+updated_at: 2024-04-22T19:41:00
 tags: [#decision]
 ---
 # Project Foundry 18 Handoff Readiness Decision 238
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 18]].
 
 ## Context
-This decision applies to [[Cobalt FinTech]] and [[Project Foundry 18]].
-It follows [[Project Foundry 18 Lineage Audit Sync 1338]].
-It incorporates [[Project Foundry 18 Finance Approval Research 458]].
+This decision applies to [[Meridian Retail]] and [[Project Foundry 18]].
+It follows [[Project Foundry 18 Lineage Audit Sync 238]].
+It incorporates [[Project Foundry 18 Finance Approval Research 18]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

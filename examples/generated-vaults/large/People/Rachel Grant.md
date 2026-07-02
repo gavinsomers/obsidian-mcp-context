@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Analytics Engineer"
-source_created_at: 2023-06-17T16:55:00
-source_observed_at: 2023-06-17T19:27:00
-created_at: 2023-06-17T20:55:00
-updated_at: 2023-07-02T05:55:00
+source_created_at: 2023-06-17T15:09:00
+source_observed_at: 2023-06-17T16:39:00
+created_at: 2023-06-18T04:09:00
+updated_at: 2025-09-15T13:00:00
 tags: [#person]
 ---
 # Rachel Grant
@@ -14,5 +14,5 @@ tags: [#person]
 Rachel Grant is the Analytics Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Harbor 174]] ([[Noble Retail]])
 - [ ] Confirm next update with [[Rachel Grant]] #follow-up

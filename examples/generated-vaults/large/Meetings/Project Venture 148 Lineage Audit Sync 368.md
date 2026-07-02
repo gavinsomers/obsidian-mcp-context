@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-05-10
 project: "[[Project Venture 148]]"
-company: "[[Crescent FinTech]]"
-source_created_at: 2025-05-10T10:53:00
-source_observed_at: 2025-05-10T13:16:00
-created_at: 2025-05-10T15:46:00
-updated_at: 2025-05-10T22:46:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2025-05-10T10:44:00
+source_observed_at: 2025-05-10T11:18:00
+created_at: 2025-05-10T15:11:00
+updated_at: 2025-05-10T19:11:00
 tags: [#meeting]
 ---
 # Project Venture 148 Lineage Audit Sync 368
 
-## Attendees
+## Evergreen Attendees
+- [[Rachel Foster]]
+
+## Client Attendees
 - [[Elena Novak]]
-- [[Elena Lee]]
-- [[Jonah Vance]]
+- [[Priya Ivanov]]
+- [[Iris Walker]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 148]] at [[Crescent FinTech]].
-[[Rachel Foster]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 148]] at [[Harbor FinTech]].
+[[Rachel Foster]] aligned with [[Elena Novak]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 148]] to [[Rachel Foster]] #follow-up

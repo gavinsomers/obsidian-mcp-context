@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Noble Manufacturing]]"
-source_created_at: 2025-09-19T14:43:00
-source_observed_at: 2025-09-19T15:36:00
-created_at: 2025-09-25T16:43:00
-updated_at: 2025-10-13T03:43:00
+status: active
+company: "[[Cobalt Manufacturing]]"
+source_created_at: 2025-09-19T12:41:00
+source_observed_at: 2025-09-19T15:38:00
+created_at: 2025-09-20T09:41:00
+updated_at: 2025-12-05T15:41:00
 tags: [#project]
 ---
 # Project Summit 177
 
 ## Overview
-Project Summit 177 supports [[Noble Manufacturing]] through sales pipeline.
+Project Summit 177 supports [[Cobalt Manufacturing]] through sales pipeline.
 
 ## Stakeholders
-- [[Tara Lee]]
-- [[Farah Shah]]
-- [[Kai Vance]]
-- [[Sam Quinn]]
+- [[Marcus Jenkins]]
+- [[Ben Ortega]]
+- [[Rachel Shah]]
 
 ## Operating Notes
-- Owner: [[Uma Grant]]
-- Status: `closed`
-- Closed at: `2026-02-08`
+- Evergreen owner: [[Uma Grant]]
+- Client account: [[Cobalt Manufacturing]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Summit 177]] #ops

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Horizon 64]]"
-company: "[[BrightWave Health]]"
-source_created_at: 2024-06-02T10:50:00
-source_observed_at: 2024-06-02T12:05:00
-created_at: 2024-06-05T15:50:00
-updated_at: 2024-06-29T20:50:00
+company: "[[Crescent FinTech]]"
+source_created_at: 2025-10-03T12:41:00
+source_observed_at: 2025-10-03T13:52:00
+created_at: 2025-10-04T22:41:00
+updated_at: 2025-10-29T00:41:00
 tags: [#research]
 ---
 # Project Horizon 64 Handoff Readiness Research 504
 
 ## Research Summary
-Research on handoff readiness for [[Project Horizon 64]] and [[BrightWave Health]].
+Research on handoff readiness for [[Project Horizon 64]] and [[Crescent FinTech]].
 
 ## Evidence
 - Interview notes from [[Kai Chen]]

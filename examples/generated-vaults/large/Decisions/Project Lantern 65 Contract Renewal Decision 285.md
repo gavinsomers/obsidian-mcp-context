@@ -3,11 +3,11 @@ type: decision
 date: 2024-06-26
 status: active
 project: "[[Project Lantern 65]]"
-company: "[[Helio Health]]"
-source_created_at: 2024-06-26T11:52:00
-source_observed_at: 2024-06-26T14:28:00
-created_at: 2024-06-26T14:33:00
-updated_at: 2024-06-26T18:33:00
+company: "[[Meridian Health]]"
+source_created_at: 2024-06-26T09:11:00
+source_observed_at: 2024-06-26T10:53:00
+created_at: 2024-07-02T09:11:00
+updated_at: 2024-07-02T18:11:00
 tags: [#decision]
 ---
 # Project Lantern 65 Contract Renewal Decision 285
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Lantern 65]].
 
 ## Context
-This decision applies to [[Helio Health]] and [[Project Lantern 65]].
+This decision applies to [[Meridian Health]] and [[Project Lantern 65]].
 It follows [[Project Lantern 65 Adoption Workflow Sync 285]].
 It incorporates [[Project Lantern 65 Warehouse Mapping Research 65]].
 

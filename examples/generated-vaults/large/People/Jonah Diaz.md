@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Principal Analytics Engineer"
-source_created_at: 2023-05-20T12:13:00
-source_observed_at: 2023-05-20T13:06:00
-created_at: 2023-05-21T00:13:00
-updated_at: 2023-08-05T01:13:00
+source_created_at: 2023-05-20T09:00:00
+source_observed_at: 2023-05-20T09:25:00
+created_at: 2023-05-21T01:00:00
+updated_at: 2024-07-25T13:00:00
 tags: [#person]
 ---
 # Jonah Diaz
@@ -14,5 +14,5 @@ tags: [#person]
 Jonah Diaz is the Principal Analytics Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Signal 89]] ([[Summit Health]])
 - [ ] Confirm next update with [[Jonah Diaz]] #follow-up

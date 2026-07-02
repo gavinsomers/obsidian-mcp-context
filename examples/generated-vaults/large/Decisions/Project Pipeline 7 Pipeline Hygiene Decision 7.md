@@ -3,11 +3,11 @@ type: decision
 date: 2023-07-09
 status: active
 project: "[[Project Pipeline 7]]"
-company: "[[Vanguard Labs]]"
-source_created_at: 2023-07-09T16:35:00
-source_observed_at: 2023-07-09T17:15:00
-created_at: 2023-07-09T19:39:00
-updated_at: 2023-07-10T03:39:00
+company: "[[Atlas Media]]"
+source_created_at: 2023-07-09T16:11:00
+source_observed_at: 2023-07-09T18:34:00
+created_at: 2023-07-09T18:39:00
+updated_at: 2023-07-10T11:39:00
 tags: [#decision]
 ---
 # Project Pipeline 7 Pipeline Hygiene Decision 7
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Pipeline 7]].
 
 ## Context
-This decision applies to [[Vanguard Labs]] and [[Project Pipeline 7]].
-It follows [[Project Pipeline 7 Contract Renewal Sync 7]].
+This decision applies to [[Atlas Media]] and [[Project Pipeline 7]].
+It follows [[Project Pipeline 7 Contract Renewal Sync 1547]].
 It incorporates [[Project Pipeline 7 Security Review Research 7]].
 
 ## Supersession

@@ -3,11 +3,11 @@ type: decision
 date: 2026-03-13
 status: active
 project: "[[Project Orbit 206]]"
-company: "[[Pioneer Media]]"
-source_created_at: 2026-03-13T15:15:00
-source_observed_at: 2026-03-13T16:04:00
-created_at: 2026-03-17T16:15:00
-updated_at: 2026-03-18T12:15:00
+company: "[[BrightWave Manufacturing]]"
+source_created_at: 2026-03-13T09:22:00
+source_observed_at: 2026-03-13T09:33:00
+created_at: 2026-03-13T09:41:00
+updated_at: 2026-03-14T06:41:00
 tags: [#decision]
 ---
 # Project Orbit 206 Lineage Audit Decision 426
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Orbit 206]].
 
 ## Context
-This decision applies to [[Pioneer Media]] and [[Project Orbit 206]].
-It follows [[Project Orbit 206 Metric Reconciliation Sync 866]].
-It incorporates [[Project Orbit 206 Stakeholder Alignment Research 206]].
+This decision applies to [[BrightWave Manufacturing]] and [[Project Orbit 206]].
+It follows [[Project Orbit 206 Metric Reconciliation Sync 646]].
+It incorporates [[Project Orbit 206 Stakeholder Alignment Research 426]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

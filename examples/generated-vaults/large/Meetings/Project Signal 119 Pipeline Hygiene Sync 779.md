@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-12-20
 project: "[[Project Signal 119]]"
-company: "[[Crescent Analytics]]"
-source_created_at: 2024-12-20T11:15:00
-source_observed_at: 2024-12-20T13:19:00
-created_at: 2024-12-20T16:57:00
-updated_at: 2024-12-20T18:57:00
+company: "[[Meridian Labs]]"
+source_created_at: 2024-12-20T13:36:00
+source_observed_at: 2024-12-20T15:18:00
+created_at: 2024-12-20T16:23:00
+updated_at: 2024-12-21T15:23:00
 tags: [#meeting]
 ---
 # Project Signal 119 Pipeline Hygiene Sync 779
 
-## Attendees
-- [[Xavier Morgan]]
-- [[Marcus Foster]]
-- [[Grace Usman]]
+## Evergreen Attendees
+- [[Nadia Evans]]
+
+## Client Attendees
+- [[Lina Morgan]]
+- [[Amara Rostova]]
+- [[Priya Vance]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 119]] at [[Crescent Analytics]].
-[[Nadia Evans]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 119]] at [[Meridian Labs]].
+[[Nadia Evans]] aligned with [[Lina Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 119]] to [[Nadia Evans]] #follow-up

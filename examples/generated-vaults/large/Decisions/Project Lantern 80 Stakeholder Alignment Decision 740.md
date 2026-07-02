@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-02
 status: active
 project: "[[Project Lantern 80]]"
-company: "[[Helio Media]]"
-source_created_at: 2026-04-02T15:41:00
-source_observed_at: 2026-04-02T17:20:00
-created_at: 2026-04-02T19:59:00
-updated_at: 2026-04-03T06:59:00
+company: "[[Crescent Logistics]]"
+source_created_at: 2026-04-02T09:52:00
+source_observed_at: 2026-04-02T11:46:00
+created_at: 2026-04-02T14:44:00
+updated_at: 2026-04-02T22:44:00
 tags: [#decision]
 ---
 # Project Lantern 80 Stakeholder Alignment Decision 740
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Lantern 80]].
 
 ## Context
-This decision applies to [[Helio Media]] and [[Project Lantern 80]].
+This decision applies to [[Crescent Logistics]] and [[Project Lantern 80]].
 It follows [[Project Lantern 80 Handoff Readiness Sync 740]].
 It incorporates [[Project Lantern 80 Metric Reconciliation Research 520]].
 

@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Summit 132]]"
-source_created_at: 2025-10-29T08:09:00
-source_observed_at: 2025-10-29T09:49:00
-created_at: 2025-10-29T22:09:00
-updated_at: 2025-11-19T04:09:00
+source_created_at: 2025-10-29T11:43:00
+source_observed_at: 2025-10-29T12:32:00
+created_at: 2025-10-30T16:43:00
+updated_at: 2025-12-13T03:43:00
 tags: [#risk]
 ---
 # Project Summit 132 Metric Reconciliation Risk 572
 
 ## Risk
-Metric Reconciliation may affect [[Project Summit 132]] for [[Noble Labs]].
+Metric Reconciliation may affect [[Project Summit 132]] for [[Meridian Retail]].
 
 ## Evidence
 - Raised after [[Project Summit 132 Stakeholder Alignment Sync 572]]

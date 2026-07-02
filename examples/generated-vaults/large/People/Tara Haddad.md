@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-06-27T11:37:00
-source_observed_at: 2023-06-27T12:28:00
-created_at: 2023-06-28T15:37:00
-updated_at: 2023-07-14T18:37:00
+company: "[[Apex Labs]]"
+role: "Finance Lead"
+source_created_at: 2023-04-24T14:49:00
+source_observed_at: 2023-04-24T16:30:00
+created_at: 2023-04-26T11:49:00
+updated_at: 2023-09-29T13:00:00
 tags: [#person]
 ---
 # Tara Haddad
 
 ## Role
-Tara Haddad is the Senior Data Consultant at [[Evergreen Analytics]].
+Tara Haddad is the Finance Lead at [[Apex Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Venture 28]] ([[Apex Labs]])
 - [ ] Confirm next update with [[Tara Haddad]] #follow-up

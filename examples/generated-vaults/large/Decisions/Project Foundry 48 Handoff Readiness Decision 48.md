@@ -3,11 +3,11 @@ type: decision
 date: 2024-01-26
 status: active
 project: "[[Project Foundry 48]]"
-company: "[[Cobalt Manufacturing]]"
-source_created_at: 2024-01-26T14:34:00
-source_observed_at: 2024-01-26T14:48:00
-created_at: 2024-01-26T20:18:00
-updated_at: 2024-01-27T17:18:00
+company: "[[Cobalt FinTech]]"
+source_created_at: 2024-01-26T15:49:00
+source_observed_at: 2024-01-26T16:15:00
+created_at: 2024-01-26T18:16:00
+updated_at: 2024-01-27T11:16:00
 tags: [#decision]
 ---
 # Project Foundry 48 Handoff Readiness Decision 48
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 48]].
 
 ## Context
-This decision applies to [[Cobalt Manufacturing]] and [[Project Foundry 48]].
-It follows [[Project Foundry 48 Lineage Audit Sync 48]].
+This decision applies to [[Cobalt FinTech]] and [[Project Foundry 48]].
+It follows [[Project Foundry 48 Lineage Audit Sync 1588]].
 It incorporates [[Project Foundry 48 Finance Approval Research 48]].
 
 ## Supersession

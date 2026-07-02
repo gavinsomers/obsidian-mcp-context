@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-09-24T09:45:00
-source_observed_at: 2023-09-24T10:25:00
-created_at: 2023-09-27T15:45:00
-updated_at: 2023-12-31T13:00:00
+company: "[[Northstar Retail]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-09-05T08:11:00
+source_observed_at: 2023-09-05T08:58:00
+created_at: 2023-09-11T08:11:00
+updated_at: 2026-04-24T13:00:00
 tags: [#person]
 ---
 # Alex Shah
 
 ## Role
-Alex Shah is the Data Platform Engineer at [[Evergreen Analytics]].
+Alex Shah is the Revenue Operations Lead at [[Northstar Retail]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Beacon 47]] ([[Apex Manufacturing]])
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 140]] ([[Northstar Retail]])
+- Client stakeholder on [[Project Meridian 201]] ([[Northstar Retail]])
+- Client stakeholder on [[Project Harbor 219]] ([[Northstar Retail]])
 - [ ] Confirm next update with [[Alex Shah]] #follow-up

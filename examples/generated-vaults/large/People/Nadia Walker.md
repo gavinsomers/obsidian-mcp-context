@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-11-02T08:33:00
-source_observed_at: 2023-11-02T09:38:00
-created_at: 2023-11-03T04:33:00
-updated_at: 2023-12-08T12:33:00
+company: "[[Keystone FinTech]]"
+role: "Operations Manager"
+source_created_at: 2023-11-03T12:33:00
+source_observed_at: 2023-11-03T14:38:00
+created_at: 2023-11-04T01:33:00
+updated_at: 2025-01-03T13:00:00
 tags: [#person]
 ---
 # Nadia Walker
 
 ## Role
-Nadia Walker is the Delivery Lead at [[Evergreen Analytics]].
+Nadia Walker is the Operations Manager at [[Keystone FinTech]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 122]] ([[Keystone FinTech]])
 - [ ] Confirm next update with [[Nadia Walker]] #follow-up

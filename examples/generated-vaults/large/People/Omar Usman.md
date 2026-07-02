@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-10-16T16:40:00
-source_observed_at: 2023-10-16T16:55:00
-created_at: 2023-10-18T13:40:00
-updated_at: 2024-01-09T15:40:00
+company: "[[Quantum Logistics]]"
+role: "Customer Success Lead"
+source_created_at: 2023-11-02T08:57:00
+source_observed_at: 2023-11-02T10:34:00
+created_at: 2023-11-02T10:57:00
+updated_at: 2026-02-09T13:00:00
 tags: [#person]
 ---
 # Omar Usman
 
 ## Role
-Omar Usman is the Technical Director at [[Evergreen Analytics]].
+Omar Usman is the Customer Success Lead at [[Quantum Logistics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Pipeline 37]] ([[Quantum Logistics]])
+- Client stakeholder on [[Project Harbor 204]] ([[Quantum Logistics]])
 - [ ] Confirm next update with [[Omar Usman]] #follow-up

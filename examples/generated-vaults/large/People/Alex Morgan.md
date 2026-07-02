@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-08-03T16:42:00
-source_observed_at: 2023-08-03T17:55:00
-created_at: 2023-08-04T05:42:00
-updated_at: 2023-10-28T16:42:00
+company: "[[Quantum Analytics]]"
+role: "Executive Sponsor"
+source_created_at: 2023-12-02T08:49:00
+source_observed_at: 2023-12-02T09:43:00
+created_at: 2023-12-03T14:49:00
+updated_at: 2023-12-18T17:49:00
 tags: [#person]
 ---
 # Alex Morgan
 
 ## Role
-Alex Morgan is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Alex Morgan is the Executive Sponsor at [[Quantum Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- First seen through [[Quantum Analytics]] account context
 - [ ] Confirm next update with [[Alex Morgan]] #follow-up

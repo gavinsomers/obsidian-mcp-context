@@ -1,11 +1,11 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Bridge 75]]"
-source_created_at: 2024-08-15T16:21:00
-source_observed_at: 2024-08-15T16:50:00
-created_at: 2024-08-16T15:21:00
-updated_at: 2024-08-31T23:21:00
+source_created_at: 2024-08-15T09:37:00
+source_observed_at: 2024-08-15T12:32:00
+created_at: 2024-08-17T03:37:00
+updated_at: 2024-09-18T11:37:00
 tags: [#risk]
 ---
 # Project Bridge 75 Pipeline Hygiene Risk 295
@@ -17,6 +17,6 @@ Pipeline Hygiene may affect [[Project Bridge 75]] for [[Keystone Health]].
 - Raised after [[Project Bridge 75 Adoption Workflow Sync 295]]
 
 ## Current State
-- Status: `closed`
+- Status: `mitigating`
 - Owner: [[Wendy Chen]]
 - [ ] Reassess [[Project Bridge 75 Pipeline Hygiene Risk 295]] during the next review #risk

@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-09-01T12:53:00
-source_observed_at: 2023-09-01T13:10:00
-created_at: 2023-09-02T14:53:00
-updated_at: 2023-11-23T16:53:00
+company: "[[Vanguard Media]]"
+role: "Executive Sponsor"
+source_created_at: 2023-10-01T16:26:00
+source_observed_at: 2023-10-01T17:03:00
+created_at: 2023-10-03T06:26:00
+updated_at: 2023-12-01T16:26:00
 tags: [#person]
 ---
 # Jonah Patel
 
 ## Role
-Jonah Patel is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Jonah Patel is the Executive Sponsor at [[Vanguard Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Atlas 16]] ([[Vanguard Media]])
+- Client stakeholder on [[Project Meridian 21]] ([[Vanguard Media]])
 - [ ] Confirm next update with [[Jonah Patel]] #follow-up

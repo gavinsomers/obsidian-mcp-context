@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-09-01T13:35:00
-source_observed_at: 2023-09-01T16:02:00
-created_at: 2023-09-07T18:35:00
-updated_at: 2023-09-29T20:35:00
+company: "[[Meridian Media]]"
+role: "Customer Success Lead"
+source_created_at: 2023-09-29T16:42:00
+source_observed_at: 2023-09-29T17:55:00
+created_at: 2023-09-30T05:42:00
+updated_at: 2025-12-27T13:00:00
 tags: [#person]
 ---
 # Iris Patel
 
 ## Role
-Iris Patel is the Technical Director at [[Evergreen Analytics]].
+Iris Patel is the Customer Success Lead at [[Meridian Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 168]] ([[Meridian Media]])
+- Client stakeholder on [[Project Bridge 195]] ([[Meridian Media]])
 - [ ] Confirm next update with [[Iris Patel]] #follow-up

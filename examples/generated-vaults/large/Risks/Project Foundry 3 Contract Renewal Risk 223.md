@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Foundry 3]]"
-source_created_at: 2023-09-21T08:24:00
-source_observed_at: 2023-09-21T08:51:00
-created_at: 2023-09-22T10:24:00
-updated_at: 2023-10-16T16:24:00
+source_created_at: 2024-04-23T11:26:00
+source_observed_at: 2024-04-23T11:49:00
+created_at: 2024-04-23T22:26:00
+updated_at: 2024-05-11T02:26:00
 tags: [#risk]
 ---
 # Project Foundry 3 Contract Renewal Risk 223
 
 ## Risk
-Contract Renewal may affect [[Project Foundry 3]] for [[Cobalt Labs]].
+Contract Renewal may affect [[Project Foundry 3]] for [[Vanguard Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Foundry 3 Security Review Sync 883]]
+- Raised after [[Project Foundry 3 Security Review Sync 223]]
 
 ## Current State
-- Status: `closed`
+- Status: `mitigating`
 - Owner: [[Ben Alvarez]]
 - [ ] Reassess [[Project Foundry 3 Contract Renewal Risk 223]] during the next review #risk

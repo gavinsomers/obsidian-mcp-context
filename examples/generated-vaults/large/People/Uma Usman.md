@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-10-18T12:10:00
-source_observed_at: 2023-10-18T13:26:00
-created_at: 2023-10-19T13:10:00
-updated_at: 2023-12-08T13:10:00
+company: "[[Noble Logistics]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-11-12T10:39:00
+source_observed_at: 2023-11-12T12:00:00
+created_at: 2023-11-13T04:39:00
+updated_at: 2024-09-27T13:00:00
 tags: [#person]
 ---
 # Uma Usman
 
 ## Role
-Uma Usman is the Data Platform Engineer at [[Evergreen Analytics]].
+Uma Usman is the Revenue Operations Lead at [[Noble Logistics]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Horizon 34]] ([[BrightWave Retail]])
+## Client Project Involvement
+- Client stakeholder on [[Project Summit 102]] ([[Noble Logistics]])
 - [ ] Confirm next update with [[Uma Usman]] #follow-up

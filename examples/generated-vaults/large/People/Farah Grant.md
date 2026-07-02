@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Delivery Lead"
-source_created_at: 2023-06-14T16:05:00
-source_observed_at: 2023-06-14T16:39:00
-created_at: 2023-06-16T04:05:00
-updated_at: 2023-09-06T04:05:00
+source_created_at: 2023-06-14T08:51:00
+source_observed_at: 2023-06-14T11:34:00
+created_at: 2023-06-15T06:51:00
+updated_at: 2025-07-24T13:00:00
 tags: [#person]
 ---
 # Farah Grant
@@ -14,5 +14,5 @@ tags: [#person]
 Farah Grant is the Delivery Lead at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Venture 163]] ([[Vanguard Health]])
 - [ ] Confirm next update with [[Farah Grant]] #follow-up

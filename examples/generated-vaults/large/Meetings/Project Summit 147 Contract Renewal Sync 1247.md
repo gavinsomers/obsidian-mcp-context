@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-05-05
 project: "[[Project Summit 147]]"
-company: "[[Noble FinTech]]"
-source_created_at: 2025-05-05T08:58:00
-source_observed_at: 2025-05-05T09:15:00
-created_at: 2025-05-05T14:31:00
-updated_at: 2025-05-06T10:31:00
+company: "[[Summit Retail]]"
+source_created_at: 2025-05-05T15:56:00
+source_observed_at: 2025-05-05T17:31:00
+created_at: 2025-05-05T17:36:00
+updated_at: 2025-05-06T01:36:00
 tags: [#meeting]
 ---
 # Project Summit 147 Contract Renewal Sync 1247
 
-## Attendees
-- [[Iris Walker]]
-- [[Tara Lee]]
-- [[Iris Alvarez]]
+## Evergreen Attendees
+- [[Priya Foster]]
+
+## Client Attendees
+- [[Zoe Walker]]
+- [[Victor Novak]]
+- [[Farah Jenkins]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Summit 147]] at [[Noble FinTech]].
-[[Priya Foster]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Summit 147]] at [[Summit Retail]].
+[[Priya Foster]] aligned with [[Zoe Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 147]] to [[Priya Foster]] #follow-up

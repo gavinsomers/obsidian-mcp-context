@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-27
 status: active
 project: "[[Project Pipeline 172]]"
-company: "[[Quantum Manufacturing]]"
-source_created_at: 2025-09-27T11:09:00
-source_observed_at: 2025-09-27T11:51:00
-created_at: 2025-09-27T12:22:00
-updated_at: 2025-09-27T13:22:00
+company: "[[BrightWave Retail]]"
+source_created_at: 2025-09-27T10:22:00
+source_observed_at: 2025-09-27T10:50:00
+created_at: 2025-09-27T10:55:00
+updated_at: 2025-09-27T14:55:00
 tags: [#decision]
 ---
 # Project Pipeline 172 Finance Approval Decision 172
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with finance approval for [[Project Pipeline 172]].
 
 ## Context
-This decision applies to [[Quantum Manufacturing]] and [[Project Pipeline 172]].
-It follows [[Project Pipeline 172 Stakeholder Alignment Sync 1272]].
+This decision applies to [[BrightWave Retail]] and [[Project Pipeline 172]].
+It follows [[Project Pipeline 172 Stakeholder Alignment Sync 172]].
 It incorporates [[Project Pipeline 172 Lineage Audit Research 172]].
 
 ## Supersession

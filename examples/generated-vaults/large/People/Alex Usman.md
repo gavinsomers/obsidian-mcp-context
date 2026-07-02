@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-10-11T08:44:00
-source_observed_at: 2023-10-11T10:38:00
-created_at: 2023-10-11T18:44:00
-updated_at: 2023-12-09T22:44:00
+company: "[[Quantum Media]]"
+role: "Executive Sponsor"
+source_created_at: 2023-10-03T08:39:00
+source_observed_at: 2023-10-03T10:59:00
+created_at: 2023-10-03T18:39:00
+updated_at: 2026-01-02T13:00:00
 tags: [#person]
 ---
 # Alex Usman
 
 ## Role
-Alex Usman is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Alex Usman is the Executive Sponsor at [[Quantum Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Atlas 196]] ([[Quantum Media]])
 - [ ] Confirm next update with [[Alex Usman]] #follow-up

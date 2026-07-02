@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: enterprise
-source_created_at: 2023-07-02T09:01:00
-source_observed_at: 2023-07-02T10:38:00
-created_at: 2023-07-04T06:01:00
-updated_at: 2023-08-08T17:01:00
+source_created_at: 2023-07-02T08:16:00
+source_observed_at: 2023-07-02T11:13:00
+created_at: 2023-07-03T01:16:00
+updated_at: 2023-07-24T11:16:00
 tags: [#company]
 ---
 # Vanguard Retail
@@ -14,6 +14,10 @@ tags: [#company]
 Vanguard Retail is a enterprise account currently marked `pipeline`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Ben Jenkins]] - Revenue Operations Lead
+- [[Rachel Novak]] - Data Owner
 
 ## Projects
 

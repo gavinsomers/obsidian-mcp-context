@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Atlas 211]]"
-source_created_at: 2026-03-23T15:01:00
-source_observed_at: 2026-03-23T16:43:00
-created_at: 2026-03-25T08:01:00
-updated_at: 2026-04-13T18:01:00
+source_created_at: 2026-03-23T12:02:00
+source_observed_at: 2026-03-23T13:31:00
+created_at: 2026-03-24T22:02:00
+updated_at: 2026-05-01T01:02:00
 tags: [#risk]
 ---
 # Project Atlas 211 Adoption Workflow Risk 651
 
 ## Risk
-Adoption Workflow may affect [[Project Atlas 211]] for [[Apex Logistics]].
+Adoption Workflow may affect [[Project Atlas 211]] for [[Summit FinTech]].
 
 ## Evidence
-- Raised after [[Project Atlas 211 Warehouse Mapping Sync 211]]
+- Raised after [[Project Atlas 211 Warehouse Mapping Sync 1751]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Ben Ivanov]]
+- Status: `mitigating`
+- Owner: [[Jonah Alvarez]]
 - [ ] Reassess [[Project Atlas 211 Adoption Workflow Risk 651]] during the next review #risk

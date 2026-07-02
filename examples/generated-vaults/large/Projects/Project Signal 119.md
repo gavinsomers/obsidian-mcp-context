@@ -1,26 +1,26 @@
 ---
 type: project
-status: closed
-company: "[[Crescent Analytics]]"
-source_created_at: 2024-12-10T12:46:00
-source_observed_at: 2024-12-10T14:35:00
-created_at: 2024-12-12T09:46:00
-updated_at: 2025-02-10T16:46:00
+status: active
+company: "[[Meridian Labs]]"
+source_created_at: 2024-12-10T12:52:00
+source_observed_at: 2024-12-10T14:15:00
+created_at: 2024-12-11T06:52:00
+updated_at: 2025-01-24T12:52:00
 tags: [#project]
 ---
 # Project Signal 119
 
 ## Overview
-Project Signal 119 supports [[Crescent Analytics]] through research program.
+Project Signal 119 supports [[Meridian Labs]] through research program.
 
 ## Stakeholders
-- [[Wendy Foster]]
-- [[Grace Usman]]
-- [[Marcus Foster]]
-- [[Xavier Morgan]]
+- [[Xavier Haddad]]
+- [[Lina Morgan]]
+- [[Amara Rostova]]
+- [[Priya Vance]]
 
 ## Operating Notes
-- Owner: [[Nadia Evans]]
-- Status: `closed`
-- Closed at: `2025-04-15`
+- Evergreen owner: [[Nadia Evans]]
+- Client account: [[Meridian Labs]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Signal 119]] #ops

@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-08-26T12:39:00
-source_observed_at: 2023-08-26T15:38:00
-created_at: 2023-08-28T04:39:00
-updated_at: 2023-12-02T13:00:00
+company: "[[Helio Health]]"
+role: "Customer Success Lead"
+source_created_at: 2023-08-28T10:31:00
+source_observed_at: 2023-08-28T11:40:00
+created_at: 2023-08-29T23:31:00
+updated_at: 2025-11-28T13:00:00
 tags: [#person]
 ---
 # Tara Ortega
 
 ## Role
-Tara Ortega is the Technical Director at [[Evergreen Analytics]].
+Tara Ortega is the Customer Success Lead at [[Helio Health]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Orbit 41]] ([[Summit Retail]])
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 54]] ([[Helio Health]])
+- Client stakeholder on [[Project Lantern 170]] ([[Helio Health]])
+- Client stakeholder on [[Project Harbor 189]] ([[Helio Health]])
 - [ ] Confirm next update with [[Tara Ortega]] #follow-up

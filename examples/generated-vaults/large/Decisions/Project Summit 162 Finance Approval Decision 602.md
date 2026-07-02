@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-18
 status: active
 project: "[[Project Summit 162]]"
-company: "[[Noble Retail]]"
-source_created_at: 2025-09-18T12:43:00
-source_observed_at: 2025-09-18T12:59:00
-created_at: 2025-09-27T13:43:00
-updated_at: 2025-09-28T06:43:00
+company: "[[BrightWave FinTech]]"
+source_created_at: 2025-09-18T14:37:00
+source_observed_at: 2025-09-18T14:57:00
+created_at: 2025-09-18T17:28:00
+updated_at: 2025-09-19T13:28:00
 tags: [#decision]
 ---
 # Project Summit 162 Finance Approval Decision 602
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Summit 162]].
 
 ## Context
-This decision applies to [[Noble Retail]] and [[Project Summit 162]].
+This decision applies to [[BrightWave FinTech]] and [[Project Summit 162]].
 It follows [[Project Summit 162 Stakeholder Alignment Sync 602]].
-It incorporates [[Project Summit 162 Lineage Audit Research 382]].
+It incorporates [[Project Summit 162 Lineage Audit Research 162]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

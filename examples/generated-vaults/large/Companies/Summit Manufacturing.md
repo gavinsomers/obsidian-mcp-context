@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: enterprise
-source_created_at: 2023-08-09T14:06:00
-source_observed_at: 2023-08-09T17:03:00
-created_at: 2023-08-10T11:06:00
-updated_at: 2023-08-28T18:06:00
+source_created_at: 2023-08-09T08:28:00
+source_observed_at: 2023-08-09T11:11:00
+created_at: 2023-08-09T13:28:00
+updated_at: 2023-09-27T17:46:00
 tags: [#company]
 ---
 # Summit Manufacturing
@@ -14,6 +14,11 @@ tags: [#company]
 Summit Manufacturing is a enterprise account currently marked `active`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Victor Jenkins]] - Customer Success Lead
+- [[Jonah Ortega]] - Security Contact
+- [[Zoe Shah]] - Product Analytics Lead
 
 ## Projects
 

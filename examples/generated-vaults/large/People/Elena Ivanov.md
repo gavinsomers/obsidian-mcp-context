@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-07-01T09:27:00
-source_observed_at: 2023-07-01T10:11:00
-created_at: 2023-07-02T01:27:00
-updated_at: 2023-07-26T05:27:00
+company: "[[Crescent Labs]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-05-18T11:54:00
+source_observed_at: 2023-05-18T14:00:00
+created_at: 2023-05-20T04:54:00
+updated_at: 2025-01-27T13:00:00
 tags: [#person]
 ---
 # Elena Ivanov
 
 ## Role
-Elena Ivanov is the Analytics Engineer at [[Evergreen Analytics]].
+Elena Ivanov is the Product Analytics Lead at [[Crescent Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Pipeline 127]] ([[Crescent Labs]])
 - [ ] Confirm next update with [[Elena Ivanov]] #follow-up

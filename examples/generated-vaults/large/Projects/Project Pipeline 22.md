@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Vanguard FinTech]]"
-source_created_at: 2023-08-21T11:31:00
-source_observed_at: 2023-08-21T14:23:00
-created_at: 2023-08-21T17:31:00
-updated_at: 2023-11-11T20:31:00
+status: active
+company: "[[Cobalt Logistics]]"
+source_created_at: 2023-08-21T09:10:00
+source_observed_at: 2023-08-21T10:30:00
+created_at: 2023-08-24T16:10:00
+updated_at: 2023-11-02T13:01:00
 tags: [#project]
 ---
 # Project Pipeline 22
 
 ## Overview
-Project Pipeline 22 supports [[Vanguard FinTech]] through sales pipeline.
+Project Pipeline 22 supports [[Cobalt Logistics]] through sales pipeline.
 
 ## Stakeholders
-- [[Sam Morgan]]
-- [[Elena Novak]]
-- [[Hannah Ivanov]]
-- [[Alex Kim]]
+- [[Farah Lee]]
+- [[Victor Patel]]
+- [[Jonah Usman]]
 
 ## Operating Notes
-- Owner: [[Victor Alvarez]]
-- Status: `planning`
+- Evergreen owner: [[Victor Alvarez]]
+- Client account: [[Cobalt Logistics]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Pipeline 22]] #ops

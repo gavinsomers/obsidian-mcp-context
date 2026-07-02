@@ -1,25 +1,25 @@
 ---
 type: project
 status: blocked
-company: "[[Meridian Labs]]"
-source_created_at: 2023-06-02T08:48:00
-source_observed_at: 2023-06-02T09:06:00
-created_at: 2023-06-02T17:48:00
-updated_at: 2023-08-05T00:48:00
+company: "[[Summit Media]]"
+source_created_at: 2023-06-02T08:26:00
+source_observed_at: 2023-06-02T08:47:00
+created_at: 2023-06-10T08:26:00
+updated_at: 2023-10-19T17:23:00
 tags: [#project]
 ---
 # Project Meridian 6
 
 ## Overview
-Project Meridian 6 supports [[Meridian Labs]] through consulting delivery.
+Project Meridian 6 supports [[Summit Media]] through consulting delivery.
 
 ## Stakeholders
-- [[Nadia Alvarez]]
-- [[Lina Diaz]]
-- [[Sam Alvarez]]
-- [[Amara Diaz]]
+- [[Zoe Kim]]
+- [[Nadia Patel]]
+- [[Clara Usman]]
 
 ## Operating Notes
-- Owner: [[Elena Alvarez]]
+- Evergreen owner: [[Elena Alvarez]]
+- Client account: [[Summit Media]]
 - Status: `blocked`
 - [ ] Reconcile latest state for [[Project Meridian 6]] #ops

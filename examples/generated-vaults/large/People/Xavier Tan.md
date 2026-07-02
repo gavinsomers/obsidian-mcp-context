@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-10-10T13:27:00
-source_observed_at: 2023-10-10T16:05:00
-created_at: 2023-10-12T04:27:00
-updated_at: 2023-11-14T13:27:00
+company: "[[Helio Media]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-09-29T08:48:00
+source_observed_at: 2023-09-29T09:35:00
+created_at: 2023-09-30T14:48:00
+updated_at: 2026-02-14T13:00:00
 tags: [#person]
 ---
 # Xavier Tan
 
 ## Role
-Xavier Tan is the Analytics Engineer at [[Evergreen Analytics]].
+Xavier Tan is the Product Analytics Lead at [[Helio Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 205]] ([[Helio Media]])
 - [ ] Confirm next update with [[Xavier Tan]] #follow-up

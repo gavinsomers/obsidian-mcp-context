@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-07-24T08:31:00
-source_observed_at: 2023-07-24T09:36:00
-created_at: 2023-07-25T05:31:00
-updated_at: 2023-10-10T10:31:00
+company: "[[Harbor Media]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-10-07T13:52:00
+source_observed_at: 2023-10-07T15:30:00
+created_at: 2023-10-08T21:52:00
+updated_at: 2024-10-26T13:00:00
 tags: [#person]
 ---
 # Yara Kim
 
 ## Role
-Yara Kim is the Data Platform Engineer at [[Evergreen Analytics]].
+Yara Kim is the Revenue Operations Lead at [[Harbor Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Foundry 108]] ([[Harbor Media]])
 - [ ] Confirm next update with [[Yara Kim]] #follow-up

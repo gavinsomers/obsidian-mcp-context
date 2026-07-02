@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[Noble Logistics]]"
-source_created_at: 2024-09-20T11:11:00
-source_observed_at: 2024-09-20T11:41:00
-created_at: 2024-09-22T03:11:00
-updated_at: 2024-11-08T13:11:00
+company: "[[Northstar Labs]]"
+source_created_at: 2024-09-20T12:37:00
+source_observed_at: 2024-09-20T13:08:00
+created_at: 2024-09-20T18:37:00
+updated_at: 2024-11-12T19:37:00
 tags: [#project]
 ---
 # Project Venture 103
 
 ## Overview
-Project Venture 103 supports [[Noble Logistics]] through customer success.
+Project Venture 103 supports [[Northstar Labs]] through customer success.
 
 ## Stakeholders
-- [[Marcus Kim]]
-- [[Sam Rostova]]
-- [[Tara Jenkins]]
-- [[Nadia Foster]]
+- [[Sam Haddad]]
+- [[Grace Morgan]]
+- [[Wendy Quinn]]
+- [[Kai Vance]]
 
 ## Operating Notes
-- Owner: [[Yara Diaz]]
+- Evergreen owner: [[Yara Diaz]]
+- Client account: [[Northstar Labs]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Venture 103]] #ops

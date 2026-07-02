@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-10-05T08:12:00
-source_observed_at: 2023-10-05T08:50:00
-created_at: 2023-10-07T05:12:00
-updated_at: 2023-12-20T12:12:00
+company: "[[Meridian Health]]"
+role: "Customer Success Lead"
+source_created_at: 2023-09-22T15:39:00
+source_observed_at: 2023-09-22T17:20:00
+created_at: 2023-09-23T05:39:00
+updated_at: 2024-03-29T13:00:00
 tags: [#person]
 ---
 # Iris Tan
 
 ## Role
-Iris Tan is the Technical Director at [[Evergreen Analytics]].
+Iris Tan is the Customer Success Lead at [[Meridian Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Venture 58]] ([[Meridian Health]])
+- Client stakeholder on [[Project Lantern 65]] ([[Meridian Health]])
 - [ ] Confirm next update with [[Iris Tan]] #follow-up

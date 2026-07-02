@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2023-10-14
+date: 2024-04-25
 status: active
 project: "[[Project Meridian 21]]"
-company: "[[Meridian FinTech]]"
-source_created_at: 2023-10-14T08:43:00
-source_observed_at: 2023-10-14T10:58:00
-created_at: 2023-10-14T11:03:00
-updated_at: 2023-10-14T23:03:00
+company: "[[Vanguard Media]]"
+source_created_at: 2024-04-25T08:18:00
+source_observed_at: 2024-04-25T09:07:00
+created_at: 2024-05-04T14:18:00
+updated_at: 2024-05-05T07:18:00
 tags: [#decision]
 ---
 # Project Meridian 21 Security Review Decision 241
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with security review for [[Project Meridian 21]].
 
 ## Context
-This decision applies to [[Meridian FinTech]] and [[Project Meridian 21]].
-It follows [[Project Meridian 21 Warehouse Mapping Sync 1561]].
-It incorporates [[Project Meridian 21 Contract Renewal Research 461]].
+This decision applies to [[Vanguard Media]] and [[Project Meridian 21]].
+It follows [[Project Meridian 21 Warehouse Mapping Sync 241]].
+It incorporates [[Project Meridian 21 Contract Renewal Research 21]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

@@ -3,11 +3,11 @@ type: decision
 date: 2025-03-12
 status: active
 project: "[[Project Summit 27]]"
-company: "[[Pioneer FinTech]]"
-source_created_at: 2025-03-12T10:41:00
-source_observed_at: 2025-03-12T11:37:00
-created_at: 2025-03-12T15:48:00
-updated_at: 2025-03-13T13:48:00
+company: "[[Summit Analytics]]"
+source_created_at: 2025-03-12T16:13:00
+source_observed_at: 2025-03-12T18:59:00
+created_at: 2025-03-12T21:43:00
+updated_at: 2025-03-13T18:43:00
 tags: [#decision]
 ---
 # Project Summit 27 Pipeline Hygiene Decision 467
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Summit 27]].
 
 ## Context
-This decision applies to [[Pioneer FinTech]] and [[Project Summit 27]].
+This decision applies to [[Summit Analytics]] and [[Project Summit 27]].
 It follows [[Project Summit 27 Contract Renewal Sync 467]].
 It incorporates [[Project Summit 27 Security Review Research 247]].
 

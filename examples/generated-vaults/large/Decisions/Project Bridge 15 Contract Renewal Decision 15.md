@@ -3,11 +3,11 @@ type: decision
 date: 2023-08-18
 status: active
 project: "[[Project Bridge 15]]"
-company: "[[Keystone Labs]]"
-source_created_at: 2023-08-18T15:00:00
-source_observed_at: 2023-08-18T17:41:00
-created_at: 2023-08-18T17:46:00
-updated_at: 2023-08-19T08:46:00
+company: "[[Keystone Manufacturing]]"
+source_created_at: 2023-08-18T11:23:00
+source_observed_at: 2023-08-18T14:04:00
+created_at: 2023-08-18T14:09:00
+updated_at: 2023-08-18T16:09:00
 tags: [#decision]
 ---
 # Project Bridge 15 Contract Renewal Decision 15
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Bridge 15]].
 
 ## Context
-This decision applies to [[Keystone Labs]] and [[Project Bridge 15]].
-It follows [[Project Bridge 15 Adoption Workflow Sync 15]].
+This decision applies to [[Keystone Manufacturing]] and [[Project Bridge 15]].
+It follows [[Project Bridge 15 Adoption Workflow Sync 1555]].
 It incorporates [[Project Bridge 15 Warehouse Mapping Research 15]].
 
 ## Supersession

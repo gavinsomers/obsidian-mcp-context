@@ -2,16 +2,16 @@
 type: risk
 status: closed
 project: "[[Project Beacon 152]]"
-source_created_at: 2025-09-23T16:59:00
-source_observed_at: 2025-09-23T17:41:00
-created_at: 2025-09-23T23:59:00
-updated_at: 2025-11-06T06:59:00
+source_created_at: 2025-09-20T09:54:00
+source_observed_at: 2025-09-20T12:15:00
+created_at: 2025-09-21T20:54:00
+updated_at: 2025-10-03T22:54:00
 tags: [#risk]
 ---
 # Project Beacon 152 Metric Reconciliation Risk 592
 
 ## Risk
-Metric Reconciliation may affect [[Project Beacon 152]] for [[Cobalt Retail]].
+Metric Reconciliation may affect [[Project Beacon 152]] for [[Atlas Logistics]].
 
 ## Evidence
 - Raised after [[Project Beacon 152 Stakeholder Alignment Sync 592]]

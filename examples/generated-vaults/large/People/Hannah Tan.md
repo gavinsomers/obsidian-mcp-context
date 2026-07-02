@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-10-05T13:55:00
-source_observed_at: 2023-10-05T16:23:00
-created_at: 2023-10-06T20:55:00
-updated_at: 2023-11-16T00:55:00
+company: "[[Helio Health]]"
+role: "Security Contact"
+source_created_at: 2023-09-22T14:03:00
+source_observed_at: 2023-09-22T14:35:00
+created_at: 2023-09-23T03:03:00
+updated_at: 2025-11-28T13:00:00
 tags: [#person]
 ---
 # Hannah Tan
 
 ## Role
-Hannah Tan is the Client Partner at [[Evergreen Analytics]].
+Hannah Tan is the Security Contact at [[Helio Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 54]] ([[Helio Health]])
+- Client stakeholder on [[Project Lantern 170]] ([[Helio Health]])
+- Client stakeholder on [[Project Harbor 189]] ([[Helio Health]])
 - [ ] Confirm next update with [[Hannah Tan]] #follow-up

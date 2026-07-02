@@ -3,11 +3,11 @@ type: decision
 date: 2026-03-07
 status: active
 project: "[[Project Keystone 205]]"
-company: "[[Summit Media]]"
-source_created_at: 2026-03-07T13:51:00
-source_observed_at: 2026-03-07T14:52:00
-created_at: 2026-03-07T14:57:00
-updated_at: 2026-03-08T00:57:00
+company: "[[Helio Media]]"
+source_created_at: 2026-03-07T10:33:00
+source_observed_at: 2026-03-07T10:43:00
+created_at: 2026-03-07T13:14:00
+updated_at: 2026-03-07T17:14:00
 tags: [#decision]
 ---
 # Project Keystone 205 Contract Renewal Decision 425
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Keystone 205]].
 
 ## Context
-This decision applies to [[Summit Media]] and [[Project Keystone 205]].
-It follows [[Project Keystone 205 Adoption Workflow Sync 1745]].
+This decision applies to [[Helio Media]] and [[Project Keystone 205]].
+It follows [[Project Keystone 205 Adoption Workflow Sync 1085]].
 It incorporates [[Project Keystone 205 Warehouse Mapping Research 205]].
 
 ## Supersession

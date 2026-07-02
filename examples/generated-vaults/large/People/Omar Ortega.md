@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-08-25T11:37:00
-source_observed_at: 2023-08-25T14:35:00
-created_at: 2023-08-26T15:37:00
-updated_at: 2023-11-04T16:37:00
+company: "[[Northstar Health]]"
+role: "Data Owner"
+source_created_at: 2023-08-20T11:40:00
+source_observed_at: 2023-08-20T13:41:00
+created_at: 2023-08-20T23:40:00
+updated_at: 2024-07-05T13:00:00
 tags: [#person]
 ---
 # Omar Ortega
 
 ## Role
-Omar Ortega is the Solution Architect at [[Evergreen Analytics]].
+Omar Ortega is the Data Owner at [[Northstar Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 9]] ([[Northstar Health]])
+- Client stakeholder on [[Project Keystone 85]] ([[Northstar Health]])
 - [ ] Confirm next update with [[Omar Ortega]] #follow-up

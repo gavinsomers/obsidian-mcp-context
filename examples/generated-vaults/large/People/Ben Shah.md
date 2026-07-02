@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-09-24T15:59:00
-source_observed_at: 2023-09-24T17:19:00
-created_at: 2023-09-26T13:59:00
-updated_at: 2023-11-20T17:59:00
+company: "[[Cobalt Retail]]"
+role: "Security Contact"
+source_created_at: 2023-09-06T12:39:00
+source_observed_at: 2023-09-06T15:38:00
+created_at: 2023-09-08T04:39:00
+updated_at: 2025-11-08T13:00:00
 tags: [#person]
 ---
 # Ben Shah
 
 ## Role
-Ben Shah is the Client Partner at [[Evergreen Analytics]].
+Ben Shah is the Security Contact at [[Cobalt Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 185]] ([[Cobalt Retail]])
 - [ ] Confirm next update with [[Ben Shah]] #follow-up

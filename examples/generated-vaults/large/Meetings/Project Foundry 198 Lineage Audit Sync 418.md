@@ -2,23 +2,26 @@
 type: meeting
 date: 2026-01-11
 project: "[[Project Foundry 198]]"
-company: "[[BrightWave Media]]"
-source_created_at: 2026-01-11T15:50:00
-source_observed_at: 2026-01-11T18:41:00
-created_at: 2026-01-11T19:02:00
-updated_at: 2026-01-12T13:02:00
+company: "[[Summit Media]]"
+source_created_at: 2026-01-11T14:01:00
+source_observed_at: 2026-01-11T14:44:00
+created_at: 2026-01-11T19:35:00
+updated_at: 2026-01-12T16:35:00
 tags: [#meeting]
 ---
 # Project Foundry 198 Lineage Audit Sync 418
 
-## Attendees
-- [[Amara Ivanov]]
-- [[Wendy Shah]]
-- [[Priya Evans]]
+## Evergreen Attendees
+- [[Omar Haddad]]
+
+## Client Attendees
+- [[Zoe Kim]]
+- [[Nadia Patel]]
+- [[Clara Usman]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 198]] at [[BrightWave Media]].
-[[Omar Haddad]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 198]] at [[Summit Media]].
+[[Omar Haddad]] aligned with [[Zoe Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 198]] to [[Omar Haddad]] #follow-up

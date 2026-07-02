@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-07
 status: active
 project: "[[Project Foundry 168]]"
-company: "[[BrightWave Manufacturing]]"
-source_created_at: 2025-09-07T09:23:00
-source_observed_at: 2025-09-07T09:47:00
-created_at: 2025-09-07T10:49:00
-updated_at: 2025-09-07T11:49:00
+company: "[[Meridian Media]]"
+source_created_at: 2025-09-07T15:04:00
+source_observed_at: 2025-09-07T16:22:00
+created_at: 2025-09-07T19:46:00
+updated_at: 2025-09-08T06:46:00
 tags: [#decision]
 ---
 # Project Foundry 168 Handoff Readiness Decision 168
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 168]].
 
 ## Context
-This decision applies to [[BrightWave Manufacturing]] and [[Project Foundry 168]].
+This decision applies to [[Meridian Media]] and [[Project Foundry 168]].
 It follows [[Project Foundry 168 Lineage Audit Sync 608]].
-It incorporates [[Project Foundry 168 Finance Approval Research 168]].
+It incorporates [[Project Foundry 168 Finance Approval Research 388]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-07-25
 project: "[[Project Signal 89]]"
-company: "[[Crescent Media]]"
-source_created_at: 2024-07-25T15:31:00
-source_observed_at: 2024-07-25T16:06:00
-created_at: 2024-07-30T15:31:00
-updated_at: 2024-07-31T13:31:00
+company: "[[Summit Health]]"
+source_created_at: 2024-07-25T10:30:00
+source_observed_at: 2024-07-25T11:59:00
+created_at: 2024-07-25T13:09:00
+updated_at: 2024-07-26T01:09:00
 tags: [#meeting]
 ---
 # Project Signal 89 Pipeline Hygiene Sync 89
 
-## Attendees
-- [[Uma Tan]]
-- [[Jonah Usman]]
-- [[Xavier Evans]]
+## Evergreen Attendees
+- [[Jonah Diaz]]
+
+## Client Attendees
+- [[Jonah Kim]]
+- [[Zoe Ortega]]
+- [[Nadia Tan]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Signal 89]] at [[Crescent Media]].
-[[Jonah Diaz]] flagged follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Signal 89]] at [[Summit Health]].
+[[Jonah Diaz]] aligned with [[Jonah Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 89]] to [[Jonah Diaz]] #follow-up

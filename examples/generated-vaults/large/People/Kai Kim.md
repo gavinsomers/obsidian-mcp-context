@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-07-20T15:40:00
-source_observed_at: 2023-07-20T18:32:00
-created_at: 2023-07-21T20:40:00
-updated_at: 2023-10-11T06:40:00
+company: "[[Pioneer Health]]"
+role: "Customer Success Lead"
+source_created_at: 2023-09-11T12:31:00
+source_observed_at: 2023-09-11T15:02:00
+created_at: 2023-09-13T16:31:00
+updated_at: 2024-03-15T13:00:00
 tags: [#person]
 ---
 # Kai Kim
 
 ## Role
-Kai Kim is the Technical Director at [[Evergreen Analytics]].
+Kai Kim is the Customer Success Lead at [[Pioneer Health]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Harbor 24]] ([[Pioneer Health]])
+- Client stakeholder on [[Project Beacon 62]] ([[Pioneer Health]])
 - [ ] Confirm next update with [[Kai Kim]] #follow-up

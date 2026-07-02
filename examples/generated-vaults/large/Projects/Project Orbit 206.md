@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Pioneer Media]]"
-source_created_at: 2026-02-10T14:54:00
-source_observed_at: 2026-02-10T16:48:00
-created_at: 2026-02-12T11:54:00
-updated_at: 2026-05-03T18:54:00
+status: active
+company: "[[BrightWave Manufacturing]]"
+source_created_at: 2026-02-10T12:46:00
+source_observed_at: 2026-02-10T14:35:00
+created_at: 2026-02-12T09:46:00
+updated_at: 2026-04-13T16:46:00
 tags: [#project]
 ---
 # Project Orbit 206
 
 ## Overview
-Project Orbit 206 supports [[Pioneer Media]] through consulting delivery.
+Project Orbit 206 supports [[BrightWave Manufacturing]] through consulting delivery.
 
 ## Stakeholders
-- [[Amara Jenkins]]
-- [[Yara Ortega]]
-- [[Kai Walker]]
-- [[Rachel Jenkins]]
+- [[Nadia Jenkins]]
+- [[Clara Ortega]]
+- [[Sam Shah]]
 
 ## Operating Notes
-- Owner: [[Xavier Haddad]]
-- Status: `blocked`
+- Evergreen owner: [[Elena Alvarez]]
+- Client account: [[BrightWave Manufacturing]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Orbit 206]] #ops

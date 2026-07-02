@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-04-05
+date: 2025-07-21
 status: active
 project: "[[Project Signal 119]]"
-company: "[[Crescent Analytics]]"
-source_created_at: 2025-04-05T11:49:00
-source_observed_at: 2025-04-05T12:39:00
-created_at: 2025-04-08T16:49:00
-updated_at: 2025-04-09T00:49:00
+company: "[[Meridian Labs]]"
+source_created_at: 2025-07-21T16:27:00
+source_observed_at: 2025-07-21T17:30:00
+created_at: 2025-07-21T19:48:00
+updated_at: 2025-07-22T03:48:00
 tags: [#decision]
 ---
 # Project Signal 119 Warehouse Mapping Decision 559
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Signal 119]].
 
 ## Context
-This decision applies to [[Crescent Analytics]] and [[Project Signal 119]].
-It follows [[Project Signal 119 Pipeline Hygiene Sync 1439]].
+This decision applies to [[Meridian Labs]] and [[Project Signal 119]].
+It follows [[Project Signal 119 Pipeline Hygiene Sync 559]].
 It incorporates [[Project Signal 119 Adoption Workflow Research 119]].
 
 ## Supersession

@@ -1,19 +1,21 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Technical Director"
-source_created_at: 2023-08-13T12:42:00
-source_observed_at: 2023-08-13T15:40:00
-created_at: 2023-08-13T20:42:00
-updated_at: 2023-08-31T13:00:00
+company: "[[Harbor FinTech]]"
+role: "Customer Success Lead"
+source_created_at: 2023-07-04T13:16:00
+source_observed_at: 2023-07-04T14:58:00
+created_at: 2023-07-06T02:16:00
+updated_at: 2025-05-10T13:00:00
 tags: [#person]
 ---
 # Elena Novak
 
 ## Role
-Elena Novak is the Technical Director at [[Evergreen Analytics]].
+Elena Novak is the Customer Success Lead at [[Harbor FinTech]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Meridian 21]] ([[Meridian FinTech]])
-- Managing/Supporting [[Project Pipeline 22]] ([[Vanguard FinTech]])
+## Client Project Involvement
+- Client stakeholder on [[Project Horizon 79]] ([[Harbor FinTech]])
+- Client stakeholder on [[Project Meridian 96]] ([[Harbor FinTech]])
+- Client stakeholder on [[Project Harbor 99]] ([[Harbor FinTech]])
+- Client stakeholder on [[Project Venture 148]] ([[Harbor FinTech]])
 - [ ] Confirm next update with [[Elena Novak]] #follow-up

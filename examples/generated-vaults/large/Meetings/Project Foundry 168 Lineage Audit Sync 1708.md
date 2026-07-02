@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-08-17
 project: "[[Project Foundry 168]]"
-company: "[[BrightWave Manufacturing]]"
-source_created_at: 2025-08-17T15:56:00
-source_observed_at: 2025-08-17T16:16:00
-created_at: 2025-08-17T16:21:00
-updated_at: 2025-08-17T18:21:00
+company: "[[Meridian Media]]"
+source_created_at: 2025-08-17T10:24:00
+source_observed_at: 2025-08-17T13:09:00
+created_at: 2025-08-17T13:14:00
+updated_at: 2025-08-18T06:14:00
 tags: [#meeting]
 ---
 # Project Foundry 168 Lineage Audit Sync 1708
 
-## Attendees
-- [[Grace Chen]]
-- [[Alex Walker]]
-- [[Zoe Rostova]]
+## Evergreen Attendees
+- [[Kai Grant]]
+
+## Client Attendees
+- [[Uma Kim]]
+- [[Iris Patel]]
+- [[Yara Tan]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 168]] at [[BrightWave Manufacturing]].
-[[Kai Grant]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 168]] at [[Meridian Media]].
+[[Kai Grant]] aligned with [[Uma Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 168]] to [[Kai Grant]] #follow-up

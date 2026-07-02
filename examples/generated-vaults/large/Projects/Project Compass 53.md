@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Quantum Manufacturing]]"
-source_created_at: 2024-01-19T13:29:00
-source_observed_at: 2024-01-19T13:46:00
-created_at: 2024-01-21T08:29:00
-updated_at: 2024-02-27T18:29:00
+status: planning
+company: "[[Quantum Health]]"
+source_created_at: 2024-01-19T09:38:00
+source_observed_at: 2024-01-19T11:20:00
+created_at: 2024-01-20T23:38:00
+updated_at: 2024-03-30T03:38:00
 tags: [#project]
 ---
 # Project Compass 53
 
 ## Overview
-Project Compass 53 supports [[Quantum Manufacturing]] through customer success.
+Project Compass 53 supports [[Quantum Health]] through customer success.
 
 ## Stakeholders
-- [[Sam Bennett]]
-- [[Farah Patel]]
-- [[Sam Ortega]]
-- [[Zoe Jenkins]]
+- [[Grace Kim]]
+- [[Wendy Ortega]]
+- [[Kai Tan]]
 
 ## Operating Notes
-- Owner: [[Alex Chen]]
-- Status: `active`
+- Evergreen owner: [[Alex Chen]]
+- Client account: [[Quantum Health]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Compass 53]] #ops

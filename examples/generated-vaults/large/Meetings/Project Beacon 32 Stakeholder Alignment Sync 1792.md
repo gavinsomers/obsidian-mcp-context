@@ -2,23 +2,26 @@
 type: meeting
 date: 2024-04-12
 project: "[[Project Beacon 32]]"
-company: "[[Apex Retail]]"
-source_created_at: 2024-04-12T13:19:00
-source_observed_at: 2024-04-12T16:12:00
-created_at: 2024-04-12T16:17:00
-updated_at: 2024-04-12T20:17:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2024-04-12T10:04:00
+source_observed_at: 2024-04-12T11:44:00
+created_at: 2024-04-12T14:42:00
+updated_at: 2024-04-12T18:42:00
 tags: [#meeting]
 ---
 # Project Beacon 32 Stakeholder Alignment Sync 1792
 
-## Attendees
-- [[Elena Jenkins]]
-- [[Rachel Rostova]]
-- [[Jonah Jenkins]]
+## Evergreen Attendees
+- [[Elena Bennett]]
+
+## Client Attendees
+- [[Tara Lee]]
+- [[Hannah Quinn]]
+- [[Xavier Usman]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 32]] at [[Apex Retail]].
-[[Elena Bennett]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 32]] at [[Northstar Analytics]].
+[[Elena Bennett]] aligned with [[Tara Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 32]] to [[Elena Bennett]] #follow-up

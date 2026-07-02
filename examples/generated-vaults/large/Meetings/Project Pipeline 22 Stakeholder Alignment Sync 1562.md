@@ -2,23 +2,26 @@
 type: meeting
 date: 2023-08-31
 project: "[[Project Pipeline 22]]"
-company: "[[Vanguard FinTech]]"
-source_created_at: 2023-08-31T08:54:00
-source_observed_at: 2023-08-31T09:44:00
-created_at: 2023-08-31T12:39:00
-updated_at: 2023-09-01T09:39:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2023-08-31T13:34:00
+source_observed_at: 2023-08-31T15:17:00
+created_at: 2023-08-31T15:22:00
+updated_at: 2023-08-31T22:22:00
 tags: [#meeting]
 ---
 # Project Pipeline 22 Stakeholder Alignment Sync 1562
 
-## Attendees
-- [[Alex Kim]]
-- [[Elena Novak]]
-- [[Sam Morgan]]
+## Evergreen Attendees
+- [[Victor Alvarez]]
+
+## Client Attendees
+- [[Farah Lee]]
+- [[Victor Patel]]
+- [[Jonah Usman]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Pipeline 22]] at [[Vanguard FinTech]].
-[[Victor Alvarez]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Pipeline 22]] at [[Cobalt Logistics]].
+[[Victor Alvarez]] aligned with [[Farah Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 22]] to [[Victor Alvarez]] #follow-up

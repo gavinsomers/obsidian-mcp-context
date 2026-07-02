@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-07-15T13:16:00
-source_observed_at: 2023-07-15T14:58:00
-created_at: 2023-07-17T02:16:00
-updated_at: 2023-09-01T07:16:00
+company: "[[Pioneer Manufacturing]]"
+role: "Executive Sponsor"
+source_created_at: 2023-08-12T08:44:00
+source_observed_at: 2023-08-12T09:12:00
+created_at: 2023-08-13T18:44:00
+updated_at: 2025-05-16T13:00:00
 tags: [#person]
 ---
 # Wendy Jenkins
 
 ## Role
-Wendy Jenkins is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Wendy Jenkins is the Executive Sponsor at [[Pioneer Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Horizon 124]] ([[Pioneer Manufacturing]])
+- Client stakeholder on [[Project Signal 149]] ([[Pioneer Manufacturing]])
 - [ ] Confirm next update with [[Wendy Jenkins]] #follow-up

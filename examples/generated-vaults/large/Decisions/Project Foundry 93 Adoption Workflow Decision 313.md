@@ -3,11 +3,11 @@ type: decision
 date: 2024-09-02
 status: active
 project: "[[Project Foundry 93]]"
-company: "[[Cobalt Logistics]]"
-source_created_at: 2024-09-02T16:35:00
-source_observed_at: 2024-09-02T19:33:00
-created_at: 2024-09-02T19:38:00
-updated_at: 2024-09-03T14:38:00
+company: "[[BrightWave Analytics]]"
+source_created_at: 2024-09-02T12:01:00
+source_observed_at: 2024-09-02T13:07:00
+created_at: 2024-09-02T16:01:00
+updated_at: 2024-09-03T01:01:00
 tags: [#decision]
 ---
 # Project Foundry 93 Adoption Workflow Decision 313
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Foundry 93]].
 
 ## Context
-This decision applies to [[Cobalt Logistics]] and [[Project Foundry 93]].
-It follows [[Project Foundry 93 Security Review Sync 1853]].
+This decision applies to [[BrightWave Analytics]] and [[Project Foundry 93]].
+It follows [[Project Foundry 93 Security Review Sync 1633]].
 It incorporates [[Project Foundry 93 Pipeline Hygiene Research 93]].
 
 ## Supersession

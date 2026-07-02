@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-07-18
 project: "[[Project Summit 162]]"
-company: "[[Noble Retail]]"
-source_created_at: 2025-07-18T12:05:00
-source_observed_at: 2025-07-18T14:36:00
-created_at: 2025-07-18T17:07:00
-updated_at: 2025-07-19T05:07:00
+company: "[[BrightWave FinTech]]"
+source_created_at: 2025-07-18T09:08:00
+source_observed_at: 2025-07-18T10:24:00
+created_at: 2025-07-18T11:47:00
+updated_at: 2025-07-19T09:47:00
 tags: [#meeting]
 ---
 # Project Summit 162 Stakeholder Alignment Sync 1262
 
-## Attendees
-- [[Elena Diaz]]
-- [[Tara Jenkins]]
-- [[Omar Rostova]]
+## Evergreen Attendees
+- [[Elena Grant]]
+
+## Client Attendees
+- [[Nadia Rostova]]
+- [[Zoe Morgan]]
+- [[Jonah Ivanov]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 162]] at [[Noble Retail]].
-[[Elena Grant]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Summit 162]] at [[BrightWave FinTech]].
+[[Elena Grant]] aligned with [[Nadia Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 162]] to [[Elena Grant]] #follow-up

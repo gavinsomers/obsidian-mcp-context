@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-08-21T15:29:00
-source_observed_at: 2023-08-21T15:49:00
-created_at: 2023-08-22T08:29:00
-updated_at: 2023-11-10T16:29:00
+company: "[[Cobalt Manufacturing]]"
+role: "Security Contact"
+source_created_at: 2023-07-25T12:18:00
+source_observed_at: 2023-07-25T15:14:00
+created_at: 2023-07-26T07:18:00
+updated_at: 2025-09-29T13:00:00
 tags: [#person]
 ---
 # Ben Ortega
 
 ## Role
-Ben Ortega is the Client Partner at [[Evergreen Analytics]].
+Ben Ortega is the Security Contact at [[Cobalt Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 115]] ([[Cobalt Manufacturing]])
+- Client stakeholder on [[Project Bridge 165]] ([[Cobalt Manufacturing]])
+- Client stakeholder on [[Project Summit 177]] ([[Cobalt Manufacturing]])
 - [ ] Confirm next update with [[Ben Ortega]] #follow-up

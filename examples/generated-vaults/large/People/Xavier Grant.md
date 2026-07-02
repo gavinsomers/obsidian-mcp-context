@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Solution Architect"
-source_created_at: 2023-06-19T13:08:00
-source_observed_at: 2023-06-19T16:05:00
-created_at: 2023-06-20T09:08:00
-updated_at: 2023-07-12T12:08:00
+source_created_at: 2023-06-19T13:19:00
+source_observed_at: 2023-06-19T14:02:00
+created_at: 2023-06-28T17:19:00
+updated_at: 2025-10-16T13:00:00
 tags: [#person]
 ---
 # Xavier Grant
@@ -14,5 +14,5 @@ tags: [#person]
 Xavier Grant is the Solution Architect at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Bridge 180]] ([[Atlas Analytics]])
 - [ ] Confirm next update with [[Xavier Grant]] #follow-up

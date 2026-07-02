@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-02-20
 project: "[[Project Orbit 206]]"
-company: "[[Pioneer Media]]"
-source_created_at: 2026-02-20T11:13:00
-source_observed_at: 2026-02-20T12:20:00
-created_at: 2026-02-23T12:13:00
-updated_at: 2026-02-24T11:13:00
+company: "[[BrightWave Manufacturing]]"
+source_created_at: 2026-02-20T08:40:00
+source_observed_at: 2026-02-20T10:22:00
+created_at: 2026-02-20T11:36:00
+updated_at: 2026-02-21T09:36:00
 tags: [#meeting]
 ---
 # Project Orbit 206 Metric Reconciliation Sync 206
 
-## Attendees
-- [[Yara Ortega]]
-- [[Rachel Jenkins]]
-- [[Amara Jenkins]]
+## Evergreen Attendees
+- [[Elena Alvarez]]
+
+## Client Attendees
+- [[Nadia Jenkins]]
+- [[Clara Ortega]]
+- [[Sam Shah]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Orbit 206]] at [[Pioneer Media]].
-[[Xavier Haddad]] flagged follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Orbit 206]] at [[BrightWave Manufacturing]].
+[[Elena Alvarez]] aligned with [[Nadia Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 206]] to [[Xavier Haddad]] #follow-up
+- [ ] Send recap for [[Project Orbit 206]] to [[Elena Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

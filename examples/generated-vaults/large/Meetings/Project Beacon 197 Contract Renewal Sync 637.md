@@ -2,23 +2,26 @@
 type: meeting
 date: 2026-01-05
 project: "[[Project Beacon 197]]"
-company: "[[Cobalt Media]]"
-source_created_at: 2026-01-05T13:34:00
-source_observed_at: 2026-01-05T15:14:00
-created_at: 2026-01-05T17:01:00
-updated_at: 2026-01-05T21:01:00
+company: "[[Pioneer Media]]"
+source_created_at: 2026-01-05T08:54:00
+source_observed_at: 2026-01-05T09:09:00
+created_at: 2026-01-05T13:33:00
+updated_at: 2026-01-05T17:33:00
 tags: [#meeting]
 ---
 # Project Beacon 197 Contract Renewal Sync 637
 
-## Attendees
-- [[Omar Alvarez]]
-- [[Hannah Ivanov]]
-- [[Ben Novak]]
+## Evergreen Attendees
+- [[Nadia Haddad]]
+
+## Client Attendees
+- [[Alex Lee]]
+- [[Omar Patel]]
+- [[David Usman]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Beacon 197]] at [[Cobalt Media]].
-[[Nadia Haddad]] flagged follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Beacon 197]] at [[Pioneer Media]].
+[[Nadia Haddad]] aligned with [[Alex Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 197]] to [[Nadia Haddad]] #follow-up

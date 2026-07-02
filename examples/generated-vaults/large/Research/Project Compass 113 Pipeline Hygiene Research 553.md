@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 113]]"
-company: "[[Quantum Analytics]]"
-source_created_at: 2025-12-29T09:00:00
-source_observed_at: 2025-12-29T11:57:00
-created_at: 2025-12-30T22:00:00
-updated_at: 2026-02-07T23:00:00
+company: "[[BrightWave Manufacturing]]"
+source_created_at: 2025-12-29T15:34:00
+source_observed_at: 2025-12-29T16:06:00
+created_at: 2025-12-29T23:34:00
+updated_at: 2026-01-05T08:34:00
 tags: [#research]
 ---
 # Project Compass 113 Pipeline Hygiene Research 553
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Compass 113]] and [[Quantum Analytics]].
+Research on pipeline hygiene for [[Project Compass 113]] and [[BrightWave Manufacturing]].
 
 ## Evidence
 - Interview notes from [[Hannah Evans]]

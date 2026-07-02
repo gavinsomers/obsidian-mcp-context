@@ -2,23 +2,26 @@
 type: meeting
 date: 2026-02-23
 project: "[[Project Signal 74]]"
-company: "[[Crescent Health]]"
-source_created_at: 2026-02-23T08:27:00
-source_observed_at: 2026-02-23T11:26:00
-created_at: 2026-02-23T11:31:00
-updated_at: 2026-02-24T06:31:00
+company: "[[Apex Logistics]]"
+source_created_at: 2026-02-23T08:29:00
+source_observed_at: 2026-02-23T09:51:00
+created_at: 2026-03-03T15:29:00
+updated_at: 2026-03-04T03:29:00
 tags: [#meeting]
 ---
 # Project Signal 74 Finance Approval Sync 734
 
-## Attendees
-- [[Kai Ortega]]
-- [[Wendy Usman]]
-- [[Rachel Patel]]
+## Evergreen Attendees
+- [[Victor Chen]]
+
+## Client Attendees
+- [[Elena Lee]]
+- [[Uma Patel]]
+- [[Iris Usman]]
 
 ## Notes
-Finance Approval reviewed for [[Project Signal 74]] at [[Crescent Health]].
-[[Victor Chen]] flagged follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Signal 74]] at [[Apex Logistics]].
+[[Victor Chen]] aligned with [[Elena Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Signal 74]] to [[Victor Chen]] #follow-up

@@ -1,25 +1,26 @@
 ---
 type: project
 status: planning
-company: "[[Apex Logistics]]"
-source_created_at: 2024-07-30T16:12:00
-source_observed_at: 2024-07-30T18:27:00
-created_at: 2024-07-31T18:12:00
-updated_at: 2024-10-13T22:12:00
+company: "[[Summit Labs]]"
+source_created_at: 2024-07-30T15:31:00
+source_observed_at: 2024-07-30T17:50:00
+created_at: 2024-07-31T14:31:00
+updated_at: 2024-10-22T22:31:00
 tags: [#project]
 ---
 # Project Beacon 92
 
 ## Overview
-Project Beacon 92 supports [[Apex Logistics]] through sales pipeline.
+Project Beacon 92 supports [[Summit Labs]] through sales pipeline.
 
 ## Stakeholders
-- [[Tara Haddad]]
-- [[Sam Vance]]
-- [[Victor Kim]]
-- [[Yara Evans]]
+- [[Ben Ivanov]]
+- [[Rachel Morgan]]
+- [[Farah Rostova]]
+- [[Victor Vance]]
 
 ## Operating Notes
-- Owner: [[Marcus Diaz]]
+- Evergreen owner: [[Marcus Diaz]]
+- Client account: [[Summit Labs]]
 - Status: `planning`
 - [ ] Reconcile latest state for [[Project Beacon 92]] #ops

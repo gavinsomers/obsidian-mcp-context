@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Apex Logistics]]"
-source_created_at: 2026-03-05T15:27:00
-source_observed_at: 2026-03-05T15:43:00
-created_at: 2026-03-07T09:27:00
-updated_at: 2026-05-02T13:27:00
+status: planning
+company: "[[Summit FinTech]]"
+source_created_at: 2026-03-05T13:27:00
+source_observed_at: 2026-03-05T14:06:00
+created_at: 2026-03-05T22:27:00
+updated_at: 2026-05-30T01:27:00
 tags: [#project]
 ---
 # Project Atlas 211
 
 ## Overview
-Project Atlas 211 supports [[Apex Logistics]] through consulting delivery.
+Project Atlas 211 supports [[Summit FinTech]] through consulting delivery.
 
 ## Stakeholders
-- [[Farah Quinn]]
-- [[Jonah Foster]]
-- [[Ben Jenkins]]
-- [[Rachel Chen]]
+- [[Rachel Ivanov]]
+- [[Farah Novak]]
+- [[Victor Rostova]]
+- [[Jonah Walker]]
 
 ## Operating Notes
-- Owner: [[Ben Ivanov]]
-- Status: `active`
+- Evergreen owner: [[Jonah Alvarez]]
+- Client account: [[Summit FinTech]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Atlas 211]] #ops

@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-10-24T16:29:00
-source_observed_at: 2023-10-24T19:04:00
-created_at: 2023-10-25T02:29:00
-updated_at: 2023-12-03T04:29:00
+company: "[[BrightWave Labs]]"
+role: "Executive Sponsor"
+source_created_at: 2023-10-21T09:31:00
+source_observed_at: 2023-10-21T10:32:00
+created_at: 2023-10-21T22:31:00
+updated_at: 2025-11-17T13:00:00
 tags: [#person]
 ---
 # Nadia Vance
 
 ## Role
-Nadia Vance is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Nadia Vance is the Executive Sponsor at [[BrightWave Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Signal 104]] ([[BrightWave Labs]])
+- Client stakeholder on [[Project Pipeline 187]] ([[BrightWave Labs]])
 - [ ] Confirm next update with [[Nadia Vance]] #follow-up

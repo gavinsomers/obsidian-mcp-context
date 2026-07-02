@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Delivery Lead"
-source_created_at: 2023-05-13T08:24:00
-source_observed_at: 2023-05-13T08:46:00
-created_at: 2023-05-14T22:24:00
-updated_at: 2023-06-25T01:24:00
+source_created_at: 2023-05-13T10:23:00
+source_observed_at: 2023-05-13T11:13:00
+created_at: 2023-05-13T18:23:00
+updated_at: 2024-04-07T13:00:00
 tags: [#person]
 ---
 # Nadia Chen
@@ -14,5 +14,5 @@ tags: [#person]
 Nadia Chen is the Delivery Lead at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Pipeline 67]] ([[Helio Manufacturing]])
 - [ ] Confirm next update with [[Nadia Chen]] #follow-up

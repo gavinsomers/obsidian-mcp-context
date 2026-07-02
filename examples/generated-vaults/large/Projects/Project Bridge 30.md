@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Keystone FinTech]]"
-source_created_at: 2023-09-28T08:33:00
-source_observed_at: 2023-09-28T09:34:00
-created_at: 2023-09-28T19:33:00
-updated_at: 2023-11-11T21:33:00
+status: active
+company: "[[BrightWave Health]]"
+source_created_at: 2023-09-28T16:18:00
+source_observed_at: 2023-09-28T17:14:00
+created_at: 2023-09-30T15:18:00
+updated_at: 2023-11-02T17:18:00
 tags: [#project]
 ---
 # Project Bridge 30
 
 ## Overview
-Project Bridge 30 supports [[Keystone FinTech]] through operations admin.
+Project Bridge 30 supports [[BrightWave Health]] through operations admin.
 
 ## Stakeholders
-- [[Elena Ortega]]
-- [[Priya Ivanov]]
-- [[Wendy Alvarez]]
-- [[Ben Ivanov]]
+- [[Clara Kim]]
+- [[Sam Ortega]]
+- [[Grace Tan]]
 
 ## Operating Notes
-- Owner: [[Clara Bennett]]
-- Status: `planning`
+- Evergreen owner: [[Clara Bennett]]
+- Client account: [[BrightWave Health]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Bridge 30]] #ops

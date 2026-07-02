@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: enterprise
-source_created_at: 2023-10-12T09:00:00
-source_observed_at: 2023-10-12T10:17:00
-created_at: 2023-10-12T14:00:00
-updated_at: 2023-12-15T22:00:00
+source_created_at: 2023-10-12T14:41:00
+source_observed_at: 2023-10-12T16:15:00
+created_at: 2023-10-12T22:41:00
+updated_at: 2024-01-01T22:41:00
 tags: [#company]
 ---
 # Noble Media
@@ -14,6 +14,11 @@ tags: [#company]
 Noble Media is a enterprise account currently marked `pipeline`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Amara Lee]] - Customer Success Lead
+- [[Priya Patel]] - Security Contact
+- [[Elena Usman]] - Product Analytics Lead
 
 ## Projects
 

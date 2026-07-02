@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-01-13
 project: "[[Project Horizon 4]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2025-01-13T14:00:00
-source_observed_at: 2025-01-13T15:25:00
-created_at: 2025-01-18T18:00:00
-updated_at: 2025-01-19T11:00:00
+company: "[[Noble Retail]]"
+source_created_at: 2025-01-13T09:07:00
+source_observed_at: 2025-01-13T11:12:00
+created_at: 2025-01-13T12:04:00
+updated_at: 2025-01-14T07:04:00
 tags: [#meeting]
 ---
 # Project Horizon 4 Finance Approval Sync 444
 
-## Attendees
-- [[Tara Alvarez]]
-- [[David Chen]]
-- [[Nadia Bennett]]
+## Evergreen Attendees
+- [[Clara Alvarez]]
+
+## Client Attendees
+- [[Amara Xu]]
+- [[Hannah Jenkins]]
+- [[Lina Shah]]
 
 ## Notes
-Finance Approval reviewed for [[Project Horizon 4]] at [[BrightWave Labs]].
-[[Clara Alvarez]] flagged follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Horizon 4]] at [[Noble Retail]].
+[[Clara Alvarez]] aligned with [[Amara Xu]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Horizon 4]] to [[Clara Alvarez]] #follow-up

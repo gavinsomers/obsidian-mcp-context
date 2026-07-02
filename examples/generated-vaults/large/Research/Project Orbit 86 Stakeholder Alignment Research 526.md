@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Orbit 86]]"
-company: "[[Summit Media]]"
-source_created_at: 2025-11-12T14:08:00
-source_observed_at: 2025-11-12T16:42:00
-created_at: 2025-11-12T21:08:00
-updated_at: 2025-12-13T22:08:00
+company: "[[Helio Logistics]]"
+source_created_at: 2025-11-12T11:44:00
+source_observed_at: 2025-11-12T12:53:00
+created_at: 2025-11-15T13:44:00
+updated_at: 2025-12-19T19:44:00
 tags: [#research]
 ---
 # Project Orbit 86 Stakeholder Alignment Research 526
 
 ## Research Summary
-Research on stakeholder alignment for [[Project Orbit 86]] and [[Summit Media]].
+Research on stakeholder alignment for [[Project Orbit 86]] and [[Helio Logistics]].
 
 ## Evidence
 - Interview notes from [[Grace Diaz]]

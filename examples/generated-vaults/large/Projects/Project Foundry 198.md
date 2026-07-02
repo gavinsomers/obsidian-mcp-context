@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[BrightWave Media]]"
-source_created_at: 2026-01-01T13:12:00
-source_observed_at: 2026-01-01T13:45:00
-created_at: 2026-01-03T07:12:00
-updated_at: 2026-02-24T18:12:00
+status: planning
+company: "[[Summit Media]]"
+source_created_at: 2026-01-01T15:01:00
+source_observed_at: 2026-01-01T17:06:00
+created_at: 2026-01-02T05:01:00
+updated_at: 2026-02-22T14:01:00
 tags: [#project]
 ---
 # Project Foundry 198
 
 ## Overview
-Project Foundry 198 supports [[BrightWave Media]] through customer success.
+Project Foundry 198 supports [[Summit Media]] through customer success.
 
 ## Stakeholders
-- [[Priya Evans]]
-- [[Wendy Shah]]
-- [[Nadia Jenkins]]
-- [[Amara Ivanov]]
+- [[Zoe Kim]]
+- [[Nadia Patel]]
+- [[Clara Usman]]
 
 ## Operating Notes
-- Owner: [[Omar Haddad]]
-- Status: `blocked`
+- Evergreen owner: [[Omar Haddad]]
+- Client account: [[Summit Media]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Foundry 198]] #ops

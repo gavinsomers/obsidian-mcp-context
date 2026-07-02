@@ -1,25 +1,25 @@
 ---
 type: project
 status: planning
-company: "[[Apex Retail]]"
-source_created_at: 2023-10-09T12:52:00
-source_observed_at: 2023-10-09T14:15:00
-created_at: 2023-10-10T06:52:00
-updated_at: 2023-11-23T12:52:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2023-10-09T12:23:00
+source_observed_at: 2023-10-09T13:20:00
+created_at: 2023-10-11T11:23:00
+updated_at: 2023-11-28T17:17:00
 tags: [#project]
 ---
 # Project Beacon 32
 
 ## Overview
-Project Beacon 32 supports [[Apex Retail]] through sales pipeline.
+Project Beacon 32 supports [[Northstar Analytics]] through sales pipeline.
 
 ## Stakeholders
-- [[Elena Lee]]
-- [[Rachel Rostova]]
-- [[Elena Jenkins]]
-- [[Jonah Jenkins]]
+- [[Tara Lee]]
+- [[Hannah Quinn]]
+- [[Xavier Usman]]
 
 ## Operating Notes
-- Owner: [[Elena Bennett]]
+- Evergreen owner: [[Elena Bennett]]
+- Client account: [[Northstar Analytics]]
 - Status: `planning`
 - [ ] Reconcile latest state for [[Project Beacon 32]] #ops

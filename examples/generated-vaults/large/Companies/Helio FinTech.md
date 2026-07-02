@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: enterprise
-source_created_at: 2023-05-29T14:51:00
-source_observed_at: 2023-05-29T16:25:00
-created_at: 2023-05-30T19:51:00
-updated_at: 2023-06-30T23:51:00
+source_created_at: 2023-05-29T14:52:00
+source_observed_at: 2023-05-29T16:30:00
+created_at: 2023-05-30T01:52:00
+updated_at: 2023-07-20T01:52:00
 tags: [#company]
 ---
 # Helio FinTech
@@ -14,6 +14,10 @@ tags: [#company]
 Helio FinTech is a enterprise account currently marked `active`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Kai Ivanov]] - Data Owner
+- [[Alex Novak]] - Operations Manager
 
 ## Projects
 

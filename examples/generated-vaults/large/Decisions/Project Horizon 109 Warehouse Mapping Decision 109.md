@@ -3,11 +3,11 @@ type: decision
 date: 2024-11-21
 status: active
 project: "[[Project Horizon 109]]"
-company: "[[BrightWave Analytics]]"
-source_created_at: 2024-11-21T13:47:00
-source_observed_at: 2024-11-21T13:57:00
-created_at: 2024-11-21T14:10:00
-updated_at: 2024-11-21T20:10:00
+company: "[[Pioneer Analytics]]"
+source_created_at: 2024-11-21T14:47:00
+source_observed_at: 2024-11-21T16:52:00
+created_at: 2024-11-21T19:12:00
+updated_at: 2024-11-22T04:12:00
 tags: [#decision]
 ---
 # Project Horizon 109 Warehouse Mapping Decision 109
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Horizon 109]].
 
 ## Context
-This decision applies to [[BrightWave Analytics]] and [[Project Horizon 109]].
-It follows [[Project Horizon 109 Pipeline Hygiene Sync 329]].
+This decision applies to [[Pioneer Analytics]] and [[Project Horizon 109]].
+It follows [[Project Horizon 109 Pipeline Hygiene Sync 109]].
 It incorporates [[Project Horizon 109 Adoption Workflow Research 109]].
 
 ## Supersession

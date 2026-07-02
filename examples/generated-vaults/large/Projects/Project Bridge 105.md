@@ -1,25 +1,27 @@
 ---
 type: project
-status: active
-company: "[[Keystone Logistics]]"
-source_created_at: 2024-10-01T15:29:00
-source_observed_at: 2024-10-01T17:22:00
-created_at: 2024-10-03T07:29:00
-updated_at: 2024-12-18T11:29:00
+status: closed
+company: "[[Northstar Labs]]"
+source_created_at: 2024-10-01T14:36:00
+source_observed_at: 2024-10-01T16:57:00
+created_at: 2024-10-02T09:36:00
+updated_at: 2024-10-18T20:36:00
 tags: [#project]
 ---
 # Project Bridge 105
 
 ## Overview
-Project Bridge 105 supports [[Keystone Logistics]] through operations admin.
+Project Bridge 105 supports [[Northstar Labs]] through operations admin.
 
 ## Stakeholders
-- [[Grace Grant]]
-- [[Xavier Morgan]]
-- [[Tara Walker]]
-- [[Hannah Morgan]]
+- [[Sam Haddad]]
+- [[Grace Morgan]]
+- [[Wendy Quinn]]
+- [[Kai Vance]]
 
 ## Operating Notes
-- Owner: [[Alex Evans]]
-- Status: `active`
+- Evergreen owner: [[Alex Evans]]
+- Client account: [[Northstar Labs]]
+- Status: `closed`
+- Closed at: `2025-04-10`
 - [ ] Reconcile latest state for [[Project Bridge 105]] #ops

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Lantern 35]]"
-company: "[[Helio Retail]]"
-source_created_at: 2025-08-14T11:27:00
-source_observed_at: 2025-08-14T13:06:00
-created_at: 2025-08-14T17:27:00
-updated_at: 2025-09-09T23:27:00
+company: "[[Cobalt Analytics]]"
+source_created_at: 2025-08-14T14:42:00
+source_observed_at: 2025-08-14T16:28:00
+created_at: 2025-08-15T19:42:00
+updated_at: 2025-09-15T02:42:00
 tags: [#research]
 ---
 # Project Lantern 35 Warehouse Mapping Research 475
 
 ## Research Summary
-Research on warehouse mapping for [[Project Lantern 35]] and [[Helio Retail]].
+Research on warehouse mapping for [[Project Lantern 35]] and [[Cobalt Analytics]].
 
 ## Evidence
 - Interview notes from [[Hannah Bennett]]

@@ -3,11 +3,11 @@ type: decision
 date: 2025-10-11
 status: active
 project: "[[Project Keystone 175]]"
-company: "[[Summit Manufacturing]]"
-source_created_at: 2025-10-11T11:29:00
-source_observed_at: 2025-10-11T12:32:00
-created_at: 2025-10-11T16:24:00
-updated_at: 2025-10-12T01:24:00
+company: "[[Northstar Media]]"
+source_created_at: 2025-10-11T09:30:00
+source_observed_at: 2025-10-11T10:35:00
+created_at: 2025-10-11T13:33:00
+updated_at: 2025-10-11T14:33:00
 tags: [#decision]
 ---
 # Project Keystone 175 Contract Renewal Decision 395
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Keystone 175]].
 
 ## Context
-This decision applies to [[Summit Manufacturing]] and [[Project Keystone 175]].
-It follows [[Project Keystone 175 Adoption Workflow Sync 175]].
+This decision applies to [[Northstar Media]] and [[Project Keystone 175]].
+It follows [[Project Keystone 175 Adoption Workflow Sync 1275]].
 It incorporates [[Project Keystone 175 Warehouse Mapping Research 175]].
 
 ## Supersession

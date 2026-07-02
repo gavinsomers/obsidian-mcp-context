@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-04-19
 project: "[[Project Compass 218]]"
-company: "[[Atlas Logistics]]"
-source_created_at: 2026-04-19T08:51:00
-source_observed_at: 2026-04-19T11:26:00
-created_at: 2026-04-19T11:31:00
-updated_at: 2026-04-19T17:31:00
+company: "[[Crescent Logistics]]"
+source_created_at: 2026-04-19T13:39:00
+source_observed_at: 2026-04-19T15:24:00
+created_at: 2026-04-19T15:29:00
+updated_at: 2026-04-19T20:29:00
 tags: [#meeting]
 ---
 # Project Compass 218 Lineage Audit Sync 658
 
-## Attendees
-- [[Yara Novak]]
-- [[Marcus Kim]]
-- [[Priya Patel]]
+## Evergreen Attendees
+- [[Rachel Alvarez]]
+
+## Client Attendees
+- [[Rachel Lee]]
+- [[Farah Quinn]]
+- [[Victor Usman]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 218]] at [[Atlas Logistics]].
-[[Iris Ivanov]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 218]] at [[Crescent Logistics]].
+[[Rachel Alvarez]] aligned with [[Rachel Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 218]] to [[Iris Ivanov]] #follow-up
+- [ ] Send recap for [[Project Compass 218]] to [[Rachel Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

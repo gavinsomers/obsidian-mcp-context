@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Orbit 146]]"
-source_created_at: 2025-05-09T08:55:00
-source_observed_at: 2025-05-09T11:51:00
-created_at: 2025-05-09T12:55:00
-updated_at: 2025-05-12T23:55:00
+source_created_at: 2025-05-09T10:22:00
+source_observed_at: 2025-05-09T11:21:00
+created_at: 2025-05-09T23:22:00
+updated_at: 2025-05-13T01:22:00
 tags: [#risk]
 ---
 # Project Orbit 146 Handoff Readiness Risk 366
 
 ## Risk
-Handoff Readiness may affect [[Project Orbit 146]] for [[Pioneer FinTech]].
+Handoff Readiness may affect [[Project Orbit 146]] for [[Crescent Analytics]].
 
 ## Evidence
 - Raised after [[Project Orbit 146 Metric Reconciliation Sync 366]]

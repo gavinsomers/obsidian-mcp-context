@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Meridian 81]]"
-company: "[[Meridian Media]]"
-source_created_at: 2025-11-03T11:20:00
-source_observed_at: 2025-11-03T13:13:00
-created_at: 2025-11-03T21:20:00
-updated_at: 2025-12-17T07:20:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2025-11-03T09:32:00
+source_observed_at: 2025-11-03T12:26:00
+created_at: 2025-11-04T13:32:00
+updated_at: 2025-12-09T20:32:00
 tags: [#research]
 ---
 # Project Meridian 81 Contract Renewal Research 521
 
 ## Research Summary
-Research on contract renewal for [[Project Meridian 81]] and [[Meridian Media]].
+Research on contract renewal for [[Project Meridian 81]] and [[Vanguard FinTech]].
 
 ## Evidence
 - Interview notes from [[Ben Diaz]]

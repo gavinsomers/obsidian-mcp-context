@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Analytics Engineer"
-source_created_at: 2023-04-25T11:42:00
-source_observed_at: 2023-04-25T12:53:00
-created_at: 2023-04-25T16:42:00
-updated_at: 2023-06-07T01:42:00
+source_created_at: 2023-04-25T10:20:00
+source_observed_at: 2023-04-25T11:00:00
+created_at: 2023-04-25T19:20:00
+updated_at: 2026-03-30T13:00:00
 tags: [#person]
 ---
 # Marcus Alvarez
@@ -14,5 +14,6 @@ tags: [#person]
 Marcus Alvarez is the Analytics Engineer at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Signal 14]] ([[Quantum Manufacturing]])
+- Delivery owner for [[Project Horizon 214]] ([[Pioneer Labs]])
 - [ ] Confirm next update with [[Marcus Alvarez]] #follow-up

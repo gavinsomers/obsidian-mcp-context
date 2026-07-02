@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-08-09T10:48:00
-source_observed_at: 2023-08-09T11:32:00
-created_at: 2023-08-10T00:48:00
-updated_at: 2023-10-25T06:48:00
+company: "[[Noble Labs]]"
+role: "Data Owner"
+source_created_at: 2023-06-28T12:25:00
+source_observed_at: 2023-06-28T13:31:00
+created_at: 2023-06-28T22:25:00
+updated_at: 2024-12-05T13:00:00
 tags: [#person]
 ---
 # Tara Morgan
 
 ## Role
-Tara Morgan is the Solution Architect at [[Evergreen Analytics]].
+Tara Morgan is the Data Owner at [[Noble Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Orbit 116]] ([[Noble Labs]])
 - [ ] Confirm next update with [[Tara Morgan]] #follow-up

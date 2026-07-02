@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Beacon 92]]"
-source_created_at: 2025-08-27T14:12:00
-source_observed_at: 2025-08-27T15:44:00
-created_at: 2025-08-28T06:12:00
-updated_at: 2025-09-01T17:12:00
+source_created_at: 2025-08-27T10:23:00
+source_observed_at: 2025-08-27T12:37:00
+created_at: 2025-08-28T16:23:00
+updated_at: 2025-08-31T19:23:00
 tags: [#risk]
 ---
 # Project Beacon 92 Metric Reconciliation Risk 532
 
 ## Risk
-Metric Reconciliation may affect [[Project Beacon 92]] for [[Apex Logistics]].
+Metric Reconciliation may affect [[Project Beacon 92]] for [[Summit Labs]].
 
 ## Evidence
 - Raised after [[Project Beacon 92 Stakeholder Alignment Sync 532]]

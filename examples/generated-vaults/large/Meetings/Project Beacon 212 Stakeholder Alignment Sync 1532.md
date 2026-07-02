@@ -2,24 +2,27 @@
 type: meeting
 date: 2026-03-31
 project: "[[Project Beacon 212]]"
-company: "[[Cobalt Logistics]]"
-source_created_at: 2026-03-31T10:20:00
-source_observed_at: 2026-03-31T10:46:00
-created_at: 2026-03-31T11:32:00
-updated_at: 2026-04-01T02:32:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2026-03-31T15:04:00
+source_observed_at: 2026-03-31T15:55:00
+created_at: 2026-04-04T22:04:00
+updated_at: 2026-04-05T15:04:00
 tags: [#meeting]
 ---
 # Project Beacon 212 Stakeholder Alignment Sync 1532
 
-## Attendees
-- [[Xavier Tan]]
-- [[Omar Ivanov]]
-- [[Yara Rostova]]
+## Evergreen Attendees
+- [[Kai Alvarez]]
+
+## Client Attendees
+- [[Tara Lee]]
+- [[Hannah Quinn]]
+- [[Xavier Usman]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 212]] at [[Cobalt Logistics]].
-[[Clara Ivanov]] flagged follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 212]] at [[Northstar Analytics]].
+[[Kai Alvarez]] aligned with [[Tara Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Beacon 212]] to [[Clara Ivanov]] #follow-up
+- [ ] Send recap for [[Project Beacon 212]] to [[Kai Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

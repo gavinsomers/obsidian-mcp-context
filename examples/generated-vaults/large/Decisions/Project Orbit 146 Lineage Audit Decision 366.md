@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-22
 status: active
 project: "[[Project Orbit 146]]"
-company: "[[Pioneer FinTech]]"
-source_created_at: 2025-05-22T11:05:00
-source_observed_at: 2025-05-22T13:16:00
-created_at: 2025-05-28T18:05:00
-updated_at: 2025-05-29T12:05:00
+company: "[[Crescent Analytics]]"
+source_created_at: 2025-05-22T09:31:00
+source_observed_at: 2025-05-22T11:40:00
+created_at: 2025-05-22T11:46:00
+updated_at: 2025-05-23T08:46:00
 tags: [#decision]
 ---
 # Project Orbit 146 Lineage Audit Decision 366
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Orbit 146]].
 
 ## Context
-This decision applies to [[Pioneer FinTech]] and [[Project Orbit 146]].
-It follows [[Project Orbit 146 Metric Reconciliation Sync 806]].
-It incorporates [[Project Orbit 146 Stakeholder Alignment Research 146]].
+This decision applies to [[Crescent Analytics]] and [[Project Orbit 146]].
+It follows [[Project Orbit 146 Metric Reconciliation Sync 366]].
+It incorporates [[Project Orbit 146 Stakeholder Alignment Research 366]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

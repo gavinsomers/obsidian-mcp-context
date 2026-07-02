@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-07-13T10:31:00
-source_observed_at: 2023-07-13T12:29:00
-created_at: 2023-07-15T08:31:00
-updated_at: 2023-09-14T13:31:00
+company: "[[Helio Manufacturing]]"
+role: "Finance Lead"
+source_created_at: 2023-07-29T16:05:00
+source_observed_at: 2023-07-29T16:39:00
+created_at: 2023-07-31T04:05:00
+updated_at: 2025-06-14T13:00:00
 tags: [#person]
 ---
 # Omar Jenkins
 
 ## Role
-Omar Jenkins is the Senior Data Consultant at [[Evergreen Analytics]].
+Omar Jenkins is the Finance Lead at [[Helio Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Pipeline 67]] ([[Helio Manufacturing]])
+- Client stakeholder on [[Project Lantern 155]] ([[Helio Manufacturing]])
 - [ ] Confirm next update with [[Omar Jenkins]] #follow-up

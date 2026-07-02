@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: smb
-source_created_at: 2023-09-24T11:40:00
-source_observed_at: 2023-09-24T12:28:00
-created_at: 2023-09-26T04:40:00
-updated_at: 2023-12-05T07:40:00
+source_created_at: 2023-09-24T14:08:00
+source_observed_at: 2023-09-24T16:59:00
+created_at: 2023-09-26T13:08:00
+updated_at: 2023-10-29T13:08:00
 tags: [#company]
 ---
 # BrightWave Media
@@ -14,6 +14,11 @@ tags: [#company]
 BrightWave Media is a smb account currently marked `churn-risk`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Sam Kim]] - Security Contact
+- [[Grace Patel]] - Product Analytics Lead
+- [[Wendy Tan]] - Revenue Operations Lead
 
 ## Projects
 

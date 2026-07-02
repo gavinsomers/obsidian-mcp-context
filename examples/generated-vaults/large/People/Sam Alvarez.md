@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Delivery Lead"
-source_created_at: 2023-04-27T11:51:00
-source_observed_at: 2023-04-27T12:34:00
-created_at: 2023-04-28T00:51:00
-updated_at: 2023-06-22T00:51:00
+source_created_at: 2023-04-27T14:35:00
+source_observed_at: 2023-04-27T16:54:00
+created_at: 2023-04-28T18:35:00
+updated_at: 2026-04-24T13:00:00
 tags: [#person]
 ---
 # Sam Alvarez
@@ -14,5 +14,6 @@ tags: [#person]
 Sam Alvarez is the Delivery Lead at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Managing/Supporting [[Project Meridian 6]] ([[Meridian Labs]])
+- Delivery owner for [[Project Horizon 19]] ([[Vanguard FinTech]])
+- Delivery owner for [[Project Harbor 219]] ([[Northstar Retail]])
 - [ ] Confirm next update with [[Sam Alvarez]] #follow-up

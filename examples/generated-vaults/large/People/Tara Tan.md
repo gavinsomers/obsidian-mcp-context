@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-10-09T12:08:00
-source_observed_at: 2023-10-09T12:46:00
-created_at: 2023-10-10T19:08:00
-updated_at: 2023-12-16T21:08:00
+company: "[[Northstar Media]]"
+role: "Finance Lead"
+source_created_at: 2023-09-27T09:47:00
+source_observed_at: 2023-09-27T12:23:00
+created_at: 2023-09-27T18:47:00
+updated_at: 2025-12-18T13:00:00
 tags: [#person]
 ---
 # Tara Tan
 
 ## Role
-Tara Tan is the Senior Data Consultant at [[Evergreen Analytics]].
+Tara Tan is the Finance Lead at [[Northstar Media]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Lantern 95]] ([[Northstar Media]])
+- Client stakeholder on [[Project Keystone 175]] ([[Northstar Media]])
+- Client stakeholder on [[Project Venture 193]] ([[Northstar Media]])
 - [ ] Confirm next update with [[Tara Tan]] #follow-up

@@ -3,11 +3,11 @@ type: decision
 date: 2025-02-24
 status: active
 project: "[[Project Atlas 16]]"
-company: "[[Northstar FinTech]]"
-source_created_at: 2025-02-24T15:24:00
-source_observed_at: 2025-02-24T18:08:00
-created_at: 2025-02-24T18:13:00
-updated_at: 2025-02-25T06:13:00
+company: "[[Vanguard Media]]"
+source_created_at: 2025-02-24T16:43:00
+source_observed_at: 2025-02-24T18:57:00
+created_at: 2025-02-24T21:18:00
+updated_at: 2025-02-25T19:18:00
 tags: [#decision]
 ---
 # Project Atlas 16 Lineage Audit Decision 456
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 16]].
 
 ## Context
-This decision applies to [[Northstar FinTech]] and [[Project Atlas 16]].
+This decision applies to [[Vanguard Media]] and [[Project Atlas 16]].
 It follows [[Project Atlas 16 Metric Reconciliation Sync 456]].
 It incorporates [[Project Atlas 16 Stakeholder Alignment Research 236]].
 

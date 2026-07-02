@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-01-04
+date: 2024-03-29
 status: active
 project: "[[Project Meridian 36]]"
-company: "[[Meridian Retail]]"
-source_created_at: 2024-01-04T10:25:00
-source_observed_at: 2024-01-04T11:09:00
-created_at: 2024-01-04T11:28:00
-updated_at: 2024-01-05T10:28:00
+company: "[[Harbor Analytics]]"
+source_created_at: 2024-03-29T11:19:00
+source_observed_at: 2024-03-29T12:24:00
+created_at: 2024-03-29T14:56:00
+updated_at: 2024-03-30T01:56:00
 tags: [#decision]
 ---
 # Project Meridian 36 Lineage Audit Decision 696
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Meridian 36]].
 
 ## Context
-This decision applies to [[Meridian Retail]] and [[Project Meridian 36]].
-It follows [[Project Meridian 36 Metric Reconciliation Sync 1356]].
-It incorporates [[Project Meridian 36 Stakeholder Alignment Research 476]].
+This decision applies to [[Harbor Analytics]] and [[Project Meridian 36]].
+It follows [[Project Meridian 36 Metric Reconciliation Sync 476]].
+It incorporates [[Project Meridian 36 Stakeholder Alignment Research 256]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

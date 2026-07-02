@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-01-01
 project: "[[Project Foundry 108]]"
-company: "[[Cobalt Analytics]]"
-source_created_at: 2025-01-01T13:15:00
-source_observed_at: 2025-01-01T15:10:00
-created_at: 2025-01-01T18:56:00
-updated_at: 2025-01-01T23:56:00
+company: "[[Harbor Media]]"
+source_created_at: 2025-01-01T16:02:00
+source_observed_at: 2025-01-01T18:32:00
+created_at: 2025-01-01T21:01:00
+updated_at: 2025-01-02T14:01:00
 tags: [#meeting]
 ---
 # Project Foundry 108 Lineage Audit Sync 1208
 
-## Attendees
-- [[Xavier Tan]]
-- [[Lina Jenkins]]
-- [[Alex Shah]]
+## Evergreen Attendees
+- [[Clara Evans]]
+
+## Client Attendees
+- [[Yara Kim]]
+- [[Marcus Patel]]
+- [[Ben Usman]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 108]] at [[Cobalt Analytics]].
-[[Clara Evans]] flagged follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 108]] at [[Harbor Media]].
+[[Clara Evans]] aligned with [[Yara Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 108]] to [[Clara Evans]] #follow-up

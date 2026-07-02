@@ -1,26 +1,26 @@
 ---
 type: project
-status: closed
-company: "[[Cobalt Manufacturing]]"
-source_created_at: 2023-12-26T12:19:00
-source_observed_at: 2023-12-26T12:52:00
-created_at: 2023-12-27T05:19:00
-updated_at: 2024-02-17T08:19:00
+status: active
+company: "[[Cobalt FinTech]]"
+source_created_at: 2023-12-26T16:29:00
+source_observed_at: 2023-12-26T19:04:00
+created_at: 2023-12-27T02:29:00
+updated_at: 2024-02-04T04:29:00
 tags: [#project]
 ---
 # Project Foundry 48
 
 ## Overview
-Project Foundry 48 supports [[Cobalt Manufacturing]] through customer success.
+Project Foundry 48 supports [[Cobalt FinTech]] through customer success.
 
 ## Stakeholders
-- [[Rachel Tan]]
-- [[Ben Vance]]
-- [[Priya Alvarez]]
-- [[Grace Usman]]
+- [[Iris Ivanov]]
+- [[Yara Morgan]]
+- [[Marcus Rostova]]
+- [[Ben Walker]]
 
 ## Operating Notes
-- Owner: [[Victor Bennett]]
-- Status: `closed`
-- Closed at: `2024-04-10`
+- Evergreen owner: [[Victor Bennett]]
+- Client account: [[Cobalt FinTech]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Foundry 48]] #ops

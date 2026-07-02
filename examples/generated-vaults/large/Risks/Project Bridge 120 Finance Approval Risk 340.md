@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Bridge 120]]"
-source_created_at: 2024-12-31T11:15:00
-source_observed_at: 2024-12-31T12:46:00
-created_at: 2025-01-02T06:15:00
-updated_at: 2025-01-18T12:15:00
+source_created_at: 2024-12-31T13:22:00
+source_observed_at: 2024-12-31T14:37:00
+created_at: 2024-12-31T19:22:00
+updated_at: 2025-02-10T06:22:00
 tags: [#risk]
 ---
 # Project Bridge 120 Finance Approval Risk 340
 
 ## Risk
-Finance Approval may affect [[Project Bridge 120]] for [[Northstar Labs]].
+Finance Approval may affect [[Project Bridge 120]] for [[Atlas Media]].
 
 ## Evidence
-- Raised after [[Project Bridge 120 Handoff Readiness Sync 120]]
+- Raised after [[Project Bridge 120 Handoff Readiness Sync 1880]]
 
 ## Current State
-- Status: `open`
+- Status: `closed`
 - Owner: [[Omar Evans]]
 - [ ] Reassess [[Project Bridge 120 Finance Approval Risk 340]] during the next review #risk

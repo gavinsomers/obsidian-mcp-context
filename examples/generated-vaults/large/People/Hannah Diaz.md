@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Client Partner"
-source_created_at: 2023-05-19T15:09:00
-source_observed_at: 2023-05-19T16:39:00
-created_at: 2023-05-20T04:09:00
-updated_at: 2023-06-13T11:09:00
+source_created_at: 2023-05-19T08:43:00
+source_observed_at: 2023-05-19T10:09:00
+created_at: 2023-05-19T21:43:00
+updated_at: 2024-07-14T13:00:00
 tags: [#person]
 ---
 # Hannah Diaz
@@ -14,5 +14,5 @@ tags: [#person]
 Hannah Diaz is the Client Partner at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Summit 87]] ([[BrightWave FinTech]])
 - [ ] Confirm next update with [[Hannah Diaz]] #follow-up

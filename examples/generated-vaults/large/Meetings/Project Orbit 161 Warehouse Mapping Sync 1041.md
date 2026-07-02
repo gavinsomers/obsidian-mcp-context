@@ -2,23 +2,26 @@
 type: meeting
 date: 2025-07-13
 project: "[[Project Orbit 161]]"
-company: "[[Pioneer Retail]]"
-source_created_at: 2025-07-13T11:49:00
-source_observed_at: 2025-07-13T13:07:00
-created_at: 2025-07-13T13:15:00
-updated_at: 2025-07-13T21:15:00
+company: "[[Atlas Manufacturing]]"
+source_created_at: 2025-07-13T15:50:00
+source_observed_at: 2025-07-13T17:11:00
+created_at: 2025-07-13T20:55:00
+updated_at: 2025-07-14T07:55:00
 tags: [#meeting]
 ---
 # Project Orbit 161 Warehouse Mapping Sync 1041
 
-## Attendees
-- [[Nadia Shah]]
-- [[David Vance]]
-- [[Priya Vance]]
+## Evergreen Attendees
+- [[David Grant]]
+
+## Client Attendees
+- [[Tara Jenkins]]
+- [[Hannah Ortega]]
+- [[Xavier Shah]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 161]] at [[Pioneer Retail]].
-[[David Grant]] flagged follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 161]] at [[Atlas Manufacturing]].
+[[David Grant]] aligned with [[Tara Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Orbit 161]] to [[David Grant]] #follow-up

@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Atlas Media]]"
-source_created_at: 2024-06-20T09:53:00
-source_observed_at: 2024-06-20T11:25:00
-created_at: 2024-06-20T16:53:00
-updated_at: 2024-09-01T03:53:00
+status: blocked
+company: "[[Meridian FinTech]]"
+source_created_at: 2024-06-20T10:04:00
+source_observed_at: 2024-06-20T11:47:00
+created_at: 2024-06-21T09:04:00
+updated_at: 2024-07-30T18:04:00
 tags: [#project]
 ---
 # Project Harbor 84
 
 ## Overview
-Project Harbor 84 supports [[Atlas Media]] through research program.
+Project Harbor 84 supports [[Meridian FinTech]] through research program.
 
 ## Stakeholders
-- [[Jonah Shah]]
-- [[Sam Vance]]
-- [[Ben Foster]]
-- [[Jonah Diaz]]
+- [[Lina Ivanov]]
+- [[Amara Novak]]
+- [[Priya Rostova]]
+- [[Elena Walker]]
 
 ## Operating Notes
-- Owner: [[Elena Diaz]]
-- Status: `active`
+- Evergreen owner: [[Elena Diaz]]
+- Client account: [[Meridian FinTech]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Harbor 84]] #ops

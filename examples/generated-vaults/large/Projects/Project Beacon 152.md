@@ -1,26 +1,26 @@
 ---
 type: project
 status: closed
-company: "[[Cobalt Retail]]"
-source_created_at: 2025-05-20T16:37:00
-source_observed_at: 2025-05-20T17:36:00
-created_at: 2025-05-21T17:37:00
-updated_at: 2025-08-01T18:37:00
+company: "[[Atlas Logistics]]"
+source_created_at: 2025-05-20T11:26:00
+source_observed_at: 2025-05-20T12:22:00
+created_at: 2025-05-20T22:26:00
+updated_at: 2025-06-07T02:26:00
 tags: [#project]
 ---
 # Project Beacon 152
 
 ## Overview
-Project Beacon 152 supports [[Cobalt Retail]] through sales pipeline.
+Project Beacon 152 supports [[Atlas Logistics]] through sales pipeline.
 
 ## Stakeholders
-- [[Omar Haddad]]
-- [[Xavier Grant]]
-- [[Zoe Patel]]
-- [[Victor Quinn]]
+- [[Lina Lee]]
+- [[Amara Quinn]]
+- [[Priya Usman]]
 
 ## Operating Notes
-- Owner: [[Victor Foster]]
+- Evergreen owner: [[Victor Foster]]
+- Client account: [[Atlas Logistics]]
 - Status: `closed`
-- Closed at: `2025-09-25`
+- Closed at: `2025-09-28`
 - [ ] Reconcile latest state for [[Project Beacon 152]] #ops

@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-09-17T16:57:00
-source_observed_at: 2023-09-17T19:07:00
-created_at: 2023-09-18T15:57:00
-updated_at: 2023-11-24T20:57:00
+company: "[[Pioneer Labs]]"
+role: "Finance Lead"
+source_created_at: 2023-08-26T14:14:00
+source_observed_at: 2023-08-26T15:15:00
+created_at: 2023-08-26T20:14:00
+updated_at: 2026-03-30T13:00:00
 tags: [#person]
 ---
 # Grace Rostova
 
 ## Role
-Grace Rostova is the Senior Data Consultant at [[Evergreen Analytics]].
+Grace Rostova is the Finance Lead at [[Pioneer Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Horizon 214]] ([[Pioneer Labs]])
 - [ ] Confirm next update with [[Grace Rostova]] #follow-up

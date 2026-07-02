@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Principal Analytics Engineer"
-source_created_at: 2023-09-17T08:57:00
-source_observed_at: 2023-09-17T10:34:00
-created_at: 2023-09-17T10:57:00
-updated_at: 2023-11-30T17:57:00
+company: "[[Summit Labs]]"
+role: "Executive Sponsor"
+source_created_at: 2023-08-26T10:10:00
+source_observed_at: 2023-08-26T11:09:00
+created_at: 2023-08-27T14:10:00
+updated_at: 2024-08-09T13:00:00
 tags: [#person]
 ---
 # Farah Rostova
 
 ## Role
-Farah Rostova is the Principal Analytics Engineer at [[Evergreen Analytics]].
+Farah Rostova is the Executive Sponsor at [[Summit Labs]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Beacon 92]] ([[Summit Labs]])
 - [ ] Confirm next update with [[Farah Rostova]] #follow-up

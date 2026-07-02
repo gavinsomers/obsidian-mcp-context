@@ -3,11 +3,11 @@ type: decision
 date: 2025-06-20
 status: active
 project: "[[Project Compass 98]]"
-company: "[[Quantum Logistics]]"
-source_created_at: 2025-06-20T09:21:00
-source_observed_at: 2025-06-20T11:21:00
-created_at: 2025-06-20T12:14:00
-updated_at: 2025-06-21T06:14:00
+company: "[[Keystone Logistics]]"
+source_created_at: 2025-06-20T10:41:00
+source_observed_at: 2025-06-20T12:06:00
+created_at: 2025-06-20T16:33:00
+updated_at: 2025-06-20T18:33:00
 tags: [#decision]
 ---
 # Project Compass 98 Handoff Readiness Decision 538
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 98]].
 
 ## Context
-This decision applies to [[Quantum Logistics]] and [[Project Compass 98]].
+This decision applies to [[Keystone Logistics]] and [[Project Compass 98]].
 It follows [[Project Compass 98 Lineage Audit Sync 538]].
 It incorporates [[Project Compass 98 Finance Approval Research 318]].
 

@@ -1,25 +1,24 @@
 ---
 type: project
 status: active
-company: "[[Quantum FinTech]]"
-source_created_at: 2023-08-25T12:16:00
-source_observed_at: 2023-08-25T12:38:00
-created_at: 2023-08-27T02:16:00
-updated_at: 2023-10-31T05:16:00
+company: "[[Northstar Retail]]"
+source_created_at: 2023-08-25T16:40:00
+source_observed_at: 2023-08-25T16:55:00
+created_at: 2023-08-27T13:40:00
+updated_at: 2023-11-18T15:40:00
 tags: [#project]
 ---
 # Project Compass 23
 
 ## Overview
-Project Compass 23 supports [[Quantum FinTech]] through customer success.
+Project Compass 23 supports [[Northstar Retail]] through customer success.
 
 ## Stakeholders
-- [[Iris Alvarez]]
-- [[Clara Haddad]]
-- [[Ben Grant]]
-- [[Nadia Diaz]]
+- [[Wendy Ivanov]]
+- [[Kai Novak]]
 
 ## Operating Notes
-- Owner: [[Wendy Alvarez]]
+- Evergreen owner: [[Wendy Alvarez]]
+- Client account: [[Northstar Retail]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Compass 23]] #ops

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Beacon 32]]"
-company: "[[Apex Retail]]"
-source_created_at: 2023-11-02T10:07:00
-source_observed_at: 2023-11-02T11:42:00
-created_at: 2023-11-02T16:07:00
-updated_at: 2023-12-13T19:07:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2023-11-02T10:03:00
+source_observed_at: 2023-11-02T11:48:00
+created_at: 2023-11-04T05:03:00
+updated_at: 2023-11-08T06:03:00
 tags: [#research]
 ---
 # Project Beacon 32 Lineage Audit Research 32
 
 ## Research Summary
-Research on lineage audit for [[Project Beacon 32]] and [[Apex Retail]].
+Research on lineage audit for [[Project Beacon 32]] and [[Northstar Analytics]].
 
 ## Evidence
 - Interview notes from [[Elena Bennett]]

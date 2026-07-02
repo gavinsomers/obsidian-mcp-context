@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Solution Architect"
-source_created_at: 2023-07-16T15:56:00
-source_observed_at: 2023-07-16T16:26:00
-created_at: 2023-07-17T11:56:00
-updated_at: 2023-09-28T21:56:00
+company: "[[Keystone Manufacturing]]"
+role: "Data Owner"
+source_created_at: 2023-08-18T12:40:00
+source_observed_at: 2023-08-18T13:26:00
+created_at: 2023-08-20T07:40:00
+updated_at: 2023-10-20T07:40:00
 tags: [#person]
 ---
 # Zoe Jenkins
 
 ## Role
-Zoe Jenkins is the Solution Architect at [[Evergreen Analytics]].
+Zoe Jenkins is the Data Owner at [[Keystone Manufacturing]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Orbit 26]] ([[Summit FinTech]])
+## Client Project Involvement
+- Client stakeholder on [[Project Bridge 15]] ([[Keystone Manufacturing]])
 - [ ] Confirm next update with [[Zoe Jenkins]] #follow-up

@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Technical Director"
-source_created_at: 2023-06-23T10:47:00
-source_observed_at: 2023-06-23T13:00:00
-created_at: 2023-06-23T14:47:00
-updated_at: 2023-08-04T21:47:00
+source_created_at: 2023-06-23T16:31:00
+source_observed_at: 2023-06-23T17:34:00
+created_at: 2023-06-25T00:31:00
+updated_at: 2025-12-13T13:00:00
 tags: [#person]
 ---
 # Iris Haddad
@@ -14,5 +14,5 @@ tags: [#person]
 Iris Haddad is the Technical Director at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+- Delivery owner for [[Project Summit 192]] ([[Apex Health]])
 - [ ] Confirm next update with [[Iris Haddad]] #follow-up

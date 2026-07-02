@@ -1,25 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Apex Media]]"
-source_created_at: 2024-05-16T11:09:00
-source_observed_at: 2024-05-16T11:32:00
-created_at: 2024-05-16T15:09:00
-updated_at: 2024-07-29T19:09:00
+status: active
+company: "[[Atlas FinTech]]"
+source_created_at: 2024-05-16T11:32:00
+source_observed_at: 2024-05-16T12:40:00
+created_at: 2024-05-17T09:32:00
+updated_at: 2024-06-15T16:32:00
 tags: [#project]
 ---
 # Project Beacon 77
 
 ## Overview
-Project Beacon 77 supports [[Apex Media]] through sales pipeline.
+Project Beacon 77 supports [[Atlas FinTech]] through sales pipeline.
 
 ## Stakeholders
-- [[Farah Kim]]
-- [[Nadia Rostova]]
-- [[Kai Ivanov]]
-- [[Farah Lee]]
+- [[Omar Ivanov]]
+- [[David Novak]]
+- [[Tara Rostova]]
+- [[Hannah Walker]]
 
 ## Operating Notes
-- Owner: [[Yara Chen]]
-- Status: `blocked`
+- Evergreen owner: [[Yara Chen]]
+- Client account: [[Atlas FinTech]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Beacon 77]] #ops

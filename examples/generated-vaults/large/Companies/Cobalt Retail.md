@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: mid-market
-source_created_at: 2023-06-24T16:09:00
-source_observed_at: 2023-06-24T17:47:00
-created_at: 2023-06-26T00:09:00
-updated_at: 2023-07-23T04:09:00
+source_created_at: 2023-06-24T10:00:00
+source_observed_at: 2023-06-24T11:36:00
+created_at: 2023-06-26T00:00:00
+updated_at: 2023-08-03T02:00:00
 tags: [#company]
 ---
 # Cobalt Retail
@@ -14,6 +14,10 @@ tags: [#company]
 Cobalt Retail is a mid-market account currently marked `pipeline`.
 
 ## Assigned Account Team
+
+## Client Stakeholders
+- [[Yara Ivanov]] - Executive Sponsor
+- [[Marcus Novak]] - Customer Success Lead
 
 ## Projects
 

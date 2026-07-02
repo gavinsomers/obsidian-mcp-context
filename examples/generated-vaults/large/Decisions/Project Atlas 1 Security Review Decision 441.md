@@ -4,10 +4,10 @@ date: 2025-02-03
 status: superseded
 project: "[[Project Atlas 1]]"
 company: "[[Northstar Labs]]"
-source_created_at: 2025-02-03T11:09:00
-source_observed_at: 2025-02-03T11:46:00
-created_at: 2025-02-03T13:15:00
-updated_at: 2025-02-03T15:15:00
+source_created_at: 2025-02-03T11:23:00
+source_observed_at: 2025-02-03T12:57:00
+created_at: 2025-02-03T14:04:00
+updated_at: 2025-02-04T12:04:00
 tags: [#decision]
 ---
 # Project Atlas 1 Security Review Decision 441

@@ -1,25 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Helio Labs]]"
-source_created_at: 2023-05-30T15:31:00
-source_observed_at: 2023-05-30T17:50:00
-created_at: 2023-05-31T14:31:00
-updated_at: 2023-08-22T22:31:00
+status: blocked
+company: "[[Northstar Logistics]]"
+source_created_at: 2023-05-30T13:27:00
+source_observed_at: 2023-05-30T16:05:00
+created_at: 2023-06-01T04:27:00
+updated_at: 2023-10-29T17:49:00
 tags: [#project]
 ---
 # Project Lantern 5
 
 ## Overview
-Project Lantern 5 supports [[Helio Labs]] through operations admin.
+Project Lantern 5 supports [[Northstar Logistics]] through operations admin.
 
 ## Stakeholders
-- [[Hannah Chen]]
-- [[David Chen]]
-- [[Ben Diaz]]
-- [[Lina Bennett]]
+- [[David Lee]]
+- [[Tara Patel]]
+- [[Hannah Usman]]
 
 ## Operating Notes
-- Owner: [[David Alvarez]]
-- Status: `planning`
+- Evergreen owner: [[David Alvarez]]
+- Client account: [[Northstar Logistics]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Lantern 5]] #ops

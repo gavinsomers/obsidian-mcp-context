@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Compass 173]]"
-company: "[[Atlas Manufacturing]]"
-source_created_at: 2025-09-25T11:35:00
-source_observed_at: 2025-09-25T13:58:00
-created_at: 2025-10-04T18:35:00
-updated_at: 2025-11-11T05:35:00
+company: "[[Keystone Health]]"
+source_created_at: 2025-09-25T16:43:00
+source_observed_at: 2025-09-25T18:46:00
+created_at: 2025-10-03T22:43:00
+updated_at: 2025-10-20T03:43:00
 tags: [#research]
 ---
 # Project Compass 173 Pipeline Hygiene Research 173
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Compass 173]] and [[Atlas Manufacturing]].
+Research on pipeline hygiene for [[Project Compass 173]] and [[Keystone Health]].
 
 ## Evidence
 - Interview notes from [[Priya Grant]]

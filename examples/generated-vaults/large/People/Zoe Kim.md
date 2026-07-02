@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Analytics Engineer"
-source_created_at: 2023-07-25T15:44:00
-source_observed_at: 2023-07-25T16:02:00
-created_at: 2023-07-26T02:44:00
-updated_at: 2023-08-16T06:44:00
+company: "[[Summit Media]]"
+role: "Product Analytics Lead"
+source_created_at: 2023-10-09T10:28:00
+source_observed_at: 2023-10-09T11:20:00
+created_at: 2023-10-10T20:28:00
+updated_at: 2026-01-31T13:00:00
 tags: [#person]
 ---
 # Zoe Kim
 
 ## Role
-Zoe Kim is the Analytics Engineer at [[Evergreen Analytics]].
+Zoe Kim is the Product Analytics Lead at [[Summit Media]].
 
-## Active Project Allocations
-- Managing/Supporting [[Project Beacon 17]] ([[Apex FinTech]])
+## Client Project Involvement
+- Client stakeholder on [[Project Meridian 6]] ([[Summit Media]])
+- Client stakeholder on [[Project Foundry 198]] ([[Summit Media]])
+- Client stakeholder on [[Project Pipeline 202]] ([[Summit Media]])
 - [ ] Confirm next update with [[Zoe Kim]] #follow-up

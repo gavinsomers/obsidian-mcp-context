@@ -1,18 +1,20 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Senior Data Consultant"
-source_created_at: 2023-07-10T09:58:00
-source_observed_at: 2023-07-10T10:28:00
-created_at: 2023-07-12T05:58:00
-updated_at: 2023-09-27T14:58:00
+company: "[[Pioneer Retail]]"
+role: "Finance Lead"
+source_created_at: 2023-07-13T16:22:00
+source_observed_at: 2023-07-13T16:50:00
+created_at: 2023-07-14T14:22:00
+updated_at: 2025-08-22T13:00:00
 tags: [#person]
 ---
 # Grace Jenkins
 
 ## Role
-Grace Jenkins is the Senior Data Consultant at [[Evergreen Analytics]].
+Grace Jenkins is the Finance Lead at [[Pioneer Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Bridge 45]] ([[Pioneer Retail]])
+- Client stakeholder on [[Project Meridian 111]] ([[Pioneer Retail]])
+- Client stakeholder on [[Project Horizon 169]] ([[Pioneer Retail]])
 - [ ] Confirm next update with [[Grace Jenkins]] #follow-up

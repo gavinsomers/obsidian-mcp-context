@@ -3,11 +3,11 @@ type: decision
 date: 2024-06-27
 status: active
 project: "[[Project Horizon 79]]"
-company: "[[BrightWave Media]]"
-source_created_at: 2024-06-27T16:56:00
-source_observed_at: 2024-06-27T19:32:00
-created_at: 2024-06-27T19:37:00
-updated_at: 2024-06-28T17:37:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2024-06-27T10:24:00
+source_observed_at: 2024-06-27T11:50:00
+created_at: 2024-06-27T13:59:00
+updated_at: 2024-06-27T22:59:00
 tags: [#decision]
 ---
 # Project Horizon 79 Warehouse Mapping Decision 79
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Horizon 79]].
 
 ## Context
-This decision applies to [[BrightWave Media]] and [[Project Horizon 79]].
+This decision applies to [[Harbor FinTech]] and [[Project Horizon 79]].
 It follows [[Project Horizon 79 Pipeline Hygiene Sync 299]].
 It incorporates [[Project Horizon 79 Adoption Workflow Research 79]].
 

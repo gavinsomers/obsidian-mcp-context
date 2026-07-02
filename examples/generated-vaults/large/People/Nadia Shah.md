@@ -1,18 +1,18 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Delivery Lead"
-source_created_at: 2023-09-28T16:02:00
-source_observed_at: 2023-09-28T17:50:00
-created_at: 2023-09-29T13:02:00
-updated_at: 2023-12-01T14:02:00
+company: "[[Keystone Retail]]"
+role: "Operations Manager"
+source_created_at: 2023-09-12T14:46:00
+source_observed_at: 2023-09-12T17:21:00
+created_at: 2023-09-12T17:46:00
+updated_at: 2023-10-18T20:46:00
 tags: [#person]
 ---
 # Nadia Shah
 
 ## Role
-Nadia Shah is the Delivery Lead at [[Evergreen Analytics]].
+Nadia Shah is the Operations Manager at [[Keystone Retail]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Keystone 10]] ([[Keystone Retail]])
 - [ ] Confirm next update with [[Nadia Shah]] #follow-up

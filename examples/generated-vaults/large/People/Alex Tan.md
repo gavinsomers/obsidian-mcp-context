@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Client Partner"
-source_created_at: 2023-10-02T09:07:00
-source_observed_at: 2023-10-02T10:27:00
-created_at: 2023-10-03T13:07:00
-updated_at: 2023-11-08T00:07:00
+company: "[[Pioneer Manufacturing]]"
+role: "Security Contact"
+source_created_at: 2023-09-18T16:07:00
+source_observed_at: 2023-09-18T16:18:00
+created_at: 2023-09-18T20:07:00
+updated_at: 2025-05-16T13:00:00
 tags: [#person]
 ---
 # Alex Tan
 
 ## Role
-Alex Tan is the Client Partner at [[Evergreen Analytics]].
+Alex Tan is the Security Contact at [[Pioneer Manufacturing]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Horizon 124]] ([[Pioneer Manufacturing]])
+- Client stakeholder on [[Project Signal 149]] ([[Pioneer Manufacturing]])
 - [ ] Confirm next update with [[Alex Tan]] #follow-up

@@ -1,18 +1,19 @@
 ---
 type: person
-company: "[[Evergreen Analytics]]"
-role: "Data Platform Engineer"
-source_created_at: 2023-09-10T09:38:00
-source_observed_at: 2023-09-10T10:15:00
-created_at: 2023-09-12T01:38:00
-updated_at: 2023-11-13T06:38:00
+company: "[[Helio Analytics]]"
+role: "Revenue Operations Lead"
+source_created_at: 2023-11-26T16:02:00
+source_observed_at: 2023-11-26T17:17:00
+created_at: 2023-11-27T12:02:00
+updated_at: 2025-03-02T13:00:00
 tags: [#person]
 ---
 # Lina Quinn
 
 ## Role
-Lina Quinn is the Data Platform Engineer at [[Evergreen Analytics]].
+Lina Quinn is the Revenue Operations Lead at [[Helio Analytics]].
 
-## Active Project Allocations
-- First seen through [[Evergreen Analytics]] account context
+## Client Project Involvement
+- Client stakeholder on [[Project Horizon 34]] ([[Helio Analytics]])
+- Client stakeholder on [[Project Signal 134]] ([[Helio Analytics]])
 - [ ] Confirm next update with [[Lina Quinn]] #follow-up

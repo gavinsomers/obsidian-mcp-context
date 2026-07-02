@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[Harbor Health]]"
-source_created_at: 2024-04-12T08:00:00
-source_observed_at: 2024-04-12T09:14:00
-created_at: 2024-04-13T10:00:00
-updated_at: 2024-06-04T16:00:00
+company: "[[Apex FinTech]]"
+source_created_at: 2024-04-12T12:02:00
+source_observed_at: 2024-04-12T12:28:00
+created_at: 2024-04-12T14:02:00
+updated_at: 2024-05-08T15:02:00
 tags: [#project]
 ---
 # Project Keystone 70
 
 ## Overview
-Project Keystone 70 supports [[Harbor Health]] through operations admin.
+Project Keystone 70 supports [[Apex FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Elena Bennett]]
-- [[Priya Foster]]
-- [[Farah Rostova]]
-- [[Iris Bennett]]
+- [[Hannah Ivanov]]
+- [[Xavier Morgan]]
+- [[Lina Rostova]]
+- [[Amara Walker]]
 
 ## Operating Notes
-- Owner: [[Rachel Chen]]
+- Evergreen owner: [[Rachel Chen]]
+- Client account: [[Apex FinTech]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Keystone 70]] #ops
