@@ -65,6 +65,32 @@ def test_context_service_does_not_select_unavailable_postgres_reader(
     assert service.dbt_reader() is None
 
 
+def test_context_service_raises_in_explicit_postgres_mode_when_unavailable(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+):
+    service = ContextService()
+    monkeypatch.setenv("WAREHOUSE_BACKEND", "postgres")
+    monkeypatch.setenv("POSTGRES_DSN", "postgresql://example")
+    monkeypatch.setattr(postgres_warehouse, "is_available", lambda dsn: False)
+
+    with pytest.raises(RuntimeError, match="WAREHOUSE_BACKEND=postgres"):
+        service.warehouse_summary(tmp_path)
+
+
+def test_context_service_recent_context_does_not_parse_in_explicit_postgres_mode(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+):
+    service = ContextService()
+    monkeypatch.setenv("WAREHOUSE_BACKEND", "postgres")
+    monkeypatch.setenv("POSTGRES_DSN", "postgresql://example")
+    monkeypatch.setattr(postgres_warehouse, "is_available", lambda dsn: False)
+
+    with pytest.raises(RuntimeError, match="WAREHOUSE_BACKEND=postgres"):
+        service.context_preset(tmp_path, "recent_context", limit=3)
+
+
 class FakePresetWarehouse:
     def __init__(self) -> None:
         self.calls: list[tuple[str, dict[str, object]]] = []

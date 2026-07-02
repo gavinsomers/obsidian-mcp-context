@@ -117,7 +117,8 @@ but they are not proof of warehouse-backed serving:
 
 ## Expected Fallback Behavior
 
-If no valid Postgres mart warehouse is available:
+If no valid Postgres mart warehouse is available and `WAREHOUSE_BACKEND` is not
+set to `postgres`:
 
 - `get_vault_warehouse_summary` returns `warehouse="in_memory_diagnostic"` and
   warning text beginning `No valid dbt warehouse found; falling back to direct
@@ -131,3 +132,9 @@ If no valid Postgres mart warehouse is available:
 - Parser diagnostic tools can still return parsed notes, blocks, and tasks.
 
 This fallback is a diagnostic state, not a successful MCP context setup.
+
+If `WAREHOUSE_BACKEND=postgres` is configured, MCP does not fall back to parsing
+the full vault. It raises a clear setup error instead. This keeps the
+container-backed workflow from appearing to hang when the local MCP environment
+is missing `psycopg`, the database is stopped, or `POSTGRES_DSN` points at the
+wrong host.

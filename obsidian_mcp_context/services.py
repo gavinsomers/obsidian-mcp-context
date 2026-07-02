@@ -30,6 +30,12 @@ FALLBACK_WARNING = (
     "diagnostics. Build the warehouse with obsidian-mcp-context-ingest-postgres and dbt "
     "for normal modeled query serving."
 )
+POSTGRES_REQUIRED_ERROR = (
+    "WAREHOUSE_BACKEND=postgres is configured, but no valid Postgres/dbt mart "
+    "warehouse is available. Check POSTGRES_DSN, install local dependencies with "
+    '.venv/bin/python -m pip install -e ".[dev,pipeline]", and run the dataset '
+    "workflow before using MCP."
+)
 CONTEXT_PRESETS: dict[str, dict[str, object]] = {
     "recent_context": {
         "description": "Curated recent context rows for a text or entity prompt.",
@@ -185,6 +191,10 @@ class ContextService:
             return postgres_warehouse, postgres_dsn
         return None
 
+    def _require_parser_fallback_allowed(self) -> None:
+        if os.environ.get("WAREHOUSE_BACKEND", "").lower() == "postgres":
+            raise RuntimeError(POSTGRES_REQUIRED_ERROR)
+
     def list_notes(self, vault_path: str | Path, limit: int) -> list[dict[str, object]]:
         return list_notes(self.context(vault_path), limit=limit)
 
@@ -231,6 +241,7 @@ class ContextService:
         if reader := self.dbt_reader(postgres_dsn):
             warehouse, handle = reader
             return warehouse.summary(handle)
+        self._require_parser_fallback_allowed()
         LOGGER.warning("%s", FALLBACK_WARNING)
         warehouse = build_warehouse(self.context(vault_path))
         summary = warehouse_summary(warehouse)
@@ -254,6 +265,7 @@ class ContextService:
                 text=text,
                 limit=limit,
             )
+        self._require_parser_fallback_allowed()
         LOGGER.warning("%s", FALLBACK_WARNING)
         warehouse = build_warehouse(self.context(vault_path))
         return list_entities(warehouse, entity_type=entity_type, text=text, limit=limit)
@@ -395,6 +407,7 @@ class ContextService:
                     person=str(entity_row["name"]),
                     limit=limit,
                 )
+        self._require_parser_fallback_allowed()
         LOGGER.warning("%s", FALLBACK_WARNING)
         warehouse = build_warehouse(self.context(vault_path))
         return entity_timeline(warehouse, entity=entity, text=text, limit=limit)
@@ -430,6 +443,7 @@ class ContextService:
                     entity=entity,
                     limit=limit,
                 )
+        self._require_parser_fallback_allowed()
         LOGGER.warning("%s", FALLBACK_WARNING)
         warehouse = build_warehouse(self.context(vault_path))
         return agent_context(
@@ -582,6 +596,7 @@ class ContextService:
             )
             warning = None
         elif preset == "recent_context":
+            self._require_parser_fallback_allowed()
             LOGGER.warning("%s", FALLBACK_WARNING)
             warehouse = build_warehouse(self.context(vault_path))
             rows = agent_context(
