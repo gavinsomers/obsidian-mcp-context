@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Keystone 10]]"
-company: "[[Keystone Retail]]"
-source_created_at: 2023-07-16T16:14:00
-source_observed_at: 2023-07-16T18:50:00
-created_at: 2023-07-24T19:14:00
-updated_at: 2023-08-10T20:14:00
+company: "[[Northstar Media]]"
+source_created_at: 2023-07-16T13:35:00
+source_observed_at: 2023-07-16T15:19:00
+created_at: 2023-07-18T09:35:00
+updated_at: 2023-08-09T19:35:00
 tags: [#research]
 ---
 # Project Keystone 10 Metric Reconciliation Research 10
 
 ## Research Summary
-Research on metric reconciliation for [[Project Keystone 10]] and [[Keystone Retail]].
+Research on metric reconciliation for [[Project Keystone 10]] and [[Northstar Media]].
 
 ## Evidence
 - Interview notes from [[Iris Alvarez]]

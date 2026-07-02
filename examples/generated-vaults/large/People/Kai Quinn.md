@@ -2,10 +2,10 @@
 type: person
 company: "[[BrightWave Analytics]]"
 role: "Data Owner"
-source_created_at: 2023-11-24T16:30:00
-source_observed_at: 2023-11-24T19:19:00
-created_at: 2023-11-25T03:30:00
-updated_at: 2026-03-26T13:00:00
+source_created_at: 2023-11-24T09:35:00
+source_observed_at: 2023-11-24T12:01:00
+created_at: 2023-11-24T18:35:00
+updated_at: 2026-03-21T13:00:00
 tags: [#person]
 ---
 # Kai Quinn
@@ -14,6 +14,6 @@ tags: [#person]
 Kai Quinn is the Data Owner at [[BrightWave Analytics]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Foundry 93]] ([[BrightWave Analytics]])
-- Client stakeholder on [[Project Foundry 213]] ([[BrightWave Analytics]])
+- Client stakeholder on [[Project Horizon 79]] ([[BrightWave Analytics]])
+- Client stakeholder on [[Project Beacon 212]] ([[BrightWave Analytics]])
 - [ ] Confirm next update with [[Kai Quinn]] #follow-up

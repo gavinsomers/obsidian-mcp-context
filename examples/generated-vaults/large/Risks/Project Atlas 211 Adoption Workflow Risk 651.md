@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Atlas 211]]"
-source_created_at: 2026-03-23T12:02:00
-source_observed_at: 2026-03-23T13:31:00
-created_at: 2026-03-24T22:02:00
-updated_at: 2026-05-01T01:02:00
+source_created_at: 2026-03-23T14:53:00
+source_observed_at: 2026-03-23T17:06:00
+created_at: 2026-03-25T01:53:00
+updated_at: 2026-04-10T02:53:00
 tags: [#risk]
 ---
 # Project Atlas 211 Adoption Workflow Risk 651
 
 ## Risk
-Adoption Workflow may affect [[Project Atlas 211]] for [[Summit FinTech]].
+Adoption Workflow may affect [[Project Atlas 211]] for [[Summit Labs]].
 
 ## Evidence
-- Raised after [[Project Atlas 211 Warehouse Mapping Sync 1751]]
+- Raised after [[Project Atlas 211 Warehouse Mapping Sync 211]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `closed`
 - Owner: [[Jonah Alvarez]]
 - [ ] Reassess [[Project Atlas 211 Adoption Workflow Risk 651]] during the next review #risk

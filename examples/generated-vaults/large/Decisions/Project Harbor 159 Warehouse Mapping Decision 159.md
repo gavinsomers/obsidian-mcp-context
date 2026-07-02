@@ -3,11 +3,11 @@ type: decision
 date: 2025-07-25
 status: active
 project: "[[Project Harbor 159]]"
-company: "[[Quantum FinTech]]"
-source_created_at: 2025-07-25T12:33:00
-source_observed_at: 2025-07-25T14:50:00
-created_at: 2025-07-25T18:20:00
-updated_at: 2025-07-26T17:20:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-07-25T14:33:00
+source_observed_at: 2025-07-25T16:12:00
+created_at: 2025-07-25T16:17:00
+updated_at: 2025-07-26T06:17:00
 tags: [#decision]
 ---
 # Project Harbor 159 Warehouse Mapping Decision 159
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Harbor 159]].
 
 ## Context
-This decision applies to [[Quantum FinTech]] and [[Project Harbor 159]].
+This decision applies to [[Vanguard Manufacturing]] and [[Project Harbor 159]].
 It follows [[Project Harbor 159 Pipeline Hygiene Sync 379]].
 It incorporates [[Project Harbor 159 Adoption Workflow Research 159]].
 

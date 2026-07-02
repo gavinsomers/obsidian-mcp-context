@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-01-16
 project: "[[Project Pipeline 7]]"
-company: "[[Atlas Media]]"
-source_created_at: 2025-01-16T16:58:00
-source_observed_at: 2025-01-16T19:23:00
-created_at: 2025-01-17T17:58:00
-updated_at: 2025-01-18T09:58:00
+company: "[[Apex FinTech]]"
+source_created_at: 2025-01-16T13:25:00
+source_observed_at: 2025-01-16T13:55:00
+created_at: 2025-01-16T16:15:00
+updated_at: 2025-01-17T08:15:00
 tags: [#meeting]
 ---
 # Project Pipeline 7 Contract Renewal Sync 447
@@ -15,13 +15,11 @@ tags: [#meeting]
 - [[Farah Alvarez]]
 
 ## Client Attendees
-- [[Xavier Kim]]
-- [[Lina Patel]]
-- [[Amara Usman]]
+- [[Hannah Ivanov]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 7]] at [[Atlas Media]].
-[[Farah Alvarez]] aligned with [[Xavier Kim]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 7]] at [[Apex FinTech]].
+[[Farah Alvarez]] aligned with [[Hannah Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 7]] to [[Farah Alvarez]] #follow-up

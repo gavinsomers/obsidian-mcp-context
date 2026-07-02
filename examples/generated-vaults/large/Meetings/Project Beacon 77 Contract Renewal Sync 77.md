@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-05-26
 project: "[[Project Beacon 77]]"
-company: "[[Atlas FinTech]]"
-source_created_at: 2024-05-26T09:58:00
-source_observed_at: 2024-05-26T11:11:00
-created_at: 2024-05-26T12:56:00
-updated_at: 2024-05-26T22:56:00
+company: "[[Quantum Media]]"
+source_created_at: 2024-05-26T12:23:00
+source_observed_at: 2024-05-26T12:35:00
+created_at: 2024-05-26T18:09:00
+updated_at: 2024-05-27T16:09:00
 tags: [#meeting]
 ---
 # Project Beacon 77 Contract Renewal Sync 77
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Yara Chen]]
 
 ## Client Attendees
-- [[Omar Ivanov]]
-- [[Tara Rostova]]
-- [[Hannah Walker]]
+- [[Wendy Kim]]
+- [[Kai Patel]]
+- [[Alex Usman]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Beacon 77]] at [[Atlas FinTech]].
-[[Yara Chen]] aligned with [[Omar Ivanov]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Beacon 77]] at [[Quantum Media]].
+[[Yara Chen]] aligned with [[Wendy Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 77]] to [[Yara Chen]] #follow-up

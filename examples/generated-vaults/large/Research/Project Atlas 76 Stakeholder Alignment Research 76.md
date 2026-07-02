@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Atlas 76]]"
-company: "[[Summit FinTech]]"
-source_created_at: 2024-06-06T08:04:00
-source_observed_at: 2024-06-06T10:05:00
-created_at: 2024-06-06T23:04:00
-updated_at: 2024-06-12T00:04:00
+company: "[[Meridian Labs]]"
+source_created_at: 2024-06-06T12:31:00
+source_observed_at: 2024-06-06T14:20:00
+created_at: 2024-06-07T13:31:00
+updated_at: 2024-06-25T23:31:00
 tags: [#research]
 ---
 # Project Atlas 76 Stakeholder Alignment Research 76
 
 ## Research Summary
-Research on stakeholder alignment for [[Project Atlas 76]] and [[Summit FinTech]].
+Research on stakeholder alignment for [[Project Atlas 76]] and [[Meridian Labs]].
 
 ## Evidence
 - Interview notes from [[Xavier Chen]]
-- Related operating review: [[Project Atlas 76 Metric Reconciliation Sync 1616]]
+- Related operating review: [[Project Atlas 76 Metric Reconciliation Sync 76]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Atlas 76]] #research

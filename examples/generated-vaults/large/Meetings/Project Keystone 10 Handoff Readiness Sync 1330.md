@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2025-06-20
+date: 2023-12-26
 project: "[[Project Keystone 10]]"
-company: "[[Keystone Retail]]"
-source_created_at: 2025-06-20T16:44:00
-source_observed_at: 2025-06-20T17:36:00
-created_at: 2025-06-22T16:44:00
-updated_at: 2025-06-23T14:44:00
+company: "[[Northstar Media]]"
+source_created_at: 2023-12-26T12:51:00
+source_observed_at: 2023-12-26T14:03:00
+created_at: 2023-12-26T18:43:00
+updated_at: 2023-12-27T12:43:00
 tags: [#meeting]
 ---
 # Project Keystone 10 Handoff Readiness Sync 1330
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Iris Alvarez]]
 
 ## Client Attendees
-- [[Jonah Jenkins]]
-- [[Zoe Novak]]
-- [[Nadia Shah]]
+- [[Omar Kim]]
+- [[David Patel]]
+- [[Tara Tan]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 10]] at [[Keystone Retail]].
-[[Iris Alvarez]] aligned with [[Jonah Jenkins]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 10]] at [[Northstar Media]].
+[[Iris Alvarez]] aligned with [[Omar Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 10]] to [[Iris Alvarez]] #follow-up

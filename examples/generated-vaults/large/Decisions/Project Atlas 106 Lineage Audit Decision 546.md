@@ -3,11 +3,11 @@ type: decision
 date: 2025-07-02
 status: active
 project: "[[Project Atlas 106]]"
-company: "[[Pioneer Analytics]]"
-source_created_at: 2025-07-02T15:47:00
-source_observed_at: 2025-07-02T17:16:00
-created_at: 2025-07-02T17:22:00
-updated_at: 2025-07-03T05:22:00
+company: "[[Atlas FinTech]]"
+source_created_at: 2025-07-02T16:59:00
+source_observed_at: 2025-07-02T17:46:00
+created_at: 2025-07-06T18:59:00
+updated_at: 2025-07-07T00:59:00
 tags: [#decision]
 ---
 # Project Atlas 106 Lineage Audit Decision 546
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 106]].
 
 ## Context
-This decision applies to [[Pioneer Analytics]] and [[Project Atlas 106]].
+This decision applies to [[Atlas FinTech]] and [[Project Atlas 106]].
 It follows [[Project Atlas 106 Metric Reconciliation Sync 546]].
 It incorporates [[Project Atlas 106 Stakeholder Alignment Research 326]].
 

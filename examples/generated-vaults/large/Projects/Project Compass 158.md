@@ -1,26 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Helio Labs]]"
-source_created_at: 2025-06-18T13:08:00
-source_observed_at: 2025-06-18T15:41:00
-created_at: 2025-06-21T17:08:00
-updated_at: 2025-07-27T01:08:00
+status: closed
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-06-18T08:41:00
+source_observed_at: 2025-06-18T11:30:00
+created_at: 2025-06-19T06:41:00
+updated_at: 2025-09-13T08:41:00
 tags: [#project]
 ---
 # Project Compass 158
 
 ## Overview
-Project Compass 158 supports [[Helio Labs]] through customer success.
+Project Compass 158 supports [[Vanguard Manufacturing]] through customer success.
 
 ## Stakeholders
-- [[Wendy Haddad]]
-- [[Kai Morgan]]
-- [[Alex Rostova]]
-- [[Omar Vance]]
+- [[Rachel Jenkins]]
+- [[Farah Ortega]]
+- [[Victor Shah]]
 
 ## Operating Notes
-- Evergreen owner: [[Amara Grant]]
-- Client account: [[Helio Labs]]
-- Status: `active`
+- Evergreen owner: [[Elena Chen]]
+- Client account: [[Vanguard Manufacturing]]
+- Status: `closed`
+- Closed at: `2025-11-03`
 - [ ] Reconcile latest state for [[Project Compass 158]] #ops

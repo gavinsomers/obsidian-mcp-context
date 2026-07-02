@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Keystone 40]]"
-source_created_at: 2023-12-04T12:45:00
-source_observed_at: 2023-12-04T13:28:00
-created_at: 2023-12-13T16:45:00
-updated_at: 2024-01-14T17:45:00
+source_created_at: 2023-12-04T10:07:00
+source_observed_at: 2023-12-04T12:19:00
+created_at: 2023-12-05T18:07:00
+updated_at: 2023-12-28T22:07:00
 tags: [#risk]
 ---
 # Project Keystone 40 Finance Approval Risk 40
 
 ## Risk
-Finance Approval may affect [[Project Keystone 40]] for [[Vanguard Manufacturing]].
+Finance Approval may affect [[Project Keystone 40]] for [[Summit FinTech]].
 
 ## Evidence
-- Raised after [[Project Keystone 40 Handoff Readiness Sync 40]]
+- Raised after [[Project Keystone 40 Handoff Readiness Sync 1580]]
 
 ## Current State
 - Status: `open`

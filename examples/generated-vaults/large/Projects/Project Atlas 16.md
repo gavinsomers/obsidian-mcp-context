@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Vanguard Media]]"
-source_created_at: 2023-07-21T11:08:00
-source_observed_at: 2023-07-21T12:43:00
-created_at: 2023-07-21T20:08:00
-updated_at: 2023-10-11T17:58:00
+status: planning
+company: "[[Quantum Manufacturing]]"
+source_created_at: 2023-07-21T11:07:00
+source_observed_at: 2023-07-21T11:27:00
+created_at: 2023-07-23T01:07:00
+updated_at: 2023-09-26T16:32:00
 tags: [#project]
 ---
 # Project Atlas 16
 
 ## Overview
-Project Atlas 16 supports [[Vanguard Media]] through consulting delivery.
+Project Atlas 16 supports [[Quantum Manufacturing]] through consulting delivery.
 
 ## Stakeholders
-- [[Victor Kim]]
-- [[Jonah Patel]]
-- [[Zoe Tan]]
+- [[Sam Jenkins]]
+- [[Grace Ortega]]
+- [[Wendy Shah]]
 
 ## Operating Notes
 - Evergreen owner: [[Omar Alvarez]]
-- Client account: [[Vanguard Media]]
-- Status: `blocked`
+- Client account: [[Quantum Manufacturing]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Atlas 16]] #ops

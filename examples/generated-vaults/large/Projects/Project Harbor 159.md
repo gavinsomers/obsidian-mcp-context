@@ -1,27 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Quantum FinTech]]"
-source_created_at: 2025-06-24T15:59:00
-source_observed_at: 2025-06-24T17:35:00
-created_at: 2025-06-25T01:59:00
-updated_at: 2025-07-20T06:59:00
+status: active
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-06-24T11:55:00
+source_observed_at: 2025-06-24T12:17:00
+created_at: 2025-06-25T07:55:00
+updated_at: 2025-08-19T07:55:00
 tags: [#project]
 ---
 # Project Harbor 159
 
 ## Overview
-Project Harbor 159 supports [[Quantum FinTech]] through research program.
+Project Harbor 159 supports [[Vanguard Manufacturing]] through research program.
 
 ## Stakeholders
-- [[Nadia Ivanov]]
-- [[Clara Novak]]
-- [[Sam Rostova]]
-- [[Grace Walker]]
+- [[Rachel Jenkins]]
+- [[Farah Ortega]]
+- [[Victor Shah]]
 
 ## Operating Notes
-- Evergreen owner: [[Ben Grant]]
-- Client account: [[Quantum FinTech]]
-- Status: `closed`
-- Closed at: `2025-11-22`
+- Evergreen owner: [[Farah Chen]]
+- Client account: [[Vanguard Manufacturing]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Harbor 159]] #ops

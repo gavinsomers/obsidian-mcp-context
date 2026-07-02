@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-03-16
+date: 2025-04-21
 status: active
 project: "[[Project Keystone 55]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2024-03-16T16:38:00
-source_observed_at: 2024-03-16T18:07:00
-created_at: 2024-03-16T18:38:00
-updated_at: 2024-03-17T02:38:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2025-04-21T12:39:00
+source_observed_at: 2025-04-21T15:18:00
+created_at: 2025-04-21T18:23:00
+updated_at: 2025-04-22T04:23:00
 tags: [#decision]
 ---
 # Project Keystone 55 Contract Renewal Decision 495
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Keystone 55]].
 
 ## Context
-This decision applies to [[Quantum Labs]] and [[Project Keystone 55]].
+This decision applies to [[Harbor FinTech]] and [[Project Keystone 55]].
 It follows [[Project Keystone 55 Adoption Workflow Sync 495]].
-It incorporates [[Project Keystone 55 Warehouse Mapping Research 55]].
+It incorporates [[Project Keystone 55 Warehouse Mapping Research 275]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

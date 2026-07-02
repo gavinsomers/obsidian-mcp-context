@@ -3,11 +3,11 @@ type: decision
 date: 2025-03-21
 status: superseded
 project: "[[Project Horizon 34]]"
-company: "[[Helio Analytics]]"
-source_created_at: 2025-03-21T08:41:00
-source_observed_at: 2025-03-21T11:31:00
-created_at: 2025-03-30T11:41:00
-updated_at: 2025-03-31T00:41:00
+company: "[[Pioneer Labs]]"
+source_created_at: 2025-03-21T10:38:00
+source_observed_at: 2025-03-21T11:44:00
+created_at: 2025-03-21T13:36:00
+updated_at: 2025-03-22T12:36:00
 tags: [#decision]
 ---
 # Project Horizon 34 Metric Reconciliation Decision 474
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Horizon 34]].
 
 ## Context
-This decision applies to [[Helio Analytics]] and [[Project Horizon 34]].
+This decision applies to [[Pioneer Labs]] and [[Project Horizon 34]].
 It follows [[Project Horizon 34 Finance Approval Sync 474]].
 It incorporates [[Project Horizon 34 Handoff Readiness Research 254]].
 

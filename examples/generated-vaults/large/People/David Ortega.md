@@ -2,10 +2,10 @@
 type: person
 company: "[[Helio Manufacturing]]"
 role: "Executive Sponsor"
-source_created_at: 2023-07-29T15:17:00
-source_observed_at: 2023-07-29T18:06:00
-created_at: 2023-07-30T13:17:00
-updated_at: 2025-06-14T13:00:00
+source_created_at: 2023-07-29T10:31:00
+source_observed_at: 2023-07-29T11:40:00
+created_at: 2023-07-30T23:31:00
+updated_at: 2025-11-14T13:00:00
 tags: [#person]
 ---
 # David Ortega
@@ -14,6 +14,6 @@ tags: [#person]
 David Ortega is the Executive Sponsor at [[Helio Manufacturing]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Pipeline 67]] ([[Helio Manufacturing]])
-- Client stakeholder on [[Project Lantern 155]] ([[Helio Manufacturing]])
+- Client stakeholder on [[Project Foundry 108]] ([[Helio Manufacturing]])
+- Client stakeholder on [[Project Meridian 186]] ([[Helio Manufacturing]])
 - [ ] Confirm next update with [[David Ortega]] #follow-up

@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-11-28
 project: "[[Project Harbor 189]]"
-company: "[[Helio Health]]"
-source_created_at: 2025-11-28T08:50:00
-source_observed_at: 2025-11-28T09:06:00
-created_at: 2025-11-28T13:00:00
-updated_at: 2025-11-28T15:00:00
+company: "[[Apex FinTech]]"
+source_created_at: 2025-11-28T11:12:00
+source_observed_at: 2025-11-28T12:39:00
+created_at: 2025-11-28T13:40:00
+updated_at: 2025-11-28T21:40:00
 tags: [#meeting]
 ---
 # Project Harbor 189 Pipeline Hygiene Sync 849
 
 ## Evergreen Attendees
-- [[Farah Haddad]]
+- [[Jonah Diaz]]
 
 ## Client Attendees
-- [[David Kim]]
-- [[Tara Ortega]]
-- [[Hannah Tan]]
+- [[Xavier Morgan]]
+- [[Amara Walker]]
+- [[Hannah Ivanov]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 189]] at [[Helio Health]].
-[[Farah Haddad]] aligned with [[David Kim]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 189]] at [[Apex FinTech]].
+[[Jonah Diaz]] aligned with [[Xavier Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Harbor 189]] to [[Farah Haddad]] #follow-up
+- [ ] Send recap for [[Project Harbor 189]] to [[Jonah Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

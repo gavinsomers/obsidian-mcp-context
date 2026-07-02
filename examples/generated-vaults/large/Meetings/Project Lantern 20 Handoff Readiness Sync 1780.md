@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2023-12-08
+date: 2024-03-27
 project: "[[Project Lantern 20]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2023-12-08T13:15:00
-source_observed_at: 2023-12-08T13:26:00
-created_at: 2023-12-08T18:01:00
-updated_at: 2023-12-09T12:01:00
+company: "[[Crescent Manufacturing]]"
+source_created_at: 2024-03-27T13:50:00
+source_observed_at: 2024-03-27T16:24:00
+created_at: 2024-03-27T16:29:00
+updated_at: 2024-03-27T17:29:00
 tags: [#meeting]
 ---
 # Project Lantern 20 Handoff Readiness Sync 1780
@@ -15,12 +15,13 @@ tags: [#meeting]
 - [[Tara Alvarez]]
 
 ## Client Attendees
-- [[Rachel Jenkins]]
-- [[Farah Ortega]]
+- [[Yara Jenkins]]
+- [[Marcus Ortega]]
+- [[Ben Tan]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Lantern 20]] at [[Vanguard Manufacturing]].
-[[Tara Alvarez]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Lantern 20]] at [[Crescent Manufacturing]].
+[[Tara Alvarez]] aligned with [[Yara Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 20]] to [[Tara Alvarez]] #follow-up

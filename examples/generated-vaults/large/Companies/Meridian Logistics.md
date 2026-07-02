@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: mid-market
-source_created_at: 2023-10-28T13:35:00
-source_observed_at: 2023-10-28T15:21:00
-created_at: 2023-10-30T10:35:00
-updated_at: 2024-01-26T20:35:00
+source_created_at: 2023-10-28T16:11:00
+source_observed_at: 2023-10-28T18:41:00
+created_at: 2023-11-05T19:11:00
+updated_at: 2025-08-31T13:00:00
 tags: [#company]
 ---
 # Meridian Logistics
@@ -14,7 +14,8 @@ tags: [#company]
 Meridian Logistics is a mid-market account currently marked `active`.
 
 ## Assigned Account Team
-- [[Zoe Bennett]] - Solution Architect
+- [[Iris Alvarez]] - Senior Data Consultant
+- [[Sam Chen]] - Client Partner
 
 ## Client Stakeholders
 - [[Iris Lee]] - Customer Success Lead
@@ -22,7 +23,8 @@ Meridian Logistics is a mid-market account currently marked `active`.
 - [[Marcus Usman]] - Product Analytics Lead
 
 ## Projects
-- [[Project Pipeline 52]]
+- [[Project Lantern 110]]
+- [[Project Meridian 171]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Meridian Logistics]] #account

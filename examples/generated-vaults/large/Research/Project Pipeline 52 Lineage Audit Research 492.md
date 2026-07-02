@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Pipeline 52]]"
-company: "[[Meridian Logistics]]"
-source_created_at: 2025-09-12T09:01:00
-source_observed_at: 2025-09-12T09:31:00
-created_at: 2025-09-12T20:01:00
-updated_at: 2025-10-14T04:01:00
+company: "[[Atlas Retail]]"
+source_created_at: 2025-09-12T08:53:00
+source_observed_at: 2025-09-12T11:42:00
+created_at: 2025-09-13T05:53:00
+updated_at: 2025-09-24T09:53:00
 tags: [#research]
 ---
 # Project Pipeline 52 Lineage Audit Research 492
 
 ## Research Summary
-Research on lineage audit for [[Project Pipeline 52]] and [[Meridian Logistics]].
+Research on lineage audit for [[Project Pipeline 52]] and [[Atlas Retail]].
 
 ## Evidence
 - Interview notes from [[Zoe Bennett]]

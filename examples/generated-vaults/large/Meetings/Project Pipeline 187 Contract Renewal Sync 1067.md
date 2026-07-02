@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-11-17
 project: "[[Project Pipeline 187]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2025-11-17T15:00:00
-source_observed_at: 2025-11-17T16:39:00
-created_at: 2025-11-17T20:07:00
-updated_at: 2025-11-18T08:07:00
+company: "[[Harbor Health]]"
+source_created_at: 2025-11-17T15:15:00
+source_observed_at: 2025-11-17T16:22:00
+created_at: 2025-11-17T18:12:00
+updated_at: 2025-11-18T06:12:00
 tags: [#meeting]
 ---
 # Project Pipeline 187 Contract Renewal Sync 1067
 
 ## Evergreen Attendees
-- [[David Haddad]]
+- [[Hannah Diaz]]
 
 ## Client Attendees
-- [[Jonah Morgan]]
-- [[Nadia Vance]]
-- [[Victor Haddad]]
+- [[Iris Kim]]
+- [[Yara Ortega]]
+- [[Marcus Tan]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 187]] at [[BrightWave Labs]].
-[[David Haddad]] aligned with [[Jonah Morgan]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 187]] at [[Harbor Health]].
+[[Hannah Diaz]] aligned with [[Iris Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Pipeline 187]] to [[David Haddad]] #follow-up
+- [ ] Send recap for [[Project Pipeline 187]] to [[Hannah Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

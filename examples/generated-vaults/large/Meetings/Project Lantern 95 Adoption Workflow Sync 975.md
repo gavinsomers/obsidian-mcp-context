@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-08-23
 project: "[[Project Lantern 95]]"
-company: "[[Northstar Media]]"
-source_created_at: 2024-08-23T12:43:00
-source_observed_at: 2024-08-23T15:30:00
-created_at: 2024-08-23T15:35:00
-updated_at: 2024-08-24T13:35:00
+company: "[[Vanguard Analytics]]"
+source_created_at: 2024-08-23T10:34:00
+source_observed_at: 2024-08-23T12:07:00
+created_at: 2024-08-23T12:55:00
+updated_at: 2024-08-24T10:55:00
 tags: [#meeting]
 ---
 # Project Lantern 95 Adoption Workflow Sync 975
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Priya Diaz]]
 
 ## Client Attendees
-- [[Omar Kim]]
-- [[David Patel]]
-- [[Tara Tan]]
+- [[Zoe Lee]]
+- [[Nadia Quinn]]
+- [[Clara Vance]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Lantern 95]] at [[Northstar Media]].
-[[Priya Diaz]] aligned with [[Omar Kim]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Lantern 95]] at [[Vanguard Analytics]].
+[[Priya Diaz]] aligned with [[Zoe Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Lantern 95]] to [[Priya Diaz]] #follow-up

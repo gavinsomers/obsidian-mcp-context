@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Northstar Logistics]]"
-source_created_at: 2023-06-13T08:44:00
-source_observed_at: 2023-06-13T10:38:00
-created_at: 2023-06-13T18:44:00
-updated_at: 2023-10-29T17:49:00
+status: active
+company: "[[Noble Media]]"
+source_created_at: 2023-06-13T16:40:00
+source_observed_at: 2023-06-13T16:55:00
+created_at: 2023-06-15T13:40:00
+updated_at: 2023-10-23T13:36:00
 tags: [#project]
 ---
 # Project Compass 8
 
 ## Overview
-Project Compass 8 supports [[Northstar Logistics]] through customer success.
+Project Compass 8 supports [[Noble Media]] through customer success.
 
 ## Stakeholders
-- [[David Lee]]
-- [[Tara Patel]]
-- [[Hannah Usman]]
+- [[Amara Lee]]
+- [[Priya Patel]]
+- [[Elena Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Grace Alvarez]]
-- Client account: [[Northstar Logistics]]
-- Status: `blocked`
+- Client account: [[Noble Media]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Compass 8]] #ops

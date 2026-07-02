@@ -3,11 +3,11 @@ type: decision
 date: 2024-05-21
 status: active
 project: "[[Project Harbor 39]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2024-05-21T14:30:00
-source_observed_at: 2024-05-21T15:47:00
-created_at: 2024-05-21T18:22:00
-updated_at: 2024-05-22T07:22:00
+company: "[[Summit Logistics]]"
+source_created_at: 2024-05-21T15:10:00
+source_observed_at: 2024-05-21T15:34:00
+created_at: 2024-05-21T18:17:00
+updated_at: 2024-05-21T20:17:00
 tags: [#decision]
 ---
 # Project Harbor 39 Warehouse Mapping Decision 259
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Harbor 39]].
 
 ## Context
-This decision applies to [[Vanguard Manufacturing]] and [[Project Harbor 39]].
+This decision applies to [[Summit Logistics]] and [[Project Harbor 39]].
 It follows [[Project Harbor 39 Pipeline Hygiene Sync 259]].
 It incorporates [[Project Harbor 39 Adoption Workflow Research 39]].
 

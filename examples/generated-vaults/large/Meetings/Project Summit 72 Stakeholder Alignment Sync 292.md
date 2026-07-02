@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-06-13
 project: "[[Project Summit 72]]"
-company: "[[Cobalt Media]]"
-source_created_at: 2024-06-13T14:30:00
-source_observed_at: 2024-06-13T15:54:00
-created_at: 2024-06-13T15:59:00
-updated_at: 2024-06-14T05:59:00
+company: "[[Quantum Labs]]"
+source_created_at: 2024-06-13T11:21:00
+source_observed_at: 2024-06-13T13:20:00
+created_at: 2024-06-13T15:52:00
+updated_at: 2024-06-14T05:52:00
 tags: [#meeting]
 ---
 # Project Summit 72 Stakeholder Alignment Sync 292
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Tara Chen]]
 
 ## Client Attendees
-- [[Rachel Kim]]
-- [[Farah Patel]]
-- [[Victor Tan]]
+- [[Zoe Haddad]]
+- [[Nadia Morgan]]
+- [[Sam Vance]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 72]] at [[Cobalt Media]].
-[[Tara Chen]] aligned with [[Rachel Kim]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Summit 72]] at [[Quantum Labs]].
+[[Tara Chen]] aligned with [[Zoe Haddad]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 72]] to [[Tara Chen]] #follow-up

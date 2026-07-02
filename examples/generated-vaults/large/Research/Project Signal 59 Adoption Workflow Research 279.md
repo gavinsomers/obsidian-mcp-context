@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Signal 59]]"
-company: "[[BrightWave FinTech]]"
-source_created_at: 2024-09-09T12:49:00
-source_observed_at: 2024-09-09T14:56:00
-created_at: 2024-09-10T12:49:00
-updated_at: 2024-09-27T13:49:00
+company: "[[Cobalt Analytics]]"
+source_created_at: 2024-09-09T14:18:00
+source_observed_at: 2024-09-09T14:38:00
+created_at: 2024-09-11T11:18:00
+updated_at: 2024-10-08T19:18:00
 tags: [#research]
 ---
 # Project Signal 59 Adoption Workflow Research 279
 
 ## Research Summary
-Research on adoption workflow for [[Project Signal 59]] and [[BrightWave FinTech]].
+Research on adoption workflow for [[Project Signal 59]] and [[Cobalt Analytics]].
 
 ## Evidence
 - Interview notes from [[Farah Chen]]

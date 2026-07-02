@@ -3,11 +3,11 @@ type: decision
 date: 2024-05-24
 status: active
 project: "[[Project Summit 72]]"
-company: "[[Cobalt Media]]"
-source_created_at: 2024-05-24T15:58:00
-source_observed_at: 2024-05-24T18:11:00
-created_at: 2024-05-25T21:58:00
-updated_at: 2024-05-26T19:58:00
+company: "[[Quantum Labs]]"
+source_created_at: 2024-05-24T14:06:00
+source_observed_at: 2024-05-24T14:20:00
+created_at: 2024-05-30T14:06:00
+updated_at: 2024-05-31T12:06:00
 tags: [#decision]
 ---
 # Project Summit 72 Finance Approval Decision 72
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with finance approval for [[Project Summit 72]].
 
 ## Context
-This decision applies to [[Cobalt Media]] and [[Project Summit 72]].
+This decision applies to [[Quantum Labs]] and [[Project Summit 72]].
 It follows [[Project Summit 72 Stakeholder Alignment Sync 72]].
 It incorporates [[Project Summit 72 Lineage Audit Research 72]].
 

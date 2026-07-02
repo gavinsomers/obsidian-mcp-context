@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-03-24
 project: "[[Project Harbor 54]]"
-company: "[[Helio Health]]"
-source_created_at: 2025-03-24T09:00:00
-source_observed_at: 2025-03-24T11:17:00
-created_at: 2025-03-24T11:22:00
-updated_at: 2025-03-25T02:22:00
+company: "[[Vanguard Retail]]"
+source_created_at: 2025-03-24T16:42:00
+source_observed_at: 2025-03-24T17:33:00
+created_at: 2025-03-24T19:19:00
+updated_at: 2025-03-24T22:19:00
 tags: [#meeting]
 ---
 # Project Harbor 54 Finance Approval Sync 494
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Amara Chen]]
 
 ## Client Attendees
-- [[David Kim]]
-- [[Tara Ortega]]
-- [[Hannah Tan]]
+- [[Farah Shah]]
+- [[Ben Jenkins]]
+- [[Rachel Novak]]
 
 ## Notes
-Finance Approval reviewed for [[Project Harbor 54]] at [[Helio Health]].
-[[Amara Chen]] aligned with [[David Kim]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Harbor 54]] at [[Vanguard Retail]].
+[[Amara Chen]] aligned with [[Farah Shah]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 54]] to [[Amara Chen]] #follow-up

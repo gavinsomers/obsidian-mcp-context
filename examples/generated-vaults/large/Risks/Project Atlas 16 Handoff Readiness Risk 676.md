@@ -2,16 +2,16 @@
 type: risk
 status: open
 project: "[[Project Atlas 16]]"
-source_created_at: 2026-04-13T10:20:00
-source_observed_at: 2026-04-13T12:10:00
-created_at: 2026-04-14T05:20:00
-updated_at: 2026-04-28T05:20:00
+source_created_at: 2026-04-13T13:08:00
+source_observed_at: 2026-04-13T16:02:00
+created_at: 2026-04-21T16:08:00
+updated_at: 2026-05-27T20:08:00
 tags: [#risk]
 ---
 # Project Atlas 16 Handoff Readiness Risk 676
 
 ## Risk
-Handoff Readiness may affect [[Project Atlas 16]] for [[Vanguard Media]].
+Handoff Readiness may affect [[Project Atlas 16]] for [[Quantum Manufacturing]].
 
 ## Evidence
 - Raised after [[Project Atlas 16 Metric Reconciliation Sync 676]]

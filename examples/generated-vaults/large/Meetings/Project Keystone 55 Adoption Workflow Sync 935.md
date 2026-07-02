@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-02-09
 project: "[[Project Keystone 55]]"
-company: "[[Quantum Labs]]"
-source_created_at: 2024-02-09T13:06:00
-source_observed_at: 2024-02-09T13:59:00
-created_at: 2024-02-18T13:06:00
-updated_at: 2024-02-18T14:06:00
+company: "[[Harbor FinTech]]"
+source_created_at: 2024-02-09T09:46:00
+source_observed_at: 2024-02-09T11:06:00
+created_at: 2024-02-09T11:11:00
+updated_at: 2024-02-10T10:11:00
 tags: [#meeting]
 ---
 # Project Keystone 55 Adoption Workflow Sync 935
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Ben Chen]]
 
 ## Client Attendees
-- [[Clara Rostova]]
-- [[Nadia Morgan]]
-- [[Sam Vance]]
+- [[Iris Walker]]
+- [[Elena Novak]]
+- [[Priya Ivanov]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Keystone 55]] at [[Quantum Labs]].
-[[Ben Chen]] aligned with [[Clara Rostova]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Keystone 55]] at [[Harbor FinTech]].
+[[Ben Chen]] aligned with [[Iris Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 55]] to [[Ben Chen]] #follow-up

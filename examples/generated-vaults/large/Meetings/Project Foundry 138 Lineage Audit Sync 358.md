@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-03-22
 project: "[[Project Foundry 138]]"
-company: "[[Quantum Retail]]"
-source_created_at: 2025-03-22T10:32:00
-source_observed_at: 2025-03-22T11:23:00
-created_at: 2025-03-29T17:32:00
-updated_at: 2025-03-30T11:32:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2025-03-22T15:20:00
+source_observed_at: 2025-03-22T18:17:00
+created_at: 2025-03-22T18:44:00
+updated_at: 2025-03-23T00:44:00
 tags: [#meeting]
 ---
 # Project Foundry 138 Lineage Audit Sync 358
 
 ## Evergreen Attendees
-- [[Grace Foster]]
+- [[Kai Bennett]]
 
 ## Client Attendees
-- [[Grace Shah]]
-- [[Wendy Walker]]
-- [[Sam Novak]]
+- [[Marcus Ivanov]]
+- [[Ben Novak]]
+- [[Rachel Rostova]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 138]] at [[Quantum Retail]].
-[[Grace Foster]] aligned with [[Grace Shah]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 138]] at [[Vanguard FinTech]].
+[[Kai Bennett]] aligned with [[Marcus Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 138]] to [[Grace Foster]] #follow-up
+- [ ] Send recap for [[Project Foundry 138]] to [[Kai Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

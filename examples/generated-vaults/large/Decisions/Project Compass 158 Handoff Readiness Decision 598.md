@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-12
 status: active
 project: "[[Project Compass 158]]"
-company: "[[Helio Labs]]"
-source_created_at: 2025-09-12T14:24:00
-source_observed_at: 2025-09-12T15:33:00
-created_at: 2025-09-12T17:20:00
-updated_at: 2025-09-13T16:20:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-09-12T13:38:00
+source_observed_at: 2025-09-12T14:44:00
+created_at: 2025-09-12T14:49:00
+updated_at: 2025-09-12T22:49:00
 tags: [#decision]
 ---
 # Project Compass 158 Handoff Readiness Decision 598
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 158]].
 
 ## Context
-This decision applies to [[Helio Labs]] and [[Project Compass 158]].
+This decision applies to [[Vanguard Manufacturing]] and [[Project Compass 158]].
 It follows [[Project Compass 158 Lineage Audit Sync 598]].
 It incorporates [[Project Compass 158 Finance Approval Research 378]].
 

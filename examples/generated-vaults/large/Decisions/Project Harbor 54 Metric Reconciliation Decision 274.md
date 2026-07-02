@@ -3,11 +3,11 @@ type: decision
 date: 2024-06-11
 status: active
 project: "[[Project Harbor 54]]"
-company: "[[Helio Health]]"
-source_created_at: 2024-06-11T15:25:00
-source_observed_at: 2024-06-11T18:16:00
-created_at: 2024-06-11T20:01:00
-updated_at: 2024-06-12T13:01:00
+company: "[[Vanguard Retail]]"
+source_created_at: 2024-06-11T09:42:00
+source_observed_at: 2024-06-11T12:09:00
+created_at: 2024-06-11T13:33:00
+updated_at: 2024-06-11T21:33:00
 tags: [#decision]
 ---
 # Project Harbor 54 Metric Reconciliation Decision 274
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Harbor 54]].
 
 ## Context
-This decision applies to [[Helio Health]] and [[Project Harbor 54]].
+This decision applies to [[Vanguard Retail]] and [[Project Harbor 54]].
 It follows [[Project Harbor 54 Finance Approval Sync 274]].
 It incorporates [[Project Harbor 54 Handoff Readiness Research 54]].
 

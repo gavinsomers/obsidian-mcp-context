@@ -1,26 +1,25 @@
 ---
 type: project
-status: active
-company: "[[BrightWave FinTech]]"
-source_created_at: 2024-07-04T14:31:00
-source_observed_at: 2024-07-04T16:51:00
-created_at: 2024-07-05T21:31:00
-updated_at: 2024-08-01T22:31:00
+status: planning
+company: "[[Keystone Media]]"
+source_created_at: 2024-07-04T13:26:00
+source_observed_at: 2024-07-04T15:05:00
+created_at: 2024-07-08T16:26:00
+updated_at: 2024-08-22T02:26:00
 tags: [#project]
 ---
 # Project Summit 87
 
 ## Overview
-Project Summit 87 supports [[BrightWave FinTech]] through sales pipeline.
+Project Summit 87 supports [[Keystone Media]] through sales pipeline.
 
 ## Stakeholders
-- [[Jonah Ivanov]]
-- [[Zoe Morgan]]
-- [[Nadia Rostova]]
-- [[Clara Walker]]
+- [[Clara Lee]]
+- [[Sam Patel]]
+- [[Grace Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Hannah Diaz]]
-- Client account: [[BrightWave FinTech]]
-- Status: `active`
+- Client account: [[Keystone Media]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Summit 87]] #ops

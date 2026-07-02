@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-04-20
 project: "[[Project Harbor 144]]"
-company: "[[Harbor Retail]]"
-source_created_at: 2025-04-20T15:24:00
-source_observed_at: 2025-04-20T17:01:00
-created_at: 2025-04-20T17:13:00
-updated_at: 2025-04-21T06:13:00
+company: "[[Apex Media]]"
+source_created_at: 2025-04-20T08:57:00
+source_observed_at: 2025-04-20T11:23:00
+created_at: 2025-04-20T11:28:00
+updated_at: 2025-04-21T08:28:00
 tags: [#meeting]
 ---
 # Project Harbor 144 Finance Approval Sync 144
 
 ## Evergreen Attendees
-- [[Marcus Foster]]
+- [[Rachel Bennett]]
 
 ## Client Attendees
-- [[Elena Jenkins]]
-- [[Yara Walker]]
-- [[Uma Novak]]
+- [[Priya Kim]]
+- [[Elena Patel]]
+- [[Uma Tan]]
 
 ## Notes
-Finance Approval reviewed for [[Project Harbor 144]] at [[Harbor Retail]].
-[[Marcus Foster]] aligned with [[Elena Jenkins]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Harbor 144]] at [[Apex Media]].
+[[Rachel Bennett]] aligned with [[Priya Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Harbor 144]] to [[Marcus Foster]] #follow-up
+- [ ] Send recap for [[Project Harbor 144]] to [[Rachel Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

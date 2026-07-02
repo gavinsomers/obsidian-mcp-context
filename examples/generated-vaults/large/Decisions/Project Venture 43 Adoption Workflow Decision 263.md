@@ -3,11 +3,11 @@ type: decision
 date: 2024-05-27
 status: active
 project: "[[Project Venture 43]]"
-company: "[[Cobalt Logistics]]"
-source_created_at: 2024-05-27T12:15:00
-source_observed_at: 2024-05-27T12:47:00
-created_at: 2024-05-27T17:45:00
-updated_at: 2024-05-28T14:45:00
+company: "[[Apex Health]]"
+source_created_at: 2024-05-27T12:40:00
+source_observed_at: 2024-05-27T13:03:00
+created_at: 2024-05-27T14:07:00
+updated_at: 2024-05-28T11:07:00
 tags: [#decision]
 ---
 # Project Venture 43 Adoption Workflow Decision 263
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Venture 43]].
 
 ## Context
-This decision applies to [[Cobalt Logistics]] and [[Project Venture 43]].
+This decision applies to [[Apex Health]] and [[Project Venture 43]].
 It follows [[Project Venture 43 Security Review Sync 263]].
 It incorporates [[Project Venture 43 Pipeline Hygiene Research 43]].
 

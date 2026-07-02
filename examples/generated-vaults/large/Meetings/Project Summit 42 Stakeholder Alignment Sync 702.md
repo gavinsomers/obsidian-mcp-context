@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-07-12
+date: 2024-03-21
 project: "[[Project Summit 42]]"
-company: "[[Vanguard Analytics]]"
-source_created_at: 2024-07-12T15:53:00
-source_observed_at: 2024-07-12T18:44:00
-created_at: 2024-07-12T18:49:00
-updated_at: 2024-07-12T20:49:00
+company: "[[BrightWave Retail]]"
+source_created_at: 2024-03-21T13:26:00
+source_observed_at: 2024-03-21T14:33:00
+created_at: 2024-03-21T15:55:00
+updated_at: 2024-03-21T22:55:00
 tags: [#meeting]
 ---
 # Project Summit 42 Stakeholder Alignment Sync 702
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Omar Bennett]]
 
 ## Client Attendees
-- [[Zoe Lee]]
-- [[Nadia Quinn]]
-- [[Clara Vance]]
+- [[Nadia Novak]]
+- [[Sam Walker]]
+- [[Clara Shah]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 42]] at [[Vanguard Analytics]].
-[[Omar Bennett]] aligned with [[Zoe Lee]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Summit 42]] at [[BrightWave Retail]].
+[[Omar Bennett]] aligned with [[Nadia Novak]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 42]] to [[Omar Bennett]] #follow-up

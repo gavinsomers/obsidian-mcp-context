@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-04-13
 project: "[[Project Atlas 1]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2026-04-13T10:49:00
-source_observed_at: 2026-04-13T13:29:00
-created_at: 2026-04-13T16:38:00
-updated_at: 2026-04-13T17:38:00
+company: "[[Noble Labs]]"
+source_created_at: 2026-04-13T14:03:00
+source_observed_at: 2026-04-13T16:33:00
+created_at: 2026-04-13T17:58:00
+updated_at: 2026-04-13T21:58:00
 tags: [#meeting]
 ---
 # Project Atlas 1 Warehouse Mapping Sync 1541
@@ -15,11 +15,13 @@ tags: [#meeting]
 - [[Alex Alvarez]]
 
 ## Client Attendees
-- [[Sam Haddad]]
+- [[Xavier Vance]]
+- [[David Ivanov]]
+- [[Hannah Rostova]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 1]] at [[Northstar Labs]].
-[[Alex Alvarez]] aligned with [[Sam Haddad]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 1]] at [[Noble Labs]].
+[[Alex Alvarez]] aligned with [[Xavier Vance]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 1]] to [[Alex Alvarez]] #follow-up

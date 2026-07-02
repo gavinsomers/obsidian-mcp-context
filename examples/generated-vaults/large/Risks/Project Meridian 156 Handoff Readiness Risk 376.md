@@ -2,21 +2,21 @@
 type: risk
 status: open
 project: "[[Project Meridian 156]]"
-source_created_at: 2025-06-27T14:11:00
-source_observed_at: 2025-06-27T16:53:00
-created_at: 2025-06-28T09:11:00
-updated_at: 2025-08-11T10:11:00
+source_created_at: 2025-06-27T12:50:00
+source_observed_at: 2025-06-27T14:53:00
+created_at: 2025-06-28T05:50:00
+updated_at: 2025-08-05T05:50:00
 tags: [#risk]
 ---
 # Project Meridian 156 Handoff Readiness Risk 376
 
 ## Risk
-Handoff Readiness may affect [[Project Meridian 156]] for [[BrightWave Retail]].
+Handoff Readiness may affect [[Project Meridian 156]] for [[Quantum Logistics]].
 
 ## Evidence
-- Raised after [[Project Meridian 156 Metric Reconciliation Sync 816]]
+- Raised after [[Project Meridian 156 Metric Reconciliation Sync 376]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Zoe Foster]]
+- Owner: [[Clara Chen]]
 - [ ] Reassess [[Project Meridian 156 Handoff Readiness Risk 376]] during the next review #risk

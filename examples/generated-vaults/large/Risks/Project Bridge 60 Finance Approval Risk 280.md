@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Bridge 60]]"
-source_created_at: 2024-07-23T14:53:00
-source_observed_at: 2024-07-23T16:07:00
-created_at: 2024-07-24T14:53:00
-updated_at: 2024-08-06T19:53:00
+source_created_at: 2024-07-23T14:09:00
+source_observed_at: 2024-07-23T14:27:00
+created_at: 2024-07-25T00:09:00
+updated_at: 2024-08-01T07:09:00
 tags: [#risk]
 ---
 # Project Bridge 60 Finance Approval Risk 280
 
 ## Risk
-Finance Approval may affect [[Project Bridge 60]] for [[Crescent Retail]].
+Finance Approval may affect [[Project Bridge 60]] for [[Harbor Analytics]].
 
 ## Evidence
 - Raised after [[Project Bridge 60 Handoff Readiness Sync 280]]
 
 ## Current State
-- Status: `mitigating`
+- Status: `open`
 - Owner: [[Grace Chen]]
 - [ ] Reassess [[Project Bridge 60 Finance Approval Risk 280]] during the next review #risk

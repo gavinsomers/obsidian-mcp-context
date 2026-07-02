@@ -1,26 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Northstar FinTech]]"
-source_created_at: 2025-11-24T11:11:00
-source_observed_at: 2025-11-24T11:41:00
-created_at: 2025-11-26T03:11:00
-updated_at: 2026-01-12T13:11:00
+status: active
+company: "[[Vanguard Retail]]"
+source_created_at: 2025-11-24T11:37:00
+source_observed_at: 2025-11-24T13:13:00
+created_at: 2025-11-26T10:37:00
+updated_at: 2026-02-07T12:37:00
 tags: [#project]
 ---
 # Project Keystone 190
 
 ## Overview
-Project Keystone 190 supports [[Northstar FinTech]] through operations admin.
+Project Keystone 190 supports [[Vanguard Retail]] through operations admin.
 
 ## Stakeholders
-- [[Grace Ivanov]]
-- [[Wendy Morgan]]
-- [[Kai Rostova]]
-- [[Alex Walker]]
+- [[Ben Jenkins]]
+- [[Rachel Novak]]
+- [[Farah Shah]]
+- [[Victor Walker]]
 
 ## Operating Notes
-- Evergreen owner: [[Grace Haddad]]
-- Client account: [[Northstar FinTech]]
-- Status: `blocked`
+- Evergreen owner: [[Kai Diaz]]
+- Client account: [[Vanguard Retail]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Keystone 190]] #ops

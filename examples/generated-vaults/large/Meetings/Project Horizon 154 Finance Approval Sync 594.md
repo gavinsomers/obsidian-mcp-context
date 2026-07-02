@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-08-11
 project: "[[Project Horizon 154]]"
-company: "[[Helio Logistics]]"
-source_created_at: 2025-08-11T12:21:00
-source_observed_at: 2025-08-11T13:51:00
-created_at: 2025-08-18T18:21:00
-updated_at: 2025-08-19T11:21:00
+company: "[[Cobalt Analytics]]"
+source_created_at: 2025-08-11T13:17:00
+source_observed_at: 2025-08-11T14:16:00
+created_at: 2025-08-11T15:57:00
+updated_at: 2025-08-11T23:57:00
 tags: [#meeting]
 ---
 # Project Horizon 154 Finance Approval Sync 594
 
 ## Evergreen Attendees
-- [[Xavier Foster]]
+- [[Amara Chen]]
 
 ## Client Attendees
-- [[Hannah Lee]]
-- [[Xavier Patel]]
-- [[Lina Usman]]
+- [[Victor Lee]]
+- [[Jonah Quinn]]
+- [[Zoe Usman]]
 
 ## Notes
-Finance Approval reviewed for [[Project Horizon 154]] at [[Helio Logistics]].
-[[Xavier Foster]] aligned with [[Hannah Lee]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Horizon 154]] at [[Cobalt Analytics]].
+[[Amara Chen]] aligned with [[Victor Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Horizon 154]] to [[Xavier Foster]] #follow-up
+- [ ] Send recap for [[Project Horizon 154]] to [[Amara Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

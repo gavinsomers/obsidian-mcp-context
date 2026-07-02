@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2026-01-21
+date: 2024-07-26
 project: "[[Project Meridian 51]]"
-company: "[[Summit FinTech]]"
-source_created_at: 2026-01-21T12:02:00
-source_observed_at: 2026-01-21T13:11:00
-created_at: 2026-01-21T16:31:00
-updated_at: 2026-01-21T20:31:00
+company: "[[Summit Health]]"
+source_created_at: 2024-07-26T09:40:00
+source_observed_at: 2024-07-26T11:21:00
+created_at: 2024-07-26T11:26:00
+updated_at: 2024-07-26T17:26:00
 tags: [#meeting]
 ---
 # Project Meridian 51 Warehouse Mapping Sync 711
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Yara Bennett]]
 
 ## Client Attendees
-- [[Jonah Walker]]
-- [[Farah Novak]]
-- [[Victor Rostova]]
+- [[Jonah Kim]]
+- [[Zoe Ortega]]
+- [[Nadia Tan]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 51]] at [[Summit FinTech]].
-[[Yara Bennett]] aligned with [[Jonah Walker]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 51]] at [[Summit Health]].
+[[Yara Bennett]] aligned with [[Jonah Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 51]] to [[Yara Bennett]] #follow-up

@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-26
 status: active
 project: "[[Project Summit 147]]"
-company: "[[Summit Retail]]"
-source_created_at: 2025-05-26T08:57:00
-source_observed_at: 2025-05-26T09:30:00
-created_at: 2025-05-26T11:53:00
-updated_at: 2025-05-27T05:53:00
+company: "[[Apex Labs]]"
+source_created_at: 2025-05-26T14:47:00
+source_observed_at: 2025-05-26T16:52:00
+created_at: 2025-05-26T19:12:00
+updated_at: 2025-05-27T04:12:00
 tags: [#decision]
 ---
 # Project Summit 147 Pipeline Hygiene Decision 147
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Summit 147]].
 
 ## Context
-This decision applies to [[Summit Retail]] and [[Project Summit 147]].
-It follows [[Project Summit 147 Contract Renewal Sync 807]].
-It incorporates [[Project Summit 147 Security Review Research 367]].
+This decision applies to [[Apex Labs]] and [[Project Summit 147]].
+It follows [[Project Summit 147 Contract Renewal Sync 367]].
+It incorporates [[Project Summit 147 Security Review Research 147]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

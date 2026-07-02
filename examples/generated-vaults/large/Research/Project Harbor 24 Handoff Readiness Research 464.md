@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Harbor 24]]"
-company: "[[Pioneer Health]]"
-source_created_at: 2025-07-28T16:24:00
-source_observed_at: 2025-07-28T18:25:00
-created_at: 2025-07-29T10:24:00
-updated_at: 2025-08-03T18:24:00
+company: "[[Keystone Labs]]"
+source_created_at: 2025-07-28T10:45:00
+source_observed_at: 2025-07-28T11:43:00
+created_at: 2025-07-28T14:45:00
+updated_at: 2025-08-08T01:45:00
 tags: [#research]
 ---
 # Project Harbor 24 Handoff Readiness Research 464
 
 ## Research Summary
-Research on handoff readiness for [[Project Harbor 24]] and [[Pioneer Health]].
+Research on handoff readiness for [[Project Harbor 24]] and [[Keystone Labs]].
 
 ## Evidence
 - Interview notes from [[Xavier Alvarez]]

@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Signal 149]]"
-company: "[[Pioneer Manufacturing]]"
-source_created_at: 2026-03-02T10:37:00
-source_observed_at: 2026-03-02T11:29:00
-created_at: 2026-03-04T06:37:00
-updated_at: 2026-04-10T16:37:00
+company: "[[BrightWave Health]]"
+source_created_at: 2025-10-07T09:01:00
+source_observed_at: 2025-10-07T09:26:00
+created_at: 2025-10-09T07:01:00
+updated_at: 2025-11-14T17:01:00
 tags: [#research]
 ---
 # Project Signal 149 Adoption Workflow Research 589
 
 ## Research Summary
-Research on adoption workflow for [[Project Signal 149]] and [[Pioneer Manufacturing]].
+Research on adoption workflow for [[Project Signal 149]] and [[BrightWave Health]].
 
 ## Evidence
-- Interview notes from [[Sam Foster]]
-- Related operating review: [[Project Signal 149 Pipeline Hygiene Sync 1469]]
+- Interview notes from [[Wendy Bennett]]
+- Related operating review: [[Project Signal 149 Pipeline Hygiene Sync 589]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Signal 149]] #research

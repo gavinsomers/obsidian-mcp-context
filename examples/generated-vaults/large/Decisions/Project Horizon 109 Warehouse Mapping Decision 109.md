@@ -3,11 +3,11 @@ type: decision
 date: 2024-11-21
 status: active
 project: "[[Project Horizon 109]]"
-company: "[[Pioneer Analytics]]"
-source_created_at: 2024-11-21T14:47:00
-source_observed_at: 2024-11-21T16:52:00
-created_at: 2024-11-21T19:12:00
-updated_at: 2024-11-22T04:12:00
+company: "[[Pioneer Manufacturing]]"
+source_created_at: 2024-11-21T11:00:00
+source_observed_at: 2024-11-21T13:20:00
+created_at: 2024-11-21T14:32:00
+updated_at: 2024-11-22T00:32:00
 tags: [#decision]
 ---
 # Project Horizon 109 Warehouse Mapping Decision 109
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Horizon 109]].
 
 ## Context
-This decision applies to [[Pioneer Analytics]] and [[Project Horizon 109]].
-It follows [[Project Horizon 109 Pipeline Hygiene Sync 109]].
+This decision applies to [[Pioneer Manufacturing]] and [[Project Horizon 109]].
+It follows [[Project Horizon 109 Pipeline Hygiene Sync 989]].
 It incorporates [[Project Horizon 109 Adoption Workflow Research 109]].
 
 ## Supersession

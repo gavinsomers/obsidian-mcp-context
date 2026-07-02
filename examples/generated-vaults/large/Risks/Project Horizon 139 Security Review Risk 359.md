@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Horizon 139]]"
-source_created_at: 2025-04-05T15:25:00
-source_observed_at: 2025-04-05T18:20:00
-created_at: 2025-04-06T03:25:00
-updated_at: 2025-05-08T05:25:00
+source_created_at: 2025-04-05T13:50:00
+source_observed_at: 2025-04-05T14:06:00
+created_at: 2025-04-07T05:50:00
+updated_at: 2025-04-19T12:50:00
 tags: [#risk]
 ---
 # Project Horizon 139 Security Review Risk 359
 
 ## Risk
-Security Review may affect [[Project Horizon 139]] for [[Cobalt Labs]].
+Security Review may affect [[Project Horizon 139]] for [[Vanguard Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Horizon 139 Pipeline Hygiene Sync 139]]
+- Raised after [[Project Horizon 139 Pipeline Hygiene Sync 359]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Hannah Foster]]
+- Status: `open`
+- Owner: [[Lina Bennett]]
 - [ ] Reassess [[Project Horizon 139 Security Review Risk 359]] during the next review #risk

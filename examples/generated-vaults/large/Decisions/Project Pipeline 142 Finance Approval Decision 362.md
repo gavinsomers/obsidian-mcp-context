@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-02
 status: active
 project: "[[Project Pipeline 142]]"
-company: "[[Helio FinTech]]"
-source_created_at: 2025-05-02T08:43:00
-source_observed_at: 2025-05-02T11:15:00
-created_at: 2025-05-02T14:28:00
-updated_at: 2025-05-02T21:28:00
+company: "[[Northstar Retail]]"
+source_created_at: 2025-05-02T15:00:00
+source_observed_at: 2025-05-02T17:56:00
+created_at: 2025-05-02T18:01:00
+updated_at: 2025-05-02T19:01:00
 tags: [#decision]
 ---
 # Project Pipeline 142 Finance Approval Decision 362
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Pipeline 142]].
 
 ## Context
-This decision applies to [[Helio FinTech]] and [[Project Pipeline 142]].
-It follows [[Project Pipeline 142 Stakeholder Alignment Sync 1682]].
-It incorporates [[Project Pipeline 142 Lineage Audit Research 362]].
+This decision applies to [[Northstar Retail]] and [[Project Pipeline 142]].
+It follows [[Project Pipeline 142 Stakeholder Alignment Sync 362]].
+It incorporates [[Project Pipeline 142 Lineage Audit Research 142]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

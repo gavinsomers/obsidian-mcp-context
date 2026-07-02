@@ -3,11 +3,11 @@ type: decision
 date: 2026-02-12
 status: superseded
 project: "[[Project Bridge 45]]"
-company: "[[Pioneer Retail]]"
-source_created_at: 2026-02-12T11:35:00
-source_observed_at: 2026-02-12T13:50:00
-created_at: 2026-02-12T16:33:00
-updated_at: 2026-02-13T13:33:00
+company: "[[Northstar Health]]"
+source_created_at: 2026-02-12T09:56:00
+source_observed_at: 2026-02-12T10:58:00
+created_at: 2026-02-12T12:00:00
+updated_at: 2026-02-12T14:00:00
 tags: [#decision]
 ---
 # Project Bridge 45 Contract Renewal Decision 705
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Bridge 45]].
 
 ## Context
-This decision applies to [[Pioneer Retail]] and [[Project Bridge 45]].
+This decision applies to [[Northstar Health]] and [[Project Bridge 45]].
 It follows [[Project Bridge 45 Adoption Workflow Sync 705]].
 It incorporates [[Project Bridge 45 Warehouse Mapping Research 485]].
 

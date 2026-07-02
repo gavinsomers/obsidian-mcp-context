@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-01-03
 project: "[[Project Beacon 122]]"
-company: "[[Keystone FinTech]]"
-source_created_at: 2025-01-03T16:48:00
-source_observed_at: 2025-01-03T18:57:00
-created_at: 2025-01-03T20:54:00
-updated_at: 2025-01-04T07:54:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-01-03T09:58:00
+source_observed_at: 2025-01-03T11:46:00
+created_at: 2025-01-03T12:07:00
+updated_at: 2025-01-03T22:07:00
 tags: [#meeting]
 ---
 # Project Beacon 122 Stakeholder Alignment Sync 122
 
 ## Evergreen Attendees
-- [[Rachel Evans]]
+- [[Victor Alvarez]]
 
 ## Client Attendees
-- [[Victor Ivanov]]
-- [[Jonah Novak]]
-- [[Nadia Walker]]
+- [[Rachel Jenkins]]
+- [[Farah Ortega]]
+- [[Victor Shah]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 122]] at [[Keystone FinTech]].
-[[Rachel Evans]] aligned with [[Victor Ivanov]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 122]] at [[Vanguard Manufacturing]].
+[[Victor Alvarez]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Beacon 122]] to [[Rachel Evans]] #follow-up
+- [ ] Send recap for [[Project Beacon 122]] to [[Victor Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

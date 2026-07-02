@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2025-09-10
+date: 2024-07-22
 project: "[[Project Compass 68]]"
-company: "[[Harbor Health]]"
-source_created_at: 2025-09-10T11:08:00
-source_observed_at: 2025-09-10T13:01:00
-created_at: 2025-09-10T13:13:00
-updated_at: 2025-09-10T15:13:00
+company: "[[Meridian Health]]"
+source_created_at: 2024-07-22T12:46:00
+source_observed_at: 2024-07-22T13:39:00
+created_at: 2024-07-22T18:26:00
+updated_at: 2024-07-23T16:26:00
 tags: [#meeting]
 ---
 # Project Compass 68 Lineage Audit Sync 1388
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Omar Chen]]
 
 ## Client Attendees
-- [[Iris Kim]]
-- [[Yara Ortega]]
-- [[Marcus Tan]]
+- [[Elena Kim]]
+- [[Uma Ortega]]
+- [[Iris Tan]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 68]] at [[Harbor Health]].
-[[Omar Chen]] aligned with [[Iris Kim]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 68]] at [[Meridian Health]].
+[[Omar Chen]] aligned with [[Elena Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 68]] to [[Omar Chen]] #follow-up

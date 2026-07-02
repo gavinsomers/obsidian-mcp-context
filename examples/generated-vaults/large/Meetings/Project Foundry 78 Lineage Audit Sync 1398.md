@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-09-15
+date: 2025-09-24
 project: "[[Project Foundry 78]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2024-09-15T10:13:00
-source_observed_at: 2024-09-15T12:58:00
-created_at: 2024-09-15T13:03:00
-updated_at: 2024-09-15T16:03:00
+company: "[[Keystone Retail]]"
+source_created_at: 2025-09-24T11:13:00
+source_observed_at: 2025-09-24T12:18:00
+created_at: 2025-09-24T14:24:00
+updated_at: 2025-09-24T21:24:00
 tags: [#meeting]
 ---
 # Project Foundry 78 Lineage Audit Sync 1398
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Zoe Chen]]
 
 ## Client Attendees
-- [[Rachel Novak]]
-- [[Victor Walker]]
-- [[Farah Shah]]
+- [[Jonah Jenkins]]
+- [[Zoe Novak]]
+- [[Nadia Shah]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Foundry 78]] at [[Vanguard Retail]].
-[[Zoe Chen]] aligned with [[Rachel Novak]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Foundry 78]] at [[Keystone Retail]].
+[[Zoe Chen]] aligned with [[Jonah Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 78]] to [[Zoe Chen]] #follow-up

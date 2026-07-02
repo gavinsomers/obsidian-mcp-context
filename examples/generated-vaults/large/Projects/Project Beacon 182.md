@@ -1,26 +1,26 @@
 ---
 type: project
-status: planning
-company: "[[Summit Retail]]"
-source_created_at: 2025-10-15T10:59:00
-source_observed_at: 2025-10-15T13:15:00
-created_at: 2025-10-17T05:59:00
-updated_at: 2026-01-06T06:59:00
+status: closed
+company: "[[Northstar Analytics]]"
+source_created_at: 2025-10-15T14:01:00
+source_observed_at: 2025-10-15T14:40:00
+created_at: 2025-10-16T01:01:00
+updated_at: 2025-12-25T08:01:00
 tags: [#project]
 ---
 # Project Beacon 182
 
 ## Overview
-Project Beacon 182 supports [[Summit Retail]] through sales pipeline.
+Project Beacon 182 supports [[Northstar Analytics]] through sales pipeline.
 
 ## Stakeholders
-- [[Farah Jenkins]]
-- [[Victor Novak]]
-- [[Jonah Shah]]
-- [[Zoe Walker]]
+- [[Tara Lee]]
+- [[Hannah Quinn]]
+- [[Xavier Usman]]
 
 ## Operating Notes
-- Evergreen owner: [[Zoe Grant]]
-- Client account: [[Summit Retail]]
-- Status: `planning`
+- Evergreen owner: [[Clara Diaz]]
+- Client account: [[Northstar Analytics]]
+- Status: `closed`
+- Closed at: `2026-02-13`
 - [ ] Reconcile latest state for [[Project Beacon 182]] #ops

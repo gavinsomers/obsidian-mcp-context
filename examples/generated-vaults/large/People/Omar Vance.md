@@ -2,10 +2,10 @@
 type: person
 company: "[[Helio Labs]]"
 role: "Finance Lead"
-source_created_at: 2023-10-21T10:34:00
-source_observed_at: 2023-10-21T12:34:00
-created_at: 2023-10-23T05:34:00
-updated_at: 2025-06-28T13:00:00
+source_created_at: 2023-10-21T08:15:00
+source_observed_at: 2023-10-21T11:11:00
+created_at: 2023-10-21T21:15:00
+updated_at: 2026-03-26T13:00:00
 tags: [#person]
 ---
 # Omar Vance
@@ -14,8 +14,7 @@ tags: [#person]
 Omar Vance is the Finance Lead at [[Helio Labs]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Bridge 90]] ([[Helio Labs]])
-- Client stakeholder on [[Project Horizon 94]] ([[Helio Labs]])
-- Client stakeholder on [[Project Lantern 125]] ([[Helio Labs]])
-- Client stakeholder on [[Project Compass 158]] ([[Helio Labs]])
+- Client stakeholder on [[Project Atlas 61]] ([[Helio Labs]])
+- Client stakeholder on [[Project Signal 209]] ([[Helio Labs]])
+- Client stakeholder on [[Project Foundry 213]] ([[Helio Labs]])
 - [ ] Confirm next update with [[Omar Vance]] #follow-up

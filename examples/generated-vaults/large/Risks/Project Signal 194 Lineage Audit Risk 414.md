@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Signal 194]]"
-source_created_at: 2025-12-30T14:33:00
-source_observed_at: 2025-12-30T16:15:00
-created_at: 2025-12-31T18:33:00
-updated_at: 2026-01-06T00:33:00
+source_created_at: 2025-12-30T13:55:00
+source_observed_at: 2025-12-30T16:43:00
+created_at: 2025-12-31T01:55:00
+updated_at: 2026-01-24T08:55:00
 tags: [#risk]
 ---
 # Project Signal 194 Lineage Audit Risk 414
 
 ## Risk
-Lineage Audit may affect [[Project Signal 194]] for [[Crescent Media]].
+Lineage Audit may affect [[Project Signal 194]] for [[Keystone Health]].
 
 ## Evidence
-- Raised after [[Project Signal 194 Finance Approval Sync 194]]
+- Raised after [[Project Signal 194 Finance Approval Sync 1294]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Kai Haddad]]
+- Status: `open`
+- Owner: [[Omar Diaz]]
 - [ ] Reassess [[Project Signal 194 Lineage Audit Risk 414]] during the next review #risk

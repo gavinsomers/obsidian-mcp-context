@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-12
 status: active
 project: "[[Project Foundry 138]]"
-company: "[[Quantum Retail]]"
-source_created_at: 2025-04-12T08:03:00
-source_observed_at: 2025-04-12T08:33:00
-created_at: 2025-04-12T09:09:00
-updated_at: 2025-04-13T07:09:00
+company: "[[Vanguard FinTech]]"
+source_created_at: 2025-04-12T11:25:00
+source_observed_at: 2025-04-12T11:44:00
+created_at: 2025-04-12T14:02:00
+updated_at: 2025-04-12T15:02:00
 tags: [#decision]
 ---
 # Project Foundry 138 Handoff Readiness Decision 358
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 138]].
 
 ## Context
-This decision applies to [[Quantum Retail]] and [[Project Foundry 138]].
-It follows [[Project Foundry 138 Lineage Audit Sync 358]].
-It incorporates [[Project Foundry 138 Finance Approval Research 138]].
+This decision applies to [[Vanguard FinTech]] and [[Project Foundry 138]].
+It follows [[Project Foundry 138 Lineage Audit Sync 1238]].
+It incorporates [[Project Foundry 138 Finance Approval Research 358]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

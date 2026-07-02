@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Meridian 66]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2025-10-08T11:30:00
-source_observed_at: 2025-10-08T13:19:00
-created_at: 2025-10-10T00:30:00
-updated_at: 2025-11-12T04:30:00
+company: "[[BrightWave Labs]]"
+source_created_at: 2025-10-08T16:39:00
+source_observed_at: 2025-10-08T19:17:00
+created_at: 2025-10-08T19:39:00
+updated_at: 2025-11-07T06:39:00
 tags: [#research]
 ---
 # Project Meridian 66 Stakeholder Alignment Research 506
 
 ## Research Summary
-Research on stakeholder alignment for [[Project Meridian 66]] and [[Vanguard Retail]].
+Research on stakeholder alignment for [[Project Meridian 66]] and [[BrightWave Labs]].
 
 ## Evidence
 - Interview notes from [[Marcus Chen]]

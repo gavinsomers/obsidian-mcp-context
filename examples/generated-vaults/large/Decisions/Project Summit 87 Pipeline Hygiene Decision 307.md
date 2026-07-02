@@ -3,11 +3,11 @@ type: decision
 date: 2024-08-04
 status: active
 project: "[[Project Summit 87]]"
-company: "[[BrightWave FinTech]]"
-source_created_at: 2024-08-04T08:19:00
-source_observed_at: 2024-08-04T09:48:00
-created_at: 2024-08-04T12:46:00
-updated_at: 2024-08-05T00:46:00
+company: "[[Keystone Media]]"
+source_created_at: 2024-08-04T10:23:00
+source_observed_at: 2024-08-04T11:47:00
+created_at: 2024-08-04T11:52:00
+updated_at: 2024-08-05T09:52:00
 tags: [#decision]
 ---
 # Project Summit 87 Pipeline Hygiene Decision 307
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Summit 87]].
 
 ## Context
-This decision applies to [[BrightWave FinTech]] and [[Project Summit 87]].
-It follows [[Project Summit 87 Contract Renewal Sync 967]].
+This decision applies to [[Keystone Media]] and [[Project Summit 87]].
+It follows [[Project Summit 87 Contract Renewal Sync 1847]].
 It incorporates [[Project Summit 87 Security Review Research 87]].
 
 ## Supersession

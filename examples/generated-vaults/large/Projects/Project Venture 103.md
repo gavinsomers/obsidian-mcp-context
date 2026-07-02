@@ -1,26 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Northstar Labs]]"
-source_created_at: 2024-09-20T12:37:00
-source_observed_at: 2024-09-20T13:08:00
-created_at: 2024-09-20T18:37:00
-updated_at: 2024-11-12T19:37:00
+status: planning
+company: "[[Keystone Logistics]]"
+source_created_at: 2024-09-20T12:54:00
+source_observed_at: 2024-09-20T14:55:00
+created_at: 2024-09-20T18:54:00
+updated_at: 2024-10-31T00:54:00
 tags: [#project]
 ---
 # Project Venture 103
 
 ## Overview
-Project Venture 103 supports [[Northstar Labs]] through customer success.
+Project Venture 103 supports [[Keystone Logistics]] through customer success.
 
 ## Stakeholders
-- [[Sam Haddad]]
-- [[Grace Morgan]]
-- [[Wendy Quinn]]
-- [[Kai Vance]]
+- [[Sam Lee]]
+- [[Grace Quinn]]
+- [[Wendy Usman]]
 
 ## Operating Notes
-- Evergreen owner: [[Yara Diaz]]
-- Client account: [[Northstar Labs]]
-- Status: `active`
+- Evergreen owner: [[Ben Alvarez]]
+- Client account: [[Keystone Logistics]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Venture 103]] #ops

@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-07-14
+date: 2024-03-30
 status: active
 project: "[[Project Atlas 46]]"
-company: "[[Vanguard Labs]]"
-source_created_at: 2024-07-14T12:16:00
-source_observed_at: 2024-07-14T13:58:00
-created_at: 2024-07-14T16:26:00
-updated_at: 2024-07-15T05:26:00
+company: "[[BrightWave Manufacturing]]"
+source_created_at: 2024-03-30T16:37:00
+source_observed_at: 2024-03-30T19:25:00
+created_at: 2024-03-30T19:30:00
+updated_at: 2024-03-31T17:30:00
 tags: [#decision]
 ---
 # Project Atlas 46 Lineage Audit Decision 486
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 46]].
 
 ## Context
-This decision applies to [[Vanguard Labs]] and [[Project Atlas 46]].
-It follows [[Project Atlas 46 Metric Reconciliation Sync 486]].
+This decision applies to [[BrightWave Manufacturing]] and [[Project Atlas 46]].
+It follows [[Project Atlas 46 Metric Reconciliation Sync 1366]].
 It incorporates [[Project Atlas 46 Stakeholder Alignment Research 266]].
 
 ## Supersession

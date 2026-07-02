@@ -2,11 +2,11 @@
 type: meeting
 date: 2023-11-12
 project: "[[Project Pipeline 37]]"
-company: "[[Quantum Logistics]]"
-source_created_at: 2023-11-12T11:06:00
-source_observed_at: 2023-11-12T13:11:00
-created_at: 2023-11-12T13:16:00
-updated_at: 2023-11-13T05:16:00
+company: "[[Keystone Manufacturing]]"
+source_created_at: 2023-11-12T08:50:00
+source_observed_at: 2023-11-12T11:22:00
+created_at: 2023-11-12T14:20:00
+updated_at: 2023-11-13T07:20:00
 tags: [#meeting]
 ---
 # Project Pipeline 37 Contract Renewal Sync 1577
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Jonah Bennett]]
 
 ## Client Attendees
-- [[Kai Lee]]
-- [[Alex Quinn]]
-- [[Omar Usman]]
+- [[Zoe Jenkins]]
+- [[Nadia Ortega]]
+- [[Clara Tan]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 37]] at [[Quantum Logistics]].
-[[Jonah Bennett]] aligned with [[Kai Lee]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 37]] at [[Keystone Manufacturing]].
+[[Jonah Bennett]] aligned with [[Zoe Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 37]] to [[Jonah Bennett]] #follow-up

@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: mid-market
-source_created_at: 2023-10-24T13:03:00
-source_observed_at: 2023-10-24T13:38:00
-created_at: 2023-10-24T19:03:00
-updated_at: 2023-12-21T04:03:00
+source_created_at: 2023-10-24T12:47:00
+source_observed_at: 2023-10-24T15:39:00
+created_at: 2023-10-26T02:47:00
+updated_at: 2025-12-13T13:00:00
 tags: [#company]
 ---
 # BrightWave Logistics
@@ -14,7 +14,10 @@ tags: [#company]
 BrightWave Logistics is a mid-market account currently marked `active`.
 
 ## Assigned Account Team
-- [[Farah Bennett]] - Principal Analytics Engineer
+- [[Tara Diaz]] - Senior Data Consultant
+- [[Zoe Bennett]] - Solution Architect
+- [[Xavier Chen]] - Solution Architect
+- [[Marcus Diaz]] - Solution Architect
 
 ## Client Stakeholders
 - [[Grace Lee]] - Product Analytics Lead
@@ -22,7 +25,10 @@ BrightWave Logistics is a mid-market account currently marked `active`.
 - [[Kai Usman]] - Data Owner
 
 ## Projects
-- [[Project Foundry 33]]
+- [[Project Compass 98]]
+- [[Project Beacon 152]]
+- [[Project Orbit 176]]
+- [[Project Summit 192]]
 
 ## Open Loops
 - [ ] Refresh account context for [[BrightWave Logistics]] #account

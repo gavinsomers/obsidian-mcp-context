@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-07-13
+date: 2025-09-03
 project: "[[Project Foundry 63]]"
-company: "[[Northstar Analytics]]"
-source_created_at: 2024-07-13T13:02:00
-source_observed_at: 2024-07-13T14:26:00
-created_at: 2024-07-13T14:31:00
-updated_at: 2024-07-14T00:31:00
+company: "[[Cobalt Labs]]"
+source_created_at: 2025-09-03T08:49:00
+source_observed_at: 2025-09-03T11:38:00
+created_at: 2025-09-03T13:28:00
+updated_at: 2025-09-03T19:28:00
 tags: [#meeting]
 ---
 # Project Foundry 63 Security Review Sync 1383
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Jonah Chen]]
 
 ## Client Attendees
-- [[Tara Lee]]
-- [[Hannah Quinn]]
-- [[Xavier Usman]]
+- [[Iris Morgan]]
+- [[Uma Haddad]]
+- [[Yara Quinn]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 63]] at [[Northstar Analytics]].
-[[Jonah Chen]] aligned with [[Tara Lee]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 63]] at [[Cobalt Labs]].
+[[Jonah Chen]] aligned with [[Iris Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 63]] to [[Jonah Chen]] #follow-up

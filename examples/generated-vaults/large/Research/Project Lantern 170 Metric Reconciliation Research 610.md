@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Lantern 170]]"
-company: "[[Helio Health]]"
-source_created_at: 2026-04-07T11:12:00
-source_observed_at: 2026-04-07T12:38:00
-created_at: 2026-04-07T17:12:00
-updated_at: 2026-05-01T20:12:00
+company: "[[Summit FinTech]]"
+source_created_at: 2026-04-07T14:00:00
+source_observed_at: 2026-04-07T15:21:00
+created_at: 2026-04-09T05:00:00
+updated_at: 2026-04-29T15:00:00
 tags: [#research]
 ---
 # Project Lantern 170 Metric Reconciliation Research 610
 
 ## Research Summary
-Research on metric reconciliation for [[Project Lantern 170]] and [[Helio Health]].
+Research on metric reconciliation for [[Project Lantern 170]] and [[Summit FinTech]].
 
 ## Evidence
-- Interview notes from [[Marcus Grant]]
+- Interview notes from [[Rachel Chen]]
 - Related operating review: [[Project Lantern 170 Handoff Readiness Sync 1490]]
 
 ## Follow Up

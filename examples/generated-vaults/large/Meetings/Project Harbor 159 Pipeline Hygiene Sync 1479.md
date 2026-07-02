@@ -1,28 +1,28 @@
 ---
 type: meeting
-date: 2025-11-19
+date: 2026-01-15
 project: "[[Project Harbor 159]]"
-company: "[[Quantum FinTech]]"
-source_created_at: 2025-11-19T10:22:00
-source_observed_at: 2025-11-19T13:08:00
-created_at: 2025-11-19T15:58:00
-updated_at: 2025-11-19T23:58:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2026-01-15T11:57:00
+source_observed_at: 2026-01-15T13:50:00
+created_at: 2026-01-15T13:55:00
+updated_at: 2026-01-15T14:55:00
 tags: [#meeting]
 ---
 # Project Harbor 159 Pipeline Hygiene Sync 1479
 
 ## Evergreen Attendees
-- [[Ben Grant]]
+- [[Farah Chen]]
 
 ## Client Attendees
-- [[Clara Novak]]
-- [[Sam Rostova]]
-- [[Grace Walker]]
+- [[Rachel Jenkins]]
+- [[Farah Ortega]]
+- [[Victor Shah]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 159]] at [[Quantum FinTech]].
-[[Ben Grant]] aligned with [[Clara Novak]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 159]] at [[Vanguard Manufacturing]].
+[[Farah Chen]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Harbor 159]] to [[Ben Grant]] #follow-up
+- [ ] Send recap for [[Project Harbor 159]] to [[Farah Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

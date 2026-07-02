@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-03-08
 project: "[[Project Bridge 135]]"
-company: "[[BrightWave Media]]"
-source_created_at: 2025-03-08T13:19:00
-source_observed_at: 2025-03-08T14:17:00
-created_at: 2025-03-17T18:19:00
-updated_at: 2025-03-18T00:19:00
+company: "[[Vanguard Media]]"
+source_created_at: 2025-03-08T15:07:00
+source_observed_at: 2025-03-08T15:56:00
+created_at: 2025-03-08T18:18:00
+updated_at: 2025-03-09T15:18:00
 tags: [#meeting]
 ---
 # Project Bridge 135 Adoption Workflow Sync 1895
 
 ## Evergreen Attendees
-- [[David Foster]]
+- [[Hannah Bennett]]
 
 ## Client Attendees
-- [[Sam Kim]]
-- [[Grace Patel]]
-- [[Wendy Tan]]
+- [[Victor Kim]]
+- [[Jonah Patel]]
+- [[Zoe Tan]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Bridge 135]] at [[BrightWave Media]].
-[[David Foster]] aligned with [[Sam Kim]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Bridge 135]] at [[Vanguard Media]].
+[[Hannah Bennett]] aligned with [[Victor Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 135]] to [[David Foster]] #follow-up
+- [ ] Send recap for [[Project Bridge 135]] to [[Hannah Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -3,11 +3,11 @@ type: decision
 date: 2025-01-04
 status: active
 project: "[[Project Venture 118]]"
-company: "[[Meridian Labs]]"
-source_created_at: 2025-01-04T15:09:00
-source_observed_at: 2025-01-04T16:01:00
-created_at: 2025-01-04T20:14:00
-updated_at: 2025-01-05T03:14:00
+company: "[[Atlas Media]]"
+source_created_at: 2025-01-04T14:29:00
+source_observed_at: 2025-01-04T15:55:00
+created_at: 2025-01-06T20:29:00
+updated_at: 2025-01-06T22:29:00
 tags: [#decision]
 ---
 # Project Venture 118 Handoff Readiness Decision 118
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Venture 118]].
 
 ## Context
-This decision applies to [[Meridian Labs]] and [[Project Venture 118]].
-It follows [[Project Venture 118 Lineage Audit Sync 1658]].
+This decision applies to [[Atlas Media]] and [[Project Venture 118]].
+It follows [[Project Venture 118 Lineage Audit Sync 338]].
 It incorporates [[Project Venture 118 Finance Approval Research 118]].
 
 ## Supersession

@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: smb
-source_created_at: 2023-08-31T14:43:00
-source_observed_at: 2023-08-31T17:27:00
-created_at: 2023-08-31T20:43:00
-updated_at: 2023-10-09T05:43:00
+source_created_at: 2023-08-31T16:46:00
+source_observed_at: 2023-08-31T18:06:00
+created_at: 2023-09-01T12:46:00
+updated_at: 2025-02-21T13:00:00
 tags: [#company]
 ---
 # Vanguard Health
@@ -14,7 +14,8 @@ tags: [#company]
 Vanguard Health is a smb account currently marked `active`.
 
 ## Assigned Account Team
-- [[Lina Alvarez]] - Data Platform Engineer
+- [[Alex Alvarez]] - Principal Analytics Engineer
+- [[Elena Bennett]] - Technical Director
 
 ## Client Stakeholders
 - [[Farah Kim]] - Operations Manager
@@ -22,7 +23,8 @@ Vanguard Health is a smb account currently marked `active`.
 - [[Jonah Tan]] - Executive Sponsor
 
 ## Projects
-- [[Project Venture 13]]
+- [[Project Orbit 101]]
+- [[Project Summit 132]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Vanguard Health]] #account

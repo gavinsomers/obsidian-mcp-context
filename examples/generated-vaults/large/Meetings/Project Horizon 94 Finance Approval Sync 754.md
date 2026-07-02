@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-03-23
 project: "[[Project Horizon 94]]"
-company: "[[Helio Labs]]"
-source_created_at: 2026-03-23T14:26:00
-source_observed_at: 2026-03-23T14:41:00
-created_at: 2026-03-23T17:01:00
-updated_at: 2026-03-24T11:01:00
+company: "[[Cobalt Media]]"
+source_created_at: 2026-03-23T14:30:00
+source_observed_at: 2026-03-23T17:02:00
+created_at: 2026-03-29T19:30:00
+updated_at: 2026-03-30T07:30:00
 tags: [#meeting]
 ---
 # Project Horizon 94 Finance Approval Sync 754
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Omar Diaz]]
 
 ## Client Attendees
-- [[Omar Vance]]
-- [[Wendy Haddad]]
-- [[Kai Morgan]]
+- [[Rachel Kim]]
+- [[Farah Patel]]
+- [[Victor Tan]]
 
 ## Notes
-Finance Approval reviewed for [[Project Horizon 94]] at [[Helio Labs]].
-[[Omar Diaz]] aligned with [[Omar Vance]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Horizon 94]] at [[Cobalt Media]].
+[[Omar Diaz]] aligned with [[Rachel Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Horizon 94]] to [[Omar Diaz]] #follow-up

@@ -3,16 +3,16 @@ type: meeting
 date: 2025-10-16
 project: "[[Project Bridge 180]]"
 company: "[[Atlas Analytics]]"
-source_created_at: 2025-10-16T13:47:00
-source_observed_at: 2025-10-16T15:18:00
-created_at: 2025-10-16T15:44:00
-updated_at: 2025-10-16T18:44:00
+source_created_at: 2025-10-16T15:39:00
+source_observed_at: 2025-10-16T18:35:00
+created_at: 2025-10-16T18:40:00
+updated_at: 2025-10-17T16:40:00
 tags: [#meeting]
 ---
 # Project Bridge 180 Handoff Readiness Sync 840
 
 ## Evergreen Attendees
-- [[Xavier Grant]]
+- [[Amara Diaz]]
 
 ## Client Attendees
 - [[Amara Morgan]]
@@ -21,8 +21,8 @@ tags: [#meeting]
 
 ## Notes
 Handoff Readiness reviewed for [[Project Bridge 180]] at [[Atlas Analytics]].
-[[Xavier Grant]] aligned with [[Amara Morgan]] on follow-up work for the next operating review.
+[[Amara Diaz]] aligned with [[Amara Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 180]] to [[Xavier Grant]] #follow-up
+- [ ] Send recap for [[Project Bridge 180]] to [[Amara Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

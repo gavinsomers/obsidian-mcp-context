@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Foundry 198]]"
-source_created_at: 2026-02-11T14:52:00
-source_observed_at: 2026-02-11T17:22:00
-created_at: 2026-02-12T08:52:00
-updated_at: 2026-03-22T16:52:00
+source_created_at: 2026-02-11T16:00:00
+source_observed_at: 2026-02-11T17:26:00
+created_at: 2026-02-11T20:00:00
+updated_at: 2026-03-15T23:00:00
 tags: [#risk]
 ---
 # Project Foundry 198 Stakeholder Alignment Risk 638
 
 ## Risk
-Stakeholder Alignment may affect [[Project Foundry 198]] for [[Summit Media]].
+Stakeholder Alignment may affect [[Project Foundry 198]] for [[Harbor FinTech]].
 
 ## Evidence
-- Raised after [[Project Foundry 198 Lineage Audit Sync 638]]
+- Raised after [[Project Foundry 198 Lineage Audit Sync 198]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Omar Haddad]]
+- Status: `mitigating`
+- Owner: [[Tara Diaz]]
 - [ ] Reassess [[Project Foundry 198 Stakeholder Alignment Risk 638]] during the next review #risk

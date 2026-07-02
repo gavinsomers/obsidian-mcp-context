@@ -1,27 +1,26 @@
 ---
 type: project
 status: closed
-company: "[[Summit Retail]]"
-source_created_at: 2025-09-30T16:12:00
-source_observed_at: 2025-09-30T18:27:00
-created_at: 2025-10-01T18:12:00
-updated_at: 2025-12-14T22:12:00
+company: "[[Crescent Retail]]"
+source_created_at: 2025-09-30T08:12:00
+source_observed_at: 2025-09-30T08:50:00
+created_at: 2025-10-02T06:12:00
+updated_at: 2025-11-09T06:12:00
 tags: [#project]
 ---
 # Project Signal 179
 
 ## Overview
-Project Signal 179 supports [[Summit Retail]] through research program.
+Project Signal 179 supports [[Crescent Retail]] through research program.
 
 ## Stakeholders
-- [[Farah Jenkins]]
-- [[Victor Novak]]
-- [[Jonah Shah]]
-- [[Zoe Walker]]
+- [[Iris Jenkins]]
+- [[Yara Novak]]
+- [[Marcus Shah]]
 
 ## Operating Notes
-- Evergreen owner: [[Wendy Grant]]
-- Client account: [[Summit Retail]]
+- Evergreen owner: [[Alex Diaz]]
+- Client account: [[Crescent Retail]]
 - Status: `closed`
-- Closed at: `2025-12-20`
+- Closed at: `2026-02-08`
 - [ ] Reconcile latest state for [[Project Signal 179]] #ops

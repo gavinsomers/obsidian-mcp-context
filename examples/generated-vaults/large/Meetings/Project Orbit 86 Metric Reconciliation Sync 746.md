@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-03-11
 project: "[[Project Orbit 86]]"
-company: "[[Helio Logistics]]"
-source_created_at: 2026-03-11T08:50:00
-source_observed_at: 2026-03-11T10:46:00
-created_at: 2026-03-11T11:20:00
-updated_at: 2026-03-11T20:20:00
+company: "[[Harbor Media]]"
+source_created_at: 2026-03-11T08:11:00
+source_observed_at: 2026-03-11T09:26:00
+created_at: 2026-03-11T09:31:00
+updated_at: 2026-03-11T23:31:00
 tags: [#meeting]
 ---
 # Project Orbit 86 Metric Reconciliation Sync 746
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Grace Diaz]]
 
 ## Client Attendees
-- [[Hannah Lee]]
-- [[Xavier Patel]]
-- [[Lina Usman]]
+- [[Yara Kim]]
+- [[Marcus Patel]]
+- [[Ben Usman]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Orbit 86]] at [[Helio Logistics]].
-[[Grace Diaz]] aligned with [[Hannah Lee]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Orbit 86]] at [[Harbor Media]].
+[[Grace Diaz]] aligned with [[Yara Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Orbit 86]] to [[Grace Diaz]] #follow-up

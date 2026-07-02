@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Horizon 19]]"
-company: "[[Vanguard FinTech]]"
-source_created_at: 2023-10-28T15:08:00
-source_observed_at: 2023-10-28T15:20:00
-created_at: 2023-10-29T07:08:00
-updated_at: 2023-12-06T18:08:00
+company: "[[Pioneer FinTech]]"
+source_created_at: 2023-12-23T16:13:00
+source_observed_at: 2023-12-23T17:15:00
+created_at: 2023-12-24T07:13:00
+updated_at: 2024-01-23T14:13:00
 tags: [#research]
 ---
 # Project Horizon 19 Adoption Workflow Research 239
 
 ## Research Summary
-Research on adoption workflow for [[Project Horizon 19]] and [[Vanguard FinTech]].
+Research on adoption workflow for [[Project Horizon 19]] and [[Pioneer FinTech]].
 
 ## Evidence
 - Interview notes from [[Sam Alvarez]]
-- Related operating review: [[Project Horizon 19 Pipeline Hygiene Sync 1339]]
+- Related operating review: [[Project Horizon 19 Pipeline Hygiene Sync 679]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Horizon 19]] #research

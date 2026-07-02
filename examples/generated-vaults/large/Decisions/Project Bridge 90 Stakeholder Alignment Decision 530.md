@@ -3,11 +3,11 @@ type: decision
 date: 2025-06-09
 status: active
 project: "[[Project Bridge 90]]"
-company: "[[Helio Labs]]"
-source_created_at: 2025-06-09T11:57:00
-source_observed_at: 2025-06-09T12:38:00
-created_at: 2025-06-09T14:21:00
-updated_at: 2025-06-09T19:21:00
+company: "[[Pioneer Retail]]"
+source_created_at: 2025-06-09T08:16:00
+source_observed_at: 2025-06-09T10:11:00
+created_at: 2025-06-18T10:16:00
+updated_at: 2025-06-19T09:16:00
 tags: [#decision]
 ---
 # Project Bridge 90 Stakeholder Alignment Decision 530
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Bridge 90]].
 
 ## Context
-This decision applies to [[Helio Labs]] and [[Project Bridge 90]].
+This decision applies to [[Pioneer Retail]] and [[Project Bridge 90]].
 It follows [[Project Bridge 90 Handoff Readiness Sync 530]].
 It incorporates [[Project Bridge 90 Metric Reconciliation Research 310]].
 

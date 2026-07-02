@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-04-08
 project: "[[Project Harbor 24]]"
-company: "[[Pioneer Health]]"
-source_created_at: 2024-04-08T09:33:00
-source_observed_at: 2024-04-08T12:12:00
-created_at: 2024-04-08T15:16:00
-updated_at: 2024-04-08T19:16:00
+company: "[[Keystone Labs]]"
+source_created_at: 2024-04-08T09:42:00
+source_observed_at: 2024-04-08T10:03:00
+created_at: 2024-04-08T11:28:00
+updated_at: 2024-04-08T16:28:00
 tags: [#meeting]
 ---
 # Project Harbor 24 Finance Approval Sync 244
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Xavier Alvarez]]
 
 ## Client Attendees
-- [[Kai Kim]]
-- [[Alex Patel]]
-- [[Omar Tan]]
+- [[Farah Ivanov]]
+- [[Victor Morgan]]
+- [[Jonah Rostova]]
 
 ## Notes
-Finance Approval reviewed for [[Project Harbor 24]] at [[Pioneer Health]].
-[[Xavier Alvarez]] aligned with [[Kai Kim]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Harbor 24]] at [[Keystone Labs]].
+[[Xavier Alvarez]] aligned with [[Farah Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 24]] to [[Xavier Alvarez]] #follow-up

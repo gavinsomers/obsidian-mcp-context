@@ -1,26 +1,25 @@
 ---
 type: project
-status: closed
-company: "[[Summit Analytics]]"
-source_created_at: 2024-08-22T15:42:00
-source_observed_at: 2024-08-22T18:13:00
-created_at: 2024-08-24T05:42:00
-updated_at: 2024-11-06T12:42:00
+status: planning
+company: "[[Harbor Manufacturing]]"
+source_created_at: 2024-08-22T16:30:00
+source_observed_at: 2024-08-22T18:29:00
+created_at: 2024-08-22T22:30:00
+updated_at: 2024-10-14T06:30:00
 tags: [#project]
 ---
 # Project Pipeline 97
 
 ## Overview
-Project Pipeline 97 supports [[Summit Analytics]] through sales pipeline.
+Project Pipeline 97 supports [[Harbor Manufacturing]] through sales pipeline.
 
 ## Stakeholders
-- [[Clara Morgan]]
-- [[Sam Quinn]]
-- [[Grace Vance]]
+- [[Uma Jenkins]]
+- [[Iris Ortega]]
+- [[Yara Shah]]
 
 ## Operating Notes
 - Evergreen owner: [[Sam Diaz]]
-- Client account: [[Summit Analytics]]
-- Status: `closed`
-- Closed at: `2024-12-02`
+- Client account: [[Harbor Manufacturing]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Pipeline 97]] #ops

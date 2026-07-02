@@ -2,27 +2,27 @@
 type: meeting
 date: 2024-09-21
 project: "[[Project Orbit 101]]"
-company: "[[Atlas Labs]]"
-source_created_at: 2024-09-21T14:41:00
-source_observed_at: 2024-09-21T15:56:00
-created_at: 2024-09-21T20:15:00
-updated_at: 2024-09-22T16:15:00
+company: "[[Vanguard Health]]"
+source_created_at: 2024-09-21T11:04:00
+source_observed_at: 2024-09-21T11:50:00
+created_at: 2024-09-25T18:04:00
+updated_at: 2024-09-26T15:04:00
 tags: [#meeting]
 ---
 # Project Orbit 101 Warehouse Mapping Sync 321
 
 ## Evergreen Attendees
-- [[Wendy Diaz]]
+- [[Alex Alvarez]]
 
 ## Client Attendees
-- [[Omar Morgan]]
-- [[Tara Vance]]
-- [[Alex Ivanov]]
+- [[Farah Kim]]
+- [[Victor Ortega]]
+- [[Jonah Tan]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 101]] at [[Atlas Labs]].
-[[Wendy Diaz]] aligned with [[Omar Morgan]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 101]] at [[Vanguard Health]].
+[[Alex Alvarez]] aligned with [[Farah Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 101]] to [[Wendy Diaz]] #follow-up
+- [ ] Send recap for [[Project Orbit 101]] to [[Alex Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

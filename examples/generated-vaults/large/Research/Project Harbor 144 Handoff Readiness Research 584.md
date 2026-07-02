@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Harbor 144]]"
-company: "[[Harbor Retail]]"
-source_created_at: 2025-09-26T08:23:00
-source_observed_at: 2025-09-26T09:32:00
-created_at: 2025-09-26T18:23:00
-updated_at: 2025-11-03T21:23:00
+company: "[[Apex Media]]"
+source_created_at: 2026-02-20T15:26:00
+source_observed_at: 2026-02-20T17:26:00
+created_at: 2026-02-21T12:26:00
+updated_at: 2026-03-16T16:26:00
 tags: [#research]
 ---
 # Project Harbor 144 Handoff Readiness Research 584
 
 ## Research Summary
-Research on handoff readiness for [[Project Harbor 144]] and [[Harbor Retail]].
+Research on handoff readiness for [[Project Harbor 144]] and [[Apex Media]].
 
 ## Evidence
-- Interview notes from [[Marcus Foster]]
-- Related operating review: [[Project Harbor 144 Finance Approval Sync 584]]
+- Interview notes from [[Rachel Bennett]]
+- Related operating review: [[Project Harbor 144 Finance Approval Sync 1464]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Harbor 144]] #research

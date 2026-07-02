@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-11-26
+date: 2025-10-21
 project: "[[Project Pipeline 97]]"
-company: "[[Summit Analytics]]"
-source_created_at: 2024-11-26T08:35:00
-source_observed_at: 2024-11-26T10:46:00
-created_at: 2024-11-26T14:12:00
-updated_at: 2024-11-26T18:12:00
+company: "[[Harbor Manufacturing]]"
+source_created_at: 2025-10-21T14:50:00
+source_observed_at: 2025-10-21T15:11:00
+created_at: 2025-10-21T15:49:00
+updated_at: 2025-10-21T19:49:00
 tags: [#meeting]
 ---
 # Project Pipeline 97 Contract Renewal Sync 1417
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Sam Diaz]]
 
 ## Client Attendees
-- [[Clara Morgan]]
-- [[Sam Quinn]]
-- [[Grace Vance]]
+- [[Uma Jenkins]]
+- [[Iris Ortega]]
+- [[Yara Shah]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Pipeline 97]] at [[Summit Analytics]].
-[[Sam Diaz]] aligned with [[Clara Morgan]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Pipeline 97]] at [[Harbor Manufacturing]].
+[[Sam Diaz]] aligned with [[Uma Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Pipeline 97]] to [[Sam Diaz]] #follow-up

@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-07
 status: active
 project: "[[Project Foundry 168]]"
-company: "[[Meridian Media]]"
-source_created_at: 2025-09-07T15:04:00
-source_observed_at: 2025-09-07T16:22:00
-created_at: 2025-09-07T19:46:00
-updated_at: 2025-09-08T06:46:00
+company: "[[Meridian Labs]]"
+source_created_at: 2025-09-07T08:26:00
+source_observed_at: 2025-09-07T10:54:00
+created_at: 2025-09-07T14:10:00
+updated_at: 2025-09-07T20:10:00
 tags: [#decision]
 ---
 # Project Foundry 168 Handoff Readiness Decision 168
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 168]].
 
 ## Context
-This decision applies to [[Meridian Media]] and [[Project Foundry 168]].
+This decision applies to [[Meridian Labs]] and [[Project Foundry 168]].
 It follows [[Project Foundry 168 Lineage Audit Sync 608]].
 It incorporates [[Project Foundry 168 Finance Approval Research 388]].
 

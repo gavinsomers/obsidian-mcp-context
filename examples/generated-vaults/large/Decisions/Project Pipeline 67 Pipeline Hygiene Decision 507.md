@@ -3,11 +3,11 @@ type: decision
 date: 2025-05-07
 status: superseded
 project: "[[Project Pipeline 67]]"
-company: "[[Helio Manufacturing]]"
-source_created_at: 2025-05-07T09:00:00
-source_observed_at: 2025-05-07T10:36:00
-created_at: 2025-05-07T13:15:00
-updated_at: 2025-05-07T16:15:00
+company: "[[Meridian FinTech]]"
+source_created_at: 2025-05-07T08:41:00
+source_observed_at: 2025-05-07T11:31:00
+created_at: 2025-05-16T11:41:00
+updated_at: 2025-05-17T00:41:00
 tags: [#decision]
 ---
 # Project Pipeline 67 Pipeline Hygiene Decision 507
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Pipeline 67]].
 
 ## Context
-This decision applies to [[Helio Manufacturing]] and [[Project Pipeline 67]].
+This decision applies to [[Meridian FinTech]] and [[Project Pipeline 67]].
 It follows [[Project Pipeline 67 Contract Renewal Sync 507]].
 It incorporates [[Project Pipeline 67 Security Review Research 287]].
 

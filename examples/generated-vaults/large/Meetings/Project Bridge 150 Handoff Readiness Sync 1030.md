@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-05-19
 project: "[[Project Bridge 150]]"
-company: "[[Atlas Media]]"
-source_created_at: 2025-05-19T14:50:00
-source_observed_at: 2025-05-19T17:49:00
-created_at: 2025-05-19T17:54:00
-updated_at: 2025-05-20T12:54:00
+company: "[[Summit Manufacturing]]"
+source_created_at: 2025-05-19T09:15:00
+source_observed_at: 2025-05-19T09:44:00
+created_at: 2025-05-19T09:58:00
+updated_at: 2025-05-19T14:58:00
 tags: [#meeting]
 ---
 # Project Bridge 150 Handoff Readiness Sync 1030
 
 ## Evergreen Attendees
-- [[Tara Foster]]
+- [[Xavier Bennett]]
 
 ## Client Attendees
-- [[Xavier Kim]]
-- [[Lina Patel]]
-- [[Amara Usman]]
+- [[Victor Jenkins]]
+- [[Jonah Ortega]]
+- [[Zoe Shah]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 150]] at [[Atlas Media]].
-[[Tara Foster]] aligned with [[Xavier Kim]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 150]] at [[Summit Manufacturing]].
+[[Xavier Bennett]] aligned with [[Victor Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 150]] to [[Tara Foster]] #follow-up
+- [ ] Send recap for [[Project Bridge 150]] to [[Xavier Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

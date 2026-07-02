@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-05-24
+date: 2024-03-22
 status: active
 project: "[[Project Summit 42]]"
-company: "[[Vanguard Analytics]]"
-source_created_at: 2024-05-24T12:22:00
-source_observed_at: 2024-05-24T14:22:00
-created_at: 2024-05-30T18:22:00
-updated_at: 2024-05-31T01:22:00
+company: "[[BrightWave Retail]]"
+source_created_at: 2024-03-22T13:22:00
+source_observed_at: 2024-03-22T14:55:00
+created_at: 2024-03-22T17:47:00
+updated_at: 2024-03-22T19:47:00
 tags: [#decision]
 ---
 # Project Summit 42 Finance Approval Decision 262
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Summit 42]].
 
 ## Context
-This decision applies to [[Vanguard Analytics]] and [[Project Summit 42]].
-It follows [[Project Summit 42 Stakeholder Alignment Sync 262]].
-It incorporates [[Project Summit 42 Lineage Audit Research 42]].
+This decision applies to [[BrightWave Retail]] and [[Project Summit 42]].
+It follows [[Project Summit 42 Stakeholder Alignment Sync 702]].
+It incorporates [[Project Summit 42 Lineage Audit Research 482]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

@@ -2,10 +2,10 @@
 type: person
 company: "[[Summit Media]]"
 role: "Data Owner"
-source_created_at: 2023-10-09T14:40:00
-source_observed_at: 2023-10-09T16:11:00
-created_at: 2023-10-10T17:40:00
-updated_at: 2026-01-31T13:00:00
+source_created_at: 2023-10-09T15:37:00
+source_observed_at: 2023-10-09T16:30:00
+created_at: 2023-10-11T11:37:00
+updated_at: 2025-01-18T13:00:00
 tags: [#person]
 ---
 # Clara Usman
@@ -14,7 +14,6 @@ tags: [#person]
 Clara Usman is the Data Owner at [[Summit Media]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Meridian 6]] ([[Summit Media]])
-- Client stakeholder on [[Project Foundry 198]] ([[Summit Media]])
-- Client stakeholder on [[Project Pipeline 202]] ([[Summit Media]])
+- Client stakeholder on [[Project Bridge 30]] ([[Summit Media]])
+- Client stakeholder on [[Project Lantern 125]] ([[Summit Media]])
 - [ ] Confirm next update with [[Clara Usman]] #follow-up

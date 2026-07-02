@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-11-03
 project: "[[Project Horizon 184]]"
-company: "[[Meridian Logistics]]"
-source_created_at: 2025-11-03T12:46:00
-source_observed_at: 2025-11-03T15:41:00
-created_at: 2025-11-03T15:46:00
-updated_at: 2025-11-03T20:46:00
+company: "[[Meridian Health]]"
+source_created_at: 2025-11-03T08:00:00
+source_observed_at: 2025-11-03T09:07:00
+created_at: 2025-11-03T09:27:00
+updated_at: 2025-11-03T18:27:00
 tags: [#meeting]
 ---
 # Project Horizon 184 Finance Approval Sync 844
 
 ## Evergreen Attendees
-- [[Amara Haddad]]
+- [[Elena Diaz]]
 
 ## Client Attendees
-- [[Iris Lee]]
-- [[Yara Patel]]
-- [[Marcus Usman]]
+- [[Elena Kim]]
+- [[Uma Ortega]]
+- [[Iris Tan]]
 
 ## Notes
-Finance Approval reviewed for [[Project Horizon 184]] at [[Meridian Logistics]].
-[[Amara Haddad]] aligned with [[Iris Lee]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Horizon 184]] at [[Meridian Health]].
+[[Elena Diaz]] aligned with [[Elena Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Horizon 184]] to [[Amara Haddad]] #follow-up
+- [ ] Send recap for [[Project Horizon 184]] to [[Elena Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

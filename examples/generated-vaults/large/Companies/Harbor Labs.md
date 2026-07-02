@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: smb
-source_created_at: 2023-05-09T12:50:00
-source_observed_at: 2023-05-09T15:41:00
-created_at: 2023-05-17T16:50:00
-updated_at: 2023-08-14T01:50:00
+source_created_at: 2023-05-09T10:00:00
+source_observed_at: 2023-05-09T12:30:00
+created_at: 2023-05-09T22:00:00
+updated_at: 2024-04-27T13:00:00
 tags: [#company]
 ---
 # Harbor Labs
@@ -14,12 +14,16 @@ tags: [#company]
 Harbor Labs is a smb account currently marked `churn-risk`.
 
 ## Assigned Account Team
+- [[Sam Chen]] - Client Partner
 
 ## Client Stakeholders
 - [[Amara Ivanov]] - Finance Lead
 - [[Priya Morgan]] - Executive Sponsor
+- [[Elena Rostova]] - Customer Success Lead
+- [[Uma Vance]] - Security Contact
 
 ## Projects
+- [[Project Orbit 71]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Harbor Labs]] #account

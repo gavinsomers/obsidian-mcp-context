@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Atlas Media]]"
-source_created_at: 2025-05-09T11:45:00
-source_observed_at: 2025-05-09T12:47:00
-created_at: 2025-05-10T06:45:00
-updated_at: 2025-06-29T17:45:00
+status: closed
+company: "[[Summit Manufacturing]]"
+source_created_at: 2025-05-09T10:45:00
+source_observed_at: 2025-05-09T12:54:00
+created_at: 2025-05-10T19:45:00
+updated_at: 2025-05-30T02:45:00
 tags: [#project]
 ---
 # Project Bridge 150
 
 ## Overview
-Project Bridge 150 supports [[Atlas Media]] through operations admin.
+Project Bridge 150 supports [[Summit Manufacturing]] through operations admin.
 
 ## Stakeholders
-- [[Xavier Kim]]
-- [[Lina Patel]]
-- [[Amara Usman]]
+- [[Victor Jenkins]]
+- [[Jonah Ortega]]
+- [[Zoe Shah]]
 
 ## Operating Notes
-- Evergreen owner: [[Tara Foster]]
-- Client account: [[Atlas Media]]
-- Status: `active`
+- Evergreen owner: [[Xavier Bennett]]
+- Client account: [[Summit Manufacturing]]
+- Status: `closed`
+- Closed at: `2025-09-02`
 - [ ] Reconcile latest state for [[Project Bridge 150]] #ops

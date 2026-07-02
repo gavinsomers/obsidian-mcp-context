@@ -3,11 +3,11 @@ type: decision
 date: 2024-11-10
 status: active
 project: "[[Project Beacon 107]]"
-company: "[[Summit Health]]"
-source_created_at: 2024-11-10T15:43:00
-source_observed_at: 2024-11-10T18:35:00
-created_at: 2024-11-10T18:40:00
-updated_at: 2024-11-10T21:40:00
+company: "[[Crescent Retail]]"
+source_created_at: 2024-11-10T13:17:00
+source_observed_at: 2024-11-10T13:42:00
+created_at: 2024-11-10T14:23:00
+updated_at: 2024-11-10T20:23:00
 tags: [#decision]
 ---
 # Project Beacon 107 Pipeline Hygiene Decision 107
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Beacon 107]].
 
 ## Context
-This decision applies to [[Summit Health]] and [[Project Beacon 107]].
+This decision applies to [[Crescent Retail]] and [[Project Beacon 107]].
 It follows [[Project Beacon 107 Contract Renewal Sync 327]].
 It incorporates [[Project Beacon 107 Security Review Research 107]].
 

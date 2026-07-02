@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-03-26
 project: "[[Project Foundry 213]]"
-company: "[[BrightWave Analytics]]"
-source_created_at: 2026-03-26T08:04:00
-source_observed_at: 2026-03-26T10:39:00
-created_at: 2026-03-26T10:44:00
-updated_at: 2026-03-26T18:44:00
+company: "[[Helio Labs]]"
+source_created_at: 2026-03-26T08:07:00
+source_observed_at: 2026-03-26T10:00:00
+created_at: 2026-03-26T10:26:00
+updated_at: 2026-03-27T09:26:00
 tags: [#meeting]
 ---
 # Project Foundry 213 Security Review Sync 1313
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Lina Alvarez]]
 
 ## Client Attendees
-- [[Wendy Lee]]
-- [[Kai Quinn]]
-- [[Alex Vance]]
+- [[Kai Morgan]]
+- [[Alex Rostova]]
+- [[Wendy Haddad]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 213]] at [[BrightWave Analytics]].
-[[Lina Alvarez]] aligned with [[Wendy Lee]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 213]] at [[Helio Labs]].
+[[Lina Alvarez]] aligned with [[Kai Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 213]] to [[Lina Alvarez]] #follow-up

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Atlas 91]]"
-company: "[[Pioneer Analytics]]"
-source_created_at: 2025-01-14T09:16:00
-source_observed_at: 2025-01-14T11:22:00
-created_at: 2025-01-15T19:16:00
-updated_at: 2025-02-08T21:16:00
+company: "[[Quantum Retail]]"
+source_created_at: 2025-01-26T14:56:00
+source_observed_at: 2025-01-26T15:40:00
+created_at: 2025-01-27T17:56:00
+updated_at: 2025-02-28T01:56:00
 tags: [#research]
 ---
 # Project Atlas 91 Contract Renewal Research 531
 
 ## Research Summary
-Research on contract renewal for [[Project Atlas 91]] and [[Pioneer Analytics]].
+Research on contract renewal for [[Project Atlas 91]] and [[Quantum Retail]].
 
 ## Evidence
 - Interview notes from [[Lina Diaz]]

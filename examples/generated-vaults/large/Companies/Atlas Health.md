@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: smb
-source_created_at: 2023-09-04T11:59:00
-source_observed_at: 2023-09-04T12:57:00
-created_at: 2023-09-04T20:59:00
-updated_at: 2023-11-18T23:59:00
+source_created_at: 2023-09-04T16:16:00
+source_observed_at: 2023-09-04T17:56:00
+created_at: 2023-09-05T19:16:00
+updated_at: 2023-12-02T13:00:00
 tags: [#company]
 ---
 # Atlas Health
@@ -14,6 +14,7 @@ tags: [#company]
 Atlas Health is a smb account currently marked `active`.
 
 ## Assigned Account Team
+- [[Nadia Bennett]] - Principal Analytics Engineer
 
 ## Client Stakeholders
 - [[Hannah Kim]] - Revenue Operations Lead
@@ -21,6 +22,7 @@ Atlas Health is a smb account currently marked `active`.
 - [[Lina Tan]] - Operations Manager
 
 ## Projects
+- [[Project Orbit 41]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Atlas Health]] #account

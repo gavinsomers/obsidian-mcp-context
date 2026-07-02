@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Keystone 145]]"
-source_created_at: 2025-05-04T11:31:00
-source_observed_at: 2025-05-04T13:51:00
-created_at: 2025-05-05T03:31:00
-updated_at: 2025-05-20T04:31:00
+source_created_at: 2025-05-04T13:46:00
+source_observed_at: 2025-05-04T15:35:00
+created_at: 2025-05-05T16:46:00
+updated_at: 2025-05-15T01:46:00
 tags: [#risk]
 ---
 # Project Keystone 145 Pipeline Hygiene Risk 145
 
 ## Risk
-Pipeline Hygiene may affect [[Project Keystone 145]] for [[Apex Analytics]].
+Pipeline Hygiene may affect [[Project Keystone 145]] for [[Northstar FinTech]].
 
 ## Evidence
-- Raised after [[Project Keystone 145 Adoption Workflow Sync 1245]]
+- Raised after [[Project Keystone 145 Adoption Workflow Sync 1025]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Nadia Foster]]
+- Status: `open`
+- Owner: [[Sam Bennett]]
 - [ ] Reassess [[Project Keystone 145 Pipeline Hygiene Risk 145]] during the next review #risk

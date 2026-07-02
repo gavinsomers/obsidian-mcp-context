@@ -3,11 +3,11 @@ type: decision
 date: 2026-02-05
 status: active
 project: "[[Project Keystone 40]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2026-02-05T15:11:00
-source_observed_at: 2026-02-05T15:57:00
-created_at: 2026-02-05T18:07:00
-updated_at: 2026-02-06T12:07:00
+company: "[[Summit FinTech]]"
+source_created_at: 2026-02-05T09:50:00
+source_observed_at: 2026-02-05T10:29:00
+created_at: 2026-02-05T12:34:00
+updated_at: 2026-02-05T20:34:00
 tags: [#decision]
 ---
 # Project Keystone 40 Stakeholder Alignment Decision 700
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Keystone 40]].
 
 ## Context
-This decision applies to [[Vanguard Manufacturing]] and [[Project Keystone 40]].
+This decision applies to [[Summit FinTech]] and [[Project Keystone 40]].
 It follows [[Project Keystone 40 Handoff Readiness Sync 700]].
 It incorporates [[Project Keystone 40 Metric Reconciliation Research 480]].
 

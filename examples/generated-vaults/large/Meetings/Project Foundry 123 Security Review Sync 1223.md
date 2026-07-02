@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-01-22
 project: "[[Project Foundry 123]]"
-company: "[[Apex Retail]]"
-source_created_at: 2025-01-22T14:36:00
-source_observed_at: 2025-01-22T16:10:00
-created_at: 2025-01-22T16:50:00
-updated_at: 2025-01-22T22:50:00
+company: "[[Noble Retail]]"
+source_created_at: 2025-01-22T08:06:00
+source_observed_at: 2025-01-22T08:53:00
+created_at: 2025-01-22T13:03:00
+updated_at: 2025-01-22T22:03:00
 tags: [#meeting]
 ---
 # Project Foundry 123 Security Review Sync 1223
 
 ## Evergreen Attendees
-- [[Sam Evans]]
+- [[Wendy Alvarez]]
 
 ## Client Attendees
-- [[Priya Walker]]
-- [[Amara Shah]]
-- [[Xavier Ivanov]]
+- [[Hannah Jenkins]]
+- [[Amara Xu]]
+- [[Lina Shah]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 123]] at [[Apex Retail]].
-[[Sam Evans]] aligned with [[Priya Walker]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 123]] at [[Noble Retail]].
+[[Wendy Alvarez]] aligned with [[Hannah Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 123]] to [[Sam Evans]] #follow-up
+- [ ] Send recap for [[Project Foundry 123]] to [[Wendy Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

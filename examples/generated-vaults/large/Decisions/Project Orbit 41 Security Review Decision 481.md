@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-01
 status: active
 project: "[[Project Orbit 41]]"
-company: "[[Vanguard Logistics]]"
-source_created_at: 2025-04-01T12:38:00
-source_observed_at: 2025-04-01T13:01:00
-created_at: 2025-04-01T13:53:00
-updated_at: 2025-04-01T21:53:00
+company: "[[Atlas Health]]"
+source_created_at: 2025-04-01T09:24:00
+source_observed_at: 2025-04-01T09:34:00
+created_at: 2025-04-01T12:36:00
+updated_at: 2025-04-02T05:36:00
 tags: [#decision]
 ---
 # Project Orbit 41 Security Review Decision 481
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with security review for [[Project Orbit 41]].
 
 ## Context
-This decision applies to [[Vanguard Logistics]] and [[Project Orbit 41]].
+This decision applies to [[Atlas Health]] and [[Project Orbit 41]].
 It follows [[Project Orbit 41 Warehouse Mapping Sync 481]].
 It incorporates [[Project Orbit 41 Contract Renewal Research 261]].
 

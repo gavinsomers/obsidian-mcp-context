@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Foundry 3]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2025-06-19T10:41:00
-source_observed_at: 2025-06-19T11:34:00
-created_at: 2025-06-20T05:41:00
-updated_at: 2025-06-29T16:41:00
+company: "[[Northstar Labs]]"
+source_created_at: 2025-06-19T08:54:00
+source_observed_at: 2025-06-19T11:06:00
+created_at: 2025-06-20T14:54:00
+updated_at: 2025-07-26T23:54:00
 tags: [#research]
 ---
 # Project Foundry 3 Pipeline Hygiene Research 443
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Foundry 3]] and [[Vanguard Manufacturing]].
+Research on pipeline hygiene for [[Project Foundry 3]] and [[Northstar Labs]].
 
 ## Evidence
 - Interview notes from [[Ben Alvarez]]

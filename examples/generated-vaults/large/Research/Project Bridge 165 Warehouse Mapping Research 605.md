@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Bridge 165]]"
-company: "[[Cobalt Manufacturing]]"
-source_created_at: 2026-03-30T11:53:00
-source_observed_at: 2026-03-30T12:12:00
-created_at: 2026-04-05T18:53:00
-updated_at: 2026-05-20T04:53:00
+company: "[[Vanguard Labs]]"
+source_created_at: 2026-03-30T14:25:00
+source_observed_at: 2026-03-30T15:41:00
+created_at: 2026-03-30T22:25:00
+updated_at: 2026-04-27T03:25:00
 tags: [#research]
 ---
 # Project Bridge 165 Warehouse Mapping Research 605
 
 ## Research Summary
-Research on warehouse mapping for [[Project Bridge 165]] and [[Cobalt Manufacturing]].
+Research on warehouse mapping for [[Project Bridge 165]] and [[Vanguard Labs]].
 
 ## Evidence
-- Interview notes from [[Hannah Grant]]
+- Interview notes from [[Lina Chen]]
 - Related operating review: [[Project Bridge 165 Adoption Workflow Sync 1485]]
 
 ## Follow Up

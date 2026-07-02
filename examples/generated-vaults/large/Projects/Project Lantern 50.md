@@ -1,26 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Atlas FinTech]]"
-source_created_at: 2024-01-04T15:35:00
-source_observed_at: 2024-01-04T17:43:00
-created_at: 2024-01-04T17:48:00
-updated_at: 2024-02-06T21:48:00
+company: "[[Apex Analytics]]"
+source_created_at: 2024-01-04T16:48:00
+source_observed_at: 2024-01-04T18:25:00
+created_at: 2024-01-05T13:48:00
+updated_at: 2024-01-23T00:48:00
 tags: [#project]
 ---
 # Project Lantern 50
 
 ## Overview
-Project Lantern 50 supports [[Atlas FinTech]] through operations admin.
+Project Lantern 50 supports [[Apex Analytics]] through operations admin.
 
 ## Stakeholders
-- [[Omar Ivanov]]
-- [[David Novak]]
-- [[Tara Rostova]]
-- [[Hannah Walker]]
+- [[Uma Lee]]
+- [[Iris Quinn]]
+- [[Yara Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Xavier Bennett]]
-- Client account: [[Atlas FinTech]]
+- Client account: [[Apex Analytics]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Lantern 50]] #ops

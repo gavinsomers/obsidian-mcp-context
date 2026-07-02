@@ -2,10 +2,10 @@
 type: person
 company: "[[Northstar Media]]"
 role: "Operations Manager"
-source_created_at: 2023-09-19T12:03:00
-source_observed_at: 2023-09-19T13:46:00
-created_at: 2023-09-21T11:03:00
-updated_at: 2025-12-18T13:00:00
+source_created_at: 2023-09-19T11:16:00
+source_observed_at: 2023-09-19T12:42:00
+created_at: 2023-09-26T14:16:00
+updated_at: 2026-03-30T13:00:00
 tags: [#person]
 ---
 # David Patel
@@ -14,7 +14,6 @@ tags: [#person]
 David Patel is the Operations Manager at [[Northstar Media]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Lantern 95]] ([[Northstar Media]])
-- Client stakeholder on [[Project Keystone 175]] ([[Northstar Media]])
-- Client stakeholder on [[Project Venture 193]] ([[Northstar Media]])
+- Client stakeholder on [[Project Keystone 10]] ([[Northstar Media]])
+- Client stakeholder on [[Project Horizon 214]] ([[Northstar Media]])
 - [ ] Confirm next update with [[David Patel]] #follow-up

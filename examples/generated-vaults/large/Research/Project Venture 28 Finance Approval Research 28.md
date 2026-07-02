@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Venture 28]]"
-company: "[[Apex Labs]]"
-source_created_at: 2023-10-13T15:02:00
-source_observed_at: 2023-10-13T15:38:00
-created_at: 2023-10-14T09:02:00
-updated_at: 2023-11-06T20:02:00
+company: "[[Pioneer Analytics]]"
+source_created_at: 2023-10-13T10:50:00
+source_observed_at: 2023-10-13T11:32:00
+created_at: 2023-10-15T08:50:00
+updated_at: 2023-11-01T12:50:00
 tags: [#research]
 ---
 # Project Venture 28 Finance Approval Research 28
 
 ## Research Summary
-Research on finance approval for [[Project Venture 28]] and [[Apex Labs]].
+Research on finance approval for [[Project Venture 28]] and [[Pioneer Analytics]].
 
 ## Evidence
 - Interview notes from [[Amara Bennett]]

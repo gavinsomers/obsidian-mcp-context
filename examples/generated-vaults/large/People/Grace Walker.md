@@ -2,10 +2,10 @@
 type: person
 company: "[[Quantum FinTech]]"
 role: "Data Owner"
-source_created_at: 2023-10-30T14:21:00
-source_observed_at: 2023-10-30T16:13:00
-created_at: 2023-11-01T11:21:00
-updated_at: 2025-07-04T13:00:00
+source_created_at: 2023-10-30T09:04:00
+source_observed_at: 2023-10-30T10:14:00
+created_at: 2023-11-01T00:04:00
+updated_at: 2024-01-28T05:04:00
 tags: [#person]
 ---
 # Grace Walker
@@ -14,5 +14,5 @@ tags: [#person]
 Grace Walker is the Data Owner at [[Quantum FinTech]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Harbor 159]] ([[Quantum FinTech]])
+- First seen through [[Quantum FinTech]] account context
 - [ ] Confirm next update with [[Grace Walker]] #follow-up

@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: open
 project: "[[Project Keystone 130]]"
-source_created_at: 2025-04-12T13:08:00
-source_observed_at: 2025-04-12T14:57:00
-created_at: 2025-04-20T18:08:00
-updated_at: 2025-05-21T03:08:00
+source_created_at: 2025-10-27T15:39:00
+source_observed_at: 2025-10-27T17:55:00
+created_at: 2025-11-03T21:39:00
+updated_at: 2025-11-07T00:39:00
 tags: [#risk]
 ---
 # Project Keystone 130 Finance Approval Risk 570
 
 ## Risk
-Finance Approval may affect [[Project Keystone 130]] for [[Apex Manufacturing]].
+Finance Approval may affect [[Project Keystone 130]] for [[Keystone Health]].
 
 ## Evidence
-- Raised after [[Project Keystone 130 Handoff Readiness Sync 1450]]
+- Raised after [[Project Keystone 130 Handoff Readiness Sync 570]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Zoe Evans]]
+- Status: `open`
+- Owner: [[Clara Bennett]]
 - [ ] Reassess [[Project Keystone 130 Finance Approval Risk 570]] during the next review #risk

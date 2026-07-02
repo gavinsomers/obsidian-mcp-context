@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: enterprise
-source_created_at: 2023-10-22T14:48:00
-source_observed_at: 2023-10-22T15:33:00
-created_at: 2023-10-24T12:48:00
-updated_at: 2023-11-17T20:48:00
+source_created_at: 2023-10-22T13:38:00
+source_observed_at: 2023-10-22T14:39:00
+created_at: 2023-10-23T02:38:00
+updated_at: 2025-07-18T13:00:00
 tags: [#company]
 ---
 # Cobalt Logistics
@@ -14,7 +14,9 @@ tags: [#company]
 Cobalt Logistics is a enterprise account currently marked `pipeline`.
 
 ## Assigned Account Team
-- [[Victor Alvarez]] - Analytics Engineer
+- [[David Chen]] - Principal Analytics Engineer
+- [[Nadia Bennett]] - Principal Analytics Engineer
+- [[Iris Chen]] - Analytics Engineer
 
 ## Client Stakeholders
 - [[Farah Lee]] - Revenue Operations Lead
@@ -22,7 +24,9 @@ Cobalt Logistics is a enterprise account currently marked `pipeline`.
 - [[Jonah Usman]] - Operations Manager
 
 ## Projects
-- [[Project Pipeline 22]]
+- [[Project Summit 57]]
+- [[Project Meridian 141]]
+- [[Project Summit 162]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Cobalt Logistics]] #account

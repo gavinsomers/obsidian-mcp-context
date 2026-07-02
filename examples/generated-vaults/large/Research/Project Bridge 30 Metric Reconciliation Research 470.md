@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Bridge 30]]"
-company: "[[BrightWave Health]]"
-source_created_at: 2025-08-06T14:51:00
-source_observed_at: 2025-08-06T17:35:00
-created_at: 2025-08-07T19:51:00
-updated_at: 2025-08-29T00:51:00
+company: "[[Summit Media]]"
+source_created_at: 2023-12-26T12:58:00
+source_observed_at: 2023-12-26T13:16:00
+created_at: 2023-12-28T05:58:00
+updated_at: 2024-02-07T07:58:00
 tags: [#research]
 ---
 # Project Bridge 30 Metric Reconciliation Research 470
 
 ## Research Summary
-Research on metric reconciliation for [[Project Bridge 30]] and [[BrightWave Health]].
+Research on metric reconciliation for [[Project Bridge 30]] and [[Summit Media]].
 
 ## Evidence
 - Interview notes from [[Clara Bennett]]
-- Related operating review: [[Project Bridge 30 Handoff Readiness Sync 1350]]
+- Related operating review: [[Project Bridge 30 Handoff Readiness Sync 470]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Bridge 30]] #research

@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-01-11
 project: "[[Project Horizon 49]]"
-company: "[[Meridian Labs]]"
-source_created_at: 2024-01-11T08:17:00
-source_observed_at: 2024-01-11T10:10:00
-created_at: 2024-01-11T10:15:00
-updated_at: 2024-01-11T20:15:00
+company: "[[Crescent FinTech]]"
+source_created_at: 2024-01-11T09:21:00
+source_observed_at: 2024-01-11T10:52:00
+created_at: 2024-01-11T10:57:00
+updated_at: 2024-01-12T08:57:00
 tags: [#meeting]
 ---
 # Project Horizon 49 Pipeline Hygiene Sync 1589
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Wendy Bennett]]
 
 ## Client Attendees
-- [[Amara Rostova]]
-- [[Priya Vance]]
-- [[Xavier Haddad]]
+- [[Uma Ivanov]]
+- [[Marcus Walker]]
+- [[Iris Novak]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Horizon 49]] at [[Meridian Labs]].
-[[Wendy Bennett]] aligned with [[Amara Rostova]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Horizon 49]] at [[Crescent FinTech]].
+[[Wendy Bennett]] aligned with [[Uma Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Horizon 49]] to [[Wendy Bennett]] #follow-up

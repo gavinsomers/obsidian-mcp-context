@@ -1,22 +1,22 @@
 ---
 type: risk
-status: mitigating
+status: closed
 project: "[[Project Lantern 110]]"
-source_created_at: 2024-11-12T15:16:00
-source_observed_at: 2024-11-12T17:49:00
-created_at: 2024-11-14T08:16:00
-updated_at: 2024-12-23T12:16:00
+source_created_at: 2024-11-12T14:26:00
+source_observed_at: 2024-11-12T14:41:00
+created_at: 2024-11-13T02:26:00
+updated_at: 2024-11-16T02:26:00
 tags: [#risk]
 ---
 # Project Lantern 110 Finance Approval Risk 110
 
 ## Risk
-Finance Approval may affect [[Project Lantern 110]] for [[Crescent Manufacturing]].
+Finance Approval may affect [[Project Lantern 110]] for [[Meridian Logistics]].
 
 ## Evidence
-- Raised after [[Project Lantern 110 Handoff Readiness Sync 1650]]
+- Raised after [[Project Lantern 110 Handoff Readiness Sync 330]]
 
 ## Current State
-- Status: `mitigating`
-- Owner: [[Elena Evans]]
+- Status: `closed`
+- Owner: [[Iris Alvarez]]
 - [ ] Reassess [[Project Lantern 110 Finance Approval Risk 110]] during the next review #risk

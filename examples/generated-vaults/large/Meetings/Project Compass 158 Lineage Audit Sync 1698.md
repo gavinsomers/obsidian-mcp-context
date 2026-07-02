@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-06-28
 project: "[[Project Compass 158]]"
-company: "[[Helio Labs]]"
-source_created_at: 2025-06-28T11:41:00
-source_observed_at: 2025-06-28T12:12:00
-created_at: 2025-06-28T12:17:00
-updated_at: 2025-06-29T04:17:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-06-28T10:31:00
+source_observed_at: 2025-06-28T11:24:00
+created_at: 2025-07-07T16:31:00
+updated_at: 2025-07-08T14:31:00
 tags: [#meeting]
 ---
 # Project Compass 158 Lineage Audit Sync 1698
 
 ## Evergreen Attendees
-- [[Amara Grant]]
+- [[Elena Chen]]
 
 ## Client Attendees
-- [[Alex Rostova]]
-- [[Kai Morgan]]
-- [[Wendy Haddad]]
+- [[Rachel Jenkins]]
+- [[Farah Ortega]]
+- [[Victor Shah]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 158]] at [[Helio Labs]].
-[[Amara Grant]] aligned with [[Alex Rostova]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 158]] at [[Vanguard Manufacturing]].
+[[Elena Chen]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 158]] to [[Amara Grant]] #follow-up
+- [ ] Send recap for [[Project Compass 158]] to [[Elena Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

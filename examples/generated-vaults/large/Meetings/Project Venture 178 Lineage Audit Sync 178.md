@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-10-05
 project: "[[Project Venture 178]]"
-company: "[[Meridian FinTech]]"
-source_created_at: 2025-10-05T14:29:00
-source_observed_at: 2025-10-05T15:57:00
-created_at: 2025-10-05T17:51:00
-updated_at: 2025-10-06T11:51:00
+company: "[[BrightWave FinTech]]"
+source_created_at: 2025-10-05T08:58:00
+source_observed_at: 2025-10-05T09:39:00
+created_at: 2025-10-05T13:57:00
+updated_at: 2025-10-05T19:57:00
 tags: [#meeting]
 ---
 # Project Venture 178 Lineage Audit Sync 178
 
 ## Evergreen Attendees
-- [[Victor Grant]]
+- [[Zoe Chen]]
 
 ## Client Attendees
-- [[Elena Walker]]
-- [[Lina Ivanov]]
-- [[Amara Novak]]
+- [[Zoe Morgan]]
+- [[Clara Walker]]
+- [[Nadia Rostova]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Venture 178]] at [[Meridian FinTech]].
-[[Victor Grant]] aligned with [[Elena Walker]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Venture 178]] at [[BrightWave FinTech]].
+[[Zoe Chen]] aligned with [[Zoe Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 178]] to [[Victor Grant]] #follow-up
+- [ ] Send recap for [[Project Venture 178]] to [[Zoe Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2024-07-01
+date: 2026-03-24
 status: active
 project: "[[Project Venture 73]]"
-company: "[[BrightWave Logistics]]"
-source_created_at: 2024-07-01T13:45:00
-source_observed_at: 2024-07-01T16:44:00
-created_at: 2024-07-01T16:49:00
-updated_at: 2024-07-02T02:49:00
+company: "[[Meridian Retail]]"
+source_created_at: 2026-03-24T15:11:00
+source_observed_at: 2026-03-24T15:57:00
+created_at: 2026-03-24T18:07:00
+updated_at: 2026-03-25T12:07:00
 tags: [#decision]
 ---
 # Project Venture 73 Adoption Workflow Decision 733
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Venture 73]].
 
 ## Context
-This decision applies to [[BrightWave Logistics]] and [[Project Venture 73]].
-It follows [[Project Venture 73 Security Review Sync 1393]].
+This decision applies to [[Meridian Retail]] and [[Project Venture 73]].
+It follows [[Project Venture 73 Security Review Sync 733]].
 It incorporates [[Project Venture 73 Pipeline Hygiene Research 513]].
 
 ## Supersession

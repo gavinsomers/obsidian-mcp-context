@@ -3,11 +3,11 @@ type: decision
 date: 2026-01-03
 status: active
 project: "[[Project Summit 192]]"
-company: "[[Apex Health]]"
-source_created_at: 2026-01-03T08:00:00
-source_observed_at: 2026-01-03T09:03:00
-created_at: 2026-01-03T12:01:00
-updated_at: 2026-01-03T17:01:00
+company: "[[BrightWave Logistics]]"
+source_created_at: 2026-01-03T10:21:00
+source_observed_at: 2026-01-03T11:06:00
+created_at: 2026-01-03T15:04:00
+updated_at: 2026-01-03T20:04:00
 tags: [#decision]
 ---
 # Project Summit 192 Finance Approval Decision 412
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Summit 192]].
 
 ## Context
-This decision applies to [[Apex Health]] and [[Project Summit 192]].
-It follows [[Project Summit 192 Stakeholder Alignment Sync 1732]].
-It incorporates [[Project Summit 192 Lineage Audit Research 412]].
+This decision applies to [[BrightWave Logistics]] and [[Project Summit 192]].
+It follows [[Project Summit 192 Stakeholder Alignment Sync 852]].
+It incorporates [[Project Summit 192 Lineage Audit Research 192]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

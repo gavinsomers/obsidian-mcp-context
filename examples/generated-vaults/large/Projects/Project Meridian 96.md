@@ -1,26 +1,25 @@
 ---
 type: project
-status: planning
-company: "[[Harbor FinTech]]"
-source_created_at: 2024-08-19T10:19:00
-source_observed_at: 2024-08-19T12:08:00
-created_at: 2024-08-19T19:19:00
-updated_at: 2024-11-14T05:19:00
+status: active
+company: "[[Atlas Logistics]]"
+source_created_at: 2024-08-19T09:45:00
+source_observed_at: 2024-08-19T12:23:00
+created_at: 2024-08-25T13:45:00
+updated_at: 2024-09-16T22:45:00
 tags: [#project]
 ---
 # Project Meridian 96
 
 ## Overview
-Project Meridian 96 supports [[Harbor FinTech]] through consulting delivery.
+Project Meridian 96 supports [[Atlas Logistics]] through consulting delivery.
 
 ## Stakeholders
-- [[Priya Ivanov]]
-- [[Elena Novak]]
-- [[Uma Rostova]]
-- [[Iris Walker]]
+- [[Lina Lee]]
+- [[Amara Quinn]]
+- [[Priya Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Rachel Diaz]]
-- Client account: [[Harbor FinTech]]
-- Status: `planning`
+- Client account: [[Atlas Logistics]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Meridian 96]] #ops

@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Orbit 41]]"
-company: "[[Vanguard Logistics]]"
-source_created_at: 2024-08-07T11:51:00
-source_observed_at: 2024-08-07T12:40:00
-created_at: 2024-08-11T12:51:00
-updated_at: 2024-09-14T23:51:00
+company: "[[Atlas Health]]"
+source_created_at: 2024-08-07T13:15:00
+source_observed_at: 2024-08-07T14:58:00
+created_at: 2024-08-08T06:15:00
+updated_at: 2024-09-17T16:15:00
 tags: [#research]
 ---
 # Project Orbit 41 Contract Renewal Research 261
 
 ## Research Summary
-Research on contract renewal for [[Project Orbit 41]] and [[Vanguard Logistics]].
+Research on contract renewal for [[Project Orbit 41]] and [[Atlas Health]].
 
 ## Evidence
 - Interview notes from [[Nadia Bennett]]

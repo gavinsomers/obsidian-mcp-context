@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2026-03-11
+date: 2024-08-12
 status: active
 project: "[[Project Horizon 64]]"
-company: "[[Crescent FinTech]]"
-source_created_at: 2026-03-11T16:24:00
-source_observed_at: 2026-03-11T19:04:00
-created_at: 2026-03-11T19:09:00
-updated_at: 2026-03-12T17:09:00
+company: "[[BrightWave Media]]"
+source_created_at: 2024-08-12T13:38:00
+source_observed_at: 2024-08-12T16:23:00
+created_at: 2024-08-12T18:53:00
+updated_at: 2024-08-13T07:53:00
 tags: [#decision]
 ---
 # Project Horizon 64 Metric Reconciliation Decision 724
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Horizon 64]].
 
 ## Context
-This decision applies to [[Crescent FinTech]] and [[Project Horizon 64]].
+This decision applies to [[BrightWave Media]] and [[Project Horizon 64]].
 It follows [[Project Horizon 64 Finance Approval Sync 724]].
-It incorporates [[Project Horizon 64 Handoff Readiness Research 504]].
+It incorporates [[Project Horizon 64 Handoff Readiness Research 64]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

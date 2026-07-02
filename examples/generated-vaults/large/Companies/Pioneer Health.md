@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: mid-market
-source_created_at: 2023-09-10T15:06:00
-source_observed_at: 2023-09-10T17:16:00
-created_at: 2023-09-11T13:06:00
-updated_at: 2023-10-21T18:06:00
+source_created_at: 2023-09-10T14:35:00
+source_observed_at: 2023-09-10T16:46:00
+created_at: 2023-09-11T16:35:00
+updated_at: 2025-10-19T13:00:00
 tags: [#company]
 ---
 # Pioneer Health
@@ -14,7 +14,9 @@ tags: [#company]
 Pioneer Health is a mid-market account currently marked `active`.
 
 ## Assigned Account Team
-- [[Xavier Alvarez]] - Technical Director
+- [[Iris Bennett]] - Solution Architect
+- [[Priya Bennett]] - Delivery Lead
+- [[Ben Diaz]] - Principal Analytics Engineer
 
 ## Client Stakeholders
 - [[Kai Kim]] - Customer Success Lead
@@ -22,7 +24,9 @@ Pioneer Health is a mid-market account currently marked `active`.
 - [[Omar Tan]] - Product Analytics Lead
 
 ## Projects
-- [[Project Harbor 24]]
+- [[Project Meridian 36]]
+- [[Project Compass 143]]
+- [[Project Atlas 181]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Pioneer Health]] #account

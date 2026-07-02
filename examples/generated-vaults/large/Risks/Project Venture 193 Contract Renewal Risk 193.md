@@ -2,21 +2,21 @@
 type: risk
 status: open
 project: "[[Project Venture 193]]"
-source_created_at: 2025-12-26T10:11:00
-source_observed_at: 2025-12-26T12:30:00
-created_at: 2025-12-27T05:11:00
-updated_at: 2026-02-07T13:11:00
+source_created_at: 2025-12-26T09:28:00
+source_observed_at: 2025-12-26T11:37:00
+created_at: 2025-12-27T10:28:00
+updated_at: 2026-01-19T12:28:00
 tags: [#risk]
 ---
 # Project Venture 193 Contract Renewal Risk 193
 
 ## Risk
-Contract Renewal may affect [[Project Venture 193]] for [[Northstar Media]].
+Contract Renewal may affect [[Project Venture 193]] for [[Apex Logistics]].
 
 ## Evidence
-- Raised after [[Project Venture 193 Security Review Sync 633]]
+- Raised after [[Project Venture 193 Security Review Sync 193]]
 
 ## Current State
 - Status: `open`
-- Owner: [[Jonah Haddad]]
+- Owner: [[Nadia Diaz]]
 - [ ] Reassess [[Project Venture 193 Contract Renewal Risk 193]] during the next review #risk

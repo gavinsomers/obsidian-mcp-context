@@ -2,10 +2,10 @@
 type: person
 company: "[[Cobalt Analytics]]"
 role: "Finance Lead"
-source_created_at: 2023-11-22T13:03:00
-source_observed_at: 2023-11-22T15:57:00
-created_at: 2023-11-22T22:03:00
-updated_at: 2023-12-13T00:03:00
+source_created_at: 2023-11-22T09:31:00
+source_observed_at: 2023-11-22T10:32:00
+created_at: 2023-11-22T22:31:00
+updated_at: 2025-06-08T13:00:00
 tags: [#person]
 ---
 # Zoe Usman
@@ -14,6 +14,7 @@ tags: [#person]
 Zoe Usman is the Finance Lead at [[Cobalt Analytics]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Beacon 2]] ([[Cobalt Analytics]])
-- Client stakeholder on [[Project Lantern 35]] ([[Cobalt Analytics]])
+- Client stakeholder on [[Project Signal 59]] ([[Cobalt Analytics]])
+- Client stakeholder on [[Project Atlas 121]] ([[Cobalt Analytics]])
+- Client stakeholder on [[Project Horizon 154]] ([[Cobalt Analytics]])
 - [ ] Confirm next update with [[Zoe Usman]] #follow-up

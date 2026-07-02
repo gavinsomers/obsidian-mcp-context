@@ -2,10 +2,10 @@
 type: person
 company: "[[Summit Manufacturing]]"
 role: "Customer Success Lead"
-source_created_at: 2023-08-10T09:34:00
-source_observed_at: 2023-08-10T09:45:00
-created_at: 2023-08-12T02:34:00
-updated_at: 2025-12-07T13:00:00
+source_created_at: 2023-08-10T13:08:00
+source_observed_at: 2023-08-10T14:42:00
+created_at: 2023-08-11T20:08:00
+updated_at: 2025-05-19T13:00:00
 tags: [#person]
 ---
 # Victor Jenkins
@@ -14,8 +14,6 @@ tags: [#person]
 Victor Jenkins is the Customer Success Lead at [[Summit Manufacturing]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Atlas 31]] ([[Summit Manufacturing]])
-- Client stakeholder on [[Project Beacon 137]] ([[Summit Manufacturing]])
-- Client stakeholder on [[Project Atlas 181]] ([[Summit Manufacturing]])
-- Client stakeholder on [[Project Orbit 191]] ([[Summit Manufacturing]])
+- Client stakeholder on [[Project Pipeline 112]] ([[Summit Manufacturing]])
+- Client stakeholder on [[Project Bridge 150]] ([[Summit Manufacturing]])
 - [ ] Confirm next update with [[Victor Jenkins]] #follow-up

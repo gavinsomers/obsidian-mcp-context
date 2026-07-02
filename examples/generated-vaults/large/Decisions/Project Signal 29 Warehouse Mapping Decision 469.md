@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-03-14
+date: 2024-04-12
 status: active
 project: "[[Project Signal 29]]"
-company: "[[Meridian Analytics]]"
-source_created_at: 2025-03-14T13:32:00
-source_observed_at: 2025-03-14T15:02:00
-created_at: 2025-03-14T15:36:00
-updated_at: 2025-03-15T13:36:00
+company: "[[Quantum Health]]"
+source_created_at: 2024-04-12T14:53:00
+source_observed_at: 2024-04-12T15:49:00
+created_at: 2024-04-12T19:41:00
+updated_at: 2024-04-13T13:41:00
 tags: [#decision]
 ---
 # Project Signal 29 Warehouse Mapping Decision 469
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Signal 29]].
 
 ## Context
-This decision applies to [[Meridian Analytics]] and [[Project Signal 29]].
-It follows [[Project Signal 29 Pipeline Hygiene Sync 469]].
-It incorporates [[Project Signal 29 Adoption Workflow Research 249]].
+This decision applies to [[Quantum Health]] and [[Project Signal 29]].
+It follows [[Project Signal 29 Pipeline Hygiene Sync 689]].
+It incorporates [[Project Signal 29 Adoption Workflow Research 29]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

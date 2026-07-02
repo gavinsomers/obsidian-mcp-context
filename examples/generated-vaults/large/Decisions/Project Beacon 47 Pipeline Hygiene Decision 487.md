@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-09
 status: active
 project: "[[Project Beacon 47]]"
-company: "[[Helio FinTech]]"
-source_created_at: 2025-04-09T09:49:00
-source_observed_at: 2025-04-09T10:39:00
-created_at: 2025-04-13T10:49:00
-updated_at: 2025-04-14T07:49:00
+company: "[[Pioneer Logistics]]"
+source_created_at: 2025-04-09T15:17:00
+source_observed_at: 2025-04-09T17:06:00
+created_at: 2025-04-09T17:11:00
+updated_at: 2025-04-10T01:11:00
 tags: [#decision]
 ---
 # Project Beacon 47 Pipeline Hygiene Decision 487
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Beacon 47]].
 
 ## Context
-This decision applies to [[Helio FinTech]] and [[Project Beacon 47]].
+This decision applies to [[Pioneer Logistics]] and [[Project Beacon 47]].
 It follows [[Project Beacon 47 Contract Renewal Sync 487]].
 It incorporates [[Project Beacon 47 Security Review Research 267]].
 

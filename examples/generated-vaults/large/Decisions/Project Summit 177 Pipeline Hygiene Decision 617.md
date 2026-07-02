@@ -3,11 +3,11 @@ type: decision
 date: 2025-10-20
 status: superseded
 project: "[[Project Summit 177]]"
-company: "[[Cobalt Manufacturing]]"
-source_created_at: 2025-10-20T15:31:00
-source_observed_at: 2025-10-20T18:25:00
-created_at: 2025-10-20T18:30:00
-updated_at: 2025-10-20T20:30:00
+company: "[[Meridian Health]]"
+source_created_at: 2025-10-20T10:44:00
+source_observed_at: 2025-10-20T12:50:00
+created_at: 2025-10-20T12:55:00
+updated_at: 2025-10-21T11:55:00
 tags: [#decision]
 ---
 # Project Summit 177 Pipeline Hygiene Decision 617
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Summit 177]].
 
 ## Context
-This decision applies to [[Cobalt Manufacturing]] and [[Project Summit 177]].
+This decision applies to [[Meridian Health]] and [[Project Summit 177]].
 It follows [[Project Summit 177 Contract Renewal Sync 1717]].
-It incorporates [[Project Summit 177 Security Review Research 397]].
+It incorporates [[Project Summit 177 Security Review Research 177]].
 
 ## Supersession
 Marked superseded by a later unlinked stakeholder review. #superseded

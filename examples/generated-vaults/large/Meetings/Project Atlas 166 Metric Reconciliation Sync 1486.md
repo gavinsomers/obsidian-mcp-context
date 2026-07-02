@@ -2,27 +2,27 @@
 type: meeting
 date: 2026-01-26
 project: "[[Project Atlas 166]]"
-company: "[[Northstar Manufacturing]]"
-source_created_at: 2026-01-26T13:01:00
-source_observed_at: 2026-01-26T15:47:00
-created_at: 2026-01-26T17:20:00
-updated_at: 2026-01-27T15:20:00
+company: "[[Helio FinTech]]"
+source_created_at: 2026-01-26T16:18:00
+source_observed_at: 2026-01-26T18:47:00
+created_at: 2026-01-26T18:52:00
+updated_at: 2026-01-26T23:52:00
 tags: [#meeting]
 ---
 # Project Atlas 166 Metric Reconciliation Sync 1486
 
 ## Evergreen Attendees
-- [[Iris Grant]]
+- [[Marcus Chen]]
 
 ## Client Attendees
-- [[Kai Jenkins]]
-- [[Alex Ortega]]
-- [[Omar Shah]]
+- [[Kai Ivanov]]
+- [[Alex Novak]]
+- [[David Walker]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Atlas 166]] at [[Northstar Manufacturing]].
-[[Iris Grant]] aligned with [[Kai Jenkins]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Atlas 166]] at [[Helio FinTech]].
+[[Marcus Chen]] aligned with [[Kai Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Atlas 166]] to [[Iris Grant]] #follow-up
+- [ ] Send recap for [[Project Atlas 166]] to [[Marcus Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

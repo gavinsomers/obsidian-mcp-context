@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Foundry 168]]"
-company: "[[Meridian Media]]"
-source_created_at: 2026-04-02T16:03:00
-source_observed_at: 2026-04-02T18:38:00
-created_at: 2026-04-03T10:03:00
-updated_at: 2026-05-03T20:03:00
+company: "[[Meridian Labs]]"
+source_created_at: 2026-04-02T11:04:00
+source_observed_at: 2026-04-02T12:06:00
+created_at: 2026-04-02T16:04:00
+updated_at: 2026-05-02T02:04:00
 tags: [#research]
 ---
 # Project Foundry 168 Finance Approval Research 608
 
 ## Research Summary
-Research on finance approval for [[Project Foundry 168]] and [[Meridian Media]].
+Research on finance approval for [[Project Foundry 168]] and [[Meridian Labs]].
 
 ## Evidence
-- Interview notes from [[Kai Grant]]
+- Interview notes from [[Omar Chen]]
 - Related operating review: [[Project Foundry 168 Lineage Audit Sync 1488]]
 
 ## Follow Up

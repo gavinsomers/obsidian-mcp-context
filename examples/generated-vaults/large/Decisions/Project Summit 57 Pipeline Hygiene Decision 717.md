@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2026-03-02
+date: 2024-06-11
 status: active
 project: "[[Project Summit 57]]"
-company: "[[BrightWave Logistics]]"
-source_created_at: 2026-03-02T13:21:00
-source_observed_at: 2026-03-02T14:57:00
-created_at: 2026-03-02T15:49:00
-updated_at: 2026-03-03T04:49:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2024-06-11T09:16:00
+source_observed_at: 2024-06-11T11:38:00
+created_at: 2024-06-11T12:46:00
+updated_at: 2024-06-12T00:46:00
 tags: [#decision]
 ---
 # Project Summit 57 Pipeline Hygiene Decision 717
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Summit 57]].
 
 ## Context
-This decision applies to [[BrightWave Logistics]] and [[Project Summit 57]].
-It follows [[Project Summit 57 Contract Renewal Sync 717]].
+This decision applies to [[Cobalt Logistics]] and [[Project Summit 57]].
+It follows [[Project Summit 57 Contract Renewal Sync 497]].
 It incorporates [[Project Summit 57 Security Review Research 497]].
 
 ## Supersession

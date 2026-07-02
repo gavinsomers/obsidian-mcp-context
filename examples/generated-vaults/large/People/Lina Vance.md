@@ -2,10 +2,10 @@
 type: person
 company: "[[Apex Labs]]"
 role: "Security Contact"
-source_created_at: 2023-10-20T10:49:00
-source_observed_at: 2023-10-20T11:17:00
-created_at: 2023-10-20T15:49:00
-updated_at: 2023-12-21T21:49:00
+source_created_at: 2023-10-20T08:02:00
+source_observed_at: 2023-10-20T09:38:00
+created_at: 2023-10-21T14:02:00
+updated_at: 2025-05-05T13:00:00
 tags: [#person]
 ---
 # Lina Vance
@@ -14,5 +14,6 @@ tags: [#person]
 Lina Vance is the Security Contact at [[Apex Labs]].
 
 ## Client Project Involvement
-- First seen through [[Apex Labs]] account context
+- Client stakeholder on [[Project Lantern 35]] ([[Apex Labs]])
+- Client stakeholder on [[Project Summit 147]] ([[Apex Labs]])
 - [ ] Confirm next update with [[Lina Vance]] #follow-up

@@ -2,10 +2,10 @@
 type: person
 company: "[[Quantum Retail]]"
 role: "Data Owner"
-source_created_at: 2023-09-08T16:05:00
-source_observed_at: 2023-09-08T18:18:00
-created_at: 2023-09-10T08:05:00
-updated_at: 2025-11-14T13:00:00
+source_created_at: 2023-09-08T11:33:00
+source_observed_at: 2023-09-08T13:00:00
+created_at: 2023-09-09T12:33:00
+updated_at: 2024-08-03T13:00:00
 tags: [#person]
 ---
 # Grace Shah
@@ -14,6 +14,5 @@ tags: [#person]
 Grace Shah is the Data Owner at [[Quantum Retail]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Foundry 138]] ([[Quantum Retail]])
-- Client stakeholder on [[Project Meridian 186]] ([[Quantum Retail]])
+- Client stakeholder on [[Project Atlas 91]] ([[Quantum Retail]])
 - [ ] Confirm next update with [[Grace Shah]] #follow-up

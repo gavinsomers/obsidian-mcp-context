@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-09-04
+date: 2025-07-23
 status: active
 project: "[[Project Beacon 152]]"
-company: "[[Atlas Logistics]]"
-source_created_at: 2025-09-04T15:04:00
-source_observed_at: 2025-09-04T17:31:00
-created_at: 2025-09-04T20:46:00
-updated_at: 2025-09-05T02:46:00
+company: "[[BrightWave Logistics]]"
+source_created_at: 2025-07-23T08:43:00
+source_observed_at: 2025-07-23T10:24:00
+created_at: 2025-07-23T11:08:00
+updated_at: 2025-07-23T22:08:00
 tags: [#decision]
 ---
 # Project Beacon 152 Finance Approval Decision 592
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with finance approval for [[Project Beacon 152]].
 
 ## Context
-This decision applies to [[Atlas Logistics]] and [[Project Beacon 152]].
-It follows [[Project Beacon 152 Stakeholder Alignment Sync 592]].
-It incorporates [[Project Beacon 152 Lineage Audit Research 152]].
+This decision applies to [[BrightWave Logistics]] and [[Project Beacon 152]].
+It follows [[Project Beacon 152 Stakeholder Alignment Sync 1032]].
+It incorporates [[Project Beacon 152 Lineage Audit Research 372]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

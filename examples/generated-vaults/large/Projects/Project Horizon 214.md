@@ -1,26 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Pioneer Labs]]"
-source_created_at: 2026-03-20T15:53:00
-source_observed_at: 2026-03-20T16:31:00
-created_at: 2026-03-22T08:53:00
-updated_at: 2026-04-18T16:53:00
+status: closed
+company: "[[Northstar Media]]"
+source_created_at: 2026-03-20T13:56:00
+source_observed_at: 2026-03-20T16:52:00
+created_at: 2026-03-21T03:56:00
+updated_at: 2026-05-12T04:56:00
 tags: [#project]
 ---
 # Project Horizon 214
 
 ## Overview
-Project Horizon 214 supports [[Pioneer Labs]] through research program.
+Project Horizon 214 supports [[Northstar Media]] through research program.
 
 ## Stakeholders
-- [[Clara Ivanov]]
-- [[Sam Morgan]]
-- [[Grace Rostova]]
-- [[Wendy Vance]]
+- [[Omar Kim]]
+- [[David Patel]]
+- [[Tara Tan]]
 
 ## Operating Notes
 - Evergreen owner: [[Marcus Alvarez]]
-- Client account: [[Pioneer Labs]]
-- Status: `active`
+- Client account: [[Northstar Media]]
+- Status: `closed`
+- Closed at: `2026-10-07`
 - [ ] Reconcile latest state for [[Project Horizon 214]] #ops

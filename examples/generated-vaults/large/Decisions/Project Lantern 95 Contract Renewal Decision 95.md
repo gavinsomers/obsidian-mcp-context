@@ -3,11 +3,11 @@ type: decision
 date: 2024-09-13
 status: active
 project: "[[Project Lantern 95]]"
-company: "[[Northstar Media]]"
-source_created_at: 2024-09-13T11:49:00
-source_observed_at: 2024-09-13T13:27:00
-created_at: 2024-09-13T13:32:00
-updated_at: 2024-09-13T16:32:00
+company: "[[Vanguard Analytics]]"
+source_created_at: 2024-09-13T10:51:00
+source_observed_at: 2024-09-13T12:37:00
+created_at: 2024-09-15T17:51:00
+updated_at: 2024-09-16T14:51:00
 tags: [#decision]
 ---
 # Project Lantern 95 Contract Renewal Decision 95
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Lantern 95]].
 
 ## Context
-This decision applies to [[Northstar Media]] and [[Project Lantern 95]].
-It follows [[Project Lantern 95 Adoption Workflow Sync 1635]].
+This decision applies to [[Vanguard Analytics]] and [[Project Lantern 95]].
+It follows [[Project Lantern 95 Adoption Workflow Sync 95]].
 It incorporates [[Project Lantern 95 Warehouse Mapping Research 95]].
 
 ## Supersession

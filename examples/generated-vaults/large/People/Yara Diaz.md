@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Client Partner"
-source_created_at: 2023-05-25T13:58:00
-source_observed_at: 2023-05-25T16:39:00
-created_at: 2023-05-31T15:58:00
-updated_at: 2024-09-30T13:00:00
+source_created_at: 2023-05-25T15:56:00
+source_observed_at: 2023-05-25T17:42:00
+created_at: 2023-05-26T17:56:00
+updated_at: 2023-06-22T00:56:00
 tags: [#person]
 ---
 # Yara Diaz
@@ -14,5 +14,5 @@ tags: [#person]
 Yara Diaz is the Client Partner at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Venture 103]] ([[Northstar Labs]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Yara Diaz]] #follow-up

@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[Helio Health]]"
-source_created_at: 2025-08-18T09:56:00
-source_observed_at: 2025-08-18T11:30:00
-created_at: 2025-08-20T15:56:00
-updated_at: 2025-10-21T00:56:00
+company: "[[Summit FinTech]]"
+source_created_at: 2025-08-18T16:04:00
+source_observed_at: 2025-08-18T16:25:00
+created_at: 2025-08-20T02:04:00
+updated_at: 2025-10-27T08:04:00
 tags: [#project]
 ---
 # Project Lantern 170
 
 ## Overview
-Project Lantern 170 supports [[Helio Health]] through operations admin.
+Project Lantern 170 supports [[Summit FinTech]] through operations admin.
 
 ## Stakeholders
-- [[David Kim]]
-- [[Tara Ortega]]
-- [[Hannah Tan]]
+- [[Rachel Ivanov]]
+- [[Farah Novak]]
+- [[Victor Rostova]]
+- [[Jonah Walker]]
 
 ## Operating Notes
-- Evergreen owner: [[Marcus Grant]]
-- Client account: [[Helio Health]]
+- Evergreen owner: [[Rachel Chen]]
+- Client account: [[Summit FinTech]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Lantern 170]] #ops

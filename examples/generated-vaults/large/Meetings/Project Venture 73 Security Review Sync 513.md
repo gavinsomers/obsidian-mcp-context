@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-07-02
+date: 2025-04-18
 project: "[[Project Venture 73]]"
-company: "[[BrightWave Logistics]]"
-source_created_at: 2024-07-02T15:08:00
-source_observed_at: 2024-07-02T16:15:00
-created_at: 2024-07-02T20:45:00
-updated_at: 2024-07-03T01:45:00
+company: "[[Meridian Retail]]"
+source_created_at: 2025-04-18T09:33:00
+source_observed_at: 2025-04-18T10:07:00
+created_at: 2025-04-18T10:36:00
+updated_at: 2025-04-19T02:36:00
 tags: [#meeting]
 ---
 # Project Venture 73 Security Review Sync 513
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Uma Chen]]
 
 ## Client Attendees
-- [[Grace Lee]]
-- [[Wendy Patel]]
-- [[Kai Usman]]
+- [[Amara Jenkins]]
+- [[Elena Shah]]
+- [[Priya Novak]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 73]] at [[BrightWave Logistics]].
-[[Uma Chen]] aligned with [[Grace Lee]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 73]] at [[Meridian Retail]].
+[[Uma Chen]] aligned with [[Amara Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 73]] to [[Uma Chen]] #follow-up

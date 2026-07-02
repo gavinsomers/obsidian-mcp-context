@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: mitigating
 project: "[[Project Orbit 41]]"
-source_created_at: 2023-12-10T09:29:00
-source_observed_at: 2023-12-10T10:20:00
-created_at: 2023-12-12T05:29:00
-updated_at: 2023-12-23T09:29:00
+source_created_at: 2023-12-10T11:18:00
+source_observed_at: 2023-12-10T14:09:00
+created_at: 2023-12-11T15:18:00
+updated_at: 2024-01-06T20:18:00
 tags: [#risk]
 ---
 # Project Orbit 41 Adoption Workflow Risk 41
 
 ## Risk
-Adoption Workflow may affect [[Project Orbit 41]] for [[Vanguard Logistics]].
+Adoption Workflow may affect [[Project Orbit 41]] for [[Atlas Health]].
 
 ## Evidence
-- Raised after [[Project Orbit 41 Warehouse Mapping Sync 921]]
+- Raised after [[Project Orbit 41 Warehouse Mapping Sync 41]]
 
 ## Current State
-- Status: `open`
+- Status: `mitigating`
 - Owner: [[Nadia Bennett]]
 - [ ] Reassess [[Project Orbit 41 Adoption Workflow Risk 41]] during the next review #risk

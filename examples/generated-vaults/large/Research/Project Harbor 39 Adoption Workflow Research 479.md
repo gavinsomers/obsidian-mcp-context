@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Harbor 39]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2025-08-21T13:25:00
-source_observed_at: 2025-08-21T15:37:00
-created_at: 2025-08-22T17:25:00
-updated_at: 2025-09-22T04:25:00
+company: "[[Summit Logistics]]"
+source_created_at: 2025-08-21T12:48:00
+source_observed_at: 2025-08-21T15:19:00
+created_at: 2025-08-22T07:48:00
+updated_at: 2025-09-03T17:48:00
 tags: [#research]
 ---
 # Project Harbor 39 Adoption Workflow Research 479
 
 ## Research Summary
-Research on adoption workflow for [[Project Harbor 39]] and [[Vanguard Manufacturing]].
+Research on adoption workflow for [[Project Harbor 39]] and [[Summit Logistics]].
 
 ## Evidence
 - Interview notes from [[Lina Bennett]]

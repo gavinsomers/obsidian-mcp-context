@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-12-04
 project: "[[Project Keystone 190]]"
-company: "[[Northstar FinTech]]"
-source_created_at: 2025-12-04T12:47:00
-source_observed_at: 2025-12-04T13:50:00
-created_at: 2025-12-04T16:20:00
-updated_at: 2025-12-05T15:20:00
+company: "[[Vanguard Retail]]"
+source_created_at: 2025-12-04T13:11:00
+source_observed_at: 2025-12-04T13:55:00
+created_at: 2025-12-04T14:54:00
+updated_at: 2025-12-05T07:54:00
 tags: [#meeting]
 ---
 # Project Keystone 190 Handoff Readiness Sync 190
 
 ## Evergreen Attendees
-- [[Grace Haddad]]
+- [[Kai Diaz]]
 
 ## Client Attendees
-- [[Kai Rostova]]
-- [[Grace Ivanov]]
-- [[Alex Walker]]
+- [[Ben Jenkins]]
+- [[Rachel Novak]]
+- [[Victor Walker]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 190]] at [[Northstar FinTech]].
-[[Grace Haddad]] aligned with [[Kai Rostova]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 190]] at [[Vanguard Retail]].
+[[Kai Diaz]] aligned with [[Ben Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 190]] to [[Grace Haddad]] #follow-up
+- [ ] Send recap for [[Project Keystone 190]] to [[Kai Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

@@ -3,11 +3,11 @@ type: decision
 date: 2023-09-01
 status: active
 project: "[[Project Foundry 18]]"
-company: "[[Meridian Retail]]"
-source_created_at: 2023-09-01T11:42:00
-source_observed_at: 2023-09-01T12:10:00
-created_at: 2023-09-01T17:29:00
-updated_at: 2023-09-02T02:29:00
+company: "[[Keystone Health]]"
+source_created_at: 2023-09-01T11:22:00
+source_observed_at: 2023-09-01T13:41:00
+created_at: 2023-09-01T13:46:00
+updated_at: 2023-09-01T17:46:00
 tags: [#decision]
 ---
 # Project Foundry 18 Handoff Readiness Decision 18
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Foundry 18]].
 
 ## Context
-This decision applies to [[Meridian Retail]] and [[Project Foundry 18]].
+This decision applies to [[Keystone Health]] and [[Project Foundry 18]].
 It follows [[Project Foundry 18 Lineage Audit Sync 1558]].
 It incorporates [[Project Foundry 18 Finance Approval Research 18]].
 

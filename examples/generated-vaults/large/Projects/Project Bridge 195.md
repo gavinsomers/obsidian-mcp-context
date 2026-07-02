@@ -1,25 +1,26 @@
 ---
 type: project
 status: active
-company: "[[Meridian Media]]"
-source_created_at: 2025-12-17T11:30:00
-source_observed_at: 2025-12-17T14:26:00
-created_at: 2025-12-18T04:30:00
-updated_at: 2026-02-25T14:30:00
+company: "[[Summit FinTech]]"
+source_created_at: 2025-12-17T13:43:00
+source_observed_at: 2025-12-17T14:33:00
+created_at: 2025-12-18T23:43:00
+updated_at: 2026-01-06T00:43:00
 tags: [#project]
 ---
 # Project Bridge 195
 
 ## Overview
-Project Bridge 195 supports [[Meridian Media]] through operations admin.
+Project Bridge 195 supports [[Summit FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Uma Kim]]
-- [[Iris Patel]]
-- [[Yara Tan]]
+- [[Rachel Ivanov]]
+- [[Farah Novak]]
+- [[Victor Rostova]]
+- [[Jonah Walker]]
 
 ## Operating Notes
-- Evergreen owner: [[Lina Haddad]]
-- Client account: [[Meridian Media]]
+- Evergreen owner: [[Priya Diaz]]
+- Client account: [[Summit FinTech]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Bridge 195]] #ops

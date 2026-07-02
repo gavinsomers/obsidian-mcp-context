@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-12-10
 project: "[[Project Venture 133]]"
-company: "[[BrightWave Health]]"
-source_created_at: 2025-12-10T16:43:00
-source_observed_at: 2025-12-10T18:14:00
-created_at: 2025-12-10T19:46:00
-updated_at: 2025-12-11T03:46:00
+company: "[[Quantum Manufacturing]]"
+source_created_at: 2025-12-10T09:24:00
+source_observed_at: 2025-12-10T11:49:00
+created_at: 2025-12-15T10:24:00
+updated_at: 2025-12-15T20:24:00
 tags: [#meeting]
 ---
 # Project Venture 133 Security Review Sync 1453
 
 ## Evergreen Attendees
-- [[Ben Foster]]
+- [[Farah Bennett]]
 
 ## Client Attendees
-- [[Clara Kim]]
-- [[Sam Ortega]]
-- [[Grace Tan]]
+- [[Sam Jenkins]]
+- [[Grace Ortega]]
+- [[Wendy Shah]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 133]] at [[BrightWave Health]].
-[[Ben Foster]] aligned with [[Clara Kim]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 133]] at [[Quantum Manufacturing]].
+[[Farah Bennett]] aligned with [[Sam Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Venture 133]] to [[Ben Foster]] #follow-up
+- [ ] Send recap for [[Project Venture 133]] to [[Farah Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

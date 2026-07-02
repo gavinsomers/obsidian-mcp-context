@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Beacon 182]]"
-company: "[[Summit Retail]]"
-source_created_at: 2025-11-08T12:06:00
-source_observed_at: 2025-11-08T14:21:00
-created_at: 2025-11-09T02:06:00
-updated_at: 2025-12-13T08:06:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2025-11-08T16:58:00
+source_observed_at: 2025-11-08T17:43:00
+created_at: 2025-11-09T08:58:00
+updated_at: 2025-11-14T12:58:00
 tags: [#research]
 ---
 # Project Beacon 182 Lineage Audit Research 182
 
 ## Research Summary
-Research on lineage audit for [[Project Beacon 182]] and [[Summit Retail]].
+Research on lineage audit for [[Project Beacon 182]] and [[Northstar Analytics]].
 
 ## Evidence
-- Interview notes from [[Zoe Grant]]
-- Related operating review: [[Project Beacon 182 Stakeholder Alignment Sync 1722]]
+- Interview notes from [[Clara Diaz]]
+- Related operating review: [[Project Beacon 182 Stakeholder Alignment Sync 622]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Beacon 182]] #research

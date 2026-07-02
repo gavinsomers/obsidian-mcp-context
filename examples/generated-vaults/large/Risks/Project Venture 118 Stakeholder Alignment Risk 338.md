@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Venture 118]]"
-source_created_at: 2024-12-22T12:49:00
-source_observed_at: 2024-12-22T13:01:00
-created_at: 2024-12-24T09:49:00
-updated_at: 2025-02-06T20:49:00
+source_created_at: 2024-12-22T16:24:00
+source_observed_at: 2024-12-22T17:48:00
+created_at: 2024-12-23T09:24:00
+updated_at: 2025-01-09T19:24:00
 tags: [#risk]
 ---
 # Project Venture 118 Stakeholder Alignment Risk 338
 
 ## Risk
-Stakeholder Alignment may affect [[Project Venture 118]] for [[Meridian Labs]].
+Stakeholder Alignment may affect [[Project Venture 118]] for [[Atlas Media]].
 
 ## Evidence
-- Raised after [[Project Venture 118 Lineage Audit Sync 1658]]
+- Raised after [[Project Venture 118 Lineage Audit Sync 338]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Marcus Evans]]
+- Status: `mitigating`
+- Owner: [[Rachel Alvarez]]
 - [ ] Reassess [[Project Venture 118 Stakeholder Alignment Risk 338]] during the next review #risk

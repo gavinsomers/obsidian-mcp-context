@@ -3,11 +3,11 @@ type: decision
 date: 2025-09-22
 status: active
 project: "[[Project Signal 164]]"
-company: "[[Atlas Retail]]"
-source_created_at: 2025-09-22T12:11:00
-source_observed_at: 2025-09-22T14:38:00
-created_at: 2025-09-22T14:43:00
-updated_at: 2025-09-23T13:43:00
+company: "[[Pioneer Retail]]"
+source_created_at: 2025-09-22T16:55:00
+source_observed_at: 2025-09-22T19:08:00
+created_at: 2025-09-22T21:45:00
+updated_at: 2025-09-23T01:45:00
 tags: [#decision]
 ---
 # Project Signal 164 Metric Reconciliation Decision 604
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with metric reconciliation for [[Project Signal 164]].
 
 ## Context
-This decision applies to [[Atlas Retail]] and [[Project Signal 164]].
+This decision applies to [[Pioneer Retail]] and [[Project Signal 164]].
 It follows [[Project Signal 164 Finance Approval Sync 604]].
 It incorporates [[Project Signal 164 Handoff Readiness Research 384]].
 

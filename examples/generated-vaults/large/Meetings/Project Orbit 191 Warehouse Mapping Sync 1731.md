@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-12-07
 project: "[[Project Orbit 191]]"
-company: "[[Summit Manufacturing]]"
-source_created_at: 2025-12-07T10:12:00
-source_observed_at: 2025-12-07T10:33:00
-created_at: 2025-12-09T16:12:00
-updated_at: 2025-12-10T11:12:00
+company: "[[Cobalt Media]]"
+source_created_at: 2025-12-07T12:35:00
+source_observed_at: 2025-12-07T13:21:00
+created_at: 2025-12-07T17:35:00
+updated_at: 2025-12-08T12:35:00
 tags: [#meeting]
 ---
 # Project Orbit 191 Warehouse Mapping Sync 1731
 
 ## Evergreen Attendees
-- [[Hannah Haddad]]
+- [[Lina Diaz]]
 
 ## Client Attendees
-- [[Victor Jenkins]]
-- [[Jonah Ortega]]
-- [[Zoe Shah]]
+- [[Rachel Kim]]
+- [[Farah Patel]]
+- [[Victor Tan]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 191]] at [[Summit Manufacturing]].
-[[Hannah Haddad]] aligned with [[Victor Jenkins]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 191]] at [[Cobalt Media]].
+[[Lina Diaz]] aligned with [[Rachel Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Orbit 191]] to [[Hannah Haddad]] #follow-up
+- [ ] Send recap for [[Project Orbit 191]] to [[Lina Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

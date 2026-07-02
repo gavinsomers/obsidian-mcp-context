@@ -2,10 +2,10 @@
 type: company
 status: pipeline
 segment: enterprise
-source_created_at: 2023-12-07T11:42:00
-source_observed_at: 2023-12-07T13:22:00
-created_at: 2023-12-09T04:42:00
-updated_at: 2023-12-28T13:42:00
+source_created_at: 2023-12-07T14:39:00
+source_observed_at: 2023-12-07T16:29:00
+created_at: 2023-12-08T14:39:00
+updated_at: 2026-04-10T13:00:00
 tags: [#company]
 ---
 # Summit Analytics
@@ -14,7 +14,9 @@ tags: [#company]
 Summit Analytics is a enterprise account currently marked `pipeline`.
 
 ## Assigned Account Team
-- [[Alex Bennett]] - Delivery Lead
+- [[Victor Diaz]] - Solution Architect
+- [[Tara Bennett]] - Analytics Engineer
+- [[Omar Alvarez]] - Technical Director
 
 ## Client Stakeholders
 - [[Clara Morgan]] - Data Owner
@@ -22,7 +24,9 @@ Summit Analytics is a enterprise account currently marked `pipeline`.
 - [[Grace Vance]] - Finance Lead
 
 ## Projects
-- [[Project Summit 27]]
+- [[Project Keystone 100]]
+- [[Project Orbit 146]]
+- [[Project Meridian 216]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Summit Analytics]] #account

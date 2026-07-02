@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-04-26
 project: "[[Project Keystone 145]]"
-company: "[[Apex Analytics]]"
-source_created_at: 2025-04-26T11:17:00
-source_observed_at: 2025-04-26T11:48:00
-created_at: 2025-04-26T16:16:00
-updated_at: 2025-04-26T18:16:00
+company: "[[Northstar FinTech]]"
+source_created_at: 2025-04-26T09:21:00
+source_observed_at: 2025-04-26T11:15:00
+created_at: 2025-04-26T13:48:00
+updated_at: 2025-04-26T17:48:00
 tags: [#meeting]
 ---
 # Project Keystone 145 Adoption Workflow Sync 365
 
 ## Evergreen Attendees
-- [[Nadia Foster]]
+- [[Sam Bennett]]
 
 ## Client Attendees
-- [[Uma Lee]]
-- [[Iris Quinn]]
-- [[Yara Usman]]
+- [[Wendy Morgan]]
+- [[Grace Ivanov]]
+- [[Alex Walker]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Keystone 145]] at [[Apex Analytics]].
-[[Nadia Foster]] aligned with [[Uma Lee]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Keystone 145]] at [[Northstar FinTech]].
+[[Sam Bennett]] aligned with [[Wendy Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 145]] to [[Nadia Foster]] #follow-up
+- [ ] Send recap for [[Project Keystone 145]] to [[Sam Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

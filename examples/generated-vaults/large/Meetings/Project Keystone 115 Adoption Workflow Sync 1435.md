@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-11-14
 project: "[[Project Keystone 115]]"
-company: "[[Cobalt Manufacturing]]"
-source_created_at: 2025-11-14T08:57:00
-source_observed_at: 2025-11-14T11:13:00
-created_at: 2025-11-14T14:13:00
-updated_at: 2025-11-15T00:13:00
+company: "[[Northstar FinTech]]"
+source_created_at: 2025-11-14T14:40:00
+source_observed_at: 2025-11-14T17:15:00
+created_at: 2025-11-14T17:39:00
+updated_at: 2025-11-15T12:39:00
 tags: [#meeting]
 ---
 # Project Keystone 115 Adoption Workflow Sync 1435
 
 ## Evergreen Attendees
-- [[Jonah Evans]]
+- [[Nadia Alvarez]]
 
 ## Client Attendees
-- [[Marcus Jenkins]]
-- [[Ben Ortega]]
-- [[Rachel Shah]]
+- [[Grace Ivanov]]
+- [[Wendy Morgan]]
+- [[Alex Walker]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Keystone 115]] at [[Cobalt Manufacturing]].
-[[Jonah Evans]] aligned with [[Marcus Jenkins]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Keystone 115]] at [[Northstar FinTech]].
+[[Nadia Alvarez]] aligned with [[Grace Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 115]] to [[Jonah Evans]] #follow-up
+- [ ] Send recap for [[Project Keystone 115]] to [[Nadia Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

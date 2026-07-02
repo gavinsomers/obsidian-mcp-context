@@ -2,10 +2,10 @@
 type: person
 company: "[[Atlas Health]]"
 role: "Data Owner"
-source_created_at: 2023-09-05T16:10:00
-source_observed_at: 2023-09-05T16:37:00
-created_at: 2023-09-06T22:10:00
-updated_at: 2024-11-24T13:00:00
+source_created_at: 2023-09-05T14:32:00
+source_observed_at: 2023-09-05T16:08:00
+created_at: 2023-09-07T02:32:00
+updated_at: 2023-12-02T13:00:00
 tags: [#person]
 ---
 # Xavier Ortega
@@ -14,5 +14,5 @@ tags: [#person]
 Xavier Ortega is the Data Owner at [[Atlas Health]].
 
 ## Client Project Involvement
-- Client stakeholder on [[Project Harbor 114]] ([[Atlas Health]])
+- Client stakeholder on [[Project Orbit 41]] ([[Atlas Health]])
 - [ ] Confirm next update with [[Xavier Ortega]] #follow-up

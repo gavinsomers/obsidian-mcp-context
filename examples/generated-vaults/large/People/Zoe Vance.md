@@ -2,10 +2,10 @@
 type: person
 company: "[[Keystone Labs]]"
 role: "Data Owner"
-source_created_at: 2023-10-26T08:12:00
-source_observed_at: 2023-10-26T08:28:00
-created_at: 2023-10-27T23:12:00
-updated_at: 2023-12-11T06:12:00
+source_created_at: 2023-10-26T12:33:00
+source_observed_at: 2023-10-26T14:38:00
+created_at: 2023-10-27T01:33:00
+updated_at: 2023-11-14T10:33:00
 tags: [#person]
 ---
 # Zoe Vance

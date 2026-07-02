@@ -1,25 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2023-11-16T12:12:00
-source_observed_at: 2023-11-16T12:27:00
-created_at: 2023-11-24T13:12:00
-updated_at: 2024-02-11T19:12:00
+status: active
+company: "[[Summit FinTech]]"
+source_created_at: 2023-11-16T10:37:00
+source_observed_at: 2023-11-16T11:01:00
+created_at: 2023-11-17T17:37:00
+updated_at: 2023-12-18T22:37:00
 tags: [#project]
 ---
 # Project Keystone 40
 
 ## Overview
-Project Keystone 40 supports [[Vanguard Manufacturing]] through operations admin.
+Project Keystone 40 supports [[Summit FinTech]] through operations admin.
 
 ## Stakeholders
-- [[Rachel Jenkins]]
-- [[Farah Ortega]]
-- [[Victor Shah]]
+- [[Rachel Ivanov]]
+- [[Farah Novak]]
+- [[Victor Rostova]]
+- [[Jonah Walker]]
 
 ## Operating Notes
 - Evergreen owner: [[Marcus Bennett]]
-- Client account: [[Vanguard Manufacturing]]
-- Status: `blocked`
+- Client account: [[Summit FinTech]]
+- Status: `active`
 - [ ] Reconcile latest state for [[Project Keystone 40]] #ops

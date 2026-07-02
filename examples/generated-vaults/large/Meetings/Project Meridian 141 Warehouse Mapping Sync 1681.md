@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-04-06
 project: "[[Project Meridian 141]]"
-company: "[[Vanguard Logistics]]"
-source_created_at: 2025-04-06T09:30:00
-source_observed_at: 2025-04-06T12:14:00
-created_at: 2025-04-06T13:30:00
-updated_at: 2025-04-07T12:30:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2025-04-06T09:24:00
+source_observed_at: 2025-04-06T09:41:00
+created_at: 2025-04-09T13:24:00
+updated_at: 2025-04-10T12:24:00
 tags: [#meeting]
 ---
 # Project Meridian 141 Warehouse Mapping Sync 1681
 
 ## Evergreen Attendees
-- [[Jonah Foster]]
+- [[Nadia Bennett]]
 
 ## Client Attendees
-- [[Jonah Lee]]
-- [[Zoe Patel]]
-- [[Nadia Usman]]
+- [[Farah Lee]]
+- [[Victor Patel]]
+- [[Jonah Usman]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 141]] at [[Vanguard Logistics]].
-[[Jonah Foster]] aligned with [[Jonah Lee]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 141]] at [[Cobalt Logistics]].
+[[Nadia Bennett]] aligned with [[Farah Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Meridian 141]] to [[Jonah Foster]] #follow-up
+- [ ] Send recap for [[Project Meridian 141]] to [[Nadia Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

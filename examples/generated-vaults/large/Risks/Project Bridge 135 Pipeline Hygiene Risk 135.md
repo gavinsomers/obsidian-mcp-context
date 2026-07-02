@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Bridge 135]]"
-source_created_at: 2025-03-16T08:47:00
-source_observed_at: 2025-03-16T10:00:00
-created_at: 2025-03-18T04:47:00
-updated_at: 2025-04-01T05:47:00
+source_created_at: 2025-03-16T12:04:00
+source_observed_at: 2025-03-16T14:24:00
+created_at: 2025-03-18T04:04:00
+updated_at: 2025-04-22T08:04:00
 tags: [#risk]
 ---
 # Project Bridge 135 Pipeline Hygiene Risk 135
 
 ## Risk
-Pipeline Hygiene may affect [[Project Bridge 135]] for [[BrightWave Media]].
+Pipeline Hygiene may affect [[Project Bridge 135]] for [[Vanguard Media]].
 
 ## Evidence
-- Raised after [[Project Bridge 135 Adoption Workflow Sync 1895]]
+- Raised after [[Project Bridge 135 Adoption Workflow Sync 795]]
 
 ## Current State
-- Status: `open`
-- Owner: [[David Foster]]
+- Status: `closed`
+- Owner: [[Hannah Bennett]]
 - [ ] Reassess [[Project Bridge 135 Pipeline Hygiene Risk 135]] during the next review #risk

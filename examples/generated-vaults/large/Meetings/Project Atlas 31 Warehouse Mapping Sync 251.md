@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-04-17
 project: "[[Project Atlas 31]]"
-company: "[[Summit Manufacturing]]"
-source_created_at: 2024-04-17T16:28:00
-source_observed_at: 2024-04-17T17:13:00
-created_at: 2024-04-17T19:18:00
-updated_at: 2024-04-18T12:18:00
+company: "[[Keystone FinTech]]"
+source_created_at: 2024-04-17T10:26:00
+source_observed_at: 2024-04-17T11:15:00
+created_at: 2024-04-17T14:18:00
+updated_at: 2024-04-18T03:18:00
 tags: [#meeting]
 ---
 # Project Atlas 31 Warehouse Mapping Sync 251
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[David Bennett]]
 
 ## Client Attendees
-- [[Victor Jenkins]]
-- [[Jonah Ortega]]
-- [[Zoe Shah]]
+- [[Victor Ivanov]]
+- [[Jonah Novak]]
+- [[Zoe Rostova]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Atlas 31]] at [[Summit Manufacturing]].
-[[David Bennett]] aligned with [[Victor Jenkins]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Atlas 31]] at [[Keystone FinTech]].
+[[David Bennett]] aligned with [[Victor Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Atlas 31]] to [[David Bennett]] #follow-up

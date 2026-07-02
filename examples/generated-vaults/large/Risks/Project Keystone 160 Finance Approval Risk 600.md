@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Keystone 160]]"
-source_created_at: 2025-12-12T16:26:00
-source_observed_at: 2025-12-12T17:47:00
-created_at: 2025-12-14T12:26:00
-updated_at: 2026-01-19T18:26:00
+source_created_at: 2025-12-12T10:39:00
+source_observed_at: 2025-12-12T12:57:00
+created_at: 2025-12-12T20:39:00
+updated_at: 2026-01-25T00:39:00
 tags: [#risk]
 ---
 # Project Keystone 160 Finance Approval Risk 600
 
 ## Risk
-Finance Approval may affect [[Project Keystone 160]] for [[Crescent Health]].
+Finance Approval may affect [[Project Keystone 160]] for [[Vanguard Logistics]].
 
 ## Evidence
 - Raised after [[Project Keystone 160 Handoff Readiness Sync 600]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Clara Grant]]
+- Status: `mitigating`
+- Owner: [[Grace Chen]]
 - [ ] Reassess [[Project Keystone 160 Finance Approval Risk 600]] during the next review #risk

@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-02-01
 project: "[[Project Compass 128]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2025-02-01T12:19:00
-source_observed_at: 2025-02-01T15:16:00
-created_at: 2025-02-01T18:02:00
-updated_at: 2025-02-02T09:02:00
+company: "[[Northstar Health]]"
+source_created_at: 2025-02-01T08:24:00
+source_observed_at: 2025-02-01T10:38:00
+created_at: 2025-02-02T12:24:00
+updated_at: 2025-02-02T17:24:00
 tags: [#meeting]
 ---
 # Project Compass 128 Lineage Audit Sync 1668
 
 ## Evergreen Attendees
-- [[Xavier Evans]]
+- [[Amara Bennett]]
 
 ## Client Attendees
-- [[Yara Quinn]]
-- [[Marcus Vance]]
-- [[Uma Haddad]]
+- [[Alex Kim]]
+- [[Omar Ortega]]
+- [[David Tan]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 128]] at [[Cobalt Labs]].
-[[Xavier Evans]] aligned with [[Yara Quinn]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 128]] at [[Northstar Health]].
+[[Amara Bennett]] aligned with [[Alex Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Compass 128]] to [[Xavier Evans]] #follow-up
+- [ ] Send recap for [[Project Compass 128]] to [[Amara Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

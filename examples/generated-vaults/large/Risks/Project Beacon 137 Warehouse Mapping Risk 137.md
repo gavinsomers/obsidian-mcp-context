@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: mitigating
 project: "[[Project Beacon 137]]"
-source_created_at: 2025-03-25T12:34:00
-source_observed_at: 2025-03-25T15:28:00
-created_at: 2025-03-26T05:34:00
-updated_at: 2025-05-07T10:34:00
+source_created_at: 2025-03-25T11:25:00
+source_observed_at: 2025-03-25T14:03:00
+created_at: 2025-03-26T23:25:00
+updated_at: 2025-04-05T05:25:00
 tags: [#risk]
 ---
 # Project Beacon 137 Warehouse Mapping Risk 137
 
 ## Risk
-Warehouse Mapping may affect [[Project Beacon 137]] for [[Summit Manufacturing]].
+Warehouse Mapping may affect [[Project Beacon 137]] for [[Meridian Retail]].
 
 ## Evidence
-- Raised after [[Project Beacon 137 Contract Renewal Sync 1017]]
+- Raised after [[Project Beacon 137 Contract Renewal Sync 357]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Farah Foster]]
+- Status: `mitigating`
+- Owner: [[Jonah Bennett]]
 - [ ] Reassess [[Project Beacon 137 Warehouse Mapping Risk 137]] during the next review #risk

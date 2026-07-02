@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-08-21
+date: 2023-09-18
 project: "[[Project Venture 13]]"
-company: "[[Vanguard Health]]"
-source_created_at: 2024-08-21T08:31:00
-source_observed_at: 2024-08-21T09:03:00
-created_at: 2024-08-21T13:19:00
-updated_at: 2024-08-21T16:19:00
+company: "[[Apex Media]]"
+source_created_at: 2023-09-18T12:09:00
+source_observed_at: 2023-09-18T14:25:00
+created_at: 2023-09-18T15:47:00
+updated_at: 2023-09-19T03:47:00
 tags: [#meeting]
 ---
 # Project Venture 13 Security Review Sync 1113
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Lina Alvarez]]
 
 ## Client Attendees
-- [[Farah Kim]]
-- [[Victor Ortega]]
-- [[Jonah Tan]]
+- [[Priya Kim]]
+- [[Elena Patel]]
+- [[Uma Tan]]
 
 ## Notes
-Security Review reviewed for [[Project Venture 13]] at [[Vanguard Health]].
-[[Lina Alvarez]] aligned with [[Farah Kim]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Venture 13]] at [[Apex Media]].
+[[Lina Alvarez]] aligned with [[Priya Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Venture 13]] to [[Lina Alvarez]] #follow-up

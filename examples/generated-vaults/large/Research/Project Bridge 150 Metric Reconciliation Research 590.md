@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Bridge 150]]"
-company: "[[Atlas Media]]"
-source_created_at: 2026-03-03T10:55:00
-source_observed_at: 2026-03-03T11:45:00
-created_at: 2026-03-03T22:55:00
-updated_at: 2026-04-09T22:55:00
+company: "[[Summit Manufacturing]]"
+source_created_at: 2025-08-31T10:42:00
+source_observed_at: 2025-08-31T11:56:00
+created_at: 2025-08-31T19:42:00
+updated_at: 2025-09-29T03:42:00
 tags: [#research]
 ---
 # Project Bridge 150 Metric Reconciliation Research 590
 
 ## Research Summary
-Research on metric reconciliation for [[Project Bridge 150]] and [[Atlas Media]].
+Research on metric reconciliation for [[Project Bridge 150]] and [[Summit Manufacturing]].
 
 ## Evidence
-- Interview notes from [[Tara Foster]]
+- Interview notes from [[Xavier Bennett]]
 - Related operating review: [[Project Bridge 150 Handoff Readiness Sync 1470]]
 
 ## Follow Up

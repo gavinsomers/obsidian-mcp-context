@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Atlas 151]]"
-company: "[[Summit Analytics]]"
-source_created_at: 2025-06-08T16:31:00
-source_observed_at: 2025-06-08T19:03:00
-created_at: 2025-06-09T07:31:00
-updated_at: 2025-07-01T17:31:00
+company: "[[Northstar Analytics]]"
+source_created_at: 2025-06-08T14:02:00
+source_observed_at: 2025-06-08T16:46:00
+created_at: 2025-06-10T08:02:00
+updated_at: 2025-06-18T17:02:00
 tags: [#research]
 ---
 # Project Atlas 151 Contract Renewal Research 371
 
 ## Research Summary
-Research on contract renewal for [[Project Atlas 151]] and [[Summit Analytics]].
+Research on contract renewal for [[Project Atlas 151]] and [[Northstar Analytics]].
 
 ## Evidence
-- Interview notes from [[Uma Foster]]
-- Related operating review: [[Project Atlas 151 Warehouse Mapping Sync 1031]]
+- Interview notes from [[Yara Bennett]]
+- Related operating review: [[Project Atlas 151 Warehouse Mapping Sync 151]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Atlas 151]] #research

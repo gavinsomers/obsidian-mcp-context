@@ -2,11 +2,11 @@
 type: meeting
 date: 2023-07-13
 project: "[[Project Summit 12]]"
-company: "[[Atlas Retail]]"
-source_created_at: 2023-07-13T12:36:00
-source_observed_at: 2023-07-13T13:35:00
-created_at: 2023-07-13T15:38:00
-updated_at: 2023-07-13T22:38:00
+company: "[[Summit Retail]]"
+source_created_at: 2023-07-13T15:00:00
+source_observed_at: 2023-07-13T15:57:00
+created_at: 2023-07-13T18:55:00
+updated_at: 2023-07-13T21:55:00
 tags: [#meeting]
 ---
 # Project Summit 12 Stakeholder Alignment Sync 1552
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Kai Alvarez]]
 
 ## Client Attendees
-- [[David Jenkins]]
-- [[Hannah Shah]]
-- [[Xavier Walker]]
+- [[Victor Novak]]
+- [[Farah Jenkins]]
+- [[Zoe Walker]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 12]] at [[Atlas Retail]].
-[[Kai Alvarez]] aligned with [[David Jenkins]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Summit 12]] at [[Summit Retail]].
+[[Kai Alvarez]] aligned with [[Victor Novak]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Summit 12]] to [[Kai Alvarez]] #follow-up

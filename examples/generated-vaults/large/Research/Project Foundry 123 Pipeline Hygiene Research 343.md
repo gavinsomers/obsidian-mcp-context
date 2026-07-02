@@ -1,20 +1,20 @@
 ---
 type: research
 project: "[[Project Foundry 123]]"
-company: "[[Apex Retail]]"
-source_created_at: 2025-01-23T12:24:00
-source_observed_at: 2025-01-23T12:58:00
-created_at: 2025-01-23T22:24:00
-updated_at: 2025-02-01T08:24:00
+company: "[[Noble Retail]]"
+source_created_at: 2025-01-23T09:51:00
+source_observed_at: 2025-01-23T12:45:00
+created_at: 2025-01-24T06:51:00
+updated_at: 2025-02-21T16:51:00
 tags: [#research]
 ---
 # Project Foundry 123 Pipeline Hygiene Research 343
 
 ## Research Summary
-Research on pipeline hygiene for [[Project Foundry 123]] and [[Apex Retail]].
+Research on pipeline hygiene for [[Project Foundry 123]] and [[Noble Retail]].
 
 ## Evidence
-- Interview notes from [[Sam Evans]]
+- Interview notes from [[Wendy Alvarez]]
 - Related operating review: [[Project Foundry 123 Security Review Sync 1223]]
 
 ## Follow Up

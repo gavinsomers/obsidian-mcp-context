@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Meridian Manufacturing]]"
-source_created_at: 2023-12-06T09:13:00
-source_observed_at: 2023-12-06T11:16:00
-created_at: 2023-12-07T13:13:00
-updated_at: 2024-02-15T17:13:00
+status: planning
+company: "[[Atlas Manufacturing]]"
+source_created_at: 2023-12-06T13:52:00
+source_observed_at: 2023-12-06T15:19:00
+created_at: 2023-12-08T11:52:00
+updated_at: 2024-02-06T12:52:00
 tags: [#project]
 ---
 # Project Signal 44
 
 ## Overview
-Project Signal 44 supports [[Meridian Manufacturing]] through research program.
+Project Signal 44 supports [[Atlas Manufacturing]] through research program.
 
 ## Stakeholders
-- [[Priya Jenkins]]
-- [[Elena Ortega]]
-- [[Uma Shah]]
+- [[Tara Jenkins]]
+- [[Hannah Ortega]]
+- [[Xavier Shah]]
 
 ## Operating Notes
 - Evergreen owner: [[Rachel Bennett]]
-- Client account: [[Meridian Manufacturing]]
-- Status: `active`
+- Client account: [[Atlas Manufacturing]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Signal 44]] #ops

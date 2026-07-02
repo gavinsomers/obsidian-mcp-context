@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-09-12
 project: "[[Project Harbor 99]]"
-company: "[[Harbor FinTech]]"
-source_created_at: 2024-09-12T12:20:00
-source_observed_at: 2024-09-12T12:44:00
-created_at: 2024-09-12T12:49:00
-updated_at: 2024-09-13T00:49:00
+company: "[[Summit Labs]]"
+source_created_at: 2024-09-12T10:57:00
+source_observed_at: 2024-09-12T13:09:00
+created_at: 2024-09-15T17:57:00
+updated_at: 2024-09-15T23:57:00
 tags: [#meeting]
 ---
 # Project Harbor 99 Pipeline Hygiene Sync 319
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Uma Diaz]]
 
 ## Client Attendees
-- [[Elena Novak]]
-- [[Uma Rostova]]
-- [[Iris Walker]]
+- [[Rachel Morgan]]
+- [[Ben Ivanov]]
+- [[Victor Vance]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 99]] at [[Harbor FinTech]].
-[[Uma Diaz]] aligned with [[Elena Novak]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 99]] at [[Summit Labs]].
+[[Uma Diaz]] aligned with [[Rachel Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 99]] to [[Uma Diaz]] #follow-up

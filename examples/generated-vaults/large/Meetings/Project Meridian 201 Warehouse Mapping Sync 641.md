@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-01-25
 project: "[[Project Meridian 201]]"
-company: "[[Northstar Retail]]"
-source_created_at: 2026-01-25T16:46:00
-source_observed_at: 2026-01-25T18:42:00
-created_at: 2026-02-03T18:46:00
-updated_at: 2026-02-03T22:46:00
+company: "[[Atlas Retail]]"
+source_created_at: 2026-01-25T08:17:00
+source_observed_at: 2026-01-25T08:58:00
+created_at: 2026-01-25T11:40:00
+updated_at: 2026-01-26T08:40:00
 tags: [#meeting]
 ---
 # Project Meridian 201 Warehouse Mapping Sync 641
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Alex Alvarez]]
 
 ## Client Attendees
-- [[Omar Walker]]
-- [[Wendy Ivanov]]
-- [[Kai Novak]]
+- [[Xavier Walker]]
+- [[David Jenkins]]
+- [[Tara Novak]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 201]] at [[Northstar Retail]].
-[[Alex Alvarez]] aligned with [[Omar Walker]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 201]] at [[Atlas Retail]].
+[[Alex Alvarez]] aligned with [[Xavier Walker]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 201]] to [[Alex Alvarez]] #follow-up

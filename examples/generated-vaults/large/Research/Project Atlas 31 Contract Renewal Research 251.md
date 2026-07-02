@@ -1,17 +1,17 @@
 ---
 type: research
 project: "[[Project Atlas 31]]"
-company: "[[Summit Manufacturing]]"
-source_created_at: 2024-07-22T11:44:00
-source_observed_at: 2024-07-22T12:40:00
-created_at: 2024-07-22T18:44:00
-updated_at: 2024-08-31T19:44:00
+company: "[[Keystone FinTech]]"
+source_created_at: 2024-07-22T13:22:00
+source_observed_at: 2024-07-22T15:41:00
+created_at: 2024-07-23T13:22:00
+updated_at: 2024-08-01T19:22:00
 tags: [#research]
 ---
 # Project Atlas 31 Contract Renewal Research 251
 
 ## Research Summary
-Research on contract renewal for [[Project Atlas 31]] and [[Summit Manufacturing]].
+Research on contract renewal for [[Project Atlas 31]] and [[Keystone FinTech]].
 
 ## Evidence
 - Interview notes from [[David Bennett]]

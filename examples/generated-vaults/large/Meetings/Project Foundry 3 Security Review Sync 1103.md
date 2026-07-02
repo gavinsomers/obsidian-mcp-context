@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-08-07
 project: "[[Project Foundry 3]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2024-08-07T09:14:00
-source_observed_at: 2024-08-07T12:07:00
-created_at: 2024-08-07T12:12:00
-updated_at: 2024-08-08T11:12:00
+company: "[[Northstar Labs]]"
+source_created_at: 2024-08-07T15:04:00
+source_observed_at: 2024-08-07T15:53:00
+created_at: 2024-08-07T18:37:00
+updated_at: 2024-08-08T16:37:00
 tags: [#meeting]
 ---
 # Project Foundry 3 Security Review Sync 1103
@@ -15,13 +15,11 @@ tags: [#meeting]
 - [[Ben Alvarez]]
 
 ## Client Attendees
-- [[Rachel Jenkins]]
-- [[Farah Ortega]]
-- [[Victor Shah]]
+- [[Sam Haddad]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 3]] at [[Vanguard Manufacturing]].
-[[Ben Alvarez]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 3]] at [[Northstar Labs]].
+[[Ben Alvarez]] aligned with [[Sam Haddad]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 3]] to [[Ben Alvarez]] #follow-up

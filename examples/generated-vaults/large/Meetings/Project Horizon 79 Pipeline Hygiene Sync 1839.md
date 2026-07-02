@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-06-18
 project: "[[Project Horizon 79]]"
-company: "[[Harbor FinTech]]"
-source_created_at: 2024-06-18T14:25:00
-source_observed_at: 2024-06-18T15:52:00
-created_at: 2024-06-18T16:08:00
-updated_at: 2024-06-18T20:08:00
+company: "[[BrightWave Analytics]]"
+source_created_at: 2024-06-18T15:48:00
+source_observed_at: 2024-06-18T16:08:00
+created_at: 2024-06-18T19:19:00
+updated_at: 2024-06-19T00:19:00
 tags: [#meeting]
 ---
 # Project Horizon 79 Pipeline Hygiene Sync 1839
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Alex Diaz]]
 
 ## Client Attendees
-- [[Elena Novak]]
-- [[Priya Ivanov]]
-- [[Iris Walker]]
+- [[Wendy Lee]]
+- [[Kai Quinn]]
+- [[Alex Vance]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Horizon 79]] at [[Harbor FinTech]].
-[[Alex Diaz]] aligned with [[Elena Novak]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Horizon 79]] at [[BrightWave Analytics]].
+[[Alex Diaz]] aligned with [[Wendy Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Horizon 79]] to [[Alex Diaz]] #follow-up

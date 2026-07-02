@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-08-06
+date: 2023-08-25
 project: "[[Project Beacon 2]]"
-company: "[[Cobalt Analytics]]"
-source_created_at: 2024-08-06T14:14:00
-source_observed_at: 2024-08-06T16:51:00
-created_at: 2024-08-06T17:52:00
-updated_at: 2024-08-07T16:52:00
+company: "[[Northstar Retail]]"
+source_created_at: 2023-08-25T09:05:00
+source_observed_at: 2023-08-25T10:15:00
+created_at: 2023-08-25T14:11:00
+updated_at: 2023-08-26T13:11:00
 tags: [#meeting]
 ---
 # Project Beacon 2 Stakeholder Alignment Sync 1102
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Amara Alvarez]]
 
 ## Client Attendees
-- [[Victor Lee]]
-- [[Jonah Quinn]]
-- [[Zoe Usman]]
+- [[Alex Shah]]
+- [[Kai Novak]]
+- [[Wendy Ivanov]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Beacon 2]] at [[Cobalt Analytics]].
-[[Amara Alvarez]] aligned with [[Victor Lee]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Beacon 2]] at [[Northstar Retail]].
+[[Amara Alvarez]] aligned with [[Alex Shah]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Beacon 2]] to [[Amara Alvarez]] #follow-up

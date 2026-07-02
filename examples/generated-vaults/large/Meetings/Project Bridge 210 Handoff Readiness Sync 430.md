@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-03-12
 project: "[[Project Bridge 210]]"
-company: "[[Harbor Health]]"
-source_created_at: 2026-03-12T09:57:00
-source_observed_at: 2026-03-12T11:02:00
-created_at: 2026-03-15T12:57:00
-updated_at: 2026-03-15T15:57:00
+company: "[[Pioneer Analytics]]"
+source_created_at: 2026-03-12T14:32:00
+source_observed_at: 2026-03-12T16:24:00
+created_at: 2026-03-12T16:50:00
+updated_at: 2026-03-12T22:50:00
 tags: [#meeting]
 ---
 # Project Bridge 210 Handoff Readiness Sync 430
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Iris Alvarez]]
 
 ## Client Attendees
-- [[Iris Kim]]
-- [[Yara Ortega]]
-- [[Marcus Tan]]
+- [[David Morgan]]
+- [[Tara Quinn]]
+- [[Hannah Vance]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 210]] at [[Harbor Health]].
-[[Iris Alvarez]] aligned with [[Iris Kim]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 210]] at [[Pioneer Analytics]].
+[[Iris Alvarez]] aligned with [[David Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Bridge 210]] to [[Iris Alvarez]] #follow-up

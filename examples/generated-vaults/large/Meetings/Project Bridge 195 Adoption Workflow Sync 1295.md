@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-12-27
 project: "[[Project Bridge 195]]"
-company: "[[Meridian Media]]"
-source_created_at: 2025-12-27T14:37:00
-source_observed_at: 2025-12-27T15:35:00
-created_at: 2025-12-27T15:52:00
-updated_at: 2025-12-28T10:52:00
+company: "[[Summit FinTech]]"
+source_created_at: 2025-12-27T11:57:00
+source_observed_at: 2025-12-27T12:17:00
+created_at: 2025-12-31T11:57:00
+updated_at: 2026-01-01T06:57:00
 tags: [#meeting]
 ---
 # Project Bridge 195 Adoption Workflow Sync 1295
 
 ## Evergreen Attendees
-- [[Lina Haddad]]
+- [[Priya Diaz]]
 
 ## Client Attendees
-- [[Uma Kim]]
-- [[Iris Patel]]
-- [[Yara Tan]]
+- [[Victor Rostova]]
+- [[Rachel Ivanov]]
+- [[Farah Novak]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Bridge 195]] at [[Meridian Media]].
-[[Lina Haddad]] aligned with [[Uma Kim]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Bridge 195]] at [[Summit FinTech]].
+[[Priya Diaz]] aligned with [[Victor Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Bridge 195]] to [[Lina Haddad]] #follow-up
+- [ ] Send recap for [[Project Bridge 195]] to [[Priya Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

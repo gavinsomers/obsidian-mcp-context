@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Lantern 20]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2023-11-25T10:30:00
-source_observed_at: 2023-11-25T12:41:00
-created_at: 2023-11-25T19:30:00
-updated_at: 2023-12-06T03:30:00
+company: "[[Crescent Manufacturing]]"
+source_created_at: 2024-07-02T14:01:00
+source_observed_at: 2024-07-02T16:21:00
+created_at: 2024-07-04T12:01:00
+updated_at: 2024-08-10T21:01:00
 tags: [#research]
 ---
 # Project Lantern 20 Metric Reconciliation Research 240
 
 ## Research Summary
-Research on metric reconciliation for [[Project Lantern 20]] and [[Vanguard Manufacturing]].
+Research on metric reconciliation for [[Project Lantern 20]] and [[Crescent Manufacturing]].
 
 ## Evidence
 - Interview notes from [[Tara Alvarez]]
-- Related operating review: [[Project Lantern 20 Handoff Readiness Sync 900]]
+- Related operating review: [[Project Lantern 20 Handoff Readiness Sync 240]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Lantern 20]] #research

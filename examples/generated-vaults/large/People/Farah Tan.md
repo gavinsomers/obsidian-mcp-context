@@ -2,10 +2,10 @@
 type: person
 company: "[[Cobalt Health]]"
 role: "Revenue Operations Lead"
-source_created_at: 2023-09-21T11:10:00
-source_observed_at: 2023-09-21T11:38:00
-created_at: 2023-09-22T10:10:00
-updated_at: 2023-12-14T17:10:00
+source_created_at: 2023-09-21T09:38:00
+source_observed_at: 2023-09-21T10:15:00
+created_at: 2023-09-23T01:38:00
+updated_at: 2024-01-29T13:00:00
 tags: [#person]
 ---
 # Farah Tan
@@ -14,5 +14,5 @@ tags: [#person]
 Farah Tan is the Revenue Operations Lead at [[Cobalt Health]].
 
 ## Client Project Involvement
-- First seen through [[Cobalt Health]] account context
+- Client stakeholder on [[Project Compass 53]] ([[Cobalt Health]])
 - [ ] Confirm next update with [[Farah Tan]] #follow-up

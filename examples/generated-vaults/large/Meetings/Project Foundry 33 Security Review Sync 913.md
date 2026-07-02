@@ -2,11 +2,11 @@
 type: meeting
 date: 2023-11-15
 project: "[[Project Foundry 33]]"
-company: "[[BrightWave Logistics]]"
-source_created_at: 2023-11-15T12:01:00
-source_observed_at: 2023-11-15T14:17:00
-created_at: 2023-11-15T14:22:00
-updated_at: 2023-11-15T22:22:00
+company: "[[Apex Retail]]"
+source_created_at: 2023-11-15T10:13:00
+source_observed_at: 2023-11-15T12:45:00
+created_at: 2023-11-15T15:03:00
+updated_at: 2023-11-16T12:03:00
 tags: [#meeting]
 ---
 # Project Foundry 33 Security Review Sync 913
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Farah Bennett]]
 
 ## Client Attendees
-- [[Grace Lee]]
-- [[Wendy Patel]]
-- [[Kai Usman]]
+- [[Xavier Ivanov]]
+- [[Lina Novak]]
+- [[Amara Shah]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 33]] at [[BrightWave Logistics]].
-[[Farah Bennett]] aligned with [[Grace Lee]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 33]] at [[Apex Retail]].
+[[Farah Bennett]] aligned with [[Xavier Ivanov]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Foundry 33]] to [[Farah Bennett]] #follow-up

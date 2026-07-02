@@ -1,26 +1,25 @@
 ---
 type: project
 status: blocked
-company: "[[BrightWave FinTech]]"
-source_created_at: 2025-07-08T12:33:00
-source_observed_at: 2025-07-08T14:03:00
-created_at: 2025-07-09T00:33:00
-updated_at: 2025-09-01T11:33:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2025-07-08T12:41:00
+source_observed_at: 2025-07-08T15:38:00
+created_at: 2025-07-09T09:41:00
+updated_at: 2025-09-23T15:41:00
 tags: [#project]
 ---
 # Project Summit 162
 
 ## Overview
-Project Summit 162 supports [[BrightWave FinTech]] through sales pipeline.
+Project Summit 162 supports [[Cobalt Logistics]] through sales pipeline.
 
 ## Stakeholders
-- [[Jonah Ivanov]]
-- [[Zoe Morgan]]
-- [[Nadia Rostova]]
-- [[Clara Walker]]
+- [[Farah Lee]]
+- [[Victor Patel]]
+- [[Jonah Usman]]
 
 ## Operating Notes
-- Evergreen owner: [[Elena Grant]]
-- Client account: [[BrightWave FinTech]]
+- Evergreen owner: [[Iris Chen]]
+- Client account: [[Cobalt Logistics]]
 - Status: `blocked`
 - [ ] Reconcile latest state for [[Project Summit 162]] #ops

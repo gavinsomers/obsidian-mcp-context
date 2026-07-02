@@ -3,11 +3,11 @@ type: decision
 date: 2024-07-22
 status: active
 project: "[[Project Compass 83]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2024-07-22T16:42:00
-source_observed_at: 2024-07-22T17:46:00
-created_at: 2024-07-22T17:51:00
-updated_at: 2024-07-23T01:51:00
+company: "[[Noble Manufacturing]]"
+source_created_at: 2024-07-22T15:30:00
+source_observed_at: 2024-07-22T16:41:00
+created_at: 2024-07-26T16:30:00
+updated_at: 2024-07-27T05:30:00
 tags: [#decision]
 ---
 # Project Compass 83 Adoption Workflow Decision 303
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with adoption workflow for [[Project Compass 83]].
 
 ## Context
-This decision applies to [[Cobalt Labs]] and [[Project Compass 83]].
+This decision applies to [[Noble Manufacturing]] and [[Project Compass 83]].
 It follows [[Project Compass 83 Security Review Sync 303]].
 It incorporates [[Project Compass 83 Pipeline Hygiene Research 83]].
 

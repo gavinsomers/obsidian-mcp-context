@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-09-20
 project: "[[Project Keystone 175]]"
-company: "[[Northstar Media]]"
-source_created_at: 2025-09-20T13:51:00
-source_observed_at: 2025-09-20T14:21:00
-created_at: 2025-09-20T15:54:00
-updated_at: 2025-09-20T18:54:00
+company: "[[Northstar Labs]]"
+source_created_at: 2025-09-20T16:34:00
+source_observed_at: 2025-09-20T17:33:00
+created_at: 2025-09-21T21:34:00
+updated_at: 2025-09-22T04:34:00
 tags: [#meeting]
 ---
 # Project Keystone 175 Adoption Workflow Sync 615
 
 ## Evergreen Attendees
-- [[Sam Grant]]
+- [[Wendy Chen]]
 
 ## Client Attendees
-- [[Omar Kim]]
-- [[David Patel]]
-- [[Tara Tan]]
+- [[Wendy Quinn]]
+- [[Kai Vance]]
+- [[Grace Morgan]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Keystone 175]] at [[Northstar Media]].
-[[Sam Grant]] aligned with [[Omar Kim]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Keystone 175]] at [[Northstar Labs]].
+[[Wendy Chen]] aligned with [[Wendy Quinn]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 175]] to [[Sam Grant]] #follow-up
+- [ ] Send recap for [[Project Keystone 175]] to [[Wendy Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

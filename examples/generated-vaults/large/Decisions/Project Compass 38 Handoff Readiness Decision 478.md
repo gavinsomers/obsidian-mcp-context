@@ -3,11 +3,11 @@ type: decision
 date: 2025-03-27
 status: active
 project: "[[Project Compass 38]]"
-company: "[[Noble FinTech]]"
-source_created_at: 2025-03-27T11:05:00
-source_observed_at: 2025-03-27T11:50:00
-created_at: 2025-03-27T17:04:00
-updated_at: 2025-03-28T06:04:00
+company: "[[Cobalt FinTech]]"
+source_created_at: 2025-03-27T11:50:00
+source_observed_at: 2025-03-27T13:54:00
+created_at: 2025-03-27T16:40:00
+updated_at: 2025-03-28T00:40:00
 tags: [#decision]
 ---
 # Project Compass 38 Handoff Readiness Decision 478
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 38]].
 
 ## Context
-This decision applies to [[Noble FinTech]] and [[Project Compass 38]].
+This decision applies to [[Cobalt FinTech]] and [[Project Compass 38]].
 It follows [[Project Compass 38 Lineage Audit Sync 478]].
 It incorporates [[Project Compass 38 Finance Approval Research 258]].
 

@@ -3,11 +3,11 @@ type: decision
 date: 2025-12-08
 status: active
 project: "[[Project Pipeline 187]]"
-company: "[[BrightWave Labs]]"
-source_created_at: 2025-12-08T11:40:00
-source_observed_at: 2025-12-08T13:17:00
-created_at: 2025-12-08T17:08:00
-updated_at: 2025-12-09T08:08:00
+company: "[[Harbor Health]]"
+source_created_at: 2025-12-08T10:34:00
+source_observed_at: 2025-12-08T12:44:00
+created_at: 2025-12-08T14:51:00
+updated_at: 2025-12-08T20:51:00
 tags: [#decision]
 ---
 # Project Pipeline 187 Pipeline Hygiene Decision 187
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Pipeline 187]].
 
 ## Context
-This decision applies to [[BrightWave Labs]] and [[Project Pipeline 187]].
-It follows [[Project Pipeline 187 Contract Renewal Sync 1287]].
+This decision applies to [[Harbor Health]] and [[Project Pipeline 187]].
+It follows [[Project Pipeline 187 Contract Renewal Sync 407]].
 It incorporates [[Project Pipeline 187 Security Review Research 407]].
 
 ## Supersession

@@ -3,11 +3,11 @@ type: decision
 date: 2025-02-12
 status: active
 project: "[[Project Compass 8]]"
-company: "[[Northstar Logistics]]"
-source_created_at: 2025-02-12T15:58:00
-source_observed_at: 2025-02-12T16:17:00
-created_at: 2025-02-12T17:03:00
-updated_at: 2025-02-13T05:03:00
+company: "[[Noble Media]]"
+source_created_at: 2025-02-12T08:00:00
+source_observed_at: 2025-02-12T09:03:00
+created_at: 2025-02-12T12:01:00
+updated_at: 2025-02-12T17:01:00
 tags: [#decision]
 ---
 # Project Compass 8 Handoff Readiness Decision 448
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with handoff readiness for [[Project Compass 8]].
 
 ## Context
-This decision applies to [[Northstar Logistics]] and [[Project Compass 8]].
+This decision applies to [[Noble Media]] and [[Project Compass 8]].
 It follows [[Project Compass 8 Lineage Audit Sync 448]].
 It incorporates [[Project Compass 8 Finance Approval Research 228]].
 

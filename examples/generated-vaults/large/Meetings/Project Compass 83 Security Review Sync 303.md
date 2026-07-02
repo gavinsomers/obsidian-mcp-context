@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-06-28
 project: "[[Project Compass 83]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2024-06-28T08:43:00
-source_observed_at: 2024-06-28T11:14:00
-created_at: 2024-06-28T11:19:00
-updated_at: 2024-06-28T22:19:00
+company: "[[Noble Manufacturing]]"
+source_created_at: 2024-06-28T12:57:00
+source_observed_at: 2024-06-28T15:30:00
+created_at: 2024-06-28T16:14:00
+updated_at: 2024-06-29T07:14:00
 tags: [#meeting]
 ---
 # Project Compass 83 Security Review Sync 303
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[David Diaz]]
 
 ## Client Attendees
-- [[Yara Quinn]]
-- [[Marcus Vance]]
-- [[Iris Morgan]]
+- [[Xavier Jenkins]]
+- [[Lina Ortega]]
+- [[Amara Tan]]
 
 ## Notes
-Security Review reviewed for [[Project Compass 83]] at [[Cobalt Labs]].
-[[David Diaz]] aligned with [[Yara Quinn]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Compass 83]] at [[Noble Manufacturing]].
+[[David Diaz]] aligned with [[Xavier Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 83]] to [[David Diaz]] #follow-up

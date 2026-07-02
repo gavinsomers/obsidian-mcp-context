@@ -3,11 +3,11 @@ type: decision
 date: 2023-08-21
 status: active
 project: "[[Project Atlas 16]]"
-company: "[[Vanguard Media]]"
-source_created_at: 2023-08-21T08:07:00
-source_observed_at: 2023-08-21T08:48:00
-created_at: 2023-08-21T13:46:00
-updated_at: 2023-08-21T22:46:00
+company: "[[Quantum Manufacturing]]"
+source_created_at: 2023-08-21T09:39:00
+source_observed_at: 2023-08-21T11:32:00
+created_at: 2023-08-21T14:55:00
+updated_at: 2023-08-22T04:55:00
 tags: [#decision]
 ---
 # Project Atlas 16 Lineage Audit Decision 16
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Atlas 16]].
 
 ## Context
-This decision applies to [[Vanguard Media]] and [[Project Atlas 16]].
-It follows [[Project Atlas 16 Metric Reconciliation Sync 1556]].
+This decision applies to [[Quantum Manufacturing]] and [[Project Atlas 16]].
+It follows [[Project Atlas 16 Metric Reconciliation Sync 16]].
 It incorporates [[Project Atlas 16 Stakeholder Alignment Research 16]].
 
 ## Supersession

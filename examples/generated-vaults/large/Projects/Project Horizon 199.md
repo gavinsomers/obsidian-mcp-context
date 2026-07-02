@@ -1,25 +1,26 @@
 ---
 type: project
-status: blocked
-company: "[[Apex Analytics]]"
-source_created_at: 2026-01-06T14:03:00
-source_observed_at: 2026-01-06T15:38:00
-created_at: 2026-01-13T20:03:00
-updated_at: 2026-04-01T07:03:00
+status: closed
+company: "[[Crescent Logistics]]"
+source_created_at: 2026-01-06T15:53:00
+source_observed_at: 2026-01-06T16:31:00
+created_at: 2026-01-08T08:53:00
+updated_at: 2026-02-04T16:53:00
 tags: [#project]
 ---
 # Project Horizon 199
 
 ## Overview
-Project Horizon 199 supports [[Apex Analytics]] through research program.
+Project Horizon 199 supports [[Crescent Logistics]] through research program.
 
 ## Stakeholders
-- [[Uma Lee]]
-- [[Iris Quinn]]
-- [[Yara Usman]]
+- [[Rachel Lee]]
+- [[Farah Quinn]]
+- [[Victor Usman]]
 
 ## Operating Notes
-- Evergreen owner: [[Priya Haddad]]
-- Client account: [[Apex Analytics]]
-- Status: `blocked`
+- Evergreen owner: [[Uma Diaz]]
+- Client account: [[Crescent Logistics]]
+- Status: `closed`
+- Closed at: `2026-05-28`
 - [ ] Reconcile latest state for [[Project Horizon 199]] #ops

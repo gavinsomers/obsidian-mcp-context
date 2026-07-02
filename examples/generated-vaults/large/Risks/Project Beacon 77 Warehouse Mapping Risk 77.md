@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Beacon 77]]"
-source_created_at: 2024-06-03T10:36:00
-source_observed_at: 2024-06-03T12:54:00
-created_at: 2024-06-04T19:36:00
-updated_at: 2024-07-06T05:36:00
+source_created_at: 2024-06-03T12:44:00
+source_observed_at: 2024-06-03T14:24:00
+created_at: 2024-06-04T10:44:00
+updated_at: 2024-06-14T17:44:00
 tags: [#risk]
 ---
 # Project Beacon 77 Warehouse Mapping Risk 77
 
 ## Risk
-Warehouse Mapping may affect [[Project Beacon 77]] for [[Atlas FinTech]].
+Warehouse Mapping may affect [[Project Beacon 77]] for [[Quantum Media]].
 
 ## Evidence
-- Raised after [[Project Beacon 77 Contract Renewal Sync 957]]
+- Raised after [[Project Beacon 77 Contract Renewal Sync 77]]
 
 ## Current State
-- Status: `closed`
+- Status: `open`
 - Owner: [[Yara Chen]]
 - [ ] Reassess [[Project Beacon 77 Warehouse Mapping Risk 77]] during the next review #risk

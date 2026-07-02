@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-02-10
 project: "[[Project Keystone 130]]"
-company: "[[Apex Manufacturing]]"
-source_created_at: 2025-02-10T08:36:00
-source_observed_at: 2025-02-10T10:59:00
-created_at: 2025-02-10T11:04:00
-updated_at: 2025-02-10T17:04:00
+company: "[[Keystone Health]]"
+source_created_at: 2025-02-10T10:00:00
+source_observed_at: 2025-02-10T11:23:00
+created_at: 2025-02-10T14:12:00
+updated_at: 2025-02-11T13:12:00
 tags: [#meeting]
 ---
 # Project Keystone 130 Handoff Readiness Sync 1890
 
 ## Evergreen Attendees
-- [[Zoe Evans]]
+- [[Clara Bennett]]
 
 ## Client Attendees
-- [[Lina Jenkins]]
-- [[Amara Ortega]]
-- [[Priya Shah]]
+- [[Nadia Kim]]
+- [[Clara Patel]]
+- [[Sam Tan]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 130]] at [[Apex Manufacturing]].
-[[Zoe Evans]] aligned with [[Lina Jenkins]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 130]] at [[Keystone Health]].
+[[Clara Bennett]] aligned with [[Nadia Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Keystone 130]] to [[Zoe Evans]] #follow-up
+- [ ] Send recap for [[Project Keystone 130]] to [[Clara Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

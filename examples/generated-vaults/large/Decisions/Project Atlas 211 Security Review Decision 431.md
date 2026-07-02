@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-05
 status: active
 project: "[[Project Atlas 211]]"
-company: "[[Summit FinTech]]"
-source_created_at: 2026-04-05T15:41:00
-source_observed_at: 2026-04-05T17:44:00
-created_at: 2026-04-05T17:51:00
-updated_at: 2026-04-06T05:51:00
+company: "[[Summit Labs]]"
+source_created_at: 2026-04-05T09:30:00
+source_observed_at: 2026-04-05T10:35:00
+created_at: 2026-04-05T13:33:00
+updated_at: 2026-04-05T14:33:00
 tags: [#decision]
 ---
 # Project Atlas 211 Security Review Decision 431
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with security review for [[Project Atlas 211]].
 
 ## Context
-This decision applies to [[Summit FinTech]] and [[Project Atlas 211]].
+This decision applies to [[Summit Labs]] and [[Project Atlas 211]].
 It follows [[Project Atlas 211 Warehouse Mapping Sync 1531]].
 It incorporates [[Project Atlas 211 Contract Renewal Research 211]].
 

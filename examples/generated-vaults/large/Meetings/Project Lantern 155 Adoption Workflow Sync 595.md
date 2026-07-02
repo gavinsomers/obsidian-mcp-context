@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-08-12
 project: "[[Project Lantern 155]]"
-company: "[[Helio Manufacturing]]"
-source_created_at: 2025-08-12T10:36:00
-source_observed_at: 2025-08-12T12:52:00
-created_at: 2025-08-12T12:57:00
-updated_at: 2025-08-12T18:57:00
+company: "[[Harbor Analytics]]"
+source_created_at: 2025-08-12T13:15:00
+source_observed_at: 2025-08-12T14:57:00
+created_at: 2025-08-12T16:06:00
+updated_at: 2025-08-12T20:06:00
 tags: [#meeting]
 ---
 # Project Lantern 155 Adoption Workflow Sync 595
 
 ## Evergreen Attendees
-- [[Yara Foster]]
+- [[Ben Chen]]
 
 ## Client Attendees
-- [[Omar Jenkins]]
-- [[David Ortega]]
-- [[Tara Shah]]
+- [[Ben Morgan]]
+- [[Rachel Quinn]]
+- [[Farah Vance]]
 
 ## Notes
-Adoption Workflow reviewed for [[Project Lantern 155]] at [[Helio Manufacturing]].
-[[Yara Foster]] aligned with [[Omar Jenkins]] on follow-up work for the next operating review.
+Adoption Workflow reviewed for [[Project Lantern 155]] at [[Harbor Analytics]].
+[[Ben Chen]] aligned with [[Ben Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Lantern 155]] to [[Yara Foster]] #follow-up
+- [ ] Send recap for [[Project Lantern 155]] to [[Ben Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

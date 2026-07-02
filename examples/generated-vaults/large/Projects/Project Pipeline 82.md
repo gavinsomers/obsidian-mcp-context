@@ -1,26 +1,25 @@
 ---
 type: project
 status: active
-company: "[[Atlas Retail]]"
-source_created_at: 2024-06-11T08:43:00
-source_observed_at: 2024-06-11T10:58:00
-created_at: 2024-06-12T11:43:00
-updated_at: 2024-08-21T19:43:00
+company: "[[Quantum Logistics]]"
+source_created_at: 2024-06-11T15:42:00
+source_observed_at: 2024-06-11T18:13:00
+created_at: 2024-06-13T05:42:00
+updated_at: 2024-08-26T12:42:00
 tags: [#project]
 ---
 # Project Pipeline 82
 
 ## Overview
-Project Pipeline 82 supports [[Atlas Retail]] through sales pipeline.
+Project Pipeline 82 supports [[Quantum Logistics]] through sales pipeline.
 
 ## Stakeholders
-- [[David Jenkins]]
-- [[Tara Novak]]
-- [[Hannah Shah]]
-- [[Xavier Walker]]
+- [[Kai Lee]]
+- [[Alex Quinn]]
+- [[Omar Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Clara Diaz]]
-- Client account: [[Atlas Retail]]
+- Client account: [[Quantum Logistics]]
 - Status: `active`
 - [ ] Reconcile latest state for [[Project Pipeline 82]] #ops

@@ -2,16 +2,16 @@
 type: risk
 status: mitigating
 project: "[[Project Foundry 3]]"
-source_created_at: 2024-04-23T11:26:00
-source_observed_at: 2024-04-23T11:49:00
-created_at: 2024-04-23T22:26:00
-updated_at: 2024-05-11T02:26:00
+source_created_at: 2024-04-23T16:14:00
+source_observed_at: 2024-04-23T17:23:00
+created_at: 2024-04-24T12:14:00
+updated_at: 2024-05-27T19:14:00
 tags: [#risk]
 ---
 # Project Foundry 3 Contract Renewal Risk 223
 
 ## Risk
-Contract Renewal may affect [[Project Foundry 3]] for [[Vanguard Manufacturing]].
+Contract Renewal may affect [[Project Foundry 3]] for [[Northstar Labs]].
 
 ## Evidence
 - Raised after [[Project Foundry 3 Security Review Sync 223]]

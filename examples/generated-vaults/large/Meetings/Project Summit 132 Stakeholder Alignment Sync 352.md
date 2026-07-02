@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-02-21
 project: "[[Project Summit 132]]"
-company: "[[Meridian Retail]]"
-source_created_at: 2025-02-21T14:23:00
-source_observed_at: 2025-02-21T14:46:00
-created_at: 2025-02-21T20:12:00
-updated_at: 2025-02-22T15:12:00
+company: "[[Vanguard Health]]"
+source_created_at: 2025-02-21T16:44:00
+source_observed_at: 2025-02-21T18:10:00
+created_at: 2025-02-21T19:46:00
+updated_at: 2025-02-22T10:46:00
 tags: [#meeting]
 ---
 # Project Summit 132 Stakeholder Alignment Sync 352
 
 ## Evergreen Attendees
-- [[Amara Foster]]
+- [[Elena Bennett]]
 
 ## Client Attendees
-- [[Amara Jenkins]]
-- [[Priya Novak]]
-- [[Uma Walker]]
+- [[Farah Kim]]
+- [[Victor Ortega]]
+- [[Jonah Tan]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 132]] at [[Meridian Retail]].
-[[Amara Foster]] aligned with [[Amara Jenkins]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Summit 132]] at [[Vanguard Health]].
+[[Elena Bennett]] aligned with [[Farah Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Summit 132]] to [[Amara Foster]] #follow-up
+- [ ] Send recap for [[Project Summit 132]] to [[Elena Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

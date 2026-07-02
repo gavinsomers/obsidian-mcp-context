@@ -1,25 +1,26 @@
 ---
 type: project
-status: active
-company: "[[Northstar Logistics]]"
-source_created_at: 2026-02-13T10:39:00
-source_observed_at: 2026-02-13T11:42:00
-created_at: 2026-02-13T17:39:00
-updated_at: 2026-04-29T19:39:00
+status: blocked
+company: "[[Noble Retail]]"
+source_created_at: 2026-02-13T15:09:00
+source_observed_at: 2026-02-13T15:21:00
+created_at: 2026-02-15T02:09:00
+updated_at: 2026-03-09T03:09:00
 tags: [#project]
 ---
 # Project Summit 207
 
 ## Overview
-Project Summit 207 supports [[Northstar Logistics]] through sales pipeline.
+Project Summit 207 supports [[Noble Retail]] through sales pipeline.
 
 ## Stakeholders
-- [[David Lee]]
-- [[Tara Patel]]
-- [[Hannah Usman]]
+- [[Hannah Jenkins]]
+- [[Xavier Novak]]
+- [[Lina Shah]]
+- [[Amara Xu]]
 
 ## Operating Notes
 - Evergreen owner: [[Farah Alvarez]]
-- Client account: [[Northstar Logistics]]
-- Status: `active`
+- Client account: [[Noble Retail]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Summit 207]] #ops

@@ -2,10 +2,10 @@
 type: person
 company: "[[Harbor Manufacturing]]"
 role: "Revenue Operations Lead"
-source_created_at: 2023-09-17T15:46:00
-source_observed_at: 2023-09-17T18:10:00
-created_at: 2023-09-18T13:46:00
-updated_at: 2023-10-20T14:46:00
+source_created_at: 2023-09-17T08:04:00
+source_observed_at: 2023-09-17T10:15:00
+created_at: 2023-09-25T15:04:00
+updated_at: 2024-09-01T13:00:00
 tags: [#person]
 ---
 # Yara Shah
@@ -14,5 +14,5 @@ tags: [#person]
 Yara Shah is the Revenue Operations Lead at [[Harbor Manufacturing]].
 
 ## Client Project Involvement
-- First seen through [[Harbor Manufacturing]] account context
+- Client stakeholder on [[Project Pipeline 97]] ([[Harbor Manufacturing]])
 - [ ] Confirm next update with [[Yara Shah]] #follow-up

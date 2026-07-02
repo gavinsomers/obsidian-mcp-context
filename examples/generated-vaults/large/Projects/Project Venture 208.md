@@ -1,25 +1,25 @@
 ---
 type: project
-status: blocked
-company: "[[Keystone Media]]"
-source_created_at: 2026-02-19T10:12:00
-source_observed_at: 2026-02-19T11:02:00
-created_at: 2026-02-19T18:12:00
-updated_at: 2026-04-28T01:12:00
+status: planning
+company: "[[Summit Health]]"
+source_created_at: 2026-02-19T13:20:00
+source_observed_at: 2026-02-19T15:12:00
+created_at: 2026-02-20T01:20:00
+updated_at: 2026-04-30T01:20:00
 tags: [#project]
 ---
 # Project Venture 208
 
 ## Overview
-Project Venture 208 supports [[Keystone Media]] through customer success.
+Project Venture 208 supports [[Summit Health]] through customer success.
 
 ## Stakeholders
-- [[Clara Lee]]
-- [[Sam Patel]]
-- [[Grace Usman]]
+- [[Jonah Kim]]
+- [[Zoe Ortega]]
+- [[Nadia Tan]]
 
 ## Operating Notes
 - Evergreen owner: [[Grace Alvarez]]
-- Client account: [[Keystone Media]]
-- Status: `blocked`
+- Client account: [[Summit Health]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Venture 208]] #ops

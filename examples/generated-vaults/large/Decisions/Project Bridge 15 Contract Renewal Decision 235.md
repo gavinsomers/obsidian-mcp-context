@@ -3,11 +3,11 @@ type: decision
 date: 2024-04-17
 status: active
 project: "[[Project Bridge 15]]"
-company: "[[Keystone Manufacturing]]"
-source_created_at: 2024-04-17T15:07:00
-source_observed_at: 2024-04-17T16:42:00
-created_at: 2024-04-17T17:57:00
-updated_at: 2024-04-18T05:57:00
+company: "[[Noble Health]]"
+source_created_at: 2024-04-17T08:58:00
+source_observed_at: 2024-04-17T09:33:00
+created_at: 2024-04-17T10:23:00
+updated_at: 2024-04-18T01:23:00
 tags: [#decision]
 ---
 # Project Bridge 15 Contract Renewal Decision 235
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Bridge 15]].
 
 ## Context
-This decision applies to [[Keystone Manufacturing]] and [[Project Bridge 15]].
+This decision applies to [[Noble Health]] and [[Project Bridge 15]].
 It follows [[Project Bridge 15 Adoption Workflow Sync 235]].
 It incorporates [[Project Bridge 15 Warehouse Mapping Research 15]].
 

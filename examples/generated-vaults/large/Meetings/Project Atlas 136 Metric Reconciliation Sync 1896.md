@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-03-13
 project: "[[Project Atlas 136]]"
-company: "[[Noble Analytics]]"
-source_created_at: 2025-03-13T11:07:00
-source_observed_at: 2025-03-13T11:54:00
-created_at: 2025-03-15T12:07:00
-updated_at: 2025-03-16T00:07:00
+company: "[[Noble Health]]"
+source_created_at: 2025-03-13T16:14:00
+source_observed_at: 2025-03-13T18:46:00
+created_at: 2025-03-13T21:47:00
+updated_at: 2025-03-14T03:47:00
 tags: [#meeting]
 ---
 # Project Atlas 136 Metric Reconciliation Sync 1896
 
 ## Evergreen Attendees
-- [[Elena Foster]]
+- [[Iris Bennett]]
 
 ## Client Attendees
-- [[Elena Morgan]]
-- [[Uma Quinn]]
-- [[Iris Vance]]
+- [[Lina Kim]]
+- [[Amara Patel]]
+- [[Priya Tan]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Atlas 136]] at [[Noble Analytics]].
-[[Elena Foster]] aligned with [[Elena Morgan]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Atlas 136]] at [[Noble Health]].
+[[Iris Bennett]] aligned with [[Lina Kim]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Atlas 136]] to [[Elena Foster]] #follow-up
+- [ ] Send recap for [[Project Atlas 136]] to [[Iris Bennett]] #follow-up
 - [x] Capture meeting notes in vault #ops

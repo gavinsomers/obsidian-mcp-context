@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-04-03
+date: 2023-10-10
 project: "[[Project Meridian 21]]"
-company: "[[Vanguard Media]]"
-source_created_at: 2024-04-03T15:41:00
-source_observed_at: 2024-04-03T17:42:00
-created_at: 2024-04-03T17:47:00
-updated_at: 2024-04-03T21:47:00
+company: "[[Meridian Manufacturing]]"
+source_created_at: 2023-10-10T10:27:00
+source_observed_at: 2023-10-10T13:25:00
+created_at: 2023-10-15T10:27:00
+updated_at: 2023-10-16T03:27:00
 tags: [#meeting]
 ---
 # Project Meridian 21 Warehouse Mapping Sync 241
@@ -15,13 +15,12 @@ tags: [#meeting]
 - [[Uma Alvarez]]
 
 ## Client Attendees
-- [[Victor Kim]]
-- [[Jonah Patel]]
-- [[Zoe Tan]]
+- [[Priya Jenkins]]
+- [[Elena Ortega]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Meridian 21]] at [[Vanguard Media]].
-[[Uma Alvarez]] aligned with [[Victor Kim]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Meridian 21]] at [[Meridian Manufacturing]].
+[[Uma Alvarez]] aligned with [[Priya Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 21]] to [[Uma Alvarez]] #follow-up

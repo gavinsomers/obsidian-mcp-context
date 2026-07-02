@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-04-23
 project: "[[Project Harbor 39]]"
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2024-04-23T10:32:00
-source_observed_at: 2024-04-23T13:10:00
-created_at: 2024-04-23T13:15:00
-updated_at: 2024-04-24T06:15:00
+company: "[[Summit Logistics]]"
+source_created_at: 2024-04-23T11:36:00
+source_observed_at: 2024-04-23T12:59:00
+created_at: 2024-04-23T14:57:00
+updated_at: 2024-04-23T22:57:00
 tags: [#meeting]
 ---
 # Project Harbor 39 Pipeline Hygiene Sync 1799
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Lina Bennett]]
 
 ## Client Attendees
-- [[Rachel Jenkins]]
-- [[Farah Ortega]]
-- [[Victor Shah]]
+- [[Nadia Lee]]
+- [[Clara Quinn]]
+- [[Sam Usman]]
 
 ## Notes
-Pipeline Hygiene reviewed for [[Project Harbor 39]] at [[Vanguard Manufacturing]].
-[[Lina Bennett]] aligned with [[Rachel Jenkins]] on follow-up work for the next operating review.
+Pipeline Hygiene reviewed for [[Project Harbor 39]] at [[Summit Logistics]].
+[[Lina Bennett]] aligned with [[Nadia Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Harbor 39]] to [[Lina Bennett]] #follow-up

@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2024-04-16
+date: 2024-09-14
 project: "[[Project Orbit 56]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2024-04-16T08:52:00
-source_observed_at: 2024-04-16T10:41:00
-created_at: 2024-04-16T14:25:00
-updated_at: 2024-04-17T03:25:00
+company: "[[Atlas Analytics]]"
+source_created_at: 2024-09-14T08:32:00
+source_observed_at: 2024-09-14T10:33:00
+created_at: 2024-09-14T10:38:00
+updated_at: 2024-09-15T06:38:00
 tags: [#meeting]
 ---
 # Project Orbit 56 Metric Reconciliation Sync 1376
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Clara Chen]]
 
 ## Client Attendees
-- [[Grace Morgan]]
-- [[Kai Vance]]
-- [[Wendy Quinn]]
+- [[Amara Morgan]]
+- [[Priya Quinn]]
+- [[Elena Vance]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Orbit 56]] at [[Northstar Labs]].
-[[Clara Chen]] aligned with [[Grace Morgan]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Orbit 56]] at [[Atlas Analytics]].
+[[Clara Chen]] aligned with [[Amara Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Orbit 56]] to [[Clara Chen]] #follow-up

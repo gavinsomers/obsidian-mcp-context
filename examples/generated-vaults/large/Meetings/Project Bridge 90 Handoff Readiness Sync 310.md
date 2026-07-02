@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-07-29
 project: "[[Project Bridge 90]]"
-company: "[[Helio Labs]]"
-source_created_at: 2024-07-29T10:38:00
-source_observed_at: 2024-07-29T11:58:00
-created_at: 2024-07-29T12:03:00
-updated_at: 2024-07-29T22:03:00
+company: "[[Pioneer Retail]]"
+source_created_at: 2024-07-29T10:14:00
+source_observed_at: 2024-07-29T10:35:00
+created_at: 2024-07-29T12:53:00
+updated_at: 2024-07-29T14:53:00
 tags: [#meeting]
 ---
 # Project Bridge 90 Handoff Readiness Sync 310
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Kai Diaz]]
 
 ## Client Attendees
-- [[Wendy Haddad]]
-- [[Alex Rostova]]
-- [[Omar Vance]]
+- [[Wendy Novak]]
+- [[Alex Xu]]
+- [[Grace Jenkins]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Bridge 90]] at [[Helio Labs]].
-[[Kai Diaz]] aligned with [[Wendy Haddad]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Bridge 90]] at [[Pioneer Retail]].
+[[Kai Diaz]] aligned with [[Wendy Novak]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Bridge 90]] to [[Kai Diaz]] #follow-up

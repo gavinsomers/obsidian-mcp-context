@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Vanguard Manufacturing]]"
-source_created_at: 2023-11-13T13:03:00
-source_observed_at: 2023-11-13T15:48:00
-created_at: 2023-11-15T04:03:00
-updated_at: 2024-02-04T07:03:00
+status: planning
+company: "[[Summit Logistics]]"
+source_created_at: 2023-11-13T15:44:00
+source_observed_at: 2023-11-13T16:24:00
+created_at: 2023-11-15T05:44:00
+updated_at: 2023-12-01T09:44:00
 tags: [#project]
 ---
 # Project Harbor 39
 
 ## Overview
-Project Harbor 39 supports [[Vanguard Manufacturing]] through research program.
+Project Harbor 39 supports [[Summit Logistics]] through research program.
 
 ## Stakeholders
-- [[Rachel Jenkins]]
-- [[Farah Ortega]]
-- [[Victor Shah]]
+- [[Nadia Lee]]
+- [[Clara Quinn]]
+- [[Sam Usman]]
 
 ## Operating Notes
 - Evergreen owner: [[Lina Bennett]]
-- Client account: [[Vanguard Manufacturing]]
-- Status: `active`
+- Client account: [[Summit Logistics]]
+- Status: `planning`
 - [ ] Reconcile latest state for [[Project Harbor 39]] #ops

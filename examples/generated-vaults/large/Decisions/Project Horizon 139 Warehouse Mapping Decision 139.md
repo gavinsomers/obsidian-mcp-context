@@ -3,11 +3,11 @@ type: decision
 date: 2025-04-18
 status: active
 project: "[[Project Horizon 139]]"
-company: "[[Cobalt Labs]]"
-source_created_at: 2025-04-18T12:34:00
-source_observed_at: 2025-04-18T14:46:00
-created_at: 2025-04-18T15:38:00
-updated_at: 2025-04-18T23:38:00
+company: "[[Vanguard Manufacturing]]"
+source_created_at: 2025-04-18T08:57:00
+source_observed_at: 2025-04-18T11:33:00
+created_at: 2025-04-18T11:38:00
+updated_at: 2025-04-18T20:38:00
 tags: [#decision]
 ---
 # Project Horizon 139 Warehouse Mapping Decision 139
@@ -16,8 +16,8 @@ tags: [#decision]
 Proceed with warehouse mapping for [[Project Horizon 139]].
 
 ## Context
-This decision applies to [[Cobalt Labs]] and [[Project Horizon 139]].
-It follows [[Project Horizon 139 Pipeline Hygiene Sync 139]].
+This decision applies to [[Vanguard Manufacturing]] and [[Project Horizon 139]].
+It follows [[Project Horizon 139 Pipeline Hygiene Sync 359]].
 It incorporates [[Project Horizon 139 Adoption Workflow Research 359]].
 
 ## Supersession

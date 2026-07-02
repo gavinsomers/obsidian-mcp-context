@@ -2,27 +2,27 @@
 type: meeting
 date: 2026-01-22
 project: "[[Project Signal 164]]"
-company: "[[Atlas Retail]]"
-source_created_at: 2026-01-22T16:38:00
-source_observed_at: 2026-01-22T18:22:00
-created_at: 2026-01-31T17:38:00
-updated_at: 2026-02-01T11:38:00
+company: "[[Pioneer Retail]]"
+source_created_at: 2026-01-22T10:46:00
+source_observed_at: 2026-01-22T11:14:00
+created_at: 2026-01-22T12:25:00
+updated_at: 2026-01-22T15:25:00
 tags: [#meeting]
 ---
 # Project Signal 164 Finance Approval Sync 1484
 
 ## Evergreen Attendees
-- [[Grace Grant]]
+- [[Kai Chen]]
 
 ## Client Attendees
-- [[Xavier Walker]]
-- [[Tara Novak]]
-- [[Hannah Shah]]
+- [[Wendy Novak]]
+- [[Alex Xu]]
+- [[Kai Shah]]
 
 ## Notes
-Finance Approval reviewed for [[Project Signal 164]] at [[Atlas Retail]].
-[[Grace Grant]] aligned with [[Xavier Walker]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Signal 164]] at [[Pioneer Retail]].
+[[Kai Chen]] aligned with [[Wendy Novak]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Signal 164]] to [[Grace Grant]] #follow-up
+- [ ] Send recap for [[Project Signal 164]] to [[Kai Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

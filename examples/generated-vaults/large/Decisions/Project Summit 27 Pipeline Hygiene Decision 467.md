@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-03-12
+date: 2024-01-19
 status: active
 project: "[[Project Summit 27]]"
-company: "[[Summit Analytics]]"
-source_created_at: 2025-03-12T16:13:00
-source_observed_at: 2025-03-12T18:59:00
-created_at: 2025-03-12T21:43:00
-updated_at: 2025-03-13T18:43:00
+company: "[[Cobalt Retail]]"
+source_created_at: 2024-01-19T10:21:00
+source_observed_at: 2024-01-19T11:21:00
+created_at: 2024-01-19T11:26:00
+updated_at: 2024-01-19T15:26:00
 tags: [#decision]
 ---
 # Project Summit 27 Pipeline Hygiene Decision 467
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with pipeline hygiene for [[Project Summit 27]].
 
 ## Context
-This decision applies to [[Summit Analytics]] and [[Project Summit 27]].
-It follows [[Project Summit 27 Contract Renewal Sync 467]].
-It incorporates [[Project Summit 27 Security Review Research 247]].
+This decision applies to [[Cobalt Retail]] and [[Project Summit 27]].
+It follows [[Project Summit 27 Contract Renewal Sync 1127]].
+It incorporates [[Project Summit 27 Security Review Research 27]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

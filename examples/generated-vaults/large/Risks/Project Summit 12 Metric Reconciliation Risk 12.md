@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Summit 12]]"
-source_created_at: 2023-07-21T12:01:00
-source_observed_at: 2023-07-21T14:25:00
-created_at: 2023-07-23T08:01:00
-updated_at: 2023-08-30T10:01:00
+source_created_at: 2023-07-21T15:51:00
+source_observed_at: 2023-07-21T16:01:00
+created_at: 2023-07-21T18:51:00
+updated_at: 2023-08-09T20:51:00
 tags: [#risk]
 ---
 # Project Summit 12 Metric Reconciliation Risk 12
 
 ## Risk
-Metric Reconciliation may affect [[Project Summit 12]] for [[Atlas Retail]].
+Metric Reconciliation may affect [[Project Summit 12]] for [[Summit Retail]].
 
 ## Evidence
-- Raised after [[Project Summit 12 Stakeholder Alignment Sync 12]]
+- Raised after [[Project Summit 12 Stakeholder Alignment Sync 1552]]
 
 ## Current State
-- Status: `closed`
+- Status: `open`
 - Owner: [[Kai Alvarez]]
 - [ ] Reassess [[Project Summit 12 Metric Reconciliation Risk 12]] during the next review #risk

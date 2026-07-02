@@ -3,11 +3,11 @@ type: decision
 date: 2026-04-30
 status: superseded
 project: "[[Project Keystone 100]]"
-company: "[[Noble Health]]"
-source_created_at: 2026-04-30T12:35:00
-source_observed_at: 2026-04-30T14:51:00
-created_at: 2026-04-30T14:56:00
-updated_at: 2026-05-01T06:56:00
+company: "[[Summit Analytics]]"
+source_created_at: 2026-04-30T16:23:00
+source_observed_at: 2026-04-30T19:21:00
+created_at: 2026-04-30T19:26:00
+updated_at: 2026-05-01T14:26:00
 tags: [#decision]
 ---
 # Project Keystone 100 Stakeholder Alignment Decision 760
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with stakeholder alignment for [[Project Keystone 100]].
 
 ## Context
-This decision applies to [[Noble Health]] and [[Project Keystone 100]].
+This decision applies to [[Summit Analytics]] and [[Project Keystone 100]].
 It follows [[Project Keystone 100 Handoff Readiness Sync 760]].
 It incorporates [[Project Keystone 100 Metric Reconciliation Research 540]].
 

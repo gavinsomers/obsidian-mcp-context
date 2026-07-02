@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Senior Data Consultant"
-source_created_at: 2023-06-13T12:41:00
-source_observed_at: 2023-06-13T15:37:00
-created_at: 2023-06-13T23:41:00
-updated_at: 2025-07-18T13:00:00
+source_created_at: 2023-06-13T10:39:00
+source_observed_at: 2023-06-13T12:40:00
+created_at: 2023-06-14T13:39:00
+updated_at: 2023-08-21T20:39:00
 tags: [#person]
 ---
 # Elena Grant
@@ -14,5 +14,5 @@ tags: [#person]
 Elena Grant is the Senior Data Consultant at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Summit 162]] ([[BrightWave FinTech]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Elena Grant]] #follow-up

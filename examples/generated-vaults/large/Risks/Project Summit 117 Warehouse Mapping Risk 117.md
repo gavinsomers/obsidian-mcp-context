@@ -1,22 +1,22 @@
 ---
 type: risk
-status: open
+status: closed
 project: "[[Project Summit 117]]"
-source_created_at: 2024-12-17T12:34:00
-source_observed_at: 2024-12-17T13:48:00
-created_at: 2024-12-17T20:34:00
-updated_at: 2025-01-03T20:34:00
+source_created_at: 2024-12-17T11:13:00
+source_observed_at: 2024-12-17T13:26:00
+created_at: 2024-12-17T18:13:00
+updated_at: 2025-01-21T23:13:00
 tags: [#risk]
 ---
 # Project Summit 117 Warehouse Mapping Risk 117
 
 ## Risk
-Warehouse Mapping may affect [[Project Summit 117]] for [[Apex Media]].
+Warehouse Mapping may affect [[Project Summit 117]] for [[Noble Retail]].
 
 ## Evidence
-- Raised after [[Project Summit 117 Contract Renewal Sync 997]]
+- Raised after [[Project Summit 117 Contract Renewal Sync 117]]
 
 ## Current State
-- Status: `open`
-- Owner: [[Lina Evans]]
+- Status: `closed`
+- Owner: [[Priya Alvarez]]
 - [ ] Reassess [[Project Summit 117 Warehouse Mapping Risk 117]] during the next review #risk

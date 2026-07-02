@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Foundry 153]]"
-source_created_at: 2025-07-17T16:41:00
-source_observed_at: 2025-07-17T19:10:00
-created_at: 2025-07-17T21:41:00
-updated_at: 2025-08-11T07:41:00
+source_created_at: 2025-12-02T08:51:00
+source_observed_at: 2025-12-02T11:04:00
+created_at: 2025-12-03T06:51:00
+updated_at: 2025-12-11T11:51:00
 tags: [#risk]
 ---
 # Project Foundry 153 Contract Renewal Risk 593
 
 ## Risk
-Contract Renewal may affect [[Project Foundry 153]] for [[Apex Manufacturing]].
+Contract Renewal may affect [[Project Foundry 153]] for [[Helio Analytics]].
 
 ## Evidence
 - Raised after [[Project Foundry 153 Security Review Sync 593]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Wendy Foster]]
+- Status: `open`
+- Owner: [[Alex Chen]]
 - [ ] Reassess [[Project Foundry 153 Contract Renewal Risk 593]] during the next review #risk

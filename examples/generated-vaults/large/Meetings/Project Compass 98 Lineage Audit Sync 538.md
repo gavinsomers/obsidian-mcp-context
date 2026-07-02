@@ -2,11 +2,11 @@
 type: meeting
 date: 2025-05-23
 project: "[[Project Compass 98]]"
-company: "[[Keystone Logistics]]"
-source_created_at: 2025-05-23T12:06:00
-source_observed_at: 2025-05-23T12:46:00
-created_at: 2025-05-23T12:51:00
-updated_at: 2025-05-24T08:51:00
+company: "[[BrightWave Logistics]]"
+source_created_at: 2025-05-23T16:31:00
+source_observed_at: 2025-05-23T17:29:00
+created_at: 2025-05-23T21:33:00
+updated_at: 2025-05-24T13:33:00
 tags: [#meeting]
 ---
 # Project Compass 98 Lineage Audit Sync 538
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Tara Diaz]]
 
 ## Client Attendees
-- [[Sam Lee]]
-- [[Grace Quinn]]
-- [[Wendy Usman]]
+- [[Grace Lee]]
+- [[Wendy Patel]]
+- [[Kai Usman]]
 
 ## Notes
-Lineage Audit reviewed for [[Project Compass 98]] at [[Keystone Logistics]].
-[[Tara Diaz]] aligned with [[Sam Lee]] on follow-up work for the next operating review.
+Lineage Audit reviewed for [[Project Compass 98]] at [[BrightWave Logistics]].
+[[Tara Diaz]] aligned with [[Grace Lee]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Compass 98]] to [[Tara Diaz]] #follow-up

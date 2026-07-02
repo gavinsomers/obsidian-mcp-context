@@ -2,19 +2,19 @@
 type: risk
 status: open
 project: "[[Project Meridian 96]]"
-source_created_at: 2024-09-06T11:57:00
-source_observed_at: 2024-09-06T13:04:00
-created_at: 2024-09-06T22:57:00
-updated_at: 2024-09-16T08:57:00
+source_created_at: 2024-09-06T10:04:00
+source_observed_at: 2024-09-06T12:58:00
+created_at: 2024-09-09T11:04:00
+updated_at: 2024-09-23T12:04:00
 tags: [#risk]
 ---
 # Project Meridian 96 Handoff Readiness Risk 96
 
 ## Risk
-Handoff Readiness may affect [[Project Meridian 96]] for [[Harbor FinTech]].
+Handoff Readiness may affect [[Project Meridian 96]] for [[Atlas Logistics]].
 
 ## Evidence
-- Raised after [[Project Meridian 96 Metric Reconciliation Sync 976]]
+- Raised after [[Project Meridian 96 Metric Reconciliation Sync 316]]
 
 ## Current State
 - Status: `open`

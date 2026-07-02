@@ -3,11 +3,11 @@ type: decision
 date: 2025-02-13
 status: active
 project: "[[Project Meridian 126]]"
-company: "[[Noble Retail]]"
-source_created_at: 2025-02-13T11:36:00
-source_observed_at: 2025-02-13T14:10:00
-created_at: 2025-02-13T15:14:00
-updated_at: 2025-02-13T20:14:00
+company: "[[Atlas Media]]"
+source_created_at: 2025-02-13T13:10:00
+source_observed_at: 2025-02-13T15:02:00
+created_at: 2025-02-13T15:07:00
+updated_at: 2025-02-13T21:07:00
 tags: [#decision]
 ---
 # Project Meridian 126 Lineage Audit Decision 126
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Meridian 126]].
 
 ## Context
-This decision applies to [[Noble Retail]] and [[Project Meridian 126]].
+This decision applies to [[Atlas Media]] and [[Project Meridian 126]].
 It follows [[Project Meridian 126 Metric Reconciliation Sync 1226]].
-It incorporates [[Project Meridian 126 Stakeholder Alignment Research 346]].
+It incorporates [[Project Meridian 126 Stakeholder Alignment Research 126]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

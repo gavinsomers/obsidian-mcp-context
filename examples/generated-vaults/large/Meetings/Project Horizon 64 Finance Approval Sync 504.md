@@ -1,12 +1,12 @@
 ---
 type: meeting
-date: 2025-04-07
+date: 2024-08-01
 project: "[[Project Horizon 64]]"
-company: "[[Crescent FinTech]]"
-source_created_at: 2025-04-07T12:05:00
-source_observed_at: 2025-04-07T13:31:00
-created_at: 2025-04-07T17:36:00
-updated_at: 2025-04-08T08:36:00
+company: "[[BrightWave Media]]"
+source_created_at: 2024-08-01T13:32:00
+source_observed_at: 2024-08-01T15:13:00
+created_at: 2024-08-01T17:20:00
+updated_at: 2024-08-02T08:20:00
 tags: [#meeting]
 ---
 # Project Horizon 64 Finance Approval Sync 504
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Kai Chen]]
 
 ## Client Attendees
-- [[Iris Novak]]
-- [[Marcus Walker]]
-- [[Yara Rostova]]
+- [[Sam Kim]]
+- [[Grace Patel]]
+- [[Wendy Tan]]
 
 ## Notes
-Finance Approval reviewed for [[Project Horizon 64]] at [[Crescent FinTech]].
-[[Kai Chen]] aligned with [[Iris Novak]] on follow-up work for the next operating review.
+Finance Approval reviewed for [[Project Horizon 64]] at [[BrightWave Media]].
+[[Kai Chen]] aligned with [[Sam Kim]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Horizon 64]] to [[Kai Chen]] #follow-up

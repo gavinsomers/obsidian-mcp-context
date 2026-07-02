@@ -2,27 +2,27 @@
 type: meeting
 date: 2026-01-05
 project: "[[Project Beacon 197]]"
-company: "[[Pioneer Media]]"
-source_created_at: 2026-01-05T10:45:00
-source_observed_at: 2026-01-05T11:05:00
-created_at: 2026-01-05T13:02:00
-updated_at: 2026-01-05T15:02:00
+company: "[[Vanguard Retail]]"
+source_created_at: 2026-01-05T10:30:00
+source_observed_at: 2026-01-05T12:46:00
+created_at: 2026-01-05T15:22:00
+updated_at: 2026-01-06T02:22:00
 tags: [#meeting]
 ---
 # Project Beacon 197 Contract Renewal Sync 1297
 
 ## Evergreen Attendees
-- [[Nadia Haddad]]
+- [[Sam Diaz]]
 
 ## Client Attendees
-- [[Alex Lee]]
-- [[Omar Patel]]
-- [[David Usman]]
+- [[Ben Jenkins]]
+- [[Farah Shah]]
+- [[Victor Walker]]
 
 ## Notes
-Contract Renewal reviewed for [[Project Beacon 197]] at [[Pioneer Media]].
-[[Nadia Haddad]] aligned with [[Alex Lee]] on follow-up work for the next operating review.
+Contract Renewal reviewed for [[Project Beacon 197]] at [[Vanguard Retail]].
+[[Sam Diaz]] aligned with [[Ben Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Beacon 197]] to [[Nadia Haddad]] #follow-up
+- [ ] Send recap for [[Project Beacon 197]] to [[Sam Diaz]] #follow-up
 - [x] Capture meeting notes in vault #ops

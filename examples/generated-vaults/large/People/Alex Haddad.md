@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Client Partner"
-source_created_at: 2023-06-20T10:58:00
-source_observed_at: 2023-06-20T12:51:00
-created_at: 2023-06-24T12:58:00
-updated_at: 2025-10-30T13:00:00
+source_created_at: 2023-06-20T09:23:00
+source_observed_at: 2023-06-20T11:00:00
+created_at: 2023-06-21T12:23:00
+updated_at: 2023-08-25T19:23:00
 tags: [#person]
 ---
 # Alex Haddad
@@ -14,5 +14,5 @@ tags: [#person]
 Alex Haddad is the Client Partner at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Foundry 183]] ([[Meridian FinTech]])
+- First seen through [[Evergreen Analytics]] account context
 - [ ] Confirm next update with [[Alex Haddad]] #follow-up

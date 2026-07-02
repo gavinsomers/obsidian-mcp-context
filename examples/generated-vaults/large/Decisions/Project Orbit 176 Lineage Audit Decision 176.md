@@ -3,11 +3,11 @@ type: decision
 date: 2025-10-17
 status: active
 project: "[[Project Orbit 176]]"
-company: "[[Vanguard FinTech]]"
-source_created_at: 2025-10-17T13:32:00
-source_observed_at: 2025-10-17T14:23:00
-created_at: 2025-10-17T14:34:00
-updated_at: 2025-10-18T01:34:00
+company: "[[BrightWave Logistics]]"
+source_created_at: 2025-10-17T14:55:00
+source_observed_at: 2025-10-17T16:12:00
+created_at: 2025-10-17T19:49:00
+updated_at: 2025-10-18T06:49:00
 tags: [#decision]
 ---
 # Project Orbit 176 Lineage Audit Decision 176
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with lineage audit for [[Project Orbit 176]].
 
 ## Context
-This decision applies to [[Vanguard FinTech]] and [[Project Orbit 176]].
-It follows [[Project Orbit 176 Metric Reconciliation Sync 1716]].
-It incorporates [[Project Orbit 176 Stakeholder Alignment Research 176]].
+This decision applies to [[BrightWave Logistics]] and [[Project Orbit 176]].
+It follows [[Project Orbit 176 Metric Reconciliation Sync 836]].
+It incorporates [[Project Orbit 176 Stakeholder Alignment Research 396]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

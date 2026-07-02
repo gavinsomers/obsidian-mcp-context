@@ -2,10 +2,10 @@
 type: company
 status: churn-risk
 segment: mid-market
-source_created_at: 2023-12-11T09:16:00
-source_observed_at: 2023-12-11T10:22:00
-created_at: 2023-12-12T20:16:00
-updated_at: 2024-03-07T05:16:00
+source_created_at: 2023-12-11T10:20:00
+source_observed_at: 2023-12-11T11:00:00
+created_at: 2023-12-11T19:20:00
+updated_at: 2024-01-18T00:20:00
 tags: [#company]
 ---
 # Noble Analytics
@@ -14,6 +14,7 @@ tags: [#company]
 Noble Analytics is a mid-market account currently marked `churn-risk`.
 
 ## Assigned Account Team
+- [[Clara Alvarez]] - Solution Architect
 
 ## Client Stakeholders
 - [[Elena Morgan]] - Product Analytics Lead
@@ -21,6 +22,7 @@ Noble Analytics is a mid-market account currently marked `churn-risk`.
 - [[Iris Vance]] - Data Owner
 
 ## Projects
+- [[Project Horizon 4]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Noble Analytics]] #account

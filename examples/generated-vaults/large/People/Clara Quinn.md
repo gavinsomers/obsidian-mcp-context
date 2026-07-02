@@ -2,10 +2,10 @@
 type: person
 company: "[[Summit Logistics]]"
 role: "Data Owner"
-source_created_at: 2023-11-08T11:35:00
-source_observed_at: 2023-11-08T14:22:00
-created_at: 2023-11-09T22:35:00
-updated_at: 2023-12-25T01:35:00
+source_created_at: 2023-11-08T14:47:00
+source_observed_at: 2023-11-08T15:37:00
+created_at: 2023-11-14T19:47:00
+updated_at: 2024-01-05T22:47:00
 tags: [#person]
 ---
 # Clara Quinn
@@ -14,5 +14,5 @@ tags: [#person]
 Clara Quinn is the Data Owner at [[Summit Logistics]].
 
 ## Client Project Involvement
-- First seen through [[Summit Logistics]] account context
+- Client stakeholder on [[Project Harbor 39]] ([[Summit Logistics]])
 - [ ] Confirm next update with [[Clara Quinn]] #follow-up

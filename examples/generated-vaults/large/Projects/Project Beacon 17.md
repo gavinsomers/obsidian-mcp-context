@@ -1,25 +1,25 @@
 ---
 type: project
-status: active
-company: "[[Noble Health]]"
-source_created_at: 2023-07-27T11:48:00
-source_observed_at: 2023-07-27T12:55:00
-created_at: 2023-07-28T06:48:00
-updated_at: 2023-10-14T16:48:00
+status: blocked
+company: "[[Vanguard Media]]"
+source_created_at: 2023-07-27T12:23:00
+source_observed_at: 2023-07-27T13:20:00
+created_at: 2023-07-29T11:23:00
+updated_at: 2023-10-11T17:58:00
 tags: [#project]
 ---
 # Project Beacon 17
 
 ## Overview
-Project Beacon 17 supports [[Noble Health]] through sales pipeline.
+Project Beacon 17 supports [[Vanguard Media]] through sales pipeline.
 
 ## Stakeholders
-- [[Lina Kim]]
-- [[Amara Patel]]
-- [[Priya Tan]]
+- [[Victor Kim]]
+- [[Jonah Patel]]
+- [[Zoe Tan]]
 
 ## Operating Notes
 - Evergreen owner: [[Priya Alvarez]]
-- Client account: [[Noble Health]]
-- Status: `active`
+- Client account: [[Vanguard Media]]
+- Status: `blocked`
 - [ ] Reconcile latest state for [[Project Beacon 17]] #ops

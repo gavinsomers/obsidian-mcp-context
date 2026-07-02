@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-07-18
 project: "[[Project Summit 162]]"
-company: "[[BrightWave FinTech]]"
-source_created_at: 2025-07-18T15:53:00
-source_observed_at: 2025-07-18T16:22:00
-created_at: 2025-07-18T16:27:00
-updated_at: 2025-07-19T06:27:00
+company: "[[Cobalt Logistics]]"
+source_created_at: 2025-07-18T14:38:00
+source_observed_at: 2025-07-18T15:46:00
+created_at: 2025-07-18T19:27:00
+updated_at: 2025-07-19T12:27:00
 tags: [#meeting]
 ---
 # Project Summit 162 Stakeholder Alignment Sync 1702
 
 ## Evergreen Attendees
-- [[Elena Grant]]
+- [[Iris Chen]]
 
 ## Client Attendees
-- [[Clara Walker]]
-- [[Nadia Rostova]]
-- [[Zoe Morgan]]
+- [[Farah Lee]]
+- [[Victor Patel]]
+- [[Jonah Usman]]
 
 ## Notes
-Stakeholder Alignment reviewed for [[Project Summit 162]] at [[BrightWave FinTech]].
-[[Elena Grant]] aligned with [[Clara Walker]] on follow-up work for the next operating review.
+Stakeholder Alignment reviewed for [[Project Summit 162]] at [[Cobalt Logistics]].
+[[Iris Chen]] aligned with [[Farah Lee]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Summit 162]] to [[Elena Grant]] #follow-up
+- [ ] Send recap for [[Project Summit 162]] to [[Iris Chen]] #follow-up
 - [x] Capture meeting notes in vault #ops

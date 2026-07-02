@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-04-30
 project: "[[Project Keystone 220]]"
-company: "[[Helio FinTech]]"
-source_created_at: 2026-04-30T09:14:00
-source_observed_at: 2026-04-30T10:34:00
-created_at: 2026-04-30T12:49:00
-updated_at: 2026-04-30T16:49:00
+company: "[[Atlas Labs]]"
+source_created_at: 2026-04-30T15:27:00
+source_observed_at: 2026-04-30T17:58:00
+created_at: 2026-04-30T18:03:00
+updated_at: 2026-05-01T11:03:00
 tags: [#meeting]
 ---
 # Project Keystone 220 Handoff Readiness Sync 880
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Tara Alvarez]]
 
 ## Client Attendees
-- [[Alex Novak]]
-- [[Kai Ivanov]]
-- [[David Walker]]
+- [[Omar Morgan]]
+- [[Tara Vance]]
+- [[Alex Ivanov]]
 
 ## Notes
-Handoff Readiness reviewed for [[Project Keystone 220]] at [[Helio FinTech]].
-[[Tara Alvarez]] aligned with [[Alex Novak]] on follow-up work for the next operating review.
+Handoff Readiness reviewed for [[Project Keystone 220]] at [[Atlas Labs]].
+[[Tara Alvarez]] aligned with [[Omar Morgan]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Keystone 220]] to [[Tara Alvarez]] #follow-up

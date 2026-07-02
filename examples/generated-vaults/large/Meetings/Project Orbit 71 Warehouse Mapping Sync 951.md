@@ -2,11 +2,11 @@
 type: meeting
 date: 2024-04-27
 project: "[[Project Orbit 71]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2024-04-27T14:12:00
-source_observed_at: 2024-04-27T15:52:00
-created_at: 2024-04-27T15:57:00
-updated_at: 2024-04-28T13:57:00
+company: "[[Harbor Labs]]"
+source_created_at: 2024-04-27T08:59:00
+source_observed_at: 2024-04-27T11:26:00
+created_at: 2024-04-27T11:31:00
+updated_at: 2024-04-27T21:31:00
 tags: [#meeting]
 ---
 # Project Orbit 71 Warehouse Mapping Sync 951
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Sam Chen]]
 
 ## Client Attendees
-- [[Victor Walker]]
-- [[Farah Shah]]
-- [[Ben Jenkins]]
+- [[Elena Rostova]]
+- [[Amara Ivanov]]
+- [[Priya Morgan]]
 
 ## Notes
-Warehouse Mapping reviewed for [[Project Orbit 71]] at [[Vanguard Retail]].
-[[Sam Chen]] aligned with [[Victor Walker]] on follow-up work for the next operating review.
+Warehouse Mapping reviewed for [[Project Orbit 71]] at [[Harbor Labs]].
+[[Sam Chen]] aligned with [[Elena Rostova]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Orbit 71]] to [[Sam Chen]] #follow-up

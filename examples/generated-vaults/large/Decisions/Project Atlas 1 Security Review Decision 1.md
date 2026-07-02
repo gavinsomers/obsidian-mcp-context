@@ -3,11 +3,11 @@ type: decision
 date: 2023-06-10
 status: superseded
 project: "[[Project Atlas 1]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2023-06-10T13:25:00
-source_observed_at: 2023-06-10T15:37:00
-created_at: 2023-06-10T15:51:00
-updated_at: 2023-06-11T01:51:00
+company: "[[Noble Labs]]"
+source_created_at: 2023-06-10T16:57:00
+source_observed_at: 2023-06-10T17:49:00
+created_at: 2023-06-10T17:54:00
+updated_at: 2023-06-10T21:54:00
 tags: [#decision]
 ---
 # Project Atlas 1 Security Review Decision 1
@@ -16,7 +16,7 @@ tags: [#decision]
 Proceed with security review for [[Project Atlas 1]].
 
 ## Context
-This decision applies to [[Northstar Labs]] and [[Project Atlas 1]].
+This decision applies to [[Noble Labs]] and [[Project Atlas 1]].
 It follows [[Project Atlas 1 Warehouse Mapping Sync 1]].
 It incorporates [[Project Atlas 1 Contract Renewal Research 1]].
 

@@ -2,27 +2,27 @@
 type: meeting
 date: 2025-01-09
 project: "[[Project Foundry 123]]"
-company: "[[Apex Retail]]"
-source_created_at: 2025-01-09T09:07:00
-source_observed_at: 2025-01-09T11:44:00
-created_at: 2025-01-09T11:49:00
-updated_at: 2025-01-09T16:49:00
+company: "[[Noble Retail]]"
+source_created_at: 2025-01-09T14:33:00
+source_observed_at: 2025-01-09T17:10:00
+created_at: 2025-01-09T17:15:00
+updated_at: 2025-01-10T16:15:00
 tags: [#meeting]
 ---
 # Project Foundry 123 Security Review Sync 343
 
 ## Evergreen Attendees
-- [[Sam Evans]]
+- [[Wendy Alvarez]]
 
 ## Client Attendees
-- [[Xavier Ivanov]]
-- [[Lina Novak]]
-- [[Priya Walker]]
+- [[Hannah Jenkins]]
+- [[Amara Xu]]
+- [[Xavier Novak]]
 
 ## Notes
-Security Review reviewed for [[Project Foundry 123]] at [[Apex Retail]].
-[[Sam Evans]] aligned with [[Xavier Ivanov]] on follow-up work for the next operating review.
+Security Review reviewed for [[Project Foundry 123]] at [[Noble Retail]].
+[[Wendy Alvarez]] aligned with [[Hannah Jenkins]] on follow-up work for the next operating review.
 
 ## Action Items
-- [ ] Send recap for [[Project Foundry 123]] to [[Sam Evans]] #follow-up
+- [ ] Send recap for [[Project Foundry 123]] to [[Wendy Alvarez]] #follow-up
 - [x] Capture meeting notes in vault #ops

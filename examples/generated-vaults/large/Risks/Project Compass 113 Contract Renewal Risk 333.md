@@ -1,22 +1,22 @@
 ---
 type: risk
-status: closed
+status: open
 project: "[[Project Compass 113]]"
-source_created_at: 2024-11-29T14:44:00
-source_observed_at: 2024-11-29T15:29:00
-created_at: 2024-11-30T00:44:00
-updated_at: 2024-12-16T08:44:00
+source_created_at: 2024-11-29T15:59:00
+source_observed_at: 2024-11-29T16:11:00
+created_at: 2024-11-30T16:59:00
+updated_at: 2024-12-06T02:59:00
 tags: [#risk]
 ---
 # Project Compass 113 Contract Renewal Risk 333
 
 ## Risk
-Contract Renewal may affect [[Project Compass 113]] for [[BrightWave Manufacturing]].
+Contract Renewal may affect [[Project Compass 113]] for [[Cobalt Manufacturing]].
 
 ## Evidence
-- Raised after [[Project Compass 113 Security Review Sync 113]]
+- Raised after [[Project Compass 113 Security Review Sync 1653]]
 
 ## Current State
-- Status: `closed`
-- Owner: [[Hannah Evans]]
+- Status: `open`
+- Owner: [[Lina Alvarez]]
 - [ ] Reassess [[Project Compass 113 Contract Renewal Risk 333]] during the next review #risk

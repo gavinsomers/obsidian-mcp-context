@@ -1,25 +1,26 @@
 ---
 type: project
-status: planning
-company: "[[Summit Manufacturing]]"
-source_created_at: 2025-10-09T14:05:00
-source_observed_at: 2025-10-09T14:25:00
-created_at: 2025-10-10T21:05:00
-updated_at: 2025-11-22T07:05:00
+status: closed
+company: "[[Pioneer Health]]"
+source_created_at: 2025-10-09T16:12:00
+source_observed_at: 2025-10-09T16:44:00
+created_at: 2025-10-10T23:12:00
+updated_at: 2025-11-12T06:12:00
 tags: [#project]
 ---
 # Project Atlas 181
 
 ## Overview
-Project Atlas 181 supports [[Summit Manufacturing]] through consulting delivery.
+Project Atlas 181 supports [[Pioneer Health]] through consulting delivery.
 
 ## Stakeholders
-- [[Victor Jenkins]]
-- [[Jonah Ortega]]
-- [[Zoe Shah]]
+- [[Kai Kim]]
+- [[Alex Patel]]
+- [[Omar Tan]]
 
 ## Operating Notes
-- Evergreen owner: [[Yara Grant]]
-- Client account: [[Summit Manufacturing]]
-- Status: `planning`
+- Evergreen owner: [[Ben Diaz]]
+- Client account: [[Pioneer Health]]
+- Status: `closed`
+- Closed at: `2026-03-28`
 - [ ] Reconcile latest state for [[Project Atlas 181]] #ops

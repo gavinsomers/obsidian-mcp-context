@@ -2,10 +2,10 @@
 type: person
 company: "[[Evergreen Analytics]]"
 role: "Delivery Lead"
-source_created_at: 2023-05-13T10:23:00
-source_observed_at: 2023-05-13T11:13:00
-created_at: 2023-05-13T18:23:00
-updated_at: 2024-04-07T13:00:00
+source_created_at: 2023-05-13T12:14:00
+source_observed_at: 2023-05-13T12:43:00
+created_at: 2023-05-13T22:14:00
+updated_at: 2025-08-11T13:00:00
 tags: [#person]
 ---
 # Nadia Chen
@@ -14,5 +14,6 @@ tags: [#person]
 Nadia Chen is the Delivery Lead at [[Evergreen Analytics]].
 
 ## Active Project Allocations
-- Delivery owner for [[Project Pipeline 67]] ([[Helio Manufacturing]])
+- Delivery owner for [[Project Pipeline 67]] ([[Meridian FinTech]])
+- Delivery owner for [[Project Beacon 167]] ([[Cobalt FinTech]])
 - [ ] Confirm next update with [[Nadia Chen]] #follow-up

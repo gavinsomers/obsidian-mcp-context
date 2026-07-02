@@ -1,21 +1,21 @@
 ---
 type: research
 project: "[[Project Orbit 161]]"
-company: "[[Atlas Manufacturing]]"
-source_created_at: 2025-07-27T14:06:00
-source_observed_at: 2025-07-27T15:52:00
-created_at: 2025-07-28T13:06:00
-updated_at: 2025-08-25T00:06:00
+company: "[[Vanguard Analytics]]"
+source_created_at: 2025-07-27T16:37:00
+source_observed_at: 2025-07-27T17:16:00
+created_at: 2025-07-28T00:37:00
+updated_at: 2025-08-14T10:37:00
 tags: [#research]
 ---
 # Project Orbit 161 Contract Renewal Research 161
 
 ## Research Summary
-Research on contract renewal for [[Project Orbit 161]] and [[Atlas Manufacturing]].
+Research on contract renewal for [[Project Orbit 161]] and [[Vanguard Analytics]].
 
 ## Evidence
-- Interview notes from [[David Grant]]
-- Related operating review: [[Project Orbit 161 Warehouse Mapping Sync 1261]]
+- Interview notes from [[Hannah Chen]]
+- Related operating review: [[Project Orbit 161 Warehouse Mapping Sync 1041]]
 
 ## Follow Up
 - [ ] Convert findings into decision criteria for [[Project Orbit 161]] #research

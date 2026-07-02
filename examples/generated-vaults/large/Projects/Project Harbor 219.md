@@ -1,27 +1,26 @@
 ---
 type: project
 status: closed
-company: "[[Northstar Retail]]"
-source_created_at: 2026-04-14T16:10:00
-source_observed_at: 2026-04-14T16:41:00
-created_at: 2026-04-16T15:10:00
-updated_at: 2026-06-22T20:10:00
+company: "[[Noble Health]]"
+source_created_at: 2026-04-14T08:53:00
+source_observed_at: 2026-04-14T10:38:00
+created_at: 2026-04-15T18:53:00
+updated_at: 2026-06-13T19:53:00
 tags: [#project]
 ---
 # Project Harbor 219
 
 ## Overview
-Project Harbor 219 supports [[Northstar Retail]] through research program.
+Project Harbor 219 supports [[Noble Health]] through research program.
 
 ## Stakeholders
-- [[Wendy Ivanov]]
-- [[Kai Novak]]
-- [[Alex Shah]]
-- [[Omar Walker]]
+- [[Lina Kim]]
+- [[Amara Patel]]
+- [[Priya Tan]]
 
 ## Operating Notes
 - Evergreen owner: [[Sam Alvarez]]
-- Client account: [[Northstar Retail]]
+- Client account: [[Noble Health]]
 - Status: `closed`
-- Closed at: `2026-08-27`
+- Closed at: `2026-08-20`
 - [ ] Reconcile latest state for [[Project Harbor 219]] #ops

@@ -1,13 +1,13 @@
 ---
 type: decision
-date: 2025-03-28
+date: 2025-02-25
 status: active
 project: "[[Project Bridge 105]]"
-company: "[[Northstar Labs]]"
-source_created_at: 2025-03-28T13:40:00
-source_observed_at: 2025-03-28T14:48:00
-created_at: 2025-03-28T17:26:00
-updated_at: 2025-03-29T04:26:00
+company: "[[BrightWave Health]]"
+source_created_at: 2025-02-25T15:47:00
+source_observed_at: 2025-02-25T18:15:00
+created_at: 2025-02-25T19:44:00
+updated_at: 2025-02-26T01:44:00
 tags: [#decision]
 ---
 # Project Bridge 105 Contract Renewal Decision 545
@@ -16,9 +16,9 @@ tags: [#decision]
 Proceed with contract renewal for [[Project Bridge 105]].
 
 ## Context
-This decision applies to [[Northstar Labs]] and [[Project Bridge 105]].
-It follows [[Project Bridge 105 Adoption Workflow Sync 1205]].
-It incorporates [[Project Bridge 105 Warehouse Mapping Research 325]].
+This decision applies to [[BrightWave Health]] and [[Project Bridge 105]].
+It follows [[Project Bridge 105 Adoption Workflow Sync 765]].
+It incorporates [[Project Bridge 105 Warehouse Mapping Research 545]].
 
 ## Supersession
 Current decision remains active unless later evidence changes the operating picture.

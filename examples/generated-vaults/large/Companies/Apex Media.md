@@ -2,10 +2,10 @@
 type: company
 status: active
 segment: smb
-source_created_at: 2023-09-20T10:46:00
-source_observed_at: 2023-09-20T12:26:00
-created_at: 2023-09-21T22:46:00
-updated_at: 2023-12-07T00:46:00
+source_created_at: 2023-09-20T12:10:00
+source_observed_at: 2023-09-20T14:44:00
+created_at: 2023-09-21T14:10:00
+updated_at: 2025-04-20T13:00:00
 tags: [#company]
 ---
 # Apex Media
@@ -14,7 +14,8 @@ tags: [#company]
 Apex Media is a smb account currently marked `active`.
 
 ## Assigned Account Team
-- [[Yara Alvarez]] - Principal Analytics Engineer
+- [[Lina Alvarez]] - Data Platform Engineer
+- [[Rachel Bennett]] - Solution Architect
 
 ## Client Stakeholders
 - [[Priya Kim]] - Revenue Operations Lead
@@ -22,7 +23,8 @@ Apex Media is a smb account currently marked `active`.
 - [[Uma Tan]] - Operations Manager
 
 ## Projects
-- [[Project Keystone 25]]
+- [[Project Venture 13]]
+- [[Project Harbor 144]]
 
 ## Open Loops
 - [ ] Refresh account context for [[Apex Media]] #account

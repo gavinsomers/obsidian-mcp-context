@@ -2,11 +2,11 @@
 type: meeting
 date: 2026-02-11
 project: "[[Project Meridian 66]]"
-company: "[[Vanguard Retail]]"
-source_created_at: 2026-02-11T14:43:00
-source_observed_at: 2026-02-11T16:56:00
-created_at: 2026-02-18T16:43:00
-updated_at: 2026-02-18T22:43:00
+company: "[[BrightWave Labs]]"
+source_created_at: 2026-02-11T11:23:00
+source_observed_at: 2026-02-11T13:05:00
+created_at: 2026-02-11T13:10:00
+updated_at: 2026-02-12T09:10:00
 tags: [#meeting]
 ---
 # Project Meridian 66 Metric Reconciliation Sync 726
@@ -15,13 +15,13 @@ tags: [#meeting]
 - [[Marcus Chen]]
 
 ## Client Attendees
-- [[Victor Walker]]
-- [[Farah Shah]]
-- [[Ben Jenkins]]
+- [[Nadia Vance]]
+- [[Victor Haddad]]
+- [[Zoe Quinn]]
 
 ## Notes
-Metric Reconciliation reviewed for [[Project Meridian 66]] at [[Vanguard Retail]].
-[[Marcus Chen]] aligned with [[Victor Walker]] on follow-up work for the next operating review.
+Metric Reconciliation reviewed for [[Project Meridian 66]] at [[BrightWave Labs]].
+[[Marcus Chen]] aligned with [[Nadia Vance]] on follow-up work for the next operating review.
 
 ## Action Items
 - [ ] Send recap for [[Project Meridian 66]] to [[Marcus Chen]] #follow-up
