@@ -53,6 +53,22 @@ models:
         tests:
           - not_null
 
+  - name: dim_vault_profiles
+    columns:
+      - name: vault_profile_id
+        tests:
+          - not_null
+          - unique
+      - name: profile_loaded
+        tests:
+          - not_null
+      - name: config_loaded
+        tests:
+          - not_null
+      - name: source_file_count
+        tests:
+          - not_null
+
   - name: fact_blocks
     columns:
       - name: block_id

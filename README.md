@@ -209,6 +209,7 @@ inspection and troubleshooting.
 - [Configuration](docs/configuration.md)
 - [Vault profiler](docs/vault-profiler.md)
 - [Doctor readiness report](docs/doctor-readiness.md)
+- [Generic core marts](docs/generic-core-marts.md)
 - [v1.0 release readiness](docs/v1-release-readiness.md)
 
 ## Verification
