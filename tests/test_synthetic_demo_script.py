@@ -63,6 +63,7 @@ def test_synthetic_demo_script_hides_unresolved_graph_nodes():
 
     assert 'cat >"$target/.obsidian/graph.json"' in script
     assert '"hideUnresolved": true' in script
+    assert '"showOrphans": false' in script
 
 
 def test_synthetic_demo_script_stops_obsidian_before_resetting_vault():
