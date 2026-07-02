@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+from collections import Counter
 from dataclasses import dataclass
+from hashlib import sha256
+import json
 import logging
 import os
 from pathlib import Path
@@ -88,6 +91,19 @@ def split_csv(value: str | None, default: tuple[str, ...]) -> tuple[str, ...]:
     if not value:
         return default
     return tuple(item.strip() for item in value.split(",") if item.strip())
+
+
+def _redacted_ref(path: Path | None) -> str:
+    if not path:
+        return ""
+    if not path.is_absolute():
+        return path.as_posix()
+    return f"<redacted:{path.name}>"
+
+
+def _profile_fingerprint(values: dict[str, object]) -> str:
+    payload = json.dumps(values, sort_keys=True, separators=(",", ":"))
+    return sha256(payload.encode("utf-8")).hexdigest()
 
 
 @dataclass(frozen=True)
@@ -248,6 +264,56 @@ class ContextService:
         summary["warning"] = FALLBACK_WARNING
         summary["warehouse"] = "in_memory_diagnostic"
         return summary
+
+    def vault_profile_metadata(
+        self,
+        vault_path: str | Path,
+        postgres_dsn: str | Path | None = None,
+        limit: int = 20,
+    ) -> dict[str, object]:
+        if reader := self.dbt_reader(postgres_dsn):
+            warehouse, handle = reader
+            rows = warehouse.list_vault_profiles(handle, limit=limit)
+            return {
+                "mode": "mart-backed",
+                "row_count": len(rows),
+                "profiles": rows,
+            }
+
+        self._require_parser_fallback_allowed()
+        vault_config = self.vault_config(vault_path)
+        context = self.context(vault_path)
+        note_type_counts = Counter(file.note_type for file in context.files)
+        profile_fingerprint_values = {
+            "include_globs": self.app_config.include_globs,
+            "exclude_globs": self.app_config.exclude_globs,
+            "source_extensions": self.app_config.source_extensions,
+            "folder_note_types": self.app_config.folder_note_types,
+            "non_entity_note_types": self.app_config.non_entity_note_types,
+        }
+        return {
+            "mode": "parser-diagnostic",
+            "row_count": 1,
+            "profiles": [
+                {
+                    "vault_profile_id": _profile_fingerprint(profile_fingerprint_values),
+                    "profile_loaded": self.app_config.profile_path is not None,
+                    "config_loaded": self.app_config.loaded,
+                    "profile_ref": _redacted_ref(self.app_config.profile_path),
+                    "config_ref": _redacted_ref(self.app_config.config_path),
+                    "include_globs": list(vault_config.include_globs),
+                    "exclude_globs": list(vault_config.exclude_globs),
+                    "source_extensions": list(vault_config.source_extensions),
+                    "folder_note_types": dict(vault_config.folder_note_types or {}),
+                    "non_entity_note_types": list(
+                        vault_config.non_entity_note_types or ()
+                    ),
+                    "note_type_counts": dict(sorted(note_type_counts.items())),
+                    "source_file_count": len(context.files),
+                }
+            ],
+            "warning": FALLBACK_WARNING,
+        }
 
     def list_entities(
         self,

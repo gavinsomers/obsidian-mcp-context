@@ -15,6 +15,7 @@ def test_mcp_server_exposes_generic_obsidian_tools():
     assert "list_vault_tasks" in tools
     assert "get_vault_note_context" in tools
     assert "get_vault_warehouse_summary" in tools
+    assert "get_vault_profile_metadata" in tools
     assert "list_vault_entities" in tools
     assert "list_vault_entity_types" in tools
     assert "get_vault_entity_timeline" in tools

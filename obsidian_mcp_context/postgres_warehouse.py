@@ -15,6 +15,7 @@ REQUIRED_RELATIONS = {
         "dim_notes",
         "dim_entities",
         "dim_entity_types",
+        "dim_vault_profiles",
         "dim_people",
         "dim_companies",
         "dim_projects",
@@ -169,6 +170,7 @@ def summary(postgres_dsn: str) -> dict[str, object]:
         "dim_notes",
         "dim_entities",
         "dim_entity_types",
+        "dim_vault_profiles",
         "fact_blocks",
         "fact_tasks",
         "fact_links",
@@ -204,6 +206,37 @@ def summary(postgres_dsn: str) -> dict[str, object]:
             )
         )
     return {"tables": counts, "entity_types": _normalize_rows(entity_types)}
+
+
+def list_vault_profiles(
+    postgres_dsn: str,
+    limit: int = 20,
+) -> list[dict[str, object]]:
+    with connect(postgres_dsn) as connection:
+        rows = _fetchall_dict(
+            connection.execute(
+                """
+                select
+                  vault_profile_id,
+                  profile_loaded,
+                  config_loaded,
+                  profile_ref,
+                  config_ref,
+                  include_globs,
+                  exclude_globs,
+                  source_extensions,
+                  folder_note_types,
+                  non_entity_note_types,
+                  note_type_counts,
+                  source_file_count
+                from dim_vault_profiles
+                order by vault_profile_id
+                limit %s
+                """,
+                (_bounded_limit(limit),),
+            )
+        )
+    return _normalize_rows(rows)
 
 
 def list_entities(

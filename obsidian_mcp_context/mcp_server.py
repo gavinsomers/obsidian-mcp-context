@@ -142,6 +142,22 @@ def get_vault_warehouse_summary(
 
 
 @mcp.tool()
+def get_vault_profile_metadata(
+    vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
+    limit: Annotated[
+        int,
+        Field(description=f"Maximum profile rows to return. Capped at {MAX_LIMIT}.", ge=1),
+    ] = 20,
+) -> dict[str, object]:
+    """Return active vault profile metadata from dbt marts or parser diagnostics."""
+    return _service().vault_profile_metadata(
+        vault_path,
+        postgres_dsn=None,
+        limit=_bounded_limit(limit),
+    )
+
+
+@mcp.tool()
 def list_vault_entities(
     vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
     entity_type: Annotated[

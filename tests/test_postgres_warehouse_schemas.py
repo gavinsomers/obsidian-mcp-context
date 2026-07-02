@@ -29,3 +29,7 @@ def test_postgres_warehouse_rejects_invalid_schema_names(monkeypatch):
         assert "Invalid Postgres schema name" in str(exc)
     else:
         raise AssertionError("Expected invalid schema names to be rejected")
+
+
+def test_postgres_warehouse_requires_vault_profile_dimension():
+    assert "dim_vault_profiles" in postgres_warehouse.REQUIRED_RELATIONS["dim"]
