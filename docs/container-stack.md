@@ -28,6 +28,18 @@ service, dbt container, and editor-visible model code.
 
 Postgres is the canonical warehouse for this project.
 
+The default Compose service set is intentionally quiet: `postgres`, `ingest`,
+`dbt`, `dbt-test`, and `mcp`. Browser and replay surfaces are behind explicit
+profiles:
+
+- `inspection`: `dbt-docs`, `dbt-docs-generate`, and `postgres-browser`.
+- `obsidian`: `vault-obsidian`.
+- `replay`: `replay-dashboard` and `replay-qa`.
+
+Targeting a service by name still works for the project scripts, but plain
+`docker compose up` no longer starts Obsidian, replay, dbt Docs, or the table
+browser by accident.
+
 ## One-Command Check
 
 Run the quiet completed-dataset workflow when you already have a finished
