@@ -27,6 +27,8 @@ services:
       PUID: ${PUID:-1000}
       PGID: ${PGID:-1000}
       TZ: ${TZ:-Etc/UTC}
+      LIBGL_ALWAYS_SOFTWARE: ${LIBGL_ALWAYS_SOFTWARE:-1}
+      OBSIDIAN_ELECTRON_FLAGS: ${OBSIDIAN_ELECTRON_FLAGS:---no-sandbox --disable-gpu --disable-dev-shm-usage --ozone-platform=x11}
     ports:
       - "${OBSIDIAN_WEB_PORT:-3000}:3000"
     volumes:

@@ -389,9 +389,9 @@ seed_obsidian_graph_workspace "$target_vault"
 
 "${compose[@]}" up -d postgres
 if [[ "$recreate_vault_services" == "1" ]]; then
-  "${compose[@]}" up -d --force-recreate vault-obsidian
+  "${compose[@]}" up -d --build --force-recreate vault-obsidian
 else
-  "${compose[@]}" up -d vault-obsidian
+  "${compose[@]}" up -d --build vault-obsidian
 fi
 wait_for_obsidian_webtop
 "${compose[@]}" up -d mcp postgres-browser replay-dashboard replay-qa

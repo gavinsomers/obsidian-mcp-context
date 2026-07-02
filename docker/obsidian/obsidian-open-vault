@@ -12,6 +12,7 @@ config_dir="${XDG_CONFIG_HOME:-/config/.config}/obsidian"
 config_file="$config_dir/obsidian.json"
 maximize="${OBSIDIAN_AUTO_MAXIMIZE:-true}"
 window_scale="${OBSIDIAN_AUTO_WINDOW_SCALE:-80}"
+obsidian_flags="${OBSIDIAN_ELECTRON_FLAGS:---no-sandbox --disable-gpu --disable-dev-shm-usage --ozone-platform=x11}"
 
 sleep "$delay"
 
@@ -76,4 +77,6 @@ if [ "$maximize" = "true" ] && command -v xdotool >/dev/null 2>&1; then
 EOF
 fi
 
-exec obsidian --no-sandbox "$vault_path"
+# Intentionally split OBSIDIAN_ELECTRON_FLAGS so operators can pass the same
+# space-delimited flags they would use when launching Electron directly.
+exec obsidian $obsidian_flags "$vault_path"
