@@ -54,3 +54,12 @@ def test_legacy_replay_and_obsidian_profiles_are_explicit():
     assert "vault-obsidian" not in replay_services
     assert "vault-obsidian" in obsidian_services
     assert "replay-dashboard" not in obsidian_services
+
+
+def test_workflow_profile_exposes_dataset_workflow_orchestrator():
+    services = _compose_services("--profile", "workflow")
+
+    assert "dataset-workflow" in services
+    assert "vault-obsidian" not in services
+    assert "replay-dashboard" not in services
+    assert "replay-qa" not in services

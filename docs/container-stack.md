@@ -47,7 +47,8 @@ Run the quiet completed-dataset workflow when you already have a finished
 generated vault and want the main pipeline only:
 
 ```bash
-scripts/run_dataset_workflow.sh /path/to/generated-vault
+VAULT_PATH=/path/to/generated-vault \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 For checked-in generated fixtures, pass a shortcut:
@@ -65,18 +66,25 @@ It does not copy datasets from the generator automatically; provide the path you
 want processed. For the manual import contract, see
 [`docs/dataset-handoff-contract.md`](dataset-handoff-contract.md).
 
+The `dataset-workflow` service uses the Docker CLI and mounted Docker socket to
+orchestrate the sibling Compose services from inside Docker. Run it from the
+repository root so mounted vault paths resolve correctly.
+
 Inspection surfaces are explicit. Start both dbt lineage docs and the table
 browser with:
 
 ```bash
-scripts/run_dataset_workflow.sh /path/to/generated-vault --with-inspection
+VAULT_PATH=/path/to/generated-vault WITH_INSPECTION=1 \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 Or start only one:
 
 ```bash
-scripts/run_dataset_workflow.sh /path/to/generated-vault --with-dbt-docs
-scripts/run_dataset_workflow.sh /path/to/generated-vault --with-table-browser
+VAULT_PATH=/path/to/generated-vault WITH_DBT_DOCS=1 \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
+VAULT_PATH=/path/to/generated-vault WITH_TABLE_BROWSER=1 \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 Open:

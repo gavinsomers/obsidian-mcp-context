@@ -11,7 +11,8 @@ def test_dataset_handoff_contract_documents_manual_import_boundary():
     assert "generator to copy, publish, sync, or move datasets" in text
     assert "The handoff is intentionally manual" in text
     assert "var/imported-vaults/<dataset-id>/" in text
-    assert "scripts/run_dataset_workflow.sh var/imported-vaults/generated-current" in text
+    assert "VAULT_PATH=./var/imported-vaults/generated-current" in text
+    assert "docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow" in text
     assert "does not copy from the generator and does not run replay" in text
 
 

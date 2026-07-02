@@ -113,6 +113,105 @@ services:
     ports:
       - "${POSTGRES_BROWSER_PORT:-8082}:8080"
 
+  dataset-workflow:
+    profiles: ["workflow"]
+    image: docker:27-cli
+    working_dir: ${PWD:-/workspace}
+    environment:
+      ENV_FILE: ${ENV_FILE:-}
+      COMPOSE_FILE: ${COMPOSE_FILE:-docker-compose.analytics.yml}
+      VAULT_PATH: ${VAULT_PATH:-./var/imported-vaults/generated-current}
+      WITH_DBT_DOCS: ${WITH_DBT_DOCS:-0}
+      WITH_TABLE_BROWSER: ${WITH_TABLE_BROWSER:-0}
+      WITH_INSPECTION: ${WITH_INSPECTION:-0}
+      MCP_PORT: ${MCP_PORT:-8000}
+      DBT_DOCS_PORT: ${DBT_DOCS_PORT:-8081}
+      POSTGRES_BROWSER_PORT: ${POSTGRES_BROWSER_PORT:-8082}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${PWD:-.}:${PWD:-/workspace}
+    command:
+      - sh
+      - -lc
+      - |
+        set -eu
+
+        env_file="$${ENV_FILE}"
+        if [ -z "$${env_file}" ]; then
+          if [ -f ".env.analytics" ]; then
+            env_file=".env.analytics"
+          else
+            env_file=".env.analytics.example"
+          fi
+        fi
+        compose_file="$${COMPOSE_FILE:-docker-compose.analytics.yml}"
+
+        if [ ! -d "$${VAULT_PATH}" ]; then
+          echo "Dataset path does not exist or is not a directory: $${VAULT_PATH}" >&2
+          exit 2
+        fi
+        if [ ! -f "$${VAULT_PATH}/manifest.json" ]; then
+          echo "Dataset manifest is missing: $${VAULT_PATH}/manifest.json" >&2
+          exit 2
+        fi
+        note_count="$$(find "$${VAULT_PATH}" -type f -name '*.md' | wc -l | tr -d ' ')"
+        if [ "$${note_count}" = "0" ]; then
+          echo "Dataset contains no Markdown notes: $${VAULT_PATH}" >&2
+          exit 2
+        fi
+
+        echo "Dataset: $${VAULT_PATH}"
+        echo "Compose file: $${compose_file}"
+        echo "Env file: $${env_file}"
+        echo
+        echo "[1/6] Validating dataset... passed (notes=$${note_count})"
+
+        docker compose --env-file "$${env_file}" -f "$${compose_file}" config >/dev/null
+
+        echo "[2/6] Starting Postgres..."
+        docker compose --env-file "$${env_file}" -f "$${compose_file}" up -d postgres
+        echo "[2/6] Starting Postgres... ready"
+
+        echo "[3/6] Ingesting vault into Postgres..."
+        docker compose --env-file "$${env_file}" -f "$${compose_file}" run --rm ingest
+        echo "[3/6] Ingesting vault into Postgres... passed"
+
+        echo "[4/6] Running dbt models..."
+        docker compose --env-file "$${env_file}" -f "$${compose_file}" run --rm dbt
+        echo "[4/6] Running dbt models... passed"
+
+        echo "[5/6] Running dbt tests..."
+        docker compose --env-file "$${env_file}" -f "$${compose_file}" run --rm dbt-test
+        echo "[5/6] Running dbt tests... passed"
+
+        echo "[6/6] Starting MCP..."
+        docker compose --env-file "$${env_file}" -f "$${compose_file}" up -d mcp
+        echo "[6/6] Starting MCP... ready"
+
+        if [ "$${WITH_INSPECTION}" = "1" ] || [ "$${WITH_DBT_DOCS}" = "1" ]; then
+          echo "Starting dbt Docs..."
+          docker compose --env-file "$${env_file}" -f "$${compose_file}" --profile inspection up -d dbt-docs
+          echo "Starting dbt Docs... ready"
+        fi
+
+        if [ "$${WITH_INSPECTION}" = "1" ] || [ "$${WITH_TABLE_BROWSER}" = "1" ]; then
+          echo "Starting Postgres table browser..."
+          docker compose --env-file "$${env_file}" -f "$${compose_file}" --profile inspection up -d postgres-browser
+          echo "Starting Postgres table browser... ready"
+        fi
+
+        echo
+        echo "Dataset workflow passed."
+        echo
+        echo "Open:"
+        echo "  MCP HTTP: http://localhost:$${MCP_PORT}"
+        if [ "$${WITH_INSPECTION}" = "1" ] || [ "$${WITH_DBT_DOCS}" = "1" ]; then
+          echo "  dbt Docs: http://localhost:$${DBT_DOCS_PORT}"
+        fi
+        if [ "$${WITH_INSPECTION}" = "1" ] || [ "$${WITH_TABLE_BROWSER}" = "1" ]; then
+          echo "  Postgres browser: http://localhost:$${POSTGRES_BROWSER_PORT}"
+        fi
+
   replay-dashboard:
     profiles: ["legacy-replay"]
     build:

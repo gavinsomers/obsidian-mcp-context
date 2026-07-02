@@ -58,10 +58,11 @@ Run the quiet completed-dataset workflow when you want to ingest a completed
 vault, build/test dbt marts, and start MCP without Obsidian or replay services:
 
 ```bash
-scripts/run_dataset_workflow.sh examples/generated-vaults/large
+VAULT_PATH=./var/imported-vaults/generated-current \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
-The same command also accepts checked-in fixture shortcuts:
+For checked-in fixture shortcuts, the host helper script is still available:
 
 ```bash
 scripts/run_dataset_workflow.sh small
@@ -80,7 +81,8 @@ For the manual generator-to-main handoff rules, see
 Start lineage and table inspection views only when you want to show proof:
 
 ```bash
-scripts/run_dataset_workflow.sh large --with-inspection
+VAULT_PATH=./var/imported-vaults/generated-current WITH_INSPECTION=1 \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 That also opens dbt Docs at `http://localhost:8081` and the Postgres table
@@ -211,7 +213,8 @@ inspection and troubleshooting.
 The main completed-dataset verification command is:
 
 ```bash
-scripts/run_dataset_workflow.sh large --with-inspection
+VAULT_PATH=./var/imported-vaults/generated-current WITH_INSPECTION=1 \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 It validates the completed vault, starts Postgres, ingests the dataset, runs
@@ -222,7 +225,8 @@ Before recording a demo or preparing marketing screenshots, run the generated
 demo workflow and full privacy scan:
 
 ```bash
-scripts/run_dataset_workflow.sh small --with-inspection
+VAULT_PATH=./var/imported-vaults/generated-current WITH_INSPECTION=1 \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 scripts/privacy_check.sh --all
 ```
 

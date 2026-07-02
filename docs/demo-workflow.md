@@ -74,7 +74,8 @@ For the full contract, see
 Run the quiet completed-dataset workflow against the manually imported vault:
 
 ```bash
-scripts/run_dataset_workflow.sh var/imported-vaults/generated-current
+VAULT_PATH=./var/imported-vaults/generated-current \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 This validates the dataset, starts Postgres, ingests the complete vault, runs
@@ -92,7 +93,8 @@ diagnostics, not the main demo surface.
 Start both optional inspection views only when you want proof:
 
 ```bash
-scripts/run_dataset_workflow.sh var/imported-vaults/generated-current --with-inspection
+VAULT_PATH=./var/imported-vaults/generated-current WITH_INSPECTION=1 \
+  docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow
 ```
 
 Open:
