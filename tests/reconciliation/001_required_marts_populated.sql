@@ -13,6 +13,9 @@ with mart_counts as (
   union all select 'mart_timeline', count(*) from mart_timeline
   union all select 'mart_entity_context', count(*) from mart_entity_context
   union all select 'mart_entity_open_loops', count(*) from mart_entity_open_loops
+  union all select 'mart_person_summary', count(*) from mart_person_summary
+  union all select 'mart_company_summary', count(*) from mart_company_summary
+  union all select 'mart_project_summary', count(*) from mart_project_summary
 )
 select table_name, row_count
 from mart_counts
