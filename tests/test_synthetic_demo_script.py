@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from pathlib import Path
 import subprocess
 
 
@@ -48,3 +49,10 @@ def test_synthetic_demo_script_parses_default_start_options():
 
     assert result.returncode == 2
     assert "Unknown option: --unknown" in result.stderr
+
+
+def test_synthetic_demo_script_rebuilds_obsidian_webtop_image():
+    script = Path("scripts/run_synthetic_demo.sh").read_text(encoding="utf-8")
+
+    assert 'up -d --build --force-recreate vault-obsidian' in script
+    assert 'up -d --build vault-obsidian' in script

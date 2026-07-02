@@ -173,6 +173,11 @@ Obsidian auto-launches in the browser desktop and opens `/vault`. The notes are
 mounted from the selected generated fixture folder; they are not imported from,
 synced with, or written to Gavin's personal Obsidian vault.
 
+The Obsidian webtop starts Electron with software-rendering defaults
+(`--disable-gpu --disable-dev-shm-usage --ozone-platform=x11`) to avoid black
+or blank windows in browser-backed desktops. Override `OBSIDIAN_ELECTRON_FLAGS`
+only when debugging host-specific rendering behavior.
+
 ## Generated Vault Replay
 
 To start with an empty isolated vault and replay generated notes into it over
