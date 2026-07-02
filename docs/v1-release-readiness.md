@@ -141,19 +141,19 @@ passed
 Fast verification:
 
 ```bash
-scripts/analytics_stack_check.sh small
+scripts/run_dataset_workflow.sh small
 ```
 
 Release verification:
 
 ```bash
-scripts/analytics_stack_check.sh large
+scripts/run_dataset_workflow.sh large
 ```
 
 Expected:
 
 ```text
-Postgres analytics stack check passed.
+Dataset workflow passed.
 ```
 
 ### 7. Completed Dataset Demo Readiness
@@ -174,15 +174,13 @@ scripts/run_dataset_workflow.sh small --with-inspection
 Expected:
 
 ```text
-[OK] qa-example:...
+Dataset workflow passed.
 ```
-
-for every Q&A example.
 
 Stop the demo after validation unless it is needed:
 
 ```bash
-scripts/run_synthetic_demo.sh stop
+docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml down
 ```
 
 ### 8. MCP Client Setup

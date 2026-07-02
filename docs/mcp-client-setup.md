@@ -21,12 +21,12 @@ Inside the containers, the same vault is available at:
 
 ## Postgres Container-Backed MCP
 
-Run the generated-large stack and keep services alive:
+Run the completed-dataset workflow. It leaves MCP running after ingest, dbt run,
+and dbt tests pass:
 
 ```bash
 cd /home/gavman/code/obsidian-mcp-context
-ANALYTICS_STACK_KEEP_RUNNING=1 scripts/analytics_stack_check.sh large
-docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up -d mcp
+scripts/run_dataset_workflow.sh large
 ```
 
 The MCP container reads the Postgres marts with:

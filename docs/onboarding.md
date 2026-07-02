@@ -6,13 +6,22 @@ personal Obsidian vault for validation or MCP serving.
 For the pre-demo privacy checklist, see
 [`docs/demo-privacy-readiness.md`](demo-privacy-readiness.md).
 
-## 1. Choose A Fixture
+## 1. Understand The Demo Shape
+
+The current demo is split across two repositories:
+
+- The generator repo creates the dataset and shows its growth with D3.
+- This repo ingests the completed dataset, builds dbt marts, and serves MCP.
+
+For the full runbook, see [`docs/demo-workflow.md`](demo-workflow.md).
+
+## 2. Choose A Fixture
 
 - `examples/generated-vaults/small`: fast smoke checks.
 - `examples/generated-vaults/medium`: development checks.
 - `examples/generated-vaults/large`: canonical scale and MCP validation.
 
-## 2. Run The Completed-Dataset Workflow
+## 3. Run The Completed-Dataset Workflow
 
 Run the generated-large completed-dataset workflow:
 
@@ -40,7 +49,7 @@ scripts/run_dataset_workflow.sh var/imported-vaults/generated-current
 See [`docs/dataset-handoff-contract.md`](dataset-handoff-contract.md) for the
 manual generator-to-main handoff contract.
 
-## 3. Use MCP
+## 4. Use MCP
 
 ```bash
 scripts/run_dataset_workflow.sh large
@@ -54,7 +63,7 @@ http://localhost:8000
 
 For client configuration, see `docs/mcp-client-setup.md`.
 
-## 4. Inspect Lineage And Tables
+## 5. Inspect Lineage And Tables
 
 Start inspection surfaces only when you want to show lineage or row-level
 evidence:
@@ -70,7 +79,7 @@ dbt Docs:         http://localhost:8081
 Postgres browser: http://localhost:8082
 ```
 
-## 5. Inspect Parser Diagnostics
+## 6. Inspect Parser Diagnostics
 
 Parser diagnostics can still inspect generated source files directly:
 

@@ -8,15 +8,20 @@ personal Obsidian vault for this workflow.
 
 ## Architecture
 
-The supported workflow is:
+The supported main-repo workflow is:
 
 ```text
-generated Obsidian vault
+completed generated Obsidian vault
   -> container-mounted vault at /vault
   -> Postgres raw landing tables
   -> dbt Postgres marts
   -> MCP consumers
 ```
+
+The generator repository owns dataset creation and D3 growth visualization.
+This repository owns the deterministic batch ingest, dbt transformation,
+inspection surfaces, and MCP serving after a completed vault is handed over
+manually.
 
 Postgres is the canonical warehouse. DuckDB is not part of the supported
 project workflow.
@@ -30,13 +35,15 @@ project workflow.
 - Postgres/dbt marts for entities, relationships, states, events, timelines,
   decisions, risks, and open loops.
 - MCP tools for mart-backed context retrieval and direct parser diagnostics.
-- Containerized Postgres, dbt, dbt docs, Obsidian/webtop, and MCP services.
+- Containerized Postgres, dbt, dbt Docs, table browser, and MCP services.
 - Privacy posture that keeps personal vaults out of the project workflow.
 
 ## Quickstart
 
-The primary demo path uses only checked-in generated fixtures and the
-Postgres/dbt mart workflow.
+The primary demo is a two-act flow: generate and visualize the dataset in the
+generator repo with D3, then manually hand the completed vault to this repo for
+the quiet Postgres/dbt/MCP workflow. See
+[docs/demo-workflow.md](docs/demo-workflow.md) for the full runbook.
 
 Install the project:
 
@@ -47,9 +54,8 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -e ".[dev,pipeline]"
 ```
 
-Run the quiet completed-dataset workflow when you want to ingest a full
-generated vault, build/test dbt marts, and start MCP without Obsidian or replay
-services:
+Run the quiet completed-dataset workflow when you want to ingest a completed
+vault, build/test dbt marts, and start MCP without Obsidian or replay services:
 
 ```bash
 scripts/run_dataset_workflow.sh examples/generated-vaults/large
@@ -71,7 +77,7 @@ manually importing or placing it where you want it.
 For the manual generator-to-main handoff rules, see
 [docs/dataset-handoff-contract.md](docs/dataset-handoff-contract.md).
 
-Start lineage and table inspection views only when you want to show them:
+Start lineage and table inspection views only when you want to show proof:
 
 ```bash
 scripts/run_dataset_workflow.sh large --with-inspection
@@ -80,17 +86,6 @@ scripts/run_dataset_workflow.sh large --with-inspection
 That also opens dbt Docs at `http://localhost:8081` and the Postgres table
 browser at `http://localhost:8082`. Use `--with-dbt-docs` or
 `--with-table-browser` to start only one inspection surface.
-
-Run the generated-large Postgres stack end to end with an MCP smoke check when
-you want the older verification command:
-
-```bash
-ANALYTICS_STACK_KEEP_RUNNING=1 scripts/analytics_stack_check.sh large
-```
-
-This builds the required images, starts Postgres, ingests the generated vault,
-runs dbt, runs dbt tests, and executes a Postgres-backed MCP smoke check against
-the marts.
 
 Use your MCP client as the primary Q&A surface once the workflow has passed.
 Parser diagnostic commands remain available for source inspection, and dbt Docs
@@ -121,32 +116,8 @@ List the preset catalogue:
 .venv/bin/obsidian-mcp-context context-presets
 ```
 
-Run the same stack against smaller fixtures when you want faster smoke checks:
-
-```bash
-scripts/analytics_stack_check.sh small
-scripts/analytics_stack_check.sh medium
-```
-
-Open a generated vault in an isolated browser-accessible Obsidian container only
-when you explicitly want to inspect the Markdown vault surface:
-
-```bash
-scripts/run_generated_obsidian.sh large
-```
-
-Then open `http://localhost:3000`. Obsidian auto-launches in the webtop and
-opens the mounted `/vault` folder.
-
 Legacy replay scripts still exist for old virtual-time experiments, but replay,
 Replay Q&A, and replay dashboards are no longer part of the main workflow.
-
-Keep the generated-large stack running for an MCP client:
-
-```bash
-ANALYTICS_STACK_KEEP_RUNNING=1 scripts/analytics_stack_check.sh large
-docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up -d mcp
-```
 
 The container MCP endpoint is:
 
@@ -226,6 +197,8 @@ inspection and troubleshooting.
 ## Useful Docs
 
 - [Containerized analytics stack](docs/container-stack.md)
+- [Demo workflow](docs/demo-workflow.md)
+- [Manual dataset handoff contract](docs/dataset-handoff-contract.md)
 - [MCP client setup](docs/mcp-client-setup.md)
 - [Architecture](docs/architecture.md)
 - [Entity contract](docs/entity-contract.md)
@@ -235,21 +208,21 @@ inspection and troubleshooting.
 
 ## Verification
 
-The main end-to-end verification command is:
+The main completed-dataset verification command is:
 
 ```bash
-scripts/analytics_stack_check.sh large
+scripts/run_dataset_workflow.sh large --with-inspection
 ```
 
-It builds the required images, starts Postgres, ingests the generated vault,
-runs dbt, runs dbt tests, and executes a Postgres-backed MCP smoke check against
-the marts.
+It validates the completed vault, starts Postgres, ingests the dataset, runs
+dbt, runs dbt tests, starts MCP, and opens optional dbt lineage and table
+inspection surfaces.
 
 Before recording a demo or preparing marketing screenshots, run the generated
-demo health check and full privacy scan:
+demo workflow and full privacy scan:
 
 ```bash
-scripts/check_synthetic_demo.sh
+scripts/run_dataset_workflow.sh small --with-inspection
 scripts/privacy_check.sh --all
 ```
 

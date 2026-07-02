@@ -3,6 +3,8 @@
 Use this checklist before recording demos, screenshots, talks, or marketing
 material for this repo.
 
+For the current two-act runbook, see [`docs/demo-workflow.md`](demo-workflow.md).
+
 ## Boundary
 
 The public demo workflow uses generated/synthetic vaults only:
@@ -20,8 +22,10 @@ fixtures, tests, docs, generated outputs, and MCP serving examples.
 - `.env.analytics.example` points to `./examples/synthetic-vault`.
 - `scripts/run_dataset_workflow.sh small|medium|large` processes checked-in
   generated fixtures as completed datasets without replay or Obsidian.
-- `scripts/analytics_stack_check.sh small|medium|large` overrides `VAULT_PATH`
-  with checked-in generated fixtures.
+- Generator-created datasets are imported manually under ignored `var/` storage
+  before this repo ingests them.
+- dbt Docs and the Postgres browser are optional proof surfaces behind explicit
+  workflow flags.
 - `scripts/run_synthetic_demo.sh` is a legacy replay path. It accepts only
   `small`, `medium`, or `large` and replays into ignored `var/replay-vault`
   storage.
