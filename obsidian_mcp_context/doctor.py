@@ -10,7 +10,11 @@ from pathlib import Path
 from pathlib import PurePosixPath
 import re
 
-from obsidian_mcp_context.config import load_app_config, vault_config_from_app_config
+from obsidian_mcp_context.config import (
+    PROJECT_ROOT,
+    load_app_config,
+    vault_config_from_app_config,
+)
 from obsidian_mcp_context.domain import frontmatter_value, note_title
 from obsidian_mcp_context.security import VaultPathError, validate_vault_path
 from obsidian_mcp_context.vault import (
@@ -485,6 +489,294 @@ def _record_policy_diagnostic(
     )
 
 
+def _readiness_check(
+    *,
+    name: str,
+    status: str,
+    message: str,
+    blocking: bool = False,
+    signals: dict[str, object] | None = None,
+    actions: list[str] | None = None,
+) -> dict[str, object]:
+    return {
+        "name": name,
+        "status": status,
+        "blocking": blocking,
+        "message": message,
+        "signals": signals or {},
+        "actions": actions or [],
+    }
+
+
+def _readiness_report(
+    *,
+    status: str,
+    errors: list[str],
+    warnings: list[str],
+    checks: list[dict[str, object]],
+) -> dict[str, object]:
+    suggestions: list[str] = []
+    for check in checks:
+        for action in check.get("actions", []):
+            if isinstance(action, str) and action not in suggestions:
+                suggestions.append(action)
+    return {
+        "status": "blocked" if status == "error" else status,
+        "blocking": bool(errors)
+        or any(bool(check.get("blocking")) for check in checks),
+        "error_count": len(errors),
+        "warning_count": len(warnings),
+        "blocking_errors": list(errors),
+        "checks": checks,
+        "suggestions": suggestions,
+    }
+
+
+def _unreadable_readiness(
+    *,
+    message: str,
+    path: Path,
+    exists: bool,
+) -> dict[str, object]:
+    return _readiness_report(
+        status="error",
+        errors=[message],
+        warnings=[],
+        checks=[
+            _readiness_check(
+                name="vault_access",
+                status="blocked",
+                blocking=True,
+                message="Vault path is not readable.",
+                signals={
+                    "path": str(path),
+                    "exists": exists,
+                    "readable": False,
+                },
+                actions=[
+                    "Provide a readable vault path with --vault.",
+                    "Check local filesystem permissions before running ingest or MCP.",
+                ],
+            )
+        ],
+    )
+
+
+def _build_readiness_checks(
+    *,
+    app_config: object,
+    vault_status: dict[str, object],
+    parser_status: dict[str, object],
+    content_status: dict[str, object],
+    graph_status: dict[str, object],
+    warehouse_status: dict[str, object],
+    dbt_project_path: Path,
+) -> list[dict[str, object]]:
+    checks: list[dict[str, object]] = []
+
+    profile_loaded = bool(getattr(app_config, "profile_path", None))
+    config_loaded = bool(getattr(app_config, "loaded", False))
+    checks.append(
+        _readiness_check(
+            name="profile",
+            status="ready" if profile_loaded else "warning",
+            message=(
+                "Vault profile is loaded."
+                if profile_loaded
+                else "No vault profile is loaded; defaults may not match this vault."
+            ),
+            signals={
+                "profile_loaded": profile_loaded,
+                "config_loaded": config_loaded,
+                "folder_note_type_count": vault_status.get("folder_note_type_count", 0),
+            },
+            actions=[]
+            if profile_loaded
+            else ["Select a vault profile with --vault-profile for non-demo vault runs."],
+        )
+    )
+
+    markdown_count = int(vault_status.get("markdown_file_count", 0))
+    unsupported_count = int(content_status.get("unsupported_file_count", 0))
+    ignored_count = int(vault_status.get("ignored_file_count", 0))
+    vault_actions = []
+    if markdown_count == 0:
+        vault_actions.append("Review scan include/exclude globs so Markdown files are scanned.")
+    if unsupported_count:
+        vault_actions.append("Review unsupported files and source_extensions.")
+    if ignored_count:
+        vault_actions.append("Review ignored files to confirm scan patterns are intentional.")
+    checks.append(
+        _readiness_check(
+            name="vault_access",
+            status="blocked" if markdown_count == 0 else ("warning" if vault_actions else "ready"),
+            blocking=markdown_count == 0,
+            message=(
+                "Vault has readable Markdown files."
+                if markdown_count
+                else "Vault has no scanned Markdown files."
+            ),
+            signals={
+                "markdown_file_count": markdown_count,
+                "ignored_file_count": ignored_count,
+                "excluded_file_count": vault_status.get("excluded_file_count", 0),
+                "unsupported_file_count": unsupported_count,
+            },
+            actions=vault_actions,
+        )
+    )
+
+    parser_files = int(parser_status.get("files", 0))
+    parser_blocks = int(parser_status.get("blocks", 0))
+    checks.append(
+        _readiness_check(
+            name="parser",
+            status="ready" if parser_files and parser_blocks else "blocked",
+            blocking=not (parser_files and parser_blocks),
+            message=(
+                "Parser produced notes and blocks."
+                if parser_files and parser_blocks
+                else "Parser did not produce usable note/block rows."
+            ),
+            signals=parser_status,
+            actions=[]
+            if parser_files and parser_blocks
+            else ["Inspect empty notes, source extensions, and Markdown parsing errors."],
+        )
+    )
+
+    content_actions = []
+    if content_status.get("missing_lifecycle_field_count"):
+        content_actions.append("Add or map lifecycle timestamp fields where useful.")
+    if content_status.get("empty_note_count"):
+        content_actions.append("Review empty notes and decide whether they should be excluded.")
+    if content_status.get("large_note_count"):
+        content_actions.append("Review oversized notes before MCP retrieval.")
+    if content_status.get("notes_without_blocks_count"):
+        content_actions.append("Review notes that produced no blocks.")
+    if content_status.get("malformed_lifecycle_field_count"):
+        content_actions.append("Fix malformed lifecycle timestamp values.")
+    checks.append(
+        _readiness_check(
+            name="content",
+            status="warning" if content_actions else "ready",
+            message=(
+                "Content checks found improvement opportunities."
+                if content_actions
+                else "Content checks passed without warnings."
+            ),
+            signals={
+                "empty_note_count": content_status.get("empty_note_count", 0),
+                "notes_without_blocks_count": content_status.get(
+                    "notes_without_blocks_count", 0
+                ),
+                "large_note_count": content_status.get("large_note_count", 0),
+                "missing_lifecycle_field_count": content_status.get(
+                    "missing_lifecycle_field_count", 0
+                ),
+                "malformed_lifecycle_field_count": content_status.get(
+                    "malformed_lifecycle_field_count", 0
+                ),
+            },
+            actions=content_actions,
+        )
+    )
+
+    graph_actions = []
+    if graph_status.get("warning_unresolved_wikilinks"):
+        graph_actions.append("Review unresolved wikilinks or export a local unresolved-link report.")
+    if graph_status.get("ignored_unresolved_wikilinks"):
+        graph_actions.append("Periodically review ignored unresolved wikilink patterns.")
+    checks.append(
+        _readiness_check(
+            name="graph",
+            status="warning" if graph_actions else "ready",
+            message=(
+                "Graph checks found unresolved wikilinks."
+                if graph_actions
+                else "Graph links are ready."
+            ),
+            signals={
+                "wikilinks": graph_status.get("wikilinks", 0),
+                "resolved_wikilinks": graph_status.get("resolved_wikilinks", 0),
+                "warning_unresolved_wikilinks": graph_status.get(
+                    "warning_unresolved_wikilinks", 0
+                ),
+                "ignored_unresolved_wikilinks": graph_status.get(
+                    "ignored_unresolved_wikilinks", 0
+                ),
+            },
+            actions=graph_actions,
+        )
+    )
+
+    in_memory = warehouse_status.get("in_memory", {})
+    warehouse_ok = isinstance(in_memory, dict) and bool(in_memory.get("ok"))
+    checks.append(
+        _readiness_check(
+            name="warehouse",
+            status="ready" if warehouse_ok else "blocked",
+            blocking=not warehouse_ok,
+            message=(
+                "In-memory warehouse builds successfully."
+                if warehouse_ok
+                else "In-memory warehouse build failed."
+            ),
+            signals=in_memory if isinstance(in_memory, dict) else {},
+            actions=[]
+            if warehouse_ok
+            else ["Fix parser or warehouse build errors before relying on marts."],
+        )
+    )
+
+    dbt_present = dbt_project_path.exists()
+    checks.append(
+        _readiness_check(
+            name="dbt",
+            status="not_checked" if dbt_present else "blocked",
+            blocking=not dbt_present,
+            message=(
+                "dbt project is present; run dbt build/test after Postgres ingest."
+                if dbt_present
+                else "dbt project file is missing."
+            ),
+            signals={
+                "project_path": str(dbt_project_path),
+                "project_present": dbt_present,
+            },
+            actions=[
+                "Run Postgres ingest and dbt build/test for mart-backed readiness."
+            ]
+            if dbt_present
+            else ["Restore dbt_project.yml before warehouse mart validation."],
+        )
+    )
+
+    mcp_ready = parser_files > 0 and warehouse_ok
+    checks.append(
+        _readiness_check(
+            name="mcp",
+            status="ready" if mcp_ready else "blocked",
+            blocking=not mcp_ready,
+            message=(
+                "MCP can use parsed context and warehouse-backed diagnostics."
+                if mcp_ready
+                else "MCP readiness is blocked by parser or warehouse issues."
+            ),
+            signals={
+                "parser_files": parser_files,
+                "warehouse_ok": warehouse_ok,
+                "samples_redacted_by_default": True,
+            },
+            actions=[]
+            if mcp_ready
+            else ["Resolve parser and warehouse readiness blockers before MCP use."],
+        )
+    )
+
+    return checks
+
+
 def run_doctor(options: DoctorOptions) -> dict[str, object]:
     warnings: list[str] = []
     errors: list[str] = []
@@ -505,6 +797,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "status": "error",
             "errors": [message],
             "warnings": [],
+            "readiness": _unreadable_readiness(
+                message=message,
+                path=options.vault_path,
+                exists=options.vault_path.exists(),
+            ),
             "diagnostics": [item.to_dict() for item in diagnostics],
             "vault": {
                 "path": str(options.vault_path),
@@ -526,6 +823,11 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
             "status": "error",
             "errors": [message],
             "warnings": [],
+            "readiness": _unreadable_readiness(
+                message=message,
+                path=vault_path,
+                exists=vault_path.exists(),
+            ),
             "diagnostics": [item.to_dict() for item in diagnostics],
             "vault": {
                 "path": str(vault_path),
@@ -866,98 +1168,120 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
     elif warnings:
         status = "warning"
 
+    vault_status = {
+        "path": str(vault_path),
+        "exists": True,
+        "readable": True,
+        "markdown_file_count": len(markdown_files),
+        "ignored_file_count": len(inventory["ignored_files"]),
+        "excluded_file_count": len(inventory["excluded_files"]),
+        "folder_note_type_count": len(vault_config.folder_note_types or {}),
+    }
+    config_status = {
+        "path": str(app_config.config_path) if app_config.config_path else None,
+        "profile_path": (
+            str(app_config.profile_path) if app_config.profile_path else None
+        ),
+        "loaded": app_config.loaded,
+        "include_globs": list(vault_config.include_globs),
+        "exclude_globs": list(vault_config.exclude_globs),
+        "source_extensions": list(vault_config.source_extensions),
+        "folder_note_type_count": len(vault_config.folder_note_types or {}),
+        "non_entity_note_types": list(vault_config.non_entity_note_types or ()),
+        "doctor": {
+            "lifecycle_metadata": app_config.doctor_lifecycle_metadata,
+            "ignored_files": app_config.doctor_ignored_files,
+            "unsupported_files": app_config.doctor_unsupported_files,
+            "empty_notes": app_config.doctor_empty_notes,
+            "notes_without_blocks": app_config.doctor_notes_without_blocks,
+            "large_notes": app_config.doctor_large_notes,
+            "unresolved_wikilinks": app_config.doctor_unresolved_wikilinks,
+            "unresolved_wikilink_ignore_target_globs": list(
+                app_config.doctor_unresolved_wikilink_ignore_target_globs
+            ),
+        },
+    }
+    parser_status = {
+        "files": len(context.files),
+        "blocks": len(context.blocks),
+        "tasks": len(context.tasks),
+        "links": len(context.links),
+        "tags": len(context.tags),
+        "semantic_lines": len(context.lines),
+    }
+    content_status = {
+        "empty_note_count": len(empty_notes),
+        "notes_without_blocks_count": len(notes_without_blocks),
+        "large_note_count": len(large_notes),
+        "missing_lifecycle_field_count": len(missing_lifecycle),
+        "malformed_lifecycle_field_count": len(malformed_lifecycle),
+        "unsupported_file_count": len(unsupported_files),
+        "empty_notes": empty_notes[:25] if options.include_samples else [],
+        "notes_without_blocks": notes_without_blocks[:25] if options.include_samples else [],
+        "large_notes": large_notes[:25] if options.include_samples else [],
+        "missing_lifecycle_fields": (
+            missing_lifecycle[:25] if options.include_samples else []
+        ),
+        "malformed_lifecycle_fields": (
+            malformed_lifecycle[:25] if options.include_samples else []
+        ),
+        "unsupported_files": unsupported_files[:25] if options.include_samples else [],
+    }
+    graph_status = {
+        "wikilinks": len(context.links),
+        "resolved_wikilinks": len(context.links) - len(unresolved),
+        "unresolved_wikilinks": len(unresolved),
+        "ignored_unresolved_wikilinks": len(ignored_unresolved),
+        "warning_unresolved_wikilinks": len(warning_unresolved),
+        "unresolved_target_shapes": unresolved_shapes,
+        "ignored_unresolved_target_shapes": ignored_unresolved_shapes,
+        "warning_unresolved_target_shapes": warning_unresolved_shapes,
+        "unresolved_path_like_reasons": unresolved_path_like_reasons,
+        "ignored_unresolved_path_like_reasons": (
+            ignored_unresolved_path_like_reasons
+        ),
+        "warning_unresolved_path_like_reasons": (
+            warning_unresolved_path_like_reasons
+        ),
+        "unresolved_remediation_hints": unresolved_remediation_hints,
+        "unresolved_export": unresolved_export,
+        "top_unresolved_targets": [
+            {"target": target, "count": count}
+            for target, count in unresolved_counts.most_common(10)
+        ]
+        if options.include_samples
+        else [],
+    }
+    readiness = _readiness_report(
+        status=status,
+        errors=errors,
+        warnings=warnings,
+        checks=_build_readiness_checks(
+            app_config=app_config,
+            vault_status=vault_status,
+            parser_status=parser_status,
+            content_status=content_status,
+            graph_status=graph_status,
+            warehouse_status=warehouse_status,
+            dbt_project_path=PROJECT_ROOT / "dbt_project.yml",
+        ),
+    )
+
     return {
         "status": status,
         "errors": errors,
         "warnings": warnings,
+        "readiness": readiness,
         "diagnostics": [item.to_dict() for item in diagnostics],
         "privacy": {
             "samples_included": options.include_samples,
             "samples_redacted": not options.include_samples,
         },
-        "vault": {
-            "path": str(vault_path),
-            "exists": True,
-            "readable": True,
-            "markdown_file_count": len(markdown_files),
-            "ignored_file_count": len(inventory["ignored_files"]),
-            "excluded_file_count": len(inventory["excluded_files"]),
-        },
-        "config": {
-            "path": str(app_config.config_path) if app_config.config_path else None,
-            "profile_path": (
-                str(app_config.profile_path) if app_config.profile_path else None
-            ),
-            "loaded": app_config.loaded,
-            "include_globs": list(vault_config.include_globs),
-            "exclude_globs": list(vault_config.exclude_globs),
-            "source_extensions": list(vault_config.source_extensions),
-            "folder_note_type_count": len(vault_config.folder_note_types or {}),
-            "non_entity_note_types": list(vault_config.non_entity_note_types or ()),
-            "doctor": {
-                "lifecycle_metadata": app_config.doctor_lifecycle_metadata,
-                "ignored_files": app_config.doctor_ignored_files,
-                "unsupported_files": app_config.doctor_unsupported_files,
-                "empty_notes": app_config.doctor_empty_notes,
-                "notes_without_blocks": app_config.doctor_notes_without_blocks,
-                "large_notes": app_config.doctor_large_notes,
-                "unresolved_wikilinks": app_config.doctor_unresolved_wikilinks,
-                "unresolved_wikilink_ignore_target_globs": list(
-                    app_config.doctor_unresolved_wikilink_ignore_target_globs
-                ),
-            },
-        },
-        "parser": {
-            "files": len(context.files),
-            "blocks": len(context.blocks),
-            "tasks": len(context.tasks),
-            "links": len(context.links),
-            "tags": len(context.tags),
-            "semantic_lines": len(context.lines),
-        },
-        "content": {
-            "empty_note_count": len(empty_notes),
-            "notes_without_blocks_count": len(notes_without_blocks),
-            "large_note_count": len(large_notes),
-            "missing_lifecycle_field_count": len(missing_lifecycle),
-            "malformed_lifecycle_field_count": len(malformed_lifecycle),
-            "unsupported_file_count": len(unsupported_files),
-            "empty_notes": empty_notes[:25] if options.include_samples else [],
-            "notes_without_blocks": notes_without_blocks[:25] if options.include_samples else [],
-            "large_notes": large_notes[:25] if options.include_samples else [],
-            "missing_lifecycle_fields": (
-                missing_lifecycle[:25] if options.include_samples else []
-            ),
-            "malformed_lifecycle_fields": (
-                malformed_lifecycle[:25] if options.include_samples else []
-            ),
-            "unsupported_files": unsupported_files[:25] if options.include_samples else [],
-        },
-        "graph": {
-            "wikilinks": len(context.links),
-            "resolved_wikilinks": len(context.links) - len(unresolved),
-            "unresolved_wikilinks": len(unresolved),
-            "ignored_unresolved_wikilinks": len(ignored_unresolved),
-            "warning_unresolved_wikilinks": len(warning_unresolved),
-            "unresolved_target_shapes": unresolved_shapes,
-            "ignored_unresolved_target_shapes": ignored_unresolved_shapes,
-            "warning_unresolved_target_shapes": warning_unresolved_shapes,
-            "unresolved_path_like_reasons": unresolved_path_like_reasons,
-            "ignored_unresolved_path_like_reasons": (
-                ignored_unresolved_path_like_reasons
-            ),
-            "warning_unresolved_path_like_reasons": (
-                warning_unresolved_path_like_reasons
-            ),
-            "unresolved_remediation_hints": unresolved_remediation_hints,
-            "unresolved_export": unresolved_export,
-            "top_unresolved_targets": [
-                {"target": target, "count": count}
-                for target, count in unresolved_counts.most_common(10)
-            ]
-            if options.include_samples
-            else [],
-        },
+        "vault": vault_status,
+        "config": config_status,
+        "parser": parser_status,
+        "content": content_status,
+        "graph": graph_status,
         "warehouse": warehouse_status,
     }
 
@@ -1001,6 +1325,14 @@ def format_human(report: dict[str, object]) -> str:
         in_memory = warehouse.get("in_memory", {})
         if isinstance(in_memory, dict):
             lines.append(f"In-memory warehouse: {'ok' if in_memory.get('ok') else 'failed'}")
+    readiness = report.get("readiness", {})
+    if isinstance(readiness, dict):
+        lines.append(
+            "Readiness: "
+            f"{str(readiness.get('status', 'unknown')).upper()} "
+            f"({readiness.get('warning_count', 0)} warnings, "
+            f"{readiness.get('error_count', 0)} errors)"
+        )
 
     warnings = report.get("warnings", [])
     if warnings:
@@ -1025,6 +1357,11 @@ def format_human(report: dict[str, object]) -> str:
         lines.append("Unresolved wikilink remediation hints:")
         for row in graph["unresolved_remediation_hints"]:
             lines.append(f"- {row['code']}: {row['count']} ({row['message']})")
+    if isinstance(readiness, dict) and readiness.get("suggestions"):
+        lines.append("")
+        lines.append("Readiness suggestions:")
+        for suggestion in readiness["suggestions"]:
+            lines.append(f"- {suggestion}")
 
     return "\n".join(lines)
 
