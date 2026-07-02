@@ -53,6 +53,22 @@ updated_at: 2026-06-28T09:20:00
     assert report["graph"]["resolved_wikilinks"] == 1
     assert report["graph"]["unresolved_wikilinks"] == 1
     assert report["warehouse"]["in_memory"]["ok"] is True
+    assert report["readiness"]["status"] == "warning"
+    assert report["readiness"]["blocking"] is False
+    assert report["readiness"]["warning_count"] == len(report["warnings"])
+    readiness_checks = {
+        item["name"]: item for item in report["readiness"]["checks"]
+    }
+    assert readiness_checks["vault_access"]["status"] == "warning"
+    assert readiness_checks["parser"]["status"] == "ready"
+    assert readiness_checks["content"]["status"] == "ready"
+    assert readiness_checks["graph"]["status"] == "warning"
+    assert readiness_checks["warehouse"]["status"] == "ready"
+    assert readiness_checks["dbt"]["status"] == "not_checked"
+    assert readiness_checks["mcp"]["status"] == "ready"
+    assert "Run Postgres ingest and dbt build/test for mart-backed readiness." in report[
+        "readiness"
+    ]["suggestions"]
     assert {item["code"] for item in report["diagnostics"]} >= {
         DoctorCode.UNSUPPORTED_FILE.value,
         DoctorCode.UNRESOLVED_WIKILINK.value,
@@ -557,8 +573,61 @@ def test_doctor_human_output_includes_aggregate_remediation_hints(tmp_path: Path
     output = format_human(report)
 
     assert "Unresolved wikilink remediation hints:" in output
+    assert "Readiness: WARNING" in output
+    assert "Readiness suggestions:" in output
     assert "create_note: 1" in output
     assert "Missing/Path" not in output
+
+
+def test_doctor_readiness_blocks_unusable_scan(tmp_path: Path):
+    vault = tmp_path / "vault"
+    vault.mkdir()
+    (vault / "Note.txt").write_text("Not markdown\n", encoding="utf-8")
+    config_path = tmp_path / "config.toml"
+    config_path.write_text(
+        """
+[scan]
+include_globs = ["**/*.md"]
+source_extensions = [".md"]
+""".strip(),
+        encoding="utf-8",
+    )
+
+    report = run_doctor(DoctorOptions(vault_path=vault, config_path=config_path))
+    readiness_checks = {
+        item["name"]: item for item in report["readiness"]["checks"]
+    }
+
+    assert report["status"] == "error"
+    assert report["readiness"]["status"] == "blocked"
+    assert report["readiness"]["blocking"] is True
+    assert readiness_checks["vault_access"]["status"] == "blocked"
+    assert readiness_checks["parser"]["status"] == "blocked"
+    assert readiness_checks["mcp"]["status"] == "blocked"
+    assert "Review scan include/exclude globs so Markdown files are scanned." in report[
+        "readiness"
+    ]["suggestions"]
+
+
+def test_doctor_readiness_doc_describes_json_contract_and_privacy():
+    docs = Path("docs/doctor-readiness.md").read_text(encoding="utf-8")
+
+    for value in [
+        "readiness.status",
+        "readiness.checks",
+        "profile",
+        "vault_access",
+        "parser",
+        "content",
+        "graph",
+        "warehouse",
+        "dbt",
+        "mcp",
+        "not_checked",
+        "var/generated-doctor-readiness.json",
+    ]:
+        assert value in docs
+    assert "$VAULT_PATH" in docs
 
 
 def test_doctor_cli_outputs_json(tmp_path: Path, capsys):
