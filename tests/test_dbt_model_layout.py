@@ -27,3 +27,16 @@ def test_dbt_mart_model_prefixes_match_their_folder():
         sql_models = sorted(folder.glob("*.sql"))
         assert sql_models, f"Expected dbt models in {folder}"
         assert all(path.name.startswith(prefix) for path in sql_models)
+
+
+def test_typed_dimensions_do_not_depend_on_fact_models():
+    typed_dimensions = [
+        MARTS_DIR / "dim" / "dim_people.sql",
+        MARTS_DIR / "dim" / "dim_companies.sql",
+        MARTS_DIR / "dim" / "dim_projects.sql",
+    ]
+
+    for model in typed_dimensions:
+        sql = model.read_text(encoding="utf-8")
+        assert "ref('fact_" not in sql
+        assert 'ref("fact_' not in sql

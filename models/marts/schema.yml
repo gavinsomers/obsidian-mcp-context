@@ -401,6 +401,66 @@ models:
                 to: ref('mart_timeline')
                 field: timeline_id
 
+  - name: mart_person_summary
+    columns:
+      - name: person_id
+        tests:
+          - not_null
+          - unique
+          - relationships:
+              arguments:
+                to: ref('dim_people')
+                field: person_id
+      - name: mention_count
+        tests:
+          - not_null
+      - name: mentioned_in_note_count
+        tests:
+          - not_null
+      - name: open_task_count
+        tests:
+          - not_null
+
+  - name: mart_company_summary
+    columns:
+      - name: company_id
+        tests:
+          - not_null
+          - unique
+          - relationships:
+              arguments:
+                to: ref('dim_companies')
+                field: company_id
+      - name: mention_count
+        tests:
+          - not_null
+      - name: mentioned_in_note_count
+        tests:
+          - not_null
+      - name: open_task_count
+        tests:
+          - not_null
+
+  - name: mart_project_summary
+    columns:
+      - name: project_id
+        tests:
+          - not_null
+          - unique
+          - relationships:
+              arguments:
+                to: ref('dim_projects')
+                field: project_id
+      - name: mention_count
+        tests:
+          - not_null
+      - name: mentioned_in_note_count
+        tests:
+          - not_null
+      - name: open_task_count
+        tests:
+          - not_null
+
   - name: mart_timeline
     columns:
       - name: timeline_id

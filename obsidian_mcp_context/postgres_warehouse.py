@@ -32,6 +32,9 @@ REQUIRED_MARTS = {
     "mart_entity_context",
     "mart_person_context",
     "mart_project_context",
+    "mart_person_summary",
+    "mart_company_summary",
+    "mart_project_summary",
 }
 SCHEMA_RE = re.compile(r"^[A-Za-z_][A-Za-z0-9_]*$")
 
