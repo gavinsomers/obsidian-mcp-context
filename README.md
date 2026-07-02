@@ -47,8 +47,29 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -e ".[dev,pipeline]"
 ```
 
-Run the generated-large Postgres stack end to end and keep it available for
-MCP and CLI proof commands:
+Run the quiet completed-dataset workflow when you want to ingest a full
+generated vault, build/test dbt marts, and start MCP without Obsidian or replay
+services:
+
+```bash
+scripts/run_dataset_workflow.sh examples/generated-vaults/large
+```
+
+The same command also accepts checked-in fixture shortcuts:
+
+```bash
+scripts/run_dataset_workflow.sh small
+scripts/run_dataset_workflow.sh medium
+scripts/run_dataset_workflow.sh large
+```
+
+This validates the selected dataset, starts Postgres, ingests the full vault,
+runs dbt, runs dbt tests, and starts MCP at `http://localhost:8000`. It does not
+copy data from the generator; pass the generated vault path explicitly after
+manually importing or placing it where you want it.
+
+Run the generated-large Postgres stack end to end with an MCP smoke check when
+you want the older verification command:
 
 ```bash
 ANALYTICS_STACK_KEEP_RUNNING=1 scripts/analytics_stack_check.sh large
