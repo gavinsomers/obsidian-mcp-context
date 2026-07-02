@@ -12,33 +12,41 @@ For the pre-demo privacy checklist, see
 - `examples/generated-vaults/medium`: development checks.
 - `examples/generated-vaults/large`: canonical scale and MCP validation.
 
-## 2. Run The Postgres Stack
+## 2. Run The Completed-Dataset Workflow
 
-Run the generated-large end-to-end check:
+Run the generated-large completed-dataset workflow:
 
 ```bash
-scripts/analytics_stack_check.sh large
+scripts/run_dataset_workflow.sh large
 ```
 
-The check mounts the generated fixture into the container stack, ingests parsed
-rows into Postgres, runs dbt, runs dbt tests, and performs a Postgres-backed MCP
-smoke check.
+The workflow mounts the generated fixture into the container stack, ingests
+parsed rows into Postgres, runs dbt, runs dbt tests, and starts MCP.
 
 For faster checks:
 
 ```bash
-scripts/analytics_stack_check.sh small
-scripts/analytics_stack_check.sh medium
+scripts/run_dataset_workflow.sh small
+scripts/run_dataset_workflow.sh medium
 ```
 
-## 3. Keep MCP Running
+For generator outputs created outside this repository, import the completed
+vault manually into an ignored local path and then pass that path explicitly:
 
 ```bash
-ANALYTICS_STACK_KEEP_RUNNING=1 scripts/analytics_stack_check.sh large
-docker compose --env-file .env.analytics.example -f docker-compose.analytics.yml up -d mcp
+scripts/run_dataset_workflow.sh var/imported-vaults/generated-current
 ```
 
-The MCP container exposes:
+See [`docs/dataset-handoff-contract.md`](dataset-handoff-contract.md) for the
+manual generator-to-main handoff contract.
+
+## 3. Use MCP
+
+```bash
+scripts/run_dataset_workflow.sh large
+```
+
+The workflow leaves the MCP container running at:
 
 ```text
 http://localhost:8000
@@ -46,7 +54,23 @@ http://localhost:8000
 
 For client configuration, see `docs/mcp-client-setup.md`.
 
-## 4. Inspect Diagnostics
+## 4. Inspect Lineage And Tables
+
+Start inspection surfaces only when you want to show lineage or row-level
+evidence:
+
+```bash
+scripts/run_dataset_workflow.sh large --with-inspection
+```
+
+Open:
+
+```text
+dbt Docs:         http://localhost:8081
+Postgres browser: http://localhost:8082
+```
+
+## 5. Inspect Parser Diagnostics
 
 Parser diagnostics can still inspect generated source files directly:
 

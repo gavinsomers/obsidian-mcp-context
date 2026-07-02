@@ -61,7 +61,8 @@ The workflow validates the vault manifest, starts Postgres, runs ingest, runs
 dbt, runs dbt tests, and starts MCP. It writes Compose output to
 `logs/dataset-workflow/` so the terminal stays focused on the stage summary.
 It does not copy datasets from the generator automatically; provide the path you
-want processed.
+want processed. For the manual import contract, see
+[`docs/dataset-handoff-contract.md`](dataset-handoff-contract.md).
 
 Inspection surfaces are explicit. Start both dbt lineage docs and the table
 browser with:

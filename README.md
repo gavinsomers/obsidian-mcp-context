@@ -68,6 +68,9 @@ runs dbt, runs dbt tests, and starts MCP at `http://localhost:8000`. It does not
 copy data from the generator; pass the generated vault path explicitly after
 manually importing or placing it where you want it.
 
+For the manual generator-to-main handoff rules, see
+[docs/dataset-handoff-contract.md](docs/dataset-handoff-contract.md).
+
 Start lineage and table inspection views only when you want to show them:
 
 ```bash
