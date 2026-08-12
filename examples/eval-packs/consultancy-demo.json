@@ -15,9 +15,9 @@
       "min_sources": 4,
       "expected_answer_contains": ["Project Atlas 1", "risk open", "open loop"],
       "expected_source_contains": [
-        "risks/Project Atlas 1",
+        "risks/project_atlas_1",
         "daily/",
-        "meetings/Project Atlas 1"
+        "meetings/project_atlas_1"
       ]
     },
     {
@@ -30,8 +30,8 @@
       "min_sources": 2,
       "expected_answer_contains": ["Project Atlas 1", "decision"],
       "expected_source_contains": [
-        "decisions/Project Atlas 1 Security Review",
-        "decisions/Project Atlas 1 Adoption Workflow"
+        "decisions/project_atlas_1_security_review",
+        "decisions/project_atlas_1_adoption_workflow"
       ]
     },
     {
@@ -65,7 +65,7 @@
       "expected_entity": "Project Beacon 2",
       "min_sources": 2,
       "expected_answer_contains": ["Project Beacon 2", "risk open"],
-      "expected_source_contains": ["risks/Project Beacon 2"]
+      "expected_source_contains": ["risks/project_beacon_2"]
     },
     {
       "id": "beacon-latest-context",

@@ -15,7 +15,11 @@ from obsidian_mcp_context.config import (
     load_app_config,
     vault_config_from_app_config,
 )
-from obsidian_mcp_context.domain import frontmatter_value, note_title
+from obsidian_mcp_context.domain import (
+    frontmatter_value,
+    link_resolution_key,
+    note_resolution_keys,
+)
 from obsidian_mcp_context.security import VaultPathError, validate_vault_path
 from obsidian_mcp_context.vault import (
     VaultConfig,
@@ -33,8 +37,6 @@ LIFECYCLE_FIELDS = (
     "created_at",
     "updated_at",
 )
-FRONTMATTER_BODY_RE = re.compile(r"(?ms)\A\s*---(?P<body>.*?)^---\s*$")
-FRONTMATTER_LIST_ITEM_RE = re.compile(r"^\s*-\s*[\"']?(.+?)[\"']?\s*$")
 DATE_LIKE_TARGET_RE = re.compile(r"(?<!\d)\d{4}-\d{2}-\d{2}(?!\d)")
 URL_LIKE_TARGET_RE = re.compile(r"^[a-z][a-z0-9+.-]*://", re.IGNORECASE)
 UNRESOLVED_REASON_HINTS = {
@@ -145,69 +147,6 @@ def _iso_datetime(value: str) -> bool:
     return True
 
 
-def _clean_frontmatter_scalar(value: str) -> str:
-    return value.strip().strip("\"'")
-
-
-def _frontmatter_list_values(text: str | None, field: str) -> list[str]:
-    if not text:
-        return []
-    frontmatter_match = FRONTMATTER_BODY_RE.search(text)
-    if not frontmatter_match:
-        return []
-
-    lines = frontmatter_match.group("body").splitlines()
-    values: list[str] = []
-    collecting_block = False
-    for line in lines:
-        if not line.strip():
-            continue
-        field_match = re.match(rf"^{re.escape(field)}:\s*(.*)$", line)
-        if field_match:
-            raw_value = field_match.group(1).strip()
-            collecting_block = raw_value == ""
-            if raw_value.startswith("[") and raw_value.endswith("]"):
-                inner = raw_value[1:-1]
-                values.extend(
-                    _clean_frontmatter_scalar(item)
-                    for item in inner.split(",")
-                    if _clean_frontmatter_scalar(item)
-                )
-            elif raw_value:
-                values.append(_clean_frontmatter_scalar(raw_value))
-            continue
-        if collecting_block:
-            item_match = FRONTMATTER_LIST_ITEM_RE.match(line)
-            if item_match:
-                value = _clean_frontmatter_scalar(item_match.group(1))
-                if value:
-                    values.append(value)
-                continue
-            if not line.startswith((" ", "\t", "-")):
-                collecting_block = False
-    return values
-
-
-def _link_resolution_key(value: str) -> str:
-    target = value.split("#", 1)[0].split("^", 1)[0].strip()
-    if target.endswith(".md"):
-        target = target[:-3]
-    return target.casefold()
-
-
-def _note_resolution_keys(source_path: str, note_text: str | None) -> set[str]:
-    path_without_extension = source_path[:-3] if source_path.endswith(".md") else source_path
-    keys = {
-        note_title(source_path, note_text).casefold(),
-        source_path.casefold(),
-        path_without_extension.casefold(),
-    }
-    for alias_field in ("alias", "aliases"):
-        for alias in _frontmatter_list_values(note_text, alias_field):
-            keys.add(_link_resolution_key(alias))
-    return {key for key in keys if key}
-
-
 def _link_target_shape(value: str) -> str:
     target = value.strip()
     if URL_LIKE_TARGET_RE.match(target):
@@ -235,7 +174,7 @@ def _matches_target_glob(target: str, patterns: tuple[str, ...]) -> bool:
     candidates = {
         stripped,
         stripped.split("#", 1)[0].split("^", 1)[0].strip(),
-        _link_resolution_key(stripped),
+        link_resolution_key(stripped),
     }
     return any(
         fnmatchcase(candidate.casefold(), pattern.casefold())
@@ -993,17 +932,16 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
     resolvable_link_targets: set[str] = set()
     for source_file in context.files:
         resolvable_link_targets.update(
-            _note_resolution_keys(
+            note_resolution_keys(
                 source_file.source_path,
-                source_file.absolute_path.read_text(
-                    encoding="utf-8", errors="replace"
-                ),
+                source_file.title,
+                source_file.aliases,
             )
         )
     unresolved_links = [
         link
         for link in context.links
-        if _link_resolution_key(link.link_target) not in resolvable_link_targets
+        if link_resolution_key(link.link_target) not in resolvable_link_targets
     ]
     ignored_unresolved_links = [
         link

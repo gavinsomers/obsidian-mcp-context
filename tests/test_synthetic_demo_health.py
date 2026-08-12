@@ -7,6 +7,8 @@ from pathlib import Path
 import subprocess
 import threading
 
+import pytest
+
 from obsidian_mcp_context.replay_dashboard import REPLAY_STATE_FILE, SCHEDULER_STATE_FILE
 from obsidian_mcp_context.synthetic_demo_health import (
     _read_env_file,
@@ -133,12 +135,15 @@ def test_read_env_file_ignores_comments_and_unquotes_values(tmp_path):
     }
 
 
-def test_run_checks_passes_with_state_services_and_canned_questions(tmp_path):
+@pytest.mark.parametrize(
+    "eval_pack", ["generated-demo.json", "consultancy-demo.json"]
+)
+def test_run_checks_passes_with_state_services_and_canned_questions(tmp_path, eval_pack):
     _write_json(tmp_path / REPLAY_STATE_FILE, {"loaded_count": 3})
     _write_json(tmp_path / SCHEDULER_STATE_FILE, {"status": "success"})
     examples = tmp_path / "examples.json"
     examples.write_text(
-        Path("examples/eval-packs/generated-demo.json").read_text(encoding="utf-8"),
+        Path("examples/eval-packs", eval_pack).read_text(encoding="utf-8"),
         encoding="utf-8",
     )
     server, thread, port = _server()

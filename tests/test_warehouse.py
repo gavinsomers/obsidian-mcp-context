@@ -192,14 +192,22 @@ aliases: ["Morgan"]
 
     summary = warehouse_summary(warehouse)
     suggestions = list_deterministic_suggested_links(warehouse, limit=20)
+    resolved_path_link = warehouse.connection.execute(
+        """
+        select e.name
+        from fact_links l
+        join dim_entities e on e.entity_id = l.target_entity_id
+        where l.link_target = 'projects/project_atlas'
+        """
+    ).fetchone()
 
-    assert summary["tables"]["deterministic_suggested_links"] >= 3
+    assert summary["tables"]["deterministic_suggested_links"] >= 2
+    assert resolved_path_link == {"name": "Project Atlas"}
     assert {
         (row["link_target"], row["candidate_title"], row["suggestion_type"])
         for row in suggestions
     } >= {
         ("Morgan", "Morgan Lee", "exact_alias"),
-        ("projects/project_atlas", "Project Atlas", "exact_basename"),
         ("Project Atals", "Project Atlas", "string_similarity"),
     }
     atlas = next(
@@ -210,6 +218,54 @@ aliases: ["Morgan"]
     )
     assert atlas["deterministic_score"] >= 0.5
     assert atlas["signals"]["match"] == "string_similarity"
+
+
+def test_warehouse_resolves_filename_stems_to_parsed_note_identity(tmp_path: Path):
+    vault = tmp_path / "vault"
+    (vault / "people").mkdir(parents=True)
+    (vault / "daily").mkdir()
+    person_path = vault / "people" / "morgan_lee.md"
+    person_path.write_text(
+        "---\naliases: [Morgan]\n---\n# Morgan Lee\n",
+        encoding="utf-8",
+    )
+    (vault / "daily" / "2026-06-28.md").write_text(
+        "# Daily\n\nDiscussed [[morgan_lee]].\n",
+        encoding="utf-8",
+    )
+
+    context = build_context(VaultConfig(vault_path=vault))
+    warehouse = build_warehouse(context)
+
+    resolved = warehouse.connection.execute(
+        """
+        select e.entity_type, e.name, e.canonical_note_id
+        from fact_links l
+        join dim_entities e on e.entity_id = l.target_entity_id
+        where l.link_target = 'morgan_lee'
+        """
+    ).fetchone()
+    assert resolved == {
+        "entity_type": "person",
+        "name": "Morgan Lee",
+        "canonical_note_id": "note:people-morgan-lee-md",
+    }
+
+
+def test_warehouse_uses_parsed_title_after_source_is_removed(tmp_path: Path):
+    vault = tmp_path / "vault"
+    (vault / "people").mkdir(parents=True)
+    person_path = vault / "people" / "morgan_lee.md"
+    person_path.write_text("# Morgan Lee\n", encoding="utf-8")
+
+    context = build_context(VaultConfig(vault_path=vault))
+    person_path.unlink()
+    warehouse = build_warehouse(context)
+
+    note = warehouse.connection.execute(
+        "select title from dim_notes where source_path = 'people/morgan_lee.md'"
+    ).fetchone()
+    assert note == {"title": "Morgan Lee"}
 
 
 def test_warehouse_bounds_deterministic_suggestions_per_unresolved_link(

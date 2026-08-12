@@ -14,7 +14,7 @@ from obsidian_mcp_context.config import (
     load_app_config,
     vault_config_from_app_config,
 )
-from obsidian_mcp_context.domain import frontmatter_value, note_title, source_date
+from obsidian_mcp_context.domain import frontmatter_value, source_date
 from obsidian_mcp_context.vault import build_context
 
 
@@ -199,9 +199,6 @@ def build_ingest_payload(
     note_type_counts: dict[str, int] = {}
     for source_file in context.files:
         first_block_text = first_block_text_by_source.get(source_file.source_path)
-        note_text = source_file.absolute_path.read_text(
-            encoding="utf-8", errors="replace"
-        )
         note_type_counts[source_file.note_type] = (
             note_type_counts.get(source_file.note_type, 0) + 1
         )
@@ -211,7 +208,7 @@ def build_ingest_payload(
                 source_file.source_path,
                 str(source_file.absolute_path),
                 source_file.note_type,
-                note_title(source_file.source_path, note_text),
+                source_file.title,
                 source_date(source_file.source_path, first_block_text),
                 frontmatter_value(first_block_text, "source_created_at"),
                 frontmatter_value(first_block_text, "source_observed_at"),

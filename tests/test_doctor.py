@@ -269,6 +269,7 @@ alias: Morgan
         "\n".join(
             [
                 "[[Morgan Lee]]",
+                "[[morgan_lee]]",
                 "[[people/morgan_lee]]",
                 "[[people/morgan_lee.md]]",
                 "[[Morgan Lee#Profile]]",
@@ -285,8 +286,8 @@ alias: Morgan
         DoctorOptions(vault_path=vault, config_path=tmp_path / "missing-config.toml")
     )
 
-    assert report["graph"]["wikilinks"] == 8
-    assert report["graph"]["resolved_wikilinks"] == 7
+    assert report["graph"]["wikilinks"] == 9
+    assert report["graph"]["resolved_wikilinks"] == 8
     assert report["graph"]["unresolved_wikilinks"] == 1
     assert report["graph"]["unresolved_target_shapes"] == {"plain_text": 1}
 
