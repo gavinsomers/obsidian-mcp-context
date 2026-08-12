@@ -14,10 +14,10 @@ from obsidian_mcp_context.warehouse import build_warehouse, list_entities
 def test_config_applies_scan_excludes_and_folder_entity_overrides(tmp_path: Path):
     vault = tmp_path / "vault"
     config_path = tmp_path / "config.toml"
-    (vault / "Clients").mkdir(parents=True)
+    (vault / "clients").mkdir(parents=True)
     (vault / "Calendars").mkdir()
     (vault / "Imports").mkdir()
-    (vault / "Clients" / "Acme.md").write_text(
+    (vault / "clients" / "Acme.md").write_text(
         "# Acme\n\nLinked from [[2026 Calendar]].\n",
         encoding="utf-8",
     )
@@ -35,7 +35,7 @@ extra_exclude_globs = ["Imports/**"]
 non_entity_note_types = ["daily", "meeting", "note", "research", "calendar"]
 
 [entities.folders]
-Clients = "company"
+clients = "company"
 Calendars = "calendar"
 """.strip(),
         encoding="utf-8",
@@ -51,13 +51,13 @@ Calendars = "calendar"
 
     assert {file.source_path for file in context.files} == {
         "Calendars/2026 Calendar.md",
-        "Clients/Acme.md",
+        "clients/Acme.md",
     }
     assert {
         (file.source_path, file.note_type) for file in context.files
     } == {
         ("Calendars/2026 Calendar.md", "calendar"),
-        ("Clients/Acme.md", "company"),
+        ("clients/Acme.md", "company"),
     }
     assert {(entity["entity_type"], entity["name"]) for entity in entities} == {
         ("company", "Acme")
@@ -245,16 +245,16 @@ def test_generated_demo_vault_profile_is_public_synthetic_contract():
 
     assert app_config.profile_path == profile_path
     assert app_config.include_globs == ("**/*.md",)
-    assert "System/Marts/**" in app_config.exclude_globs
+    assert "system/marts/**" in app_config.exclude_globs
     assert app_config.folder_note_types == {
-        "Companies": "company",
-        "Daily": "daily",
-        "Decisions": "decision",
-        "Meetings": "meeting",
-        "People": "person",
-        "Projects": "project",
-        "Research": "research",
-        "Risks": "risk",
+        "companies": "company",
+        "daily": "daily",
+        "decisions": "decision",
+        "meetings": "meeting",
+        "people": "person",
+        "projects": "project",
+        "research": "research",
+        "risks": "risk",
     }
     assert app_config.replay_qa_eval_pack == "generated-demo"
 
@@ -316,7 +316,7 @@ def test_doctor_reports_loaded_config_without_content_samples(tmp_path: Path):
 extra_exclude_globs = ["Private/**"]
 
 [entities.folders]
-Clients = "company"
+clients = "company"
 """.strip(),
         encoding="utf-8",
     )

@@ -19,7 +19,7 @@ def test_demo_workflow_doc_describes_two_act_d3_to_dbt_flow():
 
 
 def test_primary_docs_link_to_demo_workflow():
-    readme = Path("README.md").read_text(encoding="utf-8")
+    readme = Path("readme.md").read_text(encoding="utf-8")
     onboarding = Path("docs/onboarding.md").read_text(encoding="utf-8")
     container_stack = Path("docs/container-stack.md").read_text(encoding="utf-8")
     privacy = Path("docs/demo-privacy-readiness.md").read_text(encoding="utf-8")
@@ -31,7 +31,7 @@ def test_primary_docs_link_to_demo_workflow():
 
 
 def test_primary_readme_no_longer_promotes_replay_or_obsidian_as_demo_path():
-    readme = Path("README.md").read_text(encoding="utf-8")
+    readme = Path("readme.md").read_text(encoding="utf-8")
 
     assert "VAULT_PATH=./var/imported-vaults/generated-current WITH_INSPECTION=1" in readme
     assert "docker compose --profile workflow -f docker-compose.analytics.yml run --rm dataset-workflow" in readme

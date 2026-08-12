@@ -38,14 +38,14 @@ The imported directory must be a complete Obsidian-style vault:
 ```text
 var/imported-vaults/<dataset-id>/
   manifest.json
-  Companies/
-  Daily/
-  Decisions/
-  Meetings/
-  People/
-  Projects/
-  Research/
-  Risks/
+  companies/
+  daily/
+  decisions/
+  meetings/
+  people/
+  projects/
+  research/
+  risks/
   ...
 ```
 

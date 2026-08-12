@@ -26,7 +26,7 @@ status: active
 ---
 # Acme
 
-Links to [[Call One]] and [[Logs/Call One|call]].
+Links to [[Call One]] and [[logs/call_one|call]].
 
 - [ ] Follow up #client
 """,

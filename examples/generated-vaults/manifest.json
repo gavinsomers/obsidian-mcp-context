@@ -10,14 +10,14 @@
     "small": {
       "path": "small",
       "counts": {
-        "Companies": 8,
-        "People": 32,
-        "Projects": 12,
-        "Meetings": 60,
-        "Risks": 24,
-        "Research": 24,
-        "Decisions": 24,
-        "Daily": 48,
+        "companies": 8,
+        "people": 32,
+        "projects": 12,
+        "meetings": 60,
+        "risks": 24,
+        "research": 24,
+        "decisions": 24,
+        "daily": 48,
         "Total_Files": 232
       },
       "actual_lifecycle_ranges": {
@@ -51,14 +51,14 @@
     "medium": {
       "path": "medium",
       "counts": {
-        "Companies": 30,
-        "People": 150,
-        "Projects": 50,
-        "Meetings": 320,
-        "Risks": 130,
-        "Research": 130,
-        "Decisions": 130,
-        "Daily": 260,
+        "companies": 30,
+        "people": 150,
+        "projects": 50,
+        "meetings": 320,
+        "risks": 130,
+        "research": 130,
+        "decisions": 130,
+        "daily": 260,
         "Total_Files": 1200
       },
       "actual_lifecycle_ranges": {
@@ -92,14 +92,14 @@
     "large": {
       "path": "large",
       "counts": {
-        "Companies": 120,
-        "People": 600,
-        "Projects": 220,
-        "Meetings": 1900,
-        "Risks": 680,
-        "Research": 620,
-        "Decisions": 760,
-        "Daily": 780,
+        "companies": 120,
+        "people": 600,
+        "projects": 220,
+        "meetings": 1900,
+        "risks": 680,
+        "research": 620,
+        "decisions": 760,
+        "daily": 780,
         "Total_Files": 5680
       },
       "actual_lifecycle_ranges": {

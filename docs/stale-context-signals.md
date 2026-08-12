@@ -25,7 +25,7 @@ Signals use three implementation statuses:
 
 | Signal ID | Status | Meaning | Current evidence |
 | --- | --- | --- | --- |
-| `unresolved_wikilinks` | `observable_now` | Wikilinks that do not resolve to scanned note titles. | `doctor.graph.warning_unresolved_wikilinks`, top unresolved targets, path-like reasons. |
+| `unresolved_wikilinks` | `observable_now` | Wikilinks that do not resolve to scanned note identities. | `doctor.graph.warning_unresolved_wikilinks`, top unresolved targets, path-like reasons. |
 | `renamed_or_moved_notes` | `observable_now` | Path-like unresolved links that suggest note titles or folders changed. | Doctor unresolved path-like classifications. |
 | `orphaned_references` | `observable_now` | Mentions, links, or tasks point at entities without canonical typed context. | Unresolved wikilinks, `unknown` entities, mentions attached to unknown entities. |
 | `stale_open_loops` | `observable_now` | Old unchecked tasks attached to modeled entities. | `mart_entity_open_loops`, `mart_open_loops`, `stale_entities` context preset. |

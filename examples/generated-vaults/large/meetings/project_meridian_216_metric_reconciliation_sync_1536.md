@@ -1,0 +1,29 @@
+---
+aliases: ["Project Meridian 216 Metric Reconciliation Sync 1536"]
+type: meeting
+date: 2026-04-10
+project: "[[Project Meridian 216]]"
+company: "[[Summit Analytics]]"
+source_created_at: 2026-04-10T16:29:00
+source_observed_at: 2026-04-10T18:07:00
+created_at: 2026-04-13T23:29:00
+updated_at: 2026-04-14T12:29:00
+tags: [#meeting]
+---
+# Project Meridian 216 Metric Reconciliation Sync 1536
+
+## Evergreen Attendees
+- [[Omar Alvarez]]
+
+## Client Attendees
+- [[Clara Morgan]]
+- [[Sam Quinn]]
+- [[Grace Vance]]
+
+## Notes
+Metric Reconciliation reviewed for [[Project Meridian 216]] at [[Summit Analytics]].
+[[Omar Alvarez]] aligned with [[Clara Morgan]] on follow-up work for the next operating review.
+
+## Action Items
+- [ ] Send recap for [[Project Meridian 216]] to [[Omar Alvarez]] #follow-up
+- [x] Capture meeting notes in vault #ops

@@ -14,9 +14,9 @@ from obsidian_mcp_context.doctor import (
 def test_doctor_reports_parser_graph_and_warehouse_readiness(tmp_path: Path):
     vault = tmp_path / "vault"
     vault.mkdir()
-    (vault / "People").mkdir()
-    (vault / "Daily").mkdir()
-    (vault / "People" / "Morgan Lee.md").write_text(
+    (vault / "people").mkdir()
+    (vault / "daily").mkdir()
+    (vault / "people" / "morgan_lee.md").write_text(
         """---
 source_created_at: 2026-06-01T09:00:00
 source_observed_at: 2026-06-01T09:05:00
@@ -27,7 +27,7 @@ updated_at: 2026-06-01T09:20:00
 """,
         encoding="utf-8",
     )
-    (vault / "Daily" / "2026-06-28.md").write_text(
+    (vault / "daily" / "2026-06-28.md").write_text(
         """---
 source_created_at: 2026-06-28T09:00:00
 source_observed_at: 2026-06-28T09:05:00
@@ -162,14 +162,14 @@ def test_doctor_exports_unresolved_links_when_explicitly_requested(tmp_path: Pat
     vault = tmp_path / "vault"
     export_path = tmp_path / "unresolved-links.json"
     vault.mkdir()
-    (vault / "People").mkdir()
-    (vault / "People" / "Morgan Lee.md").write_text("# Morgan\n", encoding="utf-8")
+    (vault / "people").mkdir()
+    (vault / "people" / "morgan_lee.md").write_text("# Morgan\n", encoding="utf-8")
     (vault / "Links.md").write_text(
         "\n".join(
             [
                 "[[Missing Note]]",
-                "[[Archive/Morgan Lee]]",
-                "[[Archive/Morgan Lee]]",
+                "[[archive/morgan_lee|Morgan Lee]]",
+                "[[archive/morgan_lee|Morgan Lee]]",
             ]
         ),
         encoding="utf-8",
@@ -199,7 +199,7 @@ def test_doctor_exports_unresolved_links_when_explicitly_requested(tmp_path: Pat
     assert payload["unresolved_target_count"] == 2
     assert payload["unresolved_targets"] == [
         {
-            "target": "Archive/Morgan Lee",
+            "target": "archive/morgan_lee",
             "target_shape": "path_like",
             "reason": "basename_exists_elsewhere",
             "count": 2,
@@ -252,8 +252,8 @@ def test_doctor_export_includes_source_paths_only_with_samples(tmp_path: Path):
 def test_doctor_resolves_obsidian_link_target_variants(tmp_path: Path):
     vault = tmp_path / "vault"
     vault.mkdir()
-    (vault / "People").mkdir()
-    (vault / "People" / "Morgan Lee.md").write_text(
+    (vault / "people").mkdir()
+    (vault / "people" / "morgan_lee.md").write_text(
         """---
 aliases:
   - ML
@@ -269,8 +269,9 @@ alias: Morgan
         "\n".join(
             [
                 "[[Morgan Lee]]",
-                "[[People/Morgan Lee]]",
-                "[[People/Morgan Lee.md]]",
+                "[[morgan_lee]]",
+                "[[people/morgan_lee]]",
+                "[[people/morgan_lee.md]]",
                 "[[Morgan Lee#Profile]]",
                 "[[Morgan Lee^block-id]]",
                 "[[ML]]",
@@ -285,8 +286,8 @@ alias: Morgan
         DoctorOptions(vault_path=vault, config_path=tmp_path / "missing-config.toml")
     )
 
-    assert report["graph"]["wikilinks"] == 8
-    assert report["graph"]["resolved_wikilinks"] == 7
+    assert report["graph"]["wikilinks"] == 9
+    assert report["graph"]["resolved_wikilinks"] == 8
     assert report["graph"]["unresolved_wikilinks"] == 1
     assert report["graph"]["unresolved_target_shapes"] == {"plain_text": 1}
 
@@ -298,7 +299,7 @@ def test_doctor_reports_unresolved_link_target_shapes_without_samples(tmp_path: 
         "\n".join(
             [
                 "[[Missing Plain]]",
-                "[[Missing/Path]]",
+                "[[missing/path|Path]]",
                 "[[Missing.md]]",
                 "[[Missing#Heading]]",
                 "[[Missing^block-id]]",
@@ -358,7 +359,7 @@ def test_doctor_ignores_configured_unresolved_target_globs(tmp_path: Path):
     (vault / "Links.md").write_text(
         "\n".join(
             [
-                "[[Archive/Intentional Missing]]",
+                "[[archive/intentional_missing|Intentional Missing]]",
                 "[[Template:Client]]",
                 "[[Needs Review]]",
             ]
@@ -430,7 +431,7 @@ def test_doctor_ignores_all_matching_unresolved_targets_without_warning(
     vault = tmp_path / "vault"
     vault.mkdir()
     (vault / "Links.md").write_text(
-        "[[Archive/Intentional Missing]]\n[[Template:Client]]\n",
+        "[[archive/intentional_missing|Intentional Missing]]\n[[Template:Client]]\n",
         encoding="utf-8",
     )
     config_path = tmp_path / "config.toml"
@@ -473,22 +474,22 @@ def test_doctor_classifies_unresolved_path_like_reasons_without_samples(
 ):
     vault = tmp_path / "vault"
     vault.mkdir()
-    (vault / "People").mkdir()
+    (vault / "people").mkdir()
     (vault / "Archive").mkdir()
-    (vault / "Assets").mkdir()
+    (vault / "assets").mkdir()
     (vault / "Drafts").mkdir()
-    (vault / "People" / "Morgan Lee.md").write_text("# Morgan\n", encoding="utf-8")
+    (vault / "people" / "morgan_lee.md").write_text("# Morgan\n", encoding="utf-8")
     (vault / "Archive" / "Hidden.md").write_text("# Hidden\n", encoding="utf-8")
-    (vault / "Assets" / "Manual.pdf").write_bytes(b"PDF")
+    (vault / "assets" / "Manual.pdf").write_bytes(b"PDF")
     (vault / "Drafts" / "Idea.md").write_text("# Idea\n", encoding="utf-8")
     (vault / "Links.md").write_text(
         "\n".join(
             [
-                "[[Archive/Hidden]]",
-                "[[Assets/Manual.pdf]]",
-                "[[Drafts/Idea]]",
-                "[[Archive/Morgan Lee]]",
-                "[[Missing/Path]]",
+                "[[archive/hidden|Hidden]]",
+                "[[assets/manual.pdf|Manual.pdf]]",
+                "[[drafts/idea|Idea]]",
+                "[[archive/morgan_lee|Morgan Lee]]",
+                "[[missing/path|Path]]",
             ]
         ),
         encoding="utf-8",
@@ -497,7 +498,7 @@ def test_doctor_classifies_unresolved_path_like_reasons_without_samples(
     config_path.write_text(
         """
 [scan]
-include_globs = ["Links.md", "People/*.md", "Archive/*.md", "Assets/*.md"]
+include_globs = ["Links.md", "people/*.md", "Archive/*.md", "assets/*.md"]
 extra_exclude_globs = ["Archive/Hidden.md"]
 
 [doctor]
@@ -565,7 +566,7 @@ unsupported_files = "ignore"
 def test_doctor_human_output_includes_aggregate_remediation_hints(tmp_path: Path):
     vault = tmp_path / "vault"
     vault.mkdir()
-    (vault / "Links.md").write_text("[[Missing/Path]]\n", encoding="utf-8")
+    (vault / "Links.md").write_text("[[missing/path|Path]]\n", encoding="utf-8")
 
     report = run_doctor(
         DoctorOptions(vault_path=vault, config_path=tmp_path / "missing-config.toml")

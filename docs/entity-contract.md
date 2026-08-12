@@ -14,24 +14,29 @@ Every modeled entity has:
 - `source_path`: vault-relative note path when the entity has a canonical note.
 - `canonical_note_id`: note dimension ID when the entity has a canonical note.
 
+For canonical notes, the parsed display title comes from an explicit
+frontmatter `title`, then the first level-one heading, then the filename stem.
+This keeps machine-friendly filenames such as `morgan_lee.md` separate from the
+human-readable entity name.
+
 ## Type Inference
 
 Built-in folders map to stable entity or note types:
 
-- `People/` -> `person`
-- `Companies/` -> `company`
-- `Projects/` -> `project`
-- `Decisions/` -> `decision`
-- `Risks/` -> `risk`
-- `Daily/` -> `daily`
-- `Meetings/` -> `meeting`
-- `Research/` -> `research`
+- `people/` -> `person`
+- `companies/` -> `company`
+- `projects/` -> `project`
+- `decisions/` -> `decision`
+- `risks/` -> `risk`
+- `daily/` -> `daily`
+- `meetings/` -> `meeting`
+- `research/` -> `research`
 
 Custom top-level folders become singular entity types. For example:
 
-- `Clients/Acme Renewal.md` -> `client`
-- `Assets/Revenue Dashboard.md` -> `asset`
-- `Initiatives/Data Trust.md` -> `initiative`
+- `clients/acme_renewal.md` -> `client`
+- `assets/revenue_dashboard.md` -> `asset`
+- `initiatives/data_trust.md` -> `initiative`
 
 Root-level notes become `note` and are not promoted as canonical entities.
 `daily`, `meeting`, `note`, and `research` notes provide context but are not
@@ -39,8 +44,10 @@ canonical entities.
 
 ## Entity Sources
 
-Canonical note entities come from entity folders. Wikilinks resolve to canonical
-entities when a scanned note has the same title. Wikilinks without a matching
+Canonical note entities come from entity folders. Across parser and warehouse
+paths, wikilinks can resolve through a canonical note's parsed title,
+vault-relative path, or filename stem. Parser diagnostics and the in-memory
+warehouse also recognize frontmatter aliases. Wikilinks without a matching
 canonical note become `unknown` entities. Tags become `topic` entities.
 
 ## Generic Marts

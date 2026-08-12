@@ -16,12 +16,12 @@ from obsidian_mcp_context.warehouse import (
 
 def _suggestion_warehouse(tmp_path: Path):
     vault = tmp_path / "vault"
-    (vault / "Projects").mkdir(parents=True)
-    (vault / "Daily").mkdir()
-    (vault / "Projects" / "Project Atlas.md").write_text(
+    (vault / "projects").mkdir(parents=True)
+    (vault / "daily").mkdir()
+    (vault / "projects" / "project_atlas.md").write_text(
         "# Project Atlas\n", encoding="utf-8"
     )
-    (vault / "Daily" / "2026-06-28.md").write_text(
+    (vault / "daily" / "2026-06-28.md").write_text(
         "# Daily\n\n[[Project Atals]]\n", encoding="utf-8"
     )
     context = build_context(VaultConfig(vault_path=vault))

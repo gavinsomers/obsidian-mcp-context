@@ -1,10 +1,10 @@
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 from fnmatch import fnmatch
 from pathlib import Path, PurePosixPath
 
-from obsidian_mcp_context.domain import note_type
+from obsidian_mcp_context.domain import frontmatter_values, note_title, note_type
 from obsidian_mcp_context.parser import (
     ParsedBlock,
     ParsedFile,
@@ -22,7 +22,7 @@ DEFAULT_INCLUDE_GLOBS = ("**/*.md",)
 DEFAULT_EXCLUDE_GLOBS = (
     ".git/**",
     ".obsidian/**",
-    "System/Marts/**",
+    "system/marts/**",
 )
 DEFAULT_SOURCE_EXTENSIONS = (".md",)
 
@@ -42,6 +42,8 @@ class SourceFile:
     source_path: str
     absolute_path: Path
     note_type: str
+    title: str = ""
+    aliases: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -121,6 +123,7 @@ def scan_vault(config: VaultConfig) -> list[SourceFile]:
                 source_path=source_path,
                 absolute_path=path,
                 note_type=note_type(source_path, config.folder_note_types),
+                title=note_title(source_path),
             )
         )
 
@@ -137,15 +140,30 @@ def parse_source_file(source_file: SourceFile) -> ParsedFile:
 
 
 def build_context(config: VaultConfig) -> VaultContext:
-    files = scan_vault(config)
+    scanned_files = scan_vault(config)
+    files: list[SourceFile] = []
     blocks: list[ParsedBlock] = []
     tasks: list[ParsedTask] = []
     links: list[ParsedLink] = []
     tags: list[ParsedTag] = []
     lines: list[ParsedLine] = []
 
-    for source_file in files:
+    for source_file in scanned_files:
         parsed = parse_source_file(source_file)
+        first_block_text = parsed.blocks[0].text if parsed.blocks else None
+        aliases = tuple(
+            dict.fromkeys(
+                frontmatter_values(first_block_text, "alias")
+                + frontmatter_values(first_block_text, "aliases")
+            )
+        )
+        files.append(
+            replace(
+                source_file,
+                title=note_title(source_file.source_path, parsed_file=parsed),
+                aliases=aliases,
+            )
+        )
         blocks.extend(parsed.blocks)
         tasks.extend(parsed.tasks)
         links.extend(parsed.links)

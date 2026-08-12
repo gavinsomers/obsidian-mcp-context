@@ -5,14 +5,14 @@
   "simulated_start": "2023-04-19",
   "simulated_end": "2026-04-03",
   "counts": {
-    "Companies": 120,
-    "People": 600,
-    "Projects": 220,
-    "Meetings": 1900,
-    "Risks": 680,
-    "Research": 620,
-    "Decisions": 760,
-    "Daily": 780,
+    "companies": 120,
+    "people": 600,
+    "projects": 220,
+    "meetings": 1900,
+    "risks": 680,
+    "research": 620,
+    "decisions": 760,
+    "daily": 780,
     "Total_Files": 5680
   },
   "actual_lifecycle_ranges": {

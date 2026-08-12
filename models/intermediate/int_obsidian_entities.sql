@@ -11,18 +11,31 @@ with canonical_note_entities as (
   )
 ),
 
+normalized_links as (
+  select
+    links.*,
+    regexp_replace(
+      lower(trim(split_part(split_part(links.link_target, '#', 1), '^', 1))),
+      '[.]md$',
+      ''
+    ) as resolution_key
+  from {{ ref('stg_obsidian_links') }} links
+),
+
 link_entities as (
   select distinct
     case
       when notes.note_id is null then 'unknown'
       else notes.note_type
     end as entity_type,
-    links.link_target as name,
+    coalesce(notes.title, links.link_target) as name,
     notes.source_path,
     notes.note_id as canonical_note_id
-  from {{ ref('stg_obsidian_links') }} links
+  from normalized_links links
+  left join {{ ref('int_obsidian_note_resolution_keys') }} resolution
+    on resolution.resolution_key = links.resolution_key
   left join {{ ref('stg_obsidian_files') }} notes
-    on lower(notes.title) = lower(links.link_target)
+    on notes.note_id = resolution.note_id
   where notes.note_id is null
      or notes.note_type not in (
        select note_type

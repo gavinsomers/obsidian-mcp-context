@@ -12,7 +12,8 @@ import sqlite3
 from obsidian_mcp_context.domain import (
     NON_ENTITY_NOTE_TYPES,
     frontmatter_value,
-    note_title,
+    link_resolution_key,
+    note_resolution_keys,
     slug,
     source_date,
 )
@@ -192,7 +193,7 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
                 source_path,
                 str(source_file.absolute_path),
                 source_file.note_type,
-                note_title(source_path),
+                source_file.title,
                 source_date(source_path, first_block_text),
                 frontmatter_value(first_block_text, "source_created_at"),
                 frontmatter_value(first_block_text, "source_observed_at"),
@@ -275,11 +276,15 @@ def _is_entity_note_type(value: str, non_entity_note_types: tuple[str, ...]) -> 
 def _insert_entities(
     connection: sqlite3.Connection,
     non_entity_note_types: tuple[str, ...],
-) -> None:
+) -> dict[str, dict[str, object]]:
     notes = connection.execute(
         "select note_id, source_path, note_type, title from dim_notes"
     ).fetchall()
-    note_by_title = {row["title"].casefold(): row for row in notes}
+    note_by_key: dict[str, dict[str, object] | None] = {}
+    for row in notes:
+        for key in note_resolution_keys(str(row["source_path"]), str(row["title"])):
+            existing = note_by_key.get(key)
+            note_by_key[key] = row if existing is None and key not in note_by_key else None
 
     for row in notes:
         if _is_entity_note_type(row["note_type"], non_entity_note_types):
@@ -296,28 +301,17 @@ def _insert_entities(
     ).fetchall()
     for row in link_targets:
         target = row["link_target"]
-        note = note_by_title.get(target.casefold())
+        note = note_by_key.get(link_resolution_key(str(target)))
         if note and not _is_entity_note_type(note["note_type"], non_entity_note_types):
             continue
         if note:
-            entity_type = note["note_type"]
-            source_path = note["source_path"]
-            note_id = note["note_id"]
-        else:
-            entity_type = "unknown"
-            source_path = None
-            note_id = None
-        _insert_entity(
-            connection,
-            entity_type,
-            target,
-            source_path=source_path,
-            canonical_note_id=note_id,
-        )
+            continue
+        _insert_entity(connection, "unknown", target)
 
     tags = connection.execute("select distinct tag from pending_tags").fetchall()
     for row in tags:
         _insert_entity(connection, "topic", row["tag"])
+    return {key: row for key, row in note_by_key.items() if row is not None}
 
 
 def _executemany_if_rows(
@@ -353,7 +347,7 @@ def _insert_facts(connection: sqlite3.Connection, context: VaultContext) -> None
         "insert into pending_tags (tag) values (?)",
         [(tag.tag,) for tag in context.tags],
     )
-    _insert_entities(
+    note_by_key = _insert_entities(
         connection,
         context.non_entity_note_types or tuple(sorted(NON_ENTITY_NOTE_TYPES)),
     )
@@ -404,15 +398,25 @@ def _insert_facts(connection: sqlite3.Connection, context: VaultContext) -> None
 
     for index, link in enumerate(context.links, start=1):
         note_id = _note_id_for_source(connection, link.source_path)
-        entity = connection.execute(
-            """
-            select entity_id from dim_entities
-            where name = ?
-            order by case entity_type when 'unknown' then 1 else 0 end
-            limit 1
-            """,
-            (link.link_target,),
-        ).fetchone()
+        target_note = note_by_key.get(link_resolution_key(link.link_target))
+        if target_note and _is_entity_note_type(
+            str(target_note["note_type"]),
+            context.non_entity_note_types or tuple(sorted(NON_ENTITY_NOTE_TYPES)),
+        ):
+            entity = connection.execute(
+                "select entity_id from dim_entities where canonical_note_id = ?",
+                (target_note["note_id"],),
+            ).fetchone()
+        else:
+            entity = connection.execute(
+                """
+                select entity_id from dim_entities
+                where name = ?
+                order by case entity_type when 'unknown' then 1 else 0 end
+                limit 1
+                """,
+                (link.link_target,),
+            ).fetchone()
         connection.execute(
             """
             insert into fact_links
@@ -534,10 +538,6 @@ def _insert_timeline_mart(connection: sqlite3.Connection) -> None:
         )
 
 
-ALIAS_LINE_RE = re.compile(r"(?m)^aliases:\s*(?P<value>.+?)\s*$")
-ALIAS_LIST_ITEM_RE = re.compile(r"(?m)^\s*-\s*[\"']?(?P<value>.+?)[\"']?\s*$")
-
-
 def _normalized_match_text(value: str) -> str:
     return slug(Path(value).stem if value.endswith(".md") else value)
 
@@ -545,45 +545,6 @@ def _normalized_match_text(value: str) -> str:
 def _source_folder(source_path: str) -> str:
     parts = source_path.split("/", 1)
     return parts[0] if len(parts) > 1 else ""
-
-
-def _extract_aliases(text: str) -> tuple[str, ...]:
-    frontmatter = re.search(r"(?ms)\A\s*---(?P<body>.*?)^---\s*$", text)
-    if not frontmatter:
-        return ()
-    body = frontmatter.group("body")
-    line_match = ALIAS_LINE_RE.search(body)
-    aliases: list[str] = []
-    if line_match:
-        value = line_match.group("value").strip()
-        if value.startswith("[") and value.endswith("]"):
-            aliases.extend(
-                item.strip().strip("\"'")
-                for item in value.strip("[]").split(",")
-                if item.strip().strip("\"'")
-            )
-        elif value:
-            aliases.append(value.strip("\"'"))
-    if "aliases:" in body:
-        after_aliases = body.split("aliases:", 1)[1]
-        alias_block = ""
-        if "\n" in after_aliases:
-            block_lines = []
-            for line in after_aliases.split("\n", 1)[1].splitlines():
-                if re.match(r"^[A-Za-z_][A-Za-z0-9_-]*\s*:", line):
-                    break
-                block_lines.append(line)
-            alias_block = "\n".join(block_lines)
-        for match in ALIAS_LIST_ITEM_RE.finditer(alias_block):
-            aliases.append(match.group("value").strip())
-    return tuple(dict.fromkeys(alias for alias in aliases if alias))
-
-
-def _note_aliases(source_path: str, absolute_path: str) -> tuple[str, ...]:
-    try:
-        return _extract_aliases(Path(absolute_path).read_text(encoding="utf-8"))
-    except OSError:
-        return ()
 
 
 def _tags_by_note(connection: sqlite3.Connection) -> dict[str, set[str]]:
@@ -594,17 +555,20 @@ def _tags_by_note(connection: sqlite3.Connection) -> dict[str, set[str]]:
     return tags
 
 
-def _candidate_notes(connection: sqlite3.Connection) -> list[dict[str, object]]:
+def _candidate_notes(
+    connection: sqlite3.Connection,
+    aliases_by_source: dict[str, tuple[str, ...]],
+) -> list[dict[str, object]]:
     rows = connection.execute(
         """
-        select note_id, source_path, absolute_path, title, note_type
+        select note_id, source_path, title, note_type
         from dim_notes
         order by title, source_path
         """
     ).fetchall()
     candidates = []
     for row in rows:
-        aliases = _note_aliases(str(row["source_path"]), str(row["absolute_path"]))
+        aliases = aliases_by_source.get(str(row["source_path"]), ())
         candidates.append(
             {
                 **row,
@@ -667,10 +631,14 @@ def _candidate_signal(
 
 def _insert_deterministic_suggested_links(
     connection: sqlite3.Connection,
+    context: VaultContext,
     *,
     top_n: int = 10,
 ) -> None:
-    candidates = _candidate_notes(connection)
+    candidates = _candidate_notes(
+        connection,
+        {source_file.source_path: source_file.aliases for source_file in context.files},
+    )
     tags_by_note = _tags_by_note(connection)
     unresolved_links = connection.execute(
         """
@@ -761,7 +729,7 @@ def build_warehouse(context: VaultContext) -> Warehouse:
     _create_schema(connection)
     _insert_note_dimensions(connection, context)
     _insert_facts(connection, context)
-    _insert_deterministic_suggested_links(connection)
+    _insert_deterministic_suggested_links(connection, context)
     _insert_timeline_mart(connection)
     return Warehouse(connection=connection)
 

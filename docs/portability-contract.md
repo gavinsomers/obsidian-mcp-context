@@ -28,29 +28,29 @@ tables and keys fail fast instead of becoming implicit private conventions.
 The first path segment is the default note-type signal. Built-in folders map to
 stable types:
 
-- `People/` -> `person`
-- `Companies/` -> `company`
-- `Projects/` -> `project`
-- `Decisions/` -> `decision`
-- `Risks/` -> `risk`
-- `Daily/` -> `daily`
-- `Meetings/` -> `meeting`
-- `Research/` -> `research`
+- `people/` -> `person`
+- `companies/` -> `company`
+- `projects/` -> `project`
+- `decisions/` -> `decision`
+- `risks/` -> `risk`
+- `daily/` -> `daily`
+- `meetings/` -> `meeting`
+- `research/` -> `research`
 
 Unknown top-level folders become lowercase singular entity types. For example,
-`Accounts/Example Account.md` becomes `account` and
-`Assets/Revenue Model.md` becomes `asset`.
+`accounts/example_account.md` becomes `account` and
+`assets/revenue_model.md` becomes `asset`.
 
 Use `entities.folders` to override that inference when a folder should map to a
 different type or to a non-entity note type:
 
 ```toml
 [entities.folders]
-Accounts = "account"
-Cases = "case"
-Assets = "asset"
-Meetings = "meeting"
-Daily = "daily"
+accounts = "account"
+cases = "case"
+assets = "asset"
+meetings = "meeting"
+daily = "daily"
 ```
 
 Use `entities.non_entity_note_types` for note types that provide context but
@@ -74,13 +74,15 @@ entity type.
 
 ## Wikilink And Frontmatter Conventions
 
-Wikilinks are the strongest portable relationship signal. Prefer links that
-target canonical entity note titles:
+Wikilinks are the strongest portable relationship signal. The
+[entity contract](entity-contract.md#identity) defines canonical title
+precedence, and its [entity sources](entity-contract.md#entity-sources) section
+defines supported resolution identities. Prefer human-readable canonical titles
+when authoring links; machine-friendly vault-relative paths and filename stems
+also resolve. Frontmatter `alias` and `aliases` values preserve alternative
+parser and doctor targets, while pipe syntax controls display text:
+`[[Example Account|the account]]`.
 
-- Use `[[Example Account]]` when the canonical note is
-  `Accounts/Example Account.md`.
-- Use aliases for display text, not as a replacement for the target:
-  `[[Example Account|the account]]`.
 - Keep canonical entity titles unique across important entity types when
   possible.
 - Avoid relying on unresolved wikilinks for production context. They are counted
@@ -122,15 +124,15 @@ not automatically create a dedicated typed mart for every custom folder.
 Consider a service vault with these folders:
 
 ```text
-Accounts/
-Cases/
-Assets/
-Meetings/
-Daily/
+accounts/
+cases/
+assets/
+meetings/
+daily/
 ```
 
-`Accounts`, `Cases`, and `Assets` are canonical entity folders. `Meetings` and
-`Daily` are context folders. A portable profile for this vault can look like:
+`accounts`, `cases`, and `assets` are canonical entity folders. `meetings` and
+`daily` are context folders. A portable profile for this vault can look like:
 
 ```toml
 [scan]
@@ -138,8 +140,8 @@ include_globs = ["**/*.md"]
 exclude_globs = [
   ".git/**",
   ".obsidian/**",
-  "Templates/**",
-  "Attachments/**",
+  "templates/**",
+  "attachments/**",
 ]
 source_extensions = [".md"]
 
@@ -152,11 +154,11 @@ non_entity_note_types = [
 ]
 
 [entities.folders]
-Accounts = "account"
-Cases = "case"
-Assets = "asset"
-Meetings = "meeting"
-Daily = "daily"
+accounts = "account"
+cases = "case"
+assets = "asset"
+meetings = "meeting"
+daily = "daily"
 
 [replay_qa]
 entity_type_preferences = ["account", "case", "asset"]
@@ -171,10 +173,10 @@ timeline = ["timeline", "history", "activity", "sequence"]
 
 With that profile:
 
-- `Accounts/Example Account.md` becomes `entity_type = "account"`.
-- `Cases/Example Case.md` becomes `entity_type = "case"`.
-- `Assets/Example Asset.md` becomes `entity_type = "asset"`.
-- `Meetings/Account Review.md` and `Daily/2026-01-15.md` provide context and
+- `accounts/example_account.md` becomes `entity_type = "account"`.
+- `cases/example_case.md` becomes `entity_type = "case"`.
+- `assets/example_asset.md` becomes `entity_type = "asset"`.
+- `meetings/account_review.md` and `daily/2026-01-15.md` provide context and
   tasks but are not canonical entities.
 - Replay Q&A breaks same-name ties in favor of accounts, then cases, then
   assets.

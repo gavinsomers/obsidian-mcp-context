@@ -7,21 +7,21 @@ from obsidian_mcp_context.warehouse import build_warehouse, list_entities
 
 
 def test_scan_vault_respects_excludes(tmp_path: Path):
-    (tmp_path / "Daily").mkdir()
-    (tmp_path / "Daily" / "today.md").write_text("- [ ] Task\n", encoding="utf-8")
-    (tmp_path / "System" / "Marts").mkdir(parents=True)
-    (tmp_path / "System" / "Marts" / "Open Loops.md").write_text(
+    (tmp_path / "daily").mkdir()
+    (tmp_path / "daily" / "today.md").write_text("- [ ] Task\n", encoding="utf-8")
+    (tmp_path / "system" / "marts").mkdir(parents=True)
+    (tmp_path / "system" / "marts" / "open_loops.md").write_text(
         "generated\n", encoding="utf-8"
     )
 
     files = scan_vault(VaultConfig(vault_path=tmp_path))
 
-    assert [file.source_path for file in files] == ["Daily/today.md"]
+    assert [file.source_path for file in files] == ["daily/today.md"]
 
 
 def test_build_context_searches_generic_markdown(tmp_path: Path):
-    (tmp_path / "Projects").mkdir()
-    (tmp_path / "Projects" / "Atlas.md").write_text(
+    (tmp_path / "projects").mkdir()
+    (tmp_path / "projects" / "atlas.md").write_text(
         """# Project Atlas
 
 Renewal workflow notes link to [[Morgan Lee]].
@@ -35,9 +35,9 @@ Renewal workflow notes link to [[Morgan Lee]].
 
     context = build_context(VaultConfig(vault_path=tmp_path))
 
-    assert search_blocks(context, text="renewal")[0]["source_path"] == "Projects/Atlas.md"
+    assert search_blocks(context, text="renewal")[0]["source_path"] == "projects/atlas.md"
     assert list_tasks(context, checked=False)[0]["task_text"] == "Draft renewal checklist #ops"
-    note = get_note_context(context, "Projects/Atlas.md")
+    note = get_note_context(context, "projects/atlas.md")
     assert note["links"][0]["link_target"] == "Morgan Lee"
     assert note["tags"][0]["tag"] == "ops"
 
@@ -65,16 +65,16 @@ def test_plain_text_is_opt_in_generic_only(tmp_path: Path):
 
 
 def test_custom_top_level_folders_become_entity_types(tmp_path: Path):
-    (tmp_path / "Clients").mkdir()
-    (tmp_path / "Assets").mkdir()
-    (tmp_path / "Initiatives").mkdir()
-    (tmp_path / "Clients" / "Acme Renewal.md").write_text(
+    (tmp_path / "clients").mkdir()
+    (tmp_path / "assets").mkdir()
+    (tmp_path / "initiatives").mkdir()
+    (tmp_path / "clients" / "acme_renewal.md").write_text(
         "# Acme Renewal\n\nOwns [[Revenue Dashboard]].\n", encoding="utf-8"
     )
-    (tmp_path / "Assets" / "Revenue Dashboard.md").write_text(
+    (tmp_path / "assets" / "revenue_dashboard.md").write_text(
         "# Revenue Dashboard\n\nSupports [[Data Trust]].\n", encoding="utf-8"
     )
-    (tmp_path / "Initiatives" / "Data Trust.md").write_text(
+    (tmp_path / "initiatives" / "data_trust.md").write_text(
         "# Data Trust\n\n- [ ] Review [[Acme Renewal]].\n", encoding="utf-8"
     )
 
@@ -99,10 +99,10 @@ def test_synthetic_vault_represents_connected_renewal_scenario():
     context = build_context(VaultConfig(vault_path=vault_path))
 
     source_paths = {file.source_path for file in context.files}
-    assert "Companies/Northstar Labs.md" in source_paths
-    assert "Meetings/Atlas Renewal Review.md" in source_paths
-    assert "Risks/Pilot Handoff Ownership.md" in source_paths
-    assert "System/Plain Discovery Notes.txt" not in source_paths
+    assert "companies/northstar_labs.md" in source_paths
+    assert "meetings/atlas_renewal_review.md" in source_paths
+    assert "risks/pilot_handoff_ownership.md" in source_paths
+    assert "system/plain_discovery_notes.txt" not in source_paths
 
     open_tasks = list_tasks(context, checked=False, limit=100)
     assert len(open_tasks) >= manifest["expected_queries"][0]["minimum_expected_open_tasks"]
@@ -110,11 +110,11 @@ def test_synthetic_vault_represents_connected_renewal_scenario():
     risk_blocks = search_blocks(context, text="Pilot Handoff Ownership", limit=25)
     risk_sources = {block["source_path"] for block in risk_blocks}
     assert {
-        "Daily/2026-06-26.md",
-        "Risks/Pilot Handoff Ownership.md",
+        "daily/2026-06-26.md",
+        "risks/pilot_handoff_ownership.md",
     }.issubset(risk_sources)
 
-    meeting = get_note_context(context, "Meetings/Atlas Renewal Review.md")
+    meeting = get_note_context(context, "meetings/atlas_renewal_review.md")
     meeting_links = {link["link_target"] for link in meeting["links"]}
     assert "Not A Real Stakeholder" not in meeting_links
     assert "Not A Real Note" not in meeting_links

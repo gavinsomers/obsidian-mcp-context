@@ -7,6 +7,8 @@ from pathlib import Path
 import subprocess
 import threading
 
+import pytest
+
 from obsidian_mcp_context.replay_dashboard import REPLAY_STATE_FILE, SCHEDULER_STATE_FILE
 from obsidian_mcp_context.synthetic_demo_health import (
     _read_env_file,
@@ -41,44 +43,44 @@ class DemoHandler(BaseHTTPRequestHandler):
             entity = "Project Beacon 2"
             answer = "Mart-backed context for Project Beacon 2. Daily Log and Tasks."
             sources = [
-                {"source_path": "Daily/2023-04-21.md"},
-                {"source_path": "Daily/2023-05-30.md"},
-                {"source_path": "Daily/2023-06-06.md"},
-                {"source_path": "Daily/2023-06-16.md"},
+                {"source_path": "daily/2023-04-21.md"},
+                {"source_path": "daily/2023-05-30.md"},
+                {"source_path": "daily/2023-06-06.md"},
+                {"source_path": "daily/2023-06-16.md"},
             ]
         elif "Beacon" in question:
             entity = "Project Beacon 2"
             answer = "Mart-backed context for Project Beacon 2. risk open."
             sources = [
-                {"source_path": "Risks/Project Beacon 2 Metric Reconciliation Risk 2.md"},
-                {"source_path": "Daily/2023-04-21.md"},
-                {"source_path": "Meetings/Project Beacon 2 Finance Approval Sync 14.md"},
-                {"source_path": "Daily/2023-05-30.md"},
+                {"source_path": "risks/project_beacon_2_metric_reconciliation_risk_2.md"},
+                {"source_path": "daily/2023-04-21.md"},
+                {"source_path": "meetings/project_beacon_2_finance_approval_sync_14.md"},
+                {"source_path": "daily/2023-05-30.md"},
             ]
         elif "decisions" in folded:
             entity = "Project Atlas 1"
             answer = "Mart-backed context for Project Atlas 1. decision."
             sources = [
-                {"source_path": "Decisions/Project Atlas 1 Security Review Decision 1.md"},
-                {"source_path": "Decisions/Project Atlas 1 Adoption Workflow Decision 13.md"},
+                {"source_path": "decisions/project_atlas_1_security_review_decision_1.md"},
+                {"source_path": "decisions/project_atlas_1_adoption_workflow_decision_13.md"},
             ]
         elif "full" in folded or "brief alex" in folded:
             entity = "Project Atlas 1"
             answer = "Mart-backed context for Project Atlas 1. Daily Log and Tasks for Alex Alvarez."
             sources = [
-                {"source_path": "Daily/2023-04-19.md"},
-                {"source_path": "Daily/2023-05-11.md"},
-                {"source_path": "Daily/2023-05-15.md"},
-                {"source_path": "Daily/2023-05-18.md"},
+                {"source_path": "daily/2023-04-19.md"},
+                {"source_path": "daily/2023-05-11.md"},
+                {"source_path": "daily/2023-05-15.md"},
+                {"source_path": "daily/2023-05-18.md"},
             ]
         else:
             entity = "Project Atlas 1"
             answer = "Mart-backed context for Project Atlas 1. risk open and open loop."
             sources = [
-                {"source_path": "Risks/Project Atlas 1 Adoption Workflow Risk 1.md"},
-                {"source_path": "Daily/2023-04-19.md"},
-                {"source_path": "Meetings/Project Atlas 1 Warehouse Mapping Sync 1.md"},
-                {"source_path": "Daily/2023-05-11.md"},
+                {"source_path": "risks/project_atlas_1_adoption_workflow_risk_1.md"},
+                {"source_path": "daily/2023-04-19.md"},
+                {"source_path": "meetings/project_atlas_1_warehouse_mapping_sync_1.md"},
+                {"source_path": "daily/2023-05-11.md"},
             ]
         self._send_json(
             HTTPStatus.OK,
@@ -133,12 +135,15 @@ def test_read_env_file_ignores_comments_and_unquotes_values(tmp_path):
     }
 
 
-def test_run_checks_passes_with_state_services_and_canned_questions(tmp_path):
+@pytest.mark.parametrize(
+    "eval_pack", ["generated-demo.json", "consultancy-demo.json"]
+)
+def test_run_checks_passes_with_state_services_and_canned_questions(tmp_path, eval_pack):
     _write_json(tmp_path / REPLAY_STATE_FILE, {"loaded_count": 3})
     _write_json(tmp_path / SCHEDULER_STATE_FILE, {"status": "success"})
     examples = tmp_path / "examples.json"
     examples.write_text(
-        Path("examples/eval-packs/generated-demo.json").read_text(encoding="utf-8"),
+        Path("examples/eval-packs", eval_pack).read_text(encoding="utf-8"),
         encoding="utf-8",
     )
     server, thread, port = _server()
@@ -191,7 +196,7 @@ def test_main_uses_profile_selected_eval_pack(tmp_path, capsys):
                         "expected_status": "ok",
                         "expected_entity": "Project Atlas 1",
                         "min_sources": 1,
-                        "expected_source_contains": ["Risks/Project Atlas 1"],
+                        "expected_source_contains": ["risks/project_atlas_1"],
                     }
                 ],
             }

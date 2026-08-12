@@ -3,7 +3,7 @@ with expected_decisions(title, decision_status, source_path, project_name) as (
     (
       'Project Atlas 1 Security Review Decision 1',
       'superseded',
-      'Decisions/Project Atlas 1 Security Review Decision 1.md',
+      'decisions/project_atlas_1_security_review_decision_1.md',
       'Project Atlas 1'
     )
 ),
@@ -26,7 +26,7 @@ expected_risks(title, risk_status, source_path, project_name) as (
     (
       'Project Atlas 1 Adoption Workflow Risk 1',
       'open',
-      'Risks/Project Atlas 1 Adoption Workflow Risk 1.md',
+      'risks/project_atlas_1_adoption_workflow_risk_1.md',
       'Project Atlas 1'
     )
 ),
@@ -47,26 +47,26 @@ actual_risks as (
 expected_open_loops(source_path, line_number, task_text, entity_name) as (
   values
     (
-      'Meetings/Project Atlas 1 Warehouse Mapping Sync 1.md',
-      23,
+      'meetings/project_atlas_1_warehouse_mapping_sync_1.md',
+      24,
       'Send recap for [[Project Atlas 1]] to [[Alex Alvarez]] #follow-up',
       'Project Atlas 1'
     ),
     (
-      'Decisions/Project Atlas 1 Security Review Decision 1.md',
-      27,
+      'decisions/project_atlas_1_security_review_decision_1.md',
+      28,
       'Review whether [[Project Atlas 1 Security Review Decision 1]] changes open loops for [[Project Atlas 1]] #follow-up',
       'Project Atlas 1'
     ),
     (
-      'Research/Project Atlas 1 Contract Renewal Research 1.md',
-      21,
+      'research/project_atlas_1_contract_renewal_research_1.md',
+      22,
       'Convert findings into decision criteria for [[Project Atlas 1]] #research',
       'Project Atlas 1'
     ),
     (
-      'Projects/Project Atlas 1.md',
-      23,
+      'projects/project_atlas_1.md',
+      24,
       'Reconcile latest state for [[Project Atlas 1]] #ops',
       'Project Atlas 1'
     )
@@ -86,21 +86,21 @@ actual_open_loops as (
 expected_context(source_path, event_type, title, summary_contains, entity_name) as (
   values
     (
-      'Decisions/Project Atlas 1 Security Review Decision 1.md',
+      'decisions/project_atlas_1_security_review_decision_1.md',
       'block',
       'Project Atlas 1 Security Review Decision 1 > Decision',
       'Proceed with security review for [[Project Atlas 1]].',
       'Project Atlas 1'
     ),
     (
-      'Risks/Project Atlas 1 Adoption Workflow Risk 1.md',
+      'risks/project_atlas_1_adoption_workflow_risk_1.md',
       'block',
       'Project Atlas 1 Adoption Workflow Risk 1 > Risk',
       'Adoption Workflow may affect [[Project Atlas 1]]',
       'Project Atlas 1'
     ),
     (
-      'Meetings/Project Atlas 1 Warehouse Mapping Sync 1.md',
+      'meetings/project_atlas_1_warehouse_mapping_sync_1.md',
       'open_loop',
       'Project Atlas 1 Warehouse Mapping Sync 1 > Action Items',
       'Send recap for [[Project Atlas 1]] to [[Alex Alvarez]] #follow-up',
@@ -123,13 +123,13 @@ actual_context as (
 expected_timeline(source_path, event_date, event_type, summary_contains) as (
   values
     (
-      'Projects/Project Atlas 1.md',
+      'projects/project_atlas_1.md',
       null,
       'block',
       'Project Atlas 1 supports [[Northstar Labs]] through consulting delivery.'
     ),
     (
-      'Meetings/Project Atlas 1 Warehouse Mapping Sync 1.md',
+      'meetings/project_atlas_1_warehouse_mapping_sync_1.md',
       date '2023-05-20',
       'block',
       'Warehouse Mapping reviewed for [[Project Atlas 1]] at [[Northstar Labs]].'
@@ -144,8 +144,8 @@ actual_timeline as (
     summary
   from mart_timeline
   where source_path in (
-      'Projects/Project Atlas 1.md',
-      'Meetings/Project Atlas 1 Warehouse Mapping Sync 1.md'
+      'projects/project_atlas_1.md',
+      'meetings/project_atlas_1_warehouse_mapping_sync_1.md'
     )
      or related_entities = 'Project Atlas 1'
      or position(

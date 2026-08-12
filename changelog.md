@@ -1,0 +1,316 @@
+# Changelog
+
+All notable changes to this project are documented here.
+
+The project uses semantic-ish versions:
+
+- Major versions for incompatible parser, warehouse, or MCP contract changes.
+- Minor versions for new tools, schema additions, or substantial dataset expansions.
+- Patch versions for bug fixes, documentation, and small test updates.
+
+## [Unreleased]
+
+### Added
+
+- Added a Postgres/dbt/Obsidian container analytics stack with a full Obsidian
+  webtop service, Postgres landing-table ingest, dbt Postgres profile support,
+  VS Code devcontainer configuration, and container-stack documentation.
+- Added a Postgres-backed MCP mart reader so modeled MCP queries can read from
+  Postgres dbt marts when `WAREHOUSE_BACKEND=postgres` and `POSTGRES_DSN` are
+  configured.
+- Added `scripts/analytics_stack_check.sh` to validate the full Postgres
+  container path from ingest through dbt tests and MCP smoke checks.
+- Added GitHub Actions workflows for pull request CI, pushes to `main`, manual
+  Python test runs, and an opt-in Docker Compose analytics stack check.
+- Added a v1.0 release readiness checklist covering installability, tests,
+  generated fixture validation, privacy posture, MCP compatibility, demo
+  readiness, public claims, known limitations, and follow-up boundaries.
+
+### Changed
+
+- Normalized repository and generated-fixture paths to lowercase, using
+  underscores for multiword note filenames while preserving human-readable
+  note titles and compatible wikilink resolution.
+- Made dbt source schema and target profile selection configurable so the same
+  marts can build against local DuckDB or Postgres.
+- Made the Postgres dbt profile run serially by default to avoid local DDL
+  deadlocks during containerized rebuilds.
+- Rewrote adapter-specific dbt SQL in link resolution and entity event marts so
+  those models build on both DuckDB and Postgres.
+
+## [v1.0.0-rc.3] - 2026-06-28
+
+### Added
+
+- Added a SQL reconciliation harness that rebuilds the static synthetic vault
+  into DuckDB/dbt and runs zero-row assertion files under `tests/reconciliation`.
+- Added deterministic expected-answer reconciliation checks for Project Atlas
+  risk/decision context, Project Pipeline risk ownership, project open-loop
+  rollups, and Horizon sponsorship context.
+
+### Changed
+
+- Reframed the public architecture around a local compiler-function model:
+  Obsidian vault input, full parse, explicit warehouse rebuild, deterministic
+  suggestions, optional advisory AI enrichment, and reproducible reports.
+- Changed dbt marts from incremental merge models to rebuilt table
+  materializations and removed incremental-only mart configs.
+- Clarified README guidance for lightweight MCP usage, persisted DuckDB/dbt
+  usage, static fixture ownership, and privacy-gated AI enrichment.
+
+### Removed
+
+- Removed Airflow, Docker simulation orchestration, and the stale Airflow
+  Dockerfile from the public repo.
+- Removed public synthetic generator and simulator code after moving generator
+  ownership to the private `gavinsomers/obsidian-mcp-context-generator` repo.
+
+### Verified
+
+- `.venv/bin/python -m pytest -q`
+- `.venv/bin/python -m compileall obsidian_mcp_context`
+
+## [v1.0.0-rc.2] - 2026-06-28
+
+### Added
+
+- Added pipeline config profiles for sample and local Obsidian sources, privacy
+  posture, and optional AI provider settings.
+- Added `obsidian-mcp-context pipeline run` and `pipeline doctor` with
+  redacted-by-default runtime reports under configured `var/` output paths.
+- Added deterministic unresolved-link candidate suggestions with exact,
+  alias-based, string-similarity, and shared-metadata signals.
+- Added AI provider abstraction for disabled, mock, Ollama/local model, and
+  hosted-provider configuration paths with strict context-budget enforcement.
+- Added advisory AI unresolved-link enrichment over deterministic candidates,
+  writing pending `ai_suggested_links` review rows only.
+- Added explicit pipeline privacy, AI safety, and review summaries with aggregate
+  call/write/skip counters.
+
+### Changed
+
+- Limited public pipeline source modes to sample vaults and local Obsidian
+  vaults; no additional connector roadmap is advertised in this repository.
+
+### Verified
+
+- `.venv/bin/pytest -q`
+
+## [v1.0.0-rc.1] - 2026-06-28
+
+### Added
+
+- Added privacy-safe `doctor` reason buckets for unresolved path-like wikilinks,
+  reported as aggregate counts without exposing raw targets.
+- Added an opt-in local-private `doctor --export-unresolved` JSON export for
+  unresolved wikilink remediation.
+- Added configurable unresolved wikilink ignore globs that preserve aggregate
+  counts while suppressing expected dangling-link warnings.
+- Added aggregate unresolved wikilink remediation hints to `doctor` JSON and
+  human output.
+
+### Validated
+
+- Ran aggregate-only real-vault doctor validation with redacted-by-default
+  output, zero errors, and an in-memory warehouse build passing.
+
+## [0.9.0] - 2026-06-28
+
+### Changed
+
+- Redacted `doctor` diagnostic samples by default and added
+  `doctor --include-samples` for explicit debugging output.
+- Added configurable `doctor.lifecycle_metadata` handling with `warn`, `ignore`,
+  and `error` modes.
+- Split unsupported files out of the generic ignored-file doctor warning so
+  non-Markdown files are reported once.
+- Added configurable doctor policies for ignored files, unsupported files, empty
+  notes, blockless notes, large notes, and unresolved wikilinks.
+- Improved doctor wikilink resolution for Obsidian path, `.md`, heading, block,
+  and frontmatter alias target variants.
+- Added privacy-safe unresolved wikilink target shape counts to doctor reports.
+
+## [0.8.0] - 2026-06-28
+
+### Added
+
+- Added a staged privacy check script for blocking local sensitive terms and
+  generated warehouse artifacts before commit.
+- Added stable `doctor` diagnostic codes in JSON output.
+- Added local TOML configuration support for scan excludes, source extensions,
+  folder-to-entity mappings, and non-entity note types.
+
+### Fixed
+
+- Made in-memory and DuckDB-backed note/entity IDs collision-resistant when
+  different real-vault paths or names normalize to the same slug.
+
+## [0.7.0] - 2026-06-28
+
+### Added
+
+- Added a `doctor` CLI command for bring-your-own-vault parser, graph,
+  metadata, and warehouse readiness checks.
+- Added entity-contract and onboarding documentation for generic entity usage.
+- Added minimal and custom-entity example vaults.
+- Added contract tests proving custom folder-derived entity types flow through
+  the dbt generic entity marts.
+
+### Changed
+
+- Custom top-level folders now become singular generic entity types, such as
+  `clients/` to `client` and `assets/` to `asset`.
+- DuckDB ingest now handles valid vaults with empty parsed tables such as no
+  tags or no tasks.
+
+## [0.6.0] - 2026-06-28
+
+### Added
+
+- Added a pipeline status API and web UI status panel showing warehouse snapshot
+  availability, simulation state, and key dbt table row counts.
+- Added allowed-root vault path validation for hardened HTTP deployments.
+- Added freshness-aware context caching so MCP/web fallback reads update after
+  vault file changes.
+- Added formal web API endpoints for projects, people, companies, risks,
+  decisions, and open loops over dbt marts.
+- Added generic entity dbt marts, API routes, and MCP tools for entity types,
+  relationships, states, events, context, and open loops while preserving typed
+  project/person/risk/decision compatibility surfaces.
+
+## [0.5.1] - 2026-06-28
+
+### Added
+
+- Added a DuckDB/dbt warehouse query adapter for the web UI and MCP tools.
+- Added MCP tools for dbt mart-backed project context, person context, open loops, decisions, and risks.
+
+### Changed
+
+- The web UI and warehouse-oriented MCP tools now prefer the persisted dbt DuckDB marts when available, falling back to the in-memory vault warehouse otherwise.
+- Docker and Airflow now publish a stable read-only DuckDB snapshot after successful dbt tests so web and MCP readers do not query the live writer database during pipeline runs.
+
+## [0.5.0] - 2026-06-27
+
+### Added
+
+- Added virtual lifecycle timestamps to every synthetic vault note: `source_created_at`, `source_observed_at`, `created_at`, and `updated_at`.
+- Added lifecycle timestamp columns to `base_obsidian_files` and `dim_notes` so source time and vault capture time can be queried deterministically.
+- Added tests that enforce lifecycle timestamp coverage, ordering, and DuckDB ingest preservation.
+- Added `obsidian-mcp-context-generate-vault` and `scripts/generate_synthetic_vault.py` for deterministic small, medium, and large synthetic vault generation.
+- Added generated-vault tests for graph coherence, lifecycle timestamp realism, task density, and DuckDB ingest compatibility.
+- Added `obsidian-mcp-context-simulate-vault` to incrementally populate a live vault from generated note `created_at` timestamps.
+- Added an Airflow simulation DAG that advances virtual time once per minute and runs ingest, dbt run, and dbt test against the live vault.
+- Added Docker Compose simulation services for seed generation, live vault browsing, Airflow, live web UI, and live MCP.
+- Added nginx autoindex configuration for Docker vault browser services.
+- Added Obsidian-only context marts for people, companies, projects, mentions, decisions, risks, open loops, person context, and project context.
+
+### Changed
+
+- dbt `stg_obsidian_files` and `dim_notes` now expose lifecycle timestamp columns from the landing database.
+- dbt mart models now materialize as incremental DuckDB merge tables with explicit unique keys.
+- Docker simulation helper containers now run as the Airflow user to avoid shared-volume permission errors.
+- The web UI now defaults to `summary counts`, suggests valid entities for unknown timeline queries, and groups requested entity types such as `people companies projects`.
+- README Docker instructions now document detached mode, local service URLs, simulation reset, and the difference between browser UIs and MCP endpoints.
+- Docker simulation startup now repairs named-volume ownership and prevents nginx from seeding the live vault with its default `index.html`.
+
+## [0.4.0] - 2026-06-27
+
+### Added
+
+- Added Dockerfile and Docker Compose stack for the synthetic vault, web UI, MCP HTTP service, and pipeline checks.
+- Added `obsidian-mcp-context-web`, a small local web UI over the deterministic warehouse.
+- Added MCP server `--host` and `--port` flags for containerized HTTP transports.
+- Added DuckDB ingest command for `base_obsidian_*` landing tables.
+- Added dbt staging, intermediate, mart models, and tests for deterministic Obsidian dimensions, facts, and timeline mart.
+- Added Docker Compose `ingest`, `dbt`, and dbt-backed `pipeline` services.
+
+## [0.3.0] - 2026-06-27
+
+### Added
+
+- Expanded `examples/synthetic-vault` into a 120-note consultancy operator dataset across May-July 2026.
+- Added realistic synthetic people, companies, projects, meetings, decisions, risks, research notes, and daily notes.
+- Added multi-month state-change scenarios for:
+  - superseded decisions
+  - stakeholder sentiment shifts
+  - rescheduled meetings
+  - task state mutations
+- Added `tests/test_synthetic_vault.py` to verify dataset scale and scenario coverage.
+- Added live MCP stdio smoke-test coverage during release verification.
+
+### Changed
+
+- Warehouse timeline date derivation now uses frontmatter/content dates when filenames do not contain dates.
+- Synthetic vault manifest now tracks target counts, expected queries, and known state-change scenarios.
+- Warehouse tests now expect the expanded entity graph.
+
+### Dataset Metrics
+
+- `dim_notes`: 120
+- `dim_entities`: 77
+- `fact_blocks`: 563
+- `fact_tasks`: 185
+- `fact_links`: 669
+- `fact_tags`: 169
+- `mart_timeline`: 748
+
+### Verified
+
+- `.venv/bin/python -m pytest`
+- `.venv/bin/python -m compileall obsidian_mcp_context`
+- Live MCP stdio smoke test against:
+  - `get_vault_warehouse_summary`
+  - `list_vault_entities`
+  - `get_vault_entity_timeline`
+  - `search_vault_agent_context`
+
+## [0.2.0] - 2026-06-27
+
+### Added
+
+- Added an in-memory SQLite warehouse layer derived from parsed vault context.
+- Added deterministic dimensions, facts, and marts:
+  - `dim_notes`
+  - `dim_entities`
+  - `fact_blocks`
+  - `fact_tasks`
+  - `fact_links`
+  - `fact_tags`
+  - `mart_timeline`
+- Added CLI commands:
+  - `warehouse-summary`
+  - `entities`
+  - `timeline`
+  - `agent-context`
+- Added MCP tools:
+  - `get_vault_warehouse_summary`
+  - `list_vault_entities`
+  - `get_vault_entity_timeline`
+  - `search_vault_agent_context`
+- Added warehouse-focused tests.
+
+### Changed
+
+- Documented the deterministic warehouse layer and current AI boundary in `readme.md`.
+
+### Verified
+
+- `.venv/bin/python -m pytest`
+- `.venv/bin/python -m compileall obsidian_mcp_context`
+- CLI smoke tests against `examples/synthetic-vault`.
+
+## [0.1.0] - 2026-06-26
+
+### Added
+
+- Initial parser for textual Obsidian vault context.
+- CLI and MCP tools for:
+  - listing notes
+  - searching blocks
+  - listing tasks
+  - fetching note context
+- Markdown parsing for headings, blocks, tasks, wikilinks, tags, and semantic lines.
+- Plain text parsing as an opt-in generic text mode.
+- Source path, heading, block, line, and hash provenance.
+- Initial small synthetic vault.

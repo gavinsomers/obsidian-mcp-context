@@ -1,0 +1,29 @@
+---
+aliases: ["Project Beacon 92 Stakeholder Alignment Sync 1852"]
+type: meeting
+date: 2024-08-09
+project: "[[Project Beacon 92]]"
+company: "[[Harbor Health]]"
+source_created_at: 2024-08-09T09:05:00
+source_observed_at: 2024-08-09T10:48:00
+created_at: 2024-08-09T13:45:00
+updated_at: 2024-08-10T05:45:00
+tags: [#meeting]
+---
+# Project Beacon 92 Stakeholder Alignment Sync 1852
+
+## Evergreen Attendees
+- [[Marcus Diaz]]
+
+## Client Attendees
+- [[Iris Kim]]
+- [[Yara Ortega]]
+- [[Marcus Tan]]
+
+## Notes
+Stakeholder Alignment reviewed for [[Project Beacon 92]] at [[Harbor Health]].
+[[Marcus Diaz]] aligned with [[Iris Kim]] on follow-up work for the next operating review.
+
+## Action Items
+- [ ] Send recap for [[Project Beacon 92]] to [[Marcus Diaz]] #follow-up
+- [x] Capture meeting notes in vault #ops
