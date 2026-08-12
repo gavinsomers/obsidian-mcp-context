@@ -14,6 +14,11 @@ Every modeled entity has:
 - `source_path`: vault-relative note path when the entity has a canonical note.
 - `canonical_note_id`: note dimension ID when the entity has a canonical note.
 
+For canonical notes, the parsed display title comes from an explicit
+frontmatter `title`, then the first level-one heading, then the filename stem.
+This keeps machine-friendly filenames such as `morgan_lee.md` separate from the
+human-readable entity name.
+
 ## Type Inference
 
 Built-in folders map to stable entity or note types:
@@ -39,8 +44,10 @@ canonical entities.
 
 ## Entity Sources
 
-Canonical note entities come from entity folders. Wikilinks resolve to canonical
-entities when a scanned note has the same title. Wikilinks without a matching
+Canonical note entities come from entity folders. Across parser and warehouse
+paths, wikilinks can resolve through a canonical note's parsed title,
+vault-relative path, or filename stem. Parser diagnostics and the in-memory
+warehouse also recognize frontmatter aliases. Wikilinks without a matching
 canonical note become `unknown` entities. Tags become `topic` entities.
 
 ## Generic Marts

@@ -28,6 +28,9 @@ The project uses semantic-ish versions:
 
 ### Changed
 
+- Normalized repository and generated-fixture paths to lowercase, using
+  underscores for multiword note filenames while preserving human-readable
+  note titles and compatible wikilink resolution.
 - Made dbt source schema and target profile selection configurable so the same
   marts can build against local DuckDB or Postgres.
 - Made the Postgres dbt profile run serially by default to avoid local DDL

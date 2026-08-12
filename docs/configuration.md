@@ -175,7 +175,7 @@ non_entity_note_types = [
 clients = "company"
 initiatives = "project"
 assets = "asset"
-Calendars = "calendar"
+calendars = "calendar"
 
 [replay_qa]
 entity_type_preferences = ["project", "company", "asset"]
