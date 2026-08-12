@@ -16,7 +16,7 @@ type: daily
 Discussed [[Synthetic Knowledge Base]].
 - [ ] Draft Phase 1 plan #product
 """,
-        "Daily/2026-06-25.md",
+        "daily/2026-06-25.md",
     )
 
     open_tasks = [task for task in parsed.tasks if not task.checked]
@@ -48,7 +48,7 @@ def test_parser_ignores_tasks_links_and_tags_inside_fenced_code():
 
 - [ ] Review timeline
 """,
-        "Projects/Atlas.md",
+        "projects/Atlas.md",
     )
 
     assert len(parsed.tasks) == 1

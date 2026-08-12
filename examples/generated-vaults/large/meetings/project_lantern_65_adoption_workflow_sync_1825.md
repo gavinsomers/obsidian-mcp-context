@@ -1,0 +1,29 @@
+---
+aliases: ["Project Lantern 65 Adoption Workflow Sync 1825"]
+type: meeting
+date: 2024-05-29
+project: "[[Project Lantern 65]]"
+company: "[[BrightWave FinTech]]"
+source_created_at: 2024-05-29T09:17:00
+source_observed_at: 2024-05-29T10:38:00
+created_at: 2024-05-29T11:49:00
+updated_at: 2024-05-30T08:49:00
+tags: [#meeting]
+---
+# Project Lantern 65 Adoption Workflow Sync 1825
+
+## Evergreen Attendees
+- [[Lina Chen]]
+
+## Client Attendees
+- [[Zoe Morgan]]
+- [[Nadia Rostova]]
+- [[Jonah Ivanov]]
+
+## Notes
+Adoption Workflow reviewed for [[Project Lantern 65]] at [[BrightWave FinTech]].
+[[Lina Chen]] aligned with [[Zoe Morgan]] on follow-up work for the next operating review.
+
+## Action Items
+- [ ] Send recap for [[Project Lantern 65]] to [[Lina Chen]] #follow-up
+- [x] Capture meeting notes in vault #ops

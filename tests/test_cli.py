@@ -11,7 +11,7 @@ from obsidian_mcp_context.cli import main
 def test_cli_modeled_command_warns_on_direct_parse_fallback(tmp_path: Path, capsys):
     vault = tmp_path / "vault"
     vault.mkdir()
-    (vault / "Project Atlas.md").write_text("# Project Atlas\n", encoding="utf-8")
+    (vault / "project_atlas.md").write_text("# Project Atlas\n", encoding="utf-8")
 
     result = main(["--vault", str(vault), "entities"])
 
@@ -87,12 +87,12 @@ def test_cli_link_suggestions_review_and_export(tmp_path: Path, capsys):
     vault = tmp_path / "vault"
     review_state = tmp_path / "review-state.json"
     export_path = tmp_path / "review-report.json"
-    (vault / "Projects").mkdir(parents=True)
-    (vault / "Daily").mkdir()
-    (vault / "Projects" / "Project Atlas.md").write_text(
+    (vault / "projects").mkdir(parents=True)
+    (vault / "daily").mkdir()
+    (vault / "projects" / "project_atlas.md").write_text(
         "# Project Atlas\n", encoding="utf-8"
     )
-    (vault / "Daily" / "2026-06-28.md").write_text(
+    (vault / "daily" / "2026-06-28.md").write_text(
         "# Daily\n\n[[Project Atals]]\n", encoding="utf-8"
     )
 

@@ -23,8 +23,8 @@ The v1.0 claim is not:
 
 - [ ] `pyproject.toml` has the target version.
 - [ ] `obsidian_mcp_context/__init__.py` has the same `__version__`.
-- [ ] `CHANGELOG.md` has a dated `v1.0.0` entry.
-- [ ] `RELEASING.md` release commands use the actual target tag.
+- [ ] `changelog.md` has a dated `v1.0.0` entry.
+- [ ] `releasing.md` release commands use the actual target tag.
 - [ ] The release PR title and changelog describe generated-vault scope, not a
       personal-vault product.
 
@@ -196,7 +196,7 @@ Verify docs manually:
 
 ```text
 docs/mcp-client-setup.md
-README.md#MCP Tools
+readme.md#MCP Tools
 ```
 
 ### 9. Public Claims

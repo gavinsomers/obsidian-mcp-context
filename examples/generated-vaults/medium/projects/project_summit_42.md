@@ -1,0 +1,26 @@
+---
+aliases: ["Project Summit 42"]
+type: project
+status: active
+company: "[[Noble Labs]]"
+source_created_at: 2024-07-25T15:55:00
+source_observed_at: 2024-07-25T16:20:00
+created_at: 2024-07-27T02:55:00
+updated_at: 2024-09-05T10:55:00
+tags: [#project]
+---
+# Project Summit 42
+
+## Overview
+Project Summit 42 supports [[Noble Labs]] through sales pipeline.
+
+## Stakeholders
+- [[Grace Foster]]
+- [[Iris Foster]]
+- [[David Chen]]
+- [[Uma Evans]]
+
+## Operating Notes
+- Owner: [[Omar Bennett]]
+- Status: `active`
+- [ ] Reconcile latest state for [[Project Summit 42]] #ops

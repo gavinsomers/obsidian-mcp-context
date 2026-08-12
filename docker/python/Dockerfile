@@ -9,7 +9,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends git build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-COPY pyproject.toml README.md CHANGELOG.md RELEASING.md ./
+COPY pyproject.toml readme.md changelog.md releasing.md ./
 COPY obsidian_mcp_context ./obsidian_mcp_context
 COPY dbt ./dbt
 COPY models ./models

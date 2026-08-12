@@ -22,7 +22,7 @@ DEFAULT_INCLUDE_GLOBS = ("**/*.md",)
 DEFAULT_EXCLUDE_GLOBS = (
     ".git/**",
     ".obsidian/**",
-    "System/Marts/**",
+    "system/marts/**",
 )
 DEFAULT_SOURCE_EXTENSIONS = (".md",)
 

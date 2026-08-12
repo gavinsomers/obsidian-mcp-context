@@ -58,8 +58,8 @@ def test_dataset_workflow_script_rejects_unknown_option_before_docker():
 def test_dataset_workflow_script_rejects_missing_manifest_before_docker(tmp_path):
     vault = tmp_path / "generated-current"
     vault.mkdir()
-    (vault / "Projects").mkdir()
-    (vault / "Projects" / "Project Atlas.md").write_text("# Project Atlas\n", encoding="utf-8")
+    (vault / "projects").mkdir()
+    (vault / "projects" / "project_atlas.md").write_text("# Project Atlas\n", encoding="utf-8")
 
     result = subprocess.run(
         ["bash", SCRIPT, str(vault)],

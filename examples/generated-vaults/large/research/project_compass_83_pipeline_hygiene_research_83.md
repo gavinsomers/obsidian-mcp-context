@@ -1,0 +1,22 @@
+---
+aliases: ["Project Compass 83 Pipeline Hygiene Research 83"]
+type: research
+project: "[[Project Compass 83]]"
+company: "[[Noble Manufacturing]]"
+source_created_at: 2024-07-08T10:19:00
+source_observed_at: 2024-07-08T10:55:00
+created_at: 2024-07-08T17:19:00
+updated_at: 2024-07-22T03:19:00
+tags: [#research]
+---
+# Project Compass 83 Pipeline Hygiene Research 83
+
+## Research Summary
+Research on pipeline hygiene for [[Project Compass 83]] and [[Noble Manufacturing]].
+
+## Evidence
+- Interview notes from [[David Diaz]]
+- Related operating review: [[Project Compass 83 Security Review Sync 303]]
+
+## Follow Up
+- [ ] Convert findings into decision criteria for [[Project Compass 83]] #research

@@ -56,31 +56,31 @@ def test_generated_project_atlas_1_parser_context_is_exactly_disambiguated(
 
     expected_timeline_rows = {
         (
-            "Projects/Project Atlas 1.md",
+            "projects/project_atlas_1.md",
             None,
             "block",
             "## Overview\nProject Atlas 1 supports [[Northstar Labs]] through consulting delivery.",
         ),
         (
-            "Meetings/Project Atlas 1 Warehouse Mapping Sync 1.md",
+            "meetings/project_atlas_1_warehouse_mapping_sync_1.md",
             "2023-05-20",
             "block",
             "## Notes\nWarehouse Mapping reviewed for [[Project Atlas 1]] at [[Northstar Labs]].\n[[Alex Alvarez]] flagged follow-up work for the next operating review.",
         ),
         (
-            "Decisions/Project Atlas 1 Security Review Decision 1.md",
+            "decisions/project_atlas_1_security_review_decision_1.md",
             "2023-06-10",
             "task_open",
             "Review whether [[Project Atlas 1 Security Review Decision 1]] changes open loops for [[Project Atlas 1]] #follow-up",
         ),
         (
-            "Risks/Project Atlas 1 Adoption Workflow Risk 1.md",
+            "risks/project_atlas_1_adoption_workflow_risk_1.md",
             None,
             "block",
             "## Risk\nAdoption Workflow may affect [[Project Atlas 1]] for [[Northstar Labs]].",
         ),
         (
-            "Research/Project Atlas 1 Contract Renewal Research 1.md",
+            "research/project_atlas_1_contract_renewal_research_1.md",
             None,
             "task_open",
             "Convert findings into decision criteria for [[Project Atlas 1]] #research",
@@ -111,18 +111,18 @@ def test_generated_project_atlas_1_open_loop_query_keeps_source_provenance(
 
     expected_open_loops = {
         (
-            "Meetings/Project Atlas 1 Warehouse Mapping Sync 1.md",
-            24,
+            "meetings/project_atlas_1_warehouse_mapping_sync_1.md",
+            25,
             "Send recap for [[Project Atlas 1]] to [[Alex Alvarez]] #follow-up",
         ),
         (
-            "Decisions/Project Atlas 1 Security Review Decision 1.md",
-            27,
+            "decisions/project_atlas_1_security_review_decision_1.md",
+            28,
             "Review whether [[Project Atlas 1 Security Review Decision 1]] changes open loops for [[Project Atlas 1]] #follow-up",
         ),
         (
-            "Research/Project Atlas 1 Contract Renewal Research 1.md",
-            21,
+            "research/project_atlas_1_contract_renewal_research_1.md",
+            22,
             "Convert findings into decision criteria for [[Project Atlas 1]] #research",
         ),
     }

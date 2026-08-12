@@ -1,0 +1,22 @@
+---
+aliases: ["Project Pipeline 202 Lineage Audit Research 202"]
+type: research
+project: "[[Project Pipeline 202]]"
+company: "[[Cobalt Labs]]"
+source_created_at: 2026-02-14T14:04:00
+source_observed_at: 2026-02-14T14:46:00
+created_at: 2026-02-17T15:04:00
+updated_at: 2026-04-02T20:04:00
+tags: [#research]
+---
+# Project Pipeline 202 Lineage Audit Research 202
+
+## Research Summary
+Research on lineage audit for [[Project Pipeline 202]] and [[Cobalt Labs]].
+
+## Evidence
+- Interview notes from [[Amara Alvarez]]
+- Related operating review: [[Project Pipeline 202 Stakeholder Alignment Sync 202]]
+
+## Follow Up
+- [ ] Convert findings into decision criteria for [[Project Pipeline 202]] #research

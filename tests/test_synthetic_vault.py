@@ -78,11 +78,11 @@ def test_synthetic_vault_has_lifecycle_timestamps_on_every_note():
 def test_superseded_decision_scenario_is_represented_with_links():
     context = build_context(VaultConfig(vault_path=VAULT_PATH))
 
-    old_decision = get_note_context(context, "Decisions/Renewal Prep Scope.md")
+    old_decision = get_note_context(context, "decisions/renewal_prep_scope.md")
     new_decision = get_note_context(
-        context, "Decisions/Revised Security Addendum Scope.md"
+        context, "decisions/revised_security_addendum_scope.md"
     )
-    trigger = get_note_context(context, "Meetings/Atlas SecOps Realignment.md")
+    trigger = get_note_context(context, "meetings/atlas_secops_realignment.md")
 
     old_text = "\n".join(block["text"] for block in old_decision["blocks"])
     new_links = {link["link_target"] for link in new_decision["links"]}
@@ -106,11 +106,11 @@ def test_marcus_vance_timeline_captures_skeptic_to_sponsor_shift():
     sources = [row["source_path"] for row in rows]
     summaries = "\n".join(row["summary"] for row in rows)
 
-    assert "Meetings/Horizon Kickoff.md" in sources
-    assert "Meetings/Horizon Phase 1 Signoff.md" in sources
-    assert "Research/Data Lineage Reconciliation Blueprint.md" in sources
-    assert sources.index("Meetings/Horizon Kickoff.md") < sources.index(
-        "Meetings/Horizon Phase 1 Signoff.md"
+    assert "meetings/horizon_kickoff.md" in sources
+    assert "meetings/horizon_phase_1_signoff.md" in sources
+    assert "research/data_lineage_reconciliation_blueprint.md" in sources
+    assert sources.index("meetings/horizon_kickoff.md") < sources.index(
+        "meetings/horizon_phase_1_signoff.md"
     )
     assert "Skeptic" in summaries
     assert "Sponsor" in summaries
@@ -119,12 +119,12 @@ def test_marcus_vance_timeline_captures_skeptic_to_sponsor_shift():
 def test_acme_reschedule_and_task_mutation_are_represented():
     context = build_context(VaultConfig(vault_path=VAULT_PATH))
 
-    stale_blocks = search_blocks(context, source_path="Daily/2026-05-11.md")
-    actual = get_note_context(context, "Meetings/Pipeline Alignment Actual.md")
+    stale_blocks = search_blocks(context, source_path="daily/2026-05-11.md")
+    actual = get_note_context(context, "meetings/pipeline_alignment_actual.md")
     completed_on_0519 = list_tasks(
         context,
         checked=True,
-        source_path="Daily/2026-05-19.md",
+        source_path="daily/2026-05-19.md",
         limit=20,
     )
 

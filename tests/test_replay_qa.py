@@ -32,13 +32,13 @@ class FakeMartService:
                 "entity_id": "project:atlas-1",
                 "entity_type": "project",
                 "name": "Project Atlas 1",
-                "source_path": "Projects/Project Atlas 1.md",
+                "source_path": "projects/project_atlas_1.md",
             },
             {
                 "entity_id": "project:atlas-10",
                 "entity_type": "project",
                 "name": "Project Atlas 10",
-                "source_path": "Projects/Project Atlas 10.md",
+                "source_path": "projects/project_atlas_10.md",
             },
         ]
 
@@ -55,7 +55,7 @@ class FakeMartService:
                 "row_id": "risk:1",
                 "event_date": "2023-04-20",
                 "event_type": "risk_open",
-                "source_path": "Risks/Project Atlas 1 Adoption Workflow Risk 1.md",
+                "source_path": "risks/project_atlas_1_adoption_workflow_risk_1.md",
                 "start_line": None,
                 "title": "Adoption workflow risk",
                 "summary": "Enablement owner is not confirmed.",
@@ -74,7 +74,7 @@ class FakeMartService:
                 "row_id": "open_loop:1",
                 "event_date": "2023-04-21",
                 "event_type": "open_loop",
-                "source_path": "Daily/2023-04-21.md",
+                "source_path": "daily/2023-04-21.md",
                 "start_line": 12,
                 "title": "Follow ups",
                 "summary": "Confirm enablement owner with Alex Alvarez.",
@@ -117,7 +117,7 @@ class FakeFallbackService:
     ) -> list[dict[str, object]]:
         return [
             {
-                "source_path": "Projects/Project Atlas 1.md",
+                "source_path": "projects/project_atlas_1.md",
                 "start_line": 3,
                 "heading_path": "Status",
                 "text": "Project Atlas 1 is in discovery.",
@@ -140,7 +140,7 @@ class FakePagedMartService(FakeMartService):
                     "entity_id": "company:apex",
                     "entity_type": "company",
                     "name": "Apex Analytics",
-                    "source_path": "Companies/Apex Analytics.md",
+                    "source_path": "companies/apex_analytics.md",
                 }
             ]
         if text == "Project Atlas 1":
@@ -149,13 +149,13 @@ class FakePagedMartService(FakeMartService):
                     "entity_id": "decision:atlas-1",
                     "entity_type": "decision",
                     "name": "Project Atlas 1 Security Review Decision 1",
-                    "source_path": "Decisions/Project Atlas 1 Security Review Decision 1.md",
+                    "source_path": "decisions/project_atlas_1_security_review_decision_1.md",
                 },
                 {
                     "entity_id": "project:atlas-1",
                     "entity_type": "project",
                     "name": "Project Atlas 1",
-                    "source_path": "Projects/Project Atlas 1.md",
+                    "source_path": "projects/project_atlas_1.md",
                 },
             ]
         return []
@@ -182,7 +182,7 @@ class FakeAccountMartService(FakeMartService):
                 "entity_id": "company:acme",
                 "entity_type": "company",
                 "name": "Acme",
-                "source_path": "Companies/Acme.md",
+                "source_path": "companies/Acme.md",
             },
             {
                 "entity_id": "account:acme",
@@ -294,8 +294,8 @@ def test_answer_question_uses_exact_mart_entity_and_sources(tmp_path, monkeypatc
     assert answer["entity"]["name"] == "Project Atlas 1"
     assert len(answer["rows"]) == 2
     assert {source["source_path"] for source in answer["sources"]} == {
-        "Risks/Project Atlas 1 Adoption Workflow Risk 1.md",
-        "Daily/2023-04-21.md",
+        "risks/project_atlas_1_adoption_workflow_risk_1.md",
+        "daily/2023-04-21.md",
     }
     assert "Project Atlas 10" not in answer["answer"]
     assert answer["summary"]["status"] == "not_requested"
@@ -409,7 +409,7 @@ def test_answer_question_can_summarize_retrieved_rows_with_local_provider(
     assert answer["mode"] == "mart-backed+local-gemma"
     assert answer["answer"] == "Gemma summary from evidence [1] [2]."
     assert "Enablement owner is not confirmed." in summarizer.prompts[0]
-    assert "Risks/Project Atlas 1 Adoption Workflow Risk 1.md" in summarizer.prompts[0]
+    assert "risks/project_atlas_1_adoption_workflow_risk_1.md" in summarizer.prompts[0]
     assert answer["deterministic_answer"].startswith("Mart-backed context")
     assert answer["summary"] == {
         "enabled": True,
@@ -518,7 +518,7 @@ def test_answer_question_reports_parser_diagnostic_fallback(tmp_path, monkeypatc
 
     assert answer["status"] == "fallback"
     assert answer["mode"] == "parser-diagnostic-fallback"
-    assert answer["sources"][0]["source_path"] == "Projects/Project Atlas 1.md"
+    assert answer["sources"][0]["source_path"] == "projects/project_atlas_1.md"
     assert answer["summary"]["status"] == "not_available"
 
 

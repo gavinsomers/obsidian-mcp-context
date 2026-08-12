@@ -177,12 +177,12 @@ lifecycle_metadata = "ignore"
 def test_pipeline_run_reports_deterministic_suggestion_counts(tmp_path: Path):
     vault = tmp_path / "vault"
     output_dir = tmp_path / "var"
-    (vault / "Projects").mkdir(parents=True)
-    (vault / "Daily").mkdir()
-    (vault / "Projects" / "Project Atlas.md").write_text(
+    (vault / "projects").mkdir(parents=True)
+    (vault / "daily").mkdir()
+    (vault / "projects" / "project_atlas.md").write_text(
         "# Project Atlas\n", encoding="utf-8"
     )
-    (vault / "Daily" / "2026-06-28.md").write_text(
+    (vault / "daily" / "2026-06-28.md").write_text(
         "# Daily\n\n[[Project Atals]]\n", encoding="utf-8"
     )
     config_path = tmp_path / "config.toml"
@@ -276,12 +276,12 @@ lifecycle_metadata = "ignore"
 def test_pipeline_run_reports_ai_enrichment_privacy_skips(tmp_path: Path):
     vault = tmp_path / "vault"
     output_dir = tmp_path / "var"
-    (vault / "Projects").mkdir(parents=True)
-    (vault / "Daily").mkdir()
-    (vault / "Projects" / "Project Atlas.md").write_text(
+    (vault / "projects").mkdir(parents=True)
+    (vault / "daily").mkdir()
+    (vault / "projects" / "project_atlas.md").write_text(
         "# Project Atlas\n", encoding="utf-8"
     )
-    (vault / "Daily" / "2026-06-28.md").write_text(
+    (vault / "daily" / "2026-06-28.md").write_text(
         "# Daily\n\n[[Project Atals]]\n", encoding="utf-8"
     )
     config_path = tmp_path / "config.toml"
@@ -328,12 +328,12 @@ lifecycle_metadata = "ignore"
 def test_pipeline_run_privacy_report_counts_ai_budget_skips(tmp_path: Path):
     vault = tmp_path / "vault"
     output_dir = tmp_path / "var"
-    (vault / "Projects").mkdir(parents=True)
-    (vault / "Daily").mkdir()
-    (vault / "Projects" / "Project Atlas.md").write_text(
+    (vault / "projects").mkdir(parents=True)
+    (vault / "daily").mkdir()
+    (vault / "projects" / "project_atlas.md").write_text(
         "# Project Atlas\n", encoding="utf-8"
     )
-    (vault / "Daily" / "2026-06-28.md").write_text(
+    (vault / "daily" / "2026-06-28.md").write_text(
         "# Daily\n\n[[Project Atals]]\n", encoding="utf-8"
     )
     config_path = tmp_path / "config.toml"

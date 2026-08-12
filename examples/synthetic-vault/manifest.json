@@ -3,14 +3,14 @@
   "description": "Expanded multi-company synthetic vault tracking state changes, superseded decisions, fluctuating risks, cross-entity timelines, and virtual note lifecycle timestamps across May-July 2026.",
   "vault_statistics": {
     "target_counts": {
-      "People": 16,
-      "Companies": 8,
-      "Projects": 7,
-      "Daily": 30,
-      "Meetings": 24,
-      "Decisions": 12,
-      "Risks": 11,
-      "Research": 12,
+      "people": 16,
+      "companies": 8,
+      "projects": 7,
+      "daily": 30,
+      "meetings": 24,
+      "decisions": 12,
+      "risks": 11,
+      "research": 12,
       "Total_Files": 120
     },
     "minimum_expected_open_tasks": 45,
@@ -98,22 +98,22 @@
     {
       "id": "SC-01-DECISION-SUPERSEDED",
       "description": "Decision 'Renewal Prep Scope' is superseded by 'Revised Security Addendum Scope' due to compliance blocks.",
-      "initial_note": "Decisions/Renewal Prep Scope.md",
-      "superseding_note": "Decisions/Revised Security Addendum Scope.md",
-      "trigger_event": "Meetings/Atlas SecOps Realignment.md"
+      "initial_note": "decisions/renewal_prep_scope.md",
+      "superseding_note": "decisions/revised_security_addendum_scope.md",
+      "trigger_event": "meetings/atlas_secops_realignment.md"
     },
     {
       "id": "SC-02-STAKEHOLDER-SHIFT",
       "description": "Marcus Vance shifts from Skeptic to Sponsor regarding Reporting Trust deployment framework.",
-      "initial_state": "Meetings/Horizon Kickoff.md",
-      "updated_state": "Meetings/Horizon Phase 1 Signoff.md",
-      "supporting_evidence": "Research/Data Lineage Reconciliation Blueprint.md"
+      "initial_state": "meetings/horizon_kickoff.md",
+      "updated_state": "meetings/horizon_phase_1_signoff.md",
+      "supporting_evidence": "research/data_lineage_reconciliation_blueprint.md"
     },
     {
       "id": "SC-03-MEETING-RESCHEDULE",
       "description": "Acme Pipeline alignment meeting shifted from 2026-05-12 to 2026-05-15 due to legal delays.",
-      "stale_reference": "Daily/2026-05-11.md",
-      "actual_event": "Meetings/Pipeline Alignment Actual.md"
+      "stale_reference": "daily/2026-05-11.md",
+      "actual_event": "meetings/pipeline_alignment_actual.md"
     }
   ],
   "expected_queries": [
@@ -126,19 +126,19 @@
       "name": "timeline_of_interactions_marcus_vance",
       "query": "Chronological occurrence of [[Marcus Vance]] across daily notes and meetings to monitor sentiment shift.",
       "expected_sources_ordered": [
-        "Meetings/Horizon Kickoff.md",
-        "Daily/2026-06-02.md",
-        "Meetings/Horizon Midpoint Crisis.md",
-        "Research/Data Lineage Reconciliation Blueprint.md",
-        "Meetings/Horizon Phase 1 Signoff.md"
+        "meetings/horizon_kickoff.md",
+        "daily/2026-06-02.md",
+        "meetings/horizon_midpoint_crisis.md",
+        "research/data_lineage_reconciliation_blueprint.md",
+        "meetings/horizon_phase_1_signoff.md"
       ]
     },
     {
       "name": "superseded_decision_detection",
       "query": "Find decisions explicitly tagged with #superseded or linking to newer version counterparts.",
       "expected_notes": [
-        "Decisions/Renewal Prep Scope.md",
-        "Decisions/Pipeline Kickoff Date Reset.md"
+        "decisions/renewal_prep_scope.md",
+        "decisions/pipeline_kickoff_date_reset.md"
       ]
     },
     {

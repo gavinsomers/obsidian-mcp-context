@@ -126,7 +126,7 @@ def get_vault_note_context(
     vault_path: Annotated[str, Field(description="Path to the Obsidian vault.")],
     source_path: Annotated[
         str,
-        Field(description="Vault-relative note path, such as Projects/Atlas.md."),
+        Field(description="Vault-relative note path, such as projects/Atlas.md."),
     ],
 ) -> dict[str, object]:
     """Fetch all parsed context for one vault-relative note path."""

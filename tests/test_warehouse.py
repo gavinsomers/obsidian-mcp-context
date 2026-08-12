@@ -31,7 +31,7 @@ def test_warehouse_builds_dimensional_model_from_synthetic_vault():
             created_at,
             updated_at
         from dim_notes
-        where source_path = 'Meetings/Horizon Kickoff.md'
+        where source_path = 'meetings/horizon_kickoff.md'
         """
     ).fetchone()
     assert note == {
@@ -46,7 +46,7 @@ def test_warehouse_builds_dimensional_model_from_synthetic_vault():
         """
         select source_date, created_at
         from dim_notes
-        where source_path = 'People/Morgan Lee.md'
+        where source_path = 'people/morgan_lee.md'
         """
     ).fetchone()
     assert entity_note == {
@@ -77,7 +77,7 @@ def test_entity_timeline_returns_provenance_backed_rows():
     rows = entity_timeline(warehouse, entity="Morgan Lee", limit=100)
 
     assert rows
-    assert any(row["source_path"] == "Meetings/Atlas Renewal Review.md" for row in rows)
+    assert any(row["source_path"] == "meetings/atlas_renewal_review.md" for row in rows)
     assert all("source_path" in row and "start_line" in row for row in rows)
 
 
@@ -98,15 +98,15 @@ def test_agent_context_can_filter_open_tasks_by_entity():
 
 def test_entity_filters_match_exact_related_entity_names(tmp_path: Path):
     vault = tmp_path / "vault"
-    (vault / "Projects").mkdir(parents=True)
-    (vault / "Daily").mkdir()
-    (vault / "Projects" / "Project Atlas 1.md").write_text(
+    (vault / "projects").mkdir(parents=True)
+    (vault / "daily").mkdir()
+    (vault / "projects" / "project_atlas_1.md").write_text(
         "# Project Atlas 1\n", encoding="utf-8"
     )
-    (vault / "Projects" / "Project Atlas 16.md").write_text(
+    (vault / "projects" / "project_atlas_16.md").write_text(
         "# Project Atlas 16\n", encoding="utf-8"
     )
-    (vault / "Daily" / "2025-01-01.md").write_text(
+    (vault / "daily" / "2025-01-01.md").write_text(
         "\n".join(
             [
                 "# 2025-01-01",
@@ -134,11 +134,11 @@ def test_entity_filters_match_exact_related_entity_names(tmp_path: Path):
 
 def test_warehouse_entity_ids_are_collision_resistant(tmp_path: Path):
     vault = tmp_path / "vault"
-    (vault / "Projects").mkdir(parents=True)
-    (vault / "Projects" / "Alpha Beta.md").write_text(
+    (vault / "projects").mkdir(parents=True)
+    (vault / "projects" / "Alpha Beta.md").write_text(
         "# Alpha Beta\n", encoding="utf-8"
     )
-    (vault / "Projects" / "Alpha-Beta.md").write_text(
+    (vault / "projects" / "Alpha-Beta.md").write_text(
         "# Alpha-Beta\n", encoding="utf-8"
     )
 
@@ -158,10 +158,10 @@ def test_warehouse_generates_deterministic_suggestions_for_unresolved_links(
     tmp_path: Path,
 ):
     vault = tmp_path / "vault"
-    (vault / "People").mkdir(parents=True)
-    (vault / "Projects").mkdir()
-    (vault / "Daily").mkdir()
-    (vault / "People" / "Morgan Lee.md").write_text(
+    (vault / "people").mkdir(parents=True)
+    (vault / "projects").mkdir()
+    (vault / "daily").mkdir()
+    (vault / "people" / "morgan_lee.md").write_text(
         """---
 aliases: ["Morgan"]
 ---
@@ -169,18 +169,18 @@ aliases: ["Morgan"]
 """,
         encoding="utf-8",
     )
-    (vault / "Projects" / "Project Atlas.md").write_text(
+    (vault / "projects" / "project_atlas.md").write_text(
         "# Project Atlas\n\n#priority\n", encoding="utf-8"
     )
-    (vault / "Projects" / "Project Beacon.md").write_text(
+    (vault / "projects" / "project_beacon.md").write_text(
         "# Project Beacon\n", encoding="utf-8"
     )
-    (vault / "Daily" / "2026-06-28.md").write_text(
+    (vault / "daily" / "2026-06-28.md").write_text(
         "\n".join(
             [
                 "# Daily",
                 "",
-                "Discussed [[Morgan]], [[Projects/Project Atlas]], and [[Project Atals]].",
+                "Discussed [[Morgan]], [[projects/project_atlas]], and [[Project Atals]].",
                 "#priority",
             ]
         ),
@@ -199,7 +199,7 @@ aliases: ["Morgan"]
         for row in suggestions
     } >= {
         ("Morgan", "Morgan Lee", "exact_alias"),
-        ("Projects/Project Atlas", "Project Atlas", "exact_basename"),
+        ("projects/project_atlas", "Project Atlas", "exact_basename"),
         ("Project Atals", "Project Atlas", "string_similarity"),
     }
     atlas = next(
@@ -216,13 +216,13 @@ def test_warehouse_bounds_deterministic_suggestions_per_unresolved_link(
     tmp_path: Path,
 ):
     vault = tmp_path / "vault"
-    (vault / "Projects").mkdir(parents=True)
-    (vault / "Daily").mkdir()
+    (vault / "projects").mkdir(parents=True)
+    (vault / "daily").mkdir()
     for index in range(20):
-        (vault / "Projects" / f"Project Atlas {index}.md").write_text(
+        (vault / "projects" / f"Project Atlas {index}.md").write_text(
             "# Project Atlas\n", encoding="utf-8"
         )
-    (vault / "Daily" / "2026-06-28.md").write_text(
+    (vault / "daily" / "2026-06-28.md").write_text(
         "# Daily\n\n[[Project Atals]]\n", encoding="utf-8"
     )
 

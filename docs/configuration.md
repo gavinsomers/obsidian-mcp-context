@@ -172,9 +172,9 @@ non_entity_note_types = [
 ]
 
 [entities.folders]
-Clients = "company"
-Initiatives = "project"
-Assets = "asset"
+clients = "company"
+initiatives = "project"
+assets = "asset"
 Calendars = "calendar"
 
 [replay_qa]

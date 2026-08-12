@@ -28,18 +28,18 @@ tables and keys fail fast instead of becoming implicit private conventions.
 The first path segment is the default note-type signal. Built-in folders map to
 stable types:
 
-- `People/` -> `person`
-- `Companies/` -> `company`
-- `Projects/` -> `project`
-- `Decisions/` -> `decision`
-- `Risks/` -> `risk`
-- `Daily/` -> `daily`
-- `Meetings/` -> `meeting`
-- `Research/` -> `research`
+- `people/` -> `person`
+- `companies/` -> `company`
+- `projects/` -> `project`
+- `decisions/` -> `decision`
+- `risks/` -> `risk`
+- `daily/` -> `daily`
+- `meetings/` -> `meeting`
+- `research/` -> `research`
 
 Unknown top-level folders become lowercase singular entity types. For example,
 `Accounts/Example Account.md` becomes `account` and
-`Assets/Revenue Model.md` becomes `asset`.
+`assets/Revenue Model.md` becomes `asset`.
 
 Use `entities.folders` to override that inference when a folder should map to a
 different type or to a non-entity note type:
@@ -48,9 +48,9 @@ different type or to a non-entity note type:
 [entities.folders]
 Accounts = "account"
 Cases = "case"
-Assets = "asset"
-Meetings = "meeting"
-Daily = "daily"
+assets = "asset"
+meetings = "meeting"
+daily = "daily"
 ```
 
 Use `entities.non_entity_note_types` for note types that provide context but
@@ -124,9 +124,9 @@ Consider a service vault with these folders:
 ```text
 Accounts/
 Cases/
-Assets/
-Meetings/
-Daily/
+assets/
+meetings/
+daily/
 ```
 
 `Accounts`, `Cases`, and `Assets` are canonical entity folders. `Meetings` and
@@ -154,9 +154,9 @@ non_entity_note_types = [
 [entities.folders]
 Accounts = "account"
 Cases = "case"
-Assets = "asset"
-Meetings = "meeting"
-Daily = "daily"
+assets = "asset"
+meetings = "meeting"
+daily = "daily"
 
 [replay_qa]
 entity_type_preferences = ["account", "case", "asset"]
@@ -173,8 +173,8 @@ With that profile:
 
 - `Accounts/Example Account.md` becomes `entity_type = "account"`.
 - `Cases/Example Case.md` becomes `entity_type = "case"`.
-- `Assets/Example Asset.md` becomes `entity_type = "asset"`.
-- `Meetings/Account Review.md` and `Daily/2026-01-15.md` provide context and
+- `assets/Example Asset.md` becomes `entity_type = "asset"`.
+- `meetings/Account Review.md` and `daily/2026-01-15.md` provide context and
   tasks but are not canonical entities.
 - Replay Q&A breaks same-name ties in favor of accounts, then cases, then
   assets.

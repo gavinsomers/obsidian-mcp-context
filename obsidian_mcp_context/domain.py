@@ -21,6 +21,7 @@ NOTE_TYPE_BY_FOLDER = {
     "risks": "risk",
 }
 NON_ENTITY_NOTE_TYPES = {"daily", "meeting", "note", "research"}
+H1_TITLE_RE = re.compile(r"(?m)^#\s+(.+?)\s*$")
 
 
 def slug(value: str) -> str:
@@ -28,7 +29,15 @@ def slug(value: str) -> str:
     return normalized or "unknown"
 
 
-def note_title(source_path: str) -> str:
+def note_title(source_path: str, text: str | None = None) -> str:
+    if text:
+        explicit_title = frontmatter_value(text, "title")
+        if explicit_title:
+            return explicit_title
+        content_text = FRONTMATTER_FIELD_RE.sub("", text, count=1)
+        heading_match = H1_TITLE_RE.search(content_text)
+        if heading_match:
+            return heading_match.group(1).strip().rstrip("#").strip()
     return Path(source_path).stem
 
 

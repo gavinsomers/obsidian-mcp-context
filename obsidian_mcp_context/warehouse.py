@@ -169,6 +169,9 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
     for source_file in context.files:
         source_path = source_file.source_path
         first_block_text = first_block_text_by_source.get(source_path)
+        note_text = source_file.absolute_path.read_text(
+            encoding="utf-8", errors="replace"
+        )
         note_id = _resolve_note_id(connection, source_path)
         connection.execute(
             """
@@ -192,7 +195,7 @@ def _insert_note_dimensions(connection: sqlite3.Connection, context: VaultContex
                 source_path,
                 str(source_file.absolute_path),
                 source_file.note_type,
-                note_title(source_path),
+                note_title(source_path, note_text),
                 source_date(source_path, first_block_text),
                 frontmatter_value(first_block_text, "source_created_at"),
                 frontmatter_value(first_block_text, "source_observed_at"),

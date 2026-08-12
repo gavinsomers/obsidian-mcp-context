@@ -18,20 +18,20 @@ Every modeled entity has:
 
 Built-in folders map to stable entity or note types:
 
-- `People/` -> `person`
-- `Companies/` -> `company`
-- `Projects/` -> `project`
-- `Decisions/` -> `decision`
-- `Risks/` -> `risk`
-- `Daily/` -> `daily`
-- `Meetings/` -> `meeting`
-- `Research/` -> `research`
+- `people/` -> `person`
+- `companies/` -> `company`
+- `projects/` -> `project`
+- `decisions/` -> `decision`
+- `risks/` -> `risk`
+- `daily/` -> `daily`
+- `meetings/` -> `meeting`
+- `research/` -> `research`
 
 Custom top-level folders become singular entity types. For example:
 
-- `Clients/Acme Renewal.md` -> `client`
-- `Assets/Revenue Dashboard.md` -> `asset`
-- `Initiatives/Data Trust.md` -> `initiative`
+- `clients/acme_renewal.md` -> `client`
+- `assets/revenue_dashboard.md` -> `asset`
+- `initiatives/data_trust.md` -> `initiative`
 
 Root-level notes become `note` and are not promoted as canonical entities.
 `daily`, `meeting`, `note`, and `research` notes provide context but are not

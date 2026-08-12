@@ -3,7 +3,7 @@ include_globs = ["**/*.md"]
 exclude_globs = [
   ".git/**",
   ".obsidian/**",
-  "System/Marts/**",
+  "system/marts/**",
 ]
 source_extensions = [".md"]
 
@@ -16,14 +16,14 @@ non_entity_note_types = [
 ]
 
 [entities.folders]
-Companies = "company"
-Daily = "daily"
-Decisions = "decision"
-Meetings = "meeting"
-People = "person"
-Projects = "project"
-Research = "research"
-Risks = "risk"
+companies = "company"
+daily = "daily"
+decisions = "decision"
+meetings = "meeting"
+people = "person"
+projects = "project"
+research = "research"
+risks = "risk"
 
 [replay_qa]
 entity_type_preferences = ["project", "person", "company"]

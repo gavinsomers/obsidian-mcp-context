@@ -15,9 +15,9 @@
       "min_sources": 4,
       "expected_answer_contains": ["Project Atlas 1", "risk open", "open loop"],
       "expected_source_contains": [
-        "Risks/Project Atlas 1",
-        "Daily/",
-        "Meetings/Project Atlas 1"
+        "risks/Project Atlas 1",
+        "daily/",
+        "meetings/Project Atlas 1"
       ]
     },
     {
@@ -30,8 +30,8 @@
       "min_sources": 2,
       "expected_answer_contains": ["Project Atlas 1", "decision"],
       "expected_source_contains": [
-        "Decisions/Project Atlas 1 Security Review",
-        "Decisions/Project Atlas 1 Adoption Workflow"
+        "decisions/Project Atlas 1 Security Review",
+        "decisions/Project Atlas 1 Adoption Workflow"
       ]
     },
     {
@@ -43,7 +43,7 @@
       "expected_entity": "Project Atlas 1",
       "min_sources": 4,
       "expected_answer_contains": ["Project Atlas 1", "Daily Log", "Tasks"],
-      "expected_source_contains": ["Daily/"]
+      "expected_source_contains": ["daily/"]
     },
     {
       "id": "atlas-stakeholder-brief",
@@ -54,7 +54,7 @@
       "expected_entity": "Project Atlas 1",
       "min_sources": 4,
       "expected_answer_contains": ["Project Atlas 1", "Alex Alvarez"],
-      "expected_source_contains": ["Daily/"]
+      "expected_source_contains": ["daily/"]
     },
     {
       "id": "beacon-risks",
@@ -65,7 +65,7 @@
       "expected_entity": "Project Beacon 2",
       "min_sources": 2,
       "expected_answer_contains": ["Project Beacon 2", "risk open"],
-      "expected_source_contains": ["Risks/Project Beacon 2"]
+      "expected_source_contains": ["risks/Project Beacon 2"]
     },
     {
       "id": "beacon-latest-context",
@@ -76,7 +76,7 @@
       "expected_entity": "Project Beacon 2",
       "min_sources": 4,
       "expected_answer_contains": ["Project Beacon 2", "Daily Log", "Tasks"],
-      "expected_source_contains": ["Daily/"]
+      "expected_source_contains": ["daily/"]
     }
   ]
 }

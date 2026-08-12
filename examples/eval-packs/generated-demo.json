@@ -36,7 +36,7 @@
       "expected_entity": "Project Atlas 1",
       "min_sources": 1,
       "expected_answer_contains": ["Project Atlas 1", "Daily Log", "Tasks"],
-      "expected_source_contains": ["Daily/"]
+      "expected_source_contains": ["daily/"]
     },
     {
       "id": "atlas-stakeholder-brief",
@@ -47,7 +47,7 @@
       "expected_entity": "Project Atlas 1",
       "min_sources": 1,
       "expected_answer_contains": ["Project Atlas 1", "Alex Alvarez"],
-      "expected_source_contains": ["Daily/"]
+      "expected_source_contains": ["daily/"]
     },
     {
       "id": "beacon-risks",
@@ -69,7 +69,7 @@
       "expected_entity": "Project Beacon 2",
       "min_sources": 1,
       "expected_answer_contains": ["Project Beacon 2", "Daily Log", "Tasks"],
-      "expected_source_contains": ["Daily/"]
+      "expected_source_contains": ["daily/"]
     }
   ]
 }

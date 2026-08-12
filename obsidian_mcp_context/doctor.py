@@ -195,15 +195,15 @@ def _link_resolution_key(value: str) -> str:
     return target.casefold()
 
 
-def _note_resolution_keys(source_path: str, first_block_text: str | None) -> set[str]:
+def _note_resolution_keys(source_path: str, note_text: str | None) -> set[str]:
     path_without_extension = source_path[:-3] if source_path.endswith(".md") else source_path
     keys = {
-        note_title(source_path).casefold(),
+        note_title(source_path, note_text).casefold(),
         source_path.casefold(),
         path_without_extension.casefold(),
     }
     for alias_field in ("alias", "aliases"):
-        for alias in _frontmatter_list_values(first_block_text, alias_field):
+        for alias in _frontmatter_list_values(note_text, alias_field):
             keys.add(_link_resolution_key(alias))
     return {key for key in keys if key}
 
@@ -995,7 +995,9 @@ def run_doctor(options: DoctorOptions) -> dict[str, object]:
         resolvable_link_targets.update(
             _note_resolution_keys(
                 source_file.source_path,
-                first_block_text_by_source.get(source_file.source_path),
+                source_file.absolute_path.read_text(
+                    encoding="utf-8", errors="replace"
+                ),
             )
         )
     unresolved_links = [

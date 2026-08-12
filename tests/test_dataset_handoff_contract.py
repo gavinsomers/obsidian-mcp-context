@@ -27,7 +27,7 @@ def test_dataset_handoff_contract_defines_completed_vault_shape():
 
 
 def test_primary_docs_link_to_dataset_handoff_contract():
-    readme = Path("README.md").read_text(encoding="utf-8")
+    readme = Path("readme.md").read_text(encoding="utf-8")
     container_stack = Path("docs/container-stack.md").read_text(encoding="utf-8")
     onboarding = Path("docs/onboarding.md").read_text(encoding="utf-8")
 
