@@ -793,8 +793,8 @@ _HTML = r"""<!doctype html>
         row("Timeline rows", num(compiled.timeline_rows)),
         row("Context rows", num(compiled.context_rows)),
         row("Open loops", num(compiled.open_loops)),
-        row("decisions", num(compiled.decisions)),
-        row("risks", num(compiled.risks)),
+        row("Decisions", num(compiled.decisions)),
+        row("Risks", num(compiled.risks)),
         row("Unknown entities", num(compiled.unknown_entities))
       ].join("");
       document.getElementById("pipelineSummary").innerHTML = [
